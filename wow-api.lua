@@ -3382,11 +3382,11 @@ end
 function CreateFont(name)
 end
 
----@return frame
+---@return Frame
 function CreateFrame(frameType , name , parent , template)
 end
 
----@return index
+---@return number
 function CreateMacro(name, iconTexture, body, perCharacter)
 end
 
@@ -9742,8 +9742,12 @@ end
 function PlaySoundFile(soundFile, soundChannel)
 end
 
----@return nil
-function PlaySoundKitID()
+---Play any sound or music native to the game using the audio's ID. Other players will not hear the audio.
+---@param ID number
+---@param optional forceNoDuplicates boolean
+---@param optional channel string
+---@return willPlay, soundHandle
+function PlaySoundKitID(ID, channel, forceNoDuplicates)
 end
 
 ---@return amount
