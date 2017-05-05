@@ -5,7 +5,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/PlayerModel
 
----@class PlayerModel
+---@class PlayerModel : Frame
 PlayerModel = {};
 
 

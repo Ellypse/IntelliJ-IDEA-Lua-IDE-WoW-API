@@ -5,7 +5,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Scale
 
----@class Scale
+---@class Scale : Animation
 Scale = {};
 
 

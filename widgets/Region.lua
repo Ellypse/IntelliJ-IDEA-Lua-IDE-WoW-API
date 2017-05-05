@@ -4,7 +4,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Region
 
----@class Region
+---@class Region : ParentedObject
 Region = {};
 
 

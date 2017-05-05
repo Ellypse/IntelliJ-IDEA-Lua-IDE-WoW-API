@@ -6,7 +6,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/GameTooltip
 
----@class GameTooltip
+---@class GameTooltip : Frame
 GameTooltip = {};
 
 

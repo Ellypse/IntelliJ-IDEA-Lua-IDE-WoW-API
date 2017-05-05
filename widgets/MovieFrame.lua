@@ -4,7 +4,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/MovieFrame
 
----@class MovieFrame
+---@class MovieFrame : Frame
 MovieFrame = {};
 
 

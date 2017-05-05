@@ -13,7 +13,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Frame
 
----@class Frame
+---@class Frame : VisibleRegion
 Frame = {};
 
 

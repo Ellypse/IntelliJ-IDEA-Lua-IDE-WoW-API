@@ -8,7 +8,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Button
 
----@class Button
+---@class Button : Frame
 Button = {};
 
 

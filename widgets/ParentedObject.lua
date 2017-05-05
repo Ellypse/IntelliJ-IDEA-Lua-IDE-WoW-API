@@ -4,6 +4,6 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/ParentedObject
 
----@class ParentedObject
+---@class ParentedObject : UIObject
 ParentedObject = {};
 

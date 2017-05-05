@@ -4,7 +4,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/FontInstance
 
----@class FontInstance
+---@class FontInstance : UIObject
 FontInstance = {};
 
 

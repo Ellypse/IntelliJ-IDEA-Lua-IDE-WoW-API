@@ -5,7 +5,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Minimap
 
----@class Minimap
+---@class Minimap : Frame
 Minimap = {};
 
 

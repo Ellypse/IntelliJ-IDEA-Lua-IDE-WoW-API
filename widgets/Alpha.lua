@@ -4,7 +4,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Alpha
 
----@class Alpha
+---@class Alpha : Animation
 Alpha = {};
 
 

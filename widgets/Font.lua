@@ -4,7 +4,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Font
 
----@class Font
+---@class Font : FontInstance
 Font = {};
 
 

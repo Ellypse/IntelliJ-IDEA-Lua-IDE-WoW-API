@@ -6,7 +6,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/ColorSelect
 
----@class ColorSelect
+---@class ColorSelect : Frame
 ColorSelect = {};
 
 

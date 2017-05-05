@@ -6,7 +6,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/ArchaeologyDigSiteFrame
 
----@class ArchaeologyDigSiteFrame
+---@class ArchaeologyDigSiteFrame : Frame
 ArchaeologyDigSiteFrame = {};
 
 

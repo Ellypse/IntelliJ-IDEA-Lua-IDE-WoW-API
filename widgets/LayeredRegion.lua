@@ -4,7 +4,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/LayeredRegion
 
----@class LayeredRegion
+---@class LayeredRegion : VisibleRegion
 LayeredRegion = {};
 
 

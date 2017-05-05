@@ -7,7 +7,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/StatusBar
 
----@class StatusBar
+---@class StatusBar : Frame
 StatusBar = {};
 
 

@@ -4,7 +4,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/ControlPoint
 
----@class ControlPoint
+---@class ControlPoint : ParentedObject
 ControlPoint = {};
 
 

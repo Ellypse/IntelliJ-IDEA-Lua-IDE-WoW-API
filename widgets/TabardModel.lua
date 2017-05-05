@@ -5,7 +5,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/TabardModel
 
----@class TabardModel
+---@class TabardModel : PlayerModel
 TabardModel = {};
 
 

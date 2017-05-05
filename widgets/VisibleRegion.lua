@@ -4,7 +4,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/VisibleRegion
 
----@class VisibleRegion
+---@class VisibleRegion : Region
 VisibleRegion = {};
 
 

@@ -22,7 +22,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Path
 
----@class Path
+---@class Path : Animation
 Path = {};
 
 

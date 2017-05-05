@@ -6,7 +6,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/AnimationGroup
 
----@class AnimationGroup
+---@class AnimationGroup : ScriptObject
 AnimationGroup = {};
 
 

@@ -6,7 +6,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/EditBox
 
----@class EditBox
+---@class EditBox : Frame
 EditBox = {};
 
 

@@ -5,7 +5,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Rotation
 
----@class Rotation
+---@class Rotation : Animation
 Rotation = {};
 
 

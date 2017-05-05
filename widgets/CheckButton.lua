@@ -7,7 +7,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/CheckButton
 
----@class CheckButton
+---@class CheckButton : Button
 CheckButton = {};
 
 

@@ -7,7 +7,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Animation
 
----@class Animation
+---@class Animation : ScriptObject
 Animation = {};
 
 

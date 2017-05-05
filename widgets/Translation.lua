@@ -5,7 +5,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Translation
 
----@class Translation
+---@class Translation : Animation
 Translation = {};
 
 

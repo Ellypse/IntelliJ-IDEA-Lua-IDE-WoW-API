@@ -5,7 +5,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/MessageFrame
 
----@class MessageFrame
+---@class MessageFrame : Frame
 MessageFrame = {};
 
 

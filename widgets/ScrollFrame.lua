@@ -8,7 +8,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/ScrollFrame
 
----@class ScrollFrame
+---@class ScrollFrame : Frame
 ScrollFrame = {};
 
 

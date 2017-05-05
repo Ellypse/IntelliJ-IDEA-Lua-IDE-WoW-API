@@ -6,7 +6,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/ScrollingMessageFrame
 
----@class ScrollingMessageFrame
+---@class ScrollingMessageFrame : Frame
 ScrollingMessageFrame = {};
 
 

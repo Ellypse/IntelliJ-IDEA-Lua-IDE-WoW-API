@@ -6,7 +6,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Texture
 
----@class Texture
+---@class Texture : LayeredRegion
 Texture = {};
 
 

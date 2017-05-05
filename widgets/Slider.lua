@@ -7,7 +7,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Slider
 
----@class Slider
+---@class Slider : Frame
 Slider = {};
 
 

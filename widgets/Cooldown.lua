@@ -5,7 +5,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Cooldown
 
----@class Cooldown
+---@class Cooldown : Frame
 Cooldown = {};
 
 

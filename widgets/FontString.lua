@@ -5,7 +5,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/FontString
 
----@class FontString
+---@class FontString : FontInstance
 FontString = {};
 
 

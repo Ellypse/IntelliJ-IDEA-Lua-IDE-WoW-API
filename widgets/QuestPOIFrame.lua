@@ -2,7 +2,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/QuestPOIFrame
 
----@class QuestPOIFrame
+---@class QuestPOIFrame : Frame
 QuestPOIFrame = {};
 
 

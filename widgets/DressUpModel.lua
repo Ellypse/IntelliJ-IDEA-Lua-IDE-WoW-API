@@ -4,7 +4,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/DressUpModel
 
----@class DressUpModel
+---@class DressUpModel : PlayerModel
 DressUpModel = {};
 
 

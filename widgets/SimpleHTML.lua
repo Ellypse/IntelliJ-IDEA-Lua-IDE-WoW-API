@@ -6,7 +6,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/SimpleHTML
 
----@class SimpleHTML
+---@class SimpleHTML : Frame
 SimpleHTML = {};
 
 

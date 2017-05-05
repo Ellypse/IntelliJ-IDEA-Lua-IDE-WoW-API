@@ -2,7 +2,7 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/Browser
 
----@class Browser
+---@class Browser : Frame
 Browser = {};
 
 
