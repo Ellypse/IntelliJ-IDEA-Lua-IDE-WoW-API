@@ -180,6 +180,7 @@ function  Frame:IsUserPlaced() end
 function Frame:Lower() end
 
 --- Frame:CreateTexture(name , layer , inherits , sublevel)
+---@return Texture
 function  Frame:CreateTexture(name , layer , inherits , sublevel) end
 
 --- Frame:GetBackdrop()

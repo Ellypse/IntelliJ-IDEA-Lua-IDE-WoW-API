@@ -50,6 +50,12 @@ function GameTooltip:ClearLines() end
 --- True to cause the line to wrap if it is longer than other, non-wrapping lines in the tooltip or longer than the tooltip's forced width
 function GameTooltip:AddLine(text , r , g , b , wrap) end
 
+function GameTooltip:AddDoubleLine(textLeft, textRight, rLeft, gLeft,
+bLeft, rRight, gRight, bRight)
+
+end
+
+
 --- GameTooltip:AdvanceSecondaryCompareItem() 
 function GameTooltip:AdvanceSecondaryCompareItem() end
 
@@ -281,8 +287,16 @@ function GameTooltip:SetQuestItem(itemType, index) end
 --- Sets the frame to which the tooltip refers and is anchored
 --- @param frame frame
 --- Reference to the Frame to which the tooltip refers
---- @param anchorType the
---- Token identifying the positioning method for the tooltip relative to its owner frame (string) ANCHOR_BOTTOMLEFT - Align the top right of the tooltip with the bottom left of the ownerANCHOR_CURSOR - Toolip follows the mouse cursorANCHOR_LEFT - Align the bottom right of the tooltip with the top left of the ownerANCHOR_NONE - Tooltip appears in the default positionANCHOR_PRESERVE - Tooltip's position is saved between sessions (useful if the tooltip is made user-movable)ANCHOR_RIGHT - Align the bottom left of the tooltip with the top right of the ownerANCHOR_TOPLEFT - Align the bottom left of the tooltip with the top left of the ownerANCHOR_TOPRIGHT - Align the bottom right of the tooltip with the top right of
+--- @param anchorType string
+--- Token identifying the positioning method for the tooltip relative to its owner frame (string)
+---ANCHOR_BOTTOMLEFT - Align the top right of the tooltip with the bottom left of the owner
+---ANCHOR_CURSOR - Toolip follows the mouse cursor
+---ANCHOR_LEFT - Align the bottom right of the tooltip with the top left of the owner
+---ANCHOR_NONE - Tooltip appears in the default position
+---ANCHOR_PRESERVE - Tooltip's position is saved between sessions (useful if the tooltip is made user-movable)
+---ANCHOR_RIGHT - Align the bottom left of the tooltip with the top right of the owner
+---ANCHOR_TOPLEFT - Align the bottom left of the tooltip with the top left of the owner
+---ANCHOR_TOPRIGHT - Align the bottom right of the tooltip with the top right of
 --- @param xOffset number
 --- The horizontal offset for the tooltip anchor
 --- @param yOffset number

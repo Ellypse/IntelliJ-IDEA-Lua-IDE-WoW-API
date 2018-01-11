@@ -1930,7 +1930,8 @@ end
 function C_TaskQuest.GetQuestsForPlayerByMapID()
 end
 
----@return nil
+---@param duration number
+---@param callback function
 function C_Timer.After(duration, callback)
 end
 
