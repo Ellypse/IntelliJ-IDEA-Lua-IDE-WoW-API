@@ -4007,7 +4007,7 @@ end
 function GetActionLossOfControlCooldown()
 end
 
----@return text
+---@return string
 function GetActionText(slot)
 end
 
@@ -5043,11 +5043,11 @@ end
 function GetGossipAvailableQuests()
 end
 
----@return text, gossipType, ...
+---@return string, gossipType, ...
 function GetGossipOptions()
 end
 
----@return text
+---@return string
 function GetGossipText()
 end
 
@@ -5115,7 +5115,7 @@ end
 function GetGuildBankTabPermissions(tab)
 end
 
----@return text
+---@return string
 function GetGuildBankText(tab)
 end
 
@@ -6687,7 +6687,7 @@ end
 function GetProfessions()
 end
 
----@return text
+---@return string
 function GetProgressText()
 end
 
@@ -6803,7 +6803,7 @@ end
 function GetQuestLogItemLink(itemType, index)
 end
 
----@return text, type, finished
+---@return string, type, finished
 function GetQuestLogLeaderBoard(objective , questIndex)
 end
 
@@ -6951,7 +6951,7 @@ end
 function GetQuestTagInfo()
 end
 
----@return text
+---@return string
 function GetQuestText()
 end
 
@@ -7139,7 +7139,7 @@ end
 function GetRewardTalents()
 end
 
----@return text
+---@return string
 function GetRewardText()
 end
 
@@ -7507,7 +7507,7 @@ end
 function GetSummonConfirmAreaName()
 end
 
----@return text
+---@return string
 function GetSummonConfirmSummoner()
 end
 
@@ -7583,7 +7583,7 @@ end
 function GetTempShapeshiftBarIndex()
 end
 
----@return text
+---@return string
 function GetText(token , gender , ordinal)
 end
 
@@ -7603,7 +7603,7 @@ end
 function GetTitleName(titleIndex)
 end
 
----@return text
+---@return string
 function GetTitleText()
 end
 
@@ -7675,7 +7675,7 @@ end
 function GetTradeSkillItemLink(index)
 end
 
----@return text
+---@return string
 function GetTradeSkillItemNameFilter()
 end
 
@@ -7743,7 +7743,7 @@ end
 function GetTradeskillRepeatCount()
 end
 
----@return text
+---@return string
 function GetTrainerGreetingText()
 end
 
@@ -7759,7 +7759,7 @@ end
 function GetTrainerServiceCost(index)
 end
 
----@return text
+---@return string
 function GetTrainerServiceDescription(index)
 end
 
@@ -8187,7 +8187,7 @@ end
 function HasSPEffectsAttackPower()
 end
 
----@return text
+---@return string
 function HasSoulstone()
 end
 
@@ -9015,7 +9015,7 @@ end
 function ItemTextGetCreator()
 end
 
----@return text
+---@return string
 function ItemTextGetItem()
 end
 
@@ -9027,7 +9027,7 @@ end
 function ItemTextGetPage()
 end
 
----@return text
+---@return string
 function ItemTextGetText()
 end
 
@@ -9159,11 +9159,11 @@ end
 function KBSetup_IsLoaded()
 end
 
----@return text
+---@return string
 function KBSystem_GetMOTD()
 end
 
----@return text
+---@return string
 function KBSystem_GetServerNotice()
 end
 
@@ -12683,7 +12683,7 @@ end
 function strconcat(...)
 end
 
----@return text
+---@return string
 function strjoin(sep, ...)
 end
 
@@ -12691,7 +12691,7 @@ end
 function strsplit(sep, text, limit)
 end
 
----@return text
+---@return string 
 function strtrim(str , trimChars)
 end
 

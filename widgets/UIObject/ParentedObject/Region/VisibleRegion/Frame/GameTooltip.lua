@@ -40,13 +40,13 @@ function GameTooltip:ClearLines() end
 --- Adds a line of text to the tooltip. The tooltip is not automatically resized to fit the added line (and wrap it, if applicable); to do so, call the tooltip's :Show() method after adding lines.
 --- @param text string
 --- Text to be added as a new line in the tooltip
---- @param r number
+--- @param optional r number
 --- Red component of the text color (0.0 - 1.0)
---- @param g number
+--- @param optional g number
 --- Green component of the text color (0.0 - 1.0)
---- @param b number
+--- @param optional b number
 --- Blue component of the text color (0.0 - 1.0)
---- @param wrap boolean
+--- @param optional wrap boolean
 --- True to cause the line to wrap if it is longer than other, non-wrapping lines in the tooltip or longer than the tooltip's forced width
 function GameTooltip:AddLine(text , r , g , b , wrap) end
 

@@ -75,9 +75,14 @@ function  AnimationGroup:IsPlaying() end
 function AnimationGroup:SetIgnoreFramerateThrottle() end
 
 --- Sets the looping behavior of the group
---- @param loopType between
+--- @param loopType string @ (BOUNCE, NONE, REPEAT)
 --- Looping type for the animation group (string) BOUNCE - Repeatedly animates forward from the initial state to the final state then backwards to the initial stateNONE - No looping; animates from the initial state to the final state once and stopsREPEAT - Repeatedly animates forward from the initial state to the final state (instantly resetting from the final state to the initial state
 function AnimationGroup:SetLooping(loopType) end
 
 --- Stops animation of the group. Unlike with AnimationGroup:Pause(), the animation is reset to the initial state (e.g. in a fade-out-fade-in animation, the element will be instantly returned to full opacity) instead of paused at its current progress state.
 function AnimationGroup:Stop() end
+
+--- Create an animation of the given type
+---@param animationType string @ The type of animation to create (Path, Alpha, Scale, Rotation, Translation)
+---@return Path|Alpha|Scale|Rotation|Translation
+function AnimationGroup:CreateAnimation(animationType) end

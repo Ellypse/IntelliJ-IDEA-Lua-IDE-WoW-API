@@ -40,3 +40,6 @@ function Model:FreezeAnimation(animationID, variation, frame) end
 ---@param animationID number
 ---@return boolean
 function Model:HasAnimation(animationID) end
+
+---@param unit string Unit token
+function Model:SetUnit(unit) end

@@ -8,7 +8,13 @@
 Region = {};
 
 
----Region:SetPoint(point , relativeTo , relativePoint , xOffset , yOffset)
+---SetPoint
+---@param point string
+---@param relativeTo Frame
+---@param relativePoint string
+---@param xOffset number
+---@param yOffset number
+---@overload fun(self:Region, point:string, xOffset: number, yOffset:number)
 function Region:SetPoint(point , relativeTo , relativePoint , xOffset , yOffset) end
 
 --- Region:GetTop()
@@ -27,7 +33,7 @@ function Region:SetParent(frame) end
 function Region:ClearAllPoints() end
 
 --- Returns the distance from the bottom of the screen to the bottom of the region
---- @return bottom
+--- @return number
 function  Region:GetBottom() end
 
 --- Returns the screen coordinates of the region's center
@@ -39,7 +45,7 @@ function  Region:GetCenter() end
 function  Region:GetSize() end
 
 --- Returns a list of animation groups belonging to the region
---- @return ...
+--- @return AnimationGroup[]
 function  Region:GetAnimationGroups() end
 
 --- Returns the height of the region
@@ -55,7 +61,7 @@ function  Region:GetLeft() end
 --- A global name to use for the new animation group
 --- @param inheritsFrom string
 --- Template from which the new animation group should inherit
---- @return animationGroup
+--- @return AnimationGroup
 function  Region:CreateAnimationGroup(name , inheritsFrom) end
 
 --- Returns the number of anchor points defined for the region

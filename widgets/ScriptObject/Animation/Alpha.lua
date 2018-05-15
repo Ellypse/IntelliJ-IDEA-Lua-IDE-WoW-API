@@ -16,11 +16,13 @@ function Alpha:SetChange(change) end
 --- Alpha:GetToAlpha() 
 function Alpha:GetToAlpha() end
 
---- Alpha:SetToAlpha() 
-function Alpha:SetToAlpha() end
+--- Alpha:SetToAlpha()
+---@param alphaTo number
+function Alpha:SetToAlpha(alphaTo) end
 
---- Alpha:SetFromAlpha() 
-function Alpha:SetFromAlpha() end
+--- Alpha:SetFromAlpha()
+---@param alphaFrom number
+function Alpha:SetFromAlpha(alphaFrom) end
 
 --- Alpha:GetFromAlpha() 
 function Alpha:GetFromAlpha() end
