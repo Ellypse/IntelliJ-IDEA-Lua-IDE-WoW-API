@@ -14,7 +14,7 @@ Region = {};
 ---@param relativePoint string
 ---@param xOffset number
 ---@param yOffset number
----@overload fun(self:Region, point:string, xOffset: number, yOffset:number)
+---@overload fun(point:string, xOffset: number, yOffset:number)
 function Region:SetPoint(point , relativeTo , relativePoint , xOffset , yOffset) end
 
 --- Region:GetTop()

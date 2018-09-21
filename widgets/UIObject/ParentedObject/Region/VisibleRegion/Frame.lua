@@ -179,9 +179,16 @@ function  Frame:IsUserPlaced() end
 --- Reduces the frame's frame level below all other frames in its strata
 function Frame:Lower() end
 
---- Frame:CreateTexture(name , layer , inherits , sublevel)
+--- Frame:CreateTexture(name , layer , inherits , subLayer)
+---@param name string
+---@param layer string
+---@param inherits string
+---@param sublevel number
 ---@return Texture
-function  Frame:CreateTexture(name , layer , inherits , sublevel) end
+---@overload fun(name:string):Texture
+---@overload fun(name:string, layer:string):Texture
+---@overload fun(name:string, layer:string, inherits:string):Texture
+function  Frame:CreateTexture(name , layer , inherits , subLayer) end
 
 --- Frame:GetBackdrop()
 function  Frame:GetBackdrop() end
@@ -316,7 +323,7 @@ function Frame:SetMovable(enable) end
 --- Graphic layer on which to create the font string; defaults to ARTWORK if not specified (string,
 --- @param inherits string
 --- Name of a template from which the new front string should inherit
---- @return fontstring
+--- @return FontString
 function  Frame:CreateFontString(name , layer , inherits) end
 
 --- Ends movement or resizing of the frame initiated with :StartMoving() or :StartSizing()

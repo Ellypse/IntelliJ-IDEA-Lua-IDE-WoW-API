@@ -3,7 +3,7 @@ LibStub = {}
 
 --- @param major string @ the major version of the library
 --- @param minor string|number @ the minor version of the library
---- @return nil|string, table major, oldMinor @ if a newer or same version of the lib is already present and library object or old library object if upgrade is needed
+--- @return nil|table, string major, oldMinor @ if a newer or same version of the lib is already present and library object or old library object if upgrade is needed
 function LibStub:NewLibrary(major, minor)
     assert(type(major) == "string", "Bad argument #2 to `NewLibrary' (string expected)")
     minor = assert(tonumber(strmatch(minor, "%d+")), "Minor version must either be a number or contain a number.")
