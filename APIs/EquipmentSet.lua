@@ -11,7 +11,8 @@ function C_EquipmentSet:CanUseEquipmentSets() end
 function C_EquipmentSet:ClearIgnoredSlotsForSave() end
 
 ---@param equipmentSetName string 
----@param optional icon string 
+---@param icon string @ [OPTIONAL]
+---@overload fun(equipmentSetName:string)
 function C_EquipmentSet:CreateEquipmentSet(equipmentSetName, icon) end
 
 ---@param equipmentSetID number 
@@ -64,14 +65,16 @@ function C_EquipmentSet:IsSlotIgnoredForSave(slot) end
 
 ---@param equipmentSetID number 
 ---@param newName string 
----@param optional newIcon string 
+---@param newIcon string @ [OPTIONAL]
+---@overload fun(equipmentSetID:number, newName:string)
 function C_EquipmentSet:ModifyEquipmentSet(equipmentSetID, newName, newIcon) end
 
 ---@param equipmentSetID number 
 function C_EquipmentSet:PickupEquipmentSet(equipmentSetID) end
 
 ---@param equipmentSetID number 
----@param optional icon string 
+---@param icon string @ [OPTIONAL]
+---@overload fun(equipmentSetID:number)
 function C_EquipmentSet:SaveEquipmentSet(equipmentSetID, icon) end
 
 ---@param equipmentSetID number 

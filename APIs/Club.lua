@@ -36,10 +36,11 @@ function C_Club:ClearClubPresenceSubscription() end
 function C_Club:CompareBattleNetDisplayName(clubId, lhsMemberId, rhsMemberId) end
 
 ---@param name string 
----@param optional shortName string 
+---@param shortName string @ [OPTIONAL]
 ---@param description string 
 ---@param clubType ClubType @ Valid types are BattleNet or Character
 ---@param avatarId number 
+---@overload fun(name:string, description:string, clubType:ClubType, avatarId:number)
 function C_Club:CreateClub(name, shortName, description, clubType, avatarId) end
 
 --- Check the canCreateStream privilege.
@@ -51,9 +52,12 @@ function C_Club:CreateStream(clubId, name, subject, leadersAndModeratorsOnly) en
 
 --- Check canCreateTicket privilege.
 ---@param clubId string 
----@param optional allowedRedeemCount number @ Number of uses. nil means unlimited
----@param optional duration number @ Duration in seconds. nil never expires
----@param optional defaultStreamId string 
+---@param allowedRedeemCount number @ Number of uses. nil means unlimited [OPTIONAL]
+---@param duration number @ Duration in seconds. nil never expires [OPTIONAL]
+---@param defaultStreamId string @ [OPTIONAL]
+---@overload fun(clubId:string, duration:number, defaultStreamId:string)
+---@overload fun(clubId:string, defaultStreamId:string)
+---@overload fun(clubId:string)
 function C_Club:CreateTicket(clubId, allowedRedeemCount, duration, defaultStreamId) end
 
 ---@param clubId string 
@@ -80,11 +84,16 @@ function C_Club:DestroyTicket(clubId, ticketId) end
 
 --- nil arguments will not change existing club data
 ---@param clubId string 
----@param optional name string 
----@param optional shortName string 
----@param optional description string 
----@param optional avatarId number 
----@param optional broadcast string 
+---@param name string @ [OPTIONAL]
+---@param shortName string @ [OPTIONAL]
+---@param description string @ [OPTIONAL]
+---@param avatarId number @ [OPTIONAL]
+---@param broadcast string @ [OPTIONAL]
+---@overload fun(clubId:string, shortName:string, description:string, avatarId:number, broadcast:string)
+---@overload fun(clubId:string, description:string, avatarId:number, broadcast:string)
+---@overload fun(clubId:string, avatarId:number, broadcast:string)
+---@overload fun(clubId:string, broadcast:string)
+---@overload fun(clubId:string)
 function C_Club:EditClub(clubId, name, shortName, description, avatarId, broadcast) end
 
 ---@param clubId string 
@@ -96,9 +105,12 @@ function C_Club:EditMessage(clubId, streamId, messageId, message) end
 --- Check the canSetStreamName, canSetStreamSubject, canSetStreamAccess privileges. nil arguments will not change existing stream data.
 ---@param clubId string 
 ---@param streamId string 
----@param optional name string 
----@param optional subject string 
----@param optional leadersAndModeratorsOnly bool 
+---@param name string @ [OPTIONAL]
+---@param subject string @ [OPTIONAL]
+---@param leadersAndModeratorsOnly bool @ [OPTIONAL]
+---@overload fun(clubId:string, streamId:string, subject:string, leadersAndModeratorsOnly:bool)
+---@overload fun(clubId:string, streamId:string, leadersAndModeratorsOnly:bool)
+---@overload fun(clubId:string, streamId:string)
 function C_Club:EditStream(clubId, streamId, name, subject, leadersAndModeratorsOnly) end
 
 ---@param clubId string 
@@ -121,7 +133,8 @@ function C_Club:GetAvatarIdList(clubType) end
 function C_Club:GetClubInfo(clubId) end
 
 ---@param clubId string 
----@param optional streamId string 
+---@param streamId string @ [OPTIONAL]
+---@overload fun(clubId:string)
 ---@return number members
 function C_Club:GetClubMembers(clubId, streamId) end
 
@@ -145,10 +158,13 @@ function C_Club:GetGuildClubId() end
 function C_Club:GetInfoFromLastCommunityChatLine() end
 
 --- Returns a list of players that you can send a request to a Battle.net club. Returns an empty list for Character based clubs
----@param optional filter string 
----@param optional maxResults number 
----@param optional cursorPosition number 
+---@param filter string @ [OPTIONAL]
+---@param maxResults number @ [OPTIONAL]
+---@param cursorPosition number @ [OPTIONAL]
 ---@param clubId string 
+---@overload fun(maxResults:number, cursorPosition:number, clubId:string)
+---@overload fun(cursorPosition:number, clubId:string)
+---@overload fun(clubId:string)
 ---@return ClubInvitationCandidateInfo candidates
 function C_Club:GetInvitationCandidates(filter, maxResults, cursorPosition, clubId) end
 
@@ -267,8 +283,10 @@ function C_Club:RequestInvitationsForClub(clubId) end
 --- Call this when the user scrolls near the top of the message view, and more need to be displayed. The history will be downloaded backwards (newest to oldest).
 ---@param clubId string 
 ---@param streamId string 
----@param optional messageId ClubMessageIdentifier 
----@param optional count number 
+---@param messageId ClubMessageIdentifier @ [OPTIONAL]
+---@param count number @ [OPTIONAL]
+---@overload fun(clubId:string, streamId:string, count:number)
+---@overload fun(clubId:string, streamId:string)
 ---@return bool alreadyHasMessages
 function C_Club:RequestMoreMessagesBefore(clubId, streamId, messageId, count) end
 

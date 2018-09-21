@@ -21,7 +21,8 @@ function C_Commentator:ClearCameraTarget() end
 
 function C_Commentator:ClearFollowTarget() end
 
----@param optional lookAtIndex number 
+---@param lookAtIndex number @ [OPTIONAL]
+---@overload fun()
 function C_Commentator:ClearLookAtTarget(lookAtIndex) end
 
 function C_Commentator:EnterInstance() end
@@ -30,7 +31,8 @@ function C_Commentator:ExitInstance() end
 
 ---@param factionIndex number 
 ---@param playerIndex number 
----@param optional forceInstantTransition bool 
+---@param forceInstantTransition bool @ [OPTIONAL]
+---@overload fun(factionIndex:number, playerIndex:number)
 function C_Commentator:FollowPlayer(factionIndex, playerIndex, forceInstantTransition) end
 
 ---@param token string 
@@ -225,7 +227,8 @@ function C_Commentator:IsUsingSmartCamera() end
 
 ---@param factionIndex number 
 ---@param playerIndex number 
----@param optional lookAtIndex number 
+---@param lookAtIndex number @ [OPTIONAL]
+---@overload fun(factionIndex:number, playerIndex:number)
 function C_Commentator:LookAtPlayer(factionIndex, playerIndex, lookAtIndex) end
 
 function C_Commentator:RemoveAllOverrideNames() end
@@ -363,7 +366,8 @@ function C_Commentator:SwapTeamSides() end
 
 function C_Commentator:ToggleCheats() end
 
----@param optional targetPlayer string 
+---@param targetPlayer string @ [OPTIONAL]
+---@overload fun()
 function C_Commentator:UpdateMapInfo(targetPlayer) end
 
 function C_Commentator:UpdatePlayerInfo() end

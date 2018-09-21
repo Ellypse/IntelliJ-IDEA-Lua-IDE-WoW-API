@@ -19,7 +19,8 @@ function C_LFGList:CopyActiveEntryInfoToCreationFields() end
 ---@param categoryID number 
 ---@param filter number 
 ---@param preferredFilters number 
----@param optional languageFilter WowLocale 
+---@param languageFilter WowLocale @ [OPTIONAL]
+---@overload fun(categoryID:number, filter:number, preferredFilters:number)
 function C_LFGList:Search(categoryID, filter, preferredFilters, languageFilter) end
 
 ---@param activityID number 

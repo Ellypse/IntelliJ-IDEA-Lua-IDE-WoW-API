@@ -5,7 +5,8 @@ C_CurrencyInfo = {}
 function C_CurrencyInfo:GetAzeriteCurrencyID() end
 
 ---@param currencyType number 
----@param optional quantity number 
+---@param quantity number @ [OPTIONAL]
+---@overload fun(currencyType:number)
 ---@return CurrencyDisplayInfo info
 function C_CurrencyInfo:GetBasicCurrencyInfo(currencyType, quantity) end
 

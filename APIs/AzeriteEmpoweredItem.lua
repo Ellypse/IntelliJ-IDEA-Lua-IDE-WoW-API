@@ -16,7 +16,8 @@ function C_AzeriteEmpoweredItem:ConfirmAzeriteEmpoweredItemRespec(azeriteEmpower
 function C_AzeriteEmpoweredItem:GetAllTierInfo(azeriteEmpoweredItemLocation) end
 
 ---@param itemInfo string 
----@param optional classID number @ Specify a class ID to get tier information about that class, otherwise uses the player's class if left nil
+---@param classID number @ Specify a class ID to get tier information about that class, otherwise uses the player's class if left nil [OPTIONAL]
+---@overload fun(itemInfo:string)
 ---@return AzeriteEmpoweredItemTierInfo tierInfo
 function C_AzeriteEmpoweredItem:GetAllTierInfoByItemID(itemInfo, classID) end
 
@@ -48,7 +49,8 @@ function C_AzeriteEmpoweredItem:IsAzeriteEmpoweredItem(itemLocation) end
 function C_AzeriteEmpoweredItem:IsAzeriteEmpoweredItemByID(itemInfo) end
 
 ---@param itemInfo string 
----@param optional classID number @ Specify a class ID to determine if its displayable for that class, otherwise uses the player's class if left nil
+---@param classID number @ Specify a class ID to determine if its displayable for that class, otherwise uses the player's class if left nil [OPTIONAL]
+---@overload fun(itemInfo:string)
 ---@return bool isAzeritePreviewSourceDisplayable
 function C_AzeriteEmpoweredItem:IsAzeritePreviewSourceDisplayable(itemInfo, classID) end
 

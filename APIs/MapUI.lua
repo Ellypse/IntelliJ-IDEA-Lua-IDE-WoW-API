@@ -43,8 +43,10 @@ function C_Map:GetMapArtLayers(uiMapID) end
 function C_Map:GetMapBannersForMap(uiMapID) end
 
 ---@param uiMapID number 
----@param optional mapType UIMapType 
----@param optional allDescendants bool 
+---@param mapType UIMapType @ [OPTIONAL]
+---@param allDescendants bool @ [OPTIONAL]
+---@overload fun(uiMapID:number, allDescendants:bool)
+---@overload fun(uiMapID:number)
 ---@return UiMapDetails info
 function C_Map:GetMapChildrenInfo(uiMapID, mapType, allDescendants) end
 
@@ -86,7 +88,8 @@ function C_Map:GetMapLinksForMap(uiMapID) end
 
 ---@param continentID number 
 ---@param worldPosition table 
----@param optional overrideUiMapID number 
+---@param overrideUiMapID number @ [OPTIONAL]
+---@overload fun(continentID:number, worldPosition:table)
 ---@return number, table uiMapID, mapPosition
 function C_Map:GetMapPosFromWorldPos(continentID, worldPosition, overrideUiMapID) end
 

@@ -30,22 +30,28 @@ function C_ChatInfo:IsPartyChannelType(channelType) end
 function C_ChatInfo:RegisterAddonMessagePrefix(prefix) end
 
 ---@param complaintType string
----@param optional playerLocation table
----@param optional comment string
-function C_ChatInfo:ReportPlayer(complaintType,  , comment) end
+---@param playerLocation table @ [OPTIONAL]
+---@param comment string @ [OPTIONAL]
+---@overload fun(complaintType:string, comment:string)
+---@overload fun(complaintType:string)
+function C_ChatInfo:ReportPlayer(complaintType, playerLocation, comment) end
 
 --- Sends a text payload to other clients specified by chatChannel and target which are registered to listen for prefix.
 ---@param prefix string
----@param message string
----@param optional chatType string @ ChatType, defaults to SLASH_CMD_PARTY.
----@param optional target string @ Only applies for targeted channels
+---@param message string 
+---@param chatType string @ ChatType, defaults to SLASH_CMD_PARTY. [OPTIONAL]
+---@param target string @ Only applies for targeted channels [OPTIONAL]
+---@overload fun(prefix:string, message:string, target:string)
+---@overload fun(prefix:string, message:string)
 ---@return bool success
 function C_ChatInfo:SendAddonMessage(prefix, message, chatType, target) end
 
 --- Sends a text payload to other clients specified by chatChannel and target which are registered to listen for prefix. Intended for plain text payloads; logged and throttled.
 ---@param prefix string
 ---@param message string
----@param optional chatType string @ ChatType, defaults to SLASH_CMD_PARTY.
----@param optional target string @ Only applies for targeted channels
+---@param chatType string @ ChatType, defaults to SLASH_CMD_PARTY. [OPTIONAL]
+---@param target string @ Only applies for targeted channels [OPTIONAL]
+---@overload fun(prefix:string, message:string, target:string)
+---@overload fun(prefix:string, message:string)
 ---@return bool success
 function C_ChatInfo:SendAddonMessageLogged(prefix, message, chatType, target) end

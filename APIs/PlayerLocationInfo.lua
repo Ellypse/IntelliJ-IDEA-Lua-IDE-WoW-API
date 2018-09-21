@@ -17,7 +17,8 @@ function C_PlayerInfo:GetRace(playerLocation) end
 ---@return number|nil sex
 function C_PlayerInfo:GetSex(playerLocation) end
 
----@param optional playerLocation table 
+---@param playerLocation table @ [OPTIONAL]
+---@overload fun()
 ---@return bool|nil isConnected
 function C_PlayerInfo:IsConnected(playerLocation) end
 

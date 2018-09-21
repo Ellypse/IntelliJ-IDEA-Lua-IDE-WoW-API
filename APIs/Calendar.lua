@@ -253,7 +253,8 @@ function C_Calendar:IsActionPending() end
 ---@param clubID string 
 ---@param minLevel number 
 ---@param maxLevel number 
----@param optional maxRankOrder number 
+---@param maxRankOrder number @ [OPTIONAL]
+---@overload fun(clubID:string, minLevel:number, maxLevel:number)
 function C_Calendar:MassInviteCommunity(clubID, minLevel, maxLevel, maxRankOrder) end
 
 ---@param minLevel number 

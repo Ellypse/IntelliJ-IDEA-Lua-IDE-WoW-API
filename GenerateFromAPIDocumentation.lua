@@ -18,6 +18,18 @@ local BLACKLISTED_FILES = {
 	[".."] = true,
 }
 
+local function CopyTable(settings)
+	local copy = {};
+	for k, v in pairs(settings) do
+		if ( type(v) == "table" ) then
+			copy[k] = CopyTable(v);
+		else
+			copy[k] = v;
+		end
+	end
+	return copy;
+end
+
 APIDocumentation = {}
 
 local METHOD_FORMAT = [[function %s:%s(%s) end]]
@@ -26,11 +38,12 @@ local NAMESPACE_DECLARATION = [[
 ---@class %s
 %s = {}
 ]]
-local ARGUMENT_DOCUMENTATION = [[---@param %s%s %s %s]]
+local ARGUMENT_DOCUMENTATION = [[---@param %s %s %s]]
 local RETURN_DOCUMENTATION = [[---@return %s %s]]
 local FIELD_DOCUMENTATION = [[---@field %s %s %s]]
 local CLASS_DECLARATION = [[---@class %s]]
 local INNER_TYPE_DECLARATION = [[local %s = {}]]
+local FUNCTION_OVERLOAD = [[---@overload fun(%s)]]
 function APIDocumentation:AddDocumentationTable(documentation)
 	if not documentation.Type then return end
 	local file = io.open(OUTPUT_DIRECTORY .. documentation.Name .. ".lua", "w+")
@@ -56,15 +69,44 @@ function APIDocumentation:AddDocumentationTable(documentation)
 			if type(func.Arguments) == "table" then
 				local documentationLines = {}
 				for k, argument in pairs(func.Arguments) do
+					local documentation = argument.Documentation or {}
+					if argument.Nilable then
+						-- Note that this is not an IntelliJ EmmyLua thing, but it will hepl seeing what's optional or not
+						table.insert(documentation, "[OPTIONAL]")
+					end
 					table.insert(documentationLines, ARGUMENT_DOCUMENTATION:format(
-						argument.Nilable and "optional " or "",
 						argument.Name,
 						argument.InnerType or argument.Type,
-						argument.Documentation and ("@ " .. table.concat(argument.Documentation, "\n")) or ""
+						#documentation > 0 and ("@ " .. table.concat(documentation, " ")) or ""
 					))
 				end
 				write(table.concat(documentationLines, "\n"))
 			end
+
+			-- Optional overloading
+			-- Emmylua no longer supports an "optional" tag and rely on overloading now
+			if type(func.Arguments) == "table" then
+				local args = CopyTable(func.Arguments)
+				local hasANillableParam
+				repeat
+					hasANillableParam = false
+					for i, arg in pairs(args) do
+						if arg.Nilable then
+							args[i] = nil
+
+							local overloadDoc = {}
+							for _, overloadArg in pairs(args) do
+								table.insert(overloadDoc, overloadArg.Name .. ":" .. (overloadArg.InnerType or overloadArg.Type))
+							end
+							write(FUNCTION_OVERLOAD:format(table.concat(overloadDoc, ", ")))
+							hasANillableParam = true
+							break
+						end
+					end
+				until hasANillableParam == false
+			end
+
+
 
 			-- Return values documentation
 			if type(func.Returns) == "table" then
