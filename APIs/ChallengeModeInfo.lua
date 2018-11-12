@@ -1,63 +1,63 @@
 ---@class ChallengeModeInfo
 C_ChallengeMode = {}
 
-function C_ChallengeMode:ClearKeystone() end
+function C_ChallengeMode.ClearKeystone() end
 
-function C_ChallengeMode:CloseKeystoneFrame() end
+function C_ChallengeMode.CloseKeystoneFrame() end
 
 ---@return number|nil mapChallengeModeID
-function C_ChallengeMode:GetActiveChallengeMapID() end
+function C_ChallengeMode.GetActiveChallengeMapID() end
 
 ---@return number, number, bool activeKeystoneLevel, activeAffixIDs, wasActiveKeystoneCharged
-function C_ChallengeMode:GetActiveKeystoneInfo() end
+function C_ChallengeMode.GetActiveKeystoneInfo() end
 
 ---@param affixID number 
 ---@return string, string, number name, description, filedataid
-function C_ChallengeMode:GetAffixInfo(affixID) end
+function C_ChallengeMode.GetAffixInfo(affixID) end
 
 ---@return number, number, number, bool, number mapChallengeModeID, level, time, onTime, keystoneUpgradeLevels
-function C_ChallengeMode:GetCompletionInfo() end
+function C_ChallengeMode.GetCompletionInfo() end
 
 ---@return number, number numDeaths, timeLost
-function C_ChallengeMode:GetDeathCount() end
+function C_ChallengeMode.GetDeathCount() end
 
 ---@return ChallengeModeGuildTopAttempt topAttempt
-function C_ChallengeMode:GetGuildLeaders() end
+function C_ChallengeMode.GetGuildLeaders() end
 
 ---@return number mapChallengeModeIDs
-function C_ChallengeMode:GetMapTable() end
+function C_ChallengeMode.GetMapTable() end
 
 ---@param mapChallengeModeID number 
 ---@return string, number, number, number|nil, number name, id, timeLimit, texture, backgroundTexture
-function C_ChallengeMode:GetMapUIInfo(mapChallengeModeID) end
+function C_ChallengeMode.GetMapUIInfo(mapChallengeModeID) end
 
 ---@param powerLevel number 
 ---@return number, number damageMod, healthMod
-function C_ChallengeMode:GetPowerLevelDamageHealthMod(powerLevel) end
+function C_ChallengeMode.GetPowerLevelDamageHealthMod(powerLevel) end
 
 ---@return number, number, number mapChallengeModeID, affixIDs, keystoneLevel
-function C_ChallengeMode:GetSlottedKeystoneInfo() end
+function C_ChallengeMode.GetSlottedKeystoneInfo() end
 
 ---@return bool hasSlottedKeystone
-function C_ChallengeMode:HasSlottedKeystone() end
+function C_ChallengeMode.HasSlottedKeystone() end
 
 ---@return bool challengeModeActive
-function C_ChallengeMode:IsChallengeModeActive() end
+function C_ChallengeMode.IsChallengeModeActive() end
 
 ---@return bool removalSuccessful
-function C_ChallengeMode:RemoveKeystone() end
+function C_ChallengeMode.RemoveKeystone() end
 
 ---@param mapChallengeModeID number 
-function C_ChallengeMode:RequestLeaders(mapChallengeModeID) end
+function C_ChallengeMode.RequestLeaders(mapChallengeModeID) end
 
-function C_ChallengeMode:Reset() end
+function C_ChallengeMode.Reset() end
 
-function C_ChallengeMode:SetKeystoneTooltip() end
+function C_ChallengeMode.SetKeystoneTooltip() end
 
-function C_ChallengeMode:SlotKeystone() end
+function C_ChallengeMode.SlotKeystone() end
 
 ---@return bool success
-function C_ChallengeMode:StartChallengeMode() end
+function C_ChallengeMode.StartChallengeMode() end
 
 ---@class ChallengeModeGuildAttemptMember
 ---@field name string 

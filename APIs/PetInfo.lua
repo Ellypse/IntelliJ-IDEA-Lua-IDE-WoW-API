@@ -3,7 +3,7 @@ C_PetInfo = {}
 
 ---@param uiMapID number 
 ---@return PetTamerMapInfo petTamers
-function C_PetInfo:GetPetTamersForMap(uiMapID) end
+function C_PetInfo.GetPetTamersForMap(uiMapID) end
 
 ---@class PetTamerMapInfo
 ---@field areaPoiID number 

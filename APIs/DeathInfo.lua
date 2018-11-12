@@ -3,22 +3,22 @@ C_DeathInfo = {}
 
 ---@param uiMapID number 
 ---@return table|nil position
-function C_DeathInfo:GetCorpseMapPosition(uiMapID) end
+function C_DeathInfo.GetCorpseMapPosition(uiMapID) end
 
 ---@param uiMapID number 
 ---@return table|nil position
-function C_DeathInfo:GetDeathReleasePosition(uiMapID) end
+function C_DeathInfo.GetDeathReleasePosition(uiMapID) end
 
 ---@param uiMapID number 
 ---@return GraveyardMapInfo graveyards
-function C_DeathInfo:GetGraveyardsForMap(uiMapID) end
+function C_DeathInfo.GetGraveyardsForMap(uiMapID) end
 
 ---@return SelfResurrectOption options
-function C_DeathInfo:GetSelfResurrectOptions() end
+function C_DeathInfo.GetSelfResurrectOptions() end
 
 ---@param optionType SelfResurrectOptionType 
 ---@param id number 
-function C_DeathInfo:UseSelfResurrectOption(optionType, id) end
+function C_DeathInfo.UseSelfResurrectOption(optionType, id) end
 
 ---@class SelfResurrectOptionType
 local SelfResurrectOptionType = {}

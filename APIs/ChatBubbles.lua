@@ -3,5 +3,5 @@ C_ChatBubbles = {}
 
 ---@param includeForbidden bool 
 ---@return table chatBubbles
-function C_ChatBubbles:GetAllChatBubbles(includeForbidden) end
+function C_ChatBubbles.GetAllChatBubbles(includeForbidden) end
 

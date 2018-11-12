@@ -3,18 +3,18 @@ C_ConfigurationWarnings = {}
 
 ---@param configurationWarning ConfigurationWarning 
 ---@return bool hasSeenConfigurationWarning
-function C_ConfigurationWarnings:GetConfigurationWarningSeen(configurationWarning) end
+function C_ConfigurationWarnings.GetConfigurationWarningSeen(configurationWarning) end
 
 ---@param configurationWarning ConfigurationWarning 
 ---@return string configurationWarningString
-function C_ConfigurationWarnings:GetConfigurationWarningString(configurationWarning) end
+function C_ConfigurationWarnings.GetConfigurationWarningString(configurationWarning) end
 
 ---@param includeSeenWarnings bool 
 ---@return ConfigurationWarning configurationWarnings
-function C_ConfigurationWarnings:GetConfigurationWarnings(includeSeenWarnings) end
+function C_ConfigurationWarnings.GetConfigurationWarnings(includeSeenWarnings) end
 
 ---@param configurationWarning ConfigurationWarning 
-function C_ConfigurationWarnings:SetConfigurationWarningSeen(configurationWarning) end
+function C_ConfigurationWarnings.SetConfigurationWarningSeen(configurationWarning) end
 
 ---@class ConfigurationWarning
 local ConfigurationWarning = {}

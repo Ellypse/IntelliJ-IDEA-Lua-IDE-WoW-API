@@ -3,8 +3,8 @@ C_Mail = {}
 
 ---@param inboxIndex number 
 ---@return bool inboxItemHasMoneyAttached
-function C_Mail:HasInboxMoney(inboxIndex) end
+function C_Mail.HasInboxMoney(inboxIndex) end
 
 ---@return bool isCommandPending
-function C_Mail:IsCommandPending() end
+function C_Mail.IsCommandPending() end
 

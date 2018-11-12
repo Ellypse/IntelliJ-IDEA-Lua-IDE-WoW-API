@@ -3,13 +3,13 @@ C_DateAndTime = {}
 
 ---@param epoch number 
 ---@return CalendarDate date
-function C_DateAndTime:GetDateFromEpoch(epoch) end
+function C_DateAndTime.GetDateFromEpoch(epoch) end
 
 ---@return CalendarDate date
-function C_DateAndTime:GetTodaysDate() end
+function C_DateAndTime.GetTodaysDate() end
 
 ---@return CalendarDate date
-function C_DateAndTime:GetYesterdaysDate() end
+function C_DateAndTime.GetYesterdaysDate() end
 
 ---@class CalendarDate
 ---@field day number 

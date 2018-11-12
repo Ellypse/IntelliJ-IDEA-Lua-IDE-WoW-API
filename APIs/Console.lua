@@ -2,20 +2,20 @@
 C_Console = {}
 
 ---@return ConsoleCommandInfo commands
-function C_Console:GetAllCommands() end
+function C_Console.GetAllCommands() end
 
 ---@param colorType ConsoleColorType 
 ---@return table color
-function C_Console:GetColorFromType(colorType) end
+function C_Console.GetColorFromType(colorType) end
 
 ---@return number fontHeightInPixels
-function C_Console:GetFontHeight() end
+function C_Console.GetFontHeight() end
 
 ---@param partialCommandText string 
-function C_Console:PrintAllMatchingCommands(partialCommandText) end
+function C_Console.PrintAllMatchingCommands(partialCommandText) end
 
 ---@param fontHeightInPixels number 
-function C_Console:SetFontHeight(fontHeightInPixels) end
+function C_Console.SetFontHeight(fontHeightInPixels) end
 
 ---@class ConsoleCategory
 local ConsoleCategory = {}

@@ -32,7 +32,7 @@ end
 
 APIDocumentation = {}
 
-local METHOD_FORMAT = [[function %s:%s(%s) end]]
+local METHOD_FORMAT = [[function %s.%s(%s) end]]
 local FUNCTIONS_FORMAT = [[function %s(%s) end]]
 local NAMESPACE_DECLARATION = [[
 ---@class %s

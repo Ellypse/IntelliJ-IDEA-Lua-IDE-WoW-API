@@ -3,12 +3,12 @@ C_TaxiMap = {}
 
 --- Returns information on taxi nodes at the given flight master.
 ---@return TaxiNodeInfo taxiNodes
-function C_TaxiMap:GetAllTaxiNodes() end
+function C_TaxiMap.GetAllTaxiNodes() end
 
 --- Returns information on taxi nodes for a given map, without considering the current flight master.
 ---@param uiMapID number 
 ---@return MapTaxiNodeInfo mapTaxiNodes
-function C_TaxiMap:GetTaxiNodesForMap(uiMapID) end
+function C_TaxiMap.GetTaxiNodesForMap(uiMapID) end
 
 ---@class FlightPathFaction
 local FlightPathFaction = {}

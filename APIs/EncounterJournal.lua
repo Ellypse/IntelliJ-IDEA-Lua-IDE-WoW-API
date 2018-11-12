@@ -3,20 +3,20 @@ C_EncounterJournal = {}
 
 ---@param uiMapID number 
 ---@return DungeonEntranceMapInfo dungeonEntrances
-function C_EncounterJournal:GetDungeonEntrancesForMap(uiMapID) end
+function C_EncounterJournal.GetDungeonEntrancesForMap(uiMapID) end
 
 ---@param uiMapID number 
 ---@return EncounterJournalMapEncounterInfo encounters
-function C_EncounterJournal:GetEncountersOnMap(uiMapID) end
+function C_EncounterJournal.GetEncountersOnMap(uiMapID) end
 
 --- Represents the icon indices for this EJ section.  An icon index can be used to arrive at texture coordinates for specific encounter types, e.g.: EncounterJournal_SetFlagIcon
 ---@param sectionID number 
 ---@return number|nil iconFlags
-function C_EncounterJournal:GetSectionIconFlags(sectionID) end
+function C_EncounterJournal.GetSectionIconFlags(sectionID) end
 
 ---@param sectionID number 
 ---@return EncounterJournalSectionInfo info
-function C_EncounterJournal:GetSectionInfo(sectionID) end
+function C_EncounterJournal.GetSectionInfo(sectionID) end
 
 ---@class DungeonEntranceMapInfo
 ---@field areaPoiID number 

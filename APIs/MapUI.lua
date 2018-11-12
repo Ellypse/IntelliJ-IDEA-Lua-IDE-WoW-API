@@ -3,44 +3,44 @@ C_Map = {}
 
 ---@param areaID number 
 ---@return string name
-function C_Map:GetAreaInfo(areaID) end
+function C_Map.GetAreaInfo(areaID) end
 
 --- Only works for the player and party members.
 ---@param unitToken string 
 ---@return number|nil uiMapID
-function C_Map:GetBestMapForUnit(unitToken) end
+function C_Map.GetBestMapForUnit(unitToken) end
 
 ---@param uiMapID number 
 ---@return number bountySetID
-function C_Map:GetBountySetIDForMap(uiMapID) end
+function C_Map.GetBountySetIDForMap(uiMapID) end
 
 ---@return number uiMapID
-function C_Map:GetFallbackWorldMapID() end
+function C_Map.GetFallbackWorldMapID() end
 
 ---@param uiMapID number 
 ---@return string atlasName
-function C_Map:GetMapArtBackgroundAtlas(uiMapID) end
+function C_Map.GetMapArtBackgroundAtlas(uiMapID) end
 
 ---@param uiMapID number 
 ---@return MapCanvasPosition position
-function C_Map:GetMapArtHelpTextPosition(uiMapID) end
+function C_Map.GetMapArtHelpTextPosition(uiMapID) end
 
 ---@param uiMapID number 
 ---@return number uiMapArtID
-function C_Map:GetMapArtID(uiMapID) end
+function C_Map.GetMapArtID(uiMapID) end
 
 ---@param uiMapID number 
 ---@param layerIndex number 
 ---@return number textures
-function C_Map:GetMapArtLayerTextures(uiMapID, layerIndex) end
+function C_Map.GetMapArtLayerTextures(uiMapID, layerIndex) end
 
 ---@param uiMapID number 
 ---@return UiMapLayerInfo layerInfo
-function C_Map:GetMapArtLayers(uiMapID) end
+function C_Map.GetMapArtLayers(uiMapID) end
 
 ---@param uiMapID number 
 ---@return MapBannerInfo mapBanners
-function C_Map:GetMapBannersForMap(uiMapID) end
+function C_Map.GetMapBannersForMap(uiMapID) end
 
 ---@param uiMapID number 
 ---@param mapType UIMapType @ [OPTIONAL]
@@ -48,73 +48,73 @@ function C_Map:GetMapBannersForMap(uiMapID) end
 ---@overload fun(uiMapID:number, allDescendants:bool)
 ---@overload fun(uiMapID:number)
 ---@return UiMapDetails info
-function C_Map:GetMapChildrenInfo(uiMapID, mapType, allDescendants) end
+function C_Map.GetMapChildrenInfo(uiMapID, mapType, allDescendants) end
 
 ---@param uiMapID number 
 ---@return bool hideIcons
-function C_Map:GetMapDisplayInfo(uiMapID) end
+function C_Map.GetMapDisplayInfo(uiMapID) end
 
 ---@param uiMapID number 
 ---@return number uiMapGroupID
-function C_Map:GetMapGroupID(uiMapID) end
+function C_Map.GetMapGroupID(uiMapID) end
 
 ---@param uiMapGroupID number 
 ---@return UiMapGroupMemberInfo info
-function C_Map:GetMapGroupMembersInfo(uiMapGroupID) end
+function C_Map.GetMapGroupMembersInfo(uiMapGroupID) end
 
 ---@param uiMapID number 
 ---@param x number 
 ---@param y number 
 ---@return number, string, number, number, number, number, number, number fileDataID, atlasID, texturePercentageX, texturePercentageY, textureX, textureY, scrollChildX, scrollChildY
-function C_Map:GetMapHighlightInfoAtPosition(uiMapID, x, y) end
+function C_Map.GetMapHighlightInfoAtPosition(uiMapID, x, y) end
 
 ---@param uiMapID number 
 ---@return UiMapDetails info
-function C_Map:GetMapInfo(uiMapID) end
+function C_Map.GetMapInfo(uiMapID) end
 
 ---@param uiMapID number 
 ---@param x number 
 ---@param y number 
 ---@return UiMapDetails info
-function C_Map:GetMapInfoAtPosition(uiMapID, x, y) end
+function C_Map.GetMapInfoAtPosition(uiMapID, x, y) end
 
 ---@param uiMapID number 
 ---@return number, number, number, number playerMinLevel, playerMaxLevel, petMinLevel, petMaxLevel
-function C_Map:GetMapLevels(uiMapID) end
+function C_Map.GetMapLevels(uiMapID) end
 
 ---@param uiMapID number 
 ---@return MapLinkInfo mapLinks
-function C_Map:GetMapLinksForMap(uiMapID) end
+function C_Map.GetMapLinksForMap(uiMapID) end
 
 ---@param continentID number 
 ---@param worldPosition table 
 ---@param overrideUiMapID number @ [OPTIONAL]
 ---@overload fun(continentID:number, worldPosition:table)
 ---@return number, table uiMapID, mapPosition
-function C_Map:GetMapPosFromWorldPos(continentID, worldPosition, overrideUiMapID) end
+function C_Map.GetMapPosFromWorldPos(continentID, worldPosition, overrideUiMapID) end
 
 ---@param uiMapID number 
 ---@param topUiMapID number 
 ---@return number, number, number, number minX, maxX, minY, maxY
-function C_Map:GetMapRectOnMap(uiMapID, topUiMapID) end
+function C_Map.GetMapRectOnMap(uiMapID, topUiMapID) end
 
 --- Only works for the player and party members.
 ---@param uiMapID number 
 ---@param unitToken string 
 ---@return table|nil position
-function C_Map:GetPlayerMapPosition(uiMapID, unitToken) end
+function C_Map.GetPlayerMapPosition(uiMapID, unitToken) end
 
 ---@param uiMapID number 
 ---@param mapPosition table 
 ---@return number, table continentID, worldPosition
-function C_Map:GetWorldPosFromMapPos(uiMapID, mapPosition) end
+function C_Map.GetWorldPosFromMapPos(uiMapID, mapPosition) end
 
 ---@param uiMapID number 
 ---@return bool hasArt
-function C_Map:MapHasArt(uiMapID) end
+function C_Map.MapHasArt(uiMapID) end
 
 ---@param uiMapID number 
-function C_Map:RequestPreloadMap(uiMapID) end
+function C_Map.RequestPreloadMap(uiMapID) end
 
 ---@class MapCanvasPosition
 local MapCanvasPosition = {}

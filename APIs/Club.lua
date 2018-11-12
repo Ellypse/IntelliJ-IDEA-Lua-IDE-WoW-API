@@ -2,38 +2,38 @@
 C_Club = {}
 
 ---@param clubId string 
-function C_Club:AcceptInvitation(clubId) end
+function C_Club.AcceptInvitation(clubId) end
 
 ---@param clubId string 
 ---@param streamId string 
 ---@param chatWindowIndex number 
-function C_Club:AddClubStreamToChatWindow(clubId, streamId, chatWindowIndex) end
+function C_Club.AddClubStreamToChatWindow(clubId, streamId, chatWindowIndex) end
 
 ---@param clubId string 
 ---@param streamId string 
-function C_Club:AdvanceStreamViewMarker(clubId, streamId) end
+function C_Club.AdvanceStreamViewMarker(clubId, streamId) end
 
 ---@param clubId string 
 ---@param memberId number 
 ---@param roleId ClubRoleIdentifier 
-function C_Club:AssignMemberRole(clubId, memberId, roleId) end
+function C_Club.AssignMemberRole(clubId, memberId, roleId) end
 
 ---@param clubId string 
 ---@param streamId string 
 ---@param epoch number 
 ---@param position number 
 ---@return bool canResolve
-function C_Club:CanResolvePlayerLocationFromClubMessageData(clubId, streamId, epoch, position) end
+function C_Club.CanResolvePlayerLocationFromClubMessageData(clubId, streamId, epoch, position) end
 
-function C_Club:ClearAutoAdvanceStreamViewMarker() end
+function C_Club.ClearAutoAdvanceStreamViewMarker() end
 
-function C_Club:ClearClubPresenceSubscription() end
+function C_Club.ClearClubPresenceSubscription() end
 
 ---@param clubId string 
 ---@param lhsMemberId number 
 ---@param rhsMemberId number 
 ---@return number comparison
-function C_Club:CompareBattleNetDisplayName(clubId, lhsMemberId, rhsMemberId) end
+function C_Club.CompareBattleNetDisplayName(clubId, lhsMemberId, rhsMemberId) end
 
 ---@param name string 
 ---@param shortName string @ [OPTIONAL]
@@ -41,14 +41,14 @@ function C_Club:CompareBattleNetDisplayName(clubId, lhsMemberId, rhsMemberId) en
 ---@param clubType ClubType @ Valid types are BattleNet or Character
 ---@param avatarId number 
 ---@overload fun(name:string, description:string, clubType:ClubType, avatarId:number)
-function C_Club:CreateClub(name, shortName, description, clubType, avatarId) end
+function C_Club.CreateClub(name, shortName, description, clubType, avatarId) end
 
 --- Check the canCreateStream privilege.
 ---@param clubId string 
 ---@param name string 
 ---@param subject string 
 ---@param leadersAndModeratorsOnly bool 
-function C_Club:CreateStream(clubId, name, subject, leadersAndModeratorsOnly) end
+function C_Club.CreateStream(clubId, name, subject, leadersAndModeratorsOnly) end
 
 --- Check canCreateTicket privilege.
 ---@param clubId string 
@@ -58,29 +58,29 @@ function C_Club:CreateStream(clubId, name, subject, leadersAndModeratorsOnly) en
 ---@overload fun(clubId:string, duration:number, defaultStreamId:string)
 ---@overload fun(clubId:string, defaultStreamId:string)
 ---@overload fun(clubId:string)
-function C_Club:CreateTicket(clubId, allowedRedeemCount, duration, defaultStreamId) end
+function C_Club.CreateTicket(clubId, allowedRedeemCount, duration, defaultStreamId) end
 
 ---@param clubId string 
-function C_Club:DeclineInvitation(clubId) end
+function C_Club.DeclineInvitation(clubId) end
 
 --- Check the canDestroy privilege.
 ---@param clubId string 
-function C_Club:DestroyClub(clubId) end
+function C_Club.DestroyClub(clubId) end
 
 ---@param clubId string 
 ---@param streamId string 
 ---@param messageId ClubMessageIdentifier 
-function C_Club:DestroyMessage(clubId, streamId, messageId) end
+function C_Club.DestroyMessage(clubId, streamId, messageId) end
 
 --- Check canDestroyStream privilege.
 ---@param clubId string 
 ---@param streamId string 
-function C_Club:DestroyStream(clubId, streamId) end
+function C_Club.DestroyStream(clubId, streamId) end
 
 --- Check canDestroyTicket privilege.
 ---@param clubId string 
 ---@param ticketId string 
-function C_Club:DestroyTicket(clubId, ticketId) end
+function C_Club.DestroyTicket(clubId, ticketId) end
 
 --- nil arguments will not change existing club data
 ---@param clubId string 
@@ -94,13 +94,13 @@ function C_Club:DestroyTicket(clubId, ticketId) end
 ---@overload fun(clubId:string, avatarId:number, broadcast:string)
 ---@overload fun(clubId:string, broadcast:string)
 ---@overload fun(clubId:string)
-function C_Club:EditClub(clubId, name, shortName, description, avatarId, broadcast) end
+function C_Club.EditClub(clubId, name, shortName, description, avatarId, broadcast) end
 
 ---@param clubId string 
 ---@param streamId string 
 ---@param messageId ClubMessageIdentifier 
 ---@param message string 
-function C_Club:EditMessage(clubId, streamId, messageId, message) end
+function C_Club.EditMessage(clubId, streamId, messageId, message) end
 
 --- Check the canSetStreamName, canSetStreamSubject, canSetStreamAccess privileges. nil arguments will not change existing stream data.
 ---@param clubId string 
@@ -111,51 +111,51 @@ function C_Club:EditMessage(clubId, streamId, messageId, message) end
 ---@overload fun(clubId:string, streamId:string, subject:string, leadersAndModeratorsOnly:bool)
 ---@overload fun(clubId:string, streamId:string, leadersAndModeratorsOnly:bool)
 ---@overload fun(clubId:string, streamId:string)
-function C_Club:EditStream(clubId, streamId, name, subject, leadersAndModeratorsOnly) end
+function C_Club.EditStream(clubId, streamId, name, subject, leadersAndModeratorsOnly) end
 
 ---@param clubId string 
 ---@param streamId string 
 ---@return bool focused
-function C_Club:FocusStream(clubId, streamId) end
+function C_Club.FocusStream(clubId, streamId) end
 
 ---@param clubId string 
 ---@param memberId number 
 ---@return ClubRoleIdentifier assignableRoles
-function C_Club:GetAssignableRoles(clubId, memberId) end
+function C_Club.GetAssignableRoles(clubId, memberId) end
 
 --- listen for AVATAR_LIST_UPDATED event. This can happen if we haven't downloaded the battle.net avatar list yet
 ---@param clubType ClubType 
 ---@return number|nil avatarIds
-function C_Club:GetAvatarIdList(clubType) end
+function C_Club.GetAvatarIdList(clubType) end
 
 ---@param clubId string 
 ---@return ClubInfo|nil info
-function C_Club:GetClubInfo(clubId) end
+function C_Club.GetClubInfo(clubId) end
 
 ---@param clubId string 
 ---@param streamId string @ [OPTIONAL]
 ---@overload fun(clubId:string)
 ---@return number members
-function C_Club:GetClubMembers(clubId, streamId) end
+function C_Club.GetClubMembers(clubId, streamId) end
 
 --- The privileges for the logged in user for this club
 ---@param clubId string 
 ---@return ClubPrivilegeInfo privilegeInfo
-function C_Club:GetClubPrivileges(clubId) end
+function C_Club.GetClubPrivileges(clubId) end
 
 ---@param clubId string 
 ---@return ClubStreamNotificationSetting settings
-function C_Club:GetClubStreamNotificationSettings(clubId) end
+function C_Club.GetClubStreamNotificationSettings(clubId) end
 
 ---@param result ValidateNameResult 
 ---@return string|nil errorCode
-function C_Club:GetCommunityNameResultText(result) end
+function C_Club.GetCommunityNameResultText(result) end
 
 ---@return string|nil guildClubId
-function C_Club:GetGuildClubId() end
+function C_Club.GetGuildClubId() end
 
 ---@return ClubMessageInfo, string, string, ClubType messageInfo, clubId, streamId, clubType
-function C_Club:GetInfoFromLastCommunityChatLine() end
+function C_Club.GetInfoFromLastCommunityChatLine() end
 
 --- Returns a list of players that you can send a request to a Battle.net club. Returns an empty list for Character based clubs
 ---@param filter string @ [OPTIONAL]
@@ -166,44 +166,44 @@ function C_Club:GetInfoFromLastCommunityChatLine() end
 ---@overload fun(cursorPosition:number, clubId:string)
 ---@overload fun(clubId:string)
 ---@return ClubInvitationCandidateInfo candidates
-function C_Club:GetInvitationCandidates(filter, maxResults, cursorPosition, clubId) end
+function C_Club.GetInvitationCandidates(filter, maxResults, cursorPosition, clubId) end
 
 --- Get info about a specific club the active player has been invited to.
 ---@param clubId string 
 ---@return ClubSelfInvitationInfo|nil invitation
-function C_Club:GetInvitationInfo(clubId) end
+function C_Club.GetInvitationInfo(clubId) end
 
 --- Get the pending invitations for this club. Call RequestInvitationsForClub() to retrieve invitations from server.
 ---@param clubId string 
 ---@return ClubInvitationInfo invitations
-function C_Club:GetInvitationsForClub(clubId) end
+function C_Club.GetInvitationsForClub(clubId) end
 
 --- These are the clubs the active player has been invited to.
 ---@return ClubSelfInvitationInfo invitations
-function C_Club:GetInvitationsForSelf() end
+function C_Club.GetInvitationsForSelf() end
 
 ---@param clubId string 
 ---@param memberId number 
 ---@return ClubMemberInfo|nil info
-function C_Club:GetMemberInfo(clubId, memberId) end
+function C_Club.GetMemberInfo(clubId, memberId) end
 
 --- Info for the logged in user for this club
 ---@param clubId string 
 ---@return ClubMemberInfo|nil info
-function C_Club:GetMemberInfoForSelf(clubId) end
+function C_Club.GetMemberInfoForSelf(clubId) end
 
 --- Get info about a particular message.
 ---@param clubId string 
 ---@param streamId string 
 ---@param messageId ClubMessageIdentifier 
 ---@return ClubMessageInfo|nil message
-function C_Club:GetMessageInfo(clubId, streamId, messageId) end
+function C_Club.GetMessageInfo(clubId, streamId, messageId) end
 
 --- Get the ranges of the messages currently downloaded.
 ---@param clubId string 
 ---@param streamId string 
 ---@return ClubMessageRange ranges
-function C_Club:GetMessageRanges(clubId, streamId) end
+function C_Club.GetMessageRanges(clubId, streamId) end
 
 --- Get downloaded messages before (and including) the specified messageId limited by count. These are filtered by ignored players
 ---@param clubId string 
@@ -211,7 +211,7 @@ function C_Club:GetMessageRanges(clubId, streamId) end
 ---@param newest ClubMessageIdentifier 
 ---@param count number 
 ---@return ClubMessageInfo messages
-function C_Club:GetMessagesBefore(clubId, streamId, newest, count) end
+function C_Club.GetMessagesBefore(clubId, streamId, newest, count) end
 
 --- Get downloaded messages in the given range. These are filtered by ignored players
 ---@param clubId string 
@@ -219,66 +219,66 @@ function C_Club:GetMessagesBefore(clubId, streamId, newest, count) end
 ---@param oldest ClubMessageIdentifier 
 ---@param newest ClubMessageIdentifier 
 ---@return ClubMessageInfo messages
-function C_Club:GetMessagesInRange(clubId, streamId, oldest, newest) end
+function C_Club.GetMessagesInRange(clubId, streamId, oldest, newest) end
 
 ---@param clubId string 
 ---@param streamId string 
 ---@return ClubStreamInfo|nil streamInfo
-function C_Club:GetStreamInfo(clubId, streamId) end
+function C_Club.GetStreamInfo(clubId, streamId) end
 
 ---@param clubId string 
 ---@param streamId string 
 ---@return number|nil lastReadTime
-function C_Club:GetStreamViewMarker(clubId, streamId) end
+function C_Club.GetStreamViewMarker(clubId, streamId) end
 
 ---@param clubId string 
 ---@return ClubStreamInfo streams
-function C_Club:GetStreams(clubId) end
+function C_Club.GetStreams(clubId) end
 
 ---@return ClubInfo clubs
-function C_Club:GetSubscribedClubs() end
+function C_Club.GetSubscribedClubs() end
 
 --- Get the existing tickets for this club. Call RequestTickets() to retrieve tickets from server.
 ---@param clubId string 
 ---@return ClubTicketInfo tickets
-function C_Club:GetTickets(clubId) end
+function C_Club.GetTickets(clubId) end
 
 ---@param clubId string 
 ---@return bool accountMuted
-function C_Club:IsAccountMuted(clubId) end
+function C_Club.IsAccountMuted(clubId) end
 
 --- Returns whether the given message is the first message in the stream, taking into account ignored messages
 ---@param clubId string 
 ---@param streamId string 
 ---@param messageId ClubMessageIdentifier 
 ---@return bool isBeginningOfStream
-function C_Club:IsBeginningOfStream(clubId, streamId, messageId) end
+function C_Club.IsBeginningOfStream(clubId, streamId, messageId) end
 
 ---@return bool clubsEnabled
-function C_Club:IsEnabled() end
+function C_Club.IsEnabled() end
 
 ---@return ClubRestrictionReason restrictionReason
-function C_Club:IsRestricted() end
+function C_Club.IsRestricted() end
 
 ---@param clubId string 
 ---@param streamId string 
 ---@return bool subscribed
-function C_Club:IsSubscribedToStream(clubId, streamId) end
+function C_Club.IsSubscribedToStream(clubId, streamId) end
 
 --- Check kickableRoleIds privilege.
 ---@param clubId string 
 ---@param memberId number 
-function C_Club:KickMember(clubId, memberId) end
+function C_Club.KickMember(clubId, memberId) end
 
 ---@param clubId string 
-function C_Club:LeaveClub(clubId) end
+function C_Club.LeaveClub(clubId) end
 
 ---@param ticketId string 
-function C_Club:RedeemTicket(ticketId) end
+function C_Club.RedeemTicket(ticketId) end
 
 --- Request invitations for this club from server. Check canGetInvitation privilege.
 ---@param clubId string 
-function C_Club:RequestInvitationsForClub(clubId) end
+function C_Club.RequestInvitationsForClub(clubId) end
 
 --- Call this when the user scrolls near the top of the message view, and more need to be displayed. The history will be downloaded backwards (newest to oldest).
 ---@param clubId string 
@@ -288,86 +288,86 @@ function C_Club:RequestInvitationsForClub(clubId) end
 ---@overload fun(clubId:string, streamId:string, count:number)
 ---@overload fun(clubId:string, streamId:string)
 ---@return bool alreadyHasMessages
-function C_Club:RequestMoreMessagesBefore(clubId, streamId, messageId, count) end
+function C_Club.RequestMoreMessagesBefore(clubId, streamId, messageId, count) end
 
 ---@param ticketId string 
-function C_Club:RequestTicket(ticketId) end
+function C_Club.RequestTicket(ticketId) end
 
 --- Request tickets from server. Check canGetTicket privilege.
 ---@param clubId string 
-function C_Club:RequestTickets(clubId) end
+function C_Club.RequestTickets(clubId) end
 
 --- Check canRevokeOwnInvitation or canRevokeOtherInvitation
 ---@param clubId string 
 ---@param memberId number 
-function C_Club:RevokeInvitation(clubId, memberId) end
+function C_Club.RevokeInvitation(clubId, memberId) end
 
 ---@param guildClubId string 
 ---@param memberId number 
-function C_Club:SendBattleTagFriendRequest(guildClubId, memberId) end
+function C_Club.SendBattleTagFriendRequest(guildClubId, memberId) end
 
 ---@param clubId string 
 ---@param character string 
-function C_Club:SendCharacterInvitation(clubId, character) end
+function C_Club.SendCharacterInvitation(clubId, character) end
 
 --- Check the canSendInvitation privilege.
 ---@param clubId string 
 ---@param memberId number 
-function C_Club:SendInvitation(clubId, memberId) end
+function C_Club.SendInvitation(clubId, memberId) end
 
 ---@param clubId string 
 ---@param streamId string 
 ---@param message string 
-function C_Club:SendMessage(clubId, streamId, message) end
+function C_Club.SendMessage(clubId, streamId, message) end
 
 --- Only one stream can be set for auto-advance at a time. Focused streams will have their view times advanced automatically.
 ---@param clubId string 
 ---@param streamId string 
-function C_Club:SetAutoAdvanceStreamViewMarker(clubId, streamId) end
+function C_Club.SetAutoAdvanceStreamViewMarker(clubId, streamId) end
 
 ---@param texture table 
 ---@param avatarId number 
 ---@param clubType ClubType 
-function C_Club:SetAvatarTexture(texture, avatarId, clubType) end
+function C_Club.SetAvatarTexture(texture, avatarId, clubType) end
 
 --- Check the canSetOwnMemberNote and canSetOtherMemberNote privileges.
 ---@param clubId string 
 ---@param memberId number 
 ---@param note string 
-function C_Club:SetClubMemberNote(clubId, memberId, note) end
+function C_Club.SetClubMemberNote(clubId, memberId, note) end
 
 --- You can only be subscribed to 0 or 1 clubs for presence.  Subscribing to a new club automatically unsuscribes you to existing subscription.
 ---@param clubId string 
-function C_Club:SetClubPresenceSubscription(clubId) end
+function C_Club.SetClubPresenceSubscription(clubId) end
 
 ---@param clubId string 
 ---@param settings ClubStreamNotificationSetting 
-function C_Club:SetClubStreamNotificationSettings(clubId, settings) end
+function C_Club.SetClubStreamNotificationSettings(clubId, settings) end
 
 ---@param communityID number 
-function C_Club:SetCommunityID(communityID) end
+function C_Club.SetCommunityID(communityID) end
 
 ---@param clubId string 
 ---@param isFavorite bool 
-function C_Club:SetFavorite(clubId, isFavorite) end
+function C_Club.SetFavorite(clubId, isFavorite) end
 
 ---@param clubId string 
 ---@param enabled bool 
-function C_Club:SetSocialQueueingEnabled(clubId, enabled) end
+function C_Club.SetSocialQueueingEnabled(clubId, enabled) end
 
 ---@param clubType ClubType 
 ---@return bool clubTypeIsAllowed
-function C_Club:ShouldAllowClubType(clubType) end
+function C_Club.ShouldAllowClubType(clubType) end
 
 ---@param clubId string 
 ---@param streamId string 
-function C_Club:UnfocusStream(clubId, streamId) end
+function C_Club.UnfocusStream(clubId, streamId) end
 
 ---@param clubType ClubType 
 ---@param text string 
 ---@param clubFieldType ClubFieldType 
 ---@return ValidateNameResult result
-function C_Club:ValidateText(clubType, text, clubFieldType) end
+function C_Club.ValidateText(clubType, text, clubFieldType) end
 
 ---@class ClubRoleIdentifier
 local ClubRoleIdentifier = {}

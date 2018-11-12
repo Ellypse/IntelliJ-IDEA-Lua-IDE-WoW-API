@@ -2,22 +2,22 @@
 C_Garrison = {}
 
 ---@return number|nil currentGarrTalentTreeFriendshipFactionID
-function C_Garrison:GetCurrentGarrTalentTreeFriendshipFactionID() end
+function C_Garrison.GetCurrentGarrTalentTreeFriendshipFactionID() end
 
 ---@return number|nil currentGarrTalentTreeID
-function C_Garrison:GetCurrentGarrTalentTreeID() end
+function C_Garrison.GetCurrentGarrTalentTreeID() end
 
 ---@param uiMapID number 
 ---@return GarrisonPlotInstanceMapInfo garrisonPlotInstances
-function C_Garrison:GetGarrisonPlotsInstancesForMap(uiMapID) end
+function C_Garrison.GetGarrisonPlotsInstancesForMap(uiMapID) end
 
 ---@param garrType number 
 ---@param classID number 
 ---@return number treeIDs
-function C_Garrison:GetTalentTreeIDsByClassID(garrType, classID) end
+function C_Garrison.GetTalentTreeIDsByClassID(garrType, classID) end
 
 ---@return bool atGarrisonMissionNPC
-function C_Garrison:IsAtGarrisonMissionNPC() end
+function C_Garrison.IsAtGarrisonMissionNPC() end
 
 ---@class GarrisonFollowerDeathInfo
 ---@field followerID string 

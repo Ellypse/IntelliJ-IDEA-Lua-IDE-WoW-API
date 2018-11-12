@@ -3,65 +3,65 @@ C_UIWidgetManager = {}
 
 ---@param setID number 
 ---@return UIWidgetInfo widgets
-function C_UIWidgetManager:GetAllWidgetsBySetID(setID) end
+function C_UIWidgetManager.GetAllWidgetsBySetID(setID) end
 
 ---@return number setID
-function C_UIWidgetManager:GetBelowMinimapWidgetSetID() end
+function C_UIWidgetManager.GetBelowMinimapWidgetSetID() end
 
 ---@param widgetID number 
 ---@return BulletTextListWidgetVisualizationInfo|nil widgetInfo
-function C_UIWidgetManager:GetBulletTextListWidgetVisualizationInfo(widgetID) end
+function C_UIWidgetManager.GetBulletTextListWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
 ---@return CaptureBarWidgetVisualizationInfo|nil widgetInfo
-function C_UIWidgetManager:GetCaptureBarWidgetVisualizationInfo(widgetID) end
+function C_UIWidgetManager.GetCaptureBarWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
 ---@return DoubleIconAndTextWidgetVisualizationInfo|nil widgetInfo
-function C_UIWidgetManager:GetDoubleIconAndTextWidgetVisualizationInfo(widgetID) end
+function C_UIWidgetManager.GetDoubleIconAndTextWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
 ---@return DoubleStatusBarWidgetVisualizationInfo|nil widgetInfo
-function C_UIWidgetManager:GetDoubleStatusBarWidgetVisualizationInfo(widgetID) end
+function C_UIWidgetManager.GetDoubleStatusBarWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
 ---@return HorizontalCurrenciesWidgetVisualizationInfo|nil widgetInfo
-function C_UIWidgetManager:GetHorizontalCurrenciesWidgetVisualizationInfo(widgetID) end
+function C_UIWidgetManager.GetHorizontalCurrenciesWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
 ---@return IconAndTextWidgetVisualizationInfo|nil widgetInfo
-function C_UIWidgetManager:GetIconAndTextWidgetVisualizationInfo(widgetID) end
+function C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
 ---@return IconTextAndBackgroundWidgetVisualizationInfo|nil widgetInfo
-function C_UIWidgetManager:GetIconTextAndBackgroundWidgetVisualizationInfo(widgetID) end
+function C_UIWidgetManager.GetIconTextAndBackgroundWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
 ---@return IconTextAndCurrenciesWidgetVisualizationInfo|nil widgetInfo
-function C_UIWidgetManager:GetIconTextAndCurrenciesWidgetVisualizationInfo(widgetID) end
+function C_UIWidgetManager.GetIconTextAndCurrenciesWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
 ---@return ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo|nil widgetInfo
-function C_UIWidgetManager:GetScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo(widgetID) end
+function C_UIWidgetManager.GetScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
 ---@return StackedResourceTrackerWidgetVisualizationInfo|nil widgetInfo
-function C_UIWidgetManager:GetStackedResourceTrackerWidgetVisualizationInfo(widgetID) end
+function C_UIWidgetManager.GetStackedResourceTrackerWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
 ---@return StatusBarWidgetVisualizationInfo|nil widgetInfo
-function C_UIWidgetManager:GetStatusBarWidgetVisualizationInfo(widgetID) end
+function C_UIWidgetManager.GetStatusBarWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
 ---@return TextWithStateWidgetVisualizationInfo|nil widgetInfo
-function C_UIWidgetManager:GetTextWithStateWidgetVisualizationInfo(widgetID) end
+function C_UIWidgetManager.GetTextWithStateWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
 ---@return TextureWithStateVisualizationInfo|nil widgetInfo
-function C_UIWidgetManager:GetTextureWithStateVisualizationInfo(widgetID) end
+function C_UIWidgetManager.GetTextureWithStateVisualizationInfo(widgetID) end
 
 ---@return number setID
-function C_UIWidgetManager:GetTopCenterWidgetSetID() end
+function C_UIWidgetManager.GetTopCenterWidgetSetID() end
 
 ---@class WidgetShownState
 local WidgetShownState = {}

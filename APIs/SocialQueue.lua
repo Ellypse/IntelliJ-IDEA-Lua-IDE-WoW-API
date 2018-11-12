@@ -4,37 +4,37 @@ C_SocialQueue = {}
 ---@param allowNonJoinable bool 
 ---@param allowNonQueuedGroups bool 
 ---@return string groupGUIDs
-function C_SocialQueue:GetAllGroups(allowNonJoinable, allowNonQueuedGroups) end
+function C_SocialQueue.GetAllGroups(allowNonJoinable, allowNonQueuedGroups) end
 
 ---@return SocialQueueConfig config
-function C_SocialQueue:GetConfig() end
+function C_SocialQueue.GetConfig() end
 
 ---@param playerGUID string 
 ---@return string, bool groupGUID, isSoloQueueParty
-function C_SocialQueue:GetGroupForPlayer(playerGUID) end
+function C_SocialQueue.GetGroupForPlayer(playerGUID) end
 
 ---@param groupGUID string 
 ---@return bool, number, bool, bool, bool, bool, string canJoin, numQueues, needTank, needHealer, needDamage, isSoloQueueParty, leaderGUID
-function C_SocialQueue:GetGroupInfo(groupGUID) end
+function C_SocialQueue.GetGroupInfo(groupGUID) end
 
 ---@param groupGUID string 
 ---@return SocialQueuePlayerInfo groupMembers
-function C_SocialQueue:GetGroupMembers(groupGUID) end
+function C_SocialQueue.GetGroupMembers(groupGUID) end
 
 ---@param groupGUID string 
 ---@return SocialQueueGroupQueueInfo queues
-function C_SocialQueue:GetGroupQueues(groupGUID) end
+function C_SocialQueue.GetGroupQueues(groupGUID) end
 
 ---@param groupGUID string 
 ---@param applyAsTank bool 
 ---@param applyAsHealer bool 
 ---@param applyAsDamage bool 
 ---@return bool requestSuccessful
-function C_SocialQueue:RequestToJoin(groupGUID, applyAsTank, applyAsHealer, applyAsDamage) end
+function C_SocialQueue.RequestToJoin(groupGUID, applyAsTank, applyAsHealer, applyAsDamage) end
 
 ---@param groupGUID string 
 ---@param priority number 
-function C_SocialQueue:SignalToastDisplayed(groupGUID, priority) end
+function C_SocialQueue.SignalToastDisplayed(groupGUID, priority) end
 
 ---@class SocialQueueConfig
 ---@field TOASTS_DISABLED bool 

@@ -4,11 +4,11 @@ C_MapExplorationInfo = {}
 ---@param uiMapID number 
 ---@param normalizedPosition table 
 ---@return number|nil areaID
-function C_MapExplorationInfo:GetExploredAreaIDsAtPosition(uiMapID, normalizedPosition) end
+function C_MapExplorationInfo.GetExploredAreaIDsAtPosition(uiMapID, normalizedPosition) end
 
 ---@param uiMapID number 
 ---@return UiMapExplorationInfo overlayInfo
-function C_MapExplorationInfo:GetExploredMapTextures(uiMapID) end
+function C_MapExplorationInfo.GetExploredMapTextures(uiMapID) end
 
 ---@class UiMapExplorationHitRect
 ---@field top number 

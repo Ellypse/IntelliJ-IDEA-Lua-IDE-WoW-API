@@ -1,15 +1,15 @@
 ---@class AlliedRaces
 C_AlliedRaces = {}
 
-function C_AlliedRaces:ClearAlliedRaceDetailsGiver() end
+function C_AlliedRaces.ClearAlliedRaceDetailsGiver() end
 
 ---@param raceID number 
 ---@return AlliedRaceRacialAbility allDisplayInfo
-function C_AlliedRaces:GetAllRacialAbilitiesFromID(raceID) end
+function C_AlliedRaces.GetAllRacialAbilitiesFromID(raceID) end
 
 ---@param raceID number 
 ---@return AlliedRaceInfo info
-function C_AlliedRaces:GetRaceInfoByID(raceID) end
+function C_AlliedRaces.GetRaceInfoByID(raceID) end
 
 ---@class AlliedRaceInfo
 ---@field raceID number 

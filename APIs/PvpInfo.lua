@@ -2,99 +2,99 @@
 C_PvP = {}
 
 ---@return bool canTogglePvP
-function C_PvP:CanToggleWarMode() end
+function C_PvP.CanToggleWarMode() end
 
 ---@param playerToken string 
 ---@return number, number, number spellID, startTime, duration
-function C_PvP:GetArenaCrowdControlInfo(playerToken) end
+function C_PvP.GetArenaCrowdControlInfo(playerToken) end
 
 ---@param teamSize number 
 ---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil honor, experience, itemRewards, currencyRewards
-function C_PvP:GetArenaRewards(teamSize) end
+function C_PvP.GetArenaRewards(teamSize) end
 
 ---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil honor, experience, itemRewards, currencyRewards
-function C_PvP:GetArenaSkirmishRewards() end
+function C_PvP.GetArenaSkirmishRewards() end
 
 --- If nil is returned, PVP_BRAWL_INFO_UPDATED event will be sent when the data is ready.
 ---@return PvpBrawlInfo|nil brawlInfo
-function C_PvP:GetBrawlInfo() end
+function C_PvP.GetBrawlInfo() end
 
 ---@param brawlType BrawlType 
 ---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil, bool honor, experience, itemRewards, currencyRewards, hasWon
-function C_PvP:GetBrawlRewards(brawlType) end
+function C_PvP.GetBrawlRewards(brawlType) end
 
 ---@param specializationID number 
 ---@return PvpScalingData pvpScalingData
-function C_PvP:GetGlobalPvpScalingInfoForSpecID(specializationID) end
+function C_PvP.GetGlobalPvpScalingInfoForSpecID(specializationID) end
 
 ---@param honorLevel number 
 ---@return HonorRewardInfo|nil info
-function C_PvP:GetHonorRewardInfo(honorLevel) end
+function C_PvP.GetHonorRewardInfo(honorLevel) end
 
 ---@param honorLevel number 
 ---@return number|nil nextHonorLevelWithReward
-function C_PvP:GetNextHonorLevelForReward(honorLevel) end
+function C_PvP.GetNextHonorLevelForReward(honorLevel) end
 
 ---@param uiMapID number 
 ---@return number pvpWaitTime
-function C_PvP:GetOutdoorPvPWaitTime(uiMapID) end
+function C_PvP.GetOutdoorPvPWaitTime(uiMapID) end
 
 ---@param tierID number 
 ---@return PvpTierInfo|nil pvpTierInfo
-function C_PvP:GetPvpTierInfo(tierID) end
+function C_PvP.GetPvpTierInfo(tierID) end
 
 ---@return RandomBGInfo info
-function C_PvP:GetRandomBGInfo() end
+function C_PvP.GetRandomBGInfo() end
 
 ---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil honor, experience, itemRewards, currencyRewards
-function C_PvP:GetRandomBGRewards() end
+function C_PvP.GetRandomBGRewards() end
 
 ---@return RandomBGInfo info
-function C_PvP:GetRandomEpicBGInfo() end
+function C_PvP.GetRandomEpicBGInfo() end
 
 ---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil honor, experience, itemRewards, currencyRewards
-function C_PvP:GetRandomEpicBGRewards() end
+function C_PvP.GetRandomEpicBGRewards() end
 
 ---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil honor, experience, itemRewards, currencyRewards
-function C_PvP:GetRatedBGRewards() end
+function C_PvP.GetRatedBGRewards() end
 
 ---@return number, number|nil tierID, nextTierID
-function C_PvP:GetSeasonBestInfo() end
+function C_PvP.GetSeasonBestInfo() end
 
 ---@param pvpBracket number 
 ---@return BattlemasterListInfo battlemasterListInfo
-function C_PvP:GetSkirmishInfo(pvpBracket) end
+function C_PvP.GetSkirmishInfo(pvpBracket) end
 
 ---@return bool hasArenaSkirmishWinToday
-function C_PvP:HasArenaSkirmishWinToday() end
+function C_PvP.HasArenaSkirmishWinToday() end
 
 ---@return bool, bool battlegroundActive, brawlActive
-function C_PvP:IsBattlegroundEnlistmentBonusActive() end
+function C_PvP.IsBattlegroundEnlistmentBonusActive() end
 
 ---@return bool isInBrawl
-function C_PvP:IsInBrawl() end
+function C_PvP.IsInBrawl() end
 
 ---@return bool isPVPMap
-function C_PvP:IsPVPMap() end
+function C_PvP.IsPVPMap() end
 
 ---@return bool warModeActive
-function C_PvP:IsWarModeActive() end
+function C_PvP.IsWarModeActive() end
 
 ---@return bool warModeDesired
-function C_PvP:IsWarModeDesired() end
+function C_PvP.IsWarModeDesired() end
 
 ---@return bool warModeEnabled
-function C_PvP:IsWarModeFeatureEnabled() end
+function C_PvP.IsWarModeFeatureEnabled() end
 
-function C_PvP:JoinBrawl() end
+function C_PvP.JoinBrawl() end
 
 ---@param playerToken string 
-function C_PvP:RequestCrowdControlSpell(playerToken) end
+function C_PvP.RequestCrowdControlSpell(playerToken) end
 
 ---@param warModeDesired bool 
-function C_PvP:SetWarModeDesired(warModeDesired) end
+function C_PvP.SetWarModeDesired(warModeDesired) end
 
-function C_PvP:ToggleWarMode() end
+function C_PvP.ToggleWarMode() end
 
 ---@class BrawlType
 local BrawlType = {}

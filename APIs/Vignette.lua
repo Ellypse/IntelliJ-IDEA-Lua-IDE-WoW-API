@@ -3,19 +3,19 @@ C_VignetteInfo = {}
 
 ---@param vignetteGUIDs string 
 ---@return number|nil bestUniqueVignetteIndex
-function C_VignetteInfo:FindBestUniqueVignette(vignetteGUIDs) end
+function C_VignetteInfo.FindBestUniqueVignette(vignetteGUIDs) end
 
 ---@param vignetteGUID string 
 ---@return VignetteInfo|nil vignetteInfo
-function C_VignetteInfo:GetVignetteInfo(vignetteGUID) end
+function C_VignetteInfo.GetVignetteInfo(vignetteGUID) end
 
 ---@param vignetteGUID string 
 ---@param uiMapID number 
 ---@return table|nil vignettePosition
-function C_VignetteInfo:GetVignettePosition(vignetteGUID, uiMapID) end
+function C_VignetteInfo.GetVignettePosition(vignetteGUID, uiMapID) end
 
 ---@return string vignetteGUIDs
-function C_VignetteInfo:GetVignettes() end
+function C_VignetteInfo.GetVignettes() end
 
 ---@class VignetteType
 local VignetteType = {}

@@ -4,36 +4,36 @@ C_ModelInfo = {}
 --- This function does nothing in public clients
 ---@param modelSceneFrame table 
 ---@param modelSceneID number 
-function C_ModelInfo:AddActiveModelScene(modelSceneFrame, modelSceneID) end
+function C_ModelInfo.AddActiveModelScene(modelSceneFrame, modelSceneID) end
 
 --- This function does nothing in public clients
 ---@param modelSceneFrameActor table 
 ---@param modelSceneActorID number 
-function C_ModelInfo:AddActiveModelSceneActor(modelSceneFrameActor, modelSceneActorID) end
+function C_ModelInfo.AddActiveModelSceneActor(modelSceneFrameActor, modelSceneActorID) end
 
 --- This function does nothing in public clients
 ---@param modelSceneFrame table 
-function C_ModelInfo:ClearActiveModelScene(modelSceneFrame) end
+function C_ModelInfo.ClearActiveModelScene(modelSceneFrame) end
 
 --- This function does nothing in public clients
 ---@param modelSceneFrameActor table 
-function C_ModelInfo:ClearActiveModelSceneActor(modelSceneFrameActor) end
+function C_ModelInfo.ClearActiveModelSceneActor(modelSceneFrameActor) end
 
 ---@param modelActorDisplayID number 
 ---@return UIModelSceneActorDisplayInfo actorDisplayInfo
-function C_ModelInfo:GetModelSceneActorDisplayInfoByID(modelActorDisplayID) end
+function C_ModelInfo.GetModelSceneActorDisplayInfoByID(modelActorDisplayID) end
 
 ---@param modelActorID number 
 ---@return UIModelSceneActorInfo actorInfo
-function C_ModelInfo:GetModelSceneActorInfoByID(modelActorID) end
+function C_ModelInfo.GetModelSceneActorInfoByID(modelActorID) end
 
 ---@param modelSceneCameraID number 
 ---@return UIModelSceneCameraInfo modelSceneCameraInfo
-function C_ModelInfo:GetModelSceneCameraInfoByID(modelSceneCameraID) end
+function C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID) end
 
 ---@param modelSceneID number 
 ---@return ModelSceneType, number, number modelSceneType, modelCameraIDs, modelActorsIDs
-function C_ModelInfo:GetModelSceneInfoByID(modelSceneID) end
+function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
 ---@class ModelSceneSetting
 local ModelSceneSetting = {}

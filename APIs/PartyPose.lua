@@ -3,7 +3,7 @@ C_PartyPose = {}
 
 ---@param mapID number 
 ---@return PartyPoseInfo info
-function C_PartyPose:GetPartyPoseInfoByMapID(mapID) end
+function C_PartyPose.GetPartyPoseInfoByMapID(mapID) end
 
 ---@class PartyPoseInfo
 ---@field partyPoseID number 
