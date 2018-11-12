@@ -7,3 +7,6 @@
 ---@class ParentedObject : UIObject
 ParentedObject = {};
 
+function ParentedObject:GetParent()
+
+end

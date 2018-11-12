@@ -87,6 +87,7 @@ function Texture:SetVertTile() end
 --- Lower right corner X position, as a fraction of the image's width from the left
 --- @param LRy number
 --- Lower right corner Y position, as a fraction of the image's height from the top
+---@overload fun(ULx number, ULy number, LLx number, LLy number, URx number, URy number, LRx number, LRy number)
 function Texture:SetTexCoord(left, right, top, bottom) end
 
 --- Texture:SetHorizTile() 

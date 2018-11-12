@@ -12,9 +12,6 @@ ControlPoint = {};
 --- @return order
 function  ControlPoint:GetOrder() end
 
---- ControlPoint:IsForbidden() 
-function ControlPoint:IsForbidden() end
-
 --- Sets the offset for the control point
 --- @param x number
 --- The x coordinate offset for the control point

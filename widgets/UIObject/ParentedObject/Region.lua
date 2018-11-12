@@ -77,9 +77,6 @@ function  Region:GetRect() end
 --- New height for the region (in pixels); if 0, causes the region's height to be determined automatically according to its anchor points
 function Region:SetHeight(height) end
 
---- Region:IsForbidden() 
-function Region:IsForbidden() end
-
 --- Returns the width of the region
 --- @return width
 function  Region:GetWidth() end
@@ -124,3 +121,6 @@ function  Region:IsMouseOver(topOffset , leftOffset , bottomOffset , rightOffset
 --- @param name string
 --- Global name of a region
 function Region:SetAllPoints(region) end
+
+--- Returns whether protected properties of the region can be changed by non-secure scripts
+function Region:CanChangeProtectedState() end
