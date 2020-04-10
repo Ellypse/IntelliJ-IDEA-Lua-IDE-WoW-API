@@ -1,6 +1,8 @@
 ---@class MapUI
 C_Map = {}
 
+function C_Map.ClearUserWaypoint() end
+
 function C_Map.CloseWorldMapInteraction() end
 
 ---@param areaID number 
@@ -106,10 +108,27 @@ function C_Map.GetMapRectOnMap(uiMapID, topUiMapID) end
 ---@return table|nil position
 function C_Map.GetPlayerMapPosition(uiMapID, unitToken) end
 
+---@return table point
+function C_Map.GetUserWaypoint() end
+
+---@param hyperlink string 
+---@return table point
+function C_Map.GetUserWaypointFromHyperlink(hyperlink) end
+
+---@return string hyperlink
+function C_Map.GetUserWaypointHyperlink() end
+
+---@param uiMapID number 
+---@return table mapPosition
+function C_Map.GetUserWaypointPositionForMap(uiMapID) end
+
 ---@param uiMapID number 
 ---@param mapPosition table 
 ---@return number, table continentID, worldPosition
 function C_Map.GetWorldPosFromMapPos(uiMapID, mapPosition) end
+
+---@return bool hasUserWaypoint
+function C_Map.HasUserWaypoint() end
 
 ---@param uiMapID number 
 ---@return bool hasArt
@@ -117,6 +136,9 @@ function C_Map.MapHasArt(uiMapID) end
 
 ---@param uiMapID number 
 function C_Map.RequestPreloadMap(uiMapID) end
+
+---@param point table 
+function C_Map.SetUserWaypoint(point) end
 
 ---@class MapCanvasPosition
 local MapCanvasPosition = {}

@@ -77,6 +77,10 @@ function UnitIsWarModeDesired(unit) end
 ---@return bool warModePhased
 function UnitIsWarModePhased(unit) end
 
+---@param unit string 
+---@return bool nameplateShowsWidgetsOnly
+function UnitNameplateShowsWidgetsOnly(unit) end
+
 ---@param unitToken string 
 ---@param powerType PowerType 
 ---@param unmodified bool 
@@ -100,6 +104,14 @@ function UnitPowerMax(unitToken, powerType, unmodified) end
 ---@param unit string 
 ---@return PvpUnitClassification|nil classification
 function UnitPvpClassification(unit) end
+
+---@param unit string 
+---@return number levelRange
+function UnitQuestTrivialLevelRange(unit) end
+
+---@param unit string 
+---@return number levelRange
+function UnitQuestTrivialLevelRangeScaling(unit) end
 
 ---@param unit string 
 ---@return number|nil sex

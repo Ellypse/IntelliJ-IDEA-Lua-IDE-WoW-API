@@ -89,6 +89,16 @@ function C_UIWidgetManager.GetTopCenterWidgetSetID() end
 ---@return ZoneControlVisualizationInfo|nil widgetInfo
 function C_UIWidgetManager.GetZoneControlVisualizationInfo(widgetID) end
 
+---@param unitToken string 
+function C_UIWidgetManager.RegisterUnitForWidgetUpdates(unitToken) end
+
+---@param unit string @ [OPTIONAL]
+---@overload fun()
+function C_UIWidgetManager.SetProcessingUnit(unit) end
+
+---@param unitToken string 
+function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken) end
+
 ---@class CaptureBarWidgetFillDirectionType
 local CaptureBarWidgetFillDirectionType = {}
 CaptureBarWidgetFillDirectionType.RightToLeft = 0
@@ -146,27 +156,6 @@ UIWidgetTextSizeType.Small = 0
 UIWidgetTextSizeType.Medium = 1
 UIWidgetTextSizeType.Large = 2
 UIWidgetTextSizeType.Huge = 3
-
----@class UIWidgetVisualizationType
-local UIWidgetVisualizationType = {}
-UIWidgetVisualizationType.IconAndText = 0
-UIWidgetVisualizationType.CaptureBar = 1
-UIWidgetVisualizationType.StatusBar = 2
-UIWidgetVisualizationType.DoubleStatusBar = 3
-UIWidgetVisualizationType.IconTextAndBackground = 4
-UIWidgetVisualizationType.DoubleIconAndText = 5
-UIWidgetVisualizationType.StackedResourceTracker = 6
-UIWidgetVisualizationType.IconTextAndCurrencies = 7
-UIWidgetVisualizationType.TextWithState = 8
-UIWidgetVisualizationType.HorizontalCurrencies = 9
-UIWidgetVisualizationType.BulletTextList = 10
-UIWidgetVisualizationType.ScenarioHeaderCurrenciesAndBackground = 11
-UIWidgetVisualizationType.TextureAndText = 12
-UIWidgetVisualizationType.SpellDisplay = 13
-UIWidgetVisualizationType.DoubleStateIconRow = 14
-UIWidgetVisualizationType.TextureAndTextRow = 15
-UIWidgetVisualizationType.ZoneControl = 16
-UIWidgetVisualizationType.CaptureZone = 17
 
 ---@class UiwIdgetFlag
 local UiwIdgetFlag = {}
@@ -235,8 +224,8 @@ ZoneControlState.State2 = 1
 ---@field enabledState WidgetEnabledState 
 ---@field lines table 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -255,8 +244,8 @@ local BulletTextListWidgetVisualizationInfo = {}
 ---@field glowAnimType CaptureBarWidgetGlowAnimType 
 ---@field fillDirectionType CaptureBarWidgetFillDirectionType 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -271,8 +260,8 @@ local CaptureBarWidgetVisualizationInfo = {}
 ---@field dangerFlashType ZoneControlDangerFlashType 
 ---@field zoneInfo ZoneEntry 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -288,8 +277,8 @@ local CaptureZoneVisualizationInfo = {}
 ---@field rightText string 
 ---@field rightTooltip string 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -302,8 +291,8 @@ local DoubleIconAndTextWidgetVisualizationInfo = {}
 ---@field leftIcons table 
 ---@field rightIcons table 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -324,8 +313,8 @@ local DoubleStateIconRowVisualizationInfo = {}
 ---@field barValueTextType StatusBarValueTextType 
 ---@field text string 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -337,8 +326,8 @@ local DoubleStatusBarWidgetVisualizationInfo = {}
 ---@field shownState WidgetShownState 
 ---@field currencies table 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -352,8 +341,8 @@ local HorizontalCurrenciesWidgetVisualizationInfo = {}
 ---@field tooltip string 
 ---@field dynamicTooltip string 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -365,8 +354,8 @@ local IconAndTextWidgetVisualizationInfo = {}
 ---@field shownState WidgetShownState 
 ---@field text string 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -383,8 +372,8 @@ local IconTextAndBackgroundWidgetVisualizationInfo = {}
 ---@field description string 
 ---@field currencies table 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -396,8 +385,8 @@ local IconTextAndCurrenciesWidgetVisualizationInfo = {}
 ---@field shownState WidgetShownState 
 ---@field currencies table 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -410,8 +399,8 @@ local ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo = {}
 ---@field enabledState WidgetEnabledState 
 ---@field spellInfo UIWidgetSpellInfo 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -423,8 +412,8 @@ local SpellDisplayVisualizationInfo = {}
 ---@field shownState WidgetShownState 
 ---@field resources table 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -443,8 +432,8 @@ local StackedResourceTrackerWidgetVisualizationInfo = {}
 ---@field overrideBarText string 
 ---@field overrideBarTextShownType StatusBarOverrideBarTextShownType 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -459,8 +448,8 @@ local StatusBarWidgetVisualizationInfo = {}
 ---@field tooltip string 
 ---@field textSizeType UIWidgetTextSizeType 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -478,8 +467,8 @@ local TextureAndTextEntryInfo = {}
 ---@field entries table 
 ---@field textSizeType UIWidgetTextSizeType 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -492,8 +481,8 @@ local TextureAndTextRowVisualizationInfo = {}
 ---@field text string 
 ---@field tooltip string 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 
@@ -513,6 +502,7 @@ local UIWidgetCurrencyInfo = {}
 ---@field widgetID number 
 ---@field widgetSetID number 
 ---@field widgetType UIWidgetVisualizationType 
+---@field unitToken string|nil 
 local UIWidgetInfo = {}
 
 ---@class UIWidgetSpellInfo
@@ -537,8 +527,8 @@ local UIWidgetStateIconInfo = {}
 ---@field dangerFlashType ZoneControlDangerFlashType 
 ---@field zoneEntries table 
 ---@field widgetSizeSetting number 
----@field textureKitID number 
----@field frameTextureKitID number 
+---@field textureKit string 
+---@field frameTextureKit string 
 ---@field hasTimer bool 
 ---@field orderIndex number 
 ---@field widgetTag string 

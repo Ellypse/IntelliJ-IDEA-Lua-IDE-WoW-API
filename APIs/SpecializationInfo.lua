@@ -1,6 +1,15 @@
 ---@class SpecializationInfo
 C_SpecializationInfo = {}
 
+---@return bool, string canUse, failureReason
+function C_SpecializationInfo.CanPlayerUsePVPTalentUI() end
+
+---@return bool, string canUse, failureReason
+function C_SpecializationInfo.CanPlayerUseTalentSpecUI() end
+
+---@return bool, string canUse, failureReason
+function C_SpecializationInfo.CanPlayerUseTalentUI() end
+
 ---@return number selectedPvpTalentIDs
 function C_SpecializationInfo.GetAllSelectedPvpTalentIDs() end
 

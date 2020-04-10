@@ -66,6 +66,8 @@ ModelSceneType.AzeritePowers = 14
 ModelSceneType.AzeriteRewardGlow = 15
 ModelSceneType.HeartOfAzeroth = 16
 ModelSceneType.WorldMapThreat = 17
+ModelSceneType.Soulbinds = 18
+ModelSceneType.JailersTowerAnimaGlow = 19
 
 ---@class UIModelSceneActorDisplayInfo
 ---@field animation number 

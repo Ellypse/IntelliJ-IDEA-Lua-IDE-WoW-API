@@ -29,7 +29,7 @@ local ItemInteractionFrameType = {}
 ItemInteractionFrameType.CleanseCorruption = 0
 
 ---@class ItemInteractionFrameInfo
----@field textureKitID number 
+---@field textureKit string 
 ---@field openSoundKitID number 
 ---@field closeSoundKitID number 
 ---@field titleText string 

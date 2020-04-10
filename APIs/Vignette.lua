@@ -36,5 +36,6 @@ VignetteType.PvpBounty = 1
 ---@field vignetteID number 
 ---@field type VignetteType 
 ---@field rewardQuestID number 
+---@field widgetSetID number|nil 
 local VignetteInfo = {}
 

@@ -7,6 +7,9 @@ function C_PvP.CanDisplayDeaths() end
 ---@return bool canDisplay
 function C_PvP.CanDisplayHonorableKills() end
 
+---@return bool, string canUse, failureReason
+function C_PvP.CanPlayerUseRatedPVPUI() end
+
 ---@param toggle bool 
 ---@return bool canTogglePvP
 function C_PvP.CanToggleWarMode(toggle) end
@@ -47,6 +50,11 @@ function C_PvP.GetArenaSkirmishRewards() end
 ---@return PvpBrawlInfo|nil brawlInfo
 function C_PvP.GetAvailableBrawlInfo() end
 
+---@param vehicleIndex number 
+---@param uiMapID number 
+---@return BattlefieldVehicleInfo info
+function C_PvP.GetBattlefieldVehicleInfo(vehicleIndex, uiMapID) end
+
 ---@param brawlType BrawlType 
 ---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil, bool honor, experience, itemRewards, currencyRewards, hasWon
 function C_PvP.GetBrawlRewards(brawlType) end
@@ -58,6 +66,10 @@ function C_PvP.GetGlobalPvpScalingInfoForSpecID(specializationID) end
 ---@param honorLevel number 
 ---@return HonorRewardInfo|nil info
 function C_PvP.GetHonorRewardInfo(honorLevel) end
+
+---@param level number 
+---@return LevelUpBattlegroundInfo battlefields
+function C_PvP.GetLevelUpBattlegrounds(level) end
 
 ---@param pvpStatID number 
 ---@return MatchPVPStatColumn|nil info
@@ -223,6 +235,20 @@ local BattlefieldCurrencyReward = {}
 ---@field quantity number 
 local BattlefieldItemReward = {}
 
+---@class BattlefieldVehicleInfo
+---@field x number 
+---@field y number 
+---@field name string 
+---@field isOccupied bool 
+---@field atlas string 
+---@field textureWidth number 
+---@field textureHeight number 
+---@field facing number 
+---@field isPlayer bool 
+---@field isAlive bool 
+---@field shouldDrawBelowPlayerBlips bool 
+local BattlefieldVehicleInfo = {}
+
 ---@class BattlemasterListInfo
 ---@field name string 
 ---@field instanceType number 
@@ -238,6 +264,13 @@ local BattlemasterListInfo = {}
 ---@field badgeFileDataID number 
 ---@field achievementRewardedID number 
 local HonorRewardInfo = {}
+
+---@class LevelUpBattlegroundInfo
+---@field id number 
+---@field icon number 
+---@field name string 
+---@field isEpic bool 
+local LevelUpBattlegroundInfo = {}
 
 ---@class MatchPVPStatColumn
 ---@field pvpStatID number 

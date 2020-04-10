@@ -155,7 +155,7 @@ function C_Calendar.EventSetDate(month, monthDay, year) end
 function C_Calendar.EventSetDescription(description) end
 
 ---@param eventIndex number 
----@param status number 
+---@param status CalendarStatus 
 function C_Calendar.EventSetInviteStatus(eventIndex, status) end
 
 function C_Calendar.EventSetLocked() end
@@ -370,7 +370,7 @@ local CalendarEventInfo = {}
 local CalendarEventInviteInfo = {}
 
 ---@class CalendarEventStatusOption
----@field optionIndex number 
+---@field status CalendarStatus 
 ---@field statusString string 
 local CalendarEventStatusOption = {}
 

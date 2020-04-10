@@ -21,6 +21,8 @@ function C_ReportSystem.OpenReportPlayerDialog(reportType, playerName, playerLoc
 
 function C_ReportSystem.ReportServerLag() end
 
+function C_ReportSystem.ReportStuckInCombat() end
+
 --- Not allowed to be called by addons
 ---@param token number 
 ---@param comment string @ [OPTIONAL]

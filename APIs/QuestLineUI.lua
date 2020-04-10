@@ -14,6 +14,10 @@ function C_QuestLine.GetQuestLineInfo(questID, uiMapID) end
 ---@return number questIDs
 function C_QuestLine.GetQuestLineQuests(questLineID) end
 
+---@param questLineID number 
+---@return bool isComplete
+function C_QuestLine.IsComplete(questLineID) end
+
 ---@param uiMapID number 
 function C_QuestLine.RequestQuestLinesForMap(uiMapID) end
 

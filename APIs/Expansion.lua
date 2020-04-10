@@ -15,10 +15,8 @@ function GetClientDisplayExpansionLevel() end
 function GetExpansionDisplayInfo(expansionLevel) end
 
 ---@param playerLevel number 
----@param useLegacy bool @ [OPTIONAL]
----@overload fun(playerLevel:number)
 ---@return number expansionLevel
-function GetExpansionForLevel(playerLevel, useLegacy) end
+function GetExpansionForLevel(playerLevel) end
 
 ---@return number expansionLevel
 function GetExpansionLevel() end
@@ -26,11 +24,16 @@ function GetExpansionLevel() end
 ---@return bool, number|nil isExpansionTrialAccount, expansionTrialRemainingSeconds
 function GetExpansionTrialInfo() end
 
---- Maps an expansion level to a maximum character level for that expansion, optionally takes a useModernLevelMapping instead of legacy level mapping. Legacy treats the maxes as the original caps for those expansions.
+--- Maps an expansion level to a maximum character level for that expansion.
 ---@param expansionLevel number 
----@param useModernLevelMapping bool 
 ---@return number maxLevel
-function GetMaxLevelForExpansionLevel(expansionLevel, useModernLevelMapping) end
+function GetMaxLevelForExpansionLevel(expansionLevel) end
+
+---@return number maxLevel
+function GetMaxLevelForLatestExpansion() end
+
+---@return number maxLevel
+function GetMaxLevelForPlayerExpansion() end
 
 ---@return number expansionLevel
 function GetMaximumExpansionLevel() end
