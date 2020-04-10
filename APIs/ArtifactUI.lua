@@ -58,6 +58,9 @@ function C_ArtifactUI.GetArtifactArtInfo() end
 ---@return number, number|nil, string, number, number, number, number, number, number, number|nil, number|nil, bool, number itemID, altItemID, name, icon, xp, pointsSpent, quality, artifactAppearanceID, appearanceModID, itemAppearanceID, altItemAppearanceID, altOnTop, tier
 function C_ArtifactUI.GetArtifactInfo() end
 
+---@return number itemID
+function C_ArtifactUI.GetArtifactItemID() end
+
 ---@return number|nil tier
 function C_ArtifactUI.GetArtifactTier() end
 
@@ -75,6 +78,9 @@ function C_ArtifactUI.GetEquippedArtifactArtInfo() end
 
 ---@return number, number|nil, string, number, number, number, number, number, number, number|nil, number|nil, bool, number itemID, altItemID, name, icon, xp, pointsSpent, quality, artifactAppearanceID, appearanceModID, itemAppearanceID, altItemAppearanceID, altOnTop, tier
 function C_ArtifactUI.GetEquippedArtifactInfo() end
+
+---@return number itemID
+function C_ArtifactUI.GetEquippedArtifactItemID() end
 
 ---@param onlyUnlocked bool @ If true then only the relic slots that are unlocked will be considered.
 ---@return number numRelicSlots

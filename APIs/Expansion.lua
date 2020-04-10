@@ -14,15 +14,23 @@ function GetClientDisplayExpansionLevel() end
 ---@return ExpansionDisplayInfo|nil info
 function GetExpansionDisplayInfo(expansionLevel) end
 
+---@param playerLevel number 
+---@param useLegacy bool @ [OPTIONAL]
+---@overload fun(playerLevel:number)
+---@return number expansionLevel
+function GetExpansionForLevel(playerLevel, useLegacy) end
+
 ---@return number expansionLevel
 function GetExpansionLevel() end
 
 ---@return bool, number|nil isExpansionTrialAccount, expansionTrialRemainingSeconds
 function GetExpansionTrialInfo() end
 
+--- Maps an expansion level to a maximum character level for that expansion, optionally takes a useModernLevelMapping instead of legacy level mapping. Legacy treats the maxes as the original caps for those expansions.
 ---@param expansionLevel number 
+---@param useModernLevelMapping bool 
 ---@return number maxLevel
-function GetMaxLevelForExpansionLevel(expansionLevel) end
+function GetMaxLevelForExpansionLevel(expansionLevel, useModernLevelMapping) end
 
 ---@return number expansionLevel
 function GetMaximumExpansionLevel() end
@@ -42,14 +50,14 @@ function IsTrialAccount() end
 ---@return bool isVeteranTrialAccount
 function IsVeteranTrialAccount() end
 
----@class ExpansionDisplayInfoFeature
----@field icon number 
----@field text string 
-local ExpansionDisplayInfoFeature = {}
-
 ---@class ExpansionDisplayInfo
 ---@field logo number 
 ---@field banner string 
 ---@field features table 
 local ExpansionDisplayInfo = {}
+
+---@class ExpansionDisplayInfoFeature
+---@field icon number 
+---@field text string 
+local ExpansionDisplayInfoFeature = {}
 

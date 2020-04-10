@@ -32,5 +32,6 @@ local CampaignChapterInfo = {}
 ---@field visibilityConditionMatched bool 
 ---@field playerConditionFailedReason string|nil 
 ---@field complete bool 
+---@field overrideStepActive bool 
 local CampaignInfo = {}
 

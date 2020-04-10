@@ -60,6 +60,9 @@ function C_VoiceChat.GetLocalPlayerActiveChannelMemberInfo() end
 ---@return number|nil memberID
 function C_VoiceChat.GetLocalPlayerMemberID(channelID) end
 
+---@return number scale
+function C_VoiceChat.GetMasterVolumeScale() end
+
 ---@param memberID number 
 ---@param channelID number 
 ---@return string memberGUID
@@ -98,6 +101,14 @@ function C_VoiceChat.GetPushToTalkBinding() end
 
 ---@return number|nil sensitivity
 function C_VoiceChat.GetVADSensitivity() end
+
+---@param channelType ChatChannelType 
+---@param clubId string @ [OPTIONAL]
+---@param streamId string @ [OPTIONAL]
+---@overload fun(channelType:ChatChannelType, streamId:string)
+---@overload fun(channelType:ChatChannelType)
+---@return bool isPending
+function C_VoiceChat.IsChannelJoinPending(channelType, clubId, streamId) end
 
 ---@return bool|nil isDeafened
 function C_VoiceChat.IsDeafened() end
@@ -160,7 +171,9 @@ function C_VoiceChat.MarkChannelsDiscovered() end
 function C_VoiceChat.RequestJoinAndActivateCommunityStreamChannel(clubId, streamId) end
 
 ---@param channelType ChatChannelType 
-function C_VoiceChat.RequestJoinChannelByChannelType(channelType) end
+---@param autoActivate bool @ [OPTIONAL]
+---@overload fun(channelType:ChatChannelType)
+function C_VoiceChat.RequestJoinChannelByChannelType(channelType, autoActivate) end
 
 ---@param communicationMode CommunicationMode 
 function C_VoiceChat.SetCommunicationMode(communicationMode) end
@@ -173,6 +186,9 @@ function C_VoiceChat.SetInputDevice(deviceID) end
 
 ---@param volume number 
 function C_VoiceChat.SetInputVolume(volume) end
+
+---@param scale number 
+function C_VoiceChat.SetMasterVolumeScale(scale) end
 
 ---@param playerLocation table 
 ---@param muted bool 
@@ -244,6 +260,8 @@ VoiceChatStatusCode.UnsupportedChatChannelType = 19
 VoiceChatStatusCode.InvalidCommunityStream = 20
 VoiceChatStatusCode.PlayerSilenced = 21
 VoiceChatStatusCode.PlayerVoiceChatParentalDisabled = 22
+VoiceChatStatusCode.InvalidInputDevice = 23
+VoiceChatStatusCode.InvalidOutputDevice = 24
 
 ---@class VoiceAudioDevice
 ---@field deviceID string 
@@ -252,15 +270,6 @@ VoiceChatStatusCode.PlayerVoiceChatParentalDisabled = 22
 ---@field isActive bool 
 ---@field isSystemDefault bool 
 local VoiceAudioDevice = {}
-
----@class VoiceChatMember
----@field energy number 
----@field memberID number 
----@field isActive bool 
----@field isSpeaking bool 
----@field isMutedForAll bool 
----@field isSilenced bool 
-local VoiceChatMember = {}
 
 ---@class VoiceChatChannel
 ---@field name string 
@@ -275,6 +284,15 @@ local VoiceChatMember = {}
 ---@field isLocalProcess bool 
 ---@field members table 
 local VoiceChatChannel = {}
+
+---@class VoiceChatMember
+---@field energy number 
+---@field memberID number 
+---@field isActive bool 
+---@field isSpeaking bool 
+---@field isMutedForAll bool 
+---@field isSilenced bool 
+local VoiceChatMember = {}
 
 ---@class VoiceChatProcess
 ---@field name string 

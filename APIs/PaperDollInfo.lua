@@ -15,6 +15,10 @@ function C_PaperDollInfo.GetArmorEffectivenessAgainstTarget(armor) end
 ---@return number azeritePowerIDs
 function C_PaperDollInfo.GetInspectAzeriteItemEmpoweredChoices(unit, equipmentSlotIndex) end
 
+---@param unit string 
+---@return number equippedItemLevel
+function C_PaperDollInfo.GetInspectItemLevel(unit) end
+
 ---@return number|nil minItemLevel
 function C_PaperDollInfo.GetMinItemLevel() end
 

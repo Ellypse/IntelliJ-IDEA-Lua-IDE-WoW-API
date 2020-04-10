@@ -70,14 +70,6 @@ function C_ContributionCollector.HasPendingContribution(contributionID) end
 ---@return bool awaitingData
 function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 
----@class ContributionState
-local ContributionState = {}
-ContributionState.None = 0
-ContributionState.Building = 1
-ContributionState.Active = 2
-ContributionState.UnderAttack = 3
-ContributionState.Destroyed = 4
-
 ---@class ContributionAppearanceFlags
 local ContributionAppearanceFlags = {}
 ContributionAppearanceFlags.TooltipUseTimeRemaining = 0
@@ -92,6 +84,14 @@ ContributionResult.QuestDataMissing = 4
 ContributionResult.FailedConditionCheck = 5
 ContributionResult.UnableToCompleteTurnIn = 6
 ContributionResult.InternalError = 7
+
+---@class ContributionState
+local ContributionState = {}
+ContributionState.None = 0
+ContributionState.Building = 1
+ContributionState.Active = 2
+ContributionState.UnderAttack = 3
+ContributionState.Destroyed = 4
 
 ---@class ContributionAppearance
 ---@field stateName string 

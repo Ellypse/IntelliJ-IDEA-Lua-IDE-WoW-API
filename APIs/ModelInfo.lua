@@ -35,9 +35,16 @@ function C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID) end
 ---@return ModelSceneType, number, number modelSceneType, modelCameraIDs, modelActorsIDs
 function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
+---@class ItemTryOnReason
+local ItemTryOnReason = {}
+ItemTryOnReason.Success = 0
+ItemTryOnReason.WrongRace = 1
+ItemTryOnReason.NotEquippable = 2
+ItemTryOnReason.DataPending = 3
+
 ---@class ModelSceneSetting
 local ModelSceneSetting = {}
-ModelSceneSetting.AlignLightToOrbitDelta = 0
+ModelSceneSetting.AlignLightToOrbitDelta = 1
 
 ---@class ModelSceneType
 local ModelSceneType = {}
@@ -57,6 +64,8 @@ ModelSceneType.PartyPose = 12
 ModelSceneType.AzeriteItemLevelUpToast = 13
 ModelSceneType.AzeritePowers = 14
 ModelSceneType.AzeriteRewardGlow = 15
+ModelSceneType.HeartOfAzeroth = 16
+ModelSceneType.WorldMapThreat = 17
 
 ---@class UIModelSceneActorDisplayInfo
 ---@field animation number 

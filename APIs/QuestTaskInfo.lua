@@ -10,7 +10,7 @@ function C_TaskQuest.DoesMapShowTaskQuestObjectives(uiMapID) end
 function C_TaskQuest.GetDistanceSqToQuest(questID) end
 
 ---@param questID number 
----@return string, number|nil, bool|nil questTitle, factionID, capped
+---@return string, number|nil, bool|nil, bool|nil questTitle, factionID, capped, displayAsObjective
 function C_TaskQuest.GetQuestInfoByQuestID(questID) end
 
 ---@param questID number 
@@ -27,12 +27,19 @@ function C_TaskQuest.GetQuestProgressBarInfo(questID) end
 function C_TaskQuest.GetQuestTimeLeftMinutes(questID) end
 
 ---@param questID number 
+---@return number secondsLeft
+function C_TaskQuest.GetQuestTimeLeftSeconds(questID) end
+
+---@param questID number 
 ---@return number uiMapID
 function C_TaskQuest.GetQuestZoneID(questID) end
 
 ---@param uiMapID number 
 ---@return TaskPOIData taskPOIs
 function C_TaskQuest.GetQuestsForPlayerByMapID(uiMapID) end
+
+---@return number quests
+function C_TaskQuest.GetThreatQuests() end
 
 ---@param questID number 
 ---@return bool active
@@ -48,5 +55,9 @@ function C_TaskQuest.RequestPreloadRewardData(questID) end
 ---@field inProgress bool 
 ---@field numObjectives number 
 ---@field mapID number 
+---@field isQuestStart bool 
+---@field isDaily bool 
+---@field isCombatAllyQuest bool 
+---@field childDepth number|nil 
 local TaskPOIData = {}
 

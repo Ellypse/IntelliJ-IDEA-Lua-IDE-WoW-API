@@ -1,6 +1,14 @@
 ---@class Item
 C_Item = {}
 
+---@param itemLoc table 
+---@return bool canBeScrapped
+function C_Item.CanScrapItem(itemLoc) end
+
+---@param itemLoc table 
+---@return bool isItemViewable
+function C_Item.CanViewItemPowers(itemLoc) end
+
 ---@param emptiableItemLocation table 
 ---@return bool itemExists
 function C_Item.DoesItemExist(emptiableItemLocation) end
@@ -58,8 +66,24 @@ function C_Item.GetItemQuality(itemLocation) end
 function C_Item.GetItemQualityByID(itemInfo) end
 
 ---@param itemLocation table 
+---@return number stackCount
+function C_Item.GetStackCount(itemLocation) end
+
+---@param itemLocation table 
 ---@return bool isBound
 function C_Item.IsBound(itemLocation) end
+
+---@param itemLoc table 
+---@return bool isCorrupted
+function C_Item.IsItemCorrupted(itemLoc) end
+
+---@param itemLoc table 
+---@return bool isCorruptionRelated
+function C_Item.IsItemCorruptionRelated(itemLoc) end
+
+---@param itemLoc table 
+---@return bool isCorruptionResistant
+function C_Item.IsItemCorruptionResistant(itemLoc) end
 
 ---@param itemLocation table 
 ---@return bool isCached
@@ -76,6 +100,9 @@ function C_Item.IsLocked(itemLocation) end
 ---@param itemLocation table 
 function C_Item.LockItem(itemLocation) end
 
+---@param itemGUID string 
+function C_Item.LockItemByGUID(itemGUID) end
+
 ---@param itemLocation table 
 function C_Item.RequestLoadItemData(itemLocation) end
 
@@ -84,6 +111,9 @@ function C_Item.RequestLoadItemDataByID(itemInfo) end
 
 ---@param itemLocation table 
 function C_Item.UnlockItem(itemLocation) end
+
+---@param itemGUID string 
+function C_Item.UnlockItemByGUID(itemGUID) end
 
 ---@class InventoryType
 local InventoryType = {}

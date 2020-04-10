@@ -19,16 +19,17 @@ function C_Console.SetFontHeight(fontHeightInPixels) end
 
 ---@class ConsoleCategory
 local ConsoleCategory = {}
-ConsoleCategory.CategoryDebug = 0
-ConsoleCategory.CategoryGraphics = 1
-ConsoleCategory.CategoryConsole = 2
-ConsoleCategory.CategoryCombat = 3
-ConsoleCategory.CategoryGame = 4
-ConsoleCategory.CategoryDefault = 5
-ConsoleCategory.CategoryNet = 6
-ConsoleCategory.CategorySound = 7
-ConsoleCategory.CategoryGm = 8
-ConsoleCategory.CategoryNone = 9
+ConsoleCategory.Debug = 0
+ConsoleCategory.Graphics = 1
+ConsoleCategory.Console = 2
+ConsoleCategory.Combat = 3
+ConsoleCategory.Game = 4
+ConsoleCategory.Default = 5
+ConsoleCategory.Net = 6
+ConsoleCategory.Sound = 7
+ConsoleCategory.Gm = 8
+ConsoleCategory.Reveal = 9
+ConsoleCategory.None = 10
 
 ---@class ConsoleColorType
 local ConsoleColorType = {}

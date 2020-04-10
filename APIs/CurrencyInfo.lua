@@ -1,6 +1,10 @@
 ---@class CurrencyInfo
 C_CurrencyInfo = {}
 
+---@param currencyID number 
+---@return bool|nil, bool|nil warModeApplies, limitOncePerTooltip
+function C_CurrencyInfo.DoesWarModeBonusApply(currencyID) end
+
 ---@return number azeriteCurrencyID
 function C_CurrencyInfo.GetAzeriteCurrencyID() end
 

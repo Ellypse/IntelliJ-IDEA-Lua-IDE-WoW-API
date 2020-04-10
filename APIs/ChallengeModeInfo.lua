@@ -15,7 +15,7 @@ function C_ChallengeMode.GetActiveKeystoneInfo() end
 ---@return string, string, number name, description, filedataid
 function C_ChallengeMode.GetAffixInfo(affixID) end
 
----@return number, number, number, bool, number mapChallengeModeID, level, time, onTime, keystoneUpgradeLevels
+---@return number, number, number, bool, number, bool mapChallengeModeID, level, time, onTime, keystoneUpgradeLevels, practiceRun
 function C_ChallengeMode.GetCompletionInfo() end
 
 ---@return number, number numDeaths, timeLost
