@@ -1,8 +1,11 @@
 ---@class MythicPlusInfo
 C_MythicPlus = {}
 
----@return number affixIDs
+---@return MythicPlusKeystoneAffix affixIDs
 function C_MythicPlus.GetCurrentAffixes() end
+
+---@return number seasonID
+function C_MythicPlus.GetCurrentSeason() end
 
 ---@return number, number challengeMapId, level
 function C_MythicPlus.GetLastWeeklyBestInformation() end
@@ -22,14 +25,14 @@ function C_MythicPlus.GetRewardLevelForDifficultyLevel(difficultyLevel) end
 function C_MythicPlus.GetRewardLevelFromKeystoneLevel(keystoneLevel) end
 
 ---@param mapChallengeModeID number 
----@return number, number, MythicPlusDate, number, MythicPlusMember durationSec, level, completionDate, affixIDs, members
+---@return MapSeasonBestInfo|nil, MapSeasonBestInfo|nil intimeInfo, overtimeInfo
 function C_MythicPlus.GetSeasonBestForMap(mapChallengeModeID) end
 
 ---@param mapChallengeModeID number 
 ---@return number, number, MythicPlusDate, number, MythicPlusMember durationSec, level, completionDate, affixIDs, members
 function C_MythicPlus.GetWeeklyBestForMap(mapChallengeModeID) end
 
----@return number, number, number currentWeekBestLevel, weeklyRewardLevel, nextDifficultyWeeklyRewardLevel
+---@return number, number, number, number currentWeekBestLevel, weeklyRewardLevel, nextDifficultyWeeklyRewardLevel, nextBestLevel
 function C_MythicPlus.GetWeeklyChestRewardLevel() end
 
 ---@return bool isMythicPlusActive
@@ -44,6 +47,14 @@ function C_MythicPlus.RequestMapInfo() end
 
 function C_MythicPlus.RequestRewards() end
 
+---@class MapSeasonBestInfo
+---@field durationSec number 
+---@field level number 
+---@field completionDate MythicPlusDate 
+---@field affixIDs table 
+---@field members table 
+local MapSeasonBestInfo = {}
+
 ---@class MythicPlusDate
 ---@field year number 
 ---@field month number 
@@ -51,6 +62,11 @@ function C_MythicPlus.RequestRewards() end
 ---@field hour number 
 ---@field minute number 
 local MythicPlusDate = {}
+
+---@class MythicPlusKeystoneAffix
+---@field id number 
+---@field seasonID number 
+local MythicPlusKeystoneAffix = {}
 
 ---@class MythicPlusMember
 ---@field name string|nil 

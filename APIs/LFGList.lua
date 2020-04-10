@@ -16,6 +16,24 @@ function C_LFGList.ClearSearchTextFields() end
 
 function C_LFGList.CopyActiveEntryInfoToCreationFields() end
 
+---@return LfgEntryData entryData
+function C_LFGList.GetActiveEntryInfo() end
+
+---@param applicantID number 
+---@return LfgApplicantData applicantData
+function C_LFGList.GetApplicantInfo(applicantID) end
+
+---@param searchResultID number 
+---@return LfgSearchResultData searchResultData
+function C_LFGList.GetSearchResultInfo(searchResultID) end
+
+---@return bool hasActiveEntryInfo
+function C_LFGList.HasActiveEntryInfo() end
+
+---@param searchResultID number 
+---@return bool hasSearchResultInfo
+function C_LFGList.HasSearchResultInfo(searchResultID) end
+
 ---@param categoryID number 
 ---@param filter number 
 ---@param preferredFilters number 
@@ -28,6 +46,48 @@ function C_LFGList.SetSearchToActivity(activityID) end
 
 ---@param questID number 
 function C_LFGList.SetSearchToQuestID(questID) end
+
+---@class LfgApplicantData
+---@field applicantID number 
+---@field applicationStatus string 
+---@field pendingApplicationStatus string|nil 
+---@field numMembers number 
+---@field isNew bool 
+---@field comment string 
+---@field displayOrderID number 
+local LfgApplicantData = {}
+
+---@class LfgEntryData
+---@field activityID number 
+---@field requiredItemLevel number 
+---@field requiredHonorLevel number 
+---@field name string 
+---@field comment string 
+---@field voiceChat string 
+---@field duration number 
+---@field autoAccept bool 
+---@field privateGroup bool 
+---@field questID number|nil 
+local LfgEntryData = {}
+
+---@class LfgSearchResultData
+---@field searchResultID number 
+---@field activityID number 
+---@field leaderName string|nil 
+---@field name string 
+---@field comment string 
+---@field voiceChat string 
+---@field requiredItemLevel number 
+---@field requiredHonorLevel number 
+---@field numMembers number 
+---@field numBNetFriends number 
+---@field numCharFriends number 
+---@field numGuildMates number 
+---@field isDelisted bool 
+---@field autoAccept bool 
+---@field age number 
+---@field questID number|nil 
+local LfgSearchResultData = {}
 
 ---@class WowLocale
 ---@field enUS bool 

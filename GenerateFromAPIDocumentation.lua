@@ -4,7 +4,7 @@
 ]]
 
 local OUTPUT_DIRECTORY = "./APIs/"
-local PATH_TO_THE_API_DOCS = "/Users/renaud/Developer/World of Warcraft/WoW UI source/AddOns/Blizzard_APIDocumentation"
+local PATH_TO_THE_API_DOCS = "../wow-ui-source/AddOns/Blizzard_APIDocumentation"
 local BLACKLISTED_FILES = {
 	["BaseAPIMixin.lua"] = true,
 	["EventsAPIMixin.lua"] = true,

@@ -16,7 +16,8 @@ function C_AlliedRaces.GetRaceInfoByID(raceID) end
 ---@field maleModelID number 
 ---@field femaleModelID number 
 ---@field achievementID number 
----@field name string 
+---@field maleName string 
+---@field femaleName string 
 ---@field description string 
 ---@field crestAtlas string 
 ---@field modelBackgroundAtlas string 

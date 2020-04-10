@@ -28,6 +28,12 @@ function C_AzeriteEmpoweredItem.GetAzeriteEmpoweredItemRespecCost() end
 ---@return AzeriteEmpoweredItemPowerInfo powerInfo
 function C_AzeriteEmpoweredItem.GetPowerInfo(powerID) end
 
+---@param azeriteEmpoweredItemLocation table 
+---@param powerID number 
+---@param level AzeritePowerLevel 
+---@return AzeriteEmpoweredItemPowerText powerText
+function C_AzeriteEmpoweredItem.GetPowerText(azeriteEmpoweredItemLocation, powerID, level) end
+
 ---@param powerID number 
 ---@return AzeriteSpecInfo specInfo
 function C_AzeriteEmpoweredItem.GetSpecsForPower(powerID) end
@@ -54,6 +60,9 @@ function C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(itemInfo) end
 ---@return bool isAzeritePreviewSourceDisplayable
 function C_AzeriteEmpoweredItem.IsAzeritePreviewSourceDisplayable(itemInfo, classID) end
 
+---@return bool isHeartOfAzerothEquipped
+function C_AzeriteEmpoweredItem.IsHeartOfAzerothEquipped() end
+
 ---@param powerID number 
 ---@param specID number 
 ---@return bool isPowerAvailableForSpec
@@ -72,10 +81,21 @@ function C_AzeriteEmpoweredItem.SelectPower(azeriteEmpoweredItemLocation, powerI
 ---@param azeriteEmpoweredItemLocation table 
 function C_AzeriteEmpoweredItem.SetHasBeenViewed(azeriteEmpoweredItemLocation) end
 
+---@class AzeritePowerLevel
+local AzeritePowerLevel = {}
+AzeritePowerLevel.Base = 0
+AzeritePowerLevel.Upgraded = 1
+AzeritePowerLevel.Downgraded = 2
+
 ---@class AzeriteEmpoweredItemPowerInfo
 ---@field azeritePowerID number 
 ---@field spellID number 
 local AzeriteEmpoweredItemPowerInfo = {}
+
+---@class AzeriteEmpoweredItemPowerText
+---@field name string 
+---@field description string 
+local AzeriteEmpoweredItemPowerText = {}
 
 ---@class AzeriteEmpoweredItemTierInfo
 ---@field azeritePowerIDs table 

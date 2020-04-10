@@ -92,7 +92,7 @@ function C_Calendar.EventDecline() end
 function C_Calendar.EventGetCalendarType() end
 
 ---@return string|nil info
-function C_Calendar.EventGetClubID() end
+function C_Calendar.EventGetClubId() end
 
 ---@param eventIndex number 
 ---@return CalendarEventInviteInfo info
@@ -131,16 +131,20 @@ function C_Calendar.EventHaveSettingsChanged() end
 ---@param name string 
 function C_Calendar.EventInvite(name) end
 
----@param eventIndex number 
-function C_Calendar.EventRemoveInvite(eventIndex) end
+---@param inviteIndex number 
+function C_Calendar.EventRemoveInvite(inviteIndex) end
+
+---@param guid string 
+function C_Calendar.EventRemoveInviteByGuid(guid) end
 
 ---@param inviteIndex number 
 function C_Calendar.EventSelectInvite(inviteIndex) end
 
 function C_Calendar.EventSetAutoApprove() end
 
----@param clubID string 
-function C_Calendar.EventSetClubID(clubID) end
+---@param clubId string @ [OPTIONAL]
+---@overload fun()
+function C_Calendar.EventSetClubId(clubId) end
 
 ---@param month number 
 ---@param monthDay number 
@@ -180,8 +184,11 @@ function C_Calendar.EventSortInvites(criterion, reverse) end
 
 function C_Calendar.EventTentative() end
 
----@return CalendarTime date
-function C_Calendar.GetDate() end
+---@param clubId string 
+---@param startTime CalendarTime 
+---@param endTime CalendarTime 
+---@return CalendarDayEvent events
+function C_Calendar.GetClubCalendarEvents(clubId, startTime, endTime) end
 
 ---@param monthOffset number 
 ---@param monthDay number 
@@ -194,6 +201,14 @@ function C_Calendar.GetDefaultGuildFilter() end
 
 ---@return CalendarEventIndexInfo info
 function C_Calendar.GetEventIndex() end
+
+---@param eventID string 
+---@param monthOffset number @ [OPTIONAL]
+---@param monthDay number @ [OPTIONAL]
+---@overload fun(eventID:string, monthDay:number)
+---@overload fun(eventID:string)
+---@return CalendarEventIndexInfo|nil eventIndexInfo
+function C_Calendar.GetEventIndexInfo(eventID, monthOffset, monthDay) end
 
 ---@return CalendarEventInfo info
 function C_Calendar.GetEventInfo() end
@@ -227,6 +242,9 @@ function C_Calendar.GetMinDate() end
 ---@return CalendarMonthInfo monthInfo
 function C_Calendar.GetMonthInfo(offsetMonths) end
 
+---@return string|nil clubId
+function C_Calendar.GetNextClubId() end
+
 ---@param offsetMonths number 
 ---@param monthDay number 
 ---@return number numDayEvents
@@ -250,12 +268,15 @@ function C_Calendar.GetRaidInfo(offsetMonths, monthDay, eventIndex) end
 ---@return bool actionPending
 function C_Calendar.IsActionPending() end
 
----@param clubID string 
+---@return bool isOpen
+function C_Calendar.IsEventOpen() end
+
+---@param clubId string 
 ---@param minLevel number 
 ---@param maxLevel number 
 ---@param maxRankOrder number @ [OPTIONAL]
----@overload fun(clubID:string, minLevel:number, maxLevel:number)
-function C_Calendar.MassInviteCommunity(clubID, minLevel, maxLevel, maxRankOrder) end
+---@overload fun(clubId:string, minLevel:number, maxLevel:number)
+function C_Calendar.MassInviteCommunity(clubId, minLevel, maxLevel, maxRankOrder) end
 
 ---@param minLevel number 
 ---@param maxLevel number 
@@ -267,6 +288,7 @@ function C_Calendar.OpenCalendar() end
 ---@param offsetMonths number 
 ---@param monthDay number 
 ---@param index number 
+---@return bool success
 function C_Calendar.OpenEvent(offsetMonths, monthDay, index) end
 
 function C_Calendar.RemoveEvent() end
@@ -278,34 +300,21 @@ function C_Calendar.SetAbsMonth(month, year) end
 ---@param offsetMonths number 
 function C_Calendar.SetMonth(offsetMonths) end
 
+---@param clubId string @ [OPTIONAL]
+---@overload fun()
+function C_Calendar.SetNextClubId(clubId) end
+
 function C_Calendar.UpdateEvent() end
 
----@class CalendarEventType
-local CalendarEventType = {}
-CalendarEventType.Raid = 0
-CalendarEventType.Dungeon = 1
-CalendarEventType.Pvp = 2
-CalendarEventType.Meeting = 3
-CalendarEventType.Other = 4
-CalendarEventType.HeroicDeprecated = 5
-
----@class CalendarTime
----@field monthDay number 
----@field month number 
----@field weekday number 
----@field year number 
----@field hour number 
----@field minute number 
-local CalendarTime = {}
-
 ---@class CalendarDayEvent
+---@field eventID string 
 ---@field title string 
 ---@field isCustomTitle bool 
 ---@field startTime CalendarTime 
 ---@field endTime CalendarTime 
 ---@field calendarType string 
 ---@field sequenceType string 
----@field eventType number 
+---@field eventType CalendarEventType 
 ---@field iconTexture number|nil 
 ---@field modStatus string 
 ---@field inviteStatus number 
@@ -317,6 +326,8 @@ local CalendarTime = {}
 ---@field difficultyName string 
 ---@field dontDisplayBanner bool 
 ---@field dontDisplayEnd bool 
+---@field clubID string 
+---@field isLocked bool 
 local CalendarDayEvent = {}
 
 ---@class CalendarEventIndexInfo
@@ -354,6 +365,8 @@ local CalendarEventInfo = {}
 ---@field inviteIsMine bool 
 ---@field type number 
 ---@field notes string 
+---@field classID number|nil 
+---@field guid string 
 local CalendarEventInviteInfo = {}
 
 ---@class CalendarEventStatusOption
@@ -376,6 +389,8 @@ local CalendarEventTextureInfo = {}
 local CalendarEventTypeDisplayInfo = {}
 
 ---@class CalendarGuildEventInfo
+---@field eventID string 
+---@field year number 
 ---@field month number 
 ---@field monthDay number 
 ---@field weekday number 
@@ -385,6 +400,8 @@ local CalendarEventTypeDisplayInfo = {}
 ---@field title string 
 ---@field calendarType string 
 ---@field texture number 
+---@field inviteStatus number 
+---@field clubID string 
 local CalendarGuildEventInfo = {}
 
 ---@class CalendarGuildFilterInfo

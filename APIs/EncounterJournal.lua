@@ -18,6 +18,21 @@ function C_EncounterJournal.GetSectionIconFlags(sectionID) end
 ---@return EncounterJournalSectionInfo info
 function C_EncounterJournal.GetSectionInfo(sectionID) end
 
+---@param instanceID number @ [OPTIONAL]
+---@overload fun()
+---@return bool hasLoot
+function C_EncounterJournal.InstanceHasLoot(instanceID) end
+
+---@param journalEncounterID number 
+---@return bool isEncounterComplete
+function C_EncounterJournal.IsEncounterComplete(journalEncounterID) end
+
+---@param level number 
+function C_EncounterJournal.SetPreviewMythicPlusLevel(level) end
+
+---@param tier number 
+function C_EncounterJournal.SetPreviewPvpTier(tier) end
+
 ---@class DungeonEntranceMapInfo
 ---@field areaPoiID number 
 ---@field position table 

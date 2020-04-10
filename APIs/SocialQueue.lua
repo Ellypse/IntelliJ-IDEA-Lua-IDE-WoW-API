@@ -14,7 +14,7 @@ function C_SocialQueue.GetConfig() end
 function C_SocialQueue.GetGroupForPlayer(playerGUID) end
 
 ---@param groupGUID string 
----@return bool, number, bool, bool, bool, bool, string canJoin, numQueues, needTank, needHealer, needDamage, isSoloQueueParty, leaderGUID
+---@return bool, number, bool, bool, bool, bool, bool, string canJoin, numQueues, needTank, needHealer, needDamage, isSoloQueueParty, questSessionActive, leaderGUID
 function C_SocialQueue.GetGroupInfo(groupGUID) end
 
 ---@param groupGUID string 
@@ -62,11 +62,6 @@ function C_SocialQueue.SignalToastDisplayed(groupGUID, priority) end
 ---@field THROTTLE_DF_BEST_PRIORITY number 
 local SocialQueueConfig = {}
 
----@class SocialQueuePlayerInfo
----@field guid string 
----@field clubId string|nil 
-local SocialQueuePlayerInfo = {}
-
 ---@class SocialQueueGroupQueueInfo
 ---@field clientID number 
 ---@field eligible bool 
@@ -76,4 +71,9 @@ local SocialQueuePlayerInfo = {}
 ---@field isAutoAccept bool 
 ---@field queueData QueueSpecificInfo 
 local SocialQueueGroupQueueInfo = {}
+
+---@class SocialQueuePlayerInfo
+---@field guid string 
+---@field clubId string|nil 
+local SocialQueuePlayerInfo = {}
 
