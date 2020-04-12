@@ -5330,7 +5330,7 @@ end
 function IsActionInRange(actionSlot)
 end
 
----@return lcoal isArena, isRegistered
+---@return isArena, isRegistered
 function IsActiveBattlefieldArena()
 end
 
@@ -10422,7 +10422,7 @@ end
 function pairs(table)
 end
 
----@return retOK, ret1, ret2, ... retn
+---@return retOK, ret1, ret2, ...
 function pcall(func, arg1, arg2, ...)
 end
 
@@ -10610,7 +10610,7 @@ end
 function strrev(string)
 end
 
----@return s1, s2, s3 ... sn
+---@return s1, s2, s3, ...
 function strsplit(delimiter, subject, pieces)
 end
 
