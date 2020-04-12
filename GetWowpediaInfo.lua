@@ -1,8 +1,15 @@
+--[[
+    Author: Britt Yazel (aka Soyier)
+    Date: April 12th, 2020
+	This script will read the documentation from Wowpedia (WoW Gamepedia) to generate a single global api file
+	readable by IntelliJ to use as source. It tries to avoid functions included in the in-game API that is parsed separately.
+
+	**Note**, since we are parsing thousands of pages, it takes quite a while to generate the content. ~5min
+]]
+
 --this script requires the lua modules:
 --  lua-socket
 --  lua-sec
-
-local debug = false
 
 -- loads the HTTP module and any libraries it requires
 local BASE_WOWPEDIA_ADDRESS = "https://wow.gamepedia.com"
@@ -10,19 +17,20 @@ local BASE_WOWPEDIA_ADDRESS = "https://wow.gamepedia.com"
 --download parent page with links to all sub pages
 require("socket")
 local https = require("ssl.https")
-local body, statusCode, headers, statusText = https.request(BASE_WOWPEDIA_ADDRESS.. "/Global_functions")
+local mainPageBody = https.request(BASE_WOWPEDIA_ADDRESS.. "/Global_functions")
 
 --split the html page into lines
 local lines = {}
-for line in body:gmatch("([^\n]*)\n?") do
+for line in mainPageBody:gmatch("([^\n]*)\n?") do
     table.insert(lines, line)
 end
 
+--parse the individual lines and create the base of a an api_entries table with all the api functions (we need to parse line by line to see if this is the right content)
 local api_entries = {}
 for k,v in pairs(lines) do
-    --we can ignore any api entries starting with C_ because those are all parsed form the ingame API separately
-    --we can ignore items with class= in the line as these are usually not entries, or just redirect entries (we account for those later)
-    if string.find(v, "title=\"API ") and not string.find(v, "API_C")  and not string.find(v, "class=") then
+    --all API entry lines seem to have title="API in the string, which is nice for us to narrow down
+    --we can ignore any api entries starting with C_ because those are all parsed form the in-game API separately
+    if string.find(v, "title=\"API ") and not string.find(v, "API_C") and not string.find(v, "title=\"World of Warcraft API\"") then
 
         local _,start = string.find(v,"\">")
         local finish, _ = string.find(v,"</a>")
@@ -31,8 +39,9 @@ for k,v in pairs(lines) do
         api_entries[api_entry] = {}
 
         --parse through the list of lines and split out just the matching addresses for pages with actual information on them
+        --these pages all seem to have "/API_ in the start of their href line
         local address
-        if string.find(v, "/API_") and not string.find(v, "/API_change_summaries") then
+        if string.find(v, "/API_") then
             _,start = string.find(v,"<a href=\"")
             finish, _ = string.find(v,"\" title=")
             address = string.sub(v, start+1, finish-1)
@@ -44,48 +53,74 @@ for k,v in pairs(lines) do
     end
 end
 
-local i = 1
+
 
 for k,v in pairs(api_entries) do
     if api_entries[k].address then
-        local body, statusCode, headers, statusText = https.request(BASE_WOWPEDIA_ADDRESS.. api_entries[k].address)
-        local _,start = string.find(body,"<pre>")
-        local finish, _ = string.find(body,"</pre>")
-        local functionHeader = ""
-        if start and finish then
-            functionHeader = string.sub(body, start+1, finish-1)
-        end
+        local spellPageBody = https.request(BASE_WOWPEDIA_ADDRESS .. api_entries[k].address)
+        if spellPageBody then
+            --the example function blocks all are wrapped in a <pre> tag, so we can use that to isolate our function headers
+            --note, on some entries there are multiple functions in one page, so we need to parse them apart
+            local _,start = string.find(spellPageBody,"<pre>")
+            local finish, _ = string.find(spellPageBody,"</pre>")
 
-        api_entries[k].functionHeader = {}
-
-        --some entries contain multiple functions per functionHeader block, account for that here and split into separate lines
-        for line in functionHeader:gmatch("([^\n]*)\n?") do
-            table.insert(api_entries[k].functionHeader, line)
-        end
-
-        --split between h2 chunks to parse out argument and returns
-        local h2Table = {}
-        --some entries contain multiple functions per functionHeader block, account for that here and split into separate lines
-        for chunk in body:gmatch("[^<h2>]+") do
-            if string.find(chunk,"id=\"Returns\"") then
-
+            local functionHeader = ""
+            if start and finish then
+                functionHeader = string.sub(spellPageBody, start+1, finish-1)
             end
 
-            if string.find(chunk,"id=\"Returns\"") then
+            api_entries[k].functionHeader = {}
 
+            --some entries contain multiple functions per functionHeader block, account for that here and split into separate lines
+            for line in functionHeader:gmatch("([^\n]*)\n?") do
+
+                ----------------------------------------
+                -----------String Cleanup---------------
+                ----------------------------------------
+
+                --some entries contain html code, ie "href=<>" in the parameters field. Strip that out
+                line = line:gsub("%b<>", "") --this removes angle brackets and everything inside them
+
+                --some of the params and returns are wrapped in quotes to indicate that they are strings, but this isn't suitable for us
+                line = line:gsub("\"", "")
+
+                --some of the arguments fields are wrapped in square brackets (to indicate they are optional). For our purposes we should just list them all
+                line = line:gsub("%[", "") --remove the open square brackets
+                line = line:gsub("%]", "") --remove the close square brackets
+
+                --some of the arguments have "local" in them still, which shouldn't be there
+                line = line:gsub("local", "")
+
+                --some of the arguments have "or" in them to indicate a choice in parameters, but we need to sanitize this and join these into one variable
+                line = line:gsub(" or ", "_or_")
+
+                --some of the arguments have a # symbol in them, i.e. #slot to indicate the slot number
+                line = line:gsub("#", "")
+
+                table.insert(api_entries[k].functionHeader, line)
             end
-        end
 
-        print(k)
 
-        if debug then
-            i = i + 1
-            --temp just for debuging. We can stop at 10 on the dry runs
-            if i >10 then
-                break
+            --[[
+            --split between h2 chunks to parse out argument and returns
+            local h2Table = {}
+            --some entries contain multiple functions per functionHeader block, account for that here and split into separate lines
+            for chunk in spellPageBody:gmatch("[^<h2>]+") do
+                if string.find(chunk,"id=\"Returns\"") then
+
+                end
+
+                if string.find(chunk,"id=\"Returns\"") then
+
+                end
             end
-        end
+            ]]
 
+
+            --give some feedback as it's going so you know it's not stuck. Simply print the name of the current function
+            print(k)
+
+        end
     end
 end
 
@@ -113,7 +148,8 @@ for k,v in pairs(api_entries) do
             --------------------------------------------------------------
 
             --we want to append to the proper value, we can't take the current index for granted on being correct
-            if functionName and api_entries[functionName] then
+            --we don't want to mess with an api_entry if it has its own page
+            if functionName and (functionName == k or (api_entries[functionName] and not api_entries[functionName].address)) then
 
                 ---arguments
                 local _,argStart = string.find(v2,"%(") --find the index where the right side of the expression starts
@@ -122,9 +158,6 @@ for k,v in pairs(api_entries) do
                 if argStart and argFinish then
                     api_entries[functionName].arguments = {}
                     local arguments_all = string.sub(v2, argStart+1, argFinish-1)
-                    arguments_all = arguments_all:gsub("%[", "")
-                    arguments_all = arguments_all:gsub("%]", "")
-
                     api_entries[functionName].arguments_all = arguments_all
 
                     for option in (","..arguments_all..","):gmatch("[^,]+") do
@@ -137,16 +170,18 @@ for k,v in pairs(api_entries) do
                 local returnStart = 1
                 local returnFinish, _ = string.find(v2," =")
 
-               if returnStart and returnFinish then
-                   api_entries[functionName].returns = {}
+                if returnStart and returnFinish then
+                    api_entries[functionName].returns = {}
                     local returns_all = string.sub(v2, returnStart, returnFinish-1)
 
-                   api_entries[functionName].returns_all = returns_all
+                    api_entries[functionName].returns_all = returns_all
 
                     for option in (","..returns_all..","):gmatch("[^,]+") do
                         option = option:gsub("^%s*", "") --remove leading white space
                         table.insert(api_entries[functionName].returns, option)
                     end
+                else
+                    api_entries[functionName].returns_all = "nil"
                 end
 
             end
@@ -166,21 +201,26 @@ end
 
 ]==========]
 
+local apiKeys = {}
+for k in pairs(api_entries) do
+    table.insert(apiKeys, k)
+end
 
-for k,v in pairs(api_entries) do
+table.sort(apiKeys)
 
+for _,k in pairs(apiKeys) do
     local functionName = k
     local returnValues
     local argValues
 
-    if v.returns_all then
-        returnValues = v.returns_all
+    if api_entries[k].returns_all then
+        returnValues = api_entries[k].returns_all
     else
-        returnValues = "nil"
+        returnValues = "unknown"
     end
 
-    if v.arguments_all then
-        argValues = v.arguments_all
+    if api_entries[k].arguments_all then
+        argValues = api_entries[k].arguments_all
     else
         argValues = ""
     end
