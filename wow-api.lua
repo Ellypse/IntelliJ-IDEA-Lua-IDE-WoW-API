@@ -3,7 +3,11 @@ function AbandonQuest()
 end
 
 ---@return nil
-function AbandonSkill(index)
+function AbandonSkill(skillLineID)
+end
+
+---@return unknown
+function AbbreviateLargeNumbers()
 end
 
 ---@return nil
@@ -27,10 +31,6 @@ function AcceptGuild()
 end
 
 ---@return nil
-function AcceptLevelGrant()
-end
-
----@return nil
 function AcceptProposal()
 end
 
@@ -47,7 +47,7 @@ function AcceptSockets()
 end
 
 ---@return nil
-function AcceptSpellConfirmationPrompt()
+function AcceptSpellConfirmationPrompt(spellID)
 end
 
 ---@return nil
@@ -62,67 +62,75 @@ end
 function AcknowledgeAutoAcceptQuest()
 end
 
----@return nil
+---@return unknown
 function AcknowledgeSurvey()
 end
 
+---@return unknown
+function ActionBindsItem()
+end
+
+---@return nil
+function ActionButtonDown(buttonID)
+end
+
+---@return nil
+function ActionButtonUp(buttonID)
+end
+
 ---@return hasRange
-function ActionHasRange(slot)
+function ActionHasRange(slotID)
 end
 
 ---@return nil
-function AddAutoQuestPopUp(questId, type)
-end
-
----@return zoneChannel
-function AddChatWindowChannel(index, channel)
+function AddAutoQuestPopUp(questID, type)
 end
 
 ---@return nil
-function AddChatWindowMessages(index, messageGroup)
+function AddChatWindowChannel(windowId, channelName)
 end
 
 ---@return nil
-function AddFriend(name)
+function AddChatWindowMessages(index, messagegroup)
+end
+
+---@return unknown
+function AddFrameLock()
 end
 
 ---@return nil
-function AddIgnore(name)
+function AddQuestWatch(questIndex, watchTime)
 end
 
 ---@return nil
-function AddMute(name)
+function AddQuestWatchForQuestID(questID , hardWatch)
+end
+
+---@return unknown
+function AddToAutoHide()
 end
 
 ---@return nil
-function AddOrDelIgnore(fullname)
-end
-
----@return nil
-function AddOrDelMute(unit)
-end
-
----@return nil
-function AddOrRemoveFriend(name, note)
-end
-
----@return nil
-function AddQuestWatch(questIndex)
-end
-
----@return nil
-function AddTrackedAchievement(id)
+function AddTrackedAchievement(achievementId)
 end
 
 ---@return nil
 function AddTradeMoney()
 end
 
+---@return unknown
+function AddWorldQuestWatch()
+end
+
 ---@return name
 function Ambiguate(fullName, context)
 end
 
----@return nil
+---@return unknown
+function AnimateTexCoords()
+end
+
+---@return unknown
 function AntiAliasingSupported()
 end
 
@@ -130,28 +138,28 @@ end
 function ApplyBarberShopStyle()
 end
 
----@return nil
-function ApplyTransmogrifications()
-end
-
----@return nil
+---@return unknown
 function ArchaeologyGetIconInfo()
 end
 
----@return numEntries
+---@return  numSites
 function ArchaeologyMapUpdateAll()
 end
 
----@return blobID
-function ArcheologyGetVisibleBlobID(index)
+---@return unknown
+function ArcheologyGetVisibleBlobID()
 end
 
----@return isHidden
+---@return hidden
 function AreAccountAchievementsHidden()
 end
 
----@return teamID
-function ArenaTeam_GetTeamSizeID(teamSize)
+---@return unknown
+function AreDangerousScriptsAllowed()
+end
+
+---@return unknown
+function AreTalentsLocked()
 end
 
 ---@return nil
@@ -162,11 +170,15 @@ end
 function AssistUnit(unit)
 end
 
+---@return unknown
+function AttachGlyphToSpell()
+end
+
 ---@return nil
 function AttackTarget()
 end
 
----@return nil
+---@return unknown
 function AutoChooseCurrentGraphicsSetting()
 end
 
@@ -174,211 +186,123 @@ end
 function AutoEquipCursorItem()
 end
 
----@return nil
-function AutoLootMailItem(mailID)
+---@return unknown
+function AutoLootMailItem()
 end
 
 ---@return nil
-function AutoStoreGuildBankItem(tab, slot)
+function AutoStoreGuildBankItem(tab,slot)
 end
 
----@return nil
+---@return unknown
 function BNAcceptFriendInvite()
 end
 
----@return nil
+---@return unknown
 function BNCheckBattleTagInviteToGuildMember()
 end
 
----@return nil
+---@return unknown
 function BNCheckBattleTagInviteToUnit()
 end
 
----@return isOnline
+---@return connected
 function BNConnected()
 end
 
----@return result
-function BNCreateConversation(presenceID_1, presenceID_2)
-end
-
----@return nil
+---@return unknown
 function BNDeclineFriendInvite()
 end
 
----@return isEnabled
+---@return unknown
 function BNFeaturesEnabled()
 end
 
----@return nil
+---@return unknown
 function BNFeaturesEnabledAndConnected()
 end
 
----@return nil
+---@return unknown
 function BNGetBlockedInfo()
 end
 
----@return nil
-function BNGetBlockedToonInfo()
-end
-
----@return type
-function BNGetConversationInfo(channel)
-end
-
----@return presenceID, unknown, displayName
-function BNGetConversationMemberInfo(channel, memberIndex)
-end
-
----@return nil
-function BNGetCustomMessageTable()
+---@return unknown
+function BNGetDisplayName()
 end
 
 ---@return presenceID, givenName, surname, isFriend
-function BNGetFOFInfo(presenceID, mutual, nonmutual, index)
+function BNGetFOFInfo(presenceID, mutual, non_mutual, index)
 end
 
 ---@return index
 function BNGetFriendIndex(presenceID)
 end
 
----@return presenceID, presenceName, battleTag, isBattleTagPresence, toonName, toonID, client, isOnline, lastOnline, isAFK, isDND, messageText, noteText, isRIDFriend, broadcastTime, canSoR
-function BNGetFriendInfo(friendIndex)
+---@return inviteID, accountName, isBattleTag, unknown, sentTime
+function BNGetFriendInviteInfo(inviteIndex)
 end
 
----@return presenceID, presenceName, battleTag, isBattleTagPresence, toonName, toonID, client, isOnline, lastOnline, isAFK, isDND, messageText, noteText, isRIDFriend, broadcastTime, canSoR
-function BNGetFriendInfoByID(presenceID)
-end
-
----@return nil
-function BNGetFriendInviteInfo()
-end
-
----@return hasFocus, toonName, client, realmName, realmId, faction, race, class, unknown, zoneName, level, gameText, broadcastText, broadcastTime
-function BNGetFriendToonInfo(friendIndex, toonIndex)
-end
-
----@return unknownPresenceID1, battleTag, unknownPresenceID2, broadcastText, bnetAFK, bnetDND, unknown
+---@return presenceID, battleTag, toonID, currentBroadcast, bnetAFK, bnetDND, isRIDEnabled 
 function BNGetInfo()
 end
 
----@return isEnabled
-function BNGetMatureLanguageFilter()
-end
-
----@return count
-function BNGetMaxNumConversations()
-end
-
----@return count
-function BNGetMaxPlayersInConversation()
-end
-
----@return nil
+---@return unknown
 function BNGetNumBlocked()
 end
 
----@return nil
-function BNGetNumBlockedToons()
-end
-
----@return memberCount
-function BNGetNumConversationMembers(channel)
-end
-
----@return nil
+---@return unknown
 function BNGetNumFOF()
 end
 
----@return nil
+---@return unknown
 function BNGetNumFriendInvites()
 end
 
----@return numToons
-function BNGetNumFriendToons(friendIndex)
-end
-
----@return totalBNet, numBNetOnline
+---@return numBNetTotal, numBNetOnline, numBNetFavorite, numBNetFavoriteOnline
 function BNGetNumFriends()
 end
 
----@return nil
+---@return unknown
 function BNGetSelectedBlock()
 end
 
----@return friendIndex
+---@return unknown
 function BNGetSelectedFriend()
 end
 
----@return nil
-function BNGetSelectedToonBlock()
-end
-
----@return unknown, toonName, client, realmName, realmID, faction, race, class, unknown, zoneName, level, gameText, broadcastText, broadcastTime, unknown, presenceID
-function BNGetToonInfo(bnetIDGameAccount)
-end
-
----@return nil
+---@return unknown
 function BNInviteFriend()
 end
 
----@return nil
-function BNInviteToConversation(channel, presenceID)
-end
-
----@return nil
+---@return unknown
 function BNIsBlocked()
 end
 
----@return nil
+---@return unknown
 function BNIsFriend()
 end
 
----@return nil
-function BNIsFriendConversationValid()
+---@return unknown
+function BNIsSelf()
 end
 
----@return isSelf
-function BNIsSelf(presenceID)
-end
-
----@return nil
-function BNIsToonBlocked()
-end
-
----@return nil
-function BNLeaveConversation()
-end
-
----@return nil
-function BNListConversation()
-end
-
----@return nil
+---@return unknown
 function BNRemoveFriend()
 end
 
----@return nil
-function BNReportFriendInvite()
-end
-
----@return nil
-function BNReportPlayer()
-end
-
----@return nil
+---@return unknown
 function BNRequestFOFInfo()
 end
 
----@return nil
-function BNSendConversationMessage()
+---@return unknown
+function BNRequestInviteFriend()
 end
 
----@return nil
+---@return unknown
 function BNSendFriendInvite()
 end
 
----@return nil
+---@return unknown
 function BNSendFriendInviteByID()
 end
 
@@ -386,107 +310,127 @@ end
 function BNSendGameData(presenceID, addonPrefix, message)
 end
 
----@return nil
+---@return unknown
 function BNSendSoR()
 end
 
----@return nil
+---@return unknown
 function BNSendVerifiedBattleTagInvite()
 end
 
 ---@return nil
-function BNSendWhisper(presenceID, messageText)
+function BNSendWhisper(presenceID, message)
 end
 
 ---@return nil
-function BNSetAFK()
+function BNSetAFK(bool)
 end
 
----@return nil
+---@return unknown
 function BNSetBlocked()
 end
 
 ---@return nil
-function BNSetCustomMessage(broadcastText)
+function BNSetCustomMessage(text)
 end
 
 ---@return nil
-function BNSetDND()
+function BNSetDND(bool)
 end
 
 ---@return nil
-function BNSetFocus()
+function BNSetFriendFavoriteFlag(id, isFavorite)
 end
 
 ---@return nil
-function BNSetFriendNote(presenceID, note)
+function BNSetFriendNote(ID, noteText)
 end
 
----@return nil
-function BNSetMatureLanguageFilter(enabled)
-end
-
----@return nil
+---@return unknown
 function BNSetSelectedBlock()
 end
 
----@return nil
+---@return unknown
 function BNSetSelectedFriend()
 end
 
----@return nil
-function BNSetSelectedToonBlock()
-end
-
----@return nil
-function BNSetToonBlocked()
-end
-
----@return nil
+---@return unknown
 function BNSummonFriendByIndex()
 end
 
----@return nil
+---@return unknown
 function BNTokenFindName()
 end
 
----@return inventoryID
-function BankButtonIDToInvSlotID(buttonID , isBag)
+---@return invSlot
+function BankButtonIDToInvSlotID(buttonID, isBag)
 end
 
 ---@return nil
 function BarberShopReset()
 end
 
----@return nil
+---@return unknown
 function BattlefieldMgrEntryInviteResponse()
 end
 
----@return nil
+---@return unknown
 function BattlefieldMgrExitRequest()
 end
 
----@return nil
+---@return unknown
 function BattlefieldMgrQueueInviteResponse()
 end
 
----@return nil
+---@return unknown
 function BattlefieldMgrQueueRequest()
+end
+
+---@return unknown
+function BattlefieldSetPendingReportTarget()
+end
+
+---@return unknown
+function BeginActionBarTransition()
 end
 
 ---@return nil
 function BeginTrade()
 end
 
+---@return unknown
+function BetterDate()
+end
+
 ---@return nil
 function BindEnchant()
 end
 
----@return nil
-function BreakUpLargeNumbers()
+---@return valueString
+function BreakUpLargeNumbers(value)
 end
 
----@return nil
+---@return unknown
+function BuildColoredListString()
+end
+
+---@return unknown
+function BuildListString()
+end
+
+---@return unknown
+function BuildMultilineTooltip()
+end
+
+---@return unknown
+function BuildNewLineListString()
+end
+
+---@return unknown
+function ButtonInventorySlot()
+end
+
+---@return unknown
 function BuyGuildBankTab()
 end
 
@@ -498,7 +442,7 @@ end
 function BuyMerchantItem(index, quantity)
 end
 
----@return nil
+---@return unknown
 function BuyReagentBank()
 end
 
@@ -507,2919 +451,26 @@ function BuyTrainerService(index)
 end
 
 ---@return nil
-function BuybackItem(index)
+function BuybackItem(slot)
 end
 
----@return nil
-function C_BlackMarket.Close()
-end
-
----@return nil
-function C_BlackMarket.GetHotItem()
-end
-
----@return nil
-function C_BlackMarket.GetItemInfoByID()
-end
-
----@return nil
-function C_BlackMarket.GetItemInfoByIndex()
-end
-
----@return nil
-function C_BlackMarket.GetNumItems()
-end
-
----@return nil
-function C_BlackMarket.ItemPlaceBid()
-end
-
----@return nil
-function C_BlackMarket.RequestItems()
-end
-
----@return nil
-function C_Garrison.AddFollowerToMission()
-end
-
----@return nil
-function C_Garrison.AssignFollowerToBuilding()
-end
-
----@return nil
-function C_Garrison.CanGenerateRecruits()
-end
-
----@return nil
-function C_Garrison.CanOpenMissionChest()
-end
-
----@return nil
-function C_Garrison.CanSetRecruitmentPreference()
-end
-
----@return nil
-function C_Garrison.CanUpgradeGarrison()
-end
-
----@return nil
-function C_Garrison.CancelConstruction()
-end
-
----@return nil
-function C_Garrison.CastSpellOnFollower()
-end
-
----@return nil
-function C_Garrison.CloseArchitect()
-end
-
----@return nil
-function C_Garrison.CloseGarrisonTradeskillNPC()
-end
-
----@return nil
-function C_Garrison.CloseMissionNPC()
-end
-
----@return nil
-function C_Garrison.CloseRecruitmentNPC()
-end
-
----@return nil
-function C_Garrison.CloseTradeskillCrafter()
-end
-
----@return nil
-function C_Garrison.GenerateRecruits()
-end
-
----@return nil
-function C_Garrison.GetAvailableMissions()
-end
-
----@return nil
-function C_Garrison.GetAvailableRecruits()
-end
-
----@return nil
-function C_Garrison.GetBasicMissionInfo()
-end
-
----@return nil
-function C_Garrison.GetBuffedFollowersForMission()
-end
-
----@return buildingID, buildingName, texturePrefix, icon, description, rank, currencyID, currencyAmount, goldAmount, timeRequirement, needsPlan, isPreBuilt, possSpecs, upgrades, canUpgrade, isMaxLevel, hasFollowerSlot
-function C_Garrison.GetBuildingInfo(buildingID)
-end
-
----@return nil
-function C_Garrison.GetBuildingLockInfo()
-end
-
----@return nil
-function C_Garrison.GetBuildingSizes()
-end
-
----@return nil
-function C_Garrison.GetBuildingSpecInfo()
-end
-
----@return nil
-function C_Garrison.GetBuildingTimeRemaining()
-end
-
----@return nil
-function C_Garrison.GetBuildingTooltip()
-end
-
----@return nil
-function C_Garrison.GetBuildingUpgradeInfo()
-end
-
----@return nil
-function C_Garrison.GetBuildings()
-end
-
----@return nil
-function C_Garrison.GetBuildingsForPlot()
-end
-
----@return nil
-function C_Garrison.GetBuildingsForSize()
-end
-
----@return nil
-function C_Garrison.GetCompleteMissions()
-end
-
----@return nil
-function C_Garrison.GetFollowerAbilities()
-end
-
----@return nil
-function C_Garrison.GetFollowerAbilityAtIndex()
-end
-
----@return nil
-function C_Garrison.GetFollowerAbilityAtIndexByID()
-end
-
----@return nil
-function C_Garrison.GetFollowerAbilityCounterMechanicInfo()
-end
-
----@return nil
-function C_Garrison.GetFollowerAbilityDescription()
-end
-
----@return nil
-function C_Garrison.GetFollowerAbilityIcon()
-end
-
----@return nil
-function C_Garrison.GetFollowerAbilityIsTrait()
-end
-
----@return nil
-function C_Garrison.GetFollowerAbilityLink()
-end
-
----@return nil
-function C_Garrison.GetFollowerAbilityName()
-end
-
----@return nil
-function C_Garrison.GetFollowerActivationCost()
-end
-
----@return nil
-function C_Garrison.GetFollowerBiasForMission()
-end
-
----@return nil
-function C_Garrison.GetFollowerClassSpec()
-end
-
----@return nil
-function C_Garrison.GetFollowerClassSpecAtlas()
-end
-
----@return nil
-function C_Garrison.GetFollowerClassSpecByID()
-end
-
----@return nil
-function C_Garrison.GetFollowerClassSpecName()
-end
-
----@return nil
-function C_Garrison.GetFollowerDisplayID()
-end
-
----@return nil
-function C_Garrison.GetFollowerDisplayIDByID()
-end
-
----@return nil
-function C_Garrison.GetFollowerInfo()
-end
-
----@return name, level, quality, displayID, followerID, garrFollowerID, status, portraitIconID
-function C_Garrison.GetFollowerInfoForBuilding(plotID)
-end
-
----@return nil
-function C_Garrison.GetFollowerItemLevelAverage()
-end
-
----@return nil
-function C_Garrison.GetFollowerItems()
-end
-
----@return nil
-function C_Garrison.GetFollowerLevel()
-end
-
----@return nil
-function C_Garrison.GetFollowerLevelXP()
-end
-
----@return nil
-function C_Garrison.GetFollowerLink()
-end
-
----@return nil
-function C_Garrison.GetFollowerLinkByID()
-end
-
----@return nil
-function C_Garrison.GetFollowerMissionCompleteInfo()
-end
-
----@return nil
-function C_Garrison.GetFollowerModelItems()
-end
-
----@return nil
-function C_Garrison.GetFollowerName()
-end
-
----@return nil
-function C_Garrison.GetFollowerNameByID()
-end
-
----@return nil
-function C_Garrison.GetFollowerPortraitIconIDByID()
-end
-
----@return nil
-function C_Garrison.GetFollowerQuality()
-end
-
----@return nil
-function C_Garrison.GetFollowerQualityTable()
-end
-
----@return nil
-function C_Garrison.GetFollowerSoftCap()
-end
-
----@return nil
-function C_Garrison.GetFollowerSourceTextByID()
-end
-
----@return nil
-function C_Garrison.GetFollowerStatus()
-end
-
----@return nil
-function C_Garrison.GetFollowerTraitAtIndex()
-end
-
----@return nil
-function C_Garrison.GetFollowerTraitAtIndexByID()
-end
-
----@return nil
-function C_Garrison.GetFollowerXP()
-end
-
----@return nil
-function C_Garrison.GetFollowerXPTable()
-end
-
----@return nil
-function C_Garrison.GetFollowers()
-end
-
----@return nil
-function C_Garrison.GetFollowersTraitsForMission()
-end
-
----@return nil
-function C_Garrison.GetGarrisonInfo()
-end
-
----@return nil
-function C_Garrison.GetGarrisonUpgradeCost()
-end
-
----@return nil
-function C_Garrison.GetInProgressMissions()
-end
-
----@return nil
-function C_Garrison.GetLandingPageItems()
-end
-
----@return nil
-function C_Garrison.GetLandingPageShipmentCount()
-end
-
----@return name, texture, shipmentCapacity, shipmentsTotal, creationTime, duration, timeLeftString, itemName, itemIcon, itemQuality, itemID
-function C_Garrison.GetLandingPageShipmentInfo()
-end
-
----@return nil
-function C_Garrison.GetMissionCompleteEncounters()
-end
-
----@return nil
-function C_Garrison.GetMissionDisplayIDs()
-end
-
----@return nil
-function C_Garrison.GetMissionInfo()
-end
-
----@return nil
-function C_Garrison.GetMissionLink()
-end
-
----@return nil
-function C_Garrison.GetMissionMaxFollowers()
-end
-
----@return nil
-function C_Garrison.GetMissionName()
-end
-
----@return nil
-function C_Garrison.GetMissionRewardInfo()
-end
-
----@return nil
-function C_Garrison.GetMissionTimes()
-end
-
----@return nil
-function C_Garrison.GetMissionUncounteredMechanics()
-end
-
----@return nil
-function C_Garrison.GetNumActiveFollowers()
-end
-
----@return nil
-function C_Garrison.GetNumFollowerActivationsRemaining()
-end
-
----@return nil
-function C_Garrison.GetNumFollowerDailyActivations()
-end
-
----@return nil
-function C_Garrison.GetNumFollowers()
-end
-
----@return nil
-function C_Garrison.GetNumFollowersOnMission()
-end
-
----@return nil
-function C_Garrison.GetNumPendingShipments()
-end
-
----@return nil
-function C_Garrison.GetNumShipmentReagents()
-end
-
----@return buildingID, buildingName, texturePrefix, icon, description, rank, currencyID, currencyAmount, goldAmount, timeRequirement, needsPlan, isPreBuilt, possSpecs, upgrades, canUpgrade, isMaxLevel, hasFollowerSlot, knownSpecs, currentSpec, specCooldown, isBeingBuilt, timeStarted, buildDuration, timeRemainingText, canCompleteBuild
-function C_Garrison.GetOwnedBuildingInfo(plotID)
-end
-
----@return buildingID, buildingName, texturePrefix, icon, rank, isBeingBuilt, timeStarted, buildDuration, canCompleteBuild, canUpgrade, isPreBuilt
-function C_Garrison.GetOwnedBuildingInfoAbbrev(plotID)
-end
-
----@return nil
-function C_Garrison.GetPartyBuffs()
-end
-
----@return nil
-function C_Garrison.GetPartyMissionInfo()
-end
-
----@return nil
-function C_Garrison.GetPendingShipmentInfo()
-end
-
----@return nil
-function C_Garrison.GetPlots()
-end
-
----@return nil
-function C_Garrison.GetPlotsForBuilding()
-end
-
----@return nil
-function C_Garrison.GetPossibleFollowersForBuilding()
-end
-
----@return nil
-function C_Garrison.GetRecruitAbilities()
-end
-
----@return nil
-function C_Garrison.GetRecruiterAbilityCategories()
-end
-
----@return nil
-function C_Garrison.GetRecruiterAbilityList()
-end
-
----@return nil
-function C_Garrison.GetRecruitmentPreferences()
-end
-
----@return nil
-function C_Garrison.GetRewardChance()
-end
-
----@return prefix, pendingText, description
-function C_Garrison.GetShipmentContainerInfo()
-end
-
----@return nil
-function C_Garrison.GetShipmentItemInfo()
-end
-
----@return nil
-function C_Garrison.GetShipmentReagentCurrencyInfo()
-end
-
----@return nil
-function C_Garrison.GetShipmentReagentInfo()
-end
-
----@return nil
-function C_Garrison.GetShipmentReagentItemLink()
-end
-
----@return nil
-function C_Garrison.GetSpecChangeCost()
-end
-
----@return nil
-function C_Garrison.GetTabForPlot()
-end
-
----@return nil
-function C_Garrison.IsAboveFollowerSoftCap()
-end
-
----@return nil
-function C_Garrison.IsFollowerCollected()
-end
-
----@return nil
-function C_Garrison.IsFollowerUnique()
-end
-
----@return nil
-function C_Garrison.IsInvasionAvailable()
-end
-
----@return nil
-function C_Garrison.IsOnGarrisonMap()
-end
-
----@return nil
-function C_Garrison.IsUsingPartyGarrison()
-end
-
----@return nil
-function C_Garrison.IsVisitGarrisonAvailable()
-end
-
----@return nil
-function C_Garrison.MarkMissionComplete()
-end
-
----@return nil
-function C_Garrison.MissionBonusRoll()
-end
-
----@return nil
-function C_Garrison.PlaceBuilding()
-end
-
----@return nil
-function C_Garrison.RecruitFollower()
-end
-
----@return nil
-function C_Garrison.RemoveFollower()
-end
-
----@return nil
-function C_Garrison.RemoveFollowerFromBuilding()
-end
-
----@return nil
-function C_Garrison.RemoveFollowerFromMission()
-end
-
----@return nil
-function C_Garrison.RequestGarrisonUpgradeable()
-end
-
----@return nil
-function C_Garrison.RequestLandingPageShipmentInfo()
-end
-
----@return nil
-function C_Garrison.RequestShipmentCreation()
-end
-
----@return nil
-function C_Garrison.RequestShipmentInfo()
-end
-
----@return nil
-function C_Garrison.SearchForFollower()
-end
-
----@return nil
-function C_Garrison.SetBuildingActive()
-end
-
----@return nil
-function C_Garrison.SetBuildingSpecialization()
-end
-
----@return nil
-function C_Garrison.SetFollowerFavorite()
-end
-
----@return nil
-function C_Garrison.SetFollowerInactive()
-end
-
----@return nil
-function C_Garrison.SetRecruitmentPreferences()
-end
-
----@return nil
-function C_Garrison.SetUsingPartyGarrison()
-end
-
----@return nil
-function C_Garrison.StartMission()
-end
-
----@return nil
-function C_Garrison.SwapBuildings()
-end
-
----@return nil
-function C_Garrison.UpgradeBuilding()
-end
-
----@return nil
-function C_Garrison.UpgradeGarrison()
-end
-
----@return nil
-function C_LFGList.AcceptInvite()
-end
-
----@return nil
-function C_LFGList.ApplyToGroup()
-end
-
----@return nil
-function C_LFGList.CancelApplication()
-end
-
----@return nil
-function C_LFGList.ClearSearchResults()
-end
-
----@return nil
-function C_LFGList.CreateListing()
-end
-
----@return nil
-function C_LFGList.DeclineApplicant()
-end
-
----@return nil
-function C_LFGList.DeclineInvite()
-end
-
----@return nil
-function C_LFGList.GetActiveEntryInfo()
-end
-
----@return nil
-function C_LFGList.GetActivityGroupInfo()
-end
-
----@return nil
-function C_LFGList.GetActivityInfo()
-end
-
----@return nil
-function C_LFGList.GetActivityInfoExpensive()
-end
-
----@return nil
-function C_LFGList.GetApplicantInfo()
-end
-
----@return nil
-function C_LFGList.GetApplicantMemberInfo()
-end
-
----@return nil
-function C_LFGList.GetApplicantMemberStats()
-end
-
----@return nil
-function C_LFGList.GetApplicants()
-end
-
----@return groupID, status, unknown, timeRemaining, role
-function C_LFGList.GetApplicationInfo(groupID)
-end
-
----@return applications
-function C_LFGList.GetApplications()
-end
-
----@return nil
-function C_LFGList.GetAvailableActivities()
-end
-
----@return nil
-function C_LFGList.GetAvailableActivityGroups()
-end
-
----@return nil
-function C_LFGList.GetAvailableCategories()
-end
-
----@return nil
-function C_LFGList.GetAvailableRoles()
-end
-
----@return nil
-function C_LFGList.GetCategoryInfo()
-end
-
----@return nil
-function C_LFGList.GetNumApplicants()
-end
-
----@return numApplications
-function C_LFGList.GetNumApplications()
-end
-
----@return nil
-function C_LFGList.GetNumInvitedApplicantMembers()
-end
-
----@return nil
-function C_LFGList.GetRoleCheckInfo()
-end
-
----@return nil
-function C_LFGList.GetSearchResultEncounterInfo()
-end
-
----@return nil
-function C_LFGList.GetSearchResultFriends()
-end
-
----@return id, unknown, name, desc, unknown, ilvl, time, unknown, unknown, unknown, unknown, leader, members, unknown
-function C_LFGList.GetSearchResultInfo()
-end
-
----@return nil
-function C_LFGList.GetSearchResultMemberCounts()
-end
-
----@return nil
-function C_LFGList.GetSearchResultMemberInfo()
-end
-
----@return groups, groupIDs
-function C_LFGList.GetSearchResults()
-end
-
----@return nil
-function C_LFGList.HasActivityList()
-end
-
----@return nil
-function C_LFGList.InviteApplicant()
-end
-
----@return nil
-function C_LFGList.IsCurrentlyApplying()
-end
-
----@return nil
-function C_LFGList.RefreshApplicants()
-end
-
----@return nil
-function C_LFGList.RemoveApplicant()
-end
-
----@return nil
-function C_LFGList.RemoveListing()
-end
-
----@return nil
-function C_LFGList.ReportApplicant()
-end
-
----@return nil
-function C_LFGList.ReportSearchResult()
-end
-
----@return nil
-function C_LFGList.RequestAvailableActivities()
-end
-
----@return nil
-function C_LFGList.Search()
-end
-
----@return nil
-function C_LFGList.SetApplicantMemberRole()
-end
-
----@return nil
-function C_LFGList.UpdateListing()
-end
-
----@return nil
-function C_LootHistory.CanMasterLoot()
-end
-
----@return nil
-function C_LootHistory.GetExpiration()
-end
-
----@return nil
-function C_LootHistory.GetItem()
-end
-
----@return nil
-function C_LootHistory.GetNumItems()
-end
-
----@return nil
-function C_LootHistory.GetPlayerInfo()
-end
-
----@return nil
-function C_LootHistory.GiveMasterLoot()
-end
-
----@return nil
-function C_LootHistory.SetExpiration()
-end
-
----@return nil
-function C_LossOfControl.GetEventInfo()
-end
-
----@return nil
-function C_LossOfControl.GetNumEvents()
-end
-
----@return nil
-function C_MapBar.BarIsShown()
-end
-
----@return nil
-function C_MapBar.GetCurrentValue()
-end
-
----@return nil
-function C_MapBar.GetMaxValue()
-end
-
----@return nil
-function C_MapBar.GetParticipationPercentage()
-end
-
----@return nil
-function C_MapBar.GetPhaseIndex()
-end
-
----@return nil
-function C_MapBar.GetTag()
-end
-
----@return nil
-function C_MountJournal.Dismiss()
-end
-
----@return nil
-function C_MountJournal.GetCollectedFilterSetting()
-end
-
----@return nil
-function C_MountJournal.GetIsFavorite()
-end
-
----@return creatureName, spellID, icon, active, summonable, source, isFavorite, isFactionSpecific, faction, unknown, owned
-function C_MountJournal.GetMountInfo(index)
-end
-
----@return nil
-function C_MountJournal.GetMountInfoExtra()
-end
-
----@return nil
-function C_MountJournal.GetNumMounts()
-end
-
----@return nil
-function C_MountJournal.Pickup()
-end
-
----@return nil
-function C_MountJournal.SetCollectedFilterSetting()
-end
-
----@return nil
-function C_MountJournal.SetIsFavorite()
-end
-
----@return nil
-function C_MountJournal.Summon()
-end
-
----@return nil
-function C_NewItems.ClearAll()
-end
-
----@return nil
-function C_NewItems.IsNewItem()
-end
-
----@return nil
-function C_NewItems.RemoveNewItem()
-end
-
----@return nil
-function C_PetBattles.AcceptPVPDuel()
-end
-
----@return nil
-function C_PetBattles.AcceptQueuedPVPMatch()
-end
-
----@return nil
-function C_PetBattles.CanAcceptQueuedPVPMatch()
-end
-
----@return nil
-function C_PetBattles.CanActivePetSwapOut()
-end
-
----@return nil
-function C_PetBattles.CanPetSwapIn()
-end
-
----@return nil
-function C_PetBattles.CancelPVPDuel()
-end
-
----@return nil
-function C_PetBattles.ChangePet(id)
-end
-
----@return nil
-function C_PetBattles.DeclineQueuedPVPMatch()
-end
-
----@return nil
-function C_PetBattles.ForfeitGame()
-end
-
----@return nil
-function C_PetBattles.GetAbilityEffectInfo()
-end
-
----@return id, name, icon, maxcooldown, desc, numTurns, abilityPetType, nostrongweak
-function C_PetBattles.GetAbilityInfo(owner, slotnumber, spellIndex)
-end
-
----@return name, icon, petType, nostrongweakhint
-function C_PetBattles.GetAbilityInfoByID(id)
-end
-
----@return nil
-function C_PetBattles.GetAbilityProcTurnIndex()
-end
-
----@return isUsable, currentCooldown
-function C_PetBattles.GetAbilityState(owner, slotnumber, spellIndex)
-end
-
----@return nil
-function C_PetBattles.GetAbilityStateModification()
-end
-
----@return index
-function C_PetBattles.GetActivePet(owner)
-end
-
----@return nil
-function C_PetBattles.GetAllEffectNames()
-end
-
----@return nil
-function C_PetBattles.GetAllStates()
-end
-
----@return nil
-function C_PetBattles.GetAttackModifier(YourType, EnemyType)
-end
-
----@return nil
-function C_PetBattles.GetAuraInfo()
-end
-
----@return battleState
-function C_PetBattles.GetBattleState()
-end
-
----@return quality
-function C_PetBattles.GetBreedQuality(petOwner, petIndex)
-end
-
----@return nil
-function C_PetBattles.GetDisplayID()
-end
-
----@return nil
-function C_PetBattles.GetForfeitPenalty()
-end
-
----@return health
-function C_PetBattles.GetHealth(petOwner, petIndex)
-end
-
----@return icon
-function C_PetBattles.GetIcon(owner, index)
-end
-
----@return level
-function C_PetBattles.GetLevel(petOwner, petIndex)
-end
-
----@return maxHealth
-function C_PetBattles.GetMaxHealth(petOwner, petIndex)
-end
-
----@return name, default
-function C_PetBattles.GetName(owner, index)
-end
-
----@return auras
-function C_PetBattles.GetNumAuras(owner, index)
-end
-
----@return amount
-function C_PetBattles.GetNumPets(owner)
-end
-
----@return nil
-function C_PetBattles.GetPVPMatchmakingInfo()
-end
-
----@return nil
-function C_PetBattles.GetPetSpeciesID()
-end
-
----@return nil
-function C_PetBattles.GetPetType()
-end
-
----@return nil
-function C_PetBattles.GetPlayerTrapAbility()
-end
-
----@return nil
-function C_PetBattles.GetPower(owner, index)
-end
-
----@return nil
-function C_PetBattles.GetSelectedAction()
-end
-
----@return speed
-function C_PetBattles.GetSpeed(owner, index)
-end
-
----@return nil
-function C_PetBattles.GetStateValue()
-end
-
----@return timeRemaining, totalTime
-function C_PetBattles.GetTurnTimeInfo()
-end
-
----@return xp, maxXP
-function C_PetBattles.GetXP(owner, index)
-end
-
----@return nil
-function C_PetBattles.IsInBattle()
-end
-
----@return isnpc
-function C_PetBattles.IsPlayerNPC(player)
-end
-
----@return nil
-function C_PetBattles.IsSkipAvailable()
-end
-
----@return nil
-function C_PetBattles.IsTrapAvailable()
-end
-
----@return waiting
-function C_PetBattles.IsWaitingOnOpponent()
-end
-
----@return isWild
-function C_PetBattles.IsWildBattle()
-end
-
----@return nil
-function C_PetBattles.SetPendingReportBattlePetTarget()
-end
-
----@return nil
-function C_PetBattles.SetPendingReportTargetFromUnit()
-end
-
----@return nil
-function C_PetBattles.ShouldShowPetSelect()
-end
-
----@return nil
-function C_PetBattles.SkipTurn()
-end
-
----@return nil
-function C_PetBattles.StartPVPDuel()
-end
-
----@return nil
-function C_PetBattles.StartPVPMatchmaking()
-end
-
----@return nil
-function C_PetBattles.StopPVPMatchmaking()
-end
-
----@return nil
-function C_PetBattles.UseAbility(id)
-end
-
----@return nil
-function C_PetBattles.UseTrap()
-end
-
----@return nil
-function C_PetJournal.AddAllPetSourcesFilter()
-end
-
----@return nil
-function C_PetJournal.AddAllPetTypesFilter()
-end
-
----@return nil
-function C_PetJournal.CagePetByID()
-end
-
----@return nil
-function C_PetJournal.ClearAllPetSourcesFilter()
-end
-
----@return nil
-function C_PetJournal.ClearAllPetTypesFilter()
-end
-
----@return nil
-function C_PetJournal.ClearSearchFilter()
-end
-
----@return nil
-function C_PetJournal.FindPetIDByName()
-end
-
----@return nil
-function C_PetJournal.GetBattlePetLink()
-end
-
----@return nil
-function C_PetJournal.GetNumCollectedInfo()
-end
-
----@return nil
-function C_PetJournal.GetNumPetSources()
-end
-
----@return nil
-function C_PetJournal.GetNumPetTypes()
-end
-
----@return nil
-function C_PetJournal.GetNumPets()
-end
-
----@return nil
-function C_PetJournal.GetOwnedBattlePetString()
-end
-
----@return nil
-function C_PetJournal.GetPetAbilityInfo()
-end
-
----@return nil
-function C_PetJournal.GetPetAbilityList()
-end
-
----@return nil
-function C_PetJournal.GetPetCooldownByGUID()
-end
-
----@return nil
-function C_PetJournal.GetPetInfoByIndex()
-end
-
----@return speciesID, customName, level, xp, maxXp, displayID, isFavorite, petName, petIcon, petType, creatureID, sourceText, description, isWild, canBattle, tradable, unique
-function C_PetJournal.GetPetInfoByPetID(petID)
-end
-
----@return nil
-function C_PetJournal.GetPetInfoBySpeciesID()
-end
-
----@return petID, petSpellID_slot1, petSpellID_slot2, petSpellID_slot3, locked
-function C_PetJournal.GetPetLoadOutInfo(slotIndex)
-end
-
----@return nil
-function C_PetJournal.GetPetSortParameter()
-end
-
----@return health, maxHealth, attack, speed, rarity
-function C_PetJournal.GetPetStats(petID)
-end
-
----@return nil
-function C_PetJournal.GetPetTeamAverageLevel()
-end
-
----@return nil
-function C_PetJournal.GetSummonedPetGUID()
-end
-
----@return nil
-function C_PetJournal.IsFindBattleEnabled()
-end
-
----@return nil
-function C_PetJournal.IsFlagFiltered()
-end
-
----@return nil
-function C_PetJournal.IsJournalReadOnly()
-end
-
----@return nil
-function C_PetJournal.IsJournalUnlocked()
-end
-
----@return nil
-function C_PetJournal.IsPetSourceFiltered()
-end
-
----@return nil
-function C_PetJournal.IsPetTypeFiltered()
-end
-
----@return nil
-function C_PetJournal.PetCanBeReleased()
-end
-
----@return nil
-function C_PetJournal.PetIsCapturable()
-end
-
----@return nil
-function C_PetJournal.PetIsFavorite()
-end
-
----@return nil
-function C_PetJournal.PetIsHurt()
-end
-
----@return nil
-function C_PetJournal.PetIsLockedForConvert()
-end
-
----@return nil
-function C_PetJournal.PetIsRevoked()
-end
-
----@return nil
-function C_PetJournal.PetIsSlotted()
-end
-
----@return nil
-function C_PetJournal.PetIsSummonable()
-end
-
----@return nil
-function C_PetJournal.PetIsTradable()
-end
-
----@return nil
-function C_PetJournal.PickupPet()
-end
-
----@return nil
-function C_PetJournal.ReleasePetByID()
-end
-
----@return nil
-function C_PetJournal.SetAbility(slotIndex, spellIndex, petSpellID)
-end
-
----@return nil
-function C_PetJournal.SetCustomName()
-end
-
----@return nil
-function C_PetJournal.SetFavorite()
-end
-
----@return nil
-function C_PetJournal.SetFlagFilter()
-end
-
----@return nil
-function C_PetJournal.SetPetLoadOutInfo(slotIndex, petID)
-end
-
----@return nil
-function C_PetJournal.SetPetSortParameter()
-end
-
----@return nil
-function C_PetJournal.SetPetSourceFilter()
-end
-
----@return nil
-function C_PetJournal.SetPetTypeFilter()
-end
-
----@return nil
-function C_PetJournal.SetSearchFilter()
-end
-
----@return nil
-function C_PetJournal.SummonPetByGUID()
-end
-
----@return nil
-function C_PetJournal.SummonRandomPet()
-end
-
----@return nil
-function C_ProductChoice.GetChoices()
-end
-
----@return nil
-function C_ProductChoice.GetNumSuppressed()
-end
-
----@return nil
-function C_ProductChoice.GetProducts()
-end
-
----@return nil
-function C_ProductChoice.MakeSelection()
-end
-
----@return nil
-function C_Questline.GetNumAvailableQuestlines()
-end
-
----@return nil
-function C_Questline.GetQuestlineInfoByIndex()
-end
-
----@return nil
-function C_RecruitAFriend.CheckEmailEnabled()
-end
-
----@return nil
-function C_RecruitAFriend.GetRecruitInfo()
-end
-
----@return nil
-function C_RecruitAFriend.IsSendingEnabled()
-end
-
----@return nil
-function C_RecruitAFriend.SendRecruit()
-end
-
----@return nil
-function C_Scenario.GetBonusStepRewardQuestID()
-end
-
----@return nil
-function C_Scenario.GetBonusSteps()
-end
-
----@return nil
-function C_Scenario.GetCriteriaInfo()
-end
-
----@return nil
-function C_Scenario.GetCriteriaInfoByStep()
-end
-
----@return nil
-function C_Scenario.GetInfo()
-end
-
----@return nil
-function C_Scenario.GetProvingGroundsInfo()
-end
-
----@return nil
-function C_Scenario.GetScenarioIconInfo()
-end
-
----@return nil
-function C_Scenario.GetStepInfo()
-end
-
----@return nil
-function C_Scenario.GetSupersededObjectives()
-end
-
----@return nil
-function C_Scenario.IsChallengeMode()
-end
-
----@return nil
-function C_Scenario.IsInScenario()
-end
-
----@return nil
-function C_Scenario.TreatScenarioAsDungeon()
-end
-
----@return nil
-function C_StorePublic.IsDisabledByParentalControls()
-end
-
----@return nil
-function C_StorePublic.IsEnabled()
-end
-
----@return nil
-function C_TaskQuest.GetQuestObjectiveStrByQuestID()
-end
-
----@return name
-function C_TaskQuest.GetQuestTitleByQuestID(id)
-end
-
----@return nil
-function C_TaskQuest.GetQuestsForPlayerByMapID()
-end
-
----@param duration number
----@param callback function
-function C_Timer.After(duration, callback)
-end
-
----@return nil
-function C_ToyBox.ClearAllSourceTypesFiltered()
-end
-
----@return nil
-function C_ToyBox.FilterToys()
-end
-
----@return nil
-function C_ToyBox.GetFilterCollected()
-end
-
----@return nil
-function C_ToyBox.GetFilterUncollected()
-end
-
----@return nil
-function C_ToyBox.GetIsFavorite()
-end
-
----@return nil
-function C_ToyBox.GetNumFilteredToys()
-end
-
----@return nil
-function C_ToyBox.GetNumLearnedDisplayedToys()
-end
-
----@return nil
-function C_ToyBox.GetNumTotalDisplayedToys()
-end
-
----@return nil
-function C_ToyBox.GetNumToys()
-end
-
----@return nil
-function C_ToyBox.GetToyFromIndex()
-end
-
----@return itemID, name, texture, collected
-function C_ToyBox.GetToyInfo(itemID)
-end
-
----@return nil
-function C_ToyBox.GetToyLink()
-end
-
----@return nil
-function C_ToyBox.HasFavorites()
-end
-
----@return nil
-function C_ToyBox.IsSourceTypeFiltered()
-end
-
----@return nil
-function C_ToyBox.PickupToyBoxItem()
-end
-
----@return nil
-function C_ToyBox.SetAllSourceTypesFiltered()
-end
-
----@return nil
-function C_ToyBox.SetFilterCollected()
-end
-
----@return nil
-function C_ToyBox.SetFilterSourceType()
-end
-
----@return nil
-function C_ToyBox.SetFilterString()
-end
-
----@return nil
-function C_ToyBox.SetFilterUncollected()
-end
-
----@return nil
-function C_ToyBox.SetIsFavorite()
-end
-
----@return nil
-function C_Trophy.MonumentChangeAppearanceToTrophyID()
-end
-
----@return nil
-function C_Trophy.MonumentCloseMonumentUI()
-end
-
----@return nil
-function C_Trophy.MonumentGetCount()
-end
-
----@return nil
-function C_Trophy.MonumentGetSelectedTrophyID()
-end
-
----@return nil
-function C_Trophy.MonumentGetTrophyInfoByIndex()
-end
-
----@return nil
-function C_Trophy.MonumentLoadList()
-end
-
----@return nil
-function C_Trophy.MonumentLoadSelectedTrophyID()
-end
-
----@return nil
-function C_Trophy.MonumentRevertAppearanceToSaved()
-end
-
----@return nil
-function C_Trophy.MonumentSaveSelection()
-end
-
----@return nil
-function C_Vignettes.GetNumVignettes()
-end
-
----@return nil
-function C_Vignettes.GetVignetteGUID()
-end
-
----@return nil
-function C_Vignettes.GetVignetteInfoFromInstanceID()
-end
-
----@return deposit
-function CalculateAuctionDeposit(runTime)
-end
-
----@return nil
-function CalendarAddEvent()
-end
-
----@return canAdd
-function CalendarCanAddEvent()
-end
-
----@return canInvite
-function CalendarCanSendInvite()
-end
-
----@return nil
-function CalendarCloseEvent()
-end
-
----@return nil
-function CalendarContextDeselectEvent()
-end
-
----@return canReport
-function CalendarContextEventCanComplain(monthOffset, day, index)
-end
-
----@return canEdit
-function CalendarContextEventCanEdit(monthOffset, day, index)
-end
-
----@return nil
-function CalendarContextEventCanRemove()
-end
-
----@return canPaste
-function CalendarContextEventClipboard()
-end
-
----@return nil
-function CalendarContextEventComplain(monthOffset, day, index)
-end
-
----@return nil
-function CalendarContextEventCopy(monthOffset, day, index)
-end
-
----@return calendarType
-function CalendarContextEventGetCalendarType(monthOffset, day, index)
-end
-
----@return nil
-function CalendarContextEventPaste(monthOffset, day)
-end
-
----@return nil
-function CalendarContextEventRemove(monthOffset, day, index)
-end
-
----@return nil
-function CalendarContextEventSignUp(monthOffset, day, index)
-end
-
----@return monthOffset, day, index
-function CalendarContextGetEventIndex()
-end
-
----@return nil
-function CalendarContextInviteAvailable(monthOffset, day, index)
-end
-
----@return nil
-function CalendarContextInviteDecline(monthOffset, day, index)
-end
-
----@return pendingInvite
-function CalendarContextInviteIsPending(monthOffset, day, index)
-end
-
----@return modStatus
-function CalendarContextInviteModeratorStatus(monthOffset, day, index)
-end
-
----@return nil
-function CalendarContextInviteRemove(monthOffset, day, index)
-end
-
----@return inviteStatus
-function CalendarContextInviteStatus(monthOffset, day, index)
-end
-
----@return nil
-function CalendarContextInviteTentative()
-end
-
----@return inviteType
-function CalendarContextInviteType(monthOffset, day, index)
-end
-
----@return nil
-function CalendarContextSelectEvent(monthOffset, day, index)
-end
-
----@return minLevel, maxLevel, rank
-function CalendarDefaultGuildFilter()
-end
-
----@return nil
-function CalendarEventAvailable()
-end
-
----@return canEdit
-function CalendarEventCanEdit()
-end
-
----@return canModerate
-function CalendarEventCanModerate(index)
-end
-
----@return nil
-function CalendarEventClearAutoApprove()
-end
-
----@return nil
-function CalendarEventClearLocked()
-end
-
----@return nil
-function CalendarEventClearModerator(index)
-end
-
----@return nil
-function CalendarEventDecline()
-end
-
----@return calendarType
-function CalendarEventGetCalendarType()
-end
-
----@return name, level, className, classFileName, inviteStatus, modStatus, inviteIsMine, inviteType
-function CalendarEventGetInvite(index)
-end
-
----@return weekday, month, day, year, hour, minute
-function CalendarEventGetInviteResponseTime(index)
-end
-
----@return criterion, reverse
-function CalendarEventGetInviteSortCriterion()
-end
-
----@return numInvites
-function CalendarEventGetNumInvites()
-end
-
----@return nil
-function CalendarEventGetRepeatOptions()
-end
-
----@return index
-function CalendarEventGetSelectedInvite()
-end
-
----@return nil
-function CalendarEventGetStatusOptions()
-end
-
----@return name, icon, expansion
-function CalendarEventGetTextures(eventType)
-end
-
----@return nil
-function CalendarEventGetTypes()
-end
-
----@return nil
-function CalendarEventGetTypesDisplayOrdered()
-end
-
----@return pendingInvite
-function CalendarEventHasPendingInvite()
-end
-
----@return settingsChanged
-function CalendarEventHaveSettingsChanged()
-end
-
----@return nil
-function CalendarEventInvite(name)
-end
-
----@return isModerator
-function CalendarEventIsModerator()
-end
-
----@return nil
-function CalendarEventRemoveInvite(index)
-end
-
----@return nil
-function CalendarEventSelectInvite(index)
-end
-
----@return nil
-function CalendarEventSetAutoApprove()
-end
-
----@return nil
-function CalendarEventSetDate(month, day, year)
-end
-
----@return nil
-function CalendarEventSetDescription(description)
-end
-
----@return nil
-function CalendarEventSetLocked()
-end
-
----@return nil
-function CalendarEventSetLockoutDate(month, day, year)
-end
-
----@return nil
-function CalendarEventSetLockoutTime(hour, minute)
-end
-
----@return nil
-function CalendarEventSetModerator(index)
-end
-
----@return nil
-function CalendarEventSetRepeatOption(title)
-end
-
----@return nil
-function CalendarEventSetSize(size)
-end
-
----@return nil
-function CalendarEventSetStatus(index, inviteStatus)
-end
-
----@return nil
-function CalendarEventSetTextureID(index)
-end
-
----@return nil
-function CalendarEventSetTime(hour, minute)
-end
-
----@return nil
-function CalendarEventSetTitle(title)
-end
-
----@return nil
-function CalendarEventSetType(eventType)
-end
-
----@return nil
-function CalendarEventSignUp()
-end
-
----@return nil
-function CalendarEventSortInvites(criterion, reverse)
-end
-
----@return nil
-function CalendarEventTentative()
-end
-
----@return month, year, numDays, firstWeekday
-function CalendarGetAbsMonth(month, year)
-end
-
----@return weekday, month, day, year
-function CalendarGetDate()
-end
-
----@return title, hour, minute, calendarType, sequenceType, eventType, texture, modStatus, inviteStatus, invitedBy, difficulty, inviteType
-function CalendarGetDayEvent(monthOffset, day, index)
-end
-
----@return nil
-function CalendarGetDayEventSequenceInfo()
-end
-
----@return monthOffset, day, index
-function CalendarGetEventIndex()
-end
-
----@return title, description, creator, eventType, repeatOption, maxSize, textureIndex, weekday, month, day, year, hour, minute, lockoutWeekday, lockoutMonth, lockoutDay, lockoutYear, lockoutHour, lockoutMinute, locked, autoApprove, pendingInvite, inviteStatus, inviteType, calendarType
-function CalendarGetEventInfo()
-end
-
----@return index
-function CalendarGetFirstPendingInvite(monthOffset, day)
-end
-
----@return month, day, weekday, hour, minute, eventType, title, calendarType, textureName
-function CalendarGetGuildEventInfo(eventIndex)
-end
-
----@return nil
-function CalendarGetGuildEventSelectionInfo()
-end
-
----@return name, description, texture
-function CalendarGetHolidayInfo(monthOffset, day, index)
-end
-
----@return weekday, month, day, year
-function CalendarGetMaxCreateDate()
-end
-
----@return weekday, month, day, year
-function CalendarGetMaxDate()
-end
-
----@return weekday, month, day, year
-function CalendarGetMinDate()
-end
-
----@return weekday, month, day, year
-function CalendarGetMinHistoryDate()
-end
-
----@return month, year, numDays, firstWeekday
-function CalendarGetMonth(monthOffset)
-end
-
----@return nil
-function CalendarGetMonthNames()
-end
-
----@return numEvents
-function CalendarGetNumDayEvents(monthOffset, day)
-end
-
----@return numEvents
-function CalendarGetNumGuildEvents()
-end
-
----@return numInvites
-function CalendarGetNumPendingInvites()
-end
-
----@return title, calendarType, raidID, hour, minute, difficulty
-function CalendarGetRaidInfo(monthOffset, day, index)
-end
-
----@return nil
-function CalendarGetWeekdayNames()
-end
-
----@return isPending
-function CalendarIsActionPending()
-end
-
----@return nil
-function CalendarMassInviteGuild(minLevel, maxLevel, rank)
-end
-
----@return nil
-function CalendarNewEvent()
-end
-
----@return nil
-function CalendarNewGuildAnnouncement()
-end
-
----@return nil
-function CalendarNewGuildEvent()
-end
-
----@return nil
-function CalendarOpenEvent(monthOffset, day, index)
-end
-
----@return nil
-function CalendarRemoveEvent()
-end
-
----@return nil
-function CalendarSetAbsMonth(month , year)
-end
-
----@return nil
-function CalendarSetMonth(monthOffset)
-end
-
----@return nil
-function CalendarUpdateEvent()
-end
-
----@return nil
-function CallCompanion(type, index)
-end
-
----@return nil
-function CameraOrSelectOrMoveStart()
-end
-
----@return nil
-function CameraOrSelectOrMoveStop(isSticky)
-end
-
----@return nil
-function CameraZoomIn(distance)
-end
-
----@return nil
-function CameraZoomOut(distance)
-end
-
----@return CanAbandon
-function CanAbandonQuest(questID)
-end
-
----@return canAlter
-function CanAlterSkin()
-end
-
----@return canMark
-function CanBeRaidTarget(unit)
-end
-
----@return canCancel
-function CanCancelAuction(index)
-end
-
----@return nil
-function CanCancelScene()
-end
-
----@return nil
-function CanChangePlayerDifficulty()
-end
-
----@return canComplain
-function CanComplainChat(lineID)
-end
-
----@return complain
-function CanComplainInboxItem(mailID)
-end
-
----@return nil
-function CanEditGuildBankTabInfo()
-end
-
----@return canEdit
-function CanEditGuildEvent()
-end
-
----@return canEdit
-function CanEditGuildInfo()
-end
-
----@return canEdit
-function CanEditGuildTabInfo(tab)
-end
-
----@return canEdit
-function CanEditMOTD()
-end
-
----@return canEdit
-function CanEditOfficerNote()
-end
-
----@return canEdit
-function CanEditPublicNote()
-end
-
----@return canEject
-function CanEjectPassengerFromSeat(seat)
-end
-
----@return canExit
-function CanExitVehicle()
-end
-
----@return canGrant
-function CanGrantLevel(unit)
-end
-
----@return canRepair
-function CanGuildBankRepair()
-end
-
----@return canDemote
-function CanGuildDemote()
-end
-
----@return canInvite
-function CanGuildInvite()
-end
-
----@return canPromote
-function CanGuildPromote()
-end
-
----@return canRemove
-function CanGuildRemove()
-end
-
----@return status
-function CanHearthAndResurrectFromArea()
-end
-
----@return nil
-function CanInitiateWarGame()
-end
-
----@return canInspect
-function CanInspect(unit, showError)
-end
-
----@return nil
-function CanItemBeSocketedToArtifact()
-end
-
----@return canGroupJoin
-function CanJoinBattlefieldAsGroup()
-end
-
----@return nil
-function CanLootUnit()
-end
-
----@return nil
-function CanMapChangeDifficulty()
-end
-
----@return canRepair
-function CanMerchantRepair()
-end
-
----@return nil
-function CanPartyLFGBackfill()
-end
-
----@return canQueue
-function CanQueueForWintergrasp()
-end
-
----@return nil
-function CanReplaceGuildMaster()
-end
-
----@return nil
-function CanResetTutorials()
-end
-
----@return nil
-function CanScanResearchSite()
-end
-
----@return canQuery, canMassQuery
-function CanSendAuctionQuery(list)
-end
-
----@return nil
-function CanSendSoRByText()
-end
-
----@return canShow
-function CanShowAchievementUI()
-end
-
----@return canResetInstances
-function CanShowResetInstances()
-end
-
----@return canSign
-function CanSignPetition()
-end
-
----@return canSolve
-function CanSolveArtifact()
-end
-
----@return canSummon
-function CanSummonFriend(name)
-end
-
----@return canSwitch
-function CanSwitchVehicleSeat()
-end
-
----@return canSwitch
-function CanSwitchVehicleSeats()
-end
-
----@return nil
-function CanTrackBattlePets()
-end
-
----@return nil
-function CanTransmogrifyItemWithItem()
-end
-
----@return nil
-function CanUpgradeExpansion()
-end
-
----@return enabled
-function CanUseEquipmentSets()
-end
-
----@return nil
-function CanUseSoulstone()
-end
-
----@return nil
-function CanUseVoidStorage()
-end
-
----@return nil
-function CanViewGuildRecipes()
-end
-
----@return canView
-function CanViewOfficerNote()
-end
-
----@return canWithdraw
-function CanWithdrawGuildBankMoney()
-end
-
----@return nil
-function CancelAreaSpiritHeal()
-end
-
----@return nil
-function CancelAuction(index)
-end
-
----@return nil
-function CancelBarberShop()
-end
-
----@return nil
-function CancelDuel()
-end
-
----@return nil
-function CancelEmote()
-end
-
----@return nil
-function CancelGuildMembershipRequest()
-end
-
----@return nil
-function CancelItemTempEnchantment(slot)
-end
-
----@return nil
-function CancelLogout()
-end
-
----@return nil
-function CancelMasterLootRoll()
-end
-
----@return nil
-function CancelPendingEquip(index)
-end
-
----@return nil
-function CancelPreloadingMovie()
-end
-
----@return nil
-function CancelScene()
-end
-
----@return nil
-function CancelSell()
-end
-
----@return nil
-function CancelShapeshiftForm()
-end
-
----@return nil
-function CancelSummon()
-end
-
----@return nil
-function CancelTrade()
-end
-
----@return nil
-function CancelTradeAccept()
-end
-
----@return nil
-function CancelUnitBuff(unit, index , filter)
-end
-
----@return nil
-function CannotBeResurrected()
-end
-
----@return nil
-function CastGlyph()
-end
-
----@return nil
-function CastGlyphByID()
-end
-
----@return nil
-function CastGlyphByName()
-end
-
----@return nil
-function CastPetAction(index , unit)
-end
-
----@return nil
-function CastShapeshiftForm(index)
-end
-
----@return nil
-function CastSpell(id, bookType)
-end
-
----@return nil
-function CastSpellByID(spellID , target)
-end
-
----@return nil
-function CastSpellByName(name , target)
-end
-
----@return nil
-function ChangeActionBarPage(page)
-end
-
----@return nil
-function ChangeChatColor(messageGroup, red, green, blue)
-end
-
----@return nil
-function ChannelBan(channel, fullname)
-end
-
----@return nil
-function ChannelInvite(channel, name)
-end
-
----@return nil
-function ChannelKick(channel, fullname)
-end
-
----@return nil
-function ChannelModerator(channel, fullname)
-end
-
----@return nil
-function ChannelMute(channelName, name)
-end
-
----@return nil
-function ChannelSilenceAll(channelName, unit)
-end
-
----@return nil
-function ChannelSilenceVoice(channelName, unit)
-end
-
----@return nil
-function ChannelToggleAnnouncements(channel)
-end
-
----@return nil
-function ChannelUnSilenceAll(channelName, unit)
-end
-
----@return nil
-function ChannelUnSilenceVoice(channelName, unit)
-end
-
----@return nil
-function ChannelUnban(channel, fullname)
-end
-
----@return nil
-function ChannelUnmoderator(channel, fullname)
-end
-
----@return nil
-function ChannelUnmute(channelName, name)
-end
-
----@return nil
-function ChannelVoiceOff(channel)
-end
-
----@return nil
-function ChannelVoiceOn(channel)
-end
-
----@return nil
-function ChatFrame_AddMessageEventFilter(event, filter)
-end
-
----@return filterTable
-function ChatFrame_GetMessageEventFilters(event)
-end
-
----@return nil
-function ChatFrame_RemoveMessageEventFilter(event, filter)
-end
-
----@return accessID
-function ChatHistory_GetAccessID(chatType , chatTarget)
-end
-
----@return chatType, chatTarget
-function ChatHistory_GetChatType(accessID)
-end
-
----@return inRange
-function CheckBinderDist()
-end
-
----@return nil
-function CheckInbox()
-end
-
----@return canInteract
-function CheckInteractDistance(unit, distIndex)
-end
-
----@return inRange
-function CheckSpiritHealerDist()
-end
-
----@return inRange
-function CheckTalentMasterDist()
-end
-
----@return nil
-function ClearAchievementComparisonUnit()
-end
-
----@return nil
-function ClearAllLFGDungeons()
-end
-
----@return nil
-function ClearAllTracking()
-end
-
----@return nil
-function ClearAutoAcceptQuestSound()
-end
-
----@return nil
-function ClearBattlemaster()
-end
-
----@return nil
-function ClearBlacklistMap(BGMapID)
-end
-
----@return nil
-function ClearCursor()
-end
-
----@return nil
-function ClearFocus()
-end
-
----@return nil
-function ClearInspectPlayer()
-end
-
----@return nil
-function ClearItemUpgrade()
-end
-
----@return nil
-function ClearMissingLootDisplay()
-end
-
----@return nil
-function ClearOverrideBindings(owner)
-end
-
----@return nil
-function ClearPartyAssignment(assignment , unit)
-end
-
----@return nil
-function ClearRaidMarker()
-end
-
----@return nil
-function ClearSendMail()
-end
-
----@return nil
-function ClearTarget()
-end
-
----@return nil
-function ClearTransmogrifySlot()
-end
-
----@return nil
-function ClearTutorials()
-end
-
----@return nil
-function ClearVoidTransferDepositSlot()
-end
-
----@return nil
-function ClickAuctionSellItemButton()
-end
-
----@return nil
-function ClickLandmark(mapLinkID)
-end
-
----@return nil
-function ClickSendMailItemButton(index, autoReturn)
-end
-
----@return nil
-function ClickSocketButton(index)
-end
-
----@return nil
-function ClickTargetTradeButton(index)
-end
-
----@return nil
-function ClickTradeButton(index)
-end
-
----@return nil
-function ClickTransmogrifySlot()
-end
-
----@return nil
-function ClickVoidStorageSlot(index, isRightClick)
-end
-
----@return nil
-function ClickVoidTransferDepositSlot(index, isRightClick)
-end
-
----@return nil
-function ClickVoidTransferWithdrawalSlot(index, isRightClick)
-end
-
----@return nil
-function CloseAuctionHouse()
-end
-
----@return nil
-function CloseBankFrame()
-end
-
----@return nil
-function CloseGossip()
-end
-
----@return nil
-function CloseGuildBankFrame()
-end
-
----@return nil
-function CloseGuildRegistrar()
+---@return unknown
+function DeathKnniggetThrobFunction()
 end
 
----@return nil
-function CloseGuildRoster()
-end
-
----@return nil
-function CloseItemText()
-end
-
----@return nil
-function CloseItemUpgrade()
-end
-
----@return nil
-function CloseLoot()
-end
-
----@return nil
-function CloseMail()
-end
-
----@return nil
-function CloseMerchant()
-end
-
----@return nil
-function ClosePetStables()
-end
-
----@return nil
-function ClosePetition()
-end
-
----@return nil
-function CloseQuest()
-end
-
----@return nil
-function CloseQuestChoice()
-end
-
----@return nil
-function CloseResearch()
-end
-
----@return nil
-function CloseSocketInfo()
-end
-
----@return nil
-function CloseTabardCreation()
-end
-
----@return nil
-function CloseTaxiMap()
-end
-
----@return nil
-function CloseTrade()
-end
-
----@return nil
-function CloseTradeSkill()
-end
-
----@return nil
-function CloseTrainer()
-end
-
----@return nil
-function CloseTransmogrifyFrame()
-end
-
----@return nil
-function CloseVoidStorageFrame()
-end
-
----@return nil
-function ClosestGameObjectPosition()
-end
-
----@return nil
-function ClosestUnitPosition()
-end
-
----@return nil
-function CollapseAllFactionHeaders()
-end
-
----@return nil
-function CollapseChannelHeader(index)
-end
-
----@return nil
-function CollapseFactionHeader(index)
-end
-
----@return nil
-function CollapseGuildTradeSkillHeader(professionID)
-end
-
----@return nil
-function CollapseQuestHeader(questIndex)
-end
-
----@return nil
-function CollapseTradeSkillSubClass(index)
-end
-
----@return nil
-function CollapseWarGameHeader()
-end
-
----@return nil
-function CombatLogAddFilter(events, srcGUID, destGUID)
-end
-
----@return hasEntry
-function CombatLogAdvanceEntry(count, ignoreFilter)
-end
-
----@return nil
-function CombatLogClearEntries()
-end
-
----@return timestamp, event, srcGUID, srcName, srcFlags, destGUID, destName, destFlags, ...
-function CombatLogGetCurrentEntry(ignoreFilter)
-end
-
----@return nil
-function CombatLogGetNumEntries(ignoreFilter)
-end
-
----@return seconds
-function CombatLogGetRetentionTime()
-end
-
----@return nil
-function CombatLogResetFilter()
-end
-
----@return nil
-function CombatLogSetCurrentEntry(index , ignoreFilter)
-end
-
----@return nil
-function CombatLogSetRetentionTime(seconds)
-end
-
----@return isMatch
-function CombatLog_Object_IsA(unitFlags, mask)
-end
-
----@return nil
-function CombatTextSetActiveUnit(unit)
-end
-
----@return nil
-function CommentatorEnterInstance()
-end
-
----@return nil
-function CommentatorExitInstance()
-end
-
----@return nil
-function CommentatorFollowPlayer()
-end
-
----@return nil
-function CommentatorFollowUnit()
-end
-
----@return nil
-function CommentatorGetCamera()
-end
-
----@return nil
-function CommentatorGetCurrentMapID()
-end
-
----@return nil
-function CommentatorGetInstanceInfo()
-end
-
----@return nil
-function CommentatorGetMapInfo()
-end
-
----@return nil
-function CommentatorGetMode()
-end
-
----@return nil
-function CommentatorGetNumMaps()
-end
-
----@return nil
-function CommentatorGetNumPlayers()
-end
-
----@return nil
-function CommentatorGetPlayerInfo()
-end
-
----@return nil
-function CommentatorLookatPlayer()
-end
-
----@return nil
-function CommentatorSetCamera()
-end
-
----@return nil
-function CommentatorSetCameraCollision()
-end
-
----@return nil
-function CommentatorSetMapAndInstanceIndex()
-end
-
----@return nil
-function CommentatorSetMode()
-end
-
----@return nil
-function CommentatorSetMoveSpeed()
-end
-
----@return nil
-function CommentatorSetTargetHeightOffset()
-end
-
----@return nil
-function CommentatorStartWargame()
-end
-
----@return nil
-function CommentatorToggleMode()
-end
-
----@return nil
-function CommentatorUpdateMapInfo()
-end
-
----@return nil
-function CommentatorUpdatePlayerInfo()
-end
-
----@return nil
-function CommentatorZoomIn()
-end
-
----@return nil
-function CommentatorZoomOut()
-end
-
----@return nil
-function ComplainInboxItem(mailID)
-end
-
----@return nil
-function CompleteLFGRoleCheck()
+---@return events
+function DeathRecap_GetEvents(recapID)
 end
 
----@return nil
-function CompleteQuest()
-end
-
----@return nil
-function ConfirmAcceptQuest()
-end
-
----@return nil
-function ConfirmBindOnUse()
-end
-
----@return nil
-function ConfirmBinder()
-end
-
----@return nil
-function ConfirmLootRoll(id, rollType)
-end
-
----@return nil
-function ConfirmLootSlot(slot)
-end
-
----@return nil
-function ConfirmOnUse()
-end
-
----@return nil
-function ConfirmReadyCheck(ready)
-end
-
----@return nil
-function ConfirmSummon()
-end
-
----@return nil
-function ConfirmTalentWipe()
-end
-
----@return nil
-function ConsoleAddMessage()
-end
-
----@return nil
-function ConsoleExec(console_command)
-end
-
----@return inventoryID
-function ContainerIDToInventoryID(container)
-end
-
----@return nil
-function ContainerRefundItemPurchase(container, slot)
-end
-
----@return nil
-function ConvertToParty()
-end
-
----@return nil
-function ConvertToRaid()
-end
-
----@return fontObject
-function CreateFont(name)
-end
-
----@return Frame
-function CreateFrame(frameType , name , parent , template)
-end
-
----@return number
-function CreateMacro(name, iconTexture, body, perCharacter)
-end
-
----@return nil
-function CreateNewRaidProfile()
-end
-
----@return canBePlaced
-function CursorCanGoInSlot(slot)
+---@return hasEvents
+function DeathRecap_HasEvents()
 end
 
----@return hasItem
-function CursorHasItem()
-end
-
----@return hasMacro
-function CursorHasMacro()
-end
-
----@return hasMoney
-function CursorHasMoney()
-end
-
----@return hasSpell
-function CursorHasSpell()
-end
-
 ---@return nil
-function DeclineChannelInvite()
+function DeclineChannelInvite(channel)
 end
 
----@return nil
+---@return unknown
 function DeclineGroup()
 end
 
@@ -3427,16 +478,12 @@ end
 function DeclineGuild()
 end
 
----@return nil
+---@return unknown
 function DeclineGuildApplicant()
 end
 
----@return nil
-function DeclineLevelGrant()
-end
-
----@return genitive, dative, accusative, instrumental, prepositional
-function DeclineName(name, gender, declensionSet)
+---@return unknown
+function DeclineName()
 end
 
 ---@return nil
@@ -3448,50 +495,50 @@ function DeclineResurrect()
 end
 
 ---@return nil
-function DeclineSpellConfirmationPrompt()
+function DeclineSpellConfirmationPrompt(spellID)
 end
 
----@return nil
-function DelIgnore(name)
+---@return unknown
+function DecodeResolution()
 end
 
----@return nil
-function DelMute(name)
+---@return unknown
+function DefaultCompactMiniFrameSetup()
+end
+
+---@return unknown
+function DefaultCompactUnitFrameSetup()
 end
 
 ---@return nil
 function DeleteCursorItem()
 end
 
----@return nil
-function DeleteEquipmentSet(name)
-end
-
----@return nil
+---@return unknown
 function DeleteGMTicket()
 end
 
 ---@return nil
-function DeleteInboxItem(mailID)
+function DeleteInboxItem(index)
 end
 
----@return nil
-function DeleteMacro(index)
+---@return unknown
+function DeleteMacro()
 end
 
----@return nil
+---@return unknown
 function DeleteRaidProfile()
 end
 
----@return nil
-function DemoteAssistant(unit)
+---@return unknown
+function DemoteAssistant()
 end
 
----@return nil
-function DepositGuildBankMoney(money)
+---@return unknown
+function DepositGuildBankMoney()
 end
 
----@return nil
+---@return unknown
 function DepositReagentBank()
 end
 
@@ -3503,20 +550,20 @@ end
 function DestroyTotem(slot)
 end
 
----@return nil
+---@return unknown
 function DetectWowMouse()
 end
 
 ---@return nil
-function DisableAddOn(name, character)
+function DisableAddOn(index_or_name, character)
 end
 
 ---@return nil
-function DisableAllAddOns(character)
+function DisableAllAddOns()
 end
 
----@return nil
-function DisableSpellAutocast(spell)
+---@return unknown
+function DisableSpellAutocast()
 end
 
 ---@return nil
@@ -3528,22 +575,14 @@ function Dismount()
 end
 
 ---@return nil
-function DisplayChannelOwner(channel)
+function DisplayChannelOwner(channelName)
 end
 
 ---@return nil
-function DisplayChannelVoiceOff(index)
+function DoEmote(token ,target)
 end
 
----@return nil
-function DisplayChannelVoiceOn(index)
-end
-
----@return nil
-function DoEmote(emote , target , hold)
-end
-
----@return nil
+---@return unknown
 function DoMasterLootRoll()
 end
 
@@ -3551,8 +590,40 @@ end
 function DoReadyCheck()
 end
 
----@return nil
-function DoTradeSkill(index , shouldRepeat)
+---@return regionSellsExpansions
+function DoesCurrentLocaleSellExpansionLevels()
+end
+
+---@return unknown
+function DoesItemContainSpec()
+end
+
+---@return spellExists
+function DoesSpellExist(spellName)
+end
+
+---@return unknown
+function DoesTemplateExist()
+end
+
+---@return unknown
+function DrawOneHopLines()
+end
+
+---@return unknown
+function DrawRouteLine()
+end
+
+---@return unknown
+function DressUpBattlePet()
+end
+
+---@return unknown
+function DressUpItemLink()
+end
+
+---@return unknown
+function DressUpTexturePath()
 end
 
 ---@return nil
@@ -3563,8 +634,12 @@ end
 function DropItemOnUnit(unit)
 end
 
----@return nil
-function DungeonUsesTerrainMap()
+---@return unknown
+function DumpMovementCapture()
+end
+
+---@return unknown
+function DungeonAppearsInRandomLFD()
 end
 
 ---@return nil
@@ -3572,91 +647,123 @@ function EJ_ClearSearch()
 end
 
 ---@return nil
-function EJ_GetCreatureInfo()
+function EJ_EndSearch()
 end
 
 ---@return nil
-function EJ_GetCurrentInstance()
+function EJ_GetContentTuningID()
 end
 
----@return nil
+---@return id, name, description, displayInfo, iconImage, uiModelSceneID
+function EJ_GetCreatureInfo(index , encounterID)
+end
+
+---@return index
 function EJ_GetCurrentTier()
 end
 
----@return nil
+---@return difficultyId
 function EJ_GetDifficulty()
 end
 
----@return name, description, encounterID, firstSection, encounterLink
+---@return name, description, bossID, rootSectionID, link, journalInstanceID, dungeonEncounterID, instanceID
 function EJ_GetEncounterInfo(encounterID)
 end
 
----@return nil
+---@return unknown
 function EJ_GetEncounterInfoByIndex()
 end
 
----@return nil
-function EJ_GetInstanceByIndex()
+---@return instanceID, name, description, bgImage, buttonImage1, loreImage, buttonImage2, dungeonAreaMapID, link, shouldDisplayDifficulty
+function EJ_GetInstanceByIndex(index, isRaid)
 end
 
----@return instanceName, instanceDesc, backgroundTexture, buttonTexture, titleBackground, iconTexture, mapID, instanceLink
+---@return instanceID
+function EJ_GetInstanceForMap(mapID)
+end
+
+---@return name, description, bgImage, buttonImage1, loreImage, buttonImage2, dungeonAreaMapID, link, shouldDisplayDifficulty
 function EJ_GetInstanceInfo(instanceID)
 end
 
----@return nil
+---@return sortOrder
+function EJ_GetInvTypeSortOrder(invType)
+end
+
+---@return classID, specID
 function EJ_GetLootFilter()
 end
 
----@return nil
-function EJ_GetLootInfo()
+---@return itemID, encounterID, name, icon, slot, armorType, link
+function EJ_GetLootInfo(lootID)
 end
 
----@return nil
+---@return unknown
 function EJ_GetLootInfoByIndex()
 end
 
----@return nil
-function EJ_GetMapEncounter()
+---@return x, y, instanceID, name, description, encounterID, rootSectionID, link
+function EJ_GetMapEncounter(mapID, index , fromJournal)
 end
 
----@return nil
+---@return numLoot
+function EJ_GetNumEncountersForLootByIndex(index)
+end
+
+---@return numLoot
 function EJ_GetNumLoot()
 end
 
----@return nil
+---@return numResults
 function EJ_GetNumSearchResults()
 end
 
----@return nil
+---@return numTiers
 function EJ_GetNumTiers()
 end
 
----@return nil
-function EJ_GetSearchResult()
+---@return searchProgress
+function EJ_GetSearchProgress()
 end
 
----@return name, description, headerType, abilityIcon, displayInfo, siblingID, nextSectionID, fileredByDifficulty, sectionLink, startsOpen, flag1, flag2, flag3, flag4
-function EJ_GetSectionInfo(sectionID)
+---@return id, stype, difficultyID, instanceID, encounterID, itemLink
+function EJ_GetSearchResult(index)
 end
 
----@return nil
-function EJ_GetSectionPath()
+---@return searchSize
+function EJ_GetSearchSize()
 end
 
----@return nil
-function EJ_GetTierInfo()
+---@return sectionID, parentSectionID, grandParentSectionID
+function EJ_GetSectionPath(sectionID)
 end
 
----@return nil
-function EJ_HandleLinkPath()
+---@return slotFilter
+function EJ_GetSlotFilter()
 end
 
----@return nil
+---@return name, link
+function EJ_GetTierInfo(index)
+end
+
+---@return instanceID, encounterID, sectionID, tierIndex
+function EJ_HandleLinkPath(jtype, id)
+end
+
+---@return isRaid
 function EJ_InstanceIsRaid()
 end
 
----@return nil
-function EJ_IsValidInstanceDifficulty()
+---@return listOutOfDate
+function EJ_IsLootListOutOfDate()
+end
+
+---@return isFinished
+function EJ_IsSearchFinished()
+end
+
+---@return isValid
+function EJ_IsValidInstanceDifficulty(difficultyID)
 end
 
 ---@return nil
@@ -3664,62 +771,74 @@ function EJ_ResetLootFilter()
 end
 
 ---@return nil
-function EJ_SelectEncounter()
+function EJ_ResetSlotFilter()
 end
 
 ---@return nil
-function EJ_SelectInstance()
+function EJ_SelectEncounter(encounterID)
 end
 
 ---@return nil
-function EJ_SelectTier()
+function EJ_SelectInstance(instanceID)
 end
 
 ---@return nil
-function EJ_SetDifficulty(difficulty)
+function EJ_SelectTier(index)
 end
 
 ---@return nil
-function EJ_SetLootFilter()
+function EJ_SetDifficulty(difficultyID)
 end
 
 ---@return nil
-function EJ_SetSearch()
-end
-
----@return newIndex
-function EditMacro(index, name, iconTexture, body)
+function EJ_SetLootFilter(classID, specID)
 end
 
 ---@return nil
-function EjectPassengerFromSeat(seat)
+function EJ_SetSearch(text)
 end
 
 ---@return nil
-function EnableAddOn(index, character)
+function EJ_SetSlotFilter(slotFilterID)
 end
 
 ---@return nil
-function EnableAllAddOns(character)
+function EasyMenu(menuList, menuFrame, anchor, x, y, displayMode, autoHideDelay)
 end
 
 ---@return nil
-function EnableSpellAutocast(spell)
+function EditMacro(index_or_macroName, name, icon, body)
+end
+
+---@return unknown
+function EjectPassengerFromSeat()
 end
 
 ---@return nil
-function EndBoundTradeable(id)
+function EnableAddOn(index_or_name)
 end
 
 ---@return nil
-function EndRefund(id)
+function EnableAllAddOns()
+end
+
+---@return unknown
+function EnableSpellAutocast()
+end
+
+---@return unknown
+function EndBoundTradeable()
+end
+
+---@return unknown
+function EndRefund()
 end
 
 ---@return nextFrame
 function EnumerateFrames(currentFrame)
 end
 
----@return nil
+---@return channel1, channel2, ...
 function EnumerateServerChannels()
 end
 
@@ -3728,95 +847,87 @@ function EquipCursorItem(slot)
 end
 
 ---@return nil
-function EquipItemByName(itemID)
+function EquipItemByName(itemId_or_itemName_or_itemLink, slot)
 end
 
 ---@return nil
-function EquipPendingItem(index)
-end
-
----@return nil
-function EquipmentManagerClearIgnoredSlotsForSave()
-end
-
----@return nil
-function EquipmentManagerIgnoreSlotForSave(slot)
-end
-
----@return isIgnored
-function EquipmentManagerIsSlotIgnoredForSave(slot)
-end
-
----@return nil
-function EquipmentManagerUnignoreSlotForSave(slot)
-end
-
----@return player, bank, bags, location or slot, bag
-function EquipmentManager_UnpackLocation(location)
-end
-
----@return isLocked
-function EquipmentSetContainsLockedItems(name)
+function EquipPendingItem(invSlot)
 end
 
 ---@return nil
 function ExecuteVoidTransfer()
 end
 
----@return nil
+---@return unknown
+function ExhaustionToolTipText()
+end
+
+---@return unknown
 function ExpandAllFactionHeaders()
 end
 
 ---@return nil
-function ExpandChannelHeader(index)
+function ExpandCurrencyList(id, expanded)
 end
 
 ---@return nil
-function ExpandCurrencyList(index, shouldExpand)
+function ExpandFactionHeader(rowIndex)
+end
+
+---@return unknown
+function ExpandGuildTradeSkillHeader()
 end
 
 ---@return nil
-function ExpandFactionHeader(index)
+function ExpandQuestHeader(questID)
 end
 
----@return nil
-function ExpandGuildTradeSkillHeader(professionID)
-end
-
----@return nil
-function ExpandQuestHeader(questIndex)
-end
-
----@return nil
-function ExpandTradeSkillSubClass(index)
-end
-
----@return nil
+---@return unknown
 function ExpandWarGameHeader()
 end
 
----@return nil
-function FactionToggleAtWar(index)
+---@return unknown
+function ExtraActionButtonKey()
 end
 
 ---@return nil
-function FillLocalizedClassList(table , female)
+function FactionToggleAtWar(rowIndex)
 end
 
 ---@return nil
+function FillLocalizedClassList(classTable, isFemale)
+end
+
+---@return baseSpellID
+function FindBaseSpellByID(spellID)
+end
+
+---@return unknown
+function FindFlyoutSlotBySpellID()
+end
+
+---@return unknown
 function FindSpellBookSlotBySpellID()
 end
 
----@return nil
-function FlagTutorial(tutorial)
+---@return overrideSpellID
+function FindSpellOverrideByID(spellID)
+end
+
+---@return unknown
+function FlagTutorial()
+end
+
+---@return unknown
+function FlashClientIcon()
 end
 
 ---@return nil
-function FlipCameraYaw(degrees)
+function FlipCameraYaw(angle)
 end
 
----@return nil
-function FlyoutHasSpell()
+---@return hasSpell
+function FlyoutHasSpell(flyoutID, spellID)
 end
 
 ---@return nil
@@ -3827,11 +938,11 @@ end
 function FollowUnit(unit)
 end
 
----@return nil
+---@return forced
 function ForceGossip()
 end
 
----@return nil
+---@return unknown
 function ForceLogout()
 end
 
@@ -3839,39 +950,55 @@ end
 function ForceQuit()
 end
 
----@return nil
-function FrameXML_Debug(enable)
+---@return unknown
+function ForfeitDuel()
 end
 
----@return nil
+---@return unknown
+function FormatPaperDollTooltipStat()
+end
+
+---@return unknown
+function FormatProfession()
+end
+
+---@return unknown
+function FrameXML_Debug()
+end
+
+---@return unknown
+function GMError()
+end
+
+---@return unknown
 function GMEuropaBugsEnabled()
 end
 
----@return nil
+---@return unknown
 function GMEuropaComplaintsEnabled()
 end
 
----@return nil
+---@return unknown
 function GMEuropaSuggestionsEnabled()
 end
 
----@return nil
+---@return unknown
 function GMEuropaTicketsEnabled()
 end
 
----@return nil
+---@return unknown
 function GMItemRestorationButtonEnabled()
 end
 
----@return nil
+---@return unknown
 function GMQuickTicketSystemEnabled()
 end
 
----@return nil
+---@return unknown
 function GMQuickTicketSystemThrottled()
 end
 
----@return nil
+---@return unknown
 function GMReportLag()
 end
 
@@ -3879,55 +1006,51 @@ end
 function GMRequestPlayerInfo()
 end
 
----@return nil
-function GMResponseNeedMoreHelp()
-end
-
----@return nil
+---@return unknown
 function GMResponseResolve()
 end
 
----@return nil
+---@return unknown
 function GMSubmitBug()
 end
 
----@return nil
+---@return unknown
 function GMSubmitSuggestion()
 end
 
----@return answerText
-function GMSurveyAnswer(questionIndex, answerIndex)
+---@return unknown
+function GMSurveyAnswer()
 end
 
----@return nil
-function GMSurveyAnswerSubmit(question, rank, comment)
+---@return unknown
+function GMSurveyAnswerSubmit()
 end
 
----@return nil
-function GMSurveyCommentSubmit(comment)
+---@return unknown
+function GMSurveyCommentSubmit()
 end
 
----@return numAnswers
-function GMSurveyNumAnswers(questionIndex)
+---@return unknown
+function GMSurveyNumAnswers()
 end
 
----@return surveyQuestion
-function GMSurveyQuestion(index)
+---@return unknown
+function GMSurveyQuestion()
 end
 
----@return nil
+---@return unknown
 function GMSurveySubmit()
 end
 
----@return nil
+---@return unknown
 function GameMovieFinished()
 end
 
----@return items
+---@return unknown
 function GetAbandonQuestItems()
 end
 
----@return name
+---@return questName
 function GetAbandonQuestName()
 end
 
@@ -3940,146 +1063,154 @@ function GetAchievementCategory(achievementID)
 end
 
 ---@return completed, month, day, year
-function GetAchievementComparisonInfo(id)
-end
-
----@return description, type, completed, quantity, requiredQuantity, characterName, flags, assetID, quantityString, criteriaID
-function GetAchievementCriteriaInfo(achievementID, index)
+function GetAchievementComparisonInfo(achievementID)
 end
 
 ---@return nil
-function GetAchievementCriteriaInfoByID()
+function GetAchievementCriteriaInfo(achievementID, criteriaIndex)
 end
 
 ---@return nil
+function GetAchievementCriteriaInfoByID(achievementID, criteriaID)
+end
+
+---@return unknown
 function GetAchievementGuildRep()
 end
 
----@return id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuildAch, wasEarnedByMe, earnedBy
-function GetAchievementInfo(category, index)
+---@return id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe, earnedBy
+function GetAchievementInfo(achievementID_or_categoryID, index)
 end
 
----@return link
-function GetAchievementLink(id)
+---@return achievementLink
+function GetAchievementLink(AchievementID)
 end
 
----@return count
-function GetAchievementNumCriteria(id)
+---@return numCriteria
+function GetAchievementNumCriteria(achievementID)
 end
 
----@return count
-function GetAchievementNumRewards(id)
+---@return unknown
+function GetAchievementNumRewards()
 end
 
----@return points
-function GetAchievementReward(id, index)
+---@return unknown
+function GetAchievementReward()
 end
 
----@return autocastAllowed, autocastEnabled
-function GetActionAutocast(slot)
+---@return unknown
+function GetAchievementSearchProgress()
 end
 
----@return page
-function GetActionBarPage()
+---@return unknown
+function GetAchievementSearchSize()
 end
 
----@return showBar1, showBar2, showBar3, showBar4
-function GetActionBarToggles()
-end
-
----@return nil
-function GetActionCharges()
-end
-
----@return start, duration, enable
-function GetActionCooldown(slot)
-end
-
----@return count
-function GetActionCount(slot)
-end
-
----@return type, id, subType, spellID
-function GetActionInfo(slot)
-end
-
----@return nil
-function GetActionLossOfControlCooldown()
-end
-
----@return string
-function GetActionText(slot)
-end
-
----@return texture
-function GetActionTexture(slot)
-end
-
----@return nil
-function GetActiveArtifactByRace()
-end
-
----@return level
-function GetActiveLevel(index)
-end
-
----@return nil
-function GetActiveLootRollIDs()
-end
-
----@return activeTalentGroup
-function GetActiveSpecGroup()
-end
-
----@return title
-function GetActiveTitle(index)
+---@return unknown
+function GetActionAutocast()
 end
 
 ---@return index
-function GetActiveVoiceChannel()
+function GetActionBarPage()
 end
 
----@return usage
-function GetAddOnCPUUsage(name)
+---@return bottomLeftState, bottomRightState, sideRightState, sideRight2State
+function GetActionBarToggles()
 end
 
----@return nil
-function GetAddOnDependencies(name)
+---@return unknown
+function GetActionCharges()
 end
 
----@return enabled
-function GetAddOnEnableState(character, index)
+---@return start, duration, enable, modRate
+function GetActionCooldown(slot)
 end
 
----@return name, title, notes, loadable, reason, security
-function GetAddOnInfo(name)
+---@return text
+function GetActionCount(actionSlot)
 end
 
----@return mem
-function GetAddOnMemoryUsage(name)
+---@return actionType, id, subType
+function GetActionInfo(slot)
 end
 
----@return data
-function GetAddOnMetadata(index, variable)
+---@return start, duration
+function GetActionLossOfControlCooldown(slot)
 end
 
----@return nil
-function GetAddOnOptionalDependencies(name)
+---@return text
+function GetActionText(actionSlot)
 end
 
----@return nil
+---@return texture
+function GetActionTexture(actionSlot)
+end
+
+---@return artifactName, artifactDescription, artifactRarity, artifactIcon, hoverDescription, keystoneCount, bgTexture
+function GetActiveArtifactByRace(raceIndex, artifactIndex)
+end
+
+---@return unknown
+function GetActiveLevel()
+end
+
+---@return unknown
+function GetActiveLootRollIDs()
+end
+
+---@return unknown
+function GetActiveRaidProfile()
+end
+
+---@return activeSpec
+function GetActiveSpecGroup(isInspect)
+end
+
+---@return unknown
+function GetActiveTitle()
+end
+
+---@return time
+function GetAddOnCPUUsage(index_or_name)
+end
+
+---@return dep1, dep2, dep3, ...
+function GetAddOnDependencies(index_or_name)
+end
+
+---@return enabledState
+function GetAddOnEnableState(character, addonIndex_or_AddOnName)
+end
+
+---@return name, title, notes, loadable, reason, security, newVersion
+function GetAddOnInfo(index_or_name)
+end
+
+---@return unknown
+function GetAddOnMemoryUsage()
+end
+
+---@return value
+function GetAddOnMetadata(addon, field)
+end
+
+---@return unknown
+function GetAddOnOptionalDependencies()
+end
+
+---@return unknown
 function GetAllowLowLevelRaid()
 end
 
----@return nil
-function GetAlternatePowerInfoByID()
+---@return unknown
+function GetAlternativeDefaultLanguage()
 end
 
----@return nil
-function GetAmplify()
+---@return unknown
+function GetApplicableMultisampleSetting()
 end
 
----@return name
+---@return izedName
 function GetArchaeologyInfo()
 end
 
@@ -4087,191 +1218,143 @@ end
 function GetArchaeologyRaceInfo(raceIndex)
 end
 
----@return nil
-function GetArchaeologyRaceInfoByID()
-end
-
----@return mapID, areaID, displayMapID, locLeft, locRight, locTop, locBottom, minLevel, maxLevel, flags
-function GetAreaMapInfo(areaMapID)
-end
-
----@return zoneid1,zoneid2,zoneid3...
-function GetAreaMaps(table)
+---@return raceName, raceTextureID, raceItemID, numFragmentsCollected, numFragmentsRequired, maxFragments 
+function GetArchaeologyRaceInfoByID(branchID)
 end
 
 ---@return timeleft
 function GetAreaSpiritHealerTime()
 end
 
----@return specialisationID
-function GetArenaOpponentSpec(oppNumber)
+---@return unknown
+function GetArenaOpponentSpec()
 end
 
----@return nil
-function GetArmorEffectiveness()
+---@return artifactName, artifactDescription, artifactRarity, artifactIcon, hoverDescription, keystoneCount, bgTexture, firstCompletionTime, completionCount
+function GetArtifactInfoByRace(raceIndex, artifactIndex)
 end
 
----@return amount
-function GetArmorPenetration()
-end
-
----@return nil
-function GetArtifactInfoByRace()
-end
-
----@return base, adjusted, total_cost
+---@return numFragmentsCollected, numFragmentsAdded, numFragmentsRequired
 function GetArtifactProgress()
 end
 
----@return nil
-function GetAtlasInfo()
+---@return ap
+function GetAttackPowerForStat(statId, amount)
 end
 
----@return attackPower
-function GetAttackPowerForStat(statIndex, effectiveStat)
+---@return unknown
+function GetAutoCompletePresenceID()
 end
 
----@return rate
-function GetAuctionHouseDepositRate()
+---@return realmNames
+function GetAutoCompleteRealms(realmNames)
 end
 
----@return token, display, ...
-function GetAuctionInvTypes(classIndex, subClassIndex)
+---@return nick1, nick2, ...
+function GetAutoCompleteResults(text, include, exclude, maxResults, cursorPosition)
 end
 
----@return creatureID, displayID
-function GetAuctionItemBattlePetInfo(list, index)
-end
-
----@return nil
-function GetAuctionItemClasses()
-end
-
----@return name, texture, count, quality, canUse, level, minBid, minIncrement, buyoutPrice, bidAmount, highestBidder, owner, sold
-function GetAuctionItemInfo(list, index)
-end
-
----@return link
-function GetAuctionItemLink(list, index)
-end
-
----@return nil
-function GetAuctionItemSubClasses(classIndex)
-end
-
----@return duration
-function GetAuctionItemTimeLeft(list, index)
-end
-
----@return name, texture, count, quality, canUse, pricePerStack, pricePerItem, maxStack, invCount
-function GetAuctionSellItemInfo()
-end
-
----@return criterion, reverse
-function GetAuctionSort(list, index)
-end
-
----@return presenceID
-function GetAutoCompletePresenceID(name)
-end
-
----@return nil
-function GetAutoCompleteRealms()
-end
-
----@return nil
-function GetAutoCompleteResults(inputString, includeBitfield, excludeBitfield, maxResults , cursorPosition)
-end
-
----@return nil
+---@return enabled
 function GetAutoDeclineGuildInvites()
 end
 
----@return questId, type
+---@return questID, type
 function GetAutoQuestPopUp(index)
 end
 
----@return nil
+---@return unknown
 function GetAvailableBandwidth()
 end
 
----@return level
-function GetAvailableLevel(index)
+---@return unknown
+function GetAvailableLevel()
 end
 
----@return nil
-function GetAvailableLocales()
+---@return aaAA, bbBB, ccCC, ...
+function GetAvailableLocales(ignoreLocalRestrictions)
 end
 
 ---@return isTrivial, frequency, isRepeatable, isLegendary
-function GetAvailableQuestInfo(availableIndex)
+function GetAvailableQuestInfo(index)
 end
 
----@return title
-function GetAvailableTitle(index)
+---@return unknown
+function GetAvailableTitle()
 end
 
----@return total, equipped, pvp
+---@return avgItemLevel, avgItemLevelEquipped, avgItemLevelPvp
 function GetAverageItemLevel()
 end
 
----@return nil
+---@return unknown
 function GetAvoidance()
 end
 
----@return nil
+---@return unknown
 function GetBackgroundLoadingStatus()
 end
 
----@return nil
+---@return unknown
+function GetBackgroundTexCoordsForRole()
+end
+
+---@return unknown
 function GetBackpackAutosortDisabled()
 end
 
----@return name, count, extraCurrencyType, icon, itemID
+---@return name, count, icon, currencyID
 function GetBackpackCurrencyInfo(index)
 end
 
----@return name
-function GetBagName(container)
+---@return unknown
+function GetBackpackFrame()
 end
 
----@return nil
+---@return bagName
+function GetBagName(index)
+end
+
+---@return unknown
 function GetBagSlotFlag()
 end
 
----@return nil
+---@return unknown
 function GetBankAutosortDisabled()
 end
 
----@return nil
+---@return unknown
 function GetBankBagSlotFlag()
 end
 
 ---@return cost
-function GetBankSlotCost()
+function GetBankSlotCost(numSlots)
 end
 
----@return name, unused, cost, isCurrent
-function GetBarberShopStyleInfo(styleIndex)
+---@return name, unknown, unknown, isCurrent
+function GetBarberShopStyleInfo(catId)
 end
 
----@return cost
+---@return unknown
 function GetBarberShopTotalCost()
 end
 
----@return nil
+---@return unknown
+function GetBattlePetAbilityHyperlink()
+end
+
+---@return myFaction
 function GetBattlefieldArenaFaction()
 end
 
 ---@return waitTime
-function GetBattlefieldEstimatedWaitTime(index)
+function GetBattlefieldEstimatedWaitTime()
 end
 
----@return flagX, flagY, flagToken
-function GetBattlefieldFlagPosition(index)
+---@return  flagX, flagY, flagToken
+function GetBattlefieldFlagPosition(i)
 end
 
----@return timeLeft
+---@return expiration
 function GetBattlefieldInstanceExpiration()
 end
 
@@ -4279,11 +1362,11 @@ end
 function GetBattlefieldInstanceRunTime()
 end
 
----@return scale
+---@return unknown
 function GetBattlefieldMapIconScale()
 end
 
----@return expiration
+---@return  expiration
 function GetBattlefieldPortExpiration(index)
 end
 
@@ -4291,99 +1374,83 @@ end
 function GetBattlefieldScore(index)
 end
 
----@return columnData
-function GetBattlefieldStatData(index, statIndex)
+---@return nil
+function GetBattlefieldStatData(playerIndex,slotIndex)
 end
 
----@return text, icon, tooltip
-function GetBattlefieldStatInfo(statIndex)
-end
-
----@return status, mapName, instanceID, bracketMin, bracketMax, teamSize, registeredMatch
+---@return status, mapName, teamSize, registeredMatch, suspendedQueue, queueType, gameType, role
 function GetBattlefieldStatus(index)
 end
 
----@return teamName, teamRating, newTeamRating, teamMMR, numPlayers
-function GetBattlefieldTeamInfo(index)
+---@return teamName, oldTeamRating, newTeamRating, teamRating
+function GetBattlefieldTeamInfo( index )
 end
 
 ---@return timeInQueue
-function GetBattlefieldTimeWaited(index)
+function GetBattlefieldTimeWaited( battlegroundQueuePosition )
 end
 
----@return vehicleX, vehicleY, unitName, isPossessed, vehicleType, orientation, isPlayer, isAlive
-function GetBattlefieldVehicleInfo(index)
+---@return unknown
+function GetBattlefieldVehicleInfo()
 end
 
 ---@return winner
 function GetBattlefieldWinner()
 end
 
----@return localizedName, canEnter, isHoliday, isRandom, BattleGroundID, mapDescription
+---@return name, canEnter, isHoliday, isRandom, battleGroundID, info
 function GetBattlegroundInfo(index)
 end
 
----@return nil
-function GetBattlegroundPoints()
+---@return currentPoints, maxPoints
+function GetBattlegroundPoints(team)
 end
 
----@return nil
+---@return flexDungeonID
 function GetBestFlexRaidChoice()
 end
 
----@return nil
+---@return dungeonId
 function GetBestRFChoice()
 end
 
----@return nil
-function GetBidderAuctionItems()
-end
-
----@return time
+---@return secondsRemaining
 function GetBillingTimeRested()
 end
 
----@return location
+---@return bindLocation
 function GetBindLocation()
 end
 
----@return commandName, binding1, binding2
-function GetBinding(index)
+---@return command, category, key1, key2, ...
+function GetBinding(index, mode)
 end
 
 ---@return action
-function GetBindingAction(key , checkOverride)
+function GetBindingAction(binding, checkOverride)
 end
 
----@return action
+---@return bindingAction
 function GetBindingByKey(key)
 end
 
----@return key1, ...
-function GetBindingKey(COMMAND)
+---@return command
+function GetBindingFromClick(keyOrButton)
 end
 
----@return nil
-function GetBindingText()
+---@return key1, key2
+function GetBindingKey(command)
 end
 
----@return bgIndex
-function GetBlacklistMap(i)
+---@return text
+function GetBindingText(key,prefix,abbreviate)
 end
 
----@return nil
-function GetBlacklistMapName()
-end
-
----@return nil
-function GetBladedArmorEffect()
-end
-
----@return chance
+---@return unknown
 function GetBlockChance()
 end
 
----@return nil
+---@return unknown
 function GetBonusBarIndex()
 end
 
@@ -4391,319 +1458,247 @@ end
 function GetBonusBarOffset()
 end
 
----@return version, internalVersion, date, uiVersion
+---@return version, build, date, tocversion
 function GetBuildInfo()
 end
 
----@return name, texture, price, quantity, numAvailable, isUsable
-function GetBuybackItemInfo(index)
+---@return name, icon, price, quantity
+function GetBuybackItemInfo(slotIndex)
 end
 
----@return link
-function GetBuybackItemLink(index)
+---@return unknown
+function GetBuybackItemLink()
 end
 
----@return string
-function GetCVar(cvar)
+---@return value, defaultValue, account, character, val5, locked, val7
+function GetCVarInfo(name)
 end
 
----@return nil
-function GetCVarBitfield()
+---@return unknown
+function GetCVarSettingValidity()
 end
 
----@return value
-function GetCVarBool(cvar)
-end
-
----@return value
-function GetCVarDefault(CVar)
-end
-
----@return value, defaultValue, serverStoredAccountWide, serverStoredPerCharacter
-function GetCVarInfo(cvar)
-end
-
----@return nil
+---@return unknown
 function GetCallPetSpellInfo()
 end
 
----@return total
-function GetCategoryAchievementPoints(categoryID, includeSubCategories)
+---@return nil
+function GetCameraZoom()
 end
 
----@return name, parentID, flags
-function GetCategoryInfo(id)
+---@return unknown
+function GetCategoryAchievementPoints()
 end
 
----@return categories
+---@return title, parentCategoryID, flags
+function GetCategoryInfo(categoryID)
+end
+
+---@return idTable
 function GetCategoryList()
 end
 
----@return numItems, numCompleted, numUncompleted
-function GetCategoryNumAchievements(id, includeSuperseded)
+---@return total, completed, incompleted
+function GetCategoryNumAchievements(categoryId, includeAll)
 end
 
----@return nil
+---@return unknown
 function GetCemeteryPreference()
 end
 
----@return nil
-function GetChallengeBestTime()
-end
-
----@return nil
-function GetChallengeBestTimeInfo()
-end
-
----@return nil
-function GetChallengeBestTimeNum()
-end
-
----@return nil
-function GetChallengeMapMoney()
-end
-
----@return nil
-function GetChallengeMapRewardInfo()
-end
-
----@return nil
-function GetChallengeMode()
-end
-
----@return nil
-function GetChallengeModeCompletionInfo()
-end
-
----@return nil
-function GetChallengeModeCompletionReward()
-end
-
----@return nil
-function GetChallengeModeLeaderInfo()
-end
-
----@return nil
-function GetChallengeModeMapInfo()
-end
-
----@return nil
-function GetChallengeModeMapPlayerStats()
-end
-
----@return nil
-function GetChallengeModeMapTable()
-end
-
----@return nil
-function GetChallengeModeMapTimes()
-end
-
 ---@return name, header, collapsed, channelNumber, count, active, category, voiceEnabled, voiceActive
-function GetChannelDisplayInfo(index)
+function GetChannelDisplayInfo(i)
 end
 
----@return index, channel, ...
+---@return id1, name1, disabled1, id2, name2, disabled2, ...
 function GetChannelList()
 end
 
----@return channel, channelName, instanceID
-function GetChannelName(channelIndex)
+---@return id, name, instanceID
+function GetChannelName(id_or_name)
 end
 
----@return name, owner, moderator, muted, active, enabled
-function GetChannelRosterInfo(index, rosterIndex)
+---@return typeIndex
+function GetChatTypeIndex(typeCode)
 end
 
----@return index
-function GetChatTypeIndex(messageGroup)
+---@return unknown
+function GetChatUnitColor()
 end
 
----@return channelName, channelId, ...
-function GetChatWindowChannels(index)
+---@return name1, zone1, name2, zone2, ...
+function GetChatWindowChannels(frameId)
 end
 
 ---@return name, fontSize, r, g, b, alpha, shown, locked, docked, uninteractable
-function GetChatWindowInfo(index)
+function GetChatWindowInfo(frameIndex)
 end
 
----@return nil
+---@return type1, ...
 function GetChatWindowMessages(index)
 end
 
----@return nil
+---@return unknown
 function GetChatWindowSavedDimensions()
 end
 
----@return nil
+---@return unknown
 function GetChatWindowSavedPosition()
 end
 
----@return nil
-function GetClassInfo()
+---@return className, classFile, classID
+function GetClassInfo(classIndex)
 end
 
----@return nil
-function GetClassInfoByID()
+---@return unknown
+function GetClickFrame()
 end
 
----@return nil
-function GetCleave()
+---@return expansionLevel
+function GetClientDisplayExpansionLevel()
 end
 
----@return frame
-function GetClickFrame(name)
-end
-
----@return icon
+---@return texturePath
 function GetCoinIcon(amount)
 end
 
----@return coinText
+---@return formattedAmount
 function GetCoinText(amount, separator)
 end
 
----@return coinText
-function GetCoinTextureString(amount , fontSize)
+---@return formattedAmount
+function GetCoinTextureString(amount, fontHeight)
+end
+
+---@return unknown
+function GetColoredName()
 end
 
 ---@return rating
-function GetCombatRating(ratingIndex)
+function GetCombatRating(combatRatingIdentifier)
 end
 
----@return ratingBonus
-function GetCombatRatingBonus(ratingIndex)
+---@return bonus
+function GetCombatRatingBonus(combatRatingIdentifier)
+end
+
+---@return unknown
+function GetCombatRatingBonusForCombatRatingValue()
 end
 
 ---@return comboPoints
-function GetComboPoints(unit , target)
+function GetComboPoints(unit, target)
 end
 
----@return creatureID, creatureName, spellID, icon, active, mountFlags
-function GetCompanionInfo(type, index)
+---@return creatureID, creatureName, creatureSpellID, icon, issummoned, mountType
+function GetCompanionInfo(type, id)
 end
 
----@return points
+---@return unknown
 function GetComparisonAchievementPoints()
 end
 
----@return numCompleted
-function GetComparisonCategoryNumAchievements(id)
+---@return unknown
+function GetComparisonCategoryNumAchievements()
 end
 
----@return info
-function GetComparisonStatistic(id)
-end
-
----@return slotTable
-function GetContainerFreeSlots(container , returnTable)
-end
-
----@return start, duration, enable
-function GetContainerItemCooldown(container, slot)
-end
-
----@return durability, max
-function GetContainerItemDurability(container, slot)
-end
-
----@return isInSet, setName
-function GetContainerItemEquipmentSetInfo(index, slot)
-end
-
----@return gem1, gem2, gem3
-function GetContainerItemGems(container, slot)
-end
-
----@return id
-function GetContainerItemID(container, slot)
-end
-
----@return texture, count, locked, quality, readable, lootable, link, isFiltered, hasNoValue, itemID
-function GetContainerItemInfo(container, slot)
-end
-
----@return link
-function GetContainerItemLink(container, slot)
+---@return value
+function GetComparisonStatistic(achievementID)
 end
 
 ---@return nil
+function GetContainerFreeSlots(index, returnTable)
+end
+
+---@return startTime, duration, isEnabled
+function GetContainerItemCooldown(bagID, slot)
+end
+
+---@return current, maximum
+function GetContainerItemDurability(bag, slot)
+end
+
+---@return unknown
+function GetContainerItemEquipmentSetInfo()
+end
+
+---@return itemId
+function GetContainerItemID(bag, slot)
+end
+
+---@return icon, itemCount, locked, quality, readable, lootable, itemLink, isFiltered, noValue, itemID
+function GetContainerItemInfo(bagID, slot)
+end
+
+---@return itemLink
+function GetContainerItemLink(bagID, slotIndex)
+end
+
+---@return unknown
 function GetContainerItemPurchaseCurrency()
 end
 
----@return money, itemCount, refundSec, currecycount, hasEnchants
-function GetContainerItemPurchaseInfo(container, slot, IsEquipped)
+---@return unknown
+function GetContainerItemPurchaseInfo()
 end
 
----@return texture, quantity, link
-function GetContainerItemPurchaseItem(container, slot, index)
+---@return unknown
+function GetContainerItemPurchaseItem()
 end
 
----@return isQuest, questId, isActive
-function GetContainerItemQuestInfo(container, slot)
+---@return isQuestItem, questId, isActive
+function GetContainerItemQuestInfo(bag, slot)
 end
 
----@return freeSlots, bagType
-function GetContainerNumFreeSlots(container)
+---@return numberOfFreeSlots, bagType
+function GetContainerNumFreeSlots(bagID)
 end
 
----@return numSlots
-function GetContainerNumSlots(container)
+---@return numberOfSlots
+function GetContainerNumSlots(bagID)
 end
 
----@return nil
-function GetContinentMapInfo()
-end
-
----@return nil
-function GetContinentMaps()
-end
-
----@return nil
-function GetContinentName()
-end
-
----@return corpseX, corpseY
-function GetCorpseMapPosition()
-end
-
----@return timeLeft
+---@return unknown
 function GetCorpseRecoveryDelay()
+end
+
+---@return corruption
+function GetCorruption()
+end
+
+---@return corruptionResistance
+function GetCorruptionResistance()
 end
 
 ---@return critChance
 function GetCritChance()
 end
 
----@return critChance
-function GetCritChanceFromAgility(unit)
-end
-
----@return nil
+---@return unknown
 function GetCritChanceProvidesParryEffect()
 end
 
----@return nil
+---@return unknown
 function GetCriteriaSpell()
 end
 
----@return name, amount, texturePath, earnedThisWeek, weeklyMax, totalMax, isDiscovered, quality
-function GetCurrencyInfo(id)
+---@return name, currentAmount, texture, earnedThisWeek, weeklyMax, totalMax, isDiscovered, rarity
+function GetCurrencyInfo(id_or_currencyLink_or_currencyString)
 end
 
----@return link
-function GetCurrencyLink(id)
+---@return currencyLink
+function GetCurrencyLink(currencyID,currencyAmount)
 end
 
----@return name, isHeader, isExpanded, isUnused, isWatched, count, icon, maximum, hasWeeklyLimit, currentWeeklyAmount, unknown
+---@return name, isHeader, isExpanded, isUnused, isWatched, count, icon, maximum, hasWeeklyLimit, currentWeeklyAmount, unknown, itemID
 function GetCurrencyListInfo(index)
 end
 
----@return nil
-function GetCurrencyListLink()
+---@return currencyLink
+function GetCurrencyListLink(index)
 end
 
----@return numEntries
+---@return listSize
 function GetCurrencyListSize()
 end
 
@@ -4711,419 +1706,423 @@ end
 function GetCurrentArenaSeason()
 end
 
----@return bindingSet
+---@return which
 function GetCurrentBindingSet()
 end
 
----@return nil
+---@return unknown
+function GetCurrentCombatTextEventInfo()
+end
+
+---@return unknown
 function GetCurrentEventID()
 end
 
----@return nil
+---@return unknown
+function GetCurrentGlyphNameForSpell()
+end
+
+---@return unknown
 function GetCurrentGraphicsSetting()
 end
 
----@return index
+---@return unknown
 function GetCurrentGuildBankTab()
 end
 
----@return frame
+---@return unknown
 function GetCurrentKeyBoardFocus()
 end
 
----@return nil
-function GetCurrentLevelDraenorTalent()
-end
-
----@return nil
+---@return unknown
 function GetCurrentLevelFeatures()
 end
 
----@return nil
+---@return unknown
 function GetCurrentLevelSpells()
 end
 
----@return areaID
-function GetCurrentMapAreaID()
-end
-
----@return continent
-function GetCurrentMapContinent()
-end
-
----@return dungeonLevel, x1, y1, x2, y2
-function GetCurrentMapDungeonLevel()
-end
-
----@return nil
-function GetCurrentMapHeaderIndex()
-end
-
----@return minLevel, maxLevel
-function GetCurrentMapLevelRange()
-end
-
----@return zone
-function GetCurrentMapZone()
-end
-
----@return nil
-function GetCurrentRefresh()
-end
-
----@return nil
+---@return regionID
 function GetCurrentRegion()
+end
+
+---@return unknown
+function GetCurrentRegionName()
 end
 
 ---@return index
 function GetCurrentResolution()
 end
 
+---@return unknown
+function GetCurrentScaledResolution()
+end
+
 ---@return currentTitle
 function GetCurrentTitle()
 end
 
----@return type, data, subType, subData
+---@return unknown
+function GetCursorDelta()
+end
+
+---@return infoType, ...
 function GetCursorInfo()
 end
 
----@return cursorMoney
+---@return copper
 function GetCursorMoney()
 end
 
----@return cursorX, cursorY
+---@return x, y
 function GetCursorPosition()
 end
 
----@return dailyQuestsComplete
+---@return unknown
+function GetCustomizationDetails()
+end
+
+---@return unknown
 function GetDailyQuestsCompleted()
 end
 
----@return graveyardX, graveyardY
-function GetDeathReleasePosition()
+---@return recapLink
+function GetDeathRecapLink(recapID)
 end
 
----@return nil
-function GetDebugAnimationStats()
-end
-
----@return nil
-function GetDebugSpellEffects()
-end
-
----@return nil
-function GetDebugStats()
-end
-
----@return nil
-function GetDebugZoneMap()
+---@return unknown
+function GetDefaultGraphicsQuality()
 end
 
 ---@return language
-function GetDefaultLanguage()
+function GetDefaultLanguage(unit)
 end
 
----@return nil
+---@return unknown
+function GetDefaultVideoOption()
+end
+
+---@return unknown
 function GetDefaultVideoOptions()
 end
 
----@return nil
+---@return unknown
 function GetDefaultVideoQualityOption()
 end
 
----@return nil
+---@return unknown
 function GetDemotionRank()
 end
 
----@return nil
-function GetDetailColumnString()
+---@return unknown
+function GetDenominationsFromCopper()
 end
 
----@return nil
-function GetDifficultyInfo()
+---@return effectiveILvl, isPreview, baseILvl
+function GetDetailedItemLevelInfo(itemID_or_itemString_or_itemName_or_itemLink)
 end
 
----@return distance
-function GetDistanceSqToQuest(index)
+---@return name, groupType, isHeroic, isChallengeMode, displayHeroic, displayMythic, toggleDifficultyID
+function GetDifficultyInfo(id)
 end
 
----@return chance
+---@return unknown
+function GetDisplayedAllyFrames()
+end
+
+---@return unknown
+function GetDistanceSqToQuest()
+end
+
+---@return unknown
 function GetDodgeChance()
 end
 
----@return nil
+---@return unknown
+function GetDodgeChanceFromAttribute()
+end
+
+---@return unknown
 function GetDownloadedPercentage()
 end
 
----@return nil
+---@return difficultyID
 function GetDungeonDifficultyID()
 end
 
----@return nil
+---@return unknown
 function GetDungeonForRandomSlot()
 end
 
----@return nil
+---@return unknown
 function GetDungeonInfo()
 end
 
----@return nil
-function GetDungeonMapInfo()
+---@return unknown
+function GetDungeonNameWithDifficulty()
 end
 
----@return nil
-function GetDungeonMaps()
+---@return unknown
+function GetEnemyDodgeChance()
 end
 
----@return direction
-function GetEclipseDirection()
+---@return unknown
+function GetEnemyParryChance()
 end
 
----@return nil
-function GetEquipmentSetIgnoreSlots()
+---@return unknown
+function GetEquipmentNameFromSpell()
 end
 
----@return name, icon, setID, isEquipped, numItems, numEquipped, numInventory, numMissing, numIgnored
-function GetEquipmentSetInfo(index)
+---@return unknown
+function GetEquipmentSetIconInfo()
 end
 
----@return icon, setID, isEquipped, numItems, numEquipped, unknown, numMissing, numIgnored
-function GetEquipmentSetInfoByName(name)
+---@return unknown
+function GetEventCPUUsage()
 end
 
----@return itemIDs
-function GetEquipmentSetItemIDs(name)
-end
-
----@return itemIDs
-function GetEquipmentSetLocations(name)
-end
-
----@return usage, numEvents
-function GetEventCPUUsage(event)
-end
-
----@return nil
+---@return unknown
 function GetEventTime()
 end
 
----@return name, texture, name
-function GetExistingSocketInfo(index)
+---@return unknown
+function GetExistingSocketInfo()
 end
 
----@return link
-function GetExistingSocketLink(index)
+---@return unknown
+function GetExistingSocketLink()
 end
 
----@return expansion
+---@return info
+function GetExpansionDisplayInfo(expansionLevel)
+end
+
+---@return expansionLevel
+function GetExpansionForLevel(playerLevel , useLegacy)
+end
+
+---@return expansionLevel
 function GetExpansionLevel()
 end
 
----@return expertise
+---@return isExpansionTrialAccount, expansionTrialRemainingSeconds
+function GetExpansionTrialInfo()
+end
+
+---@return expertise, offhandExpertise, rangedExpertise
 function GetExpertise()
 end
 
----@return nil
-function GetExtendedItemInfo()
-end
-
----@return nil
+---@return extraPage
 function GetExtraBarIndex()
 end
 
----@return token
-function GetFacialHairCustomization()
+---@return     isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus
+function GetFactionInfo(factionIndex)
 end
 
----@return name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus
-function GetFactionInfo(index)
+---@return unknown
+function GetFactionInfoByID()
 end
 
----@return name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus
-function GetFactionInfoByID(factionID)
+---@return unknown
+function GetFailedPVPTalentIDs()
 end
 
----@return nil
+---@return unknown
+function GetFailedTalentIDs()
+end
+
+---@return fileID
+function GetFileIDFromPath(filePath)
+end
+
+---@return unknown
 function GetFileStreamingStatus()
 end
 
----@return index
-function GetFirstTradeSkill()
+---@return achievementID
+function GetFilteredAchievementID(index)
 end
 
----@return nil
+---@return unknown
+function GetFixedLink()
+end
+
+---@return unknown
 function GetFlexRaidDungeonInfo()
 end
 
----@return flyoutID
-function GetFlyoutID(index)
+---@return unknown
+function GetFlyoutID()
 end
 
----@return name, description, numSlots, isKnown
-function GetFlyoutInfo(id)
+---@return unknown
+function GetFlyoutInfo()
 end
 
----@return spellID, isKnown
-function GetFlyoutSlotInfo(flyoutID, slot)
+---@return unknown
+function GetFlyoutSlotInfo()
 end
 
----@return usage, calls
+---@return unknown
+function GetFollowerTypeIDFromSpell()
+end
+
+---@return unknown
+function GetFontInfo()
+end
+
+---@return unknown
+function GetFonts()
+end
+
+---@return time, count
 function GetFrameCPUUsage(frame, includeChildren)
 end
 
----@return framerate
+---@return unknown
+function GetFrameHandle()
+end
+
+---@return unknown
+function GetFrameHandleFrame()
+end
+
+---@return  framerate
 function GetFramerate()
 end
 
----@return nil
+---@return frame1, frame2, ...
 function GetFramesRegisteredForEvent(event)
 end
 
----@return name, level, class, area, connected, status, note, RAF
-function GetFriendInfo(index)
+---@return friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold
+function GetFriendshipReputation(factionID)
 end
 
----@return nil
-function GetFriendshipReputation()
+---@return currentRank, maxRank
+function GetFriendshipReputationRanks(factionID)
 end
 
----@return nil
-function GetFriendshipReputationRanks()
+---@return unknown
+function GetFullRaidList()
 end
 
----@return usage, calls
-function GetFunctionCPUUsage(func, includeSubroutines)
+---@return unknown
+function GetFunctionCPUUsage()
 end
 
----@return nil
+---@return unknown
 function GetGMStatus()
 end
 
----@return nil
+---@return unknown
 function GetGMTicket()
 end
 
----@return nil
-function GetGMTicketCategories()
+---@return unknown
+function GetGameMessageInfo()
 end
 
----@return hour, minute
+---@return hours,minutes
 function GetGameTime()
 end
 
----@return gamma
-function GetGamma()
-end
-
----@return nil
-function GetGlyphClearInfo()
-end
-
----@return name, glyphType, isKnown, icon, castSpell
-function GetGlyphInfo(index)
-end
-
----@return link
-function GetGlyphLink(socket, talentGroup)
-end
-
----@return nil
-function GetGlyphLinkByID()
-end
-
----@return enabled, glyphType, glyphTooltipIndex, glyphSpell, icon
-function GetGlyphSocketInfo(socket, talentGroup)
-end
-
----@return name, level, isTrivial, isComplete, isLegendary, ...
+---@return title1, level1, isLowLevel1, isComplete1, isLegendary1, isIgnored1, questID1, ...
 function GetGossipActiveQuests()
 end
 
----@return name, level, isTrivial, frequency, isRepeatable, isLegendary, ...
+---@return title1, level1, isTrivial1, frequency1, isRepeatable1, isLegendary1, isIgnored1, questID1, ...
 function GetGossipAvailableQuests()
 end
 
----@return string, gossipType, ...
+---@return title1, gossip1, ...
 function GetGossipOptions()
 end
 
----@return string
+---@return text
 function GetGossipText()
 end
 
----@return nil
+---@return cvarValues, ...
 function GetGraphicsAPIs()
 end
 
----@return greetingText
+---@return unknown
+function GetGraphicsDropdownIndexByMasterIndex()
+end
+
+---@return unknown
 function GetGreetingText()
 end
 
----@return nil
+---@return unknown
 function GetGroupMemberCounts()
 end
 
----@return nil
+---@return unknown
 function GetGuildAchievementMemberInfo()
 end
 
----@return nil
+---@return unknown
 function GetGuildAchievementMembers()
 end
 
----@return nil
+---@return unknown
 function GetGuildAchievementNumMembers()
 end
 
----@return nil
-function GetGuildApplicantInfo()
+---@return name, level, class, bQuest, bDungeon, bRaid, bPvP, bRP, bWeekdays, bWeekends, bTank, bHealer, bDamage, comment, timeSince, timeLeft
+function GetGuildApplicantInfo(selectionID)
 end
 
----@return nil
+---@return unknown
 function GetGuildApplicantSelection()
 end
 
----@return nil
+---@return unknown
 function GetGuildBankBonusDepositMoney()
 end
 
----@return texture, count, locked
-function GetGuildBankItemInfo(tab, slot)
+---@return texture, itemCount, locked, isFiltered, quality
+function GetGuildBankItemInfo(tab,slot)
 end
 
----@return item
-function GetGuildBankItemLink(tab, slot)
+---@return unknown
+function GetGuildBankItemLink()
 end
 
----@return guildBankMoney
+---@return retVal1
 function GetGuildBankMoney()
 end
 
----@return type, name, year, month, day, hour
+---@return type, name, amount, years, months, days, hours
 function GetGuildBankMoneyTransaction(index)
 end
 
----@return tabCost
+---@return unknown
 function GetGuildBankTabCost()
 end
 
----@return name, icon, isViewable, canDeposit, numWithdrawals, remainingWithdrawals
+---@return name, icon, isViewable, canDeposit, numWithdrawals, remainingWithdrawals, filtered
 function GetGuildBankTabInfo(tab)
 end
 
----@return canView, canDeposit, canUpdateText, numWithdrawls
+---@return canView, canDeposit, canEdit, stacksPerDay
 function GetGuildBankTabPermissions(tab)
 end
 
----@return string
-function GetGuildBankText(tab)
+---@return unknown
+function GetGuildBankText()
 end
 
 ---@return type, name, itemLink, count, tab1, tab2, year, month, day, hour
 function GetGuildBankTransaction(tab, index)
 end
 
----@return nil
+---@return dailyGoldWithdrawlLimit
 function GetGuildBankWithdrawGoldLimit()
 end
 
@@ -5131,203 +2130,175 @@ end
 function GetGuildBankWithdrawMoney()
 end
 
----@return categories
+---@return unknown
 function GetGuildCategoryList()
 end
 
----@return nil
+---@return unknown
 function GetGuildChallengeInfo()
 end
 
----@return cost
+---@return unknown
 function GetGuildCharterCost()
 end
 
----@return type, player1, player2, rank, year, month, day, hour
-function GetGuildEventInfo(index)
+---@return unknown
+function GetGuildEventInfo()
 end
 
----@return nil
+---@return unknown
 function GetGuildExpirationTime()
 end
 
----@return nil
+---@return unknown
 function GetGuildFactionGroup()
 end
 
----@return nil
+---@return guildName, description, standingID, barMin, barMax, barValue
 function GetGuildFactionInfo()
 end
 
----@return guildName, guildRankName, guildRankIndex
+---@return guildName, guildRankName, guildRankIndex, realm
 function GetGuildInfo(unit)
 end
 
----@return guildInfoText
+---@return unknown
 function GetGuildInfoText()
 end
 
----@return nil
-function GetGuildLevelEnabled()
-end
-
----@return nil
+---@return unknown
 function GetGuildLogoInfo()
 end
 
----@return nil
+---@return unknown
 function GetGuildMemberRecipes()
 end
 
----@return nil
+---@return unknown
 function GetGuildMembershipRequestInfo()
 end
 
----@return nil
+---@return unknown
 function GetGuildMembershipRequestSettings()
 end
 
----@return nil
+---@return unknown
 function GetGuildNewsFilters()
 end
 
----@return isSticky, isHeader, newsType, text1, text2, id, data, data2, weekday, day, month, year
-function GetGuildNewsInfo(newsIndex)
-end
-
----@return nil
+---@return unknown
 function GetGuildNewsMemberName()
 end
 
----@return nil
+---@return unknown
 function GetGuildNewsSort()
 end
 
----@return nil
+---@return unknown
 function GetGuildPerkInfo()
 end
 
----@return nil
+---@return professionID, recipeID, unknown
 function GetGuildRecipeInfoPostQuery()
 end
 
----@return displayName, fullName, classFileName, online
+---@return name, online
 function GetGuildRecipeMember(index)
 end
 
----@return nil
+---@return unknown
 function GetGuildRecruitmentComment()
 end
 
----@return nil
+---@return unknown
 function GetGuildRecruitmentSettings()
 end
 
----@return nil
+---@return unknown
 function GetGuildRenameRequired()
 end
 
----@return nil
+---@return unknown
 function GetGuildRewardInfo()
 end
 
----@return fullName, rank, rankIndex, level, class, zone, note, officernote, online, status, classFileName, achievementPoints, achievementRank, isMobile, canSoR, reputation
+---@return   class, achievementPoints, achievementRank, isMobile, canSoR, repStanding, GUID
 function GetGuildRosterInfo(index)
 end
 
----@return nil
+---@return unknown
 function GetGuildRosterLargestAchievementPoints()
 end
 
----@return years, months, days, hours
+---@return yearsOffline, monthsOffline, daysOffline, hoursOffline
 function GetGuildRosterLastOnline(index)
 end
 
----@return guildMOTD
+---@return motd
 function GetGuildRosterMOTD()
 end
 
----@return index
+---@return  selectedGuildMember
 function GetGuildRosterSelection()
 end
 
----@return showOffline
+---@return showoffline
 function GetGuildRosterShowOffline()
 end
 
 ---@return tabardBackgroundUpper, tabardBackgroundLower, tabardEmblemUpper, tabardEmblemLower, tabardBorderUpper, tabardBorderLower
-function GetGuildTabardFileNames()
+function GetGuildTabardFiles()
 end
 
----@return professionID, isCollapsed, iconTexture, headerName, numOnline, numVisible, numPlayers, playerName, playerNameWithRealm, class, online, zone, skill, classFileName, isMobile
+---@return skillID, isCollapsed, iconTexture, headerName, numOnline, numVisible, numPlayers, playerName, playerNameWithRealm, class, online, zone, skill, classFileName, isMobile, isAway
 function GetGuildTradeSkillInfo(index)
 end
 
----@return token
-function GetHairCustomization()
-end
-
----@return nil
+---@return unknown
 function GetHaste()
 end
 
----@return nil
+---@return hitModifier
 function GetHitModifier()
 end
 
----@return unk, honorWinReward, arenaWinReward, honorLossReward, arenaLossReward
-function GetHolidayBGHonorCurrencyBonuses()
+---@return homePlayers
+function GetHomePartyInfo(homePlayers)
 end
 
----@return nil
-function GetHolidayBGInfo()
+---@return textCreated, canReply, isGM
+function GetInboxHeaderInfo(index)
 end
 
----@return names
-function GetHomePartyInfo()
-end
-
----@return name
-function GetIgnoreName(index)
-end
-
----@return packageIcon, stationeryIcon, sender, subject, money, CODAmount, daysLeft, itemCount, wasRead, wasReturned, textCreated, canReply, isGM, itemQuantity
-function GetInboxHeaderInfo(mailID)
-end
-
----@return invoiceType, itemName, playerName, bid, buyout, deposit, consignment, moneyDelay, etaHour, etaMin
+---@return invoiceType, itemName, playerName, bid, buyout, deposit, consignment
 function GetInboxInvoiceInfo(index)
 end
 
----@return name, itemTexture, count, quality, canUse
-function GetInboxItem(mailID, attachmentIndex)
+---@return name, itemID, texture, count, quality, canUse 
+function GetInboxItem(index, itemIndex)
 end
 
----@return itemlink
-function GetInboxItemLink(mailID, attachmentIndex)
+---@return itemLink
+function GetInboxItemLink(message, attachment)
 end
 
 ---@return numItems, totalItems
 function GetInboxNumItems()
 end
 
----@return bodyText, texture, isTakeable, isInvoice
-function GetInboxText(mailID)
+---@return bodyText, stationaryMiddle, stationaryEdge, isTakeable, isInvoice
+function GetInboxText(index)
 end
 
----@return nil
+---@return unknown
 function GetInsertItemsLeftToRight()
 end
 
----@return nil
-function GetInspectArenaData()
+---@return rating, seasonPlayed, seasonWon, weeklyPlayed, weeklyWon
+function GetInspectArenaData(bracketId)
 end
 
----@return nil
-function GetInspectGlyph()
-end
-
----@return nil
+---@return unknown
 function GetInspectGuildInfo()
 end
 
@@ -5335,343 +2306,387 @@ end
 function GetInspectHonorData()
 end
 
----@return nil
+---@return unknown
 function GetInspectRatedBGData()
 end
 
----@return specID
-function GetInspectSpecialization()
+---@return id
+function GetInspectSpecialization(unit)
 end
 
----@return nil
+---@return unknown
 function GetInspectTalent()
 end
 
----@return timeleft
+---@return unknown
 function GetInstanceBootTimeRemaining()
 end
 
----@return name, type, difficulty, difficultyName, maxPlayers, playerDifficulty, isDynamicInstance, mapID, instanceGroupSize
+---@return name, instanceType, difficultyID, difficultyName, maxPlayers, dynamicDifficulty, isDynamic, instanceID, instanceGroupSize, LfgDungeonID
 function GetInstanceInfo()
 end
 
----@return seconds
+---@return lockTimeleft, isPreviousInstance, encountersTotal, encountersComplete
 function GetInstanceLockTimeRemaining()
 end
 
----@return nil
-function GetInstanceLockTimeRemainingEncounter()
+---@return bossName, texture, isKilled
+function GetInstanceLockTimeRemainingEncounter(id)
 end
 
----@return status
-function GetInventoryAlertStatus(slot)
+---@return alertStatus
+function GetInventoryAlertStatus(index)
 end
 
 ---@return isBroken
-function GetInventoryItemBroken(unit, slot)
+function GetInventoryItemBroken(unit, slotId)
 end
 
 ---@return start, duration, enable
-function GetInventoryItemCooldown(unit, slot)
+function GetInventoryItemCooldown(unit, slotId)
 end
 
 ---@return count
-function GetInventoryItemCount(unit, slot)
+function GetInventoryItemCount(unit, slotId)
 end
 
----@return durability, max
+---@return current, maximum
 function GetInventoryItemDurability(slot)
 end
 
----@return nil
+---@return unknown
 function GetInventoryItemEquippedUnusable()
 end
 
----@return gem1, gem2, gem3
-function GetInventoryItemGems(slot)
+---@return itemId, unknown
+function GetInventoryItemID(unit, invSlot)
 end
 
----@return id
-function GetInventoryItemID(unit, slot)
-end
-
----@return link
-function GetInventoryItemLink(unit, slot)
+---@return itemLink
+function GetInventoryItemLink(unit, slotId)
 end
 
 ---@return quality
-function GetInventoryItemQuality(unit, slot)
+function GetInventoryItemQuality(unit, slotId)
 end
 
 ---@return texture
-function GetInventoryItemTexture(unit, slot)
+function GetInventoryItemTexture(unit, slotId)
 end
 
----@return availableItems
-function GetInventoryItemsForSlot(slot)
+---@return unknown
+function GetInventoryItemsForSlot()
 end
 
----@return id, texture, checkRelic
+---@return slotId, textureName, checkRelic
 function GetInventorySlotInfo(slotName)
 end
 
----@return start, duration, enable
+---@return confirmationType, name, guid, rolesInvalid, willConvertToRaid, level, spec, itemLevel
+function GetInviteConfirmationInfo(invite)
+end
+
+---@return unknown
+function GetItemChildInfo()
+end
+
+---@return name
+function GetItemClassInfo(classID)
+end
+
+---@return startTime, duration, enable
 function GetItemCooldown(itemID)
 end
 
----@return itemCount
-function GetItemCount(itemId, includeBank, includeCharges)
+---@return count
+function GetItemCount(itemID_or_itemName_or_itemLink, includeBank, includeCharges)
+end
+
+---@return unknown
+function GetItemCreationContext()
 end
 
 ---@return bagType
-function GetItemFamily(itemID)
+function GetItemFamily(itemId_or_itemName_or_itemLink)
 end
 
----@return name, link
-function GetItemGem(itemID, index)
+---@return itemName, itemLink
+function GetItemGem(name_or_itemlink, index)
 end
 
----@return texture
+---@return icon
 function GetItemIcon(itemID)
 end
 
----@return name, link, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture, vendorPrice
-function GetItemInfo(itemID)
+---@return isCraftingReagent
+function GetItemInfo(itemID_or_itemString_or_itemName_or_itemLink)
 end
 
----@return levelIncrement
+---@return itemID, itemType, itemSubType, itemEquipLoc, icon, itemClassID, itemSubClassID
+function GetItemInfoInstant(itemID_or_itemString_or_itemName_or_itemLink)
+end
+
+---@return unknown
+function GetItemInventorySlotInfo()
+end
+
+---@return unknown
+function GetItemLevelColor()
+end
+
+---@return itemLevelIncrement
 function GetItemLevelIncrement()
 end
 
----@return redComponent, greenComponent, blueComponent, hexColor
+---@return r, g, b, hex
 function GetItemQualityColor(quality)
 end
 
----@return nil
-function GetItemSpecInfo()
+---@return unknown
+function GetItemSetInfo()
 end
 
----@return name, rank
-function GetItemSpell(itemID)
+---@return specTable
+function GetItemSpecInfo(itemLink_or_itemID_or_itemName , specTable)
 end
 
----@return statTable
-function GetItemStatDelta(item1Link, item2Link , returnTable)
+---@return spellName, spellID
+function GetItemSpell(itemID_or_itemString_or_itemName_or_itemLink)
 end
 
----@return statTable
-function GetItemStats(itemLink , returnTable)
+---@return unknown
+function GetItemStatDelta()
 end
 
----@return canBeChanged, noChangeReason, canBeSource, noSourceReason
-function GetItemTransmogrifyInfo(itemID)
+---@return stats
+function GetItemStats(itemLink, statTable)
 end
 
----@return uniqueFamily, maxEquipped
-function GetItemUniqueness(itemID)
+---@return name, isArmorType
+function GetItemSubClassInfo(classID, subClassID)
 end
 
----@return newItemLevel
+---@return unknown
+function GetItemUniqueness()
+end
+
+---@return itemLevel
 function GetItemUpdateLevel()
 end
 
----@return nil
-function GetItemUpgradeEffect()
+---@return leftText, rightText
+function GetItemUpgradeEffect(effectIndex)
 end
 
----@return icon, name, quality, bound, numCurrUpgrades, numMaxUpgrades, cost, currencyType
+---@return unknown
 function GetItemUpgradeItemInfo()
 end
 
----@return stat, amount, ...
-function GetItemUpgradeStats(getNew)
+---@return unknown
+function GetItemUpgradeStats()
 end
 
----@return nil
+---@return unknown
+function GetJournalInfoForSpellConfirmation()
+end
+
+---@return unknown
+function GetKeyRingSize()
+end
+
+---@return unknown
 function GetLFDChoiceCollapseState()
 end
 
----@return nil
+---@return unknown
 function GetLFDChoiceEnabledState()
 end
 
----@return nil
+---@return unknown
 function GetLFDChoiceLockedState()
 end
 
----@return nil
+---@return unknown
 function GetLFDChoiceOrder()
 end
 
----@return nil
+---@return unknown
 function GetLFDLockInfo()
 end
 
----@return nil
+---@return unknown
 function GetLFDLockPlayerCount()
 end
 
----@return nil
+---@return unknown
 function GetLFDRoleLockInfo()
 end
 
----@return nil
+---@return unknown
 function GetLFDRoleRestrictions()
 end
 
----@return nil
+---@return bonusID, numKnownFactionsWithLFGBonus
 function GetLFGBonusFactionID()
 end
 
----@return nil
+---@return  totalVotes, bootVotes, timeLeft, reason
 function GetLFGBootProposal()
 end
 
----@return nil
+---@return unknown
 function GetLFGCategoryForID()
 end
 
----@return name, typeID, textureFilename, moneyBase, moneyVar, experienceBase, experienceVar, numStrangers, numRewards
+---@return unknown
 function GetLFGCompletionReward()
 end
 
----@return nil
+---@return unknown
 function GetLFGCompletionRewardItem()
 end
 
----@return nil
+---@return unknown
+function GetLFGCompletionRewardItemLink()
+end
+
+---@return expiryTime
 function GetLFGDeserterExpiration()
 end
 
----@return bossName, texture, isKilled, result4
-function GetLFGDungeonEncounterInfo(dungeonId, encounterIndex)
+---@return bossName, texture, isKilled, unknown4
+function GetLFGDungeonEncounterInfo(dungeonID, encounterIndex)
 end
 
----@return dungeonName, typeId, minLvl, maxLvl, recLvl, minRecLvl, maxRecLvl, expansionId, groupId, textureName, difficulty, maxPlayers, dungeonDesc, isHoliday
-function GetLFGDungeonInfo(id)
+---@return name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel
+function GetLFGDungeonInfo(dungeonID)
 end
 
----@return totalEncounters, encountersCompleted
-function GetLFGDungeonNumEncounters(dungeonId)
+---@return numEncounters, numCompleted
+function GetLFGDungeonNumEncounters(dungeonID)
 end
 
----@return nil
-function GetLFGDungeonRewardCapBarInfo()
+---@return currencyID, DungeonID, Quantity, Limit, overallQuantity, overallLimit, periodPurseQuantity, periodPurseLimit, purseQuantity, purseLimit
+function GetLFGDungeonRewardCapBarInfo(VALOR_TIER1_LFG_ID)
 end
 
----@return nil
+---@return unknown
 function GetLFGDungeonRewardCapInfo()
 end
 
----@return nil
+---@return unknown
 function GetLFGDungeonRewardInfo()
 end
 
----@return nil
+---@return unknown
 function GetLFGDungeonRewardLink()
 end
 
----@return nil
+---@return unknown
 function GetLFGDungeonRewards()
 end
 
----@return nil
+---@return unknown
 function GetLFGDungeonShortageRewardInfo()
 end
 
----@return nil
+---@return unknown
 function GetLFGDungeonShortageRewardLink()
 end
 
----@return nil
+---@return unknown
 function GetLFGInfoServer()
 end
 
----@return nil
+---@return unknown
 function GetLFGInviteRoleAvailability()
 end
 
----@return nil
+---@return unknown
 function GetLFGInviteRoleRestrictions()
 end
 
----@return mode, submode
-function GetLFGMode()
+---@return     mode, submode
+function GetLFGMode(category, lfgID)
 end
 
----@return nil
+---@return  completedEncounters, numMembers, isLeader, isHoliday, proposalCategory
 function GetLFGProposal()
 end
 
----@return nil
+---@return unknown
 function GetLFGProposalEncounter()
 end
 
----@return nil
+---@return unknown
 function GetLFGProposalMember()
 end
 
----@return hasData, leaderNeeds, tankNeeds, healerNeeds, dpsNeeds, totalTanks, totalHealers, totalDPS, instanceType, instanceSubType, instanceName, averageWait, tankWait, healerWait, dpsWait, myWait, queuedTime
-function GetLFGQueueStats()
+---@return nil
+function GetLFGQueueStats(category, activeID)
 end
 
----@return nil
+---@return unknown
 function GetLFGQueuedList()
 end
 
----@return nil
+---@return expiryTime
 function GetLFGRandomCooldownExpiration()
 end
 
----@return nil
+---@return unknown
 function GetLFGRandomDungeonInfo()
 end
 
----@return eligible, forTank, forHealer, forDamage, itemCount, money, xp
-function GetLFGRoleShortageRewards(dungeonID, shortageIndex)
+---@return unknown
+function GetLFGReadyCheckUpdate()
 end
 
----@return nil
+---@return unknown
+function GetLFGReadyCheckUpdateBattlegroundInfo()
+end
+
+---@return eligible, forTank, forHealer, forDamage, itemCount, money, xp
+function GetLFGRoleShortageRewards(dungeonID, shortageSeverity)
+end
+
+---@return unknown
 function GetLFGRoleUpdate()
 end
 
----@return nil
+---@return queueName
 function GetLFGRoleUpdateBattlegroundInfo()
 end
 
----@return nil
+---@return unknown
 function GetLFGRoleUpdateMember()
 end
 
----@return nil
+---@return unknown
 function GetLFGRoleUpdateSlot()
 end
 
----@return leader, tank, healer, damage
+---@return     isLeader, isTank, isHealer, isDPS
 function GetLFGRoles()
 end
 
----@return nil
+---@return unknown
 function GetLFGSuspendedPlayers()
 end
 
----@return nil
-function GetLFGTypes()
+---@return raidList
+function GetLFRChoiceOrder(LFRRaidList)
 end
 
----@return nil
-function GetLFRChoiceOrder()
-end
-
----@return languageName, languageIndex
+---@return language, languageID
 function GetLanguageByIndex(index)
 end
 
----@return nil
-function GetLatestCompletedAchievements(isGuild)
+---@return unknown
+function GetLatestCompletedAchievements()
 end
 
----@return nil
+---@return unknown
 function GetLatestCompletedComparisonAchievements()
 end
 
@@ -5679,80 +2694,84 @@ end
 function GetLatestThreeSenders()
 end
 
----@return nil
+---@return unknown
 function GetLatestUpdatedComparisonStats()
 end
 
----@return nil
+---@return unknown
 function GetLatestUpdatedStats()
 end
 
----@return nil
+---@return unknown
 function GetLegacyRaidDifficultyID()
 end
 
----@return nil
-function GetLevelUpInstances()
+---@return id1, id2, ...
+function GetLevelUpInstances(level, isRaid)
 end
 
----@return nil
+---@return Leech
 function GetLifesteal()
 end
 
----@return locale
+---@return unknown
+function GetLocalGameTime()
+end
+
+---@return e
 function GetLocale()
 end
 
----@return nil
+---@return unknown
 function GetLookingForGuildComment()
 end
 
----@return nil
+---@return unknown
 function GetLookingForGuildSettings()
 end
 
----@return nil
+---@return unknown
 function GetLooseMacroIcons()
 end
 
----@return nil
+---@return unknown
 function GetLooseMacroItemIcons()
 end
 
----@return nil
+---@return info
 function GetLootInfo()
 end
 
----@return method, partyMaster, raidMaster
+---@return lootmethod, masterlooterPartyID, masterlooterRaidID
 function GetLootMethod()
 end
 
----@return texture, name, count, quality, bindOnPickUp
-function GetLootRollItemInfo(id)
+---@return texture, name, count, quality, bindOnPickUp, canNeed, canGreed, canDisenchant, reasonNeed, reasonGreed, reasonDisenchant, deSkillRequired
+function GetLootRollItemInfo(rollID)
 end
 
----@return link
+---@return itemLink
 function GetLootRollItemLink(id)
 end
 
----@return timeLeft
-function GetLootRollTimeLeft(id)
+---@return unknown
+function GetLootRollTimeLeft()
 end
 
----@return texture, item, quantity, quality, locked
+---@return lootIcon, lootName, lootQuantity, currencyID, lootQuality, locked, isQuestItem, questID, isActive
 function GetLootSlotInfo(slot)
 end
 
----@return link
-function GetLootSlotLink(slot)
+---@return itemLink
+function GetLootSlotLink(index)
 end
 
----@return loottype
-function GetLootSlotType(slot)
+---@return slotType
+function GetLootSlotType(slotIndex)
 end
 
----@return corpseGUID1, count1, corpseGUID2, count2, ...
-function GetLootSourceInfo(index)
+---@return guid1, quant1, guid2, quant2, ...
+function GetLootSourceInfo(lootSlot)
 end
 
 ---@return specID
@@ -5763,143 +2782,139 @@ end
 function GetLootThreshold()
 end
 
+---@return unknown
+function GetLowBit()
+end
+
 ---@return body
-function GetMacroBody(index)
+function GetMacroBody(macroIndex_or_name)
 end
 
----@return icons
-function GetMacroIcons(tbl)
+---@return unknown
+function GetMacroIcons()
 end
 
----@return index
+---@return macroSlot
 function GetMacroIndexByName(name)
 end
 
----@return name, texture, body
-function GetMacroInfo(index)
+---@return name, icon, body, isLocal
+function GetMacroInfo(name_or_macroSlot)
 end
 
----@return name, link
-function GetMacroItem(index)
+---@return unknown
+function GetMacroItem()
 end
 
----@return icons
-function GetMacroItemIcons(tbl)
+---@return unknown
+function GetMacroItemIcons()
 end
 
----@return name, rank, spellID
-function GetMacroSpell(index)
+---@return name, rank, id
+function GetMacroSpell(slot)
 end
 
 ---@return base, casting
 function GetManaRegen()
 end
 
----@return nil
-function GetMapContinents()
-end
-
----@return nil
-function GetMapDebugObjectInfo()
-end
-
----@return nil
-function GetMapHierarchy()
-end
-
----@return mapFileName, textureHeight, textureWidth, isMicroDungeon, microDungeonMapName
-function GetMapInfo()
-end
-
----@return name, description, textureIndex, x, y, mapLinkID, showInBattleMap
-function GetMapLandmarkInfo(index)
-end
-
----@return mapname
-function GetMapNameByID(id)
-end
-
----@return textureName, textureWidth, textureHeight, offsetX, offsetY, mapPointX, mapPointY
-function GetMapOverlayInfo(index)
-end
-
----@return zoneid1,zonename1, zoneid2,zonename2, zoneid3,zonename3...
-function GetMapSubzones(zoneID)
-end
-
----@return nil
-function GetMapZones(continentIndex)
+---@return unknown
+function GetManagedEnvironment()
 end
 
 ---@return candidate
-function GetMasterLootCandidate(index)
+function GetMasterLootCandidate(slot, index)
 end
 
----@return nil
+---@return mastery
 function GetMastery()
 end
 
----@return nil
+---@return mastery, coefficient
 function GetMasteryEffect()
 end
 
----@return nil
-function GetMaxAnimFramerate()
+---@return unknown
+function GetMaterialTextColors()
 end
 
----@return amount
+---@return unknown
 function GetMaxArenaCurrency()
 end
 
----@return numBattlefields
+---@return maxBattlefieldID
 function GetMaxBattlefieldID()
 end
 
----@return max
-function GetMaxCombatRatingBonus(ratingIndex)
-end
-
----@return nil
-function GetMaxNumCUFProfiles()
+---@return unknown
+function GetMaxCombatRatingBonus()
 end
 
 ---@return maxLevel
+function GetMaxLevelForExpansionLevel(expansionLevel , useModernLevelMapping)
+end
+
+---@return unknown
+function GetMaxNumCUFProfiles()
+end
+
+---@return unknown
 function GetMaxPlayerLevel()
 end
 
----@return nil
+---@return unknown
+function GetMaxRenderScale()
+end
+
+---@return unknown
 function GetMaxRewardCurrencies()
 end
 
----@return nil
+---@return unknown
 function GetMaxSpellStartRecoveryOffset()
 end
 
----@return nil
+---@return tiers
 function GetMaxTalentTier()
 end
 
----@return haste
+---@return unknown
+function GetMaxUIPanelsWidth()
+end
+
+---@return expansionLevel
+function GetMaximumExpansionLevel()
+end
+
+---@return unknown
 function GetMeleeHaste()
 end
 
----@return nil
+---@return unknown
+function GetMeleeMissChance()
+end
+
+---@return unknown
 function GetMerchantCurrencies()
 end
 
----@return nil
+---@return unknown
 function GetMerchantFilter()
 end
 
----@return currencyCount
+---@return itemCount
 function GetMerchantItemCostInfo(index)
 end
 
----@return texture, value, link, name
-function GetMerchantItemCostItem(index, currency)
+---@return itemTexture, itemValue, itemLink, currencyName
+function GetMerchantItemCostItem(index, itemIndex)
 end
 
----@return name, texture, price, quantity, numAvailable, isUsable, extendedCost
+---@return unknown
+function GetMerchantItemID()
+end
+
+---@return name, texture, price, quantity, numAvailable, isPurchasable, isUsable, extendedCost
 function GetMerchantItemInfo(index)
 end
 
@@ -5911,103 +2926,107 @@ end
 function GetMerchantItemMaxStack(index)
 end
 
----@return numMerchantItems
+---@return numItems
 function GetMerchantNumItems()
 end
 
----@return zoneText
+---@return unknown
+function GetMessageTypeColor()
+end
+
+---@return unknown
+function GetMessageTypeState()
+end
+
+---@return unknown
+function GetMinRenderScale()
+end
+
+---@return zone
 function GetMinimapZoneText()
 end
 
----@return timer, value, maxvalue, scale, paused, label
-function GetMirrorTimerInfo(index)
+---@return expansionLevel
+function GetMinimumExpansionLevel()
 end
 
----@return progress
+---@return timer, initial, maxvalue, scale, paused, label
+function GetMirrorTimerInfo(id)
+end
+
+---@return value
 function GetMirrorTimerProgress(timer)
 end
 
----@return nil
-function GetMissingLootItemInfo()
-end
-
----@return nil
-function GetMissingLootItemLink()
-end
-
----@return nil
+---@return unknown
 function GetModResilienceDamageReduction()
 end
 
----@return binding
-function GetModifiedClick(name)
+---@return key
+function GetModifiedClick(action)
 end
 
----@return action
-function GetModifiedClickAction(index)
+---@return unknown
+function GetModifiedClickAction()
 end
 
 ---@return money
 function GetMoney()
 end
 
----@return ratio
-function GetMonitorAspectRatio(monitorIndex)
+---@return unknown
+function GetMoneyString()
 end
 
----@return count
+---@return unknown
+function GetMonitorAspectRatio()
+end
+
+---@return unknown
 function GetMonitorCount()
 end
 
----@return name
-function GetMonitorName(monitorIndex)
-end
-
----@return button
-function GetMouseButtonClicked()
+---@return unknown
+function GetMonitorName()
 end
 
 ---@return buttonName
-function GetMouseButtonName(buttonNumber)
+function GetMouseButtonClicked()
 end
 
----@return frame
+---@return unknown
+function GetMouseButtonName()
+end
+
+---@return unknown
+function GetMouseClickFocus()
+end
+
+---@return frameID
 function GetMouseFocus()
 end
 
----@return nil
+---@return unknown
+function GetMouseMotionFocus()
+end
+
+---@return unknown
 function GetMovieDownloadProgress()
 end
 
----@return nil
+---@return unknown
 function GetMultiCastBarIndex()
 end
 
----@return nil
-function GetMultiCastTotemSpells()
+---@return totem1, totem2, totem3, totem4, totem5, totem6, totem7
+function GetMultiCastTotemSpells(slot)
 end
 
----@return nil
-function GetMultistrike()
+---@return corruptionEffects
+function GetNegativeCorruptionEffectInfo()
 end
 
----@return nil
-function GetMultistrikeEffect()
-end
-
----@return name
-function GetMuteName(index)
-end
-
----@return muteStatus
-function GetMuteStatus(unit , channel)
-end
-
----@return nil
-function GetNamePlateMotionType()
-end
-
----@return nil
+---@return unknown
 function GetNetIpTypes()
 end
 
@@ -6015,27 +3034,35 @@ end
 function GetNetStats()
 end
 
----@return name, texture, matches
-function GetNewSocketInfo(index)
+---@return unknown
+function GetNewSocketInfo()
 end
 
----@return link
-function GetNewSocketLink(index)
+---@return unknown
+function GetNewSocketLink()
 end
 
----@return nextID, completed
-function GetNextAchievement(id)
+---@return nextAchievementID
+function GetNextAchievement(achievementID)
 end
 
----@return nil
+---@return unknown
 function GetNextCompleatedTutorial()
 end
 
----@return numActiveQuests
+---@return unknown
+function GetNextPendingInviteConfirmation()
+end
+
+---@return unknown
+function GetNormalizedRealmName()
+end
+
+---@return unknown
 function GetNumActiveQuests()
 end
 
----@return numAddons
+---@return count
 function GetNumAddOns()
 end
 
@@ -6043,47 +3070,39 @@ end
 function GetNumArchaeologyRaces()
 end
 
----@return numOpps
+---@return unknown
 function GetNumArenaOpponentSpecs()
 end
 
----@return numOpponents
+---@return unknown
 function GetNumArenaOpponents()
 end
 
 ---@return numProjects
-function GetNumArtifactsByRace(branchID)
-end
-
----@return numBatchAuctions, totalAuctions
-function GetNumAuctionItems(list)
+function GetNumArtifactsByRace(raceIndex)
 end
 
 ---@return numPopups
 function GetNumAutoQuestPopUps()
 end
 
----@return numAvailableQuests
+---@return unknown
 function GetNumAvailableQuests()
 end
 
----@return numSlots, isFull
+---@return numSlots, full
 function GetNumBankSlots()
 end
 
----@return numFlags
+---@return unknown
 function GetNumBattlefieldFlagPositions()
 end
 
----@return numScores
+---@return  x
 function GetNumBattlefieldScores()
 end
 
----@return numStats
-function GetNumBattlefieldStats()
-end
-
----@return numVehicles
+---@return unknown
 function GetNumBattlefieldVehicles()
 end
 
@@ -6091,27 +3110,19 @@ end
 function GetNumBattlegroundTypes()
 end
 
----@return numBindings
+---@return numKeyBindings
 function GetNumBindings()
 end
 
----@return numBuybackItems
+---@return unknown
 function GetNumBuybackItems()
 end
 
----@return nil
-function GetNumChallengeMapRewards()
+---@return unknown
+function GetNumChannelMembers()
 end
 
----@return nil
-function GetNumChallengeModeLeaders()
-end
-
----@return numMembers
-function GetNumChannelMembers(id)
-end
-
----@return nil
+---@return numClasses
 function GetNumClasses()
 end
 
@@ -6119,67 +3130,55 @@ end
 function GetNumCompanions(type)
 end
 
----@return total, completed
+---@return unknown
 function GetNumComparisonCompletedAchievements()
 end
 
 ---@return total, completed
-function GetNumCompletedAchievements(isForGuild)
+function GetNumCompletedAchievements()
 end
 
----@return numSets
-function GetNumDeclensionSets(name, gender)
+---@return unknown
+function GetNumDeclensionSets()
 end
 
 ---@return channelCount
 function GetNumDisplayChannels()
 end
 
----@return nil
+---@return unknown
 function GetNumDungeonForRandomSlot()
 end
 
----@return numLevels, firstLevel
-function GetNumDungeonMapLevels()
-end
-
----@return numSets
-function GetNumEquipmentSets()
+---@return numExpansions
+function GetNumExpansions()
 end
 
 ---@return numFactions
 function GetNumFactions()
 end
 
----@return nil
+---@return numFiltered
+function GetNumFilteredAchievements()
+end
+
+---@return numInstances
 function GetNumFlexRaidDungeons()
 end
 
----@return numFlyouts
+---@return unknown
 function GetNumFlyouts()
 end
 
----@return numFrames
+---@return unknown
 function GetNumFrames()
 end
 
----@return numFriends, numFriendsOnline
-function GetNumFriends()
-end
-
----@return nil
-function GetNumGlyphSockets()
-end
-
----@return numGlyphs
-function GetNumGlyphs()
-end
-
----@return num
+---@return numActiveQuests
 function GetNumGossipActiveQuests()
 end
 
----@return num
+---@return numNewQuests
 function GetNumGossipAvailableQuests()
 end
 
@@ -6187,139 +3186,111 @@ end
 function GetNumGossipOptions()
 end
 
----@return playerNumber
-function GetNumGroupMembers()
+---@return unknown
+function GetNumGroupChannels()
 end
 
----@return nil
+---@return numGroupMembers
+function GetNumGroupMembers( groupType )
+end
+
+---@return numApplicants
 function GetNumGuildApplicants()
 end
 
----@return numTransactions
+---@return unknown
 function GetNumGuildBankMoneyTransactions()
 end
 
----@return numTabs
+---@return unknown
 function GetNumGuildBankTabs()
 end
 
----@return numTransactions
-function GetNumGuildBankTransactions(tab)
+---@return unknown
+function GetNumGuildBankTransactions()
 end
 
----@return nil
+---@return unknown
 function GetNumGuildChallenges()
 end
 
----@return numEvents
+---@return unknown
 function GetNumGuildEvents()
 end
 
----@return numGuildMembers, numOnline, numOnlineAndMobile
+---@return numTotalGuildMembers, numOnlineGuildMembers, numOnlineAndMobileMembers
 function GetNumGuildMembers()
 end
 
----@return nil
+---@return unknown
 function GetNumGuildMembershipRequests()
 end
 
----@return numNews
+---@return unknown
 function GetNumGuildNews()
 end
 
----@return numPerks
+---@return unknown
 function GetNumGuildPerks()
 end
 
----@return numRewards
+---@return unknown
 function GetNumGuildRewards()
 end
 
----@return nil
+---@return unknown
 function GetNumGuildTradeSkill()
 end
 
----@return numIgnores
-function GetNumIgnores()
-end
-
----@return nil
+---@return numUpgradeEffects
 function GetNumItemUpgradeEffects()
 end
 
----@return languages
+---@return NumLanguages
 function GetNumLanguages()
 end
 
----@return numItems
+---@return nil
 function GetNumLootItems()
 end
 
----@return numAccountMacros, numCharacterMacros
+---@return global, perChar
 function GetNumMacros()
 end
 
----@return nil
-function GetNumMapDebugObjects()
-end
-
----@return numLandmarks
-function GetNumMapLandmarks()
-end
-
----@return numOverlays
-function GetNumMapOverlays()
-end
-
----@return nil
+---@return unknown
 function GetNumMembersInRank()
 end
 
----@return nil
-function GetNumMissingLootItems()
-end
-
----@return num
+---@return unknown
 function GetNumModifiedClickActions()
 end
 
----@return numMuted
-function GetNumMutes()
-end
-
----@return nil
-function GetNumNamePlateMotionTypes()
-end
-
----@return nil
-function GetNumPackages()
-end
-
----@return numNames
+---@return  numNames
 function GetNumPetitionNames()
 end
 
----@return numQuestChoices
+---@return numChoices
 function GetNumQuestChoices()
 end
 
----@return nil
+---@return unknown
 function GetNumQuestCurrencies()
 end
 
----@return nil
+---@return unknown
 function GetNumQuestItemDrops()
 end
 
----@return numRequiredItems
+---@return nil
 function GetNumQuestItems()
 end
 
----@return numObjectives
-function GetNumQuestLeaderBoards(questIndex)
+---@return  numQuestLogLeaderBoards
+function GetNumQuestLeaderBoards(questID)
 end
 
----@return numChoices
+---@return nil
 function GetNumQuestLogChoices()
 end
 
@@ -6327,267 +3298,259 @@ end
 function GetNumQuestLogEntries()
 end
 
----@return nil
+---@return unknown
 function GetNumQuestLogRewardCurrencies()
 end
 
----@return nil
+---@return unknown
 function GetNumQuestLogRewardFactions()
 end
 
----@return numRewards
+---@return unknown
+function GetNumQuestLogRewardSpells()
+end
+
+---@return nil
 function GetNumQuestLogRewards()
 end
 
----@return nil
+---@return unknown
 function GetNumQuestLogTasks()
 end
 
----@return nil
+---@return unknown
 function GetNumQuestPOIWorldEffects()
 end
 
----@return numQuestRewards
+---@return numRewards
 function GetNumQuestRewards()
 end
 
----@return numWatches
+---@return unknown
 function GetNumQuestWatches()
 end
 
----@return numberOfRFDungeons
+---@return numRFDungeons
 function GetNumRFDungeons()
 end
 
----@return nil
+---@return unknown
 function GetNumRaidProfiles()
 end
 
----@return nil
+---@return unknown
 function GetNumRandomDungeons()
 end
 
----@return nil
+---@return unknown
 function GetNumRandomScenarios()
 end
 
----@return nil
+---@return unknown
 function GetNumRecruitingGuilds()
 end
 
----@return nil
+---@return numCurrencies
 function GetNumRewardCurrencies()
 end
 
----@return numHops
-function GetNumRoutes(index)
+---@return unknown
+function GetNumRewardSpells()
 end
 
----@return savedInstances
+---@return unknown
+function GetNumRoutes()
+end
+
+---@return numInstances
 function GetNumSavedInstances()
 end
 
----@return nil
+---@return numSavedWorldBosses
 function GetNumSavedWorldBosses()
 end
 
----@return nil
+---@return unknown
 function GetNumScenarios()
 end
 
----@return numForms
+---@return unknown
 function GetNumShapeshiftForms()
 end
 
----@return nil
-function GetNumSoRRemaining()
-end
-
----@return numSockets
+---@return  SocketCount
 function GetNumSockets()
 end
 
----@return nil
-function GetNumSpecGroups()
+---@return numSpecGroups
+function GetNumSpecGroups(b)
 end
 
----@return nil
-function GetNumSpecializations()
+---@return numSpecializations
+function GetNumSpecializations(isInspect, isPet)
 end
 
----@return nil
-function GetNumSpecializationsForClassID()
+---@return numSpecializations
+function GetNumSpecializationsForClassID(classID)
 end
 
 ---@return numTabs
 function GetNumSpellTabs()
 end
 
----@return numStationeries
-function GetNumStationeries()
-end
-
----@return playerNumber
-function GetNumSubgroupMembers()
+---@return numSubgroupMembers
+function GetNumSubgroupMembers( groupType )
 end
 
 ---@return numTitles
 function GetNumTitles()
 end
 
----@return count
+---@return numTracked
 function GetNumTrackedAchievements()
 end
 
----@return count
+---@return nil
 function GetNumTrackingTypes()
 end
 
----@return numSkills
-function GetNumTradeSkills()
-end
-
----@return numServices
+---@return nil
 function GetNumTrainerServices()
 end
 
----@return nil
+---@return unknown
+function GetNumTreasurePickerItems()
+end
+
+---@return unknown
+function GetNumUnspentPvpTalents()
+end
+
+---@return numUnspentTalents
 function GetNumUnspentTalents()
 end
 
----@return numMembers
-function GetNumVoiceSessionMembersBySessionID(sessionId)
-end
-
----@return count
-function GetNumVoiceSessions()
-end
-
----@return nil
+---@return numDeposits
 function GetNumVoidTransferDeposit()
 end
 
----@return nil
+---@return numWithdrawals
 function GetNumVoidTransferWithdrawal()
 end
 
----@return nil
+---@return unknown
 function GetNumWarGameTypes()
 end
 
----@return numResults, totalCount
-function GetNumWhoResults()
+---@return numWatched
+function GetNumWatchedTokens()
 end
 
----@return nil
+---@return unknown
 function GetNumWorldPVPAreas()
 end
 
----@return numUI
-function GetNumWorldStateUI()
+---@return unknown
+function GetNumWorldQuestWatches()
 end
 
----@return nil
-function GetNumberOfDetailTiles()
-end
-
----@return nil
+---@return unknown
 function GetOSLocale()
 end
 
----@return nil
-function GetObjectIconTextureCoords()
+---@return left, right, top, bottom
+function GetObjectIconTextureCoords(objectIcon)
 end
 
----@return questObjective
+---@return unknown
 function GetObjectiveText()
 end
 
----@return isOptOut
+---@return optedOut
 function GetOptOutOfLoot()
 end
 
----@return waitTime
-function GetOutdoorPVPWaitTime()
-end
-
----@return nil
+---@return unknown
 function GetOverrideAPBySpellPower()
 end
 
----@return nil
+---@return unknown
 function GetOverrideBarIndex()
 end
 
----@return nil
+---@return unknown
 function GetOverrideBarSkin()
 end
 
----@return spellPower
+---@return unknown
 function GetOverrideSpellPowerByAP()
 end
 
----@return nil
-function GetOwnerAuctionItems()
+---@return unknown
+function GetPOITextureCoords()
 end
 
----@return x1, x2, y1, y2
-function GetPOITextureCoords(textureIndex)
-end
-
----@return isPVPDesired
+---@return  ispvp
 function GetPVPDesired()
 end
 
----@return hk, highestRank
+---@return unknown
+function GetPVPGearStatRules()
+end
+
+---@return honorableKills, dishonorableKills, highestRank
 function GetPVPLifetimeStats()
 end
 
----@return pointsThisWeek, maxPointsThisWeek, tier2Quantity, tier2Limit, tier1Quantity, tier1Limit
-function GetPVPRewards()
-end
-
----@return nil
+---@return tank, healer, dps
 function GetPVPRoles()
 end
 
----@return honorKills, honorPoints
+---@return  hk, hp
 function GetPVPSessionStats()
 end
 
----@return timer
+---@return ms
 function GetPVPTimer()
 end
 
----@return honorKills, honorPoints
+---@return hk, dk, contribution
 function GetPVPYesterdayStats()
 end
 
----@return nil
-function GetPackageInfo()
-end
-
----@return chance
+---@return unknown
 function GetParryChance()
 end
 
----@return isAssigned
-function GetPartyAssignment(assignment, unit)
+---@return unknown
+function GetParryChanceFromAttribute()
 end
 
----@return nil
+---@return raidIndex1, raidIndex2
+function GetPartyAssignment(assignment ,raidmember, exactMatch)
+end
+
+---@return unknown
 function GetPartyLFGBackfillInfo()
 end
 
----@return nil
+---@return unknown
 function GetPartyLFGID()
 end
 
----@return nil
-function GetPersonalRatedInfo()
+---@return unknown
+function GetPendingGlyphName()
 end
 
----@return start, duration, enable
+---@return unknown
+function GetPendingInviteConfirmations()
+end
+
+---@return rating, seasonBest, weeklyBest, seasonPlayed, seasonWon, weeklyPlayed, weeklyWon, cap
+function GetPersonalRatedInfo(index)
+end
+
+---@return startTime, duration, enable
 function GetPetActionCooldown(index)
 end
 
@@ -6595,11 +3558,11 @@ end
 function GetPetActionInfo(index)
 end
 
----@return usable
-function GetPetActionSlotUsable(index)
+---@return unknown
+function GetPetActionSlotUsable()
 end
 
----@return petActionsUsable
+---@return unknown
 function GetPetActionsUsable()
 end
 
@@ -6607,139 +3570,167 @@ end
 function GetPetExperience()
 end
 
----@return nil
+---@return unknown
 function GetPetFoodTypes()
 end
 
----@return texture
+---@return unknown
 function GetPetIcon()
 end
 
----@return nil
+---@return unknown
 function GetPetMeleeHaste()
 end
 
----@return nil
+---@return unknown
 function GetPetSpellBonusDamage()
 end
 
----@return talent
+---@return unknown
 function GetPetTalentTree()
 end
 
----@return petTimeRemaining
+---@return unknown
 function GetPetTimeRemaining()
 end
 
----@return petitionType, title, bodyText, maxSignatures, originatorName, isOriginator, minSignatures
+---@return petitionType, title, bodyText, maxSigs, originator, isOriginator, minSigs
 function GetPetitionInfo()
 end
 
----@return name
-function GetPetitionNameInfo(index)
+---@return unknown
+function GetPetitionNameInfo()
+end
+
+---@return width, height
+function GetPhysicalScreenSize()
 end
 
 ---@return facing
 function GetPlayerFacing()
 end
 
----@return class, classFilename, race, raceFilename, sex, name, realm
+---@return unknown
+function GetPlayerFactionGroup()
+end
+
+---@return izedClass, englishClass, izedRace, englishRace, sex, name, realm
 function GetPlayerInfoByGUID(guid)
 end
 
----@return unitX, unitY
-function GetPlayerMapPosition(unit)
-end
-
----@return nil
+---@return unknown
 function GetPlayerTradeCurrency()
 end
 
----@return amount
+---@return nil
 function GetPlayerTradeMoney()
 end
 
----@return texture, name
+---@return texture, spellID, enabled
 function GetPossessInfo(index)
 end
 
----@return inactiveRegen, activeRegen
+---@return unknown
 function GetPowerRegen()
 end
 
----@return nil
+---@return unknown
+function GetPowerRegenForPowerType()
+end
+
+---@return unknown
 function GetPrevCompleatedTutorial()
 end
 
----@return previousID
-function GetPreviousAchievement(id)
+---@return previousAchievementID
+function GetPreviousAchievement(achievementID)
 end
 
----@return season
+---@return unknown
 function GetPreviousArenaSeason()
 end
 
----@return name, texture, rank, maxRank, numSpells, spelloffset, skillLine, rankModifier, specializationIndex, specializationOffset
+---@return unknown
+function GetPrimarySpecialization()
+end
+
+---@return name, icon, skillLevel, maxSkillLevel, numAbilities, spelloffset, skillLine, skillModifier, specializationIndex, specializationOffset
 function GetProfessionInfo(index)
 end
 
----@return prof1, prof2, archaeology, fishing, cooking, firstAid
+---@return prof1, prof2, archaeology, fishing, cooking
 function GetProfessions()
 end
 
----@return string
+---@return nil
 function GetProgressText()
 end
 
----@return nil
+---@return unknown
 function GetPromotionRank()
 end
 
----@return nil
+---@return pvpDamage
 function GetPvpPowerDamage()
 end
 
----@return nil
+---@return pvpHealing
 function GetPvpPowerHealing()
 end
 
----@return material
+---@return talentID, name, icon, selected, available, spellID, unlocked, row, column, known, unknown
+function GetPvpTalentInfoByID(talentID)
+end
+
+---@return unknown
+function GetPvpTalentInfoBySpecialization()
+end
+
+---@return unknown
+function GetPvpTalentLink()
+end
+
+---@return nil
 function GetQuestBackgroundMaterial()
 end
 
----@return nil
-function GetQuestChoiceInfo()
+---@return unknown
+function GetQuestBountyInfoForMapID()
 end
 
----@return nil
-function GetQuestChoiceOptionInfo()
+---@return currencyId, texture, quantity
+function GetQuestChoiceRewardCurrency(optionIndex, currencyIndex)
 end
 
----@return nil
-function GetQuestChoiceRewardCurrency()
+---@return factionId, reputation
+function GetQuestChoiceRewardFaction(optionIndex, factionIndex)
 end
 
----@return nil
-function GetQuestChoiceRewardFaction()
+---@return title, skillID, skillPoints, money, xp, numItems, numCurrencies, numChoices, numReps
+function GetQuestChoiceRewardInfo(optionIndex)
 end
 
----@return nil
-function GetQuestChoiceRewardInfo()
+---@return itemID, itemName, texture, quantity
+function GetQuestChoiceRewardItem(optionIndex, itemIndex)
 end
 
----@return nil
-function GetQuestChoiceRewardItem()
+---@return unknown
+function GetQuestCurrencyID()
 end
 
----@return name, texture, amount
-function GetQuestCurrencyInfo(type, index)
+---@return name, texture, numItems, quality
+function GetQuestCurrencyInfo(itemType, index)
 end
 
----@return color
+---@return colour
 function GetQuestDifficultyColor(level)
 end
 
----@return nil
+---@return unknown
+function GetQuestExpansion()
+end
+
+---@return unknown
 function GetQuestFactionGroup()
 end
 
@@ -6752,70 +3743,70 @@ function GetQuestID()
 end
 
 ---@return questIndex
-function GetQuestIndexForTimer(index)
+function GetQuestIndexForTimer(timerId)
 end
 
 ---@return questIndex
-function GetQuestIndexForWatch(index)
+function GetQuestIndexForWatch(watchIndex)
 end
 
----@return name, texture, numItems, quality, isUsable
+---@return name, texture, count, quality, isUsable
 function GetQuestItemInfo(type, index)
 end
 
----@return link
-function GetQuestItemLink(itemType, index)
+---@return itemLink
+function GetQuestItemLink(type, index)
 end
 
----@return link
-function GetQuestLink(questID)
+---@return QuestLink
+function GetQuestLink(QuestID)
 end
 
----@return name, texture, numItems, quality, isUsable, itemID
-function GetQuestLogChoiceInfo(index)
+---@return nil
+function GetQuestLogChoiceInfo(itemNum)
 end
 
----@return completionText
+---@return unknown
 function GetQuestLogCompletionText()
 end
 
----@return spellID, iconTexture, isLearned
-function GetQuestLogCriteriaSpell(index)
+---@return unknown
+function GetQuestLogCriteriaSpell()
 end
 
----@return suggestedGroup
+---@return unknown
 function GetQuestLogGroupNum()
 end
 
----@return index
-function GetQuestLogIndexByID(id)
+---@return questLogIndex
+function GetQuestLogIndexByID(questID)
 end
 
----@return nil
+---@return unknown
 function GetQuestLogIsAutoComplete()
 end
 
----@return nil
+---@return unknown
 function GetQuestLogItemDrop()
 end
 
----@return nil
-function GetQuestLogItemLink(itemType, index)
+---@return itemLink
+function GetQuestLogItemLink(type, index)
 end
 
----@return string, type, finished
-function GetQuestLogLeaderBoard(objective , questIndex)
+---@return description, objectiveType, isCompleted
+function GetQuestLogLeaderBoard(i, questIndex)
 end
 
----@return questPortrait, questPortraitText, questPortraitName
+---@return unknown
 function GetQuestLogPortraitGiver()
 end
 
----@return questPortrait, questPortraitText, questPortraitName
+---@return unknown
 function GetQuestLogPortraitTurnIn()
 end
 
----@return shareable
+---@return isPushable
 function GetQuestLogPushable()
 end
 
@@ -6823,107 +3814,107 @@ end
 function GetQuestLogQuestText()
 end
 
----@return nil
+---@return unknown
 function GetQuestLogQuestType()
 end
 
----@return money
+---@return unknown
 function GetQuestLogRequiredMoney()
 end
 
----@return nil
-function GetQuestLogRewardCurrencyInfo()
+---@return unknown
+function GetQuestLogRewardArtifactXP()
 end
 
----@return nil
+---@return name, texture, numItems, currencyId, quality
+function GetQuestLogRewardCurrencyInfo(index , questId)
+end
+
+---@return unknown
 function GetQuestLogRewardFactionInfo()
 end
 
----@return name, texture, numItems, quality, isUsable
-function GetQuestLogRewardInfo(index)
+---@return unknown
+function GetQuestLogRewardHonor()
+end
+
+---@return itemName, itemTexture, numItems, quality, isUsable, itemID, itemLevel
+function GetQuestLogRewardInfo(itemIndex, questID)
 end
 
 ---@return money
-function GetQuestLogRewardMoney()
+function GetQuestLogRewardMoney(questID)
 end
 
----@return skillName, icon, points
+---@return unknown
 function GetQuestLogRewardSkillPoints()
 end
 
----@return texture, name, isTradeskillSpell, isSpellLearned
-function GetQuestLogRewardSpell()
+---@return texture, name, isTradeskillSpell, isSpellLearned, hideSpellLearnText, isBoostSpell, garrFollowerID, genericUnlock, spellID
+function GetQuestLogRewardSpell(rewardIndex, questID)
 end
 
----@return talents
-function GetQuestLogRewardTalents()
-end
-
----@return title
+---@return unknown
 function GetQuestLogRewardTitle()
 end
 
----@return experience
+---@return unknown
 function GetQuestLogRewardXP()
 end
 
----@return questIndex
+---@return questSelected
 function GetQuestLogSelection()
 end
 
----@return start, duration, enable
-function GetQuestLogSpecialItemCooldown(questIndex)
+---@return unknown
+function GetQuestLogSpecialItemCooldown()
 end
 
----@return link, icon, charges
-function GetQuestLogSpecialItemInfo(questIndex)
+---@return unknown
+function GetQuestLogSpecialItemInfo()
 end
 
----@return link
+---@return unknown
 function GetQuestLogSpellLink()
 end
 
----@return nil
+---@return unknown
 function GetQuestLogTaskInfo()
 end
 
----@return questTimer
+---@return  questTimer
 function GetQuestLogTimeLeft()
 end
 
----@return title, level, suggestedGroup, isHeader, isCollapsed, isComplete, frequency, questID, startEvent, displayQuestID, isOnMap, hasLocalPOI, isTask, isStory, isHidden
-function GetQuestLogTitle(questIndex)
+---@return title, level, suggestedGroup, isHeader, isCollapsed, isComplete, frequency, questID, startEvent, displayQuestID, isOnMap, hasLocalPOI, isTask, isBounty, isStory, isHidden, isScaling
+function GetQuestLogTitle(questLogIndex)
 end
 
----@return money
+---@return unknown
 function GetQuestMoneyToGet()
 end
 
----@return nil
-function GetQuestObjectiveInfo()
+---@return text, objectiveType, finished
+function GetQuestObjectiveInfo(questID, objectiveIndex, Boolean)
 end
 
----@return nil
+---@return unknown
 function GetQuestPOIBlobCount()
 end
 
----@return nil
+---@return unknown
 function GetQuestPOILeaderBoard()
 end
 
----@return nil
-function GetQuestPOIWorldEffectInfo()
-end
-
----@return nil
+---@return unknown
 function GetQuestPOIs()
 end
 
----@return questPortrait, questPortraitText, questPortraitName
+---@return unknown
 function GetQuestPortraitGiver()
 end
 
----@return questPortrait, questPortraitText, questPortraitName
+---@return unknown
 function GetQuestPortraitTurnIn()
 end
 
@@ -6931,27 +3922,27 @@ end
 function GetQuestProgressBarPercent(questID)
 end
 
----@return time
+---@return nextReset
 function GetQuestResetTime()
 end
 
 ---@return nil
-function GetQuestReward(choice)
+function GetQuestReward(itemChoice)
 end
 
----@return nil
+---@return unknown
 function GetQuestSortIndex()
 end
 
----@return link
+---@return unknown
 function GetQuestSpellLink()
 end
 
----@return nil
-function GetQuestTagInfo()
+---@return tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft
+function GetQuestTagInfo(questID)
 end
 
----@return string
+---@return unknown
 function GetQuestText()
 end
 
@@ -6959,79 +3950,67 @@ end
 function GetQuestTimers()
 end
 
----@return questWatchIndex
-function GetQuestWatchIndex(questLogIndex)
+---@return unknown
+function GetQuestUiMapID()
 end
 
----@return nil
+---@return unknown
+function GetQuestWatchIndex()
+end
+
+---@return unknown
 function GetQuestWatchInfo()
 end
 
----@return mapID, floorNumber
-function GetQuestWorldMapAreaID(questID)
+---@return questsCompleted
+function GetQuestsCompleted(table)
 end
 
----@return completedQuests
-function GetQuestsCompleted(questTbl)
-end
-
----@return dungeonID, name, typeID, subtype, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionId, groupId, texture, difficultyID, numPlayers, description, isHoliday, bonusRepAmount, minPlayers
+---@return ID, name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers
 function GetRFDungeonInfo(index)
 end
 
----@return nil
-function GetRaidBuffInfo()
-end
-
----@return name, rank, texture, duration, expiration, spellId, slot
-function GetRaidBuffTrayAuraInfo()
-end
-
----@return nil
+---@return difficultyID
 function GetRaidDifficultyID()
 end
 
----@return nil
+---@return unknown
 function GetRaidProfileFlattenedOptions()
 end
 
----@return nil
+---@return unknown
 function GetRaidProfileName()
 end
 
----@return nil
+---@return unknown
 function GetRaidProfileOption()
 end
 
----@return nil
+---@return unknown
 function GetRaidProfileSavedPosition()
 end
 
----@return name, rank, subgroup, level, class, fileName, zone, online, isDead, role, isML
-function GetRaidRosterInfo(index)
+---@return   zone, online, isDead, role, isML, combatRole
+function GetRaidRosterInfo(raidIndex)
 end
 
----@return index
+---@return icon
 function GetRaidTargetIndex(unit)
 end
 
----@return nil
-function GetRandomBGHonorCurrencyBonuses()
+---@return randArg
+function GetRandomArgument(...)
 end
 
----@return nil
-function GetRandomBGInfo()
-end
-
----@return nil
+---@return unknown
 function GetRandomDungeonBestChoice()
 end
 
----@return nil
+---@return unknown
 function GetRandomScenarioBestChoice()
 end
 
----@return nil
+---@return unknown
 function GetRandomScenarioInfo()
 end
 
@@ -7039,63 +4018,63 @@ end
 function GetRangedCritChance()
 end
 
----@return haste
+---@return unknown
 function GetRangedHaste()
 end
 
----@return nil
+---@return unknown
+function GetRangedMissChance()
+end
+
+---@return unknown
 function GetRatedBattleGroundInfo()
 end
 
----@return nil
-function GetReadiness()
+---@return unknown
+function GetReadonlyRestrictedTable()
 end
 
----@return status
-function GetReadyCheckStatus(unit)
+---@return unknown
+function GetReadyCheckStatus()
 end
 
----@return timeLeft
+---@return unknown
 function GetReadyCheckTimeLeft()
 end
 
----@return cost
+---@return unknown
 function GetReagentBankCost()
 end
 
----@return zoneName
-function GetRealZoneText()
+---@return zone
+function GetRealZoneText(instanceID)
 end
 
----@return realm
+---@return realmID
+function GetRealmID()
+end
+
+---@return realmName
 function GetRealmName()
 end
 
----@return nil
+---@return unknown
 function GetRecruitingGuildInfo()
 end
 
----@return nil
+---@return unknown
 function GetRecruitingGuildSelection()
 end
 
----@return nil
+---@return unknown
 function GetRecruitingGuildSettings()
 end
 
----@return nil
-function GetRecruitingGuildTabardInfo()
+---@return unknown
+function GetRelativeDifficultyColor()
 end
 
----@return nil
-function GetRefreshRates()
-end
-
----@return registeredPrefixes
-function GetRegisteredAddonMessagePrefixes(prefixTable)
-end
-
----@return timeleft
+---@return unknown
 function GetReleaseTimeRemaining()
 end
 
@@ -7103,31 +4082,63 @@ end
 function GetRepairAllCost()
 end
 
----@return resSicknessTime
+---@return unknown
 function GetResSicknessDuration()
 end
 
----@return state, name, multiplier
+---@return id, name, mult
 function GetRestState()
 end
 
----@return nil
+---@return unknown
 function GetRestrictedAccountData()
 end
 
----@return money
+---@return unknown
+function GetRewardArtifactXP()
+end
+
+---@return unknown
+function GetRewardHonor()
+end
+
+---@return unknown
 function GetRewardMoney()
 end
 
----@return nil
+---@return unknown
 function GetRewardNumSkillUps()
 end
 
----@return nil
+---@return unknown
+function GetRewardPackArtifactPower()
+end
+
+---@return unknown
+function GetRewardPackCurrencies()
+end
+
+---@return unknown
+function GetRewardPackItems()
+end
+
+---@return unknown
+function GetRewardPackMoney()
+end
+
+---@return unknown
+function GetRewardPackTitle()
+end
+
+---@return unknown
+function GetRewardPackTitleName()
+end
+
+---@return unknown
 function GetRewardSkillLineID()
 end
 
----@return nil
+---@return unknown
 function GetRewardSkillPoints()
 end
 
@@ -7135,795 +4146,759 @@ end
 function GetRewardSpell()
 end
 
----@return talents
-function GetRewardTalents()
-end
-
----@return string
+---@return nil
 function GetRewardText()
 end
 
----@return title
+---@return unknown
 function GetRewardTitle()
 end
 
----@return amount
+---@return xp
 function GetRewardXP()
 end
 
 ---@return start, duration, runeReady
-function GetRuneCooldown(slot)
+function GetRuneCooldown(id)
 end
 
 ---@return count
 function GetRuneCount(slot)
 end
 
----@return runeType
-function GetRuneType(slot)
-end
-
----@return index
+---@return unknown
 function GetRunningMacro()
 end
 
----@return button
+---@return unknown
 function GetRunningMacroButton()
 end
 
----@return hyperlink
+---@return  link
 function GetSavedInstanceChatLink(index)
 end
 
----@return nil
-function GetSavedInstanceEncounterInfo()
+---@return bossName, fileDataID, isKilled, unknown4
+function GetSavedInstanceEncounterInfo(instanceIndex, encounterIndex)
 end
 
----@return instanceName, instanceID, instanceReset, instanceDifficulty, locked, extended, instanceIDMostSig, isRaid, maxPlayers, difficultyName, maxBosses, defeatedBosses
+---@return name, id, reset, difficulty, locked, extended, instanceIDMostSig, isRaid, maxPlayers, difficultyName, numEncounters, encounterProgress
 function GetSavedInstanceInfo(index)
 end
 
----@return instanceName, worldBossID, instanceReset
+---@return name, worldBossID, reset
 function GetSavedWorldBossInfo(index)
 end
 
----@return nil
-function GetScenariosChoiceOrder()
+---@return unknown
+function GetScalingQuestGreenRange()
+end
+
+---@return allScenarios
+function GetScenariosChoiceOrder(  allScenarios  )
+end
+
+---@return school
+function GetSchoolString(schoolMask)
+end
+
+---@return unknown
+function GetScreenDPIScale()
 end
 
 ---@return nil
-function GetSchoolString()
-end
-
----@return height
 function GetScreenHeight()
 end
 
----@return nil
+---@return unknown
+function GetScreenHeightScale()
+end
+
+---@return resolution1, resolution2, resolution3, ...
 function GetScreenResolutions()
 end
 
----@return screenWidth
+---@return nil
 function GetScreenWidth()
 end
 
----@return usage
+---@return unknown
+function GetScreenWidthScale()
+end
+
+---@return unknown
 function GetScriptCPUUsage()
 end
 
----@return nil
+---@return unknown
 function GetSecondsUntilParentalControlsKick()
 end
 
----@return name, description, rarity, icon, spellDescription, numSockets, bgTexture
+---@return artifactName, artifactDescription, artifactRarity, artifactIcon, hoverDescription, keystoneCount, bgTexture, spellID
 function GetSelectedArtifactInfo()
 end
 
----@return index
-function GetSelectedAuctionItem(list)
-end
-
----@return index
+---@return unknown
 function GetSelectedDisplayChannel()
 end
 
----@return index
+---@return unknown
 function GetSelectedFaction()
 end
 
----@return index
-function GetSelectedFriend()
-end
-
----@return nil
-function GetSelectedGlyphSpellIndex()
-end
-
----@return index
-function GetSelectedIgnore()
-end
-
----@return selectedMute
-function GetSelectedMute()
-end
-
----@return index
-function GetSelectedStationeryTexture()
-end
-
----@return nil
+---@return unknown
 function GetSelectedWarGameType()
 end
 
----@return amount
+---@return unknown
 function GetSendMailCOD()
 end
 
----@return itemName, itemTexture, stackCount, quality
-function GetSendMailItem(slot)
+---@return name, itemID, texture, count, quality
+function GetSendMailItem(index)
 end
 
----@return itemlink
-function GetSendMailItemLink(slot)
+---@return itemLink
+function GetSendMailItemLink(attachment)
 end
 
----@return amount
+---@return unknown
 function GetSendMailMoney()
 end
 
----@return price
+---@return  sendPrice
 function GetSendMailPrice()
 end
 
----@return nil
+---@return timestamp
+function GetServerTime()
+end
+
+---@return unknown
 function GetSessionTime()
 end
 
----@return nil
+---@return unknown
 function GetSetBonusesForSpecializationByItemID()
 end
 
 ---@return index
-function GetShapeshiftForm()
+function GetShapeshiftForm(flag)
 end
 
----@return start, duration, enable
+---@return startTime, duration, isActive
 function GetShapeshiftFormCooldown(index)
 end
 
----@return id
+---@return index
 function GetShapeshiftFormID()
 end
 
----@return texture, name, isActive, isCastable, spellID
+---@return icon, active, castable, spellID
 function GetShapeshiftFormInfo(index)
 end
 
----@return nil
+---@return sheathState
 function GetSheathState()
 end
 
----@return damage
+---@return damageReduction
 function GetShieldBlock()
 end
 
----@return tradeable
+---@return unknown
+function GetSmoothProgressChange()
+end
+
+---@return isBoundTradeable
 function GetSocketItemBoundTradeable()
 end
 
----@return name, icon, quality
+---@return itemName, iconPathName, itemQuality
 function GetSocketItemInfo()
 end
 
----@return refundable
+---@return isRefundable
 function GetSocketItemRefundable()
 end
 
----@return gemColor
-function GetSocketTypes(index)
+---@return unknown
+function GetSocketTypes()
 end
 
----@return nil
+---@return unknown
 function GetSortBagsRightToLeft()
 end
 
----@return specID
-function GetSpecialization()
+---@return unknown
+function GetSpecChangeCost()
+end
+
+---@return currentSpec
+function GetSpecialization(  isInspect , isPet , specGroup  )
 end
 
 ---@return id, name, description, icon, background, role, primaryStat
-function GetSpecializationInfo(specID, isInspect, isPet, inspectTarget, gender)
+function GetSpecializationInfo(specIndex , isInspect , isPet , inspectTarget , sex)
 end
 
----@return id, name, description, icon, background, role, class
+---@return id, name, description, icon, role, class
 function GetSpecializationInfoByID(specID)
 end
 
----@return nil
-function GetSpecializationInfoForClassID()
+---@return specID, name, description, iconID, role, isRecommended, isAllowed
+function GetSpecializationInfoForClassID(classID, specNum)
+end
+
+---@return unknown
+function GetSpecializationInfoForSpecID()
 end
 
 ---@return spellID
-function GetSpecializationMasterySpells(specIndex , isInspect , isPet)
+function GetSpecializationMasterySpells(specIndex, isInspect, isPet)
 end
 
----@return name
-function GetSpecializationNameForSpecID(id)
+---@return unknown
+function GetSpecializationNameForSpecID()
 end
 
----@return nil
-function GetSpecializationReadinessSpell()
+---@return roleToken
+function GetSpecializationRole(specIndex, isInspect, isPet)
 end
 
----@return nil
-function GetSpecializationRole()
+---@return roleToken
+function GetSpecializationRoleByID(specID)
 end
 
----@return nil
-function GetSpecializationRoleByID()
+---@return spellID1, level1,  spellID2, level2, ...
+function GetSpecializationSpells(specIndex, isInspect, isPet)
 end
 
----@return spellID, levelLearned, ...
-function GetSpecializationSpells(specIndex , isInspect , isPet)
-end
-
----@return nil
+---@return unknown
 function GetSpecsForSpell()
 end
 
----@return nil
+---@return unknown
 function GetSpeed()
 end
 
----@return autocastAllowed, autocastEnabled
-function GetSpellAutocast(id, bookType)
+---@return autocastable, autostate
+function GetSpellAutocast(spellName_or_spellId, bookType)
 end
 
----@return nil
+---@return unknown
 function GetSpellAvailableLevel()
 end
 
----@return cooldown
-function GetSpellBaseCooldown(id)
+---@return cooldownMS, gcdMS
+function GetSpellBaseCooldown(spellid)
 end
 
----@return minModifier
-function GetSpellBonusDamage(school)
+---@return spellDmg
+function GetSpellBonusDamage(spellTreeID)
 end
 
----@return bonusHealing
+---@return bonusHeal
 function GetSpellBonusHealing()
 end
 
----@return skillType, spellId
-function GetSpellBookItemInfo(index, bookType)
+---@return skillType, special
+function GetSpellBookItemInfo(spellName_or_index, bookType)
 end
 
----@return Name, Subtext
-function GetSpellBookItemName(index, bookType)
+---@return spellName, spellSubName
+function GetSpellBookItemName(spellName_or_slotIndex, bookType)
 end
 
----@return nil
-function GetSpellBookItemTexture()
+---@return icon
+function GetSpellBookItemTexture(spellName_or_index, bookType)
 end
 
----@return charges, maxCharges, start, duration
-function GetSpellCharges(name)
+---@return currentCharges, maxCharges, cooldownStart, cooldownDuration, chargeModRate
+function GetSpellCharges(spellId_or_spellName)
 end
 
----@return nil
+---@return unknown
 function GetSpellConfirmationPromptsInfo()
 end
 
----@return start, duration, enable
-function GetSpellCooldown(index, bookType)
+---@return start, duration, enabled, modRate
+function GetSpellCooldown(spellName_or_spellID_or_slotID, bookType)
 end
 
----@return numCasts
-function GetSpellCount(index, bookType)
+---@return unknown
+function GetSpellCount()
 end
 
----@return minCrit
+---@return theCritChance
 function GetSpellCritChance(school)
 end
 
----@return critChance
-function GetSpellCritChanceFromIntellect(unit)
-end
-
 ---@return desc
-function GetSpellDescription(spellId)
+function GetSpellDescription(spellID)
 end
 
----@return nil
+---@return hitModifier
 function GetSpellHitModifier()
 end
 
----@return name, rank, icon, castingTime, minRange, maxRange, spellID
-function GetSpellInfo(index, bookType)
+---@return name, rank, icon, castTime, minRange, maxRange, spellId
+function GetSpellInfo(spellId_or_spellName, spellRank)
 end
 
----@return nil
+---@return unknown
 function GetSpellLevelLearned()
 end
 
----@return link, tradeLink
-function GetSpellLink(index, bookType)
+---@return link
+function GetSpellLink(spellNum, spellBook)
 end
 
----@return nil
-function GetSpellLossOfControlCooldown()
+---@return start, duration
+function GetSpellLossOfControlCooldown(spellSlot, bookType_or_spellName_or_spellID)
 end
 
----@return penetration
+---@return unknown
+function GetSpellMissChance()
+end
+
+---@return unknown
+function GetSpellNameColor()
+end
+
+---@return unknown
 function GetSpellPenetration()
 end
 
----@return name, texture, offset, numSpells
-function GetSpellTabInfo(index)
+---@return costs
+function GetSpellPowerCost(spellName_or_spellID)
 end
 
----@return texture
-function GetSpellTexture(index, bookType)
+---@return unknown
+function GetSpellQueueWindow()
 end
 
----@return nil
+---@return unknown
+function GetSpellRank()
+end
+
+---@return unknown
+function GetSpellSubtext()
+end
+
+---@return name, texture, offset, numEntries, isGuild, offspecID
+function GetSpellTabInfo(tabIndex)
+end
+
+---@return icon
+function GetSpellTexture(spellId_or_spellName)
+end
+
+---@return unknown
+function GetSpellTradeSkillLink()
+end
+
+---@return unknown
 function GetSpellsForCharacterUpgradeTier()
 end
 
----@return nil
-function GetStablePetFoodTypes(index)
+---@return unknown
+function GetStablePetFoodTypes()
 end
 
----@return icon, name, level, family, talent
+---@return   petIcon, petName, petLevel, petType, petTalents
 function GetStablePetInfo(index)
 end
 
----@return name, texture, cost
-function GetStationeryInfo(index)
+---@return value
+function GetStatistic(achievementID)
 end
 
----@return info
-function GetStatistic(id)
-end
-
----@return categories
+---@return  categories
 function GetStatisticsCategoryList()
 end
 
----@return nil
+---@return unknown
 function GetSturdiness()
 end
 
----@return subzoneText
+---@return subzone
 function GetSubZoneText()
 end
 
----@return suggestedGroup
+---@return unknown
 function GetSuggestedGroupNum()
-end
-
----@return area
-function GetSummonConfirmAreaName()
-end
-
----@return string
-function GetSummonConfirmSummoner()
-end
-
----@return timeleft
-function GetSummonConfirmTimeLeft()
 end
 
 ---@return start, duration
 function GetSummonFriendCooldown()
 end
 
----@return nil
+---@return unknown
 function GetSuperTrackedQuestID()
 end
 
----@return cost
+---@return unknown
 function GetTabardCreationCost()
 end
 
----@return nil
+---@return unknown
 function GetTabardInfo()
 end
 
----@return nil
-function GetTalentClearInfo()
+---@return unknown
+function GetTableColor()
 end
 
----@return talentID, name, texture, selected, available, spellid, tier, column, selected
-function GetTalentInfo(tier, column, talentGroup, isInspect, inspectedUnit)
+---@return talentID, name, texture, selected, available, spellID, unknown, row, column, unknown, known
+function GetTalentInfo(tier, column, specGroupIndex , isInspect, inspectUnit)
 end
 
----@return nil
+---@return unknown
 function GetTalentInfoByID()
 end
 
----@return nil
+---@return unknown
 function GetTalentInfoBySpecialization()
 end
 
----@return link
-function GetTalentLink(tabIndex, talentIndex, inspect, pet, talentGroup)
+---@return unknown
+function GetTalentLink()
 end
 
----@return nil
-function GetTalentRowSelectionInfo()
+---@return unkonwn, column
+function GetTalentTierInfo(tier, talentGroup, isInspect, unit)
 end
 
----@return nil
+---@return unknown
 function GetTargetTradeCurrency()
 end
 
----@return amount
+---@return nil
 function GetTargetTradeMoney()
 end
 
----@return nil
-function GetTaskInfo()
+---@return isInArea, isOnMap, numObjectives
+function GetTaskInfo(questID)
 end
 
----@return nil
+---@return unknown
 function GetTaskPOIs()
 end
 
----@return nil
+---@return unknown
 function GetTasksTable()
 end
 
----@return isBenchmark
+---@return unknown
 function GetTaxiBenchmarkMode()
 end
 
----@return nil
+---@return unknown
+function GetTaxiMapID()
+end
+
+---@return unknown
 function GetTempShapeshiftBarIndex()
 end
 
----@return string
-function GetText(token , gender , ordinal)
+---@return unknown
+function GetTexCoordsByGrid()
 end
 
----@return red, green, blue
-function GetThreatStatusColor(status)
+---@return unknown
+function GetTexCoordsForRole()
 end
 
----@return time
-function GetTime()
+---@return unknown
+function GetTexCoordsForRoleSmall()
+end
+
+---@return unknown
+function GetTexCoordsForRoleSmallCircle()
+end
+
+---@return text
+function GetText(token , gender, ordinal)
+end
+
+---@return r, g, b
+function GetThreatStatusColor(statusIndex)
+end
+
+---@return unknown
+function GetTickTime()
 end
 
 ---@return seconds
+function GetTime()
+end
+
+---@return unknown
+function GetTimePreciseSec()
+end
+
+---@return unknown
+function GetTimeStringFromSeconds()
+end
+
+---@return unknown
 function GetTimeToWellRested()
 end
 
----@return titleName
-function GetTitleName(titleIndex)
+---@return unknown
+function GetTimerTextColor()
 end
 
----@return string
+---@return name, playerTitle
+function GetTitleName(titleId)
+end
+
+---@return title
 function GetTitleText()
 end
 
----@return nil
+---@return unknown
 function GetToolTipInfo()
 end
 
 ---@return points
-function GetTotalAchievementPoints(guild)
+function GetTotalAchievementPoints()
 end
 
----@return haveTotem, name, startTime, duration, icon
-function GetTotemInfo(slot)
+---@return unknown
+function GetTotemCannotDismiss()
 end
 
----@return seconds
-function GetTotemTimeLeft(slot)
+---@return haveTotem, totemName, startTime, duration, icon
+function GetTotemInfo(index)
 end
 
----@return nil
+---@return unknown
+function GetTotemTimeLeft()
+end
+
+---@return id1, id2, ..., idn
 function GetTrackedAchievements()
 end
 
----@return name, texture, active, category
-function GetTrackingInfo(index)
+---@return name, texture, active, category, nested
+function GetTrackingInfo(id)
 end
 
----@return name, texture, numItems, quality, isUsable, enchantment
-function GetTradePlayerItemInfo(index)
+---@return unknown
+function GetTradePlayerItemInfo()
 end
 
----@return link
-function GetTradePlayerItemLink(index)
+---@return   chatItemLink
+function GetTradePlayerItemLink(i)
 end
 
----@return nil
-function GetTradeSkillCategoryFilter()
-end
-
----@return cooldown
-function GetTradeSkillCooldown(index)
-end
-
----@return description
-function GetTradeSkillDescription(index)
-end
-
----@return texturePath
-function GetTradeSkillIcon(index)
-end
-
----@return skillName, skillType, numAvailable, isExpanded, serviceType, numSkillUps, indentLevel, showProgressBar, currentRank, maxRank, startingRank
-function GetTradeSkillInfo(index)
-end
-
----@return enabled
-function GetTradeSkillInvSlotFilter(index)
-end
-
----@return nil
-function GetTradeSkillInvSlots()
-end
-
----@return minLevel, maxLevel
-function GetTradeSkillItemLevelFilter()
-end
-
----@return link
-function GetTradeSkillItemLink(index)
-end
-
----@return string
-function GetTradeSkillItemNameFilter()
-end
-
----@return tradeskillName, rank, maxLevel
-function GetTradeSkillLine()
-end
-
----@return link
-function GetTradeSkillListLink()
-end
-
----@return minMade, maxMade
-function GetTradeSkillNumMade(index)
-end
-
----@return numReagents
-function GetTradeSkillNumReagents(index)
-end
-
----@return reagentName, reagentTexture, reagentCount, playerReagentCount
-function GetTradeSkillReagentInfo(skillIndex, reagentIndex)
-end
-
----@return link
-function GetTradeSkillReagentItemLink(skillIndex, reagentIndex)
-end
-
----@return link
-function GetTradeSkillRecipeLink(index)
-end
-
----@return index
-function GetTradeSkillSelectionIndex()
-end
-
----@return nil
-function GetTradeSkillSubCategories()
-end
-
----@return nil
-function GetTradeSkillSubClassFilteredSlots()
-end
-
----@return nil
-function GetTradeSkillSubClasses()
-end
-
----@return nil
-function GetTradeSkillTexture()
-end
-
----@return toolName, hasTool, ...
-function GetTradeSkillTools(index)
-end
-
----@return name, texture, numItems, quality, isUsable, enchantment
+---@return name, texture, quantity, quality, isUsable, enchant
 function GetTradeTargetItemInfo(index)
 end
 
----@return link
-function GetTradeTargetItemLink(index)
+---@return unknown
+function GetTradeTargetItemLink()
 end
 
----@return repeatCount
-function GetTradeskillRepeatCount()
-end
-
----@return string
+---@return nil
 function GetTrainerGreetingText()
 end
 
----@return selectionIndex
+---@return nil
 function GetTrainerSelectionIndex()
 end
 
 ---@return ability, hasReq
-function GetTrainerServiceAbilityReq(index, abilityIndex)
+function GetTrainerServiceAbilityReq(trainerIndex, reqIndex)
 end
 
----@return moneyCost, talentCost, skillCost
+---@return  moneyCost, talentCost, professionCost
 function GetTrainerServiceCost(index)
 end
 
----@return string
+---@return serviceDescription
 function GetTrainerServiceDescription(index)
 end
 
 ---@return icon
-function GetTrainerServiceIcon(index)
+function GetTrainerServiceIcon(id)
 end
 
----@return serviceName, serviceSubText, serviceType, iconTexture, reqLevel, isExpanded
-function GetTrainerServiceInfo(index)
+---@return name, rank, category, expanded
+function GetTrainerServiceInfo(id)
 end
 
----@return link
+---@return  link
 function GetTrainerServiceItemLink(index)
 end
 
----@return reqLevel
-function GetTrainerServiceLevelReq(index)
+---@return  reqLevel
+function GetTrainerServiceLevelReq(id)
 end
 
----@return numRequirements
-function GetTrainerServiceNumAbilityReq(index)
+---@return unknown
+function GetTrainerServiceNumAbilityReq()
 end
 
----@return skillLine
+---@return  skillLine
 function GetTrainerServiceSkillLine(index)
 end
 
----@return skill, rank, hasReq
+---@return  skillName, skillLevel, hasReq
 function GetTrainerServiceSkillReq(index)
 end
 
----@return nil
+---@return unknown
 function GetTrainerServiceStepIndex()
 end
 
----@return isEnabled
+---@return status
 function GetTrainerServiceTypeFilter(type)
 end
 
----@return nil
+---@return unknown
 function GetTrainerTradeskillRankValues()
 end
 
----@return nil
-function GetTransmogrifyCost()
+---@return unknown
+function GetTreasurePickerItemInfo()
 end
 
----@return isTransmogrified, canTransmogrify, cannotTransmogrifyReason, hasPending, hasUndo, visibleItemID, textureName
-function GetTransmogrifySlotInfo(slot)
-end
-
----@return nil
+---@return unknown
 function GetTutorialsEnabled()
 end
 
----@return modifier
-function GetUnitHealthModifier(unit)
+---@return unknown
+function GetUICameraInfo()
 end
 
----@return regen
-function GetUnitManaRegenRateFromSpirit(unit)
+---@return unknown
+function GetUIPanel()
 end
 
----@return modifier
-function GetUnitMaxHealthModifier(unit)
+---@return unknown
+function GetUIPanelHeight()
 end
 
----@return nameString
+---@return unknown
+function GetUIPanelWidth()
+end
+
+---@return unknown
+function GetUITextureKitInfo()
+end
+
+---@return unknown
+function GetUnitHealthModifier()
+end
+
+---@return unknown
+function GetUnitMaxHealthModifier()
+end
+
+---@return name
 function GetUnitName(unit, showServerName)
 end
 
----@return pitch
-function GetUnitPitch(unit)
+---@return info
+function GetUnitPowerBarInfo(unitToken)
 end
 
----@return modifier
-function GetUnitPowerModifier(unit)
+---@return unknown
+function GetUnitPowerBarInfoByID()
 end
 
----@return speed, groundSpeed, flightSpeed, swimSpeed
+---@return name, tooltip, cost
+function GetUnitPowerBarStrings(unitToken)
+end
+
+---@return unknown
+function GetUnitPowerBarStringsByID()
+end
+
+---@return texture, colorR, colorG, colorB, colorA
+function GetUnitPowerBarTextureInfo(unitToken, textureIndex , timerIndex)
+end
+
+---@return unknown
+function GetUnitPowerBarTextureInfoByID()
+end
+
+---@return unknown
+function GetUnitPowerModifier()
+end
+
+---@return currentSpeed, runSpeed, flightSpeed, swimSpeed
 function GetUnitSpeed(unit)
 end
 
----@return nil
+---@return unknown
 function GetVehicleBarIndex()
 end
 
----@return nil
+---@return unknown
 function GetVehicleUIIndicator()
 end
 
----@return nil
+---@return unknown
 function GetVehicleUIIndicatorSeat()
 end
 
----@return nil
+---@return unknown
 function GetVersatilityBonus()
 end
 
----@return hasAnisotropic, hasPixelShaders, hasVertexShaders, hasTrilinear, hasTripleBufering, maxAnisotropy, hasHardwareCursor
+---@return unknown
 function GetVideoCaps()
 end
 
----@return name, value, ...
-function GetVideoOptions(qualityLevel)
+---@return unknown
+function GetVideoOptions()
 end
 
----@return id
-function GetVoiceCurrentSessionID()
+---@return itemLink
+function GetVoidItemHyperlinkString(voidSlot)
 end
 
----@return name, active
-function GetVoiceSessionInfo(session)
+---@return itemID, textureName, locked, recentDeposit, isFiltered, quality
+function GetVoidItemInfo(tabIndex, slotIndex)
 end
 
----@return name, voiceActive, sessionActive, muted, squelched
-function GetVoiceSessionMemberInfoBySessionID(session, index)
-end
-
----@return status
-function GetVoiceStatus(unit, channel)
-end
-
----@return nil
-function GetVoidItemHyperlinkString()
-end
-
----@return itemID, texture, locked, recentDeposit, isFiltered, quality
-function GetVoidItemInfo(tab, slot)
-end
-
----@return nil
+---@return unknown
 function GetVoidStorageSlotPageIndex()
 end
 
----@return nil
+---@return cost
 function GetVoidTransferCost()
 end
 
----@return nil
-function GetVoidTransferDepositInfo()
+---@return itemID, textureName
+function GetVoidTransferDepositInfo(slotIndex)
 end
 
----@return nil
-function GetVoidTransferWithdrawalInfo()
+---@return itemID, textureName
+function GetVoidTransferWithdrawalInfo(slotIndex)
 end
 
----@return nil
+---@return unknown
 function GetVoidUnlockCost()
 end
 
----@return nil
+---@return unknown
 function GetWarGameQueueStatus()
 end
 
----@return nil
+---@return unknown
 function GetWarGameTypeInfo()
 end
 
----@return name, standingID, barMin, barMax, barValue
+---@return name, standing, min, max, value, factionID
 function GetWatchedFactionInfo()
 end
 
----@return hasMainHandEnchant, mainHandExpiration, mainHandCharges, hasOffHandEnchant, offHandExpiration, offHandCharges
+---@return hasMainHandEnchant, mainHandExpiration, mainHandCharges, mainHandEnchantID, hasOffHandEnchant, offHandExpiration, offHandCharges, offHandEnchantId
 function GetWeaponEnchantInfo()
 end
 
@@ -7931,96 +4906,92 @@ end
 function GetWebTicket()
 end
 
----@return name, guild, level, race, class, zone, classFileName, sex
-function GetWhoInfo(index)
+---@return unknown, elapsedTime, type
+function GetWorldElapsedTime(timerID)
 end
 
----@return nil
-function GetWorldEffectTextureCoords()
-end
-
----@return nil
-function GetWorldElapsedTime()
-end
-
----@return nil
+---@return unknown
 function GetWorldElapsedTimers()
 end
 
----@return nil
-function GetWorldLocFromMapPos()
+---@return unknown
+function GetWorldMapActionButtonSpellInfo()
 end
 
----@return nil
-function GetWorldMapTransformInfo()
+---@return pvpID, izedName, isActive, canQueue, startTime, canEnter, minLevel, maxLevel
+function GetWorldPVPAreaInfo(index)
 end
 
----@return nil
-function GetWorldMapTransforms()
+---@return unknown
+function GetWorldPVPQueueStatus()
 end
 
----@return pvpID, localizedName, isActive, canQueue, waitTime, canEnter
-function GetWorldPVPAreaInfo(pvpMapID)
+---@return unknown
+function GetWorldQuestWatchInfo()
 end
 
----@return status, mapName, queueID
-function GetWorldPVPQueueStatus(index)
-end
-
----@return uiType, state, hidden, text, icon, dynamicIcon, tooltip, dynamicTooltip, extendedUI, extendedUIState1, extendedUIState2, extendedUIState3
-function GetWorldStateUIInfo(index)
-end
-
----@return exhaustionXP
+---@return retVal
 function GetXPExhaustion()
 end
 
----@return pvpType, isSubZonePVP, factionName
+---@return unknown
+function GetZoneAbilitySpellInfo()
+end
+
+---@return pvpType, isFFA, faction
 function GetZonePVPInfo()
 end
 
----@return zone
+---@return zoneName
 function GetZoneText()
 end
 
 ---@return nil
-function GiveMasterLoot(slot, index)
+function GiveMasterLoot(li, ci)
 end
 
----@return match
-function GlyphMatchesSocket(socket)
+---@return unknown
+function GossipFrameActiveQuestsUpdate()
 end
 
----@return nil
-function GrantLevel(unit)
+---@return unknown
+function GossipFrameAvailableQuestsUpdate()
 end
 
----@return nil
+---@return unknown
+function GossipFrameOptionsUpdate()
+end
+
+---@return unknown
+function GossipFrameUpdate()
+end
+
+---@return unknown
+function GossipResize()
+end
+
+---@return unknown
 function GroupHasOfflineMember()
 end
 
----@return nil
-function GuildControlAddRank(name)
+---@return unknown
+function GuildControlAddRank()
 end
 
 ---@return nil
-function GuildControlDelRank(name)
+function GuildControlDelRank(index)
 end
 
----@return nil
+---@return unknown
 function GuildControlGetAllowedShifts()
 end
 
----@return numRanks
+---@return unknown
 function GuildControlGetNumRanks()
 end
 
 ---@return nil
-function GuildControlGetRankFlags()
-end
-
----@return rankName
-function GuildControlGetRankName(rank)
+function GuildControlGetRankName(index)
 end
 
 ---@return nil
@@ -8028,71 +4999,63 @@ function GuildControlSaveRank(name)
 end
 
 ---@return nil
-function GuildControlSetRank(rank)
+function GuildControlSetRank(rankOrder)
 end
 
 ---@return nil
 function GuildControlSetRankFlag(index, enabled)
 end
 
----@return nil
+---@return unknown
 function GuildControlShiftRankDown()
 end
 
----@return nil
+---@return unknown
 function GuildControlShiftRankUp()
 end
 
 ---@return nil
-function GuildDemote(name)
+function GuildDemote(playername)
 end
 
 ---@return nil
 function GuildDisband()
 end
 
----@return nil
+---@return unknown
 function GuildInfo()
 end
 
 ---@return nil
-function GuildInvite(name)
+function GuildInvite(playername)
 end
 
 ---@return nil
 function GuildLeave()
 end
 
----@return nil
+---@return unknown
 function GuildMasterAbsent()
 end
 
----@return nil
+---@return unknown
 function GuildNewsSetSticky()
 end
 
----@return nil
+---@return unknown
 function GuildNewsSort()
 end
 
 ---@return nil
-function GuildPromote(name)
+function GuildPromote(playername)
 end
 
 ---@return nil
-function GuildRoster()
+function GuildRosterSetOfficerNote(index, Text)
 end
 
 ---@return nil
-function GuildRosterSendSoR()
-end
-
----@return nil
-function GuildRosterSetOfficerNote(index, note)
-end
-
----@return nil
-function GuildRosterSetPublicNote(index, note)
+function GuildRosterSetPublicNote(index, Text)
 end
 
 ---@return nil
@@ -8103,47 +5066,55 @@ end
 function GuildSetMOTD(message)
 end
 
----@return nil
-function GuildUninvite(name)
+---@return unknown
+function GuildUninvite()
 end
 
----@return nil
+---@return unknown
+function HandleAtlasMemberCommand()
+end
+
+---@return unknown
+function HandleModifiedItemClick()
+end
+
+---@return unknown
 function HasAPEffectsSpellPower()
 end
 
 ---@return hasAction
-function HasAction(slot)
+function HasAction(actionSlot)
 end
 
----@return nil
+---@return hasAlternateForm, inAlternateForm
 function HasAlternateForm()
 end
 
----@return nil
+---@return unknown
+function HasArtifactEquipped()
+end
+
+---@return unknown
+function HasAttachedGlyph()
+end
+
+---@return unknown
 function HasBonusActionBar()
 end
 
----@return nil
+---@return unknown
 function HasBoundGemProposed()
 end
 
----@return state
+---@return unknown
 function HasCompletedAnyAchievement()
 end
 
----@return nil
-function HasDebugZoneMap()
-end
-
----@return nil
-function HasDraenorZoneAbility()
-end
-
----@return nil
+---@return unknown
 function HasDualWieldPenalty()
 end
 
----@return nil
+---@return hasBar
 function HasExtraActionBar()
 end
 
@@ -8151,79 +5122,139 @@ end
 function HasFullControl()
 end
 
----@return hasData
-function HasInspectHonorData()
+---@return unknown
+function HasIgnoreDualWieldWeapon()
 end
 
----@return hasKey
-function HasKey()
+---@return unknown
+function HasInboxItem()
 end
 
----@return nil
+---@return isRestricted
 function HasLFGRestrictions()
 end
 
----@return nil
+---@return unknown
 function HasLoadedCUFProfiles()
 end
 
----@return hasMail
+---@return unknown
+function HasMessageType()
+end
+
+---@return unknown
+function HasMessageTypeGroup()
+end
+
+---@return unknown
+function HasMultiCastActionBar()
+end
+
+---@return unknown
+function HasMultiCastActionPage()
+end
+
+---@return unknown
 function HasNewMail()
 end
 
----@return nil
+---@return unknown
+function HasNoReleaseAura()
+end
+
+---@return unknown
 function HasOverrideActionBar()
 end
 
----@return hasPetSpells, petType
+---@return unknown
+function HasPendingGlyphCast()
+end
+
+---@return hasPetSpells, petToken
 function HasPetSpells()
 end
 
----@return hasPetUI, isHunterPet
+---@return hasUI, isHunterPet
 function HasPetUI()
 end
 
----@return nil
+---@return unknown
 function HasSPEffectsAttackPower()
 end
 
----@return string
-function HasSoulstone()
+---@return unknown
+function HasSendMailItem()
 end
 
----@return nil
+---@return unknown
 function HasTempShapeshiftActionBar()
 end
 
----@return nil
-function HasTravelPass()
-end
-
----@return nil
+---@return unknown
 function HasVehicleActionBar()
 end
 
----@return isEquipped
+---@return unknown
 function HasWandEquipped()
 end
 
----@return nil
+---@return unknown
 function HaveQuestData()
 end
 
----@return nil
+---@return unknown
+function HaveQuestRewardData()
+end
+
+---@return unknown
 function HearthAndResurrectFromArea()
+end
+
+---@return unknown
+function HelpReportLag()
+end
+
+---@return unknown
+function HideDropDownMenu()
+end
+
+---@return unknown
+function HideKnowledgeBase()
+end
+
+---@return unknown
+function HideMultiCastActionBar()
+end
+
+---@return unknown
+function HideParentPanel()
+end
+
+---@return unknown
+function HidePartyFrame()
+end
+
+---@return unknown
+function HidePetActionBar()
 end
 
 ---@return nil
 function HideRepairCursor()
 end
 
----@return nil
-function InActiveBattlefield()
+---@return unknown
+function HideTextStatusBarText()
 end
 
----@return inCinematic
+---@return unknown
+function HideUIPanel()
+end
+
+---@return unknown
+function HideWatchedReputationBarText()
+end
+
+---@return unknown
 function InCinematic()
 end
 
@@ -8231,23 +5262,35 @@ end
 function InCombatLockdown()
 end
 
+---@return unknown
+function InGlue()
+end
+
 ---@return inGroup, numGuildPresent, numGuildRequired, xpMultiplier
 function InGuildParty()
 end
 
----@return inRepair
+---@return repairMode
 function InRepairMode()
 end
 
+---@return unknown
+function InboxGetMoreMail()
+end
+
 ---@return canDelete
-function InboxItemCanDelete(mailID)
+function InboxItemCanDelete(index)
+end
+
+---@return unknown
+function InboxNextPage()
+end
+
+---@return unknown
+function InboxPrevPage()
 end
 
 ---@return nil
-function InitWorldMapPing()
-end
-
----@return success
 function InitiateRolePoll()
 end
 
@@ -8255,243 +5298,291 @@ end
 function InitiateTrade(unit)
 end
 
----@return nil
-function InteractUnit(unit)
+---@return unknown
+function InspectAchievements()
 end
 
 ---@return nil
-function InterfaceOptionsFrame_OpenToCategory(panelName)
+function InspectUnit(unit)
 end
 
----@return nil
-function InterfaceOptions_AddCategory(panel)
+---@return unknown
+function InteractUnit()
 end
 
----@return nil
-function InviteUnit(name)
+---@return unknown
+function InviteToGroup()
 end
 
----@return nil
-function IsAchievementEligible()
+---@return unknown
+function Is64BitClient()
+end
+
+---@return accountSecured
+function IsAccountSecured()
+end
+
+---@return eligible
+function IsAchievementEligible(achievementID)
 end
 
 ---@return inRange
-function IsActionInRange(slot , unit)
+function IsActionInRange(actionSlot)
 end
 
 ---@return isArena, isRegistered
 function IsActiveBattlefieldArena()
 end
 
----@return nil
+---@return unknown
 function IsActiveQuestLegendary()
 end
 
----@return trivial
-function IsActiveQuestTrivial(index)
+---@return unknown
+function IsActiveQuestTrivial()
 end
 
----@return isLod
-function IsAddOnLoadOnDemand(name)
+---@return loadDemand
+function IsAddOnLoadOnDemand(index_or_name)
 end
 
----@return loaded
-function IsAddOnLoaded(name)
+---@return loaded, finished
+function IsAddOnLoaded(index_or_name)
 end
 
----@return isRegistered
-function IsAddonMessagePrefixRegistered(prefix)
-end
-
----@return nil
+---@return unknown
 function IsAddonVersionCheckEnabled()
 end
 
----@return nil
+---@return allowedToTeleport
 function IsAllowedToUserTeleport()
 end
 
----@return isDown
+---@return unknown
 function IsAltKeyDown()
 end
 
----@return nil
+---@return unknown
 function IsArenaSkirmish()
 end
 
----@return isCaptain
-function IsArenaTeamCaptain(team)
+---@return unknown
+function IsArenaTeamCaptain()
 end
 
----@return nil
+---@return unknown
 function IsArtifactCompletionHistoryAvailable()
 end
 
----@return isAtNPC
+---@return unknown
+function IsArtifactPowerItem()
+end
+
+---@return unknown
+function IsArtifactRelicItem()
+end
+
+---@return unknown
 function IsAtStableMaster()
 end
 
 ---@return isAttack
-function IsAttackAction(slot)
+function IsAttackAction(actionSlot)
 end
 
 ---@return isAttack
-function IsAttackSpell(index, bookType)
-end
-
----@return isReversed, isSorted
-function IsAuctionSortReversed(list, sort)
+function IsAttackSpell(spellName)
 end
 
 ---@return isRepeating
-function IsAutoRepeatAction(slot)
+function IsAutoRepeatAction(actionSlot)
 end
 
----@return isAutoRepeat
-function IsAutoRepeatSpell(spellName)
+---@return unknown
+function IsAutoRepeatSpell()
 end
 
----@return trivial
-function IsAvailableQuestTrivial(index)
+---@return unknown
+function IsAvailableQuestTrivial()
 end
 
----@return nil
+---@return unknown
 function IsBNLogin()
 end
 
----@return nil
+---@return container
+function IsBagOpen(BagID)
+end
+
+---@return unknown
 function IsBagSlotFlagEnabledOnOtherBags()
 end
 
----@return nil
+---@return unknown
 function IsBagSlotFlagEnabledOnOtherBankBags()
 end
 
----@return nil
+---@return unknown
 function IsBarberShopStyleValid()
 end
 
----@return nil
-function IsBattlePayItem()
+---@return isPayItem
+function IsBattlePayItem(bag, slot)
 end
 
----@return nil
-function IsBlizzCon()
-end
-
----@return nil
+---@return unknown
 function IsBreadcrumbQuest()
 end
 
----@return nil
+---@return unknown
+function IsCastingGlyph()
+end
+
+---@return unknown
 function IsCemeterySelectionAvailable()
 end
 
----@return nil
+---@return unknown
 function IsCharacterNewlyBoosted()
 end
 
----@return isAway
+---@return unknown
 function IsChatAFK()
 end
 
----@return isBusy
+---@return unknown
+function IsChatChannelRaid()
+end
+
+---@return unknown
 function IsChatDND()
 end
 
+---@return unknown
+function IsClassColoringMessageType()
+end
+
+---@return unknown
+function IsCombatLog()
+end
+
+---@return unknown
+function IsCompetitiveModeEnabled()
+end
+
+---@return isTrue
+function IsConsumableAction(slotID)
+end
+
 ---@return isConsumable
-function IsConsumableAction(slot)
+function IsConsumableItem(itemID_or_itemLink_or_itemName)
 end
 
----@return consumable
-function IsConsumableItem(itemID)
+---@return unknown
+function IsConsumableSpell()
 end
 
----@return isConsumable
-function IsConsumableSpell(index, bookType)
-end
-
----@return nil
+---@return unknown
 function IsContainerFiltered()
 end
 
----@return isDown
+---@return unknown
+function IsContainerItemAnUpgrade()
+end
+
+---@return unknown
 function IsControlKeyDown()
 end
 
+---@return isCorruptedItem
+function IsCorruptedItem(itemID_or_name_or_itemlink)
+end
+
 ---@return isCurrent
-function IsCurrentAction(slot)
+function IsCurrentAction(actionSlot)
 end
 
----@return isItem
-function IsCurrentItem(itemID)
+---@return unknown
+function IsCurrentItem()
 end
 
----@return isFailed
+---@return unknown
 function IsCurrentQuestFailed()
 end
 
 ---@return isCurrent
-function IsCurrentSpell(index, bookType)
+function IsCurrentSpell(spellID)
 end
 
----@return nil
+---@return unknown
 function IsDebugBuild()
 end
 
----@return isSupported
+---@return unknown
+function IsDemonHunterAvailable()
+end
+
+---@return unknown
 function IsDesaturateSupported()
 end
 
----@return isModerator
+---@return unknown
 function IsDisplayChannelModerator()
 end
 
----@return isOwner
+---@return unknown
 function IsDisplayChannelOwner()
 end
 
----@return isDressable
-function IsDressableItem(itemID)
+---@return unknown
+function IsDressableItem()
 end
 
----@return nil
+---@return isDualWield
 function IsDualWielding()
 end
 
----@return nil
+---@return unknown
 function IsEncounterInProgress()
 end
 
----@return isEquippable
-function IsEquippableItem(itemID)
+---@return unknown
+function IsEncounterLimitingResurrections()
+end
+
+---@return unknown
+function IsEncounterSuppressingRelease()
+end
+
+---@return result
+function IsEquippableItem(itemId_or_itemName_or_itemLink)
 end
 
 ---@return isEquipped
-function IsEquippedAction(slot)
+function IsEquippedAction(slotID)
 end
 
 ---@return isEquipped
-function IsEquippedItem(itemID)
+function IsEquippedItem(itemID_or_itemName)
 end
 
 ---@return isEquipped
 function IsEquippedItemType(type)
 end
 
----@return nil
+---@return unknown
 function IsEuropeanNumbers()
 end
 
----@return nil
+---@return unknown
 function IsEveryoneAssistant()
 end
 
----@return nil
+---@return isExpansionTrialAccount
 function IsExpansionTrial()
 end
 
----@return isInactive
+---@return inactive
 function IsFactionInactive(index)
 end
 
@@ -8499,387 +5590,475 @@ end
 function IsFalling()
 end
 
----@return isFishing
+---@return unknown
 function IsFishingLoot()
 end
 
----@return isFlyable
+---@return canFly
 function IsFlyableArea()
 end
 
----@return isFlying
+---@return flying
 function IsFlying()
 end
 
----@return nil
+---@return unknown
+function IsFrameHandle()
+end
+
+---@return unknown
+function IsFrameLockActive()
+end
+
+---@return unknown
+function IsFrameSmartShown()
+end
+
+---@return unknown
 function IsGMClient()
 end
 
----@return nil
-function IsGlyphFlagSet()
+---@return unknown
+function IsGUIDInGroup()
 end
 
----@return isLeader
+---@return guildleader
 function IsGuildLeader()
 end
 
----@return nil
+---@return unknown
+function IsGuildMember()
+end
+
+---@return unknown
 function IsGuildRankAssignmentAllowed()
 end
 
----@return isHarmful
-function IsHarmfulItem(itemID)
+---@return unknown
+function IsHarmfulItem()
 end
 
----@return isHarmful
-function IsHarmfulSpell(index, bookType)
+---@return unknown
+function IsHarmfulSpell()
 end
 
----@return isHarmful
-function IsHelpfulItem(itemID)
+---@return unknown
+function IsHelpfulItem()
 end
 
----@return isHelpful
-function IsHelpfulSpell(index, bookType)
+---@return unknown
+function IsHelpfulSpell()
 end
 
----@return isIgnored
-function IsIgnored(unit)
-end
-
----@return isIgnoredOrMuted
-function IsIgnoredOrMuted(unit)
-end
-
----@return nil
+---@return unknown
 function IsInActiveWorldPVP()
 end
 
----@return isInTeam
+---@return unknown
 function IsInArenaTeam()
 end
 
----@return nil
+---@return unknown
 function IsInAuthenticatedRank()
+end
+
+---@return unknown
+function IsInCinematicScene()
 end
 
 ---@return inGroup
 function IsInGroup(groupType)
 end
 
----@return inGuild
+---@return isGuildMember
 function IsInGuild()
 end
 
----@return isInstance, instanceType
+---@return unknown
+function IsInGuildGroup()
+end
+
+---@return inInstance, instanceType
 function IsInInstance()
 end
 
----@return nil
+---@return unknown
 function IsInLFGDungeon()
 end
 
----@return inRaid
-function IsInRaid()
+---@return unknown
+function IsInProvingGround()
 end
 
----@return nil
+---@return isInRaid
+function IsInRaid(groupType)
+end
+
+---@return unknown
 function IsInScenarioGroup()
 end
 
----@return inside
+---@return indoors
 function IsIndoors()
 end
 
----@return isLocked
-function IsInventoryItemLocked(slot)
+---@return unknown
+function IsInsane()
 end
 
----@return nil
+---@return unknown
+function IsInventoryItemAnUpgrade()
+end
+
+---@return isLocked
+function IsInventoryItemLocked(slotId)
+end
+
+---@return unknown
 function IsInventoryItemProfessionBag()
 end
 
----@return nil
+---@return unknown
 function IsItemAction()
 end
 
----@return inRange
-function IsItemInRange(itemID, unit)
+---@return result
+function IsItemInRange(itemName_or_itemLink, unit)
 end
 
----@return nil
+---@return unknown
+function IsKeyDown()
+end
+
+---@return unknown
+function IsKioskModeEnabled()
+end
+
+---@return isComplete
 function IsLFGComplete()
 end
 
----@return nil
+---@return unknown
 function IsLFGDungeonJoinable()
 end
 
----@return isDown
+---@return unknown
+function IsLFGModeActive()
+end
+
+---@return unknown
 function IsLeftAltKeyDown()
 end
 
----@return isDown
+---@return unknown
 function IsLeftControlKeyDown()
 end
 
----@return isDown
+---@return unknown
 function IsLeftShiftKeyDown()
 end
 
----@return nil
+---@return unknown
 function IsLegacyDifficulty()
 end
 
----@return isLinux
+---@return unknown
 function IsLinuxClient()
 end
 
----@return loggedIn
-function IsLoggedIn()
+---@return unknown
+function IsListeningForMessageType()
 end
 
----@return nil
-function IsLoggingOut()
+---@return unknown
+function IsLoggedIn()
 end
 
 ---@return isMac
 function IsMacClient()
 end
 
----@return nil
-function IsMapGarrisonMap()
-end
-
----@return nil
+---@return unknown
 function IsMasterLooter()
 end
 
----@return modifiedClick
-function IsModifiedClick(type)
+---@return unknown
+function IsMessageDoneBy()
 end
 
----@return isDown
+---@return unknown
+function IsMessageDoneTo()
+end
+
+---@return isHeld
+function IsModifiedClick(action)
+end
+
+---@return anyModKeyIsDown
 function IsModifierKeyDown()
 end
 
----@return mounted
+---@return unknown
 function IsMounted()
 end
 
 ---@return isDown
-function IsMouseButtonDown(button)
+function IsMouseButtonDown(buttonName)
 end
 
----@return isLooking
+---@return nil
 function IsMouselooking()
 end
 
----@return nil
+---@return unknown
 function IsMovieLocal()
 end
 
----@return nil
-function IsMoviePlayable()
+---@return playable
+function IsMoviePlayable(movieID)
 end
 
----@return muted
-function IsMuted(unit)
+---@return unknown
+function IsNormalActionBarState()
 end
 
----@return nil
-function IsNPCCrafting()
-end
-
----@return nil
+---@return isOnGlueScreen
 function IsOnGlueScreen()
 end
 
----@return nil
+---@return unknown
 function IsOnTournamentRealm()
 end
 
----@return outOfBounds
+---@return unknown
+function IsOptionFrameOpen()
+end
+
+---@return oob
 function IsOutOfBounds()
 end
 
----@return isOutdoors
+---@return outdoors
 function IsOutdoors()
 end
 
----@return isRunning
+---@return unknown
+function IsOutlineModeSupported()
+end
+
+---@return unknown
 function IsPVPTimerRunning()
 end
 
----@return nil
+---@return unknown
 function IsPartyLFG()
 end
 
----@return isPassive
-function IsPassiveSpell(index, bookType)
+---@return unknown
+function IsPartyWorldPVP()
 end
 
----@return nil
+---@return isPassive
+function IsPassiveSpell(spellId_or_index, bookType)
+end
+
+---@return unknown
+function IsPendingGlyphRemoval()
+end
+
+---@return unknown
 function IsPetActive()
 end
 
----@return isAttack
-function IsPetAttackAction(index)
+---@return unknown
+function IsPetAttackAction()
 end
 
----@return isActive
+---@return unknown
 function IsPetAttackActive()
 end
 
----@return nil
-function IsPlayerInMicroDungeon()
-end
-
----@return nil
+---@return unknown
 function IsPlayerInWorld()
 end
 
----@return nil
+---@return unknown
 function IsPlayerMoving()
 end
 
----@return nil
+---@return isNeutral
 function IsPlayerNeutral()
 end
 
----@return isPlayerSpell
+---@return isKnown
 function IsPlayerSpell(spellID)
 end
 
----@return isVisible
+---@return unknown
 function IsPossessBarVisible()
 end
 
----@return isCompletable
+---@return unknown
+function IsPublicBuild()
+end
+
+---@return unknown
+function IsPvpTalentSpell()
+end
+
+---@return unknown
+function IsQuestBounty()
+end
+
+---@return nil
 function IsQuestCompletable()
 end
 
----@return nil
-function IsQuestComplete()
+---@return isComplete
+function IsQuestComplete(questID)
 end
 
----@return isCompleted
-function IsQuestFlaggedCompleted(questID)
+---@return unknown
+function IsQuestCriteriaForBounty()
 end
 
----@return nil
+---@return unknown
 function IsQuestHardWatched()
 end
 
----@return inRange
-function IsQuestLogSpecialItemInRange(questIndex)
+---@return unknown
+function IsQuestIDValidSpellTarget()
 end
 
----@return nil
+---@return unknown
+function IsQuestInvasion()
+end
+
+---@return unknown
+function IsQuestItemHidden()
+end
+
+---@return unknown
+function IsQuestLogSpecialItemInRange()
+end
+
+---@return unknown
 function IsQuestSequenced()
 end
 
----@return nil
-function IsQuestTask()
+---@return isTask
+function IsQuestTask(questID)
 end
 
----@return isWatched
-function IsQuestWatched(questIndex)
+---@return unknown
+function IsQuestWatched()
 end
 
----@return nil
+---@return unknown
 function IsRaidMarkerActive()
 end
 
----@return nil
+---@return unknown
 function IsRangedWeapon()
 end
 
----@return isRated
-function IsRatedBattleground()
-end
-
----@return nil
-function IsRatedMap()
-end
-
----@return isBankUnlocked
+---@return unknown
 function IsReagentBankUnlocked()
 end
 
----@return isLinked
-function IsReferAFriendLinked(unit)
+---@return unknown
+function IsRecognizedName()
+end
+
+---@return isRafLinked
+function IsRecruitAFriendLinked()
+end
+
+---@return unknown
+function IsReplacingUnit()
 end
 
 ---@return resting
 function IsResting()
 end
 
----@return nil
+---@return unknown
 function IsRestrictedAccount()
 end
 
----@return isDown
+---@return unknown
 function IsRightAltKeyDown()
 end
 
----@return isDown
+---@return unknown
 function IsRightControlKeyDown()
 end
 
----@return isDown
+---@return unknown
 function IsRightShiftKeyDown()
 end
 
----@return nil
+---@return unknown
+function IsSecureCmd()
+end
+
+---@return unknown
 function IsSelectedSpellBookItem()
 end
 
----@return isDown
+---@return unknown
+function IsServerControlledBackfill()
+end
+
+---@return unknown
 function IsShiftKeyDown()
 end
 
----@return isSilenced
-function IsSilenced(name, channel)
-end
-
----@return nil
-function IsSpellClassOrSpec()
+---@return spec, class
+function IsSpellClassOrSpec(spellName_or_spellIndex, bookType)
 end
 
 ---@return inRange
-function IsSpellInRange(index, bookType, unit)
+function IsSpellInRange(index, bookType, target)
 end
 
 ---@return isKnown
-function IsSpellKnown(spellID , isPet)
+function IsSpellKnown(spellID, isPetSpell)
 end
 
----@return state
+---@return unknown
+function IsSpellKnownOrOverridesKnown()
+end
+
+---@return isTrue
 function IsSpellOverlayed(spellID)
 end
 
----@return isStackable
-function IsStackableAction(slot)
+---@return unknown
+function IsSpellValidForPendingGlyph()
+end
+
+---@return unknown
+function IsSplashFramePrimaryFeatureUnlocked()
+end
+
+---@return unknown
+function IsStackableAction()
 end
 
 ---@return stealthed
 function IsStealthed()
 end
 
----@return isAvailable
-function IsStereoVideoAvailable()
-end
-
----@return nil
+---@return unknown
 function IsStoryQuest()
 end
 
----@return isPVPPOI
+---@return unknown
 function IsSubZonePVPPOI()
 end
 
----@return nil
+---@return isSubmerged
 function IsSubmerged()
 end
 
@@ -8888,10 +6067,10 @@ function IsSwimming()
 end
 
 ---@return isTalentSpell
-function IsTalentSpell(index, bookType)
+function IsTalentSpell( spellName_or_slotIndex, bookType )
 end
 
----@return nil
+---@return unknown
 function IsTestBuild()
 end
 
@@ -8900,50 +6079,42 @@ function IsThreatWarningEnabled()
 end
 
 ---@return isKnown
-function IsTitleKnown(titleIndex)
+function IsTitleKnown(titleId)
 end
 
----@return isTracked
-function IsTrackedAchievement(id)
+---@return unknown
+function IsTrackedAchievement()
 end
 
----@return nil
+---@return isTracking
 function IsTrackingBattlePets()
 end
 
----@return nil
-function IsTradeSkillGuild()
+---@return unknown
+function IsTrackingHiddenQuests()
 end
 
----@return isLinked, name
-function IsTradeSkillLinked()
-end
-
----@return nil
-function IsTradeSkillReady()
-end
-
----@return nil
-function IsTradeSkillRepeating()
-end
-
----@return isTradeskill
+---@return isTradeskillTrainer
 function IsTradeskillTrainer()
 end
 
----@return nil
+---@return isTrialAccount
 function IsTrialAccount()
 end
 
----@return nil
+---@return unknown
 function IsTutorialFlagged()
 end
 
----@return state
-function IsUnitOnQuest(index, unit)
+---@return isReady
+function IsUnitModelReadyForUI(unitToken)
 end
 
----@return nil
+---@return unknown
+function IsUnitOnQuest()
+end
+
+---@return unknown
 function IsUnitOnQuestByQuestID()
 end
 
@@ -8951,88 +6122,104 @@ end
 function IsUsableAction(slot)
 end
 
----@return isUsable, notEnoughMana
-function IsUsableItem(itemID)
+---@return unknown
+function IsUsableItem()
 end
 
----@return isUsable, notEnoughMana
-function IsUsableSpell(index, bookType)
+---@return usable, noMana
+function IsUsableSpell(spellName_or_spellID_or_spellIndex, bookType)
 end
 
----@return nil
+---@return unknown
+function IsUsingFixedTimeStep()
+end
+
+---@return unknown
 function IsUsingVehicleControls()
 end
 
----@return hasAngleControl
+---@return unknown
+function IsValid()
+end
+
+---@return unknown
 function IsVehicleAimAngleAdjustable()
 end
 
----@return nil
+---@return unknown
 function IsVehicleAimPowerAdjustable()
 end
 
----@return isAllowed
-function IsVoiceChatAllowed()
+---@return isVeteranTrialAccount
+function IsVeteranTrialAccount()
 end
 
----@return nil
-function IsVoiceChatAllowedByServer()
-end
-
----@return isEnabled
-function IsVoiceChatEnabled()
-end
-
----@return isReady
+---@return unknown
 function IsVoidStorageReady()
 end
 
----@return nil
+---@return isWargame
 function IsWargame()
 end
 
----@return isWindows
+---@return nil
 function IsWindowsClient()
 end
 
----@return isDisabled
+---@return unknown
+function IsWorldQuestHardWatched()
+end
+
+---@return unknown
+function IsWorldQuestWatched()
+end
+
+---@return unknown
+function IsWritableRestrictedTable()
+end
+
+---@return unknown
 function IsXPUserDisabled()
 end
 
----@return nil
-function IsZoomOutAvailable()
-end
-
----@return nil
+---@return unknown
 function ItemAddedToArtifact()
 end
 
----@return hasRange
-function ItemHasRange(itemID)
+---@return unknown
+function ItemCanTargetGarrisonFollowerAbility()
 end
 
----@return creator
+---@return unknown
+function ItemHasRange()
+end
+
+---@return creatorName
 function ItemTextGetCreator()
 end
 
----@return string
+---@return textName
 function ItemTextGetItem()
 end
 
----@return material
+---@return materialName
 function ItemTextGetMaterial()
 end
 
----@return page
+---@return pageNum
 function ItemTextGetPage()
 end
 
----@return string
+---@return pageBody
 function ItemTextGetText()
 end
 
----@return next
+---@return hasNext
 function ItemTextHasNextPage()
+end
+
+---@return unknown
+function ItemTextIsFullPage()
 end
 
 ---@return nil
@@ -9043,40 +6230,40 @@ end
 function ItemTextPrevPage()
 end
 
----@return nil
+---@return unknown
 function JoinArena()
 end
 
 ---@return nil
-function JoinBattlefield(index, asGroup)
+function JoinBattlefield(index, asGroup, isRated)
 end
 
----@return zoneChannel, channelName
-function JoinChannelByName(name, password, id)
+---@return type, name
+function JoinChannelByName(channelName ,password ,frameID, hasVoice)
 end
 
----@return nil
+---@return unknown
 function JoinLFG()
 end
 
----@return zoneChannel, channelName
-function JoinPermanentChannel(name , password , chatFrameIndex , enableVoice)
+---@return type, name
+function JoinPermanentChannel(channelName ,password ,frameID, hasVoice)
 end
 
----@return nil
+---@return unknown
 function JoinRatedBattlefield()
 end
 
----@return nil
+---@return unknown
 function JoinSingleLFG()
 end
 
 ---@return nil
-function JoinSkirmish()
+function JoinSkirmish(arenaID, joinAsGroup)
 end
 
----@return nil
-function JoinTemporaryChannel(channel)
+---@return type, name
+function JoinTemporaryChannel(channelName ,password ,frameID, hasVoice)
 end
 
 ---@return nil
@@ -9084,102 +6271,146 @@ function JumpOrAscendStart()
 end
 
 ---@return nil
-function KBArticle_BeginLoading(articleId, searchType)
+function KBArticle_BeginLoading(id, searchType)
 end
 
 ---@return id, subject, subjectAlt, text, keywords, languageId, isHot
 function KBArticle_GetData()
 end
 
----@return isLoaded
+---@return loaded
 function KBArticle_IsLoaded()
 end
 
----@return nil
-function KBQuery_BeginLoading(searchText, categoryIndex, subcategoryIndex, numArticles, page)
+---@return unknown
+function KBQuery_BeginLoading()
 end
 
----@return articleHeaderCount
+---@return unknown
 function KBQuery_GetArticleHeaderCount()
 end
 
----@return articleId, title, isHotIssue, isRecentlyUpdated
-function KBQuery_GetArticleHeaderData(index)
+---@return unknown
+function KBQuery_GetArticleHeaderData()
 end
 
----@return totalArticleHeaderCount
+---@return unknown
 function KBQuery_GetTotalArticleCount()
 end
 
----@return isLoaded
+---@return unknown
 function KBQuery_IsLoaded()
 end
 
 ---@return nil
-function KBSetup_BeginLoading(numArticles, currentPage)
+function KBSetup_BeginLoading(articlesPerPage, currentPage)
 end
 
----@return articleHeaderCount
+---@return count
 function KBSetup_GetArticleHeaderCount()
 end
 
----@return articleId, title, isHotIssue, isRecentlyUpdated
+---@return id, title, isHot, isNew
 function KBSetup_GetArticleHeaderData(index)
 end
 
----@return numCategories
+---@return count
 function KBSetup_GetCategoryCount()
 end
 
----@return categoryId, name
+---@return id, caption
 function KBSetup_GetCategoryData(index)
 end
 
----@return numLanguages
+---@return count
 function KBSetup_GetLanguageCount()
 end
 
----@return languageId, name
+---@return id, caption
 function KBSetup_GetLanguageData(index)
 end
 
----@return numSubCategories
-function KBSetup_GetSubCategoryCount(index)
+---@return count
+function KBSetup_GetSubCategoryCount(category)
 end
 
----@return categoryId, name
-function KBSetup_GetSubCategoryData(index, subindex)
+---@return id, caption
+function KBSetup_GetSubCategoryData(category, index)
 end
 
----@return numArticles
+---@return count
 function KBSetup_GetTotalArticleCount()
 end
 
----@return isLoaded
+---@return loaded
 function KBSetup_IsLoaded()
 end
 
----@return string
+---@return motd
 function KBSystem_GetMOTD()
 end
 
----@return string
+---@return notice
 function KBSystem_GetServerNotice()
 end
 
----@return statusMessage
+---@return status
 function KBSystem_GetServerStatus()
 end
 
----@return nil
-function LFGTeleport(portOut)
+---@return unknown
+function LFDGetNumDungeons()
+end
+
+---@return unknown
+function LFGConstructDeclinedMessage()
+end
+
+---@return unknown
+function LFGDebug()
+end
+
+---@return unknown
+function LFGIsIDHeader()
+end
+
+---@return unknown
+function LFGListFilterChoices()
+end
+
+---@return unknown
+function LFGListRemoveCollapsedChildren()
+end
+
+---@return unknown
+function LFGListRemoveHeadersWithoutChildren()
+end
+
+---@return unknown
+function LFGListUpdateHeaderEnabledAndLockedStates()
 end
 
 ---@return nil
-function LearnTalent(tabIndex, talentIndex, isPet, talentGroup)
+function LFGTeleport(toSafety)
+end
+
+---@return unknown
+function LFRGetNumDungeons()
 end
 
 ---@return nil
+function LearnPvpTalent( talentID, slotIndex )
+end
+
+---@return unknown
+function LearnPvpTalents()
+end
+
+---@return nil
+function LearnTalent( talentID )
+end
+
+---@return unknown
 function LearnTalents()
 end
 
@@ -9187,24 +6418,24 @@ end
 function LeaveBattlefield()
 end
 
----@return nil
-function LeaveChannelByName(name)
+---@return unknown
+function LeaveChannelByLocalID()
 end
 
 ---@return nil
+function LeaveChannelByName(channelName)
+end
+
+---@return unknown
 function LeaveLFG()
 end
 
----@return nil
-function LeaveParty()
-end
-
----@return nil
+---@return unknown
 function LeaveSingleLFG()
 end
 
 ---@return nil
-function ListChannelByName(channel)
+function ListChannelByName(channelName)
 end
 
 ---@return nil
@@ -9212,66 +6443,102 @@ function ListChannels()
 end
 
 ---@return loaded, reason
-function LoadAddOn(name)
+function LoadAddOn(index_or_name)
 end
 
 ---@return nil
-function LoadBindings(set)
+function LoadBindings(bindingSet)
 end
 
----@return nil
+---@return unknown
+function LoadMicroButtonTextures()
+end
+
+---@return unknown
 function LoadURLIndex()
 end
 
----@return isLogging
-function LoggingChat(toggle)
+---@return unknown
+function Localize()
+end
+
+---@return unknown
+function LocalizeFrames()
+end
+
+---@return unknown
+function LocalizePost()
+end
+
+---@return unknown
+function LockMultiCastActionBar()
+end
+
+---@return unknown
+function LockPetActionBar()
 end
 
 ---@return isLogging
-function LoggingCombat(toggle)
+function LoggingChat(newState)
+end
+
+---@return isLogging
+function LoggingCombat(newState)
 end
 
 ---@return nil
 function Logout()
 end
 
+---@return unknown
+function LootMoneyNotify()
+end
+
 ---@return nil
 function LootSlot(slot)
 end
 
----@return nil
-function LootSlotHasItem()
+---@return isLootItem
+function LootSlotHasItem(lootSlot)
 end
 
----@return nil
-function MacOptions_AreOSShortcutsDisabled()
+---@return unknown
+function LowerFrameLevel()
 end
 
----@return nil
-function MacOptions_GetGameBundleName()
+---@return unknown
+function ManageBackpackTokenFrame()
 end
 
----@return nil
-function MacOptions_HasNewStyleUniversalAccess()
+---@return unknown
+function MicroButtonPulse()
 end
 
----@return nil
-function MacOptions_IsUniversalAccessEnabled()
+---@return unknown
+function MicroButtonPulseStop()
 end
 
----@return nil
-function MacOptions_OpenUniversalAccess()
+---@return unknown
+function MicroButtonTooltipText()
 end
 
----@return nil
-function MacOptions_SetOSShortcutsDisabled()
+---@return unknown
+function MiniMapTrackingShineFadeIn()
 end
 
----@return nil
-function ModifyEquipmentSet(oldSetName, newSetName , icon)
+---@return unknown
+function MiniMapTrackingShineFadeOut()
 end
 
----@return nil
+---@return unknown
+function MinimapMailFrameUpdate()
+end
+
+---@return isOver
+function MouseIsOver(frame, topOffset, bottomOffset, leftOffset, rightOffset)
+end
+
+---@return unknown
 function MouseOverrideCinematicDisable()
 end
 
@@ -9283,32 +6550,36 @@ end
 function MouselookStop()
 end
 
----@return nil
+---@return unknown
 function MoveAndSteerStart()
 end
 
----@return nil
+---@return unknown
 function MoveAndSteerStop()
 end
 
 ---@return nil
-function MoveBackwardStart()
+function MoveBackwardStart(startTime)
 end
 
 ---@return nil
-function MoveBackwardStop()
+function MoveBackwardStop(startTime)
 end
 
 ---@return nil
-function MoveForwardStart()
+function MoveForwardStart(startTime)
 end
 
 ---@return nil
-function MoveForwardStop()
+function MoveForwardStop(startTime)
+end
+
+---@return unknown
+function MoveMicroButtons()
 end
 
 ---@return nil
-function MoveViewDownStart()
+function MoveViewDownStart(speed)
 end
 
 ---@return nil
@@ -9316,7 +6587,7 @@ function MoveViewDownStop()
 end
 
 ---@return nil
-function MoveViewInStart()
+function MoveViewInStart(speed)
 end
 
 ---@return nil
@@ -9324,7 +6595,7 @@ function MoveViewInStop()
 end
 
 ---@return nil
-function MoveViewLeftStart()
+function MoveViewLeftStart(speed)
 end
 
 ---@return nil
@@ -9332,7 +6603,7 @@ function MoveViewLeftStop()
 end
 
 ---@return nil
-function MoveViewOutStart()
+function MoveViewOutStart(speed)
 end
 
 ---@return nil
@@ -9340,7 +6611,7 @@ function MoveViewOutStop()
 end
 
 ---@return nil
-function MoveViewRightStart()
+function MoveViewRightStart(speed)
 end
 
 ---@return nil
@@ -9348,154 +6619,54 @@ function MoveViewRightStop()
 end
 
 ---@return nil
-function MoveViewUpStart()
+function MoveViewUpStart(speed)
 end
 
 ---@return nil
 function MoveViewUpStop()
 end
 
----@return nil
-function MovieRecording_Cancel()
+---@return unknown
+function MultiActionButtonDown()
 end
 
----@return dataRate
-function MovieRecording_DataRate(width, framerate, sound)
+---@return unknown
+function MultiActionButtonUp()
 end
 
----@return nil
-function MovieRecording_DeleteMovie(filename)
+---@return unknown
+function MultiCastActionButtonDown()
 end
 
----@return ratio
-function MovieRecording_GetAspectRatio()
+---@return unknown
+function MultiCastActionButtonUp()
 end
 
----@return nil
-function MovieRecording_GetFullWidth()
+---@return unknown
+function MultiCastRecallSpellButtonUp()
 end
 
----@return nil
-function MovieRecording_GetHalfWidth()
+---@return unknown
+function MultiCastSummonSpellButtonUp()
 end
 
----@return path
-function MovieRecording_GetMovieFullPath()
-end
-
----@return recovering, progress
-function MovieRecording_GetProgress()
+---@return unknown
+function MultiSampleAntiAliasingSupported()
 end
 
 ---@return nil
-function MovieRecording_GetQuarterWidth()
+function MuteSoundFile(soundFile_or_fileDataID)
 end
 
 ---@return nil
-function MovieRecording_GetSelectedWidth()
+function NeutralPlayerSelectFaction(factionIndex)
 end
 
----@return time
-function MovieRecording_GetTime()
-end
-
----@return width
-function MovieRecording_GetViewportWidth()
-end
-
----@return nil
-function MovieRecording_GetWidthAt()
-end
-
----@return nil
-function MovieRecording_GetWidthCount()
-end
-
----@return isSupported
-function MovieRecording_IsCodecSupported(codecID)
-end
-
----@return isCompressing
-function MovieRecording_IsCompressing()
-end
-
----@return isSupported
-function MovieRecording_IsCursorRecordingSupported()
-end
-
----@return isRecording
-function MovieRecording_IsRecording()
-end
-
----@return isSupported
-function MovieRecording_IsSupported()
-end
-
----@return nil
-function MovieRecording_LoadSelectedWidth()
-end
-
----@return time
-function MovieRecording_MaxLength(width, framerate, sound)
-end
-
----@return nil
-function MovieRecording_QueueMovieToCompress(filename)
-end
-
----@return nil
-function MovieRecording_SaveSelectedWidth()
-end
-
----@return nil
-function MovieRecording_SearchUncompressedMovie(enable)
-end
-
----@return nil
-function MovieRecording_SetSelectedWidth()
-end
-
----@return nil
-function MovieRecording_Toggle()
-end
-
----@return nil
-function MovieRecording_ToggleGUI()
-end
-
----@return nil
-function MusicPlayer_BackTrack()
-end
-
----@return nil
-function MusicPlayer_NextTrack()
-end
-
----@return nil
-function MusicPlayer_PlayPause()
-end
-
----@return nil
-function MusicPlayer_VolumeDown()
-end
-
----@return nil
-function MusicPlayer_VolumeUp()
-end
-
----@return nil
-function NeutralPlayerSelectFaction()
-end
-
----@return nil
-function NewGMTicket(text, needResponse)
-end
-
----@return nil
+---@return unknown
 function NextView()
 end
 
----@return hasNoTime
+---@return isUnhealthy
 function NoPlayTime()
 end
 
@@ -9515,32 +6686,88 @@ end
 function OfferPetition()
 end
 
----@return hasWeapon
-function OffhandHasWeapon()
+---@return unknown
+function OnMenuLoad()
 end
 
 ---@return nil
-function OpenCalendar()
+function OpenAllBags( frame, forceUpdate )
+end
+
+---@return backpackWasOpen
+function OpenBackpack()
 end
 
 ---@return nil
+function OpenBag(id, force)
+end
+
+---@return unknown
+function OpenCoinPickupFrame()
+end
+
+---@return unknown
+function OpenColorPicker()
+end
+
+---@return unknown
+function OpenFriendsFrame()
+end
+
+---@return unknown
+function OpenGlyphFrame()
+end
+
+---@return unknown
+function OpenStackSplitFrame()
+end
+
+---@return unknown
 function OpenTrainer()
 end
 
----@return nil
+---@return unknown
 function OpeningCinematic()
 end
 
----@return partialPlayTime
+---@return unknown
+function PaperDollBgDesaturate()
+end
+
+---@return unknown
+function PaperDollFormatStat()
+end
+
+---@return unknown
+function PaperDollStatTooltip()
+end
+
+---@return unknown
 function PartialPlayTime()
 end
 
----@return nil
+---@return unknown
 function PartyLFGStartBackfill()
+end
+
+---@return unknown
+function PartyMemberHealthCheck()
+end
+
+---@return unknown
+function PassClickToParent()
 end
 
 ---@return nil
 function PetAbandon()
+end
+
+---@return unknown
+function PetActionButtonDown()
+end
+
+---@return unknown
+function PetActionButtonUp()
 end
 
 ---@return nil
@@ -9552,19 +6779,23 @@ function PetAssistMode()
 end
 
 ---@return nil
-function PetAttack(unit)
+function PetAttack()
 end
 
 ---@return canAbandon
 function PetCanBeAbandoned()
 end
 
----@return canDismiss
+---@return unknown
 function PetCanBeDismissed()
 end
 
 ---@return canRename
 function PetCanBeRenamed()
+end
+
+---@return nil
+function PetDefensiveAssistMode()
 end
 
 ---@return nil
@@ -9583,11 +6814,11 @@ end
 function PetHasActionBar()
 end
 
----@return nil
+---@return unknown
 function PetHasSpellbook()
 end
 
----@return nil
+---@return unknown
 function PetMoveTo()
 end
 
@@ -9596,14 +6827,14 @@ function PetPassiveMode()
 end
 
 ---@return nil
-function PetRename(name , genitive , dative , accusative , instrumental , prepositional)
+function PetRename(name)
 end
 
 ---@return nil
 function PetStopAttack()
 end
 
----@return nil
+---@return unknown
 function PetUsesPetFrame()
 end
 
@@ -9612,7 +6843,7 @@ function PetWait()
 end
 
 ---@return nil
-function PickupAction(slot)
+function PickupAction(actionSlot)
 end
 
 ---@return nil
@@ -9624,39 +6855,31 @@ function PickupCompanion(type, index)
 end
 
 ---@return nil
-function PickupContainerItem(container, slot)
+function PickupContainerItem(bagID, slot)
 end
 
----@return nil
+---@return unknown
 function PickupCurrency()
 end
 
----@return nil
-function PickupEquipmentSet(index)
+---@return unknown
+function PickupGuildBankItem()
+end
+
+---@return unknown
+function PickupGuildBankMoney()
 end
 
 ---@return nil
-function PickupEquipmentSetByName(name)
+function PickupInventoryItem(slotId)
 end
 
 ---@return nil
-function PickupGuildBankItem(tab, slot)
+function PickupItem(itemID_or_itemString_or_itemName_or_itemLink)
 end
 
 ---@return nil
-function PickupGuildBankMoney(amount)
-end
-
----@return nil
-function PickupInventoryItem(slot)
-end
-
----@return nil
-function PickupItem(itemID)
-end
-
----@return nil
-function PickupMacro(index)
+function PickupMacro(macroName_or_macroID)
 end
 
 ---@return nil
@@ -9664,15 +6887,19 @@ function PickupMerchantItem(index)
 end
 
 ---@return nil
-function PickupPetAction(index)
+function PickupPetAction(petActionSlot)
 end
 
 ---@return nil
-function PickupPetSpell()
+function PickupPetSpell(spellID)
 end
 
 ---@return nil
-function PickupPlayerMoney(amount)
+function PickupPlayerMoney(copper)
+end
+
+---@return unknown
+function PickupPvpTalent()
 end
 
 ---@return nil
@@ -9680,170 +6907,166 @@ function PickupSpell(spellID)
 end
 
 ---@return nil
-function PickupSpellBookItem()
+function PickupSpellBookItem(spellName_or_index, bookType)
 end
 
 ---@return nil
 function PickupStablePet(index)
 end
 
----@return nil
+---@return unknown
 function PickupTalent()
 end
 
 ---@return nil
-function PickupTradeMoney(amount)
+function PickupTradeMoney(copper)
 end
 
----@return nil
+---@return unknown
 function PitchDownStart()
 end
 
----@return nil
+---@return unknown
 function PitchDownStop()
 end
 
----@return nil
+---@return unknown
 function PitchUpStart()
 end
 
----@return nil
+---@return unknown
 function PitchUpStop()
 end
 
 ---@return nil
-function PlaceAction(slot)
+function PlaceAction(actionSlot)
 end
 
----@return nil
-function PlaceAuctionBid(list, index, bid)
-end
-
----@return nil
-function PlaceGlyphInSocket(socket)
-end
-
----@return nil
+---@return unknown
 function PlaceRaidMarker()
 end
 
----@return nil
+---@return unknown
 function PlayAutoAcceptQuestSound()
 end
 
----@return nil
-function PlayMusic(musicfile)
+---@return willPlay
+function PlayMusic(musicfile_or_fileDataID)
 end
 
----@return nil
-function PlaySound(sound, soundChannel)
-end
-
----@return nil
-function PlaySoundFile(soundFile, soundChannel)
-end
-
----Play any sound or music native to the game using the audio's ID. Other players will not hear the audio.
----@param ID number
----@param optional forceNoDuplicates boolean
----@param optional channel string
 ---@return willPlay, soundHandle
-function PlaySoundKitID(ID, channel, forceNoDuplicates)
+function PlaySound(soundKitID, channel, forceNoDuplicates, runFinishCallback)
 end
 
----@return amount
+---@return willPlay, soundHandle
+function PlaySoundFile(soundFile_or_soundFileID , channel)
+end
+
+---@return unknown
+function PlayVocalErrorSoundID()
+end
+
+---@return unknown
 function PlayerCanTeleport()
 end
 
----@return hasHearthstone
+---@return unknown
+function PlayerEffectiveAttackPower()
+end
+
+---@return unknown
 function PlayerHasHearthstone()
 end
 
----@return nil
-function PlayerHasToy()
+---@return   hasToy
+function PlayerHasToy(itemId)
 end
 
----@return isInactive
-function PlayerIsPVPInactive(name)
+---@return unknown
+function PlayerIsPVPInactive()
 end
 
----@return nil
+---@return vehicleHasComboPoints
+function PlayerVehicleHasComboPoints()
+end
+
+---@return unknown
 function PortGraveyard()
 end
 
----@return nil
+---@return unknown
 function PreloadMovie()
 end
 
----@return nil
+---@return unknown
 function PrevView()
 end
 
----@return nil
-function ProcessMapClick(clickX, clickY)
+---@return unknown
+function PrintLootSpecialization()
 end
 
----@return nil
+---@return unknown
 function ProcessQuestLogRewardFactions()
 end
 
----@return nil
-function PromoteToAssistant(unit)
+---@return unknown
+function PromoteToAssistant()
 end
 
 ---@return nil
-function PromoteToLeader(unit)
+function PromoteToLeader(unitId_or_playerName)
 end
 
----@return nil
+---@return unknown
 function PurchaseSlot()
 end
 
----@return hadItem
+---@return nil
 function PutItemInBackpack()
 end
 
----@return hadItem
-function PutItemInBag(inventory)
+---@return nil
+function PutItemInBag(slotId)
 end
 
----@return nil
-function QueryAuctionItems(name , minLevel , maxLevel , invTypeIndex , classIndex , subClassIndex , page , isUsable , minQuality , getAll)
+---@return unknown
+function PutKeyInKeyRing()
 end
 
----@return nil
-function QueryCastSequence()
+---@return index, item, spell
+function QueryCastSequence(sequence)
 end
 
----@return nil
-function QueryGuildBankLog(tab)
+---@return unknown
+function QueryGuildBankLog()
 end
 
----@return nil
-function QueryGuildBankTab(tab)
+---@return unknown
+function QueryGuildBankTab()
 end
 
----@return nil
-function QueryGuildBankText(tab)
+---@return unknown
+function QueryGuildBankText()
 end
 
----@return nil
+---@return unknown
 function QueryGuildEventLog()
 end
 
----@return nil
+---@return unknown
 function QueryGuildMembersForRecipe()
 end
 
----@return nil
+---@return unknown
 function QueryGuildNews()
 end
 
----@return nil
+---@return unknown
 function QueryGuildRecipes()
 end
 
----@return nil
+---@return unknown
 function QueryWorldCountdownTimer()
 end
 
@@ -9851,63 +7074,71 @@ end
 function QuestChooseRewardError()
 end
 
----@return questFlag
+---@return unknown
 function QuestFlagsPVP()
 end
 
----@return questFlag
+---@return isAutoAccepted
 function QuestGetAutoAccept()
 end
 
----@return nil
+---@return unknown
 function QuestGetAutoLaunched()
 end
 
----@return nil
+---@return unknown
 function QuestHasPOIInfo()
 end
 
----@return nil
+---@return isDaily
 function QuestIsDaily()
 end
 
----@return nil
+---@return unknown
+function QuestIsFromAdventureMap()
+end
+
+---@return unknown
 function QuestIsFromAreaTrigger()
 end
 
----@return nil
+---@return isWeekly
 function QuestIsWeekly()
 end
 
 ---@return nil
-function QuestLogPushQuest(questIndex)
+function QuestLogPushQuest()
 end
 
----@return nil
+---@return unknown
+function QuestLogRewardHasTreasurePicker()
+end
+
+---@return unknown
 function QuestLogShouldShowPortrait()
 end
 
----@return nil
+---@return unknown
 function QuestMapUpdateAllQuests()
 end
 
----@return _, posX, posY, objective
-function QuestPOIGetIconInfo(questID)
+---@return completed, posX, posY, objective
+function QuestPOIGetIconInfo(questId)
 end
 
----@return nil
+---@return unknown
 function QuestPOIGetQuestIDByIndex()
 end
 
----@return nil
+---@return unknown
 function QuestPOIGetQuestIDByVisibleIndex()
 end
 
----@return nil
+---@return unknown
 function QuestPOIGetSecondaryLocations()
 end
 
----@return nil
+---@return unknown
 function QuestPOIUpdateIcons()
 end
 
@@ -9915,72 +7146,128 @@ end
 function Quit()
 end
 
----@return nil
+---@return unknown
+function RGBTableToColorCode()
+end
+
+---@return unknown
+function RGBToColorCode()
+end
+
+---@return unknown
 function RaidProfileExists()
 end
 
----@return nil
+---@return unknown
 function RaidProfileHasUnsavedChanges()
 end
 
----@return nil
-function RandomRoll(min, max)
+---@return unknown
+function RaiseFrameLevel()
+end
+
+---@return unknown
+function RaiseFrameLevelByTwo()
 end
 
 ---@return nil
+function RandomRoll(low, high)
+end
+
+---@return unknown
 function ReagentBankButtonIDToInvSlotID()
 end
 
----@return nil
+---@return unknown
+function RealPartyIsFull()
+end
+
+---@return unknown
+function RecalculateGearManagerDialogPopup()
+end
+
+---@return unknown
+function RecentTimeDate()
+end
+
+---@return unknown
+function RedockChatWindows()
+end
+
+---@return unknown
+function RefreshAuras()
+end
+
+---@return unknown
+function RefreshBuffs()
+end
+
+---@return unknown
+function RefreshDebuffs()
+end
+
+---@return unknown
+function RefreshEquipmentSetIconInfo()
+end
+
+---@return unknown
 function RefreshLFGList()
 end
 
----@return nil
-function RefreshWorldMap()
+---@return unknown
+function RefreshMoneyFrame()
 end
 
----@return success
-function RegisterAddonMessagePrefix(prefix)
+---@return unknown
+function RegisterAttributeDriver()
 end
 
----@return nil
-function RegisterCVar(cvar, default)
+---@return unknown
+function RegisterAutoHide()
 end
 
----@return nil
+---@return unknown
+function RegisterStateDriver()
+end
+
+---@return unknown
 function RegisterStaticConstants()
+end
+
+---@return unknown
+function RegisterUnitWatch()
 end
 
 ---@return nil
 function RejectProposal()
 end
 
----@return nil
-function ReloadUI()
+---@return unknown
+function RemoveAutoQuestPopUp()
 end
 
 ---@return nil
-function RemoveAutoQuestPopUp(questId)
-end
-
----@return nil
-function RemoveChatWindowChannel(index, channel)
+function RemoveChatWindowChannel(windowId, channelName)
 end
 
 ---@return nil
 function RemoveChatWindowMessages(index, messageGroup)
 end
 
----@return nil
-function RemoveFriend(name)
+---@return unknown
+function RemoveExtraSpaces()
 end
 
----@return nil
-function RemoveGlyphFromSocket(socket)
+---@return unknown
+function RemoveFrameLock()
 end
 
----@return nil
+---@return keystoneRemoved
 function RemoveItemFromArtifact()
+end
+
+---@return unknown
+function RemovePvpTalent()
 end
 
 ---@return nil
@@ -9988,19 +7275,31 @@ function RemoveQuestWatch(questIndex)
 end
 
 ---@return nil
+function RemoveQuestWatchForQuestID(questID)
+end
+
+---@return unknown
 function RemoveTalent()
 end
 
 ---@return nil
-function RemoveTrackedAchievement(id)
+function RemoveTrackedAchievement(achievementId)
+end
+
+---@return unknown
+function RemoveWorldQuestWatch()
 end
 
 ---@return nil
 function RenamePetition(name)
 end
 
+---@return unknown
+function ReopenInteraction()
+end
+
 ---@return nil
-function RepairAllItems(useGuildMoney)
+function RepairAllItems(guildBankRepair)
 end
 
 ---@return nil
@@ -10019,19 +7318,15 @@ end
 function RepopMe()
 end
 
----@return nil
+---@return unknown
 function ReportBug()
 end
 
----@return nil
-function ReportPlayer(reportType, lineID, comment)
+---@return unknown
+function ReportPlayerIsPVPAFK()
 end
 
----@return nil
-function ReportPlayerIsPVPAFK(name)
-end
-
----@return nil
+---@return unknown
 function ReportSuggestion()
 end
 
@@ -10048,62 +7343,46 @@ function RequestBattlegroundInstanceInfo(index)
 end
 
 ---@return nil
-function RequestChallengeModeLeaders()
-end
-
----@return nil
-function RequestChallengeModeMapInfo()
-end
-
----@return nil
-function RequestChallengeModeRewards()
-end
-
----@return nil
 function RequestGuildApplicantsList()
 end
 
----@return nil
+---@return unknown
 function RequestGuildChallengeInfo()
 end
 
----@return nil
+---@return unknown
 function RequestGuildMembership()
 end
 
----@return nil
+---@return unknown
 function RequestGuildMembershipList()
 end
 
----@return nil
+---@return unknown
 function RequestGuildPartyState()
 end
 
----@return nil
+---@return unknown
 function RequestGuildRecruitmentSettings()
 end
 
----@return nil
+---@return unknown
 function RequestGuildRewards()
 end
 
----@return nil
-function RequestInspectHonorData()
-end
-
----@return nil
+---@return unknown
 function RequestLFDPartyLockInfo()
 end
 
----@return nil
+---@return unknown
 function RequestLFDPlayerLockInfo()
 end
 
----@return nil
+---@return unknown
 function RequestPVPOptionsEnabled()
 end
 
----@return nil
+---@return unknown
 function RequestPVPRewards()
 end
 
@@ -10119,7 +7398,7 @@ end
 function RequestRatedInfo()
 end
 
----@return nil
+---@return unknown
 function RequestRecruitingGuildsList()
 end
 
@@ -10127,27 +7406,23 @@ end
 function RequestTimePlayed()
 end
 
----@return nil
+---@return unknown
 function RequeueSkirmish()
 end
 
----@return nil
+---@return unknown
 function ResetAddOns()
 end
 
----@return nil
+---@return unknown
 function ResetCPUUsage()
 end
 
----@return nil
-function ResetChallengeMode()
-end
-
----@return nil
+---@return unknown
 function ResetChatColors()
 end
 
----@return nil
+---@return unknown
 function ResetChatWindows()
 end
 
@@ -10155,7 +7430,7 @@ end
 function ResetCursor()
 end
 
----@return nil
+---@return unknown
 function ResetDisabledAddOns()
 end
 
@@ -10163,11 +7438,7 @@ end
 function ResetInstances()
 end
 
----@return nil
-function ResetPerformanceValues()
-end
-
----@return nil
+---@return unknown
 function ResetSetMerchantFilter()
 end
 
@@ -10175,39 +7446,43 @@ end
 function ResetTutorials()
 end
 
----@return nil
-function ResetView(index)
+---@return unknown
+function ResetView()
 end
 
----@return resistancePercent
-function ResistancePercent(ResistanceValue, CasterLevel)
+---@return unknown
+function ResistancePercent()
 end
 
----@return nil
-function RespondInstanceLock(response)
+---@return unknown
+function RespondInstanceLock()
 end
 
----@return nil
+---@return unknown
 function RespondMailLockSendItem()
+end
+
+---@return unknown
+function RespondToInviteConfirmation()
 end
 
 ---@return nil
 function RestartGx()
 end
 
----@return nil
+---@return unknown
 function RestoreRaidProfileFromCopy()
 end
 
----@return name
+---@return unknown
 function ResurrectGetOfferer()
 end
 
----@return hasSickness
+---@return unknown
 function ResurrectHasSickness()
 end
 
----@return hasTimer
+---@return unknown
 function ResurrectHasTimer()
 end
 
@@ -10215,108 +7490,140 @@ end
 function RetrieveCorpse()
 end
 
----@return nil
-function ReturnInboxItem(mailID)
+---@return unknown
+function ReturnInboxItem()
+end
+
+---@return unknown
+function ReverseQuestObjective()
 end
 
 ---@return nil
-function RollOnLoot(id, rollType)
+function RollOnLoot(rollID, rollType)
 end
 
 ---@return nil
-function RunBinding(COMMAND)
+function RunBinding(command, up)
 end
 
 ---@return nil
-function RunMacro(index , button)
+function RunMacro(macroID_or_macroName)
 end
 
 ---@return nil
-function RunMacroText(text , button)
+function RunMacroText(macro)
 end
 
 ---@return nil
 function RunScript(script)
 end
 
----@return nil
+---@return unknown
 function SaveAddOns()
 end
 
 ---@return nil
-function SaveBindings(set)
+function SaveBindings(which)
 end
 
----@return nil
-function SaveEquipmentSet(name, icon)
-end
-
----@return nil
+---@return unknown
 function SaveRaidProfileCopy()
 end
 
 ---@return nil
-function SaveView(index)
+function SaveView(viewIndex)
+end
+
+---@return unknown
+function ScenariosGetNumDungeons()
 end
 
 ---@return nil
 function Screenshot()
 end
 
----@return nil
-function SearchGuildRecipes()
+---@return unknown
+function ScriptsDisallowedForBeta()
 end
 
----@return nil
+---@return unknown
 function SearchLFGGetEncounterResults()
 end
 
----@return nil
+---@return unknown
 function SearchLFGGetJoinedID()
 end
 
----@return nil
+---@return numResults, totalResults
 function SearchLFGGetNumResults()
 end
 
----@return nil
-function SearchLFGGetPartyResults()
+---@return  name, level, relationship, className, areaName, comment, isLeader, isTank, isHealer, isDamage, bossKills, specID, isGroupLeader, armor, spellDamage, plusHealing, CritMelee, CritRanged, critSpell, mp5, mp5Combat, attackPower, agility, maxHealth, maxMana, gearRating, avgILevel, defenseRating, dodgeRating, BlockRating, ParryRating, HasteRating, expertise
+function SearchLFGGetPartyResults(index, partyIndex)
 end
 
----@return name, level, areaName, className, comment, partyMembers, status, class, encountersTotal, encountersComplete, isIneligible, isLeader, isTank, isHealer, isDamage
+---@return  name, level, areaName, className, comment, partyMembers, status, class, encountersTotal, encountersComplete, isIneligible, isLeader, isTank, isHealer, isDamage, bossKills, specID, isGroupLeader, armor, spellDamage, plusHealing, CritMelee, CritRanged, critSpell, mp5, mp5Combat, attackPower, agility, maxHealth, maxMana, gearRating, avgILevel, defenseRating, dodgeRating, BlockRating, ParryRating, HasteRating, expertise
 function SearchLFGGetResults(index)
 end
 
 ---@return nil
-function SearchLFGJoin()
+function SearchLFGJoin(typeID, lfgID)
 end
 
----@return nil
+---@return unknown
 function SearchLFGLeave()
 end
 
----@return nil
+---@return unknown
 function SearchLFGSort()
 end
 
----@return time
-function SecondsToTime(seconds , noSeconds , notAbbreviated , maxCount)
+---@return timePassed
+function SecondsToTime(seconds, noSeconds)
+end
+
+---@return TimeFormat, Value
+function SecondsToTimeAbbrev(TimeDuration)
+end
+
+---@return unknown
+function SecureCapsuleGet()
+end
+
+---@return unknown
+function SecureCmdItemParse()
+end
+
+---@return result, target
+function SecureCmdOptionParse(options)
+end
+
+---@return unknown
+function SecureCmdUseItem()
+end
+
+---@return unknown
+function SecureHandlerExecute()
 end
 
 ---@return nil
-function SecureButton_GetModifiedUnit()
+function SecureHandlerSetFrameRef(frame, label, refFrame)
 end
 
----@return action, target
-function SecureCmdOptionParse(cmd)
-end
-
----@return nil
-function SelectActiveQuest(index)
+---@return unknown
+function SecureHandlerUnwrapScript()
 end
 
 ---@return nil
-function SelectAvailableQuest(index)
+function SecureHandlerWrapScript(frame, script, header, preBody, postBody)
+end
+
+---@return unknown
+function SelectActiveQuest()
+end
+
+---@return unknown
+function SelectAvailableQuest()
 end
 
 ---@return nil
@@ -10328,11 +7635,7 @@ function SelectGossipAvailableQuest(index)
 end
 
 ---@return nil
-function SelectGossipOption(index , text , confirm)
-end
-
----@return nil
-function SelectPackage()
+function SelectGossipOption(index)
 end
 
 ---@return nil
@@ -10340,27 +7643,19 @@ function SelectQuestLogEntry(questIndex)
 end
 
 ---@return nil
-function SelectStationery(index)
-end
-
----@return nil
-function SelectTradeSkill(index)
-end
-
----@return nil
 function SelectTrainerService(index)
 end
 
----@return nil
+---@return realmName
 function SelectedRealmName()
 end
 
----@return nil
-function SendAddonMessage(prefix, message , type , target)
+---@return unknown
+function SellCursorItem()
 end
 
 ---@return nil
-function SendChatMessage(text , chatType , languageIndex , channel)
+function SendChatMessage(msg ,chatType ,languageID ,target)
 end
 
 ---@return nil
@@ -10368,94 +7663,78 @@ function SendMail(recipient, subject, body)
 end
 
 ---@return nil
-function SendQuestChoiceResponse()
+function SendQuestChoiceResponse(optionID)
 end
 
----@return nil
-function SendSoRByText()
-end
-
----@return nil
+---@return unknown
 function SendSystemMessage()
 end
 
 ---@return nil
-function SendWho(filter)
+function SetAbandonQuest()
+end
+
+---@return unknown
+function SetAchievementComparisonUnit()
+end
+
+---@return searchFinished
+function SetAchievementSearchString(searchText)
 end
 
 ---@return nil
-function SetAbandonQuest(questIndex)
+function SetActionBarToggles(bottomLeftState, bottomRightState, sideRightState, sideRight2State, alwaysShow)
 end
 
----@return nil
-function SetAchievementComparisonPortrait()
-end
-
----@return success
-function SetAchievementComparisonUnit(unit)
-end
-
----@return nil
-function SetActionBarToggles(bar1, bar2, bar3, bar4, alwaysShow)
-end
-
----@return nil
+---@return unknown
 function SetActionUIButton()
 end
 
----@return nil
-function SetActiveSpecGroup()
+---@return unknown
+function SetActiveRaidProfile()
 end
 
----@return nil
-function SetActiveVoiceChannel(index)
-end
-
----@return nil
-function SetActiveVoiceChannelBySessionID(session)
-end
-
----@return nil
+---@return unknown
 function SetAddonVersionCheck()
 end
 
----@return nil
-function SetAllowLowLevelRaid(enable)
+---@return unknown
+function SetAllowDangerousScripts()
+end
+
+---@return unknown
+function SetAllowLowLevelRaid()
 end
 
 ---@return nil
-function SetAuctionsTabShowing()
+function SetAutoDeclineGuildInvites(decline)
 end
 
----@return nil
-function SetAutoDeclineGuildInvites()
-end
-
----@return nil
+---@return unknown
 function SetBackpackAutosortDisabled()
 end
 
----@return nil
-function SetBagPortraitTexture(texture, container)
+---@return unknown
+function SetBagPortraitTexture()
 end
 
----@return nil
+---@return unknown
 function SetBagSlotFlag()
 end
 
----@return nil
+---@return unknown
 function SetBankAutosortDisabled()
 end
 
----@return nil
+---@return unknown
 function SetBankBagSlotFlag()
 end
 
----@return nil
+---@return unknown
 function SetBarSlotFromIntro()
 end
 
----@return nil
+---@return unknown
 function SetBarberShopAlternateFormFrame()
 end
 
@@ -10463,139 +7742,151 @@ end
 function SetBattlefieldScoreFaction(faction)
 end
 
----@return success
-function SetBinding(key , command)
+---@return ok
+function SetBinding(key, command, mode)
 end
 
----@return success
-function SetBindingClick(key, buttonName , mouseButton)
+---@return ok
+function SetBindingClick(key, buttonName, button)
 end
 
----@return success
-function SetBindingItem(key, itemID)
+---@return ok
+function SetBindingItem(key, item)
 end
 
----@return success
-function SetBindingMacro(key, index)
+---@return ok
+function SetBindingMacro(key, macroName_or_macroId)
 end
 
----@return success
-function SetBindingSpell(key, spellname)
+---@return ok
+function SetBindingSpell(key, spell)
 end
 
----@return nil
-function SetBlacklistMap()
+---@return unknown
+function SetButtonPulse()
 end
 
----@return nil
-function SetCVar(cvar, value , raiseEvent)
-end
-
----@return nil
-function SetCVarBitfield()
-end
-
----@return nil
+---@return unknown
 function SetCemeteryPreference()
 end
 
 ---@return nil
-function SetChannelOwner(channel, fullname)
+function SetChannelOwner(channel, newowner)
 end
 
 ---@return nil
-function SetChannelPassword(channel, password)
+function SetChannelPassword(channelName, password)
 end
 
----@return nil
-function SetChatColorNameByClass(chatType, colorByName)
+---@return unknown
+function SetChatColorNameByClass()
 end
 
----@return nil
-function SetChatWindowAlpha(index, alpha)
+---@return unknown
+function SetChatMouseOverDelay()
 end
 
----@return nil
-function SetChatWindowColor(index, r, g, b)
+---@return unknown
+function SetChatUnitColor()
 end
 
----@return nil
-function SetChatWindowDocked(index, docked)
+---@return unknown
+function SetChatWindowAlpha()
 end
 
----@return nil
-function SetChatWindowLocked(index, locked)
+---@return unknown
+function SetChatWindowColor()
 end
 
----@return nil
-function SetChatWindowName(index, name)
+---@return unknown
+function SetChatWindowDocked()
 end
 
----@return nil
+---@return unknown
+function SetChatWindowLocked()
+end
+
+---@return unknown
+function SetChatWindowName()
+end
+
+---@return unknown
 function SetChatWindowSavedDimensions()
 end
 
----@return nil
+---@return unknown
 function SetChatWindowSavedPosition()
 end
 
----@return nil
-function SetChatWindowShown(index, shown)
+---@return unknown
+function SetChatWindowShown()
+end
+
+---@return unknown
+function SetChatWindowSize()
+end
+
+---@return unknown
+function SetChatWindowUninteractable()
+end
+
+---@return unknown
+function SetClampedTextureRotation()
 end
 
 ---@return nil
-function SetChatWindowSize(index, size)
+function SetConsoleKey(key)
 end
 
 ---@return nil
-function SetChatWindowUninteractable(index, setUninteractable)
+function SetCurrencyBackpack(id, backpack)
 end
 
 ---@return nil
-function SetConsoleKey()
+function SetCurrencyUnused(id, unused)
 end
 
----@return nil
-function SetCurrencyBackpack(index, watch)
-end
-
----@return nil
-function SetCurrencyUnused(index, makeUnused)
-end
-
----@return nil
+---@return unknown
 function SetCurrentGraphicsSetting()
 end
 
----@return nil
-function SetCurrentGuildBankTab(tab)
+---@return unknown
+function SetCurrentGuildBankTab()
 end
 
 ---@return nil
-function SetCurrentTitle(titleIndex)
+function SetCurrentTitle(titleId)
 end
 
----@return nil
+---@return changed
 function SetCursor(cursor)
 end
 
----@return nil
+---@return unknown
 function SetDefaultVideoOptions()
 end
 
----@return nil
-function SetDungeonDifficultyID()
+---@return unknown
+function SetDesaturation()
+end
+
+---@return unknown
+function SetDoubleGuildTabardTextures()
+end
+
+---@return unknown
+function SetDressUpBackground()
 end
 
 ---@return nil
-function SetDungeonMapLevel(level)
+function SetDungeonDifficultyID(difficultyIndex)
 end
 
----@return nil
-function SetEuropeanNumbers(enable)
+---@return unknown
+function SetEuropeanNumbers()
 end
 
----@return nil
+---@return unknown
 function SetEveryoneIsAssistant()
 end
 
@@ -10607,67 +7898,51 @@ end
 function SetFactionInactive(index)
 end
 
----@return nil
+---@return unknown
 function SetFocusedAchievement()
 end
 
----@return nil
-function SetFriendNotes(index, note)
-end
-
----@return nil
-function SetGamma(value)
-end
-
----@return nil
-function SetGlyphFilter()
-end
-
----@return nil
-function SetGlyphNameFilter()
-end
-
----@return nil
+---@return unknown
 function SetGuildApplicantSelection()
 end
 
----@return nil
-function SetGuildBankTabInfo(tab, name, iconIndex)
+---@return unknown
+function SetGuildBankTabInfo()
 end
 
----@return nil
+---@return unknown
 function SetGuildBankTabItemWithdraw()
 end
 
 ---@return nil
-function SetGuildBankTabPermissions(tab, permission, enabled)
+function SetGuildBankTabPermissions(tab, index, enabled)
+end
+
+---@return unknown
+function SetGuildBankText()
 end
 
 ---@return nil
-function SetGuildBankText(tab, text)
-end
-
----@return nil
-function SetGuildBankWithdrawGoldLimit()
+function SetGuildBankWithdrawGoldLimit(amount)
 end
 
 ---@return nil
 function SetGuildInfoText(text)
 end
 
----@return nil
-function SetGuildMemberRank(index, rankIndex)
+---@return unknown
+function SetGuildMemberRank()
 end
 
----@return nil
+---@return unknown
 function SetGuildNewsFilter()
 end
 
----@return nil
+---@return unknown
 function SetGuildRecruitmentComment()
 end
 
----@return nil
+---@return unknown
 function SetGuildRecruitmentSettings()
 end
 
@@ -10676,38 +7951,82 @@ function SetGuildRosterSelection(index)
 end
 
 ---@return nil
-function SetGuildRosterShowOffline(showOffline)
+function SetGuildRosterShowOffline(enabled)
 end
 
----@return nil
+---@return unknown
+function SetGuildTabardTextures()
+end
+
+---@return unknown
 function SetGuildTradeSkillCategoryFilter()
 end
 
----@return nil
+---@return unknown
 function SetGuildTradeSkillItemNameFilter()
 end
 
----@return nil
+---@return unknown
+function SetInWorldUIVisibility()
+end
+
+---@return unknown
 function SetInsertItemsLeftToRight()
 end
 
----@return nil
-function SetInventoryPortraitTexture(texture, unit, slot)
+---@return unknown
+function SetInventoryPortraitTexture()
+end
+
+---@return unknown
+function SetItemButtonCount()
+end
+
+---@return unknown
+function SetItemButtonDesaturated()
+end
+
+---@return unknown
+function SetItemButtonNameFrameVertexColor()
+end
+
+---@return unknown
+function SetItemButtonNormalTextureVertexColor()
+end
+
+---@return unknown
+function SetItemButtonSlotVertexColor()
+end
+
+---@return unknown
+function SetItemButtonStock()
+end
+
+---@return unknown
+function SetItemButtonTexture()
 end
 
 ---@return nil
+function SetItemButtonTextureVertexColor(button, r, g, b)
+end
+
+---@return nil
+function SetItemRef(link, text, button)
+end
+
+---@return unknown
 function SetItemSearch()
 end
 
----@return nil
+---@return unknown
 function SetItemUpgradeFromCursorItem()
 end
 
 ---@return nil
-function SetLFGBonusFactionID()
+function SetLFGBonusFactionID(factionID)
 end
 
----@return nil
+---@return unknown
 function SetLFGBootVote()
 end
 
@@ -10715,44 +8034,44 @@ end
 function SetLFGComment(comment)
 end
 
----@return nil
-function SetLFGDungeon(queueIndex)
+---@return unknown
+function SetLFGDungeon()
 end
 
----@return nil
+---@return unknown
 function SetLFGDungeonEnabled()
 end
 
----@return nil
+---@return unknown
 function SetLFGHeaderCollapsed()
 end
 
----@return nil
-function SetLFGRoles(leader, tank, healer, damage)
+---@return unknown
+function SetLFGRoles()
 end
 
----@return nil
-function SetLayoutMode()
+---@return unknown
+function SetLargeGuildTabardTextures()
 end
 
----@return nil
+---@return unknown
 function SetLegacyRaidDifficultyID()
 end
 
----@return nil
+---@return unknown
 function SetLookingForGuildComment()
 end
 
----@return nil
+---@return unknown
 function SetLookingForGuildSettings()
 end
 
 ---@return nil
-function SetLootMethod(method , master)
+function SetLootMethod(method ,masterPlayer_or_threshold)
 end
 
----@return nil
-function SetLootPortrait(texture)
+---@return unknown
+function SetLootPortrait()
 end
 
 ---@return nil
@@ -10763,56 +8082,44 @@ end
 function SetLootThreshold(threshold)
 end
 
----@return nil
-function SetMacroItem(index, item , target)
+---@return unknown
+function SetMacroItem()
 end
 
----@return nil
-function SetMacroSpell(index, spell , target)
+---@return unknown
+function SetMacroSpell()
 end
 
----@return nil
-function SetMapByID(id)
-end
-
----@return nil
-function SetMapToCurrentZone()
-end
-
----@return nil
-function SetMapZoom(continentIndex , zoneIndex)
-end
-
----@return nil
-function SetMaxAnimFramerate()
-end
-
----@return nil
+---@return unknown
 function SetMerchantFilter()
 end
 
 ---@return nil
-function SetModifiedClick(action, binding)
+function SetModifiedClick(action, key)
+end
+
+---@return unknown
+function SetMoneyFrameColor()
+end
+
+---@return unknown
+function SetMouselookOverrideBinding()
 end
 
 ---@return nil
-function SetMouselookOverrideBinding(key, binding)
+function SetMoveEnabled()
 end
 
 ---@return nil
-function SetMultiCastSpell(action, spell)
+function SetMultiCastSpell(actionID, spellID)
 end
 
 ---@return nil
-function SetNamePlateMotionType()
+function SetNextBarberShopStyle(catId, reverse)
 end
 
 ---@return nil
-function SetNextBarberShopStyle(styleIndex , reverse)
-end
-
----@return nil
-function SetOptOutOfLoot(enable)
+function SetOptOutOfLoot(optOut)
 end
 
 ---@return nil
@@ -10820,74 +8127,74 @@ function SetOverrideBinding(owner, isPriority, key, command)
 end
 
 ---@return nil
-function SetOverrideBindingClick(owner, isPriority, key, buttonName , mouseButton)
+function SetOverrideBindingClick(owner, isPriority, key, buttonName, mouseClick)
 end
 
 ---@return nil
-function SetOverrideBindingItem(owner, isPriority, key, itemID)
+function SetOverrideBindingItem(owner, isPriority, key, item)
 end
 
 ---@return nil
-function SetOverrideBindingMacro(owner, isPriority, key, index)
+function SetOverrideBindingMacro(owner, isPriority, key, macro)
 end
 
 ---@return nil
-function SetOverrideBindingSpell(owner, isPriority, key, spellname)
+function SetOverrideBindingSpell(owner, isPriority, key, spell)
 end
 
----@return nil
+---@return unknown
 function SetPOIIconOverlapDistance()
 end
 
----@return nil
+---@return unknown
 function SetPOIIconOverlapPushDistance()
 end
 
----@return nil
-function SetPVP(state)
+---@return unknown
+function SetPVP()
 end
 
 ---@return nil
-function SetPVPRoles()
+function SetPVPRoles(tank, healer, dps)
 end
 
----@return nil
-function SetPartyAssignment(assignment, unit)
+---@return unknown
+function SetPaperDollBackground()
 end
 
----@return nil
-function SetPendingReportPetTarget()
+---@return unknown
+function SetPartyAssignment()
 end
 
----@return nil
-function SetPendingReportTarget(unit)
-end
-
----@return nil
+---@return unknown
 function SetPetSlot()
 end
 
 ---@return nil
-function SetPetStablePaperdoll(model)
+function SetPetStablePaperdoll(modelObject)
 end
 
 ---@return nil
-function SetPortraitTexture(texture, unit)
+function SetPortraitTexture(textureObject, unitToken)
 end
 
 ---@return nil
-function SetPortraitToTexture(frameName, texturePath)
+function SetPortraitTextureFromCreatureDisplayID(textureObject, creatureDisplayID)
 end
 
 ---@return nil
-function SetRaidDifficultyID()
+function SetPortraitToTexture(texture_or_texture, texturePath)
 end
 
 ---@return nil
+function SetRaidDifficultyID(difficultyIndex)
+end
+
+---@return unknown
 function SetRaidProfileOption()
 end
 
----@return nil
+---@return unknown
 function SetRaidProfileSavedPosition()
 end
 
@@ -10896,22 +8203,26 @@ function SetRaidSubgroup(index, subgroup)
 end
 
 ---@return nil
-function SetRaidTarget(unit, index)
+function SetRaidTarget(unit, iconId)
 end
 
 ---@return nil
+function SetRaidTargetIcon(unit, index)
+end
+
+---@return unknown
+function SetRaidTargetIconTexture()
+end
+
+---@return unknown
 function SetRaidTargetProtected()
 end
 
----@return nil
+---@return unknown
 function SetRecruitingGuildSelection()
 end
 
----@return nil
-function SetRefresh()
-end
-
----@return nil
+---@return unknown
 function SetSavedInstanceExtend()
 end
 
@@ -10920,187 +8231,255 @@ function SetScreenResolution(index)
 end
 
 ---@return nil
-function SetSelectedArtifact()
+function SetSelectedArtifact(raceIndex)
 end
 
----@return nil
-function SetSelectedAuctionItem(list, index)
+---@return unknown
+function SetSelectedDisplayChannel()
 end
 
----@return nil
-function SetSelectedDisplayChannel(index)
+---@return unknown
+function SetSelectedFaction()
 end
 
----@return nil
-function SetSelectedFaction(index)
-end
-
----@return nil
-function SetSelectedFriend(index)
-end
-
----@return nil
-function SetSelectedIgnore(index)
-end
-
----@return nil
-function SetSelectedMute(index)
-end
-
----@return nil
+---@return unknown
 function SetSelectedScreenResolutionIndex()
 end
 
----@return nil
+---@return unknown
 function SetSelectedWarGameType()
 end
 
----@return nil
-function SetSendMailCOD(amount)
+---@return unknown
+function SetSelfMuteState()
 end
 
----@return success
-function SetSendMailMoney(amount)
+---@return unknown
+function SetSendMailCOD()
 end
 
----@return nil
-function SetSendMailShowing(enable)
+---@return unknown
+function SetSendMailMoney()
 end
 
----@return nil
+---@return unknown
+function SetSendMailShowing()
+end
+
+---@return unknown
+function SetSmallGuildTabardTextures()
+end
+
+---@return unknown
 function SetSortBagsRightToLeft()
 end
 
 ---@return nil
-function SetSpecialization()
+function SetSpecialization(specIndex , isPet )
 end
 
----@return nil
+---@return unknown
+function SetSpellNameColor()
+end
+
+---@return unknown
 function SetSpellbookPetAction()
 end
 
----@return nil
+---@return unknown
 function SetSuperTrackedQuestID()
 end
 
----@return nil
-function SetTaxiBenchmarkMode(arg)
+---@return unknown
+function SetTableColor()
+end
+
+---@return unknown
+function SetTaxiBenchmarkMode()
 end
 
 ---@return nil
 function SetTaxiMap(texture)
 end
 
----@return nil
-function SetTracking(index, enabled)
+---@return unknown
+function SetTextStatusBarText()
+end
+
+---@return unknown
+function SetTextStatusBarTextPrefix()
+end
+
+---@return unknown
+function SetTextStatusBarTextZeroText()
+end
+
+---@return unknown
+function SetTitleByName()
+end
+
+---@return unknown
+function SetTooltipMoney()
 end
 
 ---@return nil
+function SetTracking(id,enabled)
+end
+
+---@return unknown
 function SetTradeCurrency()
 end
 
 ---@return nil
-function SetTradeMoney(amount)
+function SetTradeMoney(copper)
 end
 
 ---@return nil
-function SetTradeSkillCategoryFilter(index)
+function SetTrainerServiceTypeFilter(type, status , exclusive)
 end
 
 ---@return nil
-function SetTradeSkillInvSlotFilter(index , enable , exclusive)
+function SetTurnEnabled()
 end
 
 ---@return nil
-function SetTradeSkillItemLevelFilter(minLevel, maxLevel)
+function SetUIPanelAttribute(frame, name, value)
+end
+
+---@return unknown
+function SetUIVisibility()
+end
+
+---@return unknown
+function SetUpAnimation()
+end
+
+---@return unknown
+function SetUpSideDressUpFrame()
 end
 
 ---@return nil
-function SetTradeSkillItemNameFilter(text)
-end
-
----@return nil
-function SetTradeSkillRepeatCount()
-end
-
----@return nil
-function SetTrainerServiceTypeFilter(type , enable , exclusive)
-end
-
----@return nil
-function SetUIVisibility(visible)
-end
-
----@return nil
-function SetView(index)
+function SetView(viewIndex)
 end
 
 ---@return nil
 function SetWatchedFactionIndex(index)
 end
 
----@return nil
-function SetWhoToUI(state)
+---@return unknown
+function SetZoneText()
 end
 
----@return nil
-function SetupFullscreenScale(frame)
+---@return unknown
+function SetupFullscreenScale()
 end
 
----@return nil
-function ShouldHideTalentsTab()
+---@return unknown
+function ShouldShowConsolidatedBuffFrame()
+end
+
+---@return show
+function ShouldShowIslandsWeeklyPOI()
+end
+
+---@return show
+function ShouldShowSpecialSplashScreen()
 end
 
 ---@return nil
 function ShowAccountAchievements(show)
 end
 
----@return nil
-function ShowBuybackSellCursor(index)
+---@return unknown
+function ShowBossFrameWhenUninteractable()
+end
+
+---@return unknown
+function ShowBuybackSellCursor()
+end
+
+---@return unknown
+function ShowContainerSellCursor()
+end
+
+---@return unknown
+function ShowFriendshipReputationTooltip()
 end
 
 ---@return nil
-function ShowCloak(show)
+function ShowInspectCursor()
+end
+
+---@return unknown
+function ShowInventorySellCursor()
+end
+
+---@return unknown
+function ShowKnowledgeBase()
+end
+
+---@return unknown
+function ShowMacroFrame()
+end
+
+---@return unknown
+function ShowMultiCastActionBar()
+end
+
+---@return unknown
+function ShowNumericThreat()
+end
+
+---@return unknown
+function ShowPartyFrame()
+end
+
+---@return unknown
+function ShowPetActionBar()
 end
 
 ---@return nil
-function ShowContainerSellCursor(container, slot)
+function ShowQuestComplete(questLogIndex)
 end
 
----@return nil
-function ShowFriends()
-end
-
----@return nil
-function ShowHelm(show)
-end
-
----@return nil
-function ShowInventorySellCursor(slot)
-end
-
----@return nil
-function ShowMerchantSellCursor(index)
-end
-
----@return nil
-function ShowQuestComplete()
-end
-
----@return nil
+---@return unknown
 function ShowQuestOffer()
+end
+
+---@return unknown
+function ShowQuickButton()
+end
+
+---@return unknown
+function ShowReadyCheck()
 end
 
 ---@return nil
 function ShowRepairCursor()
 end
 
----@return isShown
-function ShowingCloak()
+---@return unknown
+function ShowResurrectRequest()
 end
 
----@return isShown
-function ShowingHelm()
+---@return unknown
+function ShowStatInCategory()
+end
+
+---@return unknown
+function ShowTextStatusBarText()
+end
+
+---@return nil
+function ShowUIPanel(frame, force)
+end
+
+---@return unknown
+function ShowWatchedReputationBarText()
+end
+
+---@return unknown
+function ShowWhoPanel()
 end
 
 ---@return nil
@@ -11111,147 +8490,159 @@ end
 function SitStandOrDescendStart()
 end
 
----@return nil
-function SocketContainerItem(container, slot)
+---@return unknown
+function SmartHide()
 end
 
----@return nil
-function SocketInventoryItem(slot)
+---@return unknown
+function SmartShow()
 end
 
----@return nil
+---@return unknown
+function SocketContainerItem()
+end
+
+---@return unknown
+function SocketInventoryItem()
+end
+
+---@return keystoneAdded
 function SocketItemToArtifact()
 end
 
----@return nil
+---@return unknown
 function SolveArtifact()
 end
 
----@return nil
-function SortAuctionApplySort(list)
-end
-
----@return nil
-function SortAuctionClearSort(list)
-end
-
----@return nil
-function SortAuctionItems(type, sort)
-end
-
----@return nil
-function SortAuctionSetSort(list, sort, reversed)
-end
-
----@return nil
+---@return unknown
 function SortBGList()
 end
 
----@return nil
+---@return unknown
 function SortBags()
 end
 
----@return nil
+---@return unknown
 function SortBankBags()
 end
 
----@return nil
-function SortBattlefieldScoreData(sortType)
+---@return unknown
+function SortBattlefieldScoreData()
 end
 
 ---@return nil
-function SortGuildRoster(type)
+function SortGuildRoster( level )
 end
 
----@return nil
+---@return unknown
 function SortGuildTradeSkill()
+end
+
+---@return unknown
+function SortQuestSortTypes()
 end
 
 ---@return changed
 function SortQuestWatches()
 end
 
----@return nil
+---@return unknown
+function SortQuests()
+end
+
+---@return unknown
 function SortReagentBankBags()
 end
 
----@return nil
-function SortWho(sortType)
+---@return unknown
+function Sound_ChatSystem_GetInputDriverNameByIndex()
 end
 
----@return nil
-function Sound_ChatSystem_GetInputDriverNameByIndex(index)
-end
-
----@return nil
+---@return unknown
 function Sound_ChatSystem_GetNumInputDrivers()
 end
 
----@return nil
+---@return unknown
 function Sound_ChatSystem_GetNumOutputDrivers()
 end
 
----@return nil
-function Sound_ChatSystem_GetOutputDriverNameByIndex(index)
+---@return unknown
+function Sound_ChatSystem_GetOutputDriverNameByIndex()
 end
 
----@return nil
-function Sound_GameSystem_GetInputDriverNameByIndex(index)
+---@return unknown
+function Sound_GameSystem_GetInputDriverNameByIndex()
 end
 
----@return nil
+---@return unknown
 function Sound_GameSystem_GetNumInputDrivers()
 end
 
----@return nil
+---@return unknown
 function Sound_GameSystem_GetNumOutputDrivers()
 end
 
----@return nil
-function Sound_GameSystem_GetOutputDriverNameByIndex(index)
+---@return unknown
+function Sound_GameSystem_GetOutputDriverNameByIndex()
 end
 
----@return nil
+---@return unknown
 function Sound_GameSystem_RestartSoundSystem()
 end
 
----@return canTarget
-function SpellCanTargetGlyph()
+---@return unknown
+function SpellCanTargetGarrisonFollower()
 end
 
----@return canTarget
+---@return unknown
+function SpellCanTargetGarrisonFollowerAbility()
+end
+
+---@return unknown
+function SpellCanTargetGarrisonMission()
+end
+
+---@return unknown
 function SpellCanTargetItem()
 end
 
----@return canTarget
-function SpellCanTargetUnit(unit)
+---@return unknown
+function SpellCanTargetItemID()
 end
 
----@return nil
+---@return unknown
+function SpellCanTargetQuest()
+end
+
+---@return canTarget
+function SpellCanTargetUnit(unitId)
+end
+
+---@return unknown
 function SpellCancelQueuedSpell()
 end
 
----@return nil
-function SpellGetVisibilityInfo()
+---@return hasCustom, alwaysShowMine, showForMySpec
+function SpellGetVisibilityInfo(spellId, visType)
 end
 
----@return hasRange
-function SpellHasRange(index, bookType)
+---@return unknown
+function SpellHasRange()
 end
 
----@return nil
+---@return unknown
 function SpellIsAlwaysShown()
 end
 
----@return state
-function SpellIsSelfBuff(spellID)
+---@return unknown
+function SpellIsSelfBuff()
 end
 
 ---@return isTargeting
 function SpellIsTargeting()
 end
 
----@return nil
+---@return stopped
 function SpellStopCasting()
 end
 
@@ -11259,55 +8650,63 @@ end
 function SpellStopTargeting()
 end
 
----@return nil
-function SpellTargetItem(itemID)
+---@return unknown
+function SpellTargetItem()
 end
 
 ---@return nil
-function SpellTargetUnit(unit)
+function SpellTargetUnit(unitId)
+end
+
+---@return unknown
+function SplashFrameCanBeShown()
 end
 
 ---@return nil
-function SplitContainerItem(container, slot, amount)
+function SplitContainerItem(bagID, slot, count)
+end
+
+---@return unknown
+function SplitGuildBankItem()
+end
+
+---@return unknown
+function StartAttack()
+end
+
+---@return unknown
+function StartAutoRun()
 end
 
 ---@return nil
-function SplitGuildBankItem(tab, slot, amount)
+function StartDuel(playerName)
 end
 
----@return nil
-function StartAttack(unit)
-end
-
----@return nil
-function StartAuction(minBid, buyoutPrice, runTime, stackSize, numStacks)
-end
-
----@return nil
-function StartDuel(unit)
-end
-
----@return nil
+---@return unknown
 function StartSpectatorWarGame()
 end
 
----@return nil
+---@return unknown
 function StartWarGame()
 end
 
----@return nil
+---@return unknown
 function StartWarGameByName()
 end
 
----@return nil
+---@return unknown
 function StopAttack()
 end
 
----@return nil
+---@return unknown
+function StopAutoRun()
+end
+
+---@return unknown
 function StopCinematic()
 end
 
----@return nil
+---@return unknown
 function StopMacro()
 end
 
@@ -11316,114 +8715,110 @@ function StopMusic()
 end
 
 ---@return nil
-function StopSound(soundHandle)
+function StopSound(soundHandle , fadeoutTime)
+end
+
+---@return unknown
+function StoreSecureReference()
 end
 
 ---@return nil
-function StopTradeSkillRepeat()
+function StrafeLeftStart(startTime)
 end
 
 ---@return nil
-function Stopwatch_Clear()
+function StrafeLeftStop(startTime)
 end
 
 ---@return nil
-function Stopwatch_FinishCountdown()
-end
-
----@return isPlaying
-function Stopwatch_IsPlaying()
+function StrafeRightStart(startTime)
 end
 
 ---@return nil
-function Stopwatch_Pause()
-end
-
----@return nil
-function Stopwatch_Play()
-end
-
----@return nil
-function Stopwatch_StartCountdown(hours, minutes, seconds)
-end
-
----@return nil
-function Stopwatch_Toggle()
-end
-
----@return nil
-function StrafeLeftStart()
-end
-
----@return nil
-function StrafeLeftStop()
-end
-
----@return nil
-function StrafeRightStart()
-end
-
----@return nil
-function StrafeRightStop()
+function StrafeRightStop(startTime)
 end
 
 ---@return nil
 function Stuck()
 end
 
----@return nil
+---@return unknown
 function SubmitRequiredGuildRename()
 end
 
+---@return unknown
+function SubstituteChatMessageBeforeSend()
+end
+
 ---@return nil
-function SummonFriend(name)
+function SummonFriend(unit)
 end
 
 ---@return nil
 function SummonRandomCritter()
 end
 
+---@return unknown
+function SurrenderArena()
+end
+
 ---@return nil
 function SwapRaidSubgroup(index1, index2)
 end
 
----@return nil
+---@return unknown
+function SwitchAchievementSearchTab()
+end
+
+---@return unknown
+function SynchronizeBNetStatus()
+end
+
+---@return unknown
 function TEXT()
 end
 
 ---@return nil
-function TakeInboxItem(mailID, attachmentIndex)
+function TakeInboxItem(index, itemIndex)
 end
 
 ---@return nil
-function TakeInboxMoney(mailID)
+function TakeInboxMoney(index)
+end
+
+---@return unknown
+function TakeInboxTextItem()
 end
 
 ---@return nil
-function TakeInboxTextItem(mailID)
+function TakeScreenshot()
 end
 
 ---@return nil
 function TakeTaxiNode(index)
 end
 
----@return nil
+---@return unknown
 function TargetDirectionEnemy()
 end
 
----@return nil
+---@return unknown
 function TargetDirectionFinished()
 end
 
----@return nil
+---@return unknown
 function TargetDirectionFriend()
+end
+
+---@return unknown
+function TargetHealthCheck()
 end
 
 ---@return nil
 function TargetLastEnemy()
 end
 
----@return nil
+---@return unknown
 function TargetLastFriend()
 end
 
@@ -11431,64 +8826,80 @@ end
 function TargetLastTarget()
 end
 
----@return nil
-function TargetNearest(backward)
+---@return unknown
+function TargetNearest()
 end
 
 ---@return nil
-function TargetNearestEnemy(backward)
+function TargetNearestEnemy(reverse)
+end
+
+---@return unknown
+function TargetNearestEnemyPlayer()
 end
 
 ---@return nil
-function TargetNearestEnemyPlayer(backward)
+function TargetNearestFriend( reverse )
+end
+
+---@return unknown
+function TargetNearestFriendPlayer()
+end
+
+---@return unknown
+function TargetNearestPartyMember()
+end
+
+---@return unknown
+function TargetNearestRaidMember()
+end
+
+---@return unknown
+function TargetPriorityHighlightEnd()
+end
+
+---@return unknown
+function TargetPriorityHighlightStart()
+end
+
+---@return unknown
+function TargetTotem()
 end
 
 ---@return nil
-function TargetNearestFriend(backward)
+function TargetUnit(unit_or_name , exactMatch)
 end
 
----@return nil
-function TargetNearestFriendPlayer(backward)
+---@return unknown
+function TargetofTargetHealthCheck()
 end
 
----@return nil
-function TargetNearestPartyMember(backward)
+---@return  dX
+function TaxiGetDestX(destinationIndex, routeIndex)
 end
 
----@return nil
-function TargetNearestRaidMember(backward)
+---@return unknown
+function TaxiGetDestY()
 end
 
----@return nil
-function TargetTotem(slot)
+---@return unknown
+function TaxiGetNodeSlot()
 end
 
----@return nil
-function TargetUnit(unit)
+---@return  sX
+function TaxiGetSrcX(destinationIndex, routeIndex)
 end
 
----@return dX
-function TaxiGetDestX(source, dest)
+---@return  sY
+function TaxiGetSrcY(destinationIndex, routeIndex)
 end
 
----@return dY
-function TaxiGetDestY(source, dest)
+---@return unknown
+function TaxiIsDirectFlight()
 end
 
----@return index
-function TaxiGetNodeSlot(index, hop, query_start)
-end
-
----@return sX
-function TaxiGetSrcX(source, dest)
-end
-
----@return sY
-function TaxiGetSrcY(source, dest)
-end
-
----@return cost
-function TaxiNodeCost(index)
+---@return   cost
+function TaxiNodeCost(slot)
 end
 
 ---@return type
@@ -11499,23 +8910,35 @@ end
 function TaxiNodeName(index)
 end
 
----@return x, y
+---@return unknown
+function TaxiNodeOnButtonEnter()
+end
+
+---@return x,y
 function TaxiNodePosition(index)
 end
 
----@return nil
-function TaxiNodeSetCurrent(slot)
+---@return unknown
+function TaxiRequestEarlyLanding()
 end
 
----@return nil
-function TeleportToDebugObject()
+---@return unknown
+function TextEmoteSort()
 end
 
 ---@return nil
 function TimeoutResurrect()
 end
 
----@return nil
+---@return unknown
+function ToggleAchievementFrame()
+end
+
+---@return unknown
+function ToggleAllBags()
+end
+
+---@return unknown
 function ToggleAnimKitDisplay()
 end
 
@@ -11524,15 +8947,127 @@ function ToggleAutoRun()
 end
 
 ---@return nil
-function ToggleCollision()
+function ToggleBackpack()
 end
 
 ---@return nil
-function ToggleCollisionDisplay()
+function ToggleBag(bagNum)
+end
+
+---@return unknown
+function ToggleBattlefieldMinimap()
+end
+
+---@return unknown
+function ToggleCalendar()
 end
 
 ---@return nil
-function ToggleGlyphFilter()
+function ToggleCharacter(frameName)
+end
+
+---@return unknown
+function ToggleChatChannel()
+end
+
+---@return unknown
+function ToggleChatColorNamesByClassGroup()
+end
+
+---@return unknown
+function ToggleChatMessageGroup()
+end
+
+---@return unknown
+function ToggleDebugAIDisplay()
+end
+
+---@return nil
+function ToggleDropDownMenu(level, value, dropDownFrame, anchorName, xOffset, yOffset, menuList, button, autoHideDelay)
+end
+
+---@return unknown
+function ToggleEncounterJournal()
+end
+
+---@return unknown
+function ToggleFrame()
+end
+
+---@return nil
+function ToggleFramerate()
+end
+
+---@return nil
+function ToggleFriendsFrame(tabIndex)
+end
+
+---@return unknown
+function ToggleFriendsPanel()
+end
+
+---@return nil
+function ToggleGameMenu()
+end
+
+---@return unknown
+function ToggleGlyphFrame()
+end
+
+---@return unknown
+function ToggleGuildFinder()
+end
+
+---@return unknown
+function ToggleGuildFrame()
+end
+
+---@return unknown
+function ToggleHelpFrame()
+end
+
+---@return unknown
+function ToggleIgnorePanel()
+end
+
+---@return unknown
+function ToggleKeyRing()
+end
+
+---@return unknown
+function ToggleLFDParentFrame()
+end
+
+---@return unknown
+function ToggleLootHistoryFrame()
+end
+
+---@return unknown
+function ToggleMapFramerate()
+end
+
+---@return unknown
+function ToggleMessageDest()
+end
+
+---@return unknown
+function ToggleMessageSource()
+end
+
+---@return unknown
+function ToggleMessageType()
+end
+
+---@return unknown
+function ToggleMessageTypeGroup()
+end
+
+---@return unknown
+function ToggleMiniMapRotation()
+end
+
+---@return nil
+function ToggleMinimap()
 end
 
 ---@return nil
@@ -11540,63 +9075,83 @@ function TogglePVP()
 end
 
 ---@return nil
-function TogglePerformancePause()
+function TogglePVPUI()
+end
+
+---@return unknown
+function TogglePetAutocast()
+end
+
+---@return unknown
+function TogglePetJournal()
+end
+
+---@return unknown
+function ToggleRaidBrowser()
+end
+
+---@return unknown
+function ToggleRaidFrame()
 end
 
 ---@return nil
-function TogglePerformanceValues()
+function ToggleRun(theTime)
 end
 
----@return nil
-function TogglePetAutocast(index)
-end
-
----@return nil
-function TogglePlayerBounds()
-end
-
----@return nil
-function TogglePortals()
-end
-
----@return nil
-function ToggleRun()
+---@return unknown
+function ToggleSelfHighlight()
 end
 
 ---@return nil
 function ToggleSheath()
 end
 
----@return nil
-function ToggleSpellAutocast(index, bookType)
+---@return unknown
+function ToggleSpellAutocast()
 end
 
 ---@return nil
-function ToggleTris()
+function ToggleSpellBook(bookType)
+end
+
+---@return unknown
+function ToggleStats()
+end
+
+---@return unknown
+function ToggleStoreUI()
 end
 
 ---@return nil
-function TradeSkillOnlyShowMakeable(filter)
+function ToggleTalentFrame()
 end
 
----@return nil
-function TradeSkillOnlyShowSkillUps(filter)
+---@return unknown
+function ToggleTimeManager()
 end
 
----@return nil
+---@return unknown
+function ToggleWindowed()
+end
+
+---@return unknown
+function ToggleWorldStateScoreFrame()
+end
+
+---@return unknown
 function TriggerTutorial()
 end
 
----@return nil
+---@return unknown
 function TurnInGuildCharter()
 end
 
 ---@return nil
-function TurnLeftStart()
+function TurnLeftStart(startTime)
 end
 
 ---@return nil
-function TurnLeftStop()
+function TurnLeftStop(stopTime)
 end
 
 ---@return nil
@@ -11608,102 +9163,134 @@ function TurnOrActionStop()
 end
 
 ---@return nil
-function TurnRightStart()
+function TurnRightStart(startTime)
 end
 
 ---@return nil
-function TurnRightStop()
+function TurnRightStop(startTime)
+end
+
+---@return unknown
+function UIDoFramesIntersect()
+end
+
+---@return unknown
+function UIFrameFade()
 end
 
 ---@return nil
-function UninviteUnit(name, reason)
+function UIFrameFadeIn(frame, timeToFade, startAlpha, endAlpha)
 end
 
----@return inCombat
+---@return unknown
+function UIFrameFadeOut()
+end
+
+---@return unknown
+function UIFrameFadeRemoveFrame()
+end
+
+---@return nil
+function UIFrameFlash(frame, fadeInTime, fadeOutTime, flashDuration, showWhenDone, flashInHoldTime, flashOutHoldTime)
+end
+
+---@return unknown
+function UIFrameFlashStop()
+end
+
+---@return unknown
+function UIFrameIsFading()
+end
+
+---@return unknown
+function UIFrameIsFlashing()
+end
+
+---@return loaded
+function UIParentLoadAddOn( index_or_addonName )
+end
+
+---@return nil
+function UninviteUnit(name , reason)
+end
+
+---@return affectingCombat
 function UnitAffectingCombat(unit)
 end
 
----@return nil
-function UnitAlternatePowerCounterInfo()
-end
-
----@return barType, minPower, startInset, endInset, smooth, hideFromOthers, showOnRaid, opaqueSpark, opaqueFlash, powerName, powerTooltip, costString, barID
-function UnitAlternatePowerInfo(unit)
-end
-
----@return texture, r, g, b, a
-function UnitAlternatePowerTextureInfo(unit, textureIndex)
+---@return isAlliedRace, hasHeritageArmorUnlocked
+function UnitAlliedRaceInfo(unit)
 end
 
 ---@return base, effectiveArmor, armor, posBuff, negBuff
 function UnitArmor(unit)
 end
 
----@return mainHandAttackBase, mainHandAttackMod, offHandHandAttackBase, offHandAttackMod
-function UnitAttackBothHands(unit)
-end
-
 ---@return base, posBuff, negBuff
 function UnitAttackPower(unit)
 end
 
----@return speed, offhandSpeed
+---@return mainSpeed, offSpeed
 function UnitAttackSpeed(unit)
 end
 
----@return name, rank, icon, count, dispelType, duration, expires, caster, isStealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, _, nameplateShowAll, timeMod, value1, value2, value3
-function UnitAura(unit, index , filter)
+---@return nil
+function UnitAura(unit, index, filter)
 end
 
----@return nil
+---@return nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll, timeMod, ...
+function UnitAuraBySlot(unit, slot)
+end
+
+---@return continuationToken, ...
+function UnitAuraSlots(unit , filter, maxSlots, continuationToken)
+end
+
+---@return unknown
 function UnitBattlePetLevel()
 end
 
----@return nil
-function UnitBattlePetSpeciesID()
+---@return speciesID
+function UnitBattlePetSpeciesID(unit)
 end
 
----@return nil
+---@return unknown
 function UnitBattlePetType()
 end
 
 ---@return nil
-function UnitBonusArmor()
-end
-
----@return name, rank, icon, count, dispelType, duration, expires, caster, isStealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, _, nameplateShowAll, timeMod, value1, value2, value3
-function UnitBuff(unit, index , filter)
+function UnitBuff(unit, index, filter)
 end
 
 ---@return canAssist
-function UnitCanAssist(unit, unit)
+function UnitCanAssist(unitToAssist, unitToBeAssisted)
 end
 
 ---@return canAttack
-function UnitCanAttack(unit, unit)
-end
-
----@return canCooperate
-function UnitCanCooperate(unit, unit)
+function UnitCanAttack(attacker, attacked)
 end
 
 ---@return nil
+function UnitCanCooperate(unit1, unit2)
+end
+
+---@return unknown
 function UnitCanPetBattle()
 end
 
----@return name, subText, text, texture, startTime, endTime, isTradeSkill, castID, notInterruptible
+---@return name, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible, spellId
 function UnitCastingInfo(unit)
 end
 
----@return name, subText, text, texture, startTime, endTime, isTradeSkill, notInterruptible
+---@return name, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible, spellId
 function UnitChannelInfo(unit)
 end
 
----@return class, classFileName, classIndex
+---@return className, classFilename, classID
 function UnitClass(unit)
 end
 
----@return class, classFileName
+---@return classFilename, classID
 function UnitClassBase(unit)
 end
 
@@ -11711,115 +9298,135 @@ end
 function UnitClassification(unit)
 end
 
----@return isControlling
-function UnitControllingVehicle(unit)
+---@return unknown
+function UnitControllingVehicle()
 end
 
----@return family
+---@return creatureFamily
 function UnitCreatureFamily(unit)
 end
 
----@return type
+---@return creatureType
 function UnitCreatureType(unit)
 end
 
----@return minDamage, maxDamage, minOffHandDamage, maxOffHandDamage, physicalBonusPos, physicalBonusNeg, percent
+---@return lowDmg, hiDmg, offlowDmg, offhiDmg, posBuff, negBuff, percentmod
 function UnitDamage(unit)
 end
 
----@return name, rank, icon, count, dispelType, duration, expires, caster, isStealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, _, nameplateShowAll, timeMod, value1, value2, value3
-function UnitDebuff(unit, index , filter)
+---@return unknown
+function UnitDebuff()
 end
 
----@return base, modifier
-function UnitDefense(unit)
-end
-
----@return isTanking, status, scaledPercent, rawPercent, threatValue
-function UnitDetailedThreatSituation(unit, mobUnit)
+---@return isTanking, status, threatpct, rawthreatpct, threatvalue
+function UnitDetailedThreatSituation(unit, mob)
 end
 
 ---@return distanceSquared, checkedDistance
 function UnitDistanceSquared(unit)
 end
 
+---@return unknown
+function UnitEffectiveLevel()
+end
+
 ---@return exists
 function UnitExists(unit)
 end
 
----@return factionGroup, factionName
+---@return englishFaction, izedFaction
 function UnitFactionGroup(unit)
 end
 
----@return nil
-function UnitFullName()
+---@return fullName, realm
+function UnitFullName(unit)
 end
 
 ---@return guid
 function UnitGUID(unit)
 end
 
----@return canBeTank, canBeHealer, canBeDPS
-function UnitGetAvailableRoles(unit)
+---@return unknown
+function UnitGetAvailableRoles()
 end
 
----@return nil
-function UnitGetIncomingHeals()
+---@return  heal
+function UnitGetIncomingHeals(unit, healer)
 end
 
----@return nil
-function UnitGetTotalAbsorbs()
+---@return totalAbsorbs
+function UnitGetTotalAbsorbs(unit)
 end
 
----@return nil
-function UnitGetTotalHealAbsorbs()
+---@return totalHealAbsorbs
+function UnitGetTotalHealAbsorbs(unit)
 end
 
----@return role
-function UnitGroupRolesAssigned(unit)
+---@return  role
+function UnitGroupRolesAssigned(Unit)
 end
 
----@return nil
+---@return unknown
 function UnitHPPerStamina()
 end
 
----@return isBeingRessed
-function UnitHasIncomingResurrection(unit)
+---@return isBeingResurrected
+function UnitHasIncomingResurrection(unitID_or_UnitName)
 end
 
----@return nil
-function UnitHasLFGDeserter()
+---@return isDeserter
+function UnitHasLFGDeserter(unit)
 end
 
----@return nil
-function UnitHasLFGRandomCooldown()
+---@return hasRandomCooldown
+function UnitHasLFGRandomCooldown(unit)
 end
 
----@return hasRelic
-function UnitHasRelicSlot(unit)
+---@return unknown
+function UnitHasMana()
 end
 
----@return nil
+---@return unknown
+function UnitHasRelicSlot()
+end
+
+---@return unknown
 function UnitHasVehiclePlayerFrameUI()
 end
 
----@return hasVehicle
-function UnitHasVehicleUI(unit)
+---@return unknown
+function UnitHasVehicleUI()
 end
 
----@return health
+---@return  health
 function UnitHealth(unit)
 end
 
----@return maxValue
+---@return  max_health
 function UnitHealthMax(unit)
 end
 
----@return raidNum
+---@return currentHonor
+function UnitHonor(unitID_or_unitName)
+end
+
+---@return honorLevel
+function UnitHonorLevel(unitID_or_PlayerName)
+end
+
+---@return maxHonor
+function UnitHonorMax(unitID_or_playerName)
+end
+
+---@return unknown
+function UnitInAnyGroup()
+end
+
+---@return position
 function UnitInBattleground(unit)
 end
 
----@return nil
+---@return unknown
 function UnitInOtherParty()
 end
 
@@ -11827,27 +9434,31 @@ end
 function UnitInParty(unit)
 end
 
----@return inPhase
-function UnitInPhase(unitID)
+---@return unknown
+function UnitInPhase()
 end
 
----@return inRaid
+---@return index
 function UnitInRaid(unit)
 end
 
----@return inRange
+---@return  inRange, checkedRange
 function UnitInRange(unit)
 end
 
----@return inVehicle
-function UnitInVehicle(unit)
+---@return unknown
+function UnitInSubgroup()
 end
 
----@return isInControl
+---@return inVehicle
+function UnitInVehicle(target)
+end
+
+---@return unknown
 function UnitInVehicleControlSeat()
 end
 
----@return nil
+---@return unknown
 function UnitInVehicleHidesPetFrame()
 end
 
@@ -11855,28 +9466,28 @@ end
 function UnitIsAFK(unit)
 end
 
----@return nil
-function UnitIsBattlePet()
+---@return isBattlePet
+function UnitIsBattlePet(unit)
 end
 
----@return nil
+---@return unknown
 function UnitIsBattlePetCompanion()
 end
 
----@return isCharmed
+---@return isTrue
 function UnitIsCharmed(unit)
 end
 
----@return isConnected
+---@return isOnline
 function UnitIsConnected(unit)
 end
 
----@return isControlling
-function UnitIsControlling(unit)
+---@return unknown
+function UnitIsControlling()
 end
 
----@return isCorpse
-function UnitIsCorpse(unit)
+---@return unknown
+function UnitIsCorpse()
 end
 
 ---@return isDND
@@ -11891,135 +9502,131 @@ end
 function UnitIsDeadOrGhost(unit)
 end
 
----@return isEnemy
-function UnitIsEnemy(unit, unit)
+---@return unknown
+function UnitIsEnemy()
 end
 
 ---@return isFeign
 function UnitIsFeignDeath(unit)
 end
 
----@return isFriends
-function UnitIsFriend(unit, unit)
+---@return isFriend
+function UnitIsFriend(unit,otherunit)
 end
 
 ---@return isGhost
 function UnitIsGhost(unit)
 end
 
----@return nil
-function UnitIsGroupAssistant()
+---@return isAssistant
+function UnitIsGroupAssistant(unit)
 end
 
----@return leader
-function UnitIsGroupLeader(unit)
+---@return isLeader
+function UnitIsGroupLeader(unit_or_PlayerName)
 end
 
----@return inGuild
-function UnitIsInMyGuild(unit)
+---@return unknown
+function UnitIsInMyGuild()
 end
 
----@return nil
+---@return unknown
+function UnitIsMercenary()
+end
+
+---@return unknown
 function UnitIsOtherPlayersBattlePet()
 end
 
----@return isPet
-function UnitIsOtherPlayersPet(unit)
+---@return unknown
+function UnitIsOtherPlayersPet()
 end
 
----@return isPVP
+---@return unitIsOwnerOrControllerOfUnit
+function UnitIsOwnerOrControllerOfUnit(controllingUnit, controlledUnit)
+end
+
+---@return  ispvp
 function UnitIsPVP(unit)
 end
 
 ---@return isFreeForAll
-function UnitIsPVPFreeForAll(unit)
+function UnitIsPVPFreeForAll(unitId)
 end
 
----@return state
-function UnitIsPVPSanctuary(unit)
+---@return unknown
+function UnitIsPVPSanctuary()
 end
 
----@return isPlayer
+---@return isTrue
 function UnitIsPlayer(unit)
 end
 
----@return isPossessed
+---@return isTrue
 function UnitIsPossessed(unit)
 end
 
----@return nil
+---@return unknown
 function UnitIsQuestBoss()
 end
 
----@return leader
-function UnitIsRaidOfficer(unit)
+---@return unknown
+function UnitIsRaidOfficer()
 end
 
----@return isSame
-function UnitIsSameServer(unit, unit)
+---@return sameServer
+function UnitIsSameServer(unit)
 end
 
----@return silenced
-function UnitIsSilenced(name, channel)
+---@return unknown
+function UnitIsTapDenied()
 end
 
----@return state
-function UnitIsTalking(unit)
-end
-
----@return nil
-function UnitIsTapped(unit)
-end
-
----@return allTapped
-function UnitIsTappedByAllThreatList(unit)
-end
-
----@return isTapped
-function UnitIsTappedByPlayer(unit)
-end
-
----@return isTrivial
+---@return  isTrivial
 function UnitIsTrivial(unit)
 end
 
----@return nil
+---@return unknown
 function UnitIsUnconscious()
 end
 
 ---@return isSame
-function UnitIsUnit(unit, unit)
+function UnitIsUnit(unit1, unit2)
 end
 
----@return isVisible
-function UnitIsVisible(unit)
+---@return unknown
+function UnitIsVisible()
 end
 
----@return nil
+---@return warModeActive
+function UnitIsWarModeActive(unit)
+end
+
+---@return warModeDesired
+function UnitIsWarModeDesired(unit)
+end
+
+---@return warModePhased
+function UnitIsWarModePhased(unit)
+end
+
+---@return unknown
 function UnitIsWildBattlePet()
 end
 
----@return uLead
-function UnitLeadsAnyGroup(unit)
+---@return unknown
+function UnitLeadsAnyGroup()
 end
 
 ---@return level
 function UnitLevel(unit)
 end
 
----@return mana
-function UnitMana(unit)
-end
-
----@return maxValue
-function UnitManaMax(unit)
-end
-
 ---@return name, realm
 function UnitName(unit)
 end
 
----@return nil
+---@return unknown
 function UnitNumPowerBarTimers()
 end
 
@@ -12027,136 +9634,180 @@ end
 function UnitOnTaxi(unit)
 end
 
----@return name
+---@return titleName
 function UnitPVPName(unit)
 end
 
----@return isPlayer
+---@return UnitIsPlayerControlled
 function UnitPlayerControlled(unit)
 end
 
----@return inParty
+---@return inMyParty
 function UnitPlayerOrPetInParty(unit)
 end
 
----@return inParty
+---@return isTrue
 function UnitPlayerOrPetInRaid(unit)
 end
 
----@return nil
-function UnitPosition()
+---@return posY, posX, posZ, instanceID
+function UnitPosition(unit)
 end
 
 ---@return power
-function UnitPower(unitID , powerType)
+function UnitPower(UnitId, powerType, unmodified)
 end
 
----@return nil
+---@return barID
+function UnitPowerBarID(unitToken)
+end
+
+---@return unknown
 function UnitPowerBarTimerInfo()
 end
 
----@return maxValue
-function UnitPowerMax(unitID , powerType)
+---@return displayMod
+function UnitPowerDisplayMod(powerType)
+end
+
+---@return maxpower
+function UnitPowerMax(UnitId, powerType, unmodified)
 end
 
 ---@return powerType, powerToken, altR, altG, altB
-function UnitPowerType(unit)
+function UnitPowerType(unit,index)
 end
 
----@return race, fileName
+---@return classification
+function UnitPvpClassification(unit)
+end
+
+---@return raceName, raceFile, raceID
 function UnitRace(unit)
-end
-
----@return rangedAttackBase, rangedAttackMod
-function UnitRangedAttack(unit)
 end
 
 ---@return base, posBuff, negBuff
 function UnitRangedAttackPower(unit)
 end
 
----@return rangedAttackSpeed, minDamage, maxDamage, physicalBonusPos, physicalBonusNeg, percent
-function UnitRangedDamage(unit)
+---@return speed, lowDmg, hiDmg, posBuff, negBuff, percent
+function UnitRangedDamage(player)
 end
 
 ---@return reaction
-function UnitReaction(unit, unit)
+function UnitReaction(unit, otherUnit)
+end
+
+---@return realmRelationship
+function UnitRealmRelationship(unit)
+end
+
+---@return red, green ,blue, alpha
+function UnitSelectionColor(UnitId, useExtendedColors)
+end
+
+---@return type
+function UnitSelectionType(UnitId, useExtendedColors)
 end
 
 ---@return nil
-function UnitRealmRelationship()
-end
-
----@return base, resistance, positive, negative
-function UnitResistance(unit, resistanceIndex)
-end
-
----@return red, green, blue, alpha
-function UnitSelectionColor(unit)
-end
-
----@return nil
-function UnitSetRole(unit, role)
+function UnitSetRole(target,role)
 end
 
 ---@return gender
 function UnitSex(unit)
 end
 
----@return haste
-function UnitSpellHaste(unit)
+---@return unknown
+function UnitShouldDisplayName()
 end
 
----@return nil
-function UnitStagger()
+---@return spellHastePercent
+function UnitSpellHaste(unit_or_name)
+end
+
+---@return damage
+function UnitStagger(unit)
 end
 
 ---@return stat, effectiveStat, posBuff, negBuff
-function UnitStat(unit, statIndex)
+function UnitStat(unit, statID)
 end
 
----@return nil
-function UnitSwitchToVehicleSeat(unit, seat)
+---@return unknown
+function UnitSwitchToVehicleSeat()
 end
 
----@return targetVehicle
-function UnitTargetsVehicleInRaidUI(unit)
+---@return unknown
+function UnitTargetsVehicleInRaidUI()
 end
 
----@return nil
+---@return unknown
 function UnitThreatPercentageOfLead()
 end
 
 ---@return status
-function UnitThreatSituation(unit , mobUnit)
+function UnitThreatSituation(unit, otherunit)
 end
 
----@return usingVehicle
+---@return treatAsPlayer
+function UnitTreatAsPlayerForDisplay(unit)
+end
+
+---@return unknown
+function UnitTrialBankedLevels()
+end
+
+---@return unknown
+function UnitTrialXP()
+end
+
+---@return isTrue
 function UnitUsingVehicle(unit)
 end
 
----@return numSeats
-function UnitVehicleSeatCount(unit)
+---@return unknown
+function UnitVehicleSeatCount()
 end
 
----@return controlType, occupantName, occupantRealm, canEject, canSwitchSeats
-function UnitVehicleSeatInfo(unit, seat)
+---@return unknown
+function UnitVehicleSeatInfo()
 end
 
----@return skin
-function UnitVehicleSkin(unit)
+---@return unknown
+function UnitVehicleSkin()
 end
 
----@return currXP
+---@return unknown
+function UnitWatchRegistered()
+end
+
+---@return unknown
+function UnitWeaponAttackPower()
+end
+
+---@return uiWidgetSet
+function UnitWidgetSet(unit)
+end
+
+---@return XP
 function UnitXP(unit)
 end
 
----@return playerMaxXP
+---@return XP
 function UnitXPMax(unit)
 end
 
----@return nil
+---@return unknown
 function UnlearnSpecialization()
+end
+
+---@return unknown
+function UnlockMultiCastActionBar()
+end
+
+---@return unknown
+function UnlockPetActionBar()
 end
 
 ---@return nil
@@ -12164,351 +9815,383 @@ function UnlockVoidStorage()
 end
 
 ---@return nil
+function UnmuteSoundFile(soundFile_or_fileDataID)
+end
+
+---@return unknown
+function UnregisterAttributeDriver()
+end
+
+---@return unknown
+function UnregisterAutoHide()
+end
+
+---@return nil
+function UnregisterStateDriver(frame, state)
+end
+
+---@return unknown
+function UnregisterUnitWatch()
+end
+
+---@return unknown
 function UpdateAddOnCPUUsage()
 end
 
----@return nil
+---@return unknown
 function UpdateAddOnMemoryUsage()
 end
 
----@return nil
-function UpdateGMTicket(text)
+---@return unknown
+function UpdateBagButtonHighlight()
 end
 
----@return nil
+---@return unknown
+function UpdateBagSlotStatus()
+end
+
+---@return unknown
+function UpdateCoinPickupFrame()
+end
+
+---@return unknown
+function UpdateContainerFrameAnchors()
+end
+
+---@return unknown
+function UpdateFrameLock()
+end
+
+---@return unknown
 function UpdateInventoryAlertStatus()
 end
 
----@return name, fileName, texCoordX, texCoordY, textureX, textureY, scrollChildX, scrollChildY
-function UpdateMapHighlight(cursorX, cursorY)
+---@return unknown
+function UpdateMenuBarTop()
 end
 
----@return nil
+---@return unknown
+function UpdateMicroButtons()
+end
+
+---@return unknown
+function UpdateMicroButtonsParent()
+end
+
+---@return unknown
+function UpdateNewItemList()
+end
+
+---@return unknown
+function UpdatePartyMemberBackground()
+end
+
+---@return unknown
+function UpdateProfessionButton()
+end
+
+---@return unknown
+function UpdateStackSplitFrame()
+end
+
+---@return unknown
+function UpdateUIPanelPositions()
+end
+
+---@return unknown
 function UpdateWarGamesList()
 end
 
 ---@return nil
-function UpdateWorldMapArrow()
+function UpdateWindow()
 end
 
----@return nil
+---@return unknown
 function UpgradeItem()
 end
 
 ---@return nil
-function UseAction(slot , target , button)
+function UseAction(slot, checkCursor, onSelf)
 end
 
 ---@return nil
-function UseContainerItem(container, slot , target , reagentBankAccessible)
+function UseContainerItem(bagID, slot , target, reagentBankAccessible)
 end
 
----@return equipped
-function UseEquipmentSet(name)
-end
-
----@return state
+---@return unknown
 function UseHearthstone()
 end
 
 ---@return nil
-function UseInventoryItem(slot)
+function UseInventoryItem( slotID )
 end
 
 ---@return nil
-function UseItemByName(itemID , target)
+function UseItemByName(name, target)
+end
+
+---@return unknown
+function UseQuestLogSpecialItem()
 end
 
 ---@return nil
-function UseItemForTransmogrify()
-end
-
----@return nil
-function UseQuestLogSpecialItem(questIndex)
-end
-
----@return nil
-function UseSoulstone()
-end
-
----@return nil
-function UseToy(itemID)
+function UseToy(itemId)
 end
 
 ---@return nil
 function UseToyByName(name)
 end
 
----@return nil
-function UseVoidItemForTransmogrify()
+---@return unknown
+function UseWorldMapActionButtonSpellOnQuest()
 end
 
----@return nil
-function ValidateTransmogrifications()
+---@return unknown
+function UsesGUID()
 end
 
----@return nil
-function VehicleAimDecrement(amount)
+---@return unknown
+function ValidateActionBarTransition()
 end
 
----@return nil
+---@return unknown
+function ValidateFramePosition()
+end
+
+---@return unknown
+function VehicleAimDecrement()
+end
+
+---@return unknown
 function VehicleAimDownStart()
 end
 
----@return nil
+---@return unknown
 function VehicleAimDownStop()
 end
 
----@return angle
+---@return unknown
 function VehicleAimGetAngle()
 end
 
----@return angle
+---@return unknown
 function VehicleAimGetNormAngle()
 end
 
----@return nil
+---@return unknown
 function VehicleAimGetNormPower()
 end
 
----@return nil
-function VehicleAimIncrement(amount)
+---@return unknown
+function VehicleAimIncrement()
 end
 
----@return nil
-function VehicleAimRequestAngle(amount)
+---@return unknown
+function VehicleAimRequestAngle()
 end
 
----@return nil
-function VehicleAimRequestNormAngle(amount)
+---@return unknown
+function VehicleAimRequestNormAngle()
 end
 
----@return nil
+---@return unknown
 function VehicleAimSetNormPower()
 end
 
----@return nil
+---@return unknown
 function VehicleAimUpStart()
 end
 
----@return nil
+---@return unknown
 function VehicleAimUpStop()
 end
 
----@return nil
+---@return unknown
 function VehicleCameraZoomIn()
 end
 
----@return nil
+---@return unknown
 function VehicleCameraZoomOut()
 end
 
----@return nil
+---@return unknown
 function VehicleExit()
 end
 
----@return nil
+---@return unknown
 function VehicleNextSeat()
 end
 
----@return nil
+---@return unknown
 function VehiclePrevSeat()
 end
 
----@return nil
-function ViewGuildRecipes(professionID)
+---@return unknown
+function VideoOptionsValueChanged()
 end
 
----@return nil
-function VoiceChat_ActivatePrimaryCaptureCallback()
+---@return unknown
+function ViewGuildRecipes()
 end
 
----@return volume
-function VoiceChat_GetCurrentMicrophoneSignalLevel()
+---@return unknown
+function VoiceChatShineFadeIn()
 end
 
----@return nil
-function VoiceChat_IsPlayingLoopbackSound(isPlaying)
+---@return unknown
+function VoiceChatShineFadeOut()
 end
 
----@return isRecording
-function VoiceChat_IsRecordingLoopbackSound()
-end
-
----@return nil
-function VoiceChat_PlayLoopbackSound()
-end
-
----@return nil
-function VoiceChat_RecordLoopbackSound(seconds)
-end
-
----@return nil
-function VoiceChat_StartCapture()
-end
-
----@return nil
-function VoiceChat_StopCapture()
-end
-
----@return nil
-function VoiceChat_StopPlayingLoopbackSound()
-end
-
----@return nil
-function VoiceChat_StopRecordingLoopbackSound()
-end
-
----@return deviceName
-function VoiceEnumerateCaptureDevices(deviceIndex)
-end
-
----@return device
-function VoiceEnumerateOutputDevices(deviceIndex)
-end
-
----@return index
-function VoiceGetCurrentCaptureDevice()
-end
-
----@return index
-function VoiceGetCurrentOutputDevice()
-end
-
----@return isDisabled
-function VoiceIsDisabledByClient()
-end
-
----@return nil
-function VoicePushToTalkStart()
-end
-
----@return nil
-function VoicePushToTalkStop()
-end
-
----@return nil
-function VoiceSelectCaptureDevice(deviceName)
-end
-
----@return nil
-function VoiceSelectOutputDevice(deviceName)
-end
-
----@return nil
+---@return unknown
 function WarGameRespond()
 end
 
----@return nil
-function WithdrawGuildBankMoney(amount)
+---@return unknown
+function WithdrawGuildBankMoney()
 end
 
----@return nil
-function ZoomOut()
+---@return absoluteValue
+function abs(num)
 end
 
----@return nil
+---@return unknown
 function acos()
 end
 
----@return nil
-function acos()
+---@return unknown
+function addframetext()
 end
 
----@return nil
+---@return unknown
 function asin()
 end
 
----@return nil
-function asin()
+---@return unknown
+function assert()
 end
 
----@return value
-function assert(condition, message)
-end
-
----@return nil
+---@return unknown
 function atan()
 end
 
----@return nil
-function atan()
-end
-
----@return nil
+---@return unknown
 function atan2()
 end
 
----@return ceiling
-function ceil(x)
+---@return unknown
+function bit.arshift()
+end
+
+---@return unknown
+function bit.band()
+end
+
+---@return unknown
+function bit.bnot()
+end
+
+---@return unknown
+function bit.bor()
+end
+
+---@return unknown
+function bit.bxor()
+end
+
+---@return unknown
+function bit.lshift()
+end
+
+---@return unknown
+function bit.mod()
+end
+
+---@return unknown
+function bit.rshift()
+end
+
+---@return int
+function ceil(n)
 end
 
 ---@return nil
-function collectgarbage(option , arg)
+function collectgarbage(opt , arg)
 end
 
----@return nil
+---@return unknown
+function coroutine.create()
+end
+
+---@return unknown
+function coroutine.resume()
+end
+
+---@return unknown
+function coroutine.running()
+end
+
+---@return unknown
+function coroutine.status()
+end
+
+---@return unknown
+function coroutine.wrap()
+end
+
+---@return unknown
+function coroutine.yield()
+end
+
+---@return unknown
 function cos()
 end
 
----@return dateValue
+---@return nil
 function date(format , time)
 end
 
----@return nil
-function debugbreak()
-end
-
----@return nil
-function debugdump()
-end
-
----@return nil
-function debuginfo()
-end
-
----@return nil
-function debugload()
-end
-
----@return localsInfo
-function debuglocals(stackLevel)
-end
-
----@return nil
-function debugprint()
+---@return unknown
+function debuglocals()
 end
 
 ---@return nil
 function debugprofilestart()
 end
 
----@return time
+---@return elapsedMilliseconds
 function debugprofilestop()
 end
 
----@return debugstring
-function debugstack(start, countTop, countBot)
+---@return description
+function debugstack(coroutine, start, count1, count2)
 end
 
----@return nil
-function debugtimestamp()
+---@return unknown
+function deg()
 end
 
----@return seconds
-function difftime(time2, time1)
+---@return unknown
+function difftime()
 end
 
----@return nil
-function error(message , level)
+---@return unknown
+function error()
 end
 
----@return nil
-function fastrandom()
+---@return unknown
+function escapePatternSymbols()
 end
 
----@return floor
-function floor(x)
+---@return unknown
+function exp()
+end
+
+---@return rand
+function fastrandom( low,  high)
+end
+
+---@return val
+function floor(value)
 end
 
 ---@return nil
@@ -12516,226 +10199,526 @@ function forceinsecure()
 end
 
 ---@return nil
-function foreach()
+function foreach(tab, func)
 end
 
 ---@return nil
-function foreachi()
+function foreachi(table, f)
 end
 
----@return formatted
-function format(formatString, ...)
+---@return nil
+function format(formatstring, e1, e2, ...)
 end
 
----@return m, e
-function frexp(x)
+---@return unknown
+function frexp()
 end
 
----@return count
+---@return memoryInUse
 function gcinfo()
 end
 
----@return handler
+---@return unknown
 function geterrorhandler()
 end
 
----@return env
-function getfenv(f)
+---@return unknown
+function getfenv()
 end
 
 ---@return value
-function getglobal(name)
+function getglobal(globalKey)
 end
 
----@return metatable
-function getmetatable(object)
+---@return unknown
+function getmetatable()
 end
 
 ---@return nil
-function getn()
+function getn(table)
 end
 
----@return printHandler
+---@return func
 function getprinthandler()
 end
 
----@return iterator
-function gmatch(s, pattern)
-end
-
----@return newString, numMatched
-function gsub(s, pattern, rep , maxReplaced)
+---@return unknown
+function gmatch()
 end
 
 ---@return nil
-function hooksecurefunc(table, func, hookfunc)
+function gsub(s, pattern, replace , n)
 end
 
----@return iterator, t, index
-function ipairs(t)
+---@return nil
+function hooksecurefunc(table, functionName, hookfunc)
+end
+
+---@return iteratorFunc, table, startState
+function ipairs(table)
+end
+
+---@return unknown
+function isRaidFinderDungeonDisplayable()
 end
 
 ---@return secure
 function issecure()
 end
 
----@return issecure, taint
+---@return isSecure, taint
 function issecurevariable(table, variable)
 end
 
----@return x
-function ldexp(m, e)
+---@return unknown
+function ldexp()
 end
 
----@return chunk, error
-function loadstring(s , chunkname)
+---@return func, errorMessage
+function loadstring(luaCodeBlock, chunkName)
+end
+
+---@return unknown
+function log()
+end
+
+---@return unknown
+function log10()
+end
+
+---@return absoluteValue
+function math.abs(num)
+end
+
+---@return unknown
+function math.acos()
+end
+
+---@return unknown
+function math.asin()
+end
+
+---@return unknown
+function math.atan()
+end
+
+---@return unknown
+function math.atan2()
+end
+
+---@return int
+function math.ceil(n)
+end
+
+---@return unknown
+function math.cos()
+end
+
+---@return unknown
+function math.cosh()
+end
+
+---@return unknown
+function math.deg()
+end
+
+---@return unknown
+function math.exp()
+end
+
+---@return val
+function math.floor(value)
+end
+
+---@return unknown
+function math.fmod()
+end
+
+---@return unknown
+function math.frexp()
+end
+
+---@return unknown
+function math.ldexp()
+end
+
+---@return unknown
+function math.log()
+end
+
+---@return unknown
+function math.log10()
+end
+
+---@return unknown
+function math.max()
+end
+
+---@return unknown
+function math.min()
+end
+
+---@return unknown
+function math.modf()
+end
+
+---@return unknown
+function math.pow()
+end
+
+---@return unknown
+function math.rad()
+end
+
+---@return rand
+function math.random( low,  high)
+end
+
+---@return unknown
+function math.sin()
+end
+
+---@return unknown
+function math.sinh()
+end
+
+---@return unknown
+function math.sqrt()
+end
+
+---@return unknown
+function math.tan()
+end
+
+---@return unknown
+function math.tanh()
+end
+
+---@return unknown
+function max()
 end
 
 ---@return nil
 function message(text)
 end
 
----@return userdata
-function newproxy(boolean)
+---@return unknown
+function min()
 end
 
----@return nextKey, nextValue
-function next(t , key)
+---@return unknown
+function mod()
 end
 
----@return iterator, t, index
-function pairs(t)
+---@return obj
+function newproxy(boolean_or_otherproxy)
 end
 
----@return status, ...
-function pcall(f, ...)
+---@return key, value
+function next(table, oldKey)
+end
+
+---@return iteratorFunc, table, startState
+function pairs(table)
+end
+
+---@return retOK, ret1, ret2, ...
+function pcall(func, arg1, arg2, ...)
 end
 
 ---@return nil
 function print(...)
 end
 
----@return nil
-function print(...)
+---@return unknown
+function rad()
 end
 
----@return randomNum
-function random(m , n)
+---@return rand
+function random( low,  high)
 end
 
----@return isEqual
-function rawequal(v1, v2)
+---@return unknown
+function rawequal()
 end
 
----@return value
-function rawget(t, key)
+---@return unknown
+function rawget()
 end
 
----@return nil
-function rawset(t, key, value)
+---@return table
+function rawset(table, index, value)
 end
 
----@return nil
-function scrub(...)
+---@return unknown
+function scrub()
 end
 
----@return nil
-function securecall(func, ...)
+---@return ...
+function securecall(func_or_functionName, ...)
 end
 
----@return nil
-function select(index, ...)
-end
-
----@return nil
-function seterrorhandler(errHandler)
-end
-
----@return f
-function setfenv(f, t)
+---@return  ret1, ret2, retN
+function select(index, list)
 end
 
 ---@return nil
-function setglobal(name, value)
+function seterrorhandler(errFunction)
 end
 
----@return t
-function setmetatable(t, metatable)
-end
-
----@return nil
-function setprinthandler(printHandler)
+---@return unknown
+function setfenv()
 end
 
 ---@return nil
+function setglobal(globalKey, newValue)
+end
+
+---@return unknown
+function setmetatable()
+end
+
+---@return nil
+function setprinthandler(func)
+end
+
+---@return unknown
 function sin()
 end
 
 ---@return nil
-function sort(table , comparator)
+function sort(table, compFunc)
 end
 
----@return root
-function sqrt(x)
+---@return unknown
+function sqrt()
 end
 
----@return result
-function strconcat(...)
+---@return indexByte
+function strbyte(s , index, endIndex)
 end
 
----@return string
-function strjoin(sep, ...)
+---@return s
+function strchar(i1, i2, ...)
+end
+
+---@return unknown
+function strcmputf8i()
+end
+
+---@return unknown
+function strconcat()
+end
+
+---@return startPos, endPos
+function strfind(string, pattern , initpos , plain)
+end
+
+---@return indexByte
+function string.byte(s , index, endIndex)
+end
+
+---@return s
+function string.char(i1, i2, ...)
+end
+
+---@return startPos, endPos
+function string.find(string, pattern , initpos , plain)
 end
 
 ---@return nil
-function strsplit(sep, text, limit)
+function string.format(formatstring, e1, e2, ...)
 end
 
----@return string 
-function strtrim(str , trimChars)
+---@return unknown
+function string.gfind()
 end
 
----@return nil
-function tContains()
-end
-
----@return nil
-function tDelete()
+---@return unknown
+function string.gmatch()
 end
 
 ---@return nil
+function string.gsub(s, pattern, replace , n)
+end
+
+---@return unknown
+function string.join()
+end
+
+---@return nil
+function string.len(s)
+end
+
+---@return lowerS
+function string.lower(s)
+end
+
+---@return match , match2, ...
+function string.match(string, pattern, initpos)
+end
+
+---@return nil
+function string.rep(s, n)
+end
+
+---@return nil
+function string.reverse(string)
+end
+
+---@return unknown
+function string.split()
+end
+
+---@return nil
+function string.sub(s, i , j)
+end
+
+---@return unknown
+function string.trim()
+end
+
+---@return nil
+function string.upper(s)
+end
+
+---@return  joinedString
+function strjoin(delimiter, string, string,...)
+end
+
+---@return nil
+function strlen(s)
+end
+
+---@return unknown
+function strlenutf8()
+end
+
+---@return lowerS
+function strlower(s)
+end
+
+---@return match1, match2, ...
+function strmatch(string, pattern, initpos)
+end
+
+---@return nil
+function strrep(s, n)
+end
+
+---@return nil
+function strrev(string)
+end
+
+---@return s1, s2, s3, ...
+function strsplit(delimiter, subject, pieces)
+end
+
+---@return nil
+function strsub(s, i , j)
+end
+
+---@return  newstr
+function strtrim(str, chars)
+end
+
+---@return nil
+function strupper(s)
+end
+
+---@return exists
+function tContains(table, value)
+end
+
+---@return unknown
+function tDeleteItem()
+end
+
+---@return unknown
+function table.concat()
+end
+
+---@return nil
+function table.foreach(tab, func)
+end
+
+---@return nil
+function table.foreachi(table, f)
+end
+
+---@return nil
+function table.getn(table)
+end
+
+---@return unknown
+function table.insert()
+end
+
+---@return unknown
+function table.maxn()
+end
+
+---@return nil
+function table.remove(table , pos)
+end
+
+---@return unknown
+function table.removemulti()
+end
+
+---@return nil
+function table.setn(table, n)
+end
+
+---@return nil
+function table.sort(table , compFunc)
+end
+
+---@return table
+function table.wipe(table)
+end
+
+---@return unknown
 function tan()
 end
 
+---@return timestamp
+function time(dateTable)
+end
+
+---@return nil
+function tinsert(table, pos, value)
+end
+
+---@return num
+function tonumber(str, radix)
+end
+
+---@return s
+function tostring(arg)
+end
+
+---@return unknown
+function tostringall()
+end
+
+---@return nil
+function tremove(table, pos)
+end
+
 ---@return t
-function time(timeDesc)
+function type(arg1)
 end
 
----@return numValue
-function tonumber(x , base)
-end
-
----@return stringValue
-function tostring(value)
+---@return ...
+function unpack(t, first , last)
 end
 
 ---@return nil
-function tostringall(...)
+function wipe(table)
 end
 
----@return typeString
-function type(v)
-end
-
----@return nil
-function unpack(t , i , j)
-end
-
----@return emptyTable
-function wipe(aTable)
-end
-
----@return status, ...
-function xpcall(f, err)
+---@return unknown
+function xpcall()
 end
 
