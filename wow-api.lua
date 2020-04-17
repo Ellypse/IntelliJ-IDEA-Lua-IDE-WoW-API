@@ -455,6 +455,930 @@ function BuybackItem(slot)
 end
 
 ---@return unknown
+function CRFFlowFilterFunc()
+end
+
+---@return unknown
+function CRFGroupFilterFunc()
+end
+
+---@return unknown
+function CalculateStringEditDistance()
+end
+
+---@return nil
+function CallCompanion(type, id)
+end
+
+---@return unknown
+function CallRestrictedClosure()
+end
+
+---@return nil
+function CameraOrSelectOrMoveStart()
+end
+
+---@return nil
+function CameraOrSelectOrMoveStop(stickyFlag)
+end
+
+---@return nil
+function CameraZoomIn(increment)
+end
+
+---@return nil
+function CameraZoomOut(increment)
+end
+
+---@return canAbandon
+function CanAbandonQuest(questID)
+end
+
+---@return unknown
+function CanAffordMerchantItem()
+end
+
+---@return unknown
+function CanAlterSkin()
+end
+
+---@return canBeRaidTarget
+function CanBeRaidTarget(unit)
+end
+
+---@return unknown
+function CanCancelScene()
+end
+
+---@return unknown
+function CanChangePlayerDifficulty()
+end
+
+---@return unknown
+function CanComplainInboxItem()
+end
+
+---@return canCooperate
+function CanCooperateWithToon(toonID)
+end
+
+---@return unknown
+function CanCreateFilters()
+end
+
+---@return unknown
+function CanDualWield()
+end
+
+---@return unknown
+function CanEditGuildBankTabInfo()
+end
+
+---@return unknown
+function CanEditGuildEvent()
+end
+
+---@return unknown
+function CanEditGuildInfo()
+end
+
+---@return unknown
+function CanEditGuildTabInfo()
+end
+
+---@return canEdit
+function CanEditMOTD()
+end
+
+---@return unknown
+function CanEditPublicNote()
+end
+
+---@return unknown
+function CanEjectPassengerFromSeat()
+end
+
+---@return unknown
+function CanExitVehicle()
+end
+
+---@return unknown
+function CanGroupInvite()
+end
+
+---@return unknown
+function CanGroupWithAccount()
+end
+
+---@return unknown
+function CanGuildBankRepair()
+end
+
+---@return canDemote
+function CanGuildDemote()
+end
+
+---@return canInvite
+function CanGuildInvite()
+end
+
+---@return canPromote
+function CanGuildPromote()
+end
+
+---@return unknown
+function CanGuildRemove()
+end
+
+---@return unknown
+function CanHearthAndResurrectFromArea()
+end
+
+---@return unknown
+function CanInitiateWarGame()
+end
+
+---@return canInspect
+function CanInspect(unit, showError)
+end
+
+---@return unknown
+function CanItemBeSocketedToArtifact()
+end
+
+---@return isTrue
+function CanJoinBattlefieldAsGroup()
+end
+
+---@return unknown
+function CanLootUnit()
+end
+
+---@return unknown
+function CanMapChangeDifficulty()
+end
+
+---@return canRepair
+function CanMerchantRepair()
+end
+
+---@return unknown
+function CanOpenPanels()
+end
+
+---@return unknown
+function CanPartyLFGBackfill()
+end
+
+---@return canReplace
+function CanReplaceGuildMaster()
+end
+
+---@return unknown
+function CanResetTutorials()
+end
+
+---@return onSite
+function CanScanResearchSite()
+end
+
+---@return canShow
+function CanShowAchievementUI()
+end
+
+---@return unknown
+function CanShowCenterUIPanel()
+end
+
+---@return canReset
+function CanShowResetInstances()
+end
+
+---@return unknown
+function CanShowRightUIPanel()
+end
+
+---@return unknown
+function CanShowUIPanels()
+end
+
+---@return unknown
+function CanSignPetition()
+end
+
+---@return unknown
+function CanSolveArtifact()
+end
+
+---@return summonable
+function CanSummonFriend(unit)
+end
+
+---@return unknown
+function CanSurrenderArena()
+end
+
+---@return unknown
+function CanSwitchVehicleSeat()
+end
+
+---@return unknown
+function CanSwitchVehicleSeats()
+end
+
+---@return canTrack
+function CanTrackBattlePets()
+end
+
+---@return canUpgradeExpansion
+function CanUpgradeExpansion()
+end
+
+---@return canUse
+function CanUseVoidStorage()
+end
+
+---@return canView
+function CanViewGuildRecipes(skillID)
+end
+
+---@return unknown
+function CanWithdrawGuildBankMoney()
+end
+
+---@return unknown
+function CancelAnimations()
+end
+
+---@return nil
+function CancelAreaSpiritHeal()
+end
+
+---@return nil
+function CancelBarberShop()
+end
+
+---@return nil
+function CancelDuel()
+end
+
+---@return unknown
+function CancelEmote()
+end
+
+---@return unknown
+function CancelGuildMembershipRequest()
+end
+
+---@return nil
+function CancelItemTempEnchantment(weaponHand)
+end
+
+---@return nil
+function CancelLogout()
+end
+
+---@return unknown
+function CancelMasterLootRoll()
+end
+
+---@return nil
+function CancelPendingEquip(slot)
+end
+
+---@return unknown
+function CancelPetPossess()
+end
+
+---@return unknown
+function CancelPreloadingMovie()
+end
+
+---@return unknown
+function CancelScene()
+end
+
+---@return nil
+function CancelShapeshiftForm()
+end
+
+---@return unknown
+function CancelSpellByName()
+end
+
+---@return nil
+function CancelTrade()
+end
+
+---@return unknown
+function CancelTradeAccept()
+end
+
+---@return nil
+function CancelUnitBuff(unit, buffIndex_or_spell ,filter_or_rank)
+end
+
+---@return unknown
+function CannotBeResurrected()
+end
+
+---@return unknown
+function CaseAccentInsensitiveParse()
+end
+
+---@return nil
+function CastPetAction(index, target)
+end
+
+---@return nil
+function CastShapeshiftForm(index)
+end
+
+---@return nil
+function CastSpell(spellIndex, spellbookType)
+end
+
+---@return unknown
+function CastSpellByID()
+end
+
+---@return nil
+function CastSpellByName(spellName, target)
+end
+
+---@return nil
+function ChangeActionBarPage(actionBarPage)
+end
+
+---@return nil
+function ChangeChatColor(channelname, red, green, blue)
+end
+
+---@return unknown
+function ChangeMultiCastActionPage()
+end
+
+---@return nil
+function ChannelBan(channelName, playerName)
+end
+
+---@return nil
+function ChannelInvite(channelName, playerName)
+end
+
+---@return nil
+function ChannelKick(channelName, playerName)
+end
+
+---@return nil
+function ChannelModerator(channelName, playerName)
+end
+
+---@return unknown
+function ChannelSetAllSilent()
+end
+
+---@return unknown
+function ChannelSetPartyMemberSilent()
+end
+
+---@return nil
+function ChannelToggleAnnouncements(channelName, name)
+end
+
+---@return nil
+function ChannelUnban(channelName, playerName)
+end
+
+---@return nil
+function ChannelUnmoderator(channelName, playerName)
+end
+
+---@return unknown
+function ChatChannelPasswordHandler()
+end
+
+---@return unknown
+function CheckBinderDist()
+end
+
+---@return nil
+function CheckInbox()
+end
+
+---@return inRange
+function CheckInteractDistance(unit, distIndex)
+end
+
+---@return unknown
+function CheckSpiritHealerDist()
+end
+
+---@return unknown
+function CheckTalentMasterDist()
+end
+
+---@return unknown
+function ClaimRaidFrame()
+end
+
+---@return unknown
+function ClampUIPanelY()
+end
+
+---@return unknown
+function ClearAchievementComparisonUnit()
+end
+
+---@return unknown
+function ClearAchievementSearchString()
+end
+
+---@return unknown
+function ClearAllLFGDungeons()
+end
+
+---@return unknown
+function ClearAllTracking()
+end
+
+---@return unknown
+function ClearAutoAcceptQuestSound()
+end
+
+---@return unknown
+function ClearBattlemaster()
+end
+
+---@return unknown
+function ClearClampedTextureRotation()
+end
+
+---@return nil
+function ClearCursor()
+end
+
+---@return unknown
+function ClearFailedPVPTalentIDs()
+end
+
+---@return unknown
+function ClearFailedTalentIDs()
+end
+
+---@return nil
+function ClearFocus()
+end
+
+---@return unknown
+function ClearInspectPlayer()
+end
+
+---@return unknown
+function ClearItemUpgrade()
+end
+
+---@return nil
+function ClearOverrideBindings(owner)
+end
+
+---@return unknown
+function ClearPartyAssignment()
+end
+
+---@return unknown
+function ClearRaidMarker()
+end
+
+---@return nil
+function ClearSendMail()
+end
+
+---@return nil
+function ClearTarget()
+end
+
+---@return unknown
+function ClearTutorials()
+end
+
+---@return nil
+function ClearVoidTransferDepositSlot(slotIndex)
+end
+
+---@return nil
+function ClickSendMailItemButton(itemIndex, clearItem)
+end
+
+---@return unknown
+function ClickSocketButton()
+end
+
+---@return unknown
+function ClickTargetTradeButton()
+end
+
+---@return unknown
+function ClickTradeButton()
+end
+
+---@return nil
+function ClickVoidStorageSlot(slotIndex, isRightClick)
+end
+
+---@return nil
+function ClickVoidTransferDepositSlot(slotIndex, isRightClick)
+end
+
+---@return nil
+function ClickVoidTransferWithdrawalSlot(slotIndex, isRightClick)
+end
+
+---@return unknown
+function ClickWorldMapActionButton()
+end
+
+---@return unknown
+function CloseAllBags()
+end
+
+---@return unknown
+function CloseAllWindows()
+end
+
+---@return unknown
+function CloseBackpack()
+end
+
+---@return unknown
+function CloseBag()
+end
+
+---@return unknown
+function CloseBankBagFrames()
+end
+
+---@return nil
+function CloseBankFrame()
+end
+
+---@return unknown
+function CloseChildWindows()
+end
+
+---@return unknown
+function CloseDropDownMenus()
+end
+
+---@return nil
+function CloseGossip()
+end
+
+---@return unknown
+function CloseGuildBankFrame()
+end
+
+---@return unknown
+function CloseGuildRegistrar()
+end
+
+---@return unknown
+function CloseGuildRoster()
+end
+
+---@return nil
+function CloseItemText()
+end
+
+---@return unknown
+function CloseItemUpgrade()
+end
+
+---@return nil
+function CloseLoot(errNum)
+end
+
+---@return nil
+function CloseMail()
+end
+
+---@return unknown
+function CloseMenus()
+end
+
+---@return nil
+function CloseMerchant()
+end
+
+---@return nil
+function ClosePetStables()
+end
+
+---@return nil
+function ClosePetition()
+end
+
+---@return unknown
+function CloseQuest()
+end
+
+---@return unknown
+function CloseQuestChoice()
+end
+
+---@return unknown
+function CloseResearch()
+end
+
+---@return unknown
+function CloseSideDressUpFrame()
+end
+
+---@return nil
+function CloseSocketInfo()
+end
+
+---@return unknown
+function CloseSpecialWindows()
+end
+
+---@return unknown
+function CloseTabardCreation()
+end
+
+---@return nil
+function CloseTaxiMap()
+end
+
+---@return nil
+function CloseTrade()
+end
+
+---@return nil
+function CloseTrainer()
+end
+
+---@return unknown
+function CloseVoidStorageFrame()
+end
+
+---@return unknown
+function CloseWindows()
+end
+
+---@return unknown
+function ClosestGameObjectPosition()
+end
+
+---@return x, y, distance
+function ClosestUnitPosition(creatureID)
+end
+
+---@return unknown
+function CollapseAllFactionHeaders()
+end
+
+---@return nil
+function CollapseFactionHeader(rowIndex)
+end
+
+---@return unknown
+function CollapseGuildTradeSkillHeader()
+end
+
+---@return nil
+function CollapseQuestHeader(questID)
+end
+
+---@return unknown
+function CollapseWarGameHeader()
+end
+
+---@return unknown
+function ColorPaperDollStat()
+end
+
+---@return unknown
+function CombatLogAddFilter()
+end
+
+---@return unknown
+function CombatLogAdvanceEntry()
+end
+
+---@return unknown
+function CombatLogClearEntries()
+end
+
+---@return unknown
+function CombatLogGetCurrentEntry()
+end
+
+---@return arg1, arg2, ...
+function CombatLogGetCurrentEventInfo()
+end
+
+---@return unknown
+function CombatLogGetNumEntries()
+end
+
+---@return unknown
+function CombatLogGetRetentionTime()
+end
+
+---@return unknown
+function CombatLogResetFilter()
+end
+
+---@return unknown
+function CombatLogSetCurrentEntry()
+end
+
+---@return unknown
+function CombatLogSetRetentionTime()
+end
+
+---@return unknown
+function CombatLog_Object_IsA()
+end
+
+---@return nil
+function CombatTextSetActiveUnit(unit)
+end
+
+---@return unknown
+function ComboPointShineFadeIn()
+end
+
+---@return unknown
+function ComboPointShineFadeOut()
+end
+
+---@return unknown
+function ComplainInboxItem()
+end
+
+---@return unknown
+function CompleteLFGReadyCheck()
+end
+
+---@return unknown
+function CompleteLFGRoleCheck()
+end
+
+---@return nil
+function CompleteQuest()
+end
+
+---@return unknown
+function ComputePetBonus()
+end
+
+---@return nil
+function ConfirmAcceptQuest()
+end
+
+---@return nil
+function ConfirmBNRequestInviteFriend(presenceID, tank, heal, dps)
+end
+
+---@return nil
+function ConfirmBindOnUse()
+end
+
+---@return unknown
+function ConfirmBinder()
+end
+
+---@return nil
+function ConfirmLootRoll(RollID ,roll)
+end
+
+---@return nil
+function ConfirmLootSlot(slot)
+end
+
+---@return unknown
+function ConfirmNoRefundOnUse()
+end
+
+---@return unknown
+function ConfirmOnUse()
+end
+
+---@return unknown
+function ConfirmOrLeaveBattlefield()
+end
+
+---@return unknown
+function ConfirmOrLeaveLFGParty()
+end
+
+---@return nil
+function ConfirmReadyCheck(isReady)
+end
+
+---@return unknown
+function ConfirmTalentWipe()
+end
+
+---@return unknown
+function ConsoleAddMessage()
+end
+
+---@return nil
+function ConsoleExec( command )
+end
+
+---@return unknown
+function ConsolePrint()
+end
+
+---@return bagID
+function ContainerIDToInventoryID(containerID)
+end
+
+---@return unknown
+function ContainerRefundItemPurchase()
+end
+
+---@return unknown
+function ControlCheckCapTargets()
+end
+
+---@return unknown
+function ControlGetActiveCvarValue()
+end
+
+---@return unknown
+function ControlGetCurrentCvarValue()
+end
+
+---@return unknown
+function ControlSetValue()
+end
+
+---@return unknown
+function ConvertRGBtoColorString()
+end
+
+---@return unknown
+function CopyTable()
+end
+
+---@return unknown
+function CopyToClipboard()
+end
+
+---@return unknown
+function CreateChatChannelList()
+end
+
+---@return fontObject
+function CreateFont(name)
+end
+
+---@return newFrame
+function CreateFrame(frameType, frameName, parentFrame, inheritsFrame, id)
+end
+
+---@return macroId
+function CreateMacro(name, iconFileID , body, perCharacter)
+end
+
+---@return unknown
+function CreateNewRaidProfile()
+end
+
+---@return fitsInSlot
+function CursorCanGoInSlot(invSlot)
+end
+
+---@return hasItem
+function CursorHasItem()
+end
+
+---@return unknown
+function CursorHasMacro()
+end
+
+---@return unknown
+function CursorHasMoney()
+end
+
+---@return unknown
+function CursorHasSpell()
+end
+
+---@return unknown
+function CursorOnUpdate()
+end
+
+---@return unknown
+function CursorUpdate()
+end
+
+---@return unknown
 function DeathKnniggetThrobFunction()
 end
 
@@ -1470,7 +2394,7 @@ end
 function GetBuybackItemLink()
 end
 
----@return value, defaultValue, account, character, val5, locked, val7
+---@return value, defaultValue, account, character, param5, consoleLocked, locked
 function GetCVarInfo(name)
 end
 
