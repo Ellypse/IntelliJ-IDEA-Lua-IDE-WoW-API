@@ -1132,6 +1132,7 @@ end
 function ClickWorldMapActionButton()
 end
 
+--- CloseAllBags
 -- https://wow.gamepedia.com/API_CloseAllBags
 -- @param  frame - Object - Handle to the frame requesting OpenAllBags(), to reserve this open state and thus prevent other frames from executing CloseAllBags()
 -- @param  forceUpdate - Boolean - Optional flag to force ContainerFrame_UpdateAll() should execution halt part-way through the function.
@@ -1141,10 +1142,12 @@ end
 function CloseAllWindows()
 end
 
+--- CloseBackpack
 -- https://wow.gamepedia.com/API_CloseBackpack
 function CloseBackpack()
 end
 
+--- CloseBag
 -- https://wow.gamepedia.com/API_CloseBag
 -- @param  id - Number (BagID) - Unique identifier for each bag
 function CloseBag(id)
@@ -1659,7 +1662,7 @@ end
 function DisplayChannelOwner(channelName)
 end
 
---- 
+--- DoEmote
 -- https://wow.gamepedia.com/API_DoEmote
 -- @param  token - String - the token that describes which emote is being used.  See Emotes Tokens
 -- @param  target - String - UnitId of who the emote will be performed on. If nil, then it performs the emote on your current target, or yourself if you don't have a target. If the specified target does not exist or is out of range, then it performs the emote on yourself.
@@ -2271,6 +2274,7 @@ end
 function GMReportLag()
 end
 
+--- GMRequestPlayerInfo
 -- https://wow.gamepedia.com/API_GMRequestPlayerInfo
 function GMRequestPlayerInfo()
 end
@@ -2815,7 +2819,7 @@ end
 function GetBattlefieldMapIconScale()
 end
 
---- 
+--- GetBattlefieldPortExpiration
 -- https://wow.gamepedia.com/API_GetBattlefieldPortExpiration
 -- @param  index - Integer - Index of queue to get the expiration from
 -- @return expiration - Integer - Remaining time of battlefield port in seconds
@@ -2986,7 +2990,7 @@ end
 function GetBindingKey(command)
 end
 
---- 
+--- GetBindingText
 -- https://wow.gamepedia.com/API_GetBindingText
 -- @param  key - String - The name of the key (e.g. UP, SHIFT-PAGEDOWN)
 -- @param  prefix - String - The prefix of the variable name you're looking for.  Usually KEY_ or BINDING_NAME_.
@@ -2995,6 +2999,7 @@ end
 function GetBindingText(key, prefix, abbreviate)
 end
 
+--- GetBlockChance
 -- https://wow.gamepedia.com/API_GetBlockChance
 function GetBlockChance()
 end
@@ -3101,7 +3106,7 @@ end
 function GetChannelDisplayInfo(i)
 end
 
---- 
+--- GetChannelList
 -- https://wow.gamepedia.com/API_GetChannelList
 -- @return id1
 -- @return name1
@@ -3659,6 +3664,7 @@ end
 function GetDistanceSqToQuest()
 end
 
+--- GetDodgeChance
 -- https://wow.gamepedia.com/API_GetDodgeChance
 function GetDodgeChance()
 end
@@ -4036,6 +4042,7 @@ end
 function GetGuildBankTabInfo(tab)
 end
 
+--- GetGuildBankTabPermissions
 -- https://wow.gamepedia.com/API_GetGuildBankTabPermissions
 -- @param  tab - Integer - guild bank tab number
 -- @return canView - Boolean - 1 if the selected rank can view this guild bank tab, nil otherwise.
@@ -4317,7 +4324,7 @@ end
 function GetInboxItemLink(message, attachment)
 end
 
---- 
+--- GetInboxNumItems
 -- https://wow.gamepedia.com/API_GetInboxNumItems
 -- @return numItems
 -- @return totalItems
@@ -6017,6 +6024,7 @@ end
 function GetPVPYesterdayStats()
 end
 
+--- GetParryChance
 -- https://wow.gamepedia.com/API_GetParryChance
 function GetParryChance()
 end
@@ -6440,7 +6448,7 @@ end
 function GetQuestLogItemDrop()
 end
 
---- 
+--- GetQuestLogItemLink
 -- https://wow.gamepedia.com/API_GetQuestLogItemLink
 -- @param  type - String - required, reward or choice
 -- @param  index - Table - Integer - Quest reward item index (starts with 1).
@@ -8064,7 +8072,7 @@ end
 function GetWebTicket()
 end
 
---- 
+--- GetWorldElapsedTime
 -- https://wow.gamepedia.com/API_GetWorldElapsedTime
 -- @param  timerID - Use by blizzard as self.timerID by WorldStateChallangeModeFrame
 -- @return unknown - Number
@@ -8502,7 +8510,7 @@ end
 function InspectAchievements()
 end
 
---- 
+--- InspectUnit
 -- https://wow.gamepedia.com/API_InspectUnit
 -- @param  unit - String - The UnitId to select as a target.
 function InspectUnit(unit)
@@ -9289,6 +9297,7 @@ end
 function IsSpellInRange(index, bookType, target)
 end
 
+--- IsSpellKnown
 -- https://wow.gamepedia.com/API_IsSpellKnown
 -- @param  spellID - integer - the spell ID number
 -- @param  isPetSpell - boolean (optional) - if true, will check if the currently active pet knows the spell; if false or omitted, will check if the player knows the spell
@@ -9917,7 +9926,7 @@ end
 function MinimapMailFrameUpdate()
 end
 
---- 
+--- MouseIsOver
 -- https://wow.gamepedia.com/API_MouseIsOver
 -- @param  frame - Frame - The frame (or frame-derived object such as Buttons, etc) to test with
 -- @param  topOffset - (optional) Number - distance from the top to include in calculations
@@ -10107,17 +10116,20 @@ end
 function OnMenuLoad()
 end
 
+--- OpenAllBags
 -- https://wow.gamepedia.com/API_OpenAllBags
 -- @param  frame - Object - Handle to the frame requesting OpenAllBags(), to reserve this open state and thus prevent other frames from executing CloseAllBags()
 -- @param  forceUpdate - Boolean - Optional flag to force ContainerFrame_UpdateAll() should execution halt part-way through the function.
 function OpenAllBags(frame, forceUpdate)
 end
 
+--- OpenBackpack
 -- https://wow.gamepedia.com/API_OpenBackpack
 -- @return backpackWasOpen - Boolean (1 or nil) - Evaluates to true if OpenBackpack detected the backpack was already open and will prevent CloseBackpack() from acting
 function OpenBackpack()
 end
 
+--- OpenBag
 -- https://wow.gamepedia.com/API_OpenBag
 -- @param  id - Number (BagID) - Unique identifier for each bag
 -- @param  force - Boolean - (OpenBag only) Optional flag to force ContainerFrame_Update() even if the bag was already open.
@@ -10668,6 +10680,7 @@ end
 function RefreshMoneyFrame()
 end
 
+--- RegisterAttributeDriver
 -- @param  frame
 -- @param  attribute
 -- @param  conditional
@@ -11122,7 +11135,7 @@ end
 function SearchLFGSort()
 end
 
---- 
+--- SecondsToTime
 -- https://wow.gamepedia.com/API_SecondsToTime
 -- @param  seconds - Number - The number of seconds to be represented.
 -- @param  noSeconds - Boolean (optional) - If true, seconds are omitted from the output. (Omitting it == false)
@@ -11130,7 +11143,7 @@ end
 function SecondsToTime(seconds, noSeconds)
 end
 
---- 
+--- SecondsToTimeAbbrev
 -- https://wow.gamepedia.com/API_SecondsToTimeAbbrev
 -- @param  TimeDuration - Number - The amount of time to convert.
 -- @return TimeFormat - String - A string in the format %d s|m|h|d
@@ -12468,7 +12481,7 @@ end
 function TakeInboxTextItem()
 end
 
---- 
+--- TakeScreenshot
 -- https://wow.gamepedia.com/API_TakeScreenshot
 function TakeScreenshot()
 end
@@ -12631,6 +12644,7 @@ end
 function ToggleAchievementFrame()
 end
 
+--- ToggleAllBags
 -- https://wow.gamepedia.com/API_ToggleAllBags
 function ToggleAllBags()
 end
@@ -12643,12 +12657,12 @@ end
 function ToggleAutoRun()
 end
 
---- 
+--- ToggleBackpack
 -- https://wow.gamepedia.com/API_ToggleBackpack
 function ToggleBackpack()
 end
 
---- 
+--- ToggleBag
 -- https://wow.gamepedia.com/API_ToggleBag
 -- @param  bagNum - Number - the bagID you want to toggle open or close
 function ToggleBag(bagNum)
@@ -12660,7 +12674,7 @@ end
 function ToggleCalendar()
 end
 
---- 
+--- ToggleCharacter
 -- https://wow.gamepedia.com/API_ToggleCharacter
 -- @param  frameName - String- The frame to toggle on or off
 function ToggleCharacter(frameName)
@@ -12698,7 +12712,7 @@ end
 function ToggleFrame()
 end
 
---- 
+--- ToggleFramerate
 -- https://wow.gamepedia.com/API_ToggleFramerate
 function ToggleFramerate()
 end
@@ -12808,7 +12822,7 @@ end
 function ToggleSpellAutocast()
 end
 
---- 
+--- ToggleSpellBook
 -- https://wow.gamepedia.com/API_ToggleSpellBook
 -- @param  bookType - string containing which spellbook to open. Valid choices are spell, pet, general, Mounts, Companions, Professions, or any spec name (e.g. assasination, fire, etc). Only spell and pet will open the full spellbook (with all the tabs to click on), the rest will open only that tab (with no tabs to click on).
 function ToggleSpellBook(bookType)
@@ -12880,7 +12894,7 @@ end
 function UIFrameFade()
 end
 
---- 
+--- UIFrameFadeIn
 -- https://wow.gamepedia.com/API_UIFrameFadeIn
 -- @param  frame - Frame - The frame to fade
 -- @param  timeToFade - Number the time it takes to fade in or out (in seconds)
@@ -12889,7 +12903,7 @@ end
 function UIFrameFadeIn(frame, timeToFade, startAlpha, endAlpha)
 end
 
---- 
+--- UIFrameFadeOut
 -- https://wow.gamepedia.com/API_UIFrameFadeOut
 -- @param  frame - Frame - The frame to fade
 -- @param  timeToFade - Number the time it takes to fade in or out (in seconds)
@@ -13957,6 +13971,7 @@ end
 function UnmuteSoundFile(soundFile_or_fileDataID)
 end
 
+--- UnregisterAttributeDriver
 -- @param  frame
 -- @param  attribute
 function UnregisterAttributeDriver(frame, attribute)
@@ -14706,6 +14721,7 @@ end
 function strfind(string, pattern, initpos, plain)
 end
 
+--- string.byte
 -- @param  s
 -- @param  index
 -- @param  endIndex
@@ -14713,6 +14729,7 @@ end
 function string.byte(s, index, endIndex)
 end
 
+--- string.char
 -- @param  i1
 -- @param  i2
 -- @param  ...
@@ -14720,6 +14737,7 @@ end
 function string.char(i1, i2, ...)
 end
 
+--- string.find
 -- @param  string
 -- @param  pattern
 -- @param  initpos
@@ -14744,15 +14762,18 @@ end
 function string.join()
 end
 
+--- string.len
 -- @param  s
 function string.len(s)
 end
 
+--- string.lower
 -- @param  s
 -- @return lowerS
 function string.lower(s)
 end
 
+--- string.match
 -- @param  string
 -- @param  pattern
 -- @param  initpos
@@ -14762,11 +14783,13 @@ end
 function string.match(string, pattern, initpos)
 end
 
+--- string.rep
 -- @param  s
 -- @param  n
 function string.rep(s, n)
 end
 
+--- string.reverse
 -- @param  string
 function string.reverse(string)
 end
@@ -14774,6 +14797,7 @@ end
 function string.split()
 end
 
+--- string.sub
 -- @param  s
 -- @param  i
 -- @param  j
@@ -14783,6 +14807,7 @@ end
 function string.trim()
 end
 
+--- string.upper
 -- @param  s
 function string.upper(s)
 end
@@ -14902,6 +14927,7 @@ end
 function table.maxn()
 end
 
+--- table.remove
 -- @param  table
 -- @param  pos
 function table.remove(table, pos)
