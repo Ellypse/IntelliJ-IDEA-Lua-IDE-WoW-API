@@ -277,12 +277,10 @@ for _,k in pairs(apiKeys) do
 
     if api_entries[k].description then
         preFunction = preFunction .. "--- " .. api_entries[k].description .. "\n"
-    elseif api_entries[k].address or api_entries[k].arguments or api_entries[k].returns then
-        preFunction = preFunction .. "--- " .. functionName .. "\n"
     end
 
     if api_entries[k].address then
-        preFunction = preFunction .. "-- " .. BASE_WOWPEDIA_ADDRESS .. api_entries[k].address .. "\n"
+        preFunction = preFunction .. "--- " .. BASE_WOWPEDIA_ADDRESS .. api_entries[k].address .. "\n"
     end
 
     if api_entries[k].arguments then
@@ -292,21 +290,21 @@ for _,k in pairs(apiKeys) do
             else
                 argValues = argValues .. ", " .. param
             end
-            local paramDocString = "-- @param  " .. param
+            local paramDocString = "--- @param  " .. param
             if api_entries[k].argumentsDetails[param] then
                 paramDocString = paramDocString .. " - " .. api_entries[k].argumentsDetails[param]
             end
-            preFunction = preFunction .. paramDocString:gsub("\n", "\n--           ") .. "\n"
+            preFunction = preFunction .. paramDocString:gsub("\n", "\n---           ") .. "\n"
         end
     end
 
     if api_entries[k].returns then
         for _, ret in ipairs(api_entries[k].returns) do
-            local returnDocString = "-- @return " .. ret
+            local returnDocString = "--- @return " .. ret
             if api_entries[k].returnsDetails[ret] then
                 returnDocString = returnDocString .. " - " .. api_entries[k].returnsDetails[ret]
             end
-            preFunction = preFunction .. returnDocString:gsub("\n", "\n--           ") .. "\n"
+            preFunction = preFunction .. returnDocString:gsub("\n", "\n---           ") .. "\n"
         end
     end
 
