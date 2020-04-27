@@ -292,7 +292,7 @@ for _,k in pairs(apiKeys) do
             end
             local paramDocString = "--- @param  " .. param
             if api_entries[k].argumentsDetails[param] then
-                paramDocString = paramDocString .. " - " .. api_entries[k].argumentsDetails[param]
+                paramDocString = paramDocString .. " @ " .. api_entries[k].argumentsDetails[param]
             end
             preFunction = preFunction .. paramDocString:gsub("\n", "\n---           ") .. "\n"
         end
@@ -302,7 +302,7 @@ for _,k in pairs(apiKeys) do
         for _, ret in ipairs(api_entries[k].returns) do
             local returnDocString = "--- @return " .. ret
             if api_entries[k].returnsDetails[ret] then
-                returnDocString = returnDocString .. " - " .. api_entries[k].returnsDetails[ret]
+                returnDocString = returnDocString .. " @ " .. api_entries[k].returnsDetails[ret]
             end
             preFunction = preFunction .. returnDocString:gsub("\n", "\n---           ") .. "\n"
         end
