@@ -127,7 +127,9 @@ for k,v in pairs(api_entries) do
                         description = description:gsub("\"", "")
                         description = description:gsub("\n", " ")
                         description = description:gsub("^%s*(.-)%s*$", "%1")
-                        api_entries[k].description = description
+                        if description ~= "" then
+                            api_entries[k].description = description
+                        end
                     end
                 end
             end
@@ -275,6 +277,8 @@ for _,k in pairs(apiKeys) do
 
     if api_entries[k].description then
         preFunction = preFunction .. "--- " .. api_entries[k].description .. "\n"
+    elseif api_entries[k].address or api_entries[k].arguments or api_entries[k].returns then
+        preFunction = preFunction .. "--- " .. functionName .. "\n"
     end
 
     if api_entries[k].address then
