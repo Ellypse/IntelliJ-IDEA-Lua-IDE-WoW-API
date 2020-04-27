@@ -132,23 +132,6 @@ for k,v in pairs(api_entries) do
                 end
             end
 
-
-            --[[
-            --split between h2 chunks to parse out argument and returns
-            local h2Table = {}
-            --some entries contain multiple functions per functionHeader block, account for that here and split into separate lines
-            for chunk in spellPageBody:gmatch("[^<h2>]+") do
-                if string.find(chunk,"id=\"Returns\"") then
-
-                end
-
-                if string.find(chunk,"id=\"Returns\"") then
-
-                end
-            end
-            ]]
-
-
             --give some feedback as it's going so you know it's not stuck. Simply print the name of the current function
             print("[" .. math.floor((progress / total_entries) * 1000) / 10 .. "%] " .. k)
 
@@ -192,8 +175,6 @@ for k,v in pairs(api_entries) do
                 ---arguments
                 local _,argStart = string.find(v2,"%(") --find the index where the right side of the expression starts
                 local argFinish, _ = string.find(v2,"%)")
-
-                local spellPageBody = nil
 
                 if argStart and argFinish then
                     api_entries[functionName].arguments = {}
