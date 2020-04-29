@@ -66,6 +66,22 @@ for k,v in pairs(api_entries) do
     if api_entries[k].address then
         local spellPageBody = https.request(BASE_WOWPEDIA_ADDRESS .. api_entries[k].address)
         if spellPageBody then
+            local _,allStart = string.find(spellPageBody,"<div id=\"bodyContent\".->")
+            local allFinish,_ = string.find(spellPageBody,"<div class=\"printfooter\"")
+            if allStart and allFinish then
+                spellPageBody = string.sub(spellPageBody, allStart+1, allFinish-1)
+            end
+        end
+        if spellPageBody then
+            --remove html symbols
+            spellPageBody = spellPageBody:gsub("&#160;", " ")
+            spellPageBody = spellPageBody:gsub("&#91;", "[")
+            spellPageBody = spellPageBody:gsub("&#93;", "]")
+            spellPageBody = spellPageBody:gsub("&#32;", "")
+            spellPageBody = spellPageBody:gsub("&lt;", "<")
+            spellPageBody = spellPageBody:gsub("&gt;", ">")
+            spellPageBody = spellPageBody:gsub("&#8594;", "→")
+
             --the example function blocks all are wrapped in a <pre> tag, so we can use that to isolate our function headers
             --note, on some entries there are multiple functions in one page, so we need to parse them apart
             local _,start = string.find(spellPageBody,"<pre>")
@@ -78,6 +94,7 @@ for k,v in pairs(api_entries) do
 
             api_entries[k].functionHeader = {}
             api_entries[k].spellPageBody = spellPageBody
+            api_entries[k].spellPageBodyLower = string.lower(spellPageBody)
 
             --some entries contain multiple functions per functionHeader block, account for that here and split into separate lines
             for line in functionHeader:gmatch("([^\n]*)\n?") do
@@ -117,19 +134,16 @@ for k,v in pairs(api_entries) do
 
             api_entries[k].description = nil
             if #api_entries[k].functionHeader > 0 then
-                local _,start = string.find(spellPageBody,"<div id=\"bodyContent\"")
-                if start then
-                    local _,dstart = string.find(spellPageBody, "<p>", start)
-                    local dfinish, _ = string.find(spellPageBody, "</p>", start)
-                    if dstart and dfinish then
-                        local description = string.sub(spellPageBody, dstart+1, dfinish-1)
-                        description = description:gsub("%b<>", "") --this removes angle brackets and everything inside them
-                        description = description:gsub("\"", "")
-                        description = description:gsub("\n", " ")
-                        description = description:gsub("^%s*(.-)%s*$", "%1")
-                        if description ~= "" then
-                            api_entries[k].description = description
-                        end
+                local _,dstart = string.find(spellPageBody, "<p>")
+                local dfinish, _ = string.find(spellPageBody, "</p>", dstart)
+                if dstart and dfinish then
+                    local description = string.sub(spellPageBody, dstart+1, dfinish-1)
+                    description = description:gsub("%b<>", "") --this removes angle brackets and everything inside them
+                    description = description:gsub("\"", "")
+                    description = description:gsub("\n", " ")
+                    description = description:gsub("^%s*(.-)%s*$", "%1")
+                    if description ~= "" then
+                        api_entries[k].description = description
                     end
                 end
             end
@@ -139,6 +153,69 @@ for k,v in pairs(api_entries) do
 
         end
     end
+end
+
+local types = {
+    ["^[Ss]tring"] = "string",
+    ["^[Nn]umber"] = "number",
+    ["^[Ii]nteger"] = "number",
+    ["^[Nn]umeric"] = "number",
+    ["^[Ff]loat"] = "number",
+    ["^[Ff]lag"] = "number",
+    ["^[Bb]oolean"] = "boolean",
+    ["^[Bb]ool"] = "boolean",
+    ["^[Tt]able"] = "table",
+    ["^[Ff]rame"] = "Frame",
+    ["^[Aa]ny"] = "any",
+}
+
+local function SplitTypeAndDetails(options)
+    if not options then
+        return "unknown", nil
+    end
+    for k,v in pairs(types) do
+        local begin, finish = string.find(options, k)
+        if begin and finish then
+            local optionsStriped = string.sub(options, finish+1)
+            optionsStriped = optionsStriped:gsub("^[ -:]*", "")
+            optionsStriped = optionsStriped:gsub("^%s*(.-)%s*$", "%1")
+            if optionsStriped == "" then
+                optionsStriped = nil
+            end
+            return v, optionsStriped
+        end
+    end
+    return "unknown", options
+end
+
+local function FindFieldTypeAndDetails(body, bodyLower, option)
+    if not body then
+        return "unknown", nil
+    end
+    local optionLower = string.lower(option)
+    local _, argStart = string.find(bodyLower,"<dt>"..optionLower.."[ ]*</dt>")
+    if not argStart then
+        _, argStart = string.find(bodyLower,"<dt>"..optionLower.."</dt>")
+    end
+    if not argStart then
+        _, argStart = string.find(bodyLower,"<dt><a.->"..optionLower.."[ ]*</a>.-</dt>")
+    end
+    if not argStart then
+        _, argStart = string.find(bodyLower,"<dt><a.->"..optionLower.."</a>.-</dt>")
+    end
+    if argStart then
+        local begin, ddstart = string.find(body, "</dt>[ \n]*<dd>", argStart - 5)
+        local ddfinish, _ = string.find(body, "</dd>", ddstart)
+        if begin == argStart - 4 and ddstart and ddfinish then
+            local optionDetails = string.sub(body, ddstart + 1, ddfinish - 1)
+            optionDetails = optionDetails:gsub("%b<>", "") --this removes angle brackets and everything inside them
+            optionDetails = optionDetails:gsub("\"", "")
+            optionDetails = optionDetails:gsub("^%s*(.-)%s*$", "%1")
+            local fieldType, optionDetailsStrip = SplitTypeAndDetails(optionDetails)
+            return fieldType, optionDetailsStrip
+        end
+    end
+    return "unknown", nil
 end
 
 --parse each functionHeader and split out all the useful bits
@@ -175,72 +252,48 @@ for k,v in pairs(api_entries) do
             if functionName and (functionName == k or (api_entries[functionName] and not api_entries[functionName].address)) then
 
                 ---arguments
-                local _,argStart = string.find(v2,"%(") --find the index where the right side of the expression starts
-                local argFinish, _ = string.find(v2,"%)")
+                local _,argsStart = string.find(v2,"%(") --find the index where the right side of the expression starts
+                local argsFinish, _ = string.find(v2,"%)")
 
-                if argStart and argFinish then
+                if argsStart and argsFinish then
+                    api_entries[functionName].numArguments = 0
                     api_entries[functionName].arguments = {}
-                    api_entries[functionName].argumentsDetails = {}
-                    local arguments_all = string.sub(v2, argStart+1, argFinish-1)
+                    api_entries[functionName].argumentTypes = {}
+                    api_entries[functionName].argumentDetails = {}
+                    local arguments_all = string.sub(v2, argsStart+1, argsFinish-1)
                     api_entries[functionName].arguments_all = arguments_all
 
                     for option in (","..arguments_all..","):gmatch("[^,]+") do
                         option = option:gsub("^%s*(.-)%s*$", "%1") --remove leading/trailing white space
 
-                        local spellPageBody = api_entries[functionName].spellPageBody
-                        if spellPageBody then
-                            local _, start = string.find(spellPageBody,"<dt>"..option.."[(&#160;)]*</dt>")
-                            if not start then
-                                _, start = string.find(spellPageBody,"<dt><a.->"..option.."[(&#160;)]*</a>.-</dt>")
-                            end
-                            if start then
-                                local begin, ddstart = string.find(spellPageBody, "</dt>[ \n]*<dd>", start - 5)
-                                local ddfinish, _ = string.find(spellPageBody, "</dd>", ddstart)
-                                if begin == start - 4 and ddstart and ddfinish then
-                                    local optionDetails = string.sub(spellPageBody, ddstart + 1, ddfinish - 1)
-                                    optionDetails = optionDetails:gsub("%b<>", "") --this removes angle brackets and everything inside them
-                                    optionDetails = optionDetails:gsub("\"", "")
-                                    optionDetails = optionDetails:gsub("^%s*(.-)%s*$", "%1")
-                                    api_entries[functionName].argumentsDetails[option] = optionDetails
-                                end
-                            end
-                        end
+                        local argType, argDetails = FindFieldTypeAndDetails(api_entries[functionName].spellPageBody, api_entries[functionName].spellPageBodyLower, option)
+                        api_entries[functionName].argumentTypes[option] = argType
+                        api_entries[functionName].argumentDetails[option] = argDetails
+                        api_entries[functionName].numArguments = api_entries[functionName].numArguments + 1
                         table.insert(api_entries[functionName].arguments, option)
                     end
                 end
 
                 ---returns
-                local returnStart = 1
-                local returnFinish, _ = string.find(v2," =")
+                local returnsStart = 1
+                local returnsFinish, _ = string.find(v2," =")
 
-                if returnStart and returnFinish then
+                if returnsStart and returnsFinish then
+                    api_entries[functionName].numReturns = 0
                     api_entries[functionName].returns = {}
-                    api_entries[functionName].returnsDetails = {}
-                    local returns_all = string.sub(v2, returnStart, returnFinish-1)
+                    api_entries[functionName].returnTypes = {}
+                    api_entries[functionName].returnDetails = {}
+                    local returns_all = string.sub(v2, returnsStart, returnsFinish-1)
 
                     api_entries[functionName].returns_all = returns_all
 
                     for option in (","..returns_all..","):gmatch("[^,]+") do
                         option = option:gsub("^%s*(.-)%s*$", "%1") --remove leading/trailing white space
 
-                        local spellPageBody = api_entries[functionName].spellPageBody
-                        if spellPageBody then
-                            local _, start = string.find(spellPageBody,"<dt>"..option.."[(&#160;)]*</dt>")
-                            if not start then
-                                _, start = string.find(spellPageBody,"<dt><a.->"..option.."[(&#160;)]*</a>.-</dt>")
-                            end
-                            if start then
-                                local begin, ddstart = string.find(spellPageBody, "</dt>[ \n]*<dd>", start - 5)
-                                local ddfinish, _ = string.find(spellPageBody, "</dd>", ddstart)
-                                if begin == start - 4 and ddstart and ddfinish then
-                                    local optionDetails = string.sub(spellPageBody, ddstart + 1, ddfinish - 1)
-                                    optionDetails = optionDetails:gsub("%b<>", "") --this removes angle brackets and everything inside them
-                                    optionDetails = optionDetails:gsub("\"", "")
-                                    optionDetails = optionDetails:gsub("^%s*(.-)%s*$", "%1")
-                                    api_entries[functionName].returnsDetails[option] = optionDetails
-                                end
-                            end
-                        end
+                        local returnType, returnDetails = FindFieldTypeAndDetails(api_entries[functionName].spellPageBody, api_entries[functionName].spellPageBodyLower, option)
+                        api_entries[functionName].returnTypes[option] = returnType
+                        api_entries[functionName].returnDetails[option] = returnDetails
+                        api_entries[functionName].numReturns = api_entries[functionName].numReturns + 1
                         table.insert(api_entries[functionName].returns, option)
                     end
                 else
@@ -270,18 +323,40 @@ end
 
 table.sort(apiKeys)
 
+out.write(out, "--- @class unknown @ unknown type\n\n")
+
 for _,k in pairs(apiKeys) do
     local preFunction = ""
     local functionName = k
     local argValues = ""
 
     if api_entries[k].description then
-        preFunction = preFunction .. "--- " .. api_entries[k].description .. "\n"
+        preFunction = preFunction .. "--- ### " .. api_entries[k].description .. "\n"
     end
 
     if api_entries[k].address then
-        preFunction = preFunction .. "--- " .. BASE_WOWPEDIA_ADDRESS .. api_entries[k].address .. "\n"
+        preFunction = preFunction .. "--- [" .. BASE_WOWPEDIA_ADDRESS .. api_entries[k].address .. "]\n"
     end
+
+    -- Display return types and description
+    --if api_entries[k].returns then
+    --    for _, ret in ipairs(api_entries[k].returns) do
+    --        if api_entries[k].returnDetails[ret] then
+    --            local returnDetails = api_entries[k].returnDetails[ret]
+    --            local returnDetailsExtra = nil
+    --            local newLineStart,_ = string.find(returnDetails,"\n")
+    --            if newLineStart then
+    --                returnDetailsExtra = string.sub(returnDetails, newLineStart + 1)
+    --                returnDetails = string.sub(returnDetails, 1, newLineStart - 1)
+    --                returnDetailsExtra = "--- ```\n--- " .. returnDetailsExtra:gsub("\n", "\n--- ") .. "\n--- ```\n"
+    --            end
+    --            preFunction = preFunction .. "--- \n" .. "--- **" .. ret .. "** - _" .. api_entries[k].returnTypes[ret] .. "_ - " .. returnDetails .. "\n"
+    --            if returnDetailsExtra then
+    --                preFunction = preFunction .. returnDetailsExtra
+    --            end
+    --        end
+    --    end
+    --end
 
     if api_entries[k].arguments then
         for _, param in ipairs(api_entries[k].arguments) do
@@ -291,21 +366,38 @@ for _,k in pairs(apiKeys) do
                 argValues = argValues .. ", " .. param
             end
             local paramDocString = "--- @param  " .. param
-            if api_entries[k].argumentsDetails[param] then
-                paramDocString = paramDocString .. " @ " .. api_entries[k].argumentsDetails[param]
+            if api_entries[k].argumentTypes[param] then
+                paramDocString = paramDocString .. " " .. api_entries[k].argumentTypes[param]
             end
-            preFunction = preFunction .. paramDocString:gsub("\n", "\n---           ") .. "\n"
+            if api_entries[k].argumentDetails[param] then
+                local argDetails = api_entries[k].argumentDetails[param]
+                local argDetailsNewLine, _ = string.find(argDetails,"\n")
+                if argDetailsNewLine then
+                    argDetails = string.sub(argDetails, 1, argDetailsNewLine - 1) -- only show first line of arg details
+                end
+                paramDocString = paramDocString .. " @ " .. argDetails
+            end
+            preFunction = preFunction .. paramDocString .. "\n"
         end
     end
 
     if api_entries[k].returns then
+        local returnTypesString = ""
+        local returnNamesString = ""
         for _, ret in ipairs(api_entries[k].returns) do
-            local returnDocString = "--- @return " .. ret
-            if api_entries[k].returnsDetails[ret] then
-                returnDocString = returnDocString .. " @ " .. api_entries[k].returnsDetails[ret]
+            if returnTypesString ~= "" then
+                returnTypesString = returnTypesString .. ", "
             end
-            preFunction = preFunction .. returnDocString:gsub("\n", "\n---           ") .. "\n"
+            if returnNamesString ~= "" then
+                returnNamesString = returnNamesString .. ", "
+            end
+            returnTypesString = returnTypesString .. api_entries[k].returnTypes[ret]
+            returnNamesString = returnNamesString .. ret
         end
+
+        preFunction = preFunction .. "--- @return " .. returnTypesString .. " @ " .. returnNamesString .. "\n"
+    elseif api_entries[k].address then
+        preFunction = preFunction .. "--- @return void\n"
     end
 
     out:write(TEMPLATE:format(preFunction, functionName, argValues))
