@@ -1251,7 +1251,7 @@ function ConfirmBinder()
 end
 
 ---@return nil
-function ConfirmLootRoll(RollID ,roll)
+function ConfirmLootRoll(rollID ,roll)
 end
 
 ---@return nil
@@ -1339,7 +1339,7 @@ function CreateFont(name)
 end
 
 ---@return newFrame
-function CreateFrame(frameType, frameName, parentFrame, inheritsFrame, id)
+function CreateFrame(frameType , frameName, parentFrame, inheritsFrame, id)
 end
 
 ---@return macroId
@@ -2275,7 +2275,7 @@ function GetBattlefieldEstimatedWaitTime()
 end
 
 ---@return  flagX, flagY, flagToken
-function GetBattlefieldFlagPosition(i)
+function GetBattlefieldFlagPosition(index)
 end
 
 ---@return expiration
@@ -2298,7 +2298,7 @@ end
 function GetBattlefieldScore(index)
 end
 
----@return nil
+---@return battlefieldStatData
 function GetBattlefieldStatData(playerIndex,slotIndex)
 end
 
@@ -2394,7 +2394,7 @@ end
 function GetBuybackItemLink()
 end
 
----@return value, defaultValue, account, character, param5, consoleLocked, locked
+---@return value, defaultValue, account, character, param5, setcvaronly, readonly
 function GetCVarInfo(name)
 end
 
@@ -2406,7 +2406,7 @@ end
 function GetCallPetSpellInfo()
 end
 
----@return nil
+---@return zoom
 function GetCameraZoom()
 end
 
@@ -3146,7 +3146,7 @@ end
 function GetGuildRewardInfo()
 end
 
----@return   class, achievementPoints, achievementRank, isMobile, canSoR, repStanding, GUID
+---@return name, rankName, rankIndex, level, classDisplayName, zone, publicNote, officerNote, isOnline, status, class, achievementPoints, achievementRank, isMobile, canSoR, repStanding, GUID
 function GetGuildRosterInfo(index)
 end
 
@@ -3323,7 +3323,7 @@ function GetItemCooldown(itemID)
 end
 
 ---@return count
-function GetItemCount(itemID_or_itemName_or_itemLink, includeBank, includeCharges)
+function GetItemCount(itemID_or_itemName_or_itemLink , includeBank, includeCharges)
 end
 
 ---@return unknown
@@ -4022,7 +4022,7 @@ end
 function GetNumBattlefieldFlagPositions()
 end
 
----@return  x
+---@return  numBattlefieldScores
 function GetNumBattlefieldScores()
 end
 
@@ -4174,7 +4174,7 @@ end
 function GetNumLanguages()
 end
 
----@return nil
+---@return numLootItems
 function GetNumLootItems()
 end
 
@@ -4206,7 +4206,7 @@ end
 function GetNumQuestItemDrops()
 end
 
----@return nil
+---@return numRequiredItems
 function GetNumQuestItems()
 end
 
@@ -4214,7 +4214,7 @@ end
 function GetNumQuestLeaderBoards(questID)
 end
 
----@return nil
+---@return numQuestChoices
 function GetNumQuestLogChoices()
 end
 
@@ -4234,7 +4234,7 @@ end
 function GetNumQuestLogRewardSpells()
 end
 
----@return nil
+---@return numQuestRewards
 function GetNumQuestLogRewards()
 end
 
@@ -4338,7 +4338,7 @@ end
 function GetNumTrackingTypes()
 end
 
----@return nil
+---@return numTrainerServices
 function GetNumTrainerServices()
 end
 
@@ -4546,7 +4546,7 @@ end
 function GetPlayerTradeCurrency()
 end
 
----@return nil
+---@return playerTradeMoney
 function GetPlayerTradeMoney()
 end
 
@@ -4586,7 +4586,7 @@ end
 function GetProfessions()
 end
 
----@return nil
+---@return progress
 function GetProgressText()
 end
 
@@ -4614,7 +4614,7 @@ end
 function GetPvpTalentLink()
 end
 
----@return nil
+---@return material
 function GetQuestBackgroundMaterial()
 end
 
@@ -4686,7 +4686,7 @@ end
 function GetQuestLink(QuestID)
 end
 
----@return nil
+---@return name, texture, numItems, quality, isUsable
 function GetQuestLogChoiceInfo(itemNum)
 end
 
@@ -4870,7 +4870,7 @@ end
 function GetQuestText()
 end
 
----@return nil
+---@return questTimers
 function GetQuestTimers()
 end
 
@@ -5070,7 +5070,7 @@ end
 function GetRewardSpell()
 end
 
----@return nil
+---@return reward
 function GetRewardText()
 end
 
@@ -5130,7 +5130,7 @@ end
 function GetScreenDPIScale()
 end
 
----@return nil
+---@return screenHeight
 function GetScreenHeight()
 end
 
@@ -5142,7 +5142,7 @@ end
 function GetScreenResolutions()
 end
 
----@return nil
+---@return screenWidth
 function GetScreenWidth()
 end
 
@@ -5259,11 +5259,11 @@ function GetSpecChangeCost()
 end
 
 ---@return currentSpec
-function GetSpecialization(  isInspect , isPet , specGroup  )
+function GetSpecialization(isInspect, isPet, specGroup)
 end
 
 ---@return id, name, description, icon, background, role, primaryStat
-function GetSpecializationInfo(specIndex , isInspect , isPet , inspectTarget , sex)
+function GetSpecializationInfo(specIndex , isInspect, isPet, inspectTarget, sex)
 end
 
 ---@return id, name, description, icon, role, class
@@ -5279,7 +5279,7 @@ function GetSpecializationInfoForSpecID()
 end
 
 ---@return spellID
-function GetSpecializationMasterySpells(specIndex, isInspect, isPet)
+function GetSpecializationMasterySpells(specIndex , isInspect, isPet)
 end
 
 ---@return unknown
@@ -5287,7 +5287,7 @@ function GetSpecializationNameForSpecID()
 end
 
 ---@return roleToken
-function GetSpecializationRole(specIndex, isInspect, isPet)
+function GetSpecializationRole(specIndex , isInspect, isPet)
 end
 
 ---@return roleToken
@@ -5295,7 +5295,7 @@ function GetSpecializationRoleByID(specID)
 end
 
 ---@return spellID1, level1,  spellID2, level2, ...
-function GetSpecializationSpells(specIndex, isInspect, isPet)
+function GetSpecializationSpells(specIndex , isInspect, isPet)
 end
 
 ---@return unknown
@@ -5498,7 +5498,7 @@ end
 function GetTargetTradeCurrency()
 end
 
----@return nil
+---@return targetTradeMoney
 function GetTargetTradeMoney()
 end
 
@@ -5626,11 +5626,11 @@ end
 function GetTradeTargetItemLink()
 end
 
----@return nil
+---@return greetingText
 function GetTrainerGreetingText()
 end
 
----@return nil
+---@return selectionIndex
 function GetTrainerSelectionIndex()
 end
 
@@ -7034,8 +7034,8 @@ end
 function IsUnitModelReadyForUI(unitToken)
 end
 
----@return unknown
-function IsUnitOnQuest()
+---@return nil
+function IsUnitOnQuest(questIndex, unit)
 end
 
 ---@return unknown
@@ -7163,7 +7163,7 @@ function JoinBattlefield(index, asGroup, isRated)
 end
 
 ---@return type, name
-function JoinChannelByName(channelName ,password ,frameID, hasVoice)
+function JoinChannelByName(channelName , password, frameID, hasVoice)
 end
 
 ---@return unknown
@@ -7171,7 +7171,7 @@ function JoinLFG()
 end
 
 ---@return type, name
-function JoinPermanentChannel(channelName ,password ,frameID, hasVoice)
+function JoinPermanentChannel(channelName , password, frameID, hasVoice)
 end
 
 ---@return unknown
@@ -7187,7 +7187,7 @@ function JoinSkirmish(arenaID, joinAsGroup)
 end
 
 ---@return type, name
-function JoinTemporaryChannel(channelName ,password ,frameID, hasVoice)
+function JoinTemporaryChannel(channelName , password, frameID, hasVoice)
 end
 
 ---@return nil
@@ -7879,7 +7879,7 @@ function PlayMusic(musicfile_or_fileDataID)
 end
 
 ---@return willPlay, soundHandle
-function PlaySound(soundKitID, channel, forceNoDuplicates, runFinishCallback)
+function PlaySound(soundKitID , channel, forceNoDuplicates, runFinishCallback)
 end
 
 ---@return willPlay, soundHandle
@@ -8579,7 +8579,7 @@ function SellCursorItem()
 end
 
 ---@return nil
-function SendChatMessage(msg ,chatType ,languageID ,target)
+function SendChatMessage(msg , chatType, languageID, target)
 end
 
 ---@return nil
@@ -8667,7 +8667,7 @@ function SetBattlefieldScoreFaction(faction)
 end
 
 ---@return ok
-function SetBinding(key, command, mode)
+function SetBinding(key , command, mode)
 end
 
 ---@return ok
@@ -10835,7 +10835,7 @@ function UpgradeItem()
 end
 
 ---@return nil
-function UseAction(slot, checkCursor, onSelf)
+function UseAction(slot , checkCursor, onSelf)
 end
 
 ---@return nil
@@ -11158,7 +11158,7 @@ end
 function getmetatable()
 end
 
----@return nil
+---@return size
 function getn(table)
 end
 
@@ -11534,7 +11534,7 @@ end
 function strrev(string)
 end
 
----@return s1, s2, s3, ...
+---@return nil
 function strsplit(delimiter, subject, pieces)
 end
 
@@ -11570,7 +11570,7 @@ end
 function table.foreachi(table, f)
 end
 
----@return nil
+---@return size
 function table.getn(table)
 end
 
