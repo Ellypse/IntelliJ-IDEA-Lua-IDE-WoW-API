@@ -13,11 +13,14 @@
 
 -- loads the HTTP module and any libraries it requires
 local BASE_WOWPEDIA_ADDRESS = "https://wow.gamepedia.com"
+local WOWPEDIA_SUB_ADDRESS = "/Global_functions"
+
+local OUTPUT_DIRECTORY = "./GlobalFunctions/"
 
 --download parent page with links to all sub pages
 require("socket")
 local https = require("ssl.https")
-local mainPageBody = https.request(BASE_WOWPEDIA_ADDRESS.. "/Global_functions")
+local mainPageBody = https.request(BASE_WOWPEDIA_ADDRESS..WOWPEDIA_SUB_ADDRESS)
 
 --split the html page into lines
 local lines = {}
@@ -192,7 +195,7 @@ end
 
 ---do the output to file
 
-local out = io.open("wow-api.lua", "w+")
+local out = io.open(OUTPUT_DIRECTORY.."GlobalFunctions.lua", "w+")
 
 local TEMPLATE = [==========[
 ---@return %s
