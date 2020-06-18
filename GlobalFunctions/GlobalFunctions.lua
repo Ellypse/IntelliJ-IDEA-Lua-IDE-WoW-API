@@ -6,10 +6,6 @@ end
 function AbandonSkill(skillLineID)
 end
 
----@return unknown
-function AbbreviateLargeNumbers()
-end
-
 ---@return nil
 function AcceptAreaSpiritHeal()
 end
@@ -70,14 +66,6 @@ end
 function ActionBindsItem()
 end
 
----@return nil
-function ActionButtonDown(buttonID)
-end
-
----@return nil
-function ActionButtonUp(buttonID)
-end
-
 ---@return hasRange
 function ActionHasRange(slotID)
 end
@@ -94,20 +82,12 @@ end
 function AddChatWindowMessages(index, messagegroup)
 end
 
----@return unknown
-function AddFrameLock()
-end
-
 ---@return nil
 function AddQuestWatch(questIndex, watchTime)
 end
 
 ---@return nil
 function AddQuestWatchForQuestID(questID , hardWatch)
-end
-
----@return unknown
-function AddToAutoHide()
 end
 
 ---@return nil
@@ -124,10 +104,6 @@ end
 
 ---@return name
 function Ambiguate(fullName, context)
-end
-
----@return unknown
-function AnimateTexCoords()
 end
 
 ---@return unknown
@@ -390,16 +366,8 @@ end
 function BattlefieldSetPendingReportTarget()
 end
 
----@return unknown
-function BeginActionBarTransition()
-end
-
 ---@return nil
 function BeginTrade()
-end
-
----@return unknown
-function BetterDate()
 end
 
 ---@return nil
@@ -408,26 +376,6 @@ end
 
 ---@return valueString
 function BreakUpLargeNumbers(value)
-end
-
----@return unknown
-function BuildColoredListString()
-end
-
----@return unknown
-function BuildListString()
-end
-
----@return unknown
-function BuildMultilineTooltip()
-end
-
----@return unknown
-function BuildNewLineListString()
-end
-
----@return unknown
-function ButtonInventorySlot()
 end
 
 ---@return unknown
@@ -455,23 +403,11 @@ function BuybackItem(slot)
 end
 
 ---@return unknown
-function CRFFlowFilterFunc()
-end
-
----@return unknown
-function CRFGroupFilterFunc()
-end
-
----@return unknown
 function CalculateStringEditDistance()
 end
 
 ---@return nil
 function CallCompanion(type, id)
-end
-
----@return unknown
-function CallRestrictedClosure()
 end
 
 ---@return nil
@@ -518,14 +454,6 @@ end
 function CanComplainInboxItem()
 end
 
----@return canCooperate
-function CanCooperateWithToon(toonID)
-end
-
----@return unknown
-function CanCreateFilters()
-end
-
 ---@return unknown
 function CanDualWield()
 end
@@ -560,14 +488,6 @@ end
 
 ---@return unknown
 function CanExitVehicle()
-end
-
----@return unknown
-function CanGroupInvite()
-end
-
----@return unknown
-function CanGroupWithAccount()
 end
 
 ---@return unknown
@@ -623,10 +543,6 @@ function CanMerchantRepair()
 end
 
 ---@return unknown
-function CanOpenPanels()
-end
-
----@return unknown
 function CanPartyLFGBackfill()
 end
 
@@ -646,20 +562,8 @@ end
 function CanShowAchievementUI()
 end
 
----@return unknown
-function CanShowCenterUIPanel()
-end
-
 ---@return canReset
 function CanShowResetInstances()
-end
-
----@return unknown
-function CanShowRightUIPanel()
-end
-
----@return unknown
-function CanShowUIPanels()
 end
 
 ---@return unknown
@@ -704,10 +608,6 @@ end
 
 ---@return unknown
 function CanWithdrawGuildBankMoney()
-end
-
----@return unknown
-function CancelAnimations()
 end
 
 ---@return nil
@@ -775,7 +675,7 @@ function CancelTradeAccept()
 end
 
 ---@return nil
-function CancelUnitBuff(unit, buffIndex_or_spell ,filter_or_rank)
+function CancelUnitBuff(unit, buffIndex ,filter)
 end
 
 ---@return unknown
@@ -812,10 +712,6 @@ end
 
 ---@return nil
 function ChangeChatColor(channelname, red, green, blue)
-end
-
----@return unknown
-function ChangeMultiCastActionPage()
 end
 
 ---@return nil
@@ -855,10 +751,6 @@ function ChannelUnmoderator(channelName, playerName)
 end
 
 ---@return unknown
-function ChatChannelPasswordHandler()
-end
-
----@return unknown
 function CheckBinderDist()
 end
 
@@ -876,14 +768,6 @@ end
 
 ---@return unknown
 function CheckTalentMasterDist()
-end
-
----@return unknown
-function ClaimRaidFrame()
-end
-
----@return unknown
-function ClampUIPanelY()
 end
 
 ---@return unknown
@@ -908,10 +792,6 @@ end
 
 ---@return unknown
 function ClearBattlemaster()
-end
-
----@return unknown
-function ClearClampedTextureRotation()
 end
 
 ---@return nil
@@ -998,36 +878,8 @@ end
 function ClickWorldMapActionButton()
 end
 
----@return unknown
-function CloseAllBags()
-end
-
----@return unknown
-function CloseAllWindows()
-end
-
----@return unknown
-function CloseBackpack()
-end
-
----@return unknown
-function CloseBag()
-end
-
----@return unknown
-function CloseBankBagFrames()
-end
-
 ---@return nil
 function CloseBankFrame()
-end
-
----@return unknown
-function CloseChildWindows()
-end
-
----@return unknown
-function CloseDropDownMenus()
 end
 
 ---@return nil
@@ -1062,10 +914,6 @@ end
 function CloseMail()
 end
 
----@return unknown
-function CloseMenus()
-end
-
 ---@return nil
 function CloseMerchant()
 end
@@ -1090,16 +938,8 @@ end
 function CloseResearch()
 end
 
----@return unknown
-function CloseSideDressUpFrame()
-end
-
 ---@return nil
 function CloseSocketInfo()
-end
-
----@return unknown
-function CloseSpecialWindows()
 end
 
 ---@return unknown
@@ -1120,10 +960,6 @@ end
 
 ---@return unknown
 function CloseVoidStorageFrame()
-end
-
----@return unknown
-function CloseWindows()
 end
 
 ---@return unknown
@@ -1152,10 +988,6 @@ end
 
 ---@return unknown
 function CollapseWarGameHeader()
-end
-
----@return unknown
-function ColorPaperDollStat()
 end
 
 ---@return unknown
@@ -1207,14 +1039,6 @@ function CombatTextSetActiveUnit(unit)
 end
 
 ---@return unknown
-function ComboPointShineFadeIn()
-end
-
----@return unknown
-function ComboPointShineFadeOut()
-end
-
----@return unknown
 function ComplainInboxItem()
 end
 
@@ -1228,10 +1052,6 @@ end
 
 ---@return nil
 function CompleteQuest()
-end
-
----@return unknown
-function ComputePetBonus()
 end
 
 ---@return nil
@@ -1266,14 +1086,6 @@ end
 function ConfirmOnUse()
 end
 
----@return unknown
-function ConfirmOrLeaveBattlefield()
-end
-
----@return unknown
-function ConfirmOrLeaveLFGParty()
-end
-
 ---@return nil
 function ConfirmReadyCheck(isReady)
 end
@@ -1290,10 +1102,6 @@ end
 function ConsoleExec( command )
 end
 
----@return unknown
-function ConsolePrint()
-end
-
 ---@return bagID
 function ContainerIDToInventoryID(containerID)
 end
@@ -1303,35 +1111,7 @@ function ContainerRefundItemPurchase()
 end
 
 ---@return unknown
-function ControlCheckCapTargets()
-end
-
----@return unknown
-function ControlGetActiveCvarValue()
-end
-
----@return unknown
-function ControlGetCurrentCvarValue()
-end
-
----@return unknown
-function ControlSetValue()
-end
-
----@return unknown
-function ConvertRGBtoColorString()
-end
-
----@return unknown
-function CopyTable()
-end
-
----@return unknown
 function CopyToClipboard()
-end
-
----@return unknown
-function CreateChatChannelList()
 end
 
 ---@return fontObject
@@ -1368,18 +1148,6 @@ end
 
 ---@return unknown
 function CursorHasSpell()
-end
-
----@return unknown
-function CursorOnUpdate()
-end
-
----@return unknown
-function CursorUpdate()
-end
-
----@return unknown
-function DeathKnniggetThrobFunction()
 end
 
 ---@return events
@@ -1420,18 +1188,6 @@ end
 
 ---@return nil
 function DeclineSpellConfirmationPrompt(spellID)
-end
-
----@return unknown
-function DecodeResolution()
-end
-
----@return unknown
-function DefaultCompactMiniFrameSetup()
-end
-
----@return unknown
-function DefaultCompactUnitFrameSetup()
 end
 
 ---@return nil
@@ -1528,26 +1284,6 @@ end
 
 ---@return unknown
 function DoesTemplateExist()
-end
-
----@return unknown
-function DrawOneHopLines()
-end
-
----@return unknown
-function DrawRouteLine()
-end
-
----@return unknown
-function DressUpBattlePet()
-end
-
----@return unknown
-function DressUpItemLink()
-end
-
----@return unknown
-function DressUpTexturePath()
 end
 
 ---@return nil
@@ -1727,10 +1463,6 @@ function EJ_SetSlotFilter(slotFilterID)
 end
 
 ---@return nil
-function EasyMenu(menuList, menuFrame, anchor, x, y, displayMode, autoHideDelay)
-end
-
----@return nil
 function EditMacro(index_or_macroName, name, icon, body)
 end
 
@@ -1783,10 +1515,6 @@ function ExecuteVoidTransfer()
 end
 
 ---@return unknown
-function ExhaustionToolTipText()
-end
-
----@return unknown
 function ExpandAllFactionHeaders()
 end
 
@@ -1808,10 +1536,6 @@ end
 
 ---@return unknown
 function ExpandWarGameHeader()
-end
-
----@return unknown
-function ExtraActionButtonKey()
 end
 
 ---@return nil
@@ -1879,19 +1603,7 @@ function ForfeitDuel()
 end
 
 ---@return unknown
-function FormatPaperDollTooltipStat()
-end
-
----@return unknown
-function FormatProfession()
-end
-
----@return unknown
 function FrameXML_Debug()
-end
-
----@return unknown
-function GMError()
 end
 
 ---@return unknown
@@ -2082,10 +1794,6 @@ end
 function GetActiveLootRollIDs()
 end
 
----@return unknown
-function GetActiveRaidProfile()
-end
-
 ---@return activeSpec
 function GetActiveSpecGroup(isInspect)
 end
@@ -2128,10 +1836,6 @@ end
 
 ---@return unknown
 function GetAlternativeDefaultLanguage()
-end
-
----@return unknown
-function GetApplicableMultisampleSetting()
 end
 
 ---@return izedName
@@ -2219,19 +1923,11 @@ function GetBackgroundLoadingStatus()
 end
 
 ---@return unknown
-function GetBackgroundTexCoordsForRole()
-end
-
----@return unknown
 function GetBackpackAutosortDisabled()
 end
 
 ---@return name, count, icon, currencyID
 function GetBackpackCurrencyInfo(index)
-end
-
----@return unknown
-function GetBackpackFrame()
 end
 
 ---@return bagName
@@ -2260,10 +1956,6 @@ end
 
 ---@return unknown
 function GetBarberShopTotalCost()
-end
-
----@return unknown
-function GetBattlePetAbilityHyperlink()
 end
 
 ---@return myFaction
@@ -2302,7 +1994,7 @@ end
 function GetBattlefieldStatData(playerIndex,slotIndex)
 end
 
----@return status, mapName, teamSize, registeredMatch, suspendedQueue, queueType, gameType, role
+---@return status, mapName, teamSize, registeredMatch, suspendedQueue, queueType, gameType, role, asGroup, shortDescription, longDescription
 function GetBattlefieldStatus(index)
 end
 
@@ -2358,10 +2050,6 @@ end
 function GetBindingByKey(key)
 end
 
----@return command
-function GetBindingFromClick(keyOrButton)
-end
-
 ---@return key1, key2
 function GetBindingKey(command)
 end
@@ -2394,7 +2082,7 @@ end
 function GetBuybackItemLink()
 end
 
----@return value, defaultValue, account, character, param5, setcvaronly, readonly
+---@return value, defaultValue, account, character, unknown5, setCvarOnly, readOnly
 function GetCVarInfo(name)
 end
 
@@ -2446,10 +2134,6 @@ end
 function GetChatTypeIndex(typeCode)
 end
 
----@return unknown
-function GetChatUnitColor()
-end
-
 ---@return name1, zone1, name2, zone2, ...
 function GetChatWindowChannels(frameId)
 end
@@ -2492,10 +2176,6 @@ end
 
 ---@return formattedAmount
 function GetCoinTextureString(amount, fontHeight)
-end
-
----@return unknown
-function GetColoredName()
 end
 
 ---@return rating
@@ -2738,20 +2418,12 @@ end
 function GetDemotionRank()
 end
 
----@return unknown
-function GetDenominationsFromCopper()
-end
-
 ---@return effectiveILvl, isPreview, baseILvl
 function GetDetailedItemLevelInfo(itemID_or_itemString_or_itemName_or_itemLink)
 end
 
 ---@return name, groupType, isHeroic, isChallengeMode, displayHeroic, displayMythic, toggleDifficultyID
 function GetDifficultyInfo(id)
-end
-
----@return unknown
-function GetDisplayedAllyFrames()
 end
 
 ---@return unknown
@@ -2783,23 +2455,7 @@ function GetDungeonInfo()
 end
 
 ---@return unknown
-function GetDungeonNameWithDifficulty()
-end
-
----@return unknown
-function GetEnemyDodgeChance()
-end
-
----@return unknown
-function GetEnemyParryChance()
-end
-
----@return unknown
 function GetEquipmentNameFromSpell()
-end
-
----@return unknown
-function GetEquipmentSetIconInfo()
 end
 
 ---@return unknown
@@ -2823,7 +2479,7 @@ function GetExpansionDisplayInfo(expansionLevel)
 end
 
 ---@return expansionLevel
-function GetExpansionForLevel(playerLevel , useLegacy)
+function GetExpansionForLevel(playerLevel)
 end
 
 ---@return expansionLevel
@@ -2871,10 +2527,6 @@ function GetFilteredAchievementID(index)
 end
 
 ---@return unknown
-function GetFixedLink()
-end
-
----@return unknown
 function GetFlexRaidDungeonInfo()
 end
 
@@ -2906,14 +2558,6 @@ end
 function GetFrameCPUUsage(frame, includeChildren)
 end
 
----@return unknown
-function GetFrameHandle()
-end
-
----@return unknown
-function GetFrameHandleFrame()
-end
-
 ---@return  framerate
 function GetFramerate()
 end
@@ -2928,10 +2572,6 @@ end
 
 ---@return currentRank, maxRank
 function GetFriendshipReputationRanks(factionID)
-end
-
----@return unknown
-function GetFullRaidList()
 end
 
 ---@return unknown
@@ -3415,10 +3055,6 @@ function GetJournalInfoForSpellConfirmation()
 end
 
 ---@return unknown
-function GetKeyRingSize()
-end
-
----@return unknown
 function GetLFDChoiceCollapseState()
 end
 
@@ -3528,10 +3164,6 @@ end
 
 ---@return unknown
 function GetLFGInviteRoleRestrictions()
-end
-
----@return     mode, submode
-function GetLFGMode(category, lfgID)
 end
 
 ---@return  completedEncounters, numMembers, isLeader, isHoliday, proposalCategory
@@ -3706,10 +3338,6 @@ end
 function GetLootThreshold()
 end
 
----@return unknown
-function GetLowBit()
-end
-
 ---@return body
 function GetMacroBody(macroIndex_or_name)
 end
@@ -3742,10 +3370,6 @@ end
 function GetManaRegen()
 end
 
----@return unknown
-function GetManagedEnvironment()
-end
-
 ---@return candidate
 function GetMasterLootCandidate(slot, index)
 end
@@ -3756,10 +3380,6 @@ end
 
 ---@return mastery, coefficient
 function GetMasteryEffect()
-end
-
----@return unknown
-function GetMaterialTextColors()
 end
 
 ---@return unknown
@@ -3775,7 +3395,7 @@ function GetMaxCombatRatingBonus()
 end
 
 ---@return maxLevel
-function GetMaxLevelForExpansionLevel(expansionLevel , useModernLevelMapping)
+function GetMaxLevelForExpansionLevel(expansionLevel)
 end
 
 ---@return unknown
@@ -3802,20 +3422,12 @@ end
 function GetMaxTalentTier()
 end
 
----@return unknown
-function GetMaxUIPanelsWidth()
-end
-
 ---@return expansionLevel
 function GetMaximumExpansionLevel()
 end
 
 ---@return unknown
 function GetMeleeHaste()
-end
-
----@return unknown
-function GetMeleeMissChance()
 end
 
 ---@return unknown
@@ -3855,14 +3467,6 @@ function GetMerchantNumItems()
 end
 
 ---@return unknown
-function GetMessageTypeColor()
-end
-
----@return unknown
-function GetMessageTypeState()
-end
-
----@return unknown
 function GetMinRenderScale()
 end
 
@@ -3896,10 +3500,6 @@ end
 
 ---@return money
 function GetMoney()
-end
-
----@return unknown
-function GetMoneyString()
 end
 
 ---@return unknown
@@ -4366,10 +3966,6 @@ end
 function GetNumWarGameTypes()
 end
 
----@return numWatched
-function GetNumWatchedTokens()
-end
-
 ---@return unknown
 function GetNumWorldPVPAreas()
 end
@@ -4534,10 +4130,6 @@ end
 function GetPlayerFacing()
 end
 
----@return unknown
-function GetPlayerFactionGroup()
-end
-
 ---@return izedClass, englishClass, izedRace, englishRace, sex, name, realm
 function GetPlayerInfoByGUID(guid)
 end
@@ -4644,10 +4236,6 @@ end
 
 ---@return name, texture, numItems, quality
 function GetQuestCurrencyInfo(itemType, index)
-end
-
----@return colour
-function GetQuestDifficultyColor(level)
 end
 
 ---@return unknown
@@ -4922,10 +4510,6 @@ end
 function GetRaidTargetIndex(unit)
 end
 
----@return randArg
-function GetRandomArgument(...)
-end
-
 ---@return unknown
 function GetRandomDungeonBestChoice()
 end
@@ -4947,15 +4531,7 @@ function GetRangedHaste()
 end
 
 ---@return unknown
-function GetRangedMissChance()
-end
-
----@return unknown
 function GetRatedBattleGroundInfo()
-end
-
----@return unknown
-function GetReadonlyRestrictedTable()
 end
 
 ---@return unknown
@@ -4995,10 +4571,6 @@ function GetRecruitingGuildSettings()
 end
 
 ---@return unknown
-function GetRelativeDifficultyColor()
-end
-
----@return unknown
 function GetReleaseTimeRemaining()
 end
 
@@ -5014,7 +4586,7 @@ end
 function GetRestState()
 end
 
----@return unknown
+---@return rLevel, rMoney, profCap
 function GetRestrictedAccountData()
 end
 
@@ -5134,20 +4706,12 @@ end
 function GetScreenHeight()
 end
 
----@return unknown
-function GetScreenHeightScale()
-end
-
 ---@return resolution1, resolution2, resolution3, ...
 function GetScreenResolutions()
 end
 
 ---@return screenWidth
 function GetScreenWidth()
-end
-
----@return unknown
-function GetScreenWidthScale()
 end
 
 ---@return unknown
@@ -5228,10 +4792,6 @@ end
 
 ---@return damageReduction
 function GetShieldBlock()
-end
-
----@return unknown
-function GetSmoothProgressChange()
 end
 
 ---@return isBoundTradeable
@@ -5383,14 +4943,6 @@ function GetSpellLossOfControlCooldown(spellSlot, bookType_or_spellName_or_spell
 end
 
 ---@return unknown
-function GetSpellMissChance()
-end
-
----@return unknown
-function GetSpellNameColor()
-end
-
----@return unknown
 function GetSpellPenetration()
 end
 
@@ -5470,10 +5022,6 @@ end
 function GetTabardInfo()
 end
 
----@return unknown
-function GetTableColor()
-end
-
 ---@return talentID, name, texture, selected, available, spellID, unknown, row, column, unknown, known
 function GetTalentInfo(tier, column, specGroupIndex , isInspect, inspectUnit)
 end
@@ -5526,22 +5074,6 @@ end
 function GetTempShapeshiftBarIndex()
 end
 
----@return unknown
-function GetTexCoordsByGrid()
-end
-
----@return unknown
-function GetTexCoordsForRole()
-end
-
----@return unknown
-function GetTexCoordsForRoleSmall()
-end
-
----@return unknown
-function GetTexCoordsForRoleSmallCircle()
-end
-
 ---@return text
 function GetText(token , gender, ordinal)
 end
@@ -5563,15 +5095,7 @@ function GetTimePreciseSec()
 end
 
 ---@return unknown
-function GetTimeStringFromSeconds()
-end
-
----@return unknown
 function GetTimeToWellRested()
-end
-
----@return unknown
-function GetTimerTextColor()
 end
 
 ---@return name, playerTitle
@@ -5699,18 +5223,6 @@ function GetUICameraInfo()
 end
 
 ---@return unknown
-function GetUIPanel()
-end
-
----@return unknown
-function GetUIPanelHeight()
-end
-
----@return unknown
-function GetUIPanelWidth()
-end
-
----@return unknown
 function GetUITextureKitInfo()
 end
 
@@ -5720,10 +5232,6 @@ end
 
 ---@return unknown
 function GetUnitMaxHealthModifier()
-end
-
----@return name
-function GetUnitName(unit, showServerName)
 end
 
 ---@return info
@@ -5875,26 +5383,6 @@ function GiveMasterLoot(li, ci)
 end
 
 ---@return unknown
-function GossipFrameActiveQuestsUpdate()
-end
-
----@return unknown
-function GossipFrameAvailableQuestsUpdate()
-end
-
----@return unknown
-function GossipFrameOptionsUpdate()
-end
-
----@return unknown
-function GossipFrameUpdate()
-end
-
----@return unknown
-function GossipResize()
-end
-
----@return unknown
 function GroupHasOfflineMember()
 end
 
@@ -5999,10 +5487,6 @@ function HandleAtlasMemberCommand()
 end
 
 ---@return unknown
-function HandleModifiedItemClick()
-end
-
----@return unknown
 function HasAPEffectsSpellPower()
 end
 
@@ -6063,22 +5547,6 @@ function HasLoadedCUFProfiles()
 end
 
 ---@return unknown
-function HasMessageType()
-end
-
----@return unknown
-function HasMessageTypeGroup()
-end
-
----@return unknown
-function HasMultiCastActionBar()
-end
-
----@return unknown
-function HasMultiCastActionPage()
-end
-
----@return unknown
 function HasNewMail()
 end
 
@@ -6134,48 +5602,8 @@ end
 function HearthAndResurrectFromArea()
 end
 
----@return unknown
-function HelpReportLag()
-end
-
----@return unknown
-function HideDropDownMenu()
-end
-
----@return unknown
-function HideKnowledgeBase()
-end
-
----@return unknown
-function HideMultiCastActionBar()
-end
-
----@return unknown
-function HideParentPanel()
-end
-
----@return unknown
-function HidePartyFrame()
-end
-
----@return unknown
-function HidePetActionBar()
-end
-
 ---@return nil
 function HideRepairCursor()
-end
-
----@return unknown
-function HideTextStatusBarText()
-end
-
----@return unknown
-function HideUIPanel()
-end
-
----@return unknown
-function HideWatchedReputationBarText()
 end
 
 ---@return unknown
@@ -6186,10 +5614,6 @@ end
 function InCombatLockdown()
 end
 
----@return unknown
-function InGlue()
-end
-
 ---@return inGroup, numGuildPresent, numGuildRequired, xpMultiplier
 function InGuildParty()
 end
@@ -6198,20 +5622,8 @@ end
 function InRepairMode()
 end
 
----@return unknown
-function InboxGetMoreMail()
-end
-
 ---@return canDelete
 function InboxItemCanDelete(index)
-end
-
----@return unknown
-function InboxNextPage()
-end
-
----@return unknown
-function InboxPrevPage()
 end
 
 ---@return nil
@@ -6223,19 +5635,7 @@ function InitiateTrade(unit)
 end
 
 ---@return unknown
-function InspectAchievements()
-end
-
----@return nil
-function InspectUnit(unit)
-end
-
----@return unknown
 function InteractUnit()
-end
-
----@return unknown
-function InviteToGroup()
 end
 
 ---@return unknown
@@ -6334,10 +5734,6 @@ end
 function IsBNLogin()
 end
 
----@return container
-function IsBagOpen(BagID)
-end
-
 ---@return unknown
 function IsBagSlotFlagEnabledOnOtherBags()
 end
@@ -6380,14 +5776,6 @@ end
 
 ---@return unknown
 function IsChatDND()
-end
-
----@return unknown
-function IsClassColoringMessageType()
-end
-
----@return unknown
-function IsCombatLog()
 end
 
 ---@return unknown
@@ -6527,18 +5915,6 @@ function IsFlying()
 end
 
 ---@return unknown
-function IsFrameHandle()
-end
-
----@return unknown
-function IsFrameLockActive()
-end
-
----@return unknown
-function IsFrameSmartShown()
-end
-
----@return unknown
 function IsGMClient()
 end
 
@@ -6610,10 +5986,6 @@ end
 function IsInLFGDungeon()
 end
 
----@return unknown
-function IsInProvingGround()
-end
-
 ---@return isInRaid
 function IsInRaid(groupType)
 end
@@ -6667,10 +6039,6 @@ function IsLFGDungeonJoinable()
 end
 
 ---@return unknown
-function IsLFGModeActive()
-end
-
----@return unknown
 function IsLeftAltKeyDown()
 end
 
@@ -6691,10 +6059,6 @@ function IsLinuxClient()
 end
 
 ---@return unknown
-function IsListeningForMessageType()
-end
-
----@return unknown
 function IsLoggedIn()
 end
 
@@ -6704,14 +6068,6 @@ end
 
 ---@return unknown
 function IsMasterLooter()
-end
-
----@return unknown
-function IsMessageDoneBy()
-end
-
----@return unknown
-function IsMessageDoneTo()
 end
 
 ---@return isHeld
@@ -6742,20 +6098,12 @@ end
 function IsMoviePlayable(movieID)
 end
 
----@return unknown
-function IsNormalActionBarState()
-end
-
 ---@return isOnGlueScreen
 function IsOnGlueScreen()
 end
 
 ---@return unknown
 function IsOnTournamentRealm()
-end
-
----@return unknown
-function IsOptionFrameOpen()
 end
 
 ---@return oob
@@ -6923,10 +6271,6 @@ function IsRightShiftKeyDown()
 end
 
 ---@return unknown
-function IsSecureCmd()
-end
-
----@return unknown
 function IsSelectedSpellBookItem()
 end
 
@@ -7063,10 +6407,6 @@ function IsUsingVehicleControls()
 end
 
 ---@return unknown
-function IsValid()
-end
-
----@return unknown
 function IsVehicleAimAngleAdjustable()
 end
 
@@ -7096,10 +6436,6 @@ end
 
 ---@return unknown
 function IsWorldQuestWatched()
-end
-
----@return unknown
-function IsWritableRestrictedTable()
 end
 
 ---@return unknown
@@ -7282,44 +6618,8 @@ end
 function KBSystem_GetServerStatus()
 end
 
----@return unknown
-function LFDGetNumDungeons()
-end
-
----@return unknown
-function LFGConstructDeclinedMessage()
-end
-
----@return unknown
-function LFGDebug()
-end
-
----@return unknown
-function LFGIsIDHeader()
-end
-
----@return unknown
-function LFGListFilterChoices()
-end
-
----@return unknown
-function LFGListRemoveCollapsedChildren()
-end
-
----@return unknown
-function LFGListRemoveHeadersWithoutChildren()
-end
-
----@return unknown
-function LFGListUpdateHeaderEnabledAndLockedStates()
-end
-
 ---@return nil
 function LFGTeleport(toSafety)
-end
-
----@return unknown
-function LFRGetNumDungeons()
 end
 
 ---@return nil
@@ -7375,31 +6675,7 @@ function LoadBindings(bindingSet)
 end
 
 ---@return unknown
-function LoadMicroButtonTextures()
-end
-
----@return unknown
 function LoadURLIndex()
-end
-
----@return unknown
-function Localize()
-end
-
----@return unknown
-function LocalizeFrames()
-end
-
----@return unknown
-function LocalizePost()
-end
-
----@return unknown
-function LockMultiCastActionBar()
-end
-
----@return unknown
-function LockPetActionBar()
 end
 
 ---@return isLogging
@@ -7424,42 +6700,6 @@ end
 
 ---@return isLootItem
 function LootSlotHasItem(lootSlot)
-end
-
----@return unknown
-function LowerFrameLevel()
-end
-
----@return unknown
-function ManageBackpackTokenFrame()
-end
-
----@return unknown
-function MicroButtonPulse()
-end
-
----@return unknown
-function MicroButtonPulseStop()
-end
-
----@return unknown
-function MicroButtonTooltipText()
-end
-
----@return unknown
-function MiniMapTrackingShineFadeIn()
-end
-
----@return unknown
-function MiniMapTrackingShineFadeOut()
-end
-
----@return unknown
-function MinimapMailFrameUpdate()
-end
-
----@return isOver
-function MouseIsOver(frame, topOffset, bottomOffset, leftOffset, rightOffset)
 end
 
 ---@return unknown
@@ -7496,10 +6736,6 @@ end
 
 ---@return nil
 function MoveForwardStop(startTime)
-end
-
----@return unknown
-function MoveMicroButtons()
 end
 
 ---@return nil
@@ -7551,30 +6787,6 @@ function MoveViewUpStop()
 end
 
 ---@return unknown
-function MultiActionButtonDown()
-end
-
----@return unknown
-function MultiActionButtonUp()
-end
-
----@return unknown
-function MultiCastActionButtonDown()
-end
-
----@return unknown
-function MultiCastActionButtonUp()
-end
-
----@return unknown
-function MultiCastRecallSpellButtonUp()
-end
-
----@return unknown
-function MultiCastSummonSpellButtonUp()
-end
-
----@return unknown
 function MultiSampleAntiAliasingSupported()
 end
 
@@ -7611,59 +6823,11 @@ function OfferPetition()
 end
 
 ---@return unknown
-function OnMenuLoad()
-end
-
----@return nil
-function OpenAllBags( frame, forceUpdate )
-end
-
----@return backpackWasOpen
-function OpenBackpack()
-end
-
----@return nil
-function OpenBag(id, force)
-end
-
----@return unknown
-function OpenCoinPickupFrame()
-end
-
----@return unknown
-function OpenColorPicker()
-end
-
----@return unknown
-function OpenFriendsFrame()
-end
-
----@return unknown
-function OpenGlyphFrame()
-end
-
----@return unknown
-function OpenStackSplitFrame()
-end
-
----@return unknown
 function OpenTrainer()
 end
 
 ---@return unknown
 function OpeningCinematic()
-end
-
----@return unknown
-function PaperDollBgDesaturate()
-end
-
----@return unknown
-function PaperDollFormatStat()
-end
-
----@return unknown
-function PaperDollStatTooltip()
 end
 
 ---@return unknown
@@ -7674,24 +6838,8 @@ end
 function PartyLFGStartBackfill()
 end
 
----@return unknown
-function PartyMemberHealthCheck()
-end
-
----@return unknown
-function PassClickToParent()
-end
-
 ---@return nil
 function PetAbandon()
-end
-
----@return unknown
-function PetActionButtonDown()
-end
-
----@return unknown
-function PetActionButtonUp()
 end
 
 ---@return nil
@@ -7927,10 +7075,6 @@ function PrevView()
 end
 
 ---@return unknown
-function PrintLootSpecialization()
-end
-
----@return unknown
 function ProcessQuestLogRewardFactions()
 end
 
@@ -7952,14 +7096,6 @@ end
 
 ---@return nil
 function PutItemInBag(slotId)
-end
-
----@return unknown
-function PutKeyInKeyRing()
-end
-
----@return index, item, spell
-function QueryCastSequence(sequence)
 end
 
 ---@return unknown
@@ -8071,27 +7207,11 @@ function Quit()
 end
 
 ---@return unknown
-function RGBTableToColorCode()
-end
-
----@return unknown
-function RGBToColorCode()
-end
-
----@return unknown
 function RaidProfileExists()
 end
 
 ---@return unknown
 function RaidProfileHasUnsavedChanges()
-end
-
----@return unknown
-function RaiseFrameLevel()
-end
-
----@return unknown
-function RaiseFrameLevelByTwo()
 end
 
 ---@return nil
@@ -8103,35 +7223,7 @@ function ReagentBankButtonIDToInvSlotID()
 end
 
 ---@return unknown
-function RealPartyIsFull()
-end
-
----@return unknown
-function RecalculateGearManagerDialogPopup()
-end
-
----@return unknown
-function RecentTimeDate()
-end
-
----@return unknown
 function RedockChatWindows()
-end
-
----@return unknown
-function RefreshAuras()
-end
-
----@return unknown
-function RefreshBuffs()
-end
-
----@return unknown
-function RefreshDebuffs()
-end
-
----@return unknown
-function RefreshEquipmentSetIconInfo()
 end
 
 ---@return unknown
@@ -8139,27 +7231,7 @@ function RefreshLFGList()
 end
 
 ---@return unknown
-function RefreshMoneyFrame()
-end
-
----@return unknown
-function RegisterAttributeDriver()
-end
-
----@return unknown
-function RegisterAutoHide()
-end
-
----@return unknown
-function RegisterStateDriver()
-end
-
----@return unknown
 function RegisterStaticConstants()
-end
-
----@return unknown
-function RegisterUnitWatch()
 end
 
 ---@return nil
@@ -8176,14 +7248,6 @@ end
 
 ---@return nil
 function RemoveChatWindowMessages(index, messageGroup)
-end
-
----@return unknown
-function RemoveExtraSpaces()
-end
-
----@return unknown
-function RemoveFrameLock()
 end
 
 ---@return keystoneRemoved
@@ -8418,10 +7482,6 @@ end
 function ReturnInboxItem()
 end
 
----@return unknown
-function ReverseQuestObjective()
-end
-
 ---@return nil
 function RollOnLoot(rollID, rollType)
 end
@@ -8456,10 +7516,6 @@ end
 
 ---@return nil
 function SaveView(viewIndex)
-end
-
----@return unknown
-function ScenariosGetNumDungeons()
 end
 
 ---@return nil
@@ -8502,44 +7558,8 @@ end
 function SearchLFGSort()
 end
 
----@return timePassed
-function SecondsToTime(seconds, noSeconds)
-end
-
----@return TimeFormat, Value
-function SecondsToTimeAbbrev(TimeDuration)
-end
-
----@return unknown
-function SecureCapsuleGet()
-end
-
----@return unknown
-function SecureCmdItemParse()
-end
-
 ---@return result, target
 function SecureCmdOptionParse(options)
-end
-
----@return unknown
-function SecureCmdUseItem()
-end
-
----@return unknown
-function SecureHandlerExecute()
-end
-
----@return nil
-function SecureHandlerSetFrameRef(frame, label, refFrame)
-end
-
----@return unknown
-function SecureHandlerUnwrapScript()
-end
-
----@return nil
-function SecureHandlerWrapScript(frame, script, header, preBody, postBody)
 end
 
 ---@return unknown
@@ -8615,10 +7635,6 @@ function SetActionUIButton()
 end
 
 ---@return unknown
-function SetActiveRaidProfile()
-end
-
----@return unknown
 function SetAddonVersionCheck()
 end
 
@@ -8687,10 +7703,6 @@ function SetBindingSpell(key, spell)
 end
 
 ---@return unknown
-function SetButtonPulse()
-end
-
----@return unknown
 function SetCemeteryPreference()
 end
 
@@ -8704,14 +7716,6 @@ end
 
 ---@return unknown
 function SetChatColorNameByClass()
-end
-
----@return unknown
-function SetChatMouseOverDelay()
-end
-
----@return unknown
-function SetChatUnitColor()
 end
 
 ---@return unknown
@@ -8754,10 +7758,6 @@ end
 function SetChatWindowUninteractable()
 end
 
----@return unknown
-function SetClampedTextureRotation()
-end
-
 ---@return nil
 function SetConsoleKey(key)
 end
@@ -8788,18 +7788,6 @@ end
 
 ---@return unknown
 function SetDefaultVideoOptions()
-end
-
----@return unknown
-function SetDesaturation()
-end
-
----@return unknown
-function SetDoubleGuildTabardTextures()
-end
-
----@return unknown
-function SetDressUpBackground()
 end
 
 ---@return nil
@@ -8879,10 +7867,6 @@ function SetGuildRosterShowOffline(enabled)
 end
 
 ---@return unknown
-function SetGuildTabardTextures()
-end
-
----@return unknown
 function SetGuildTradeSkillCategoryFilter()
 end
 
@@ -8900,42 +7884,6 @@ end
 
 ---@return unknown
 function SetInventoryPortraitTexture()
-end
-
----@return unknown
-function SetItemButtonCount()
-end
-
----@return unknown
-function SetItemButtonDesaturated()
-end
-
----@return unknown
-function SetItemButtonNameFrameVertexColor()
-end
-
----@return unknown
-function SetItemButtonNormalTextureVertexColor()
-end
-
----@return unknown
-function SetItemButtonSlotVertexColor()
-end
-
----@return unknown
-function SetItemButtonStock()
-end
-
----@return unknown
-function SetItemButtonTexture()
-end
-
----@return nil
-function SetItemButtonTextureVertexColor(button, r, g, b)
-end
-
----@return nil
-function SetItemRef(link, text, button)
 end
 
 ---@return unknown
@@ -8972,10 +7920,6 @@ end
 
 ---@return unknown
 function SetLFGRoles()
-end
-
----@return unknown
-function SetLargeGuildTabardTextures()
 end
 
 ---@return unknown
@@ -9020,10 +7964,6 @@ end
 
 ---@return nil
 function SetModifiedClick(action, key)
-end
-
----@return unknown
-function SetMoneyFrameColor()
 end
 
 ---@return unknown
@@ -9083,10 +8023,6 @@ function SetPVPRoles(tank, healer, dps)
 end
 
 ---@return unknown
-function SetPaperDollBackground()
-end
-
----@return unknown
 function SetPartyAssignment()
 end
 
@@ -9130,14 +8066,6 @@ end
 function SetRaidTarget(unit, iconId)
 end
 
----@return nil
-function SetRaidTargetIcon(unit, index)
-end
-
----@return unknown
-function SetRaidTargetIconTexture()
-end
-
 ---@return unknown
 function SetRaidTargetProtected()
 end
@@ -9175,10 +8103,6 @@ function SetSelectedWarGameType()
 end
 
 ---@return unknown
-function SetSelfMuteState()
-end
-
----@return unknown
 function SetSendMailCOD()
 end
 
@@ -9191,19 +8115,11 @@ function SetSendMailShowing()
 end
 
 ---@return unknown
-function SetSmallGuildTabardTextures()
-end
-
----@return unknown
 function SetSortBagsRightToLeft()
 end
 
 ---@return nil
 function SetSpecialization(specIndex , isPet )
-end
-
----@return unknown
-function SetSpellNameColor()
 end
 
 ---@return unknown
@@ -9215,35 +8131,11 @@ function SetSuperTrackedQuestID()
 end
 
 ---@return unknown
-function SetTableColor()
-end
-
----@return unknown
 function SetTaxiBenchmarkMode()
 end
 
 ---@return nil
 function SetTaxiMap(texture)
-end
-
----@return unknown
-function SetTextStatusBarText()
-end
-
----@return unknown
-function SetTextStatusBarTextPrefix()
-end
-
----@return unknown
-function SetTextStatusBarTextZeroText()
-end
-
----@return unknown
-function SetTitleByName()
-end
-
----@return unknown
-function SetTooltipMoney()
 end
 
 ---@return nil
@@ -9266,20 +8158,8 @@ end
 function SetTurnEnabled()
 end
 
----@return nil
-function SetUIPanelAttribute(frame, name, value)
-end
-
 ---@return unknown
 function SetUIVisibility()
-end
-
----@return unknown
-function SetUpAnimation()
-end
-
----@return unknown
-function SetUpSideDressUpFrame()
 end
 
 ---@return nil
@@ -9291,15 +8171,7 @@ function SetWatchedFactionIndex(index)
 end
 
 ---@return unknown
-function SetZoneText()
-end
-
----@return unknown
 function SetupFullscreenScale()
-end
-
----@return unknown
-function ShouldShowConsolidatedBuffFrame()
 end
 
 ---@return show
@@ -9327,39 +8199,7 @@ function ShowContainerSellCursor()
 end
 
 ---@return unknown
-function ShowFriendshipReputationTooltip()
-end
-
----@return nil
-function ShowInspectCursor()
-end
-
----@return unknown
 function ShowInventorySellCursor()
-end
-
----@return unknown
-function ShowKnowledgeBase()
-end
-
----@return unknown
-function ShowMacroFrame()
-end
-
----@return unknown
-function ShowMultiCastActionBar()
-end
-
----@return unknown
-function ShowNumericThreat()
-end
-
----@return unknown
-function ShowPartyFrame()
-end
-
----@return unknown
-function ShowPetActionBar()
 end
 
 ---@return nil
@@ -9370,40 +8210,8 @@ end
 function ShowQuestOffer()
 end
 
----@return unknown
-function ShowQuickButton()
-end
-
----@return unknown
-function ShowReadyCheck()
-end
-
 ---@return nil
 function ShowRepairCursor()
-end
-
----@return unknown
-function ShowResurrectRequest()
-end
-
----@return unknown
-function ShowStatInCategory()
-end
-
----@return unknown
-function ShowTextStatusBarText()
-end
-
----@return nil
-function ShowUIPanel(frame, force)
-end
-
----@return unknown
-function ShowWatchedReputationBarText()
-end
-
----@return unknown
-function ShowWhoPanel()
 end
 
 ---@return nil
@@ -9412,14 +8220,6 @@ end
 
 ---@return nil
 function SitStandOrDescendStart()
-end
-
----@return unknown
-function SmartHide()
-end
-
----@return unknown
-function SmartShow()
 end
 
 ---@return unknown
@@ -9670,10 +8470,6 @@ end
 function SubmitRequiredGuildRename()
 end
 
----@return unknown
-function SubstituteChatMessageBeforeSend()
-end
-
 ---@return nil
 function SummonFriend(unit)
 end
@@ -9694,14 +8490,6 @@ end
 function SwitchAchievementSearchTab()
 end
 
----@return unknown
-function SynchronizeBNetStatus()
-end
-
----@return unknown
-function TEXT()
-end
-
 ---@return nil
 function TakeInboxItem(index, itemIndex)
 end
@@ -9712,10 +8500,6 @@ end
 
 ---@return unknown
 function TakeInboxTextItem()
-end
-
----@return nil
-function TakeScreenshot()
 end
 
 ---@return nil
@@ -9732,10 +8516,6 @@ end
 
 ---@return unknown
 function TargetDirectionFriend()
-end
-
----@return unknown
-function TargetHealthCheck()
 end
 
 ---@return nil
@@ -9794,10 +8574,6 @@ end
 function TargetUnit(unit_or_name , exactMatch)
 end
 
----@return unknown
-function TargetofTargetHealthCheck()
-end
-
 ---@return  dX
 function TaxiGetDestX(destinationIndex, routeIndex)
 end
@@ -9834,10 +8610,6 @@ end
 function TaxiNodeName(index)
 end
 
----@return unknown
-function TaxiNodeOnButtonEnter()
-end
-
 ---@return x,y
 function TaxiNodePosition(index)
 end
@@ -9846,20 +8618,8 @@ end
 function TaxiRequestEarlyLanding()
 end
 
----@return unknown
-function TextEmoteSort()
-end
-
 ---@return nil
 function TimeoutResurrect()
-end
-
----@return unknown
-function ToggleAchievementFrame()
-end
-
----@return unknown
-function ToggleAllBags()
 end
 
 ---@return unknown
@@ -9870,152 +8630,16 @@ end
 function ToggleAutoRun()
 end
 
----@return nil
-function ToggleBackpack()
-end
-
----@return nil
-function ToggleBag(bagNum)
-end
-
----@return unknown
-function ToggleBattlefieldMinimap()
-end
-
----@return unknown
-function ToggleCalendar()
-end
-
----@return nil
-function ToggleCharacter(frameName)
-end
-
----@return unknown
-function ToggleChatChannel()
-end
-
----@return unknown
-function ToggleChatColorNamesByClassGroup()
-end
-
----@return unknown
-function ToggleChatMessageGroup()
-end
-
 ---@return unknown
 function ToggleDebugAIDisplay()
-end
-
----@return nil
-function ToggleDropDownMenu(level, value, dropDownFrame, anchorName, xOffset, yOffset, menuList, button, autoHideDelay)
-end
-
----@return unknown
-function ToggleEncounterJournal()
-end
-
----@return unknown
-function ToggleFrame()
-end
-
----@return nil
-function ToggleFramerate()
-end
-
----@return nil
-function ToggleFriendsFrame(tabIndex)
-end
-
----@return unknown
-function ToggleFriendsPanel()
-end
-
----@return nil
-function ToggleGameMenu()
-end
-
----@return unknown
-function ToggleGlyphFrame()
-end
-
----@return unknown
-function ToggleGuildFinder()
-end
-
----@return unknown
-function ToggleGuildFrame()
-end
-
----@return unknown
-function ToggleHelpFrame()
-end
-
----@return unknown
-function ToggleIgnorePanel()
-end
-
----@return unknown
-function ToggleKeyRing()
-end
-
----@return unknown
-function ToggleLFDParentFrame()
-end
-
----@return unknown
-function ToggleLootHistoryFrame()
-end
-
----@return unknown
-function ToggleMapFramerate()
-end
-
----@return unknown
-function ToggleMessageDest()
-end
-
----@return unknown
-function ToggleMessageSource()
-end
-
----@return unknown
-function ToggleMessageType()
-end
-
----@return unknown
-function ToggleMessageTypeGroup()
-end
-
----@return unknown
-function ToggleMiniMapRotation()
-end
-
----@return nil
-function ToggleMinimap()
 end
 
 ---@return nil
 function TogglePVP()
 end
 
----@return nil
-function TogglePVPUI()
-end
-
 ---@return unknown
 function TogglePetAutocast()
-end
-
----@return unknown
-function TogglePetJournal()
-end
-
----@return unknown
-function ToggleRaidBrowser()
-end
-
----@return unknown
-function ToggleRaidFrame()
 end
 
 ---@return nil
@@ -10034,32 +8658,8 @@ end
 function ToggleSpellAutocast()
 end
 
----@return nil
-function ToggleSpellBook(bookType)
-end
-
----@return unknown
-function ToggleStats()
-end
-
----@return unknown
-function ToggleStoreUI()
-end
-
----@return nil
-function ToggleTalentFrame()
-end
-
----@return unknown
-function ToggleTimeManager()
-end
-
 ---@return unknown
 function ToggleWindowed()
-end
-
----@return unknown
-function ToggleWorldStateScoreFrame()
 end
 
 ---@return unknown
@@ -10092,46 +8692,6 @@ end
 
 ---@return nil
 function TurnRightStop(startTime)
-end
-
----@return unknown
-function UIDoFramesIntersect()
-end
-
----@return unknown
-function UIFrameFade()
-end
-
----@return nil
-function UIFrameFadeIn(frame, timeToFade, startAlpha, endAlpha)
-end
-
----@return unknown
-function UIFrameFadeOut()
-end
-
----@return unknown
-function UIFrameFadeRemoveFrame()
-end
-
----@return nil
-function UIFrameFlash(frame, fadeInTime, fadeOutTime, flashDuration, showWhenDone, flashInHoldTime, flashOutHoldTime)
-end
-
----@return unknown
-function UIFrameFlashStop()
-end
-
----@return unknown
-function UIFrameIsFading()
-end
-
----@return unknown
-function UIFrameIsFlashing()
-end
-
----@return loaded
-function UIParentLoadAddOn( index_or_addonName )
 end
 
 ---@return nil
@@ -10210,12 +8770,12 @@ end
 function UnitChannelInfo(unit)
 end
 
----@return className, classFilename, classID
-function UnitClass(unit)
+---@return className, classFilename, classId
+function UnitClass(unitId)
 end
 
----@return classFilename, classID
-function UnitClassBase(unit)
+---@return unknown
+function UnitClassBase()
 end
 
 ---@return classification
@@ -10242,8 +8802,8 @@ end
 function UnitDebuff()
 end
 
----@return isTanking, status, threatpct, rawthreatpct, threatvalue
-function UnitDetailedThreatSituation(unit, mob)
+---@return isTanking, status, scaledPercentage, rawPercentage, threatValue
+function UnitDetailedThreatSituation(unit, mobUnit)
 end
 
 ---@return distanceSquared, checkedDistance
@@ -10307,10 +8867,6 @@ function UnitHasLFGRandomCooldown(unit)
 end
 
 ---@return unknown
-function UnitHasMana()
-end
-
----@return unknown
 function UnitHasRelicSlot()
 end
 
@@ -10358,8 +8914,8 @@ end
 function UnitInParty(unit)
 end
 
----@return unknown
-function UnitInPhase()
+---@return inPhase
+function UnitInPhase(unit)
 end
 
 ---@return index
@@ -10579,7 +9135,7 @@ function UnitPosition(unit)
 end
 
 ---@return power
-function UnitPower(UnitId, powerType, unmodified)
+function UnitPower(unitToken , powerType, unmodified)
 end
 
 ---@return barID
@@ -10595,7 +9151,7 @@ function UnitPowerDisplayMod(powerType)
 end
 
 ---@return maxpower
-function UnitPowerMax(UnitId, powerType, unmodified)
+function UnitPowerMax(unitToken , powerType, unmodified)
 end
 
 ---@return powerType, powerToken, altR, altG, altB
@@ -10666,12 +9222,12 @@ end
 function UnitTargetsVehicleInRaidUI()
 end
 
----@return unknown
-function UnitThreatPercentageOfLead()
+---@return percentage
+function UnitThreatPercentageOfLead(unit, mobUnit)
 end
 
 ---@return status
-function UnitThreatSituation(unit, otherunit)
+function UnitThreatSituation(unit , mobUnit)
 end
 
 ---@return treatAsPlayer
@@ -10703,10 +9259,6 @@ function UnitVehicleSkin()
 end
 
 ---@return unknown
-function UnitWatchRegistered()
-end
-
----@return unknown
 function UnitWeaponAttackPower()
 end
 
@@ -10726,36 +9278,12 @@ end
 function UnlearnSpecialization()
 end
 
----@return unknown
-function UnlockMultiCastActionBar()
-end
-
----@return unknown
-function UnlockPetActionBar()
-end
-
 ---@return nil
 function UnlockVoidStorage()
 end
 
 ---@return nil
 function UnmuteSoundFile(soundFile_or_fileDataID)
-end
-
----@return unknown
-function UnregisterAttributeDriver()
-end
-
----@return unknown
-function UnregisterAutoHide()
-end
-
----@return nil
-function UnregisterStateDriver(frame, state)
-end
-
----@return unknown
-function UnregisterUnitWatch()
 end
 
 ---@return unknown
@@ -10767,59 +9295,7 @@ function UpdateAddOnMemoryUsage()
 end
 
 ---@return unknown
-function UpdateBagButtonHighlight()
-end
-
----@return unknown
-function UpdateBagSlotStatus()
-end
-
----@return unknown
-function UpdateCoinPickupFrame()
-end
-
----@return unknown
-function UpdateContainerFrameAnchors()
-end
-
----@return unknown
-function UpdateFrameLock()
-end
-
----@return unknown
 function UpdateInventoryAlertStatus()
-end
-
----@return unknown
-function UpdateMenuBarTop()
-end
-
----@return unknown
-function UpdateMicroButtons()
-end
-
----@return unknown
-function UpdateMicroButtonsParent()
-end
-
----@return unknown
-function UpdateNewItemList()
-end
-
----@return unknown
-function UpdatePartyMemberBackground()
-end
-
----@return unknown
-function UpdateProfessionButton()
-end
-
----@return unknown
-function UpdateStackSplitFrame()
-end
-
----@return unknown
-function UpdateUIPanelPositions()
 end
 
 ---@return unknown
@@ -10868,18 +9344,6 @@ end
 
 ---@return unknown
 function UseWorldMapActionButtonSpellOnQuest()
-end
-
----@return unknown
-function UsesGUID()
-end
-
----@return unknown
-function ValidateActionBarTransition()
-end
-
----@return unknown
-function ValidateFramePosition()
 end
 
 ---@return unknown
@@ -10951,19 +9415,7 @@ function VehiclePrevSeat()
 end
 
 ---@return unknown
-function VideoOptionsValueChanged()
-end
-
----@return unknown
 function ViewGuildRecipes()
-end
-
----@return unknown
-function VoiceChatShineFadeIn()
-end
-
----@return unknown
-function VoiceChatShineFadeOut()
 end
 
 ---@return unknown
@@ -11103,10 +9555,6 @@ function error()
 end
 
 ---@return unknown
-function escapePatternSymbols()
-end
-
----@return unknown
 function exp()
 end
 
@@ -11150,20 +9598,12 @@ end
 function getfenv()
 end
 
----@return value
-function getglobal(globalKey)
-end
-
 ---@return unknown
 function getmetatable()
 end
 
 ---@return size
 function getn(table)
-end
-
----@return func
-function getprinthandler()
 end
 
 ---@return unknown
@@ -11180,10 +9620,6 @@ end
 
 ---@return iteratorFunc, table, startState
 function ipairs(table)
-end
-
----@return unknown
-function isRaidFinderDungeonDisplayable()
 end
 
 ---@return secure
@@ -11322,10 +9758,6 @@ end
 function max()
 end
 
----@return nil
-function message(text)
-end
-
 ---@return unknown
 function min()
 end
@@ -11348,10 +9780,6 @@ end
 
 ---@return retOK, ret1, ret2, ...
 function pcall(func, arg1, arg2, ...)
-end
-
----@return nil
-function print(...)
 end
 
 ---@return unknown
@@ -11394,16 +9822,8 @@ end
 function setfenv()
 end
 
----@return nil
-function setglobal(globalKey, newValue)
-end
-
 ---@return unknown
 function setmetatable()
-end
-
----@return nil
-function setprinthandler(func)
 end
 
 ---@return unknown
@@ -11550,14 +9970,6 @@ end
 function strupper(s)
 end
 
----@return exists
-function tContains(table, value)
-end
-
----@return unknown
-function tDeleteItem()
-end
-
 ---@return unknown
 function table.concat()
 end
@@ -11620,10 +10032,6 @@ end
 
 ---@return s
 function tostring(arg)
-end
-
----@return unknown
-function tostringall()
 end
 
 ---@return nil
