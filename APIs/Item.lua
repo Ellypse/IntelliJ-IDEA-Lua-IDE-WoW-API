@@ -74,6 +74,10 @@ function C_Item.GetStackCount(itemLocation) end
 function C_Item.IsBound(itemLocation) end
 
 ---@param itemLoc table 
+---@return bool isCorruptable
+function C_Item.IsItemCorruptable(itemLoc) end
+
+---@param itemLoc table 
 ---@return bool isCorrupted
 function C_Item.IsItemCorrupted(itemLoc) end
 

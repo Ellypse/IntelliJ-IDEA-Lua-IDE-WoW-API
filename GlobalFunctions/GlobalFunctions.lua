@@ -1994,7 +1994,7 @@ end
 function GetBattlefieldStatData(playerIndex,slotIndex)
 end
 
----@return status, mapName, teamSize, registeredMatch, suspendedQueue, queueType, gameType, role
+---@return status, mapName, teamSize, registeredMatch, suspendedQueue, queueType, gameType, role, asGroup, shortDescription, longDescription
 function GetBattlefieldStatus(index)
 end
 
@@ -2082,7 +2082,7 @@ end
 function GetBuybackItemLink()
 end
 
----@return value, defaultValue, account, character, param5, setcvaronly, readonly
+---@return value, defaultValue, account, character, unknown5, setCvarOnly, readOnly
 function GetCVarInfo(name)
 end
 
@@ -8802,8 +8802,8 @@ end
 function UnitDebuff()
 end
 
----@return isTanking, status, threatpct, rawthreatpct, threatvalue
-function UnitDetailedThreatSituation(unit, mob)
+---@return isTanking, status, scaledPercentage, rawPercentage, threatValue
+function UnitDetailedThreatSituation(unit, mobUnit)
 end
 
 ---@return distanceSquared, checkedDistance
@@ -9222,12 +9222,12 @@ end
 function UnitTargetsVehicleInRaidUI()
 end
 
----@return unknown
-function UnitThreatPercentageOfLead()
+---@return percentage
+function UnitThreatPercentageOfLead(unit, mobUnit)
 end
 
 ---@return status
-function UnitThreatSituation(unit, otherunit)
+function UnitThreatSituation(unit , mobUnit)
 end
 
 ---@return treatAsPlayer

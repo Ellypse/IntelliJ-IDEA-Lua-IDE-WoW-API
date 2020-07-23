@@ -51,6 +51,9 @@ function C_AzeriteEssence.GetMilestones() end
 ---@return number numUnlockedEssences
 function C_AzeriteEssence.GetNumUnlockedEssences() end
 
+---@return number numUsableEssences
+function C_AzeriteEssence.GetNumUsableEssences() end
+
 ---@return number essenceID
 function C_AzeriteEssence.GetPendingActivationEssence() end
 
