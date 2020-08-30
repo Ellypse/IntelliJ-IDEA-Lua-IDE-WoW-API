@@ -7,14 +7,14 @@ function C_AzeriteEssence.ActivateEssence(essenceID, milestoneID) end
 
 ---@param essenceID number 
 ---@param milestoneID number 
----@return bool canActivate
+---@return boolean canActivate
 function C_AzeriteEssence.CanActivateEssence(essenceID, milestoneID) end
 
 ---@param milestoneID number 
----@return bool canDeactivate
+---@return boolean canDeactivate
 function C_AzeriteEssence.CanDeactivateEssence(milestoneID) end
 
----@return bool canOpen
+---@return boolean canOpen
 function C_AzeriteEssence.CanOpenUI() end
 
 function C_AzeriteEssence.ClearPendingActivationEssence() end
@@ -51,16 +51,19 @@ function C_AzeriteEssence.GetMilestones() end
 ---@return number numUnlockedEssences
 function C_AzeriteEssence.GetNumUnlockedEssences() end
 
+---@return number numUsableEssences
+function C_AzeriteEssence.GetNumUsableEssences() end
+
 ---@return number essenceID
 function C_AzeriteEssence.GetPendingActivationEssence() end
 
----@return bool hasNeverActivatedAnyEssences
+---@return boolean hasNeverActivatedAnyEssences
 function C_AzeriteEssence.HasNeverActivatedAnyEssences() end
 
----@return bool hasEssence
+---@return boolean hasEssence
 function C_AzeriteEssence.HasPendingActivationEssence() end
 
----@return bool isAtForge
+---@return boolean isAtForge
 function C_AzeriteEssence.IsAtForge() end
 
 ---@param essenceID number 

@@ -2,7 +2,7 @@
 C_IncomingSummon = {}
 
 ---@param unit string 
----@return bool summon
+---@return boolean summon
 function C_IncomingSummon.HasIncomingSummon(unit) end
 
 ---@param unit string 

@@ -1,11 +1,11 @@
 ---@class PartyInfo
 C_PartyInfo = {}
 
----@param toRaid bool 
----@return bool allowed
+---@param toRaid boolean 
+---@return boolean allowed
 function C_PartyInfo.AllowedToDoPartyConversion(toRaid) end
 
----@return bool allowedToInvite
+---@return boolean allowedToInvite
 function C_PartyInfo.CanInvite() end
 
 --- Immediately convert to raid with no regard for potentially destructive actions.
@@ -26,9 +26,9 @@ function C_PartyInfo.ConfirmLeaveParty(category) end
 
 --- Immediately request an invite into the target party, this is the confirmation function to call after RequestInviteFromUnit, or if you would like to skip the confirmation process.
 ---@param targetName string 
----@param tank bool @ [OPTIONAL]
----@param healer bool @ [OPTIONAL]
----@param dps bool @ [OPTIONAL]
+---@param tank boolean @ [OPTIONAL]
+---@param healer boolean @ [OPTIONAL]
+---@param dps boolean @ [OPTIONAL]
 ---@overload fun(targetName:string, healer:bool, dps:bool)
 ---@overload fun(targetName:string, dps:bool)
 ---@overload fun(targetName:string)
@@ -47,7 +47,7 @@ function C_PartyInfo.GetActiveCategories() end
 function C_PartyInfo.GetInviteConfirmationInvalidQueues(inviteGUID) end
 
 ---@param inviteGUID string 
----@return string, string, PartyRequestJoinRelation, bool, string outReferredByGuid, outReferredByName, outRelationType, outIsQuickJoin, outClubId
+---@return string, string, PartyRequestJoinRelation, boolean, string outReferredByGuid, outReferredByName, outRelationType, outIsQuickJoin, outClubId
 function C_PartyInfo.GetInviteReferralInfo(inviteGUID) end
 
 ---@param category number @ If not provided, the active party is used [OPTIONAL]
@@ -61,7 +61,7 @@ function C_PartyInfo.InviteUnit(targetName) end
 
 ---@param category number @ If not provided, the active party is used [OPTIONAL]
 ---@overload fun()
----@return bool isFull
+---@return boolean isFull
 function C_PartyInfo.IsPartyFull(category) end
 
 --- Usually this will leave the party immediately. In some cases (e.g. PartySync) the user will be prompted to confirm leaving the party, because it's potentially destructive
@@ -71,9 +71,9 @@ function C_PartyInfo.LeaveParty(category) end
 
 --- Attempt to request an invite into the target party, requires confirmation in some cases (e.g. there is a party sync in progress).
 ---@param targetName string 
----@param tank bool @ [OPTIONAL]
----@param healer bool @ [OPTIONAL]
----@param dps bool @ [OPTIONAL]
+---@param tank boolean @ [OPTIONAL]
+---@param healer boolean @ [OPTIONAL]
+---@param dps boolean @ [OPTIONAL]
 ---@overload fun(targetName:string, healer:bool, dps:bool)
 ---@overload fun(targetName:string, dps:bool)
 ---@overload fun(targetName:string)

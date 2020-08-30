@@ -5,6 +5,6 @@ C_ToyBoxInfo = {}
 function C_ToyBoxInfo.ClearFanfare(itemID) end
 
 ---@param itemID number 
----@return bool needsFanfare
+---@return boolean needsFanfare
 function C_ToyBoxInfo.NeedsFanfare(itemID) end
 

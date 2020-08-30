@@ -2,11 +2,11 @@
 C_Spell = {}
 
 ---@param spellID number 
----@return bool spellExists
+---@return boolean spellExists
 function C_Spell.DoesSpellExist(spellID) end
 
 ---@param spellID number 
----@return bool isCached
+---@return boolean isCached
 function C_Spell.IsSpellDataCached(spellID) end
 
 ---@param spellID number 

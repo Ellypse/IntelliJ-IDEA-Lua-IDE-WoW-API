@@ -21,7 +21,7 @@ function C_Club.AssignMemberRole(clubId, memberId, roleId) end
 ---@param streamId string 
 ---@param epoch number 
 ---@param position number 
----@return bool canResolve
+---@return boolean canResolve
 function C_Club.CanResolvePlayerLocationFromClubMessageData(clubId, streamId, epoch, position) end
 
 function C_Club.ClearAutoAdvanceStreamViewMarker() end
@@ -46,7 +46,7 @@ function C_Club.CreateClub(name, shortName, description, clubType, avatarId) end
 ---@param clubId string 
 ---@param name string 
 ---@param subject string 
----@param leadersAndModeratorsOnly bool 
+---@param leadersAndModeratorsOnly boolean 
 function C_Club.CreateStream(clubId, name, subject, leadersAndModeratorsOnly) end
 
 --- Check canCreateTicket privilege.
@@ -106,7 +106,7 @@ function C_Club.EditMessage(clubId, streamId, messageId, message) end
 ---@param streamId string 
 ---@param name string @ [OPTIONAL]
 ---@param subject string @ [OPTIONAL]
----@param leadersAndModeratorsOnly bool @ [OPTIONAL]
+---@param leadersAndModeratorsOnly boolean @ [OPTIONAL]
 ---@overload fun(clubId:string, streamId:string, subject:string, leadersAndModeratorsOnly:bool)
 ---@overload fun(clubId:string, streamId:string, leadersAndModeratorsOnly:bool)
 ---@overload fun(clubId:string, streamId:string)
@@ -116,7 +116,7 @@ function C_Club.Flush() end
 
 ---@param clubId string 
 ---@param streamId string 
----@return bool focused
+---@return boolean focused
 function C_Club.FocusStream(clubId, streamId) end
 
 ---@param clubId string 
@@ -169,7 +169,7 @@ function C_Club.GetInfoFromLastCommunityChatLine() end
 ---@param filter string @ [OPTIONAL]
 ---@param maxResults number @ [OPTIONAL]
 ---@param cursorPosition number @ [OPTIONAL]
----@param allowFullMatch bool @ [OPTIONAL]
+---@param allowFullMatch boolean @ [OPTIONAL]
 ---@param clubId string 
 ---@overload fun(maxResults:number, cursorPosition:number, allowFullMatch:bool, clubId:string)
 ---@overload fun(cursorPosition:number, allowFullMatch:bool, clubId:string)
@@ -193,7 +193,7 @@ function C_Club.GetInvitationsForClub(clubId) end
 function C_Club.GetInvitationsForSelf() end
 
 ---@param ticket string 
----@return ClubErrorType, ClubInfo|nil, bool error, info, showError
+---@return ClubErrorType, ClubInfo|nil, boolean error, info, showError
 function C_Club.GetLastTicketResponse(ticket) end
 
 ---@param clubId string 
@@ -258,17 +258,17 @@ function C_Club.GetSubscribedClubs() end
 function C_Club.GetTickets(clubId) end
 
 ---@param clubId string 
----@return bool accountMuted
+---@return boolean accountMuted
 function C_Club.IsAccountMuted(clubId) end
 
 --- Returns whether the given message is the first message in the stream, taking into account ignored messages
 ---@param clubId string 
 ---@param streamId string 
 ---@param messageId ClubMessageIdentifier 
----@return bool isBeginningOfStream
+---@return boolean isBeginningOfStream
 function C_Club.IsBeginningOfStream(clubId, streamId, messageId) end
 
----@return bool clubsEnabled
+---@return boolean clubsEnabled
 function C_Club.IsEnabled() end
 
 ---@return ClubRestrictionReason restrictionReason
@@ -276,7 +276,7 @@ function C_Club.IsRestricted() end
 
 ---@param clubId string 
 ---@param streamId string 
----@return bool subscribed
+---@return boolean subscribed
 function C_Club.IsSubscribedToStream(clubId, streamId) end
 
 --- Check kickableRoleIds privilege.
@@ -301,7 +301,7 @@ function C_Club.RequestInvitationsForClub(clubId) end
 ---@param count number @ [OPTIONAL]
 ---@overload fun(clubId:string, streamId:string, count:number)
 ---@overload fun(clubId:string, streamId:string)
----@return bool alreadyHasMessages
+---@return boolean alreadyHasMessages
 function C_Club.RequestMoreMessagesBefore(clubId, streamId, messageId, count) end
 
 ---@param ticketId string 
@@ -359,15 +359,15 @@ function C_Club.SetClubPresenceSubscription(clubId) end
 function C_Club.SetClubStreamNotificationSettings(clubId, settings) end
 
 ---@param clubId string 
----@param isFavorite bool 
+---@param isFavorite boolean 
 function C_Club.SetFavorite(clubId, isFavorite) end
 
 ---@param clubId string 
----@param enabled bool 
+---@param enabled boolean 
 function C_Club.SetSocialQueueingEnabled(clubId, enabled) end
 
 ---@param clubType ClubType 
----@return bool clubTypeIsAllowed
+---@return boolean clubTypeIsAllowed
 function C_Club.ShouldAllowClubType(clubType) end
 
 ---@param clubId string 

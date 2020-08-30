@@ -1,7 +1,7 @@
 ---@class SpellBook
 C_SpellBook = {}
 
----@return bool contains
+---@return boolean contains
 function C_SpellBook.ContainsAnyDisenchantSpell() end
 
 ---@param skillLineID number 
@@ -9,6 +9,6 @@ function C_SpellBook.ContainsAnyDisenchantSpell() end
 function C_SpellBook.GetSkillLineIndexByID(skillLineID) end
 
 ---@param spellID number 
----@return bool disabled
+---@return boolean disabled
 function C_SpellBook.IsSpellDisabled(spellID) end
 

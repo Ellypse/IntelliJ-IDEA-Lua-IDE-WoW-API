@@ -20,11 +20,11 @@ function C_EncounterJournal.GetSectionInfo(sectionID) end
 
 ---@param instanceID number @ [OPTIONAL]
 ---@overload fun()
----@return bool hasLoot
+---@return boolean hasLoot
 function C_EncounterJournal.InstanceHasLoot(instanceID) end
 
 ---@param journalEncounterID number 
----@return bool isEncounterComplete
+---@return boolean isEncounterComplete
 function C_EncounterJournal.IsEncounterComplete(journalEncounterID) end
 
 ---@param level number 

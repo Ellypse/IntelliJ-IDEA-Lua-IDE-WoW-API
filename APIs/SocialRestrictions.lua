@@ -1,12 +1,12 @@
 ---@class SocialRestrictions
 C_SocialRestrictions = {}
 
----@return bool isMuted
+---@return boolean isMuted
 function C_SocialRestrictions.IsMuted() end
 
----@return bool isSilenced
+---@return boolean isSilenced
 function C_SocialRestrictions.IsSilenced() end
 
----@return bool isSquelched
+---@return boolean isSquelched
 function C_SocialRestrictions.IsSquelched() end
 

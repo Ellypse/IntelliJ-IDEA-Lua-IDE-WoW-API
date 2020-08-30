@@ -2,14 +2,14 @@
 C_ConfigurationWarnings = {}
 
 ---@param configurationWarning ConfigurationWarning 
----@return bool hasSeenConfigurationWarning
+---@return boolean hasSeenConfigurationWarning
 function C_ConfigurationWarnings.GetConfigurationWarningSeen(configurationWarning) end
 
 ---@param configurationWarning ConfigurationWarning 
 ---@return string configurationWarningString
 function C_ConfigurationWarnings.GetConfigurationWarningString(configurationWarning) end
 
----@param includeSeenWarnings bool 
+---@param includeSeenWarnings boolean 
 ---@return ConfigurationWarning configurationWarnings
 function C_ConfigurationWarnings.GetConfigurationWarnings(includeSeenWarnings) end
 

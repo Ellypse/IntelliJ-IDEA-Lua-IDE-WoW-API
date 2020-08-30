@@ -63,11 +63,11 @@ function C_ContributionCollector.GetRewardQuestID(contributionID) end
 function C_ContributionCollector.GetState(contributionID) end
 
 ---@param contributionID number 
----@return bool hasPending
+---@return boolean hasPending
 function C_ContributionCollector.HasPendingContribution(contributionID) end
 
 ---@param contributionID number 
----@return bool awaitingData
+---@return boolean awaitingData
 function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 
 ---@class ContributionAppearanceFlags

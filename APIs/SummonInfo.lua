@@ -17,6 +17,6 @@ function C_SummonInfo.GetSummonConfirmTimeLeft() end
 ---@return number summonReason
 function C_SummonInfo.GetSummonReason() end
 
----@return bool isSummonSkippingStartExperience
+---@return boolean isSummonSkippingStartExperience
 function C_SummonInfo.IsSummonSkippingStartExperience() end
 

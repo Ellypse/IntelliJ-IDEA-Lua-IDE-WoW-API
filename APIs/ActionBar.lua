@@ -18,37 +18,37 @@ function C_ActionBar.FindSpellActionButtons(spellID) end
 function C_ActionBar.GetPetActionPetBarIndices(petActionID) end
 
 ---@param flyoutID number 
----@return bool hasFlyoutActionButtons
+---@return boolean hasFlyoutActionButtons
 function C_ActionBar.HasFlyoutActionButtons(flyoutID) end
 
 ---@param petActionID number 
----@return bool hasPetActionButtons
+---@return boolean hasPetActionButtons
 function C_ActionBar.HasPetActionButtons(petActionID) end
 
 ---@param petActionID number 
----@return bool hasPetActionPetBarIndices
+---@return boolean hasPetActionPetBarIndices
 function C_ActionBar.HasPetActionPetBarIndices(petActionID) end
 
 ---@param spellID number 
----@return bool hasSpellActionButtons
+---@return boolean hasSpellActionButtons
 function C_ActionBar.HasSpellActionButtons(spellID) end
 
 ---@param slotID number 
----@return bool isAutoCastPetAction
+---@return boolean isAutoCastPetAction
 function C_ActionBar.IsAutoCastPetAction(slotID) end
 
 ---@param slotID number 
----@return bool isEnabledAutoCastPetAction
+---@return boolean isEnabledAutoCastPetAction
 function C_ActionBar.IsEnabledAutoCastPetAction(slotID) end
 
 ---@param spellID number 
----@return bool isOnBarOrSpecialBar
+---@return boolean isOnBarOrSpecialBar
 function C_ActionBar.IsOnBarOrSpecialBar(spellID) end
 
----@return bool showHealthBar
+---@return boolean showHealthBar
 function C_ActionBar.ShouldOverrideBarShowHealthBar() end
 
----@return bool showManaBar
+---@return boolean showManaBar
 function C_ActionBar.ShouldOverrideBarShowManaBar() end
 
 ---@param slotID number 

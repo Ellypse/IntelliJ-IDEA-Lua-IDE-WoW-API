@@ -5,7 +5,7 @@ C_EquipmentSet = {}
 ---@param specIndex number 
 function C_EquipmentSet.AssignSpecToEquipmentSet(equipmentSetID, specIndex) end
 
----@return bool canUseEquipmentSets
+---@return boolean canUseEquipmentSets
 function C_EquipmentSet.CanUseEquipmentSets() end
 
 function C_EquipmentSet.ClearIgnoredSlotsForSave() end
@@ -19,7 +19,7 @@ function C_EquipmentSet.CreateEquipmentSet(equipmentSetName, icon) end
 function C_EquipmentSet.DeleteEquipmentSet(equipmentSetID) end
 
 ---@param equipmentSetID number 
----@return bool hasLockedItems
+---@return boolean hasLockedItems
 function C_EquipmentSet.EquipmentSetContainsLockedItems(equipmentSetID) end
 
 ---@param equipmentSetID number 
@@ -38,11 +38,11 @@ function C_EquipmentSet.GetEquipmentSetID(equipmentSetName) end
 function C_EquipmentSet.GetEquipmentSetIDs() end
 
 ---@param equipmentSetID number 
----@return string, number, number, bool, number, number, number, number, number name, iconFileID, setID, isEquipped, numItems, numEquipped, numInInventory, numLost, numIgnored
+---@return string, number, number, boolean, number, number, number, number, number name, iconFileID, setID, isEquipped, numItems, numEquipped, numInInventory, numLost, numIgnored
 function C_EquipmentSet.GetEquipmentSetInfo(equipmentSetID) end
 
 ---@param equipmentSetID number 
----@return bool slotIgnored
+---@return boolean slotIgnored
 function C_EquipmentSet.GetIgnoredSlots(equipmentSetID) end
 
 ---@param equipmentSetID number 
@@ -60,7 +60,7 @@ function C_EquipmentSet.GetNumEquipmentSets() end
 function C_EquipmentSet.IgnoreSlotForSave(slot) end
 
 ---@param slot number 
----@return bool isSlotIgnored
+---@return boolean isSlotIgnored
 function C_EquipmentSet.IsSlotIgnoredForSave(slot) end
 
 ---@param equipmentSetID number 
@@ -84,6 +84,6 @@ function C_EquipmentSet.UnassignEquipmentSetSpec(equipmentSetID) end
 function C_EquipmentSet.UnignoreSlotForSave(slot) end
 
 ---@param equipmentSetID number 
----@return bool setWasEquipped
+---@return boolean setWasEquipped
 function C_EquipmentSet.UseEquipmentSet(equipmentSetID) end
 

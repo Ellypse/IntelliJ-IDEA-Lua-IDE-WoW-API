@@ -3,13 +3,13 @@ C_RecruitAFriend = {}
 
 ---@param activityID number 
 ---@param acceptanceID string 
----@return bool success
+---@return boolean success
 function C_RecruitAFriend.ClaimActivityReward(activityID, acceptanceID) end
 
----@return bool success
+---@return boolean success
 function C_RecruitAFriend.ClaimNextReward() end
 
----@return bool success
+---@return boolean success
 function C_RecruitAFriend.GenerateRecruitmentLink() end
 
 ---@return RafInfo info
@@ -23,20 +23,20 @@ function C_RecruitAFriend.GetRAFSystemInfo() end
 ---@return string requirementsText
 function C_RecruitAFriend.GetRecruitActivityRequirementsText(activityID, acceptanceID) end
 
----@return bool, number active, faction
+---@return boolean, number active, faction
 function C_RecruitAFriend.GetRecruitInfo() end
 
----@return bool enabled
+---@return boolean enabled
 function C_RecruitAFriend.IsEnabled() end
 
----@return bool enabled
+---@return boolean enabled
 function C_RecruitAFriend.IsRecruitingEnabled() end
 
 ---@param wowAccountGUID string 
----@return bool success
+---@return boolean success
 function C_RecruitAFriend.RemoveRAFRecruit(wowAccountGUID) end
 
----@return bool success
+---@return boolean success
 function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 
 ---@class RafRecruitActivityState

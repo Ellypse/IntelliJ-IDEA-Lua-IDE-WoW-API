@@ -26,9 +26,9 @@ function C_PaperDollInfo.GetMinItemLevel() end
 ---@return number, number|nil stagger, staggerAgainstTarget
 function C_PaperDollInfo.GetStaggerPercentage(unit) end
 
----@return bool offhandHasShield
+---@return boolean offhandHasShield
 function C_PaperDollInfo.OffhandHasShield() end
 
----@return bool offhandHasWeapon
+---@return boolean offhandHasWeapon
 function C_PaperDollInfo.OffhandHasWeapon() end
 

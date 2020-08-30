@@ -16,7 +16,7 @@ function C_ScrappingMachineUI.GetScrapSpellID() end
 ---@return string name
 function C_ScrappingMachineUI.GetScrappingMachineName() end
 
----@return bool hasScrappableItems
+---@return boolean hasScrappableItems
 function C_ScrappingMachineUI.HasScrappableItems() end
 
 function C_ScrappingMachineUI.RemoveAllScrapItems() end

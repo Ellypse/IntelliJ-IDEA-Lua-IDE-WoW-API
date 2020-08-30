@@ -2,11 +2,15 @@
 C_TaskQuest = {}
 
 ---@param uiMapID number 
----@return bool showsTaskQuestObjectives
+---@return boolean showsTaskQuestObjectives
 function C_TaskQuest.DoesMapShowTaskQuestObjectives(uiMapID) end
 
 ---@param questID number 
----@return string, number|nil, bool|nil, bool|nil questTitle, factionID, capped, displayAsObjective
+---@return number distanceSquared
+function C_TaskQuest.GetDistanceSqToQuest(questID) end
+
+---@param questID number 
+---@return string, number|nil, boolean|nil, boolean|nil questTitle, factionID, capped, displayAsObjective
 function C_TaskQuest.GetQuestInfoByQuestID(questID) end
 
 ---@param questID number 
@@ -38,7 +42,7 @@ function C_TaskQuest.GetQuestsForPlayerByMapID(uiMapID) end
 function C_TaskQuest.GetThreatQuests() end
 
 ---@param questID number 
----@return bool active
+---@return boolean active
 function C_TaskQuest.IsActive(questID) end
 
 ---@param questID number 

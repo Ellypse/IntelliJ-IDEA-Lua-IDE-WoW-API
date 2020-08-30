@@ -1,8 +1,8 @@
 ---@class SocialQueue
 C_SocialQueue = {}
 
----@param allowNonJoinable bool 
----@param allowNonQueuedGroups bool 
+---@param allowNonJoinable boolean 
+---@param allowNonQueuedGroups boolean 
 ---@return string groupGUIDs
 function C_SocialQueue.GetAllGroups(allowNonJoinable, allowNonQueuedGroups) end
 
@@ -10,11 +10,11 @@ function C_SocialQueue.GetAllGroups(allowNonJoinable, allowNonQueuedGroups) end
 function C_SocialQueue.GetConfig() end
 
 ---@param playerGUID string 
----@return string, bool groupGUID, isSoloQueueParty
+---@return string, boolean groupGUID, isSoloQueueParty
 function C_SocialQueue.GetGroupForPlayer(playerGUID) end
 
 ---@param groupGUID string 
----@return bool, number, bool, bool, bool, bool, bool, string canJoin, numQueues, needTank, needHealer, needDamage, isSoloQueueParty, questSessionActive, leaderGUID
+---@return boolean, number, boolean, boolean, boolean, boolean, boolean, string canJoin, numQueues, needTank, needHealer, needDamage, isSoloQueueParty, questSessionActive, leaderGUID
 function C_SocialQueue.GetGroupInfo(groupGUID) end
 
 ---@param groupGUID string 
@@ -26,10 +26,10 @@ function C_SocialQueue.GetGroupMembers(groupGUID) end
 function C_SocialQueue.GetGroupQueues(groupGUID) end
 
 ---@param groupGUID string 
----@param applyAsTank bool 
----@param applyAsHealer bool 
----@param applyAsDamage bool 
----@return bool requestSuccessful
+---@param applyAsTank boolean 
+---@param applyAsHealer boolean 
+---@param applyAsDamage boolean 
+---@return boolean requestSuccessful
 function C_SocialQueue.RequestToJoin(groupGUID, applyAsTank, applyAsHealer, applyAsDamage) end
 
 ---@param groupGUID string 

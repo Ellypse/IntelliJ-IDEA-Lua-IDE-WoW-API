@@ -3,13 +3,13 @@ C_Calendar = {}
 
 function C_Calendar.AddEvent() end
 
----@return bool ready
+---@return boolean ready
 function C_Calendar.AreNamesReady() end
 
----@return bool canAddEvent
+---@return boolean canAddEvent
 function C_Calendar.CanAddEvent() end
 
----@return bool canSendInvite
+---@return boolean canSendInvite
 function C_Calendar.CanSendInvite() end
 
 function C_Calendar.CloseEvent() end
@@ -17,22 +17,22 @@ function C_Calendar.CloseEvent() end
 ---@param offsetMonths number 
 ---@param monthDay number 
 ---@param eventIndex number 
----@return bool canComplain
+---@return boolean canComplain
 function C_Calendar.ContextMenuEventCanComplain(offsetMonths, monthDay, eventIndex) end
 
 ---@param offsetMonths number 
 ---@param monthDay number 
 ---@param eventIndex number 
----@return bool canEdit
+---@return boolean canEdit
 function C_Calendar.ContextMenuEventCanEdit(offsetMonths, monthDay, eventIndex) end
 
 ---@param offsetMonths number 
 ---@param monthDay number 
 ---@param eventIndex number 
----@return bool canRemove
+---@return boolean canRemove
 function C_Calendar.ContextMenuEventCanRemove(offsetMonths, monthDay, eventIndex) end
 
----@return bool exists
+---@return boolean exists
 function C_Calendar.ContextMenuEventClipboard() end
 
 function C_Calendar.ContextMenuEventComplain() end
@@ -76,7 +76,7 @@ function C_Calendar.CreatePlayerEvent() end
 
 function C_Calendar.EventAvailable() end
 
----@return bool canEdit
+---@return boolean canEdit
 function C_Calendar.EventCanEdit() end
 
 function C_Calendar.EventClearAutoApprove() end
@@ -102,7 +102,7 @@ function C_Calendar.EventGetInvite(eventIndex) end
 ---@return CalendarTime time
 function C_Calendar.EventGetInviteResponseTime(eventIndex) end
 
----@return string, bool criterion, reverse
+---@return string, boolean criterion, reverse
 function C_Calendar.EventGetInviteSortCriterion() end
 
 ---@return number|nil inviteIndex
@@ -122,10 +122,10 @@ function C_Calendar.EventGetTypes() end
 ---@return CalendarEventTypeDisplayInfo infos
 function C_Calendar.EventGetTypesDisplayOrdered() end
 
----@return bool hasPendingInvite
+---@return boolean hasPendingInvite
 function C_Calendar.EventHasPendingInvite() end
 
----@return bool haveSettingsChanged
+---@return boolean haveSettingsChanged
 function C_Calendar.EventHaveSettingsChanged() end
 
 ---@param name string 
@@ -179,7 +179,7 @@ function C_Calendar.EventSetType(typeIndex) end
 function C_Calendar.EventSignUp() end
 
 ---@param criterion string 
----@param reverse bool 
+---@param reverse boolean 
 function C_Calendar.EventSortInvites(criterion, reverse) end
 
 function C_Calendar.EventTentative() end
@@ -265,10 +265,10 @@ function C_Calendar.GetNumPendingInvites() end
 ---@return CalendarRaidInfo info
 function C_Calendar.GetRaidInfo(offsetMonths, monthDay, eventIndex) end
 
----@return bool actionPending
+---@return boolean actionPending
 function C_Calendar.IsActionPending() end
 
----@return bool isOpen
+---@return boolean isOpen
 function C_Calendar.IsEventOpen() end
 
 ---@param clubId string 
@@ -288,7 +288,7 @@ function C_Calendar.OpenCalendar() end
 ---@param offsetMonths number 
 ---@param monthDay number 
 ---@param index number 
----@return bool success
+---@return boolean success
 function C_Calendar.OpenEvent(offsetMonths, monthDay, index) end
 
 function C_Calendar.RemoveEvent() end

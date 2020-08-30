@@ -41,7 +41,7 @@ function C_TradeSkillUI.GetTradeSkillLine() end
 function C_TradeSkillUI.GetTradeSkillLineInfoByID(skillLineID) end
 
 ---@param categoryID number 
----@return bool effectivelyKnown
+---@return boolean effectivelyKnown
 function C_TradeSkillUI.IsEmptySkillLineCategory(categoryID) end
 
 ---@param recipeSpellID number 

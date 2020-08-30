@@ -1,11 +1,11 @@
 ---@class LFGList
 C_LFGList = {}
 
----@return bool canUseAutoAccept
+---@return boolean canUseAutoAccept
 function C_LFGList.CanActiveEntryUseAutoAccept() end
 
 ---@param questID number 
----@return bool canCreate
+---@return boolean canCreate
 function C_LFGList.CanCreateQuestGroup(questID) end
 
 function C_LFGList.ClearApplicationTextFields() end
@@ -27,11 +27,11 @@ function C_LFGList.GetApplicantInfo(applicantID) end
 ---@return LfgSearchResultData searchResultData
 function C_LFGList.GetSearchResultInfo(searchResultID) end
 
----@return bool hasActiveEntryInfo
+---@return boolean hasActiveEntryInfo
 function C_LFGList.HasActiveEntryInfo() end
 
 ---@param searchResultID number 
----@return bool hasSearchResultInfo
+---@return boolean hasSearchResultInfo
 function C_LFGList.HasSearchResultInfo(searchResultID) end
 
 ---@param categoryID number 

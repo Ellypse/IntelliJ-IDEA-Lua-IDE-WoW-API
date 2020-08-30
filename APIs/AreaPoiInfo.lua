@@ -17,7 +17,7 @@ function C_AreaPoiInfo.GetAreaPOISecondsLeft(areaPoiID) end
 
 --- This statically determines if the POI is timed, GetAreaPOITimeLeft retrieves the value from the server and may return nothing for long intervals
 ---@param areaPoiID number 
----@return bool isTimed
+---@return boolean isTimed
 function C_AreaPoiInfo.IsAreaPOITimed(areaPoiID) end
 
 ---@class AreaPOIInfo

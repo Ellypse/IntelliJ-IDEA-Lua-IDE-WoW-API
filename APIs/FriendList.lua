@@ -7,7 +7,7 @@ C_FriendList = {}
 function C_FriendList.AddFriend(name, notes) end
 
 ---@param name string 
----@return bool added
+---@return boolean added
 function C_FriendList.AddIgnore(name) end
 
 ---@param name string 
@@ -18,7 +18,7 @@ function C_FriendList.AddOrDelIgnore(name) end
 function C_FriendList.AddOrRemoveFriend(name, notes) end
 
 ---@param name string 
----@return bool removed
+---@return boolean removed
 function C_FriendList.DelIgnore(name) end
 
 ---@param index number 
@@ -59,19 +59,19 @@ function C_FriendList.GetSelectedIgnore() end
 function C_FriendList.GetWhoInfo(index) end
 
 ---@param guid string 
----@return bool isFriend
+---@return boolean isFriend
 function C_FriendList.IsFriend(guid) end
 
 ---@param token string 
----@return bool isIgnored
+---@return boolean isIgnored
 function C_FriendList.IsIgnored(token) end
 
 ---@param guid string 
----@return bool isIgnored
+---@return boolean isIgnored
 function C_FriendList.IsIgnoredByGuid(guid) end
 
 ---@param name string 
----@return bool removed
+---@return boolean removed
 function C_FriendList.RemoveFriend(name) end
 
 ---@param index number 
@@ -82,7 +82,7 @@ function C_FriendList.SendWho(filter) end
 
 ---@param name string 
 ---@param notes string 
----@return bool found
+---@return boolean found
 function C_FriendList.SetFriendNotes(name, notes) end
 
 ---@param index number 
@@ -95,7 +95,7 @@ function C_FriendList.SetSelectedFriend(index) end
 ---@param index number 
 function C_FriendList.SetSelectedIgnore(index) end
 
----@param whoToUi bool 
+---@param whoToUi boolean 
 function C_FriendList.SetWhoToUi(whoToUi) end
 
 function C_FriendList.ShowFriends() end

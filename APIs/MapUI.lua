@@ -48,14 +48,14 @@ function C_Map.GetMapBannersForMap(uiMapID) end
 
 ---@param uiMapID number 
 ---@param mapType UIMapType @ [OPTIONAL]
----@param allDescendants bool @ [OPTIONAL]
+---@param allDescendants boolean @ [OPTIONAL]
 ---@overload fun(uiMapID:number, allDescendants:bool)
 ---@overload fun(uiMapID:number)
 ---@return UiMapDetails info
 function C_Map.GetMapChildrenInfo(uiMapID, mapType, allDescendants) end
 
 ---@param uiMapID number 
----@return bool hideIcons
+---@return boolean hideIcons
 function C_Map.GetMapDisplayInfo(uiMapID) end
 
 ---@param uiMapID number 
@@ -131,7 +131,7 @@ function C_Map.GetWorldPosFromMapPos(uiMapID, mapPosition) end
 function C_Map.HasUserWaypoint() end
 
 ---@param uiMapID number 
----@return bool hasArt
+---@return boolean hasArt
 function C_Map.MapHasArt(uiMapID) end
 
 ---@param uiMapID number 

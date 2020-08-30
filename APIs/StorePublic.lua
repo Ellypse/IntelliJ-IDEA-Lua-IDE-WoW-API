@@ -2,12 +2,12 @@
 C_StorePublic = {}
 
 ---@param groupID number 
----@return bool hasPurchaseableProducts
+---@return boolean hasPurchaseableProducts
 function C_StorePublic.DoesGroupHavePurchaseableProducts(groupID) end
 
----@return bool disabled
+---@return boolean disabled
 function C_StorePublic.IsDisabledByParentalControls() end
 
----@return bool enabled
+---@return boolean enabled
 function C_StorePublic.IsEnabled() end
 

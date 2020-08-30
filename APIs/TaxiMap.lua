@@ -12,7 +12,7 @@ function C_TaxiMap.GetAllTaxiNodes(uiMapID) end
 function C_TaxiMap.GetTaxiNodesForMap(uiMapID) end
 
 ---@param uiMapID number 
----@return bool shouldShowNodes
+---@return boolean shouldShowNodes
 function C_TaxiMap.ShouldMapShowTaxiNodes(uiMapID) end
 
 ---@class FlightPathFaction

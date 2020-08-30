@@ -29,7 +29,7 @@ function C_CampaignInfo.GetFailureReason(campaignID) end
 function C_CampaignInfo.GetState(campaignID) end
 
 ---@param questID number 
----@return bool isCampaignQuest
+---@return boolean isCampaignQuest
 function C_CampaignInfo.IsCampaignQuest(questID) end
 
 ---@class CampaignState

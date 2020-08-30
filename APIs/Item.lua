@@ -2,19 +2,19 @@
 C_Item = {}
 
 ---@param itemLoc table 
----@return bool canBeScrapped
+---@return boolean canBeScrapped
 function C_Item.CanScrapItem(itemLoc) end
 
 ---@param itemLoc table 
----@return bool isItemViewable
+---@return boolean isItemViewable
 function C_Item.CanViewItemPowers(itemLoc) end
 
 ---@param emptiableItemLocation table 
----@return bool itemExists
+---@return boolean itemExists
 function C_Item.DoesItemExist(emptiableItemLocation) end
 
 ---@param itemInfo string 
----@return bool itemExists
+---@return boolean itemExists
 function C_Item.DoesItemExistByID(itemInfo) end
 
 ---@param itemLocation table 
@@ -70,31 +70,35 @@ function C_Item.GetItemQualityByID(itemInfo) end
 function C_Item.GetStackCount(itemLocation) end
 
 ---@param itemLocation table 
----@return bool isBound
+---@return boolean isBound
 function C_Item.IsBound(itemLocation) end
 
 ---@param itemLoc table 
----@return bool isCorrupted
+---@return boolean isCorruptable
+function C_Item.IsItemCorruptable(itemLoc) end
+
+---@param itemLoc table 
+---@return boolean isCorrupted
 function C_Item.IsItemCorrupted(itemLoc) end
 
 ---@param itemLoc table 
----@return bool isCorruptionRelated
+---@return boolean isCorruptionRelated
 function C_Item.IsItemCorruptionRelated(itemLoc) end
 
 ---@param itemLoc table 
----@return bool isCorruptionResistant
+---@return boolean isCorruptionResistant
 function C_Item.IsItemCorruptionResistant(itemLoc) end
 
 ---@param itemLocation table 
----@return bool isCached
+---@return boolean isCached
 function C_Item.IsItemDataCached(itemLocation) end
 
 ---@param itemInfo string 
----@return bool isCached
+---@return boolean isCached
 function C_Item.IsItemDataCachedByID(itemInfo) end
 
 ---@param itemLocation table 
----@return bool isLocked
+---@return boolean isLocked
 function C_Item.IsLocked(itemLocation) end
 
 ---@param itemLocation table 

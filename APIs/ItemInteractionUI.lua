@@ -21,7 +21,7 @@ function C_ItemInteraction.SetCorruptionReforgerItemTooltip() end
 
 ---@param item table @ [OPTIONAL]
 ---@overload fun()
----@return bool success
+---@return boolean success
 function C_ItemInteraction.SetPendingItem(item) end
 
 ---@class ItemInteractionFrameType

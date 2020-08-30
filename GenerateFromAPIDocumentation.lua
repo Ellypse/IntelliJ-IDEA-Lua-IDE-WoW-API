@@ -74,9 +74,13 @@ function APIDocumentation:AddDocumentationTable(documentation)
 						-- Note that this is not an IntelliJ EmmyLua thing, but it will hepl seeing what's optional or not
 						table.insert(documentation, "[OPTIONAL]")
 					end
+					local type = argument.InnerType or argument.Type
+					if type == "bool" then
+						type = "boolean" -- Special case for booleans, documented as bool in Blizzard's documentation.
+					end
 					table.insert(documentationLines, ARGUMENT_DOCUMENTATION:format(
 						argument.Name,
-						argument.InnerType or argument.Type,
+						type,
 						#documentation > 0 and ("@ " .. table.concat(documentation, " ")) or ""
 					))
 				end
@@ -113,7 +117,11 @@ function APIDocumentation:AddDocumentationTable(documentation)
 				local returnTypes, returnNames = {}, {}
 				for k, returnValue in pairs(func.Returns) do
 					table.insert(returnNames, returnValue.Name)
-					table.insert(returnTypes, (returnValue.InnerType or returnValue.Type) .. (returnValue.Nilable and "|nil" or ""))
+					local type = returnValue.InnerType or returnValue.Type
+					if type == "bool" then
+						type = "boolean" -- Special case for booleans, documented as bool in Blizzard's documentation.
+					end
+					table.insert(returnTypes, type .. (returnValue.Nilable and "|nil" or ""))
 				end
 				write(RETURN_DOCUMENTATION:format(table.concat(returnTypes, ", "), table.concat(returnNames, ", ")))
 			end

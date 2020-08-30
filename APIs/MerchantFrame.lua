@@ -6,6 +6,6 @@ C_MerchantFrame = {}
 function C_MerchantFrame.GetBuybackItemID(buybackSlotIndex) end
 
 ---@param index number 
----@return bool refundable
+---@return boolean refundable
 function C_MerchantFrame.IsMerchantItemRefundable(index) end
 

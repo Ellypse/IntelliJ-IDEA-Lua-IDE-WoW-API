@@ -18,14 +18,14 @@ function C_TransmogSets.GetAllSourceIDs(transmogSetID) end
 function C_TransmogSets.GetBaseSetsCounts() end
 
 ---@param index number 
----@return bool isChecked
+---@return boolean isChecked
 function C_TransmogSets.GetBaseSetsFilter(index) end
 
 ---@return number|nil, number|nil detailsCameraID, vendorCameraID
 function C_TransmogSets.GetCameraIDs() end
 
 ---@param transmogSetID number 
----@return bool, bool isFavorite, isGroupFavorite
+---@return boolean, boolean isFavorite, isGroupFavorite
 function C_TransmogSets.GetIsFavorite(transmogSetID) end
 
 ---@return number sourceID
@@ -49,31 +49,31 @@ function C_TransmogSets.GetSourceIDsForSlot(transmogSetID, slot) end
 ---@return AppearanceSourceInfo sources
 function C_TransmogSets.GetSourcesForSlot(transmogSetID, slot) end
 
----@return bool hasUsableSets
+---@return boolean hasUsableSets
 function C_TransmogSets.HasUsableSets() end
 
 ---@param transmogSetID number 
----@return bool isCollected
+---@return boolean isCollected
 function C_TransmogSets.IsBaseSetCollected(transmogSetID) end
 
 ---@param sourceID number 
----@return bool isNew
+---@return boolean isNew
 function C_TransmogSets.IsNewSource(sourceID) end
 
 ---@param index number 
----@param isChecked bool 
+---@param isChecked boolean 
 function C_TransmogSets.SetBaseSetsFilter(index, isChecked) end
 
 ---@param transmogSetID number 
----@return bool hasNewSources
+---@return boolean hasNewSources
 function C_TransmogSets.SetHasNewSources(transmogSetID) end
 
 ---@param transmogSetID number 
 ---@param slot number 
----@return bool hasNewSources
+---@return boolean hasNewSources
 function C_TransmogSets.SetHasNewSourcesForSlot(transmogSetID, slot) end
 
 ---@param transmogSetID number 
----@param isFavorite bool 
+---@param isFavorite boolean 
 function C_TransmogSets.SetIsFavorite(transmogSetID, isFavorite) end
 

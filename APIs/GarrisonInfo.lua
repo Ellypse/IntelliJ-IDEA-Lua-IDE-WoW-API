@@ -65,11 +65,11 @@ function C_Garrison.GetTalentTreeInfo(treeID) end
 ---@return number, GarrisonTalentCurrencyCostInfo, number goldCost, currencyCosts, durationSecs
 function C_Garrison.GetTalentTreeTalentPointResearchInfo(garrTalentTreeID, talentPointIndex, isRespec) end
 
----@return bool atGarrisonMissionNPC
+---@return boolean atGarrisonMissionNPC
 function C_Garrison.IsAtGarrisonMissionNPC() end
 
 ---@param missionID number 
----@return bool environmentCountered
+---@return boolean environmentCountered
 function C_Garrison.IsEnvironmentCountered(missionID) end
 
 ---@param talentID number 
