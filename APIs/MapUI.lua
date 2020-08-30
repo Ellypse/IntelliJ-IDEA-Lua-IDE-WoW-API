@@ -102,6 +102,11 @@ function C_Map.GetMapPosFromWorldPos(continentID, worldPosition, overrideUiMapID
 ---@return number, number, number, number minX, maxX, minY, maxY
 function C_Map.GetMapRectOnMap(uiMapID, topUiMapID) end
 
+--- Returns the size in yards of the area represented by the map.
+---@param uiMapID number 
+---@return number, number width, height
+function C_Map.GetMapWorldSize(uiMapID) end
+
 --- Only works for the player and party members.
 ---@param uiMapID number 
 ---@param unitToken string 
@@ -127,7 +132,7 @@ function C_Map.GetUserWaypointPositionForMap(uiMapID) end
 ---@return number, table continentID, worldPosition
 function C_Map.GetWorldPosFromMapPos(uiMapID, mapPosition) end
 
----@return bool hasUserWaypoint
+---@return boolean hasUserWaypoint
 function C_Map.HasUserWaypoint() end
 
 ---@param uiMapID number 

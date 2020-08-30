@@ -24,6 +24,11 @@ function C_MythicPlus.GetRewardLevelForDifficultyLevel(difficultyLevel) end
 ---@return number|nil rewardLevel
 function C_MythicPlus.GetRewardLevelFromKeystoneLevel(keystoneLevel) end
 
+---@param includePreviousWeeks boolean 
+---@param includeIncompleteRuns boolean 
+---@return MythicPlusRunInfo runs
+function C_MythicPlus.GetRunHistory(includePreviousWeeks, includeIncompleteRuns) end
+
 ---@param mapChallengeModeID number 
 ---@return MapSeasonBestInfo|nil, MapSeasonBestInfo|nil intimeInfo, overtimeInfo
 function C_MythicPlus.GetSeasonBestForMap(mapChallengeModeID) end
@@ -73,4 +78,11 @@ local MythicPlusKeystoneAffix = {}
 ---@field specID number 
 ---@field classID number 
 local MythicPlusMember = {}
+
+---@class MythicPlusRunInfo
+---@field mapChallengeModeID number 
+---@field level number 
+---@field thisWeek bool 
+---@field completed bool 
+local MythicPlusRunInfo = {}
 

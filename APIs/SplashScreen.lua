@@ -3,7 +3,7 @@ C_SplashScreen = {}
 
 function C_SplashScreen.AcknowledgeSplash() end
 
----@return bool canView
+---@return boolean canView
 function C_SplashScreen.CanViewSplashScreen() end
 
 function C_SplashScreen.RequestLatestSplashScreen() end

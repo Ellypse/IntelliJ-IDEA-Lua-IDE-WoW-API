@@ -21,6 +21,10 @@ function C_UIWidgetManager.GetCaptureBarWidgetVisualizationInfo(widgetID) end
 function C_UIWidgetManager.GetCaptureZoneVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
+---@return DiscreteProgressStepsVisualizationInfo|nil widgetInfo
+function C_UIWidgetManager.GetDiscreteProgressStepsVisualizationInfo(widgetID) end
+
+---@param widgetID number 
 ---@return DoubleIconAndTextWidgetVisualizationInfo|nil widgetInfo
 function C_UIWidgetManager.GetDoubleIconAndTextWidgetVisualizationInfo(widgetID) end
 
@@ -59,6 +63,10 @@ function C_UIWidgetManager.GetPowerBarWidgetSetID() end
 function C_UIWidgetManager.GetScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
+---@return ScenarioHeaderTimerWidgetVisualizationInfo|nil widgetInfo
+function C_UIWidgetManager.GetScenarioHeaderTimerWidgetVisualizationInfo(widgetID) end
+
+---@param widgetID number 
 ---@return SpellDisplayVisualizationInfo|nil widgetInfo
 function C_UIWidgetManager.GetSpellDisplayVisualizationInfo(widgetID) end
 
@@ -82,8 +90,16 @@ function C_UIWidgetManager.GetTextureAndTextRowVisualizationInfo(widgetID) end
 ---@return TextureAndTextVisualizationInfo|nil widgetInfo
 function C_UIWidgetManager.GetTextureAndTextVisualizationInfo(widgetID) end
 
+---@param widgetID number 
+---@return TextureWithAnimationVisualizationInfo|nil widgetInfo
+function C_UIWidgetManager.GetTextureWithAnimationVisualizationInfo(widgetID) end
+
 ---@return number setID
 function C_UIWidgetManager.GetTopCenterWidgetSetID() end
+
+---@param widgetSetID number 
+---@return UIWidgetLayoutDirection layoutDirection
+function C_UIWidgetManager.GetWidgetLayoutDirectionFromWidgetSetID(widgetSetID) end
 
 ---@param widgetID number 
 ---@return ZoneControlVisualizationInfo|nil widgetInfo
@@ -126,12 +142,30 @@ IconState.ShowState2 = 2
 local SpellDisplayIconDisplayType = {}
 SpellDisplayIconDisplayType.Buff = 0
 SpellDisplayIconDisplayType.Debuff = 1
+SpellDisplayIconDisplayType.Circular = 2
 
 ---@class SpellDisplayIconSizeType
 local SpellDisplayIconSizeType = {}
 SpellDisplayIconSizeType.Small = 0
 SpellDisplayIconSizeType.Medium = 1
 SpellDisplayIconSizeType.Large = 2
+
+---@class SpellDisplayTextShownStateType
+local SpellDisplayTextShownStateType = {}
+SpellDisplayTextShownStateType.Shown = 0
+SpellDisplayTextShownStateType.Hidden = 1
+
+---@class StatusBarColorTintValue
+local StatusBarColorTintValue = {}
+StatusBarColorTintValue.None = 0
+StatusBarColorTintValue.Black = 1
+StatusBarColorTintValue.White = 2
+StatusBarColorTintValue.Red = 3
+StatusBarColorTintValue.Yellow = 4
+StatusBarColorTintValue.Orange = 5
+StatusBarColorTintValue.Purple = 6
+StatusBarColorTintValue.Green = 7
+StatusBarColorTintValue.Blue = 8
 
 ---@class StatusBarOverrideBarTextShownType
 local StatusBarOverrideBarTextShownType = {}
@@ -150,16 +184,22 @@ StatusBarValueTextType.TimeShowOneLevelOnly = 4
 StatusBarValueTextType.ValueOverMax = 5
 StatusBarValueTextType.ValueOverMaxNormalized = 6
 
+---@class UIWidgetFlag
+local UIWidgetFlag = {}
+UIWidgetFlag.UniversalWidget = 1
+
+---@class UIWidgetFontType
+local UIWidgetFontType = {}
+UIWidgetFontType.Normal = 0
+UIWidgetFontType.Shadow = 1
+UIWidgetFontType.Outline = 2
+
 ---@class UIWidgetTextSizeType
 local UIWidgetTextSizeType = {}
 UIWidgetTextSizeType.Small = 0
 UIWidgetTextSizeType.Medium = 1
 UIWidgetTextSizeType.Large = 2
 UIWidgetTextSizeType.Huge = 3
-
----@class UiwIdgetFlag
-local UiwIdgetFlag = {}
-UiwIdgetFlag.UniversalWidget = 1
 
 ---@class WidgetAnimationType
 local WidgetAnimationType = {}
@@ -231,6 +271,8 @@ ZoneControlState.State2 = 1
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local BulletTextListWidgetVisualizationInfo = {}
 
 ---@class CaptureBarWidgetVisualizationInfo
@@ -251,6 +293,8 @@ local BulletTextListWidgetVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local CaptureBarWidgetVisualizationInfo = {}
 
 ---@class CaptureZoneVisualizationInfo
@@ -267,7 +311,28 @@ local CaptureBarWidgetVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local CaptureZoneVisualizationInfo = {}
+
+---@class DiscreteProgressStepsVisualizationInfo
+---@field shownState WidgetShownState 
+---@field tooltip string 
+---@field progressMin number 
+---@field progressMax number 
+---@field progressVal number 
+---@field numSteps number 
+---@field widgetSizeSetting number 
+---@field textureKit string 
+---@field frameTextureKit string 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+local DiscreteProgressStepsVisualizationInfo = {}
 
 ---@class DoubleIconAndTextWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -284,6 +349,8 @@ local CaptureZoneVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local DoubleIconAndTextWidgetVisualizationInfo = {}
 
 ---@class DoubleStateIconRowVisualizationInfo
@@ -298,6 +365,8 @@ local DoubleIconAndTextWidgetVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local DoubleStateIconRowVisualizationInfo = {}
 
 ---@class DoubleStatusBarWidgetVisualizationInfo
@@ -320,6 +389,8 @@ local DoubleStateIconRowVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local DoubleStatusBarWidgetVisualizationInfo = {}
 
 ---@class HorizontalCurrenciesWidgetVisualizationInfo
@@ -333,6 +404,8 @@ local DoubleStatusBarWidgetVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local HorizontalCurrenciesWidgetVisualizationInfo = {}
 
 ---@class IconAndTextWidgetVisualizationInfo
@@ -348,6 +421,8 @@ local HorizontalCurrenciesWidgetVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local IconAndTextWidgetVisualizationInfo = {}
 
 ---@class IconTextAndBackgroundWidgetVisualizationInfo
@@ -361,6 +436,8 @@ local IconAndTextWidgetVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local IconTextAndBackgroundWidgetVisualizationInfo = {}
 
 ---@class IconTextAndCurrenciesWidgetVisualizationInfo
@@ -379,11 +456,14 @@ local IconTextAndBackgroundWidgetVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local IconTextAndCurrenciesWidgetVisualizationInfo = {}
 
 ---@class ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field currencies table 
+---@field headerText string 
 ---@field widgetSizeSetting number 
 ---@field textureKit string 
 ---@field frameTextureKit string 
@@ -392,7 +472,28 @@ local IconTextAndCurrenciesWidgetVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo = {}
+
+---@class ScenarioHeaderTimerWidgetVisualizationInfo
+---@field shownState WidgetShownState 
+---@field timerMin number 
+---@field timerMax number 
+---@field timerValue number 
+---@field headerText string 
+---@field timerTooltip string 
+---@field widgetSizeSetting number 
+---@field textureKit string 
+---@field frameTextureKit string 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+local ScenarioHeaderTimerWidgetVisualizationInfo = {}
 
 ---@class SpellDisplayVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -406,6 +507,8 @@ local ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local SpellDisplayVisualizationInfo = {}
 
 ---@class StackedResourceTrackerWidgetVisualizationInfo
@@ -419,6 +522,8 @@ local SpellDisplayVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local StackedResourceTrackerWidgetVisualizationInfo = {}
 
 ---@class StatusBarWidgetVisualizationInfo
@@ -431,6 +536,8 @@ local StackedResourceTrackerWidgetVisualizationInfo = {}
 ---@field barValueTextType StatusBarValueTextType 
 ---@field overrideBarText string 
 ---@field overrideBarTextShownType StatusBarOverrideBarTextShownType 
+---@field colorTint StatusBarColorTintValue 
+---@field partitionValues table 
 ---@field widgetSizeSetting number 
 ---@field textureKit string 
 ---@field frameTextureKit string 
@@ -439,6 +546,8 @@ local StackedResourceTrackerWidgetVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local StatusBarWidgetVisualizationInfo = {}
 
 ---@class TextWithStateWidgetVisualizationInfo
@@ -447,6 +556,8 @@ local StatusBarWidgetVisualizationInfo = {}
 ---@field text string 
 ---@field tooltip string 
 ---@field textSizeType UIWidgetTextSizeType 
+---@field fontType UIWidgetFontType 
+---@field bottomPadding number 
 ---@field widgetSizeSetting number 
 ---@field textureKit string 
 ---@field frameTextureKit string 
@@ -455,6 +566,8 @@ local StatusBarWidgetVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local TextWithStateWidgetVisualizationInfo = {}
 
 ---@class TextureAndTextEntryInfo
@@ -474,6 +587,8 @@ local TextureAndTextEntryInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local TextureAndTextRowVisualizationInfo = {}
 
 ---@class TextureAndTextVisualizationInfo
@@ -488,7 +603,24 @@ local TextureAndTextRowVisualizationInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local TextureAndTextVisualizationInfo = {}
+
+---@class TextureWithAnimationVisualizationInfo
+---@field shownState WidgetShownState 
+---@field tooltip string 
+---@field widgetSizeSetting number 
+---@field textureKit string 
+---@field frameTextureKit string 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+local TextureWithAnimationVisualizationInfo = {}
 
 ---@class UIWidgetCurrencyInfo
 ---@field iconFileID number 
@@ -512,6 +644,7 @@ local UIWidgetInfo = {}
 ---@field stackDisplay number 
 ---@field iconSizeType SpellDisplayIconSizeType 
 ---@field iconDisplayType SpellDisplayIconDisplayType 
+---@field textShownState SpellDisplayTextShownStateType 
 local UIWidgetSpellInfo = {}
 
 ---@class UIWidgetStateIconInfo
@@ -534,6 +667,8 @@ local UIWidgetStateIconInfo = {}
 ---@field widgetTag string 
 ---@field inAnimType WidgetAnimationType 
 ---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
 local ZoneControlVisualizationInfo = {}
 
 ---@class ZoneEntry

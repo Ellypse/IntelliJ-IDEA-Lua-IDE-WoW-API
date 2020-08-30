@@ -1,19 +1,37 @@
 ---@class AnimaDiversionInfo
 C_AnimaDiversion = {}
 
+function C_AnimaDiversion.CloseUI() end
+
 ---@return AnimaDiversionNodeInfo animaNodes
 function C_AnimaDiversion.GetAnimaDiversionNodes() end
+
+---@return table|nil normalizedPosition
+function C_AnimaDiversion.GetOriginPosition() end
+
+---@return number progress
+function C_AnimaDiversion.GetReinforceProgress() end
+
+---@return string textureKit
+function C_AnimaDiversion.GetTextureKit() end
 
 function C_AnimaDiversion.OpenAnimaDiversionUI() end
 
 ---@param talentID number 
-function C_AnimaDiversion.SelectAnimaNode(talentID) end
+---@param temporary boolean 
+function C_AnimaDiversion.SelectAnimaNode(talentID, temporary) end
 
 ---@class AnimaDiversionNodeState
 local AnimaDiversionNodeState = {}
-AnimaDiversionNodeState.Available = 0
-AnimaDiversionNodeState.SelectedTemporary = 1
-AnimaDiversionNodeState.SelectedPermanent = 2
+AnimaDiversionNodeState.Unavailable = 0
+AnimaDiversionNodeState.Available = 1
+AnimaDiversionNodeState.SelectedTemporary = 2
+AnimaDiversionNodeState.SelectedPermanent = 3
+
+---@class AnimaDiversionCostInfo
+---@field currencyID number 
+---@field quantity number 
+local AnimaDiversionCostInfo = {}
 
 ---@class AnimaDiversionFrameInfo
 ---@field textureKit string 
@@ -25,7 +43,7 @@ local AnimaDiversionFrameInfo = {}
 ---@field talentID number 
 ---@field name string 
 ---@field description string 
----@field cost number 
+---@field costs table 
 ---@field currencyID number 
 ---@field icon number 
 ---@field normalizedPosition table 

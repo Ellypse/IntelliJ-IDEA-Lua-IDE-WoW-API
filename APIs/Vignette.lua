@@ -20,7 +20,8 @@ function C_VignetteInfo.GetVignettes() end
 ---@class VignetteType
 local VignetteType = {}
 VignetteType.Normal = 0
-VignetteType.PvpBounty = 1
+VignetteType.PvPBounty = 1
+VignetteType.Torghast = 2
 
 ---@class VignetteInfo
 ---@field vignetteGUID string 

@@ -12,7 +12,7 @@ function C_PlayerChoice.GetPlayerChoiceOptionInfo(optionIndex) end
 ---@return PlayerChoiceRewardInfo rewardInfo
 function C_PlayerChoice.GetPlayerChoiceRewardInfo(rewardIndex) end
 
----@return bool isWaitingForResponse
+---@return boolean isWaitingForResponse
 function C_PlayerChoice.IsWaitingForPlayerChoiceResponse() end
 
 ---@class PlayerChoiceRarity
@@ -33,6 +33,7 @@ PlayerChoiceRarity.Epic = 3
 local PlayerChoiceInfo = {}
 
 ---@class PlayerChoiceOptionInfo
+---@field id number 
 ---@field responseIdentifier number 
 ---@field buttonText string 
 ---@field description string 
@@ -42,6 +43,7 @@ local PlayerChoiceInfo = {}
 ---@field widgetSetID number|nil 
 ---@field disabledButton bool 
 ---@field desaturatedArt bool 
+---@field disabledOption bool 
 ---@field groupID number|nil 
 ---@field headerIconAtlasElement string|nil 
 ---@field subHeader string|nil 
@@ -50,7 +52,11 @@ local PlayerChoiceInfo = {}
 ---@field soundKitID number|nil 
 ---@field hasRewards bool 
 ---@field rarity PlayerChoiceRarity 
+---@field rarityColor table|nil 
 ---@field typeArtID number|nil 
+---@field uiTextureKit string|nil 
+---@field spellID number|nil 
+---@field maxStacks number 
 local PlayerChoiceOptionInfo = {}
 
 ---@class PlayerChoiceRewardCurrencyInfo

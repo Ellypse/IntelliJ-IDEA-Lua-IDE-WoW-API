@@ -4,8 +4,10 @@ C_TradeSkillUI = {}
 ---@param recipeSpellID number 
 ---@param numCasts number 
 ---@param optionalReagents OptionalReagentInfo @ [OPTIONAL]
+---@param recipeLevel number @ [OPTIONAL]
+---@overload fun(recipeSpellID:number, numCasts:number, recipeLevel:number)
 ---@overload fun(recipeSpellID:number, numCasts:number)
-function C_TradeSkillUI.CraftRecipe(recipeSpellID, numCasts, optionalReagents) end
+function C_TradeSkillUI.CraftRecipe(recipeSpellID, numCasts, optionalReagents, recipeLevel) end
 
 ---@return number skillLineID
 function C_TradeSkillUI.GetAllProfessionTradeSkillLines() end
@@ -21,10 +23,23 @@ function C_TradeSkillUI.GetOptionalReagentBonusText(recipeSpellID, optionalReage
 function C_TradeSkillUI.GetOptionalReagentInfo(recipeSpellID) end
 
 ---@param recipeSpellID number 
----@param optionalReagentIndex number 
----@param optionalReagents OptionalReagentInfo 
----@return string|nil tooltipText
-function C_TradeSkillUI.GetOptionalReagentTooltipText(recipeSpellID, optionalReagentIndex, optionalReagents) end
+---@param recipeLevel number @ [OPTIONAL]
+---@overload fun(recipeSpellID:number)
+---@return TradeSkillRecipeInfo|nil recipeInfo
+function C_TradeSkillUI.GetRecipeInfo(recipeSpellID, recipeLevel) end
+
+---@param recipeSpellID number 
+---@param recipeLevel number @ [OPTIONAL]
+---@overload fun(recipeSpellID:number)
+---@return number numReagents
+function C_TradeSkillUI.GetRecipeNumReagents(recipeSpellID, recipeLevel) end
+
+---@param recipeSpellID number 
+---@param reagentIndex number 
+---@param recipeLevel number @ [OPTIONAL]
+---@overload fun(recipeSpellID:number, reagentIndex:number)
+---@return string|nil, number|nil, number, number reagentName, reagentFileID, reagentCount, playerReagentCount
+function C_TradeSkillUI.GetRecipeReagentInfo(recipeSpellID, reagentIndex, recipeLevel) end
 
 ---@return number recastTimes
 function C_TradeSkillUI.GetRecipeRepeatCount() end
@@ -49,6 +64,10 @@ function C_TradeSkillUI.IsEmptySkillLineCategory(categoryID) end
 ---@param optionalReagents OptionalReagentInfo @ [OPTIONAL]
 ---@overload fun(recipeSpellID:number, numCasts:number)
 function C_TradeSkillUI.SetRecipeRepeatCount(recipeSpellID, numCasts, optionalReagents) end
+
+---@class OptionalReagentItemFlag
+local OptionalReagentItemFlag = {}
+OptionalReagentItemFlag.TooltipShowsAsStatModifications = 0
 
 ---@class OptionalReagentSlot
 ---@field slotText string|nil 

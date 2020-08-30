@@ -2,11 +2,11 @@
 C_CurrencyInfo = {}
 
 ---@param currencyID number 
----@return bool|nil, bool|nil warModeApplies, limitOncePerTooltip
+---@return boolean|nil, boolean|nil warModeApplies, limitOncePerTooltip
 function C_CurrencyInfo.DoesWarModeBonusApply(currencyID) end
 
 ---@param index number 
----@param expand bool 
+---@param expand boolean 
 function C_CurrencyInfo.ExpandCurrencyList(index, expand) end
 
 ---@return number azeriteCurrencyID
@@ -65,18 +65,18 @@ function C_CurrencyInfo.GetWarResourcesCurrencyID() end
 
 ---@param currencyID number 
 ---@param quantity number 
----@return bool isCurrencyContainer
+---@return boolean isCurrencyContainer
 function C_CurrencyInfo.IsCurrencyContainer(currencyID, quantity) end
 
 ---@param type number 
 function C_CurrencyInfo.PickupCurrency(type) end
 
 ---@param index number 
----@param backpack bool 
+---@param backpack boolean 
 function C_CurrencyInfo.SetCurrencyBackpack(index, backpack) end
 
 ---@param index number 
----@param unused bool 
+---@param unused boolean 
 function C_CurrencyInfo.SetCurrencyUnused(index, unused) end
 
 ---@class BackpackCurrencyInfo

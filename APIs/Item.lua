@@ -17,6 +17,10 @@ function C_Item.DoesItemExist(emptiableItemLocation) end
 ---@return boolean itemExists
 function C_Item.DoesItemExistByID(itemInfo) end
 
+---@param itemLoc table 
+---@return boolean matchesBonusTree
+function C_Item.DoesItemMatchBonusTreeReplacement(itemLoc) end
+
 ---@param itemLocation table 
 ---@return number|nil currentItemLevel
 function C_Item.GetCurrentItemLevel(itemLocation) end
@@ -72,10 +76,6 @@ function C_Item.GetStackCount(itemLocation) end
 ---@param itemLocation table 
 ---@return boolean isBound
 function C_Item.IsBound(itemLocation) end
-
----@param itemLoc table 
----@return boolean isCorruptable
-function C_Item.IsItemCorruptable(itemLoc) end
 
 ---@param itemLoc table 
 ---@return boolean isCorrupted

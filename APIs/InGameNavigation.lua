@@ -10,10 +10,10 @@ function C_Navigation.GetFrame() end
 ---@return NavigationState state
 function C_Navigation.GetTargetState() end
 
----@return bool hasValidScreenPosition
+---@return boolean hasValidScreenPosition
 function C_Navigation.HasValidScreenPosition() end
 
----@return bool wasClamped
+---@return boolean wasClamped
 function C_Navigation.WasClampedToScreen() end
 
 ---@class NavigationState

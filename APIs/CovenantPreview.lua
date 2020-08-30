@@ -10,7 +10,7 @@ function C_CovenantPreview.GetCovenantInfoForPlayerChoiceResponseID(playerChoice
 ---@class CovenantAbilityType
 local CovenantAbilityType = {}
 CovenantAbilityType.Class = 0
-CovenantAbilityType.Racial = 1
+CovenantAbilityType.Signature = 1
 
 ---@class CovenantAbilityInfo
 ---@field spellID number 
@@ -26,5 +26,6 @@ local CovenantAbilityInfo = {}
 ---@field description string 
 ---@field covenantCrest string 
 ---@field covenantAbilities table 
+---@field fromPlayerChoice bool 
 local CovenantPreviewInfo = {}
 

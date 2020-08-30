@@ -30,6 +30,10 @@ function C_AzeriteItem.IsAzeriteItemAtMaxLevel() end
 ---@return boolean isAzeriteItem
 function C_AzeriteItem.IsAzeriteItemByID(itemInfo) end
 
+---@param azeriteItemLocation table 
+---@return boolean isEnabled
+function C_AzeriteItem.IsAzeriteItemEnabled(azeriteItemLocation) end
+
 ---@class UnlockedAzeriteEmpoweredItems
 ---@field unlockedItem table 
 ---@field tierIndex number 

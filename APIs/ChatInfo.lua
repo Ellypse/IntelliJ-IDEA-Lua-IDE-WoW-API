@@ -6,6 +6,18 @@ C_ChatInfo = {}
 ---@return string, boolean, boolean, string name, owner, moderator, guid
 function C_ChatInfo.GetChannelRosterInfo(channelIndex, rosterIndex) end
 
+---@param channelIndex number 
+---@return ChatChannelRuleset ruleset
+function C_ChatInfo.GetChannelRuleset(channelIndex) end
+
+---@param channelID number 
+---@return ChatChannelRuleset ruleset
+function C_ChatInfo.GetChannelRulesetForChannelID(channelID) end
+
+---@param channelID number 
+---@return string shortcut
+function C_ChatInfo.GetChannelShortcutForChannelID(channelID) end
+
 ---@param clubID string 
 ---@return string ids
 function C_ChatInfo.GetClubStreamIDs(clubID) end

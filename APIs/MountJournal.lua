@@ -86,9 +86,6 @@ function C_MountJournal.IsItemMountEquipment(itemLocation) end
 ---@return boolean isApplied
 function C_MountJournal.IsMountEquipmentApplied() end
 
----@return boolean isUnlocked
-function C_MountJournal.IsMountEquipmentUnlocked() end
-
 ---@param filterIndex number 
 ---@return boolean isChecked
 function C_MountJournal.IsSourceChecked(filterIndex) end

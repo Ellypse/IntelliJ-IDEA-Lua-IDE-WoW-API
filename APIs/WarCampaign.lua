@@ -8,6 +8,10 @@ function C_CampaignInfo.GetAvailableCampaigns() end
 ---@return CampaignChapterInfo|nil campaignChapterInfo
 function C_CampaignInfo.GetCampaignChapterInfo(campaignChapterID) end
 
+---@param questID number 
+---@return number campaignID
+function C_CampaignInfo.GetCampaignID(questID) end
+
 ---@param campaignID number 
 ---@return CampaignInfo|nil campaignInfo
 function C_CampaignInfo.GetCampaignInfo(campaignID) end
@@ -31,6 +35,10 @@ function C_CampaignInfo.GetState(campaignID) end
 ---@param questID number 
 ---@return boolean isCampaignQuest
 function C_CampaignInfo.IsCampaignQuest(questID) end
+
+---@param campaignID number 
+---@return boolean useNormalQuestIcons
+function C_CampaignInfo.UsesNormalQuestIcons(campaignID) end
 
 ---@class CampaignState
 local CampaignState = {}

@@ -23,6 +23,9 @@ function C_DateAndTime.GetCalendarTimeFromEpoch(epoch) end
 ---@return CalendarTime date
 function C_DateAndTime.GetCurrentCalendarTime() end
 
+---@return number seconds
+function C_DateAndTime.GetSecondsUntilWeeklyReset() end
+
 ---@return number serverTimeLocal
 function C_DateAndTime.GetServerTimeLocal() end
 
