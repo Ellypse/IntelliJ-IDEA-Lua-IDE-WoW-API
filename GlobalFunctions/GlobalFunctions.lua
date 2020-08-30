@@ -1,6 +1,6 @@
 --- @class unknown @ unknown type
 
---- Abandons the quest specified by SetAbandonQuest
+--- Abandons the quest specified by SetAbandonQuest()
 --- [https://wow.gamepedia.com/API_AbandonQuest]
 --- @return void
 function AbandonQuest()
@@ -11,9 +11,6 @@ end
 --- @param skillLineID unknown
 --- @return void
 function AbandonSkill(skillLineID)
-end
-
-function AbbreviateLargeNumbers()
 end
 
 --- Acccept the area Spirit Healer's resurrection in battlegrounds.
@@ -103,20 +100,6 @@ end
 function ActionBindsItem()
 end
 
---- Presses the specified FrameXML action button.
---- [https://wow.gamepedia.com/API_ActionButtonDown]
---- @param buttonID number @ The button ID of the button to push
---- @return void
-function ActionButtonDown(buttonID)
-end
-
---- Releases the specified action button.
---- [https://wow.gamepedia.com/API_ActionButtonUp]
---- @param buttonID unknown @ The button ID of the button to release (Integers from 1 to 12)
---- @return void
-function ActionButtonUp(buttonID)
-end
-
 --- Returns true if the action has a numeric range requirement.
 --- [https://wow.gamepedia.com/API_ActionHasRange]
 --- @param slotID number @ The slot ID to test.
@@ -148,9 +131,6 @@ end
 function AddChatWindowMessages(index, messagegroup)
 end
 
-function AddFrameLock()
-end
-
 --- Adds a quest to the list of quests being watched with an optional time to watch it.
 --- [https://wow.gamepedia.com/API_AddQuestWatch]
 --- @param questIndex number @ The index of the quest in the quest log.
@@ -165,9 +145,6 @@ end
 --- @param hardWatch boolean @ optional)
 --- @return void
 function AddQuestWatchForQuestID(questID, hardWatch)
-end
-
-function AddToAutoHide()
 end
 
 --- Marks an achievement for tracking in the WatchFrame.
@@ -192,9 +169,6 @@ end
 --- @param context string @ context the name will be used in, one of: all, guild, mail, none, or short.
 --- @return string @ name
 function Ambiguate(fullName, context)
-end
-
-function AnimateTexCoords()
 end
 
 function AntiAliasingSupported()
@@ -484,16 +458,10 @@ end
 function BattlefieldSetPendingReportTarget()
 end
 
-function BeginActionBarTransition()
-end
-
 --- Accepts an offer to start trading with another player.
 --- [https://wow.gamepedia.com/API_BeginTrade]
 --- @return void
 function BeginTrade()
-end
-
-function BetterDate()
 end
 
 --- Accepts the confirmation to bind an item by enchanting it, and proceeds with applying the enchantment.
@@ -502,26 +470,11 @@ end
 function BindEnchant()
 end
 
---- Converts a number into a localized string, grouping digits as required. (e.g. 1,234). Starting with Mists of Panderia (5.0.4) all numbers in the user interface are displayed as localized strings.
+--- Breaks up large numbers (>=1000), or shortens lengthy decimal values (<1000), into a localized string.
 --- [https://wow.gamepedia.com/API_BreakUpLargeNumbers]
---- @param value number @ The number to convert to a localized string (only the whole portion will be converted)
+--- @param value number @ The number to convert into a localized string
 --- @return string @ valueString
 function BreakUpLargeNumbers(value)
-end
-
-function BuildColoredListString()
-end
-
-function BuildListString()
-end
-
-function BuildMultilineTooltip()
-end
-
-function BuildNewLineListString()
-end
-
-function ButtonInventorySlot()
 end
 
 function BuyGuildBankTab()
@@ -559,12 +512,6 @@ end
 function BuybackItem(slot)
 end
 
-function CRFFlowFilterFunc()
-end
-
-function CRFGroupFilterFunc()
-end
-
 function CalculateStringEditDistance()
 end
 
@@ -574,9 +521,6 @@ end
 --- @param id number @ The companion index to summon or dismiss, ascending from 1.
 --- @return void
 function CallCompanion(type, id)
-end
-
-function CallRestrictedClosure()
 end
 
 --- Begin Left click in the 3D world.
@@ -635,16 +579,6 @@ end
 function CanComplainInboxItem()
 end
 
---- Determines if the player can cooperate with another player character
---- [https://wow.gamepedia.com/API_CanCooperateWithToon]
---- @param toonID number @ determined from the 5th return of BNGetFriendInfo(friendIndex)
---- @return boolean @ canCooperate
-function CanCooperateWithToon(toonID)
-end
-
-function CanCreateFilters()
-end
-
 function CanDualWield()
 end
 
@@ -673,12 +607,6 @@ function CanEjectPassengerFromSeat()
 end
 
 function CanExitVehicle()
-end
-
-function CanGroupInvite()
-end
-
-function CanGroupWithAccount()
 end
 
 function CanGuildBankRepair()
@@ -740,9 +668,6 @@ end
 function CanMerchantRepair()
 end
 
-function CanOpenPanels()
-end
-
 function CanPartyLFGBackfill()
 end
 
@@ -767,19 +692,10 @@ end
 function CanShowAchievementUI()
 end
 
-function CanShowCenterUIPanel()
-end
-
 --- Returns whether or not the player is allowed to reset instances at the moment.
 --- [https://wow.gamepedia.com/API_CanShowResetInstances]
 --- @return boolean @ canReset
 function CanShowResetInstances()
-end
-
-function CanShowRightUIPanel()
-end
-
-function CanShowUIPanels()
 end
 
 function CanSignPetition()
@@ -830,9 +746,6 @@ function CanViewGuildRecipes(skillID)
 end
 
 function CanWithdrawGuildBankMoney()
-end
-
-function CancelAnimations()
 end
 
 --- Cancels the area Spirit Healer's resurrection in battlegrounds.
@@ -912,10 +825,10 @@ end
 --- Removes a specific buff from the unit.
 --- [https://wow.gamepedia.com/API_CancelUnitBuff]
 --- @param unit string @ unitId) - Unit to cancel the buff from, must be under the player's control.
---- @param buffIndex_or_spell unknown
---- @param filter_or_rank unknown
+--- @param buffIndex number @ index of the buff to cancel, ascending from 1.
+--- @param filter string @ any of combination of HELPFUL|HARMFUL|PLAYER|RAID|CANCELABLE|NOT_CANCELABLE.
 --- @return void
-function CancelUnitBuff(unit, buffIndex_or_spell, filter_or_rank)
+function CancelUnitBuff(unit, buffIndex, filter)
 end
 
 function CannotBeResurrected()
@@ -973,9 +886,6 @@ end
 --- @param blue unknown
 --- @return void
 function ChangeChatColor(channelname, red, green, blue)
-end
-
-function ChangeMultiCastActionPage()
 end
 
 --- Bans a player from the specified channel.
@@ -1040,9 +950,6 @@ end
 function ChannelUnmoderator(channelName, playerName)
 end
 
-function ChatChannelPasswordHandler()
-end
-
 function CheckBinderDist()
 end
 
@@ -1066,12 +973,6 @@ end
 function CheckTalentMasterDist()
 end
 
-function ClaimRaidFrame()
-end
-
-function ClampUIPanelY()
-end
-
 function ClearAchievementComparisonUnit()
 end
 
@@ -1088,9 +989,6 @@ function ClearAutoAcceptQuestSound()
 end
 
 function ClearBattlemaster()
-end
-
-function ClearClampedTextureRotation()
 end
 
 --- Clears the in-game cursor, returning the object held to its original position (equivalent to right-clicking while holding something on the cursor).
@@ -1196,40 +1094,10 @@ end
 function ClickWorldMapActionButton()
 end
 
---- [https://wow.gamepedia.com/API_CloseAllBags]
---- @param frame unknown @ Object - Handle to the frame requesting OpenAllBags(), to reserve this open state and thus prevent other frames from executing CloseAllBags()
---- @param forceUpdate boolean @ Optional flag to force ContainerFrame_UpdateAll() should execution halt part-way through the function.
---- @return void
-function CloseAllBags(frame, forceUpdate)
-end
-
-function CloseAllWindows()
-end
-
---- [https://wow.gamepedia.com/API_CloseBackpack]
---- @return void
-function CloseBackpack()
-end
-
---- [https://wow.gamepedia.com/API_CloseBag]
---- @param id number @ BagID) - Unique identifier for each bag
---- @return void
-function CloseBag(id)
-end
-
-function CloseBankBagFrames()
-end
-
 --- Will Close the Bank Frame if opened.
 --- [https://wow.gamepedia.com/API_CloseBankFrame]
 --- @return void
 function CloseBankFrame()
-end
-
-function CloseChildWindows()
-end
-
-function CloseDropDownMenus()
 end
 
 --- Dismiss the gossip dialog.
@@ -1269,9 +1137,6 @@ end
 function CloseMail()
 end
 
-function CloseMenus()
-end
-
 --- Closes the merchant window.
 --- [https://wow.gamepedia.com/API_CloseMerchant]
 --- @return void
@@ -1299,16 +1164,10 @@ end
 function CloseResearch()
 end
 
-function CloseSideDressUpFrame()
-end
-
 --- Stops considering the item for socketing, ignoring any tentative changes made.
 --- [https://wow.gamepedia.com/API_CloseSocketInfo]
 --- @return void
 function CloseSocketInfo()
-end
-
-function CloseSpecialWindows()
 end
 
 function CloseTabardCreation()
@@ -1333,9 +1192,6 @@ function CloseTrainer()
 end
 
 function CloseVoidStorageFrame()
-end
-
-function CloseWindows()
 end
 
 function ClosestGameObjectPosition()
@@ -1369,9 +1225,6 @@ function CollapseQuestHeader(questID)
 end
 
 function CollapseWarGameHeader()
-end
-
-function ColorPaperDollStat()
 end
 
 function CombatLogAddFilter()
@@ -1417,12 +1270,6 @@ end
 function CombatTextSetActiveUnit(unit)
 end
 
-function ComboPointShineFadeIn()
-end
-
-function ComboPointShineFadeOut()
-end
-
 function ComplainInboxItem()
 end
 
@@ -1436,9 +1283,6 @@ end
 --- [https://wow.gamepedia.com/API_CompleteQuest]
 --- @return void
 function CompleteQuest()
-end
-
-function ComputePetBonus()
 end
 
 --- Accept an escort quest being started by a player nearby.
@@ -1466,7 +1310,7 @@ end
 function ConfirmBinder()
 end
 
---- Confirm your loot roll after one of the events CONFIRM_LOOT_ROLL or CONFIRM_DISENCHANT_ROLL has fired.
+--- Confirm your loot roll after either CONFIRM_LOOT_ROLL or CONFIRM_DISENCHANT_ROLL fires.
 --- [https://wow.gamepedia.com/API_ConfirmLootRoll]
 --- @param rollID number @ As passed by the event. (The number increases with every roll you have in a party)
 --- @param roll number @ Type of roll: (also passed by the event)
@@ -1485,12 +1329,6 @@ function ConfirmNoRefundOnUse()
 end
 
 function ConfirmOnUse()
-end
-
-function ConfirmOrLeaveBattlefield()
-end
-
-function ConfirmOrLeaveLFGParty()
 end
 
 --- Sends a response to a raid ready check
@@ -1513,9 +1351,6 @@ end
 function ConsoleExec(command)
 end
 
-function ConsolePrint()
-end
-
 --- Prints all bag container IDs and their respective inventory IDs(You need to be at the bank for bank inventory IDs to return valid results)
 --- [https://wow.gamepedia.com/API_ContainerIDToInventoryID]
 --- @param containerID unknown
@@ -1526,46 +1361,25 @@ end
 function ContainerRefundItemPurchase()
 end
 
-function ControlCheckCapTargets()
-end
-
-function ControlGetActiveCvarValue()
-end
-
-function ControlGetCurrentCvarValue()
-end
-
-function ControlSetValue()
-end
-
-function ConvertRGBtoColorString()
-end
-
-function CopyTable()
-end
-
 function CopyToClipboard()
-end
-
-function CreateChatChannelList()
 end
 
 --- Creates a font object.
 --- [https://wow.gamepedia.com/API_CreateFont]
---- @param name string @ name of the new font object.
+--- @param name string @ Globally-accessible name to be assigned for use as _G[name]
 --- @return unknown @ fontObject
 function CreateFont(name)
 end
 
---- Creates a new frame element.
+--- Creates a new Frame object.
 --- [https://wow.gamepedia.com/API_CreateFrame]
---- @param frameType string @ Type of the frame to be created (XML tag name): Frame, Button, etc.
---- @param frameName string @ optional) - Name of the newly created frame. If nil, no frame name is assigned. The function will also set a global variable of this name to point to the newly created frame.
---- @param parentFrame Frame @ optional) - The frame object that will be used as the created Frame's parent (cannot be a string!) Does not default to UIParent if given nil.
---- @param inheritsFrame string @ optional) - a comma-delimited list of names of virtual frames to inherit from (the same as in XML). If nil, no frames will be inherited. These frames cannot be frames that were created using this function, they must be created using XML with virtual=true in the tag.
---- @param id number @ optional) - ID to assign to the frame.  See Frame:SetID()
---- @return Frame @ newFrame
-function CreateFrame(frameType, frameName, parentFrame, inheritsFrame, id)
+--- @param frameType string @ Type of the frame e.g. Frame or Button.
+--- @param name string @ ? - Globally accessible name to assign to the frame, or nil for an anonymous frame.
+--- @param parent Frame @ ? - Parent object to assign to the frame, or nil to be parentless; cannot be a string. Can also be set with Frame:SetParent()
+--- @param template string @ ? - Comma-delimited list of virtual frames to inherit from.
+--- @param id number @ ? - ID to assign to the frame. Can also be set with Frame:SetID()
+--- @return Frame @ frame
+function CreateFrame(frameType, name, parent, template, id)
 end
 
 --- Creates a new macro command/button.
@@ -1601,15 +1415,6 @@ function CursorHasMoney()
 end
 
 function CursorHasSpell()
-end
-
-function CursorOnUpdate()
-end
-
-function CursorUpdate()
-end
-
-function DeathKnniggetThrobFunction()
 end
 
 --- Returns a table representing the last five damaging combat events against the player.
@@ -1666,15 +1471,6 @@ end
 function DeclineSpellConfirmationPrompt(spellID)
 end
 
-function DecodeResolution()
-end
-
-function DefaultCompactMiniFrameSetup()
-end
-
-function DefaultCompactUnitFrameSetup()
-end
-
 --- Destroys the item currently held by the cursor.
 --- [https://wow.gamepedia.com/API_DeleteCursorItem]
 --- @return void
@@ -1684,7 +1480,7 @@ end
 function DeleteGMTicket()
 end
 
---- Remove a message from the mailbox.
+--- Asynchronously request the server to remove a message from the mailbox.
 --- [https://wow.gamepedia.com/API_DeleteInboxItem]
 --- @param index number @ the index of the message (1 is the first message)
 --- @return void
@@ -1792,21 +1588,6 @@ function DoesSpellExist(spellName)
 end
 
 function DoesTemplateExist()
-end
-
-function DrawOneHopLines()
-end
-
-function DrawRouteLine()
-end
-
-function DressUpBattlePet()
-end
-
-function DressUpItemLink()
-end
-
-function DressUpTexturePath()
 end
 
 --- Drops the money currently attached to your cursor back into your bag.
@@ -2097,19 +1878,6 @@ end
 function EJ_SetSlotFilter(slotFilterID)
 end
 
---- Populate a context menu with options described in a provided table.
---- [https://wow.gamepedia.com/API_EasyMenu]
---- @param menuList table @ an array of tables describing the entries in the menu to be created. The descriptions may use any key-value tables used in a UIDropDownMenu info table; as a bare minimum, each option should specify the text key.
---- @param menuFrame Frame @ a Frame object that will be used to store some information about the menu, must have a name, and should inherit from UIDropDownMenuTemplate; see the Details section.
---- @param anchor string @ Region - Specify what to anchor the menu relative to: either cursor, a region name, or a region (frame) reference.
---- @param x number @ x offset from the anchor.
---- @param y number @ y offset from the anchor.
---- @param displayMode string @ MENU enables a tooltip-styled context menu, any other value the dropdown style.
---- @param autoHideDelay number @ Automatically hide the menu after this many seconds.
---- @return void
-function EasyMenu(menuList, menuFrame, anchor, x, y, displayMode, autoHideDelay)
-end
-
 --- Modifies an existing macro. This function may only be called when out of combat.
 --- [https://wow.gamepedia.com/API_EditMacro]
 --- @param index_or_macroName unknown
@@ -2186,9 +1954,6 @@ end
 function ExecuteVoidTransfer()
 end
 
-function ExhaustionToolTipText()
-end
-
 function ExpandAllFactionHeaders()
 end
 
@@ -2218,9 +1983,6 @@ function ExpandQuestHeader(questID)
 end
 
 function ExpandWarGameHeader()
-end
-
-function ExtraActionButtonKey()
 end
 
 --- Toggle the At War status of a faction row.
@@ -2314,16 +2076,7 @@ end
 function ForfeitDuel()
 end
 
-function FormatPaperDollTooltipStat()
-end
-
-function FormatProfession()
-end
-
 function FrameXML_Debug()
-end
-
-function GMError()
 end
 
 function GMEuropaBugsEnabled()
@@ -2547,9 +2300,6 @@ end
 function GetActiveLootRollIDs()
 end
 
-function GetActiveRaidProfile()
-end
-
 --- Returns the index of the current active specialization/talent/glyph group.
 --- [https://wow.gamepedia.com/API_GetActiveSpecGroup]
 --- @param isInspect boolean @ If true returns the information for the inspected unit instead of the player. Defaults to false.
@@ -2607,9 +2357,6 @@ function GetAllowLowLevelRaid()
 end
 
 function GetAlternativeDefaultLanguage()
-end
-
-function GetApplicableMultisampleSetting()
 end
 
 --- Returns the localized name for Archaeology.
@@ -2732,9 +2479,6 @@ end
 function GetBackgroundLoadingStatus()
 end
 
-function GetBackgroundTexCoordsForRole()
-end
-
 function GetBackpackAutosortDisabled()
 end
 
@@ -2743,9 +2487,6 @@ end
 --- @param index number @ Index, ascending from 1 to GetNumWatchedTokens().
 --- @return string, number, string, number @ name, count, icon, currencyID
 function GetBackpackCurrencyInfo(index)
-end
-
-function GetBackpackFrame()
 end
 
 --- Returns the name of the bag for the selected index
@@ -2782,9 +2523,6 @@ end
 --- [https://wow.gamepedia.com/API_GetBarberShopTotalCost]
 --- @return void
 function GetBarberShopTotalCost()
-end
-
-function GetBattlePetAbilityHyperlink()
 end
 
 --- Returns the faction played during a cross faction battleground.
@@ -2845,7 +2583,7 @@ end
 --- Get the status of the arena, battleground, or wargame that the player is either queued for or inside.
 --- [https://wow.gamepedia.com/API_GetBattlefieldStatus]
 --- @param index number @ Index of the battlefield you wish to view, in the range of 1 to GetMaxBattlefieldID()
---- @return string, string, number, number, unknown, string, string, string @ status, mapName, teamSize, registeredMatch, suspendedQueue, queueType, gameType, role
+--- @return string, string, number, number, unknown, string, string, string, unknown, string, string @ status, mapName, teamSize, registeredMatch, suspendedQueue, queueType, gameType, role, asGroup, shortDescription, longDescription
 function GetBattlefieldStatus(index)
 end
 
@@ -2933,13 +2671,6 @@ end
 function GetBindingByKey(key)
 end
 
---- Gets the binding action from a key or button press.
---- [https://wow.gamepedia.com/API_GetBindingFromClick]
---- @param keyOrButton string @ The mouse button or key that was pressed.
---- @return string @ command
-function GetBindingFromClick(keyOrButton)
-end
-
 --- Returns all keys currently bound to the command specified by command.  This function is almost identical to GetBinding(index) except it takes the command name as an argument instead of the index and doesn't return the command name along with the key bindings.
 --- [https://wow.gamepedia.com/API_GetBindingKey]
 --- @param command unknown @ The name of the command to get key bindings for (e.g. MOVEFORWARD, TOGGLEFRIENDSTAB)
@@ -2988,7 +2719,7 @@ end
 --- Returns information on a console variable.
 --- [https://wow.gamepedia.com/API_GetCVarInfo]
 --- @param name string @ name of the CVar to query the value of. Only accepts console variables (i.e. not console commands)
---- @return string, string, boolean, boolean, boolean, boolean, boolean @ value, defaultValue, account, character, param5, setcvaronly, readonly
+--- @return string, string, boolean, boolean, boolean, boolean, boolean @ value, defaultValue, account, character, unknown5, setCvarOnly, readOnly
 function GetCVarInfo(name)
 end
 
@@ -3057,9 +2788,6 @@ end
 function GetChatTypeIndex(typeCode)
 end
 
-function GetChatUnitColor()
-end
-
 --- Get the channels received by a chat window.
 --- [https://wow.gamepedia.com/API_GetChatWindowChannels]
 --- @param frameId number @ The frame number of the chat frame to be queried (starts at 1).
@@ -3126,19 +2854,16 @@ end
 function GetCoinTextureString(amount, fontHeight)
 end
 
-function GetColoredName()
-end
-
 --- Returns the number of points of a specific combat rating the player has.
 --- [https://wow.gamepedia.com/API_GetCombatRating]
---- @param combatRatingIdentifier number @ A combat rating identifier from PaperDollFrame.lua, one of:
+--- @param combatRatingIdentifier number @ One of the following values from FrameXML/PaperDollFrame.lua:
 --- @return number @ rating
 function GetCombatRating(combatRatingIdentifier)
 end
 
 --- Returns the bonus, in percent (or other converted units, such as skill points), of a specific combat rating for the player.
 --- [https://wow.gamepedia.com/API_GetCombatRatingBonus]
---- @param combatRatingIdentifier number @ A combat rating identifier from PaperDollFrame.lua, one of:
+--- @param combatRatingIdentifier number @ One of the following values from FrameXML/PaperDollFrame.lua:
 --- @return number @ bonus
 function GetCombatRatingBonus(combatRatingIdentifier)
 end
@@ -3419,11 +3144,10 @@ end
 function GetDefaultGraphicsQuality()
 end
 
---- Returns the Language used by the indicated Player.
+--- Returns the player's default language.
 --- [https://wow.gamepedia.com/API_GetDefaultLanguage]
---- @param unit unknown
---- @return unknown @ language
-function GetDefaultLanguage(unit)
+--- @return string, number @ language, languageID
+function GetDefaultLanguage()
 end
 
 function GetDefaultVideoOption()
@@ -3438,9 +3162,6 @@ end
 function GetDemotionRank()
 end
 
-function GetDenominationsFromCopper()
-end
-
 --- Returns detailed item level information about a given item.
 --- [https://wow.gamepedia.com/API_GetDetailedItemLevelInfo]
 --- @param itemID_or_itemString_or_itemName_or_itemLink unknown
@@ -3453,9 +3174,6 @@ end
 --- @param id number @ difficulty ID to query, ascending from 1.
 --- @return string, string, boolean, boolean, boolean, boolean, number @ name, groupType, isHeroic, isChallengeMode, displayHeroic, displayMythic, toggleDifficultyID
 function GetDifficultyInfo(id)
-end
-
-function GetDisplayedAllyFrames()
 end
 
 function GetDistanceSqToQuest()
@@ -3484,19 +3202,7 @@ end
 function GetDungeonInfo()
 end
 
-function GetDungeonNameWithDifficulty()
-end
-
-function GetEnemyDodgeChance()
-end
-
-function GetEnemyParryChance()
-end
-
 function GetEquipmentNameFromSpell()
-end
-
-function GetEquipmentSetIconInfo()
 end
 
 function GetEventCPUUsage()
@@ -3514,16 +3220,15 @@ end
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_GetExpansionDisplayInfo]
 --- @param expansionLevel number
---- @return unknown @ info
+--- @return table @ info
 function GetExpansionDisplayInfo(expansionLevel)
 end
 
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_GetExpansionForLevel]
 --- @param playerLevel number
---- @param useLegacy boolean @ optional)
 --- @return number @ expansionLevel
-function GetExpansionForLevel(playerLevel, useLegacy)
+function GetExpansionForLevel(playerLevel)
 end
 
 --- Returns level of expansion currently accessible by the player.
@@ -3586,9 +3291,6 @@ end
 function GetFilteredAchievementID(index)
 end
 
-function GetFixedLink()
-end
-
 function GetFlexRaidDungeonInfo()
 end
 
@@ -3618,12 +3320,6 @@ end
 function GetFrameCPUUsage(frame, includeChildren)
 end
 
-function GetFrameHandle()
-end
-
-function GetFrameHandleFrame()
-end
-
 --- Retrieve the current framerate (frames / second).
 --- [https://wow.gamepedia.com/API_GetFramerate]
 --- @return number @ framerate
@@ -3651,9 +3347,6 @@ end
 function GetFriendshipReputationRanks(factionID)
 end
 
-function GetFullRaidList()
-end
-
 function GetFunctionCPUUsage()
 end
 
@@ -3666,7 +3359,7 @@ end
 function GetGameMessageInfo()
 end
 
---- Returns the current server time in hours and minutes
+--- Returns the realm's current time in hours and minutes.
 --- [https://wow.gamepedia.com/API_GetGameTime]
 --- @return number, number @ hours, minutes
 function GetGameTime()
@@ -3825,7 +3518,7 @@ end
 
 --- Returns guild-related information about a unit.
 --- [https://wow.gamepedia.com/API_GetGuildInfo]
---- @param unit unknown @ UnitId - The unit whose guild information you wish to query.
+--- @param unit string @ The unitId whose guild information you wish to query.
 --- @return string, string, number, string @ guildName, guildRankName, guildRankIndex, realm
 function GetGuildInfo(unit)
 end
@@ -4278,9 +3971,6 @@ end
 function GetJournalInfoForSpellConfirmation()
 end
 
-function GetKeyRingSize()
-end
-
 function GetLFDChoiceCollapseState()
 end
 
@@ -4345,7 +4035,7 @@ end
 
 --- Retrieves specific dungeon information, not limited by player level and all dungeons can be looked up.
 --- [https://wow.gamepedia.com/API_GetLFGDungeonInfo]
---- @param dungeonID number @ Ranging from 1 to around 2000 in patch 8.1.5
+--- @param dungeonID number @ Numeric ID to uniquely identify each dungeon
 --- @return unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown @ name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel
 function GetLFGDungeonInfo(dungeonID)
 end
@@ -4391,14 +4081,6 @@ end
 function GetLFGInviteRoleRestrictions()
 end
 
---- Returns the current mode while in LFG.
---- [https://wow.gamepedia.com/API_GetLFGMode]
---- @param category number @ One of the LE_LFG_CATEGORY_* constants (see below).
---- @param lfgID unknown
---- @return string, string @ mode, submode
-function GetLFGMode(category, lfgID)
-end
-
 --- Returns information about the current LFD group invite.
 --- [https://wow.gamepedia.com/API_GetLFGProposal]
 --- @return number, number, boolean, boolean, number @ completedEncounters, numMembers, isLeader, isHoliday, proposalCategory
@@ -4414,7 +4096,7 @@ end
 --- Returns the current state and wait times for being in queue.
 --- [https://wow.gamepedia.com/API_GetLFGQueueStats]
 --- @param category unknown
---- @param activeID unknown @
+--- @param activeID unknown @ 
 --- @return void
 function GetLFGQueueStats(category, activeID)
 end
@@ -4481,7 +4163,7 @@ end
 
 --- Returns the language specified by the index that your character can speak.
 --- [https://wow.gamepedia.com/API_GetLanguageByIndex]
---- @param index number @ The index starting at 1.
+--- @param index number @ Ranging from 1 up to GetNumLanguages()
 --- @return string, number @ language, languageID
 function GetLanguageByIndex(index)
 end
@@ -4611,9 +4293,6 @@ end
 function GetLootThreshold()
 end
 
-function GetLowBit()
-end
-
 --- Returns the body (macro text) of a macro.
 --- [https://wow.gamepedia.com/API_GetMacroBody]
 --- @param macroIndex_or_name unknown
@@ -4657,9 +4336,6 @@ end
 function GetManaRegen()
 end
 
-function GetManagedEnvironment()
-end
-
 --- Returns the name of the player at the specified index, who would receive an item assigned by GiveMasterLoot(slot, index) using the same index.
 --- [https://wow.gamepedia.com/API_GetMasterLootCandidate]
 --- @param slot unknown @ The loot slot number of the item you want to get information about
@@ -4680,9 +4356,6 @@ end
 function GetMasteryEffect()
 end
 
-function GetMaterialTextColors()
-end
-
 function GetMaxArenaCurrency()
 end
 
@@ -4695,12 +4368,11 @@ end
 function GetMaxCombatRatingBonus()
 end
 
---- Maps an expansion level to a maximum character level for that expansion, optionally takes a useModernLevelMapping instead of legacy level mapping. Legacy treats the maxes as the original caps for those expansions.
+--- Maps an expansion level to a maximum character level for that expansion.
 --- [https://wow.gamepedia.com/API_GetMaxLevelForExpansionLevel]
 --- @param expansionLevel number
---- @param useModernLevelMapping boolean @ optional, default = false)
 --- @return number @ maxLevel
-function GetMaxLevelForExpansionLevel(expansionLevel, useModernLevelMapping)
+function GetMaxLevelForExpansionLevel(expansionLevel)
 end
 
 function GetMaxNumCUFProfiles()
@@ -4724,9 +4396,6 @@ end
 function GetMaxTalentTier()
 end
 
-function GetMaxUIPanelsWidth()
-end
-
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_GetMaximumExpansionLevel]
 --- @return number @ expansionLevel
@@ -4734,9 +4403,6 @@ function GetMaximumExpansionLevel()
 end
 
 function GetMeleeHaste()
-end
-
-function GetMeleeMissChance()
 end
 
 function GetMerchantCurrencies()
@@ -4790,12 +4456,6 @@ end
 function GetMerchantNumItems()
 end
 
-function GetMessageTypeColor()
-end
-
-function GetMessageTypeState()
-end
-
 function GetMinRenderScale()
 end
 
@@ -4844,9 +4504,6 @@ end
 function GetMoney()
 end
 
-function GetMoneyString()
-end
-
 function GetMonitorAspectRatio()
 end
 
@@ -4892,7 +4549,7 @@ end
 
 --- Produces a table describing all the harmful consequences of wearing corrupted gear without resistance.
 --- [https://wow.gamepedia.com/API_GetNegativeCorruptionEffectInfo]
---- @return unknown @ corruptionEffects
+--- @return table @ corruptionEffects
 function GetNegativeCorruptionEffectInfo()
 end
 
@@ -5386,12 +5043,6 @@ end
 function GetNumWarGameTypes()
 end
 
---- Returns the number of currencies currently watched on the player's backpack.
---- [https://wow.gamepedia.com/API_GetNumWatchedTokens]
---- @return number @ numWatched
-function GetNumWatchedTokens()
-end
-
 function GetNumWorldPVPAreas()
 end
 
@@ -5575,9 +5226,6 @@ end
 function GetPlayerFacing()
 end
 
-function GetPlayerFactionGroup()
-end
-
 --- Returns basic information about another player from their GUID.
 --- [https://wow.gamepedia.com/API_GetPlayerInfoByGUID]
 --- @param guid string @ The GUID of the player you're querying.
@@ -5659,9 +5307,12 @@ end
 
 --- Returns information about a PvP (honor) talent.
 --- [https://wow.gamepedia.com/API_GetPvpTalentInfoByID]
---- @param talentID number
---- @return number, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown @ talentID, name, icon, selected, available, spellID, unlocked, row, column, known, unknown
-function GetPvpTalentInfoByID(talentID)
+--- @param talentID number @ Talent ID.
+--- @param specGroupIndex number @ ? - Index of active specialization group (GetActiveSpecGroup); if nil, the selected/available return values will always be false.
+--- @param isInspect boolean @ ? - If non-nil, returns information based on inspectedUnit.
+--- @param inspectUnit unknown
+--- @return number, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown @ talentID, name, icon, selected, available, spellID, unlocked, row, column, known, grantedByAura
+function GetPvpTalentInfoByID(talentID, specGroupIndex, isInspect, inspectUnit)
 end
 
 function GetPvpTalentInfoBySpecialization()
@@ -5719,13 +5370,6 @@ end
 --- @param index number @ The index of the currency to query, in the range [1,GetNumRewardCurrencies()].
 --- @return string, string, number, number @ name, texture, numItems, quality
 function GetQuestCurrencyInfo(itemType, index)
-end
-
---- Gets the difficulty colour for a given level compared to the player's level.
---- [https://wow.gamepedia.com/API_GetQuestDifficultyColor]
---- @param level number @ The level to be compared to the player's current level.
---- @return table @ colour
-function GetQuestDifficultyColor(level)
 end
 
 function GetQuestExpansion()
@@ -6011,7 +5655,7 @@ end
 
 --- Returns a list of quests the character has completed in its lifetime.
 --- [https://wow.gamepedia.com/API_GetQuestsCompleted]
---- @param table table @ If supplied, GetQuestsCompleted will add or replace keys in this table instead of creating a new table.
+--- @param table table @ If supplied, fills this table with quests. Any other keys will be unchanged.
 --- @return table @ questsCompleted
 function GetQuestsCompleted(table)
 end
@@ -6055,13 +5699,6 @@ end
 function GetRaidTargetIndex(unit)
 end
 
---- Returns one of its arguments, chosen randomly.
---- [https://wow.gamepedia.com/API_GetRandomArgument]
---- @param ... any @ any number of any type of values.
---- @return any @ randArg
-function GetRandomArgument(...)
-end
-
 function GetRandomDungeonBestChoice()
 end
 
@@ -6077,16 +5714,13 @@ end
 function GetRangedCritChance()
 end
 
+--- Returns the player's ranged haste amount granted through buffs.
+--- [https://wow.gamepedia.com/API_GetRangedHaste]
+--- @return number @ haste
 function GetRangedHaste()
 end
 
-function GetRangedMissChance()
-end
-
 function GetRatedBattleGroundInfo()
-end
-
-function GetReadonlyRestrictedTable()
 end
 
 function GetReadyCheckStatus()
@@ -6100,7 +5734,7 @@ end
 
 --- Returns the map instance name.
 --- [https://wow.gamepedia.com/API_GetRealZoneText]
---- @param instanceID number @ optional) - The InstanceID. When omitted, returns current map name.
+--- @param instanceID number @ ? - InstanceID
 --- @return string @ zone
 function GetRealZoneText(instanceID)
 end
@@ -6126,9 +5760,6 @@ end
 function GetRecruitingGuildSettings()
 end
 
-function GetRelativeDifficultyColor()
-end
-
 function GetReleaseTimeRemaining()
 end
 
@@ -6147,6 +5778,9 @@ end
 function GetRestState()
 end
 
+--- Returns the cap on trial character level, money and profession skill for Starter Edition accounts.
+--- [https://wow.gamepedia.com/API_GetRestrictedAccountData]
+--- @return number, number, number @ rLevel, rMoney, profCap
 function GetRestrictedAccountData()
 end
 
@@ -6245,7 +5879,7 @@ end
 --- Returns information about an instance for which the player has saved lockout data.
 --- [https://wow.gamepedia.com/API_GetSavedInstanceInfo]
 --- @param index number @ index of the saved instance, from 1 to GetNumSavedInstances()
---- @return string, number, number, number, boolean, boolean, number, boolean, number, string, number, number @ name, id, reset, difficulty, locked, extended, instanceIDMostSig, isRaid, maxPlayers, difficultyName, numEncounters, encounterProgress
+--- @return unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown @ name, id, reset, difficulty, locked, extended, instanceIDMostSig, isRaid, maxPlayers, difficultyName, numEncounters, encounterProgress, extendDisabled
 function GetSavedInstanceInfo(index)
 end
 
@@ -6282,9 +5916,6 @@ end
 function GetScreenHeight()
 end
 
-function GetScreenHeightScale()
-end
-
 --- Returns a list of available screen resolutions
 --- [https://wow.gamepedia.com/API_GetScreenResolutions]
 --- @return unknown, unknown, unknown, unknown @ resolution1, resolution2, resolution3, ...
@@ -6295,9 +5926,6 @@ end
 --- [https://wow.gamepedia.com/API_GetScreenWidth]
 --- @return number @ screenWidth
 function GetScreenWidth()
-end
-
-function GetScreenWidthScale()
 end
 
 function GetScriptCPUUsage()
@@ -6350,12 +5978,15 @@ end
 function GetSendMailPrice()
 end
 
---- Returns the current server time as a Unix timestamp.
+--- Returns the server's Unix time.
 --- [https://wow.gamepedia.com/API_GetServerTime]
 --- @return number @ timestamp
 function GetServerTime()
 end
 
+--- Returns the time since you opened the game client.
+--- [https://wow.gamepedia.com/API_GetSessionTime]
+--- @return number @ sessionTime
 function GetSessionTime()
 end
 
@@ -6399,9 +6030,6 @@ end
 --- [https://wow.gamepedia.com/API_GetShieldBlock]
 --- @return number @ damageReduction
 function GetShieldBlock()
-end
-
-function GetSmoothProgressChange()
 end
 
 --- Returns whether the item currently selected for socketing can be traded to other eligible players.
@@ -6638,12 +6266,6 @@ end
 function GetSpellLossOfControlCooldown(spellSlot, bookType_or_spellName_or_spellID)
 end
 
-function GetSpellMissChance()
-end
-
-function GetSpellNameColor()
-end
-
 function GetSpellPenetration()
 end
 
@@ -6699,9 +6321,10 @@ end
 
 --- Return the value of the requested Statistic.
 --- [https://wow.gamepedia.com/API_GetStatistic]
---- @param achievementID number @ The ID of the Achievement
---- @return string @ value
-function GetStatistic(achievementID)
+--- @param category number @ AchievementID of a statistic or statistic category.
+--- @param index number @ Entry within a statistic category, if applicable.
+--- @return string, boolean, string @ value, skip, id
+function GetStatistic(category, index)
 end
 
 --- Returns a table of achievement categories.
@@ -6737,37 +6360,31 @@ end
 function GetTabardInfo()
 end
 
-function GetTableColor()
-end
-
---- Returns information about a talent.
 --- [https://wow.gamepedia.com/API_GetTalentInfo]
 --- @param tier number @ Talent tier from 1 to MAX_TALENT_TIERS
 --- @param column number @ Talent column from 1 to NUM_TALENT_COLUMNS
---- @param specGroupIndex number @ Index of specialization of current player class from 1 to GetNumSpecializations()
---- @param isInspect boolean @ optional) - If non-nil, returns information based on inspectedUnit/classId.
+--- @param specGroupIndex number @ Index of active specialization group (GetActiveSpecGroup)
+--- @param isInspect boolean @ ? - If non-nil, returns information based on inspectedUnit/classId.
 --- @param inspectUnit unknown
---- @return number, unknown, unknown, unknown, unknown, unknown, unknown, unknown, number, unknown, unknown @ talentID, name, texture, selected, available, spellID, unknown, row, column, unknown, known
+--- @return void
 function GetTalentInfo(tier, column, specGroupIndex, isInspect, inspectUnit)
 end
 
---- Returns information about a talent.
 --- [https://wow.gamepedia.com/API_GetTalentInfoByID]
 --- @param talentID number @ Talent ID.
---- @param specGroupIndex number @ Index of specialization of current player class from 1 to GetNumSpecializations()
---- @param isInspect boolean @ optional) - If non-nil, returns information based on inspectedUnit/classId.
+--- @param specGroupIndex number @ Index of active specialization group (GetActiveSpecGroup)
+--- @param isInspect boolean @ ? - If non-nil, returns information based on inspectedUnit/classId.
 --- @param inspectUnit unknown
 --- @return void
 function GetTalentInfoByID(talentID, specGroupIndex, isInspect, inspectUnit)
 end
 
---- Returns information about a talent.
 --- [https://wow.gamepedia.com/API_GetTalentInfoBySpecialization]
---- @param specGroupIndex number @ Index of specialization of current player class from 1 to GetNumSpecializations()
+--- @param specIndex number @ Index of the specialization, ascending from 1 to GetNumSpecializations().
 --- @param tier number @ Talent tier from 1 to MAX_TALENT_TIERS
 --- @param column number @ Talent column from 1 to NUM_TALENT_COLUMNS
 --- @return void
-function GetTalentInfoBySpecialization(specGroupIndex, tier, column)
+function GetTalentInfoBySpecialization(specIndex, tier, column)
 end
 
 function GetTalentLink()
@@ -6775,12 +6392,12 @@ end
 
 --- Returns the column of the selected talent for a given tier.
 --- [https://wow.gamepedia.com/API_GetTalentTierInfo]
---- @param tier number @ Talent Tier, ascending from 1
---- @param talentGroup number @ FrameXML uses GetActiveSpecGroup() which currently (7.3.5) returns 1 and TalentFrame.talentGroup which currently (7.3.5) returns the talent group for the selected panel.
---- @param isInspect unknown @ Optional Flag - If non-nil, returns information based on inspectedUnit/classId.
---- @param unit unknown
---- @return unknown, unknown @ unkonwn, column
-function GetTalentTierInfo(tier, talentGroup, isInspect, unit)
+--- @param tier number @ Talent tier from 1 to MAX_TALENT_TIERS
+--- @param specGroupIndex number @ Index of active specialization group (GetActiveSpecGroup)
+--- @param isInspect boolean @ ? - If non-nil, returns information based on inspectedUnit.
+--- @param inspectedUnit string @ ? - Inspected unitId.
+--- @return unknown, unknown, unknown @ tierAvailable, selectedTalent, tierUnlockLevel
+function GetTalentTierInfo(tier, specGroupIndex, isInspect, inspectedUnit)
 end
 
 function GetTargetTradeCurrency()
@@ -6814,18 +6431,6 @@ end
 function GetTempShapeshiftBarIndex()
 end
 
-function GetTexCoordsByGrid()
-end
-
-function GetTexCoordsForRole()
-end
-
-function GetTexCoordsForRoleSmall()
-end
-
-function GetTexCoordsForRoleSmallCircle()
-end
-
 --- GetText is used to localize some game text. Currently only for the FACTION_STANDING_LABEL..N globalstring.
 --- [https://wow.gamepedia.com/API_GetText]
 --- @param token string @ Reputation index
@@ -6854,13 +6459,7 @@ end
 function GetTimePreciseSec()
 end
 
-function GetTimeStringFromSeconds()
-end
-
 function GetTimeToWellRested()
-end
-
-function GetTimerTextColor()
 end
 
 --- Returns the name of a Title ID.
@@ -7035,15 +6634,6 @@ end
 function GetUICameraInfo()
 end
 
-function GetUIPanel()
-end
-
-function GetUIPanelHeight()
-end
-
-function GetUIPanelWidth()
-end
-
 function GetUITextureKitInfo()
 end
 
@@ -7053,38 +6643,30 @@ end
 function GetUnitMaxHealthModifier()
 end
 
---- Returns the name and realm of the specified unit.
---- [https://wow.gamepedia.com/API_GetUnitName]
---- @param unit string @ The UnitId to query (e.g. player, party2, pet, target etc.)
---- @param showServerName boolean @ True to append full server name to units from other servers; false to append a short indicator.
---- @return string @ name
-function GetUnitName(unit, showServerName)
-end
-
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_GetUnitPowerBarInfo]
---- @param unitToken string
---- @return table @ info
+--- @param unitToken string @ UnitId
+--- @return unknown @ info
 function GetUnitPowerBarInfo(unitToken)
 end
 
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_GetUnitPowerBarInfoByID]
---- @param barID number
+--- @param barID number @ from UnitPowerBarID()
 --- @return void
 function GetUnitPowerBarInfoByID(barID)
 end
 
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_GetUnitPowerBarStrings]
---- @param unitToken string
+--- @param unitToken string @ UnitId
 --- @return string, string, string @ name, tooltip, cost
 function GetUnitPowerBarStrings(unitToken)
 end
 
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_GetUnitPowerBarStringsByID]
---- @param barID number
+--- @param barID number @ from UnitPowerBarID()
 --- @return void
 function GetUnitPowerBarStringsByID(barID)
 end
@@ -7235,7 +6817,7 @@ end
 
 --- Returns PVP info for the current zone.
 --- [https://wow.gamepedia.com/API_GetZonePVPInfo]
---- @return string, number, string @ pvpType, isFFA, faction
+--- @return string, boolean, string @ pvpType, isFFA, faction
 function GetZonePVPInfo()
 end
 
@@ -7251,21 +6833,6 @@ end
 --- @param ci unknown
 --- @return void
 function GiveMasterLoot(li, ci)
-end
-
-function GossipFrameActiveQuestsUpdate()
-end
-
-function GossipFrameAvailableQuestsUpdate()
-end
-
-function GossipFrameOptionsUpdate()
-end
-
-function GossipFrameUpdate()
-end
-
-function GossipResize()
 end
 
 function GroupHasOfflineMember()
@@ -7409,9 +6976,6 @@ end
 function HandleAtlasMemberCommand()
 end
 
-function HandleModifiedItemClick()
-end
-
 function HasAPEffectsSpellPower()
 end
 
@@ -7473,18 +7037,6 @@ end
 function HasLoadedCUFProfiles()
 end
 
-function HasMessageType()
-end
-
-function HasMessageTypeGroup()
-end
-
-function HasMultiCastActionBar()
-end
-
-function HasMultiCastActionPage()
-end
-
 function HasNewMail()
 end
 
@@ -7536,45 +7088,15 @@ end
 function HearthAndResurrectFromArea()
 end
 
---- Sends a Lag Report. This function is called by the HelpFrame when reporting lag using the GM window.
---- [https://wow.gamepedia.com/API_HelpReportLag]
---- @return void
-function HelpReportLag()
-end
-
-function HideDropDownMenu()
-end
-
-function HideKnowledgeBase()
-end
-
-function HideMultiCastActionBar()
-end
-
-function HideParentPanel()
-end
-
-function HidePartyFrame()
-end
-
-function HidePetActionBar()
-end
-
 --- Takes the cursor out of repair mode.
 --- [https://wow.gamepedia.com/API_HideRepairCursor]
 --- @return void
 function HideRepairCursor()
 end
 
-function HideTextStatusBarText()
-end
-
-function HideUIPanel()
-end
-
-function HideWatchedReputationBarText()
-end
-
+--- Returns true during pre-rendered movie-like cinematics.
+--- [https://wow.gamepedia.com/API_InCinematic]
+--- @return boolean @ inCinematic
 function InCinematic()
 end
 
@@ -7582,9 +7104,6 @@ end
 --- [https://wow.gamepedia.com/API_InCombatLockdown]
 --- @return unknown @ inLockdown
 function InCombatLockdown()
-end
-
-function InGlue()
 end
 
 --- Returns whether or not you are in a guild party.
@@ -7599,20 +7118,11 @@ end
 function InRepairMode()
 end
 
-function InboxGetMoreMail()
-end
-
 --- Boolean function for determining whether a message is returnable.
 --- [https://wow.gamepedia.com/API_InboxItemCanDelete]
 --- @param index number @ the index of the message (1 is the first message)
 --- @return number @ canDelete
 function InboxItemCanDelete(index)
-end
-
-function InboxNextPage()
-end
-
-function InboxPrevPage()
 end
 
 --- This function starts a role check.
@@ -7628,25 +7138,13 @@ end
 function InitiateTrade(unit)
 end
 
-function InspectAchievements()
-end
-
---- [https://wow.gamepedia.com/API_InspectUnit]
---- @param unit string @ The UnitId to select as a target.
---- @return void
-function InspectUnit(unit)
-end
-
 function InteractUnit()
-end
-
-function InviteToGroup()
 end
 
 function Is64BitClient()
 end
 
---- Returns if the account has been secured with Blizzard SMS Protect.
+--- Returns if the account has been secured with Blizzard Mobile Authenticator.
 --- [https://wow.gamepedia.com/API_IsAccountSecured]
 --- @return boolean @ accountSecured
 function IsAccountSecured()
@@ -7755,13 +7253,6 @@ end
 function IsBNLogin()
 end
 
---- Patch 1.11.0 (2006-06-20): Returns the BagID (number) of the corresponding ContainerFrame.[1]
---- [https://wow.gamepedia.com/API_IsBagOpen]
---- @param BagID number @ Unique identifier for each bag
---- @return number @ container
-function IsBagOpen(BagID)
-end
-
 function IsBagSlotFlagEnabledOnOtherBags()
 end
 
@@ -7798,12 +7289,6 @@ function IsChatChannelRaid()
 end
 
 function IsChatDND()
-end
-
-function IsClassColoringMessageType()
-end
-
-function IsCombatLog()
 end
 
 function IsCompetitiveModeEnabled()
@@ -7969,15 +7454,6 @@ end
 function IsFlying()
 end
 
-function IsFrameHandle()
-end
-
-function IsFrameLockActive()
-end
-
-function IsFrameSmartShown()
-end
-
 --- Returns true if the client downloaded has the GM MPQs attached, returns false otherwise.
 --- [https://wow.gamepedia.com/API_IsGMClient]
 --- @return void
@@ -8020,6 +7496,9 @@ end
 function IsInAuthenticatedRank()
 end
 
+--- Returns true during cinematics produced dynamically by the game engine.[citation needed]
+--- [https://wow.gamepedia.com/API_IsInCinematicScene]
+--- @return boolean @ inCinematicScene
 function IsInCinematicScene()
 end
 
@@ -8046,9 +7525,6 @@ function IsInInstance()
 end
 
 function IsInLFGDungeon()
-end
-
-function IsInProvingGround()
 end
 
 --- Indicates whether the player is in a [specific type of] raid group.
@@ -8109,9 +7585,6 @@ end
 function IsLFGDungeonJoinable()
 end
 
-function IsLFGModeActive()
-end
-
 --- There are three seperate levels of IsModifierKeyDown() type API functions but they all do the same basic function and return true if the specified key is currently pressed down.
 --- [https://wow.gamepedia.com/API_IsLeftAltKeyDown]
 --- @return void
@@ -8139,9 +7612,6 @@ end
 function IsLinuxClient()
 end
 
-function IsListeningForMessageType()
-end
-
 function IsLoggedIn()
 end
 
@@ -8152,12 +7622,6 @@ function IsMacClient()
 end
 
 function IsMasterLooter()
-end
-
-function IsMessageDoneBy()
-end
-
-function IsMessageDoneTo()
 end
 
 --- Indicates whether the modifier keys for the selected action are pressed.
@@ -8202,9 +7666,6 @@ end
 function IsMoviePlayable(movieID)
 end
 
-function IsNormalActionBarState()
-end
-
 --- Returns whether the game is currently showing a GlueXML screen (i.e. no character is logged in).
 --- [https://wow.gamepedia.com/API_IsOnGlueScreen]
 --- @return boolean @ isOnGlueScreen
@@ -8212,9 +7673,6 @@ function IsOnGlueScreen()
 end
 
 function IsOnTournamentRealm()
-end
-
-function IsOptionFrameOpen()
 end
 
 --- Returns whether the player's character is currently outside of the map.
@@ -8385,9 +7843,6 @@ end
 --- [https://wow.gamepedia.com/API_IsRightShiftKeyDown]
 --- @return void
 function IsRightShiftKeyDown()
-end
-
-function IsSecureCmd()
 end
 
 function IsSelectedSpellBookItem()
@@ -8562,9 +8017,6 @@ end
 function IsUsingVehicleControls()
 end
 
-function IsValid()
-end
-
 function IsVehicleAimAngleAdjustable()
 end
 
@@ -8596,9 +8048,6 @@ function IsWorldQuestHardWatched()
 end
 
 function IsWorldQuestWatched()
-end
-
-function IsWritableRestrictedTable()
 end
 
 function IsXPUserDisabled()
@@ -8856,38 +8305,11 @@ end
 function KBSystem_GetServerStatus()
 end
 
-function LFDGetNumDungeons()
-end
-
-function LFGConstructDeclinedMessage()
-end
-
-function LFGDebug()
-end
-
-function LFGIsIDHeader()
-end
-
-function LFGListFilterChoices()
-end
-
-function LFGListRemoveCollapsedChildren()
-end
-
-function LFGListRemoveHeadersWithoutChildren()
-end
-
-function LFGListUpdateHeaderEnabledAndLockedStates()
-end
-
 --- Teleports the player to or from an LFG dungeon.
 --- [https://wow.gamepedia.com/API_LFGTeleport]
 --- @param toSafety boolean @ false to teleport to the dungeon, true to teleport to where you were before you were teleported to the dungeon.
 --- @return void
 function LFGTeleport(toSafety)
-end
-
-function LFRGetNumDungeons()
 end
 
 --- Learns the name of a specified pvp talent in a specified tab.
@@ -8960,25 +8382,7 @@ end
 function LoadBindings(bindingSet)
 end
 
-function LoadMicroButtonTextures()
-end
-
 function LoadURLIndex()
-end
-
-function Localize()
-end
-
-function LocalizeFrames()
-end
-
-function LocalizePost()
-end
-
-function LockMultiCastActionBar()
-end
-
-function LockPetActionBar()
 end
 
 --- Toggles the chat logging and returns the current state.
@@ -9016,40 +8420,6 @@ end
 --- @param lootSlot number @ index of the loot slot, ascending from 1 to GetNumLootItems()
 --- @return boolean @ isLootItem
 function LootSlotHasItem(lootSlot)
-end
-
-function LowerFrameLevel()
-end
-
-function ManageBackpackTokenFrame()
-end
-
-function MicroButtonPulse()
-end
-
-function MicroButtonPulseStop()
-end
-
-function MicroButtonTooltipText()
-end
-
-function MiniMapTrackingShineFadeIn()
-end
-
-function MiniMapTrackingShineFadeOut()
-end
-
-function MinimapMailFrameUpdate()
-end
-
---- [https://wow.gamepedia.com/API_MouseIsOver]
---- @param frame Frame @ The frame (or frame-derived object such as Buttons, etc) to test with
---- @param topOffset unknown @ (optional) Number - distance from the top to include in calculations
---- @param bottomOffset unknown @ (optional) Number - distance from the bottom to include in calculations
---- @param leftOffset unknown @ (optional) Number - distance from the left to include in calculations
---- @param rightOffset unknown @ (optional) Number - distance from the right to include in calculations
---- @return boolean @ isOver
-function MouseIsOver(frame, topOffset, bottomOffset, leftOffset, rightOffset)
 end
 
 function MouseOverrideCinematicDisable()
@@ -9099,9 +8469,6 @@ end
 --- @param startTime unknown
 --- @return void
 function MoveForwardStop(startTime)
-end
-
-function MoveMicroButtons()
 end
 
 --- Begins rotating the camera down around your character.
@@ -9182,24 +8549,6 @@ end
 function MoveViewUpStop()
 end
 
-function MultiActionButtonDown()
-end
-
-function MultiActionButtonUp()
-end
-
-function MultiCastActionButtonDown()
-end
-
-function MultiCastActionButtonUp()
-end
-
-function MultiCastRecallSpellButtonUp()
-end
-
-function MultiCastSummonSpellButtonUp()
-end
-
 function MultiSampleAntiAliasingSupported()
 end
 
@@ -9251,56 +8600,10 @@ end
 function OfferPetition()
 end
 
-function OnMenuLoad()
-end
-
---- [https://wow.gamepedia.com/API_OpenAllBags]
---- @param frame unknown @ Object - Handle to the frame requesting OpenAllBags(), to reserve this open state and thus prevent other frames from executing CloseAllBags()
---- @param forceUpdate boolean @ Optional flag to force ContainerFrame_UpdateAll() should execution halt part-way through the function.
---- @return void
-function OpenAllBags(frame, forceUpdate)
-end
-
---- [https://wow.gamepedia.com/API_OpenBackpack]
---- @return boolean @ backpackWasOpen
-function OpenBackpack()
-end
-
---- [https://wow.gamepedia.com/API_OpenBag]
---- @param id number @ BagID) - Unique identifier for each bag
---- @param force boolean @ OpenBag only) Optional flag to force ContainerFrame_Update() even if the bag was already open.
---- @return void
-function OpenBag(id, force)
-end
-
-function OpenCoinPickupFrame()
-end
-
-function OpenColorPicker()
-end
-
-function OpenFriendsFrame()
-end
-
-function OpenGlyphFrame()
-end
-
-function OpenStackSplitFrame()
-end
-
 function OpenTrainer()
 end
 
 function OpeningCinematic()
-end
-
-function PaperDollBgDesaturate()
-end
-
-function PaperDollFormatStat()
-end
-
-function PaperDollStatTooltip()
 end
 
 --- Returns whether the current billing unit is considered tired or not. This function is to limit players from playing the game for too long.
@@ -9312,22 +8615,10 @@ end
 function PartyLFGStartBackfill()
 end
 
-function PartyMemberHealthCheck()
-end
-
-function PassClickToParent()
-end
-
 --- Permanently abandons your pet.
 --- [https://wow.gamepedia.com/API_PetAbandon]
 --- @return void
 function PetAbandon()
-end
-
-function PetActionButtonDown()
-end
-
-function PetActionButtonUp()
 end
 
 --- Switches your pet to aggressive mode; does nothing.
@@ -9585,9 +8876,9 @@ end
 --- Play one of a set of built-in sounds.  Other players will not hear the sound.
 --- [https://wow.gamepedia.com/API_PlaySound]
 --- @param soundKitID number @ All sounds used by Blizzard's UI are defined in the SOUNDKIT table.
---- @param channel string @ optional) - The sound volume slider setting the sound should use, one of: Master, SFX, Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to SFX (Sound) if not specified.
+--- @param channel string @ ?Optional.  Could be nil. - The sound volume slider setting the sound should use, one of: Master, SFX, Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to SFX (Sound) if not specified.
 --- @param forceNoDuplicates unknown
---- @param runFinishCallback boolean @ optional) - Fires SOUNDKIT_FINISHED when sound is done, arg1 will be soundHandle given below. Defaults to false.
+--- @param runFinishCallback boolean @ ?Optional.  Could be nil. - Fires SOUNDKIT_FINISHED when sound is done, arg1 will be soundHandle given below. Defaults to false.
 --- @return boolean, number @ willPlay, soundHandle
 function PlaySound(soundKitID, channel, forceNoDuplicates, runFinishCallback)
 end
@@ -9640,9 +8931,6 @@ end
 function PrevView()
 end
 
-function PrintLootSpecialization()
-end
-
 function ProcessQuestLogRewardFactions()
 end
 
@@ -9670,16 +8958,6 @@ end
 --- @param slotId number @ Inventory slot id containing the bag in which you wish to put the item. Values 20 to 23 correspond to the player's bag slots, right-to-left from the first bag after the backpack.
 --- @return void
 function PutItemInBag(slotId)
-end
-
-function PutKeyInKeyRing()
-end
-
---- Returns information about a cast sequence's next action.
---- [https://wow.gamepedia.com/API_QueryCastSequence]
---- @param sequence string @ Cast sequence string (e.g. reset=20/alt Moonfire, Starfire, Starfire, Wrath).
---- @return number, string, string @ index, item, spell
-function QueryCastSequence(sequence)
 end
 
 function QueryGuildBankLog()
@@ -9785,22 +9063,10 @@ end
 function Quit()
 end
 
-function RGBTableToColorCode()
-end
-
-function RGBToColorCode()
-end
-
 function RaidProfileExists()
 end
 
 function RaidProfileHasUnsavedChanges()
-end
-
-function RaiseFrameLevel()
-end
-
-function RaiseFrameLevelByTwo()
 end
 
 --- Performs a random roll between two numbers.
@@ -9814,61 +9080,13 @@ end
 function ReagentBankButtonIDToInvSlotID()
 end
 
-function RealPartyIsFull()
-end
-
-function RecalculateGearManagerDialogPopup()
-end
-
-function RecentTimeDate()
-end
-
 function RedockChatWindows()
-end
-
-function RefreshAuras()
-end
-
-function RefreshBuffs()
-end
-
-function RefreshDebuffs()
-end
-
-function RefreshEquipmentSetIconInfo()
 end
 
 function RefreshLFGList()
 end
 
-function RefreshMoneyFrame()
-end
-
---- @param frame unknown
---- @param attribute unknown
---- @param conditional unknown
-function RegisterAttributeDriver(frame, attribute, conditional)
-end
-
-function RegisterAutoHide()
-end
-
---- A SecureStateDriver allows code snippets to execute upon game state changes expressible using macro conditionals.
---- [https://wow.gamepedia.com/API_RegisterStateDriver]
---- @param frame Frame @ The AttributeDriver acts on this frame by toggling its visibility or setting its attributes
---- @param state string @ Prepended with state- and then used similar to attribute (ie. state visibility becomes attribute state-visibility)
---- @param conditional string @ A macro conditional parsable by SecureCmdOptionParse
---- @return void
-function RegisterStateDriver(frame, state, conditional)
-end
-
 function RegisterStaticConstants()
-end
-
---- A SecureStateDriver allows code snippets to execute upon game state changes expressible using macro conditionals.
---- [https://wow.gamepedia.com/API_RegisterUnitWatch]
---- @return void
-function RegisterUnitWatch()
 end
 
 --- Rejects an Dungeon Finder group invitation and leaves the queue.
@@ -9894,12 +9112,6 @@ end
 --- @param messageGroup string @ message type the chat window should no longer receive, e.g. EMOTE, SAY, RAID.
 --- @return void
 function RemoveChatWindowMessages(index, messageGroup)
-end
-
-function RemoveExtraSpaces()
-end
-
-function RemoveFrameLock()
 end
 
 --- Remove a Keystone from the selected artifact.
@@ -10151,9 +9363,6 @@ end
 function ReturnInboxItem()
 end
 
-function ReverseQuestObjective()
-end
-
 --- Roll on the Loot roll identified with Rollid, roll is nil when passing, otherwise it uses 1 to roll on loot.
 --- [https://wow.gamepedia.com/API_RollOnLoot]
 --- @param rollID number @ The number increases with every roll you have in a party. Till how high it counts is currently unknown.
@@ -10211,9 +9420,6 @@ end
 function SaveView(viewIndex)
 end
 
-function ScenariosGetNumDungeons()
-end
-
 --- This function will take a screenshot.
 --- [https://wow.gamepedia.com/API_Screenshot]
 --- @return void
@@ -10264,59 +9470,11 @@ end
 function SearchLFGSort()
 end
 
---- [https://wow.gamepedia.com/API_SecondsToTime]
---- @param seconds number @ The number of seconds to be represented.
---- @param noSeconds boolean @ optional) - If true, seconds are omitted from the output. (Omitting it == false)
---- @return string @ timePassed
-function SecondsToTime(seconds, noSeconds)
-end
-
---- [https://wow.gamepedia.com/API_SecondsToTimeAbbrev]
---- @param TimeDuration number @ The amount of time to convert.
---- @return string, number @ TimeFormat, Value
-function SecondsToTimeAbbrev(TimeDuration)
-end
-
-function SecureCapsuleGet()
-end
-
-function SecureCmdItemParse()
-end
-
 --- Evaluates macro options in the string and returns the appropriate sub-string or nil
 --- [https://wow.gamepedia.com/API_SecureCmdOptionParse]
 --- @param options string @ a secure command options string to be parsed, e.g. [mod:alt] ALT is held down; [mod:ctrl] CTRL is held down, but ALT is not; neither ALT nor CTRL is held down.
 --- @return string, string @ result, target
 function SecureCmdOptionParse(options)
-end
-
-function SecureCmdUseItem()
-end
-
-function SecureHandlerExecute()
-end
-
---- Stores a frame handle on a given frame.
---- [https://wow.gamepedia.com/API_SecureHandlerSetFrameRef]
---- @param frame unknown
---- @param label string @ Label using which to store the frame handle for later retrieval.
---- @param refFrame Frame @ Frame for which a handle should be created.
---- @return void
-function SecureHandlerSetFrameRef(frame, label, refFrame)
-end
-
-function SecureHandlerUnwrapScript()
-end
-
---- Wrap the script on a frame to invoke snippets against a header.
---- [https://wow.gamepedia.com/API_SecureHandlerWrapScript]
---- @param frame unknown
---- @param script unknown
---- @param header unknown
---- @param preBody unknown
---- @param postBody unknown
---- @return void
-function SecureHandlerWrapScript(frame, script, header, preBody, postBody)
 end
 
 function SelectActiveQuest()
@@ -10371,10 +9529,10 @@ end
 
 --- Sends a chat message.
 --- [https://wow.gamepedia.com/API_SendChatMessage]
---- @param msg string @ The message to be sent, maximum length of 255 characters. (Not all characters in this string are allowed: See list of valid chat message characters)
---- @param chatType string @ Optional) The type of chat message to be sent, SAY, PARTY, etc. See the list of chatTypeIds.
---- @param languageID number @ Optional) The languageID used to translate the message.
---- @param target string @ The channel or player receiving the message for CHANNEL/WHISPER communication. If sending to a channel you must use the number (eg. 1); obtain it using GetChannelName(channelName). This field is required for the CHANNEL/WHISPER chat types and ignored for any other chat type.
+--- @param msg string @ The message to be sent. Large messages are truncated to max 255 characters, and only valid chat message characters are permitted.
+--- @param chatType string @ ? - The type of message to be sent, e.g. PARTY. If omitted, this defaults to SAY
+--- @param languageID number @ ? - The languageID used for the message. If omitted the default language will be used: Orcish for the Horde and Common for the Alliance, as returned by GetDefaultLanguage()
+--- @param target string @ |number? - The player name or channel number receiving the message for WHISPER or CHANNEL chatTypes.
 --- @return void
 function SendChatMessage(msg, chatType, languageID, target)
 end
@@ -10382,8 +9540,8 @@ end
 --- Sends in-game mail, if your mailbox is open.
 --- [https://wow.gamepedia.com/API_SendMail]
 --- @param recipient string @ intended recipient of the mail
---- @param subject string @ subject of the mail
---- @param body string @ body of the mail
+--- @param subject string @ subject of the mail, that cannot be empty or nil (but may be whitespace)
+--- @param body string @ ?Optional.  Could be nil. - body of the mail
 --- @return void
 function SendMail(recipient, subject, body)
 end
@@ -10433,9 +9591,6 @@ function SetActionBarToggles(bottomLeftState, bottomRightState, sideRightState, 
 end
 
 function SetActionUIButton()
-end
-
-function SetActiveRaidProfile()
 end
 
 function SetAddonVersionCheck()
@@ -10524,9 +9679,6 @@ end
 function SetBindingSpell(key, spell)
 end
 
-function SetButtonPulse()
-end
-
 function SetCemeteryPreference()
 end
 
@@ -10547,12 +9699,6 @@ function SetChannelPassword(channelName, password)
 end
 
 function SetChatColorNameByClass()
-end
-
-function SetChatMouseOverDelay()
-end
-
-function SetChatUnitColor()
 end
 
 function SetChatWindowAlpha()
@@ -10583,9 +9729,6 @@ function SetChatWindowSize()
 end
 
 function SetChatWindowUninteractable()
-end
-
-function SetClampedTextureRotation()
 end
 
 --- Sets the key used to open the console overlay for the current session.
@@ -10634,15 +9777,6 @@ end
 function SetDefaultVideoOptions()
 end
 
-function SetDesaturation()
-end
-
-function SetDoubleGuildTabardTextures()
-end
-
-function SetDressUpBackground()
-end
-
 --- Changes the player's current dungeon difficulty.
 --- [https://wow.gamepedia.com/API_SetDungeonDifficultyID]
 --- @param difficultyIndex number @ 1 → 5 Player
@@ -10676,7 +9810,13 @@ end
 function SetGuildApplicantSelection()
 end
 
-function SetGuildBankTabInfo()
+--- Sets a guild bank tab's name and icon.
+--- [https://wow.gamepedia.com/API_SetGuildBankTabInfo]
+--- @param tab number @ Bank Tab to edit.
+--- @param name string @ New tab name.
+--- @param icon number @ FileID of the new icon texture.
+--- @return void
+function SetGuildBankTabInfo(tab, name, icon)
 end
 
 function SetGuildBankTabItemWithdraw()
@@ -10691,7 +9831,12 @@ end
 function SetGuildBankTabPermissions(tab, index, enabled)
 end
 
-function SetGuildBankText()
+--- Modifies info text for a tab.
+--- [https://wow.gamepedia.com/API_SetGuildBankText]
+--- @param tab number @ Bank Tab to edit.
+--- @param infoText string @ Text to set, at most 2047 characters
+--- @return void
+function SetGuildBankText(tab, infoText)
 end
 
 --- Sets the gold withdrawl limit for the current. Current rank is set using GuildControlSetRank().
@@ -10734,9 +9879,6 @@ end
 function SetGuildRosterShowOffline(enabled)
 end
 
-function SetGuildTabardTextures()
-end
-
 function SetGuildTradeSkillCategoryFilter()
 end
 
@@ -10750,46 +9892,6 @@ function SetInsertItemsLeftToRight()
 end
 
 function SetInventoryPortraitTexture()
-end
-
-function SetItemButtonCount()
-end
-
-function SetItemButtonDesaturated()
-end
-
-function SetItemButtonNameFrameVertexColor()
-end
-
-function SetItemButtonNormalTextureVertexColor()
-end
-
-function SetItemButtonSlotVertexColor()
-end
-
-function SetItemButtonStock()
-end
-
-function SetItemButtonTexture()
-end
-
---- Sets the vertex color of the ItemButtons texture.
---- [https://wow.gamepedia.com/API_SetItemButtonTextureVertexColor]
---- @param button unknown @ ItemButton - the ItemButton whose Texture should be changed.
---- @param r number @ The value that should be applied for color red.
---- @param g number @ The value that should be applied for color green.
---- @param b number @ The value that should be applied for color blue.
---- @return void
-function SetItemButtonTextureVertexColor(button, r, g, b)
-end
-
---- Called to handle clicks on Blizzard hyperlinks in chat.
---- [https://wow.gamepedia.com/API_SetItemRef]
---- @param link string @ Link to Use, (eg 'item:3577:0:0:0:0:0:0:276308480' is a [Gold Bar], 'player:Kaso' is [Kaso]).
---- @param text string @ The Text of the link, including Text Colour Infomation and itemlinks (eg The previous two examples :
---- @param button string @ The button used to click the notes 'LeftButton' or 'RightButton' Apparently, See Notes.
---- @return void
-function SetItemRef(link, text, button)
 end
 
 function SetItemSearch()
@@ -10825,9 +9927,6 @@ function SetLFGHeaderCollapsed()
 end
 
 function SetLFGRoles()
-end
-
-function SetLargeGuildTabardTextures()
 end
 
 function SetLegacyRaidDifficultyID()
@@ -10879,9 +9978,6 @@ end
 --- @param key string @ The key to assign. Must be one of:
 --- @return void
 function SetModifiedClick(action, key)
-end
-
-function SetMoneyFrameColor()
 end
 
 function SetMouselookOverrideBinding()
@@ -10988,9 +10084,6 @@ end
 function SetPVPRoles(tank, healer, dps)
 end
 
-function SetPaperDollBackground()
-end
-
 function SetPartyAssignment()
 end
 
@@ -11006,7 +10099,7 @@ end
 
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_SetPortraitTexture]
---- @param textureObject table
+--- @param textureObject unknown @ widget - Texture
 --- @param unitToken string
 --- @return void
 function SetPortraitTexture(textureObject, unitToken)
@@ -11014,8 +10107,8 @@ end
 
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_SetPortraitTextureFromCreatureDisplayID]
---- @param textureObject table
---- @param creatureDisplayID number
+--- @param textureObject unknown @ widget - Texture
+--- @param creatureDisplayID number @ CreatureDisplayID
 --- @return void
 function SetPortraitTextureFromCreatureDisplayID(textureObject, creatureDisplayID)
 end
@@ -11057,17 +10150,6 @@ end
 function SetRaidTarget(unit, iconId)
 end
 
---- Sets or clears a Raidicon on top of a unit.
---- [https://wow.gamepedia.com/API_SetRaidTargetIcon]
---- @param unit string @ UnitID, e.g. target
---- @param index number @ Raid icon index; 0 to remove any icons from the unit.
---- @return void
-function SetRaidTargetIcon(unit, index)
-end
-
-function SetRaidTargetIconTexture()
-end
-
 function SetRaidTargetProtected()
 end
 
@@ -11103,9 +10185,6 @@ end
 function SetSelectedWarGameType()
 end
 
-function SetSelfMuteState()
-end
-
 function SetSendMailCOD()
 end
 
@@ -11113,9 +10192,6 @@ function SetSendMailMoney()
 end
 
 function SetSendMailShowing()
-end
-
-function SetSmallGuildTabardTextures()
 end
 
 function SetSortBagsRightToLeft()
@@ -11129,16 +10205,10 @@ end
 function SetSpecialization(specIndex, isPet)
 end
 
-function SetSpellNameColor()
-end
-
 function SetSpellbookPetAction()
 end
 
 function SetSuperTrackedQuestID()
-end
-
-function SetTableColor()
 end
 
 function SetTaxiBenchmarkMode()
@@ -11149,21 +10219,6 @@ end
 --- @param texture string @ The path to the texture to use for the taxi map.
 --- @return void
 function SetTaxiMap(texture)
-end
-
-function SetTextStatusBarText()
-end
-
-function SetTextStatusBarTextPrefix()
-end
-
-function SetTextStatusBarTextZeroText()
-end
-
-function SetTitleByName()
-end
-
-function SetTooltipMoney()
 end
 
 --- Enables or disables a tracking method with a specified id.
@@ -11199,22 +10254,7 @@ end
 function SetTurnEnabled()
 end
 
---- Sets an attribute used by the UI panel management system.
---- [https://wow.gamepedia.com/API_SetUIPanelAttribute]
---- @param frame unknown @ Widget - Frame handle to set the attribute on.
---- @param name string @ Name of the UI panel management attribute to set.
---- @param value any @ The value you wish to set for the attribute.
---- @return void
-function SetUIPanelAttribute(frame, name, value)
-end
-
 function SetUIVisibility()
-end
-
-function SetUpAnimation()
-end
-
-function SetUpSideDressUpFrame()
 end
 
 --- Sets a camera perspective from one previously saved with SaveView. The last position loaded is stored in the CVar cameraView.
@@ -11231,16 +10271,10 @@ end
 function SetWatchedFactionIndex(index)
 end
 
-function SetZoneText()
-end
-
 --- The purpose of this function isn't exactly clear, but from the way it's used it would appear to be a function that appropriately scales a frame for full-screen views, such as the world map frame, to fit on the screen maximally depending on the aspect ratio. Why this wasn't implemented in lua isn't entirely clear, though it may require information about the screen geometry which isn't exposed through the standard UI.
 --- [https://wow.gamepedia.com/API_SetupFullscreenScale]
 --- @return void
 function SetupFullscreenScale()
-end
-
-function ShouldShowConsolidatedBuffFrame()
 end
 
 --- Needs summary.
@@ -11271,34 +10305,7 @@ end
 function ShowContainerSellCursor()
 end
 
-function ShowFriendshipReputationTooltip()
-end
-
---- Change the cursor to the magnifying glass inventory inspection cursor.
---- [https://wow.gamepedia.com/API_ShowInspectCursor]
---- @return void
-function ShowInspectCursor()
-end
-
 function ShowInventorySellCursor()
-end
-
-function ShowKnowledgeBase()
-end
-
-function ShowMacroFrame()
-end
-
-function ShowMultiCastActionBar()
-end
-
-function ShowNumericThreat()
-end
-
-function ShowPartyFrame()
-end
-
-function ShowPetActionBar()
 end
 
 --- Shows the completion dialog for a complete, auto-completable quest.
@@ -11311,39 +10318,10 @@ end
 function ShowQuestOffer()
 end
 
-function ShowQuickButton()
-end
-
-function ShowReadyCheck()
-end
-
 --- Puts the cursor in repair mode.
 --- [https://wow.gamepedia.com/API_ShowRepairCursor]
 --- @return void
 function ShowRepairCursor()
-end
-
-function ShowResurrectRequest()
-end
-
-function ShowStatInCategory()
-end
-
-function ShowTextStatusBarText()
-end
-
---- Show a frame via Blizzard's UI Panels system.
---- [https://wow.gamepedia.com/API_ShowUIPanel]
---- @param frame table @ Frame) - The UIPanel-capable frame that you want to show.
---- @param force number @ If true, the call will allow non-full/non-center area frames to replace existing full/center frames (by forcibly closing those blocking frames); otherwise those would prevent all ShowUIPanel calls for lesser frames until such high-priority frames are manually closed. This flag isn't necessary if you want to replace a full area frame with another full frame, or likewise with center frames. It's only necessary if you want to forcibly replace such high-priority frames with things like left/doublewide-area frames instead (which have lower priorities).
---- @return void
-function ShowUIPanel(frame, force)
-end
-
-function ShowWatchedReputationBarText()
-end
-
-function ShowWhoPanel()
 end
 
 --- Adds the player's signature to the currently viewed petition.
@@ -11356,12 +10334,6 @@ end
 --- [https://wow.gamepedia.com/API_SitStandOrDescendStart]
 --- @return void
 function SitStandOrDescendStart()
-end
-
-function SmartHide()
-end
-
-function SmartShow()
 end
 
 function SocketContainerItem()
@@ -11463,7 +10435,7 @@ end
 
 --- Checks if the spell awaiting target selection can be cast on a specified unit.
 --- [https://wow.gamepedia.com/API_SpellCanTargetUnit]
---- @param unitId unknown
+--- @param unitId string @ UnitId) - The unit to check.
 --- @return boolean @ canTarget
 function SpellCanTargetUnit(unitId)
 end
@@ -11473,8 +10445,8 @@ end
 
 --- Checks if the spell should be visible, depending on spellId and raid combat status
 --- [https://wow.gamepedia.com/API_SpellGetVisibilityInfo]
---- @param spellId unknown
---- @param visType unknown
+--- @param spellId number @ The ID of the spell to check
+--- @param visType string @ either RAID_INCOMBAT if in combat, RAID_OUTOFCOMBAT otherwise
 --- @return boolean, boolean, boolean @ hasCustom, alwaysShowMine, showForMySpec
 function SpellGetVisibilityInfo(spellId, visType)
 end
@@ -11619,9 +10591,6 @@ end
 function SubmitRequiredGuildRename()
 end
 
-function SubstituteChatMessageBeforeSend()
-end
-
 --- Summons a player using the RaF system.
 --- [https://wow.gamepedia.com/API_SummonFriend]
 --- @param unit string @ UnitId) - player you wish to summon to you.
@@ -11649,12 +10618,6 @@ end
 function SwitchAchievementSearchTab()
 end
 
-function SynchronizeBNetStatus()
-end
-
-function TEXT()
-end
-
 --- Take all money attached in a given letter in your inbox.
 --- [https://wow.gamepedia.com/API_TakeInboxItem]
 --- @param index unknown
@@ -11673,11 +10636,6 @@ end
 function TakeInboxTextItem()
 end
 
---- [https://wow.gamepedia.com/API_TakeScreenshot]
---- @return void
-function TakeScreenshot()
-end
-
 --- Begins travelling to the specified taxi map node, if possible.
 --- [https://wow.gamepedia.com/API_TakeTaxiNode]
 --- @param index number @ Taxi node index to begin travelling to, ascending from 1 to NumTaxiNodes().
@@ -11692,9 +10650,6 @@ function TargetDirectionFinished()
 end
 
 function TargetDirectionFriend()
-end
-
-function TargetHealthCheck()
 end
 
 --- Selects the last targeted enemy as the current target.
@@ -11758,9 +10713,6 @@ end
 function TargetUnit(unit_or_name, exactMatch)
 end
 
-function TargetofTargetHealthCheck()
-end
-
 --- Returns the horizontal position of the destination node of a given route to the destination.
 --- [https://wow.gamepedia.com/API_TaxiGetDestX]
 --- @param destinationIndex number @ The final destination taxi node.
@@ -11818,9 +10770,6 @@ end
 function TaxiNodeName(index)
 end
 
-function TaxiNodeOnButtonEnter()
-end
-
 --- Returns the position of a flight point on the taxi map.
 --- [https://wow.gamepedia.com/API_TaxiNodePosition]
 --- @param index unknown
@@ -11831,21 +10780,10 @@ end
 function TaxiRequestEarlyLanding()
 end
 
-function TextEmoteSort()
-end
-
 --- Signals the client that an offer to resurrect the player has expired.
 --- [https://wow.gamepedia.com/API_TimeoutResurrect]
 --- @return void
 function TimeoutResurrect()
-end
-
-function ToggleAchievementFrame()
-end
-
---- [https://wow.gamepedia.com/API_ToggleAllBags]
---- @return void
-function ToggleAllBags()
 end
 
 function ToggleAnimKitDisplay()
@@ -11857,129 +10795,7 @@ end
 function ToggleAutoRun()
 end
 
---- [https://wow.gamepedia.com/API_ToggleBackpack]
---- @return void
-function ToggleBackpack()
-end
-
---- [https://wow.gamepedia.com/API_ToggleBag]
---- @param bagNum number @ the bagID you want to toggle open or close
---- @return void
-function ToggleBag(bagNum)
-end
-
-function ToggleBattlefieldMinimap()
-end
-
-function ToggleCalendar()
-end
-
---- [https://wow.gamepedia.com/API_ToggleCharacter]
---- @param frameName string @ The frame to toggle on or off
---- @return void
-function ToggleCharacter(frameName)
-end
-
-function ToggleChatChannel()
-end
-
-function ToggleChatColorNamesByClassGroup()
-end
-
-function ToggleChatMessageGroup()
-end
-
 function ToggleDebugAIDisplay()
-end
-
---- Toggles a dropdown menu.
---- [https://wow.gamepedia.com/API_ToggleDropDownMenu]
---- @param level number @ Nesting level of this dropdown.
---- @param value any @ Value of the dropdown item (if level > 1).
---- @param dropDownFrame unknown @ Widget - The frame to toggle (not its name!).  This object should be derived from UIDropDownMenuTemplate.
---- @param anchorName string @ Sets the relativeTo member of this frame.
---- @param xOffset number @ Sets the x offset.
---- @param yOffset number @ Sets the y offset.
---- @param menuList unknown @ Internal - EasyMenu wrapper argument, passed as the third argument to the initialization function.
---- @param button unknown @ Internal - Dropdown menu open button.
---- @param autoHideDelay number @ Delay in seconds before inactive menu hides. Default is 2.
---- @return void
-function ToggleDropDownMenu(level, value, dropDownFrame, anchorName, xOffset, yOffset, menuList, button, autoHideDelay)
-end
-
-function ToggleEncounterJournal()
-end
-
-function ToggleFrame()
-end
-
---- [https://wow.gamepedia.com/API_ToggleFramerate]
---- @return void
-function ToggleFramerate()
-end
-
---- Opens/closes the friends pane.
---- [https://wow.gamepedia.com/API_ToggleFriendsFrame]
---- @param tabIndex number @ optional) - picks a specific tab in the friends frame. If the friends frame was already open, this closes the frame.
---- @return void
-function ToggleFriendsFrame(tabIndex)
-end
-
-function ToggleFriendsPanel()
-end
-
---- Opens/closes the game menu.
---- [https://wow.gamepedia.com/API_ToggleGameMenu]
---- @return void
-function ToggleGameMenu()
-end
-
-function ToggleGlyphFrame()
-end
-
-function ToggleGuildFinder()
-end
-
-function ToggleGuildFrame()
-end
-
-function ToggleHelpFrame()
-end
-
-function ToggleIgnorePanel()
-end
-
-function ToggleKeyRing()
-end
-
-function ToggleLFDParentFrame()
-end
-
-function ToggleLootHistoryFrame()
-end
-
-function ToggleMapFramerate()
-end
-
-function ToggleMessageDest()
-end
-
-function ToggleMessageSource()
-end
-
-function ToggleMessageType()
-end
-
-function ToggleMessageTypeGroup()
-end
-
-function ToggleMiniMapRotation()
-end
-
---- Turns the minimap display on/off.
---- [https://wow.gamepedia.com/API_ToggleMinimap]
---- @return void
-function ToggleMinimap()
 end
 
 --- Toggles PvP setting on or off.
@@ -11988,22 +10804,7 @@ end
 function TogglePVP()
 end
 
---- Toggles the visibility of the PvP queueing UI.
---- [https://wow.gamepedia.com/API_TogglePVPUI]
---- @return void
-function TogglePVPUI()
-end
-
 function TogglePetAutocast()
-end
-
-function TogglePetJournal()
-end
-
-function ToggleRaidBrowser()
-end
-
-function ToggleRaidFrame()
 end
 
 --- Toggle between running and walking.
@@ -12025,31 +10826,7 @@ end
 function ToggleSpellAutocast()
 end
 
---- [https://wow.gamepedia.com/API_ToggleSpellBook]
---- @param bookType string @ containing which spellbook to open. Valid choices are spell, pet, general, Mounts, Companions, Professions, or any spec name (e.g. assasination, fire, etc). Only spell and pet will open the full spellbook (with all the tabs to click on), the rest will open only that tab (with no tabs to click on).
---- @return void
-function ToggleSpellBook(bookType)
-end
-
-function ToggleStats()
-end
-
-function ToggleStoreUI()
-end
-
---- Opens/closes the Talent window.
---- [https://wow.gamepedia.com/API_ToggleTalentFrame]
---- @return void
-function ToggleTalentFrame()
-end
-
-function ToggleTimeManager()
-end
-
 function ToggleWindowed()
-end
-
-function ToggleWorldStateScoreFrame()
 end
 
 function TriggerTutorial()
@@ -12096,62 +10873,6 @@ end
 --- @param startTime unknown
 --- @return void
 function TurnRightStop(startTime)
-end
-
-function UIDoFramesIntersect()
-end
-
-function UIFrameFade()
-end
-
---- [https://wow.gamepedia.com/API_UIFrameFadeIn]
---- @param frame Frame @ The frame to fade
---- @param timeToFade number @ the time it takes to fade in or out (in seconds)
---- @param startAlpha number @ The beginning alpha value (between 0 and 1)
---- @param endAlpha number @ The ending alpha value (between 0 and 1)
---- @return void
-function UIFrameFadeIn(frame, timeToFade, startAlpha, endAlpha)
-end
-
---- [https://wow.gamepedia.com/API_UIFrameFadeOut]
---- @param frame Frame @ The frame to fade
---- @param timeToFade number @ the time it takes to fade in or out (in seconds)
---- @param startAlpha number @ The beginning alpha value (between 0 and 1)
---- @param endAlpha number @ The ending alpha value (between 0 and 1)
---- @return void
-function UIFrameFadeOut(frame, timeToFade, startAlpha, endAlpha)
-end
-
-function UIFrameFadeRemoveFrame()
-end
-
---- Flashes a frame by fading it in/out and showing/hiding it at the end.
---- [https://wow.gamepedia.com/API_UIFrameFlash]
---- @param frame Frame @ Pointer - frame to fade in / out.
---- @param fadeInTime number @ duration of the fade in effect.
---- @param fadeOutTime number @ duration of the fade out effect.
---- @param flashDuration number @ number of seconds to keep repeating the fade in / out cycle.
---- @param showWhenDone boolean @ should the frame be visible at the end?
---- @param flashInHoldTime number @ number of seconds to hold the fully hidden state.
---- @param flashOutHoldTime number @ number of seconds to hold the fully visible state.
---- @return void
-function UIFrameFlash(frame, fadeInTime, fadeOutTime, flashDuration, showWhenDone, flashInHoldTime, flashOutHoldTime)
-end
-
-function UIFrameFlashStop()
-end
-
-function UIFrameIsFading()
-end
-
-function UIFrameIsFlashing()
-end
-
---- Load or reload an addon.
---- [https://wow.gamepedia.com/API_UIParentLoadAddOn]
---- @param index_or_addonName unknown
---- @return number @ loaded
-function UIParentLoadAddOn(index_or_addonName)
 end
 
 --- Removes a player from the party/raid group if you're the party leader, or initiates a vote to kick a player from a Dungeon Finder group.
@@ -12287,18 +11008,18 @@ end
 function UnitChannelInfo(unit)
 end
 
---- Returns the class of the specified unit.
+--- Two functions provide the class of a specified unit:
 --- [https://wow.gamepedia.com/API_UnitClass]
---- @param unit string @ The UnitId of the unit to check e.g. player
---- @return string, string, number @ className, classFilename, classID
-function UnitClass(unit)
+--- @param unitId string @ The UnitId of the unit to check (e.g. player or target)
+--- @return string, string, number @ className, classFilename, classId
+function UnitClass(unitId)
 end
 
---- Needs summary.
+--- Two functions provide the class of a specified unit:
 --- [https://wow.gamepedia.com/API_UnitClassBase]
---- @param unit string
---- @return string, number @ classFilename, classID
-function UnitClassBase(unit)
+--- @param unitId string @ The UnitId of the unit to check (e.g. player or target)
+--- @return string, number @ classFilename, classId
+function UnitClassBase(unitId)
 end
 
 --- Returns the classification of the specified unit (e.g., elite or worldboss).
@@ -12338,12 +11059,12 @@ end
 function UnitDebuff()
 end
 
---- Returns detailed information about a unit's standing in another unit's threat table.
+--- Returns detailed information about the threat status of one unit against another.
 --- [https://wow.gamepedia.com/API_UnitDetailedThreatSituation]
---- @param unit unknown @ UnitId - The UnitId whose threat to query (e.g. player, party2, pet, etc.)
---- @param mob unknown @ UnitId - The UnitId of the unit whose threat table to query (e.g. target, pettarget etc.)
---- @return number, number, number, number, number @ isTanking, status, threatpct, rawthreatpct, threatvalue
-function UnitDetailedThreatSituation(unit, mob)
+--- @param unit string @ UnitId of the player or pet whose threat to request.
+--- @param mobUnit string @ UnitId of the NPC whose threat table to query.
+--- @return boolean, number, number, number, number @ isTanking, status, scaledPercentage, rawPercentage, threatValue
+function UnitDetailedThreatSituation(unit, mobUnit)
 end
 
 --- Returns the squared distance to a unit in your group
@@ -12443,9 +11164,6 @@ end
 function UnitHasLFGRandomCooldown(unit)
 end
 
-function UnitHasMana()
-end
-
 function UnitHasRelicSlot()
 end
 
@@ -12510,7 +11228,11 @@ end
 function UnitInParty(unit)
 end
 
-function UnitInPhase()
+--- Indicates if a unit is presently visible to the player, or invisible due to traditional sources of phasing such as progress through quest chains.  However, this excludes war mode phasing.
+--- [https://wow.gamepedia.com/API_UnitInPhase]
+--- @param unit string @ unitId to check
+--- @return boolean @ inPhase
+function UnitInPhase(unit)
 end
 
 --- Returns a number if the unit is in your raid group, nil otherwise.
@@ -12573,7 +11295,7 @@ end
 
 --- Returns true if the unit is connected to the game (i.e. not offline), false otherwise.
 --- [https://wow.gamepedia.com/API_UnitIsConnected]
---- @param unit unknown
+--- @param unit string
 --- @return unknown @ isOnline
 function UnitIsConnected(unit)
 end
@@ -12680,7 +11402,7 @@ end
 
 --- Checks if a unit is flagged for free-for-all PVP. (ex. from being in a world arena)
 --- [https://wow.gamepedia.com/API_UnitIsPVPFreeForAll]
---- @param unitId unknown @ UnitId - The unit to check
+--- @param unitId string @ UnitId) - The unit to check
 --- @return boolean @ isFreeForAll
 function UnitIsPVPFreeForAll(unitId)
 end
@@ -12756,9 +11478,9 @@ end
 function UnitIsWarModeDesired(unit)
 end
 
---- Needs summary.
+--- Indicates if a party or raid member is presently invisible to the player because only one has opted into War Mode.
 --- [https://wow.gamepedia.com/API_UnitIsWarModePhased]
---- @param unit string
+--- @param unit string @ Party or raid member refenced using UnitId.
 --- @return boolean @ warModePhased
 function UnitIsWarModePhased(unit)
 end
@@ -12827,23 +11549,23 @@ end
 
 --- Returns the position of a unit within the current world area. Does not work in raids, dungeons and competitive instances.
 --- [https://wow.gamepedia.com/API_UnitPosition]
---- @param unit string @ The unitId for which the position is returned. Does not work with all unit types. Works with player, partyN or raidN as unit type. In particular, it does not work on pets or any unit not in your group.
+--- @param unit string @ UnitId for which the position is returned. Does not work with all unit types. Works with player, partyN or raidN as unit type. In particular, it does not work on pets or any unit not in your group.
 --- @return number, number, number, number @ posY, posX, posZ, instanceID
 function UnitPosition(unit)
 end
 
 --- Returns the current power of the specified unit.
 --- [https://wow.gamepedia.com/API_UnitPower]
---- @param UnitId string @ Unit whose power should be returned
---- @param powerType number @ optional) - Type of resource (mana/rage/energy/etc) to query
---- @param unmodified boolean @ optional) - Return the higher precision internal value (for graphical use only)
+--- @param unitToken string @ Unit whose power should be returned
+--- @param powerType number @ Enum.PowerType (optional, default = NumPowerTypes)
+--- @param unmodified boolean @ optional, default = false)
 --- @return number @ power
-function UnitPower(UnitId, powerType, unmodified)
+function UnitPower(unitToken, powerType, unmodified)
 end
 
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_UnitPowerBarID]
---- @param unitToken string
+--- @param unitToken string @ UnitId
 --- @return number @ barID
 function UnitPowerBarID(unitToken)
 end
@@ -12853,18 +11575,18 @@ end
 
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_UnitPowerDisplayMod]
---- @param powerType unknown @ Enum.PowerType
+--- @param powerType number @ Enum.PowerType
 --- @return number @ displayMod
 function UnitPowerDisplayMod(powerType)
 end
 
 --- Returns the maximum power of the specified unit.
 --- [https://wow.gamepedia.com/API_UnitPowerMax]
---- @param UnitId string @ Unit whose maximum power should be returned
---- @param powerType string @ optional) - Type of resource (mana/rage/energy/etc) to query
---- @param unmodified boolean @ optional) - Return the higher precision internal value (for graphical use only)
+--- @param unitToken string @ Unit whose maximum power should be returned
+--- @param powerType number @ Enum.PowerType (optional, default = NumPowerTypes)
+--- @param unmodified boolean @ optional, default = false)
 --- @return number @ maxpower
-function UnitPowerMax(UnitId, powerType, unmodified)
+function UnitPowerMax(unitToken, powerType, unmodified)
 end
 
 --- Returns a number corresponding to the power type (e.g., mana, rage or energy) of the specified unit.
@@ -12878,13 +11600,13 @@ end
 --- Returns whether the unit is a flag/orb carrier or cart runner.
 --- [https://wow.gamepedia.com/API_UnitPvpClassification]
 --- @param unit string
---- @return unknown @ classification
+--- @return number @ classification
 function UnitPvpClassification(unit)
 end
 
 --- Returns the race of the specified unit.
 --- [https://wow.gamepedia.com/API_UnitRace]
---- @param unit string @ unit to query, e.g. player
+--- @param unit string @ UnitId
 --- @return string, string, number @ raceName, raceFile, raceID
 function UnitRace(unit)
 end
@@ -12944,8 +11666,8 @@ end
 
 --- Returns the gender of the specified unit.
 --- [https://wow.gamepedia.com/API_UnitSex]
---- @param unit string @ unitId of the unit to query, e.g. player.
---- @return number @ gender
+--- @param unit string @ UnitId
+--- @return unknown @ gender
 function UnitSex(unit)
 end
 
@@ -12980,15 +11702,20 @@ end
 function UnitTargetsVehicleInRaidUI()
 end
 
-function UnitThreatPercentageOfLead()
+--- Needs summary.
+--- [https://wow.gamepedia.com/API_UnitThreatPercentageOfLead]
+--- @param unit string @ UnitId of the player or pet whose threat to request.
+--- @param mobUnit string @ UnitId of the NPC whose threat table to query.
+--- @return number @ percentage
+function UnitThreatPercentageOfLead(unit, mobUnit)
 end
 
---- Returns brief information about a unit's standing in another unit's threat table. Added in Patch 3.0.
+--- Returns the threat status of one unit against another.
 --- [https://wow.gamepedia.com/API_UnitThreatSituation]
---- @param unit string @ the unit token of the unit whose threat to query (e.g. player, party2, pet, etc.)
---- @param otherunit string @ optional) - the unit token of the unit whose threat table to query (e.g. target, pettarget etc.)
+--- @param unit string @ UnitId of the player or pet whose threat to request.
+--- @param mobUnit string @ ? - UnitId of the NPC whose threat table to query.
 --- @return number @ status
-function UnitThreatSituation(unit, otherunit)
+function UnitThreatSituation(unit, mobUnit)
 end
 
 --- Whether a unit should be treated as if it was an actual player.
@@ -13020,15 +11747,12 @@ end
 function UnitVehicleSkin()
 end
 
-function UnitWatchRegistered()
-end
-
 function UnitWeaponAttackPower()
 end
 
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_UnitWidgetSet]
---- @param unit string
+--- @param unit string @ UnitId
 --- @return number @ uiWidgetSet
 function UnitWidgetSet(unit)
 end
@@ -13050,12 +11774,6 @@ end
 function UnlearnSpecialization()
 end
 
-function UnlockMultiCastActionBar()
-end
-
-function UnlockPetActionBar()
-end
-
 --- Pays for, and unlocks the Void Storage [1]
 --- [https://wow.gamepedia.com/API_UnlockVoidStorage]
 --- @return void
@@ -13069,71 +11787,13 @@ end
 function UnmuteSoundFile(soundFile_or_fileDataID)
 end
 
---- @param frame unknown
---- @param attribute unknown
-function UnregisterAttributeDriver(frame, attribute)
-end
-
-function UnregisterAutoHide()
-end
-
---- UnregisterStateDriver cancels a prior call to RegisterStateDriver for a given frame and stateid.
---- [https://wow.gamepedia.com/API_UnregisterStateDriver]
---- @param frame unknown
---- @param state unknown
---- @return void
-function UnregisterStateDriver(frame, state)
-end
-
-function UnregisterUnitWatch()
-end
-
 function UpdateAddOnCPUUsage()
 end
 
 function UpdateAddOnMemoryUsage()
 end
 
-function UpdateBagButtonHighlight()
-end
-
-function UpdateBagSlotStatus()
-end
-
-function UpdateCoinPickupFrame()
-end
-
-function UpdateContainerFrameAnchors()
-end
-
-function UpdateFrameLock()
-end
-
 function UpdateInventoryAlertStatus()
-end
-
-function UpdateMenuBarTop()
-end
-
-function UpdateMicroButtons()
-end
-
-function UpdateMicroButtonsParent()
-end
-
-function UpdateNewItemList()
-end
-
-function UpdatePartyMemberBackground()
-end
-
-function UpdateProfessionButton()
-end
-
-function UpdateStackSplitFrame()
-end
-
-function UpdateUIPanelPositions()
 end
 
 function UpdateWarGamesList()
@@ -13205,15 +11865,6 @@ end
 function UseWorldMapActionButtonSpellOnQuest()
 end
 
-function UsesGUID()
-end
-
-function ValidateActionBarTransition()
-end
-
-function ValidateFramePosition()
-end
-
 function VehicleAimDecrement()
 end
 
@@ -13265,16 +11916,7 @@ end
 function VehiclePrevSeat()
 end
 
-function VideoOptionsValueChanged()
-end
-
 function ViewGuildRecipes()
-end
-
-function VoiceChatShineFadeIn()
-end
-
-function VoiceChatShineFadeOut()
 end
 
 function WarGameRespond()
@@ -13410,9 +12052,6 @@ end
 function error()
 end
 
-function escapePatternSymbols()
-end
-
 function exp()
 end
 
@@ -13478,13 +12117,6 @@ end
 function getfenv()
 end
 
---- Returns the value of a global variable by name (or key). Deprecated, use the global table _G instead:
---- [https://wow.gamepedia.com/API_getglobal]
---- @param globalKey any @ Name of the global you want to get.
---- @return any @ value
-function getglobal(globalKey)
-end
-
 function getmetatable()
 end
 
@@ -13493,12 +12125,6 @@ end
 --- @param table unknown
 --- @return unknown @ size
 function getn(table)
-end
-
---- Returns the function currently handling print() output.
---- [https://wow.gamepedia.com/API_getprinthandler]
---- @return unknown @ func
-function getprinthandler()
 end
 
 function gmatch()
@@ -13530,18 +12156,15 @@ end
 function ipairs(table)
 end
 
-function isRaidFinderDungeonDisplayable()
-end
-
 --- Determines whether the current execution path is secure.
 --- [https://wow.gamepedia.com/API_issecure]
 --- @return boolean @ secure
 function issecure()
 end
 
---- Determines whether the given table key is secure.
+--- Determines whether the given globally-accessible variable is secure.  A variable in this context could be any of the basic lua types such as functions or userdata.
 --- [https://wow.gamepedia.com/API_issecurevariable]
---- @param table table @ table to check the the key in; if omitted, defaults to the globals table (_G).
+--- @param table table @ ?Optional.  Could be nil. - table to check the the key in; if omitted, defaults to the globals table (_G).
 --- @param variable string @ string key to check the taint of. Numbers will be converted to a string; other types will throw an error.
 --- @return boolean, string @ isSecure, taint
 function issecurevariable(table, variable)
@@ -13648,13 +12271,6 @@ end
 function max()
 end
 
---- Displays a message box.
---- [https://wow.gamepedia.com/API_message]
---- @param text string @ message to be displayed.
---- @return void
-function message(text)
-end
-
 function min()
 end
 
@@ -13671,9 +12287,9 @@ end
 --- Returns the next key/value pair for a given table and key.
 --- [https://wow.gamepedia.com/API_next]
 --- @param table unknown
---- @param oldKey unknown
+--- @param current unknown
 --- @return unknown, unknown @ key, value
-function next(table, oldKey)
+function next(table, current)
 end
 
 --- Returns an iterator triple that allows for loops to iterate over all key/value pairs in a table.
@@ -13691,13 +12307,6 @@ end
 --- @param ... unknown
 --- @return boolean, string, unknown, unknown @ retOK, ret1, ret2, ...
 function pcall(func, arg1, arg2, ...)
-end
-
---- Passes its arguments to the current print output handler. By default, this will output them all to the default chat frame.
---- [https://wow.gamepedia.com/API_print]
---- @param ... any @ any number of any type of values.
---- @return void
-function print(...)
 end
 
 function rad()
@@ -13755,22 +12364,7 @@ end
 function setfenv()
 end
 
---- Sets the value of a named global variable. Deprecated, use the global table _G instead:
---- [https://wow.gamepedia.com/API_setglobal]
---- @param globalKey unknown
---- @param newValue any @ Value you want to set the global to.
---- @return void
-function setglobal(globalKey, newValue)
-end
-
 function setmetatable()
-end
-
---- Sets a new print() output handler function.
---- [https://wow.gamepedia.com/API_setprinthandler]
---- @param func unknown @ Function - The function that will be called with all of print(...)'s arguments when print(...) is called. This function is responsible for converting the values into a form it can present to the user.
---- @return void
-function setprinthandler(func)
 end
 
 function sin()
@@ -13983,17 +12577,6 @@ end
 function strupper(s)
 end
 
---- Returns whether a value is contained in the array portion of the table.
---- [https://wow.gamepedia.com/API_tContains]
---- @param table table @ table to search.
---- @param value any @ value to find in the array portion of the specified table
---- @return number @ exists
-function tContains(table, value)
-end
-
-function tDeleteItem()
-end
-
 function table.concat()
 end
 
@@ -14043,9 +12626,9 @@ end
 function tan()
 end
 
---- Returns a timestamp value for the specified or current time.
+--- Returns a timestamp for the specified time or the current Unix time.
 --- [https://wow.gamepedia.com/API_time]
---- @param dateTable unknown @ Optional Table - Table specifying a date/time to return the timestamp of; if omitted, a timestamp for the current time (per the local clock) will be returned. This table must have fields year, month, and day, and may have fields hour, min, sec, and isdst. For a description of these fields, see the Lua reference manual.
+--- @param dateTable table @ ? - Table specifying a date/time to return the timestamp of; if omitted, a timestamp for the current time (per the local clock) will be returned. This table must have fields year, month, and day, and may have fields hour, min, sec, and isdst. For a description of these fields, see the Lua reference manual.
 --- @return number @ timestamp
 function time(dateTable)
 end
@@ -14072,9 +12655,6 @@ end
 --- @param arg any @ Value to convert to a string.
 --- @return string @ s
 function tostring(arg)
-end
-
-function tostringall()
 end
 
 --- From TableLibraryTutorial of lua-users.org.
