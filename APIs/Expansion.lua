@@ -1,7 +1,7 @@
----@return bool canUpgradeExpansion
+---@return boolean canUpgradeExpansion
 function CanUpgradeExpansion() end
 
----@return bool regionSellsExpansions
+---@return boolean regionSellsExpansions
 function DoesCurrentLocaleSellExpansionLevels() end
 
 ---@return number expansionLevel
@@ -15,7 +15,7 @@ function GetClientDisplayExpansionLevel() end
 function GetExpansionDisplayInfo(expansionLevel) end
 
 ---@param playerLevel number 
----@param useLegacy bool @ [OPTIONAL]
+---@param useLegacy boolean @ [OPTIONAL]
 ---@overload fun(playerLevel:number)
 ---@return number expansionLevel
 function GetExpansionForLevel(playerLevel, useLegacy) end
@@ -23,12 +23,12 @@ function GetExpansionForLevel(playerLevel, useLegacy) end
 ---@return number expansionLevel
 function GetExpansionLevel() end
 
----@return bool, number|nil isExpansionTrialAccount, expansionTrialRemainingSeconds
+---@return boolean, number|nil isExpansionTrialAccount, expansionTrialRemainingSeconds
 function GetExpansionTrialInfo() end
 
 --- Maps an expansion level to a maximum character level for that expansion, optionally takes a useModernLevelMapping instead of legacy level mapping. Legacy treats the maxes as the original caps for those expansions.
 ---@param expansionLevel number 
----@param useModernLevelMapping bool 
+---@param useModernLevelMapping boolean 
 ---@return number maxLevel
 function GetMaxLevelForExpansionLevel(expansionLevel, useModernLevelMapping) end
 
@@ -41,13 +41,13 @@ function GetMinimumExpansionLevel() end
 ---@return number numExpansions
 function GetNumExpansions() end
 
----@return bool isExpansionTrialAccount
+---@return boolean isExpansionTrialAccount
 function IsExpansionTrial() end
 
----@return bool isTrialAccount
+---@return boolean isTrialAccount
 function IsTrialAccount() end
 
----@return bool isVeteranTrialAccount
+---@return boolean isVeteranTrialAccount
 function IsVeteranTrialAccount() end
 
 ---@class ExpansionDisplayInfo

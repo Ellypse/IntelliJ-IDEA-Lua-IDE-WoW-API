@@ -19,7 +19,7 @@ function C_ClubFinder.ClearClubApplicantsCache() end
 function C_ClubFinder.ClearClubFinderPostingsCache() end
 
 ---@param clubFinderGUID string 
----@return bool belongsToClub
+---@return boolean belongsToClub
 function C_ClubFinder.DoesPlayerBelongToClubFromClubGUID(clubFinderGUID) end
 
 ---@return ClubFinderDisableReason|nil disableReason
@@ -72,26 +72,26 @@ function C_ClubFinder.GetTotalMatchingCommunityListSize() end
 function C_ClubFinder.GetTotalMatchingGuildListSize() end
 
 ---@param clubFinderGUID string 
----@return bool hasAlreadyApplied
+---@return boolean hasAlreadyApplied
 function C_ClubFinder.HasAlreadyAppliedToLinkedPosting(clubFinderGUID) end
 
 ---@param postingID string 
----@return bool postingDelisted
+---@return boolean postingDelisted
 function C_ClubFinder.HasPostingBeenDelisted(postingID) end
 
----@return bool isEnabled
+---@return boolean isEnabled
 function C_ClubFinder.IsEnabled() end
 
 ---@param flags number 
----@return bool isListed
+---@return boolean isListed
 function C_ClubFinder.IsListingEnabledFromFlags(flags) end
 
 ---@param postingID string 
----@return bool postingBanned
+---@return boolean postingBanned
 function C_ClubFinder.IsPostingBanned(postingID) end
 
 ---@param clubFinderGUID string 
----@param isLinkedPosting bool 
+---@param isLinkedPosting boolean 
 function C_ClubFinder.LookupClubPostingFromClubFinderGUID(clubFinderGUID, isLinkedPosting) end
 
 ---@return RecruitingClubInfo inviteList
@@ -112,7 +112,7 @@ function C_ClubFinder.PlayerReturnPendingGuildsList() end
 ---@param description string 
 ---@param specs number 
 ---@param type ClubFinderRequestType 
----@return bool succesful
+---@return boolean succesful
 function C_ClubFinder.PostClub(clubId, itemLevelRequirement, name, description, specs, type) end
 
 ---@param reportType ClubFinderPostingReportType 
@@ -124,7 +124,7 @@ function C_ClubFinder.ReportPosting(reportType, clubFinderGUID, playerGUID, comp
 ---@param type ClubFinderRequestType 
 function C_ClubFinder.RequestApplicantList(type) end
 
----@param guildListRequested bool 
+---@param guildListRequested boolean 
 ---@param searchString string 
 ---@param specIDs number 
 function C_ClubFinder.RequestClubsList(guildListRequested, searchString, specIDs) end
@@ -143,7 +143,7 @@ function C_ClubFinder.RequestNextCommunityPage(startingIndex, pageSize) end
 function C_ClubFinder.RequestNextGuildPage(startingIndex, pageSize) end
 
 ---@param clubId string 
----@return bool success
+---@return boolean success
 function C_ClubFinder.RequestPostingInformationFromClubId(clubId) end
 
 function C_ClubFinder.RequestSubscribedClubPostingIDs() end
@@ -152,11 +152,11 @@ function C_ClubFinder.ResetClubPostingMapCache() end
 
 ---@param clubFinderGUID string 
 ---@param playerGUID string 
----@param shouldAccept bool 
+---@param shouldAccept boolean 
 ---@param requestType ClubFinderRequestType 
 ---@param playerName string 
----@param forceAccept bool 
----@param reported bool @ [OPTIONAL]
+---@param forceAccept boolean 
+---@param reported boolean @ [OPTIONAL]
 ---@overload fun(clubFinderGUID:string, playerGUID:string, shouldAccept:bool, requestType:ClubFinderRequestType, playerName:string, forceAccept:bool)
 function C_ClubFinder.RespondToApplicant(clubFinderGUID, playerGUID, shouldAccept, requestType, playerName, forceAccept, reported) end
 
@@ -181,17 +181,17 @@ function C_ClubFinder.SetAllRecruitmentSettings(value) end
 function C_ClubFinder.SetPlayerApplicantLocaleFlags(localeFlags) end
 
 ---@param index number 
----@param checked bool 
+---@param checked boolean 
 function C_ClubFinder.SetPlayerApplicantSettings(index, checked) end
 
 ---@param locale number 
 function C_ClubFinder.SetRecruitmentLocale(locale) end
 
 ---@param index number 
----@param checked bool 
+---@param checked boolean 
 function C_ClubFinder.SetRecruitmentSettings(index, checked) end
 
----@return bool shouldShow
+---@return boolean shouldShow
 function C_ClubFinder.ShouldShowClubFinder() end
 
 ---@class ClubFinderApplicationUpdateType

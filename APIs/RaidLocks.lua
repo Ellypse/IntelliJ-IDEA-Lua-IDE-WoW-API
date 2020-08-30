@@ -5,6 +5,6 @@ C_RaidLocks = {}
 ---@param encounterID number 
 ---@param difficultyID number @ [OPTIONAL]
 ---@overload fun(mapID:number, encounterID:number)
----@return bool encounterIsComplete
+---@return boolean encounterIsComplete
 function C_RaidLocks.IsEncounterComplete(mapID, encounterID, difficultyID) end
 

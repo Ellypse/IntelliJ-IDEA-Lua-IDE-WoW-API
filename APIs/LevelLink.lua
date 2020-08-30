@@ -2,10 +2,10 @@
 C_LevelLink = {}
 
 ---@param actionID number 
----@return bool isLocked
+---@return boolean isLocked
 function C_LevelLink.IsActionLocked(actionID) end
 
 ---@param spellID number 
----@return bool isLocked
+---@return boolean isLocked
 function C_LevelLink.IsSpellLocked(spellID) end
 

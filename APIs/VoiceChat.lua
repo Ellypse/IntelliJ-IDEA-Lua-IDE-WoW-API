@@ -4,10 +4,10 @@ C_VoiceChat = {}
 ---@param channelID number 
 function C_VoiceChat.ActivateChannel(channelID) end
 
----@param listenToLocalUser bool 
+---@param listenToLocalUser boolean 
 function C_VoiceChat.BeginLocalCapture(listenToLocalUser) end
 
----@return bool canUseVoiceChat
+---@return boolean canUseVoiceChat
 function C_VoiceChat.CanPlayerUseVoiceChat() end
 
 ---@param channelDisplayName string 
@@ -90,7 +90,7 @@ function C_VoiceChat.GetMemberVolume(playerLocation) end
 ---@return number|nil volume
 function C_VoiceChat.GetOutputVolume() end
 
----@return bool|nil isPressed
+---@return boolean|nil isPressed
 function C_VoiceChat.GetPTTButtonPressedState() end
 
 ---@return VoiceChatProcess processes
@@ -107,51 +107,51 @@ function C_VoiceChat.GetVADSensitivity() end
 ---@param streamId string @ [OPTIONAL]
 ---@overload fun(channelType:ChatChannelType, streamId:string)
 ---@overload fun(channelType:ChatChannelType)
----@return bool isPending
+---@return boolean isPending
 function C_VoiceChat.IsChannelJoinPending(channelType, clubId, streamId) end
 
----@return bool|nil isDeafened
+---@return boolean|nil isDeafened
 function C_VoiceChat.IsDeafened() end
 
----@return bool isEnabled
+---@return boolean isEnabled
 function C_VoiceChat.IsEnabled() end
 
----@return bool isLoggedIn
+---@return boolean isLoggedIn
 function C_VoiceChat.IsLoggedIn() end
 
 ---@param memberID number 
 ---@param channelID number 
----@return bool isLocalPlayer
+---@return boolean isLocalPlayer
 function C_VoiceChat.IsMemberLocalPlayer(memberID, channelID) end
 
 ---@param playerLocation table 
----@return bool|nil mutedForMe
+---@return boolean|nil mutedForMe
 function C_VoiceChat.IsMemberMuted(playerLocation) end
 
 ---@param memberID number 
 ---@param channelID number 
----@return bool|nil mutedForAll
+---@return boolean|nil mutedForAll
 function C_VoiceChat.IsMemberMutedForAll(memberID, channelID) end
 
 ---@param memberID number 
 ---@param channelID number 
----@return bool|nil silenced
+---@return boolean|nil silenced
 function C_VoiceChat.IsMemberSilenced(memberID, channelID) end
 
----@return bool|nil isMuted
+---@return boolean|nil isMuted
 function C_VoiceChat.IsMuted() end
 
----@return bool isParentalDisabled
+---@return boolean isParentalDisabled
 function C_VoiceChat.IsParentalDisabled() end
 
----@return bool isParentalMuted
+---@return boolean isParentalMuted
 function C_VoiceChat.IsParentalMuted() end
 
 ---@param playerLocation table 
----@return bool isUsingVoice
+---@return boolean isUsingVoice
 function C_VoiceChat.IsPlayerUsingVoice(playerLocation) end
 
----@return bool|nil isSilenced
+---@return boolean|nil isSilenced
 function C_VoiceChat.IsSilenced() end
 
 ---@param channelID number 
@@ -171,14 +171,14 @@ function C_VoiceChat.MarkChannelsDiscovered() end
 function C_VoiceChat.RequestJoinAndActivateCommunityStreamChannel(clubId, streamId) end
 
 ---@param channelType ChatChannelType 
----@param autoActivate bool @ [OPTIONAL]
+---@param autoActivate boolean @ [OPTIONAL]
 ---@overload fun(channelType:ChatChannelType)
 function C_VoiceChat.RequestJoinChannelByChannelType(channelType, autoActivate) end
 
 ---@param communicationMode CommunicationMode 
 function C_VoiceChat.SetCommunicationMode(communicationMode) end
 
----@param isDeafened bool 
+---@param isDeafened boolean 
 function C_VoiceChat.SetDeafened(isDeafened) end
 
 ---@param deviceID string 
@@ -191,7 +191,7 @@ function C_VoiceChat.SetInputVolume(volume) end
 function C_VoiceChat.SetMasterVolumeScale(scale) end
 
 ---@param playerLocation table 
----@param muted bool 
+---@param muted boolean 
 function C_VoiceChat.SetMemberMuted(playerLocation, muted) end
 
 --- Adjusts member volume across all channels
@@ -199,7 +199,7 @@ function C_VoiceChat.SetMemberMuted(playerLocation, muted) end
 ---@param volume number 
 function C_VoiceChat.SetMemberVolume(playerLocation, volume) end
 
----@param isMuted bool 
+---@param isMuted boolean 
 function C_VoiceChat.SetMuted(isMuted) end
 
 ---@param deviceID string 
@@ -220,7 +220,7 @@ function C_VoiceChat.SetPushToTalkBinding(keys) end
 function C_VoiceChat.SetVADSensitivity(sensitivity) end
 
 --- Use this while loading to determine if the UI should attempt to rediscover the previously joined/active voice channels
----@return bool shouldDiscoverChannels
+---@return boolean shouldDiscoverChannels
 function C_VoiceChat.ShouldDiscoverChannels() end
 
 function C_VoiceChat.ToggleDeafened() end

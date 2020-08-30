@@ -1,20 +1,20 @@
 ---@class PvpInfo
 C_PvP = {}
 
----@return bool canDisplay
+---@return boolean canDisplay
 function C_PvP.CanDisplayDeaths() end
 
----@return bool canDisplay
+---@return boolean canDisplay
 function C_PvP.CanDisplayHonorableKills() end
 
----@param toggle bool 
----@return bool canTogglePvP
+---@param toggle boolean 
+---@return boolean canTogglePvP
 function C_PvP.CanToggleWarMode(toggle) end
 
----@return bool canTogglePvPInArea
+---@return boolean canTogglePvPInArea
 function C_PvP.CanToggleWarModeInArea() end
 
----@return bool doesAffect
+---@return boolean doesAffect
 function C_PvP.DoesMatchOutcomeAffectRating() end
 
 ---@return PvpBrawlInfo|nil brawlInfo
@@ -48,7 +48,7 @@ function C_PvP.GetArenaSkirmishRewards() end
 function C_PvP.GetAvailableBrawlInfo() end
 
 ---@param brawlType BrawlType 
----@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil, bool honor, experience, itemRewards, currencyRewards, hasWon
+---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil, boolean honor, experience, itemRewards, currencyRewards, hasWon
 function C_PvP.GetBrawlRewards(brawlType) end
 
 ---@param specializationID number 
@@ -137,55 +137,55 @@ function C_PvP.GetWarModeRewardBonus() end
 ---@return number defaultBonus
 function C_PvP.GetWarModeRewardBonusDefault() end
 
----@return bool, bool, bool, number rewardAchieved, lastWeekRewardAchieved, lastWeekRewardClaimed, pvpTierMaxFromWins
+---@return boolean, boolean, boolean, number rewardAchieved, lastWeekRewardAchieved, lastWeekRewardClaimed, pvpTierMaxFromWins
 function C_PvP.GetWeeklyChestInfo() end
 
----@return bool hasArenaSkirmishWinToday
+---@return boolean hasArenaSkirmishWinToday
 function C_PvP.HasArenaSkirmishWinToday() end
 
----@return bool isActiveBattlefield
+---@return boolean isActiveBattlefield
 function C_PvP.IsActiveBattlefield() end
 
----@return bool registered
+---@return boolean registered
 function C_PvP.IsActiveMatchRegistered() end
 
----@return bool isArena
+---@return boolean isArena
 function C_PvP.IsArena() end
 
----@return bool isBattleground
+---@return boolean isBattleground
 function C_PvP.IsBattleground() end
 
----@return bool, bool battlegroundActive, brawlActive
+---@return boolean, boolean battlegroundActive, brawlActive
 function C_PvP.IsBattlegroundEnlistmentBonusActive() end
 
----@return bool isInBrawl
+---@return boolean isInBrawl
 function C_PvP.IsInBrawl() end
 
----@return bool asArena
+---@return boolean asArena
 function C_PvP.IsMatchConsideredArena() end
 
----@return bool isFactional
+---@return boolean isFactional
 function C_PvP.IsMatchFactional() end
 
----@return bool isPVPMap
+---@return boolean isPVPMap
 function C_PvP.IsPVPMap() end
 
----@return bool isRatedArena
+---@return boolean isRatedArena
 function C_PvP.IsRatedArena() end
 
----@return bool isRatedBattleground
+---@return boolean isRatedBattleground
 function C_PvP.IsRatedBattleground() end
 
----@return bool isRatedMap
+---@return boolean isRatedMap
 function C_PvP.IsRatedMap() end
 
----@return bool warModeActive
+---@return boolean warModeActive
 function C_PvP.IsWarModeActive() end
 
----@return bool warModeDesired
+---@return boolean warModeDesired
 function C_PvP.IsWarModeDesired() end
 
----@return bool warModeEnabled
+---@return boolean warModeEnabled
 function C_PvP.IsWarModeFeatureEnabled() end
 
 function C_PvP.JoinBrawl() end
@@ -193,7 +193,7 @@ function C_PvP.JoinBrawl() end
 ---@param playerToken string 
 function C_PvP.RequestCrowdControlSpell(playerToken) end
 
----@param warModeDesired bool 
+---@param warModeDesired boolean 
 function C_PvP.SetWarModeDesired(warModeDesired) end
 
 function C_PvP.ToggleWarMode() end

@@ -2,7 +2,7 @@
 C_PlayerInfo = {}
 
 ---@param guid string 
----@return bool isPlayer
+---@return boolean isPlayer
 function C_PlayerInfo.GUIDIsPlayer(guid) end
 
 ---@param playerLocation table 
@@ -23,10 +23,10 @@ function C_PlayerInfo.GetSex(playerLocation) end
 
 ---@param playerLocation table @ [OPTIONAL]
 ---@overload fun()
----@return bool|nil isConnected
+---@return boolean|nil isConnected
 function C_PlayerInfo.IsConnected(playerLocation) end
 
 ---@param playerLocation table 
----@return bool unitIsSameServer
+---@return boolean unitIsSameServer
 function C_PlayerInfo.UnitIsSameServer(playerLocation) end
 

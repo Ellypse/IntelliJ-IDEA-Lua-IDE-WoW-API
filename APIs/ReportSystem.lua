@@ -2,7 +2,7 @@
 C_ReportSystem = {}
 
 ---@param playerLocation table 
----@return bool canReport
+---@return boolean canReport
 function C_ReportSystem.CanReportPlayer(playerLocation) end
 
 --- Not allowed to be called by addons
@@ -29,16 +29,16 @@ function C_ReportSystem.SendReportPlayer(token, comment) end
 
 ---@param target string @ [OPTIONAL]
 ---@overload fun()
----@return bool set
+---@return boolean set
 function C_ReportSystem.SetPendingReportPetTarget(target) end
 
 ---@param target string @ [OPTIONAL]
 ---@overload fun()
----@return bool set
+---@return boolean set
 function C_ReportSystem.SetPendingReportTarget(target) end
 
 ---@param guid string @ [OPTIONAL]
 ---@overload fun()
----@return bool set
+---@return boolean set
 function C_ReportSystem.SetPendingReportTargetByGuid(guid) end
 

@@ -2,7 +2,7 @@
 C_InvasionInfo = {}
 
 --- Returns true if invasions are active in the same physical area as the player.
----@return bool areInvasionsAvailable
+---@return boolean areInvasionsAvailable
 function C_InvasionInfo.AreInvasionsAvailable() end
 
 ---@param uiMapID number 

@@ -2,32 +2,32 @@
 C_ArtifactUI = {}
 
 ---@param powerID number 
----@return bool success
+---@return boolean success
 function C_ArtifactUI.AddPower(powerID) end
 
 ---@param relicSlotIndex number 
 function C_ArtifactUI.ApplyCursorRelicToSlot(relicSlotIndex) end
 
 ---@param relicItemID number 
----@param onlyUnlocked bool 
----@return bool canApply
+---@param onlyUnlocked boolean 
+---@return boolean canApply
 function C_ArtifactUI.CanApplyArtifactRelic(relicItemID, onlyUnlocked) end
 
 ---@param relicSlotIndex number 
----@return bool canApply
+---@return boolean canApply
 function C_ArtifactUI.CanApplyCursorRelicToSlot(relicSlotIndex) end
 
 ---@param relicItemID number 
 ---@param relicSlotIndex number 
----@return bool canApply
+---@return boolean canApply
 function C_ArtifactUI.CanApplyRelicItemIDToEquippedArtifactSlot(relicItemID, relicSlotIndex) end
 
 ---@param relicItemID number 
 ---@param relicSlotIndex number 
----@return bool canApply
+---@return boolean canApply
 function C_ArtifactUI.CanApplyRelicItemIDToSlot(relicItemID, relicSlotIndex) end
 
----@return bool canRespec
+---@return boolean canRespec
 function C_ArtifactUI.CheckRespecNPC() end
 
 function C_ArtifactUI.Clear() end
@@ -36,16 +36,16 @@ function C_ArtifactUI.ClearForgeCamera() end
 
 function C_ArtifactUI.ConfirmRespec() end
 
----@return bool hasAnyRelicsSlotted
+---@return boolean hasAnyRelicsSlotted
 function C_ArtifactUI.DoesEquippedArtifactHaveAnyRelicsSlotted() end
 
 ---@param appearanceSetIndex number 
 ---@param appearanceIndex number 
----@return number, string, number, bool, string|nil, number, number|nil, number, number, number, number, number, bool artifactAppearanceID, appearanceName, displayIndex, unlocked, failureDescription, uiCameraID, altHandCameraID, swatchColorR, swatchColorG, swatchColorB, modelOpacity, modelSaturation, obtainable
+---@return number, string, number, boolean, string|nil, number, number|nil, number, number, number, number, number, boolean artifactAppearanceID, appearanceName, displayIndex, unlocked, failureDescription, uiCameraID, altHandCameraID, swatchColorR, swatchColorG, swatchColorB, modelOpacity, modelSaturation, obtainable
 function C_ArtifactUI.GetAppearanceInfo(appearanceSetIndex, appearanceIndex) end
 
 ---@param artifactAppearanceID number 
----@return number, number, string, number, bool, string|nil, number, number|nil, number, number, number, number, number, bool artifactAppearanceSetID, artifactAppearanceID, appearanceName, displayIndex, unlocked, failureDescription, uiCameraID, altHandCameraID, swatchColorR, swatchColorG, swatchColorB, modelOpacity, modelSaturation, obtainable
+---@return number, number, string, number, boolean, string|nil, number, number|nil, number, number, number, number, number, boolean artifactAppearanceSetID, artifactAppearanceID, appearanceName, displayIndex, unlocked, failureDescription, uiCameraID, altHandCameraID, swatchColorR, swatchColorG, swatchColorB, modelOpacity, modelSaturation, obtainable
 function C_ArtifactUI.GetAppearanceInfoByID(artifactAppearanceID) end
 
 ---@param appearanceSetIndex number 
@@ -55,7 +55,7 @@ function C_ArtifactUI.GetAppearanceSetInfo(appearanceSetIndex) end
 ---@return ArtifactArtInfo artifactArtInfo
 function C_ArtifactUI.GetArtifactArtInfo() end
 
----@return number, number|nil, string, number, number, number, number, number, number, number|nil, number|nil, bool, number itemID, altItemID, name, icon, xp, pointsSpent, quality, artifactAppearanceID, appearanceModID, itemAppearanceID, altItemAppearanceID, altOnTop, tier
+---@return number, number|nil, string, number, number, number, number, number, number, number|nil, number|nil, boolean, number itemID, altItemID, name, icon, xp, pointsSpent, quality, artifactAppearanceID, appearanceModID, itemAppearanceID, altItemAppearanceID, altOnTop, tier
 function C_ArtifactUI.GetArtifactInfo() end
 
 ---@return number itemID
@@ -76,13 +76,13 @@ function C_ArtifactUI.GetCostForPointAtRank(rank, tier) end
 ---@return ArtifactArtInfo artifactArtInfo
 function C_ArtifactUI.GetEquippedArtifactArtInfo() end
 
----@return number, number|nil, string, number, number, number, number, number, number, number|nil, number|nil, bool, number itemID, altItemID, name, icon, xp, pointsSpent, quality, artifactAppearanceID, appearanceModID, itemAppearanceID, altItemAppearanceID, altOnTop, tier
+---@return number, number|nil, string, number, number, number, number, number, number, number|nil, number|nil, boolean, number itemID, altItemID, name, icon, xp, pointsSpent, quality, artifactAppearanceID, appearanceModID, itemAppearanceID, altItemAppearanceID, altOnTop, tier
 function C_ArtifactUI.GetEquippedArtifactInfo() end
 
 ---@return number itemID
 function C_ArtifactUI.GetEquippedArtifactItemID() end
 
----@param onlyUnlocked bool @ If true then only the relic slots that are unlocked will be considered.
+---@param onlyUnlocked boolean @ If true then only the relic slots that are unlocked will be considered.
 ---@return number numRelicSlots
 function C_ArtifactUI.GetEquippedArtifactNumRelicSlots(onlyUnlocked) end
 
@@ -110,7 +110,7 @@ function C_ArtifactUI.GetNumAppearanceSets() end
 ---@return number numObtainedArtifacts
 function C_ArtifactUI.GetNumObtainedArtifacts() end
 
----@param onlyUnlocked bool @ If true then only the relic slots that are unlocked will be considered.
+---@param onlyUnlocked boolean @ If true then only the relic slots that are unlocked will be considered.
 ---@return number numRelicSlots
 function C_ArtifactUI.GetNumRelicSlots(onlyUnlocked) end
 
@@ -162,7 +162,7 @@ function C_ArtifactUI.GetRelicSlotType(relicSlotIndex) end
 ---@return ArtifactArtInfo artifactArtInfo
 function C_ArtifactUI.GetRespecArtifactArtInfo() end
 
----@return number, number|nil, string, number, number, number, number, number, number, number|nil, number|nil, bool, number itemID, altItemID, name, icon, xp, pointsSpent, quality, artifactAppearanceID, appearanceModID, itemAppearanceID, altItemAppearanceID, altOnTop, tier
+---@return number, number|nil, string, number, number, number, number, number, number, number|nil, number|nil, boolean, number itemID, altItemID, name, icon, xp, pointsSpent, quality, artifactAppearanceID, appearanceModID, itemAppearanceID, altItemAppearanceID, altOnTop, tier
 function C_ArtifactUI.GetRespecArtifactInfo() end
 
 ---@return number cost
@@ -177,26 +177,26 @@ function C_ArtifactUI.GetTotalPowerCost(startingTrait, numTraits, artifactTier) 
 ---@return number totalPurchasedRanks
 function C_ArtifactUI.GetTotalPurchasedRanks() end
 
----@return bool artifactDisabled
+---@return boolean artifactDisabled
 function C_ArtifactUI.IsArtifactDisabled() end
 
----@return bool isAtForge
+---@return boolean isAtForge
 function C_ArtifactUI.IsAtForge() end
 
----@return bool artifactDisabled
+---@return boolean artifactDisabled
 function C_ArtifactUI.IsEquippedArtifactDisabled() end
 
----@return bool artifactMaxed
+---@return boolean artifactMaxed
 function C_ArtifactUI.IsEquippedArtifactMaxed() end
 
----@return bool isEffectivelyMaxed
+---@return boolean isEffectivelyMaxed
 function C_ArtifactUI.IsMaxedByRulesOrEffect() end
 
 ---@param powerID number 
----@return bool known
+---@return boolean known
 function C_ArtifactUI.IsPowerKnown(powerID) end
 
----@return bool isViewedArtifactEquipped
+---@return boolean isViewedArtifactEquipped
 function C_ArtifactUI.IsViewedArtifactEquipped() end
 
 ---@param artifactAppearanceID number 
@@ -213,7 +213,7 @@ function C_ArtifactUI.SetForgeRotation(forgeRotationX, forgeRotationY, forgeRota
 ---@param artifactAppearanceID number 
 function C_ArtifactUI.SetPreviewAppearance(artifactAppearanceID) end
 
----@return bool shouldSuppressForgeRotation
+---@return boolean shouldSuppressForgeRotation
 function C_ArtifactUI.ShouldSuppressForgeRotation() end
 
 ---@class ArtifactArtInfo

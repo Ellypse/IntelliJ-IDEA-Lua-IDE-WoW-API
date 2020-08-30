@@ -30,10 +30,10 @@ function GetUnitPowerBarTextureInfo(unitToken, textureIndex, timerIndex) end
 function GetUnitPowerBarTextureInfoByID(barID, textureIndex) end
 
 ---@param unitToken string 
----@return bool isReady
+---@return boolean isReady
 function IsUnitModelReadyForUI(unitToken) end
 
----@return bool vehicleHasComboPoints
+---@return boolean vehicleHasComboPoints
 function PlayerVehicleHasComboPoints() end
 
 ---@param textureObject table 
@@ -45,7 +45,7 @@ function SetPortraitTexture(textureObject, unitToken) end
 function SetPortraitTextureFromCreatureDisplayID(textureObject, creatureDisplayID) end
 
 ---@param unit string 
----@return bool, bool isAlliedRace, hasHeritageArmorUnlocked
+---@return boolean, boolean isAlliedRace, hasHeritageArmorUnlocked
 function UnitAlliedRaceInfo(unit) end
 
 ---@param unit string 
@@ -57,29 +57,29 @@ function UnitClass(unit) end
 function UnitClassBase(unit) end
 
 ---@param unit string 
----@return bool isConnected
+---@return boolean isConnected
 function UnitIsConnected(unit) end
 
 ---@param controllingUnit string 
 ---@param controlledUnit string 
----@return bool unitIsOwnerOrControllerOfUnit
+---@return boolean unitIsOwnerOrControllerOfUnit
 function UnitIsOwnerOrControllerOfUnit(controllingUnit, controlledUnit) end
 
 ---@param unit string 
----@return bool warModeActive
+---@return boolean warModeActive
 function UnitIsWarModeActive(unit) end
 
 ---@param unit string 
----@return bool warModeDesired
+---@return boolean warModeDesired
 function UnitIsWarModeDesired(unit) end
 
 ---@param unit string 
----@return bool warModePhased
+---@return boolean warModePhased
 function UnitIsWarModePhased(unit) end
 
 ---@param unitToken string 
 ---@param powerType PowerType 
----@param unmodified bool 
+---@param unmodified boolean 
 ---@return number power
 function UnitPower(unitToken, powerType, unmodified) end
 
@@ -93,7 +93,7 @@ function UnitPowerDisplayMod(powerType) end
 
 ---@param unitToken string 
 ---@param powerType PowerType 
----@param unmodified bool 
+---@param unmodified boolean 
 ---@return number maxPower
 function UnitPowerMax(unitToken, powerType, unmodified) end
 
@@ -106,7 +106,7 @@ function UnitPvpClassification(unit) end
 function UnitSex(unit) end
 
 ---@param unit string 
----@return bool treatAsPlayer
+---@return boolean treatAsPlayer
 function UnitTreatAsPlayerForDisplay(unit) end
 
 ---@param unit string 

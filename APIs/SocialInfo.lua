@@ -21,7 +21,7 @@ function C_Social.GetScreenshotInfoByIndex(index) end
 ---@return number tweetLength
 function C_Social.GetTweetLength(tweetText) end
 
----@return bool isEnabled
+---@return boolean isEnabled
 function C_Social.IsSocialEnabled() end
 
 --- Not allowed to be called by addons

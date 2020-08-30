@@ -35,10 +35,10 @@ function C_MythicPlus.GetWeeklyBestForMap(mapChallengeModeID) end
 ---@return number, number, number, number currentWeekBestLevel, weeklyRewardLevel, nextDifficultyWeeklyRewardLevel, nextBestLevel
 function C_MythicPlus.GetWeeklyChestRewardLevel() end
 
----@return bool isMythicPlusActive
+---@return boolean isMythicPlusActive
 function C_MythicPlus.IsMythicPlusActive() end
 
----@return bool weeklyRewardAvailable
+---@return boolean weeklyRewardAvailable
 function C_MythicPlus.IsWeeklyRewardAvailable() end
 
 function C_MythicPlus.RequestCurrentAffixes() end

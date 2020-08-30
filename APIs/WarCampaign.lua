@@ -16,7 +16,7 @@ function C_CampaignInfo.GetCurrentCampaignChapterID() end
 function C_CampaignInfo.GetCurrentCampaignID() end
 
 ---@param questID number 
----@return bool isCampaignQuest
+---@return boolean isCampaignQuest
 function C_CampaignInfo.IsCampaignQuest(questID) end
 
 ---@class CampaignChapterInfo

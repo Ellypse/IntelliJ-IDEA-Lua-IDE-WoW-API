@@ -1,6 +1,6 @@
 ---@class Loot
 C_Loot = {}
 
----@return bool isLegacyLootModeEnabled
+---@return boolean isLegacyLootModeEnabled
 function C_Loot.IsLegacyLootModeEnabled() end
 

@@ -14,7 +14,7 @@ function C_AuctionHouse.CalculateCommodityDeposit(itemID, duration, quantity) en
 function C_AuctionHouse.CalculateItemDeposit(item, duration, quantity) end
 
 ---@param ownedAuctionID number 
----@return bool canCancelAuction
+---@return boolean canCancelAuction
 function C_AuctionHouse.CanCancelAuction(ownedAuctionID) end
 
 ---@param ownedAuctionID number 
@@ -30,7 +30,7 @@ function C_AuctionHouse.CloseAuctionHouse() end
 ---@param quantity number 
 function C_AuctionHouse.ConfirmCommoditiesPurchase(itemID, quantity) end
 
----@return bool favoritesAreAvailable
+---@return boolean favoritesAreAvailable
 function C_AuctionHouse.FavoritesAreAvailable() end
 
 ---@param classID number 
@@ -81,7 +81,7 @@ function C_AuctionHouse.GetItemCommodityStatus(item) end
 function C_AuctionHouse.GetItemKeyFromItem(item) end
 
 ---@param itemKey ItemKey 
----@param restrictQualityToFilter bool 
+---@param restrictQualityToFilter boolean 
 ---@return ItemKeyInfo|nil itemKeyInfo
 function C_AuctionHouse.GetItemKeyInfo(itemKey, restrictQualityToFilter) end
 
@@ -157,7 +157,7 @@ function C_AuctionHouse.GetQuoteDurationRemaining() end
 function C_AuctionHouse.GetReplicateItemBattlePetInfo(index) end
 
 ---@param index number 
----@return string|nil, number|nil, number, number, bool|nil, number, string|nil, number, number, number, number, string|nil, string|nil, string|nil, string|nil, number, number, bool|nil name, texture, count, qualityID, usable, level, levelType, minBid, minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner, ownerFullName, saleStatus, itemID, hasAllInfo
+---@return string|nil, number|nil, number, number, boolean|nil, number, string|nil, number, number, number, number, string|nil, string|nil, string|nil, string|nil, number, number, boolean|nil name, texture, count, qualityID, usable, level, levelType, minBid, minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner, ownerFullName, saleStatus, itemID, hasAllInfo
 function C_AuctionHouse.GetReplicateItemInfo(index) end
 
 ---@param index number 
@@ -172,45 +172,45 @@ function C_AuctionHouse.GetReplicateItemTimeLeft(index) end
 ---@return number, number timeLeftMinSeconds, timeLeftMaxSeconds
 function C_AuctionHouse.GetTimeLeftBandInfo(timeLeftBand) end
 
----@return bool hasFavorites
+---@return boolean hasFavorites
 function C_AuctionHouse.HasFavorites() end
 
----@return bool hasFullBidResults
+---@return boolean hasFullBidResults
 function C_AuctionHouse.HasFullBidResults() end
 
----@return bool hasFullBrowseResults
+---@return boolean hasFullBrowseResults
 function C_AuctionHouse.HasFullBrowseResults() end
 
 ---@param itemID number 
----@return bool hasFullResults
+---@return boolean hasFullResults
 function C_AuctionHouse.HasFullCommoditySearchResults(itemID) end
 
 ---@param itemKey ItemKey 
----@return bool hasFullResults
+---@return boolean hasFullResults
 function C_AuctionHouse.HasFullItemSearchResults(itemKey) end
 
----@return bool hasFullOwnedAuctionResults
+---@return boolean hasFullOwnedAuctionResults
 function C_AuctionHouse.HasFullOwnedAuctionResults() end
 
----@return bool hasMaxFavorites
+---@return boolean hasMaxFavorites
 function C_AuctionHouse.HasMaxFavorites() end
 
 ---@param itemKey ItemKey 
----@return bool hasSearchResults
+---@return boolean hasSearchResults
 function C_AuctionHouse.HasSearchResults(itemKey) end
 
 ---@param itemKey ItemKey 
----@return bool isFavorite
+---@return boolean isFavorite
 function C_AuctionHouse.IsFavoriteItem(itemKey) end
 
 ---@param item table 
----@param displayError bool 
----@return bool valid
+---@param displayError boolean 
+---@return boolean valid
 function C_AuctionHouse.IsSellItemValid(item, displayError) end
 
 --- This function is not used in the base UI but is included for AddOn ease-of-use.
----@param specificSearch bool 
----@return bool canSendThrottledMessage
+---@param specificSearch boolean 
+---@return boolean canSendThrottledMessage
 function C_AuctionHouse.IsThrottledMessageSystemReady(specificSearch) end
 
 ---@param itemID number 
@@ -258,11 +258,11 @@ function C_AuctionHouse.ReplicateItems() end
 function C_AuctionHouse.RequestMoreBrowseResults() end
 
 ---@param itemID number 
----@return bool hasFullResults
+---@return boolean hasFullResults
 function C_AuctionHouse.RequestMoreCommoditySearchResults(itemID) end
 
 ---@param itemKey ItemKey 
----@return bool hasFullResults
+---@return boolean hasFullResults
 function C_AuctionHouse.RequestMoreItemSearchResults(itemKey) end
 
 ---@param sorts AuctionHouseSortType 
@@ -278,17 +278,17 @@ function C_AuctionHouse.SendBrowseQuery(query) end
 --- Search queries are restricted to 100 calls per minute. These should not be used to query the entire auction house. See ReplicateItems
 ---@param itemKey ItemKey 
 ---@param sorts AuctionHouseSortType 
----@param separateOwnerItems bool 
+---@param separateOwnerItems boolean 
 function C_AuctionHouse.SendSearchQuery(itemKey, sorts, separateOwnerItems) end
 
 --- Search queries are restricted to 100 calls per minute. These should not be used to query the entire auction house. See ReplicateItems
 ---@param itemKey ItemKey 
 ---@param sorts AuctionHouseSortType 
----@param separateOwnerItems bool 
+---@param separateOwnerItems boolean 
 function C_AuctionHouse.SendSellSearchQuery(itemKey, sorts, separateOwnerItems) end
 
 ---@param itemKey ItemKey 
----@param setFavorite bool 
+---@param setFavorite boolean 
 function C_AuctionHouse.SetFavoriteItem(itemKey, setFavorite) end
 
 ---@param itemID number 

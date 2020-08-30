@@ -16,15 +16,15 @@ function C_PetJournal.GetDisplayProbabilityByIndex(speciesID, index) end
 function C_PetJournal.GetNumDisplays(speciesID) end
 
 ---@param battlePetGUID string 
----@return bool, PetJournalError, string isSummonable, error, errorText
+---@return boolean, PetJournalError, string isSummonable, error, errorText
 function C_PetJournal.GetPetSummonInfo(battlePetGUID) end
 
 ---@param battlePetGUID string 
----@return bool isSummonable
+---@return boolean isSummonable
 function C_PetJournal.PetIsSummonable(battlePetGUID) end
 
 ---@param speciesID number 
----@return bool|nil usesRandomDisplay
+---@return boolean|nil usesRandomDisplay
 function C_PetJournal.PetUsesRandomDisplay(speciesID) end
 
 ---@class PetJournalError

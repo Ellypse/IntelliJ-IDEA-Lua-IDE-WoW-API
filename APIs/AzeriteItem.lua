@@ -16,18 +16,18 @@ function C_AzeriteItem.GetPowerLevel(azeriteItemLocation) end
 ---@return number powerLevel
 function C_AzeriteItem.GetUnlimitedPowerLevel(azeriteItemLocation) end
 
----@return bool hasActiveAzeriteItem
+---@return boolean hasActiveAzeriteItem
 function C_AzeriteItem.HasActiveAzeriteItem() end
 
 ---@param itemLocation table 
----@return bool isAzeriteItem
+---@return boolean isAzeriteItem
 function C_AzeriteItem.IsAzeriteItem(itemLocation) end
 
----@return bool isAtMax
+---@return boolean isAtMax
 function C_AzeriteItem.IsAzeriteItemAtMaxLevel() end
 
 ---@param itemInfo string 
----@return bool isAzeriteItem
+---@return boolean isAzeriteItem
 function C_AzeriteItem.IsAzeriteItemByID(itemInfo) end
 
 ---@class UnlockedAzeriteEmpoweredItems

@@ -2,7 +2,7 @@
 C_CurrencyInfo = {}
 
 ---@param currencyID number 
----@return bool|nil, bool|nil warModeApplies, limitOncePerTooltip
+---@return boolean|nil, boolean|nil warModeApplies, limitOncePerTooltip
 function C_CurrencyInfo.DoesWarModeBonusApply(currencyID) end
 
 ---@return number azeriteCurrencyID
@@ -33,7 +33,7 @@ function C_CurrencyInfo.GetWarResourcesCurrencyID() end
 
 ---@param currencyID number 
 ---@param quantity number 
----@return bool isCurrencyContainer
+---@return boolean isCurrencyContainer
 function C_CurrencyInfo.IsCurrencyContainer(currencyID, quantity) end
 
 ---@class CurrencyDisplayInfo

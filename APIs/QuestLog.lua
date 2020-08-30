@@ -52,53 +52,53 @@ function C_QuestLog.GetQuestsOnMap(uiMapID) end
 ---@return number, number achievementID, storyMapID
 function C_QuestLog.GetZoneStoryInfo(uiMapID) end
 
----@return bool hasActiveThreats
+---@return boolean hasActiveThreats
 function C_QuestLog.HasActiveThreats() end
 
 ---@param questID number 
----@return bool isLegendaryQuest
+---@return boolean isLegendaryQuest
 function C_QuestLog.IsLegendaryQuest(questID) end
 
 ---@param questID number 
----@return bool isOnQuest
+---@return boolean isOnQuest
 function C_QuestLog.IsOnQuest(questID) end
 
 ---@param questID number 
----@return bool isDisabled
+---@return boolean isDisabled
 function C_QuestLog.IsQuestDisabledForSession(questID) end
 
 ---@param questID number 
----@return bool isCompleted
+---@return boolean isCompleted
 function C_QuestLog.IsQuestFlaggedCompleted(questID) end
 
 ---@param questID number 
----@return bool isReplayable
+---@return boolean isReplayable
 function C_QuestLog.IsQuestReplayable(questID) end
 
 ---@param questID number 
----@return bool recentlyReplayed
+---@return boolean recentlyReplayed
 function C_QuestLog.IsQuestReplayedRecently(questID) end
 
 ---@param questID number 
----@return bool isTrivial
+---@return boolean isTrivial
 function C_QuestLog.IsQuestTrivial(questID) end
 
 ---@param questID number 
----@return bool isThreat
+---@return boolean isThreat
 function C_QuestLog.IsThreatQuest(questID) end
 
 --- Tests whether a quest is eligible for warmode bonuses (e.g. most world quests, some daily quests
 ---@param questID number 
----@return bool hasBonus
+---@return boolean hasBonus
 function C_QuestLog.QuestCanHaveWarModeBonus(questID) end
 
 ---@param questID number 
----@return bool hasBonus
+---@return boolean hasBonus
 function C_QuestLog.QuestHasQuestSessionBonus(questID) end
 
 --- Tests whether a quest in the player's quest log that is eligible for warmode bonuses (see 'QuestCanHaveWarModeBOnus') has been completed in warmode (including accepting it)
 ---@param questID number 
----@return bool hasBonus
+---@return boolean hasBonus
 function C_QuestLog.QuestHasWarModeBonus(questID) end
 
 ---@param questID number 
@@ -108,7 +108,7 @@ function C_QuestLog.RequestLoadQuestByID(questID) end
 function C_QuestLog.SetMapForQuestPOIs(uiMapID) end
 
 ---@param questID number 
----@return bool shouldShow
+---@return boolean shouldShow
 function C_QuestLog.ShouldShowQuestRewards(questID) end
 
 ---@class QuestTag

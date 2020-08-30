@@ -9,7 +9,7 @@ function C_SpecializationInfo.GetAllSelectedPvpTalentIDs() end
 ---@return number|nil selectedTalentID
 function C_SpecializationInfo.GetInspectSelectedPvpTalent(inspectedUnit, talentIndex) end
 
----@return bool, bool hasUnspentSlot, hasNewTalent
+---@return boolean, boolean hasUnspentSlot, hasNewTalent
 function C_SpecializationInfo.GetPvpTalentAlertStatus() end
 
 ---@param talentIndex number 
@@ -28,15 +28,15 @@ function C_SpecializationInfo.GetPvpTalentUnlockLevel(talentID) end
 ---@return number spellID
 function C_SpecializationInfo.GetSpellsDisplay(specializationID) end
 
----@return bool isSpecializationDataInitialized
+---@return boolean isSpecializationDataInitialized
 function C_SpecializationInfo.IsInitialized() end
 
 ---@param talentID number 
----@return bool locked
+---@return boolean locked
 function C_SpecializationInfo.IsPvpTalentLocked(talentID) end
 
 ---@param talentID number 
----@param locked bool 
+---@param locked boolean 
 function C_SpecializationInfo.SetPvpTalentLocked(talentID, locked) end
 
 ---@class PvpTalentSlotInfo

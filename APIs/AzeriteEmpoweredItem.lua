@@ -3,7 +3,7 @@ C_AzeriteEmpoweredItem = {}
 
 ---@param azeriteEmpoweredItemLocation table 
 ---@param powerID number 
----@return bool canSelect
+---@return boolean canSelect
 function C_AzeriteEmpoweredItem.CanSelectPower(azeriteEmpoweredItemLocation, powerID) end
 
 function C_AzeriteEmpoweredItem.CloseAzeriteEmpoweredItemRespec() end
@@ -39,43 +39,43 @@ function C_AzeriteEmpoweredItem.GetPowerText(azeriteEmpoweredItemLocation, power
 function C_AzeriteEmpoweredItem.GetSpecsForPower(powerID) end
 
 ---@param azeriteEmpoweredItemLocation table 
----@return bool hasAnyUnselectedPowers
+---@return boolean hasAnyUnselectedPowers
 function C_AzeriteEmpoweredItem.HasAnyUnselectedPowers(azeriteEmpoweredItemLocation) end
 
 ---@param azeriteEmpoweredItemLocation table 
----@return bool hasBeenViewed
+---@return boolean hasBeenViewed
 function C_AzeriteEmpoweredItem.HasBeenViewed(azeriteEmpoweredItemLocation) end
 
 ---@param itemLocation table 
----@return bool isAzeriteEmpoweredItem
+---@return boolean isAzeriteEmpoweredItem
 function C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItem(itemLocation) end
 
 ---@param itemInfo string 
----@return bool isAzeriteEmpoweredItem
+---@return boolean isAzeriteEmpoweredItem
 function C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(itemInfo) end
 
 ---@param itemInfo string 
 ---@param classID number @ Specify a class ID to determine if its displayable for that class, otherwise uses the player's class if left nil [OPTIONAL]
 ---@overload fun(itemInfo:string)
----@return bool isAzeritePreviewSourceDisplayable
+---@return boolean isAzeritePreviewSourceDisplayable
 function C_AzeriteEmpoweredItem.IsAzeritePreviewSourceDisplayable(itemInfo, classID) end
 
----@return bool isHeartOfAzerothEquipped
+---@return boolean isHeartOfAzerothEquipped
 function C_AzeriteEmpoweredItem.IsHeartOfAzerothEquipped() end
 
 ---@param powerID number 
 ---@param specID number 
----@return bool isPowerAvailableForSpec
+---@return boolean isPowerAvailableForSpec
 function C_AzeriteEmpoweredItem.IsPowerAvailableForSpec(powerID, specID) end
 
 ---@param azeriteEmpoweredItemLocation table 
 ---@param powerID number 
----@return bool isSelected
+---@return boolean isSelected
 function C_AzeriteEmpoweredItem.IsPowerSelected(azeriteEmpoweredItemLocation, powerID) end
 
 ---@param azeriteEmpoweredItemLocation table 
 ---@param powerID number 
----@return bool success
+---@return boolean success
 function C_AzeriteEmpoweredItem.SelectPower(azeriteEmpoweredItemLocation, powerID) end
 
 ---@param azeriteEmpoweredItemLocation table 
