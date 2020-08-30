@@ -334,32 +334,12 @@ for _,k in pairs(apiKeys) do
     local argValues = ""
 
     if api_entries[k].description then
-        preFunction = preFunction .. "--- ### " .. api_entries[k].description .. "\n"
+        preFunction = preFunction .. "--- " .. api_entries[k].description .. "\n"
     end
 
     if api_entries[k].address then
         preFunction = preFunction .. "--- [" .. BASE_WOWPEDIA_ADDRESS .. api_entries[k].address .. "]\n"
     end
-
-    -- Display return types and description
-    --if api_entries[k].returns then
-    --    for _, ret in ipairs(api_entries[k].returns) do
-    --        if api_entries[k].returnDetails[ret] then
-    --            local returnDetails = api_entries[k].returnDetails[ret]
-    --            local returnDetailsExtra = nil
-    --            local newLineStart,_ = string.find(returnDetails,"\n")
-    --            if newLineStart then
-    --                returnDetailsExtra = string.sub(returnDetails, newLineStart + 1)
-    --                returnDetails = string.sub(returnDetails, 1, newLineStart - 1)
-    --                returnDetailsExtra = "--- ```\n--- " .. returnDetailsExtra:gsub("\n", "\n--- ") .. "\n--- ```\n"
-    --            end
-    --            preFunction = preFunction .. "--- \n" .. "--- **" .. ret .. "** - _" .. api_entries[k].returnTypes[ret] .. "_ - " .. returnDetails .. "\n"
-    --            if returnDetailsExtra then
-    --                preFunction = preFunction .. returnDetailsExtra
-    --            end
-    --        end
-    --    end
-    --end
 
     if api_entries[k].arguments then
         for _, param in ipairs(api_entries[k].arguments) do
@@ -368,7 +348,7 @@ for _,k in pairs(apiKeys) do
             else
                 argValues = argValues .. ", " .. param
             end
-            local paramDocString = "--- @param  " .. param
+            local paramDocString = "--- @param " .. param
             if api_entries[k].argumentTypes[param] then
                 paramDocString = paramDocString .. " " .. api_entries[k].argumentTypes[param]
             end
