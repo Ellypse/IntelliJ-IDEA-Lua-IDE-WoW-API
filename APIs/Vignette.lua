@@ -20,7 +20,9 @@ function C_VignetteInfo.GetVignettes() end
 ---@class VignetteType
 local VignetteType = {}
 VignetteType.Normal = 0
-VignetteType.PvpBounty = 1
+VignetteType.PvPBounty = 1
+VignetteType.Torghast = 2
+VignetteType.Treasure = 3
 
 ---@class VignetteInfo
 ---@field vignetteGUID string 
@@ -36,5 +38,6 @@ VignetteType.PvpBounty = 1
 ---@field vignetteID number 
 ---@field type VignetteType 
 ---@field rewardQuestID number 
+---@field widgetSetID number|nil 
 local VignetteInfo = {}
 

@@ -16,6 +16,9 @@ function C_QuestSession.GetAvailableSessionCommand() end
 ---@return QuestSessionCommand command
 function C_QuestSession.GetPendingCommand() end
 
+---@return number proposedMaxLevel
+function C_QuestSession.GetProposedMaxLevelForSession() end
+
 ---@return QuestSessionPlayerDetails|nil details
 function C_QuestSession.GetSessionBeginDetails() end
 

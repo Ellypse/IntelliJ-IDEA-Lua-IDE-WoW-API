@@ -6,6 +6,10 @@ C_Spell = {}
 function C_Spell.DoesSpellExist(spellID) end
 
 ---@param spellID number 
+---@return string, string rarityString, rarityBorderAtlas
+function C_Spell.GetMawPowerRarityStringAndBorderAtlasBySpellID(spellID) end
+
+---@param spellID number 
 ---@return boolean isCached
 function C_Spell.IsSpellDataCached(spellID) end
 

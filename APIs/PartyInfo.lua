@@ -39,6 +39,9 @@ function C_PartyInfo.ConvertToParty() end
 --- Usually this will convert to raid immediately. In some cases (e.g. PartySync) the user will be prompted to confirm converting to raid, because it's potentially destructive.
 function C_PartyInfo.ConvertToRaid() end
 
+---@param seconds number 
+function C_PartyInfo.DoCountdown(seconds) end
+
 ---@return number categories
 function C_PartyInfo.GetActiveCategories() end
 

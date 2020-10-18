@@ -1,6 +1,10 @@
 ---@return CorruptionEffectInfo corruptionEffects
 function GetNegativeCorruptionEffectInfo() end
 
+---@param unit string 
+---@return number pointIndices
+function GetUnitChargedPowerPoints(unit) end
+
 ---@param unitToken string 
 ---@return UnitPowerBarInfo info
 function GetUnitPowerBarInfo(unitToken) end
@@ -49,12 +53,20 @@ function SetPortraitTextureFromCreatureDisplayID(textureObject, creatureDisplayI
 function UnitAlliedRaceInfo(unit) end
 
 ---@param unit string 
+---@return number ID
+function UnitChromieTimeID(unit) end
+
+---@param unit string 
 ---@return string, string, number className, classFilename, classID
 function UnitClass(unit) end
 
 ---@param unit string 
 ---@return string, number classFilename, classID
 function UnitClassBase(unit) end
+
+---@param unit string 
+---@return boolean inPartyShard
+function UnitInPartyShard(unit) end
 
 ---@param unit string 
 ---@return boolean isConnected
@@ -66,16 +78,12 @@ function UnitIsConnected(unit) end
 function UnitIsOwnerOrControllerOfUnit(controllingUnit, controlledUnit) end
 
 ---@param unit string 
----@return boolean warModeActive
-function UnitIsWarModeActive(unit) end
+---@return boolean nameplateShowsWidgetsOnly
+function UnitNameplateShowsWidgetsOnly(unit) end
 
 ---@param unit string 
----@return boolean warModeDesired
-function UnitIsWarModeDesired(unit) end
-
----@param unit string 
----@return boolean warModePhased
-function UnitIsWarModePhased(unit) end
+---@return PhaseReason|nil reason
+function UnitPhaseReason(unit) end
 
 ---@param unitToken string 
 ---@param powerType PowerType 
@@ -98,8 +106,16 @@ function UnitPowerDisplayMod(powerType) end
 function UnitPowerMax(unitToken, powerType, unmodified) end
 
 ---@param unit string 
----@return PvpUnitClassification|nil classification
+---@return PvPUnitClassification|nil classification
 function UnitPvpClassification(unit) end
+
+---@param unit string 
+---@return number levelRange
+function UnitQuestTrivialLevelRange(unit) end
+
+---@param unit string 
+---@return number levelRange
+function UnitQuestTrivialLevelRangeScaling(unit) end
 
 ---@param unit string 
 ---@return number|nil sex
@@ -112,6 +128,13 @@ function UnitTreatAsPlayerForDisplay(unit) end
 ---@param unit string 
 ---@return number uiWidgetSet
 function UnitWidgetSet(unit) end
+
+---@class PhaseReason
+local PhaseReason = {}
+PhaseReason.Phasing = 0
+PhaseReason.Sharding = 1
+PhaseReason.WarMode = 2
+PhaseReason.ChromieTime = 3
 
 ---@class PowerType
 local PowerType = {}
@@ -138,19 +161,19 @@ PowerType.Fury = 17
 PowerType.Pain = 18
 PowerType.NumPowerTypes = 19
 
----@class PvpUnitClassification
-local PvpUnitClassification = {}
-PvpUnitClassification.FlagCarrierHorde = 0
-PvpUnitClassification.FlagCarrierAlliance = 1
-PvpUnitClassification.FlagCarrierNeutral = 2
-PvpUnitClassification.CartRunnerHorde = 3
-PvpUnitClassification.CartRunnerAlliance = 4
-PvpUnitClassification.AssassinHorde = 5
-PvpUnitClassification.AssassinAlliance = 6
-PvpUnitClassification.OrbCarrierBlue = 7
-PvpUnitClassification.OrbCarrierGreen = 8
-PvpUnitClassification.OrbCarrierOrange = 9
-PvpUnitClassification.OrbCarrierPurple = 10
+---@class PvPUnitClassification
+local PvPUnitClassification = {}
+PvPUnitClassification.FlagCarrierHorde = 0
+PvPUnitClassification.FlagCarrierAlliance = 1
+PvPUnitClassification.FlagCarrierNeutral = 2
+PvPUnitClassification.CartRunnerHorde = 3
+PvPUnitClassification.CartRunnerAlliance = 4
+PvPUnitClassification.AssassinHorde = 5
+PvPUnitClassification.AssassinAlliance = 6
+PvPUnitClassification.OrbCarrierBlue = 7
+PvPUnitClassification.OrbCarrierGreen = 8
+PvPUnitClassification.OrbCarrierOrange = 9
+PvPUnitClassification.OrbCarrierPurple = 10
 
 ---@class CorruptionEffectInfo
 ---@field name string 

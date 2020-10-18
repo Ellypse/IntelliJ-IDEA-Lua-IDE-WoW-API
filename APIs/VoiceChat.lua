@@ -53,6 +53,10 @@ function C_VoiceChat.GetCurrentVoiceChatConnectionStatusCode() end
 ---@return number|nil volume
 function C_VoiceChat.GetInputVolume() end
 
+---@param clubId string 
+---@return VoiceChannelErrorReason|nil errorReason
+function C_VoiceChat.GetJoinClubVoiceChannelError(clubId) end
+
 ---@return VoiceChatMember|nil memberInfo
 function C_VoiceChat.GetLocalPlayerActiveChannelMemberInfo() end
 
@@ -234,6 +238,11 @@ function C_VoiceChat.ToggleMuted() end
 local CommunicationMode = {}
 CommunicationMode.PushToTalk = 0
 CommunicationMode.OpenMic = 1
+
+---@class VoiceChannelErrorReason
+local VoiceChannelErrorReason = {}
+VoiceChannelErrorReason.Unknown = 0
+VoiceChannelErrorReason.IsBattleNetChannel = 1
 
 ---@class VoiceChatStatusCode
 local VoiceChatStatusCode = {}

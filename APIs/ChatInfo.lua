@@ -6,9 +6,34 @@ C_ChatInfo = {}
 ---@return string, boolean, boolean, string name, owner, moderator, guid
 function C_ChatInfo.GetChannelRosterInfo(channelIndex, rosterIndex) end
 
+---@param channelIndex number 
+---@return ChatChannelRuleset ruleset
+function C_ChatInfo.GetChannelRuleset(channelIndex) end
+
+---@param channelID number 
+---@return ChatChannelRuleset ruleset
+function C_ChatInfo.GetChannelRulesetForChannelID(channelID) end
+
+---@param channelIndex number 
+---@return string shortcut
+function C_ChatInfo.GetChannelShortcut(channelIndex) end
+
+---@param channelID number 
+---@return string shortcut
+function C_ChatInfo.GetChannelShortcutForChannelID(channelID) end
+
 ---@param clubID string 
 ---@return string ids
 function C_ChatInfo.GetClubStreamIDs(clubID) end
+
+---@return number channelID
+function C_ChatInfo.GetGeneralChannelID() end
+
+---@return number|nil localID
+function C_ChatInfo.GetGeneralChannelLocalID() end
+
+---@return number channelID
+function C_ChatInfo.GetMentorChannelID() end
 
 ---@return number numChannels
 function C_ChatInfo.GetNumActiveChannels() end
@@ -20,9 +45,20 @@ function C_ChatInfo.GetRegisteredAddonMessagePrefixes() end
 ---@return boolean isRegistered
 function C_ChatInfo.IsAddonMessagePrefixRegistered(prefix) end
 
+---@param channelIndex number 
+---@return boolean isRegional
+function C_ChatInfo.IsChannelRegional(channelIndex) end
+
+---@param channelID number 
+---@return boolean isRegional
+function C_ChatInfo.IsChannelRegionalForChannelID(channelID) end
+
 ---@param channelType ChatChannelType 
 ---@return boolean isPartyChannelType
 function C_ChatInfo.IsPartyChannelType(channelType) end
+
+---@return boolean available
+function C_ChatInfo.IsRegionalServiceAvailable() end
 
 ---@param chatLine number @ [OPTIONAL]
 ---@overload fun()

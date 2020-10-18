@@ -14,6 +14,10 @@ function C_QuestLine.GetQuestLineInfo(questID, uiMapID) end
 ---@return number questIDs
 function C_QuestLine.GetQuestLineQuests(questLineID) end
 
+---@param questLineID number 
+---@return boolean isComplete
+function C_QuestLine.IsComplete(questLineID) end
+
 ---@param uiMapID number 
 function C_QuestLine.RequestQuestLinesForMap(uiMapID) end
 
@@ -33,6 +37,7 @@ QuestLineFloorLocation.Same = 2
 ---@field isHidden bool 
 ---@field isLegendary bool 
 ---@field isDaily bool 
+---@field isCampaign bool 
 ---@field floorLocation QuestLineFloorLocation 
 local QuestLineInfo = {}
 

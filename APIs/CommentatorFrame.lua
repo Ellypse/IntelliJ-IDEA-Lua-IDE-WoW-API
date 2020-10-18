@@ -14,6 +14,18 @@ function C_Commentator.AddTrackedOffensiveAuras(spellIDs) end
 ---@return boolean teamsAreSwapped
 function C_Commentator.AreTeamsSwapped() end
 
+---@param playerName string 
+---@param teamName string 
+function C_Commentator.AssignPlayerToTeam(playerName, teamName) end
+
+---@param playerName string 
+---@param teamName string 
+function C_Commentator.AssignPlayersToTeam(playerName, teamName) end
+
+---@param teamIndex number 
+---@param teamName string 
+function C_Commentator.AssignPlayersToTeamInCurrentInstance(teamIndex, teamName) end
+
 ---@return boolean canUseCommentatorCheats
 function C_Commentator.CanUseCommentatorCheats() end
 
@@ -29,6 +41,20 @@ function C_Commentator.EnterInstance() end
 
 function C_Commentator.ExitInstance() end
 
+---@param unitToken string 
+---@return number, number, boolean playerIndex, teamIndex, isPet
+function C_Commentator.FindSpectatedUnit(unitToken) end
+
+---@param teamIndex number 
+---@return string|nil teamName
+function C_Commentator.FindTeamNameInCurrentInstance(teamIndex) end
+
+---@param playerNames string 
+---@return string|nil teamName
+function C_Commentator.FindTeamNameInDirectory(playerNames) end
+
+function C_Commentator.FlushCommentatorHistory() end
+
 ---@param factionIndex number 
 ---@param playerIndex number 
 ---@param forceInstantTransition boolean @ [OPTIONAL]
@@ -43,9 +69,9 @@ function C_Commentator.ForceFollowTransition() end
 ---@return number, number teamIndex, playerIndex
 function C_Commentator.GetAdditionalCameraWeight() end
 
----@param token string 
+---@param unitToken string 
 ---@return number weight
-function C_Commentator.GetAdditionalCameraWeightByToken(token) end
+function C_Commentator.GetAdditionalCameraWeightByToken(unitToken) end
 
 ---@return NameOverrideEntry nameEntries
 function C_Commentator.GetAllPlayerOverrideNames() end
@@ -58,6 +84,9 @@ function C_Commentator.GetCameraCollision() end
 
 ---@return number, number, number xPos, yPos, zPos
 function C_Commentator.GetCameraPosition() end
+
+---@return CommentatorHistory history
+function C_Commentator.GetCommentatorHistory() end
 
 ---@return number|nil mapID
 function C_Commentator.GetCurrentMapID() end
@@ -127,17 +156,32 @@ function C_Commentator.GetNumMaps() end
 ---@return number numPlayers
 function C_Commentator.GetNumPlayers(factionIndex) end
 
+---@param teamName1 string 
+---@param teamName2 string 
+---@return CommentatorSeries data
+function C_Commentator.GetOrCreateSeries(teamName1, teamName2) end
+
 ---@param teamIndex number 
 ---@param playerIndex number 
 ---@param spellID number 
 ---@return number, number, boolean startTime, duration, enable
 function C_Commentator.GetPlayerAuraInfo(teamIndex, playerIndex, spellID) end
 
+---@param token string 
+---@param spellID number 
+---@return number, number, boolean startTime, duration, enable
+function C_Commentator.GetPlayerAuraInfoByUnit(token, spellID) end
+
 ---@param teamIndex number 
 ---@param playerIndex number 
 ---@param spellID number 
 ---@return number, number, boolean startTime, duration, enable
 function C_Commentator.GetPlayerCooldownInfo(teamIndex, playerIndex, spellID) end
+
+---@param unitToken string 
+---@param spellID number 
+---@return number, number, boolean startTime, duration, enable
+function C_Commentator.GetPlayerCooldownInfoByUnit(unitToken, spellID) end
 
 ---@param teamIndex number 
 ---@param playerIndex number 
@@ -150,13 +194,17 @@ function C_Commentator.GetPlayerCrowdControlInfoByUnit(token) end
 
 ---@param teamIndex number 
 ---@param playerIndex number 
----@return boolean hasFlag
-function C_Commentator.GetPlayerFlagInfo(teamIndex, playerIndex) end
+---@return CommentatorPlayerData|nil info
+function C_Commentator.GetPlayerData(teamIndex, playerIndex) end
 
 ---@param teamIndex number 
 ---@param playerIndex number 
----@return string, string, number, number, number, number, number, number, number, number unitToken, name, faction, specialization, damageDone, damageTaken, healingDone, healingTaken, kills, deaths
-function C_Commentator.GetPlayerInfo(teamIndex, playerIndex) end
+---@return boolean hasFlag
+function C_Commentator.GetPlayerFlagInfo(teamIndex, playerIndex) end
+
+---@param unitToken string 
+---@return boolean hasFlag
+function C_Commentator.GetPlayerFlagInfoByUnit(unitToken) end
 
 ---@param originalName string 
 ---@return string overrideName
@@ -167,6 +215,11 @@ function C_Commentator.GetPlayerOverrideName(originalName) end
 ---@param spellID number 
 ---@return number, number, number, number charges, maxCharges, startTime, duration
 function C_Commentator.GetPlayerSpellCharges(teamIndex, playerIndex, spellID) end
+
+---@param unitToken string 
+---@param spellID number 
+---@return number, number, number, number charges, maxCharges, startTime, duration
+function C_Commentator.GetPlayerSpellChargesByUnit(unitToken, spellID) end
 
 ---@return number amount
 function C_Commentator.GetPositionLerpAmount() end
@@ -185,8 +238,12 @@ function C_Commentator.GetSpeedFactor() end
 function C_Commentator.GetStartLocation(mapID) end
 
 ---@param teamIndex number 
----@return number, number, number, number highlightColorR, highlightColorG, highlightColorB, highlightColorA
-function C_Commentator.GetTeamHighlightColor(teamIndex) end
+---@return table color
+function C_Commentator.GetTeamColor(teamIndex) end
+
+---@param unitToken string 
+---@return table color
+function C_Commentator.GetTeamColorByUnit(unitToken) end
 
 ---@return number|nil timeLeft
 function C_Commentator.GetTimeLeftInMatch() end
@@ -200,6 +257,15 @@ function C_Commentator.GetTrackedSpellID(indirectSpellID) end
 ---@param category TrackedSpellCategory 
 ---@return number|nil spells
 function C_Commentator.GetTrackedSpells(teamIndex, playerIndex, category) end
+
+---@param unitToken string 
+---@param category TrackedSpellCategory 
+---@return number|nil spells
+function C_Commentator.GetTrackedSpellsByUnit(unitToken, category) end
+
+---@param unitToken string 
+---@return CommentatorUnitData data
+function C_Commentator.GetUnitData(unitToken) end
 
 ---@param listID number 
 ---@return string, number, number, boolean name, minPlayers, maxPlayers, isArena
@@ -230,6 +296,12 @@ function C_Commentator.IsTrackedOffensiveAura(spellID) end
 ---@return boolean isTracked
 function C_Commentator.IsTrackedSpell(teamIndex, playerIndex, spellID, category) end
 
+---@param unitToken string 
+---@param spellID number 
+---@param category TrackedSpellCategory 
+---@return boolean isTracked
+function C_Commentator.IsTrackedSpellByUnit(unitToken, spellID, category) end
+
 ---@return boolean isUsingSmartCamera
 function C_Commentator.IsUsingSmartCamera() end
 
@@ -250,6 +322,12 @@ function C_Commentator.RequestPlayerCooldownInfo(teamIndex, playerIndex) end
 
 function C_Commentator.ResetFoVTarget() end
 
+---@param teamName1 string 
+---@param teamName2 string 
+function C_Commentator.ResetSeriesScores(teamName1, teamName2) end
+
+function C_Commentator.ResetSettings() end
+
 function C_Commentator.ResetTrackedAuras() end
 
 ---@param teamIndex number 
@@ -257,9 +335,9 @@ function C_Commentator.ResetTrackedAuras() end
 ---@param weight number 
 function C_Commentator.SetAdditionalCameraWeight(teamIndex, playerIndex, weight) end
 
----@param token string 
+---@param unitToken string 
 ---@param weight number 
-function C_Commentator.SetAdditionalCameraWeightByToken(token, weight) end
+function C_Commentator.SetAdditionalCameraWeightByToken(unitToken, weight) end
 
 ---@param spellIDs number 
 function C_Commentator.SetBlacklistedAuras(spellIDs) end
@@ -288,6 +366,9 @@ function C_Commentator.SetCameraPosition(xPos, yPos, zPos, snapToLocation) end
 
 ---@param enableCheats boolean 
 function C_Commentator.SetCheatsEnabled(enableCheats) end
+
+---@param history CommentatorHistory 
+function C_Commentator.SetCommentatorHistory(history) end
 
 ---@param distance number 
 function C_Commentator.SetDistanceBeforeForcedHorizontalConvergence(distance) end
@@ -348,6 +429,18 @@ function C_Commentator.SetRequestedDefensiveCooldowns(specID, spellIDs) end
 ---@param spellIDs number 
 function C_Commentator.SetRequestedOffensiveCooldowns(specID, spellIDs) end
 
+---@param teamName1 string 
+---@param teamName2 string 
+---@param scoringTeamName string 
+---@param score number 
+function C_Commentator.SetSeriesScore(teamName1, teamName2, scoringTeamName, score) end
+
+---@param teamName1 string 
+---@param teamName2 string 
+---@param score1 number 
+---@param score2 number 
+function C_Commentator.SetSeriesScores(teamName1, teamName2, score1, score2) end
+
 ---@param locked boolean 
 function C_Commentator.SetSmartCameraLocked(locked) end
 
@@ -395,6 +488,55 @@ TrackedSpellCategory.Offensive = 0
 TrackedSpellCategory.Defensive = 1
 TrackedSpellCategory.Debuff = 2
 TrackedSpellCategory.Count = 3
+
+---@class CommentatorHistory
+---@field series table 
+---@field teamDirectory table 
+---@field overrideNameDirectory table 
+local CommentatorHistory = {}
+
+---@class CommentatorOverrideNameEntry
+---@field originalName string 
+---@field newName string 
+local CommentatorOverrideNameEntry = {}
+
+---@class CommentatorPlayerData
+---@field unitToken string 
+---@field name string 
+---@field faction number 
+---@field specialization number 
+---@field damageDone number 
+---@field damageTaken number 
+---@field healingDone number 
+---@field healingTaken number 
+---@field kills number 
+---@field deaths number 
+local CommentatorPlayerData = {}
+
+---@class CommentatorSeries
+---@field teams table 
+local CommentatorSeries = {}
+
+---@class CommentatorSeriesTeam
+---@field name string 
+---@field score number 
+local CommentatorSeriesTeam = {}
+
+---@class CommentatorTeamDirectoryEntry
+---@field playerName string 
+---@field teamName string 
+local CommentatorTeamDirectoryEntry = {}
+
+---@class CommentatorUnitData
+---@field healthMax number 
+---@field health number 
+---@field absorbTotal number 
+---@field isDeadOrGhost bool 
+---@field isFeignDeath bool 
+---@field powerTypeToken string 
+---@field power number 
+---@field powerMax number 
+local CommentatorUnitData = {}
 
 ---@class NameOverrideEntry
 ---@field originalName string 

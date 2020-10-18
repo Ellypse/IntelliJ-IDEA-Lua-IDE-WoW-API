@@ -7,6 +7,9 @@ function C_PvP.CanDisplayDeaths() end
 ---@return boolean canDisplay
 function C_PvP.CanDisplayHonorableKills() end
 
+---@return boolean, string canUse, failureReason
+function C_PvP.CanPlayerUseRatedPVPUI() end
+
 ---@param toggle boolean 
 ---@return boolean canTogglePvP
 function C_PvP.CanToggleWarMode(toggle) end
@@ -26,7 +29,7 @@ function C_PvP.GetActiveMatchBracket() end
 ---@return number seconds
 function C_PvP.GetActiveMatchDuration() end
 
----@return PvpMatchState state
+---@return PvPMatchState state
 function C_PvP.GetActiveMatchState() end
 
 ---@return number winner
@@ -47,6 +50,15 @@ function C_PvP.GetArenaSkirmishRewards() end
 ---@return PvpBrawlInfo|nil brawlInfo
 function C_PvP.GetAvailableBrawlInfo() end
 
+---@param vehicleIndex number 
+---@param uiMapID number 
+---@return BattlefieldVehicleInfo info
+function C_PvP.GetBattlefieldVehicleInfo(vehicleIndex, uiMapID) end
+
+---@param uiMapID number 
+---@return BattlefieldVehicleInfo vehicles
+function C_PvP.GetBattlefieldVehicles(uiMapID) end
+
 ---@param brawlType BrawlType 
 ---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil, boolean honor, experience, itemRewards, currencyRewards, hasWon
 function C_PvP.GetBrawlRewards(brawlType) end
@@ -58,6 +70,10 @@ function C_PvP.GetGlobalPvpScalingInfoForSpecID(specializationID) end
 ---@param honorLevel number 
 ---@return HonorRewardInfo|nil info
 function C_PvP.GetHonorRewardInfo(honorLevel) end
+
+---@param level number 
+---@return LevelUpBattlegroundInfo battlefields
+function C_PvP.GetLevelUpBattlegrounds(level) end
 
 ---@param pvpStatID number 
 ---@return MatchPVPStatColumn|nil info
@@ -82,6 +98,11 @@ function C_PvP.GetPostMatchCurrencyRewards() end
 
 ---@return PVPPostMatchItemReward rewards
 function C_PvP.GetPostMatchItemRewards() end
+
+---@param tierEnum number 
+---@param bracketEnum number 
+---@return number|nil id
+function C_PvP.GetPvpTierID(tierEnum, bracketEnum) end
 
 ---@param tierID number 
 ---@return PvpTierInfo|nil pvpTierInfo
@@ -205,11 +226,11 @@ BrawlType.Battleground = 1
 BrawlType.Arena = 2
 BrawlType.Lfg = 3
 
----@class PvpMatchState
-local PvpMatchState = {}
-PvpMatchState.Inactive = 0
-PvpMatchState.Active = 1
-PvpMatchState.Complete = 2
+---@class PvPMatchState
+local PvPMatchState = {}
+PvPMatchState.Inactive = 0
+PvPMatchState.Active = 1
+PvPMatchState.Complete = 2
 
 ---@class BattlefieldCurrencyReward
 ---@field id number 
@@ -222,6 +243,20 @@ local BattlefieldCurrencyReward = {}
 ---@field texture number 
 ---@field quantity number 
 local BattlefieldItemReward = {}
+
+---@class BattlefieldVehicleInfo
+---@field x number 
+---@field y number 
+---@field name string 
+---@field isOccupied bool 
+---@field atlas string 
+---@field textureWidth number 
+---@field textureHeight number 
+---@field facing number 
+---@field isPlayer bool 
+---@field isAlive bool 
+---@field shouldDrawBelowPlayerBlips bool 
+local BattlefieldVehicleInfo = {}
 
 ---@class BattlemasterListInfo
 ---@field name string 
@@ -238,6 +273,13 @@ local BattlemasterListInfo = {}
 ---@field badgeFileDataID number 
 ---@field achievementRewardedID number 
 local HonorRewardInfo = {}
+
+---@class LevelUpBattlegroundInfo
+---@field id number 
+---@field icon number 
+---@field name string 
+---@field isEpic bool 
+local LevelUpBattlegroundInfo = {}
 
 ---@class MatchPVPStatColumn
 ---@field pvpStatID number 
@@ -256,23 +298,6 @@ local MatchPVPStatColumn = {}
 ---@field brawlType BrawlType 
 ---@field mapNames table 
 local PvpBrawlInfo = {}
-
----@class PvpScalingData
----@field scalingDataID number 
----@field specializationID number 
----@field name string 
----@field value number 
-local PvpScalingData = {}
-
----@class PvpTierInfo
----@field name string 
----@field descendRating number 
----@field ascendRating number 
----@field descendTier number 
----@field ascendTier number 
----@field pvpTierEnum number 
----@field tierIconID number 
-local PvpTierInfo = {}
 
 ---@class PVPPersonalRatedInfo
 ---@field personalRating number 
@@ -301,6 +326,13 @@ local PVPPostMatchCurrencyReward = {}
 ---@field sex number 
 ---@field isUpgraded bool 
 local PVPPostMatchItemReward = {}
+
+---@class PvpScalingData
+---@field scalingDataID number 
+---@field specializationID number 
+---@field name string 
+---@field value number 
+local PvpScalingData = {}
 
 ---@class PVPScoreInfo
 ---@field name string 
@@ -340,6 +372,16 @@ local PVPStatInfo = {}
 ---@field ratingNew number 
 ---@field ratingMMR number 
 local PVPTeamInfo = {}
+
+---@class PvpTierInfo
+---@field name string 
+---@field descendRating number 
+---@field ascendRating number 
+---@field descendTier number 
+---@field ascendTier number 
+---@field pvpTierEnum number 
+---@field tierIconID number 
+local PvpTierInfo = {}
 
 ---@class RandomBGInfo
 ---@field canQueue bool 
