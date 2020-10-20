@@ -33,7 +33,7 @@ FlightPathState.Unreachable = 2
 ---@field name string 
 ---@field atlasName string 
 ---@field faction FlightPathFaction 
----@field textureKitPrefix string|nil 
+---@field textureKit string 
 local MapTaxiNodeInfo = {}
 
 ---@class TaxiNodeInfo
@@ -42,6 +42,6 @@ local MapTaxiNodeInfo = {}
 ---@field name string 
 ---@field state FlightPathState 
 ---@field slotIndex number 
----@field textureKitPrefix string|nil 
+---@field textureKit string 
 local TaxiNodeInfo = {}
 

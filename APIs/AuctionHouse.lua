@@ -86,6 +86,10 @@ function C_AuctionHouse.GetItemKeyFromItem(item) end
 function C_AuctionHouse.GetItemKeyInfo(itemKey, restrictQualityToFilter) end
 
 ---@param itemKey ItemKey 
+---@return number requiredLevel
+function C_AuctionHouse.GetItemKeyRequiredLevel(itemKey) end
+
+---@param itemKey ItemKey 
 ---@param itemSearchResultIndex number 
 ---@return ItemSearchResultInfo|nil result
 function C_AuctionHouse.GetItemSearchResultInfo(itemKey, itemSearchResultIndex) end
@@ -208,10 +212,8 @@ function C_AuctionHouse.IsFavoriteItem(itemKey) end
 ---@return boolean valid
 function C_AuctionHouse.IsSellItemValid(item, displayError) end
 
---- This function is not used in the base UI but is included for AddOn ease-of-use.
----@param specificSearch boolean 
 ---@return boolean canSendThrottledMessage
-function C_AuctionHouse.IsThrottledMessageSystemReady(specificSearch) end
+function C_AuctionHouse.IsThrottledMessageSystemReady() end
 
 ---@param itemID number 
 ---@param itemLevel number 
@@ -264,6 +266,10 @@ function C_AuctionHouse.RequestMoreCommoditySearchResults(itemID) end
 ---@param itemKey ItemKey 
 ---@return boolean hasFullResults
 function C_AuctionHouse.RequestMoreItemSearchResults(itemKey) end
+
+---@param auctionID number 
+---@return string|nil bidderName
+function C_AuctionHouse.RequestOwnedAuctionBidderInfo(auctionID) end
 
 ---@param sorts AuctionHouseSortType 
 function C_AuctionHouse.SearchForFavorites(sorts) end
@@ -342,6 +348,7 @@ local AuctionHouseSortType = {}
 ---@field itemKey ItemKey 
 ---@field itemLink string|nil 
 ---@field timeLeft AuctionHouseTimeLeftBand 
+---@field minBid number|nil 
 ---@field bidAmount number|nil 
 ---@field buyoutAmount number|nil 
 ---@field bidder string|nil 

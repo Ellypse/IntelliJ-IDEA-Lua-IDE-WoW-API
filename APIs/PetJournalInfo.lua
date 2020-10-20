@@ -35,4 +35,5 @@ PetJournalError.JournalIsLocked = 2
 PetJournalError.InvalidFaction = 3
 PetJournalError.NoFavoritesToSummon = 4
 PetJournalError.NoValidRandomSummon = 5
+PetJournalError.InvalidCovenant = 6
 

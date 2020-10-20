@@ -1,8 +1,14 @@
----@class ZoneAbilityType
-local ZoneAbilityType = {}
-ZoneAbilityType.Garrison = 0
-ZoneAbilityType.OrderHall = 1
-ZoneAbilityType.Argus = 2
-ZoneAbilityType.WarEffort = 3
-ZoneAbilityType.Visions = 4
+---@class ZoneAbility
+C_ZoneAbility = {}
+
+---@return ZoneAbilityInfo zoneAbilities
+function C_ZoneAbility.GetActiveAbilities() end
+
+---@class ZoneAbilityInfo
+---@field zoneAbilityID number 
+---@field uiPriority number 
+---@field spellID number 
+---@field textureKit string 
+---@field tutorialText string|nil 
+local ZoneAbilityInfo = {}
 

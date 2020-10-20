@@ -5,6 +5,10 @@ C_ReportSystem = {}
 ---@return boolean canReport
 function C_ReportSystem.CanReportPlayer(playerLocation) end
 
+---@param playerLocation table 
+---@return boolean canReport
+function C_ReportSystem.CanReportPlayerForLanguage(playerLocation) end
+
 --- Not allowed to be called by addons
 ---@param complaintType string 
 ---@param playerLocation table @ [OPTIONAL]
@@ -20,6 +24,8 @@ function C_ReportSystem.InitiateReportPlayer(complaintType, playerLocation) end
 function C_ReportSystem.OpenReportPlayerDialog(reportType, playerName, playerLocation) end
 
 function C_ReportSystem.ReportServerLag() end
+
+function C_ReportSystem.ReportStuckInCombat() end
 
 --- Not allowed to be called by addons
 ---@param token number 

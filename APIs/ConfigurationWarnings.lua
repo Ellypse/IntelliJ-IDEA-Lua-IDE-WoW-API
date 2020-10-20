@@ -20,10 +20,10 @@ function C_ConfigurationWarnings.SetConfigurationWarningSeen(configurationWarnin
 local ConfigurationWarning = {}
 ConfigurationWarning.ShaderModelWillBeOutdated = 0
 ConfigurationWarning.ShaderModelIsOutdated = 1
-ConfigurationWarning.ConsoleDeviceSseoUtdated = 2
+ConfigurationWarning.ConsoleDeviceSseOutdated = 2
 ConfigurationWarning.DriverBlacklisted = 3
 ConfigurationWarning.DriverOutOfDate = 4
 ConfigurationWarning.DeviceBlacklisted = 5
-ConfigurationWarning.GraphicsApiwIllBeOutdated = 6
+ConfigurationWarning.GraphicsApiWillBeOutdated = 6
 ConfigurationWarning.OsBitsWillBeOutdated = 7
 
