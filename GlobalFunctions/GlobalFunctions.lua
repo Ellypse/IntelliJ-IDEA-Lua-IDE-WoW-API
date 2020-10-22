@@ -17,7 +17,7 @@ end
 --- Confirms entry into a Battleground you are queued for that is ready.
 --- [https://wow.gamepedia.com/API_AcceptBattlefieldPort]
 --- @param index number @ The battlefield in queue to enter.
---- @param accept boolean @ ean - Whether or not to accept entry to the battlefield.
+--- @param accept boolean @ Whether or not to accept entry to the battlefield.
 --- @return void
 function AcceptBattlefieldPort(index, accept)
 end
@@ -291,7 +291,7 @@ end
 --- Returns information about the specified friend of a RealID friend
 --- [https://wow.gamepedia.com/API_BNGetFOFInfo]
 --- @param presenceID number @ The presenceID for the RealID friend for whom you are requesting friend info.
---- @param mutual boolean @ ean - Should the list include mutual friends (I.e. people who you and the person referenced by presenceID are both friends with).
+--- @param mutual boolean @ Should the list include mutual friends (I.e. people who you and the person referenced by presenceID are both friends with).
 --- @param non_mutual unknown
 --- @param index number @ The index of the entry in the list to retrieve (1 to BNGetNumFOF(...))
 --- @return number, string, string, boolean @ presenceID, givenName, surname, isFriend
@@ -423,7 +423,7 @@ end
 
 --- Set or unset afk status
 --- [https://wow.gamepedia.com/API_BNSetAFK]
---- @param bool boolean @ ean - true set your battle.net status to afk and false unset it.
+--- @param bool boolean @ true set your battle.net status to afk and false unset it.
 --- @return void
 function BNSetAFK(bool)
 end
@@ -442,7 +442,7 @@ end
 
 --- Set or unset DND status
 --- [https://wow.gamepedia.com/API_BNSetDND]
---- @param bool boolean @ ean - true set your battle.net status to dnd and false unset it.
+--- @param bool boolean @ true set your battle.net status to dnd and false unset it.
 --- @return void
 function BNSetDND(bool)
 end
@@ -450,7 +450,7 @@ end
 --- Sets a battle.net friend as favorite.
 --- [https://wow.gamepedia.com/API_BNSetFriendFavoriteFlag]
 --- @param id number @ account Id
---- @param isFavorite boolean @ ean
+--- @param isFavorite boolean @
 --- @return void
 function BNSetFriendFavoriteFlag(id, isFavorite)
 end
@@ -1240,7 +1240,7 @@ end
 --- Places or picks up an item from the send mail frame.  Can also clear an item rather than picking it up.
 --- [https://wow.gamepedia.com/API_ClickSendMailItemButton]
 --- @param itemIndex number @ The index of the item (1-ATTACHMENTS_MAX_SEND(12))
---- @param clearItem boolean @ ean - Clear the item already in this slot. (Done by right clicking an item)
+--- @param clearItem boolean @ Clear the item already in this slot. (Done by right clicking an item)
 --- @return void
 function ClickSendMailItemButton(itemIndex, clearItem)
 end
@@ -1263,7 +1263,7 @@ end
 --- Clicks the specified Void Storage slot [1]
 --- [https://wow.gamepedia.com/API_ClickVoidStorageSlot]
 --- @param slotIndex number @ Index ranging from 1 to 80 (VOID_STORAGE_MAX)
---- @param isRightClick boolean @ ean - Whether the button was right-clicked
+--- @param isRightClick boolean @ Whether the button was right-clicked
 --- @return void
 function ClickVoidStorageSlot(slotIndex, isRightClick)
 end
@@ -1271,7 +1271,7 @@ end
 --- Clicks the specified Void Transfer deposit slot [1]
 --- [https://wow.gamepedia.com/API_ClickVoidTransferDepositSlot]
 --- @param slotIndex number @ Index ranging from 1 to 9 (VOID_DEPOSIT_MAX). Defaults to 1 if not a valid Index
---- @param isRightClick boolean @ ean - Whether the button was right-clicked
+--- @param isRightClick boolean @ Whether the button was right-clicked
 --- @return void
 function ClickVoidTransferDepositSlot(slotIndex, isRightClick)
 end
@@ -1279,7 +1279,7 @@ end
 --- Clicks the specified Void Transfer withdrawal slot [1]
 --- [https://wow.gamepedia.com/API_ClickVoidTransferWithdrawalSlot]
 --- @param slotIndex number @ Index ranging from 1 to 9 (VOID_WITHDRAW_MAX)
---- @param isRightClick boolean @ ean - Whether the button was right-clicked
+--- @param isRightClick boolean @ Whether the button was right-clicked
 --- @return void
 function ClickVoidTransferWithdrawalSlot(slotIndex, isRightClick)
 end
@@ -1533,9 +1533,9 @@ end
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_ConfirmBNRequestInviteFriend]
 --- @param presenceID number
---- @param tank boolean @ ean (optional)
+--- @param tank boolean @ (optional)
 --- @param heal unknown
---- @param dps boolean @ ean (optional)
+--- @param dps boolean @ (optional)
 --- @return void
 function ConfirmBNRequestInviteFriend(presenceID, tank, heal, dps)
 end
@@ -1640,7 +1640,7 @@ end
 --- @param name string @ The name of the macro to be displayed in the UI. The current UI imposes a 16-character limit.
 --- @param iconFileID number @ |string - A FileID or string identifying the icon texture to use
 --- @param body string @ optional) - The macro commands to be executed. If this string is longer than 255 characters, only the first 255 will be saved.
---- @param perCharacter boolean @ ean (optional) - true to create a per-character macro, nil to create a general macro available to all characters.
+--- @param perCharacter boolean @ (optional) - true to create a per-character macro, nil to create a general macro available to all characters.
 --- @return number @ macroId
 function CreateMacro(name, iconFileID, body, perCharacter)
 end
@@ -1958,7 +1958,7 @@ end
 --- Returns instance info for the Encounter Journal.
 --- [https://wow.gamepedia.com/API_EJ_GetInstanceByIndex]
 --- @param index number
---- @param isRaid boolean @ ean - whether to return raid or normal instances.
+--- @param isRaid boolean @ whether to return raid or normal instances.
 --- @return unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown @ instanceID, name, description, bgImage, buttonImage1, loreImage, buttonImage2, dungeonAreaMapID, link, shouldDisplayDifficulty
 function EJ_GetInstanceByIndex(index, isRaid)
 end
@@ -1994,7 +1994,7 @@ end
 --- [https://wow.gamepedia.com/API_EJ_GetMapEncounter]
 --- @param mapID unknown
 --- @param index number @ index of the boss pins.
---- @param fromJournal boolean @ ean (optional) - this function seems to only return results when passing true.
+--- @param fromJournal boolean @ (optional) - this function seems to only return results when passing true.
 --- @return number, number, number, string, string, number, number, string @ x, y, instanceID, name, description, encounterID, rootSectionID, link
 function EJ_GetMapEncounter(mapID, index, fromJournal)
 end
@@ -2262,7 +2262,7 @@ end
 --- Fills a table with localized class names, callable with localization-independent class IDs.
 --- [https://wow.gamepedia.com/API_FillLocalizedClassList]
 --- @param classTable table @ The table you want to be filled with the data (does not have to be an empty table).
---- @param isFemale boolean @ ean - If true the table will be filled with female class names.
+--- @param isFemale boolean @ If true the table will be filled with female class names.
 --- @return void
 function FillLocalizedClassList(classTable, isFemale)
 end
@@ -2462,7 +2462,7 @@ end
 --- [https://wow.gamepedia.com/API_GetAchievementCriteriaInfo]
 --- @param achievementID number
 --- @param criteriaIndex number @ Index of the criteria to query, ascending from 1 up to GetAchievementNumCriteria(achievementID).
---- @param countHidden boolean @ ean
+--- @param countHidden boolean @
 --- @return void
 function GetAchievementCriteriaInfo(achievementID, criteriaIndex, countHidden)
 end
@@ -2612,7 +2612,7 @@ end
 
 --- Returns the index of the current active specialization/talent/glyph group.
 --- [https://wow.gamepedia.com/API_GetActiveSpecGroup]
---- @param isInspect boolean @ ean - If true returns the information for the inspected unit instead of the player. Defaults to false.
+--- @param isInspect boolean @ If true returns the information for the inspected unit instead of the player. Defaults to false.
 --- @return number @ activeSpec
 function GetActiveSpecGroup(isInspect)
 end
@@ -2786,14 +2786,14 @@ end
 
 --- Two functions return lists of the available locales:
 --- [https://wow.gamepedia.com/API_GetAvailableLocaleInfo]
---- @param ignoreLocalRestrictions boolean @ ean - Returns the complete list, not only those locales which the game client might use in the current region (NA, Europe, etc.)
+--- @param ignoreLocalRestrictions boolean @ Returns the complete list, not only those locales which the game client might use in the current region (NA, Europe, etc.)
 --- @return unknown @ infoTable
 function GetAvailableLocaleInfo(ignoreLocalRestrictions)
 end
 
 --- Two functions return lists of the available locales:
 --- [https://wow.gamepedia.com/API_GetAvailableLocales]
---- @param ignoreLocalRestrictions boolean @ ean - Returns the complete list, not only those locales which the game client might use in the current region (NA, Europe, etc.)
+--- @param ignoreLocalRestrictions boolean @ Returns the complete list, not only those locales which the game client might use in the current region (NA, Europe, etc.)
 --- @return unknown, unknown, unknown, unknown @ aaAA, bbBB, ccCC, ...
 function GetAvailableLocales(ignoreLocalRestrictions)
 end
@@ -3006,7 +3006,7 @@ end
 --- Returns the name of the action performed by the specified binding.
 --- [https://wow.gamepedia.com/API_GetBindingAction]
 --- @param binding string @ The name of the key (eg. BUTTON1, 1, CTRL-G)
---- @param checkOverride boolean @ ean (optional) - if true, override bindings will be checked, otherwise, only default (bindings.xml/SetBinding) bindings are consulted.
+--- @param checkOverride boolean @ (optional) - if true, override bindings will be checked, otherwise, only default (bindings.xml/SetBinding) bindings are consulted.
 --- @return string @ action
 function GetBindingAction(binding, checkOverride)
 end
@@ -3028,7 +3028,7 @@ end
 --- [https://wow.gamepedia.com/API_GetBindingText]
 --- @param key string @ The name of the key (e.g. UP, SHIFT-PAGEDOWN)
 --- @param prefix string @ The prefix of the variable name you're looking for.  Usually KEY_ or BINDING_NAME_.
---- @param abbreviate boolean @ ean (optional) - Whether to return an abbreviated version of the modifier keys
+--- @param abbreviate boolean @ (optional) - Whether to return an abbreviated version of the modifier keys
 --- @return unknown @ text
 function GetBindingText(key, prefix, abbreviate)
 end
@@ -3111,7 +3111,7 @@ end
 --- Returns the total, completed and incompleted number of achievements in a specific category.
 --- [https://wow.gamepedia.com/API_GetCategoryNumAchievements]
 --- @param categoryId number @ Achievement category ID, as returned by GetCategoryList.
---- @param includeAll boolean @ ean - If true-equivalent, include all achievements, otherwise, only includes those currently visible
+--- @param includeAll boolean @ If true-equivalent, include all achievements, otherwise, only includes those currently visible
 --- @return number, number, number @ total, completed, incompleted
 function GetCategoryNumAchievements(categoryId, includeAll)
 end
@@ -3740,7 +3740,7 @@ end
 --- Returns the total time used by and number of calls of a frame's event handlers.
 --- [https://wow.gamepedia.com/API_GetFrameCPUUsage]
 --- @param frame Frame @ Specifies the frame.
---- @param includeChildren boolean @ ean - If false, only event handlers of the specified frame are considered. If true or omitted, the values returned will include the handlers for all of the frame's children as well.
+--- @param includeChildren boolean @ If false, only event handlers of the specified frame are considered. If true or omitted, the values returned will include the handlers for all of the frame's children as well.
 --- @return number, number @ time, count
 function GetFrameCPUUsage(frame, includeChildren)
 end
@@ -4332,8 +4332,8 @@ end
 --- Returns count information for the item.
 --- [https://wow.gamepedia.com/API_GetItemCount]
 --- @param itemID_or_itemName_or_itemLink unknown
---- @param includeBank boolean @ ean - true: count includes bank items
---- @param includeCharges boolean @ ean - true: count is charges if any, otherwise number of items
+--- @param includeBank boolean @ true: count includes bank items
+--- @param includeCharges boolean @ true: count is charges if any, otherwise number of items
 --- @return number @ count
 function GetItemCount(itemID_or_itemName_or_itemLink, includeBank, includeCharges)
 end
@@ -4761,7 +4761,7 @@ end
 --- Returns a list of dungeon/raid IDs that are advertised as available at a given level.
 --- [https://wow.gamepedia.com/API_GetLevelUpInstances]
 --- @param level number @ level at which to list newly-available instances.
---- @param isRaid boolean @ ean - true to list raid instances, false to list dungeons.
+--- @param isRaid boolean @ true to list raid instances, false to list dungeons.
 --- @return unknown, unknown, unknown @ id1, id2, ...
 function GetLevelUpInstances(level, isRaid)
 end
@@ -5668,15 +5668,15 @@ end
 
 --- Returns the number of specialization group (dual specs) the player has.
 --- [https://wow.gamepedia.com/API_GetNumSpecGroups]
---- @param b boolean @ ean - In theory this returns information for the inspected target instead of the player. In practice, this seems to return 0 if true. Defaults to false.
+--- @param b boolean @ In theory this returns information for the inspected target instead of the player. In practice, this seems to return 0 if true. Defaults to false.
 --- @return number @ numSpecGroups
 function GetNumSpecGroups(b)
 end
 
 --- Returns the number of available specializations.
 --- [https://wow.gamepedia.com/API_GetNumSpecializations]
---- @param isInspect boolean @ ean - if true, return information for the inspected unit; false by default
---- @param isPet boolean @ ean - if true, return information for the player's pet; false by default
+--- @param isInspect boolean @ if true, return information for the inspected unit; false by default
+--- @param isPet boolean @ if true, return information for the player's pet; false by default
 --- @return unknown @ numSpecializations
 function GetNumSpecializations(isInspect, isPet)
 end
@@ -5866,7 +5866,7 @@ end
 --- [https://wow.gamepedia.com/API_GetPartyAssignment]
 --- @param assignment string @ The role to search, either MAINTANK or MAINASSIST (not case-sensitive).
 --- @param raidmember string @ UnitId
---- @param exactMatch boolean @ ean
+--- @param exactMatch boolean @
 --- @return number, number @ raidIndex1, raidIndex2
 function GetPartyAssignment(assignment, raidmember, exactMatch)
 end
@@ -6086,7 +6086,7 @@ end
 --- [https://wow.gamepedia.com/API_GetPvpTalentInfoByID]
 --- @param talentID number @ Talent ID.
 --- @param specGroupIndex number @ ? - Index of active specialization group (GetActiveSpecGroup); if nil, the selected/available return values will always be false.
---- @param isInspect boolean @ ean? - If non-nil, returns information based on inspectedUnit.
+--- @param isInspect boolean @? - If non-nil, returns information based on inspectedUnit.
 --- @param inspectUnit unknown
 --- @return number, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown @ talentID, name, icon, selected, available, spellID, unlocked, row, column, known, grantedByAura
 function GetPvpTalentInfoByID(talentID, specGroupIndex, isInspect, inspectUnit)
@@ -6805,7 +6805,7 @@ end
 
 --- For some classes the return value is nil during the loading process. You need to wait until UPDATE_SHAPESHIFT_FORMS fires to get correct return values.
 --- [https://wow.gamepedia.com/API_GetShapeshiftForm]
---- @param flag boolean @ ean (Optional) - True if return value is to be compared to a macro's conditional statement. This makes it always return zero for Presences and Auras. False or nil returns an index based on which button to highlight on the shapeshift/stance bar left to right starting at 1.
+--- @param flag boolean @ (Optional) - True if return value is to be compared to a macro's conditional statement. This makes it always return zero for Presences and Auras. False or nil returns an index based on which button to highlight on the shapeshift/stance bar left to right starting at 1.
 --- @return number @ index
 function GetShapeshiftForm(flag)
 end
@@ -6878,8 +6878,8 @@ end
 
 --- Returns the index of the player's current specialization.
 --- [https://wow.gamepedia.com/API_GetSpecialization]
---- @param isInspect boolean @ ean - if true, return information for the inspected player
---- @param isPet boolean @ ean - if true, return information for the player's pet.
+--- @param isInspect boolean @ if true, return information for the inspected player
+--- @param isPet boolean @ if true, return information for the player's pet.
 --- @param specGroup number @ The index of a given specialization/talent/glyph group (1 for primary / 2 for secondary).
 --- @return number @ currentSpec
 function GetSpecialization(isInspect, isPet, specGroup)
@@ -6919,8 +6919,8 @@ end
 --- Returns the mastery spellID of the current player's specializiation.
 --- [https://wow.gamepedia.com/API_GetSpecializationMasterySpells]
 --- @param specIndex number @ The index of the specialization to query (1, 2, 3, 4) (Druids have four specializations)
---- @param isInspect boolean @ ean - (Optional) Reserved. Must be nil
---- @param isPet boolean @ ean - (Optional) Reserved. Must be nil
+--- @param isInspect boolean @ (Optional) Reserved. Must be nil
+--- @param isPet boolean @ (Optional) Reserved. Must be nil
 --- @return unknown @ spellID
 function GetSpecializationMasterySpells(specIndex, isInspect, isPet)
 end
@@ -7211,7 +7211,7 @@ end
 --- @param tier number @ Talent tier from 1 to MAX_TALENT_TIERS
 --- @param column number @ Talent column from 1 to NUM_TALENT_COLUMNS
 --- @param specGroupIndex number @ Index of active specialization group (GetActiveSpecGroup)
---- @param isInspect boolean @ ean? - If non-nil, returns information based on inspectedUnit/classId.
+--- @param isInspect boolean @? - If non-nil, returns information based on inspectedUnit/classId.
 --- @param inspectUnit unknown
 --- @return void
 function GetTalentInfo(tier, column, specGroupIndex, isInspect, inspectUnit)
@@ -7220,7 +7220,7 @@ end
 --- [https://wow.gamepedia.com/API_GetTalentInfoByID]
 --- @param talentID number @ Talent ID.
 --- @param specGroupIndex number @ Index of active specialization group (GetActiveSpecGroup)
---- @param isInspect boolean @ ean? - If non-nil, returns information based on inspectedUnit/classId.
+--- @param isInspect boolean @? - If non-nil, returns information based on inspectedUnit/classId.
 --- @param inspectUnit unknown
 --- @return void
 function GetTalentInfoByID(talentID, specGroupIndex, isInspect, inspectUnit)
@@ -7243,7 +7243,7 @@ end
 --- [https://wow.gamepedia.com/API_GetTalentTierInfo]
 --- @param tier number @ Talent tier from 1 to MAX_TALENT_TIERS
 --- @param specGroupIndex number @ Index of active specialization group (GetActiveSpecGroup)
---- @param isInspect boolean @ ean? - If non-nil, returns information based on inspectedUnit.
+--- @param isInspect boolean @? - If non-nil, returns information based on inspectedUnit.
 --- @param inspectedUnit string @ ? - Inspected unitId.
 --- @return unknown, unknown, unknown @ tierAvailable, selectedTalent, tierUnlockLevel
 function GetTalentTierInfo(tier, specGroupIndex, isInspect, inspectedUnit)
@@ -7803,7 +7803,7 @@ end
 --- Sets the current ranks property at index to enabled.
 --- [https://wow.gamepedia.com/API_GuildControlSetRankFlag]
 --- @param index number @ the flag index, between 1 and GuildControlGetNumRanks().
---- @param enabled boolean @ ean - whether the flag is enabled or disabled.
+--- @param enabled boolean @ whether the flag is enabled or disabled.
 --- @return void
 function GuildControlSetRankFlag(index, enabled)
 end
@@ -8389,7 +8389,7 @@ end
 
 --- Returns whether a spell is currently is being casted by the player or is placed in the queue to be casted next. If spell is current then action bar indicates its slot with highlighted frame.
 --- [https://wow.gamepedia.com/API_IsCurrentSpell]
---- @param spellID boolean @ ean - spell ID to query.
+--- @param spellID boolean @ spell ID to query.
 --- @return boolean @ isCurrent
 function IsCurrentSpell(spellID)
 end
@@ -9042,7 +9042,7 @@ end
 
 --- [https://wow.gamepedia.com/API_IsSpellKnown]
 --- @param spellID number @ the spell ID number
---- @param isPetSpell boolean @ ean (optional) - if true, will check if the currently active pet knows the spell; if false or omitted, will check if the player knows the spell
+--- @param isPetSpell boolean @ (optional) - if true, will check if the currently active pet knows the spell; if false or omitted, will check if the player knows the spell
 --- @return boolean @ isKnown
 function IsSpellKnown(spellID, isPetSpell)
 end
@@ -9312,8 +9312,8 @@ end
 --- Queues the player, or the player's group, for a battlefield instance.
 --- [https://wow.gamepedia.com/API_JoinBattlefield]
 --- @param index number @ Which battlefield instance to queue for (0 for first available), or which arena bracket to queue for.
---- @param asGroup boolean @ ean - If true-equivalent, the player's group is queued for the battlefield, otherwise, only the player is queued.
---- @param isRated boolean @ ean - If true-equivalent, and queueing for an arena bracket, the group is queued for a rated match as opposed to a skirmish.
+--- @param asGroup boolean @ If true-equivalent, the player's group is queued for the battlefield, otherwise, only the player is queued.
+--- @param isRated boolean @ If true-equivalent, and queueing for an arena bracket, the group is queued for a rated match as opposed to a skirmish.
 --- @return void
 function JoinBattlefield(index, asGroup, isRated)
 end
@@ -9323,7 +9323,7 @@ end
 --- @param channelName string @ The name of the channel to join
 --- @param password string @ optional) - The channel password, nil if none.
 --- @param frameID number @ optional) - The chat frame ID number to add the channel to. Use Frame:GetID() to retrieve it for chat frame objects.
---- @param hasVoice boolean @ ean (1/nil) - Enable voice chat for this channel.
+--- @param hasVoice boolean @ (1/nil) - Enable voice chat for this channel.
 --- @return number, string @ type, name
 function JoinChannelByName(channelName, password, frameID, hasVoice)
 end
@@ -9338,7 +9338,7 @@ end
 --- @param channelName string @ The name of the channel to join
 --- @param password string @ optional) - The channel password, nil if none.
 --- @param frameID number @ optional) - The chat frame ID number to add the channel to. Use Frame:GetID() to retrieve it for chat frame objects.
---- @param hasVoice boolean @ ean (1/nil) - Enable voice chat for this channel.
+--- @param hasVoice boolean @ (1/nil) - Enable voice chat for this channel.
 --- @return number, string @ type, name
 function JoinPermanentChannel(channelName, password, frameID, hasVoice)
 end
@@ -9356,7 +9356,7 @@ end
 --- Queue for a arena either solo or as a group.
 --- [https://wow.gamepedia.com/API_JoinSkirmish]
 --- @param arenaID number
---- @param joinAsGroup boolean @ ean - (optional)
+--- @param joinAsGroup boolean @ (optional)
 --- @return void
 function JoinSkirmish(arenaID, joinAsGroup)
 end
@@ -9366,7 +9366,7 @@ end
 --- @param channelName string @ The name of the channel to join
 --- @param password string @ optional) - The channel password, nil if none.
 --- @param frameID number @ optional) - The chat frame ID number to add the channel to. Use Frame:GetID() to retrieve it for chat frame objects.
---- @param hasVoice boolean @ ean (1/nil) - Enable voice chat for this channel.
+--- @param hasVoice boolean @ (1/nil) - Enable voice chat for this channel.
 --- @return number, string @ type, name
 function JoinTemporaryChannel(channelName, password, frameID, hasVoice)
 end
@@ -9516,7 +9516,7 @@ end
 
 --- Teleports the player to or from an LFG dungeon.
 --- [https://wow.gamepedia.com/API_LFGTeleport]
---- @param toSafety boolean @ ean - false to teleport to the dungeon, true to teleport to where you were before you were teleported to the dungeon.
+--- @param toSafety boolean @ false to teleport to the dungeon, true to teleport to where you were before you were teleported to the dungeon.
 --- @return void
 function LFGTeleport(toSafety)
 end
@@ -9608,14 +9608,14 @@ end
 
 --- Toggles the chat logging and returns the current state.
 --- [https://wow.gamepedia.com/API_LoggingChat]
---- @param newState boolean @ ean - toggles chat logging
+--- @param newState boolean @ toggles chat logging
 --- @return boolean @ isLogging
 function LoggingChat(newState)
 end
 
 --- Toggles logging for the combat log and returns the current state.
 --- [https://wow.gamepedia.com/API_LoggingCombat]
---- @param newState boolean @ ean - Toggles combat logging
+--- @param newState boolean @ Toggles combat logging
 --- @return unknown @ isLogging
 function LoggingCombat(newState)
 end
@@ -10142,7 +10142,7 @@ end
 --- @param soundKitID number @ All sounds used by Blizzard's UI are defined in the SOUNDKIT table.
 --- @param channel string @ ?Optional.  Could be nil. - The sound volume slider setting the sound should use, one of: Master, SFX, Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to SFX (Sound) if not specified.
 --- @param forceNoDuplicates unknown
---- @param runFinishCallback boolean @ ean?Optional.  Could be nil. - Fires SOUNDKIT_FINISHED when sound is done, arg1 will be soundHandle given below. Defaults to false.
+--- @param runFinishCallback boolean @?Optional.  Could be nil. - Fires SOUNDKIT_FINISHED when sound is done, arg1 will be soundHandle given below. Defaults to false.
 --- @return boolean, number @ willPlay, soundHandle
 function PlaySound(soundKitID, channel, forceNoDuplicates, runFinishCallback)
 end
@@ -11264,7 +11264,7 @@ end
 --- [https://wow.gamepedia.com/API_SetGuildBankTabPermissions]
 --- @param tab number @ Bank Tab to edit.
 --- @param index number @ Index of Permission to edit.
---- @param enabled boolean @ ean - true or false to Enable or Disable permission.
+--- @param enabled boolean @ true or false to Enable or Disable permission.
 --- @return void
 function SetGuildBankTabPermissions(tab, index, enabled)
 end
@@ -11320,7 +11320,7 @@ end
 
 --- Shows offline guild members in subsequent calls to the guild roster API.
 --- [https://wow.gamepedia.com/API_SetGuildRosterShowOffline]
---- @param enabled boolean @ ean - True includes all guild members; false filters out offline guild members.
+--- @param enabled boolean @ True includes all guild members; false filters out offline guild members.
 --- @return void
 function SetGuildRosterShowOffline(enabled)
 end
@@ -11494,7 +11494,7 @@ end
 --- Alters an override binding.
 --- [https://wow.gamepedia.com/API_SetOverrideBinding]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
---- @param isPriority boolean @ ean - true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
+--- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
 --- @param key string @ Binding to bind the command to. For example, Q, ALT-Q, ALT-CTRL-SHIFT-Q, BUTTON5
 --- @param command string @ nil - Any name attribute value of a Bindings.xml-defined binding, or an action command string; nil to remove an override binding. For example:
 --- @return void
@@ -11504,7 +11504,7 @@ end
 --- Creates an override binding that performs a button click.
 --- [https://wow.gamepedia.com/API_SetOverrideBindingClick]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
---- @param isPriority boolean @ ean - true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
+--- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
 --- @param key string @ Binding to bind the command to. For example, Q, ALT-Q, ALT-CTRL-SHIFT-Q, BUTTON5
 --- @param buttonName string @ Name of the button widget this binding should fire a click event for.
 --- @param mouseClick string @ Mouse button name argument passed to the OnClick handlers.
@@ -11515,7 +11515,7 @@ end
 --- Creates an override binding that uses an item when triggered.
 --- [https://wow.gamepedia.com/API_SetOverrideBindingItem]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
---- @param isPriority boolean @ ean - true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
+--- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
 --- @param key string @ Binding to bind the command to. For example, Q, ALT-Q, ALT-CTRL-SHIFT-Q, BUTTON5
 --- @param item string @ Name or item link of the item to use when binding is triggered.
 --- @return void
@@ -11525,7 +11525,7 @@ end
 --- Creates an override binding that runs a macro.
 --- [https://wow.gamepedia.com/API_SetOverrideBindingMacro]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
---- @param isPriority boolean @ ean - true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
+--- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
 --- @param key string @ Binding to bind the command to. For example, Q, ALT-Q, ALT-CTRL-SHIFT-Q, BUTTON5
 --- @param macro string @ Name or index of the macro to run.
 --- @return void
@@ -11535,7 +11535,7 @@ end
 --- Creates an override binding that casts a spell
 --- [https://wow.gamepedia.com/API_SetOverrideBindingSpell]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
---- @param isPriority boolean @ ean - true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
+--- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
 --- @param key string @ Binding to bind the command to. For example, Q, ALT-Q, ALT-CTRL-SHIFT-Q, BUTTON5
 --- @param spell string @ Name of the spell you want to cast when this binding is triggered.
 --- @return void
@@ -11560,9 +11560,9 @@ end
 
 --- Sets which roles the player is willing to perform in PvP battlegrounds.
 --- [https://wow.gamepedia.com/API_SetPVPRoles]
---- @param tank boolean @ ean - true if the player is willing to tank, false otherwise.
---- @param healer boolean @ ean - true if the player is willing to heal, false otherwise.
---- @param dps boolean @ ean - true if the player is willing to deal damage, false otherwise.
+--- @param tank boolean @ true if the player is willing to tank, false otherwise.
+--- @param healer boolean @ true if the player is willing to heal, false otherwise.
+--- @param dps boolean @ true if the player is willing to deal damage, false otherwise.
 --- @return void
 function SetPVPRoles(tank, healer, dps)
 end
@@ -11713,7 +11713,7 @@ end
 --- Selects a specialization.
 --- [https://wow.gamepedia.com/API_SetSpecialization]
 --- @param specIndex number @ Index of the specialization to select, ascending from 1.
---- @param isPet boolean @ ean - if true, set the select a specialization for the player's pet, otherwise, select a specialization for the player.
+--- @param isPet boolean @ if true, set the select a specialization for the player's pet, otherwise, select a specialization for the player.
 --- @return void
 function SetSpecialization(specIndex, isPet)
 end
@@ -11738,7 +11738,7 @@ end
 --- Enables or disables a tracking method with a specified id.
 --- [https://wow.gamepedia.com/API_SetTracking]
 --- @param id unknown @ The id of the tracking you would like to change. The id is assigned by the client, 1 is the first tracking method available on the tracking list, 2 is the next and so on. To get Information about a specific id, use GetTrackingInfo.
---- @param enabled boolean @ ean flag if the specified tracking id is to be enabled or disabled.
+--- @param enabled boolean @ flag if the specified tracking id is to be enabled or disabled.
 --- @return void
 function SetTracking(id, enabled)
 end
@@ -11809,7 +11809,7 @@ end
 
 --- Sets whether account-wide achievements are shown to other players.
 --- [https://wow.gamepedia.com/API_ShowAccountAchievements]
---- @param show boolean @ ean - true to allow other players to view all achievements your account has achieved, false to only allow viewing achievements for individual characters.
+--- @param show boolean @ true to allow other players to view all achievements your account has achieved, false to only allow viewing achievements for individual characters.
 --- @return void
 function ShowAccountAchievements(show)
 end
@@ -12104,7 +12104,7 @@ end
 --- Invites the specified player to a duel.
 --- [https://wow.gamepedia.com/API_StartDuel]
 --- @param playerName_or_unit unknown
---- @param exactMatch boolean @ ean
+--- @param exactMatch boolean @
 --- @return void
 function StartDuel(playerName_or_unit, exactMatch)
 end
@@ -12316,7 +12316,7 @@ end
 
 --- This function will select the nearest friendly unit.
 --- [https://wow.gamepedia.com/API_TargetNearestFriend]
---- @param reverse boolean @ ean : if true, reverses the order of targetting units.
+--- @param reverse boolean @ : if true, reverses the order of targetting units.
 --- @return void
 function TargetNearestFriend(reverse)
 end
@@ -12359,7 +12359,7 @@ end
 --- Targets the specified unit.
 --- [https://wow.gamepedia.com/API_TargetUnit]
 --- @param unit_or_name unknown
---- @param exactMatch boolean @ ean - Whether to treat name as an exact match or not.
+--- @param exactMatch boolean @ Whether to treat name as an exact match or not.
 --- @return void
 function TargetUnit(unit_or_name, exactMatch)
 end
@@ -13283,7 +13283,7 @@ end
 --- [https://wow.gamepedia.com/API_UnitPower]
 --- @param unitToken string @ Unit whose power should be returned
 --- @param powerType number @ Enum.PowerType (optional, default = NumPowerTypes)
---- @param unmodified boolean @ ean (optional, default = false)
+--- @param unmodified boolean @ (optional, default = false)
 --- @return number @ power
 function UnitPower(unitToken, powerType, unmodified)
 end
@@ -13311,7 +13311,7 @@ end
 --- [https://wow.gamepedia.com/API_UnitPowerMax]
 --- @param unitToken string @ Unit whose maximum power should be returned
 --- @param powerType number @ Enum.PowerType (optional, default = NumPowerTypes)
---- @param unmodified boolean @ ean (optional, default = false)
+--- @param unmodified boolean @ (optional, default = false)
 --- @return number @ maxpower
 function UnitPowerMax(unitToken, powerType, unmodified)
 end
@@ -13384,7 +13384,7 @@ end
 --- Returns RGBA values for the color of the unit's selection (the outline around and the circle underneath a player character or an NPC).
 --- [https://wow.gamepedia.com/API_UnitSelectionColor]
 --- @param UnitId string @ The unit whose selection colour should be returned.
---- @param useExtendedColors boolean @ ean (optional) - If true, a more appropriate colour of the unit's selection will be returned. For instance, if used on a dead hostile target, the default return will red (hostile), but the extended return will be grey (dead).
+--- @param useExtendedColors boolean @ (optional) - If true, a more appropriate colour of the unit's selection will be returned. For instance, if used on a dead hostile target, the default return will red (hostile), but the extended return will be grey (dead).
 --- @return number, number, number, number @ red, green, blue, alpha
 function UnitSelectionColor(UnitId, useExtendedColors)
 end
@@ -13392,7 +13392,7 @@ end
 --- Returns a number corresponding to the type of the unit's selection (the outline around and the circle underneath a player character or an NPC).
 --- [https://wow.gamepedia.com/API_UnitSelectionType]
 --- @param UnitId string @ The unit whose selection type should be returned.
---- @param useExtendedColors boolean @ ean (optional) - If true, a more appropriate type of the unit's selection will be returned. For instance, if used on a dead hostile target, the default return will be 0 (hostile), but the extended return will be 9 (dead).
+--- @param useExtendedColors boolean @ (optional) - If true, a more appropriate type of the unit's selection will be returned. For instance, if used on a dead hostile target, the default return will be 0 (hostile), but the extended return will be 9 (dead).
 --- @return number @ type
 function UnitSelectionType(UnitId, useExtendedColors)
 end
@@ -13593,7 +13593,7 @@ end
 --- @param bagID number @ The bag id, where the item to use is located
 --- @param slot number @ The slot in the bag, where the item to use is located
 --- @param target string @ optional) - unit the item should be used on. If omitted, defaults to target if a the item must target someone.
---- @param reagentBankAccessible boolean @ ean (optional) - This indicates, for cases where no target is given, if the item reagent bank is accessible (so bank frame is shown and switched to the reagent bank tab).
+--- @param reagentBankAccessible boolean @ (optional) - This indicates, for cases where no target is given, if the item reagent bank is accessible (so bank frame is shown and switched to the reagent bank tab).
 --- @return void
 function UseContainerItem(bagID, slot, target, reagentBankAccessible)
 end
@@ -14365,7 +14365,7 @@ end
 --- @param string string @ The string to examine.
 --- @param pattern string @ The pattern to search for within string.  This pattern is similar to Unix regular expressions, but is not the same -- see Lua Pattern matching for more details.
 --- @param initpos number @ Index of the character within string to begin searching.  As is usual for Lua string functions, 1 refers to the first character of the string, 2 to the second, etc.  -1 refers to the last character of the string, -2 to the second last, etc.  If this argument is omitted, it defaults to 1; i.e., the search begins at the beginning of string.
---- @param plain boolean @ ean - Whether or not to disable regular expression matching. Defaults to false, so regex matching is usually enabled.
+--- @param plain boolean @ Whether or not to disable regular expression matching. Defaults to false, so regex matching is usually enabled.
 --- @return number, number @ startPos, endPos
 function strfind(string, pattern, initpos, plain)
 end
