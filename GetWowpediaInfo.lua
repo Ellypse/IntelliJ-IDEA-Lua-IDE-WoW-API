@@ -34,7 +34,7 @@ local total_entries = 0
 for k,v in pairs(lines) do
     --all API entry lines seem to have title="API in the string, which is nice for us to narrow down
     --we can ignore any api entries starting with C_ because those are all parsed form the in-game API separately
-    if string.find(v, "title=\"API") and not string.find(v, "API_C_") and not string.find(v, "title=\"World of Warcraft API\"") then
+    if string.find(v, "title=\"API") and not string.find(v, "API_C_") and not string.find(v, "title=\"World of Warcraft API\"") and not string.find(v, "/API_change_summaries") then
 
         local _,start = string.find(v,"\">")
         local finish, _ = string.find(v,"</a>")
@@ -166,7 +166,7 @@ local types = {
     ["^[Ff]loat"] = "number",
     ["^[Ff]lag"] = "number",
     ["^[Bb]oolean"] = "boolean",
-    ["^[Bb]ool"] = "boolean",
+    --["^[Bb]ool"] = "boolean",
     ["^[Tt]able"] = "table",
     ["^[Ff]rame"] = "Frame",
     ["^[Aa]ny"] = "any",

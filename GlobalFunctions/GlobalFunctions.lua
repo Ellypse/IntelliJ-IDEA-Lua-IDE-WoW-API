@@ -1,6 +1,5 @@
 --- @class unknown @ unknown type
 
-
 --- The player abandons a skill.
 --- [https://wow.gamepedia.com/API_AbandonSkill]
 --- @param skillLineID number @ The Skill Line ID (can be found with API GetProfessionInfo())
@@ -415,10 +414,10 @@ end
 
 --- Sends a whisper to Battle.net friends.
 --- [https://wow.gamepedia.com/API_BNSendWhisper]
---- @param presenceID number @ A unique numeric identifier for the friend during this session. You can convert an index in the friend's list to a presence ID with BNGetFriendInfo()
+--- @param bnetAccountID number @ A unique numeric identifier for the friend during this session. You can get bnetAccountID from C_BattleNet.GetFriendAccountInfo()
 --- @param message unknown @ Message text. Must be less than 4096 bytes.
 --- @return void
-function BNSendWhisper(presenceID, message)
+function BNSendWhisper(bnetAccountID, message)
 end
 
 --- Set or unset afk status
@@ -450,7 +449,7 @@ end
 --- Sets a battle.net friend as favorite.
 --- [https://wow.gamepedia.com/API_BNSetFriendFavoriteFlag]
 --- @param id number @ account Id
---- @param isFavorite boolean @
+--- @param isFavorite boolean
 --- @return void
 function BNSetFriendFavoriteFlag(id, isFavorite)
 end
@@ -556,7 +555,7 @@ end
 --- Buys the specified item.
 --- [https://wow.gamepedia.com/API_BuyMerchantItem]
 --- @param index number @ The index of the item in the merchant's inventory
---- @param quantity number @ Optional) - Quantity to buy.
+--- @param quantity number @ (optional) - Quantity to buy.
 --- @return void
 function BuyMerchantItem(index, quantity)
 end
@@ -601,7 +600,7 @@ end
 
 --- End Left click in the 3D game world.
 --- [https://wow.gamepedia.com/API_CameraOrSelectOrMoveStop]
---- @param stickyFlag number @ optional) - If present and set then any camera offset is 'sticky' and remains until explicitly cancelled.
+--- @param stickyFlag number @ (optional) - If present and set then any camera offset is 'sticky' and remains until explicitly cancelled.
 --- @return void
 function CameraOrSelectOrMoveStop(stickyFlag)
 end
@@ -1323,7 +1322,7 @@ end
 
 --- Close the loot window.
 --- [https://wow.gamepedia.com/API_CloseLoot]
---- @param errNum number @ Optional) - A reason for the window closing.  Unsure whether/how the game deals with error codes passed to it.
+--- @param errNum number @ (optional) - A reason for the window closing.  Unsure whether/how the game deals with error codes passed to it.
 --- @return void
 function CloseLoot(errNum)
 end
@@ -1498,9 +1497,11 @@ end
 function CombatLog_Object_IsA()
 end
 
+--- Alters the entity for which the COMBAT_TEXT_UPDATE event fires.
 --- [https://wow.gamepedia.com/API_CombatTextSetActiveUnit]
+--- @param unit string @ UnitId of the entity you want receive notifications for.
 --- @return void
-function CombatTextSetActiveUnit()
+function CombatTextSetActiveUnit(unit)
 end
 
 --- [https://wow.gamepedia.com/API_ComplainInboxItem?action=edit&amp;redlink=1]
@@ -1639,7 +1640,7 @@ end
 --- [https://wow.gamepedia.com/API_CreateMacro]
 --- @param name string @ The name of the macro to be displayed in the UI. The current UI imposes a 16-character limit.
 --- @param iconFileID number @ |string - A FileID or string identifying the icon texture to use
---- @param body string @ optional) - The macro commands to be executed. If this string is longer than 255 characters, only the first 255 will be saved.
+--- @param body string @ (optional) - The macro commands to be executed. If this string is longer than 255 characters, only the first 255 will be saved.
 --- @param perCharacter boolean @ (optional) - true to create a per-character macro, nil to create a general macro available to all characters.
 --- @return number @ macroId
 function CreateMacro(name, iconFileID, body, perCharacter)
@@ -1925,7 +1926,7 @@ end
 --- Returns encounter boss info.
 --- [https://wow.gamepedia.com/API_EJ_GetCreatureInfo]
 --- @param index number @ creature index, up to nine for encounters with multiple bosses.
---- @param encounterID number @ optional) - if omitted this will default to the currently viewed encounter.
+--- @param encounterID number @ (optional) - if omitted this will default to the currently viewed encounter.
 --- @return number, string, string, number, number, number @ id, name, description, displayInfo, iconImage, uiModelSceneID
 function EJ_GetCreatureInfo(index, encounterID)
 end
@@ -1972,14 +1973,14 @@ end
 
 --- Returns instance info for the Encounter Journal.
 --- [https://wow.gamepedia.com/API_EJ_GetInstanceInfo]
---- @param instanceID number @ optional) - if omitted, this will default to the currently selected instance per EJ_SelectInstance.
+--- @param instanceID number @ (optional) - if omitted, this will default to the currently selected instance per EJ_SelectInstance.
 --- @return unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown @ name, description, bgImage, buttonImage1, loreImage, buttonImage2, dungeonAreaMapID, link, shouldDisplayDifficulty
 function EJ_GetInstanceInfo(instanceID)
 end
 
 --- Returns the sort order for an inventory type.
 --- [https://wow.gamepedia.com/API_EJ_GetInvTypeSortOrder]
---- @param invType unknown @ Enum.InventoryType
+--- @param invType number @ Enum.InventoryType
 --- @return number @ sortOrder
 function EJ_GetInvTypeSortOrder(invType)
 end
@@ -2154,11 +2155,12 @@ end
 function EjectPassengerFromSeat()
 end
 
---- Enable an AddOn for subsequent sessions.
+--- Enables an AddOn for subsequent sessions.
 --- [https://wow.gamepedia.com/API_EnableAddOn]
 --- @param index_or_name unknown
+--- @param character string @ The name of the character (without realm) for whom to disable the addon, Defaults to the current character.
 --- @return void
-function EnableAddOn(index_or_name)
+function EnableAddOn(index_or_name, character)
 end
 
 --- Enable all AddOns for subsequent sessions.
@@ -2197,7 +2199,7 @@ end
 
 --- Equips the currently picked up item to a specific inventory slot.
 --- [https://wow.gamepedia.com/API_EquipCursorItem]
---- @param slot number @ The slot ID to place the item into. Use GetInventorySlotInfo(slotname) to resolve an inventory slot name to its ID.
+--- @param slot number @ The InventorySlotId to place the item into.
 --- @return void
 function EquipCursorItem(slot)
 end
@@ -2205,7 +2207,7 @@ end
 --- Equips an item, optionally into a specified slot.
 --- [https://wow.gamepedia.com/API_EquipItemByName]
 --- @param itemId_or_itemName_or_itemLink unknown
---- @param slot number @ optional) - The inventory slot to put the item in, obtained via GetInventorySlotInfo().
+--- @param slot number @ (optional) - The inventory slot to put the item in, obtained via GetInventorySlotInfo().
 --- @return void
 function EquipItemByName(itemId_or_itemName_or_itemLink, slot)
 end
@@ -2296,7 +2298,8 @@ end
 function FlagTutorial()
 end
 
---- [https://wow.gamepedia.com/API_FlashClientIcon?action=edit&amp;redlink=1]
+--- Flashes the game client icon in the Operating System (does not require a hardware event).
+--- [https://wow.gamepedia.com/API_FlashClientIcon]
 --- @return void
 function FlashClientIcon()
 end
@@ -2438,7 +2441,7 @@ end
 function GameMovieFinished()
 end
 
---- Returns the highest expansion id the current account has been flagged for.
+--- Returns the expansion level the account has been flagged for.
 --- [https://wow.gamepedia.com/API_GetAccountExpansionLevel]
 --- @return number @ expansionLevel
 function GetAccountExpansionLevel()
@@ -2462,7 +2465,7 @@ end
 --- [https://wow.gamepedia.com/API_GetAchievementCriteriaInfo]
 --- @param achievementID number
 --- @param criteriaIndex number @ Index of the criteria to query, ascending from 1 up to GetAchievementNumCriteria(achievementID).
---- @param countHidden boolean @
+--- @param countHidden boolean
 --- @return void
 function GetAchievementCriteriaInfo(achievementID, criteriaIndex, countHidden)
 end
@@ -3025,11 +3028,12 @@ end
 function GetBindingKey(command)
 end
 
+--- Returns the localized string value for the given key and prefix. Essentially a glorified getglobal() function.
 --- [https://wow.gamepedia.com/API_GetBindingText]
---- @param key string @ The name of the key (e.g. UP, SHIFT-PAGEDOWN)
---- @param prefix string @ The prefix of the variable name you're looking for.  Usually KEY_ or BINDING_NAME_.
+--- @param key string @ (optional) - The name of the key (e.g. UP, SHIFT-PAGEDOWN)
+--- @param prefix string @ (optional) - The prefix of the variable name you're looking for.  Usually KEY_ or BINDING_NAME_.
 --- @param abbreviate boolean @ (optional) - Whether to return an abbreviated version of the modifier keys
---- @return unknown @ text
+--- @return string @ text
 function GetBindingText(key, prefix, abbreviate)
 end
 
@@ -3049,7 +3053,7 @@ end
 function GetBonusBarOffset()
 end
 
---- Returns information about current client build.
+--- Returns information about the current client build.
 --- [https://wow.gamepedia.com/API_GetBuildInfo]
 --- @return string, string, string, number @ version, build, date, tocversion
 function GetBuildInfo()
@@ -3190,7 +3194,7 @@ end
 function GetClickFrame()
 end
 
---- Returns the expansion id of the game client.
+--- Returns the expansion level of the game client.
 --- [https://wow.gamepedia.com/API_GetClientDisplayExpansionLevel]
 --- @return number @ expansionLevel
 function GetClientDisplayExpansionLevel()
@@ -3274,7 +3278,7 @@ end
 --- Populates a table with references to unused slots inside a container.
 --- [https://wow.gamepedia.com/API_GetContainerFreeSlots]
 --- @param index number @ the slot containing the bag, e.g. 0 for backpack, etc.
---- @param returnTable table @ optional) Provide an empty table and the function will populate it with the free slots
+--- @param returnTable table @ (optional) Provide an empty table and the function will populate it with the free slots
 --- @return table @ returnTable
 function GetContainerFreeSlots(index, returnTable)
 end
@@ -3636,7 +3640,7 @@ end
 function GetExpansionForLevel(playerLevel)
 end
 
---- Returns level of expansion currently accessible by the player.
+--- Returns the expansion level currently accessible by the player.
 --- [https://wow.gamepedia.com/API_GetExpansionLevel]
 --- @return number @ expansionLevel
 function GetExpansionLevel()
@@ -4277,10 +4281,10 @@ end
 
 --- Return the quality of an inventory item.
 --- [https://wow.gamepedia.com/API_GetInventoryItemQuality]
---- @param unit string @ The UnitId of the unit whose inventory is to be queried.
---- @param slotId number @ The inventory slot to be queried, obtained via GetInventorySlotInfo.
---- @return number @ quality
-function GetInventoryItemQuality(unit, slotId)
+--- @param unitId string @ The UnitId of the unit whose inventory is to be queried.
+--- @param slotId number @ The InventorySlotId to be queried, obtained via GetInventorySlotInfo().
+--- @return unknown @ quality
+function GetInventoryItemQuality(unitId, slotId)
 end
 
 --- Return the texture for an inventory item.
@@ -4365,11 +4369,11 @@ end
 function GetItemIcon(itemID)
 end
 
---- Return information about a specific item.
+--- Returns information about an item.
 --- [https://wow.gamepedia.com/API_GetItemInfo]
---- @param itemID_or_itemString_or_itemName_or_itemLink unknown
---- @return unknown @ isCraftingReagent
-function GetItemInfo(itemID_or_itemString_or_itemName_or_itemLink)
+--- @param itemInfo string @ ItemLink, Name or ID
+--- @return void
+function GetItemInfo(itemInfo)
 end
 
 --- Returns instantly-available information about a specific item.
@@ -4397,7 +4401,7 @@ end
 
 --- Returns RGB color codes for an item quality.
 --- [https://wow.gamepedia.com/API_GetItemQualityColor]
---- @param quality number @ The numeric ID of the quality from 0 (Poor) to 7 (Heirloom).
+--- @param quality number @ Enum.ItemQuality
 --- @return number, number, number, string @ r, g, b, hex
 function GetItemQualityColor(quality)
 end
@@ -4674,7 +4678,7 @@ end
 
 --- Return information concerning the LFG Call to Arms rewards.
 --- [https://wow.gamepedia.com/API_GetLFGRoleShortageRewards]
---- @param dungeonID number @ The type of the dungeons to queue for. See table below.
+--- @param dungeonID number @ LfgDungeonID - The type of the dungeons to queue for. See table below.
 --- @param shortageSeverity number @ A number from 1 to LFG_ROLE_NUM_SHORTAGE_TYPES. See below for specific shortage types.
 --- @return boolean, boolean, boolean, boolean, number, number, number @ eligible, forTank, forHealer, forDamage, itemCount, money, xp
 function GetLFGRoleShortageRewards(dungeonID, shortageSeverity)
@@ -5866,7 +5870,7 @@ end
 --- [https://wow.gamepedia.com/API_GetPartyAssignment]
 --- @param assignment string @ The role to search, either MAINTANK or MAINASSIST (not case-sensitive).
 --- @param raidmember string @ UnitId
---- @param exactMatch boolean @
+--- @param exactMatch boolean
 --- @return number, number @ raidIndex1, raidIndex2
 function GetPartyAssignment(assignment, raidmember, exactMatch)
 end
@@ -6086,7 +6090,7 @@ end
 --- [https://wow.gamepedia.com/API_GetPvpTalentInfoByID]
 --- @param talentID number @ Talent ID.
 --- @param specGroupIndex number @ ? - Index of active specialization group (GetActiveSpecGroup); if nil, the selected/available return values will always be false.
---- @param isInspect boolean @? - If non-nil, returns information based on inspectedUnit.
+--- @param isInspect boolean @ ? - If non-nil, returns information based on inspectedUnit.
 --- @param inspectUnit unknown
 --- @return number, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown @ talentID, name, icon, selected, available, spellID, unlocked, row, column, known, grantedByAura
 function GetPvpTalentInfoByID(talentID, specGroupIndex, isInspect, inspectUnit)
@@ -6805,7 +6809,7 @@ end
 
 --- For some classes the return value is nil during the loading process. You need to wait until UPDATE_SHAPESHIFT_FORMS fires to get correct return values.
 --- [https://wow.gamepedia.com/API_GetShapeshiftForm]
---- @param flag boolean @ (Optional) - True if return value is to be compared to a macro's conditional statement. This makes it always return zero for Presences and Auras. False or nil returns an index based on which button to highlight on the shapeshift/stance bar left to right starting at 1.
+--- @param flag boolean @ (optional) - True if return value is to be compared to a macro's conditional statement. This makes it always return zero for Presences and Auras. False or nil returns an index based on which button to highlight on the shapeshift/stance bar left to right starting at 1.
 --- @return number @ index
 function GetShapeshiftForm(flag)
 end
@@ -6919,8 +6923,8 @@ end
 --- Returns the mastery spellID of the current player's specializiation.
 --- [https://wow.gamepedia.com/API_GetSpecializationMasterySpells]
 --- @param specIndex number @ The index of the specialization to query (1, 2, 3, 4) (Druids have four specializations)
---- @param isInspect boolean @ (Optional) Reserved. Must be nil
---- @param isPet boolean @ (Optional) Reserved. Must be nil
+--- @param isInspect boolean @ (optional) Reserved. Must be nil
+--- @param isPet boolean @ (optional) Reserved. Must be nil
 --- @return unknown @ spellID
 function GetSpecializationMasterySpells(specIndex, isInspect, isPet)
 end
@@ -6992,18 +6996,18 @@ end
 function GetSpellBonusDamage(spellTreeID)
 end
 
---- Returns the raw bonus healing of the player.
+--- Returns the spell power value used for healing spell coefficients. This includes your bonus from Versatility.
 --- [https://wow.gamepedia.com/API_GetSpellBonusHealing]
 --- @return number @ bonusHeal
 function GetSpellBonusHealing()
 end
 
---- Retrieves information about a specific SpellBook item
+--- Retrieves information about a specific spellbook item.
 --- [https://wow.gamepedia.com/API_GetSpellBookItemInfo]
---- @param spellName_or_index unknown
---- @param bookType string @ Spell book type; either BOOKTYPE_PET (pet) or BOOKTYPE_SPELL (spell). From a practical standpoint, while this parm may not be nil, it is processes as pet or not pet (any non-nil value that is not pet will result in spell processing).
+--- @param index number @ The index into the spellbook.
+--- @param bookType string @ Spell book type.  Although intended to be BOOKTYPE_PET (pet) or BOOKTYPE_SPELL (spell), the game currently only tests if this value is equal to pet and treats any other value as spell.
 --- @return string, number @ skillType, special
-function GetSpellBookItemInfo(spellName_or_index, bookType)
+function GetSpellBookItemInfo(index, bookType)
 end
 
 --- Retrieves the spell name and spell rank for a spell in the player's spell book.
@@ -7211,7 +7215,7 @@ end
 --- @param tier number @ Talent tier from 1 to MAX_TALENT_TIERS
 --- @param column number @ Talent column from 1 to NUM_TALENT_COLUMNS
 --- @param specGroupIndex number @ Index of active specialization group (GetActiveSpecGroup)
---- @param isInspect boolean @? - If non-nil, returns information based on inspectedUnit/classId.
+--- @param isInspect boolean @ ? - If non-nil, returns information based on inspectedUnit/classId.
 --- @param inspectUnit unknown
 --- @return void
 function GetTalentInfo(tier, column, specGroupIndex, isInspect, inspectUnit)
@@ -7220,7 +7224,7 @@ end
 --- [https://wow.gamepedia.com/API_GetTalentInfoByID]
 --- @param talentID number @ Talent ID.
 --- @param specGroupIndex number @ Index of active specialization group (GetActiveSpecGroup)
---- @param isInspect boolean @? - If non-nil, returns information based on inspectedUnit/classId.
+--- @param isInspect boolean @ ? - If non-nil, returns information based on inspectedUnit/classId.
 --- @param inspectUnit unknown
 --- @return void
 function GetTalentInfoByID(talentID, specGroupIndex, isInspect, inspectUnit)
@@ -7243,7 +7247,7 @@ end
 --- [https://wow.gamepedia.com/API_GetTalentTierInfo]
 --- @param tier number @ Talent tier from 1 to MAX_TALENT_TIERS
 --- @param specGroupIndex number @ Index of active specialization group (GetActiveSpecGroup)
---- @param isInspect boolean @? - If non-nil, returns information based on inspectedUnit.
+--- @param isInspect boolean @ ? - If non-nil, returns information based on inspectedUnit.
 --- @param inspectedUnit string @ ? - Inspected unitId.
 --- @return unknown, unknown, unknown @ tierAvailable, selectedTalent, tierUnlockLevel
 function GetTalentTierInfo(tier, specGroupIndex, isInspect, inspectedUnit)
@@ -7365,9 +7369,11 @@ end
 function GetTotemInfo(index)
 end
 
---- [https://wow.gamepedia.com/API_GetTotemTimeLeft?action=edit&amp;redlink=1]
---- @return void
-function GetTotemTimeLeft()
+--- Returns active time remaining (in seconds) before a totem (or ghoul) disappears.
+--- [https://wow.gamepedia.com/API_GetTotemTimeLeft]
+--- @param slot number @ Which totem to query:
+--- @return number @ seconds
+function GetTotemTimeLeft(slot)
 end
 
 --- Returns a list of (up to 10) currently tracked achievements.
@@ -7570,7 +7576,7 @@ end
 --- [https://wow.gamepedia.com/API_GetUnitPowerBarTextureInfo]
 --- @param unitToken string
 --- @param textureIndex number
---- @param timerIndex number @ optional)
+--- @param timerIndex number @ (optional)
 --- @return number, number, number, number, number @ texture, colorR, colorG, colorB, colorA
 function GetUnitPowerBarTextureInfo(unitToken, textureIndex, timerIndex)
 end
@@ -8370,6 +8376,11 @@ end
 function IsCorruptedItem(itemID_or_name_or_itemlink)
 end
 
+--- [https://wow.gamepedia.com/API_IsCosmeticItem?action=edit&amp;redlink=1]
+--- @return void
+function IsCosmeticItem()
+end
+
 --- Determine whether an action is currently executing.
 --- [https://wow.gamepedia.com/API_IsCurrentAction]
 --- @param actionSlot number @ action slot ID to query.
@@ -8435,7 +8446,6 @@ end
 function IsEncounterInProgress()
 end
 
---- Mobile
 --- [https://wow.gamepedia.com/API_IsEncounterLimitingResurrections?action=edit&amp;redlink=1]
 --- @return void
 function IsEncounterLimitingResurrections()
@@ -8684,6 +8694,11 @@ end
 --- @param unit string @ which unit the range should be checked to
 --- @return unknown @ result
 function IsItemInRange(itemName_or_itemLink, unit)
+end
+
+--- [https://wow.gamepedia.com/API_IsJailersTowerLayerTimeLocked?action=edit&amp;redlink=1]
+--- @return void
+function IsJailersTowerLayerTimeLocked()
 end
 
 --- [https://wow.gamepedia.com/API_IsKeyDown?action=edit&amp;redlink=1]
@@ -9321,9 +9336,9 @@ end
 --- Joins the channel with the specified name. A player can be in a maximum of 10 chat channels.
 --- [https://wow.gamepedia.com/API_JoinChannelByName]
 --- @param channelName string @ The name of the channel to join
---- @param password string @ optional) - The channel password, nil if none.
---- @param frameID number @ optional) - The chat frame ID number to add the channel to. Use Frame:GetID() to retrieve it for chat frame objects.
---- @param hasVoice boolean @ (1/nil) - Enable voice chat for this channel.
+--- @param password string @ (optional) - The channel password, nil if none.
+--- @param frameID number @ (optional) - The chat frame ID number to add the channel to. Use Frame:GetID() to retrieve it for chat frame objects.
+--- @param hasVoice boolean @ nil) - Enable voice chat for this channel.
 --- @return number, string @ type, name
 function JoinChannelByName(channelName, password, frameID, hasVoice)
 end
@@ -9336,9 +9351,9 @@ end
 --- Seems to have the same effect as API_JoinChannelByName.
 --- [https://wow.gamepedia.com/API_JoinPermanentChannel]
 --- @param channelName string @ The name of the channel to join
---- @param password string @ optional) - The channel password, nil if none.
---- @param frameID number @ optional) - The chat frame ID number to add the channel to. Use Frame:GetID() to retrieve it for chat frame objects.
---- @param hasVoice boolean @ (1/nil) - Enable voice chat for this channel.
+--- @param password string @ (optional) - The channel password, nil if none.
+--- @param frameID number @ (optional) - The chat frame ID number to add the channel to. Use Frame:GetID() to retrieve it for chat frame objects.
+--- @param hasVoice boolean @ nil) - Enable voice chat for this channel.
 --- @return number, string @ type, name
 function JoinPermanentChannel(channelName, password, frameID, hasVoice)
 end
@@ -9364,9 +9379,9 @@ end
 --- Seems to have the same effect as API_JoinChannelByName (except that a channel joined by JoinTemporaryChannel is left at logout).
 --- [https://wow.gamepedia.com/API_JoinTemporaryChannel]
 --- @param channelName string @ The name of the channel to join
---- @param password string @ optional) - The channel password, nil if none.
---- @param frameID number @ optional) - The chat frame ID number to add the channel to. Use Frame:GetID() to retrieve it for chat frame objects.
---- @param hasVoice boolean @ (1/nil) - Enable voice chat for this channel.
+--- @param password string @ (optional) - The channel password, nil if none.
+--- @param frameID number @ (optional) - The chat frame ID number to add the channel to. Use Frame:GetID() to retrieve it for chat frame objects.
+--- @param hasVoice boolean @ nil) - Enable voice chat for this channel.
 --- @return number, string @ type, name
 function JoinTemporaryChannel(channelName, password, frameID, hasVoice)
 end
@@ -10140,9 +10155,9 @@ end
 --- Play one of a set of built-in sounds.  Other players will not hear the sound.
 --- [https://wow.gamepedia.com/API_PlaySound]
 --- @param soundKitID number @ All sounds used by Blizzard's UI are defined in the SOUNDKIT table.
---- @param channel string @ ?Optional.  Could be nil. - The sound volume slider setting the sound should use, one of: Master, SFX, Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to SFX (Sound) if not specified.
+--- @param channel string @ ?Optional.  Could be nil. - The sound volume slider setting the sound should use, one of: Master, SFX, Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to SFX if not specified.
 --- @param forceNoDuplicates unknown
---- @param runFinishCallback boolean @?Optional.  Could be nil. - Fires SOUNDKIT_FINISHED when sound is done, arg1 will be soundHandle given below. Defaults to false.
+--- @param runFinishCallback boolean @ ?Optional.  Could be nil. - Fires SOUNDKIT_FINISHED when sound is done, arg1 will be soundHandle given below. Defaults to false.
 --- @return boolean, number @ willPlay, soundHandle
 function PlaySound(soundKitID, channel, forceNoDuplicates, runFinishCallback)
 end
@@ -10150,7 +10165,7 @@ end
 --- Plays the specified audio file once.
 --- [https://wow.gamepedia.com/API_PlaySoundFile]
 --- @param soundFile_or_soundFileID unknown
---- @param channel string @ optional) - The sound volume slider setting the sound should use, one of: Master, SFX, Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to the SFX Sound channel if not specified.
+--- @param channel string @ (optional) - The sound volume slider setting the sound should use, one of: Master, SFX, Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to the SFX if not specified.
 --- @return boolean, number @ willPlay, soundHandle
 function PlaySoundFile(soundFile_or_soundFileID, channel)
 end
@@ -10479,7 +10494,7 @@ end
 
 --- Repairs all equipped and inventory items.
 --- [https://wow.gamepedia.com/API_RepairAllItems]
---- @param guildBankRepair number @ Optional) - If 1, use guild funds to repair.  If 0, nil, or missing, use player funds.
+--- @param guildBankRepair boolean @ If true, use guild funds to repair.  If false or missing, use player funds.
 --- @return void
 function RepairAllItems(guildBankRepair)
 end
@@ -11439,9 +11454,13 @@ end
 function SetMacroItem()
 end
 
---- [https://wow.gamepedia.com/API_SetMacroSpell?action=edit&amp;redlink=1]
+--- Changes the spell used for dynamic feedback for a macro.
+--- [https://wow.gamepedia.com/API_SetMacroSpell]
+--- @param index number @ Index of the macro, using the values 1-36 for the first page and 37-54 for the second.
+--- @param spell string @ Localized name of a spell to assign.
+--- @param target string @ UnitId to assign (for range indication).
 --- @return void
-function SetMacroSpell()
+function SetMacroSpell(index, spell, target)
 end
 
 --- [https://wow.gamepedia.com/API_SetMerchantFilter?action=edit&amp;redlink=1]
@@ -11586,15 +11605,15 @@ end
 
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_SetPortraitTexture]
---- @param textureObject unknown @ widget - Texture
---- @param unitToken string
+--- @param textureObject unknown @ widget : Texture
+--- @param unitToken string @ UnitId
 --- @return void
 function SetPortraitTexture(textureObject, unitToken)
 end
 
 --- Needs summary.
 --- [https://wow.gamepedia.com/API_SetPortraitTextureFromCreatureDisplayID]
---- @param textureObject unknown @ widget - Texture
+--- @param textureObject unknown @ widget : Texture
 --- @param creatureDisplayID number @ CreatureDisplayID
 --- @return void
 function SetPortraitTextureFromCreatureDisplayID(textureObject, creatureDisplayID)
@@ -12104,7 +12123,7 @@ end
 --- Invites the specified player to a duel.
 --- [https://wow.gamepedia.com/API_StartDuel]
 --- @param playerName_or_unit unknown
---- @param exactMatch boolean @
+--- @param exactMatch boolean
 --- @return void
 function StartDuel(playerName_or_unit, exactMatch)
 end
@@ -12316,7 +12335,7 @@ end
 
 --- This function will select the nearest friendly unit.
 --- [https://wow.gamepedia.com/API_TargetNearestFriend]
---- @param reverse boolean @ : if true, reverses the order of targetting units.
+--- @param reverse boolean @ if true, reverses the order of targetting units.
 --- @return void
 function TargetNearestFriend(reverse)
 end
@@ -12551,7 +12570,7 @@ end
 --- Removes a player from the party/raid group if you're the party leader, or initiates a vote to kick a player from a Dungeon Finder group.
 --- [https://wow.gamepedia.com/API_UninviteUnit]
 --- @param name string @ Name of the player to remove from group. When removing cross-server players, it is important to include the server name: Ygramul-Emerald Dream.
---- @param reason string @ Optional) - Used when initiating a kick vote against the player.
+--- @param reason string @ (optional) - Used when initiating a kick vote against the player.
 --- @return void
 function UninviteUnit(name, reason)
 end
@@ -12595,7 +12614,7 @@ end
 --- [https://wow.gamepedia.com/API_UnitAura]
 --- @param unit string @ unitId) - unit whose auras to query.
 --- @param index number @ or String - index
---- @param filter string @ optional) - list of filters, separated by spaces or pipes. HELPFUL by default. The following filters are available:
+--- @param filter string @ (optional) - list of filters, separated by spaces or pipes. HELPFUL by default. The following filters are available:
 --- @return void
 function UnitAura(unit, index, filter)
 end
@@ -12639,7 +12658,7 @@ end
 --- [https://wow.gamepedia.com/API_UnitBuff]
 --- @param unit string @ unitId) - unit whose buffs to query.
 --- @param index number @ or String - index
---- @param filter string @ optional) - list of filters, separated by spaces or pipes (|). HELPFUL by default. The following filters are available:
+--- @param filter string @ (optional) - list of filters, separated by spaces or pipes (|). HELPFUL by default. The following filters are available:
 --- @return void
 function UnitBuff(unit, index, filter)
 end
@@ -12648,7 +12667,7 @@ end
 --- [https://wow.gamepedia.com/API_UnitCanAssist]
 --- @param unitToAssist unknown @ UnitId - the unit that would assist (e.g., player or target)
 --- @param unitToBeAssisted unknown @ UnitId - the unit that would be assisted (e.g., player or target)
---- @return boolean @ canAssist
+--- @return unknown @ canAssist
 function UnitCanAssist(unitToAssist, unitToBeAssisted)
 end
 
@@ -12656,7 +12675,7 @@ end
 --- [https://wow.gamepedia.com/API_UnitCanAttack]
 --- @param attacker unknown @ UnitId - the unit that would initiate the attack (e.g., player or target)
 --- @param attacked unknown @ UnitId - the unit that would be attacked (e.g., player or target)
---- @return boolean @ canAttack
+--- @return unknown @ canAttack
 function UnitCanAttack(attacker, attacked)
 end
 
@@ -13166,10 +13185,10 @@ end
 function UnitIsTapDenied()
 end
 
---- Checks to see if a unit is trivial.
+--- Indicates whether a unit is trivial.
 --- [https://wow.gamepedia.com/API_UnitIsTrivial]
---- @param unit unknown
---- @return unknown @ isTrivial
+--- @param unit string @ The UnitId (e.g., target)
+--- @return boolean @ isTrivial
 function UnitIsTrivial(unit)
 end
 
@@ -13216,6 +13235,11 @@ end
 --- @param unit string @ The UnitId to query (e.g. player, party2, pet, target etc.)
 --- @return string, string @ name, realm
 function UnitName(unit)
+end
+
+--- [https://wow.gamepedia.com/API_UnitNameUnmodified?action=edit&amp;redlink=1]
+--- @return void
+function UnitNameUnmodified()
 end
 
 --- Returns true if a units' nameplate should appear in a widgets-only mode.
@@ -13281,9 +13305,9 @@ end
 
 --- Returns the current power of the specified unit.
 --- [https://wow.gamepedia.com/API_UnitPower]
---- @param unitToken string @ Unit whose power should be returned
---- @param powerType number @ Enum.PowerType (optional, default = NumPowerTypes)
---- @param unmodified boolean @ (optional, default = false)
+--- @param unitToken string @ UnitId
+--- @param powerType unknown @ Enum.PowerType? - Type of resource (mana/rage/energy/etc) to query
+--- @param unmodified boolean @ ? - Return the higher precision internal value (for graphical use only)
 --- @return number @ power
 function UnitPower(unitToken, powerType, unmodified)
 end
@@ -13309,10 +13333,10 @@ end
 
 --- Returns the maximum power of the specified unit.
 --- [https://wow.gamepedia.com/API_UnitPowerMax]
---- @param unitToken string @ Unit whose maximum power should be returned
---- @param powerType number @ Enum.PowerType (optional, default = NumPowerTypes)
---- @param unmodified boolean @ (optional, default = false)
---- @return number @ maxpower
+--- @param unitToken string @ UnitId
+--- @param powerType unknown @ Enum.PowerType? - Type of resource (mana/rage/energy/etc) to query
+--- @param unmodified boolean @ ? - Return the higher precision internal value (for graphical use only)
+--- @return number @ maxPower
 function UnitPowerMax(unitToken, powerType, unmodified)
 end
 
@@ -13326,8 +13350,8 @@ end
 
 --- Returns whether the unit is a flag/orb carrier or cart runner.
 --- [https://wow.gamepedia.com/API_UnitPvpClassification]
---- @param unit string
---- @return number @ classification
+--- @param unit string @ UnitId
+--- @return unknown @ classification
 function UnitPvpClassification(unit)
 end
 
@@ -13582,8 +13606,8 @@ end
 --- Perform the action in the specified action slot.
 --- [https://wow.gamepedia.com/API_UseAction]
 --- @param slot number @ The action action slot to use.
---- @param checkCursor number @ optional) - Can be 0, 1, or nil. Appears to indicate whether the action button was clicked (1) or used via hotkey (0); probably involved in placing skills/items in the action bar after they've been picked up.  I can confirm this.  If you pass 0 for checkCursor, it will use the action regardless of whether another item/skill is on the cursor.  If you pass 1 for checkCursor, it will replace the spell/action on the slot with the new one.
---- @param onSelf number @ optional) - Can be 0, 1, or nil. If present and 1, then the action is performed on the player, not the target.  If true is passed instead of 1, Blizzard produces a Lua error.
+--- @param checkCursor number @ (optional) - Can be 0, 1, or nil. Appears to indicate whether the action button was clicked (1) or used via hotkey (0); probably involved in placing skills/items in the action bar after they've been picked up.  I can confirm this.  If you pass 0 for checkCursor, it will use the action regardless of whether another item/skill is on the cursor.  If you pass 1 for checkCursor, it will replace the spell/action on the slot with the new one.
+--- @param onSelf number @ (optional) - Can be 0, 1, or nil. If present and 1, then the action is performed on the player, not the target.  If true is passed instead of 1, Blizzard produces a Lua error.
 --- @return void
 function UseAction(slot, checkCursor, onSelf)
 end
@@ -13592,7 +13616,7 @@ end
 --- [https://wow.gamepedia.com/API_UseContainerItem]
 --- @param bagID number @ The bag id, where the item to use is located
 --- @param slot number @ The slot in the bag, where the item to use is located
---- @param target string @ optional) - unit the item should be used on. If omitted, defaults to target if a the item must target someone.
+--- @param target string @ (optional) - unit the item should be used on. If omitted, defaults to target if a the item must target someone.
 --- @param reagentBankAccessible boolean @ (optional) - This indicates, for cases where no target is given, if the item reagent bank is accessible (so bank frame is shown and switched to the reagent bank tab).
 --- @return void
 function UseContainerItem(bagID, slot, target, reagentBankAccessible)
@@ -13613,7 +13637,7 @@ end
 --- Uses an item, optionally on a specified target.
 --- [https://wow.gamepedia.com/API_UseItemByName]
 --- @param name string @ name of the item to use.
---- @param target string @ optional) - unit to use the item on, defaults to target for items that can be used on others.
+--- @param target string @ (optional) - unit to use the item on, defaults to target for items that can be used on others.
 --- @return void
 function UseItemByName(name, target)
 end
@@ -14512,7 +14536,7 @@ end
 --- [https://wow.gamepedia.com/API_strsplit]
 --- @param delimiter string @ Characters (bytes) that will be interpreted as delimiter characters (bytes) in the string.
 --- @param subject string @ String to split.
---- @param pieces number @ optional) - Maximum number of pieces to make (the last piece would contain the rest of the string); by default, an unbounded number of pieces is returned.
+--- @param pieces number @ (optional) - Maximum number of pieces to make (the last piece would contain the rest of the string); by default, an unbounded number of pieces is returned.
 --- @return void
 function strsplit(delimiter, subject, pieces)
 end
