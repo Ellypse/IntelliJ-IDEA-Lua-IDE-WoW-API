@@ -36,6 +36,8 @@ function C_GossipInfo.GetPoiInfo(uiMapID, gossipPoiID) end
 ---@return string gossipText
 function C_GossipInfo.GetText() end
 
+function C_GossipInfo.RefreshOptions() end
+
 ---@param index number 
 function C_GossipInfo.SelectActiveQuest(index) end
 
@@ -72,6 +74,7 @@ local GossipOptionRewardInfo = {}
 ---@field type string 
 ---@field rewards table 
 ---@field status GossipOptionStatus 
+---@field spellID number|nil 
 local GossipOptionUIInfo = {}
 
 ---@class GossipPoiInfo

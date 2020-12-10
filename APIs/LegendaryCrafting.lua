@@ -53,16 +53,20 @@ function C_LegendaryCrafting.GetRuneforgePowerInfo(runeforgePowerID) end
 function C_LegendaryCrafting.GetRuneforgePowerSlots(runeforgePowerID) end
 
 ---@param baseItem table @ [OPTIONAL]
+---@param filter RuneforgePowerFilter @ [OPTIONAL]
+---@overload fun(filter:RuneforgePowerFilter)
 ---@overload fun()
----@return number runeforgePowerIDs
-function C_LegendaryCrafting.GetRuneforgePowers(baseItem) end
+---@return number, number specRuneforgePowerIDs, otherSpecRuneforgePowerIDs
+function C_LegendaryCrafting.GetRuneforgePowers(baseItem, filter) end
 
 ---@param classID number @ [OPTIONAL]
 ---@param specID number @ [OPTIONAL]
----@overload fun(specID:number)
+---@param filter RuneforgePowerFilter @ [OPTIONAL]
+---@overload fun(specID:number, filter:RuneforgePowerFilter)
+---@overload fun(filter:RuneforgePowerFilter)
 ---@overload fun()
 ---@return number runeforgePowerIDs
-function C_LegendaryCrafting.GetRuneforgePowersByClassAndSpec(classID, specID) end
+function C_LegendaryCrafting.GetRuneforgePowersByClassAndSpec(classID, specID, filter) end
 
 ---@param item table 
 ---@return boolean isRuneforgeLegendary

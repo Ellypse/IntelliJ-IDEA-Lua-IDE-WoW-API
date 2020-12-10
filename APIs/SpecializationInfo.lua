@@ -33,6 +33,10 @@ function C_SpecializationInfo.GetPvpTalentSlotUnlockLevel(talentIndex) end
 ---@return number|nil requiredLevel
 function C_SpecializationInfo.GetPvpTalentUnlockLevel(talentID) end
 
+---@param specSetID number 
+---@return number specIDs
+function C_SpecializationInfo.GetSpecIDs(specSetID) end
+
 ---@param specializationID number 
 ---@return number spellID
 function C_SpecializationInfo.GetSpellsDisplay(specializationID) end
@@ -43,6 +47,10 @@ function C_SpecializationInfo.IsInitialized() end
 ---@param talentID number 
 ---@return boolean locked
 function C_SpecializationInfo.IsPvpTalentLocked(talentID) end
+
+---@param specSetID number 
+---@return boolean matches
+function C_SpecializationInfo.MatchesCurrentSpecSet(specSetID) end
 
 ---@param talentID number 
 ---@param locked boolean 

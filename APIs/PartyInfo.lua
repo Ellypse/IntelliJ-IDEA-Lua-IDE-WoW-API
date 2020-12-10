@@ -67,6 +67,9 @@ function C_PartyInfo.InviteUnit(targetName) end
 ---@return boolean isFull
 function C_PartyInfo.IsPartyFull(category) end
 
+---@return boolean isPartyInJailersTower
+function C_PartyInfo.IsPartyInJailersTower() end
+
 --- Usually this will leave the party immediately. In some cases (e.g. PartySync) the user will be prompted to confirm leaving the party, because it's potentially destructive
 ---@param category number @ [OPTIONAL]
 ---@overload fun()

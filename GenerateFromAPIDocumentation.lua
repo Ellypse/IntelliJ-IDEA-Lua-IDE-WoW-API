@@ -14,6 +14,7 @@ local BLACKLISTED_FILES = {
 	["TablesAPIMixin.lua"] = true,
 	["Blizzard_APIDocumentation.toc"] = true,
 	["Blizzard_APIDocumentation.lua"] = true,
+	["CurrencyConstantsDocumentation.lua"] = true,
 	["."] = true,
 	[".."] = true,
 }

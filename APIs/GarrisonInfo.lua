@@ -16,6 +16,10 @@ function C_Garrison.GetAutoCombatDamageClassValues() end
 function C_Garrison.GetAutoMissionBoardState(missionID) end
 
 ---@param missionID number 
+---@return AutoMissionEnvironmentEffect|nil autoMissionEnvEffect
+function C_Garrison.GetAutoMissionEnvironmentEffect(missionID) end
+
+---@param missionID number 
 ---@param followerID string 
 ---@param casterBoardIndex number 
 ---@return AutoMissionTargetingInfo targetInfo
@@ -99,6 +103,13 @@ function C_Garrison.GetTalentTreeResetInfo(garrTalentTreeID) end
 ---@return number, GarrisonTalentCurrencyCostInfo, number goldCost, currencyCosts, durationSecs
 function C_Garrison.GetTalentTreeTalentPointResearchInfo(garrTalentTreeID, talentPointIndex, isRespec) end
 
+---@param talentID number 
+---@return number worldQuestID
+function C_Garrison.GetTalentUnlockWorldQuest(talentID) end
+
+---@return boolean hasAdventures
+function C_Garrison.HasAdventures() end
+
 ---@return boolean atGarrisonMissionNPC
 function C_Garrison.IsAtGarrisonMissionNPC() end
 
@@ -112,6 +123,15 @@ function C_Garrison.IsTalentConditionMet(talentID) end
 
 ---@param missionID number 
 function C_Garrison.RegenerateCombatLog(missionID) end
+
+---@param missionID number 
+---@param followerID string 
+---@param boardIndex number @ [OPTIONAL]
+---@overload fun(missionID:number, followerID:string)
+function C_Garrison.RemoveFollowerFromMission(missionID, followerID, boardIndex) end
+
+---@param followerType number 
+function C_Garrison.RushHealAllFollowers(followerType) end
 
 ---@param garrFollowerID string 
 function C_Garrison.RushHealFollower(garrFollowerID) end
@@ -138,6 +158,7 @@ local AutoCombatResult = {}
 ---@field schoolMask number 
 ---@field previewMask number 
 ---@field icon number 
+---@field spellTutorialFlag number 
 local AutoCombatSpellInfo = {}
 
 ---@class AutoCombatTroopInfo
@@ -179,6 +200,11 @@ local AutoCombatTroopInfo = {}
 ---@field points number|nil 
 local AutoMissionCombatEventInfo = {}
 
+---@class AutoMissionEnvironmentEffect
+---@field name string 
+---@field autoCombatSpellInfo AutoCombatSpellInfo 
+local AutoMissionEnvironmentEffect = {}
+
 ---@class AutoMissionEvent
 ---@field type number 
 ---@field spellID number 
@@ -203,6 +229,7 @@ local AutoMissionTargetingInfo = {}
 ---@field maxHealth number 
 ---@field attack number 
 ---@field healingTimestamp number 
+---@field healCost number 
 local FollowerAutoCombatStatsInfo = {}
 
 ---@class FollowerDisplayID

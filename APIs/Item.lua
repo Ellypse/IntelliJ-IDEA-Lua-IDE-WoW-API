@@ -73,9 +73,17 @@ function C_Item.GetItemQualityByID(itemInfo) end
 ---@return number stackCount
 function C_Item.GetStackCount(itemLocation) end
 
+---@param itemInfo string 
+---@return boolean isAnimaItem
+function C_Item.IsAnimaItemByID(itemInfo) end
+
 ---@param itemLocation table 
 ---@return boolean isBound
 function C_Item.IsBound(itemLocation) end
+
+---@param itemLoc table 
+---@return boolean isConduit
+function C_Item.IsItemConduit(itemLoc) end
 
 ---@param itemLoc table 
 ---@return boolean isCorrupted

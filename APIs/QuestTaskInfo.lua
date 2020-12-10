@@ -38,6 +38,10 @@ function C_TaskQuest.GetQuestsForPlayerByMapID(uiMapID) end
 function C_TaskQuest.GetThreatQuests() end
 
 ---@param questID number 
+---@return number UiWidgetSetID
+function C_TaskQuest.GetUIWidgetSetIDFromQuestID(questID) end
+
+---@param questID number 
 ---@return boolean active
 function C_TaskQuest.IsActive(questID) end
 

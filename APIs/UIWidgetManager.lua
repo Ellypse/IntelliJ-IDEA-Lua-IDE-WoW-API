@@ -98,8 +98,8 @@ function C_UIWidgetManager.GetTextureWithAnimationVisualizationInfo(widgetID) en
 function C_UIWidgetManager.GetTopCenterWidgetSetID() end
 
 ---@param widgetSetID number 
----@return UIWidgetLayoutDirection layoutDirection
-function C_UIWidgetManager.GetWidgetLayoutDirectionFromWidgetSetID(widgetSetID) end
+---@return UIWidgetSetInfo widgetSetInfo
+function C_UIWidgetManager.GetWidgetSetInfo(widgetSetID) end
 
 ---@param widgetID number 
 ---@return ZoneControlVisualizationInfo|nil widgetInfo
@@ -636,6 +636,11 @@ local UIWidgetCurrencyInfo = {}
 ---@field widgetType UIWidgetVisualizationType 
 ---@field unitToken string|nil 
 local UIWidgetInfo = {}
+
+---@class UIWidgetSetInfo
+---@field layoutDirection UIWidgetSetLayoutDirection 
+---@field verticalPadding number 
+local UIWidgetSetInfo = {}
 
 ---@class UIWidgetSpellInfo
 ---@field spellID number 
