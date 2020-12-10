@@ -1,12 +1,21 @@
 ---@class CovenantSanctumUI
 C_CovenantSanctumUI = {}
 
+---@return boolean canAccess
+function C_CovenantSanctumUI.CanAccessReservoir() end
+
+---@return boolean canDeposit
+function C_CovenantSanctumUI.CanDepositAnima() end
+
 function C_CovenantSanctumUI.DepositAnima() end
 
 function C_CovenantSanctumUI.EndInteraction() end
 
 ---@return number, number currencyID, maxDisplayableValue
 function C_CovenantSanctumUI.GetAnimaInfo() end
+
+---@return number|nil currentTalentTreeID
+function C_CovenantSanctumUI.GetCurrentTalentTreeID() end
 
 ---@return CovenantSanctumFeatureInfo features
 function C_CovenantSanctumUI.GetFeatures() end
@@ -15,9 +24,8 @@ function C_CovenantSanctumUI.GetFeatures() end
 function C_CovenantSanctumUI.GetRenownLevel() end
 
 ---@param covenantID number 
----@param renownLevel number 
----@return CovenantSanctumRenownMilestoneInfo milestones
-function C_CovenantSanctumUI.GetRenownMilestones(covenantID, renownLevel) end
+---@return CovenantSanctumRenownLevelInfo levels
+function C_CovenantSanctumUI.GetRenownLevels(covenantID) end
 
 ---@param covenantID number 
 ---@param renownLevel number 
@@ -36,11 +44,12 @@ function C_CovenantSanctumUI.GetSoulCurrencies() end
 ---@field uiOrder number 
 local CovenantSanctumFeatureInfo = {}
 
----@class CovenantSanctumRenownMilestoneInfo
+---@class CovenantSanctumRenownLevelInfo
 ---@field level number 
 ---@field locked bool 
+---@field isMilestone bool 
 ---@field isCapstone bool 
-local CovenantSanctumRenownMilestoneInfo = {}
+local CovenantSanctumRenownLevelInfo = {}
 
 ---@class CovenantSanctumRenownRewardInfo
 ---@field uiOrder number 
@@ -49,7 +58,7 @@ local CovenantSanctumRenownMilestoneInfo = {}
 ---@field mountID number|nil 
 ---@field transmogID number|nil 
 ---@field transmogSetID number|nil 
----@field titleID number|nil 
+---@field titleMaskID number|nil 
 ---@field garrFollowerID number|nil 
 ---@field transmogIllusionSourceID number|nil 
 ---@field icon number|nil 

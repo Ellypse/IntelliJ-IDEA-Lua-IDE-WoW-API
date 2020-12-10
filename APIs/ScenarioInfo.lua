@@ -10,4 +10,9 @@ JailersTowerType.Soulforges = 3
 JailersTowerType.Coldheart = 4
 JailersTowerType.Mortregar = 5
 JailersTowerType.UpperReaches = 6
+JailersTowerType.ArkobanHall = 7
+JailersTowerType.TormentChamberJaina = 8
+JailersTowerType.TormentChamberThrall = 9
+JailersTowerType.TormentChamberAnduin = 10
+JailersTowerType.AdamantVaults = 11
 

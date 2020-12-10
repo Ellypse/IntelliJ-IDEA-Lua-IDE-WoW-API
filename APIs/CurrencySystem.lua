@@ -109,6 +109,8 @@ local CurrencyDisplayInfo = {}
 ---@field isTradeable bool 
 ---@field quality ItemQuality 
 ---@field maxWeeklyQuantity number 
+---@field totalEarned number 
 ---@field discovered bool 
+---@field useTotalEarnedForMaxQty bool 
 local CurrencyInfo = {}
 

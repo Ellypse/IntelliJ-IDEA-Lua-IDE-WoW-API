@@ -1,79 +1,97 @@
 ---@class Transmogrify
-C_TransmogSets = {}
+C_Transmog = {}
 
-function C_TransmogSets.ClearLatestSource() end
+function C_Transmog.ClearAllPending() end
 
----@param sourceID number 
-function C_TransmogSets.ClearNewSource(sourceID) end
+---@param transmogLocation table 
+function C_Transmog.ClearPending(transmogLocation) end
 
----@param transmogSetID number 
----@param slot number 
-function C_TransmogSets.ClearSetNewSourcesForSlot(transmogSetID, slot) end
+---@param transmogID number 
+---@return number categoryID
+function C_Transmog.GetBaseCategory(transmogID) end
 
----@param transmogSetID number 
----@return number sources
-function C_TransmogSets.GetAllSourceIDs(transmogSetID) end
+---@param itemModifiedAppearanceID number 
+---@return number|nil creatureDisplayID
+function C_Transmog.GetCreatureDisplayIDForSource(itemModifiedAppearanceID) end
 
----@return number, number numCollected, numTotal
-function C_TransmogSets.GetBaseSetsCounts() end
+---@param itemModifiedAppearanceID number 
+---@return number|nil itemID
+function C_Transmog.GetItemIDForSource(itemModifiedAppearanceID) end
 
----@param index number 
----@return boolean isChecked
-function C_TransmogSets.GetBaseSetsFilter(index) end
+---@param inventoryType number 
+---@return number slot
+function C_Transmog.GetSlotForInventoryType(inventoryType) end
 
----@return number|nil, number|nil detailsCameraID, vendorCameraID
-function C_TransmogSets.GetCameraIDs() end
+---@param transmogLocation table 
+---@return boolean, boolean, boolean, boolean, number, boolean, boolean, number|nil isTransmogrified, hasPending, isPendingCollected, canTransmogrify, cannotTransmogrifyReason, hasUndo, isHideVisual, texture
+function C_Transmog.GetSlotInfo(transmogLocation) end
 
----@param transmogSetID number 
----@return boolean, boolean isFavorite, isGroupFavorite
-function C_TransmogSets.GetIsFavorite(transmogSetID) end
+---@param transmogLocation table 
+---@return number, string errorCode, errorString
+function C_Transmog.GetSlotUseError(transmogLocation) end
 
----@return number sourceID
-function C_TransmogSets.GetLatestSource() end
+---@param transmogLocation table 
+---@return number, number, number, number, number, number, number, number, boolean, boolean, number baseSourceID, baseVisualID, appliedSourceID, appliedVisualID, appliedCategoryID, pendingSourceID, pendingVisualID, pendingCategoryID, hasUndo, isHideVisual, itemSubclass
+function C_Transmog.GetSlotVisualInfo(transmogLocation) end
 
----@param transmogSetID number 
----@return number sourceIDs
-function C_TransmogSets.GetSetNewSources(transmogSetID) end
+---@param transmogLocation table 
+---@param transmogID number 
+---@param categoryID number @ [OPTIONAL]
+---@overload fun(transmogLocation:table, transmogID:number)
+function C_Transmog.SetPending(transmogLocation, transmogID, categoryID) end
 
----@param sourceID number 
----@return number setIDs
-function C_TransmogSets.GetSetsContainingSourceID(sourceID) end
+---@class TransmogCollectionType
+local TransmogCollectionType = {}
+TransmogCollectionType.Head = 0
+TransmogCollectionType.Shoulder = 1
+TransmogCollectionType.Back = 2
+TransmogCollectionType.Chest = 3
+TransmogCollectionType.Shirt = 4
+TransmogCollectionType.Tabard = 5
+TransmogCollectionType.Wrist = 6
+TransmogCollectionType.Hands = 7
+TransmogCollectionType.Waist = 8
+TransmogCollectionType.Legs = 9
+TransmogCollectionType.Feet = 10
+TransmogCollectionType.Wand = 11
+TransmogCollectionType.OneHAxe = 12
+TransmogCollectionType.OneHSword = 13
+TransmogCollectionType.OneHMace = 14
+TransmogCollectionType.Dagger = 15
+TransmogCollectionType.Fist = 16
+TransmogCollectionType.Shield = 17
+TransmogCollectionType.Holdable = 18
+TransmogCollectionType.TwoHAxe = 19
+TransmogCollectionType.TwoHSword = 20
+TransmogCollectionType.TwoHMace = 21
+TransmogCollectionType.Staff = 22
+TransmogCollectionType.Polearm = 23
+TransmogCollectionType.Bow = 24
+TransmogCollectionType.Gun = 25
+TransmogCollectionType.Crossbow = 26
+TransmogCollectionType.Warglaives = 27
+TransmogCollectionType.Paired = 28
 
----@param transmogSetID number 
----@param slot number 
----@return number sources
-function C_TransmogSets.GetSourceIDsForSlot(transmogSetID, slot) end
+---@class TransmogModification
+local TransmogModification = {}
+TransmogModification.None = 0
+TransmogModification.RightShoulder = 1
 
----@param transmogSetID number 
----@param slot number 
----@return AppearanceSourceInfo sources
-function C_TransmogSets.GetSourcesForSlot(transmogSetID, slot) end
+---@class TransmogSource
+local TransmogSource = {}
+TransmogSource.None = 0
+TransmogSource.JournalEncounter = 1
+TransmogSource.Quest = 2
+TransmogSource.Vendor = 3
+TransmogSource.WorldDrop = 4
+TransmogSource.HiddenUntilCollected = 5
+TransmogSource.CantCollect = 6
+TransmogSource.Achievement = 7
+TransmogSource.Profession = 8
+TransmogSource.NotValidForTransmog = 9
 
----@return boolean hasUsableSets
-function C_TransmogSets.HasUsableSets() end
-
----@param transmogSetID number 
----@return boolean isCollected
-function C_TransmogSets.IsBaseSetCollected(transmogSetID) end
-
----@param sourceID number 
----@return boolean isNew
-function C_TransmogSets.IsNewSource(sourceID) end
-
----@param index number 
----@param isChecked boolean 
-function C_TransmogSets.SetBaseSetsFilter(index, isChecked) end
-
----@param transmogSetID number 
----@return boolean hasNewSources
-function C_TransmogSets.SetHasNewSources(transmogSetID) end
-
----@param transmogSetID number 
----@param slot number 
----@return boolean hasNewSources
-function C_TransmogSets.SetHasNewSourcesForSlot(transmogSetID, slot) end
-
----@param transmogSetID number 
----@param isFavorite boolean 
-function C_TransmogSets.SetIsFavorite(transmogSetID, isFavorite) end
+---@class TransmogType
+local TransmogType = {}
+TransmogType.Appearance = 0
+TransmogType.Illusion = 1
 

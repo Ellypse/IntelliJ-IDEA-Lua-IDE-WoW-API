@@ -30,6 +30,7 @@ VignetteType.Treasure = 3
 ---@field name string 
 ---@field isDead bool 
 ---@field onWorldMap bool 
+---@field zoneInfiniteAOI bool 
 ---@field onMinimap bool 
 ---@field isUnique bool 
 ---@field inFogOfWar bool 
