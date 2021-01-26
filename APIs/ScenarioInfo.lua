@@ -1,6 +1,10 @@
 ---@class ScenarioInfo
 C_ScenarioInfo = {}
 
+---@param runType JailersTowerType 
+---@return string|nil typeString
+function C_ScenarioInfo.GetJailersTowerTypeString(runType) end
+
 ---@class JailersTowerType
 local JailersTowerType = {}
 JailersTowerType.TwistingCorridors = 0
