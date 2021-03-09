@@ -7015,7 +7015,7 @@ end
 --- [https://wow.gamepedia.com/API_GetSpellBookItemName]
 --- @param spellName_or_slotIndex unknown
 --- @param bookType string @ Either BOOKTYPE_SPELL (spell) or BOOKTYPE_PET (pet).
---- @return string, string @ spellName, spellSubName
+--- @return string, string, number @ spellName, spellSubName, spellID
 function GetSpellBookItemName(spellName_or_slotIndex, bookType)
 end
 
