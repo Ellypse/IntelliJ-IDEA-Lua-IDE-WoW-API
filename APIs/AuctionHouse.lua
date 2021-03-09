@@ -368,6 +368,7 @@ local BrowseResultInfo = {}
 ---@field unitPrice number 
 ---@field auctionID number 
 ---@field owners table 
+---@field totalNumberOfOwners number 
 ---@field timeLeftSeconds number|nil 
 ---@field numOwnerItems number 
 ---@field containsOwnerItem bool 
@@ -395,6 +396,7 @@ local ItemKeyInfo = {}
 ---@class ItemSearchResultInfo
 ---@field itemKey ItemKey 
 ---@field owners table 
+---@field totalNumberOfOwners number 
 ---@field timeLeft AuctionHouseTimeLeftBand 
 ---@field auctionID number 
 ---@field quantity number 

@@ -38,6 +38,17 @@ function C_CovenantSanctumUI.GetSanctumType() end
 ---@return number currencyIDs
 function C_CovenantSanctumUI.GetSoulCurrencies() end
 
+---@return boolean hasMaxRenown
+function C_CovenantSanctumUI.HasMaximumRenown() end
+
+---@return boolean isInCatchUpMode
+function C_CovenantSanctumUI.IsPlayerInRenownCatchUpMode() end
+
+---@return boolean isWeeklyCapped
+function C_CovenantSanctumUI.IsWeeklyRenownCapped() end
+
+function C_CovenantSanctumUI.RequestCatchUpState() end
+
 ---@class CovenantSanctumFeatureInfo
 ---@field garrTalentTreeID number 
 ---@field featureType number 

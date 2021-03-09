@@ -288,6 +288,10 @@ function C_QuestLog.SetMapForQuestPOIs(uiMapID) end
 function C_QuestLog.SetSelectedQuest(questID) end
 
 ---@param questID number 
+---@return boolean displayTimeRemaining
+function C_QuestLog.ShouldDisplayTimeRemaining(questID) end
+
+---@param questID number 
 ---@return boolean shouldShow
 function C_QuestLog.ShouldShowQuestRewards(questID) end
 

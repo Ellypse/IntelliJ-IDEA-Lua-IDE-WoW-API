@@ -12,6 +12,9 @@ function C_GossipInfo.GetActiveQuests() end
 ---@return GossipQuestUIInfo info
 function C_GossipInfo.GetAvailableQuests() end
 
+---@return string|nil description
+function C_GossipInfo.GetCustomGossipDescriptionString() end
+
 ---@return number numQuests
 function C_GossipInfo.GetNumActiveQuests() end
 

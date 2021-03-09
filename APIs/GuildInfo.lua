@@ -41,6 +41,13 @@ function C_GuildInfo.IsGuildRankAssignmentAllowed(guid, rankOrder) end
 ---@param skillLineID number 
 function C_GuildInfo.QueryGuildMemberRecipes(guildMemberGUID, skillLineID) end
 
+---@param skillLineID number 
+---@param recipeSpellID number 
+---@param recipeLevel number @ [OPTIONAL]
+---@overload fun(skillLineID:number, recipeSpellID:number)
+---@return number updatedRecipeSpellID
+function C_GuildInfo.QueryGuildMembersForRecipe(skillLineID, recipeSpellID, recipeLevel) end
+
 ---@param guid string 
 function C_GuildInfo.RemoveFromGuild(guid) end
 

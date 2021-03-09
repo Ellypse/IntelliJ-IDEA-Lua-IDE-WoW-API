@@ -85,11 +85,6 @@ function C_Soulbinds.GetConduitIDPendingInstall(nodeID) end
 
 ---@param conduitID number 
 ---@param rank number 
----@return number itemLevel
-function C_Soulbinds.GetConduitItemLevel(conduitID, rank) end
-
----@param conduitID number 
----@param rank number 
 ---@return number quality
 function C_Soulbinds.GetConduitQuality(conduitID, rank) end
 
@@ -196,6 +191,7 @@ local SoulbindConduitData = {}
 ---@field tree SoulbindTree 
 ---@field modelSceneData SoulbindModelSceneData 
 ---@field activationSoundKitID number 
+---@field playerConditionReason string|nil 
 local SoulbindData = {}
 
 ---@class SoulbindModelSceneData
