@@ -6325,7 +6325,7 @@ end
 --- @param questID number @ Unique identifier of the quest.
 --- @param objectiveIndex unknown @ Index of the quest objective to query, ascending from 1 to GetNumQuestLeaderBoards(questIndex) or to numObjectives from GetTaskInfo(questID).
 --- @param Boolean unknown @ Required to actually obtain quest text.
---- @return string, string, boolean @ text, objectiveType, finished
+--- @return string, string, boolean, number, number @ text, objectiveType, finished, fulfilled, required
 function GetQuestObjectiveInfo(questID, objectiveIndex, Boolean)
 end
 
