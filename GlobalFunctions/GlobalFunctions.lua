@@ -3020,7 +3020,7 @@ end
 --- Returns all keys currently bound to the command specified by command.  This function is almost identical to GetBinding(index) except it takes the command name as an argument instead of the index and doesn't return the command name along with the key bindings.
 --- [https://wow.gamepedia.com/API_GetBindingKey]
 --- @param command unknown @ The name of the command to get key bindings for (e.g. MOVEFORWARD, TOGGLEFRIENDSTAB)
---- @return unknown, unknown @ key1, key2
+--- @return string, string, unknown @ key1, key2, ...
 function GetBindingKey(command)
 end
 
