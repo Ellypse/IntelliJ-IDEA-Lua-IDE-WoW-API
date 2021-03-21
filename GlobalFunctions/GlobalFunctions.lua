@@ -414,7 +414,7 @@ end
 --- Sends a whisper to Battle.net friends.
 --- [https://wow.gamepedia.com/API_BNSendWhisper]
 --- @param bnetAccountID number @ A unique numeric identifier for the friend during this session. You can get bnetAccountID from C_BattleNet.GetFriendAccountInfo()
---- @param message unknown @ Message text. Must be less than 4096 bytes.
+--- @param message string @ Message text. Must be less than 4096 bytes.
 --- @return void
 function BNSendWhisper(bnetAccountID, message)
 end
@@ -455,10 +455,10 @@ end
 
 --- Sets the Friend Note for a specific Battle.Net friend.
 --- [https://wow.gamepedia.com/API_BNSetFriendNote]
---- @param ID unknown
+--- @param bnetIDAccount number @ A unique numeric identifier for the friend's battle.net account during this session.
 --- @param noteText string @ The text you wish to set as the battle.net friend's new note.
 --- @return void
-function BNSetFriendNote(ID, noteText)
+function BNSetFriendNote(bnetIDAccount, noteText)
 end
 
 --- [https://wow.gamepedia.com/API_BNSetSelectedBlock?action=edit&amp;redlink=1]
@@ -571,9 +571,9 @@ end
 function BuyTrainerService(index)
 end
 
---- API BuybackItem will buyback an item from a merchant if you have the merchant window open.
+--- Buyback an item from a merchant if you have the merchant window open.
 --- [https://wow.gamepedia.com/API_BuybackItem]
---- @param slot unknown
+--- @param slot number @ the slot from topleft to bottomright of the Merchant Buyback window.
 --- @return void
 function BuybackItem(slot)
 end
@@ -1039,24 +1039,24 @@ end
 
 --- Bans a player from the specified channel.
 --- [https://wow.gamepedia.com/API_ChannelBan]
---- @param channelName unknown @ The name of the channel to ban on
---- @param playerName unknown @ The name of the player to ban
+--- @param channelName string @ The name of the channel to ban on
+--- @param playerName string @ The name of the player to ban
 --- @return void
 function ChannelBan(channelName, playerName)
 end
 
 --- Invites the specified user to the channel.
 --- [https://wow.gamepedia.com/API_ChannelInvite]
---- @param channelName unknown @ The name of the channel to invite to
---- @param playerName unknown @ The name of the player to invite
+--- @param channelName string @ The name of the channel to invite to
+--- @param playerName string @ The name of the player to invite
 --- @return void
 function ChannelInvite(channelName, playerName)
 end
 
 --- Kicks a player from the specified channel.
 --- [https://wow.gamepedia.com/API_ChannelKick]
---- @param channelName unknown @ The name of the channel to kick from
---- @param playerName unknown @ The name of the player to kick
+--- @param channelName string @ The name of the channel to kick from
+--- @param playerName string @ The name of the player to kick
 --- @return void
 function ChannelKick(channelName, playerName)
 end
@@ -2334,6 +2334,7 @@ end
 function FollowUnit(unit)
 end
 
+--- Logs the player out immediately, even if outside a resting zone.
 --- [https://wow.gamepedia.com/API_ForceLogout]
 --- @return void
 function ForceLogout()
@@ -7006,17 +7007,17 @@ end
 --- Retrieves information about a specific spellbook item.
 --- [https://wow.gamepedia.com/API_GetSpellBookItemInfo]
 --- @param index number @ The index into the spellbook.
---- @param bookType string @ Spell book type.  Although intended to be BOOKTYPE_PET (pet) or BOOKTYPE_SPELL (spell), the game currently only tests if this value is equal to pet and treats any other value as spell.
+--- @param bookType string @ BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook. Internally the game only tests if this value is equal to pet and treats any other string value as spell
 --- @return string, number @ skillType, special
 function GetSpellBookItemInfo(index, bookType)
 end
 
 --- Retrieves the spell name and spell rank for a spell in the player's spell book.
 --- [https://wow.gamepedia.com/API_GetSpellBookItemName]
---- @param spellName_or_slotIndex unknown
---- @param bookType string @ Either BOOKTYPE_SPELL (spell) or BOOKTYPE_PET (pet).
+--- @param index number @ Spell book slot index. Valid values are 1 through total number of spells in the spell book on all pages and all tabs, ignoring empty slots.
+--- @param bookType string @ BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook. Internally the game only tests if this value is equal to pet and treats any other string value as spell
 --- @return string, string, number @ spellName, spellSubName, spellID
-function GetSpellBookItemName(spellName_or_slotIndex, bookType)
+function GetSpellBookItemName(index, bookType)
 end
 
 --- Returns the icon of a spell book entry.
@@ -7088,7 +7089,7 @@ end
 --- Returns a hyperlink for a spell.
 --- [https://wow.gamepedia.com/API_GetSpellLink]
 --- @param slot number @ Valid values are 1 through total number of spells in the spellbook on all pages and all tabs, ignoring empty slots.
---- @param bookType string @ BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook.
+--- @param bookType string @ BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook. Internally the game only tests if this value is equal to pet and treats any other string value as spell
 --- @return string, number @ link, spellID
 function GetSpellLink(slot, bookType)
 end
