@@ -126,6 +126,7 @@ function C_Garrison.IsFollowerOnCompletedMission(followerID) end
 function C_Garrison.IsTalentConditionMet(talentID) end
 
 ---@param missionID number 
+---@return boolean success
 function C_Garrison.RegenerateCombatLog(missionID) end
 
 ---@param missionID number 

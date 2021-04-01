@@ -12,8 +12,8 @@
 --  lua-sec
 
 -- loads the HTTP module and any libraries it requires
-local BASE_WOWPEDIA_ADDRESS = "https://wow.gamepedia.com"
-local WOWPEDIA_SUB_ADDRESS = "/Global_functions"
+local BASE_WOWPEDIA_ADDRESS = "https://wowpedia.fandom.com"
+local WOWPEDIA_SUB_ADDRESS = "/wiki/Global_functions"
 
 local OUTPUT_DIRECTORY = "./GlobalFunctions/"
 
