@@ -1,6 +1,10 @@
 ---@class ChallengeModeInfo
 C_ChallengeMode = {}
 
+---@param itemLocation table 
+---@return boolean canUse
+function C_ChallengeMode.CanUseKeystoneInCurrentMap(itemLocation) end
+
 function C_ChallengeMode.ClearKeystone() end
 
 function C_ChallengeMode.CloseKeystoneFrame() end

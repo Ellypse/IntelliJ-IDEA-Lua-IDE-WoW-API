@@ -29,5 +29,6 @@ function C_AreaPoiInfo.IsAreaPOITimed(areaPoiID) end
 ---@field widgetSetID number|nil 
 ---@field atlasName string|nil 
 ---@field uiTextureKit string|nil 
+---@field shouldGlow bool 
 local AreaPOIInfo = {}
 
