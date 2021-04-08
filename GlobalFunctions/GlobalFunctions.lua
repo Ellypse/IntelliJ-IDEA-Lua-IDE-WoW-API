@@ -3730,13 +3730,16 @@ end
 function GetFollowerTypeIDFromSpell()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_GetFontInfo?action=edit&amp;redlink=1]
---- @return void
-function GetFontInfo()
+--- Returns a structured table of information about the given font object.
+--- [https://wowpedia.fandom.com/wiki/API_GetFontInfo]
+--- @param font_or_name unknown
+--- @return unknown @ fontInfo
+function GetFontInfo(font_or_name)
 end
 
---- [https://wowpedia.fandom.com/wiki/API_GetFonts?action=edit&amp;redlink=1]
---- @return void
+--- Returns a table listing all registered font object names.
+--- [https://wowpedia.fandom.com/wiki/API_GetFonts]
+--- @return string @ fonts
 function GetFonts()
 end
 
@@ -4862,7 +4865,7 @@ end
 --- Returns information about the source of the objects in a loot slot.
 --- [https://wowpedia.fandom.com/wiki/API_GetLootSourceInfo]
 --- @param lootSlot number @ index of the loot slot, ascending from 1 up to GetNumLootItems()
---- @return unknown, unknown, unknown, unknown, unknown @ guid1, quant1, guid2, quant2, ...
+--- @return string, number, unknown @ guid, quantity, ...
 function GetLootSourceInfo(lootSlot)
 end
 
@@ -5201,7 +5204,7 @@ end
 
 --- Produces a table describing all the harmful consequences of wearing corrupted gear without resistance.
 --- [https://wowpedia.fandom.com/wiki/API_GetNegativeCorruptionEffectInfo]
---- @return table @ corruptionEffects
+--- @return unknown @ corruptionEffects
 function GetNegativeCorruptionEffectInfo()
 end
 
