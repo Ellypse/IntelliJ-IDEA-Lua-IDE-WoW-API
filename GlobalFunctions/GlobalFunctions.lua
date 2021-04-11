@@ -3793,9 +3793,11 @@ end
 function GetGMTicket()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_GetGameMessageInfo?action=edit&amp;redlink=1]
---- @return void
-function GetGameMessageInfo()
+--- Returns the error message for an id.
+--- [https://wowpedia.fandom.com/wiki/API_GetGameMessageInfo]
+--- @param messageType number @ errorType from UI_INFO_MESSAGE or UI_ERROR_MESSAGE
+--- @return string, number, number @ stringId, soundKitID, voiceID
+function GetGameMessageInfo(messageType)
 end
 
 --- Returns the realm's current time in hours and minutes.
@@ -13326,7 +13328,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_UnitPowerType]
 --- @param unit string @ unitId) - The unit whose power type to query.
 --- @param index number @ Optional value for classes with multiple powerTypes. If not specified, information about the first (currently active) power type will be returned.
---- @return number, string, number, number, number @ powerType, powerToken, altR, altG, altB
+--- @return unknown, string, number, number, number @ powerType, powerToken, altR, altG, altB
 function UnitPowerType(unit, index)
 end
 
