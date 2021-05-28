@@ -179,6 +179,7 @@ UIMapFlag.ForceAllOverlayExplored = 4096
 UIMapFlag.FlightMapShowZoomOut = 8192
 UIMapFlag.FlightMapAutoZoom = 16384
 UIMapFlag.ForceOnNavbar = 32768
+UIMapFlag.AlwaysAllowUserWaypoints = 65536
 
 ---@class UIMapSystem
 local UIMapSystem = {}

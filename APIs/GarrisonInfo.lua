@@ -117,11 +117,16 @@ function C_Garrison.IsAtGarrisonMissionNPC() end
 ---@return boolean environmentCountered
 function C_Garrison.IsEnvironmentCountered(missionID) end
 
+---@param followerID string 
+---@return boolean followerOnCompletedMission
+function C_Garrison.IsFollowerOnCompletedMission(followerID) end
+
 ---@param talentID number 
 ---@return boolean, string|nil isMet, failureString
 function C_Garrison.IsTalentConditionMet(talentID) end
 
 ---@param missionID number 
+---@return boolean success
 function C_Garrison.RegenerateCombatLog(missionID) end
 
 ---@param missionID number 
@@ -187,6 +192,7 @@ local AutoCombatSpellInfo = {}
 ---@field maxHealth number 
 ---@field role number 
 ---@field isAutoTroop bool 
+---@field isSoulbind bool 
 ---@field isCollected bool 
 ---@field autoCombatStats FollowerAutoCombatStatsInfo 
 ---@field autoCombatSpells table 
@@ -230,6 +236,7 @@ local AutoMissionTargetingInfo = {}
 ---@field attack number 
 ---@field healingTimestamp number 
 ---@field healCost number 
+---@field minutesHealingRemaining number 
 local FollowerAutoCombatStatsInfo = {}
 
 ---@class FollowerDisplayID

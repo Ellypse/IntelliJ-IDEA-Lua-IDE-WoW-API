@@ -23,9 +23,15 @@ function C_LFGList.GetActiveEntryInfo() end
 ---@return LfgApplicantData applicantData
 function C_LFGList.GetApplicantInfo(applicantID) end
 
+---@return number, number totalResultsFound, filteredResults
+function C_LFGList.GetFilteredSearchResults() end
+
 ---@param searchResultID number 
 ---@return LfgSearchResultData searchResultData
 function C_LFGList.GetSearchResultInfo(searchResultID) end
+
+---@return number, number totalResultsFound, results
+function C_LFGList.GetSearchResults() end
 
 ---@return boolean hasActiveEntryInfo
 function C_LFGList.HasActiveEntryInfo() end
