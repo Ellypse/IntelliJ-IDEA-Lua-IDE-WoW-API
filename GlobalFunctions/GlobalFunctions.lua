@@ -1922,7 +1922,7 @@ end
 
 --- Returns the currently selected content tuning ID for BFA instances per EJ_SelectInstance.
 --- [https://wowpedia.fandom.com/wiki/API_EJ_GetContentTuningID]
---- @return void
+--- @return number @ tuningID
 function EJ_GetContentTuningID()
 end
 
@@ -1949,7 +1949,7 @@ end
 --- Returns encounter info from the journal.
 --- [https://wowpedia.fandom.com/wiki/API_EJ_GetEncounterInfo]
 --- @param encounterID number
---- @return string, string, number, number, string, number, number, number @ name, description, bossID, rootSectionID, link, journalInstanceID, dungeonEncounterID, instanceID
+--- @return void
 function EJ_GetEncounterInfo(encounterID)
 end
 
@@ -6899,33 +6899,28 @@ end
 function GetSpecialization(isInspect, isPet, specGroup)
 end
 
---- Returns information about a player's specializations.
+--- Returns information about the specified specialization.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpecializationInfo]
 --- @param specIndex number @ Index of the specialization to query, ascending from 1 to GetNumSpecializations().
---- @param isInspect boolean @ ?Optional.  Could be nil. - If true, query specialization information for the inspected unit.
---- @param isPet boolean @ ?Optional.  Could be nil. - If true, query specialization information for the player's pet.
---- @param inspectTarget unknown @ ? - Some unknown argument not used anywhere in Blizzard API in 6.2.
---- @param sex number @ ?Optional.  Could be nil. - Player's sex as returned by UnitSex.
---- @return number, string, string, string, string, number @ id, name, description, icon, role, primaryStat
+--- @param isInspect boolean @ ? - Whether to query specialization information for the inspected unit. Does not actually seem to work, see #Details.
+--- @param isPet boolean @ ? - Whether to query specialization information for the player's pet.
+--- @param inspectTarget unknown @ unk? - Unknown, not used in FrameXML.
+--- @param sex number @ ? - Player's sex as returned by UnitSex()
+--- @return number, string, string, number, string, number @ id, name, description, icon, role, primaryStat
 function GetSpecializationInfo(specIndex, isInspect, isPet, inspectTarget, sex)
 end
 
---- Returns information about the specified specialization.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpecializationInfoByID]
---- @param specID number @ Specialization ID of the specialization to query, returned from GetInspectSpecialization.
---- @return number, string, string, string, string, string @ id, name, description, icon, role, class
-function GetSpecializationInfoByID(specID)
+--- @return void
+function GetSpecializationInfoByID()
 end
 
---- Returns information about the specified specialization.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpecializationInfoForClassID]
---- @param classID number @ The ClassId of the class to which this specialization belongs, going from 1 to GetNumClasses().
---- @param specNum number @ The number of the specialization to query, going from 1 to GetNumSpecializationsForClassID(classID).
---- @return number, string, string, number, string, boolean, boolean @ specID, name, description, iconID, role, isRecommended, isAllowed
-function GetSpecializationInfoForClassID(classID, specNum)
+--- @return void
+function GetSpecializationInfoForClassID()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_GetSpecializationInfoForSpecID?action=edit&amp;redlink=1]
+--- [https://wowpedia.fandom.com/wiki/API_GetSpecializationInfoForSpecID]
 --- @return void
 function GetSpecializationInfoForSpecID()
 end
@@ -11565,9 +11560,9 @@ end
 function SetPOIIconOverlapPushDistance()
 end
 
---- Controls PvP combat flagging.
+--- Permaflags the player for PvP combat.
 --- [https://wowpedia.fandom.com/wiki/API_SetPVP]
---- @param flag boolean @ True for players flagged for PvP, false otherwise.
+--- @param flag number @ to enable, nil to disable.
 --- @return void
 function SetPVP(flag)
 end
@@ -12684,15 +12679,15 @@ end
 
 --- Returns information about the spell currently being cast by the specified unit.
 --- [https://wowpedia.fandom.com/wiki/API_UnitCastingInfo]
---- @param unit string @ The UnitId to query (e.g. player, party2, pet, target etc.)
---- @return string, string, string, number, number, boolean, string, boolean, number @ name, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible, spellId
+--- @param unit string @ UnitId
+--- @return string, string, string, number, number, boolean, string, number @ name, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, spellId
 function UnitCastingInfo(unit)
 end
 
 --- Returns information about the spell currently being channeled by the specified unit.
 --- [https://wowpedia.fandom.com/wiki/API_UnitChannelInfo]
---- @param unit string @ The unit to query (e.g. player, party2, pet, target etc.)
---- @return string, string, string, number, number, boolean, boolean, number @ name, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible, spellId
+--- @param unit string @ UnitId
+--- @return string, string, string, number, number, boolean, number @ name, text, texture, startTimeMS, endTimeMS, isTradeSkill, spellId
 function UnitChannelInfo(unit)
 end
 
@@ -12703,9 +12698,9 @@ end
 function UnitChromieTimeID(unit)
 end
 
---- Two functions provide the class of a specified unit:
+--- Returns the class of the specified unit.
 --- [https://wowpedia.fandom.com/wiki/API_UnitClass]
---- @param unitId string @ The UnitId of the unit to check (e.g. player or target)
+--- @param unitId string @ UnitId
 --- @return string, string, number @ className, classFilename, classId
 function UnitClass(unitId)
 end
@@ -12917,7 +12912,6 @@ end
 function UnitInAnyGroup()
 end
 
---- Used to determine the position number of the specified unit in the battleground raid.
 --- [https://wowpedia.fandom.com/wiki/API_UnitInBattleground]
 --- @param unit string @ The UnitId to query (e.g. player, party2, pet, target etc.)
 --- @return number @ position
@@ -12986,16 +12980,18 @@ end
 function UnitIsAFK(unit)
 end
 
---- Four functions indicate whether a unit is a Battle Pet of a certain kind:
+--- Returns if the unit is a battle pet.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsBattlePet]
---- @param unit string @ UnitId) - unit to check, e.g. target.
+--- @param unit string @ UnitId
 --- @return boolean @ isBattlePet
 function UnitIsBattlePet(unit)
 end
 
+--- Returns if the unit is a battle pet summoned by a player.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsBattlePetCompanion]
---- @return void
-function UnitIsBattlePetCompanion()
+--- @param unit string @ UnitId
+--- @return boolean @ isCompanion
+function UnitIsBattlePetCompanion(unit)
 end
 
 --- Checks if a specified unit is currently charmed.
@@ -13096,9 +13092,11 @@ end
 function UnitIsMercenary()
 end
 
+--- Returns if the unit is a battle pet summoned by another player.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsOtherPlayersBattlePet]
---- @return void
-function UnitIsOtherPlayersBattlePet()
+--- @param unit string @ UnitId
+--- @return boolean @ isOther
+function UnitIsOtherPlayersBattlePet(unit)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsOtherPlayersPet?action=edit&amp;redlink=1]
@@ -13195,9 +13193,11 @@ end
 function UnitIsVisible()
 end
 
+--- Returns if the unit is a wild battle pet or tamer battle pet.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsWildBattlePet]
---- @return void
-function UnitIsWildBattlePet()
+--- @param unit string @ UnitId
+--- @return boolean @ isWild
+function UnitIsWildBattlePet(unit)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_UnitLeadsAnyGroup?action=edit&amp;redlink=1]
@@ -14005,13 +14005,13 @@ end
 function gmatch()
 end
 
---- This is a very powerful function and can be used in multiple ways. Used simply it can replace all instances of the pattern provided with the replacement. A pair of values is returned, the modified string and the number of substitutions made. The optional fourth argument n can be used to limit the number of substitutions made:
+--- Substitutes text matching a pattern with a replacement.
 --- [https://wowpedia.fandom.com/wiki/API_gsub]
---- @param s unknown
---- @param pattern unknown
---- @param replace unknown
---- @param n unknown
---- @return void
+--- @param s string @ String to search.
+--- @param pattern string @ Pattern matching expression, covered in HOWTO: Use Pattern Matching or the Patterns Tutorial on Lua-Users.org.
+--- @param replace string @ |function|table - Replacement text, or a function which may return replacement text, or a lookup table which may contain replacements (see details).
+--- @param n number @ ?Optional.  Could be nil. - The maximum number of substitutions (unlimited if omitted).
+--- @return string, number @ text, count
 function gsub(s, pattern, replace, n)
 end
 
