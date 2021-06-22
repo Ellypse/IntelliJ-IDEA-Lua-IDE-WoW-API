@@ -1,6 +1,10 @@
 ---@class ChatInfo
 C_ChatInfo = {}
 
+---@param channelIdentifier string 
+---@return ChatChannelInfo|nil info
+function C_ChatInfo.GetChannelInfoFromIdentifier(channelIdentifier) end
+
 ---@param channelIndex number 
 ---@param rosterIndex number 
 ---@return string, boolean, boolean, string name, owner, moderator, guid
@@ -22,6 +26,10 @@ function C_ChatInfo.GetChannelShortcut(channelIndex) end
 ---@return string shortcut
 function C_ChatInfo.GetChannelShortcutForChannelID(channelID) end
 
+---@param typeID number 
+---@return string|nil name
+function C_ChatInfo.GetChatTypeName(typeID) end
+
 ---@param clubID string 
 ---@return string ids
 function C_ChatInfo.GetClubStreamIDs(clubID) end
@@ -37,6 +45,9 @@ function C_ChatInfo.GetMentorChannelID() end
 
 ---@return number numChannels
 function C_ChatInfo.GetNumActiveChannels() end
+
+---@return number numReserved
+function C_ChatInfo.GetNumReservedChatWindows() end
 
 ---@return string registeredPrefixes
 function C_ChatInfo.GetRegisteredAddonMessagePrefixes() end
@@ -103,4 +114,13 @@ function C_ChatInfo.SendAddonMessageLogged(prefix, message, chatType, target) en
 ---@param firstChannelIndex number 
 ---@param secondChannelIndex number 
 function C_ChatInfo.SwapChatChannelsByChannelIndex(firstChannelIndex, secondChannelIndex) end
+
+---@class ChatChannelInfo
+---@field name string 
+---@field shortcut string 
+---@field localID number 
+---@field instanceID number 
+---@field zoneChannelID number 
+---@field channelType PermanentChatChannelType 
+local ChatChannelInfo = {}
 

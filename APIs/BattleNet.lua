@@ -73,5 +73,7 @@ local BNetAccountInfo = {}
 ---@field isWowMobile bool 
 ---@field canSummon bool 
 ---@field hasFocus bool 
+---@field regionID number 
+---@field isInCurrentRegion bool 
 local BNetGameAccountInfo = {}
 

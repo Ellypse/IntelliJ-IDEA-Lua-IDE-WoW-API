@@ -22,6 +22,10 @@ function C_LFGInfo.ConfirmLfgExpandSearch() end
 ---@return number lfgDungeonIDs
 function C_LFGInfo.GetAllEntriesForCategory(category) end
 
+---@param lfgDungeonID number 
+---@return LFGDungeonInfo dungeonInfo
+function C_LFGInfo.GetDungeonInfo(lfgDungeonID) end
+
 ---@return LFGLockInfo lockInfo
 function C_LFGInfo.GetLFDLockStates() end
 
@@ -31,6 +35,12 @@ function C_LFGInfo.GetRoleCheckDifficultyDetails() end
 ---@param dungeonID number 
 ---@return boolean shouldHide
 function C_LFGInfo.HideNameFromUI(dungeonID) end
+
+---@class LFGDungeonInfo
+---@field name string 
+---@field iconID number 
+---@field link string|nil 
+local LFGDungeonInfo = {}
 
 ---@class LFGLockInfo
 ---@field lfgID number 

@@ -51,7 +51,6 @@ CampaignState.Stalled = 3
 ---@field name string 
 ---@field description string 
 ---@field rewardQuestID number 
----@field orderIndex number 
 local CampaignChapterInfo = {}
 
 ---@class CampaignFailureReason

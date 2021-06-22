@@ -85,14 +85,6 @@ ContributionResult.FailedConditionCheck = 5
 ContributionResult.UnableToCompleteTurnIn = 6
 ContributionResult.InternalError = 7
 
----@class ContributionState
-local ContributionState = {}
-ContributionState.None = 0
-ContributionState.Building = 1
-ContributionState.Active = 2
-ContributionState.UnderAttack = 3
-ContributionState.Destroyed = 4
-
 ---@class ContributionAppearance
 ---@field stateName string 
 ---@field stateColor table 

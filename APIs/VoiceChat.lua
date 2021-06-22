@@ -4,6 +4,9 @@ C_VoiceChat = {}
 ---@param channelID number 
 function C_VoiceChat.ActivateChannel(channelID) end
 
+---@param channelID number 
+function C_VoiceChat.ActivateChannelTranscription(channelID) end
+
 ---@param listenToLocalUser boolean 
 function C_VoiceChat.BeginLocalCapture(listenToLocalUser) end
 
@@ -16,6 +19,9 @@ function C_VoiceChat.CreateChannel(channelDisplayName) end
 
 ---@param channelID number 
 function C_VoiceChat.DeactivateChannel(channelID) end
+
+---@param channelID number 
+function C_VoiceChat.DeactivateChannelTranscription(channelID) end
 
 function C_VoiceChat.EndLocalCapture() end
 
@@ -103,6 +109,12 @@ function C_VoiceChat.GetProcesses() end
 ---@return string|nil keys
 function C_VoiceChat.GetPushToTalkBinding() end
 
+---@return VoiceTtsVoiceType ttsVoices
+function C_VoiceChat.GetRemoteTtsVoices() end
+
+---@return VoiceTtsVoiceType ttsVoices
+function C_VoiceChat.GetTtsVoices() end
+
 ---@return number|nil sensitivity
 function C_VoiceChat.GetVADSensitivity() end
 
@@ -157,6 +169,12 @@ function C_VoiceChat.IsPlayerUsingVoice(playerLocation) end
 
 ---@return boolean|nil isSilenced
 function C_VoiceChat.IsSilenced() end
+
+---@return boolean isActive
+function C_VoiceChat.IsSpeakForMeActive() end
+
+---@return boolean isAllowed
+function C_VoiceChat.IsSpeakForMeAllowed() end
 
 ---@param channelID number 
 function C_VoiceChat.LeaveChannel(channelID) end
@@ -227,6 +245,18 @@ function C_VoiceChat.SetVADSensitivity(sensitivity) end
 ---@return boolean shouldDiscoverChannels
 function C_VoiceChat.ShouldDiscoverChannels() end
 
+---@param text string 
+function C_VoiceChat.SpeakRemoteTextSample(text) end
+
+---@param voiceID number 
+---@param text string 
+---@param destination VoiceTtsDestination 
+---@param rate number 
+---@param volume number 
+function C_VoiceChat.SpeakText(voiceID, text, destination, rate, volume) end
+
+function C_VoiceChat.StopSpeakingText() end
+
 function C_VoiceChat.ToggleDeafened() end
 
 ---@param playerLocation table 
@@ -272,12 +302,39 @@ VoiceChatStatusCode.PlayerVoiceChatParentalDisabled = 22
 VoiceChatStatusCode.InvalidInputDevice = 23
 VoiceChatStatusCode.InvalidOutputDevice = 24
 
+---@class VoiceTtsDestination
+local VoiceTtsDestination = {}
+VoiceTtsDestination.RemoteTransmission = 0
+VoiceTtsDestination.LocalPlayback = 1
+VoiceTtsDestination.RemoteTransmissionWithLocalPlayback = 2
+VoiceTtsDestination.QueuedRemoteTransmission = 3
+VoiceTtsDestination.QueuedLocalPlayback = 4
+VoiceTtsDestination.QueuedRemoteTransmissionWithLocalPlayback = 5
+VoiceTtsDestination.ScreenReader = 6
+
+---@class VoiceTtsStatusCode
+local VoiceTtsStatusCode = {}
+VoiceTtsStatusCode.Success = 0
+VoiceTtsStatusCode.InvalidEngineType = 1
+VoiceTtsStatusCode.EngineAllocationFailed = 2
+VoiceTtsStatusCode.NotSupported = 3
+VoiceTtsStatusCode.MaxCharactersExceeded = 4
+VoiceTtsStatusCode.UtteranceBelowMinimumDuration = 5
+VoiceTtsStatusCode.InputTextEnqueued = 6
+VoiceTtsStatusCode.SdkNotInitialized = 7
+VoiceTtsStatusCode.DestinationQueueFull = 8
+VoiceTtsStatusCode.EnqueueNotNecessary = 9
+VoiceTtsStatusCode.UtteranceNotFound = 10
+VoiceTtsStatusCode.ManagerNotFound = 11
+VoiceTtsStatusCode.InvalidArgument = 12
+VoiceTtsStatusCode.InternalError = 13
+
 ---@class VoiceAudioDevice
 ---@field deviceID string 
 ---@field displayName string 
----@field power number 
 ---@field isActive bool 
 ---@field isSystemDefault bool 
+---@field isCommsDefault bool 
 local VoiceAudioDevice = {}
 
 ---@class VoiceChatChannel
@@ -290,7 +347,7 @@ local VoiceAudioDevice = {}
 ---@field isActive bool 
 ---@field isMuted bool 
 ---@field isTransmitting bool 
----@field isLocalProcess bool 
+---@field isTranscribing bool 
 ---@field members table 
 local VoiceChatChannel = {}
 
@@ -307,4 +364,9 @@ local VoiceChatMember = {}
 ---@field name string 
 ---@field channels table 
 local VoiceChatProcess = {}
+
+---@class VoiceTtsVoiceType
+---@field voiceID number 
+---@field name string 
+local VoiceTtsVoiceType = {}
 

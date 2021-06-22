@@ -50,7 +50,8 @@ ConsoleColorType.DefaultGreen = 11
 local ConsoleCommandType = {}
 ConsoleCommandType.Cvar = 0
 ConsoleCommandType.Command = 1
-ConsoleCommandType.Script = 2
+ConsoleCommandType.Macro = 2
+ConsoleCommandType.Script = 3
 
 ---@class ConsoleCommandInfo
 ---@field command string 
@@ -58,5 +59,6 @@ ConsoleCommandType.Script = 2
 ---@field category ConsoleCategory 
 ---@field commandType ConsoleCommandType 
 ---@field scriptContents string 
+---@field scriptParameters string 
 local ConsoleCommandInfo = {}
 

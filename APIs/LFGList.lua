@@ -19,6 +19,12 @@ function C_LFGList.CopyActiveEntryInfoToCreationFields() end
 ---@return LfgEntryData entryData
 function C_LFGList.GetActiveEntryInfo() end
 
+---@param localID number 
+---@param applicantIndex number 
+---@param activityID number 
+---@return BestDungeonScoreMapInfo bestDungeonScoreForListing
+function C_LFGList.GetApplicantDungeonScoreForListing(localID, applicantIndex, activityID) end
+
 ---@param applicantID number 
 ---@return LfgApplicantData applicantData
 function C_LFGList.GetApplicantInfo(applicantID) end
@@ -52,6 +58,13 @@ function C_LFGList.SetSearchToActivity(activityID) end
 
 ---@param questID number 
 function C_LFGList.SetSearchToQuestID(questID) end
+
+---@class BestDungeonScoreMapInfo
+---@field mapScore number 
+---@field mapName string 
+---@field bestRunLevel number 
+---@field finishedSuccess bool 
+local BestDungeonScoreMapInfo = {}
 
 ---@class LfgApplicantData
 ---@field applicantID number 
@@ -91,8 +104,11 @@ local LfgEntryData = {}
 ---@field numGuildMates number 
 ---@field isDelisted bool 
 ---@field autoAccept bool 
+---@field isWarMode bool 
 ---@field age number 
 ---@field questID number|nil 
+---@field leaderOverallDungeonScore number|nil 
+---@field leaderDungeonScoreInfo BestDungeonScoreMapInfo|nil 
 local LfgSearchResultData = {}
 
 ---@class WowLocale

@@ -114,6 +114,11 @@ function C_QuestLog.GetQuestIDForQuestWatchIndex(questWatchIndex) end
 ---@return number|nil questID
 function C_QuestLog.GetQuestIDForWorldQuestWatchIndex(questWatchIndex) end
 
+---@param questLogIndex number @ [OPTIONAL]
+---@overload fun()
+---@return number, string, string, number, number|nil portraitGiver, portraitGiverText, portraitGiverName, portraitGiverMount, portraitGiverModelSceneID
+function C_QuestLog.GetQuestLogPortraitGiver(questLogIndex) end
+
 ---@param questID number 
 ---@return QuestObjectiveInfo objectives
 function C_QuestLog.GetQuestObjectives(questID) end
@@ -121,6 +126,10 @@ function C_QuestLog.GetQuestObjectives(questID) end
 ---@param questID number 
 ---@return QuestTagInfo|nil info
 function C_QuestLog.GetQuestTagInfo(questID) end
+
+---@param questID number 
+---@return number|nil questType
+function C_QuestLog.GetQuestType(questID) end
 
 ---@param questID number 
 ---@return QuestWatchType|nil watchType
@@ -391,5 +400,6 @@ local QuestTagInfo = {}
 ---@field background string 
 ---@field seal string 
 ---@field signature string 
+---@field poiIcon string 
 local QuestTheme = {}
 
