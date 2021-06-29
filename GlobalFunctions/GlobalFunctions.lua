@@ -651,8 +651,9 @@ end
 function CanComplainInboxItem()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_CanDualWield?action=edit&amp;redlink=1]
---- @return void
+--- Returns whether the player can Dual wield weapons.
+--- [https://wowpedia.fandom.com/wiki/API_CanDualWield]
+--- @return boolean @ canDualWield
 function CanDualWield()
 end
 
@@ -6230,9 +6231,9 @@ end
 function GetQuestLogPortraitTurnIn()
 end
 
---- Returns the description and objectives required for the selected (the one highlighted in the quest log) quest.
+--- Returns the description and objectives required for the selected (the one highlighted in the quest log) quest or by index.
 --- [https://wowpedia.fandom.com/wiki/API_GetQuestLogQuestText]
---- @param questLogIndex unknown
+--- @param questLogIndex number @ ?Optional.  Could be nil.
 --- @return string, string @ questDescription, questObjectives
 function GetQuestLogQuestText(questLogIndex)
 end
@@ -12700,9 +12701,9 @@ end
 
 --- Returns the class of the specified unit.
 --- [https://wowpedia.fandom.com/wiki/API_UnitClass]
---- @param unitId string @ UnitId
+--- @param unit string @ UnitId
 --- @return string, string, number @ className, classFilename, classId
-function UnitClass(unitId)
+function UnitClass(unit)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_UnitClassBase]
@@ -12912,6 +12913,7 @@ end
 function UnitInAnyGroup()
 end
 
+--- Used to determine the position number of the specified unit in the battleground raid.
 --- [https://wowpedia.fandom.com/wiki/API_UnitInBattleground]
 --- @param unit string @ The UnitId to query (e.g. player, party2, pet, target etc.)
 --- @return number @ position
