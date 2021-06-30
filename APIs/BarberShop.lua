@@ -6,7 +6,8 @@ function C_BarberShop.ApplyCustomizationChoices() end
 
 function C_BarberShop.Cancel() end
 
-function C_BarberShop.ClearPreviewChoices() end
+---@param clearSavedChoices boolean 
+function C_BarberShop.ClearPreviewChoices(clearSavedChoices) end
 
 ---@return CharCustomizationCategory categories
 function C_BarberShop.GetAvailableCustomizations() end
@@ -26,11 +27,11 @@ function C_BarberShop.HasAnyChanges() end
 ---@return boolean isViewingAlteredForm
 function C_BarberShop.IsViewingAlteredForm() end
 
-function C_BarberShop.OldBarberShopLoaded() end
-
 ---@param optionID number 
 ---@param choiceID number 
 function C_BarberShop.PreviewCustomizationChoice(optionID, choiceID) end
+
+function C_BarberShop.RandomizeCustomizationChoices() end
 
 function C_BarberShop.ResetCameraRotation() end
 

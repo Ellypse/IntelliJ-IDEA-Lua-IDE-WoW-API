@@ -90,7 +90,7 @@ function C_Soulbinds.GetConduitQuality(conduitID, rank) end
 
 ---@param conduitID number 
 ---@return number conduitRank
-function C_Soulbinds.GetConduitRankFromCollection(conduitID) end
+function C_Soulbinds.GetConduitRank(conduitID) end
 
 ---@param conduitID number 
 ---@param conduitRank number 
@@ -108,6 +108,10 @@ function C_Soulbinds.GetNode(nodeID) end
 ---@param soulbindID number 
 ---@return SoulbindData data
 function C_Soulbinds.GetSoulbindData(soulbindID) end
+
+---@param soulbindID number 
+---@return number specIDs
+function C_Soulbinds.GetSpecsAssignedToSoulbind(soulbindID) end
 
 ---@return number count
 function C_Soulbinds.GetTotalConduitChargesPending() end
@@ -212,6 +216,7 @@ local SoulbindModelSceneData = {}
 ---@field conduitType SoulbindConduitType|nil 
 ---@field parentNodeIDs table 
 ---@field failureRenownRequirement number|nil 
+---@field socketEnhanced bool|nil 
 local SoulbindNode = {}
 
 ---@class SoulbindTree

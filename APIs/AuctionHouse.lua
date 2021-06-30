@@ -252,7 +252,11 @@ function C_AuctionHouse.QueryOwnedAuctions(sorts) end
 function C_AuctionHouse.RefreshCommoditySearchResults(itemID) end
 
 ---@param itemKey ItemKey 
-function C_AuctionHouse.RefreshItemSearchResults(itemKey) end
+---@param minLevelFilter number @ [OPTIONAL]
+---@param maxLevelFilter number @ [OPTIONAL]
+---@overload fun(itemKey:ItemKey, maxLevelFilter:number)
+---@overload fun(itemKey:ItemKey)
+function C_AuctionHouse.RefreshItemSearchResults(itemKey, minLevelFilter, maxLevelFilter) end
 
 --- This function should be used in place of an 'allItem' QueryAuctionItems call to query the entire auction house.
 function C_AuctionHouse.ReplicateItems() end
@@ -285,7 +289,9 @@ function C_AuctionHouse.SendBrowseQuery(query) end
 ---@param itemKey ItemKey 
 ---@param sorts AuctionHouseSortType 
 ---@param separateOwnerItems boolean 
-function C_AuctionHouse.SendSearchQuery(itemKey, sorts, separateOwnerItems) end
+---@param minLevelFilter number 
+---@param maxLevelFilter number 
+function C_AuctionHouse.SendSearchQuery(itemKey, sorts, separateOwnerItems, minLevelFilter, maxLevelFilter) end
 
 --- Search queries are restricted to 100 calls per minute. These should not be used to query the entire auction house. See ReplicateItems
 ---@param itemKey ItemKey 

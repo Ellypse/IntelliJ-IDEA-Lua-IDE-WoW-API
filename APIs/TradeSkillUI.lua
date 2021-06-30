@@ -71,6 +71,7 @@ OptionalReagentItemFlag.TooltipShowsAsStatModifications = 0
 
 ---@class OptionalReagentSlot
 ---@field requiredSkillRank number 
+---@field lockedReason string|nil 
 ---@field slotText string|nil 
 ---@field options table 
 local OptionalReagentSlot = {}

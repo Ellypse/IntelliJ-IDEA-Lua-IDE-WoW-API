@@ -168,8 +168,9 @@ end
 
 --- Returns how many digsites are in a zone like Azsuna or Elwynn Forest.
 --- [https://wowpedia.fandom.com/wiki/API_ArchaeologyMapUpdateAll]
+--- @param uiMapID number @ UiMapID
 --- @return number @ numSites
-function ArchaeologyMapUpdateAll()
+function ArchaeologyMapUpdateAll(uiMapID)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_ArcheologyGetVisibleBlobID?action=edit&amp;redlink=1]
@@ -650,8 +651,9 @@ end
 function CanComplainInboxItem()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_CanDualWield?action=edit&amp;redlink=1]
---- @return void
+--- Returns whether the player can Dual wield weapons.
+--- [https://wowpedia.fandom.com/wiki/API_CanDualWield]
+--- @return boolean @ canDualWield
 function CanDualWield()
 end
 
@@ -1631,8 +1633,8 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_CreateFrame]
 --- @param frameType string @ Type of the frame e.g. Frame or Button.
 --- @param name string @ ? - Globally accessible name to assign to the frame, or nil for an anonymous frame.
---- @param parent Frame @ ? - Parent object to assign to the frame, or nil to be parentless; cannot be a string. Can also be set with Frame:SetParent()
---- @param template string @ ? - Comma-delimited list of virtual frames to inherit from.
+--- @param parent Frame @ ? - Parent object to assign to the frame, or nil to be parentless; cannot be a string. Can also be set with Region:SetParent()
+--- @param template string @ ? - Comma-delimited list of virtual frames to inherit from. See also the Complete List of FrameXML templates.
 --- @param id number @ ? - ID to assign to the frame. Can also be set with Frame:SetID()
 --- @return Frame @ frame
 function CreateFrame(frameType, name, parent, template, id)
@@ -1921,7 +1923,7 @@ end
 
 --- Returns the currently selected content tuning ID for BFA instances per EJ_SelectInstance.
 --- [https://wowpedia.fandom.com/wiki/API_EJ_GetContentTuningID]
---- @return void
+--- @return number @ tuningID
 function EJ_GetContentTuningID()
 end
 
@@ -1948,7 +1950,7 @@ end
 --- Returns encounter info from the journal.
 --- [https://wowpedia.fandom.com/wiki/API_EJ_GetEncounterInfo]
 --- @param encounterID number
---- @return string, string, number, number, string, number, number, number @ name, description, bossID, rootSectionID, link, journalInstanceID, dungeonEncounterID, instanceID
+--- @return void
 function EJ_GetEncounterInfo(encounterID)
 end
 
@@ -2481,7 +2483,7 @@ end
 function GetAchievementGuildRep()
 end
 
---- Returns information about the given Achievement.
+--- Returns information about an Achievement.
 --- [https://wowpedia.fandom.com/wiki/API_GetAchievementInfo]
 --- @param achievementID_or_categoryID unknown
 --- @param index number @ An offset into the achievement category, between 1 and GetCategoryNumAchievements(categoryID)
@@ -2554,10 +2556,10 @@ end
 function GetActionCooldown(slot)
 end
 
---- Gets the available count for an action, if applicable.
+--- Counts the available uses of certain kinds of actions.
 --- [https://wowpedia.fandom.com/wiki/API_GetActionCount]
---- @param actionSlot unknown
---- @return unknown @ text
+--- @param actionSlot number @ An action slot ID.
+--- @return number @ text
 function GetActionCount(actionSlot)
 end
 
@@ -2754,13 +2756,14 @@ end
 
 --- Returns possible player names matching a given prefix string and specified requirements.
 --- [https://wowpedia.fandom.com/wiki/API_GetAutoCompleteResults]
---- @param text string @ first characters of the possible names to be autocompleted
---- @param include number @ bit mask of filters that the results must match at least one of.
---- @param exclude number @ bit mask of filters that the results must not match any of.
---- @param maxResults number @ number of results desired.
---- @param cursorPosition number @ position of the cursor within the editbox (i.e. how much of the text string should be matching).
---- @return unknown, unknown, unknown @ nick1, nick2, ...
-function GetAutoCompleteResults(text, include, exclude, maxResults, cursorPosition)
+--- @param text string @ First characters of the possible names to be autocompleted
+--- @param numResults number @ Number of results desired.
+--- @param cursorPosition number @ Position of the cursor within the editbox (i.e. how much of the text string should be matching).
+--- @param allowFullMatch boolean
+--- @param includeBitField number @ Bit mask of filters that the results must match at least one of.
+--- @param excludeBitField number @ Bit mask of filters that the results must not match any of.
+--- @return unknown @ results
+function GetAutoCompleteResults(text, numResults, cursorPosition, allowFullMatch, includeBitField, excludeBitField)
 end
 
 --- Returns whether guild invitations are being automatically declined.
@@ -2801,7 +2804,7 @@ end
 --- Returns information about the type of an available quest.
 --- [https://wowpedia.fandom.com/wiki/API_GetAvailableQuestInfo]
 --- @param index number @ Index of the available quest to query, starting from 1.
---- @return boolean, number, boolean, boolean @ isTrivial, frequency, isRepeatable, isLegendary
+--- @return boolean, number, boolean, boolean, number @ isTrivial, frequency, isRepeatable, isLegendary, questID
 function GetAvailableQuestInfo(index)
 end
 
@@ -2879,7 +2882,7 @@ end
 function GetBattlefieldArenaFaction()
 end
 
---- Get estimated wait time for a Battlefield's availability
+--- Get estimated wait for entry into the battlefield.
 --- [https://wowpedia.fandom.com/wiki/API_GetBattlefieldEstimatedWaitTime]
 --- @return number @ waitTime
 function GetBattlefieldEstimatedWaitTime()
@@ -3793,9 +3796,11 @@ end
 function GetGMTicket()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_GetGameMessageInfo?action=edit&amp;redlink=1]
---- @return void
-function GetGameMessageInfo()
+--- Returns the error message for an id.
+--- [https://wowpedia.fandom.com/wiki/API_GetGameMessageInfo]
+--- @param messageType number @ errorType from UI_INFO_MESSAGE or UI_ERROR_MESSAGE
+--- @return string, number, number @ stringId, soundKitID, voiceID
+function GetGameMessageInfo(messageType)
 end
 
 --- Returns the realm's current time in hours and minutes.
@@ -4335,13 +4340,14 @@ end
 function GetItemCooldown(itemID)
 end
 
---- Returns count information for the item.
+--- Counts an item.
 --- [https://wowpedia.fandom.com/wiki/API_GetItemCount]
---- @param itemID_or_itemName_or_itemLink unknown
---- @param includeBank boolean @ true: count includes bank items
---- @param includeCharges boolean @ true: count is charges if any, otherwise number of items
+--- @param itemInfo string @ ItemLink, Name or ID
+--- @param includeBank boolean @ ?Optional.  Could be nil. - If true, includes the bank
+--- @param includeUses boolean @ ?Optional.  Could be nil. - If true, includes each charge of an item similar to GetActionCount()
+--- @param includeReagentBank boolean @ ?Optional.  Could be nil. - If true, includes the reagent bank
 --- @return number @ count
-function GetItemCount(itemID_or_itemName_or_itemLink, includeBank, includeCharges)
+function GetItemCount(itemInfo, includeBank, includeUses, includeReagentBank)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_GetItemCreationContext?action=edit&amp;redlink=1]
@@ -5819,9 +5825,8 @@ end
 function GetPOITextureCoords()
 end
 
---- Checks to see if the player has enabled PvP (Permaflagged).
 --- [https://wowpedia.fandom.com/wiki/API_GetPVPDesired]
---- @return unknown @ ispvp
+--- @return void
 function GetPVPDesired()
 end
 
@@ -6226,9 +6231,9 @@ end
 function GetQuestLogPortraitTurnIn()
 end
 
---- Returns the description and objectives required for the selected (the one highlighted in the quest log) quest.
+--- Returns the description and objectives required for the selected (the one highlighted in the quest log) quest or by index.
 --- [https://wowpedia.fandom.com/wiki/API_GetQuestLogQuestText]
---- @param questLogIndex unknown
+--- @param questLogIndex number @ ?Optional.  Could be nil.
 --- @return string, string @ questDescription, questObjectives
 function GetQuestLogQuestText(questLogIndex)
 end
@@ -6434,7 +6439,7 @@ end
 
 --- Gets information about a raid member.
 --- [https://wowpedia.fandom.com/wiki/API_GetRaidRosterInfo]
---- @param raidIndex number @ Index of raid member between 1 and MAX_RAID_MEMBERS (40). If you specify an index that is out of bounds, the function returns nil.
+--- @param raidIndex number @ Index of raid member between 1 and MAX_RAID_MEMBERS (40). If you specify an index that is out of bounds, some return values change to nil (see details).
 --- @return string, boolean, boolean, string, boolean, string @ zone, online, isDead, role, isML, combatRole
 function GetRaidRosterInfo(raidIndex)
 end
@@ -6895,33 +6900,28 @@ end
 function GetSpecialization(isInspect, isPet, specGroup)
 end
 
---- Returns information about a player's specializations.
+--- Returns information about the specified specialization.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpecializationInfo]
 --- @param specIndex number @ Index of the specialization to query, ascending from 1 to GetNumSpecializations().
---- @param isInspect boolean @ ?Optional.  Could be nil. - If true, query specialization information for the inspected unit.
---- @param isPet boolean @ ?Optional.  Could be nil. - If true, query specialization information for the player's pet.
---- @param inspectTarget unknown @ ? - Some unknown argument not used anywhere in Blizzard API in 6.2.
---- @param sex number @ ?Optional.  Could be nil. - Player's sex as returned by UnitSex.
---- @return number, string, string, string, string, number @ id, name, description, icon, role, primaryStat
+--- @param isInspect boolean @ ? - Whether to query specialization information for the inspected unit. Does not actually seem to work, see #Details.
+--- @param isPet boolean @ ? - Whether to query specialization information for the player's pet.
+--- @param inspectTarget unknown @ unk? - Unknown, not used in FrameXML.
+--- @param sex number @ ? - Player's sex as returned by UnitSex()
+--- @return number, string, string, number, string, number @ id, name, description, icon, role, primaryStat
 function GetSpecializationInfo(specIndex, isInspect, isPet, inspectTarget, sex)
 end
 
---- Returns information about the specified specialization.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpecializationInfoByID]
---- @param specID number @ Specialization ID of the specialization to query, returned from GetInspectSpecialization.
---- @return number, string, string, string, string, string @ id, name, description, icon, role, class
-function GetSpecializationInfoByID(specID)
+--- @return void
+function GetSpecializationInfoByID()
 end
 
---- Returns information about the specified specialization.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpecializationInfoForClassID]
---- @param classID number @ The ClassId of the class to which this specialization belongs, going from 1 to GetNumClasses().
---- @param specNum number @ The number of the specialization to query, going from 1 to GetNumSpecializationsForClassID(classID).
---- @return number, string, string, number, string, boolean, boolean @ specID, name, description, iconID, role, isRecommended, isAllowed
-function GetSpecializationInfoForClassID(classID, specNum)
+--- @return void
+function GetSpecializationInfoForClassID()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_GetSpecializationInfoForSpecID?action=edit&amp;redlink=1]
+--- [https://wowpedia.fandom.com/wiki/API_GetSpecializationInfoForSpecID]
 --- @return void
 function GetSpecializationInfoForSpecID()
 end
@@ -8682,7 +8682,7 @@ end
 
 --- Returns whether the item is in usable range of the unit.
 --- [https://wowpedia.fandom.com/wiki/API_IsItemInRange]
---- @param item string @ ItemLink, ID or Name - If using an item name, requires the item to be in your inventory. Item IDs and links don't have this requirement.
+--- @param item string @ ItemLink, Name or ID - If using an item name, requires the item to be in your inventory. Item IDs and links don't have this requirement.
 --- @param unit string @ ? : UnitId - Defaults to target
 --- @return boolean @ inRange
 function IsItemInRange(item, unit)
@@ -9132,7 +9132,8 @@ end
 function IsTitleKnown(titleId)
 end
 
---- [https://wowpedia.fandom.com/wiki/API_IsTrackedAchievement?action=edit&amp;redlink=1]
+--- Returns if an achievement is currently being tracked.
+--- [https://wowpedia.fandom.com/wiki/API_IsTrackedAchievement]
 --- @return void
 function IsTrackedAchievement()
 end
@@ -10144,7 +10145,7 @@ end
 --- Play one of a set of built-in sounds.  Other players will not hear the sound.
 --- [https://wowpedia.fandom.com/wiki/API_PlaySound]
 --- @param soundKitID number @ All sounds used by Blizzard's UI are defined in the SOUNDKIT table.
---- @param channel string @ ?Optional.  Could be nil. - The sound volume slider setting the sound should use, one of: Master, SFX, Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to SFX if not specified.
+--- @param channel string @ ?Optional.  Could be nil. - The sound volume slider setting the sound should use, one of: Master, SFX (Sound), Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to SFX if not specified. There is also a Talking Head channel.[1]
 --- @param forceNoDuplicates unknown
 --- @param runFinishCallback boolean @ ?Optional.  Could be nil. - Fires SOUNDKIT_FINISHED when sound is done, arg1 will be soundHandle given below. Defaults to false.
 --- @return boolean, number @ willPlay, soundHandle
@@ -10154,7 +10155,7 @@ end
 --- Plays the specified audio file once.
 --- [https://wowpedia.fandom.com/wiki/API_PlaySoundFile]
 --- @param soundFile_or_soundFileID unknown
---- @param channel string @ optional) - The sound volume slider setting the sound should use, one of: Master, SFX, Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to the SFX if not specified.
+--- @param channel string @ optional) - The sound volume slider setting the sound should use, one of: Master, SFX (Sound), Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to SFX if not specified.
 --- @return boolean, number @ willPlay, soundHandle
 function PlaySoundFile(soundFile_or_soundFileID, channel)
 end
@@ -11560,10 +11561,11 @@ end
 function SetPOIIconOverlapPushDistance()
 end
 
---- Used to toggle PVP on or Off.
+--- Permaflags the player for PvP combat.
 --- [https://wowpedia.fandom.com/wiki/API_SetPVP]
+--- @param flag number @ to enable, nil to disable.
 --- @return void
-function SetPVP()
+function SetPVP(flag)
 end
 
 --- Sets which roles the player is willing to perform in PvP battlegrounds.
@@ -12467,7 +12469,6 @@ end
 function ToggleDebugAIDisplay()
 end
 
---- Toggles PvP setting on or off.
 --- [https://wowpedia.fandom.com/wiki/API_TogglePVP]
 --- @return void
 function TogglePVP()
@@ -12599,11 +12600,11 @@ end
 function UnitAttackSpeed(unit)
 end
 
---- Retrieve info about a certain buff on a certain unit.
+--- Retrieve info about an aura (a buff or debuff).
 --- [https://wowpedia.fandom.com/wiki/API_UnitAura]
---- @param unit string @ unitId) - unit whose auras to query.
---- @param index number @ or String - index
---- @param filter string @ optional) - list of filters, separated by spaces or pipes. HELPFUL by default. The following filters are available:
+--- @param unit string @ UnitId to query.
+--- @param index number @ Index incremented from 1 until no more results.
+--- @param filter string @ ?Optional.  Could be nil. - Optional, case-insensitive filters separated by spaces or pipes.
 --- @return void
 function UnitAura(unit, index, filter)
 end
@@ -12616,12 +12617,12 @@ end
 function UnitAuraBySlot(unit, slot)
 end
 
---- Needs summary.
+--- Returns an ordered list of auras used with UnitAuraBySlot()
 --- [https://wowpedia.fandom.com/wiki/API_UnitAuraSlots]
---- @param unit string
---- @param filter string @ e.g. HELPFUL, HARMFUL|RAID
---- @param maxSlots number
---- @param continuationToken number
+--- @param unit string @ UnitId to query.
+--- @param filter string @ Similar to UnitAura; however, either HELPFUL or HARMFUL is required.
+--- @param maxSlots number @ ?Optional.  Could be nil. - The maximum number of slots to return
+--- @param continuationToken number @ ?Optional.  Could be nil. - The number of slots to skip (see details).
 --- @return number, number @ continuationToken, ...
 function UnitAuraSlots(unit, filter, maxSlots, continuationToken)
 end
@@ -12643,13 +12644,9 @@ end
 function UnitBattlePetType()
 end
 
---- Retrieve info about a certain buff on a certain unit.
 --- [https://wowpedia.fandom.com/wiki/API_UnitBuff]
---- @param unit string @ unitId) - unit whose buffs to query.
---- @param index number @ or String - index
---- @param filter string @ optional) - list of filters, separated by spaces or pipes (|). HELPFUL by default. The following filters are available:
 --- @return void
-function UnitBuff(unit, index, filter)
+function UnitBuff()
 end
 
 --- Indicates whether the first unit can assist the second unit.
@@ -12683,15 +12680,15 @@ end
 
 --- Returns information about the spell currently being cast by the specified unit.
 --- [https://wowpedia.fandom.com/wiki/API_UnitCastingInfo]
---- @param unit string @ The UnitId to query (e.g. player, party2, pet, target etc.)
---- @return string, string, string, number, number, boolean, string, boolean, number @ name, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible, spellId
+--- @param unit string @ UnitId
+--- @return string, string, string, number, number, boolean, string, number @ name, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, spellId
 function UnitCastingInfo(unit)
 end
 
 --- Returns information about the spell currently being channeled by the specified unit.
 --- [https://wowpedia.fandom.com/wiki/API_UnitChannelInfo]
---- @param unit string @ The unit to query (e.g. player, party2, pet, target etc.)
---- @return string, string, string, number, number, boolean, boolean, number @ name, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible, spellId
+--- @param unit string @ UnitId
+--- @return string, string, string, number, number, boolean, number @ name, text, texture, startTimeMS, endTimeMS, isTradeSkill, spellId
 function UnitChannelInfo(unit)
 end
 
@@ -12702,11 +12699,11 @@ end
 function UnitChromieTimeID(unit)
 end
 
---- Two functions provide the class of a specified unit:
+--- Returns the class of the specified unit.
 --- [https://wowpedia.fandom.com/wiki/API_UnitClass]
---- @param unitId string @ The UnitId of the unit to check (e.g. player or target)
+--- @param unit string @ UnitId
 --- @return string, string, number @ className, classFilename, classId
-function UnitClass(unitId)
+function UnitClass(unit)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_UnitClassBase]
@@ -12747,7 +12744,6 @@ end
 function UnitDamage(unit)
 end
 
---- Retrieve info about a certain buff on a certain unit.
 --- [https://wowpedia.fandom.com/wiki/API_UnitDebuff]
 --- @return void
 function UnitDebuff()
@@ -12986,16 +12982,18 @@ end
 function UnitIsAFK(unit)
 end
 
---- Four functions indicate whether a unit is a Battle Pet of a certain kind:
+--- Returns if the unit is a battle pet.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsBattlePet]
---- @param unit string @ UnitId) - unit to check, e.g. target.
+--- @param unit string @ UnitId
 --- @return boolean @ isBattlePet
 function UnitIsBattlePet(unit)
 end
 
+--- Returns if the unit is a battle pet summoned by a player.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsBattlePetCompanion]
---- @return void
-function UnitIsBattlePetCompanion()
+--- @param unit string @ UnitId
+--- @return boolean @ isCompanion
+function UnitIsBattlePetCompanion(unit)
 end
 
 --- Checks if a specified unit is currently charmed.
@@ -13096,9 +13094,11 @@ end
 function UnitIsMercenary()
 end
 
+--- Returns if the unit is a battle pet summoned by another player.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsOtherPlayersBattlePet]
---- @return void
-function UnitIsOtherPlayersBattlePet()
+--- @param unit string @ UnitId
+--- @return boolean @ isOther
+function UnitIsOtherPlayersBattlePet(unit)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsOtherPlayersPet?action=edit&amp;redlink=1]
@@ -13195,9 +13195,11 @@ end
 function UnitIsVisible()
 end
 
+--- Returns if the unit is a wild battle pet or tamer battle pet.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsWildBattlePet]
---- @return void
-function UnitIsWildBattlePet()
+--- @param unit string @ UnitId
+--- @return boolean @ isWild
+function UnitIsWildBattlePet(unit)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_UnitLeadsAnyGroup?action=edit&amp;redlink=1]
@@ -13326,7 +13328,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_UnitPowerType]
 --- @param unit string @ unitId) - The unit whose power type to query.
 --- @param index number @ Optional value for classes with multiple powerTypes. If not specified, information about the first (currently active) power type will be returned.
---- @return number, string, number, number, number @ powerType, powerToken, altR, altG, altB
+--- @return unknown, string, number, number, number @ powerType, powerToken, altR, altG, altB
 function UnitPowerType(unit, index)
 end
 
@@ -13745,7 +13747,7 @@ end
 function abs(num)
 end
 
---- [https://wowpedia.fandom.com/wiki/API_acos?action=edit&amp;redlink=1]
+--- [https://wowpedia.fandom.com/wiki/API_acos]
 --- @return void
 function acos()
 end
@@ -13755,7 +13757,7 @@ end
 function addframetext()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_asin?action=edit&amp;redlink=1]
+--- [https://wowpedia.fandom.com/wiki/API_asin]
 --- @return void
 function asin()
 end
@@ -13765,7 +13767,7 @@ end
 function assert()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_atan?action=edit&amp;redlink=1]
+--- [https://wowpedia.fandom.com/wiki/API_atan]
 --- @return void
 function atan()
 end
@@ -13860,7 +13862,7 @@ end
 function coroutine.yield()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_cos?action=edit&amp;redlink=1]
+--- [https://wowpedia.fandom.com/wiki/API_cos]
 --- @return void
 function cos()
 end
@@ -14005,13 +14007,13 @@ end
 function gmatch()
 end
 
---- This is a very powerful function and can be used in multiple ways. Used simply it can replace all instances of the pattern provided with the replacement. A pair of values is returned, the modified string and the number of substitutions made. The optional fourth argument n can be used to limit the number of substitutions made:
+--- Substitutes text matching a pattern with a replacement.
 --- [https://wowpedia.fandom.com/wiki/API_gsub]
---- @param s unknown
---- @param pattern unknown
---- @param replace unknown
---- @param n unknown
---- @return void
+--- @param s string @ String to search.
+--- @param pattern string @ Pattern matching expression, covered in HOWTO: Use Pattern Matching or the Patterns Tutorial on Lua-Users.org.
+--- @param replace string @ |function|table - Replacement text, or a function which may return replacement text, or a lookup table which may contain replacements (see details).
+--- @param n number @ ?Optional.  Could be nil. - The maximum number of substitutions (unlimited if omitted).
+--- @return string, number @ text, count
 function gsub(s, pattern, replace, n)
 end
 
@@ -14320,9 +14322,11 @@ end
 function setmetatable()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_sin?action=edit&amp;redlink=1]
---- @return void
-function sin()
+--- Computes trigonometric functions.
+--- [https://wowpedia.fandom.com/wiki/API_sin]
+--- @param sine unknown
+--- @return number @ radians
+function sin(sine)
 end
 
 --- Sort the array portion of a table in-place (i.e. alter the table).
@@ -14605,7 +14609,7 @@ end
 function table.wipe()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_tan?action=edit&amp;redlink=1]
+--- [https://wowpedia.fandom.com/wiki/API_tan]
 --- @return void
 function tan()
 end

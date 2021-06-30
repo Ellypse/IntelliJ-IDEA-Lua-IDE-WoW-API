@@ -598,6 +598,7 @@ local ClubLimits = {}
 ---@field guildRank string|nil 
 ---@field guildRankOrder number|nil 
 ---@field isRemoteChat bool|nil 
+---@field overallDungeonScore number|nil 
 local ClubMemberInfo = {}
 
 ---@class ClubMessageIdentifier

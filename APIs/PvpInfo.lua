@@ -395,7 +395,7 @@ local RandomBGInfo = {}
 ---@field name string 
 ---@field shortDescription string 
 ---@field longDescription string 
----@field achievementID number 
+---@field questID number|nil 
 ---@field isActive bool 
 local SpecialEventDetails = {}
 
