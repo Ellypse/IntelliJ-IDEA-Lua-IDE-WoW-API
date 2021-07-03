@@ -176,6 +176,9 @@ function C_VoiceChat.IsSpeakForMeActive() end
 ---@return boolean isAllowed
 function C_VoiceChat.IsSpeakForMeAllowed() end
 
+---@return boolean isAllowed
+function C_VoiceChat.IsTranscriptionAllowed() end
+
 ---@param channelID number 
 function C_VoiceChat.LeaveChannel(channelID) end
 
