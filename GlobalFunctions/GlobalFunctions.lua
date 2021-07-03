@@ -579,6 +579,1110 @@ end
 function BuybackItem(slot)
 end
 
+--- [https://wowpedia.fandom.com/wiki/API_CalculateStringEditDistance?action=edit&amp;redlink=1]
+--- @return void
+function CalculateStringEditDistance()
+end
+
+--- Summons the specified companion.
+--- [https://wowpedia.fandom.com/wiki/API_CallCompanion]
+--- @param type string @ The type of companion to summon or dismiss: CRITTER or MOUNT.
+--- @param id number @ The companion index to summon or dismiss, ascending from 1.
+--- @return void
+function CallCompanion(type, id)
+end
+
+--- Begin Left click in the 3D world.
+--- [https://wowpedia.fandom.com/wiki/API_CameraOrSelectOrMoveStart]
+--- @return void
+function CameraOrSelectOrMoveStart()
+end
+
+--- End Left click in the 3D game world.
+--- [https://wowpedia.fandom.com/wiki/API_CameraOrSelectOrMoveStop]
+--- @param stickyFlag number @ optional) - If present and set then any camera offset is 'sticky' and remains until explicitly cancelled.
+--- @return void
+function CameraOrSelectOrMoveStop(stickyFlag)
+end
+
+--- Zooms the camera into the viewplane
+--- [https://wowpedia.fandom.com/wiki/API_CameraZoomIn]
+--- @param increment unknown
+--- @return void
+function CameraZoomIn(increment)
+end
+
+--- Zooms the camera out of the viewplane
+--- [https://wowpedia.fandom.com/wiki/API_CameraZoomOut]
+--- @param increment unknown
+--- @return void
+function CameraZoomOut(increment)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanAffordMerchantItem?action=edit&amp;redlink=1]
+--- @return void
+function CanAffordMerchantItem()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanAutoSetGamePadCursorControl?action=edit&amp;redlink=1]
+--- @return void
+function CanAutoSetGamePadCursorControl()
+end
+
+--- Returns whether the specified unit can be assigned a raid target marker.
+--- [https://wowpedia.fandom.com/wiki/API_CanBeRaidTarget]
+--- @param unit string @ unitId to query.
+--- @return boolean @ canBeRaidTarget
+function CanBeRaidTarget(unit)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanCancelScene?action=edit&amp;redlink=1]
+--- @return void
+function CanCancelScene()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanChangePlayerDifficulty?action=edit&amp;redlink=1]
+--- @return void
+function CanChangePlayerDifficulty()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanComplainInboxItem?action=edit&amp;redlink=1]
+--- @return void
+function CanComplainInboxItem()
+end
+
+--- Returns whether the player can Dual wield weapons.
+--- [https://wowpedia.fandom.com/wiki/API_CanDualWield]
+--- @return boolean @ canDualWield
+function CanDualWield()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanEditGuildBankTabInfo?action=edit&amp;redlink=1]
+--- @return void
+function CanEditGuildBankTabInfo()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanEditGuildEvent?action=edit&amp;redlink=1]
+--- @return void
+function CanEditGuildEvent()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanEditGuildInfo?action=edit&amp;redlink=1]
+--- @return void
+function CanEditGuildInfo()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanEditGuildTabInfo?action=edit&amp;redlink=1]
+--- @return void
+function CanEditGuildTabInfo()
+end
+
+--- Checks if the player can edit the guild MOTD.
+--- [https://wowpedia.fandom.com/wiki/API_CanEditMOTD]
+--- @return boolean @ canEdit
+function CanEditMOTD()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanEditPublicNote?action=edit&amp;redlink=1]
+--- @return void
+function CanEditPublicNote()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanEjectPassengerFromSeat?action=edit&amp;redlink=1]
+--- @return void
+function CanEjectPassengerFromSeat()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanExitVehicle?action=edit&amp;redlink=1]
+--- @return void
+function CanExitVehicle()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanGamePadControlCursor?action=edit&amp;redlink=1]
+--- @return void
+function CanGamePadControlCursor()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanGuildBankRepair?action=edit&amp;redlink=1]
+--- @return void
+function CanGuildBankRepair()
+end
+
+--- Checks if the player can demote guild members.
+--- [https://wowpedia.fandom.com/wiki/API_CanGuildDemote]
+--- @return boolean @ canDemote
+function CanGuildDemote()
+end
+
+--- Checks whether you have guild inviting permission.
+--- [https://wowpedia.fandom.com/wiki/API_CanGuildInvite]
+--- @return boolean @ canInvite
+function CanGuildInvite()
+end
+
+--- Checks if the player can promote guild members.
+--- [https://wowpedia.fandom.com/wiki/API_CanGuildPromote]
+--- @return boolean @ canPromote
+function CanGuildPromote()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanGuildRemove?action=edit&amp;redlink=1]
+--- @return void
+function CanGuildRemove()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanHearthAndResurrectFromArea?action=edit&amp;redlink=1]
+--- @return void
+function CanHearthAndResurrectFromArea()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanInitiateWarGame?action=edit&amp;redlink=1]
+--- @return void
+function CanInitiateWarGame()
+end
+
+--- Returns whether you can inspect a particular unit.
+--- [https://wowpedia.fandom.com/wiki/API_CanInspect]
+--- @param unit string @ unitId) - Unit to check inspectability of.
+--- @param showError number @ If true, the function will display an error message (You can't inspect that unit) if you cannot inspect the specified unit.
+--- @return number @ canInspect
+function CanInspect(unit, showError)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanItemBeSocketedToArtifact?action=edit&amp;redlink=1]
+--- @return void
+function CanItemBeSocketedToArtifact()
+end
+
+--- Returns, whether the player can join a battlefield as group or not.
+--- [https://wowpedia.fandom.com/wiki/API_CanJoinBattlefieldAsGroup]
+--- @return boolean @ isTrue
+function CanJoinBattlefieldAsGroup()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanLootUnit?action=edit&amp;redlink=1]
+--- @return void
+function CanLootUnit()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanMapChangeDifficulty?action=edit&amp;redlink=1]
+--- @return void
+function CanMapChangeDifficulty()
+end
+
+--- Can the merchant repair items or not.
+--- [https://wowpedia.fandom.com/wiki/API_CanMerchantRepair]
+--- @return number @ canRepair
+function CanMerchantRepair()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanPartyLFGBackfill?action=edit&amp;redlink=1]
+--- @return void
+function CanPartyLFGBackfill()
+end
+
+--- Returns whether you can impeach the Guild Master due to inactivity.
+--- [https://wowpedia.fandom.com/wiki/API_CanReplaceGuildMaster]
+--- @return boolean @ canReplace
+function CanReplaceGuildMaster()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanResetTutorials?action=edit&amp;redlink=1]
+--- @return void
+function CanResetTutorials()
+end
+
+--- Returns whether the player is currently on a digsite.
+--- [https://wowpedia.fandom.com/wiki/API_CanScanResearchSite]
+--- @return boolean @ onSite
+function CanScanResearchSite()
+end
+
+--- Returns if the AchievementUI can be displayed.
+--- [https://wowpedia.fandom.com/wiki/API_CanShowAchievementUI]
+--- @return boolean @ canShow
+function CanShowAchievementUI()
+end
+
+--- Returns true if the player can reset instances now.
+--- [https://wowpedia.fandom.com/wiki/API_CanShowResetInstances]
+--- @return boolean @ canReset
+function CanShowResetInstances()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanSignPetition?action=edit&amp;redlink=1]
+--- @return void
+function CanSignPetition()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanSolveArtifact?action=edit&amp;redlink=1]
+--- @return void
+function CanSolveArtifact()
+end
+
+--- Returns whether you can RaF summon a particular unit.
+--- [https://wowpedia.fandom.com/wiki/API_CanSummonFriend]
+--- @param unit string @ UnitId) - player to check whether you can summon.
+--- @return number @ summonable
+function CanSummonFriend(unit)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanSurrenderArena?action=edit&amp;redlink=1]
+--- @return void
+function CanSurrenderArena()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanSwitchVehicleSeat?action=edit&amp;redlink=1]
+--- @return void
+function CanSwitchVehicleSeat()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanSwitchVehicleSeats?action=edit&amp;redlink=1]
+--- @return void
+function CanSwitchVehicleSeats()
+end
+
+--- Returns whether the player can track battle pets.
+--- [https://wowpedia.fandom.com/wiki/API_CanTrackBattlePets]
+--- @return boolean @ canTrack
+function CanTrackBattlePets()
+end
+
+--- Needs summary.
+--- [https://wowpedia.fandom.com/wiki/API_CanUpgradeExpansion]
+--- @return boolean @ canUpgradeExpansion
+function CanUpgradeExpansion()
+end
+
+--- Returns if the player has access to the Void Storage.
+--- [https://wowpedia.fandom.com/wiki/API_CanUseVoidStorage]
+--- @return number @ canUse
+function CanUseVoidStorage()
+end
+
+--- Checks if the player can view specific guild recipes.
+--- [https://wowpedia.fandom.com/wiki/API_CanViewGuildRecipes]
+--- @param skillID number @ The skill ID to view recipes of. See GetGuildTradeSkillInfo on how to fetch a skill ID.
+--- @return boolean @ canView
+function CanViewGuildRecipes(skillID)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CanWithdrawGuildBankMoney?action=edit&amp;redlink=1]
+--- @return void
+function CanWithdrawGuildBankMoney()
+end
+
+--- Cancels the area Spirit Healer's resurrection in battlegrounds.
+--- [https://wowpedia.fandom.com/wiki/API_CancelAreaSpiritHeal]
+--- @return void
+function CancelAreaSpiritHeal()
+end
+
+--- Exits the barber shop without applying selected customizations.
+--- [https://wowpedia.fandom.com/wiki/API_CancelBarberShop]
+--- @return void
+function CancelBarberShop()
+end
+
+--- Forfeits the current duel, or declines an invitation to duel.
+--- [https://wowpedia.fandom.com/wiki/API_CancelDuel]
+--- @return void
+function CancelDuel()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CancelEmote?action=edit&amp;redlink=1]
+--- @return void
+function CancelEmote()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CancelGuildMembershipRequest?action=edit&amp;redlink=1]
+--- @return void
+function CancelGuildMembershipRequest()
+end
+
+--- Removes temporary item buffs, such as Rogue poisons, Shaman weapon buffs, and sharpening stones from either the Main Hand or Off Hand equipment slots.
+--- [https://wowpedia.fandom.com/wiki/API_CancelItemTempEnchantment]
+--- @param weaponHand number @ for Main Hand, 2 for Off Hand.
+--- @return void
+function CancelItemTempEnchantment(weaponHand)
+end
+
+--- Cancels the logout timer (from camping or quitting).
+--- [https://wowpedia.fandom.com/wiki/API_CancelLogout]
+--- @return void
+function CancelLogout()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CancelMasterLootRoll?action=edit&amp;redlink=1]
+--- @return void
+function CancelMasterLootRoll()
+end
+
+--- Cancels a pending equip operation.
+--- [https://wowpedia.fandom.com/wiki/API_CancelPendingEquip]
+--- @param slot number @ equipment slot to cancel equipping an item to.
+--- @return void
+function CancelPendingEquip(slot)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CancelPetPossess?action=edit&amp;redlink=1]
+--- @return void
+function CancelPetPossess()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CancelPreloadingMovie?action=edit&amp;redlink=1]
+--- @return void
+function CancelPreloadingMovie()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CancelScene?action=edit&amp;redlink=1]
+--- @return void
+function CancelScene()
+end
+
+--- Cancels a druid's shapeshift buff.
+--- [https://wowpedia.fandom.com/wiki/API_CancelShapeshiftForm]
+--- @return void
+function CancelShapeshiftForm()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CancelSpellByName?action=edit&amp;redlink=1]
+--- @return void
+function CancelSpellByName()
+end
+
+--- Cancels the currently open trade.
+--- [https://wowpedia.fandom.com/wiki/API_CancelTrade]
+--- @return void
+function CancelTrade()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CancelTradeAccept?action=edit&amp;redlink=1]
+--- @return void
+function CancelTradeAccept()
+end
+
+--- Removes a specific buff from the unit.
+--- [https://wowpedia.fandom.com/wiki/API_CancelUnitBuff]
+--- @param unit string @ unitId) - Unit to cancel the buff from, must be under the player's control.
+--- @param buffIndex number @ index of the buff to cancel, ascending from 1.
+--- @param filter string @ any of combination of HELPFUL|HARMFUL|PLAYER|RAID|CANCELABLE|NOT_CANCELABLE.
+--- @return void
+function CancelUnitBuff(unit, buffIndex, filter)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CannotBeResurrected?action=edit&amp;redlink=1]
+--- @return void
+function CannotBeResurrected()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CaseAccentInsensitiveParse?action=edit&amp;redlink=1]
+--- @return void
+function CaseAccentInsensitiveParse()
+end
+
+--- Cast the corresponding pet skill.
+--- [https://wowpedia.fandom.com/wiki/API_CastPetAction]
+--- @param index number @ pet action bar slot index, ascending from 1.
+--- @param target string @ unit to cast the action on; defaults to target.
+--- @return void
+function CastPetAction(index, target)
+end
+
+--- Casts a shapeshift ability.
+--- [https://wowpedia.fandom.com/wiki/API_CastShapeshiftForm]
+--- @param index number @ specifies which shapeshift form to activate or toggle; generally equivalent to the index of the form on the stance bar.
+--- @return void
+function CastShapeshiftForm(index)
+end
+
+--- Casts the specified spell.
+--- [https://wowpedia.fandom.com/wiki/API_CastSpell]
+--- @param spellIndex number @ index of the spell to cast.
+--- @param spellbookType string @ spellbook to cast the spell from; one of
+--- @return void
+function CastSpell(spellIndex, spellbookType)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CastSpellByID?action=edit&amp;redlink=1]
+--- @return void
+function CastSpellByID()
+end
+
+--- Casts the specified spell.
+--- [https://wowpedia.fandom.com/wiki/API_CastSpellByName]
+--- @param spellName unknown
+--- @param target string @ unit to cast the spell on. If omitted, target is assumed for spells that require a target.
+--- @return void
+function CastSpellByName(spellName, target)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CenterCamera?action=edit&amp;redlink=1]
+--- @return void
+function CenterCamera()
+end
+
+--- Changes the current action button to the one specified in the arguments.
+--- [https://wowpedia.fandom.com/wiki/API_ChangeActionBarPage]
+--- @param actionBarPage unknown @ Numer - Which page of your action bar to switch to. Expects an integer 1-6.
+--- @return void
+function ChangeActionBarPage(actionBarPage)
+end
+
+--- Changes the text color of the specified chat channel.  The color wheel popup calls this function to do the actual work, once the user is done with the popup.
+--- [https://wowpedia.fandom.com/wiki/API_ChangeChatColor]
+--- @param channelname string @ Name of the channel as given in chat-cache.txt files.
+--- @param red unknown
+--- @param green unknown
+--- @param blue unknown
+--- @return void
+function ChangeChatColor(channelname, red, green, blue)
+end
+
+--- Bans a player from the specified channel.
+--- [https://wowpedia.fandom.com/wiki/API_ChannelBan]
+--- @param channelName string @ The name of the channel to ban on
+--- @param playerName string @ The name of the player to ban
+--- @return void
+function ChannelBan(channelName, playerName)
+end
+
+--- Invites the specified user to the channel.
+--- [https://wowpedia.fandom.com/wiki/API_ChannelInvite]
+--- @param channelName string @ The name of the channel to invite to
+--- @param playerName string @ The name of the player to invite
+--- @return void
+function ChannelInvite(channelName, playerName)
+end
+
+--- Kicks a player from the specified channel.
+--- [https://wowpedia.fandom.com/wiki/API_ChannelKick]
+--- @param channelName string @ The name of the channel to kick from
+--- @param playerName string @ The name of the player to kick
+--- @return void
+function ChannelKick(channelName, playerName)
+end
+
+--- Sets the specified player as the channel moderator.
+--- [https://wowpedia.fandom.com/wiki/API_ChannelModerator]
+--- @param channelName unknown @ The name of the channel to set moderator status on
+--- @param playerName unknown @ The name of the player to set as a moderator
+--- @return void
+function ChannelModerator(channelName, playerName)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ChannelSetAllSilent?action=edit&amp;redlink=1]
+--- @return void
+function ChannelSetAllSilent()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ChannelSetPartyMemberSilent?action=edit&amp;redlink=1]
+--- @return void
+function ChannelSetPartyMemberSilent()
+end
+
+--- Toggles the channel to display announcements either on or off.
+--- [https://wowpedia.fandom.com/wiki/API_ChannelToggleAnnouncements]
+--- @param channelName unknown @ The name of the channel to toggle announcements on
+--- @param name unknown
+--- @return void
+function ChannelToggleAnnouncements(channelName, name)
+end
+
+--- Unbans a player from the specified channel.
+--- [https://wowpedia.fandom.com/wiki/API_ChannelUnban]
+--- @param channelName unknown @ The name of the channel to remove the ban on
+--- @param playerName unknown @ The name of the player to unban
+--- @return void
+function ChannelUnban(channelName, playerName)
+end
+
+--- Takes the specified user away from the moderator status.
+--- [https://wowpedia.fandom.com/wiki/API_ChannelUnmoderator]
+--- @param channelName unknown @ The name of the channel to remove moderator status on
+--- @param playerName unknown @ The name of the player to remove moderator status from
+--- @return void
+function ChannelUnmoderator(channelName, playerName)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CheckBinderDist?action=edit&amp;redlink=1]
+--- @return void
+function CheckBinderDist()
+end
+
+--- Populates client's inbox with messages.
+--- [https://wowpedia.fandom.com/wiki/API_CheckInbox]
+--- @return void
+function CheckInbox()
+end
+
+--- Checks whether you are in range to perform a specific interaction with a specified unit.
+--- [https://wowpedia.fandom.com/wiki/API_CheckInteractDistance]
+--- @param unit string @ Unit to compare distance to.
+--- @param distIndex number @ A value from 1 to 5:
+--- @return number @ inRange
+function CheckInteractDistance(unit, distIndex)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CheckSpiritHealerDist?action=edit&amp;redlink=1]
+--- @return void
+function CheckSpiritHealerDist()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CheckTalentMasterDist?action=edit&amp;redlink=1]
+--- @return void
+function CheckTalentMasterDist()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClearAchievementComparisonUnit?action=edit&amp;redlink=1]
+--- @return void
+function ClearAchievementComparisonUnit()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClearAchievementSearchString?action=edit&amp;redlink=1]
+--- @return void
+function ClearAchievementSearchString()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClearAllLFGDungeons?action=edit&amp;redlink=1]
+--- @return void
+function ClearAllLFGDungeons()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClearAllTracking?action=edit&amp;redlink=1]
+--- @return void
+function ClearAllTracking()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClearAutoAcceptQuestSound?action=edit&amp;redlink=1]
+--- @return void
+function ClearAutoAcceptQuestSound()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClearBattlemaster?action=edit&amp;redlink=1]
+--- @return void
+function ClearBattlemaster()
+end
+
+--- Clears the in-game cursor, returning the object held to its original position (equivalent to right-clicking while holding something on the cursor).
+--- [https://wowpedia.fandom.com/wiki/API_ClearCursor]
+--- @return void
+function ClearCursor()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClearFailedPVPTalentIDs?action=edit&amp;redlink=1]
+--- @return void
+function ClearFailedPVPTalentIDs()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClearFailedTalentIDs?action=edit&amp;redlink=1]
+--- @return void
+function ClearFailedTalentIDs()
+end
+
+--- I believe this is supposed to clear your focus just like /clearfocus does. However, it has been blocked by blizzard or something like that. (/clearfocus still works however.)
+--- [https://wowpedia.fandom.com/wiki/API_ClearFocus]
+--- @return void
+function ClearFocus()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClearInspectPlayer?action=edit&amp;redlink=1]
+--- @return void
+function ClearInspectPlayer()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClearItemUpgrade?action=edit&amp;redlink=1]
+--- @return void
+function ClearItemUpgrade()
+end
+
+--- Removes all override bindings owned by a particular frame.
+--- [https://wowpedia.fandom.com/wiki/API_ClearOverrideBindings]
+--- @param owner Frame @ The frame to clear override bindings for.
+--- @return void
+function ClearOverrideBindings(owner)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClearPartyAssignment?action=edit&amp;redlink=1]
+--- @return void
+function ClearPartyAssignment()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClearRaidMarker?action=edit&amp;redlink=1]
+--- @return void
+function ClearRaidMarker()
+end
+
+--- Clears everything that has been typed into the 'Send Mail' window.
+--- [https://wowpedia.fandom.com/wiki/API_ClearSendMail]
+--- @return void
+function ClearSendMail()
+end
+
+--- Clears the player's target.
+--- [https://wowpedia.fandom.com/wiki/API_ClearTarget]
+--- @return void
+function ClearTarget()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClearTutorials?action=edit&amp;redlink=1]
+--- @return void
+function ClearTutorials()
+end
+
+--- Clears the specified Void Transfer deposit slot [1]
+--- [https://wowpedia.fandom.com/wiki/API_ClearVoidTransferDepositSlot]
+--- @param slotIndex number @ Index ranging from 1 to 9 (VOID_DEPOSIT_MAX)
+--- @return void
+function ClearVoidTransferDepositSlot(slotIndex)
+end
+
+--- Places or picks up an item from the send mail frame. Can also clear an item rather than picking it up.
+--- [https://wowpedia.fandom.com/wiki/API_ClickSendMailItemButton]
+--- @param itemIndex number @ The index of the item (1-ATTACHMENTS_MAX_SEND(12))
+--- @param clearItem boolean @ ?Optional.  Could be nil. - Clear the item already in this slot. (Done by right clicking an item)
+--- @return void
+function ClickSendMailItemButton(itemIndex, clearItem)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClickSocketButton?action=edit&amp;redlink=1]
+--- @return void
+function ClickSocketButton()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClickTargetTradeButton?action=edit&amp;redlink=1]
+--- @return void
+function ClickTargetTradeButton()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClickTradeButton?action=edit&amp;redlink=1]
+--- @return void
+function ClickTradeButton()
+end
+
+--- Clicks the specified Void Storage slot [1]
+--- [https://wowpedia.fandom.com/wiki/API_ClickVoidStorageSlot]
+--- @param slotIndex number @ Index ranging from 1 to 80 (VOID_STORAGE_MAX). The index starts from top to bottom first (vertically), then left to right (horizontally); This is similar to the Guild Bank frame
+--- @param isRightClick boolean @ ?Optional.  Could be nil. - Whether the button was right-clicked
+--- @return void
+function ClickVoidStorageSlot(slotIndex, isRightClick)
+end
+
+--- Clicks the specified Void Transfer deposit slot [1]
+--- [https://wowpedia.fandom.com/wiki/API_ClickVoidTransferDepositSlot]
+--- @param slotIndex number @ Index ranging from 1 to 9 (VOID_DEPOSIT_MAX). Defaults to 1 if not a valid Index
+--- @param isRightClick boolean @ Whether the button was right-clicked
+--- @return void
+function ClickVoidTransferDepositSlot(slotIndex, isRightClick)
+end
+
+--- Clicks the specified Void Transfer withdrawal slot [1]
+--- [https://wowpedia.fandom.com/wiki/API_ClickVoidTransferWithdrawalSlot]
+--- @param slotIndex number @ Index ranging from 1 to 9 (VOID_WITHDRAW_MAX)
+--- @param isRightClick boolean @ Whether the button was right-clicked
+--- @return void
+function ClickVoidTransferWithdrawalSlot(slotIndex, isRightClick)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClickWorldMapActionButton?action=edit&amp;redlink=1]
+--- @return void
+function ClickWorldMapActionButton()
+end
+
+--- Will Close the Bank Frame if opened.
+--- [https://wowpedia.fandom.com/wiki/API_CloseBankFrame]
+--- @return void
+function CloseBankFrame()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CloseGuildBankFrame?action=edit&amp;redlink=1]
+--- @return void
+function CloseGuildBankFrame()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CloseGuildRegistrar?action=edit&amp;redlink=1]
+--- @return void
+function CloseGuildRegistrar()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CloseGuildRoster?action=edit&amp;redlink=1]
+--- @return void
+function CloseGuildRoster()
+end
+
+--- Close an open item text (book, plaque, etc).
+--- [https://wowpedia.fandom.com/wiki/API_CloseItemText]
+--- @return void
+function CloseItemText()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CloseItemUpgrade?action=edit&amp;redlink=1]
+--- @return void
+function CloseItemUpgrade()
+end
+
+--- Close the loot window.
+--- [https://wowpedia.fandom.com/wiki/API_CloseLoot]
+--- @param errNum number @ Optional) - A reason for the window closing.  Unsure whether/how the game deals with error codes passed to it.
+--- @return void
+function CloseLoot(errNum)
+end
+
+--- Closes the 'Mailbox' window.
+--- [https://wowpedia.fandom.com/wiki/API_CloseMail]
+--- @return void
+function CloseMail()
+end
+
+--- Closes the merchant window.
+--- [https://wowpedia.fandom.com/wiki/API_CloseMerchant]
+--- @return void
+function CloseMerchant()
+end
+
+--- Closes the pet stable window.
+--- [https://wowpedia.fandom.com/wiki/API_ClosePetStables]
+--- @return void
+function ClosePetStables()
+end
+
+--- Closes a petition that has been presented to the player.
+--- [https://wowpedia.fandom.com/wiki/API_ClosePetition]
+--- @return void
+function ClosePetition()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClosePlayerChoice?action=edit&amp;redlink=1]
+--- @return void
+function ClosePlayerChoice()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CloseQuest?action=edit&amp;redlink=1]
+--- @return void
+function CloseQuest()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CloseResearch?action=edit&amp;redlink=1]
+--- @return void
+function CloseResearch()
+end
+
+--- Stops considering the item for socketing, ignoring any tentative changes made.
+--- [https://wowpedia.fandom.com/wiki/API_CloseSocketInfo]
+--- @return void
+function CloseSocketInfo()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CloseTabardCreation?action=edit&amp;redlink=1]
+--- @return void
+function CloseTabardCreation()
+end
+
+--- Closes your Flightpath Map.
+--- [https://wowpedia.fandom.com/wiki/API_CloseTaxiMap]
+--- @return void
+function CloseTaxiMap()
+end
+
+--- Closes the trade window.
+--- [https://wowpedia.fandom.com/wiki/API_CloseTrade]
+--- @return void
+function CloseTrade()
+end
+
+--- Closes the trainer window.
+--- [https://wowpedia.fandom.com/wiki/API_CloseTrainer]
+--- @return void
+function CloseTrainer()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CloseVoidStorageFrame?action=edit&amp;redlink=1]
+--- @return void
+function CloseVoidStorageFrame()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ClosestGameObjectPosition?action=edit&amp;redlink=1]
+--- @return void
+function ClosestGameObjectPosition()
+end
+
+--- Returns the unit position of the closest creature by ID. Only works for mobs in the starting zones.
+--- [https://wowpedia.fandom.com/wiki/API_ClosestUnitPosition]
+--- @param creatureID number @ NPC ID of a GUID of a creature.
+--- @return number, number, number @ x, y, distance
+function ClosestUnitPosition(creatureID)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CollapseAllFactionHeaders?action=edit&amp;redlink=1]
+--- @return void
+function CollapseAllFactionHeaders()
+end
+
+--- Collapse a faction header row.
+--- [https://wowpedia.fandom.com/wiki/API_CollapseFactionHeader]
+--- @param rowIndex number @ The row index of the header to collapse (Specifying a non-header row can have unpredictable results). The UPDATE_FACTION event is fired after the change since faction indexes will have been shifted around.
+--- @return void
+function CollapseFactionHeader(rowIndex)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CollapseGuildTradeSkillHeader?action=edit&amp;redlink=1]
+--- @return void
+function CollapseGuildTradeSkillHeader()
+end
+
+--- Collapses the quest header.
+--- [https://wowpedia.fandom.com/wiki/API_CollapseQuestHeader]
+--- @param questID unknown @ The quest ID of the header you wish to collapse - 0 to collapse all quest headers
+--- @return void
+function CollapseQuestHeader(questID)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CollapseWarGameHeader?action=edit&amp;redlink=1]
+--- @return void
+function CollapseWarGameHeader()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogAddFilter?action=edit&amp;redlink=1]
+--- @return void
+function CombatLogAddFilter()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogAdvanceEntry?action=edit&amp;redlink=1]
+--- @return void
+function CombatLogAdvanceEntry()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogClearEntries?action=edit&amp;redlink=1]
+--- @return void
+function CombatLogClearEntries()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogGetCurrentEntry?action=edit&amp;redlink=1]
+--- @return void
+function CombatLogGetCurrentEntry()
+end
+
+--- Returns the current COMBAT_LOG_EVENT payload.
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogGetCurrentEventInfo]
+--- @return unknown @ eventInfo
+function CombatLogGetCurrentEventInfo()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogGetNumEntries?action=edit&amp;redlink=1]
+--- @return void
+function CombatLogGetNumEntries()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogGetRetentionTime?action=edit&amp;redlink=1]
+--- @return void
+function CombatLogGetRetentionTime()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogResetFilter?action=edit&amp;redlink=1]
+--- @return void
+function CombatLogResetFilter()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogSetCurrentEntry?action=edit&amp;redlink=1]
+--- @return void
+function CombatLogSetCurrentEntry()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogSetRetentionTime?action=edit&amp;redlink=1]
+--- @return void
+function CombatLogSetRetentionTime()
+end
+
+--- Compares two UnitFlag bitfields.
+--- [https://wowpedia.fandom.com/wiki/API_CombatLog_Object_IsA]
+--- @param flag1 number @ UnitFlag bitfield, typically a sourceFlags or destFlags paramater from COMBAT_LOG_EVENT.
+--- @param flag2 number @ UnitFlag bitfield, typically a COMBATLOG_FILTER constant.
+--- @return number, number @ flag1, flag2
+function CombatLog_Object_IsA(flag1, flag2)
+end
+
+--- Alters the entity for which the COMBAT_TEXT_UPDATE event fires.
+--- [https://wowpedia.fandom.com/wiki/API_CombatTextSetActiveUnit]
+--- @param unit string @ UnitId of the entity you want receive notifications for.
+--- @return void
+function CombatTextSetActiveUnit(unit)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ComplainInboxItem?action=edit&amp;redlink=1]
+--- @return void
+function ComplainInboxItem()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CompleteLFGReadyCheck?action=edit&amp;redlink=1]
+--- @return void
+function CompleteLFGReadyCheck()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CompleteLFGRoleCheck?action=edit&amp;redlink=1]
+--- @return void
+function CompleteLFGRoleCheck()
+end
+
+--- Advances the quest completion dialog to the reward selection step.
+--- [https://wowpedia.fandom.com/wiki/API_CompleteQuest]
+--- @return void
+function CompleteQuest()
+end
+
+--- Accept an escort quest being started by a player nearby.
+--- [https://wowpedia.fandom.com/wiki/API_ConfirmAcceptQuest]
+--- @return void
+function ConfirmAcceptQuest()
+end
+
+--- Needs summary.
+--- [https://wowpedia.fandom.com/wiki/API_ConfirmBNRequestInviteFriend]
+--- @param presenceID number
+--- @param tank boolean @ optional)
+--- @param heal unknown
+--- @param dps boolean @ optional)
+--- @return void
+function ConfirmBNRequestInviteFriend(presenceID, tank, heal, dps)
+end
+
+--- Accepts the confirmation to bind an item after attempting to loot a Bind on Pickup item (BoP) or attempting to equip a Bind on Equip item (BoE).
+--- [https://wowpedia.fandom.com/wiki/API_ConfirmBindOnUse]
+--- @return void
+function ConfirmBindOnUse()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ConfirmBinder?action=edit&amp;redlink=1]
+--- @return void
+function ConfirmBinder()
+end
+
+--- Confirm your loot roll after either CONFIRM_LOOT_ROLL or CONFIRM_DISENCHANT_ROLL fires.
+--- [https://wowpedia.fandom.com/wiki/API_ConfirmLootRoll]
+--- @param rollID number @ As passed by the event. (The number increases with every roll you have in a party)
+--- @param roll number @ Type of roll: (also passed by the event)
+--- @return void
+function ConfirmLootRoll(rollID, roll)
+end
+
+--- After a Bind on Pickup item has been looted via a LootButton, this function needs to be called to confirm that the player wants to loot the item.
+--- [https://wowpedia.fandom.com/wiki/API_ConfirmLootSlot]
+--- @param slot number @ the loot slot of a BoP loot item that is waiting for confirmation
+--- @return void
+function ConfirmLootSlot(slot)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ConfirmNoRefundOnUse?action=edit&amp;redlink=1]
+--- @return void
+function ConfirmNoRefundOnUse()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ConfirmOnUse?action=edit&amp;redlink=1]
+--- @return void
+function ConfirmOnUse()
+end
+
+--- Sends a response to a raid ready check
+--- [https://wowpedia.fandom.com/wiki/API_ConfirmReadyCheck]
+--- @param isReady number @ ?Optional.  Could be nil. - 1 if the player is ready, nil if the player is not ready
+--- @return void
+function ConfirmReadyCheck(isReady)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ConfirmTalentWipe?action=edit&amp;redlink=1]
+--- @return void
+function ConfirmTalentWipe()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ConsoleAddMessage?action=edit&amp;redlink=1]
+--- @return void
+function ConsoleAddMessage()
+end
+
+--- Execute a console command.
+--- [https://wowpedia.fandom.com/wiki/API_ConsoleExec]
+--- @param command string @ The console command to execute.
+--- @return void
+function ConsoleExec(command)
+end
+
+--- Prints all bag container IDs and their respective inventory IDs(You need to be at the bank for bank inventory IDs to return valid results)
+--- [https://wowpedia.fandom.com/wiki/API_ContainerIDToInventoryID]
+--- @param containerID unknown
+--- @return number @ bagID
+function ContainerIDToInventoryID(containerID)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_ContainerRefundItemPurchase?action=edit&amp;redlink=1]
+--- @return void
+function ContainerRefundItemPurchase()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CopyToClipboard?action=edit&amp;redlink=1]
+--- @return void
+function CopyToClipboard()
+end
+
+--- Creates a font object.
+--- [https://wowpedia.fandom.com/wiki/API_CreateFont]
+--- @param name string @ Globally-accessible name to be assigned for use as _G[name]
+--- @return unknown @ fontObject
+function CreateFont(name)
+end
+
+--- Creates a new Frame object.
+--- [https://wowpedia.fandom.com/wiki/API_CreateFrame]
+--- @param frameType string @ Type of the frame e.g. Frame or Button.
+--- @param name string @ ? - Globally accessible name to assign to the frame, or nil for an anonymous frame.
+--- @param parent Frame @ ? - Parent object to assign to the frame, or nil to be parentless; cannot be a string. Can also be set with Region:SetParent()
+--- @param template string @ ? - Comma-delimited list of virtual frames to inherit from. See also the Complete List of FrameXML templates.
+--- @param id number @ ? - ID to assign to the frame. Can also be set with Frame:SetID()
+--- @return Frame @ frame
+function CreateFrame(frameType, name, parent, template, id)
+end
+
+--- Creates a new macro command/button.
+--- [https://wowpedia.fandom.com/wiki/API_CreateMacro]
+--- @param name string @ The name of the macro to be displayed in the UI. The current UI imposes a 16-character limit.
+--- @param iconFileID number @ |string - A FileID or string identifying the icon texture to use. The available icons can be retrieved by calling GetMacroIcons() and GetMacroItemIcons(); other textures inside Interface\ICONS may also be used.
+--- @param body string @ ?Optional.  Could be nil. - The macro commands to be executed. If this string is longer than 255 characters, only the first 255 will be saved.
+--- @param perCharacter boolean @ ?Optional.  Could be nil. - true to create a per-character macro, nil to create a general macro available to all characters.
+--- @return number @ macroId
+function CreateMacro(name, iconFileID, body, perCharacter)
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CreateNewRaidProfile?action=edit&amp;redlink=1]
+--- @return void
+function CreateNewRaidProfile()
+end
+
+--- Determines if the item in the cursor can be equipped in the specified inventory slot.  Always returns 1 for bank bag slots.
+--- [https://wowpedia.fandom.com/wiki/API_CursorCanGoInSlot]
+--- @param invSlot number @ inventorySlotId) - Inventory slot to query
+--- @return number @ fitsInSlot
+function CursorCanGoInSlot(invSlot)
+end
+
+--- Returns 1 if the cursor currently holds an item, nil otherwise.
+--- [https://wowpedia.fandom.com/wiki/API_CursorHasItem]
+--- @return boolean @ hasItem
+function CursorHasItem()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CursorHasMacro?action=edit&amp;redlink=1]
+--- @return void
+function CursorHasMacro()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CursorHasMoney?action=edit&amp;redlink=1]
+--- @return void
+function CursorHasMoney()
+end
+
+--- [https://wowpedia.fandom.com/wiki/API_CursorHasSpell?action=edit&amp;redlink=1]
+--- @return void
+function CursorHasSpell()
+end
+
 --- Returns a table representing the last five damaging combat events against the player.
 --- [https://wowpedia.fandom.com/wiki/API_DeathRecap_GetEvents]
 --- @param recapID number @ The specific death to view, from 1 to the most recent death. If this is not given, the most recent ID is used.
