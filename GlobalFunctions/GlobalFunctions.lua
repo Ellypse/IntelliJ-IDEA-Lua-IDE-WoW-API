@@ -88,6 +88,18 @@ end
 function AcknowledgeAutoAcceptQuest()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_AcknowledgeSurvey]
+--- @return void
+function AcknowledgeSurvey()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ActionBindsItem]
+--- @return void
+function ActionBindsItem()
+end
+
 --- Returns true if the action has a numeric range requirement.
 --- [https://wowpedia.fandom.com/wiki/API_ActionHasRange]
 --- @param slotID number @ The slot ID to test.
@@ -140,10 +152,22 @@ end
 function Ambiguate(fullName, context)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_AntiAliasingSupported]
+--- @return void
+function AntiAliasingSupported()
+end
+
 --- Purchases currently selected customizations from the barber shop.
 --- [https://wowpedia.fandom.com/wiki/API_ApplyBarberShopStyle]
 --- @return void
 function ApplyBarberShopStyle()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ArchaeologyGetIconInfo]
+--- @return void
+function ArchaeologyGetIconInfo()
 end
 
 --- Returns how many digsites are in a zone like Azsuna or Elwynn Forest.
@@ -153,10 +177,28 @@ end
 function ArchaeologyMapUpdateAll(uiMapID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ArcheologyGetVisibleBlobID]
+--- @return void
+function ArcheologyGetVisibleBlobID()
+end
+
 --- Returns whether account-wide achievements are hidden from other players.
 --- [https://wowpedia.fandom.com/wiki/API_AreAccountAchievementsHidden]
 --- @return boolean @ hidden
 function AreAccountAchievementsHidden()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_AreDangerousScriptsAllowed]
+--- @return void
+function AreDangerousScriptsAllowed()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_AreTalentsLocked]
+--- @return void
+function AreTalentsLocked()
 end
 
 --- This doesn't appear to affect the actual jump at all and is used as a way for users to get when the jump key was released.
@@ -172,16 +214,34 @@ end
 function AssistUnit(unit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_AttachGlyphToSpell]
+--- @return void
+function AttachGlyphToSpell()
+end
+
 --- Toggles auto-attacking of the player's current target.
 --- [https://wowpedia.fandom.com/wiki/API_AttackTarget]
 --- @return void
 function AttackTarget()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_AutoChooseCurrentGraphicsSetting]
+--- @return void
+function AutoChooseCurrentGraphicsSetting()
+end
+
 --- Automatically equips the item currently held on the cursor.
 --- [https://wowpedia.fandom.com/wiki/API_AutoEquipCursorItem]
 --- @return void
 function AutoEquipCursorItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_AutoLootMailItem]
+--- @return void
+function AutoLootMailItem()
 end
 
 --- Allows you to withdraw an item and automatically store it in your inventory.
@@ -192,10 +252,58 @@ end
 function AutoStoreGuildBankItem(tab, slot)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNAcceptFriendInvite]
+--- @return void
+function BNAcceptFriendInvite()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNCheckBattleTagInviteToGuildMember]
+--- @return void
+function BNCheckBattleTagInviteToGuildMember()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNCheckBattleTagInviteToUnit]
+--- @return void
+function BNCheckBattleTagInviteToUnit()
+end
+
 --- Returns info whether the WoW Client is connected to the Battle.net.
 --- [https://wowpedia.fandom.com/wiki/API_BNConnected]
 --- @return boolean @ connected
 function BNConnected()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNDeclineFriendInvite]
+--- @return void
+function BNDeclineFriendInvite()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNFeaturesEnabled]
+--- @return void
+function BNFeaturesEnabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNFeaturesEnabledAndConnected]
+--- @return void
+function BNFeaturesEnabledAndConnected()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNGetBlockedInfo]
+--- @return void
+function BNGetBlockedInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNGetDisplayName]
+--- @return void
+function BNGetDisplayName()
 end
 
 --- Returns information about the specified friend of a RealID friend
@@ -227,10 +335,94 @@ end
 function BNGetInfo()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNGetNumBlocked]
+--- @return void
+function BNGetNumBlocked()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNGetNumFOF]
+--- @return void
+function BNGetNumFOF()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNGetNumFriendInvites]
+--- @return void
+function BNGetNumFriendInvites()
+end
+
 --- Returns info about how much Battle.net friends are added to the friendslist and how much of them are currently online.
 --- [https://wowpedia.fandom.com/wiki/API_BNGetNumFriends]
 --- @return number, number, number, number @ numBNetTotal, numBNetOnline, numBNetFavorite, numBNetFavoriteOnline
 function BNGetNumFriends()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNGetSelectedBlock]
+--- @return void
+function BNGetSelectedBlock()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNGetSelectedFriend]
+--- @return void
+function BNGetSelectedFriend()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNInviteFriend]
+--- @return void
+function BNInviteFriend()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNIsBlocked]
+--- @return void
+function BNIsBlocked()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNIsFriend]
+--- @return void
+function BNIsFriend()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNIsSelf]
+--- @return void
+function BNIsSelf()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNRemoveFriend]
+--- @return void
+function BNRemoveFriend()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNRequestFOFInfo]
+--- @return void
+function BNRequestFOFInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNRequestInviteFriend]
+--- @return void
+function BNRequestInviteFriend()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNSendFriendInvite]
+--- @return void
+function BNSendFriendInvite()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNSendFriendInviteByID]
+--- @return void
+function BNSendFriendInviteByID()
 end
 
 --- BNSendGameData is the battle.net chat-equivalent of SendAddonMessage().
@@ -240,6 +432,18 @@ end
 --- @param message string @ <=4078 bytes
 --- @return void
 function BNSendGameData(presenceID, addonPrefix, message)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNSendSoR]
+--- @return void
+function BNSendSoR()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNSendVerifiedBattleTagInvite]
+--- @return void
+function BNSendVerifiedBattleTagInvite()
 end
 
 --- Sends a whisper to Battle.net friends.
@@ -255,6 +459,12 @@ end
 --- @param bool boolean @ true set your battle.net status to afk and false unset it.
 --- @return void
 function BNSetAFK(bool)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNSetBlocked]
+--- @return void
+function BNSetBlocked()
 end
 
 --- Sends a broadcast message to your Real ID friends.
@@ -287,6 +497,30 @@ end
 function BNSetFriendNote(bnetIDAccount, noteText)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNSetSelectedBlock]
+--- @return void
+function BNSetSelectedBlock()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNSetSelectedFriend]
+--- @return void
+function BNSetSelectedFriend()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNSummonFriendByIndex]
+--- @return void
+function BNSummonFriendByIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BNTokenFindName]
+--- @return void
+function BNTokenFindName()
+end
+
 --- Map a bank item button or bag to an inventory slot button for use in inventory functions.
 --- [https://wowpedia.fandom.com/wiki/API_BankButtonIDToInvSlotID]
 --- @param buttonID number @ bank item/bag ID.
@@ -299,6 +533,36 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_BarberShopReset]
 --- @return void
 function BarberShopReset()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BattlefieldMgrEntryInviteResponse]
+--- @return void
+function BattlefieldMgrEntryInviteResponse()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BattlefieldMgrExitRequest]
+--- @return void
+function BattlefieldMgrExitRequest()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BattlefieldMgrQueueInviteResponse]
+--- @return void
+function BattlefieldMgrQueueInviteResponse()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BattlefieldMgrQueueRequest]
+--- @return void
+function BattlefieldMgrQueueRequest()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BattlefieldSetPendingReportTarget]
+--- @return void
+function BattlefieldSetPendingReportTarget()
 end
 
 --- Accepts an offer to start trading with another player.
@@ -320,6 +584,12 @@ end
 function BreakUpLargeNumbers(value)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BuyGuildBankTab]
+--- @return void
+function BuyGuildBankTab()
+end
+
 --- Purchase a Guild Charter.
 --- [https://wowpedia.fandom.com/wiki/API_BuyGuildCharter]
 --- @param guildName string @ Name of the guild you wish to purchase a guild charter for.
@@ -335,6 +605,12 @@ end
 function BuyMerchantItem(index, quantity)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_BuyReagentBank]
+--- @return void
+function BuyReagentBank()
+end
+
 --- Buys a service available at the current trainer.
 --- [https://wowpedia.fandom.com/wiki/API_BuyTrainerService]
 --- @param index number @ The index of the service to train.
@@ -347,6 +623,2904 @@ end
 --- @param slot number @ the slot from topleft to bottomright of the Merchant Buyback window.
 --- @return void
 function BuybackItem(slot)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureJournal.ActivateEntry]
+--- @return void
+function C_AdventureJournal.ActivateEntry()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureJournal.CanBeShown]
+--- @return void
+function C_AdventureJournal.CanBeShown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureJournal.GetNumAvailableSuggestions]
+--- @return void
+function C_AdventureJournal.GetNumAvailableSuggestions()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureJournal.GetPrimaryOffset]
+--- @return void
+function C_AdventureJournal.GetPrimaryOffset()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureJournal.GetReward]
+--- @return void
+function C_AdventureJournal.GetReward()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureJournal.GetSuggestions]
+--- @return void
+function C_AdventureJournal.GetSuggestions()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureJournal.SetPrimaryOffset]
+--- @return void
+function C_AdventureJournal.SetPrimaryOffset()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureJournal.UpdateSuggestions]
+--- @return void
+function C_AdventureJournal.UpdateSuggestions()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureMap.Close]
+--- @return void
+function C_AdventureMap.Close()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureMap.GetMapID]
+--- @return void
+function C_AdventureMap.GetMapID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureMap.GetMapInsetDetailTileInfo]
+--- @return void
+function C_AdventureMap.GetMapInsetDetailTileInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureMap.GetMapInsetInfo]
+--- @return void
+function C_AdventureMap.GetMapInsetInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureMap.GetNumMapInsets]
+--- @return void
+function C_AdventureMap.GetNumMapInsets()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureMap.GetNumQuestOffers]
+--- @return void
+function C_AdventureMap.GetNumQuestOffers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureMap.GetNumZoneChoices]
+--- @return void
+function C_AdventureMap.GetNumZoneChoices()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureMap.GetQuestInfo]
+--- @return void
+function C_AdventureMap.GetQuestInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureMap.GetQuestOfferInfo]
+--- @return void
+function C_AdventureMap.GetQuestOfferInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureMap.GetZoneChoiceInfo]
+--- @return void
+function C_AdventureMap.GetZoneChoiceInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_AdventureMap.StartQuest]
+--- @return void
+function C_AdventureMap.StartQuest()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_CharacterServices.AssignUpgradeDistribution]
+--- @return void
+function C_CharacterServices.AssignUpgradeDistribution()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_CharacterServices.GetActiveCharacterUpgradeBoostType]
+--- @return void
+function C_CharacterServices.GetActiveCharacterUpgradeBoostType()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_CharacterServices.GetActiveClassTrialBoostType]
+--- @return void
+function C_CharacterServices.GetActiveClassTrialBoostType()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_CharacterServices.GetAutomaticBoost]
+--- @return void
+function C_CharacterServices.GetAutomaticBoost()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_CharacterServices.GetAutomaticBoostCharacter]
+--- @return void
+function C_CharacterServices.GetAutomaticBoostCharacter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_CharacterServices.GetCharacterServiceDisplayData]
+--- @return void
+function C_CharacterServices.GetCharacterServiceDisplayData()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_CharacterServices.GetCharacterServiceDisplayOrder]
+--- @return void
+function C_CharacterServices.GetCharacterServiceDisplayOrder()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_CharacterServices.HasRequiredBoostForClassTrial]
+--- @return void
+function C_CharacterServices.HasRequiredBoostForClassTrial()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_CharacterServices.HasRequiredBoostForUnrevoke]
+--- @return void
+function C_CharacterServices.HasRequiredBoostForUnrevoke()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_CharacterServices.SetAutomaticBoost]
+--- @return void
+function C_CharacterServices.SetAutomaticBoost()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_CharacterServices.SetAutomaticBoostCharacter]
+--- @return void
+function C_CharacterServices.SetAutomaticBoostCharacter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_CharacterServicesPublic.ShouldSeeControlPopup]
+--- @return void
+function C_CharacterServicesPublic.ShouldSeeControlPopup()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ClassTrial.GetClassTrialLogoutTimeSeconds]
+--- @return void
+function C_ClassTrial.GetClassTrialLogoutTimeSeconds()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ClassTrial.IsClassTrialCharacter]
+--- @return void
+function C_ClassTrial.IsClassTrialCharacter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Debug.DashboardIsEnabled]
+--- @return void
+function C_Debug.DashboardIsEnabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Debug.GetAllPortLocsForMap]
+--- @return void
+function C_Debug.GetAllPortLocsForMap()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Debug.GetMapDebugObjects]
+--- @return void
+function C_Debug.GetMapDebugObjects()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Debug.TeleportToMapDebugObject]
+--- @return void
+function C_Debug.TeleportToMapDebugObject()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Debug.TeleportToMapLocation]
+--- @return void
+function C_Debug.TeleportToMapLocation()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.AllowMissionStartAboveSoftCap]
+--- @return void
+function C_Garrison.AllowMissionStartAboveSoftCap()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.AreMissionFollowerRequirementsMet]
+--- @return void
+function C_Garrison.AreMissionFollowerRequirementsMet()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.AssignFollowerToBuilding]
+--- @return void
+function C_Garrison.AssignFollowerToBuilding()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CanGenerateRecruits]
+--- @return void
+function C_Garrison.CanGenerateRecruits()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CanOpenMissionChest]
+--- @return void
+function C_Garrison.CanOpenMissionChest()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CanSetRecruitmentPreference]
+--- @return void
+function C_Garrison.CanSetRecruitmentPreference()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CanSpellTargetFollowerIDWithAddAbility]
+--- @return void
+function C_Garrison.CanSpellTargetFollowerIDWithAddAbility()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CanUpgradeGarrison]
+--- @return void
+function C_Garrison.CanUpgradeGarrison()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CancelConstruction]
+--- @return void
+function C_Garrison.CancelConstruction()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CastItemSpellOnFollowerAbility]
+--- @return void
+function C_Garrison.CastItemSpellOnFollowerAbility()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CastSpellOnFollower]
+--- @return void
+function C_Garrison.CastSpellOnFollower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CastSpellOnFollowerAbility]
+--- @return void
+function C_Garrison.CastSpellOnFollowerAbility()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CastSpellOnMission]
+--- @return void
+function C_Garrison.CastSpellOnMission()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.ClearCompleteTalent]
+--- @return void
+function C_Garrison.ClearCompleteTalent()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CloseArchitect]
+--- @return void
+function C_Garrison.CloseArchitect()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CloseGarrisonTradeskillNPC]
+--- @return void
+function C_Garrison.CloseGarrisonTradeskillNPC()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CloseMissionNPC]
+--- @return void
+function C_Garrison.CloseMissionNPC()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CloseRecruitmentNPC]
+--- @return void
+function C_Garrison.CloseRecruitmentNPC()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CloseTalentNPC]
+--- @return void
+function C_Garrison.CloseTalentNPC()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.CloseTradeskillCrafter]
+--- @return void
+function C_Garrison.CloseTradeskillCrafter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GenerateRecruits]
+--- @return void
+function C_Garrison.GenerateRecruits()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetAllBonusAbilityEffects]
+--- @return void
+function C_Garrison.GetAllBonusAbilityEffects()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetAllEncounterThreats]
+--- @return void
+function C_Garrison.GetAllEncounterThreats()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetAvailableRecruits]
+--- @return void
+function C_Garrison.GetAvailableRecruits()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetBuffedFollowersForMission]
+--- @return void
+function C_Garrison.GetBuffedFollowersForMission()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetBuildingLockInfo]
+--- @return void
+function C_Garrison.GetBuildingLockInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetBuildingSizes]
+--- @return void
+function C_Garrison.GetBuildingSizes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetBuildingSpecInfo]
+--- @return void
+function C_Garrison.GetBuildingSpecInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetBuildingTimeRemaining]
+--- @return void
+function C_Garrison.GetBuildingTimeRemaining()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetBuildingTooltip]
+--- @return void
+function C_Garrison.GetBuildingTooltip()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetBuildingUpgradeInfo]
+--- @return void
+function C_Garrison.GetBuildingUpgradeInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetBuildings]
+--- @return void
+function C_Garrison.GetBuildings()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetBuildingsForPlot]
+--- @return void
+function C_Garrison.GetBuildingsForPlot()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetBuildingsForSize]
+--- @return void
+function C_Garrison.GetBuildingsForSize()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetClassSpecCategoryInfo]
+--- @return void
+function C_Garrison.GetClassSpecCategoryInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetCombatAllyMission]
+--- @return void
+function C_Garrison.GetCombatAllyMission()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetCompleteMissions]
+--- @return void
+function C_Garrison.GetCompleteMissions()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetCompleteTalent]
+--- @return void
+function C_Garrison.GetCompleteTalent()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetCurrencyTypes]
+--- @return void
+function C_Garrison.GetCurrencyTypes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerAbilityAtIndexByID]
+--- @return void
+function C_Garrison.GetFollowerAbilityAtIndexByID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerAbilityCounterMechanicInfo]
+--- @return void
+function C_Garrison.GetFollowerAbilityCounterMechanicInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerAbilityCountersForMechanicTypes]
+--- @return void
+function C_Garrison.GetFollowerAbilityCountersForMechanicTypes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerAbilityDescription]
+--- @return void
+function C_Garrison.GetFollowerAbilityDescription()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerAbilityIcon]
+--- @return void
+function C_Garrison.GetFollowerAbilityIcon()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerAbilityInfo]
+--- @return void
+function C_Garrison.GetFollowerAbilityInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerAbilityIsTrait]
+--- @return void
+function C_Garrison.GetFollowerAbilityIsTrait()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerAbilityLink]
+--- @return void
+function C_Garrison.GetFollowerAbilityLink()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerAbilityName]
+--- @return void
+function C_Garrison.GetFollowerAbilityName()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerActivationCost]
+--- @return void
+function C_Garrison.GetFollowerActivationCost()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerBiasForMission]
+--- @return void
+function C_Garrison.GetFollowerBiasForMission()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerClassSpec]
+--- @return void
+function C_Garrison.GetFollowerClassSpec()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerClassSpecAtlas]
+--- @return void
+function C_Garrison.GetFollowerClassSpecAtlas()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerClassSpecByID]
+--- @return void
+function C_Garrison.GetFollowerClassSpecByID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerClassSpecName]
+--- @return void
+function C_Garrison.GetFollowerClassSpecName()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerDisplayID]
+--- @return void
+function C_Garrison.GetFollowerDisplayID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerInfoForBuilding]
+--- @return void
+function C_Garrison.GetFollowerInfoForBuilding()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerIsTroop]
+--- @return void
+function C_Garrison.GetFollowerIsTroop()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerItemLevelAverage]
+--- @return void
+function C_Garrison.GetFollowerItemLevelAverage()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerLevel]
+--- @return void
+function C_Garrison.GetFollowerLevel()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerLevelXP]
+--- @return void
+function C_Garrison.GetFollowerLevelXP()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerLink]
+--- @return void
+function C_Garrison.GetFollowerLink()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerLinkByID]
+--- @return void
+function C_Garrison.GetFollowerLinkByID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerMissionTimeLeft]
+--- @return void
+function C_Garrison.GetFollowerMissionTimeLeft()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerMissionTimeLeftSeconds]
+--- @return void
+function C_Garrison.GetFollowerMissionTimeLeftSeconds()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerModelItems]
+--- @return void
+function C_Garrison.GetFollowerModelItems()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerName]
+--- @return void
+function C_Garrison.GetFollowerName()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerNameByID]
+--- @return void
+function C_Garrison.GetFollowerNameByID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerPortraitIconID]
+--- @return void
+function C_Garrison.GetFollowerPortraitIconID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerPortraitIconIDByID]
+--- @return void
+function C_Garrison.GetFollowerPortraitIconIDByID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerQuality]
+--- @return void
+function C_Garrison.GetFollowerQuality()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerQualityTable]
+--- @return void
+function C_Garrison.GetFollowerQualityTable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerRecentlyGainedAbilityIDs]
+--- @return void
+function C_Garrison.GetFollowerRecentlyGainedAbilityIDs()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerRecentlyGainedTraitIDs]
+--- @return void
+function C_Garrison.GetFollowerRecentlyGainedTraitIDs()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerShipments]
+--- @return void
+function C_Garrison.GetFollowerShipments()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerSoftCap]
+--- @return void
+function C_Garrison.GetFollowerSoftCap()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerSourceTextByID]
+--- @return void
+function C_Garrison.GetFollowerSourceTextByID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerSpecializationAtIndex]
+--- @return void
+function C_Garrison.GetFollowerSpecializationAtIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerStatus]
+--- @return void
+function C_Garrison.GetFollowerStatus()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerTraitAtIndex]
+--- @return void
+function C_Garrison.GetFollowerTraitAtIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerTraitAtIndexByID]
+--- @return void
+function C_Garrison.GetFollowerTraitAtIndexByID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerTypeByID]
+--- @return void
+function C_Garrison.GetFollowerTypeByID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerTypeByMissionID]
+--- @return void
+function C_Garrison.GetFollowerTypeByMissionID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerUnderBiasReason]
+--- @return void
+function C_Garrison.GetFollowerUnderBiasReason()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerXP]
+--- @return void
+function C_Garrison.GetFollowerXP()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerXPTable]
+--- @return void
+function C_Garrison.GetFollowerXPTable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowerZoneSupportAbilities]
+--- @return void
+function C_Garrison.GetFollowerZoneSupportAbilities()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowersSpellsForMission]
+--- @return void
+function C_Garrison.GetFollowersSpellsForMission()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetFollowersTraitsForMission]
+--- @return void
+function C_Garrison.GetFollowersTraitsForMission()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetGarrisonUpgradeCost]
+--- @return void
+function C_Garrison.GetGarrisonUpgradeCost()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetLandingPageGarrisonType]
+--- @return void
+function C_Garrison.GetLandingPageGarrisonType()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetLandingPageItems]
+--- @return void
+function C_Garrison.GetLandingPageItems()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetLandingPageShipmentCount]
+--- @return void
+function C_Garrison.GetLandingPageShipmentCount()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetLandingPageShipmentInfo]
+--- @return void
+function C_Garrison.GetLandingPageShipmentInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetMissionBonusAbilityEffects]
+--- @return void
+function C_Garrison.GetMissionBonusAbilityEffects()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetMissionCost]
+--- @return void
+function C_Garrison.GetMissionCost()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetMissionDisplayIDs]
+--- @return void
+function C_Garrison.GetMissionDisplayIDs()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetMissionLink]
+--- @return void
+function C_Garrison.GetMissionLink()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetMissionMaxFollowers]
+--- @return void
+function C_Garrison.GetMissionMaxFollowers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetMissionName]
+--- @return void
+function C_Garrison.GetMissionName()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetMissionRewardInfo]
+--- @return void
+function C_Garrison.GetMissionRewardInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetMissionSuccessChance]
+--- @return void
+function C_Garrison.GetMissionSuccessChance()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetMissionTexture]
+--- @return void
+function C_Garrison.GetMissionTexture()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetMissionTimes]
+--- @return void
+function C_Garrison.GetMissionTimes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetMissionUncounteredMechanics]
+--- @return void
+function C_Garrison.GetMissionUncounteredMechanics()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetNumActiveFollowers]
+--- @return void
+function C_Garrison.GetNumActiveFollowers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetNumFollowerActivationsRemaining]
+--- @return void
+function C_Garrison.GetNumFollowerActivationsRemaining()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetNumFollowerDailyActivations]
+--- @return void
+function C_Garrison.GetNumFollowerDailyActivations()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetNumFollowers]
+--- @return void
+function C_Garrison.GetNumFollowers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetNumFollowersForMechanic]
+--- @return void
+function C_Garrison.GetNumFollowersForMechanic()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetNumFollowersOnMission]
+--- @return void
+function C_Garrison.GetNumFollowersOnMission()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetNumPendingShipments]
+--- @return void
+function C_Garrison.GetNumPendingShipments()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetNumShipmentCurrencies]
+--- @return void
+function C_Garrison.GetNumShipmentCurrencies()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetNumShipmentReagents]
+--- @return void
+function C_Garrison.GetNumShipmentReagents()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetOwnedBuildingInfo]
+--- @return void
+function C_Garrison.GetOwnedBuildingInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetPartyBuffs]
+--- @return void
+function C_Garrison.GetPartyBuffs()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetPartyMentorLevels]
+--- @return void
+function C_Garrison.GetPartyMentorLevels()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetPartyMissionInfo]
+--- @return void
+function C_Garrison.GetPartyMissionInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetPendingShipmentInfo]
+--- @return void
+function C_Garrison.GetPendingShipmentInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetPlots]
+--- @return void
+function C_Garrison.GetPlots()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetPlotsForBuilding]
+--- @return void
+function C_Garrison.GetPlotsForBuilding()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetPossibleFollowersForBuilding]
+--- @return void
+function C_Garrison.GetPossibleFollowersForBuilding()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetRecruitAbilities]
+--- @return void
+function C_Garrison.GetRecruitAbilities()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetRecruiterAbilityCategories]
+--- @return void
+function C_Garrison.GetRecruiterAbilityCategories()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetRecruiterAbilityList]
+--- @return void
+function C_Garrison.GetRecruiterAbilityList()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetRecruitmentPreferences]
+--- @return void
+function C_Garrison.GetRecruitmentPreferences()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetShipDeathAnimInfo]
+--- @return void
+function C_Garrison.GetShipDeathAnimInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetShipmentContainerInfo]
+--- @return void
+function C_Garrison.GetShipmentContainerInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetShipmentItemInfo]
+--- @return void
+function C_Garrison.GetShipmentItemInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetShipmentReagentCurrencyInfo]
+--- @return void
+function C_Garrison.GetShipmentReagentCurrencyInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetShipmentReagentInfo]
+--- @return void
+function C_Garrison.GetShipmentReagentInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetShipmentReagentItemLink]
+--- @return void
+function C_Garrison.GetShipmentReagentItemLink()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetSpecChangeCost]
+--- @return void
+function C_Garrison.GetSpecChangeCost()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.GetTabForPlot]
+--- @return void
+function C_Garrison.GetTabForPlot()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.HasGarrison]
+--- @return void
+function C_Garrison.HasGarrison()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.IsAboveFollowerSoftCap]
+--- @return void
+function C_Garrison.IsAboveFollowerSoftCap()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.IsFollowerCollected]
+--- @return void
+function C_Garrison.IsFollowerCollected()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.IsInvasionAvailable]
+--- @return void
+function C_Garrison.IsInvasionAvailable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.IsMechanicFullyCountered]
+--- @return void
+function C_Garrison.IsMechanicFullyCountered()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.IsOnGarrisonMap]
+--- @return void
+function C_Garrison.IsOnGarrisonMap()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.IsOnShipmentQuestForNPC]
+--- @return void
+function C_Garrison.IsOnShipmentQuestForNPC()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.IsOnShipyardMap]
+--- @return void
+function C_Garrison.IsOnShipyardMap()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.IsPlayerInGarrison]
+--- @return void
+function C_Garrison.IsPlayerInGarrison()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.IsVisitGarrisonAvailable]
+--- @return void
+function C_Garrison.IsVisitGarrisonAvailable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.MarkMissionComplete]
+--- @return void
+function C_Garrison.MarkMissionComplete()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.MissionBonusRoll]
+--- @return void
+function C_Garrison.MissionBonusRoll()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.PlaceBuilding]
+--- @return void
+function C_Garrison.PlaceBuilding()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.RecruitFollower]
+--- @return void
+function C_Garrison.RecruitFollower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.RemoveFollower]
+--- @return void
+function C_Garrison.RemoveFollower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.RemoveFollowerFromBuilding]
+--- @return void
+function C_Garrison.RemoveFollowerFromBuilding()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.RenameFollower]
+--- @return void
+function C_Garrison.RenameFollower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.RequestClassSpecCategoryInfo]
+--- @return void
+function C_Garrison.RequestClassSpecCategoryInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.RequestGarrisonUpgradeable]
+--- @return void
+function C_Garrison.RequestGarrisonUpgradeable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.RequestLandingPageShipmentInfo]
+--- @return void
+function C_Garrison.RequestLandingPageShipmentInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.RequestShipmentCreation]
+--- @return void
+function C_Garrison.RequestShipmentCreation()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.RequestShipmentInfo]
+--- @return void
+function C_Garrison.RequestShipmentInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.ResearchTalent]
+--- @return void
+function C_Garrison.ResearchTalent()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.SearchForFollower]
+--- @return void
+function C_Garrison.SearchForFollower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.SetBuildingActive]
+--- @return void
+function C_Garrison.SetBuildingActive()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.SetBuildingSpecialization]
+--- @return void
+function C_Garrison.SetBuildingSpecialization()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.SetFollowerFavorite]
+--- @return void
+function C_Garrison.SetFollowerFavorite()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.SetFollowerInactive]
+--- @return void
+function C_Garrison.SetFollowerInactive()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.SetRecruitmentPreferences]
+--- @return void
+function C_Garrison.SetRecruitmentPreferences()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.ShouldShowMapTab]
+--- @return void
+function C_Garrison.ShouldShowMapTab()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.ShowFollowerNameInErrorMessage]
+--- @return void
+function C_Garrison.ShowFollowerNameInErrorMessage()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.StartMission]
+--- @return void
+function C_Garrison.StartMission()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.SwapBuildings]
+--- @return void
+function C_Garrison.SwapBuildings()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.TargetSpellHasFollowerItemLevelUpgrade]
+--- @return void
+function C_Garrison.TargetSpellHasFollowerItemLevelUpgrade()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.TargetSpellHasFollowerReroll]
+--- @return void
+function C_Garrison.TargetSpellHasFollowerReroll()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.TargetSpellHasFollowerTemporaryAbility]
+--- @return void
+function C_Garrison.TargetSpellHasFollowerTemporaryAbility()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.UpgradeBuilding]
+--- @return void
+function C_Garrison.UpgradeBuilding()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Garrison.UpgradeGarrison]
+--- @return void
+function C_Garrison.UpgradeGarrison()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.CreateHeirloom]
+--- @return void
+function C_Heirloom.CreateHeirloom()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.GetClassAndSpecFilters]
+--- @return void
+function C_Heirloom.GetClassAndSpecFilters()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.GetCollectedHeirloomFilter]
+--- @return void
+function C_Heirloom.GetCollectedHeirloomFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.GetHeirloomItemIDFromDisplayedIndex]
+--- @return void
+function C_Heirloom.GetHeirloomItemIDFromDisplayedIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.GetHeirloomItemIDs]
+--- @return void
+function C_Heirloom.GetHeirloomItemIDs()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.GetHeirloomLink]
+--- @return void
+function C_Heirloom.GetHeirloomLink()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.GetHeirloomMaxUpgradeLevel]
+--- @return void
+function C_Heirloom.GetHeirloomMaxUpgradeLevel()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.GetHeirloomSourceFilter]
+--- @return void
+function C_Heirloom.GetHeirloomSourceFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.GetNumDisplayedHeirlooms]
+--- @return void
+function C_Heirloom.GetNumDisplayedHeirlooms()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.GetNumHeirlooms]
+--- @return void
+function C_Heirloom.GetNumHeirlooms()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.GetNumKnownHeirlooms]
+--- @return void
+function C_Heirloom.GetNumKnownHeirlooms()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.GetUncollectedHeirloomFilter]
+--- @return void
+function C_Heirloom.GetUncollectedHeirloomFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.IsHeirloomSourceValid]
+--- @return void
+function C_Heirloom.IsHeirloomSourceValid()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.IsItemHeirloom]
+--- @return void
+function C_Heirloom.IsItemHeirloom()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.IsPendingHeirloomUpgrade]
+--- @return void
+function C_Heirloom.IsPendingHeirloomUpgrade()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.PlayerHasHeirloom]
+--- @return void
+function C_Heirloom.PlayerHasHeirloom()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.SetClassAndSpecFilters]
+--- @return void
+function C_Heirloom.SetClassAndSpecFilters()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.SetCollectedHeirloomFilter]
+--- @return void
+function C_Heirloom.SetCollectedHeirloomFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.SetHeirloomSourceFilter]
+--- @return void
+function C_Heirloom.SetHeirloomSourceFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.SetSearch]
+--- @return void
+function C_Heirloom.SetSearch()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.SetUncollectedHeirloomFilter]
+--- @return void
+function C_Heirloom.SetUncollectedHeirloomFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.ShouldShowHeirloomHelp]
+--- @return void
+function C_Heirloom.ShouldShowHeirloomHelp()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Heirloom.UpgradeHeirloom]
+--- @return void
+function C_Heirloom.UpgradeHeirloom()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.AcceptInvite]
+--- @return void
+function C_LFGList.AcceptInvite()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.CancelApplication]
+--- @return void
+function C_LFGList.CancelApplication()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.DeclineApplicant]
+--- @return void
+function C_LFGList.DeclineApplicant()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.DeclineInvite]
+--- @return void
+function C_LFGList.DeclineInvite()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetActivityIDForQuestID]
+--- @return void
+function C_LFGList.GetActivityIDForQuestID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetApplicationInfo]
+--- @return void
+function C_LFGList.GetApplicationInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetApplications]
+--- @return void
+function C_LFGList.GetApplications()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetAvailableLanguageSearchFilter]
+--- @return void
+function C_LFGList.GetAvailableLanguageSearchFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetAvailableRoles]
+--- @return void
+function C_LFGList.GetAvailableRoles()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetDefaultLanguageSearchFilter]
+--- @return void
+function C_LFGList.GetDefaultLanguageSearchFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetLanguageSearchFilter]
+--- @return void
+function C_LFGList.GetLanguageSearchFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetNumApplicants]
+--- @return void
+function C_LFGList.GetNumApplicants()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetNumApplications]
+--- @return void
+function C_LFGList.GetNumApplications()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetNumInvitedApplicantMembers]
+--- @return void
+function C_LFGList.GetNumInvitedApplicantMembers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetNumPendingApplicantMembers]
+--- @return void
+function C_LFGList.GetNumPendingApplicantMembers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetRoleCheckInfo]
+--- @return void
+function C_LFGList.GetRoleCheckInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetSearchResultEncounterInfo]
+--- @return void
+function C_LFGList.GetSearchResultEncounterInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetSearchResultFriends]
+--- @return void
+function C_LFGList.GetSearchResultFriends()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetSearchResultMemberCounts]
+--- @return void
+function C_LFGList.GetSearchResultMemberCounts()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.GetSearchResultMemberInfo]
+--- @return void
+function C_LFGList.GetSearchResultMemberInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.HasActivityList]
+--- @return void
+function C_LFGList.HasActivityList()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.IsCurrentlyApplying]
+--- @return void
+function C_LFGList.IsCurrentlyApplying()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.RefreshApplicants]
+--- @return void
+function C_LFGList.RefreshApplicants()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.RemoveApplicant]
+--- @return void
+function C_LFGList.RemoveApplicant()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.ReportApplicant]
+--- @return void
+function C_LFGList.ReportApplicant()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.ReportSearchResult]
+--- @return void
+function C_LFGList.ReportSearchResult()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.SaveLanguageSearchFilter]
+--- @return void
+function C_LFGList.SaveLanguageSearchFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.SetApplicantMemberRole]
+--- @return void
+function C_LFGList.SetApplicantMemberRole()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LFGList.UpdateListing]
+--- @return void
+function C_LFGList.UpdateListing()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LootHistory.CanMasterLoot]
+--- @return void
+function C_LootHistory.CanMasterLoot()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LootHistory.GetExpiration]
+--- @return void
+function C_LootHistory.GetExpiration()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LootHistory.GetNumItems]
+--- @return void
+function C_LootHistory.GetNumItems()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LootHistory.GiveMasterLoot]
+--- @return void
+function C_LootHistory.GiveMasterLoot()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_LootHistory.SetExpiration]
+--- @return void
+function C_LootHistory.SetExpiration()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.GetNamePlateEnemyClickThrough]
+--- @return void
+function C_NamePlate.GetNamePlateEnemyClickThrough()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.GetNamePlateEnemyPreferredClickInsets]
+--- @return void
+function C_NamePlate.GetNamePlateEnemyPreferredClickInsets()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.GetNamePlateEnemySize]
+--- @return void
+function C_NamePlate.GetNamePlateEnemySize()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.GetNamePlateFriendlyClickThrough]
+--- @return void
+function C_NamePlate.GetNamePlateFriendlyClickThrough()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.GetNamePlateFriendlyPreferredClickInsets]
+--- @return void
+function C_NamePlate.GetNamePlateFriendlyPreferredClickInsets()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.GetNamePlateFriendlySize]
+--- @return void
+function C_NamePlate.GetNamePlateFriendlySize()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.GetNamePlateSelfClickThrough]
+--- @return void
+function C_NamePlate.GetNamePlateSelfClickThrough()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.GetNamePlateSelfPreferredClickInsets]
+--- @return void
+function C_NamePlate.GetNamePlateSelfPreferredClickInsets()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.GetNamePlateSelfSize]
+--- @return void
+function C_NamePlate.GetNamePlateSelfSize()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.GetNumNamePlateMotionTypes]
+--- @return void
+function C_NamePlate.GetNumNamePlateMotionTypes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.GetTargetClampingInsets]
+--- @return void
+function C_NamePlate.GetTargetClampingInsets()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.SetNamePlateEnemyClickThrough]
+--- @return void
+function C_NamePlate.SetNamePlateEnemyClickThrough()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.SetNamePlateEnemyPreferredClickInsets]
+--- @return void
+function C_NamePlate.SetNamePlateEnemyPreferredClickInsets()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.SetNamePlateEnemySize]
+--- @return void
+function C_NamePlate.SetNamePlateEnemySize()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.SetNamePlateFriendlyClickThrough]
+--- @return void
+function C_NamePlate.SetNamePlateFriendlyClickThrough()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.SetNamePlateFriendlyPreferredClickInsets]
+--- @return void
+function C_NamePlate.SetNamePlateFriendlyPreferredClickInsets()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.SetNamePlateFriendlySize]
+--- @return void
+function C_NamePlate.SetNamePlateFriendlySize()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.SetNamePlateSelfClickThrough]
+--- @return void
+function C_NamePlate.SetNamePlateSelfClickThrough()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.SetNamePlateSelfPreferredClickInsets]
+--- @return void
+function C_NamePlate.SetNamePlateSelfPreferredClickInsets()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.SetNamePlateSelfSize]
+--- @return void
+function C_NamePlate.SetNamePlateSelfSize()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_NamePlate.SetTargetClampingInsets]
+--- @return void
+function C_NamePlate.SetTargetClampingInsets()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_PetJournal.ClearFanfare]
+--- @return void
+function C_PetJournal.ClearFanfare()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_PetJournal.ClearRecentFanfares]
+--- @return void
+function C_PetJournal.ClearRecentFanfares()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_PetJournal.GetNumMaxPets]
+--- @return void
+function C_PetJournal.GetNumMaxPets()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_PetJournal.GetNumPetsNeedingFanfare]
+--- @return void
+function C_PetJournal.GetNumPetsNeedingFanfare()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_PetJournal.GetPetModelSceneInfoBySpeciesID]
+--- @return void
+function C_PetJournal.GetPetModelSceneInfoBySpeciesID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_PetJournal.GetSummonBattlePetCooldown]
+--- @return void
+function C_PetJournal.GetSummonBattlePetCooldown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_PetJournal.GetSummonRandomFavoritePetGUID]
+--- @return void
+function C_PetJournal.GetSummonRandomFavoritePetGUID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_PetJournal.IsJournalReadOnly]
+--- @return void
+function C_PetJournal.IsJournalReadOnly()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_PetJournal.IsJournalUnlocked]
+--- @return void
+function C_PetJournal.IsJournalUnlocked()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_PetJournal.PetIsLockedForConvert]
+--- @return void
+function C_PetJournal.PetIsLockedForConvert()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_PetJournal.PetIsUsable]
+--- @return void
+function C_PetJournal.PetIsUsable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_PetJournal.PetNeedsFanfare]
+--- @return void
+function C_PetJournal.PetNeedsFanfare()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_PetJournal.PickupSummonRandomPet]
+--- @return void
+function C_PetJournal.PickupSummonRandomPet()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Scenario.GetBonusStepRewardQuestID]
+--- @return void
+function C_Scenario.GetBonusStepRewardQuestID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Scenario.GetBonusSteps]
+--- @return void
+function C_Scenario.GetBonusSteps()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Scenario.GetInfo]
+--- @return void
+function C_Scenario.GetInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Scenario.GetScenarioIconInfo]
+--- @return void
+function C_Scenario.GetScenarioIconInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Scenario.GetStepInfo]
+--- @return void
+function C_Scenario.GetStepInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Scenario.GetSupersededObjectives]
+--- @return void
+function C_Scenario.GetSupersededObjectives()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Scenario.IsInScenario]
+--- @return void
+function C_Scenario.IsInScenario()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Scenario.ShouldShowCriteria]
+--- @return void
+function C_Scenario.ShouldShowCriteria()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Scenario.TreatScenarioAsDungeon]
+--- @return void
+function C_Scenario.TreatScenarioAsDungeon()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_SharedCharacterServices.GetLastSeenCharacterUpgradePopup]
+--- @return void
+function C_SharedCharacterServices.GetLastSeenCharacterUpgradePopup()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_SharedCharacterServices.GetLastSeenExpansionTrialPopup]
+--- @return void
+function C_SharedCharacterServices.GetLastSeenExpansionTrialPopup()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_SharedCharacterServices.GetUpgradeDistributions]
+--- @return void
+function C_SharedCharacterServices.GetUpgradeDistributions()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_SharedCharacterServices.HasFreePromotionalUpgrade]
+--- @return void
+function C_SharedCharacterServices.HasFreePromotionalUpgrade()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_SharedCharacterServices.HasSeenFreePromotionalUpgradePopup]
+--- @return void
+function C_SharedCharacterServices.HasSeenFreePromotionalUpgradePopup()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_SharedCharacterServices.IsPurchaseIDPendingUpgrade]
+--- @return void
+function C_SharedCharacterServices.IsPurchaseIDPendingUpgrade()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_SharedCharacterServices.QueryClassTrialBoostResult]
+--- @return void
+function C_SharedCharacterServices.QueryClassTrialBoostResult()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_SharedCharacterServices.SetCharacterUpgradePopupSeen]
+--- @return void
+function C_SharedCharacterServices.SetCharacterUpgradePopupSeen()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_SharedCharacterServices.SetExpansionTrialPopupSeen]
+--- @return void
+function C_SharedCharacterServices.SetExpansionTrialPopupSeen()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_SharedCharacterServices.SetPromotionalPopupSeen]
+--- @return void
+function C_SharedCharacterServices.SetPromotionalPopupSeen()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Social.RegisterSocialBrowser]
+--- @return void
+function C_Social.RegisterSocialBrowser()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Social.SetTextureToScreenshot]
+--- @return void
+function C_Social.SetTextureToScreenshot()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Social.TwitterPostAchievement]
+--- @return void
+function C_Social.TwitterPostAchievement()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Social.TwitterPostItem]
+--- @return void
+function C_Social.TwitterPostItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Social.TwitterPostScreenshot]
+--- @return void
+function C_Social.TwitterPostScreenshot()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TalkingHead.GetConversationsDeferred]
+--- @return void
+function C_TalkingHead.GetConversationsDeferred()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TalkingHead.GetCurrentLineAnimationInfo]
+--- @return void
+function C_TalkingHead.GetCurrentLineAnimationInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TalkingHead.GetCurrentLineInfo]
+--- @return void
+function C_TalkingHead.GetCurrentLineInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TalkingHead.IgnoreCurrentTalkingHead]
+--- @return void
+function C_TalkingHead.IgnoreCurrentTalkingHead()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TalkingHead.IsCurrentTalkingHeadIgnored]
+--- @return void
+function C_TalkingHead.IsCurrentTalkingHeadIgnored()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TalkingHead.SetConversationsDeferred]
+--- @return void
+function C_TalkingHead.SetConversationsDeferred()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.ForceToyRefilter]
+--- @return void
+function C_ToyBox.ForceToyRefilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.GetCollectedShown]
+--- @return void
+function C_ToyBox.GetCollectedShown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.GetIsFavorite]
+--- @return void
+function C_ToyBox.GetIsFavorite()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.GetNumFilteredToys]
+--- @return void
+function C_ToyBox.GetNumFilteredToys()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.GetNumLearnedDisplayedToys]
+--- @return void
+function C_ToyBox.GetNumLearnedDisplayedToys()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.GetNumTotalDisplayedToys]
+--- @return void
+function C_ToyBox.GetNumTotalDisplayedToys()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.GetNumToys]
+--- @return void
+function C_ToyBox.GetNumToys()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.GetToyFromIndex]
+--- @return void
+function C_ToyBox.GetToyFromIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.GetUncollectedShown]
+--- @return void
+function C_ToyBox.GetUncollectedShown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.GetUnusableShown]
+--- @return void
+function C_ToyBox.GetUnusableShown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.HasFavorites]
+--- @return void
+function C_ToyBox.HasFavorites()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.IsExpansionTypeFilterChecked]
+--- @return void
+function C_ToyBox.IsExpansionTypeFilterChecked()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.IsSourceTypeFilterChecked]
+--- @return void
+function C_ToyBox.IsSourceTypeFilterChecked()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.IsToyUsable]
+--- @return void
+function C_ToyBox.IsToyUsable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.PickupToyBoxItem]
+--- @return void
+function C_ToyBox.PickupToyBoxItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.SetAllExpansionTypeFilters]
+--- @return void
+function C_ToyBox.SetAllExpansionTypeFilters()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.SetAllSourceTypeFilters]
+--- @return void
+function C_ToyBox.SetAllSourceTypeFilters()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.SetCollectedShown]
+--- @return void
+function C_ToyBox.SetCollectedShown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.SetExpansionTypeFilter]
+--- @return void
+function C_ToyBox.SetExpansionTypeFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.SetFilterString]
+--- @return void
+function C_ToyBox.SetFilterString()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.SetIsFavorite]
+--- @return void
+function C_ToyBox.SetIsFavorite()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.SetSourceTypeFilter]
+--- @return void
+function C_ToyBox.SetSourceTypeFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.SetUncollectedShown]
+--- @return void
+function C_ToyBox.SetUncollectedShown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_ToyBox.SetUnusableShown]
+--- @return void
+function C_ToyBox.SetUnusableShown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.AnyRecipeCategoriesFiltered]
+--- @return void
+function C_TradeSkillUI.AnyRecipeCategoriesFiltered()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.AreAnyInventorySlotsFiltered]
+--- @return void
+function C_TradeSkillUI.AreAnyInventorySlotsFiltered()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.CanObliterateCursorItem]
+--- @return void
+function C_TradeSkillUI.CanObliterateCursorItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.CanTradeSkillListLink]
+--- @return void
+function C_TradeSkillUI.CanTradeSkillListLink()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.ClearInventorySlotFilter]
+--- @return void
+function C_TradeSkillUI.ClearInventorySlotFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.ClearPendingObliterateItem]
+--- @return void
+function C_TradeSkillUI.ClearPendingObliterateItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.ClearRecipeCategoryFilter]
+--- @return void
+function C_TradeSkillUI.ClearRecipeCategoryFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.ClearRecipeSourceTypeFilter]
+--- @return void
+function C_TradeSkillUI.ClearRecipeSourceTypeFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.CloseObliterumForge]
+--- @return void
+function C_TradeSkillUI.CloseObliterumForge()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.DropPendingObliterateItemFromCursor]
+--- @return void
+function C_TradeSkillUI.DropPendingObliterateItemFromCursor()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetAllFilterableInventorySlots]
+--- @return void
+function C_TradeSkillUI.GetAllFilterableInventorySlots()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetFilterableInventorySlots]
+--- @return void
+function C_TradeSkillUI.GetFilterableInventorySlots()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetFilteredRecipeIDs]
+--- @return void
+function C_TradeSkillUI.GetFilteredRecipeIDs()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetObliterateSpellID]
+--- @return void
+function C_TradeSkillUI.GetObliterateSpellID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetOnlyShowLearnedRecipes]
+--- @return void
+function C_TradeSkillUI.GetOnlyShowLearnedRecipes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetOnlyShowMakeableRecipes]
+--- @return void
+function C_TradeSkillUI.GetOnlyShowMakeableRecipes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetOnlyShowSkillUpRecipes]
+--- @return void
+function C_TradeSkillUI.GetOnlyShowSkillUpRecipes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetOnlyShowUnlearnedRecipes]
+--- @return void
+function C_TradeSkillUI.GetOnlyShowUnlearnedRecipes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetPendingObliterateItemID]
+--- @return void
+function C_TradeSkillUI.GetPendingObliterateItemID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetPendingObliterateItemLink]
+--- @return void
+function C_TradeSkillUI.GetPendingObliterateItemLink()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetRecipeCooldown]
+--- @return void
+function C_TradeSkillUI.GetRecipeCooldown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetRecipeItemLevelFilter]
+--- @return void
+function C_TradeSkillUI.GetRecipeItemLevelFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetRecipeItemNameFilter]
+--- @return void
+function C_TradeSkillUI.GetRecipeItemNameFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetRecipeLink]
+--- @return void
+function C_TradeSkillUI.GetRecipeLink()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetRecipeSourceText]
+--- @return void
+function C_TradeSkillUI.GetRecipeSourceText()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetSubCategories]
+--- @return void
+function C_TradeSkillUI.GetSubCategories()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetTradeSkillLineForRecipe]
+--- @return void
+function C_TradeSkillUI.GetTradeSkillLineForRecipe()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.GetTradeSkillTexture]
+--- @return void
+function C_TradeSkillUI.GetTradeSkillTexture()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.IsAnyRecipeFromSource]
+--- @return void
+function C_TradeSkillUI.IsAnyRecipeFromSource()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.IsDataSourceChanging]
+--- @return void
+function C_TradeSkillUI.IsDataSourceChanging()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.IsInventorySlotFiltered]
+--- @return void
+function C_TradeSkillUI.IsInventorySlotFiltered()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.IsRecipeCategoryFiltered]
+--- @return void
+function C_TradeSkillUI.IsRecipeCategoryFiltered()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.IsRecipeFavorite]
+--- @return void
+function C_TradeSkillUI.IsRecipeFavorite()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.IsRecipeRepeating]
+--- @return void
+function C_TradeSkillUI.IsRecipeRepeating()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.IsRecipeSearchInProgress]
+--- @return void
+function C_TradeSkillUI.IsRecipeSearchInProgress()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.IsRecipeSourceTypeFiltered]
+--- @return void
+function C_TradeSkillUI.IsRecipeSourceTypeFiltered()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.IsTradeSkillGuildMember]
+--- @return void
+function C_TradeSkillUI.IsTradeSkillGuildMember()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.ObliterateItem]
+--- @return void
+function C_TradeSkillUI.ObliterateItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.SetInventorySlotFilter]
+--- @return void
+function C_TradeSkillUI.SetInventorySlotFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.SetOnlyShowLearnedRecipes]
+--- @return void
+function C_TradeSkillUI.SetOnlyShowLearnedRecipes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.SetOnlyShowMakeableRecipes]
+--- @return void
+function C_TradeSkillUI.SetOnlyShowMakeableRecipes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.SetOnlyShowSkillUpRecipes]
+--- @return void
+function C_TradeSkillUI.SetOnlyShowSkillUpRecipes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.SetOnlyShowUnlearnedRecipes]
+--- @return void
+function C_TradeSkillUI.SetOnlyShowUnlearnedRecipes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.SetRecipeCategoryFilter]
+--- @return void
+function C_TradeSkillUI.SetRecipeCategoryFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.SetRecipeFavorite]
+--- @return void
+function C_TradeSkillUI.SetRecipeFavorite()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.SetRecipeItemLevelFilter]
+--- @return void
+function C_TradeSkillUI.SetRecipeItemLevelFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.SetRecipeItemNameFilter]
+--- @return void
+function C_TradeSkillUI.SetRecipeItemNameFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.SetRecipeSourceTypeFilter]
+--- @return void
+function C_TradeSkillUI.SetRecipeSourceTypeFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TradeSkillUI.StopRecipeRepeat]
+--- @return void
+function C_TradeSkillUI.StopRecipeRepeat()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Transmog.Close]
+--- @return void
+function C_Transmog.Close()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Transmog.GetApplyWarnings]
+--- @return void
+function C_Transmog.GetApplyWarnings()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Transmog.LoadOutfit]
+--- @return void
+function C_Transmog.LoadOutfit()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Transmog.LoadSources]
+--- @return void
+function C_Transmog.LoadSources()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Transmog.ValidateAllPending]
+--- @return void
+function C_Transmog.ValidateAllPending()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.CanSetFavoriteInCategory]
+--- @return void
+function C_TransmogCollection.CanSetFavoriteInCategory()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.ClearNewAppearance]
+--- @return void
+function C_TransmogCollection.ClearNewAppearance()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.ClearSearch]
+--- @return void
+function C_TransmogCollection.ClearSearch()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.DeleteOutfit]
+--- @return void
+function C_TransmogCollection.DeleteOutfit()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.EndSearch]
+--- @return void
+function C_TransmogCollection.EndSearch()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetAllAppearanceSources]
+--- @return void
+function C_TransmogCollection.GetAllAppearanceSources()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetAppearanceCameraID]
+--- @return void
+function C_TransmogCollection.GetAppearanceCameraID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetAppearanceCameraIDBySource]
+--- @return void
+function C_TransmogCollection.GetAppearanceCameraIDBySource()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetAppearanceSourceDrops]
+--- @return void
+function C_TransmogCollection.GetAppearanceSourceDrops()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetCategoryCollectedCount]
+--- @return void
+function C_TransmogCollection.GetCategoryCollectedCount()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetCategoryTotal]
+--- @return void
+function C_TransmogCollection.GetCategoryTotal()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetCollectedShown]
+--- @return void
+function C_TransmogCollection.GetCollectedShown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetIllusionFallbackWeaponSource]
+--- @return void
+function C_TransmogCollection.GetIllusionFallbackWeaponSource()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetInspectSources]
+--- @return void
+function C_TransmogCollection.GetInspectSources()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetIsAppearanceFavorite]
+--- @return void
+function C_TransmogCollection.GetIsAppearanceFavorite()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetLatestAppearance]
+--- @return void
+function C_TransmogCollection.GetLatestAppearance()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetNumTransmogSources]
+--- @return void
+function C_TransmogCollection.GetNumTransmogSources()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetOutfitName]
+--- @return void
+function C_TransmogCollection.GetOutfitName()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetOutfitSources]
+--- @return void
+function C_TransmogCollection.GetOutfitSources()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetOutfits]
+--- @return void
+function C_TransmogCollection.GetOutfits()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetShowMissingSourceInItemTooltips]
+--- @return void
+function C_TransmogCollection.GetShowMissingSourceInItemTooltips()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetSourceRequiredHoliday]
+--- @return void
+function C_TransmogCollection.GetSourceRequiredHoliday()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.GetUncollectedShown]
+--- @return void
+function C_TransmogCollection.GetUncollectedShown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.HasFavorites]
+--- @return void
+function C_TransmogCollection.HasFavorites()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.IsCategoryValidForItem]
+--- @return void
+function C_TransmogCollection.IsCategoryValidForItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.IsNewAppearance]
+--- @return void
+function C_TransmogCollection.IsNewAppearance()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.IsSearchDBLoading]
+--- @return void
+function C_TransmogCollection.IsSearchDBLoading()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.IsSearchInProgress]
+--- @return void
+function C_TransmogCollection.IsSearchInProgress()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.IsSourceTypeFilterChecked]
+--- @return void
+function C_TransmogCollection.IsSourceTypeFilterChecked()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.ModifyOutfit]
+--- @return void
+function C_TransmogCollection.ModifyOutfit()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.PlayerCanCollectSource]
+--- @return void
+function C_TransmogCollection.PlayerCanCollectSource()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.PlayerHasTransmog]
+--- @return void
+function C_TransmogCollection.PlayerHasTransmog()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance]
+--- @return void
+function C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.PlayerKnowsSource]
+--- @return void
+function C_TransmogCollection.PlayerKnowsSource()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.SaveOutfit]
+--- @return void
+function C_TransmogCollection.SaveOutfit()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.SearchProgress]
+--- @return void
+function C_TransmogCollection.SearchProgress()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.SearchSize]
+--- @return void
+function C_TransmogCollection.SearchSize()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.SetAllSourceTypeFilters]
+--- @return void
+function C_TransmogCollection.SetAllSourceTypeFilters()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.SetCollectedShown]
+--- @return void
+function C_TransmogCollection.SetCollectedShown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.SetIsAppearanceFavorite]
+--- @return void
+function C_TransmogCollection.SetIsAppearanceFavorite()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.SetSearch]
+--- @return void
+function C_TransmogCollection.SetSearch()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.SetSearchAndFilterCategory]
+--- @return void
+function C_TransmogCollection.SetSearchAndFilterCategory()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.SetShowMissingSourceInItemTooltips]
+--- @return void
+function C_TransmogCollection.SetShowMissingSourceInItemTooltips()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.SetSourceTypeFilter]
+--- @return void
+function C_TransmogCollection.SetSourceTypeFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.SetUncollectedShown]
+--- @return void
+function C_TransmogCollection.SetUncollectedShown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.UpdateUsableAppearances]
+--- @return void
+function C_TransmogCollection.UpdateUsableAppearances()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogSets.GetBaseSetID]
+--- @return void
+function C_TransmogSets.GetBaseSetID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogSets.GetUsableSets]
+--- @return void
+function C_TransmogSets.GetUsableSets()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogSets.GetVariantSets]
+--- @return void
+function C_TransmogSets.GetVariantSets()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogSets.IsSetCollected]
+--- @return void
+function C_TransmogSets.IsSetCollected()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_TransmogSets.IsSetUsable]
+--- @return void
+function C_TransmogSets.IsSetUsable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Trophy.MonumentChangeAppearanceToTrophyID]
+--- @return void
+function C_Trophy.MonumentChangeAppearanceToTrophyID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Trophy.MonumentCloseMonumentUI]
+--- @return void
+function C_Trophy.MonumentCloseMonumentUI()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Trophy.MonumentGetCount]
+--- @return void
+function C_Trophy.MonumentGetCount()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Trophy.MonumentGetSelectedTrophyID]
+--- @return void
+function C_Trophy.MonumentGetSelectedTrophyID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Trophy.MonumentGetTrophyInfoByIndex]
+--- @return void
+function C_Trophy.MonumentGetTrophyInfoByIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Trophy.MonumentLoadList]
+--- @return void
+function C_Trophy.MonumentLoadList()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Trophy.MonumentLoadSelectedTrophyID]
+--- @return void
+function C_Trophy.MonumentLoadSelectedTrophyID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Trophy.MonumentRevertAppearanceToSaved]
+--- @return void
+function C_Trophy.MonumentRevertAppearanceToSaved()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Trophy.MonumentSaveSelection]
+--- @return void
+function C_Trophy.MonumentSaveSelection()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Widget.IsFrameWidget]
+--- @return void
+function C_Widget.IsFrameWidget()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Widget.IsRenderableWidget]
+--- @return void
+function C_Widget.IsRenderableWidget()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_Widget.IsWidget]
+--- @return void
+function C_Widget.IsWidget()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_WowTokenPublic.BuyToken]
+--- @return void
+function C_WowTokenPublic.BuyToken()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_WowTokenPublic.GetCommerceSystemStatus]
+--- @return void
+function C_WowTokenPublic.GetCommerceSystemStatus()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_WowTokenPublic.GetCurrentMarketPrice]
+--- @return void
+function C_WowTokenPublic.GetCurrentMarketPrice()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_WowTokenPublic.GetGuaranteedPrice]
+--- @return void
+function C_WowTokenPublic.GetGuaranteedPrice()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_WowTokenPublic.GetListedAuctionableTokenInfo]
+--- @return void
+function C_WowTokenPublic.GetListedAuctionableTokenInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_WowTokenPublic.GetNumListedAuctionableTokens]
+--- @return void
+function C_WowTokenPublic.GetNumListedAuctionableTokens()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_WowTokenPublic.IsAuctionableWowToken]
+--- @return void
+function C_WowTokenPublic.IsAuctionableWowToken()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_WowTokenPublic.IsConsumableWowToken]
+--- @return void
+function C_WowTokenPublic.IsConsumableWowToken()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_WowTokenPublic.UpdateListedAuctionableTokens]
+--- @return void
+function C_WowTokenPublic.UpdateListedAuctionableTokens()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_WowTokenPublic.UpdateMarketPrice]
+--- @return void
+function C_WowTokenPublic.UpdateMarketPrice()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_C_WowTokenPublic.UpdateTokenCount]
+--- @return void
+function C_WowTokenPublic.UpdateTokenCount()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CalculateStringEditDistance]
+--- @return void
+function CalculateStringEditDistance()
 end
 
 --- Summons the specified companion.
@@ -384,11 +3558,41 @@ end
 function CameraZoomOut(increment)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanAffordMerchantItem]
+--- @return void
+function CanAffordMerchantItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanAutoSetGamePadCursorControl]
+--- @return void
+function CanAutoSetGamePadCursorControl()
+end
+
 --- Returns whether the specified unit can be assigned a raid target marker.
 --- [https://wowpedia.fandom.com/wiki/API_CanBeRaidTarget]
 --- @param unit string @ unitId to query.
 --- @return boolean @ canBeRaidTarget
 function CanBeRaidTarget(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanCancelScene]
+--- @return void
+function CanCancelScene()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanChangePlayerDifficulty]
+--- @return void
+function CanChangePlayerDifficulty()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanComplainInboxItem]
+--- @return void
+function CanComplainInboxItem()
 end
 
 --- Returns whether the player can Dual wield weapons.
@@ -397,10 +3601,64 @@ end
 function CanDualWield()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanEditGuildBankTabInfo]
+--- @return void
+function CanEditGuildBankTabInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanEditGuildEvent]
+--- @return void
+function CanEditGuildEvent()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanEditGuildInfo]
+--- @return void
+function CanEditGuildInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanEditGuildTabInfo]
+--- @return void
+function CanEditGuildTabInfo()
+end
+
 --- Checks if the player can edit the guild MOTD.
 --- [https://wowpedia.fandom.com/wiki/API_CanEditMOTD]
 --- @return boolean @ canEdit
 function CanEditMOTD()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanEditPublicNote]
+--- @return void
+function CanEditPublicNote()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanEjectPassengerFromSeat]
+--- @return void
+function CanEjectPassengerFromSeat()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanExitVehicle]
+--- @return void
+function CanExitVehicle()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanGamePadControlCursor]
+--- @return void
+function CanGamePadControlCursor()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanGuildBankRepair]
+--- @return void
+function CanGuildBankRepair()
 end
 
 --- Checks if the player can demote guild members.
@@ -421,6 +3679,24 @@ end
 function CanGuildPromote()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanGuildRemove]
+--- @return void
+function CanGuildRemove()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanHearthAndResurrectFromArea]
+--- @return void
+function CanHearthAndResurrectFromArea()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanInitiateWarGame]
+--- @return void
+function CanInitiateWarGame()
+end
+
 --- Returns whether you can inspect a particular unit.
 --- [https://wowpedia.fandom.com/wiki/API_CanInspect]
 --- @param unit string @ unitId) - Unit to check inspectability of.
@@ -429,10 +3705,28 @@ end
 function CanInspect(unit, showError)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanItemBeSocketedToArtifact]
+--- @return void
+function CanItemBeSocketedToArtifact()
+end
+
 --- Returns, whether the player can join a battlefield as group or not.
 --- [https://wowpedia.fandom.com/wiki/API_CanJoinBattlefieldAsGroup]
 --- @return boolean @ isTrue
 function CanJoinBattlefieldAsGroup()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanLootUnit]
+--- @return void
+function CanLootUnit()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanMapChangeDifficulty]
+--- @return void
+function CanMapChangeDifficulty()
 end
 
 --- Can the merchant repair items or not.
@@ -441,10 +3735,22 @@ end
 function CanMerchantRepair()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanPartyLFGBackfill]
+--- @return void
+function CanPartyLFGBackfill()
+end
+
 --- Returns whether you can impeach the Guild Master due to inactivity.
 --- [https://wowpedia.fandom.com/wiki/API_CanReplaceGuildMaster]
 --- @return boolean @ canReplace
 function CanReplaceGuildMaster()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanResetTutorials]
+--- @return void
+function CanResetTutorials()
 end
 
 --- Returns whether the player is currently on a digsite.
@@ -465,11 +3771,41 @@ end
 function CanShowResetInstances()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanSignPetition]
+--- @return void
+function CanSignPetition()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanSolveArtifact]
+--- @return void
+function CanSolveArtifact()
+end
+
 --- Returns whether you can RaF summon a particular unit.
 --- [https://wowpedia.fandom.com/wiki/API_CanSummonFriend]
 --- @param unit string @ UnitId) - player to check whether you can summon.
 --- @return number @ summonable
 function CanSummonFriend(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanSurrenderArena]
+--- @return void
+function CanSurrenderArena()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanSwitchVehicleSeat]
+--- @return void
+function CanSwitchVehicleSeat()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanSwitchVehicleSeats]
+--- @return void
+function CanSwitchVehicleSeats()
 end
 
 --- Returns whether the player can track battle pets.
@@ -497,6 +3833,12 @@ end
 function CanViewGuildRecipes(skillID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CanWithdrawGuildBankMoney]
+--- @return void
+function CanWithdrawGuildBankMoney()
+end
+
 --- Cancels the area Spirit Healer's resurrection in battlegrounds.
 --- [https://wowpedia.fandom.com/wiki/API_CancelAreaSpiritHeal]
 --- @return void
@@ -515,6 +3857,18 @@ end
 function CancelDuel()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CancelEmote]
+--- @return void
+function CancelEmote()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CancelGuildMembershipRequest]
+--- @return void
+function CancelGuildMembershipRequest()
+end
+
 --- Removes temporary item buffs, such as Rogue poisons, Shaman weapon buffs, and sharpening stones from either the Main Hand or Off Hand equipment slots.
 --- [https://wowpedia.fandom.com/wiki/API_CancelItemTempEnchantment]
 --- @param weaponHand number @ for Main Hand, 2 for Off Hand.
@@ -528,11 +3882,35 @@ end
 function CancelLogout()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CancelMasterLootRoll]
+--- @return void
+function CancelMasterLootRoll()
+end
+
 --- Cancels a pending equip operation.
 --- [https://wowpedia.fandom.com/wiki/API_CancelPendingEquip]
 --- @param slot number @ equipment slot to cancel equipping an item to.
 --- @return void
 function CancelPendingEquip(slot)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CancelPetPossess]
+--- @return void
+function CancelPetPossess()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CancelPreloadingMovie]
+--- @return void
+function CancelPreloadingMovie()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CancelScene]
+--- @return void
+function CancelScene()
 end
 
 --- Cancels a druid's shapeshift buff.
@@ -541,10 +3919,22 @@ end
 function CancelShapeshiftForm()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CancelSpellByName]
+--- @return void
+function CancelSpellByName()
+end
+
 --- Cancels the currently open trade.
 --- [https://wowpedia.fandom.com/wiki/API_CancelTrade]
 --- @return void
 function CancelTrade()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CancelTradeAccept]
+--- @return void
+function CancelTradeAccept()
 end
 
 --- Removes a specific buff from the unit.
@@ -554,6 +3944,18 @@ end
 --- @param filter string @ any of combination of HELPFUL|HARMFUL|PLAYER|RAID|CANCELABLE|NOT_CANCELABLE.
 --- @return void
 function CancelUnitBuff(unit, buffIndex, filter)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CannotBeResurrected]
+--- @return void
+function CannotBeResurrected()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CaseAccentInsensitiveParse]
+--- @return void
+function CaseAccentInsensitiveParse()
 end
 
 --- Cast the corresponding pet skill.
@@ -579,12 +3981,24 @@ end
 function CastSpell(spellIndex, spellbookType)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CastSpellByID]
+--- @return void
+function CastSpellByID()
+end
+
 --- Casts the specified spell.
 --- [https://wowpedia.fandom.com/wiki/API_CastSpellByName]
 --- @param spellName unknown
 --- @param target string @ unit to cast the spell on. If omitted, target is assumed for spells that require a target.
 --- @return void
 function CastSpellByName(spellName, target)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CenterCamera]
+--- @return void
+function CenterCamera()
 end
 
 --- Changes the current action button to the one specified in the arguments.
@@ -636,6 +4050,18 @@ end
 function ChannelModerator(channelName, playerName)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ChannelSetAllSilent]
+--- @return void
+function ChannelSetAllSilent()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ChannelSetPartyMemberSilent]
+--- @return void
+function ChannelSetPartyMemberSilent()
+end
+
 --- Toggles the channel to display announcements either on or off.
 --- [https://wowpedia.fandom.com/wiki/API_ChannelToggleAnnouncements]
 --- @param channelName unknown @ The name of the channel to toggle announcements on
@@ -660,6 +4086,12 @@ end
 function ChannelUnmoderator(channelName, playerName)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CheckBinderDist]
+--- @return void
+function CheckBinderDist()
+end
+
 --- Populates client's inbox with messages.
 --- [https://wowpedia.fandom.com/wiki/API_CheckInbox]
 --- @return void
@@ -674,10 +4106,70 @@ end
 function CheckInteractDistance(unit, distIndex)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CheckSpiritHealerDist]
+--- @return void
+function CheckSpiritHealerDist()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CheckTalentMasterDist]
+--- @return void
+function CheckTalentMasterDist()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClearAchievementComparisonUnit]
+--- @return void
+function ClearAchievementComparisonUnit()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClearAchievementSearchString]
+--- @return void
+function ClearAchievementSearchString()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClearAllLFGDungeons]
+--- @return void
+function ClearAllLFGDungeons()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClearAllTracking]
+--- @return void
+function ClearAllTracking()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClearAutoAcceptQuestSound]
+--- @return void
+function ClearAutoAcceptQuestSound()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClearBattlemaster]
+--- @return void
+function ClearBattlemaster()
+end
+
 --- Clears the in-game cursor, returning the object held to its original position (equivalent to right-clicking while holding something on the cursor).
 --- [https://wowpedia.fandom.com/wiki/API_ClearCursor]
 --- @return void
 function ClearCursor()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClearFailedPVPTalentIDs]
+--- @return void
+function ClearFailedPVPTalentIDs()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClearFailedTalentIDs]
+--- @return void
+function ClearFailedTalentIDs()
 end
 
 --- I believe this is supposed to clear your focus just like /clearfocus does. However, it has been blocked by blizzard or something like that. (/clearfocus still works however.)
@@ -686,11 +4178,35 @@ end
 function ClearFocus()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClearInspectPlayer]
+--- @return void
+function ClearInspectPlayer()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClearItemUpgrade]
+--- @return void
+function ClearItemUpgrade()
+end
+
 --- Removes all override bindings owned by a particular frame.
 --- [https://wowpedia.fandom.com/wiki/API_ClearOverrideBindings]
 --- @param owner Frame @ The frame to clear override bindings for.
 --- @return void
 function ClearOverrideBindings(owner)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClearPartyAssignment]
+--- @return void
+function ClearPartyAssignment()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClearRaidMarker]
+--- @return void
+function ClearRaidMarker()
 end
 
 --- Clears everything that has been typed into the 'Send Mail' window.
@@ -703,6 +4219,12 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_ClearTarget]
 --- @return void
 function ClearTarget()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClearTutorials]
+--- @return void
+function ClearTutorials()
 end
 
 --- Clears the specified Void Transfer deposit slot [1]
@@ -718,6 +4240,24 @@ end
 --- @param clearItem boolean @ ?Optional.  Could be nil. - Clear the item already in this slot. (Done by right clicking an item)
 --- @return void
 function ClickSendMailItemButton(itemIndex, clearItem)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClickSocketButton]
+--- @return void
+function ClickSocketButton()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClickTargetTradeButton]
+--- @return void
+function ClickTargetTradeButton()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClickTradeButton]
+--- @return void
+function ClickTradeButton()
 end
 
 --- Clicks the specified Void Storage slot [1]
@@ -744,16 +4284,46 @@ end
 function ClickVoidTransferWithdrawalSlot(slotIndex, isRightClick)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClickWorldMapActionButton]
+--- @return void
+function ClickWorldMapActionButton()
+end
+
 --- Will Close the Bank Frame if opened.
 --- [https://wowpedia.fandom.com/wiki/API_CloseBankFrame]
 --- @return void
 function CloseBankFrame()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CloseGuildBankFrame]
+--- @return void
+function CloseGuildBankFrame()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CloseGuildRegistrar]
+--- @return void
+function CloseGuildRegistrar()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CloseGuildRoster]
+--- @return void
+function CloseGuildRoster()
+end
+
 --- Close an open item text (book, plaque, etc).
 --- [https://wowpedia.fandom.com/wiki/API_CloseItemText]
 --- @return void
 function CloseItemText()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CloseItemUpgrade]
+--- @return void
+function CloseItemUpgrade()
 end
 
 --- Close the loot window.
@@ -787,10 +4357,34 @@ end
 function ClosePetition()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClosePlayerChoice]
+--- @return void
+function ClosePlayerChoice()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CloseQuest]
+--- @return void
+function CloseQuest()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CloseResearch]
+--- @return void
+function CloseResearch()
+end
+
 --- Stops considering the item for socketing, ignoring any tentative changes made.
 --- [https://wowpedia.fandom.com/wiki/API_CloseSocketInfo]
 --- @return void
 function CloseSocketInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CloseTabardCreation]
+--- @return void
+function CloseTabardCreation()
 end
 
 --- Closes your Flightpath Map.
@@ -811,11 +4405,29 @@ end
 function CloseTrainer()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CloseVoidStorageFrame]
+--- @return void
+function CloseVoidStorageFrame()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ClosestGameObjectPosition]
+--- @return void
+function ClosestGameObjectPosition()
+end
+
 --- Returns the unit position of the closest creature by ID. Only works for mobs in the starting zones.
 --- [https://wowpedia.fandom.com/wiki/API_ClosestUnitPosition]
 --- @param creatureID number @ NPC ID of a GUID of a creature.
 --- @return number, number, number @ x, y, distance
 function ClosestUnitPosition(creatureID)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CollapseAllFactionHeaders]
+--- @return void
+function CollapseAllFactionHeaders()
 end
 
 --- Collapse a faction header row.
@@ -825,6 +4437,12 @@ end
 function CollapseFactionHeader(rowIndex)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CollapseGuildTradeSkillHeader]
+--- @return void
+function CollapseGuildTradeSkillHeader()
+end
+
 --- Collapses the quest header.
 --- [https://wowpedia.fandom.com/wiki/API_CollapseQuestHeader]
 --- @param questID unknown @ The quest ID of the header you wish to collapse - 0 to collapse all quest headers
@@ -832,10 +4450,70 @@ end
 function CollapseQuestHeader(questID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CollapseWarGameHeader]
+--- @return void
+function CollapseWarGameHeader()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogAddFilter]
+--- @return void
+function CombatLogAddFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogAdvanceEntry]
+--- @return void
+function CombatLogAdvanceEntry()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogClearEntries]
+--- @return void
+function CombatLogClearEntries()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogGetCurrentEntry]
+--- @return void
+function CombatLogGetCurrentEntry()
+end
+
 --- Returns the current COMBAT_LOG_EVENT payload.
 --- [https://wowpedia.fandom.com/wiki/API_CombatLogGetCurrentEventInfo]
 --- @return unknown @ eventInfo
 function CombatLogGetCurrentEventInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogGetNumEntries]
+--- @return void
+function CombatLogGetNumEntries()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogGetRetentionTime]
+--- @return void
+function CombatLogGetRetentionTime()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogResetFilter]
+--- @return void
+function CombatLogResetFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogSetCurrentEntry]
+--- @return void
+function CombatLogSetCurrentEntry()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CombatLogSetRetentionTime]
+--- @return void
+function CombatLogSetRetentionTime()
 end
 
 --- Compares two UnitFlag bitfields.
@@ -851,6 +4529,24 @@ end
 --- @param unit string @ UnitId of the entity you want receive notifications for.
 --- @return void
 function CombatTextSetActiveUnit(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ComplainInboxItem]
+--- @return void
+function ComplainInboxItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CompleteLFGReadyCheck]
+--- @return void
+function CompleteLFGReadyCheck()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CompleteLFGRoleCheck]
+--- @return void
+function CompleteLFGRoleCheck()
 end
 
 --- Advances the quest completion dialog to the reward selection step.
@@ -881,6 +4577,12 @@ end
 function ConfirmBindOnUse()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ConfirmBinder]
+--- @return void
+function ConfirmBinder()
+end
+
 --- Confirm your loot roll after either CONFIRM_LOOT_ROLL or CONFIRM_DISENCHANT_ROLL fires.
 --- [https://wowpedia.fandom.com/wiki/API_ConfirmLootRoll]
 --- @param rollID number @ As passed by the event. (The number increases with every roll you have in a party)
@@ -896,11 +4598,35 @@ end
 function ConfirmLootSlot(slot)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ConfirmNoRefundOnUse]
+--- @return void
+function ConfirmNoRefundOnUse()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ConfirmOnUse]
+--- @return void
+function ConfirmOnUse()
+end
+
 --- Sends a response to a raid ready check
 --- [https://wowpedia.fandom.com/wiki/API_ConfirmReadyCheck]
 --- @param isReady number @ ?Optional.  Could be nil. - 1 if the player is ready, nil if the player is not ready
 --- @return void
 function ConfirmReadyCheck(isReady)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ConfirmTalentWipe]
+--- @return void
+function ConfirmTalentWipe()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ConsoleAddMessage]
+--- @return void
+function ConsoleAddMessage()
 end
 
 --- Execute a console command.
@@ -915,6 +4641,18 @@ end
 --- @param containerID unknown
 --- @return number @ bagID
 function ContainerIDToInventoryID(containerID)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ContainerRefundItemPurchase]
+--- @return void
+function ContainerRefundItemPurchase()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CopyToClipboard]
+--- @return void
+function CopyToClipboard()
 end
 
 --- Creates a font object.
@@ -945,6 +4683,12 @@ end
 function CreateMacro(name, iconFileID, body, perCharacter)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CreateNewRaidProfile]
+--- @return void
+function CreateNewRaidProfile()
+end
+
 --- Determines if the item in the cursor can be equipped in the specified inventory slot.  Always returns 1 for bank bag slots.
 --- [https://wowpedia.fandom.com/wiki/API_CursorCanGoInSlot]
 --- @param invSlot number @ inventorySlotId) - Inventory slot to query
@@ -956,6 +4700,24 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_CursorHasItem]
 --- @return boolean @ hasItem
 function CursorHasItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CursorHasMacro]
+--- @return void
+function CursorHasMacro()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CursorHasMoney]
+--- @return void
+function CursorHasMoney()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_CursorHasSpell]
+--- @return void
+function CursorHasSpell()
 end
 
 --- Returns a table representing the last five damaging combat events against the player.
@@ -978,10 +4740,28 @@ end
 function DeclineChannelInvite(channel)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DeclineGroup]
+--- @return void
+function DeclineGroup()
+end
+
 --- Declines a guild invitation.
 --- [https://wowpedia.fandom.com/wiki/API_DeclineGuild]
 --- @return void
 function DeclineGuild()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DeclineGuildApplicant]
+--- @return void
+function DeclineGuildApplicant()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DeclineName]
+--- @return void
+function DeclineName()
 end
 
 --- Declines the currently offered quest.
@@ -1009,6 +4789,12 @@ end
 function DeleteCursorItem()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DeleteGMTicket]
+--- @return void
+function DeleteGMTicket()
+end
+
 --- Asynchronously request the server to remove a message from the mailbox.
 --- [https://wowpedia.fandom.com/wiki/API_DeleteInboxItem]
 --- @param index number @ the index of the message (1 is the first message)
@@ -1021,6 +4807,30 @@ end
 --- @param index_or_macroname unknown
 --- @return void
 function DeleteMacro(index_or_macroname)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DeleteRaidProfile]
+--- @return void
+function DeleteRaidProfile()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DemoteAssistant]
+--- @return void
+function DemoteAssistant()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DepositGuildBankMoney]
+--- @return void
+function DepositGuildBankMoney()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DepositReagentBank]
+--- @return void
+function DepositReagentBank()
 end
 
 --- The player stops descending (while flying or swimming).
@@ -1036,6 +4846,12 @@ end
 function DestroyTotem(slot)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DetectWowMouse]
+--- @return void
+function DetectWowMouse()
+end
+
 --- Disable an AddOn for subsequent sessions.
 --- [https://wowpedia.fandom.com/wiki/API_DisableAddOn]
 --- @param index_or_name unknown
@@ -1048,6 +4864,12 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_DisableAllAddOns]
 --- @return void
 function DisableAllAddOns()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DisableSpellAutocast]
+--- @return void
+function DisableSpellAutocast()
 end
 
 --- Dismisses a currently-summoned mount or non-combat pet.
@@ -1077,6 +4899,12 @@ end
 function DoEmote(token, target)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DoMasterLootRoll]
+--- @return void
+function DoMasterLootRoll()
+end
+
 --- Initiates a raid ready check.  Can only be called by the raid leader, does nothing if called by other raid members or outside of a raid.
 --- [https://wowpedia.fandom.com/wiki/API_DoReadyCheck]
 --- @return void
@@ -1089,11 +4917,23 @@ end
 function DoesCurrentLocaleSellExpansionLevels()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DoesItemContainSpec]
+--- @return void
+function DoesItemContainSpec()
+end
+
 --- This function returns true if the player character knows the spell.
 --- [https://wowpedia.fandom.com/wiki/API_DoesSpellExist]
 --- @param spellName string
 --- @return boolean @ spellExists
 function DoesSpellExist(spellName)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DoesTemplateExist]
+--- @return void
+function DoesTemplateExist()
 end
 
 --- Drops the money currently attached to your cursor back into your bag.
@@ -1107,6 +4947,18 @@ end
 --- @param unit unknown @ UnitId - Unit to which you want to give the item on the cursor.
 --- @return void
 function DropItemOnUnit(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DumpMovementCapture]
+--- @return void
+function DumpMovementCapture()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_DungeonAppearsInRandomLFD]
+--- @return void
+function DungeonAppearsInRandomLFD()
 end
 
 --- Clears the encounter journal search results. [1]
@@ -1353,6 +5205,12 @@ end
 function EditMacro(index_or_macroName, name, icon, body)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_EjectPassengerFromSeat]
+--- @return void
+function EjectPassengerFromSeat()
+end
+
 --- Enables an AddOn for subsequent sessions.
 --- [https://wowpedia.fandom.com/wiki/API_EnableAddOn]
 --- @param index_or_name unknown
@@ -1365,6 +5223,24 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_EnableAllAddOns]
 --- @return void
 function EnableAllAddOns()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_EnableSpellAutocast]
+--- @return void
+function EnableSpellAutocast()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_EndBoundTradeable]
+--- @return void
+function EndBoundTradeable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_EndRefund]
+--- @return void
+function EndRefund()
 end
 
 --- Returns frame which follows current frame, or first frame if argument is nil. The order of iteration follows the order that the frames were created in.
@@ -1408,6 +5284,12 @@ end
 function ExecuteVoidTransfer()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ExpandAllFactionHeaders]
+--- @return void
+function ExpandAllFactionHeaders()
+end
+
 --- Expand a faction header row.
 --- [https://wowpedia.fandom.com/wiki/API_ExpandFactionHeader]
 --- @param rowIndex number @ The row index of the header to expand (Specifying a non-header row can have unpredictable results). The UPDATE_FACTION event is fired after the change since faction indexes will have been shifted around.
@@ -1415,11 +5297,23 @@ end
 function ExpandFactionHeader(rowIndex)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ExpandGuildTradeSkillHeader]
+--- @return void
+function ExpandGuildTradeSkillHeader()
+end
+
 --- Expands the quest header.
 --- [https://wowpedia.fandom.com/wiki/API_ExpandQuestHeader]
 --- @param questID number @ The index of the header you wish to expand. - 0 to expand all quest headers
 --- @return void
 function ExpandQuestHeader(questID)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ExpandWarGameHeader]
+--- @return void
+function ExpandWarGameHeader()
 end
 
 --- Toggle the At War status of a faction row.
@@ -1444,11 +5338,29 @@ end
 function FindBaseSpellByID(spellID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_FindFlyoutSlotBySpellID]
+--- @return void
+function FindFlyoutSlotBySpellID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_FindSpellBookSlotBySpellID]
+--- @return void
+function FindSpellBookSlotBySpellID()
+end
+
 --- Needs summary.
 --- [https://wowpedia.fandom.com/wiki/API_FindSpellOverrideByID]
 --- @param spellID number
 --- @return number @ overrideSpellID
 function FindSpellOverrideByID(spellID)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_FlagTutorial]
+--- @return void
+function FlagTutorial()
 end
 
 --- Flashes the game client icon in the Operating System.
@@ -1498,15 +5410,117 @@ end
 function ForceQuit()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ForfeitDuel]
+--- @return void
+function ForfeitDuel()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_FrameXML_Debug]
+--- @return void
+function FrameXML_Debug()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GMEuropaBugsEnabled]
+--- @return void
+function GMEuropaBugsEnabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GMEuropaComplaintsEnabled]
+--- @return void
+function GMEuropaComplaintsEnabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GMEuropaSuggestionsEnabled]
+--- @return void
+function GMEuropaSuggestionsEnabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GMEuropaTicketsEnabled]
+--- @return void
+function GMEuropaTicketsEnabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GMItemRestorationButtonEnabled]
+--- @return void
+function GMItemRestorationButtonEnabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GMQuickTicketSystemEnabled]
+--- @return void
+function GMQuickTicketSystemEnabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GMQuickTicketSystemThrottled]
+--- @return void
+function GMQuickTicketSystemThrottled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GMReportLag]
+--- @return void
+function GMReportLag()
+end
+
 --- [https://wowpedia.fandom.com/wiki/API_GMRequestPlayerInfo]
 --- @return void
 function GMRequestPlayerInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GMResponseResolve]
+--- @return void
+function GMResponseResolve()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GMSurveyAnswer]
+--- @return void
+function GMSurveyAnswer()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GMSurveyAnswerSubmit]
+--- @return void
+function GMSurveyAnswerSubmit()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GMSurveyCommentSubmit]
+--- @return void
+function GMSurveyCommentSubmit()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GMSurveyNumAnswers]
+--- @return void
+function GMSurveyNumAnswers()
 end
 
 --- Usage: GMSurveyGetQuestion(index)
 --- [https://wowpedia.fandom.com/wiki/API_GMSurveyQuestion]
 --- @return void
 function GMSurveyQuestion()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GMSurveySubmit]
+--- @return void
+function GMSurveySubmit()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GameMovieFinished]
+--- @return void
+function GameMovieFinished()
 end
 
 --- Returns the expansion level the account has been flagged for.
@@ -1543,6 +5557,12 @@ end
 function GetAchievementCriteriaInfoByID()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetAchievementGuildRep]
+--- @return void
+function GetAchievementGuildRep()
+end
+
 --- Returns information about an Achievement.
 --- [https://wowpedia.fandom.com/wiki/API_GetAchievementInfo]
 --- @param achievementID_or_categoryID unknown
@@ -1563,6 +5583,36 @@ end
 --- @param achievementID unknown @ Uniquely identifies each achievement
 --- @return number @ numCriteria
 function GetAchievementNumCriteria(achievementID)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetAchievementNumRewards]
+--- @return void
+function GetAchievementNumRewards()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetAchievementReward]
+--- @return void
+function GetAchievementReward()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetAchievementSearchProgress]
+--- @return void
+function GetAchievementSearchProgress()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetAchievementSearchSize]
+--- @return void
+function GetAchievementSearchSize()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetActionAutocast]
+--- @return void
+function GetActionAutocast()
 end
 
 --- Returns the index of the currently-selected action bar page.
@@ -1634,11 +5684,35 @@ end
 function GetActiveArtifactByRace(raceIndex, artifactIndex)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetActiveLevel]
+--- @return void
+function GetActiveLevel()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetActiveLootRollIDs]
+--- @return void
+function GetActiveLootRollIDs()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetActiveQuestID]
+--- @return void
+function GetActiveQuestID()
+end
+
 --- Returns the index of the current active specialization/talent/glyph group.
 --- [https://wowpedia.fandom.com/wiki/API_GetActiveSpecGroup]
 --- @param isInspect boolean @ If true returns the information for the inspected unit instead of the player. Defaults to false.
 --- @return number @ activeSpec
 function GetActiveSpecGroup(isInspect)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetActiveTitle]
+--- @return void
+function GetActiveTitle()
 end
 
 --- Returns the total time used by the specified AddOn.
@@ -1670,12 +5744,36 @@ end
 function GetAddOnInfo(index_or_name)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetAddOnMemoryUsage]
+--- @return void
+function GetAddOnMemoryUsage()
+end
+
 --- Returns addon metadata.
 --- [https://wowpedia.fandom.com/wiki/API_GetAddOnMetadata]
 --- @param addon string @ Addon name to look up metadata for
 --- @param field string @ Field name. May be Title, Notes, Author, Version, or anything starting with X-
 --- @return string @ value
 function GetAddOnMetadata(addon, field)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetAddOnOptionalDependencies]
+--- @return void
+function GetAddOnOptionalDependencies()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetAllowLowLevelRaid]
+--- @return void
+function GetAllowLowLevelRaid()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetAlternativeDefaultLanguage]
+--- @return void
+function GetAlternativeDefaultLanguage()
 end
 
 --- Returns the localized name for Archaeology.
@@ -1710,6 +5808,12 @@ end
 function GetAreaText()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetArenaOpponentSpec]
+--- @return void
+function GetArenaOpponentSpec()
+end
+
 --- Returns the information for a specific race's artifact.
 --- [https://wowpedia.fandom.com/wiki/API_GetArtifactInfoByRace]
 --- @param raceIndex number @ Index of the race to pick the artifact from.
@@ -1730,6 +5834,12 @@ end
 --- @param amount number @ Amount of the stat to check the AP value of.
 --- @return number @ ap
 function GetAttackPowerForStat(statId, amount)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetAutoCompletePresenceID]
+--- @return void
+function GetAutoCompletePresenceID()
 end
 
 --- Returns a table of realm names for auto-completion.
@@ -1764,6 +5874,18 @@ end
 function GetAutoQuestPopUp(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetAvailableBandwidth]
+--- @return void
+function GetAvailableBandwidth()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetAvailableLevel]
+--- @return void
+function GetAvailableLevel()
+end
+
 --- [https://wowpedia.fandom.com/wiki/API_GetAvailableLocaleInfo]
 --- @return void
 function GetAvailableLocaleInfo()
@@ -1783,10 +5905,34 @@ end
 function GetAvailableQuestInfo(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetAvailableTitle]
+--- @return void
+function GetAvailableTitle()
+end
+
 --- Returns the average item level of the player's character and average item level equipped.
 --- [https://wowpedia.fandom.com/wiki/API_GetAverageItemLevel]
 --- @return number, number, number @ avgItemLevel, avgItemLevelEquipped, avgItemLevelPvp
 function GetAverageItemLevel()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetAvoidance]
+--- @return void
+function GetAvoidance()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetBackgroundLoadingStatus]
+--- @return void
+function GetBackgroundLoadingStatus()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetBackpackAutosortDisabled]
+--- @return void
+function GetBackpackAutosortDisabled()
 end
 
 --- Returns the name of the bag for the selected index
@@ -1794,6 +5940,24 @@ end
 --- @param index number @ number of the bag the item is in, 0 is your backpack, 1-4 are the four additional bags, numbered right to left
 --- @return string @ bagName
 function GetBagName(index)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetBagSlotFlag]
+--- @return void
+function GetBagSlotFlag()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetBankAutosortDisabled]
+--- @return void
+function GetBankAutosortDisabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetBankBagSlotFlag]
+--- @return void
+function GetBankBagSlotFlag()
 end
 
 --- Returns the price of a particular bank slot.
@@ -1845,6 +6009,12 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetBattlefieldInstanceRunTime]
 --- @return number @ time
 function GetBattlefieldInstanceRunTime()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetBattlefieldMapIconScale]
+--- @return void
+function GetBattlefieldMapIconScale()
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_GetBattlefieldPortExpiration]
@@ -1978,6 +6148,12 @@ end
 function GetBlockChance()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetBonusBarIndex]
+--- @return void
+function GetBonusBarIndex()
+end
+
 --- Returns the current bonus action bar index.
 --- [https://wowpedia.fandom.com/wiki/API_GetBonusBarOffset]
 --- @return unknown @ offset
@@ -1997,6 +6173,12 @@ end
 function GetBuybackItemInfo(slotIndex)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetBuybackItemLink]
+--- @return void
+function GetBuybackItemLink()
+end
+
 --- Returns information on a console variable.
 --- [https://wowpedia.fandom.com/wiki/API_GetCVarInfo]
 --- @param name string @ name of the CVar to query the value of. Only accepts console variables (i.e. not console commands)
@@ -2004,10 +6186,28 @@ end
 function GetCVarInfo(name)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCVarSettingValidity]
+--- @return void
+function GetCVarSettingValidity()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCallPetSpellInfo]
+--- @return void
+function GetCallPetSpellInfo()
+end
+
 --- Gets the current zoom level of the camera.
 --- [https://wowpedia.fandom.com/wiki/API_GetCameraZoom]
 --- @return number @ zoom
 function GetCameraZoom()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCategoryAchievementPoints]
+--- @return void
+function GetCategoryAchievementPoints()
 end
 
 --- Returns information about the given category.
@@ -2029,6 +6229,12 @@ end
 --- @param includeAll boolean @ If true-equivalent, include all achievements, otherwise, only includes those currently visible
 --- @return number, number, number @ total, completed, incompleted
 function GetCategoryNumAchievements(categoryId, includeAll)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCemeteryPreference]
+--- @return void
+function GetCemeteryPreference()
 end
 
 --- Retrieves channels (and category headers) that would be displayed in Blizzards ChannelFrame.
@@ -2079,11 +6285,29 @@ end
 function GetChatWindowMessages(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetChatWindowSavedDimensions]
+--- @return void
+function GetChatWindowSavedDimensions()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetChatWindowSavedPosition]
+--- @return void
+function GetChatWindowSavedPosition()
+end
+
 --- Returns information about a class.
 --- [https://wowpedia.fandom.com/wiki/API_GetClassInfo]
 --- @param classIndex number @ a number between 1 and GetNumClasses()
 --- @return string, string, number @ className, classFile, classID
 function GetClassInfo(classIndex)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetClickFrame]
+--- @return void
+function GetClickFrame()
 end
 
 --- Returns the expansion level of the game client.
@@ -2129,6 +6353,12 @@ end
 function GetCombatRatingBonus(combatRatingIdentifier)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCombatRatingBonusForCombatRatingValue]
+--- @return void
+function GetCombatRatingBonusForCombatRatingValue()
+end
+
 --- Retrieves the number of combo points gained by a player.
 --- [https://wowpedia.fandom.com/wiki/API_GetComboPoints]
 --- @param unit string @ unitId) - Either player or vehicle.  (More strings/UnitIds may be possible but have not been seen in Blizzard code.)
@@ -2143,6 +6373,18 @@ end
 --- @param id number @ Index of the slot to query. Starting at 1 and going up to GetNumCompanions(type).
 --- @return number, string, number, string, number, number @ creatureID, creatureName, creatureSpellID, icon, issummoned, mountType
 function GetCompanionInfo(type, id)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetComparisonAchievementPoints]
+--- @return void
+function GetComparisonAchievementPoints()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetComparisonCategoryNumAchievements]
+--- @return void
+function GetComparisonCategoryNumAchievements()
 end
 
 --- Return the value of the requested Statistic from the comparison unit.
@@ -2176,6 +6418,12 @@ end
 function GetContainerItemDurability(bag, slot)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetContainerItemEquipmentSetInfo]
+--- @return void
+function GetContainerItemEquipmentSetInfo()
+end
+
 --- Returns the item id of the item in a particular container slot.
 --- [https://wowpedia.fandom.com/wiki/API_GetContainerItemID]
 --- @param bag number @ BagID) - Index of the bag to query.
@@ -2200,6 +6448,24 @@ end
 function GetContainerItemLink(bagID, slotIndex)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetContainerItemPurchaseCurrency]
+--- @return void
+function GetContainerItemPurchaseCurrency()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetContainerItemPurchaseInfo]
+--- @return void
+function GetContainerItemPurchaseInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetContainerItemPurchaseItem]
+--- @return void
+function GetContainerItemPurchaseItem()
+end
+
 --- Returns whether the item in the slot is a quest item.
 --- [https://wowpedia.fandom.com/wiki/API_GetContainerItemQuestInfo]
 --- @param bag number @ BagID) - Index of the bag to query.
@@ -2222,6 +6488,12 @@ end
 function GetContainerNumSlots(bagID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCorpseRecoveryDelay]
+--- @return void
+function GetCorpseRecoveryDelay()
+end
+
 --- Tracks the extent to which a player is wearing items touched by N'Zoth's influence.
 --- [https://wowpedia.fandom.com/wiki/API_GetCorruption]
 --- @return number @ corruption
@@ -2240,6 +6512,18 @@ end
 function GetCritChance()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCritChanceProvidesParryEffect]
+--- @return void
+function GetCritChanceProvidesParryEffect()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCriteriaSpell]
+--- @return void
+function GetCriteriaSpell()
+end
+
 --- Returns the current arena season
 --- [https://wowpedia.fandom.com/wiki/API_GetCurrentArenaSeason]
 --- @return number @ season
@@ -2250,6 +6534,48 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetCurrentBindingSet]
 --- @return number @ which
 function GetCurrentBindingSet()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCurrentCombatTextEventInfo]
+--- @return void
+function GetCurrentCombatTextEventInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCurrentEventID]
+--- @return void
+function GetCurrentEventID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCurrentGlyphNameForSpell]
+--- @return void
+function GetCurrentGlyphNameForSpell()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCurrentGraphicsSetting]
+--- @return void
+function GetCurrentGraphicsSetting()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCurrentGuildBankTab]
+--- @return void
+function GetCurrentGuildBankTab()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCurrentKeyBoardFocus]
+--- @return void
+function GetCurrentKeyBoardFocus()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCurrentLevelFeatures]
+--- @return void
+function GetCurrentLevelFeatures()
 end
 
 --- For the level you put in, it returns the ID of the spell that will become available.
@@ -2276,10 +6602,22 @@ end
 function GetCurrentResolution()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCurrentScaledResolution]
+--- @return void
+function GetCurrentScaledResolution()
+end
+
 --- Returns the title currently used by the player.
 --- [https://wowpedia.fandom.com/wiki/API_GetCurrentTitle]
 --- @return number @ currentTitle
 function GetCurrentTitle()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCursorDelta]
+--- @return void
+function GetCursorDelta()
 end
 
 --- Returns information about what the mouse cursor is holding.
@@ -2300,6 +6638,18 @@ end
 function GetCursorPosition()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetCustomizationDetails]
+--- @return void
+function GetCustomizationDetails()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetDailyQuestsCompleted]
+--- @return void
+function GetDailyQuestsCompleted()
+end
+
 --- Returns a chat link for a specific death.
 --- [https://wowpedia.fandom.com/wiki/API_GetDeathRecapLink]
 --- @param recapID number @ The specific death to view, from 1 to the most recent death.
@@ -2307,10 +6657,46 @@ end
 function GetDeathRecapLink(recapID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetDefaultGraphicsQuality]
+--- @return void
+function GetDefaultGraphicsQuality()
+end
+
 --- Returns the player's default language.
 --- [https://wowpedia.fandom.com/wiki/API_GetDefaultLanguage]
 --- @return string, number @ language, languageID
 function GetDefaultLanguage()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetDefaultScale]
+--- @return void
+function GetDefaultScale()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetDefaultVideoOption]
+--- @return void
+function GetDefaultVideoOption()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetDefaultVideoOptions]
+--- @return void
+function GetDefaultVideoOptions()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetDefaultVideoQualityOption]
+--- @return void
+function GetDefaultVideoQualityOption()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetDemotionRank]
+--- @return void
+function GetDemotionRank()
 end
 
 --- Returns detailed item level information about a given item.
@@ -2333,10 +6719,64 @@ end
 function GetDodgeChance()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetDodgeChanceFromAttribute]
+--- @return void
+function GetDodgeChanceFromAttribute()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetDownloadedPercentage]
+--- @return void
+function GetDownloadedPercentage()
+end
+
 --- Returns the player's currently selected dungeon difficulty.
 --- [https://wowpedia.fandom.com/wiki/API_GetDungeonDifficultyID]
 --- @return number @ difficultyID
 function GetDungeonDifficultyID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetDungeonForRandomSlot]
+--- @return void
+function GetDungeonForRandomSlot()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetDungeonInfo]
+--- @return void
+function GetDungeonInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetEquipmentNameFromSpell]
+--- @return void
+function GetEquipmentNameFromSpell()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetEventCPUUsage]
+--- @return void
+function GetEventCPUUsage()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetEventTime]
+--- @return void
+function GetEventTime()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetExistingSocketInfo]
+--- @return void
+function GetExistingSocketInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetExistingSocketLink]
+--- @return void
+function GetExistingSocketLink()
 end
 
 --- Returns the logo and banner textures for an expansion id.
@@ -2389,6 +6829,18 @@ end
 function GetFactionInfoByID()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetFailedPVPTalentIDs]
+--- @return void
+function GetFailedPVPTalentIDs()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetFailedTalentIDs]
+--- @return void
+function GetFailedTalentIDs()
+end
+
 --- Returns the FileDataID corresponding to the given game file path (texture, sound, model, etc.).
 --- [https://wowpedia.fandom.com/wiki/API_GetFileIDFromPath]
 --- @param filePath string @ The path to a game file. For example Interface/Icons/Temp.blp
@@ -2396,11 +6848,47 @@ end
 function GetFileIDFromPath(filePath)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetFileStreamingStatus]
+--- @return void
+function GetFileStreamingStatus()
+end
+
 --- Returns the ID of a filtered achievement, resulting from a call to SetAchievementSearchString.
 --- [https://wowpedia.fandom.com/wiki/API_GetFilteredAchievementID]
 --- @param index number @ The index of the filtered achievement to return the ID of, between 1 and GetNumFilteredAchievements().
 --- @return number @ achievementID
 function GetFilteredAchievementID(index)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetFlexRaidDungeonInfo]
+--- @return void
+function GetFlexRaidDungeonInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetFlyoutID]
+--- @return void
+function GetFlyoutID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetFlyoutInfo]
+--- @return void
+function GetFlyoutInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetFlyoutSlotInfo]
+--- @return void
+function GetFlyoutSlotInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetFollowerTypeIDFromSpell]
+--- @return void
+function GetFollowerTypeIDFromSpell()
 end
 
 --- Returns a structured table of information about the given font object.
@@ -2451,6 +6939,24 @@ end
 function GetFriendshipReputationRanks(factionID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetFunctionCPUUsage]
+--- @return void
+function GetFunctionCPUUsage()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGMStatus]
+--- @return void
+function GetGMStatus()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGMTicket]
+--- @return void
+function GetGMTicket()
+end
+
 --- Returns the error message for an id.
 --- [https://wowpedia.fandom.com/wiki/API_GetGameMessageInfo]
 --- @param messageType number @ errorType from UI_INFO_MESSAGE or UI_ERROR_MESSAGE
@@ -2470,11 +6976,59 @@ end
 function GetGraphicsAPIs()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGraphicsDropdownIndexByMasterIndex]
+--- @return void
+function GetGraphicsDropdownIndexByMasterIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGreetingText]
+--- @return void
+function GetGreetingText()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGroupMemberCounts]
+--- @return void
+function GetGroupMemberCounts()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildAchievementMemberInfo]
+--- @return void
+function GetGuildAchievementMemberInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildAchievementMembers]
+--- @return void
+function GetGuildAchievementMembers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildAchievementNumMembers]
+--- @return void
+function GetGuildAchievementNumMembers()
+end
+
 --- Returns information about the given selected guild applicant.
 --- [https://wowpedia.fandom.com/wiki/API_GetGuildApplicantInfo]
 --- @param selectionID number @ The index of the selected applicant (from 1 to GetNumGuildApplicants()).
 --- @return unknown, number, string, boolean, boolean, boolean, boolean, boolean, boolean, unknown, boolean, boolean, boolean, string, number, number @ name, level, class, bQuest, bDungeon, bRaid, bPvP, bRP, bWeekdays, bWeekends, bTank, bHealer, bDamage, comment, timeSince, timeLeft
 function GetGuildApplicantInfo(selectionID)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildApplicantSelection]
+--- @return void
+function GetGuildApplicantSelection()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildBankBonusDepositMoney]
+--- @return void
+function GetGuildBankBonusDepositMoney()
 end
 
 --- Gets information about an item slot from the guild bank.
@@ -2504,6 +7058,12 @@ end
 function GetGuildBankMoneyTransaction(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildBankTabCost]
+--- @return void
+function GetGuildBankTabCost()
+end
+
 --- Gets display / player's access information regarding a guild bank tab.
 --- [https://wowpedia.fandom.com/wiki/API_GetGuildBankTabInfo]
 --- @param tab number @ The index of the guild bank tab. (result of GetCurrentGuildBankTab())
@@ -2515,6 +7075,12 @@ end
 --- @param tab number @ guild bank tab number
 --- @return boolean, boolean, boolean, number @ canView, canDeposit, canEdit, stacksPerDay
 function GetGuildBankTabPermissions(tab)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildBankText]
+--- @return void
+function GetGuildBankText()
 end
 
 --- Get information for specific item transaction from Guild Bank.
@@ -2537,6 +7103,42 @@ end
 function GetGuildBankWithdrawMoney()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildCategoryList]
+--- @return void
+function GetGuildCategoryList()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildChallengeInfo]
+--- @return void
+function GetGuildChallengeInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildCharterCost]
+--- @return void
+function GetGuildCharterCost()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildEventInfo]
+--- @return void
+function GetGuildEventInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildExpirationTime]
+--- @return void
+function GetGuildExpirationTime()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildFactionGroup]
+--- @return void
+function GetGuildFactionGroup()
+end
+
 --- Returns the guild name and faction standing of the player.
 --- [https://wowpedia.fandom.com/wiki/API_GetGuildFactionInfo]
 --- @return string, string, number, number, number, number @ guildName, description, standingID, barMin, barMax, barValue
@@ -2548,6 +7150,60 @@ end
 --- @param unit string @ The unitId whose guild information you wish to query.
 --- @return string, string, number, string @ guildName, guildRankName, guildRankIndex, realm
 function GetGuildInfo(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildInfoText]
+--- @return void
+function GetGuildInfoText()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildLogoInfo]
+--- @return void
+function GetGuildLogoInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildMemberRecipes]
+--- @return void
+function GetGuildMemberRecipes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildMembershipRequestInfo]
+--- @return void
+function GetGuildMembershipRequestInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildMembershipRequestSettings]
+--- @return void
+function GetGuildMembershipRequestSettings()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildNewsFilters]
+--- @return void
+function GetGuildNewsFilters()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildNewsMemberName]
+--- @return void
+function GetGuildNewsMemberName()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildNewsSort]
+--- @return void
+function GetGuildNewsSort()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildPerkInfo]
+--- @return void
+function GetGuildPerkInfo()
 end
 
 --- This function returns information about the last tradeskill you were looking at when you clicked View Crafters on a guild listing.
@@ -2563,11 +7219,41 @@ end
 function GetGuildRecipeMember(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildRecruitmentComment]
+--- @return void
+function GetGuildRecruitmentComment()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildRecruitmentSettings]
+--- @return void
+function GetGuildRecruitmentSettings()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildRenameRequired]
+--- @return void
+function GetGuildRenameRequired()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildRewardInfo]
+--- @return void
+function GetGuildRewardInfo()
+end
+
 --- Returns information about a character in your current guild.
 --- [https://wowpedia.fandom.com/wiki/API_GetGuildRosterInfo]
 --- @param index number @ From 1 to GetNumGuildMembers()
 --- @return string, string, number, number, string, string, string, string, boolean, number, string, number, number, boolean, boolean, number, string @ name, rankName, rankIndex, level, classDisplayName, zone, publicNote, officerNote, isOnline, status, class, achievementPoints, achievementRank, isMobile, canSoR, repStanding, GUID
 function GetGuildRosterInfo(index)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetGuildRosterLargestAchievementPoints]
+--- @return void
+function GetGuildRosterLargestAchievementPoints()
 end
 
 --- Returns a specific guild member's last seen time.
@@ -2606,6 +7292,12 @@ end
 --- @param index number @ The index of the tradeskill from GetNumGuildTradeSkill().
 --- @return number, boolean, string, string, number, number, number, string, string, string, boolean, string, number, string, boolean, number @ skillID, isCollapsed, iconTexture, headerName, numOnline, numVisible, numPlayers, playerName, playerNameWithRealm, class, online, zone, skill, classFileName, isMobile, isAway
 function GetGuildTradeSkillInfo(index)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetHaste]
+--- @return void
+function GetHaste()
 end
 
 --- Returns the amount of Melee Hit %, not from Melee Hit Rating, that your character has.
@@ -2663,11 +7355,23 @@ end
 function GetInboxText(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetInsertItemsLeftToRight]
+--- @return void
+function GetInsertItemsLeftToRight()
+end
+
 --- Returns the inspected unit's rated PvP stats.
 --- [https://wowpedia.fandom.com/wiki/API_GetInspectArenaData]
 --- @param bracketId number @ rated PvP bracket to query, ascending from 1 for 2v2, 3v3, and 5v5 arenas, and Rated Battlegrounds respectively.
 --- @return number, number, number, number, number @ rating, seasonPlayed, seasonWon, weeklyPlayed, weeklyWon
 function GetInspectArenaData(bracketId)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetInspectGuildInfo]
+--- @return void
+function GetInspectGuildInfo()
 end
 
 --- Get the honor information about the inspected unit.
@@ -2676,11 +7380,29 @@ end
 function GetInspectHonorData()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetInspectRatedBGData]
+--- @return void
+function GetInspectRatedBGData()
+end
+
 --- Returns a number representing the current active specialization of a given unit.
 --- [https://wowpedia.fandom.com/wiki/API_GetInspectSpecialization]
 --- @param unit string @ The unitid of the player to request the specialization of.
 --- @return number @ id
 function GetInspectSpecialization(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetInspectTalent]
+--- @return void
+function GetInspectTalent()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetInstanceBootTimeRemaining]
+--- @return void
+function GetInstanceBootTimeRemaining()
 end
 
 --- Returns information about the map instance the player is currently in.
@@ -2740,6 +7462,12 @@ end
 function GetInventoryItemDurability(slot)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetInventoryItemEquippedUnusable]
+--- @return void
+function GetInventoryItemEquippedUnusable()
+end
+
 --- Returns the item id of the item in the specified inventory slot
 --- [https://wowpedia.fandom.com/wiki/API_GetInventoryItemID]
 --- @param unit string @ The UnitId of the unit whose inventory is to be queried.
@@ -2772,6 +7500,12 @@ end
 function GetInventoryItemTexture(unit, slotId)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetInventoryItemsForSlot]
+--- @return void
+function GetInventoryItemsForSlot()
+end
+
 --- Return information about a specific inventory slot
 --- [https://wowpedia.fandom.com/wiki/API_GetInventorySlotInfo]
 --- @param slotName string @ InventorySlotName to query (e.g. HEADSLOT).
@@ -2784,6 +7518,12 @@ end
 --- @param invite unknown @ unknown - return value of function GetNextPendingInviteConfirmation
 --- @return number, string, string, boolean, boolean, number, number, number @ confirmationType, name, guid, rolesInvalid, willConvertToRaid, level, spec, itemLevel
 function GetInviteConfirmationInfo(invite)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetItemChildInfo]
+--- @return void
+function GetItemChildInfo()
 end
 
 --- Returns the name of the item type.
@@ -2808,6 +7548,12 @@ end
 --- @param includeReagentBank boolean @ ?Optional.  Could be nil. - If true, includes the reagent bank
 --- @return number @ count
 function GetItemCount(itemInfo, includeBank, includeUses, includeReagentBank)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetItemCreationContext]
+--- @return void
+function GetItemCreationContext()
 end
 
 --- Gets the bitfield of what types of bags an item can go into or contain.
@@ -2846,6 +7592,18 @@ end
 function GetItemInfoInstant(itemID_or_itemString_or_itemName_or_itemLink)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetItemInventorySlotInfo]
+--- @return void
+function GetItemInventorySlotInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetItemLevelColor]
+--- @return void
+function GetItemLevelColor()
+end
+
 --- Returns the proposed item level increment for the item being considered for upgrading.
 --- [https://wowpedia.fandom.com/wiki/API_GetItemLevelIncrement]
 --- @return number @ itemLevelIncrement
@@ -2857,6 +7615,12 @@ end
 --- @param quality number @ Enum.ItemQuality
 --- @return number, number, number, string @ r, g, b, hex
 function GetItemQualityColor(quality)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetItemSetInfo]
+--- @return void
+function GetItemSetInfo()
 end
 
 --- Returns which specializations an item is useful for.
@@ -2874,6 +7638,12 @@ end
 function GetItemSpell(itemID_or_itemString_or_itemName_or_itemLink)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetItemStatDelta]
+--- @return void
+function GetItemStatDelta()
+end
+
 --- Returns a table of stats for an item.
 --- [https://wowpedia.fandom.com/wiki/API_GetItemStats]
 --- @param itemLink unknown
@@ -2888,6 +7658,12 @@ end
 --- @param subClassID number @ ID of the item subtype
 --- @return string, boolean @ name, isArmorType
 function GetItemSubClassInfo(classID, subClassID)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetItemUniqueness]
+--- @return void
+function GetItemUniqueness()
 end
 
 --- Returns the current (upgraded) item level of the item being considered for upgrades.
@@ -2909,10 +7685,94 @@ end
 function GetItemUpgradeItemInfo()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetItemUpgradeStats]
+--- @return void
+function GetItemUpgradeStats()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetJailersTowerLevel]
+--- @return void
+function GetJailersTowerLevel()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetJournalInfoForSpellConfirmation]
+--- @return void
+function GetJournalInfoForSpellConfirmation()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFDChoiceCollapseState]
+--- @return void
+function GetLFDChoiceCollapseState()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFDChoiceEnabledState]
+--- @return void
+function GetLFDChoiceEnabledState()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFDChoiceOrder]
+--- @return void
+function GetLFDChoiceOrder()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFDLockInfo]
+--- @return void
+function GetLFDLockInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFDLockPlayerCount]
+--- @return void
+function GetLFDLockPlayerCount()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFDRoleLockInfo]
+--- @return void
+function GetLFDRoleLockInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFDRoleRestrictions]
+--- @return void
+function GetLFDRoleRestrictions()
+end
+
 --- Returns information about an LFG Kick vote currently in progress.
 --- [https://wowpedia.fandom.com/wiki/API_GetLFGBootProposal]
 --- @return number, number, number, string @ totalVotes, bootVotes, timeLeft, reason
 function GetLFGBootProposal()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGCategoryForID]
+--- @return void
+function GetLFGCategoryForID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGCompletionReward]
+--- @return void
+function GetLFGCompletionReward()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGCompletionRewardItem]
+--- @return void
+function GetLFGCompletionRewardItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGCompletionRewardItemLink]
+--- @return void
+function GetLFGCompletionRewardItemLink()
 end
 
 --- Returns the time at which you may once again use the dungeon finder after prematurely leaving a group.
@@ -2950,10 +7810,76 @@ end
 function GetLFGDungeonRewardCapBarInfo(VALOR_TIER1_LFG_ID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGDungeonRewardCapInfo]
+--- @return void
+function GetLFGDungeonRewardCapInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGDungeonRewardInfo]
+--- @return void
+function GetLFGDungeonRewardInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGDungeonRewardLink]
+--- @return void
+function GetLFGDungeonRewardLink()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGDungeonRewards]
+--- @return void
+function GetLFGDungeonRewards()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGDungeonShortageRewardInfo]
+--- @return void
+function GetLFGDungeonShortageRewardInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGDungeonShortageRewardLink]
+--- @return void
+function GetLFGDungeonShortageRewardLink()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGInfoServer]
+--- @return void
+function GetLFGInfoServer()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGInviteRoleAvailability]
+--- @return void
+function GetLFGInviteRoleAvailability()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGInviteRoleRestrictions]
+--- @return void
+function GetLFGInviteRoleRestrictions()
+end
+
 --- Returns information about the current LFD group invite.
 --- [https://wowpedia.fandom.com/wiki/API_GetLFGProposal]
 --- @return number, number, boolean, boolean, number @ completedEncounters, numMembers, isLeader, isHoliday, proposalCategory
 function GetLFGProposal()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGProposalEncounter]
+--- @return void
+function GetLFGProposalEncounter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGProposalMember]
+--- @return void
+function GetLFGProposalMember()
 end
 
 --- Returns the current state and wait times for being in queue.
@@ -2964,10 +7890,34 @@ end
 function GetLFGQueueStats(category, activeID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGQueuedList]
+--- @return void
+function GetLFGQueuedList()
+end
+
 --- Returns the time at which you may once again queue for a random dungeon.
 --- [https://wowpedia.fandom.com/wiki/API_GetLFGRandomCooldownExpiration]
 --- @return number @ expiryTime
 function GetLFGRandomCooldownExpiration()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGRandomDungeonInfo]
+--- @return void
+function GetLFGRandomDungeonInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGReadyCheckUpdate]
+--- @return void
+function GetLFGReadyCheckUpdate()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGReadyCheckUpdateBattlegroundInfo]
+--- @return void
+function GetLFGReadyCheckUpdateBattlegroundInfo()
 end
 
 --- Return information concerning the LFG Call to Arms rewards.
@@ -2978,10 +7928,22 @@ end
 function GetLFGRoleShortageRewards(dungeonID, shortageSeverity)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGRoleUpdate]
+--- @return void
+function GetLFGRoleUpdate()
+end
+
 --- Returns the name of the battleground queue triggering a role check.
 --- [https://wowpedia.fandom.com/wiki/API_GetLFGRoleUpdateBattlegroundInfo]
 --- @return string @ queueName
 function GetLFGRoleUpdateBattlegroundInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGRoleUpdateMember]
+--- @return void
+function GetLFGRoleUpdateMember()
 end
 
 --- Returns the objectives you are currently flagged to as LFG. Usage:  dungeonType, dungeonID = GetLFGRoleUpdateSlot(slot);
@@ -2994,6 +7956,12 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetLFGRoles]
 --- @return boolean, boolean, boolean, boolean @ isLeader, isTank, isHealer, isDPS
 function GetLFGRoles()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLFGSuspendedPlayers]
+--- @return void
+function GetLFGSuspendedPlayers()
 end
 
 --- Seems to be for used ordering the LFR list [1]
@@ -3010,10 +7978,40 @@ end
 function GetLanguageByIndex(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLatestCompletedAchievements]
+--- @return void
+function GetLatestCompletedAchievements()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLatestCompletedComparisonAchievements]
+--- @return void
+function GetLatestCompletedComparisonAchievements()
+end
+
 --- Returns up to three names of senders of unread mail in the character's inbox.
 --- [https://wowpedia.fandom.com/wiki/API_GetLatestThreeSenders]
 --- @return unknown, unknown, unknown @ sender1, sender2, sender3
 function GetLatestThreeSenders()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLatestUpdatedComparisonStats]
+--- @return void
+function GetLatestUpdatedComparisonStats()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLatestUpdatedStats]
+--- @return void
+function GetLatestUpdatedStats()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLegacyRaidDifficultyID]
+--- @return void
+function GetLegacyRaidDifficultyID()
 end
 
 --- Returns a list of dungeon/raid IDs that are advertised as available at a given level.
@@ -3030,10 +8028,40 @@ end
 function GetLifesteal()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLocalGameTime]
+--- @return void
+function GetLocalGameTime()
+end
+
 --- Returns information about the client locale.
 --- [https://wowpedia.fandom.com/wiki/API_GetLocale]
 --- @return unknown @ e
 function GetLocale()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLookingForGuildComment]
+--- @return void
+function GetLookingForGuildComment()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLookingForGuildSettings]
+--- @return void
+function GetLookingForGuildSettings()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLooseMacroIcons]
+--- @return void
+function GetLooseMacroIcons()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLooseMacroItemIcons]
+--- @return void
+function GetLooseMacroItemIcons()
 end
 
 --- Returns a table with all of the loot info for the current loot window.
@@ -3060,6 +8088,12 @@ end
 --- @param id number @ id is a number used by the server to keep track of items being rolled on.  It is generated server side and transmitted to the client.
 --- @return unknown @ itemLink
 function GetLootRollItemLink(id)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetLootRollTimeLeft]
+--- @return void
+function GetLootRollTimeLeft()
 end
 
 --- Returns information about the contents of a loot slot.
@@ -3109,6 +8143,12 @@ end
 function GetMacroBody(macroIndex_or_name)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMacroIcons]
+--- @return void
+function GetMacroIcons()
+end
+
 --- Returns macro slot index containing a macro with the specified name.
 --- [https://wowpedia.fandom.com/wiki/API_GetMacroIndexByName]
 --- @param name string @ Macro name to query.
@@ -3121,6 +8161,18 @@ end
 --- @param name_or_macroSlot unknown
 --- @return string, number, string, number @ name, icon, body, isLocal
 function GetMacroInfo(name_or_macroSlot)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMacroItem]
+--- @return void
+function GetMacroItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMacroItemIcons]
+--- @return void
+function GetMacroItemIcons()
 end
 
 --- Returns information about the spell a given macro is set to cast.
@@ -3156,10 +8208,28 @@ end
 function GetMasteryEffect()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMawPowerLinkBySpellID]
+--- @return void
+function GetMawPowerLinkBySpellID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMaxArenaCurrency]
+--- @return void
+function GetMaxArenaCurrency()
+end
+
 --- Returns the max number of battlefields you can queue for [1]
 --- [https://wowpedia.fandom.com/wiki/API_GetMaxBattlefieldID]
 --- @return number @ maxBattlefieldID
 function GetMaxBattlefieldID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMaxCombatRatingBonus]
+--- @return void
+function GetMaxCombatRatingBonus()
 end
 
 --- Maps an expansion level to a maximum character level for that expansion.
@@ -3181,6 +8251,36 @@ end
 function GetMaxLevelForPlayerExpansion()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMaxNumCUFProfiles]
+--- @return void
+function GetMaxNumCUFProfiles()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMaxPlayerLevel]
+--- @return void
+function GetMaxPlayerLevel()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMaxRenderScale]
+--- @return void
+function GetMaxRenderScale()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMaxRewardCurrencies]
+--- @return void
+function GetMaxRewardCurrencies()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMaxSpellStartRecoveryOffset]
+--- @return void
+function GetMaxSpellStartRecoveryOffset()
+end
+
 --- Returns the number of available talent tiers.
 --- [https://wowpedia.fandom.com/wiki/API_GetMaxTalentTier]
 --- @return number @ tiers
@@ -3191,6 +8291,24 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetMaximumExpansionLevel]
 --- @return number @ expansionLevel
 function GetMaximumExpansionLevel()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMeleeHaste]
+--- @return void
+function GetMeleeHaste()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMerchantCurrencies]
+--- @return void
+function GetMerchantCurrencies()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMerchantFilter]
+--- @return void
+function GetMerchantFilter()
 end
 
 --- The itemCount is the number of different types of items required, not how many of those types.  For example, the Scout's Tabard which requires 3 Arathi Basin Marks of Honor and 3 Warsong Gulch Marks of Honor would return a 2 for the item count.  To find out how many of each item is required, use the GetMerchantItemCostItem function.
@@ -3206,6 +8324,12 @@ end
 --- @param itemIndex number @ The index for the required item cost type, ascending from 1 to itemCount returned by GetMerchantItemCostInfo.
 --- @return string, number, string, string @ itemTexture, itemValue, itemLink, currencyName
 function GetMerchantItemCostItem(index, itemIndex)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMerchantItemID]
+--- @return void
+function GetMerchantItemID()
 end
 
 --- Returns information about a merchant's item.
@@ -3235,6 +8359,12 @@ end
 function GetMerchantNumItems()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMinRenderScale]
+--- @return void
+function GetMinRenderScale()
+end
+
 --- Returns the zone text, that is displayed over the minimap
 --- [https://wowpedia.fandom.com/wiki/API_GetMinimapZoneText]
 --- @return string @ zone
@@ -3261,11 +8391,23 @@ end
 function GetMirrorTimerProgress(timer)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetModResilienceDamageReduction]
+--- @return void
+function GetModResilienceDamageReduction()
+end
+
 --- Returns the modifier key assigned to the given action.
 --- [https://wowpedia.fandom.com/wiki/API_GetModifiedClick]
 --- @param action string @ The action to query. Actions defined by Blizzard:
 --- @return string @ key
 function GetModifiedClick(action)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetModifiedClickAction]
+--- @return void
+function GetModifiedClickAction()
 end
 
 --- Returns an integer value of your held money.
@@ -3274,16 +8416,64 @@ end
 function GetMoney()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMonitorAspectRatio]
+--- @return void
+function GetMonitorAspectRatio()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMonitorCount]
+--- @return void
+function GetMonitorCount()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMonitorName]
+--- @return void
+function GetMonitorName()
+end
+
 --- Returns the name of the button responsible causing the OnClick handler to fire.
 --- [https://wowpedia.fandom.com/wiki/API_GetMouseButtonClicked]
 --- @return string @ buttonName
 function GetMouseButtonClicked()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMouseButtonName]
+--- @return void
+function GetMouseButtonName()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMouseClickFocus]
+--- @return void
+function GetMouseClickFocus()
+end
+
 --- Returns the frame that is currently receiving mouse events.  The frame must have enableMouse=true
 --- [https://wowpedia.fandom.com/wiki/API_GetMouseFocus]
 --- @return table @ frameID
 function GetMouseFocus()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMouseMotionFocus]
+--- @return void
+function GetMouseMotionFocus()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMovieDownloadProgress]
+--- @return void
+function GetMovieDownloadProgress()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetMultiCastBarIndex]
+--- @return void
+function GetMultiCastBarIndex()
 end
 
 --- Returns a list of valid totem spells for the specified totem bar slot.
@@ -3299,10 +8489,28 @@ end
 function GetNegativeCorruptionEffectInfo()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNetIpTypes]
+--- @return void
+function GetNetIpTypes()
+end
+
 --- Returns various network statistics.
 --- [https://wowpedia.fandom.com/wiki/API_GetNetStats]
 --- @return number, number, number, number @ bandwidthIn, bandwidthOut, latencyHome, latencyWorld
 function GetNetStats()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNewSocketInfo]
+--- @return void
+function GetNewSocketInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNewSocketLink]
+--- @return void
+function GetNewSocketLink()
 end
 
 --- Return the next achievement in a chain.
@@ -3312,9 +8520,27 @@ end
 function GetNextAchievement(achievementID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNextCompleatedTutorial]
+--- @return void
+function GetNextCompleatedTutorial()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNextPendingInviteConfirmation]
+--- @return void
+function GetNextPendingInviteConfirmation()
+end
+
 --- [https://wowpedia.fandom.com/wiki/API_GetNormalizedRealmName]
 --- @return void
 function GetNormalizedRealmName()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumActiveQuests]
+--- @return void
+function GetNumActiveQuests()
 end
 
 --- Get the number of user supplied AddOns.
@@ -3327,6 +8553,18 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetNumArchaeologyRaces]
 --- @return number @ numRaces
 function GetNumArchaeologyRaces()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumArenaOpponentSpecs]
+--- @return void
+function GetNumArenaOpponentSpecs()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumArenaOpponents]
+--- @return void
+function GetNumArenaOpponents()
 end
 
 --- Returns the amount of artifacts the player has acquired from the provided race.
@@ -3342,16 +8580,34 @@ end
 function GetNumAutoQuestPopUps()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumAvailableQuests]
+--- @return void
+function GetNumAvailableQuests()
+end
+
 --- Returns information about the number of purchased bank bag slots.
 --- [https://wowpedia.fandom.com/wiki/API_GetNumBankSlots]
 --- @return number, number @ numSlots, full
 function GetNumBankSlots()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumBattlefieldFlagPositions]
+--- @return void
+function GetNumBattlefieldFlagPositions()
+end
+
 --- Appears to return the number of scores in the battleground/field scoreboard:
 --- [https://wowpedia.fandom.com/wiki/API_GetNumBattlefieldScores]
 --- @return unknown @ numBattlefieldScores
 function GetNumBattlefieldScores()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumBattlefieldVehicles]
+--- @return void
+function GetNumBattlefieldVehicles()
 end
 
 --- Returns the number of battleground types.
@@ -3364,6 +8620,18 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetNumBindings]
 --- @return unknown @ numKeyBindings
 function GetNumBindings()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumBuybackItems]
+--- @return void
+function GetNumBuybackItems()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumChannelMembers]
+--- @return void
+function GetNumChannelMembers()
 end
 
 --- Returns the number of existing player classes.
@@ -3391,10 +8659,22 @@ end
 function GetNumCompletedAchievements()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumDeclensionSets]
+--- @return void
+function GetNumDeclensionSets()
+end
+
 --- This function returns the number of channels and headers currently displayed by ChannelFrame. Usually used to loop through all available channels/headers to perfom API GetChannelDisplayInfo on them.  Note that this function only retrieves the number of visible channels/headers! Those subchannels that are hidden by a collapsed header are not counted.
 --- [https://wowpedia.fandom.com/wiki/API_GetNumDisplayChannels]
 --- @return unknown @ channelCount
 function GetNumDisplayChannels()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumDungeonForRandomSlot]
+--- @return void
+function GetNumDungeonForRandomSlot()
 end
 
 --- Needs summary.
@@ -3421,6 +8701,24 @@ end
 function GetNumFlexRaidDungeons()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumFlyouts]
+--- @return void
+function GetNumFlyouts()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumFrames]
+--- @return void
+function GetNumFrames()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumGroupChannels]
+--- @return void
+function GetNumGroupChannels()
+end
+
 --- Returns the total number of players in a group.
 --- [https://wowpedia.fandom.com/wiki/API_GetNumGroupMembers]
 --- @param groupType unknown @ Optional - One of the following:
@@ -3434,10 +8732,70 @@ end
 function GetNumGuildApplicants()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumGuildBankMoneyTransactions]
+--- @return void
+function GetNumGuildBankMoneyTransactions()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumGuildBankTabs]
+--- @return void
+function GetNumGuildBankTabs()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumGuildBankTransactions]
+--- @return void
+function GetNumGuildBankTransactions()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumGuildChallenges]
+--- @return void
+function GetNumGuildChallenges()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumGuildEvents]
+--- @return void
+function GetNumGuildEvents()
+end
+
 --- Returns the number of guild members.
 --- [https://wowpedia.fandom.com/wiki/API_GetNumGuildMembers]
 --- @return number, number, number @ numTotalGuildMembers, numOnlineGuildMembers, numOnlineAndMobileMembers
 function GetNumGuildMembers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumGuildMembershipRequests]
+--- @return void
+function GetNumGuildMembershipRequests()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumGuildNews]
+--- @return void
+function GetNumGuildNews()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumGuildPerks]
+--- @return void
+function GetNumGuildPerks()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumGuildRewards]
+--- @return void
+function GetNumGuildRewards()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumGuildTradeSkill]
+--- @return void
+function GetNumGuildTradeSkill()
 end
 
 --- Returns the number of item effects affected by upgrading the current item.
@@ -3464,6 +8822,18 @@ end
 function GetNumMacros()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumMembersInRank]
+--- @return void
+function GetNumMembersInRank()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumModifiedClickActions]
+--- @return void
+function GetNumModifiedClickActions()
+end
+
 --- Gets the number of names that have signed the open petition.
 --- [https://wowpedia.fandom.com/wiki/API_GetNumPetitionNames]
 --- @return number @ numNames
@@ -3474,6 +8844,18 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetNumQuestChoices]
 --- @return number @ numChoices
 function GetNumQuestChoices()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumQuestCurrencies]
+--- @return void
+function GetNumQuestCurrencies()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumQuestItemDrops]
+--- @return void
+function GetNumQuestItemDrops()
 end
 
 --- Returns the number of items nessecary to complete a particular quest.
@@ -3497,10 +8879,40 @@ end
 function GetNumQuestLogChoices(questID, includeCurrencies)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumQuestLogRewardCurrencies]
+--- @return void
+function GetNumQuestLogRewardCurrencies()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumQuestLogRewardFactions]
+--- @return void
+function GetNumQuestLogRewardFactions()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumQuestLogRewardSpells]
+--- @return void
+function GetNumQuestLogRewardSpells()
+end
+
 --- Returns the count of the rewards for a particular quest.
 --- [https://wowpedia.fandom.com/wiki/API_GetNumQuestLogRewards]
 --- @return number @ numQuestRewards
 function GetNumQuestLogRewards()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumQuestLogTasks]
+--- @return void
+function GetNumQuestLogTasks()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumQuestPOIWorldEffects]
+--- @return void
+function GetNumQuestPOIWorldEffects()
 end
 
 --- Returns the number of items unconditionally rewarded by the quest being completed.
@@ -3515,10 +8927,46 @@ end
 function GetNumRFDungeons()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumRaidProfiles]
+--- @return void
+function GetNumRaidProfiles()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumRandomDungeons]
+--- @return void
+function GetNumRandomDungeons()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumRandomScenarios]
+--- @return void
+function GetNumRandomScenarios()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumRecruitingGuilds]
+--- @return void
+function GetNumRecruitingGuilds()
+end
+
 --- Returns the number of currency rewards for the quest currently being viewed in the quest log or quest info frame.
 --- [https://wowpedia.fandom.com/wiki/API_GetNumRewardCurrencies]
 --- @return number @ numCurrencies
 function GetNumRewardCurrencies()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumRewardSpells]
+--- @return void
+function GetNumRewardSpells()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumRoutes]
+--- @return void
+function GetNumRoutes()
 end
 
 --- Returns the number of instances for which the player currently has lockout data saved.
@@ -3531,6 +8979,12 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetNumSavedWorldBosses]
 --- @return number @ numSavedWorldBosses
 function GetNumSavedWorldBosses()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumScenarios]
+--- @return void
+function GetNumScenarios()
 end
 
 --- Returns the number of shapeshift buttons (stances for Warriors, auras for Paladins, forms for Druids, etc) the player currently has.
@@ -3604,6 +9058,18 @@ end
 function GetNumTrainerServices()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumTreasurePickerItems]
+--- @return void
+function GetNumTreasurePickerItems()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumUnspentPvpTalents]
+--- @return void
+function GetNumUnspentPvpTalents()
+end
+
 --- Returns the number of unspent talents.
 --- [https://wowpedia.fandom.com/wiki/API_GetNumUnspentTalents]
 --- @return number @ numUnspentTalents
@@ -3622,11 +9088,35 @@ end
 function GetNumVoidTransferWithdrawal()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumWarGameTypes]
+--- @return void
+function GetNumWarGameTypes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumWorldPVPAreas]
+--- @return void
+function GetNumWorldPVPAreas()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetOSLocale]
+--- @return void
+function GetOSLocale()
+end
+
 --- Returns texture coordinates of an object icon.
 --- [https://wowpedia.fandom.com/wiki/API_GetObjectIconTextureCoords]
 --- @param objectIcon number @ index of the object icon to retrieve texture coordinates for, ascending from -2.
 --- @return number, number, number, number @ left, right, top, bottom
 function GetObjectIconTextureCoords(objectIcon)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetObjectiveText]
+--- @return void
+function GetObjectiveText()
 end
 
 --- Returns whether you're currently passing on all loot.
@@ -3635,9 +9125,45 @@ end
 function GetOptOutOfLoot()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetOverrideAPBySpellPower]
+--- @return void
+function GetOverrideAPBySpellPower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetOverrideBarIndex]
+--- @return void
+function GetOverrideBarIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetOverrideBarSkin]
+--- @return void
+function GetOverrideBarSkin()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetOverrideSpellPowerByAP]
+--- @return void
+function GetOverrideSpellPowerByAP()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPOITextureCoords]
+--- @return void
+function GetPOITextureCoords()
+end
+
 --- [https://wowpedia.fandom.com/wiki/API_GetPVPDesired]
 --- @return void
 function GetPVPDesired()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPVPGearStatRules]
+--- @return void
+function GetPVPGearStatRules()
 end
 
 --- Gets the statistics about your lifetime PVP contributions.
@@ -3676,6 +9202,12 @@ end
 function GetParryChance()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetParryChanceFromAttribute]
+--- @return void
+function GetParryChanceFromAttribute()
+end
+
 --- Returns a list of raidmembers with a main tank or main assist role.
 --- [https://wowpedia.fandom.com/wiki/API_GetPartyAssignment]
 --- @param assignment string @ The role to search, either MAINTANK or MAINASSIST (not case-sensitive).
@@ -3683,6 +9215,30 @@ end
 --- @param exactMatch boolean
 --- @return number, number @ raidIndex1, raidIndex2
 function GetPartyAssignment(assignment, raidmember, exactMatch)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPartyLFGBackfillInfo]
+--- @return void
+function GetPartyLFGBackfillInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPartyLFGID]
+--- @return void
+function GetPartyLFGID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPendingGlyphName]
+--- @return void
+function GetPendingGlyphName()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPendingInviteConfirmations]
+--- @return void
+function GetPendingInviteConfirmations()
 end
 
 --- Returns information about the player's personal PvP rating in a specific bracket.
@@ -3706,6 +9262,18 @@ end
 function GetPetActionInfo(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPetActionSlotUsable]
+--- @return void
+function GetPetActionSlotUsable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPetActionsUsable]
+--- @return void
+function GetPetActionsUsable()
+end
+
 --- Returns the pet's current XP total, and the XP total required for the next level.
 --- [https://wowpedia.fandom.com/wiki/API_GetPetExperience]
 --- @return number, number @ currXP, nextXP
@@ -3718,10 +9286,46 @@ end
 function GetPetFoodTypes()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPetIcon]
+--- @return void
+function GetPetIcon()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPetMeleeHaste]
+--- @return void
+function GetPetMeleeHaste()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPetSpellBonusDamage]
+--- @return void
+function GetPetSpellBonusDamage()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPetTalentTree]
+--- @return void
+function GetPetTalentTree()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPetTimeRemaining]
+--- @return void
+function GetPetTimeRemaining()
+end
+
 --- Gets the information for a petition being viewed.
 --- [https://wowpedia.fandom.com/wiki/API_GetPetitionInfo]
 --- @return string, string, string, number, string, boolean, number @ petitionType, title, bodyText, maxSigs, originator, isOriginator, minSigs
 function GetPetitionInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPetitionNameInfo]
+--- @return void
+function GetPetitionNameInfo()
 end
 
 --- Returns physical screen size of game.
@@ -3750,6 +9354,12 @@ end
 function GetPlayerInfoByGUID(guid)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPlayerTradeCurrency]
+--- @return void
+function GetPlayerTradeCurrency()
+end
+
 --- Gets the amount of money in the trade window for the current user.
 --- [https://wowpedia.fandom.com/wiki/API_GetPlayerTradeMoney]
 --- @return string @ playerTradeMoney
@@ -3763,11 +9373,41 @@ end
 function GetPossessInfo(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPowerRegen]
+--- @return void
+function GetPowerRegen()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPowerRegenForPowerType]
+--- @return void
+function GetPowerRegenForPowerType()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPrevCompleatedTutorial]
+--- @return void
+function GetPrevCompleatedTutorial()
+end
+
 --- Return the previous achievement in a chain.
 --- [https://wowpedia.fandom.com/wiki/API_GetPreviousAchievement]
 --- @param achievementID number @ The ID of the Achievement
 --- @return number @ previousAchievementID
 function GetPreviousAchievement(achievementID)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPreviousArenaSeason]
+--- @return void
+function GetPreviousArenaSeason()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPrimarySpecialization]
+--- @return void
+function GetPrimarySpecialization()
 end
 
 --- Gets details on a profession from its index including name, icon, and skill level.
@@ -3787,6 +9427,12 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetProgressText]
 --- @return string @ progress
 function GetProgressText()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPromotionRank]
+--- @return void
+function GetPromotionRank()
 end
 
 --- Returns the effect of PvP Power on damage dealt to players.
@@ -3811,10 +9457,28 @@ end
 function GetPvpTalentInfoByID(talentID, specGroupIndex, isInspect, inspectUnit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPvpTalentInfoBySpecialization]
+--- @return void
+function GetPvpTalentInfoBySpecialization()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetPvpTalentLink]
+--- @return void
+function GetPvpTalentLink()
+end
+
 --- Returns the material string associated with the particular quest. The material string is non-nil if this quest uses a custom texture other than the default Parchment texture.
 --- [https://wowpedia.fandom.com/wiki/API_GetQuestBackgroundMaterial]
 --- @return string @ material
 function GetQuestBackgroundMaterial()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestCurrencyID]
+--- @return void
+function GetQuestCurrencyID()
 end
 
 --- Returns information about a currency token rewarded from the quest currently being viewed in the quest info frame.
@@ -3823,6 +9487,18 @@ end
 --- @param index number @ The index of the currency to query, in the range [1,GetNumRewardCurrencies()].
 --- @return string, string, number, number @ name, texture, numItems, quality
 function GetQuestCurrencyInfo(itemType, index)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestExpansion]
+--- @return void
+function GetQuestExpansion()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestFactionGroup]
+--- @return void
+function GetQuestFactionGroup()
 end
 
 --- Returns the quest ID of the quest being offered/discussed with an NPC.
@@ -3837,6 +9513,12 @@ end
 --- @param index number @ index of the item of the specified type to return information about, ascending from 1.
 --- @return string, string, number, number, number @ name, texture, count, quality, isUsable
 function GetQuestItemInfo(type, index)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestItemInfoLootType]
+--- @return void
+function GetQuestItemInfoLootType()
 end
 
 --- Returns link to the quest item.
@@ -3861,6 +9543,30 @@ end
 function GetQuestLogChoiceInfo(itemNum)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogChoiceInfoLootType]
+--- @return void
+function GetQuestLogChoiceInfoLootType()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogCompletionText]
+--- @return void
+function GetQuestLogCompletionText()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogCriteriaSpell]
+--- @return void
+function GetQuestLogCriteriaSpell()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogItemDrop]
+--- @return void
+function GetQuestLogItemDrop()
+end
+
 --- [https://wowpedia.fandom.com/wiki/API_GetQuestLogItemLink]
 --- @param type string @ required, reward or choice
 --- @param index table @ Integer - Quest reward item index (starts with 1).
@@ -3876,11 +9582,35 @@ end
 function GetQuestLogLeaderBoard(i, questIndex)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogPortraitGiver]
+--- @return void
+function GetQuestLogPortraitGiver()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogPortraitTurnIn]
+--- @return void
+function GetQuestLogPortraitTurnIn()
+end
+
 --- Returns the description and objectives required for the selected (the one highlighted in the quest log) quest or by index.
 --- [https://wowpedia.fandom.com/wiki/API_GetQuestLogQuestText]
 --- @param questLogIndex number @ ?Optional.  Could be nil.
 --- @return string, string @ questDescription, questObjectives
 function GetQuestLogQuestText(questLogIndex)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogQuestType]
+--- @return void
+function GetQuestLogQuestType()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogRewardArtifactXP]
+--- @return void
+function GetQuestLogRewardArtifactXP()
 end
 
 --- Provides information about a currency reward for the quest currently being viewed in the quest log, or of the provided questId.
@@ -3889,6 +9619,18 @@ end
 --- @param questId unknown
 --- @return string, string, number, number, number @ name, texture, numItems, currencyId, quality
 function GetQuestLogRewardCurrencyInfo(index, questId)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogRewardFactionInfo]
+--- @return void
+function GetQuestLogRewardFactionInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogRewardHonor]
+--- @return void
+function GetQuestLogRewardHonor()
 end
 
 --- GetQuestLogRewardInfo returns information about mandatory quest reward items.
@@ -3906,6 +9648,12 @@ end
 function GetQuestLogRewardMoney(questID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogRewardSkillPoints]
+--- @return void
+function GetQuestLogRewardSkillPoints()
+end
+
 --- Returns information about the spell reward of the current selected quest.
 --- [https://wowpedia.fandom.com/wiki/API_GetQuestLogRewardSpell]
 --- @param rewardIndex number @ The index of the spell reward to get the details for
@@ -3914,10 +9662,46 @@ end
 function GetQuestLogRewardSpell(rewardIndex, questID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogRewardTitle]
+--- @return void
+function GetQuestLogRewardTitle()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogRewardXP]
+--- @return void
+function GetQuestLogRewardXP()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogSpecialItemCooldown]
+--- @return void
+function GetQuestLogSpecialItemCooldown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogSpecialItemInfo]
+--- @return void
+function GetQuestLogSpecialItemInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestLogSpellLink]
+--- @return void
+function GetQuestLogSpellLink()
+end
+
 --- Gets the seconds left for the current quest that is being timed.
 --- [https://wowpedia.fandom.com/wiki/API_GetQuestLogTimeLeft]
 --- @return unknown @ timeLeft
 function GetQuestLogTimeLeft()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestMoneyToGet]
+--- @return void
+function GetQuestMoneyToGet()
 end
 
 --- Returns information about a quest objective.
@@ -3927,6 +9711,36 @@ end
 --- @param Boolean unknown @ Required to actually obtain quest text.
 --- @return string, string, boolean, number, number @ text, objectiveType, finished, fulfilled, required
 function GetQuestObjectiveInfo(questID, objectiveIndex, Boolean)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestPOIBlobCount]
+--- @return void
+function GetQuestPOIBlobCount()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestPOILeaderBoard]
+--- @return void
+function GetQuestPOILeaderBoard()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestPOIs]
+--- @return void
+function GetQuestPOIs()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestPortraitGiver]
+--- @return void
+function GetQuestPortraitGiver()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestPortraitTurnIn]
+--- @return void
+function GetQuestPortraitTurnIn()
 end
 
 --- Returns a quest's objective completion percentage.
@@ -3949,6 +9763,30 @@ end
 function GetQuestReward(itemChoice)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestSortIndex]
+--- @return void
+function GetQuestSortIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestSpellLink]
+--- @return void
+function GetQuestSpellLink()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestText]
+--- @return void
+function GetQuestText()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestUiMapID]
+--- @return void
+function GetQuestUiMapID()
+end
+
 --- Returns info about a Raid Finder dungeon by index. Limited by player level and other factors, so only Raid Finder dungeons listed in the LFG tool can be looked up.
 --- [https://wowpedia.fandom.com/wiki/API_GetRFDungeonInfo]
 --- @param index number @ index of a Raid Finder dungeon, from 1 to GetNumRFDungeons()
@@ -3960,6 +9798,30 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetRaidDifficultyID]
 --- @return number @ difficultyID
 function GetRaidDifficultyID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRaidProfileFlattenedOptions]
+--- @return void
+function GetRaidProfileFlattenedOptions()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRaidProfileName]
+--- @return void
+function GetRaidProfileName()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRaidProfileOption]
+--- @return void
+function GetRaidProfileOption()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRaidProfileSavedPosition]
+--- @return void
+function GetRaidProfileSavedPosition()
 end
 
 --- Gets information about a raid member.
@@ -3976,6 +9838,24 @@ end
 function GetRaidTargetIndex(unit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRandomDungeonBestChoice]
+--- @return void
+function GetRandomDungeonBestChoice()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRandomScenarioBestChoice]
+--- @return void
+function GetRandomScenarioBestChoice()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRandomScenarioInfo]
+--- @return void
+function GetRandomScenarioInfo()
+end
+
 --- Returns the player's ranged critical hit chance.
 --- [https://wowpedia.fandom.com/wiki/API_GetRangedCritChance]
 --- @return number @ critChance
@@ -3986,6 +9866,30 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetRangedHaste]
 --- @return number @ haste
 function GetRangedHaste()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRatedBattleGroundInfo]
+--- @return void
+function GetRatedBattleGroundInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetReadyCheckStatus]
+--- @return void
+function GetReadyCheckStatus()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetReadyCheckTimeLeft]
+--- @return void
+function GetReadyCheckTimeLeft()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetReagentBankCost]
+--- @return void
+function GetReagentBankCost()
 end
 
 --- Returns the map instance name.
@@ -4007,10 +9911,40 @@ end
 function GetRealmName()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRecruitingGuildInfo]
+--- @return void
+function GetRecruitingGuildInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRecruitingGuildSelection]
+--- @return void
+function GetRecruitingGuildSelection()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRecruitingGuildSettings]
+--- @return void
+function GetRecruitingGuildSettings()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetReleaseTimeRemaining]
+--- @return void
+function GetReleaseTimeRemaining()
+end
+
 --- Arguments none
 --- [https://wowpedia.fandom.com/wiki/API_GetRepairAllCost]
 --- @return number, boolean @ repairAllCost, canRepair
 function GetRepairAllCost()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetResSicknessDuration]
+--- @return void
+function GetResSicknessDuration()
 end
 
 --- Returns whether the player is in a rested (earning double XP for kills) or normal state.
@@ -4025,6 +9959,78 @@ end
 function GetRestrictedAccountData()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRewardArtifactXP]
+--- @return void
+function GetRewardArtifactXP()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRewardHonor]
+--- @return void
+function GetRewardHonor()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRewardMoney]
+--- @return void
+function GetRewardMoney()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRewardNumSkillUps]
+--- @return void
+function GetRewardNumSkillUps()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRewardPackArtifactPower]
+--- @return void
+function GetRewardPackArtifactPower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRewardPackCurrencies]
+--- @return void
+function GetRewardPackCurrencies()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRewardPackItems]
+--- @return void
+function GetRewardPackItems()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRewardPackMoney]
+--- @return void
+function GetRewardPackMoney()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRewardPackTitle]
+--- @return void
+function GetRewardPackTitle()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRewardPackTitleName]
+--- @return void
+function GetRewardPackTitleName()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRewardSkillLineID]
+--- @return void
+function GetRewardSkillLineID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRewardSkillPoints]
+--- @return void
+function GetRewardSkillPoints()
+end
+
 --- Returns information about spell that you get as reward for completing quest currently in gossip frame.
 --- [https://wowpedia.fandom.com/wiki/API_GetRewardSpell]
 --- @return unknown, unknown, unknown, unknown @ texture, name, isTradeskillSpell, isSpellLearned
@@ -4035,6 +10041,12 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetRewardText]
 --- @return string @ reward
 function GetRewardText()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRewardTitle]
+--- @return void
+function GetRewardTitle()
 end
 
 --- Returns the experience reward of the quest most recently discussed with an NPC.
@@ -4055,6 +10067,18 @@ end
 --- @param slot number @ Ranging from 1 to 6 which correspond to the available rune slots from left to right.
 --- @return number @ count
 function GetRuneCount(slot)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRunningMacro]
+--- @return void
+function GetRunningMacro()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetRunningMacroButton]
+--- @return void
+function GetRunningMacroButton()
 end
 
 --- Retrieves the SavedInstanceChatLink to a specific instance.
@@ -4100,6 +10124,12 @@ end
 function GetSchoolString(schoolMask)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetScreenDPIScale]
+--- @return void
+function GetScreenDPIScale()
+end
+
 --- Returns the height of the window in pixels. This value is affected by the UI's scale.
 --- [https://wowpedia.fandom.com/wiki/API_GetScreenHeight]
 --- @return number @ screenHeight
@@ -4118,10 +10148,40 @@ end
 function GetScreenWidth()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetScriptCPUUsage]
+--- @return void
+function GetScriptCPUUsage()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSecondsUntilParentalControlsKick]
+--- @return void
+function GetSecondsUntilParentalControlsKick()
+end
+
 --- Returns the information for the selected race's current archaeology artifact.
 --- [https://wowpedia.fandom.com/wiki/API_GetSelectedArtifactInfo]
 --- @return unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown @ artifactName, artifactDescription, artifactRarity, artifactIcon, hoverDescription, keystoneCount, bgTexture, spellID
 function GetSelectedArtifactInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSelectedDisplayChannel]
+--- @return void
+function GetSelectedDisplayChannel()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSelectedFaction]
+--- @return void
+function GetSelectedFaction()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSelectedWarGameType]
+--- @return void
+function GetSelectedWarGameType()
 end
 
 --- Used to determine the amount of COD gold is entered for a mail that is sent.
@@ -4142,6 +10202,12 @@ end
 --- @param attachment number @ The index of the attachment to query, in the range of [1,ATTACHMENTS_MAX_SEND]
 --- @return unknown @ itemLink
 function GetSendMailItemLink(attachment)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSendMailMoney]
+--- @return void
+function GetSendMailMoney()
 end
 
 --- Gets the cost for sending mail.
@@ -4166,6 +10232,12 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetSessionTime]
 --- @return number @ sessionTime
 function GetSessionTime()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSetBonusesForSpecializationByItemID]
+--- @return void
+function GetSetBonusesForSpecializationByItemID()
 end
 
 --- For some classes the return value is nil during the loading process. You need to wait until UPDATE_SHAPESHIFT_FORMS fires to get correct return values.
@@ -4231,6 +10303,18 @@ end
 function GetSocketTypes()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSortBagsRightToLeft]
+--- @return void
+function GetSortBagsRightToLeft()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSpecChangeCost]
+--- @return void
+function GetSpecChangeCost()
+end
+
 --- Returns the index of the player's current specialization.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpecialization]
 --- @param isInspect boolean @ if true, return information for the inspected player
@@ -4275,6 +10359,12 @@ end
 function GetSpecializationMasterySpells(specIndex, isInspect, isPet)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSpecializationNameForSpecID]
+--- @return void
+function GetSpecializationNameForSpecID()
+end
+
 --- Returns the role a specialization is intended to perform.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpecializationRole]
 --- @param specIndex number @ Specialization index, ascending from 1.
@@ -4300,12 +10390,30 @@ end
 function GetSpecializationSpells(specIndex, isInspect, isPet)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSpecsForSpell]
+--- @return void
+function GetSpecsForSpell()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSpeed]
+--- @return void
+function GetSpeed()
+end
+
 --- Get information about a spell's Autocast.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpellAutocast]
 --- @param spellName_or_spellId unknown
 --- @param bookType string @ Either BOOKTYPE_SPELL (spell) or BOOKTYPE_PET (pet).
 --- @return number, number @ autocastable, autostate
 function GetSpellAutocast(spellName_or_spellId, bookType)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSpellAvailableLevel]
+--- @return void
+function GetSpellAvailableLevel()
 end
 
 --- Gives the (unmodified) cooldown and global cooldown of an ability in milliseconds.
@@ -4359,12 +10467,24 @@ end
 function GetSpellCharges(spellId_or_spellName)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSpellConfirmationPromptsInfo]
+--- @return void
+function GetSpellConfirmationPromptsInfo()
+end
+
 --- Retrieves the cooldown data of the spell specified.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpellCooldown]
 --- @param spellName_or_spellID_or_slotID unknown
 --- @param bookType string @ spell book category, e.g. BOOKTYPE_SPELL (spell) or BOOKTYPE_PET (pet).
 --- @return unknown, number, number, number @ start, duration, enabled, modRate
 function GetSpellCooldown(spellName_or_spellID_or_slotID, bookType)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSpellCount]
+--- @return void
+function GetSpellCount()
 end
 
 --- Returns a players critical hit chance with spells for a certain school.
@@ -4395,6 +10515,12 @@ end
 function GetSpellInfo(spellId_or_spellName, spellRank)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSpellLevelLearned]
+--- @return void
+function GetSpellLevelLearned()
+end
+
 --- Returns a hyperlink for a spell.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpellLink]
 --- @param slot number @ Valid values are 1 through total number of spells in the spellbook on all pages and all tabs, ignoring empty slots.
@@ -4411,11 +10537,35 @@ end
 function GetSpellLossOfControlCooldown(spellSlot, bookType_or_spellName_or_spellID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSpellPenetration]
+--- @return void
+function GetSpellPenetration()
+end
+
 --- Returns a table describing the resource cost of a spell.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpellPowerCost]
 --- @param spellName_or_spellID unknown
 --- @return table @ costs
 function GetSpellPowerCost(spellName_or_spellID)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSpellQueueWindow]
+--- @return void
+function GetSpellQueueWindow()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSpellRank]
+--- @return void
+function GetSpellRank()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSpellSubtext]
+--- @return void
+function GetSpellSubtext()
 end
 
 --- Retrieves information about the specified line of spells
@@ -4430,6 +10580,18 @@ end
 --- @param spellId_or_spellName unknown
 --- @return number @ icon
 function GetSpellTexture(spellId_or_spellName)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSpellTradeSkillLink]
+--- @return void
+function GetSpellTradeSkillLink()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSpellsForCharacterUpgradeTier]
+--- @return void
+function GetSpellsForCharacterUpgradeTier()
 end
 
 --- Returns a list of the food types a pet in the stable can eat.
@@ -4460,16 +10622,40 @@ end
 function GetStatisticsCategoryList()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSturdiness]
+--- @return void
+function GetSturdiness()
+end
+
 --- Returns the subzone name.
 --- [https://wowpedia.fandom.com/wiki/API_GetSubZoneText]
 --- @return string @ subzone
 function GetSubZoneText()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetSuggestedGroupSize]
+--- @return void
+function GetSuggestedGroupSize()
+end
+
 --- Returns information about the cooldown time of the RaF Summon Friend ability.
 --- [https://wowpedia.fandom.com/wiki/API_GetSummonFriendCooldown]
 --- @return number, number @ start, duration
 function GetSummonFriendCooldown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTabardCreationCost]
+--- @return void
+function GetTabardCreationCost()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTabardInfo]
+--- @return void
+function GetTabardInfo()
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_GetTalentInfo]
@@ -4492,6 +10678,12 @@ end
 function GetTalentInfoBySpecialization()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTalentLink]
+--- @return void
+function GetTalentLink()
+end
+
 --- Returns the column of the selected talent for a given tier.
 --- [https://wowpedia.fandom.com/wiki/API_GetTalentTierInfo]
 --- @param tier number @ Talent tier from 1 to MAX_TALENT_TIERS
@@ -4500,6 +10692,12 @@ end
 --- @param inspectedUnit string @ ? - Inspected unitId.
 --- @return unknown, unknown, unknown @ tierAvailable, selectedTalent, tierUnlockLevel
 function GetTalentTierInfo(tier, specGroupIndex, isInspect, inspectedUnit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTargetTradeCurrency]
+--- @return void
+function GetTargetTradeCurrency()
 end
 
 --- Gets the amount of money in the trade window for the target user.
@@ -4513,6 +10711,36 @@ end
 --- @param questID number @ Unique identifier for the quest.
 --- @return boolean, boolean, number @ isInArea, isOnMap, numObjectives
 function GetTaskInfo(questID)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTaskPOIs]
+--- @return void
+function GetTaskPOIs()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTasksTable]
+--- @return void
+function GetTasksTable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTaxiBenchmarkMode]
+--- @return void
+function GetTaxiBenchmarkMode()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTaxiMapID]
+--- @return void
+function GetTaxiMapID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTempShapeshiftBarIndex]
+--- @return void
+function GetTempShapeshiftBarIndex()
 end
 
 --- GetText is used to localize some game text. Currently only for the FACTION_STANDING_LABEL..N globalstring.
@@ -4549,6 +10777,12 @@ end
 function GetTimePreciseSec()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTimeToWellRested]
+--- @return void
+function GetTimeToWellRested()
+end
+
 --- Returns the name of a Title ID.
 --- [https://wowpedia.fandom.com/wiki/API_GetTitleName]
 --- @param titleId number @ Ranging from 1 to GetNumTitles. Not necessarily an index as there can be missing/skipped IDs in between.
@@ -4562,10 +10796,22 @@ end
 function GetTitleText()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetToolTipInfo]
+--- @return void
+function GetToolTipInfo()
+end
+
 --- Returns the total number of Achievement Points earned.
 --- [https://wowpedia.fandom.com/wiki/API_GetTotalAchievementPoints]
 --- @return number @ points
 function GetTotalAchievementPoints()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTotemCannotDismiss]
+--- @return void
+function GetTotemCannotDismiss()
 end
 
 --- Returns information about totems
@@ -4593,6 +10839,12 @@ end
 --- @param id number @ tracking type index, ascending from 1 to GetNumTrackingTypes().
 --- @return string, number, number, string, number @ name, texture, active, category, nested
 function GetTrackingInfo(id)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTradePlayerItemInfo]
+--- @return void
+function GetTradePlayerItemInfo()
 end
 
 --- Returns a single value: chat-ready item link.
@@ -4677,6 +10929,12 @@ end
 function GetTrainerServiceLevelReq(id)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTrainerServiceNumAbilityReq]
+--- @return void
+function GetTrainerServiceNumAbilityReq()
+end
+
 --- Gets the name of the skill at the specified line from the current trainer.
 --- [https://wowpedia.fandom.com/wiki/API_GetTrainerServiceSkillLine]
 --- @param index number @ Index of the trainer service to get the name of. Note that indices are affected by the trainer filter. (See GetTrainerServiceTypeFilter and SetTrainerServiceTypeFilter.)
@@ -4691,6 +10949,12 @@ end
 function GetTrainerServiceSkillReq(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTrainerServiceStepIndex]
+--- @return void
+function GetTrainerServiceStepIndex()
+end
+
 --- Returns the status of a skill filter in the trainer window.
 --- [https://wowpedia.fandom.com/wiki/API_GetTrainerServiceTypeFilter]
 --- @param type string @ Possible values:
@@ -4698,11 +10962,47 @@ end
 function GetTrainerServiceTypeFilter(type)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTrainerTradeskillRankValues]
+--- @return void
+function GetTrainerTradeskillRankValues()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTreasurePickerItemInfo]
+--- @return void
+function GetTreasurePickerItemInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetTutorialsEnabled]
+--- @return void
+function GetTutorialsEnabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetUICameraInfo]
+--- @return void
+function GetUICameraInfo()
+end
+
 --- Returns a table of indices for combo points that have been charged. If the unit does not have combo points, or no points are charged, this function may return nil.
 --- [https://wowpedia.fandom.com/wiki/API_GetUnitChargedPowerPoints]
 --- @param unit string
 --- @return number @ pointIndices
 function GetUnitChargedPowerPoints(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetUnitHealthModifier]
+--- @return void
+function GetUnitHealthModifier()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetUnitMaxHealthModifier]
+--- @return void
+function GetUnitMaxHealthModifier()
 end
 
 --- Needs summary.
@@ -4743,11 +11043,53 @@ end
 function GetUnitPowerBarTextureInfoByID()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetUnitPowerModifier]
+--- @return void
+function GetUnitPowerModifier()
+end
+
 --- Returns a value representing the moving speed of a unit. Added in Patch 3.0.1.
 --- [https://wowpedia.fandom.com/wiki/API_GetUnitSpeed]
 --- @param unit string @ unitId) - Unit to query the speed of. This has not been tested with all units but does work for player units.
 --- @return number, number, number, number @ currentSpeed, runSpeed, flightSpeed, swimSpeed
 function GetUnitSpeed(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetVehicleBarIndex]
+--- @return void
+function GetVehicleBarIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetVehicleUIIndicator]
+--- @return void
+function GetVehicleUIIndicator()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetVehicleUIIndicatorSeat]
+--- @return void
+function GetVehicleUIIndicatorSeat()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetVersatilityBonus]
+--- @return void
+function GetVersatilityBonus()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetVideoCaps]
+--- @return void
+function GetVideoCaps()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetVideoOptions]
+--- @return void
+function GetVideoOptions()
 end
 
 --- Returns the item link of an item in void storage.
@@ -4763,6 +11105,12 @@ end
 --- @param slotIndex number @ Index ranging from 1 to 80 (VOID_STORAGE_MAX)
 --- @return number, string, boolean, boolean, boolean, number @ itemID, textureName, locked, recentDeposit, isFiltered, quality
 function GetVoidItemInfo(tabIndex, slotIndex)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetVoidStorageSlotPageIndex]
+--- @return void
+function GetVoidStorageSlotPageIndex()
 end
 
 --- Returns the total Void Transfer cost [1]
@@ -4783,6 +11131,24 @@ end
 --- @param slotIndex number @ Index ranging from 1 to 9 (VOID_WITHDRAW_MAX)
 --- @return number, string @ itemID, textureName
 function GetVoidTransferWithdrawalInfo(slotIndex)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetVoidUnlockCost]
+--- @return void
+function GetVoidUnlockCost()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetWarGameQueueStatus]
+--- @return void
+function GetWarGameQueueStatus()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetWarGameTypeInfo]
+--- @return void
+function GetWarGameTypeInfo()
 end
 
 --- Returns information about the faction that is currently being watched.
@@ -4809,11 +11175,29 @@ end
 function GetWorldElapsedTime(timerID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetWorldElapsedTimers]
+--- @return void
+function GetWorldElapsedTimers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetWorldMapActionButtonSpellInfo]
+--- @return void
+function GetWorldMapActionButtonSpellInfo()
+end
+
 --- Get information regarding a world PvP zone (e.g. Wintergrasp or Tol Barad).
 --- [https://wowpedia.fandom.com/wiki/API_GetWorldPVPAreaInfo]
 --- @param index number @ the zone's index, from 1 to GetNumWorldPVPAreas()
 --- @return number, unknown, boolean, boolean, number, boolean, number, number @ pvpID, izedName, isActive, canQueue, startTime, canEnter, minLevel, maxLevel
 function GetWorldPVPAreaInfo(index)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GetWorldPVPQueueStatus]
+--- @return void
+function GetWorldPVPQueueStatus()
 end
 
 --- Returns the number of XP gained from killing mobs until player goes from rest state to normal state.
@@ -4842,11 +11226,35 @@ end
 function GiveMasterLoot(li, ci)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GroupHasOfflineMember]
+--- @return void
+function GroupHasOfflineMember()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GuildControlAddRank]
+--- @return void
+function GuildControlAddRank()
+end
+
 --- Deletes the rank at that index. The player must be the guild leader.
 --- [https://wowpedia.fandom.com/wiki/API_GuildControlDelRank]
 --- @param index number @ must be between 1 and the value returned by GuildControlGetNumRanks().
 --- @return void
 function GuildControlDelRank(index)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GuildControlGetAllowedShifts]
+--- @return void
+function GuildControlGetAllowedShifts()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GuildControlGetNumRanks]
+--- @return void
+function GuildControlGetNumRanks()
 end
 
 --- Returns the name of the rank at that index.
@@ -4876,6 +11284,18 @@ end
 --- @param enabled boolean @ whether the flag is enabled or disabled.
 --- @return void
 function GuildControlSetRankFlag(index, enabled)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GuildControlShiftRankDown]
+--- @return void
+function GuildControlShiftRankDown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GuildControlShiftRankUp]
+--- @return void
+function GuildControlShiftRankUp()
 end
 
 --- Demotes a specified player if you have that privilege.
@@ -4908,6 +11328,24 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GuildLeave]
 --- @return void
 function GuildLeave()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GuildMasterAbsent]
+--- @return void
+function GuildMasterAbsent()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GuildNewsSetSticky]
+--- @return void
+function GuildNewsSetSticky()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_GuildNewsSort]
+--- @return void
+function GuildNewsSort()
 end
 
 --- Promotes a specified player if you have that privilege.
@@ -4953,6 +11391,18 @@ end
 function GuildUninvite()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HandleAtlasMemberCommand]
+--- @return void
+function HandleAtlasMemberCommand()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasAPEffectsSpellPower]
+--- @return void
+function HasAPEffectsSpellPower()
+end
+
 --- Tests if an action slot is occupied.
 --- [https://wowpedia.fandom.com/wiki/API_HasAction]
 --- @param actionSlot number @ ActionSlot : The tested action slot.
@@ -4964,6 +11414,42 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_HasAlternateForm]
 --- @return boolean, boolean @ hasAlternateForm, inAlternateForm
 function HasAlternateForm()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasArtifactEquipped]
+--- @return void
+function HasArtifactEquipped()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasAttachedGlyph]
+--- @return void
+function HasAttachedGlyph()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasBonusActionBar]
+--- @return void
+function HasBonusActionBar()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasBoundGemProposed]
+--- @return void
+function HasBoundGemProposed()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasCompletedAnyAchievement]
+--- @return void
+function HasCompletedAnyAchievement()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasDualWieldPenalty]
+--- @return void
+function HasDualWieldPenalty()
 end
 
 --- Returns whether the player currently has an extra action bar/button.
@@ -4978,10 +11464,52 @@ end
 function HasFullControl()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasIgnoreDualWieldWeapon]
+--- @return void
+function HasIgnoreDualWieldWeapon()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasInboxItem]
+--- @return void
+function HasInboxItem()
+end
+
 --- Returns whether the player is in a random party formed by the dungeon finder system.
 --- [https://wowpedia.fandom.com/wiki/API_HasLFGRestrictions]
 --- @return number @ isRestricted
 function HasLFGRestrictions()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasLoadedCUFProfiles]
+--- @return void
+function HasLoadedCUFProfiles()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasNewMail]
+--- @return void
+function HasNewMail()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasNoReleaseAura]
+--- @return void
+function HasNoReleaseAura()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasOverrideActionBar]
+--- @return void
+function HasOverrideActionBar()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasPendingGlyphCast]
+--- @return void
+function HasPendingGlyphCast()
 end
 
 --- Returns how many abilities your pet has available.
@@ -4996,10 +11524,52 @@ end
 function HasPetUI()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasSPEffectsAttackPower]
+--- @return void
+function HasSPEffectsAttackPower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasSendMailItem]
+--- @return void
+function HasSendMailItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasTempShapeshiftActionBar]
+--- @return void
+function HasTempShapeshiftActionBar()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HasVehicleActionBar]
+--- @return void
+function HasVehicleActionBar()
+end
+
 --- HasWandEquipped();
 --- [https://wowpedia.fandom.com/wiki/API_HasWandEquipped]
 --- @return void
 function HasWandEquipped()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HaveQuestData]
+--- @return void
+function HaveQuestData()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HaveQuestRewardData]
+--- @return void
+function HaveQuestRewardData()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_HearthAndResurrectFromArea]
+--- @return void
+function HearthAndResurrectFromArea()
 end
 
 --- Takes the cursor out of repair mode.
@@ -5052,6 +11622,18 @@ end
 function InitiateTrade(unit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_InteractUnit]
+--- @return void
+function InteractUnit()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_Is64BitClient]
+--- @return void
+function Is64BitClient()
+end
+
 --- Returns if the account has been secured with Blizzard Mobile Authenticator.
 --- [https://wowpedia.fandom.com/wiki/API_IsAccountSecured]
 --- @return boolean @ accountSecured
@@ -5078,6 +11660,18 @@ end
 function IsActiveBattlefieldArena()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsActiveQuestLegendary]
+--- @return void
+function IsActiveQuestLegendary()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsActiveQuestTrivial]
+--- @return void
+function IsActiveQuestTrivial()
+end
+
 --- Determine if an AddOn is loaded on demand (via .toc file dependencies or LoadAddOn) rather than at startup
 --- [https://wowpedia.fandom.com/wiki/API_IsAddOnLoadOnDemand]
 --- @param index_or_name unknown
@@ -5092,6 +11686,12 @@ end
 function IsAddOnLoaded(index_or_name)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsAddonVersionCheckEnabled]
+--- @return void
+function IsAddonVersionCheckEnabled()
+end
+
 --- Returns whether the player can teleport to/from an LFG instance.
 --- [https://wowpedia.fandom.com/wiki/API_IsAllowedToUserTeleport]
 --- @return boolean @ allowedToTeleport
@@ -5101,6 +11701,42 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_IsAltKeyDown]
 --- @return void
 function IsAltKeyDown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsArenaSkirmish]
+--- @return void
+function IsArenaSkirmish()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsArenaTeamCaptain]
+--- @return void
+function IsArenaTeamCaptain()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsArtifactCompletionHistoryAvailable]
+--- @return void
+function IsArtifactCompletionHistoryAvailable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsArtifactPowerItem]
+--- @return void
+function IsArtifactPowerItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsArtifactRelicItem]
+--- @return void
+function IsArtifactRelicItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsAtStableMaster]
+--- @return void
+function IsAtStableMaster()
 end
 
 --- Determine whether action slot is an attack action.
@@ -5124,12 +11760,102 @@ end
 function IsAutoRepeatAction(actionSlot)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsAutoRepeatSpell]
+--- @return void
+function IsAutoRepeatSpell()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsAvailableQuestTrivial]
+--- @return void
+function IsAvailableQuestTrivial()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsBNLogin]
+--- @return void
+function IsBNLogin()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsBagSlotFlagEnabledOnOtherBags]
+--- @return void
+function IsBagSlotFlagEnabledOnOtherBags()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsBagSlotFlagEnabledOnOtherBankBags]
+--- @return void
+function IsBagSlotFlagEnabledOnOtherBankBags()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsBarberShopStyleValid]
+--- @return void
+function IsBarberShopStyleValid()
+end
+
 --- Returns whether an item was purchased from the in-game store.
 --- [https://wowpedia.fandom.com/wiki/API_IsBattlePayItem]
 --- @param bag number @ bagID) - container ID, e.g. 0 for backpack.
 --- @param slot number @ slot index within the container, ascending from 1.
 --- @return boolean @ isPayItem
 function IsBattlePayItem(bag, slot)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsBindingForGamePad]
+--- @return void
+function IsBindingForGamePad()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsBreadcrumbQuest]
+--- @return void
+function IsBreadcrumbQuest()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsCastingGlyph]
+--- @return void
+function IsCastingGlyph()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsCemeterySelectionAvailable]
+--- @return void
+function IsCemeterySelectionAvailable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsCharacterNewlyBoosted]
+--- @return void
+function IsCharacterNewlyBoosted()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsChatAFK]
+--- @return void
+function IsChatAFK()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsChatChannelRaid]
+--- @return void
+function IsChatChannelRaid()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsChatDND]
+--- @return void
+function IsChatDND()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsCompetitiveModeEnabled]
+--- @return void
+function IsCompetitiveModeEnabled()
 end
 
 --- Tests if the action is linked to a consumable item.
@@ -5146,6 +11872,24 @@ end
 function IsConsumableItem(itemID_or_itemLink_or_itemName)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsConsumableSpell]
+--- @return void
+function IsConsumableSpell()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsContainerFiltered]
+--- @return void
+function IsContainerFiltered()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsContainerItemAnUpgrade]
+--- @return void
+function IsContainerItemAnUpgrade()
+end
+
 --- [https://wowpedia.fandom.com/wiki/API_IsControlKeyDown]
 --- @return void
 function IsControlKeyDown()
@@ -5158,11 +11902,29 @@ end
 function IsCorruptedItem(itemID_or_name_or_itemlink)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsCosmeticItem]
+--- @return void
+function IsCosmeticItem()
+end
+
 --- Determine whether an action is currently executing.
 --- [https://wowpedia.fandom.com/wiki/API_IsCurrentAction]
 --- @param actionSlot number @ action slot ID to query.
 --- @return number @ isCurrent
 function IsCurrentAction(actionSlot)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsCurrentItem]
+--- @return void
+function IsCurrentItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsCurrentQuestFailed]
+--- @return void
+function IsCurrentQuestFailed()
 end
 
 --- Returns whether a spell is currently is being casted by the player or is placed in the queue to be casted next. If spell is current then action bar indicates its slot with highlighted frame.
@@ -5172,10 +11934,64 @@ end
 function IsCurrentSpell(spellID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsDebugBuild]
+--- @return void
+function IsDebugBuild()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsDemonHunterAvailable]
+--- @return void
+function IsDemonHunterAvailable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsDesaturateSupported]
+--- @return void
+function IsDesaturateSupported()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsDisplayChannelModerator]
+--- @return void
+function IsDisplayChannelModerator()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsDisplayChannelOwner]
+--- @return void
+function IsDisplayChannelOwner()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsDressableItem]
+--- @return void
+function IsDressableItem()
+end
+
 --- Returns if your character is Dual wielding.
 --- [https://wowpedia.fandom.com/wiki/API_IsDualWielding]
 --- @return boolean @ isDualWield
 function IsDualWielding()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsEncounterInProgress]
+--- @return void
+function IsEncounterInProgress()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsEncounterLimitingResurrections]
+--- @return void
+function IsEncounterLimitingResurrections()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsEncounterSuppressingRelease]
+--- @return void
+function IsEncounterSuppressingRelease()
 end
 
 --- Returns 1 if item is an equip-able one at all, your character notwithstanding, or nil if not.
@@ -5204,6 +12020,18 @@ end
 --- @param type string @ ItemType) - any valid inventory type, item class, or item subclass
 --- @return boolean @ isEquipped
 function IsEquippedItemType(type)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsEuropeanNumbers]
+--- @return void
+function IsEuropeanNumbers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsEveryoneAssistant]
+--- @return void
+function IsEveryoneAssistant()
 end
 
 --- Needs summary.
@@ -5249,10 +12077,82 @@ end
 function IsGMClient()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsGUIDInGroup]
+--- @return void
+function IsGUIDInGroup()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsGamePadCursorControlEnabled]
+--- @return void
+function IsGamePadCursorControlEnabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsGamePadFreelookEnabled]
+--- @return void
+function IsGamePadFreelookEnabled()
+end
+
 --- This function checks if you are the guild master or not.
 --- [https://wowpedia.fandom.com/wiki/API_IsGuildLeader]
 --- @return boolean @ isGuildLeader
 function IsGuildLeader()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsGuildMember]
+--- @return void
+function IsGuildMember()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsGuildRankAssignmentAllowed]
+--- @return void
+function IsGuildRankAssignmentAllowed()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsHarmfulItem]
+--- @return void
+function IsHarmfulItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsHarmfulSpell]
+--- @return void
+function IsHarmfulSpell()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsHelpfulItem]
+--- @return void
+function IsHelpfulItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsHelpfulSpell]
+--- @return void
+function IsHelpfulSpell()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsInActiveWorldPVP]
+--- @return void
+function IsInActiveWorldPVP()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsInArenaTeam]
+--- @return void
+function IsInArenaTeam()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsInAuthenticatedRank]
+--- @return void
+function IsInAuthenticatedRank()
 end
 
 --- Returns true during cinematics produced dynamically by the game engine.[citation needed]
@@ -5274,10 +12174,28 @@ end
 function IsInGuild()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsInGuildGroup]
+--- @return void
+function IsInGuildGroup()
+end
+
 --- Checks whether the player is in an instance and the type of instance.
 --- [https://wowpedia.fandom.com/wiki/API_IsInInstance]
 --- @return number, string @ inInstance, instanceType
 function IsInInstance()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsInJailersTower]
+--- @return void
+function IsInJailersTower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsInLFGDungeon]
+--- @return void
+function IsInLFGDungeon()
 end
 
 --- Indicates whether the player is in a [specific type of] raid group.
@@ -5287,10 +12205,28 @@ end
 function IsInRaid(groupType)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsInScenarioGroup]
+--- @return void
+function IsInScenarioGroup()
+end
+
 --- Returns whether the player's character is currently indoors. Most mounts are not usable indoors.
 --- [https://wowpedia.fandom.com/wiki/API_IsIndoors]
 --- @return unknown @ indoors
 function IsIndoors()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsInsane]
+--- @return void
+function IsInsane()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsInventoryItemAnUpgrade]
+--- @return void
+function IsInventoryItemAnUpgrade()
 end
 
 --- Returns whether an inventory item is locked, usually as it awaits pending action.
@@ -5298,6 +12234,18 @@ end
 --- @param slotId number @ The slot ID used to refer to that slot in the other GetInventory functions.
 --- @return number @ isLocked
 function IsInventoryItemLocked(slotId)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsInventoryItemProfessionBag]
+--- @return void
+function IsInventoryItemProfessionBag()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsItemAction]
+--- @return void
+function IsItemAction()
 end
 
 --- Returns whether the item is in usable range of the unit.
@@ -5308,10 +12256,28 @@ end
 function IsItemInRange(item, unit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsJailersTowerLayerTimeLocked]
+--- @return void
+function IsJailersTowerLayerTimeLocked()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsKeyDown]
+--- @return void
+function IsKeyDown()
+end
+
 --- Returns whether you have currently finished a Dungeon Finder instance. Used in the FrameXML whether to show a leave confirmation popup. [1]
 --- [https://wowpedia.fandom.com/wiki/API_IsLFGComplete]
 --- @return boolean @ isComplete
 function IsLFGComplete()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsLFGDungeonJoinable]
+--- @return void
+function IsLFGDungeonJoinable()
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_IsLeftAltKeyDown]
@@ -5324,9 +12290,21 @@ end
 function IsLeftControlKeyDown()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsLeftMetaKeyDown]
+--- @return void
+function IsLeftMetaKeyDown()
+end
+
 --- [https://wowpedia.fandom.com/wiki/API_IsLeftShiftKeyDown]
 --- @return void
 function IsLeftShiftKeyDown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsLegacyDifficulty]
+--- @return void
+function IsLegacyDifficulty()
 end
 
 --- This is a boolean function which returns true if World of Warcraft is being run using the Linux client, it will return false with the Windows client under wine or OS X client run on other operating systems. Although there is no current official Linux client, the beta version of WoW had a Linux client, and the code retains a function to test for it.
@@ -5335,10 +12313,28 @@ end
 function IsLinuxClient()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsLoggedIn]
+--- @return void
+function IsLoggedIn()
+end
+
 --- Checks to see if client is running on a Macintosh.
 --- [https://wowpedia.fandom.com/wiki/API_IsMacClient]
 --- @return boolean @ isMac
 function IsMacClient()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsMasterLooter]
+--- @return void
+function IsMasterLooter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsMetaKeyDown]
+--- @return void
+function IsMetaKeyDown()
 end
 
 --- Indicates whether the modifier keys for the selected action are pressed.
@@ -5373,6 +12369,12 @@ end
 function IsMouselooking()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsMovieLocal]
+--- @return void
+function IsMovieLocal()
+end
+
 --- Returns if the movie exists and can be played. Exceptions apply.
 --- [https://wowpedia.fandom.com/wiki/API_IsMoviePlayable]
 --- @param movieID number
@@ -5384,6 +12386,18 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_IsOnGlueScreen]
 --- @return boolean @ isOnGlueScreen
 function IsOnGlueScreen()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsOnGroundFloorInJailersTower]
+--- @return void
+function IsOnGroundFloorInJailersTower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsOnTournamentRealm]
+--- @return void
+function IsOnTournamentRealm()
 end
 
 --- Returns whether the player's character is currently outside of the map.
@@ -5398,6 +12412,30 @@ end
 function IsOutdoors()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsOutlineModeSupported]
+--- @return void
+function IsOutlineModeSupported()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsPVPTimerRunning]
+--- @return void
+function IsPVPTimerRunning()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsPartyLFG]
+--- @return void
+function IsPartyLFG()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsPartyWorldPVP]
+--- @return void
+function IsPartyWorldPVP()
+end
+
 --- Returns whether the icon in your spellbook is a Passive ability (not necessarily a spell). (And actually noted as so in spellbook)
 --- [https://wowpedia.fandom.com/wiki/API_IsPassiveSpell]
 --- @param spellId_or_index unknown
@@ -5406,10 +12444,40 @@ end
 function IsPassiveSpell(spellId_or_index, bookType)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsPendingGlyphRemoval]
+--- @return void
+function IsPendingGlyphRemoval()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsPetActive]
+--- @return void
+function IsPetActive()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsPetAttackAction]
+--- @return void
+function IsPetAttackAction()
+end
+
 --- boolean attackStatus = IsPetAttackActive(integer index)
 --- [https://wowpedia.fandom.com/wiki/API_IsPetAttackActive]
 --- @return void
 function IsPetAttackActive()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsPlayerInWorld]
+--- @return void
+function IsPlayerInWorld()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsPlayerMoving]
+--- @return void
+function IsPlayerMoving()
 end
 
 --- Returns whether the player is currently neutral (vs Alliance/Horde).
@@ -5425,10 +12493,70 @@ end
 function IsPlayerSpell(spellID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsPossessBarVisible]
+--- @return void
+function IsPossessBarVisible()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsPublicBuild]
+--- @return void
+function IsPublicBuild()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsPvpTalentSpell]
+--- @return void
+function IsPvpTalentSpell()
+end
+
 --- Returns true if the currently loaded quest in the quest window is completable.
 --- [https://wowpedia.fandom.com/wiki/API_IsQuestCompletable]
 --- @return boolean @ isQuestCompletable
 function IsQuestCompletable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsQuestIDValidSpellTarget]
+--- @return void
+function IsQuestIDValidSpellTarget()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsQuestItemHidden]
+--- @return void
+function IsQuestItemHidden()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsQuestLogSpecialItemInRange]
+--- @return void
+function IsQuestLogSpecialItemInRange()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsQuestSequenced]
+--- @return void
+function IsQuestSequenced()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsRaidMarkerActive]
+--- @return void
+function IsRaidMarkerActive()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsRangedWeapon]
+--- @return void
+function IsRangedWeapon()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsReagentBankUnlocked]
+--- @return void
+function IsReagentBankUnlocked()
 end
 
 --- Returns true if a given character name is recognized by the client.
@@ -5446,10 +12574,22 @@ end
 function IsRecruitAFriendLinked()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsReplacingUnit]
+--- @return void
+function IsReplacingUnit()
+end
+
 --- Checks to see if Player is resting.
 --- [https://wowpedia.fandom.com/wiki/API_IsResting]
 --- @return boolean @ resting
 function IsResting()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsRestrictedAccount]
+--- @return void
+function IsRestrictedAccount()
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_IsRightAltKeyDown]
@@ -5462,9 +12602,27 @@ end
 function IsRightControlKeyDown()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsRightMetaKeyDown]
+--- @return void
+function IsRightMetaKeyDown()
+end
+
 --- [https://wowpedia.fandom.com/wiki/API_IsRightShiftKeyDown]
 --- @return void
 function IsRightShiftKeyDown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsSelectedSpellBookItem]
+--- @return void
+function IsSelectedSpellBookItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsServerControlledBackfill]
+--- @return void
+function IsServerControlledBackfill()
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_IsShiftKeyDown]
@@ -5496,6 +12654,12 @@ end
 function IsSpellKnown(spellID, isPetSpell)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsSpellKnownOrOverridesKnown]
+--- @return void
+function IsSpellKnownOrOverridesKnown()
+end
+
 --- Returns whether spellID is using SpellActivationAlert (glowing-circle around it) currently, or not.
 --- [https://wowpedia.fandom.com/wiki/API_IsSpellOverlayed]
 --- @param spellID number @ the spell ID number
@@ -5503,10 +12667,40 @@ end
 function IsSpellOverlayed(spellID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsSpellValidForPendingGlyph]
+--- @return void
+function IsSpellValidForPendingGlyph()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsSplashFramePrimaryFeatureUnlocked]
+--- @return void
+function IsSplashFramePrimaryFeatureUnlocked()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsStackableAction]
+--- @return void
+function IsStackableAction()
+end
+
 --- Indicates whether the player is stealthed.
 --- [https://wowpedia.fandom.com/wiki/API_IsStealthed]
 --- @return boolean @ stealthed
 function IsStealthed()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsStoryQuest]
+--- @return void
+function IsStoryQuest()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsSubZonePVPPOI]
+--- @return void
+function IsSubZonePVPPOI()
 end
 
 --- Returns whether the player character is submerged in water.
@@ -5527,6 +12721,12 @@ end
 --- @param bookType string @ one of BOOKTYPE_SPELL (spell) or BOOKTYPE_PET (pet).
 --- @return boolean @ isTalentSpell
 function IsTalentSpell(spellName_or_slotIndex, bookType)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsTestBuild]
+--- @return void
+function IsTestBuild()
 end
 
 --- Returns whether threat warnings are currently enabled.
@@ -5554,6 +12754,12 @@ end
 function IsTrackingBattlePets()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsTrackingHiddenQuests]
+--- @return void
+function IsTrackingHiddenQuests()
+end
+
 --- Determine whether last opened trainer window offered trade skill (profession) abilities.
 --- [https://wowpedia.fandom.com/wiki/API_IsTradeskillTrainer]
 --- @return unknown @ isTradeskillTrainer
@@ -5564,6 +12770,12 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_IsTrialAccount]
 --- @return boolean @ isTrialAccount
 function IsTrialAccount()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsTutorialFlagged]
+--- @return void
+function IsTutorialFlagged()
 end
 
 --- Needs summary.
@@ -5580,6 +12792,12 @@ end
 function IsUsableAction(slot)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsUsableItem]
+--- @return void
+function IsUsableItem()
+end
+
 --- Determines whether a spell can be used by the player character.
 --- [https://wowpedia.fandom.com/wiki/API_IsUsableSpell]
 --- @param spellName_or_spellID_or_spellIndex unknown
@@ -5588,10 +12806,40 @@ end
 function IsUsableSpell(spellName_or_spellID_or_spellIndex, bookType)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsUsingFixedTimeStep]
+--- @return void
+function IsUsingFixedTimeStep()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsUsingVehicleControls]
+--- @return void
+function IsUsingVehicleControls()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsVehicleAimAngleAdjustable]
+--- @return void
+function IsVehicleAimAngleAdjustable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsVehicleAimPowerAdjustable]
+--- @return void
+function IsVehicleAimPowerAdjustable()
+end
+
 --- Needs summary.
 --- [https://wowpedia.fandom.com/wiki/API_IsVeteranTrialAccount]
 --- @return boolean @ isVeteranTrialAccount
 function IsVeteranTrialAccount()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsVoidStorageReady]
+--- @return void
+function IsVoidStorageReady()
 end
 
 --- Returns whether the player is currently in a War Game.
@@ -5604,6 +12852,30 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_IsWindowsClient]
 --- @return void
 function IsWindowsClient()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_IsXPUserDisabled]
+--- @return void
+function IsXPUserDisabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ItemAddedToArtifact]
+--- @return void
+function ItemAddedToArtifact()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ItemCanTargetGarrisonFollowerAbility]
+--- @return void
+function ItemCanTargetGarrisonFollowerAbility()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ItemHasRange]
+--- @return void
+function ItemHasRange()
 end
 
 --- Get the creator of an item text.
@@ -5642,6 +12914,12 @@ end
 function ItemTextHasNextPage()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ItemTextIsFullPage]
+--- @return void
+function ItemTextIsFullPage()
+end
+
 --- Request the next page of an Item Text
 --- [https://wowpedia.fandom.com/wiki/API_ItemTextNextPage]
 --- @return void
@@ -5652,6 +12930,12 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_ItemTextPrevPage]
 --- @return void
 function ItemTextPrevPage()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_JoinArena]
+--- @return void
+function JoinArena()
 end
 
 --- Queues the player, or the player's group, for a battlefield instance.
@@ -5673,6 +12957,12 @@ end
 function JoinChannelByName(channelName, password, frameID, hasVoice)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_JoinLFG]
+--- @return void
+function JoinLFG()
+end
+
 --- Seems to have the same effect as API_JoinChannelByName.
 --- [https://wowpedia.fandom.com/wiki/API_JoinPermanentChannel]
 --- @param channelName string @ The name of the channel to join
@@ -5681,6 +12971,18 @@ end
 --- @param hasVoice boolean @ nil) - Enable voice chat for this channel.
 --- @return number, string @ type, name
 function JoinPermanentChannel(channelName, password, frameID, hasVoice)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_JoinRatedBattlefield]
+--- @return void
+function JoinRatedBattlefield()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_JoinSingleLFG]
+--- @return void
+function JoinSingleLFG()
 end
 
 --- Queue for a arena either solo or as a group.
@@ -5725,6 +13027,36 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_KBArticle_IsLoaded]
 --- @return boolean @ loaded
 function KBArticle_IsLoaded()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_KBQuery_BeginLoading]
+--- @return void
+function KBQuery_BeginLoading()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_KBQuery_GetArticleHeaderCount]
+--- @return void
+function KBQuery_GetArticleHeaderCount()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_KBQuery_GetArticleHeaderData]
+--- @return void
+function KBQuery_GetArticleHeaderData()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_KBQuery_GetTotalArticleCount]
+--- @return void
+function KBQuery_GetTotalArticleCount()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_KBQuery_IsLoaded]
+--- @return void
+function KBQuery_IsLoaded()
 end
 
 --- Starts the loading of articles.
@@ -5834,11 +13166,23 @@ end
 function LearnPvpTalent(talentID, slotIndex)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_LearnPvpTalents]
+--- @return void
+function LearnPvpTalents()
+end
+
 --- Learns the name of a specified talent in a specified tab.
 --- [https://wowpedia.fandom.com/wiki/API_LearnTalent]
 --- @param talentID string @ Talent ID
 --- @return void
 function LearnTalent(talentID)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_LearnTalents]
+--- @return void
+function LearnTalents()
 end
 
 --- Leaves the current battlefield
@@ -5847,11 +13191,29 @@ end
 function LeaveBattlefield()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_LeaveChannelByLocalID]
+--- @return void
+function LeaveChannelByLocalID()
+end
+
 --- Leaves the channel with the specified name.
 --- [https://wowpedia.fandom.com/wiki/API_LeaveChannelByName]
 --- @param channelName string @ The name of the channel to leave
 --- @return void
 function LeaveChannelByName(channelName)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_LeaveLFG]
+--- @return void
+function LeaveLFG()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_LeaveSingleLFG]
+--- @return void
+function LeaveSingleLFG()
 end
 
 --- Lists members in the given channel to the chat window.
@@ -5881,6 +13243,12 @@ end
 function LoadBindings(bindingSet)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_LoadURLIndex]
+--- @return void
+function LoadURLIndex()
+end
+
 --- Toggles the chat logging and returns the current state.
 --- [https://wowpedia.fandom.com/wiki/API_LoggingChat]
 --- @param newState boolean @ toggles chat logging
@@ -5901,6 +13269,12 @@ end
 function Logout()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_LootMoneyNotify]
+--- @return void
+function LootMoneyNotify()
+end
+
 --- This will attempt to loot the specified slot. If you must confirm that you want to loot the slot (BoP, loot rolls, etc), then a follow-up call to ConfirmLootSlot is needed.
 --- [https://wowpedia.fandom.com/wiki/API_LootSlot]
 --- @param slot number @ the loot slot.
@@ -5915,6 +13289,12 @@ end
 function LootSlotHasItem(lootSlot)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_MouseOverrideCinematicDisable]
+--- @return void
+function MouseOverrideCinematicDisable()
+end
+
 --- Enters mouse look mode, during which mouse movement is used to alter the character's movement/facing direction.
 --- [https://wowpedia.fandom.com/wiki/API_MouselookStart]
 --- @return void
@@ -5925,6 +13305,18 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_MouselookStop]
 --- @return void
 function MouselookStop()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_MoveAndSteerStart]
+--- @return void
+function MoveAndSteerStart()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_MoveAndSteerStop]
+--- @return void
+function MoveAndSteerStop()
 end
 
 --- The player begins moving backward at the specified time.
@@ -6033,6 +13425,12 @@ end
 function MoveViewUpStop()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_MultiSampleAntiAliasingSupported]
+--- @return void
+function MultiSampleAntiAliasingSupported()
+end
+
 --- Mutes a sound file.
 --- [https://wowpedia.fandom.com/wiki/API_MuteSoundFile]
 --- @param soundFile_or_fileDataID unknown
@@ -6045,6 +13443,12 @@ end
 --- @param factionIndex number @ to choose the Horde, 2 to choose the Alliance.
 --- @return void
 function NeutralPlayerSelectFaction(factionIndex)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_NextView]
+--- @return void
+function NextView()
 end
 
 --- Indicates the player's account has reached a daily curfew of 90 minutes, imposed on children and any non-confirmed adults in China to comply with local law.[1]
@@ -6078,10 +13482,28 @@ end
 function OfferPetition()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_OpenTrainer]
+--- @return void
+function OpenTrainer()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_OpeningCinematic]
+--- @return void
+function OpeningCinematic()
+end
+
 --- Returns whether the current billing unit is considered tired or not. This function is to limit players from playing the game for too long.
 --- [https://wowpedia.fandom.com/wiki/API_PartialPlayTime]
 --- @return void
 function PartialPlayTime()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PartyLFGStartBackfill]
+--- @return void
+function PartyLFGStartBackfill()
 end
 
 --- Permanently abandons your pet.
@@ -6112,6 +13534,12 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_PetCanBeAbandoned]
 --- @return boolean @ canAbandon
 function PetCanBeAbandoned()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PetCanBeDismissed]
+--- @return void
+function PetCanBeDismissed()
 end
 
 --- Retuns true if the pet can be renamed.
@@ -6150,6 +13578,18 @@ end
 function PetHasActionBar()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PetHasSpellbook]
+--- @return void
+function PetHasSpellbook()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PetMoveTo]
+--- @return void
+function PetMoveTo()
+end
+
 --- Set your pet into passive mode.
 --- [https://wowpedia.fandom.com/wiki/API_PetPassiveMode]
 --- @return void
@@ -6167,6 +13607,12 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_PetStopAttack]
 --- @return void
 function PetStopAttack()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PetUsesPetFrame]
+--- @return void
+function PetUsesPetFrame()
 end
 
 --- Instruct your pet to remain still.
@@ -6203,6 +13649,18 @@ end
 --- @param slot number @ slot inside the bag (top left slot is 1, slot to the right of it is 2).
 --- @return void
 function PickupContainerItem(bagID, slot)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PickupGuildBankItem]
+--- @return void
+function PickupGuildBankItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PickupGuildBankMoney]
+--- @return void
+function PickupGuildBankMoney()
 end
 
 --- Picks up an item from the player's worn inventory. This appears to be a kind of catch-all pick up/activate function.
@@ -6254,6 +13712,12 @@ end
 function PickupPlayerMoney(copper)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PickupPvpTalent]
+--- @return void
+function PickupPvpTalent()
+end
+
 --- Puts the specified spell onto the mouse cursor.
 --- [https://wowpedia.fandom.com/wiki/API_PickupSpell]
 --- @param spellID number @ spell ID of the spell to pick up.
@@ -6276,6 +13740,12 @@ end
 function PickupStablePet(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PickupTalent]
+--- @return void
+function PickupTalent()
+end
+
 --- Picks up an amount of money from the player's trading offer, placing it on the cursor.
 --- [https://wowpedia.fandom.com/wiki/API_PickupTradeMoney]
 --- @param copper number @ amount of money, in copper, to pick up.
@@ -6283,11 +13753,47 @@ end
 function PickupTradeMoney(copper)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PitchDownStart]
+--- @return void
+function PitchDownStart()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PitchDownStop]
+--- @return void
+function PitchDownStop()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PitchUpStart]
+--- @return void
+function PitchUpStart()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PitchUpStop]
+--- @return void
+function PitchUpStop()
+end
+
 --- Place the drag-and-drop item as an action.
 --- [https://wowpedia.fandom.com/wiki/API_PlaceAction]
 --- @param actionSlot number @ The action slot to place the action into.
 --- @return void
 function PlaceAction(actionSlot)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PlaceRaidMarker]
+--- @return void
+function PlaceRaidMarker()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PlayAutoAcceptQuestSound]
+--- @return void
+function PlayAutoAcceptQuestSound()
 end
 
 --- Plays the specified sound file on loop to the Music sound channel.
@@ -6315,11 +13821,41 @@ end
 function PlaySoundFile(soundFile_or_soundFileID, channel)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PlayVocalErrorSoundID]
+--- @return void
+function PlayVocalErrorSoundID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PlayerCanTeleport]
+--- @return void
+function PlayerCanTeleport()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PlayerEffectiveAttackPower]
+--- @return void
+function PlayerEffectiveAttackPower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PlayerHasHearthstone]
+--- @return void
+function PlayerHasHearthstone()
+end
+
 --- Determines if player has a specific toy in their toybox
 --- [https://wowpedia.fandom.com/wiki/API_PlayerHasToy]
 --- @param itemId number @ itemId of a toy.
 --- @return unknown @ hasToy
 function PlayerHasToy(itemId)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PlayerIsPVPInactive]
+--- @return void
+function PlayerIsPVPInactive()
 end
 
 --- Needs summary.
@@ -6334,11 +13870,47 @@ end
 function PortGraveyard()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PreloadMovie]
+--- @return void
+function PreloadMovie()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PrevView]
+--- @return void
+function PrevView()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ProcessExceptionClient]
+--- @return void
+function ProcessExceptionClient()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ProcessQuestLogRewardFactions]
+--- @return void
+function ProcessQuestLogRewardFactions()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PromoteToAssistant]
+--- @return void
+function PromoteToAssistant()
+end
+
 --- Promotes a unit to party leader.
 --- [https://wowpedia.fandom.com/wiki/API_PromoteToLeader]
 --- @param unitId_or_playerName unknown
 --- @return void
 function PromoteToLeader(unitId_or_playerName)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_PurchaseSlot]
+--- @return void
+function PurchaseSlot()
 end
 
 --- Places the item currently on the cursor into the player's backpack otherwise it has no effect. If there is already a partial stack of the item in the backpack, it will attempt to stack them together.
@@ -6354,10 +13926,58 @@ end
 function PutItemInBag(slotId)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QueryGuildBankLog]
+--- @return void
+function QueryGuildBankLog()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QueryGuildBankTab]
+--- @return void
+function QueryGuildBankTab()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QueryGuildBankText]
+--- @return void
+function QueryGuildBankText()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QueryGuildEventLog]
+--- @return void
+function QueryGuildEventLog()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QueryGuildMembersForRecipe]
+--- @return void
+function QueryGuildMembersForRecipe()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QueryGuildNews]
+--- @return void
+function QueryGuildNews()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QueryGuildRecipes]
+--- @return void
+function QueryGuildRecipes()
+end
+
 --- Throws an error when the choose reward method doesn't work.
 --- [https://wowpedia.fandom.com/wiki/API_QuestChooseRewardError]
 --- @return void
 function QuestChooseRewardError()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QuestFlagsPVP]
+--- @return void
+function QuestFlagsPVP()
 end
 
 --- Returns whether the last-offered quest was automatically accepted.
@@ -6366,10 +13986,34 @@ end
 function QuestGetAutoAccept()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QuestGetAutoLaunched]
+--- @return void
+function QuestGetAutoLaunched()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QuestHasPOIInfo]
+--- @return void
+function QuestHasPOIInfo()
+end
+
 --- Returns whether the currently offered quest is a daily quest.
 --- [https://wowpedia.fandom.com/wiki/API_QuestIsDaily]
 --- @return number @ isDaily
 function QuestIsDaily()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QuestIsFromAdventureMap]
+--- @return void
+function QuestIsFromAdventureMap()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QuestIsFromAreaTrigger]
+--- @return void
+function QuestIsFromAreaTrigger()
 end
 
 --- Returns whether the currently offered quest is a weekly quest.
@@ -6384,6 +14028,24 @@ end
 function QuestLogPushQuest()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QuestLogRewardHasTreasurePicker]
+--- @return void
+function QuestLogRewardHasTreasurePicker()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QuestLogShouldShowPortrait]
+--- @return void
+function QuestLogShouldShowPortrait()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QuestMapUpdateAllQuests]
+--- @return void
+function QuestMapUpdateAllQuests()
+end
+
 --- Returns WorldMap POI icon information for the given quest.
 --- [https://wowpedia.fandom.com/wiki/API_QuestPOIGetIconInfo]
 --- @param questId number @ you can get this from the quest link or from GetQuestLogTitle(questLogIndex).
@@ -6391,10 +14053,34 @@ end
 function QuestPOIGetIconInfo(questId)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QuestPOIGetSecondaryLocations]
+--- @return void
+function QuestPOIGetSecondaryLocations()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_QuestPOIUpdateIcons]
+--- @return void
+function QuestPOIUpdateIcons()
+end
+
 --- Quits the game.
 --- [https://wowpedia.fandom.com/wiki/API_Quit]
 --- @return void
 function Quit()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RaidProfileExists]
+--- @return void
+function RaidProfileExists()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RaidProfileHasUnsavedChanges]
+--- @return void
+function RaidProfileHasUnsavedChanges()
 end
 
 --- Performs a random roll between two numbers.
@@ -6405,10 +14091,40 @@ end
 function RandomRoll(low, high)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ReagentBankButtonIDToInvSlotID]
+--- @return void
+function ReagentBankButtonIDToInvSlotID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RedockChatWindows]
+--- @return void
+function RedockChatWindows()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RefreshLFGList]
+--- @return void
+function RefreshLFGList()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RegisterStaticConstants]
+--- @return void
+function RegisterStaticConstants()
+end
+
 --- Rejects an Dungeon Finder group invitation and leaves the queue.
 --- [https://wowpedia.fandom.com/wiki/API_RejectProposal]
 --- @return void
 function RejectProposal()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RemoveAutoQuestPopUp]
+--- @return void
+function RemoveAutoQuestPopUp()
 end
 
 --- Blocks further messages from a specified chat channel from appearing in a specific chat frame.
@@ -6433,6 +14149,18 @@ end
 function RemoveItemFromArtifact()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RemovePvpTalent]
+--- @return void
+function RemovePvpTalent()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RemoveTalent]
+--- @return void
+function RemoveTalent()
+end
+
 --- Un-marks an achievement for tracking in the WatchFrame.
 --- [https://wowpedia.fandom.com/wiki/API_RemoveTrackedAchievement]
 --- @param achievementId number @ ID of the achievement to add to tracking.
@@ -6445,6 +14173,12 @@ end
 --- @param name string @ The new name of the group being created by the petition
 --- @return void
 function RenamePetition(name)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ReopenInteraction]
+--- @return void
+function ReopenInteraction()
 end
 
 --- Repairs all equipped and inventory items.
@@ -6478,6 +14212,24 @@ end
 function RepopMe()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ReportBug]
+--- @return void
+function ReportBug()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ReportPlayerIsPVPAFK]
+--- @return void
+function ReportPlayerIsPVPAFK()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ReportSuggestion]
+--- @return void
+function ReportSuggestion()
+end
+
 --- Queries the server for archeology data. RESEARCH_ARTIFACT_HISTORY_READY is fired when data is available.
 --- [https://wowpedia.fandom.com/wiki/API_RequestArtifactCompletionHistory]
 --- @return void
@@ -6497,10 +14249,76 @@ end
 function RequestBattlegroundInstanceInfo(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RequestBottomLeftActionBar]
+--- @return void
+function RequestBottomLeftActionBar()
+end
+
 --- Requests information about guild applicants received trough the Guild Finder.
 --- [https://wowpedia.fandom.com/wiki/API_RequestGuildApplicantsList]
 --- @return void
 function RequestGuildApplicantsList()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RequestGuildChallengeInfo]
+--- @return void
+function RequestGuildChallengeInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RequestGuildMembership]
+--- @return void
+function RequestGuildMembership()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RequestGuildMembershipList]
+--- @return void
+function RequestGuildMembershipList()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RequestGuildPartyState]
+--- @return void
+function RequestGuildPartyState()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RequestGuildRecruitmentSettings]
+--- @return void
+function RequestGuildRecruitmentSettings()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RequestGuildRewards]
+--- @return void
+function RequestGuildRewards()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RequestLFDPartyLockInfo]
+--- @return void
+function RequestLFDPartyLockInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RequestLFDPlayerLockInfo]
+--- @return void
+function RequestLFDPlayerLockInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RequestPVPOptionsEnabled]
+--- @return void
+function RequestPVPOptionsEnabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RequestPVPRewards]
+--- @return void
+function RequestPVPRewards()
 end
 
 --- Sends a request to the server to send back information about the instance.
@@ -6521,10 +14339,46 @@ end
 function RequestRatedInfo()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RequestRecruitingGuildsList]
+--- @return void
+function RequestRecruitingGuildsList()
+end
+
 --- Send a request to the server to get an update of the time played.
 --- [https://wowpedia.fandom.com/wiki/API_RequestTimePlayed]
 --- @return void
 function RequestTimePlayed()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RequeueSkirmish]
+--- @return void
+function RequeueSkirmish()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ResetAddOns]
+--- @return void
+function ResetAddOns()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ResetCPUUsage]
+--- @return void
+function ResetCPUUsage()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ResetChatColors]
+--- @return void
+function ResetChatColors()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ResetChatWindows]
+--- @return void
+function ResetChatWindows()
 end
 
 --- Resets mouse cursor.
@@ -6533,10 +14387,22 @@ end
 function ResetCursor()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ResetDisabledAddOns]
+--- @return void
+function ResetDisabledAddOns()
+end
+
 --- Resets all instances the currently playing character is associated with.
 --- [https://wowpedia.fandom.com/wiki/API_ResetInstances]
 --- @return void
 function ResetInstances()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ResetSetMerchantFilter]
+--- @return void
+function ResetSetMerchantFilter()
 end
 
 --- Starts with the first tutorial again
@@ -6545,16 +14411,76 @@ end
 function ResetTutorials()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ResetView]
+--- @return void
+function ResetView()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ResistancePercent]
+--- @return void
+function ResistancePercent()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RespondInstanceLock]
+--- @return void
+function RespondInstanceLock()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RespondMailLockSendItem]
+--- @return void
+function RespondMailLockSendItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RespondToInviteConfirmation]
+--- @return void
+function RespondToInviteConfirmation()
+end
+
 --- Requests the graphics engine to restart.
 --- [https://wowpedia.fandom.com/wiki/API_RestartGx]
 --- @return void
 function RestartGx()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_RestoreRaidProfileFromCopy]
+--- @return void
+function RestoreRaidProfileFromCopy()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ResurrectGetOfferer]
+--- @return void
+function ResurrectGetOfferer()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ResurrectHasSickness]
+--- @return void
+function ResurrectHasSickness()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ResurrectHasTimer]
+--- @return void
+function ResurrectHasTimer()
+end
+
 --- Resurrects when the player is standing near its corpse.
 --- [https://wowpedia.fandom.com/wiki/API_RetrieveCorpse]
 --- @return void
 function RetrieveCorpse()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ReturnInboxItem]
+--- @return void
+function ReturnInboxItem()
 end
 
 --- Roll on the Loot roll identified by rollID; rollType is nil when passing, otherwise it uses 1 to roll on loot.
@@ -6594,11 +14520,23 @@ end
 function RunScript(script)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SaveAddOns]
+--- @return void
+function SaveAddOns()
+end
+
 --- Writes the current in-memory key bindings to disk.
 --- [https://wowpedia.fandom.com/wiki/API_SaveBindings]
 --- @param which number @ This value indicates whether the current key bindings set should be saved as account or character specific. One of following constants should be used:
 --- @return void
 function SaveBindings(which)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SaveRaidProfileCopy]
+--- @return void
+function SaveRaidProfileCopy()
 end
 
 --- Saves a camera angle for later retrieval with SetView. The last position loaded is stored in the CVar cameraView.
@@ -6612,6 +14550,24 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_Screenshot]
 --- @return void
 function Screenshot()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ScriptsDisallowedForBeta]
+--- @return void
+function ScriptsDisallowedForBeta()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SearchLFGGetEncounterResults]
+--- @return void
+function SearchLFGGetEncounterResults()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SearchLFGGetJoinedID]
+--- @return void
+function SearchLFGGetJoinedID()
 end
 
 --- Returns how many players listed in raid browser for selected LFG id.
@@ -6643,11 +14599,35 @@ end
 function SearchLFGJoin(typeID, lfgID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SearchLFGLeave]
+--- @return void
+function SearchLFGLeave()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SearchLFGSort]
+--- @return void
+function SearchLFGSort()
+end
+
 --- Evaluates macro options in the string and returns the appropriate sub-string or nil
 --- [https://wowpedia.fandom.com/wiki/API_SecureCmdOptionParse]
 --- @param options string @ a secure command options string to be parsed, e.g. [mod:alt] ALT is held down; [mod:ctrl] CTRL is held down, but ALT is not; neither ALT nor CTRL is held down.
 --- @return string, string @ result, target
 function SecureCmdOptionParse(options)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SelectActiveQuest]
+--- @return void
+function SelectActiveQuest()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SelectAvailableQuest]
+--- @return void
+function SelectAvailableQuest()
 end
 
 --- Notifies the server that a trainer service has been selected.
@@ -6661,6 +14641,12 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_SelectedRealmName]
 --- @return string @ realmName
 function SelectedRealmName()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SellCursorItem]
+--- @return void
+function SellCursorItem()
 end
 
 --- Sends a chat message.
@@ -6727,11 +14713,77 @@ end
 function SetActionBarToggles(bottomLeftState, bottomRightState, sideRightState, sideRight2State, alwaysShow)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetActionUIButton]
+--- @return void
+function SetActionUIButton()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetAddonVersionCheck]
+--- @return void
+function SetAddonVersionCheck()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetAllowDangerousScripts]
+--- @return void
+function SetAllowDangerousScripts()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetAllowLowLevelRaid]
+--- @return void
+function SetAllowLowLevelRaid()
+end
+
 --- Sets whether guild invitations should be automatically declined.
 --- [https://wowpedia.fandom.com/wiki/API_SetAutoDeclineGuildInvites]
 --- @param decline string @ Number - 1 or 1 if guild invitations should be automatically declined, or 0 or 0 if invitations should be shown to the user.
 --- @return void
 function SetAutoDeclineGuildInvites(decline)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetBackpackAutosortDisabled]
+--- @return void
+function SetBackpackAutosortDisabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetBagPortraitTexture]
+--- @return void
+function SetBagPortraitTexture()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetBagSlotFlag]
+--- @return void
+function SetBagSlotFlag()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetBankAutosortDisabled]
+--- @return void
+function SetBankAutosortDisabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetBankBagSlotFlag]
+--- @return void
+function SetBankBagSlotFlag()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetBarSlotFromIntro]
+--- @return void
+function SetBarSlotFromIntro()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetBarberShopAlternateFormFrame]
+--- @return void
+function SetBarberShopAlternateFormFrame()
 end
 
 --- Set the faction to show on the battlefield scoreboard
@@ -6783,6 +14835,12 @@ end
 function SetBindingSpell(key, spell)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetCemeteryPreference]
+--- @return void
+function SetCemeteryPreference()
+end
+
 --- Sets the channel owner.
 --- [https://wowpedia.fandom.com/wiki/API_SetChannelOwner]
 --- @param channel unknown @ channel name to be changed
@@ -6799,11 +14857,89 @@ end
 function SetChannelPassword(channelName, password)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetChatColorNameByClass]
+--- @return void
+function SetChatColorNameByClass()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetChatWindowAlpha]
+--- @return void
+function SetChatWindowAlpha()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetChatWindowColor]
+--- @return void
+function SetChatWindowColor()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetChatWindowDocked]
+--- @return void
+function SetChatWindowDocked()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetChatWindowLocked]
+--- @return void
+function SetChatWindowLocked()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetChatWindowName]
+--- @return void
+function SetChatWindowName()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetChatWindowSavedDimensions]
+--- @return void
+function SetChatWindowSavedDimensions()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetChatWindowSavedPosition]
+--- @return void
+function SetChatWindowSavedPosition()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetChatWindowShown]
+--- @return void
+function SetChatWindowShown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetChatWindowSize]
+--- @return void
+function SetChatWindowSize()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetChatWindowUninteractable]
+--- @return void
+function SetChatWindowUninteractable()
+end
+
 --- Sets the key used to open the console overlay for the current session.
 --- [https://wowpedia.fandom.com/wiki/API_SetConsoleKey]
 --- @param key string @ The character to bind to opening the console overlay, or nil to disable the console binding.
 --- @return void
 function SetConsoleKey(key)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetCurrentGraphicsSetting]
+--- @return void
+function SetCurrentGraphicsSetting()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetCurrentGuildBankTab]
+--- @return void
+function SetCurrentGuildBankTab()
 end
 
 --- Changes your character's displayed title.
@@ -6820,11 +14956,35 @@ end
 function SetCursor(cursor)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetCursorVirtualItem]
+--- @return void
+function SetCursorVirtualItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetDefaultVideoOptions]
+--- @return void
+function SetDefaultVideoOptions()
+end
+
 --- Changes the player's current dungeon difficulty.
 --- [https://wowpedia.fandom.com/wiki/API_SetDungeonDifficultyID]
 --- @param difficultyIndex number @ 1 → 5 Player
 --- @return void
 function SetDungeonDifficultyID(difficultyIndex)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetEuropeanNumbers]
+--- @return void
+function SetEuropeanNumbers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetEveryoneIsAssistant]
+--- @return void
+function SetEveryoneIsAssistant()
 end
 
 --- Clears the inactive flag on the specified faction.
@@ -6841,6 +15001,30 @@ end
 function SetFactionInactive(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetFocusedAchievement]
+--- @return void
+function SetFocusedAchievement()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetGamePadCursorControl]
+--- @return void
+function SetGamePadCursorControl()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetGamePadFreeLook]
+--- @return void
+function SetGamePadFreeLook()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetGuildApplicantSelection]
+--- @return void
+function SetGuildApplicantSelection()
+end
+
 --- Sets a guild bank tab's name and icon.
 --- [https://wowpedia.fandom.com/wiki/API_SetGuildBankTabInfo]
 --- @param tab number @ Bank Tab to edit.
@@ -6848,6 +15032,12 @@ end
 --- @param icon number @ FileID of the new icon texture.
 --- @return void
 function SetGuildBankTabInfo(tab, name, icon)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetGuildBankTabItemWithdraw]
+--- @return void
+function SetGuildBankTabItemWithdraw()
 end
 
 --- Edits permissions for a bank tab.
@@ -6881,6 +15071,30 @@ end
 function SetGuildInfoText(text)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetGuildMemberRank]
+--- @return void
+function SetGuildMemberRank()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetGuildNewsFilter]
+--- @return void
+function SetGuildNewsFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetGuildRecruitmentComment]
+--- @return void
+function SetGuildRecruitmentComment()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetGuildRecruitmentSettings]
+--- @return void
+function SetGuildRecruitmentSettings()
+end
+
 --- Sets the the current selected guild member in the guild roster according the active sorting.
 --- [https://wowpedia.fandom.com/wiki/API_SetGuildRosterSelection]
 --- @param index unknown
@@ -6895,11 +15109,101 @@ end
 function SetGuildRosterShowOffline(enabled)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetGuildTradeSkillCategoryFilter]
+--- @return void
+function SetGuildTradeSkillCategoryFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetGuildTradeSkillItemNameFilter]
+--- @return void
+function SetGuildTradeSkillItemNameFilter()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetInWorldUIVisibility]
+--- @return void
+function SetInWorldUIVisibility()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetInsertItemsLeftToRight]
+--- @return void
+function SetInsertItemsLeftToRight()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetInventoryPortraitTexture]
+--- @return void
+function SetInventoryPortraitTexture()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetItemSearch]
+--- @return void
+function SetItemSearch()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetItemUpgradeFromCursorItem]
+--- @return void
+function SetItemUpgradeFromCursorItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetLFGBootVote]
+--- @return void
+function SetLFGBootVote()
+end
+
 --- Sets your comment in the LFG interface.
 --- [https://wowpedia.fandom.com/wiki/API_SetLFGComment]
 --- @param comment unknown
 --- @return void
 function SetLFGComment(comment)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetLFGDungeon]
+--- @return void
+function SetLFGDungeon()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetLFGDungeonEnabled]
+--- @return void
+function SetLFGDungeonEnabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetLFGHeaderCollapsed]
+--- @return void
+function SetLFGHeaderCollapsed()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetLFGRoles]
+--- @return void
+function SetLFGRoles()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetLegacyRaidDifficultyID]
+--- @return void
+function SetLegacyRaidDifficultyID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetLookingForGuildComment]
+--- @return void
+function SetLookingForGuildComment()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetLookingForGuildSettings]
+--- @return void
+function SetLookingForGuildSettings()
 end
 
 --- method may be any one of the following self-explanatory and case insensitive arguments: group, freeforall, master, needbeforegreed, roundrobin.
@@ -6908,6 +15212,12 @@ end
 --- @param masterPlayer_or_threshold unknown
 --- @return void
 function SetLootMethod(method, masterPlayer_or_threshold)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetLootPortrait]
+--- @return void
+function SetLootPortrait()
 end
 
 --- Sets the player's loot specialization.
@@ -6924,6 +15234,12 @@ end
 function SetLootThreshold(threshold)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetMacroItem]
+--- @return void
+function SetMacroItem()
+end
+
 --- Changes the spell used for dynamic feedback for a macro.
 --- [https://wowpedia.fandom.com/wiki/API_SetMacroSpell]
 --- @param index number @ Index of the macro, using the values 1-36 for the first page and 37-54 for the second.
@@ -6933,12 +15249,24 @@ end
 function SetMacroSpell(index, spell, target)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetMerchantFilter]
+--- @return void
+function SetMerchantFilter()
+end
+
 --- Assigns the given modifier key to the given action.
 --- [https://wowpedia.fandom.com/wiki/API_SetModifiedClick]
 --- @param action string @ The action to set a key for. Actions defined by Blizzard:
 --- @param key string @ The key to assign. Must be one of:
 --- @return void
 function SetModifiedClick(action, key)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetMouselookOverrideBinding]
+--- @return void
+function SetMouselookOverrideBinding()
 end
 
 --- Needs summary.
@@ -7021,6 +15349,18 @@ end
 function SetOverrideBindingSpell(owner, isPriority, key, spell)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetPOIIconOverlapDistance]
+--- @return void
+function SetPOIIconOverlapDistance()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetPOIIconOverlapPushDistance]
+--- @return void
+function SetPOIIconOverlapPushDistance()
+end
+
 --- Permaflags the player for PvP combat.
 --- [https://wowpedia.fandom.com/wiki/API_SetPVP]
 --- @param flag number @ to enable, nil to disable.
@@ -7035,6 +15375,18 @@ end
 --- @param dps boolean @ true if the player is willing to deal damage, false otherwise.
 --- @return void
 function SetPVPRoles(tank, healer, dps)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetPartyAssignment]
+--- @return void
+function SetPartyAssignment()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetPetSlot]
+--- @return void
+function SetPetSlot()
 end
 
 --- Sets the paperdoll model in the pet stable to a new player model.
@@ -7075,6 +15427,18 @@ end
 function SetRaidDifficultyID(difficultyIndex)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetRaidProfileOption]
+--- @return void
+function SetRaidProfileOption()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetRaidProfileSavedPosition]
+--- @return void
+function SetRaidProfileSavedPosition()
+end
+
 --- Move a raid member from his current subgroup into a different (non-full) subgroup.
 --- [https://wowpedia.fandom.com/wiki/API_SetRaidSubgroup]
 --- @param index unknown
@@ -7091,6 +15455,24 @@ end
 function SetRaidTarget(unit, index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetRaidTargetProtected]
+--- @return void
+function SetRaidTargetProtected()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetRecruitingGuildSelection]
+--- @return void
+function SetRecruitingGuildSelection()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetSavedInstanceExtend]
+--- @return void
+function SetSavedInstanceExtend()
+end
+
 --- Returns the index of the current resolution in effect
 --- [https://wowpedia.fandom.com/wiki/API_SetScreenResolution]
 --- @param index unknown
@@ -7105,12 +15487,72 @@ end
 function SetSelectedArtifact(raceIndex)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetSelectedDisplayChannel]
+--- @return void
+function SetSelectedDisplayChannel()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetSelectedFaction]
+--- @return void
+function SetSelectedFaction()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetSelectedScreenResolutionIndex]
+--- @return void
+function SetSelectedScreenResolutionIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetSelectedWarGameType]
+--- @return void
+function SetSelectedWarGameType()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetSendMailCOD]
+--- @return void
+function SetSendMailCOD()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetSendMailMoney]
+--- @return void
+function SetSendMailMoney()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetSendMailShowing]
+--- @return void
+function SetSendMailShowing()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetSortBagsRightToLeft]
+--- @return void
+function SetSortBagsRightToLeft()
+end
+
 --- Selects a specialization.
 --- [https://wowpedia.fandom.com/wiki/API_SetSpecialization]
 --- @param specIndex number @ Index of the specialization to select, ascending from 1.
 --- @param isPet boolean @ if true, set the select a specialization for the player's pet, otherwise, select a specialization for the player.
 --- @return void
 function SetSpecialization(specIndex, isPet)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetSpellbookPetAction]
+--- @return void
+function SetSpellbookPetAction()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetTaxiBenchmarkMode]
+--- @return void
+function SetTaxiBenchmarkMode()
 end
 
 --- Sets the texture to use for the taxi map.
@@ -7126,6 +15568,12 @@ end
 --- @param enabled boolean @ flag if the specified tracking id is to be enabled or disabled.
 --- @return void
 function SetTracking(id, enabled)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetTradeCurrency]
+--- @return void
+function SetTradeCurrency()
 end
 
 --- Sets the amount of money offered as part of the player's trade offer.
@@ -7148,6 +15596,12 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_SetTurnEnabled]
 --- @return void
 function SetTurnEnabled()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SetUIVisibility]
+--- @return void
+function SetUIVisibility()
 end
 
 --- Sets a camera perspective from one previously saved with SaveView. The last position loaded is stored in the CVar cameraView.
@@ -7189,11 +15643,41 @@ end
 function ShowAccountAchievements(show)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ShowBossFrameWhenUninteractable]
+--- @return void
+function ShowBossFrameWhenUninteractable()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ShowBuybackSellCursor]
+--- @return void
+function ShowBuybackSellCursor()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ShowContainerSellCursor]
+--- @return void
+function ShowContainerSellCursor()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ShowInventorySellCursor]
+--- @return void
+function ShowInventorySellCursor()
+end
+
 --- Shows the completion dialog for a complete, auto-completable quest.
 --- [https://wowpedia.fandom.com/wiki/API_ShowQuestComplete]
 --- @param questLogIndex number @ index of the quest log line containing a complete, auto-completable quest.
 --- @return void
 function ShowQuestComplete(questLogIndex)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ShowQuestOffer]
+--- @return void
+function ShowQuestOffer()
 end
 
 --- Puts the cursor in repair mode.
@@ -7214,10 +15698,52 @@ end
 function SitStandOrDescendStart()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SocketContainerItem]
+--- @return void
+function SocketContainerItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SocketInventoryItem]
+--- @return void
+function SocketInventoryItem()
+end
+
 --- Socked a Keystone to the selected artifact.
 --- [https://wowpedia.fandom.com/wiki/API_SocketItemToArtifact]
 --- @return boolean @ keystoneAdded
 function SocketItemToArtifact()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SolveArtifact]
+--- @return void
+function SolveArtifact()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SortBGList]
+--- @return void
+function SortBGList()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SortBags]
+--- @return void
+function SortBags()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SortBankBags]
+--- @return void
+function SortBankBags()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SortBattlefieldScoreData]
+--- @return void
+function SortBattlefieldScoreData()
 end
 
 --- Sorts the guild roster on a certain column. Sorts by name by default. Repeating the same sort will revert sorting.
@@ -7227,11 +15753,131 @@ end
 function SortGuildRoster(level)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SortGuildTradeSkill]
+--- @return void
+function SortGuildTradeSkill()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SortQuestSortTypes]
+--- @return void
+function SortQuestSortTypes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SortQuests]
+--- @return void
+function SortQuests()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SortReagentBankBags]
+--- @return void
+function SortReagentBankBags()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_Sound_ChatSystem_GetInputDriverNameByIndex]
+--- @return void
+function Sound_ChatSystem_GetInputDriverNameByIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_Sound_ChatSystem_GetNumInputDrivers]
+--- @return void
+function Sound_ChatSystem_GetNumInputDrivers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_Sound_ChatSystem_GetNumOutputDrivers]
+--- @return void
+function Sound_ChatSystem_GetNumOutputDrivers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_Sound_ChatSystem_GetOutputDriverNameByIndex]
+--- @return void
+function Sound_ChatSystem_GetOutputDriverNameByIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_Sound_GameSystem_GetInputDriverNameByIndex]
+--- @return void
+function Sound_GameSystem_GetInputDriverNameByIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_Sound_GameSystem_GetNumInputDrivers]
+--- @return void
+function Sound_GameSystem_GetNumInputDrivers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_Sound_GameSystem_GetNumOutputDrivers]
+--- @return void
+function Sound_GameSystem_GetNumOutputDrivers()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_Sound_GameSystem_GetOutputDriverNameByIndex]
+--- @return void
+function Sound_GameSystem_GetOutputDriverNameByIndex()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_Sound_GameSystem_RestartSoundSystem]
+--- @return void
+function Sound_GameSystem_RestartSoundSystem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SpellCanTargetGarrisonFollower]
+--- @return void
+function SpellCanTargetGarrisonFollower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SpellCanTargetGarrisonFollowerAbility]
+--- @return void
+function SpellCanTargetGarrisonFollowerAbility()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SpellCanTargetGarrisonMission]
+--- @return void
+function SpellCanTargetGarrisonMission()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SpellCanTargetItem]
+--- @return void
+function SpellCanTargetItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SpellCanTargetItemID]
+--- @return void
+function SpellCanTargetItemID()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SpellCanTargetQuest]
+--- @return void
+function SpellCanTargetQuest()
+end
+
 --- Checks if the spell awaiting target selection can be cast on a specified unit.
 --- [https://wowpedia.fandom.com/wiki/API_SpellCanTargetUnit]
 --- @param unitId string @ UnitId) - The unit to check.
 --- @return boolean @ canTarget
 function SpellCanTargetUnit(unitId)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SpellCancelQueuedSpell]
+--- @return void
+function SpellCancelQueuedSpell()
 end
 
 --- Checks if the spell should be visible, depending on spellId and raid combat status
@@ -7240,6 +15886,24 @@ end
 --- @param visType string @ either RAID_INCOMBAT if in combat, RAID_OUTOFCOMBAT otherwise
 --- @return boolean, boolean, boolean @ hasCustom, alwaysShowMine, showForMySpec
 function SpellGetVisibilityInfo(spellId, visType)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SpellHasRange]
+--- @return void
+function SpellHasRange()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SpellIsAlwaysShown]
+--- @return void
+function SpellIsAlwaysShown()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SpellIsSelfBuff]
+--- @return void
+function SpellIsSelfBuff()
 end
 
 --- Returns whether a spell is about to be cast, waiting for the player to select a target.
@@ -7260,11 +15924,23 @@ end
 function SpellStopTargeting()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SpellTargetItem]
+--- @return void
+function SpellTargetItem()
+end
+
 --- This specifies the target that the spell should use without needing you to click the target or make it your main target.
 --- [https://wowpedia.fandom.com/wiki/API_SpellTargetUnit]
 --- @param unitId string @ unit you wish to cast the spell on.
 --- @return void
 function SpellTargetUnit(unitId)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SplashFrameCanBeShown]
+--- @return void
+function SplashFrameCanBeShown()
 end
 
 --- Picks up part of a stack of items from a container, placing them on the cursor.
@@ -7276,12 +15952,72 @@ end
 function SplitContainerItem(bagID, slot, count)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SplitGuildBankItem]
+--- @return void
+function SplitGuildBankItem()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_StartAttack]
+--- @return void
+function StartAttack()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_StartAutoRun]
+--- @return void
+function StartAutoRun()
+end
+
 --- Invites the specified player to a duel.
 --- [https://wowpedia.fandom.com/wiki/API_StartDuel]
 --- @param playerName_or_unit unknown
 --- @param exactMatch boolean
 --- @return void
 function StartDuel(playerName_or_unit, exactMatch)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_StartSpectatorWarGame]
+--- @return void
+function StartSpectatorWarGame()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_StartWarGame]
+--- @return void
+function StartWarGame()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_StartWarGameByName]
+--- @return void
+function StartWarGameByName()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_StopAttack]
+--- @return void
+function StopAttack()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_StopAutoRun]
+--- @return void
+function StopAutoRun()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_StopCinematic]
+--- @return void
+function StopCinematic()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_StopMacro]
+--- @return void
+function StopMacro()
 end
 
 --- Stops the currently played music file.
@@ -7296,6 +16032,12 @@ end
 --- @param fadeoutTime number @ In milliseconds.
 --- @return void
 function StopSound(soundHandle, fadeoutTime)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_StoreSecureReference]
+--- @return void
+function StoreSecureReference()
 end
 
 --- The player begins strafing left at the specified time.
@@ -7332,6 +16074,12 @@ end
 function Stuck()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SubmitRequiredGuildRename]
+--- @return void
+function SubmitRequiredGuildRename()
+end
+
 --- Summons a player using the RaF system.
 --- [https://wowpedia.fandom.com/wiki/API_SummonFriend]
 --- @param unit string @ UnitId) - player you wish to summon to you.
@@ -7345,12 +16093,30 @@ end
 function SummonRandomCritter()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SupportsClipCursor]
+--- @return void
+function SupportsClipCursor()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SurrenderArena]
+--- @return void
+function SurrenderArena()
+end
+
 --- Swaps two players in a raid.
 --- [https://wowpedia.fandom.com/wiki/API_SwapRaidSubgroup]
 --- @param index1 number @ ID of first raid member (1 to MAX_RAID_MEMBERS)
 --- @param index2 number @ ID of second raid member (1 to MAX_RAID_MEMBERS)
 --- @return void
 function SwapRaidSubgroup(index1, index2)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_SwitchAchievementSearchTab]
+--- @return void
+function SwitchAchievementSearchTab()
 end
 
 --- Take all money attached in a given letter in your inbox.
@@ -7368,11 +16134,35 @@ end
 function TakeInboxMoney(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TakeInboxTextItem]
+--- @return void
+function TakeInboxTextItem()
+end
+
 --- Begins travelling to the specified taxi map node, if possible.
 --- [https://wowpedia.fandom.com/wiki/API_TakeTaxiNode]
 --- @param index number @ Taxi node index to begin travelling to, ascending from 1 to NumTaxiNodes().
 --- @return void
 function TakeTaxiNode(index)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TargetDirectionEnemy]
+--- @return void
+function TargetDirectionEnemy()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TargetDirectionFinished]
+--- @return void
+function TargetDirectionFinished()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TargetDirectionFriend]
+--- @return void
+function TargetDirectionFriend()
 end
 
 --- Selects the last targeted enemy as the current target.
@@ -7381,10 +16171,22 @@ end
 function TargetLastEnemy()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TargetLastFriend]
+--- @return void
+function TargetLastFriend()
+end
+
 --- Selects the last target as the current target.
 --- [https://wowpedia.fandom.com/wiki/API_TargetLastTarget]
 --- @return void
 function TargetLastTarget()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TargetNearest]
+--- @return void
+function TargetNearest()
 end
 
 --- Selects the nearest enemy as the current target.
@@ -7394,11 +16196,59 @@ end
 function TargetNearestEnemy(reverse)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TargetNearestEnemyPlayer]
+--- @return void
+function TargetNearestEnemyPlayer()
+end
+
 --- This function will select the nearest friendly unit.
 --- [https://wowpedia.fandom.com/wiki/API_TargetNearestFriend]
 --- @param reverse boolean @ if true, reverses the order of targetting units.
 --- @return void
 function TargetNearestFriend(reverse)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TargetNearestFriendPlayer]
+--- @return void
+function TargetNearestFriendPlayer()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TargetNearestPartyMember]
+--- @return void
+function TargetNearestPartyMember()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TargetNearestRaidMember]
+--- @return void
+function TargetNearestRaidMember()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TargetPriorityHighlightEnd]
+--- @return void
+function TargetPriorityHighlightEnd()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TargetPriorityHighlightStart]
+--- @return void
+function TargetPriorityHighlightStart()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TargetSpellReplacesBonusTree]
+--- @return void
+function TargetSpellReplacesBonusTree()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TargetTotem]
+--- @return void
+function TargetTotem()
 end
 
 --- Targets the specified unit.
@@ -7423,6 +16273,12 @@ end
 function TaxiGetDestY()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TaxiGetNodeSlot]
+--- @return void
+function TaxiGetNodeSlot()
+end
+
 --- Returns the horizontal position of the source node of a given route to the destination.
 --- [https://wowpedia.fandom.com/wiki/API_TaxiGetSrcX]
 --- @param destinationIndex number @ The final destination taxi node.
@@ -7437,6 +16293,12 @@ end
 --- @param routeIndex number @ The index of the route to get the source from.
 --- @return number @ sY
 function TaxiGetSrcY(destinationIndex, routeIndex)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TaxiIsDirectFlight]
+--- @return void
+function TaxiIsDirectFlight()
 end
 
 --- Returns the cost of a flight point in copper, unconfirmed if it is before faction cost reductions.
@@ -7467,10 +16329,22 @@ end
 function TaxiNodePosition(index)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TaxiRequestEarlyLanding]
+--- @return void
+function TaxiRequestEarlyLanding()
+end
+
 --- Signals the client that an offer to resurrect the player has expired.
 --- [https://wowpedia.fandom.com/wiki/API_TimeoutResurrect]
 --- @return void
 function TimeoutResurrect()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ToggleAnimKitDisplay]
+--- @return void
+function ToggleAnimKitDisplay()
 end
 
 --- Turns auto-run on or off.
@@ -7479,9 +16353,21 @@ end
 function ToggleAutoRun()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ToggleDebugAIDisplay]
+--- @return void
+function ToggleDebugAIDisplay()
+end
+
 --- [https://wowpedia.fandom.com/wiki/API_TogglePVP]
 --- @return void
 function TogglePVP()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TogglePetAutocast]
+--- @return void
+function TogglePetAutocast()
 end
 
 --- Toggle between running and walking.
@@ -7491,10 +16377,40 @@ end
 function ToggleRun(theTime)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ToggleSelfHighlight]
+--- @return void
+function ToggleSelfHighlight()
+end
+
 --- Toggles sheathed or unsheathed weapons.
 --- [https://wowpedia.fandom.com/wiki/API_ToggleSheath]
 --- @return void
 function ToggleSheath()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ToggleSpellAutocast]
+--- @return void
+function ToggleSpellAutocast()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ToggleWindowed]
+--- @return void
+function ToggleWindowed()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TriggerTutorial]
+--- @return void
+function TriggerTutorial()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_TurnInGuildCharter]
+--- @return void
+function TurnInGuildCharter()
 end
 
 --- The player begins turning left at the specified time.
@@ -7607,11 +16523,23 @@ end
 function UnitAuraSlots(unit, filter, maxSlots, continuationToken)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitBattlePetLevel]
+--- @return void
+function UnitBattlePetLevel()
+end
+
 --- Returns the battle pet species ID of a specified unit.
 --- [https://wowpedia.fandom.com/wiki/API_UnitBattlePetSpeciesID]
 --- @param unit string @ UnitId) - unit to return the species ID of.
 --- @return number @ speciesID
 function UnitBattlePetSpeciesID(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitBattlePetType]
+--- @return void
+function UnitBattlePetType()
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_UnitBuff]
@@ -7641,6 +16569,12 @@ end
 --- @param unit2 string @ The UnitId of the unit to check (Tested with player, pet, party1, hostile target)
 --- @return void
 function UnitCanCooperate(unit1, unit2)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitCanPetBattle]
+--- @return void
+function UnitCanPetBattle()
 end
 
 --- Returns information about the spell currently being cast by the specified unit.
@@ -7681,6 +16615,12 @@ end
 --- @param unit string @ unitId of the unit to query, e.g. target
 --- @return string @ classification
 function UnitClassification(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitControllingVehicle]
+--- @return void
+function UnitControllingVehicle()
 end
 
 --- Returns the creature family of the specified unit (e.g., Crab or Wolf). Only works on Beasts and Demons, since the family's only function is to determine what abilities the unit will have if a hunter or warlock tames it; however, works on most currently untameable Beasts for reasons of backward and forward compatibility. Returns nil if the creature isn't a Beast or doesn't belong to a family that includes a tameable creature.
@@ -7758,6 +16698,12 @@ end
 function UnitGUID(unit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitGetAvailableRoles]
+--- @return void
+function UnitGetAvailableRoles()
+end
+
 --- Returns the predicted heals cast on the specified unit.
 --- [https://wowpedia.fandom.com/wiki/API_UnitGetIncomingHeals]
 --- @param unit unknown @ UnitId - The UnitId to query healing for
@@ -7787,6 +16733,12 @@ end
 function UnitGroupRolesAssigned(Unit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitHPPerStamina]
+--- @return void
+function UnitHPPerStamina()
+end
+
 --- Checks if the unit is currently being resurrected.
 --- [https://wowpedia.fandom.com/wiki/API_UnitHasIncomingResurrection]
 --- @param unitID_or_UnitName unknown
@@ -7806,6 +16758,24 @@ end
 --- @param unit unknown @ UnitId - the unit that would assist (e.g., player or target)
 --- @return boolean @ hasRandomCooldown
 function UnitHasLFGRandomCooldown(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitHasRelicSlot]
+--- @return void
+function UnitHasRelicSlot()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitHasVehiclePlayerFrameUI]
+--- @return void
+function UnitHasVehiclePlayerFrameUI()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitHasVehicleUI]
+--- @return void
+function UnitHasVehicleUI()
 end
 
 --- Returns the current health of the specified unit.
@@ -7843,11 +16813,23 @@ end
 function UnitHonorMax(unitID_or_playerName)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitInAnyGroup]
+--- @return void
+function UnitInAnyGroup()
+end
+
 --- Used to determine the position number of the specified unit in the battleground raid.
 --- [https://wowpedia.fandom.com/wiki/API_UnitInBattleground]
 --- @param unit string @ The UnitId to query (e.g. player, party2, pet, target etc.)
 --- @return number @ position
 function UnitInBattleground(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitInOtherParty]
+--- @return void
+function UnitInOtherParty()
 end
 
 --- Returns 1 if the unit is a player in your party, nil otherwise.
@@ -7878,11 +16860,29 @@ end
 function UnitInRange(unit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitInSubgroup]
+--- @return void
+function UnitInSubgroup()
+end
+
 --- Checks whether a specified unit is within an vehicle.
 --- [https://wowpedia.fandom.com/wiki/API_UnitInVehicle]
 --- @param target unknown
 --- @return unknown @ inVehicle
 function UnitInVehicle(target)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitInVehicleControlSeat]
+--- @return void
+function UnitInVehicleControlSeat()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitInVehicleHidesPetFrame]
+--- @return void
+function UnitInVehicleHidesPetFrame()
 end
 
 --- Checks if a unit is AFK.
@@ -7918,6 +16918,18 @@ end
 --- @param unit string
 --- @return unknown @ isOnline
 function UnitIsConnected(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitIsControlling]
+--- @return void
+function UnitIsControlling()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitIsCorpse]
+--- @return void
+function UnitIsCorpse()
 end
 
 --- Checks if a unit is DND (Do Not Disturb).
@@ -7984,11 +16996,29 @@ end
 function UnitIsGroupLeader(unit, partyCategory)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitIsInMyGuild]
+--- @return void
+function UnitIsInMyGuild()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitIsMercenary]
+--- @return void
+function UnitIsMercenary()
+end
+
 --- Returns if the unit is a battle pet summoned by another player.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsOtherPlayersBattlePet]
 --- @param unit string @ UnitId
 --- @return boolean @ isOther
 function UnitIsOtherPlayersBattlePet(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitIsOtherPlayersPet]
+--- @return void
+function UnitIsOtherPlayersPet()
 end
 
 --- Needs summary.
@@ -8013,6 +17043,12 @@ end
 function UnitIsPVPFreeForAll(unitId)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitIsPVPSanctuary]
+--- @return void
+function UnitIsPVPSanctuary()
+end
+
 --- Checks if a specified unit is a player.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsPlayer]
 --- @param unit string @ UnitId of the unit to check.
@@ -8027,6 +17063,18 @@ end
 function UnitIsPossessed(unit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitIsQuestBoss]
+--- @return void
+function UnitIsQuestBoss()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitIsRaidOfficer]
+--- @return void
+function UnitIsRaidOfficer()
+end
+
 --- Returns whether the specified unit is from the player's own realm (or, equivalently, a linked Connected Realm).
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsSameServer]
 --- @param unit string @ unitId of a unit to query.
@@ -8034,11 +17082,23 @@ end
 function UnitIsSameServer(unit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitIsTapDenied]
+--- @return void
+function UnitIsTapDenied()
+end
+
 --- Indicates whether a unit is trivial.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsTrivial]
 --- @param unit string @ The UnitId (e.g., target)
 --- @return boolean @ isTrivial
 function UnitIsTrivial(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitIsUnconscious]
+--- @return void
+function UnitIsUnconscious()
 end
 
 --- Returns true if the two specified units are the same, false otherwise.
@@ -8062,6 +17122,12 @@ end
 function UnitIsWildBattlePet(unit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitLeadsAnyGroup]
+--- @return void
+function UnitLeadsAnyGroup()
+end
+
 --- Returns the unit's level.
 --- [https://wowpedia.fandom.com/wiki/API_UnitLevel]
 --- @param unit string @ The unitId to get information from. (e.g. player, target)
@@ -8076,11 +17142,23 @@ end
 function UnitName(unit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitNameUnmodified]
+--- @return void
+function UnitNameUnmodified()
+end
+
 --- Returns true if a units' nameplate should appear in a widgets-only mode.
 --- [https://wowpedia.fandom.com/wiki/API_UnitNameplateShowsWidgetsOnly]
 --- @param unit string
 --- @return boolean @ nameplateShowsWidgetsOnly
 function UnitNameplateShowsWidgetsOnly(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitNumPowerBarTimers]
+--- @return void
+function UnitNumPowerBarTimers()
 end
 
 --- Returns 1 if unit is on a taxi, nil otherwise.
@@ -8146,6 +17224,12 @@ end
 --- @param unitToken string @ UnitId
 --- @return number @ barID
 function UnitPowerBarID(unitToken)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitPowerBarTimerInfo]
+--- @return void
+function UnitPowerBarTimerInfo()
 end
 
 --- Needs summary.
@@ -8260,6 +17344,12 @@ end
 function UnitSex(unit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitShouldDisplayName]
+--- @return void
+function UnitShouldDisplayName()
+end
+
 --- Returns the current spell haste percentage for a unit.
 --- [https://wowpedia.fandom.com/wiki/API_UnitSpellHaste]
 --- @param unit string @ UnitId
@@ -8280,6 +17370,18 @@ end
 --- @param statID number @ An internal id corresponding to one of the stats.
 --- @return number, number, number, number @ stat, effectiveStat, posBuff, negBuff
 function UnitStat(unit, statID)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitSwitchToVehicleSeat]
+--- @return void
+function UnitSwitchToVehicleSeat()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitTargetsVehicleInRaidUI]
+--- @return void
+function UnitTargetsVehicleInRaidUI()
 end
 
 --- Needs summary.
@@ -8305,11 +17407,47 @@ end
 function UnitTreatAsPlayerForDisplay(unit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitTrialBankedLevels]
+--- @return void
+function UnitTrialBankedLevels()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitTrialXP]
+--- @return void
+function UnitTrialXP()
+end
+
 --- Checks if a specified unit is currently in a vehicle, including transitioning between seats.
 --- [https://wowpedia.fandom.com/wiki/API_UnitUsingVehicle]
 --- @param unit string @ UnitId of the unit to check.
 --- @return boolean @ isTrue
 function UnitUsingVehicle(unit)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitVehicleSeatCount]
+--- @return void
+function UnitVehicleSeatCount()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitVehicleSeatInfo]
+--- @return void
+function UnitVehicleSeatInfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitVehicleSkin]
+--- @return void
+function UnitVehicleSkin()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnitWeaponAttackPower]
+--- @return void
+function UnitWeaponAttackPower()
 end
 
 --- Needs summary.
@@ -8333,6 +17471,12 @@ end
 function UnitXPMax(unit)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UnlearnSpecialization]
+--- @return void
+function UnlearnSpecialization()
+end
+
 --- Pays for, and unlocks the Void Storage [1]
 --- [https://wowpedia.fandom.com/wiki/API_UnlockVoidStorage]
 --- @return void
@@ -8346,10 +17490,40 @@ end
 function UnmuteSoundFile(soundFile_or_fileDataID)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UpdateAddOnCPUUsage]
+--- @return void
+function UpdateAddOnCPUUsage()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UpdateAddOnMemoryUsage]
+--- @return void
+function UpdateAddOnMemoryUsage()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UpdateInventoryAlertStatus]
+--- @return void
+function UpdateInventoryAlertStatus()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UpdateWarGamesList]
+--- @return void
+function UpdateWarGamesList()
+end
+
 --- When in windowed mode, updates the window. This also aligns it to the top of the screen and increases the size to max widowed size.
 --- [https://wowpedia.fandom.com/wiki/API_UpdateWindow]
 --- @return void
 function UpdateWindow()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UpgradeItem]
+--- @return void
+function UpgradeItem()
 end
 
 --- Perform the action in the specified action slot.
@@ -8371,6 +17545,12 @@ end
 function UseContainerItem(bagID, slot, target, reagentBankAccessible)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UseHearthstone]
+--- @return void
+function UseHearthstone()
+end
+
 --- Use an item in a specific inventory slot.
 --- [https://wowpedia.fandom.com/wiki/API_UseInventoryItem]
 --- @param slotID unknown @ The inventory slot ID
@@ -8384,6 +17564,12 @@ end
 --- @param target string @ optional) - unit to use the item on, defaults to target for items that can be used on others.
 --- @return void
 function UseItemByName(name, target)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UseQuestLogSpecialItem]
+--- @return void
+function UseQuestLogSpecialItem()
 end
 
 --- Use a toy in player's toybox.
@@ -8400,6 +17586,120 @@ end
 function UseToyByName(name)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_UseWorldMapActionButtonSpellOnQuest]
+--- @return void
+function UseWorldMapActionButtonSpellOnQuest()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehicleAimDecrement]
+--- @return void
+function VehicleAimDecrement()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehicleAimDownStart]
+--- @return void
+function VehicleAimDownStart()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehicleAimDownStop]
+--- @return void
+function VehicleAimDownStop()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehicleAimGetAngle]
+--- @return void
+function VehicleAimGetAngle()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehicleAimGetNormAngle]
+--- @return void
+function VehicleAimGetNormAngle()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehicleAimGetNormPower]
+--- @return void
+function VehicleAimGetNormPower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehicleAimIncrement]
+--- @return void
+function VehicleAimIncrement()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehicleAimRequestAngle]
+--- @return void
+function VehicleAimRequestAngle()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehicleAimRequestNormAngle]
+--- @return void
+function VehicleAimRequestNormAngle()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehicleAimSetNormPower]
+--- @return void
+function VehicleAimSetNormPower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehicleAimUpStart]
+--- @return void
+function VehicleAimUpStart()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehicleAimUpStop]
+--- @return void
+function VehicleAimUpStop()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehicleExit]
+--- @return void
+function VehicleExit()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehicleNextSeat]
+--- @return void
+function VehicleNextSeat()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_VehiclePrevSeat]
+--- @return void
+function VehiclePrevSeat()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ViewGuildRecipes]
+--- @return void
+function ViewGuildRecipes()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_WarGameRespond]
+--- @return void
+function WarGameRespond()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_WithdrawGuildBankMoney]
+--- @return void
+function WithdrawGuildBankMoney()
+end
+
 --- Returns the absolue value of the number.
 --- [https://wowpedia.fandom.com/wiki/API_abs]
 --- @param num number @ number to return numeric (absolute) value of.
@@ -8412,14 +17712,80 @@ end
 function acos()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_addframetext]
+--- @return void
+function addframetext()
+end
+
 --- [https://wowpedia.fandom.com/wiki/API_asin]
 --- @return void
 function asin()
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_assert]
+--- @return void
+function assert()
+end
+
 --- [https://wowpedia.fandom.com/wiki/API_atan]
 --- @return void
 function atan()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_atan2]
+--- @return void
+function atan2()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_bit.arshift]
+--- @return void
+function bit.arshift()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_bit.band]
+--- @return void
+function bit.band()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_bit.bnot]
+--- @return void
+function bit.bnot()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_bit.bor]
+--- @return void
+function bit.bor()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_bit.bxor]
+--- @return void
+function bit.bxor()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_bit.lshift]
+--- @return void
+function bit.lshift()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_bit.mod]
+--- @return void
+function bit.mod()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_bit.rshift]
+--- @return void
+function bit.rshift()
 end
 
 --- ceil(value) returns the ceiling of the value (the next highest whole number) i.e. rounds value up
@@ -8437,6 +17803,42 @@ end
 function collectgarbage(opt, arg)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_coroutine.create]
+--- @return void
+function coroutine.create()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_coroutine.resume]
+--- @return void
+function coroutine.resume()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_coroutine.running]
+--- @return void
+function coroutine.running()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_coroutine.status]
+--- @return void
+function coroutine.status()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_coroutine.wrap]
+--- @return void
+function coroutine.wrap()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_coroutine.yield]
+--- @return void
+function coroutine.yield()
+end
+
 --- [https://wowpedia.fandom.com/wiki/API_cos]
 --- @return void
 function cos()
@@ -8448,6 +17850,12 @@ end
 --- @param time unknown
 --- @return void
 function date(format, time)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_debuglocals]
+--- @return void
+function debuglocals()
 end
 
 --- Starts the profiling timer.
@@ -8470,6 +17878,30 @@ end
 --- @param count2 number @ the number of functions to output at the bottom of the stack (default 10)
 --- @return string @ description
 function debugstack(coroutine, start, count1, count2)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_deg]
+--- @return void
+function deg()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_difftime]
+--- @return void
+function difftime()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_error]
+--- @return void
+function error()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_exp]
+--- @return void
+function exp()
 end
 
 --- Returns a random number within the specified interval.
@@ -8519,10 +17951,34 @@ end
 function format(formatstring, e1, e2, ...)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_frexp]
+--- @return void
+function frexp()
+end
+
 --- Returns the amount of memory in use by Lua (in kilobytes).
 --- [https://wowpedia.fandom.com/wiki/API_gcinfo]
 --- @return number @ memoryInUse
 function gcinfo()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_geterrorhandler]
+--- @return void
+function geterrorhandler()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_getfenv]
+--- @return void
+function getfenv()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_getmetatable]
+--- @return void
+function getmetatable()
 end
 
 --- This is used to determine the size of a table. The size of a table is discussed at the top of this page.
@@ -8530,6 +17986,12 @@ end
 --- @param table unknown
 --- @return unknown @ size
 function getn(table)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_gmatch]
+--- @return void
+function gmatch()
 end
 
 --- Substitutes text matching a pattern with a replacement.
@@ -8572,12 +18034,210 @@ end
 function issecurevariable(table, variable)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_ldexp]
+--- @return void
+function ldexp()
+end
+
 --- Parse a string as Lua code and return it as a reference to a function.
 --- [https://wowpedia.fandom.com/wiki/API_loadstring]
 --- @param luaCodeBlock string @ a string of Lua code. Can be very long.
 --- @param chunkName string @ optionally name the code block. Will be shown as the file name in error messages. If not given, the file name will be [string: first line of your Lua code here...].
 --- @return unknown, string @ func, errorMessage
 function loadstring(luaCodeBlock, chunkName)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_log]
+--- @return void
+function log()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_log10]
+--- @return void
+function log10()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.abs]
+--- @return void
+function math.abs()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.acos]
+--- @return void
+function math.acos()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.asin]
+--- @return void
+function math.asin()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.atan]
+--- @return void
+function math.atan()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.atan2]
+--- @return void
+function math.atan2()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.ceil]
+--- @return void
+function math.ceil()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.cos]
+--- @return void
+function math.cos()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.cosh]
+--- @return void
+function math.cosh()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.deg]
+--- @return void
+function math.deg()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.exp]
+--- @return void
+function math.exp()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.floor]
+--- @return void
+function math.floor()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.fmod]
+--- @return void
+function math.fmod()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.frexp]
+--- @return void
+function math.frexp()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.ldexp]
+--- @return void
+function math.ldexp()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.log]
+--- @return void
+function math.log()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.log10]
+--- @return void
+function math.log10()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.max]
+--- @return void
+function math.max()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.min]
+--- @return void
+function math.min()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.modf]
+--- @return void
+function math.modf()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.pow]
+--- @return void
+function math.pow()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.rad]
+--- @return void
+function math.rad()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.random]
+--- @return void
+function math.random()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.sin]
+--- @return void
+function math.sin()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.sinh]
+--- @return void
+function math.sinh()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.sqrt]
+--- @return void
+function math.sqrt()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.tan]
+--- @return void
+function math.tan()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_math.tanh]
+--- @return void
+function math.tanh()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_max]
+--- @return void
+function max()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_min]
+--- @return void
+function min()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_mod]
+--- @return void
+function mod()
 end
 
 --- Creates a zero-size userdata object, optionally with a sharable empty metatable.
@@ -8612,12 +18272,30 @@ end
 function pcall(func, arg1, arg2, ...)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_rad]
+--- @return void
+function rad()
+end
+
 --- Returns a random number within the specified interval.
 --- [https://wowpedia.fandom.com/wiki/API_random]
 --- @param low number @ lower integer limit on the returned random value.
 --- @param high number @ upper integer limit on the returned random value.
 --- @return number @ rand
 function random(low, high)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_rawequal]
+--- @return void
+function rawequal()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_rawget]
+--- @return void
+function rawget()
 end
 
 --- Assigns a value to a key in the table, without invoking metamethods.
@@ -8627,6 +18305,12 @@ end
 --- @param value any @ any value.
 --- @return table @ table
 function rawset(table, index, value)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_scrub]
+--- @return void
+function scrub()
 end
 
 --- Calls the specified function without propagating taint to the caller.
@@ -8652,6 +18336,18 @@ end
 function seterrorhandler(errFunc)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_setfenv]
+--- @return void
+function setfenv()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_setmetatable]
+--- @return void
+function setmetatable()
+end
+
 --- Computes trigonometric functions.
 --- [https://wowpedia.fandom.com/wiki/API_sin]
 --- @param sine unknown
@@ -8665,6 +18361,12 @@ end
 --- @param compFunc unknown @ Optional Function - Comparison operator function; the function is passed two arguments (a, b) from the table, and should return a boolean value indicating whether a should appear before b in the sorted array. If omitted, the following comparison function is used:
 --- @return void
 function sort(table, compFunc)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_sqrt]
+--- @return void
+function sqrt()
 end
 
 --- Returns the numerical code of a character in a string.
@@ -8685,6 +18387,18 @@ end
 function strchar(i1, i2, ...)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_strcmputf8i]
+--- @return void
+function strcmputf8i()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_strconcat]
+--- @return void
+function strconcat()
+end
+
 --- Returns a pair of numbers representing the start and end of the first occurrence of the pattern within the string, if it exists.
 --- [https://wowpedia.fandom.com/wiki/API_strfind]
 --- @param string string @ The string to examine.
@@ -8693,6 +18407,108 @@ end
 --- @param plain boolean @ Whether or not to disable regular expression matching. Defaults to false, so regex matching is usually enabled.
 --- @return number, number @ startPos, endPos
 function strfind(string, pattern, initpos, plain)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.byte]
+--- @return void
+function string.byte()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.char]
+--- @return void
+function string.char()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.find]
+--- @return void
+function string.find()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.format]
+--- @return void
+function string.format()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.gfind]
+--- @return void
+function string.gfind()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.gmatch]
+--- @return void
+function string.gmatch()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.gsub]
+--- @return void
+function string.gsub()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.join]
+--- @return void
+function string.join()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.len]
+--- @return void
+function string.len()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.lower]
+--- @return void
+function string.lower()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.match]
+--- @return void
+function string.match()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.rep]
+--- @return void
+function string.rep()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.reverse]
+--- @return void
+function string.reverse()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.split]
+--- @return void
+function string.split()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.sub]
+--- @return void
+function string.sub()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.trim]
+--- @return void
+function string.trim()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_string.upper]
+--- @return void
+function string.upper()
 end
 
 --- Joins strings together with a delimiter.
@@ -8710,6 +18526,12 @@ end
 --- @param s unknown
 --- @return void
 function strlen(s)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_strlenutf8]
+--- @return void
+function strlenutf8()
 end
 
 --- Gets a string with all lower case letters instead of upper case.
@@ -8776,9 +18598,51 @@ end
 function strupper(s)
 end
 
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_table.concat]
+--- @return void
+function table.concat()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_table.foreach]
+--- @return void
+function table.foreach()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_table.foreachi]
+--- @return void
+function table.foreachi()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_table.getn]
+--- @return void
+function table.getn()
+end
+
 --- [https://wowpedia.fandom.com/wiki/API_table.insert]
 --- @return void
 function table.insert()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_table.maxn]
+--- @return void
+function table.maxn()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_table.remove]
+--- @return void
+function table.remove()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_table.removemulti]
+--- @return void
+function table.removemulti()
 end
 
 --- Obsolete; throws an error if called.
@@ -8787,6 +18651,18 @@ end
 --- @param n number @ New table size.
 --- @return void
 function table.setn(table, n)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_table.sort]
+--- @return void
+function table.sort()
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_table.wipe]
+--- @return void
+function table.wipe()
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_tan]
@@ -8854,5 +18730,11 @@ end
 --- @param table table @ The table to be cleared.
 --- @return table @ table
 function wipe(table)
+end
+
+--- Wowpedia does not have a  page with this exact name.
+--- [https://wowpedia.fandom.com/wiki/API_xpcall]
+--- @return void
+function xpcall()
 end
 

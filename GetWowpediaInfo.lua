@@ -34,10 +34,11 @@ local total_entries = 0
 for k,v in pairs(lines) do
     --all API entry lines seem to have title="API in the string, which is nice for us to narrow down
     --we can ignore any api entries starting with C_ because those are all parsed form the in-game API separately
-    if string.find(v, "title=\"API") and not string.find(v, "API_C_") and not string.find(v, "title=\"World of Warcraft API\"") and not string.find(v, "/API_change_summaries") and not string.find(v, "not exist") then
+    if string.find(v, "title=\"API") and not string.find(v, "API_C_") and not string.find(v, "title=\"World of Warcraft API\"") and not string.find(v, "/API_change_summaries") then
 
         local _,start = string.find(v,"\">")
-        local finish, _ = string.find(v,"</a>")
+        local span, _ = string.find(v,"</span>")
+        local finish, _ = string.find(v,"</a>") or span
         local api_entry = string.sub(v, start+1, finish-1)
 
         api_entries[api_entry] = {}
@@ -58,6 +59,8 @@ for k,v in pairs(lines) do
             if address then
                 api_entries[api_entry].address = address
             end
+        elseif span then
+            api_entries[api_entry].address = "/wiki/API_" .. api_entry
         end
     end
 end
