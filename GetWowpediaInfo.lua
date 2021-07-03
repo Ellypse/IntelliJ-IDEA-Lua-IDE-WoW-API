@@ -41,7 +41,9 @@ for k,v in pairs(lines) do
         local finish, _ = string.find(v,"</a>") or span
         local api_entry = string.sub(v, start+1, finish-1)
 
-        api_entries[api_entry] = {}
+        api_entries[api_entry] = {
+            ["stubbed"] = (span ~= nil)
+        }
         total_entries = total_entries + 1
 
         --parse through the list of lines and split out just the matching addresses for pages with actual information on them
@@ -60,7 +62,7 @@ for k,v in pairs(lines) do
                 api_entries[api_entry].address = address
             end
         elseif span then
-            api_entries[api_entry].address = "/wiki/API_" .. api_entry
+            api_entries[api_entry].address = "/wiki/API_" .. api_entry .. "?action=edit&amp;redlink=1"
         end
     end
 end
@@ -336,7 +338,7 @@ for _,k in pairs(apiKeys) do
     local functionName = k
     local argValues = ""
 
-    if api_entries[k].description then
+    if api_entries[k].description and not api_entries[k].stubbed then
         preFunction = preFunction .. "--- " .. api_entries[k].description .. "\n"
     end
 
