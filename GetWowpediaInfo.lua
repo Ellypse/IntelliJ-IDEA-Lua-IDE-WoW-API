@@ -34,13 +34,16 @@ local total_entries = 0
 for k,v in pairs(lines) do
     --all API entry lines seem to have title="API in the string, which is nice for us to narrow down
     --we can ignore any api entries starting with C_ because those are all parsed form the in-game API separately
-    if string.find(v, "title=\"API") and not string.find(v, "API_C_") and not string.find(v, "title=\"World of Warcraft API\"") and not string.find(v, "/API_change_summaries") then
+    if string.find(v, "title=\"API") and not string.find(v, "API_C_") and not string.find(v, "API C ") and not string.find(v, "title=\"World of Warcraft API\"") and not string.find(v, "/API_change_summaries") then
 
         local _,start = string.find(v,"\">")
-        local finish, _ = string.find(v,"</a>")
+        local span, _ = string.find(v,"</span>")
+        local finish, _ = string.find(v,"</a>") or span
         local api_entry = string.sub(v, start+1, finish-1)
 
-        api_entries[api_entry] = {}
+        api_entries[api_entry] = {
+            ["stubbed"] = (span ~= nil)
+        }
         total_entries = total_entries + 1
 
         --parse through the list of lines and split out just the matching addresses for pages with actual information on them
@@ -58,6 +61,8 @@ for k,v in pairs(lines) do
             if address then
                 api_entries[api_entry].address = address
             end
+        elseif span then
+            api_entries[api_entry].address = "/wiki/API_" .. api_entry .. "?action=edit&amp;redlink=1"
         end
     end
 end
@@ -333,7 +338,7 @@ for _,k in pairs(apiKeys) do
     local functionName = k
     local argValues = ""
 
-    if api_entries[k].description then
+    if api_entries[k].description and not api_entries[k].stubbed then
         preFunction = preFunction .. "--- " .. api_entries[k].description .. "\n"
     end
 

@@ -2301,7 +2301,7 @@ end
 function FlagTutorial()
 end
 
---- Flashes the game client icon in the Operating System (does not require a hardware event).
+--- Flashes the game client icon in the Operating System.
 --- [https://wowpedia.fandom.com/wiki/API_FlashClientIcon]
 --- @return void
 function FlashClientIcon()
