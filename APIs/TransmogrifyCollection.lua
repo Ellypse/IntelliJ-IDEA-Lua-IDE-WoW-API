@@ -118,6 +118,10 @@ function C_TransmogCollection.GetOutfitItemTransmogInfoList(outfitID) end
 function C_TransmogCollection.GetOutfits() end
 
 ---@param itemModifiedAppearanceID number 
+---@return number pairedItemModifiedAppearanceID
+function C_TransmogCollection.GetPairedArtifactAppearance(itemModifiedAppearanceID) end
+
+---@param itemModifiedAppearanceID number 
 ---@return number icon
 function C_TransmogCollection.GetSourceIcon(itemModifiedAppearanceID) end
 
