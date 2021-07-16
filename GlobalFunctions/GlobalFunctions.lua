@@ -2734,12 +2734,9 @@ end
 function GetArtifactProgress()
 end
 
---- Returns attack power granted by particular amount of a particular stat.
 --- [https://wowpedia.fandom.com/wiki/API_GetAttackPowerForStat]
---- @param statId number @ Index of the stat (Strength, Agility, ...) to check the bonus AP of.
---- @param amount number @ Amount of the stat to check the AP value of.
---- @return number @ ap
-function GetAttackPowerForStat(statId, amount)
+--- @return void
+function GetAttackPowerForStat()
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_GetAutoCompletePresenceID?action=edit&amp;redlink=1]
@@ -6333,10 +6330,10 @@ end
 --- Returns information about a quest objective.
 --- [https://wowpedia.fandom.com/wiki/API_GetQuestObjectiveInfo]
 --- @param questID number @ Unique identifier of the quest.
---- @param objectiveIndex unknown @ Index of the quest objective to query, ascending from 1 to GetNumQuestLeaderBoards(questIndex) or to numObjectives from GetTaskInfo(questID).
---- @param Boolean unknown @ Required to actually obtain quest text.
+--- @param objectiveIndex number @ Index of the quest objective to query, ascending from 1 to GetNumQuestLeaderBoards(questIndex) or to numObjectives from GetTaskInfo(questID).
+--- @param displayComplete boolean @ Pass 'true' to return as if the objective were complete. You want false generally
 --- @return string, string, boolean, number, number @ text, objectiveType, finished, fulfilled, required
-function GetQuestObjectiveInfo(questID, objectiveIndex, Boolean)
+function GetQuestObjectiveInfo(questID, objectiveIndex, displayComplete)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_GetQuestPOIBlobCount?action=edit&amp;redlink=1]
