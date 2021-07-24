@@ -2734,9 +2734,12 @@ end
 function GetArtifactProgress()
 end
 
+--- Returns attack power granted by particular amount of a particular stat.
 --- [https://wowpedia.fandom.com/wiki/API_GetAttackPowerForStat]
---- @return void
-function GetAttackPowerForStat()
+--- @param statId number @ Index of the stat (Strength, Agility, ...) to check the bonus AP of.
+--- @param amount number @ Amount of the stat to check the AP value of.
+--- @return number @ ap
+function GetAttackPowerForStat(statId, amount)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_GetAutoCompletePresenceID?action=edit&amp;redlink=1]
@@ -3666,8 +3669,8 @@ end
 
 --- Returns information about the specified faction or faction header in the player's reputation pane.
 --- [https://wowpedia.fandom.com/wiki/API_GetFactionInfo]
---- @param factionIndex number @ Index of the faction to query. Indices correspond to the rows currently displayed in the player's reptuation pane, and include headers, but do not include factions that are not currently displayed because their parent header is collapsed.
---- @return number, number, number, number, number, unknown, unknown @ isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus
+--- @param factionIndex number @ Index from the currently displayed row in the player's reptuation pane, including headers but excluding factions that are hidden because their parent header is collapsed.
+--- @return void
 function GetFactionInfo(factionIndex)
 end
 
