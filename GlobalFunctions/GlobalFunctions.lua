@@ -13985,9 +13985,11 @@ end
 function geterrorhandler()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_getfenv?action=edit&amp;redlink=1]
---- @return void
-function getfenv()
+--- Returns the current environment in use by the function.
+--- [https://wowpedia.fandom.com/wiki/API_getfenv]
+--- @param f unknown @ function or number - A function to retrieve the environment of, or a numeric level of a function on the call stack starting from 1.
+--- @return table @ env
+function getfenv(f)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_getmetatable?action=edit&amp;redlink=1]
@@ -14317,9 +14319,12 @@ end
 function setfenv()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_setmetatable?action=edit&amp;redlink=1]
---- @return void
-function setmetatable()
+--- Sets the metatable for the given table.
+--- [https://wowpedia.fandom.com/wiki/API_setmetatable]
+--- @param table table @ The table to assign or remove the metatable of.
+--- @param metatable table @ ?Optional.  Could be nil. - The metatable to be assigned, or nil to remove an existing metatable.
+--- @return table @ table
+function setmetatable(table, metatable)
 end
 
 --- Computes trigonometric functions.
