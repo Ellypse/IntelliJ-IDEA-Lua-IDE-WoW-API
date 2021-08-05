@@ -6500,7 +6500,7 @@ end
 
 --- Returns the map instance name.
 --- [https://wowpedia.fandom.com/wiki/API_GetRealZoneText]
---- @param instanceID number @ ? - InstanceID
+--- @param instanceID number @ ? : InstanceID - When omitted, returns current instanceID name.
 --- @return string @ zone
 function GetRealZoneText(instanceID)
 end
