@@ -4124,7 +4124,7 @@ end
 --- Returns information about a message in the mailbox.
 --- [https://wowpedia.fandom.com/wiki/API_GetInboxHeaderInfo]
 --- @param index number @ the index of the message (ascending from 1).
---- @return number, number, number @ textCreated, canReply, isGM
+--- @return string, string, string, string, number, number, number, number, boolean, boolean, boolean, boolean, boolean @ packageIcon, stationeryIcon, sender, subject, money, CODAmount, daysLeft, hasItem, wasRead, wasReturned, textCreated, canReply, isGM
 function GetInboxHeaderInfo(index)
 end
 
@@ -7304,11 +7304,11 @@ end
 function GetText(token, gender, ordinal)
 end
 
---- Returns RGB color values corresponding to a threat status returned by UnitThreatSituation.  Added in Patch 3.0.
+--- Returns RGB color values corresponding to a threat status returned by UnitThreatSituation.
 --- [https://wowpedia.fandom.com/wiki/API_GetThreatStatusColor]
---- @param statusIndex unknown
+--- @param status number @ ?Optional.  Could be nil. - Usually the return of UnitThreatSituation
 --- @return number, number, number @ r, g, b
-function GetThreatStatusColor(statusIndex)
+function GetThreatStatusColor(status)
 end
 
 --- Returns the time in seconds since the end of the previous frame and the start of the current frame.
