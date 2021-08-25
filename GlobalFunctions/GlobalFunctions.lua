@@ -4296,9 +4296,9 @@ end
 
 --- Return the texture for an inventory item.
 --- [https://wowpedia.fandom.com/wiki/API_GetInventoryItemTexture]
---- @param unit string @ The UnitId of the unit whose inventory is to be queried.
+--- @param unit string @ UnitId
 --- @param slotId number @ The inventory slot to be queried, obtained via GetInventorySlotInfo.
---- @return string @ texture
+--- @return number @ texture
 function GetInventoryItemTexture(unit, slotId)
 end
 
