@@ -194,7 +194,7 @@ end
 function AreTalentsLocked()
 end
 
---- This doesn't appear to affect the actual jump at all and is used as a way for users to get when the jump key was released.
+--- Apparent null function that performs no operation.
 --- [https://wowpedia.fandom.com/wiki/API_AscendStop]
 --- @return void
 function AscendStop()
@@ -744,8 +744,8 @@ end
 --- Returns whether you can inspect a particular unit.
 --- [https://wowpedia.fandom.com/wiki/API_CanInspect]
 --- @param unit string @ unitId) - Unit to check inspectability of.
---- @param showError number @ If true, the function will display an error message (You can't inspect that unit) if you cannot inspect the specified unit.
---- @return number @ canInspect
+--- @param showError boolean @ If true, the function will display an error message (You can't inspect that unit) if you cannot inspect the specified unit.
+--- @return boolean @ canInspect
 function CanInspect(unit, showError)
 end
 
@@ -823,7 +823,7 @@ end
 --- Returns whether you can RaF summon a particular unit.
 --- [https://wowpedia.fandom.com/wiki/API_CanSummonFriend]
 --- @param unit string @ UnitId) - player to check whether you can summon.
---- @return number @ summonable
+--- @return boolean @ summonable
 function CanSummonFriend(unit)
 end
 
@@ -1120,7 +1120,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_CheckInteractDistance]
 --- @param unit string @ Unit to compare distance to.
 --- @param distIndex number @ A value from 1 to 5:
---- @return number @ inRange
+--- @return boolean @ inRange
 function CheckInteractDistance(unit, distIndex)
 end
 
@@ -1323,7 +1323,7 @@ end
 
 --- Close the loot window.
 --- [https://wowpedia.fandom.com/wiki/API_CloseLoot]
---- @param errNum number @ Optional) - A reason for the window closing.  Unsure whether/how the game deals with error codes passed to it.
+--- @param errNum number @ ?Optional.  Could be nil. - A reason for the window closing.  Unsure whether/how the game deals with error codes passed to it.
 --- @return void
 function CloseLoot(errNum)
 end
@@ -1538,9 +1538,9 @@ end
 --- Needs summary.
 --- [https://wowpedia.fandom.com/wiki/API_ConfirmBNRequestInviteFriend]
 --- @param presenceID number
---- @param tank boolean @ optional)
+--- @param tank boolean @ ?Optional.  Could be nil.
 --- @param heal unknown
---- @param dps boolean @ optional)
+--- @param dps boolean @ ?Optional.  Could be nil.
 --- @return void
 function ConfirmBNRequestInviteFriend(presenceID, tank, heal, dps)
 end
@@ -1631,10 +1631,10 @@ end
 
 --- Creates a new Frame object.
 --- [https://wowpedia.fandom.com/wiki/API_CreateFrame]
---- @param frameType string @ Type of the frame e.g. Frame or Button.
+--- @param frameType string @ Type of the frame; e.g. Frame or Button.
 --- @param name string @ ? - Globally accessible name to assign to the frame, or nil for an anonymous frame.
 --- @param parent Frame @ ? - Parent object to assign to the frame, or nil to be parentless; cannot be a string. Can also be set with Region:SetParent()
---- @param template string @ ? - Comma-delimited list of virtual frames to inherit from. See also the Complete List of FrameXML templates.
+--- @param template string @ ? - Comma-delimited list of virtual XML templates to inherit; see also a complete list of FrameXML templates.
 --- @param id number @ ? - ID to assign to the frame. Can also be set with Frame:SetID()
 --- @return Frame @ frame
 function CreateFrame(frameType, name, parent, template, id)
@@ -1658,7 +1658,7 @@ end
 --- Determines if the item in the cursor can be equipped in the specified inventory slot.  Always returns 1 for bank bag slots.
 --- [https://wowpedia.fandom.com/wiki/API_CursorCanGoInSlot]
 --- @param invSlot number @ inventorySlotId) - Inventory slot to query
---- @return number @ fitsInSlot
+--- @return boolean @ fitsInSlot
 function CursorCanGoInSlot(invSlot)
 end
 
@@ -1930,7 +1930,7 @@ end
 --- Returns encounter boss info.
 --- [https://wowpedia.fandom.com/wiki/API_EJ_GetCreatureInfo]
 --- @param index number @ creature index, up to nine for encounters with multiple bosses.
---- @param encounterID number @ optional) - if omitted this will default to the currently viewed encounter.
+--- @param encounterID number @ optional) : JournalEncounterID - if omitted this will default to the currently viewed encounter.
 --- @return number, string, string, number, number, number @ id, name, description, displayInfo, iconImage, uiModelSceneID
 function EJ_GetCreatureInfo(index, encounterID)
 end
@@ -1949,7 +1949,7 @@ end
 
 --- Returns encounter info from the journal.
 --- [https://wowpedia.fandom.com/wiki/API_EJ_GetEncounterInfo]
---- @param encounterID number
+--- @param encounterID number @ JournalEncounterID
 --- @return void
 function EJ_GetEncounterInfo(encounterID)
 end
@@ -1969,14 +1969,14 @@ end
 
 --- Returns any corresponding instance ID for a UiMapID.
 --- [https://wowpedia.fandom.com/wiki/API_EJ_GetInstanceForMap]
---- @param mapID number
+--- @param mapID number @ UiMapID
 --- @return number @ instanceID
 function EJ_GetInstanceForMap(mapID)
 end
 
 --- Returns instance info for the Encounter Journal.
 --- [https://wowpedia.fandom.com/wiki/API_EJ_GetInstanceInfo]
---- @param instanceID number @ optional) - if omitted, this will default to the currently selected instance per EJ_SelectInstance.
+--- @param instanceID number @ optional) : JournalInstance.ID - If omitted, defaults to the currently selected instance from EJ_SelectInstance()
 --- @return unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown @ name, description, bgImage, buttonImage1, loreImage, buttonImage2, dungeonAreaMapID, link, shouldDisplayDifficulty
 function EJ_GetInstanceInfo(instanceID)
 end
@@ -1998,7 +1998,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_EJ_GetMapEncounter]
 --- @param mapID unknown
 --- @param index number @ index of the boss pins.
---- @param fromJournal boolean @ optional) - this function seems to only return results when passing true.
+--- @param fromJournal boolean @ ?Optional.  Could be nil. - this function seems to only return results when passing true.
 --- @return number, number, number, string, string, number, number, string @ x, y, instanceID, name, description, encounterID, rootSectionID, link
 function EJ_GetMapEncounter(mapID, index, fromJournal)
 end
@@ -2102,14 +2102,14 @@ end
 
 --- Selects an encounter for the Encounter Journal API state.
 --- [https://wowpedia.fandom.com/wiki/API_EJ_SelectEncounter]
---- @param encounterID number
+--- @param encounterID number @ JournalEncounterID
 --- @return void
 function EJ_SelectEncounter(encounterID)
 end
 
 --- Selects an instance for the Encounter Journal API state. [1]
 --- [https://wowpedia.fandom.com/wiki/API_EJ_SelectInstance]
---- @param instanceID number
+--- @param instanceID number @ JournalInstance.ID
 --- @return void
 function EJ_SelectInstance(instanceID)
 end
@@ -2866,7 +2866,7 @@ end
 --- Returns information about the current selection for a barber shop customization.
 --- [https://wowpedia.fandom.com/wiki/API_GetBarberShopStyleInfo]
 --- @param catId number @ Ascending index of the customization category to retrieve information for.
---- @return string, unknown, unknown, number @ name, unknown, unknown, isCurrent
+--- @return string, unknown, unknown, boolean @ name, unknown, unknown, isCurrent
 function GetBarberShopStyleInfo(catId)
 end
 
@@ -2963,7 +2963,7 @@ end
 --- Returns information about a battleground type.
 --- [https://wowpedia.fandom.com/wiki/API_GetBattlegroundInfo]
 --- @param index number @ battleground type index, 1 to GetNumBattlegroundTypes().
---- @return string, number, number, number, number, string @ name, canEnter, isHoliday, isRandom, battleGroundID, info
+--- @return string, boolean, boolean, boolean, number, string @ name, canEnter, isHoliday, isRandom, battleGroundID, info
 function GetBattlegroundInfo(index)
 end
 
@@ -3009,7 +3009,7 @@ end
 --- Returns the name of the action performed by the specified binding.
 --- [https://wowpedia.fandom.com/wiki/API_GetBindingAction]
 --- @param binding string @ The name of the key (eg. BUTTON1, 1, CTRL-G)
---- @param checkOverride boolean @ optional) - if true, override bindings will be checked, otherwise, only default (bindings.xml/SetBinding) bindings are consulted.
+--- @param checkOverride boolean @ ?Optional.  Could be nil. - if true, override bindings will be checked, otherwise, only default (bindings.xml/SetBinding) bindings are consulted.
 --- @return string @ action
 function GetBindingAction(binding, checkOverride)
 end
@@ -3030,9 +3030,9 @@ end
 
 --- Returns the localized string value for the given key and prefix. Essentially a glorified getglobal() function.
 --- [https://wowpedia.fandom.com/wiki/API_GetBindingText]
---- @param key string @ optional) - The name of the key (e.g. UP, SHIFT-PAGEDOWN)
---- @param prefix string @ optional) - The prefix of the variable name you're looking for.  Usually KEY_ or BINDING_NAME_.
---- @param abbreviate boolean @ optional) - Whether to return an abbreviated version of the modifier keys
+--- @param key string @ ?Optional.  Could be nil. - The name of the key (e.g. UP, SHIFT-PAGEDOWN)
+--- @param prefix string @ ?Optional.  Could be nil. - The prefix of the variable name you're looking for.  Usually KEY_ or BINDING_NAME_.
+--- @param abbreviate boolean @ ?Optional.  Could be nil. - Whether to return an abbreviated version of the modifier keys
 --- @return string @ text
 function GetBindingText(key, prefix, abbreviate)
 end
@@ -3256,7 +3256,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetCompanionInfo]
 --- @param type string @ Companion type to query: CRITTER or MOUNT.
 --- @param id number @ Index of the slot to query. Starting at 1 and going up to GetNumCompanions(type).
---- @return number, string, number, string, number, number @ creatureID, creatureName, creatureSpellID, icon, issummoned, mountType
+--- @return number, string, number, string, boolean, number @ creatureID, creatureName, creatureSpellID, icon, issummoned, mountType
 function GetCompanionInfo(type, id)
 end
 
@@ -3349,7 +3349,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetContainerItemQuestInfo]
 --- @param bag number @ BagID) - Index of the bag to query.
 --- @param slot number @ Index of the slot within the bag (ascending from 1) to query.
---- @return number, number, number @ isQuestItem, questId, isActive
+--- @return boolean, number, boolean @ isQuestItem, questId, isActive
 function GetContainerItemQuestInfo(bag, slot)
 end
 
@@ -4139,7 +4139,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetInboxItem]
 --- @param index number @ The index of the message to query, in the range [1,GetInboxNumItems()]
 --- @param itemIndex number @ The index of the item to query, in the range [1,ATTACHMENTS_MAX_RECEIVE]
---- @return string, number, string, number, number, number @ name, itemID, texture, count, quality, canUse
+--- @return string, number, string, number, number, boolean @ name, itemID, texture, count, quality, canUse
 function GetInboxItem(index, itemIndex)
 end
 
@@ -4831,7 +4831,7 @@ end
 --- Returns information about the loot event with rollID.
 --- [https://wowpedia.fandom.com/wiki/API_GetLootRollItemInfo]
 --- @param rollID number @ The number increments by 1 for each new roll. The count is not reset by reloading the UI.
---- @return string, string, number, number, number, number, number, number, number, number, number, number @ texture, name, count, quality, bindOnPickUp, canNeed, canGreed, canDisenchant, reasonNeed, reasonGreed, reasonDisenchant, deSkillRequired
+--- @return string, string, number, number, boolean, boolean, boolean, boolean, number, number, number, number @ texture, name, count, quality, bindOnPickUp, canNeed, canGreed, canDisenchant, reasonNeed, reasonGreed, reasonDisenchant, deSkillRequired
 function GetLootRollItemInfo(rollID)
 end
 
@@ -4909,7 +4909,7 @@ end
 --- Return information about a macro.
 --- [https://wowpedia.fandom.com/wiki/API_GetMacroInfo]
 --- @param name_or_macroSlot unknown
---- @return string, number, string, number @ name, icon, body, isLocal
+--- @return string, number, string, boolean @ name, icon, body, isLocal
 function GetMacroInfo(name_or_macroSlot)
 end
 
@@ -5115,7 +5115,7 @@ end
 --- Gives information about the mirror bar. (Spirit release, exhaustion/fatigue, etc)
 --- [https://wowpedia.fandom.com/wiki/API_GetMirrorTimerInfo]
 --- @param id number @ timer index, from 1 to MIRRORTIMER_NUMTIMERS (3 as of 3.2). In general, the following correspondence holds: 1 = Fatigue, 2 = Breath, 3 = Feign Death.
---- @return string, number, number, number, number, string @ timer, initial, maxvalue, scale, paused, label
+--- @return string, number, number, number, boolean, string @ timer, initial, maxvalue, scale, paused, label
 function GetMirrorTimerInfo(id)
 end
 
@@ -5304,7 +5304,7 @@ end
 
 --- Returns information about the number of purchased bank bag slots.
 --- [https://wowpedia.fandom.com/wiki/API_GetNumBankSlots]
---- @return number, number @ numSlots, full
+--- @return number, boolean @ numSlots, full
 function GetNumBankSlots()
 end
 
@@ -5796,7 +5796,7 @@ end
 
 --- Returns whether you're currently passing on all loot.
 --- [https://wowpedia.fandom.com/wiki/API_GetOptOutOfLoot]
---- @return number @ optedOut
+--- @return boolean @ optedOut
 function GetOptOutOfLoot()
 end
 
@@ -6155,7 +6155,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetQuestItemInfo]
 --- @param type string @ type of the item to query. One of the following values:
 --- @param index number @ index of the item of the specified type to return information about, ascending from 1.
---- @return string, string, number, number, number @ name, texture, count, quality, isUsable
+--- @return string, string, number, number, boolean @ name, texture, count, quality, isUsable
 function GetQuestItemInfo(type, index)
 end
 
@@ -6828,7 +6828,7 @@ end
 --- Returns cooldown information for a specified form.
 --- [https://wowpedia.fandom.com/wiki/API_GetShapeshiftFormCooldown]
 --- @param index number @ Index of the desired form
---- @return number, number, number @ startTime, duration, isActive
+--- @return number, number, boolean @ startTime, duration, isActive
 function GetShapeshiftFormCooldown(index)
 end
 
@@ -6841,7 +6841,7 @@ end
 --- Retrieves information about an available shapeshift form or similar ability.
 --- [https://wowpedia.fandom.com/wiki/API_GetShapeshiftFormInfo]
 --- @param index number @ index, ascending from 1 to GetNumShapeshiftForms()
---- @return string, number, number, number @ icon, active, castable, spellID
+--- @return string, boolean, boolean, number @ icon, active, castable, spellID
 function GetShapeshiftFormInfo(index)
 end
 
@@ -6859,7 +6859,7 @@ end
 
 --- Returns whether the item currently selected for socketing can be traded to other eligible players.
 --- [https://wowpedia.fandom.com/wiki/API_GetSocketItemBoundTradeable]
---- @return number @ isBoundTradeable
+--- @return boolean @ isBoundTradeable
 function GetSocketItemBoundTradeable()
 end
 
@@ -6871,7 +6871,7 @@ end
 
 --- Returns whether the item currently selected for socketing can be refunded.
 --- [https://wowpedia.fandom.com/wiki/API_GetSocketItemRefundable]
---- @return number @ isRefundable
+--- @return boolean @ isRefundable
 function GetSocketItemRefundable()
 end
 
@@ -6959,8 +6959,8 @@ end
 --- Returns spells learned as part of a specific specialization.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpecializationSpells]
 --- @param specIndex number @ index of the specialization to query, integer ascending from 1.
---- @param isInspect number @ a truthy value to query information about the inspected unit; player information is returned otherwise.
---- @param isPet number @ a truthy value to query information about a pet specialization; player information is returned otherwise.
+--- @param isInspect boolean @ a truthy value to query information about the inspected unit; player information is returned otherwise.
+--- @param isPet boolean @ a truthy value to query information about a pet specialization; player information is returned otherwise.
 --- @return unknown, unknown, unknown, unknown, unknown @ spellID1, level1, spellID2, level2, ...
 function GetSpecializationSpells(specIndex, isInspect, isPet)
 end
@@ -7386,7 +7386,7 @@ end
 --- Returns information regarding the specified tracking id.
 --- [https://wowpedia.fandom.com/wiki/API_GetTrackingInfo]
 --- @param id number @ tracking type index, ascending from 1 to GetNumTrackingTypes().
---- @return string, number, number, string, number @ name, texture, active, category, nested
+--- @return string, number, boolean, string, number @ name, texture, active, category, nested
 function GetTrackingInfo(id)
 end
 
@@ -7688,7 +7688,7 @@ end
 
 --- Returns information about the player's current temporary enchants, such as fishing lures or sharpening stones and weightstones produced by blacksmiths.
 --- [https://wowpedia.fandom.com/wiki/API_GetWeaponEnchantInfo]
---- @return number, number, number, number, number, number, number, number @ hasMainHandEnchant, mainHandExpiration, mainHandCharges, mainHandEnchantID, hasOffHandEnchant, offHandExpiration, offHandCharges, offHandEnchantID
+--- @return boolean, number, number, number, boolean, number, number, number @ hasMainHandEnchant, mainHandExpiration, mainHandCharges, mainHandEnchantID, hasOffHandEnchant, offHandExpiration, offHandCharges, offHandEnchantID
 function GetWeaponEnchantInfo()
 end
 
@@ -7963,7 +7963,7 @@ end
 
 --- Returns whether the player currently has an extra action bar/button.
 --- [https://wowpedia.fandom.com/wiki/API_HasExtraActionBar]
---- @return number @ hasBar
+--- @return boolean @ hasBar
 function HasExtraActionBar()
 end
 
@@ -7985,7 +7985,7 @@ end
 
 --- Returns whether the player is in a random party formed by the dungeon finder system.
 --- [https://wowpedia.fandom.com/wiki/API_HasLFGRestrictions]
---- @return number @ isRestricted
+--- @return boolean @ isRestricted
 function HasLFGRestrictions()
 end
 
@@ -8143,7 +8143,7 @@ end
 --- Returns whether an action is in range for use.
 --- [https://wowpedia.fandom.com/wiki/API_IsActionInRange]
 --- @param actionSlot number @ The action slot to test.
---- @return number @ inRange
+--- @return boolean @ inRange
 function IsActionInRange(actionSlot)
 end
 
@@ -8173,7 +8173,7 @@ end
 --- Returns whether an addon has been loaded.
 --- [https://wowpedia.fandom.com/wiki/API_IsAddOnLoaded]
 --- @param index_or_name unknown
---- @return number, number @ loaded, finished
+--- @return boolean, boolean @ loaded, finished
 function IsAddOnLoaded(index_or_name)
 end
 
@@ -8337,7 +8337,7 @@ end
 --- Returns whether an item is consumed when used.
 --- [https://wowpedia.fandom.com/wiki/API_IsConsumableItem]
 --- @param itemID_or_itemLink_or_itemName unknown
---- @return number @ isConsumable
+--- @return boolean @ isConsumable
 function IsConsumableItem(itemID_or_itemLink_or_itemName)
 end
 
@@ -8376,7 +8376,7 @@ end
 --- Determine whether an action is currently executing.
 --- [https://wowpedia.fandom.com/wiki/API_IsCurrentAction]
 --- @param actionSlot number @ action slot ID to query.
---- @return number @ isCurrent
+--- @return boolean @ isCurrent
 function IsCurrentAction(actionSlot)
 end
 
@@ -8495,7 +8495,7 @@ end
 --- Returns whether the player has flagged the specified faction as an inactive.
 --- [https://wowpedia.fandom.com/wiki/API_IsFactionInactive]
 --- @param index number @ index of the faction within the faction list, ascending from 1.
---- @return number @ inactive
+--- @return boolean @ inactive
 function IsFactionInactive(index)
 end
 
@@ -8621,7 +8621,7 @@ end
 
 --- Checks whether the player is in an instance and the type of instance.
 --- [https://wowpedia.fandom.com/wiki/API_IsInInstance]
---- @return number, string @ inInstance, instanceType
+--- @return boolean, string @ inInstance, instanceType
 function IsInInstance()
 end
 
@@ -8666,7 +8666,7 @@ end
 --- Returns whether an inventory item is locked, usually as it awaits pending action.
 --- [https://wowpedia.fandom.com/wiki/API_IsInventoryItemLocked]
 --- @param slotId number @ The slot ID used to refer to that slot in the other GetInventory functions.
---- @return number @ isLocked
+--- @return boolean @ isLocked
 function IsInventoryItemLocked(slotId)
 end
 
@@ -8823,7 +8823,7 @@ end
 
 --- Returns whether the player's character is currently outside of the map.
 --- [https://wowpedia.fandom.com/wiki/API_IsOutOfBounds]
---- @return number @ oob
+--- @return boolean @ oob
 function IsOutOfBounds()
 end
 
@@ -9040,7 +9040,7 @@ end
 --- @param index number @ spell book slot index, ascending from 1.
 --- @param bookType string @ one of BOOKTYPE_SPELL (spell) or BOOKTYPE_PET (pet) specifying which spellbook to index.
 --- @param target string @ unit to use as a target for the spell.
---- @return number @ inRange
+--- @return boolean @ inRange
 function IsSpellInRange(index, bookType, target)
 end
 
@@ -9102,7 +9102,7 @@ end
 
 --- Returns whether the player character is swimming.
 --- [https://wowpedia.fandom.com/wiki/API_IsSwimming]
---- @return number @ isSwimming
+--- @return boolean @ isSwimming
 function IsSwimming()
 end
 
@@ -9809,7 +9809,7 @@ end
 
 --- Indicates the player's account has reached a daily curfew of 90 minutes, imposed on children and any non-confirmed adults in China to comply with local law.[1]
 --- [https://wowpedia.fandom.com/wiki/API_NoPlayTime]
---- @return number @ isUnhealthy
+--- @return boolean @ isUnhealthy
 function NoPlayTime()
 end
 
@@ -10155,7 +10155,7 @@ end
 --- Plays the specified audio file once.
 --- [https://wowpedia.fandom.com/wiki/API_PlaySoundFile]
 --- @param soundFile_or_soundFileID unknown
---- @param channel string @ optional) - The sound volume slider setting the sound should use, one of: Master, SFX (Sound), Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to SFX if not specified.
+--- @param channel string @ ?Optional.  Could be nil. - The sound volume slider setting the sound should use, one of: Master, SFX (Sound), Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to SFX if not specified.
 --- @return boolean, number @ willPlay, soundHandle
 function PlaySoundFile(soundFile_or_soundFileID, channel)
 end
@@ -10318,7 +10318,7 @@ end
 
 --- Returns whether the currently offered quest is a daily quest.
 --- [https://wowpedia.fandom.com/wiki/API_QuestIsDaily]
---- @return number @ isDaily
+--- @return boolean @ isDaily
 function QuestIsDaily()
 end
 
@@ -10334,7 +10334,7 @@ end
 
 --- Returns whether the currently offered quest is a weekly quest.
 --- [https://wowpedia.fandom.com/wiki/API_QuestIsWeekly]
---- @return number @ isWeekly
+--- @return boolean @ isWeekly
 function QuestIsWeekly()
 end
 
@@ -11046,7 +11046,7 @@ end
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param command string @ nil - Any name attribute value of a Bindings.xml-defined binding, or an action command string, or nil to unbind all bindings from key. For example:
 --- @param mode number @ if the binding should be saved to the currently loaded binding set (default), or 2 if to the alternative.
---- @return number @ ok
+--- @return boolean @ ok
 function SetBinding(key, command, mode)
 end
 
@@ -11055,7 +11055,7 @@ end
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param buttonName string @ Name of the button you wish to click.
 --- @param button string @ Value of the button argument you wish to pass to the OnClick handler with the click; LeftButton by default.
---- @return number @ ok
+--- @return boolean @ ok
 function SetBindingClick(key, buttonName, button)
 end
 
@@ -11063,7 +11063,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_SetBindingItem]
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param item string @ Item name (or item string) you want the binding to use. For example: Hearthstone, item:6948
---- @return number @ ok
+--- @return boolean @ ok
 function SetBindingItem(key, item)
 end
 
@@ -11071,7 +11071,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_SetBindingMacro]
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param macroName_or_macroId unknown
---- @return number @ ok
+--- @return boolean @ ok
 function SetBindingMacro(key, macroName_or_macroId)
 end
 
@@ -11079,7 +11079,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_SetBindingSpell]
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param spell string @ Name of the spell you wish to cast when the binding is pressed.
---- @return number @ ok
+--- @return boolean @ ok
 function SetBindingSpell(key, spell)
 end
 
@@ -11186,7 +11186,7 @@ end
 --- Changes the current cursor graphic.
 --- [https://wowpedia.fandom.com/wiki/API_SetCursor]
 --- @param cursor string @ cursor to switch to; either a built-in cursor identifier (like ATTACK_CURSOR), path to a cursor texture (e.g. Interface/Cursor/Taxi), or nil to reset to a default cursor.
---- @return number @ changed
+--- @return boolean @ changed
 function SetCursor(cursor)
 end
 
@@ -11488,14 +11488,14 @@ end
 --- Alters style selection in a particular customization category.
 --- [https://wowpedia.fandom.com/wiki/API_SetNextBarberShopStyle]
 --- @param catId number @ Ascending index of the customization category that should be changed to the next/previous style.
---- @param reverse number @ if the selection should be changed to the previous style, nil if to the next.
+--- @param reverse boolean @ if the selection should be changed to the previous style, nil if to the next.
 --- @return void
 function SetNextBarberShopStyle(catId, reverse)
 end
 
 --- Controls whether the player is automatically passing on all loot.
 --- [https://wowpedia.fandom.com/wiki/API_SetOptOutOfLoot]
---- @param optOut number @ to make the player pass on all loot, nil otherwise.
+--- @param optOut boolean @ to make the player pass on all loot, nil otherwise.
 --- @return void
 function SetOptOutOfLoot(optOut)
 end
@@ -12054,13 +12054,13 @@ end
 
 --- Returns whether a spell is about to be cast, waiting for the player to select a target.
 --- [https://wowpedia.fandom.com/wiki/API_SpellIsTargeting]
---- @return number @ isTargeting
+--- @return boolean @ isTargeting
 function SpellIsTargeting()
 end
 
 --- Stops the current spellcasting.
 --- [https://wowpedia.fandom.com/wiki/API_SpellStopCasting]
---- @return number @ stopped
+--- @return boolean @ stopped
 function SpellStopCasting()
 end
 
@@ -12314,7 +12314,7 @@ end
 
 --- Selects the nearest enemy as the current target.
 --- [https://wowpedia.fandom.com/wiki/API_TargetNearestEnemy]
---- @param reverse number @ true to cycle backwards; false to cycle forwards.
+--- @param reverse boolean @ true to cycle backwards; false to cycle forwards.
 --- @return void
 function TargetNearestEnemy(reverse)
 end
@@ -12560,7 +12560,7 @@ end
 --- Removes a player from the party/raid group if you're the party leader, or initiates a vote to kick a player from a Dungeon Finder group.
 --- [https://wowpedia.fandom.com/wiki/API_UninviteUnit]
 --- @param name string @ Name of the player to remove from group. When removing cross-server players, it is important to include the server name: Ygramul-Emerald Dream.
---- @param reason string @ Optional) - Used when initiating a kick vote against the player.
+--- @param reason string @ ?Optional.  Could be nil. - Used when initiating a kick vote against the player.
 --- @return void
 function UninviteUnit(name, reason)
 end
@@ -13050,7 +13050,7 @@ end
 --- Returns whether a unit is feigning death.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsFeignDeath]
 --- @param unit string @ unit to check.
---- @return number @ isFeign
+--- @return boolean @ isFeign
 function UnitIsFeignDeath(unit)
 end
 
@@ -13160,7 +13160,7 @@ end
 --- Returns whether the specified unit is from the player's own realm (or, equivalently, a linked Connected Realm).
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsSameServer]
 --- @param unit string @ unitId of a unit to query.
---- @return number @ sameServer
+--- @return boolean @ sameServer
 function UnitIsSameServer(unit)
 end
 
@@ -13269,7 +13269,7 @@ end
 --- Returns whether a unit is another player in your party or the pet of another player in your party.
 --- [https://wowpedia.fandom.com/wiki/API_UnitPlayerOrPetInParty]
 --- @param unit string @ unitId) - Unit to check for party membership.
---- @return number @ inMyParty
+--- @return boolean @ inMyParty
 function UnitPlayerOrPetInParty(unit)
 end
 
@@ -13392,7 +13392,7 @@ end
 --- Returns RGBA values for the color of the unit's selection (the outline around and the circle underneath a player character or an NPC).
 --- [https://wowpedia.fandom.com/wiki/API_UnitSelectionColor]
 --- @param UnitId string @ The unit whose selection colour should be returned.
---- @param useExtendedColors boolean @ optional) - If true, a more appropriate colour of the unit's selection will be returned. For instance, if used on a dead hostile target, the default return will red (hostile), but the extended return will be grey (dead).
+--- @param useExtendedColors boolean @ ?Optional.  Could be nil. - If true, a more appropriate colour of the unit's selection will be returned. For instance, if used on a dead hostile target, the default return will red (hostile), but the extended return will be grey (dead).
 --- @return number, number, number, number @ red, green, blue, alpha
 function UnitSelectionColor(UnitId, useExtendedColors)
 end
@@ -13400,7 +13400,7 @@ end
 --- Returns a number corresponding to the type of the unit's selection (the outline around and the circle underneath a player character or an NPC).
 --- [https://wowpedia.fandom.com/wiki/API_UnitSelectionType]
 --- @param UnitId string @ The unit whose selection type should be returned.
---- @param useExtendedColors boolean @ optional) - If true, a more appropriate type of the unit's selection will be returned. For instance, if used on a dead hostile target, the default return will be 0 (hostile), but the extended return will be 9 (dead).
+--- @param useExtendedColors boolean @ ?Optional.  Could be nil. - If true, a more appropriate type of the unit's selection will be returned. For instance, if used on a dead hostile target, the default return will be 0 (hostile), but the extended return will be 9 (dead).
 --- @return number @ type
 function UnitSelectionType(UnitId, useExtendedColors)
 end
@@ -13600,8 +13600,8 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_UseContainerItem]
 --- @param bagID number @ The bag id, where the item to use is located
 --- @param slot number @ The slot in the bag, where the item to use is located
---- @param target string @ optional) - unit the item should be used on. If omitted, defaults to target if a the item must target someone.
---- @param reagentBankAccessible boolean @ optional) - This indicates, for cases where no target is given, if the item reagent bank is accessible (so bank frame is shown and switched to the reagent bank tab).
+--- @param target string @ ?Optional.  Could be nil. - unit the item should be used on. If omitted, defaults to target if a the item must target someone.
+--- @param reagentBankAccessible boolean @ ?Optional.  Could be nil. - This indicates, for cases where no target is given, if the item reagent bank is accessible (so bank frame is shown and switched to the reagent bank tab).
 --- @return void
 function UseContainerItem(bagID, slot, target, reagentBankAccessible)
 end
@@ -13621,7 +13621,7 @@ end
 --- Uses an item, optionally on a specified target.
 --- [https://wowpedia.fandom.com/wiki/API_UseItemByName]
 --- @param name string @ name of the item to use.
---- @param target string @ optional) - unit to use the item on, defaults to target for items that can be used on others.
+--- @param target string @ ?Optional.  Could be nil. - unit to use the item on, defaults to target for items that can be used on others.
 --- @return void
 function UseItemByName(name, target)
 end
@@ -14023,7 +14023,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_hooksecurefunc]
 --- @param table unknown @ Optional Table - Table to hook the functionName key in; if omitted, defaults to the global table (_G).
 --- @param functionName string @ name of the function being hooked.
---- @param hookfunc unknown @ Function - your hook function.
+--- @param hookfunc unknown @ function - your hook function.
 --- @return void
 function hooksecurefunc(table, functionName, hookfunc)
 end
@@ -14527,7 +14527,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_strsplit]
 --- @param delimiter string @ Characters (bytes) that will be interpreted as delimiter characters (bytes) in the string.
 --- @param subject string @ String to split.
---- @param pieces number @ optional) - Maximum number of pieces to make (the last piece would contain the rest of the string); by default, an unbounded number of pieces is returned.
+--- @param pieces number @ ?Optional.  Could be nil. - Maximum number of pieces to make (the last piece would contain the rest of the string); by default, an unbounded number of pieces is returned.
 --- @return void
 function strsplit(delimiter, subject, pieces)
 end
