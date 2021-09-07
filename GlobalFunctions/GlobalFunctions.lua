@@ -6140,9 +6140,10 @@ end
 function GetQuestExpansion()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_GetQuestFactionGroup?action=edit&amp;redlink=1]
---- @return void
-function GetQuestFactionGroup()
+--- [https://wowpedia.fandom.com/wiki/API_GetQuestFactionGroup]
+--- @param questID number @ Unique QuestID.
+--- @return number @ factionGroup
+function GetQuestFactionGroup(questID)
 end
 
 --- Returns the quest ID of the quest being offered/discussed with an NPC.
@@ -7528,9 +7529,9 @@ end
 function GetUICameraInfo()
 end
 
---- Returns a table of indices for combo points that have been charged. If the unit does not have combo points, or no points are charged, this function may return nil.
+--- Returns a table of indices for combo points that have been charged.
 --- [https://wowpedia.fandom.com/wiki/API_GetUnitChargedPowerPoints]
---- @param unit string
+--- @param unit string @ A UnitId, e.g. player.
 --- @return number @ pointIndices
 function GetUnitChargedPowerPoints(unit)
 end
