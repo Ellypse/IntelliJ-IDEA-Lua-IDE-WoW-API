@@ -19,6 +19,8 @@ function C_GamePad.ButtonIndexToBinding(buttonIndex) end
 ---@return string|nil configName
 function C_GamePad.ButtonIndexToConfigName(buttonIndex) end
 
+function C_GamePad.ClearLedColor() end
+
 ---@param configID GamePadConfigID 
 function C_GamePad.DeleteConfig(configID) end
 
@@ -47,15 +49,27 @@ function C_GamePad.GetDeviceMappedState(deviceID) end
 ---@return GamePadRawState|nil rawState
 function C_GamePad.GetDeviceRawState(deviceID) end
 
+---@return table color
+function C_GamePad.GetLedColor() end
+
 ---@return boolean enabled
 function C_GamePad.IsEnabled() end
 
 ---@param config GamePadConfig 
 function C_GamePad.SetConfig(config) end
 
+---@param color table 
+function C_GamePad.SetLedColor(color) end
+
+---@param vibrationType string 
+---@param intensity number 
+function C_GamePad.SetVibration(vibrationType, intensity) end
+
 ---@param stickIndex number 
 ---@return string|nil configName
 function C_GamePad.StickIndexToConfigName(stickIndex) end
+
+function C_GamePad.StopVibration() end
 
 ---@class GamePadAxisConfig
 ---@field axis string 
@@ -130,6 +144,8 @@ local GamePadStick = {}
 ---@field axisX string|nil 
 ---@field axisY string|nil 
 ---@field deadzone number|nil 
+---@field deadzoneX number|nil 
+---@field deadzoneY number|nil 
 ---@field comment string|nil 
 local GamePadStickConfig = {}
 

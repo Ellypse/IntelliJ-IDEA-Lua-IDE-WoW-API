@@ -46,12 +46,6 @@ function C_Soulbinds.FindNodeIDPendingUninstall(soulbindID, conduitID) end
 ---@return number soulbindID
 function C_Soulbinds.GetActiveSoulbindID() end
 
----@return number charges
-function C_Soulbinds.GetConduitCharges() end
-
----@return number charges
-function C_Soulbinds.GetConduitChargesCapacity() end
-
 ---@param conduitType SoulbindConduitType 
 ---@return ConduitCollectionData collectionData
 function C_Soulbinds.GetConduitCollection(conduitType) end
@@ -112,13 +106,6 @@ function C_Soulbinds.GetSoulbindData(soulbindID) end
 ---@param soulbindID number 
 ---@return number specIDs
 function C_Soulbinds.GetSpecsAssignedToSoulbind(soulbindID) end
-
----@return number count
-function C_Soulbinds.GetTotalConduitChargesPending() end
-
----@param soulbindID number 
----@return number count
-function C_Soulbinds.GetTotalConduitChargesPendingInSoulbind(soulbindID) end
 
 ---@param treeID number 
 ---@return SoulbindTree tree

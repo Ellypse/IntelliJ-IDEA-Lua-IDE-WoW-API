@@ -39,11 +39,17 @@ function C_Garrison.GetAutoTroops(followerType) end
 ---@return AutoCombatSpellInfo|nil spellInfo
 function C_Garrison.GetCombatLogSpellInfo(autoCombatSpellID) end
 
+---@return number equipmentLevel
+function C_Garrison.GetCurrentCypherEquipmentLevel() end
+
 ---@return number|nil currentGarrTalentTreeFriendshipFactionID
 function C_Garrison.GetCurrentGarrTalentTreeFriendshipFactionID() end
 
 ---@return number|nil currentGarrTalentTreeID
 function C_Garrison.GetCurrentGarrTalentTreeID() end
+
+---@return number|nil cyphersToNext
+function C_Garrison.GetCyphersToNextEquipmentLevel() end
 
 ---@param garrFollowerID string 
 ---@param followerLevel number 
@@ -69,6 +75,9 @@ function C_Garrison.GetGarrisonTalentTreeCurrencyTypes(garrTalentTreeID) end
 ---@param garrTalentTreeID number 
 ---@return number garrTalentTreeType
 function C_Garrison.GetGarrisonTalentTreeType(garrTalentTreeID) end
+
+---@return number maxEquipmentLevel
+function C_Garrison.GetMaxCypherEquipmentLevel() end
 
 ---@param missionID number 
 ---@return GarrisonEnemyEncounterInfo encounters
@@ -103,11 +112,13 @@ function C_Garrison.GetTalentTreeInfo(treeID) end
 ---@return number, GarrisonTalentCurrencyCostInfo goldCost, currencyCosts
 function C_Garrison.GetTalentTreeResetInfo(garrTalentTreeID) end
 
+---@param garrTalentID number 
+---@param researchRank number 
 ---@param garrTalentTreeID number 
 ---@param talentPointIndex number 
 ---@param isRespec number 
 ---@return number, GarrisonTalentCurrencyCostInfo, number goldCost, currencyCosts, durationSecs
-function C_Garrison.GetTalentTreeTalentPointResearchInfo(garrTalentTreeID, talentPointIndex, isRespec) end
+function C_Garrison.GetTalentTreeTalentPointResearchInfo(garrTalentID, researchRank, garrTalentTreeID, talentPointIndex, isRespec) end
 
 ---@param talentID number 
 ---@return number worldQuestID

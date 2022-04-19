@@ -114,6 +114,8 @@ function C_Club.EditStream(clubId, streamId, name, subject, leadersAndModerators
 
 function C_Club.Flush() end
 
+function C_Club.FocusCommunityStreams() end
+
 ---@param clubId string 
 ---@param streamId string 
 ---@return boolean focused
@@ -369,6 +371,9 @@ function C_Club.SetSocialQueueingEnabled(clubId, enabled) end
 ---@param clubType ClubType 
 ---@return boolean clubTypeIsAllowed
 function C_Club.ShouldAllowClubType(clubType) end
+
+---@param unsubscribe boolean 
+function C_Club.UnfocusAllStreams(unsubscribe) end
 
 ---@param clubId string 
 ---@param streamId string 

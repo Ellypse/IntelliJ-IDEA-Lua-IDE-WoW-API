@@ -105,6 +105,10 @@ function C_UIWidgetManager.GetTextureWithAnimationVisualizationInfo(widgetID) en
 ---@return number setID
 function C_UIWidgetManager.GetTopCenterWidgetSetID() end
 
+---@param widgetID number 
+---@return UnitPowerBarWidgetVisualizationInfo|nil widgetInfo
+function C_UIWidgetManager.GetUnitPowerBarWidgetVisualizationInfo(widgetID) end
+
 ---@param widgetSetID number 
 ---@return UIWidgetSetInfo widgetSetInfo
 function C_UIWidgetManager.GetWidgetSetInfo(widgetSetID) end
@@ -114,14 +118,20 @@ function C_UIWidgetManager.GetWidgetSetInfo(widgetSetID) end
 function C_UIWidgetManager.GetZoneControlVisualizationInfo(widgetID) end
 
 ---@param unitToken string 
-function C_UIWidgetManager.RegisterUnitForWidgetUpdates(unitToken) end
+---@param isGuid boolean 
+function C_UIWidgetManager.RegisterUnitForWidgetUpdates(unitToken, isGuid) end
 
 ---@param unit string @ [OPTIONAL]
 ---@overload fun()
 function C_UIWidgetManager.SetProcessingUnit(unit) end
 
+---@param unit string @ [OPTIONAL]
+---@overload fun()
+function C_UIWidgetManager.SetProcessingUnitGuid(unit) end
+
 ---@param unitToken string 
-function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken) end
+---@param isGuid boolean 
+function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 
 ---@class CaptureBarWidgetFillDirectionType
 local CaptureBarWidgetFillDirectionType = {}
@@ -151,6 +161,7 @@ local SpellDisplayIconDisplayType = {}
 SpellDisplayIconDisplayType.Buff = 0
 SpellDisplayIconDisplayType.Debuff = 1
 SpellDisplayIconDisplayType.Circular = 2
+SpellDisplayIconDisplayType.NoBorder = 3
 
 ---@class SpellDisplayIconSizeType
 local SpellDisplayIconSizeType = {}
@@ -192,6 +203,11 @@ StatusBarValueTextType.TimeShowOneLevelOnly = 4
 StatusBarValueTextType.ValueOverMax = 5
 StatusBarValueTextType.ValueOverMaxNormalized = 6
 
+---@class UIWidgetBlendModeType
+local UIWidgetBlendModeType = {}
+UIWidgetBlendModeType.Opaque = 0
+UIWidgetBlendModeType.Additive = 1
+
 ---@class UIWidgetFlag
 local UIWidgetFlag = {}
 UIWidgetFlag.UniversalWidget = 1
@@ -208,12 +224,18 @@ UIWidgetModelSceneLayer.None = 0
 UIWidgetModelSceneLayer.Front = 1
 UIWidgetModelSceneLayer.Back = 2
 
+---@class UIWidgetMotionType
+local UIWidgetMotionType = {}
+UIWidgetMotionType.Instant = 0
+UIWidgetMotionType.Smooth = 1
+
 ---@class UIWidgetTextSizeType
 local UIWidgetTextSizeType = {}
 UIWidgetTextSizeType.Small = 0
 UIWidgetTextSizeType.Medium = 1
 UIWidgetTextSizeType.Large = 2
 UIWidgetTextSizeType.Huge = 3
+UIWidgetTextSizeType.Standard = 4
 
 ---@class UIWidgetTooltipLocation
 local UIWidgetTooltipLocation = {}
@@ -245,6 +267,7 @@ WidgetEnabledState.Red = 2
 WidgetEnabledState.White = 3
 WidgetEnabledState.Green = 4
 WidgetEnabledState.Gold = 5
+WidgetEnabledState.Black = 6
 
 ---@class WidgetShownState
 local WidgetShownState = {}
@@ -256,6 +279,12 @@ local WidgetTextHorizontalAlignmentType = {}
 WidgetTextHorizontalAlignmentType.Left = 0
 WidgetTextHorizontalAlignmentType.Center = 1
 WidgetTextHorizontalAlignmentType.Right = 2
+
+---@class WidgetUnitPowerBarFlashMomentType
+local WidgetUnitPowerBarFlashMomentType = {}
+WidgetUnitPowerBarFlashMomentType.FlashWhenMax = 0
+WidgetUnitPowerBarFlashMomentType.FlashWhenMin = 1
+WidgetUnitPowerBarFlashMomentType.NeverFlash = 2
 
 ---@class ZoneControlActiveState
 local ZoneControlActiveState = {}
@@ -434,6 +463,7 @@ local DoubleStateIconRowVisualizationInfo = {}
 ---@field text string 
 ---@field leftBarTooltipLoc UIWidgetTooltipLocation 
 ---@field rightBarTooltipLoc UIWidgetTooltipLocation 
+---@field fillMotionType UIWidgetMotionType 
 ---@field widgetSizeSetting number 
 ---@field textureKit string 
 ---@field frameTextureKit string 
@@ -633,6 +663,10 @@ local StackedResourceTrackerWidgetVisualizationInfo = {}
 ---@field colorTint StatusBarColorTintValue 
 ---@field partitionValues table 
 ---@field tooltipLoc UIWidgetTooltipLocation 
+---@field fillMotionType UIWidgetMotionType 
+---@field barTextEnabledState WidgetEnabledState 
+---@field barTextFontType UIWidgetFontType 
+---@field barTextSizeType UIWidgetTextSizeType 
 ---@field widgetSizeSetting number 
 ---@field textureKit string 
 ---@field frameTextureKit string 
@@ -796,6 +830,34 @@ local UIWidgetSpellInfo = {}
 ---@field state1Tooltip string 
 ---@field state2Tooltip string 
 local UIWidgetStateIconInfo = {}
+
+---@class UnitPowerBarWidgetVisualizationInfo
+---@field shownState WidgetShownState 
+---@field barMin number 
+---@field barMax number 
+---@field barValue number 
+---@field tooltip string 
+---@field barValueTextType StatusBarValueTextType 
+---@field overrideBarText string 
+---@field overrideBarTextShownType StatusBarOverrideBarTextShownType 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field fillMotionType UIWidgetMotionType 
+---@field flashBlendModeType UIWidgetBlendModeType 
+---@field sparkBlendModeType UIWidgetBlendModeType 
+---@field flashMomentType WidgetUnitPowerBarFlashMomentType 
+---@field widgetSizeSetting number 
+---@field textureKit string 
+---@field frameTextureKit string 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
+local UnitPowerBarWidgetVisualizationInfo = {}
 
 ---@class ZoneControlVisualizationInfo
 ---@field shownState WidgetShownState 

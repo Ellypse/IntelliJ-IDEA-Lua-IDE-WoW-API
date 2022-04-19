@@ -21,9 +21,9 @@ local ConfigurationWarning = {}
 ConfigurationWarning.ShaderModelWillBeOutdated = 0
 ConfigurationWarning.ShaderModelIsOutdated = 1
 ConfigurationWarning.ConsoleDeviceSseOutdated = 2
-ConfigurationWarning.DriverBlacklisted = 3
+ConfigurationWarning.DriverBlocklisted = 3
 ConfigurationWarning.DriverOutOfDate = 4
-ConfigurationWarning.DeviceBlacklisted = 5
+ConfigurationWarning.DeviceBlocklisted = 5
 ConfigurationWarning.GraphicsApiWillBeOutdated = 6
 ConfigurationWarning.OsBitsWillBeOutdated = 7
 

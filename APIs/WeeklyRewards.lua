@@ -76,6 +76,7 @@ local WeeklyRewardActivityEncounterInfo = {}
 ---@field id number 
 ---@field level number 
 ---@field claimID number|nil 
+---@field raidString string|nil 
 ---@field rewards table 
 local WeeklyRewardActivityInfo = {}
 

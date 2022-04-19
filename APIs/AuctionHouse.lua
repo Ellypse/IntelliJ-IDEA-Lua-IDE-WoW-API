@@ -33,6 +33,10 @@ function C_AuctionHouse.ConfirmCommoditiesPurchase(itemID, quantity) end
 ---@return boolean favoritesAreAvailable
 function C_AuctionHouse.FavoritesAreAvailable() end
 
+---@param auctionID number 
+---@return AuctionInfo|nil priceInfo
+function C_AuctionHouse.GetAuctionInfoByID(auctionID) end
+
 ---@param classID number 
 ---@return number subClasses
 function C_AuctionHouse.GetAuctionItemSubClasses(classID) end
@@ -348,6 +352,15 @@ local AuctionHouseItemClassFilter = {}
 ---@field sortOrder AuctionHouseSortOrder 
 ---@field reverseSort bool 
 local AuctionHouseSortType = {}
+
+---@class AuctionInfo
+---@field itemKey ItemKey 
+---@field itemLink string|nil 
+---@field minBid number|nil 
+---@field bidAmount number|nil 
+---@field buyoutAmount number|nil 
+---@field bidder string|nil 
+local AuctionInfo = {}
 
 ---@class BidInfo
 ---@field auctionID number 

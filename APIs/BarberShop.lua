@@ -27,6 +27,12 @@ function C_BarberShop.HasAnyChanges() end
 ---@return boolean isViewingAlteredForm
 function C_BarberShop.IsViewingAlteredForm() end
 
+---@param choiceID number 
+function C_BarberShop.MarkCustomizationChoiceAsSeen(choiceID) end
+
+---@param optionID number 
+function C_BarberShop.MarkCustomizationOptionAsSeen(optionID) end
+
 ---@param optionID number 
 ---@param choiceID number 
 function C_BarberShop.PreviewCustomizationChoice(optionID, choiceID) end
@@ -39,6 +45,8 @@ function C_BarberShop.ResetCustomizationChoices() end
 
 ---@param diffDegrees number 
 function C_BarberShop.RotateCamera(diffDegrees) end
+
+function C_BarberShop.SaveSeenChoices() end
 
 ---@param offset number 
 function C_BarberShop.SetCameraDistanceOffset(offset) end

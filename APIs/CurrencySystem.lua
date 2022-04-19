@@ -40,7 +40,8 @@ function C_CurrencyInfo.GetCurrencyInfo(type) end
 function C_CurrencyInfo.GetCurrencyInfoFromLink(link) end
 
 ---@param type number 
----@param amount number 
+---@param amount number @ [OPTIONAL]
+---@overload fun(type:number)
 ---@return string link
 function C_CurrencyInfo.GetCurrencyLink(type, amount) end
 
@@ -102,6 +103,7 @@ local CurrencyDisplayInfo = {}
 ---@field isTypeUnused bool 
 ---@field isShowInBackpack bool 
 ---@field quantity number 
+---@field trackedQuantity number 
 ---@field iconFileID number 
 ---@field maxQuantity number 
 ---@field canEarnPerWeek bool 
