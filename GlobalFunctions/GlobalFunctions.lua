@@ -1676,9 +1676,13 @@ end
 function DeclineGuild()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_DeclineName?action=edit&amp;redlink=1]
---- @return void
-function DeclineName()
+--- Returns suggested declensions for a Russian name.
+--- [https://wowpedia.fandom.com/wiki/API_DeclineName]
+--- @param name string @ Nominative form of the player's or pet's name (string)
+--- @param gender number @ Gender for the returned names (for declensions of the player's name, should match the player's gender; for the pet's name, should be neuter).
+--- @param declensionSet number @ Ranging from 1 to GetNumDeclensionSets(). Lower indices correspond to better suggestions for the given name.
+--- @return string, string, string, string, string @ genitive, dative, accusative, instrumental, prepositional
+function DeclineName(name, gender, declensionSet)
 end
 
 --- Declines the currently offered quest.
@@ -1763,12 +1767,9 @@ end
 function DetectWowMouse()
 end
 
---- Disable an AddOn for subsequent sessions.
 --- [https://wowpedia.fandom.com/wiki/API_DisableAddOn]
---- @param index_or_name unknown
---- @param character string @ The name of the character (without realm) for whom to disable the addon. Defaults to the current character.
 --- @return void
-function DisableAddOn(index_or_name, character)
+function DisableAddOn()
 end
 
 --- Disable all AddOns for subsequent sessions.
@@ -1802,6 +1803,7 @@ end
 function DisplayChannelOwner(channelName)
 end
 
+--- Performs an emote.
 --- [https://wowpedia.fandom.com/wiki/API_DoEmote]
 --- @param token string @ the token that describes which emote is being used.  See Emotes Tokens
 --- @param target string @ UnitId of who the emote will be performed on. If nil, then it performs the emote on your current target, or yourself if you don't have a target. If the specified target does not exist or is out of range, then it performs the emote on yourself.
@@ -2115,12 +2117,12 @@ end
 function EjectPassengerFromSeat()
 end
 
---- Enables an AddOn for subsequent sessions.
+--- Enables an addon for subsequent sessions.
 --- [https://wowpedia.fandom.com/wiki/API_EnableAddOn]
---- @param index_or_name unknown
---- @param character string @ The name of the character (without realm) for whom to disable the addon, Defaults to the current character.
+--- @param indexOrName number @ Index from 1 to GetNumAddOns().
+--- @param characterOrAll string @ ? - Name of the character (without realm).
 --- @return void
-function EnableAddOn(index_or_name, character)
+function EnableAddOn(indexOrName, characterOrAll)
 end
 
 --- Enable all AddOns for subsequent sessions.
@@ -2144,7 +2146,7 @@ end
 function EndRefund()
 end
 
---- Returns frame which follows current frame, or first frame if argument is nil. The order of iteration follows the order that the frames were created in.
+--- Returns frame which follows current frame, or first frame if argument is nil.
 --- [https://wowpedia.fandom.com/wiki/API_EnumerateFrames]
 --- @param currentFrame table @ Frame) - current frame or nil to get first frame.
 --- @return table @ nextFrame
@@ -3705,16 +3707,16 @@ end
 
 --- Returns information about the specified friendship in the player's reputation pane.
 --- [https://wowpedia.fandom.com/wiki/API_GetFriendshipReputation]
---- @param factionID number @ FactionID
+--- @param factionID number @ FactionID - A subset of these IDs are friendship reputations.
 --- @return number, number, number, string, string, number, string, number, number @ friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold
 function GetFriendshipReputation(factionID)
 end
 
 --- Returns friendship rank indices.
 --- [https://wowpedia.fandom.com/wiki/API_GetFriendshipReputationRanks]
---- @param friendID number @ provided by API_GetFriendshipReputation (1st return); defaults to the currently interacting NPC if omitted
+--- @param factionID number @ ? : FactionID - A subset of these IDs are friendship reputations. Defaults to the currently interacting NPC if omitted
 --- @return number, number @ currentRank, maxRank
-function GetFriendshipReputationRanks(friendID)
+function GetFriendshipReputationRanks(factionID)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_GetFunctionCPUUsage?action=edit&amp;redlink=1]
@@ -5041,9 +5043,9 @@ end
 function GetMouseClickFocus()
 end
 
---- Returns the frame that is currently receiving mouse events.  The frame must have enableMouse=true
+--- Returns the frame that is currently receiving mouse events.
 --- [https://wowpedia.fandom.com/wiki/API_GetMouseFocus]
---- @return table @ frameID
+--- @return table @ frame
 function GetMouseFocus()
 end
 
@@ -5235,9 +5237,12 @@ end
 function GetNumCompletedAchievements()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_GetNumDeclensionSets?action=edit&amp;redlink=1]
---- @return void
-function GetNumDeclensionSets()
+--- Returns the number of suggested declension sets for a name.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumDeclensionSets]
+--- @param name string
+--- @param gender number
+--- @return number @ numDeclensionSets
+function GetNumDeclensionSets(name, gender)
 end
 
 --- This function returns the number of channels and headers currently displayed by ChannelFrame. Usually used to loop through all available channels/headers to perfom API GetChannelDisplayInfo on them.  Note that this function only retrieves the number of visible channels/headers! Those subchannels that are hidden by a collapsed header are not counted.
@@ -5719,12 +5724,12 @@ end
 function GetParryChanceFromAttribute()
 end
 
---- Returns a list of raidmembers with a main tank or main assist role.
+--- Returns if a group member is assigned the main tank/assist role.
 --- [https://wowpedia.fandom.com/wiki/API_GetPartyAssignment]
 --- @param assignment string @ The role to search, either MAINTANK or MAINASSIST (not case-sensitive).
 --- @param raidmember string @ UnitId
 --- @param exactMatch boolean
---- @return number, number @ raidIndex1, raidIndex2
+--- @return boolean @ isAssigned
 function GetPartyAssignment(assignment, raidmember, exactMatch)
 end
 
@@ -7746,7 +7751,7 @@ end
 --- Tests if an action slot is occupied.
 --- [https://wowpedia.fandom.com/wiki/API_HasAction]
 --- @param actionSlot number @ ActionSlot : The tested action slot.
---- @return number @ hasAction
+--- @return boolean @ hasAction
 function HasAction(actionSlot)
 end
 
@@ -7985,7 +7990,7 @@ end
 --- Determine if an AddOn is loaded on demand (via .toc file dependencies or LoadAddOn) rather than at startup
 --- [https://wowpedia.fandom.com/wiki/API_IsAddOnLoadOnDemand]
 --- @param index_or_name unknown
---- @return number @ loadDemand
+--- @return unknown @ loadDemand
 function IsAddOnLoadOnDemand(index_or_name)
 end
 
@@ -10312,7 +10317,7 @@ end
 function ReplaceTradeEnchant()
 end
 
---- This function appears to be unrestricted.
+--- Releases your ghost to the graveyard when dead.
 --- [https://wowpedia.fandom.com/wiki/API_RepopMe]
 --- @return void
 function RepopMe()
@@ -10520,7 +10525,7 @@ end
 function ResurrectHasTimer()
 end
 
---- This function appears to be unrestricted.
+--- Resurrects when the player is standing near its corpse.
 --- [https://wowpedia.fandom.com/wiki/API_RetrieveCorpse]
 --- @return void
 function RetrieveCorpse()
