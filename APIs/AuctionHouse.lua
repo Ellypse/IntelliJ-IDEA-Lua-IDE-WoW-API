@@ -53,6 +53,9 @@ function C_AuctionHouse.GetBidInfo(bidIndex) end
 ---@return ItemKey|nil typeItemKey
 function C_AuctionHouse.GetBidType(bidTypeIndex) end
 
+---@return BidInfo bids
+function C_AuctionHouse.GetBids() end
+
 ---@return BrowseResultInfo browseResults
 function C_AuctionHouse.GetBrowseResults() end
 
@@ -156,6 +159,9 @@ function C_AuctionHouse.GetOwnedAuctionInfo(ownedAuctionIndex) end
 ---@param ownedAuctionTypeIndex number 
 ---@return ItemKey|nil typeItemKey
 function C_AuctionHouse.GetOwnedAuctionType(ownedAuctionTypeIndex) end
+
+---@return OwnedAuctionInfo ownedAuctions
+function C_AuctionHouse.GetOwnedAuctions() end
 
 ---@return number quoteDurationSeconds
 function C_AuctionHouse.GetQuoteDurationRemaining() end
@@ -265,6 +271,8 @@ function C_AuctionHouse.RefreshItemSearchResults(itemKey, minLevelFilter, maxLev
 --- This function should be used in place of an 'allItem' QueryAuctionItems call to query the entire auction house.
 function C_AuctionHouse.ReplicateItems() end
 
+function C_AuctionHouse.RequestFavorites() end
+
 function C_AuctionHouse.RequestMoreBrowseResults() end
 
 ---@param itemID number 
@@ -276,7 +284,7 @@ function C_AuctionHouse.RequestMoreCommoditySearchResults(itemID) end
 function C_AuctionHouse.RequestMoreItemSearchResults(itemKey) end
 
 ---@param auctionID number 
----@return string|nil bidderName
+---@return string bidderName
 function C_AuctionHouse.RequestOwnedAuctionBidderInfo(auctionID) end
 
 ---@param sorts AuctionHouseSortType 
@@ -345,7 +353,7 @@ local AuctionHouseFilterGroup = {}
 ---@class AuctionHouseItemClassFilter
 ---@field classID number 
 ---@field subClassID number|nil 
----@field inventoryType number|nil 
+---@field inventoryType InventoryType|nil 
 local AuctionHouseItemClassFilter = {}
 
 ---@class AuctionHouseSortType

@@ -1,6 +1,11 @@
 ---@class GamePad
 C_GamePad = {}
 
+---@param platform ClientPlatformType 
+---@param mapping string 
+---@return boolean success
+function C_GamePad.AddSDLMapping(platform, mapping) end
+
 function C_GamePad.ApplyConfigs() end
 
 ---@param axisIndex number 
@@ -51,6 +56,11 @@ function C_GamePad.GetDeviceRawState(deviceID) end
 
 ---@return table color
 function C_GamePad.GetLedColor() end
+
+---@param deviceID number @ [OPTIONAL]
+---@overload fun()
+---@return GamePadPowerLevel powerLevel
+function C_GamePad.GetPowerLevel(deviceID) end
 
 ---@return boolean enabled
 function C_GamePad.IsEnabled() end

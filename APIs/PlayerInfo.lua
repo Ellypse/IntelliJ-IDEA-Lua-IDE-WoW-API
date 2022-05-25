@@ -40,6 +40,10 @@ function C_PlayerInfo.IsPlayerEligibleForNPEv2() end
 ---@return boolean inChromieTime
 function C_PlayerInfo.IsPlayerInChromieTime() end
 
+---@param playerGUID string 
+---@return boolean IsInGuild
+function C_PlayerInfo.IsPlayerInGuildFromGUID(playerGUID) end
+
 ---@return boolean isRestricted
 function C_PlayerInfo.IsPlayerNPERestricted() end
 

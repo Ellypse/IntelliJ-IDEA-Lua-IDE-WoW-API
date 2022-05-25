@@ -70,6 +70,10 @@ function C_FriendList.IsIgnored(token) end
 ---@return boolean isIgnored
 function C_FriendList.IsIgnoredByGuid(guid) end
 
+---@param token string 
+---@return boolean isIgnored
+function C_FriendList.IsOnIgnoredList(token) end
+
 ---@param name string 
 ---@return boolean removed
 function C_FriendList.RemoveFriend(name) end

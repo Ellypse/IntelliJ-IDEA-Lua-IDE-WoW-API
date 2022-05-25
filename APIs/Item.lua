@@ -93,6 +93,10 @@ function C_Item.GetItemQualityByID(itemInfo) end
 ---@return boolean, string|nil, number|nil, number|nil isUnique, limitCategoryName, limitCategoryCount, limitCategoryID
 function C_Item.GetItemUniquenessByID(itemInfo) end
 
+---@param itemInfo string 
+---@return string, number, number, number, number name, icon, quantity, maxQuantity, totalEarned
+function C_Item.GetLimitedCurrencyItemInfo(itemInfo) end
+
 ---@param itemLocation table 
 ---@return number stackCount
 function C_Item.GetStackCount(itemLocation) end

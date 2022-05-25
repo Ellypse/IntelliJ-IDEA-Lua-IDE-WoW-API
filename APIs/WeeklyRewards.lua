@@ -46,6 +46,8 @@ function C_WeeklyRewards.HasGeneratedRewards() end
 ---@return boolean isInteracting
 function C_WeeklyRewards.HasInteraction() end
 
+function C_WeeklyRewards.OnUIInteract() end
+
 ---@class ConquestProgressBarDisplayType
 local ConquestProgressBarDisplayType = {}
 ConquestProgressBarDisplayType.FirstChest = 0

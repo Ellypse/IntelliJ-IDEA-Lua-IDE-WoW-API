@@ -18,7 +18,7 @@ function C_LFGList.CopyActiveEntryInfoToCreationFields() end
 
 ---@param activityID number 
 ---@param groupID number 
----@param playstyle LfgEntryPlaystyle @ [OPTIONAL]
+---@param playstyle LFGEntryPlaystyle @ [OPTIONAL]
 ---@overload fun(activityID:number, groupID:number)
 ---@return boolean matches
 function C_LFGList.DoesEntryTitleMatchPrebuiltTitle(activityID, groupID, playstyle) end
@@ -77,7 +77,7 @@ function C_LFGList.GetLfgCategoryInfo(categoryID) end
 ---@return number, number, number activityID, groupID, keystoneLevel
 function C_LFGList.GetOwnedKeystoneActivityAndGroupAndLevel(getTimewalking) end
 
----@param playstyle LfgEntryPlaystyle 
+---@param playstyle LFGEntryPlaystyle 
 ---@param activityInfo GroupFinderActivityInfo 
 ---@return string playstyleString
 function C_LFGList.GetPlaystyleString(playstyle, activityInfo) end
@@ -105,12 +105,14 @@ function C_LFGList.IsPlayerAuthenticatedForLFG(activityID) end
 ---@param filter number 
 ---@param preferredFilters number 
 ---@param languageFilter WowLocale @ [OPTIONAL]
+---@param searchCrossFactionListings boolean @ [OPTIONAL]
+---@overload fun(categoryID:number, filter:number, preferredFilters:number, searchCrossFactionListings:bool)
 ---@overload fun(categoryID:number, filter:number, preferredFilters:number)
-function C_LFGList.Search(categoryID, filter, preferredFilters, languageFilter) end
+function C_LFGList.Search(categoryID, filter, preferredFilters, languageFilter, searchCrossFactionListings) end
 
 ---@param activityID number 
 ---@param groupID number 
----@param playstyle LfgEntryPlaystyle @ [OPTIONAL]
+---@param playstyle LFGEntryPlaystyle @ [OPTIONAL]
 ---@overload fun(activityID:number, groupID:number)
 function C_LFGList.SetEntryTitle(activityID, groupID, playstyle) end
 
@@ -129,20 +131,20 @@ function C_LFGList.ValidateRequiredDungeonScore(dungeonScore) end
 ---@return boolean passes
 function C_LFGList.ValidateRequiredPvpRatingForActivity(activityID, rating) end
 
----@class LfgEntryPlaystyle
-local LfgEntryPlaystyle = {}
-LfgEntryPlaystyle.None = 0
-LfgEntryPlaystyle.Standard = 1
-LfgEntryPlaystyle.Casual = 2
-LfgEntryPlaystyle.Hardcore = 3
+---@class LFGEntryPlaystyle
+local LFGEntryPlaystyle = {}
+LFGEntryPlaystyle.None = 0
+LFGEntryPlaystyle.Standard = 1
+LFGEntryPlaystyle.Casual = 2
+LFGEntryPlaystyle.Hardcore = 3
 
----@class LfgListDisplayType
-local LfgListDisplayType = {}
-LfgListDisplayType.RoleCount = 0
-LfgListDisplayType.RoleEnumerate = 1
-LfgListDisplayType.ClassEnumerate = 2
-LfgListDisplayType.HideAll = 3
-LfgListDisplayType.PlayerCount = 4
+---@class LFGListDisplayType
+local LFGListDisplayType = {}
+LFGListDisplayType.RoleCount = 0
+LFGListDisplayType.RoleEnumerate = 1
+LFGListDisplayType.ClassEnumerate = 2
+LFGListDisplayType.HideAll = 3
+LFGListDisplayType.PlayerCount = 4
 
 ---@class BestDungeonScoreMapInfo
 ---@field mapScore number 
@@ -160,7 +162,7 @@ local BestDungeonScoreMapInfo = {}
 ---@field filters number 
 ---@field minLevel number 
 ---@field maxNumPlayers number 
----@field displayType LfgListDisplayType 
+---@field displayType LFGListDisplayType 
 ---@field orderIndex number 
 ---@field useHonorLevel bool 
 ---@field showQuickJoinToast bool 
@@ -169,6 +171,7 @@ local BestDungeonScoreMapInfo = {}
 ---@field isCurrentRaidActivity bool 
 ---@field isPvpActivity bool 
 ---@field isMythicActivity bool 
+---@field allowCrossFaction bool 
 local GroupFinderActivityInfo = {}
 
 ---@class LfgApplicantData
@@ -188,6 +191,7 @@ local LfgApplicantData = {}
 ---@field autoChooseActivity bool 
 ---@field preferCurrentArea bool 
 ---@field showPlaystyleDropdown bool 
+---@field allowCrossFaction bool 
 local LfgCategoryData = {}
 
 ---@class LfgEntryData
@@ -203,7 +207,8 @@ local LfgCategoryData = {}
 ---@field questID number|nil 
 ---@field requiredDungeonScore number|nil 
 ---@field requiredPvpRating number|nil 
----@field playstyle LfgEntryPlaystyle|nil 
+---@field playstyle LFGEntryPlaystyle|nil 
+---@field isCrossFactionListing bool 
 local LfgEntryData = {}
 
 ---@class LfgSearchResultData
@@ -229,7 +234,9 @@ local LfgEntryData = {}
 ---@field leaderPvpRatingInfo PvpRatingInfo|nil 
 ---@field requiredDungeonScore number|nil 
 ---@field requiredPvpRating number|nil 
----@field playstyle LfgEntryPlaystyle|nil 
+---@field playstyle LFGEntryPlaystyle|nil 
+---@field crossFactionListing bool|nil 
+---@field leaderFactionGroup number 
 local LfgSearchResultData = {}
 
 ---@class PvpRatingInfo

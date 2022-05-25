@@ -823,6 +823,9 @@ local UIWidgetSetInfo = {}
 ---@field iconSizeType SpellDisplayIconSizeType 
 ---@field iconDisplayType SpellDisplayIconDisplayType 
 ---@field textShownState SpellDisplayTextShownStateType 
+---@field textFontType UIWidgetFontType 
+---@field textSizeType UIWidgetTextSizeType 
+---@field hAlignType WidgetTextHorizontalAlignmentType 
 local UIWidgetSpellInfo = {}
 
 ---@class UIWidgetStateIconInfo

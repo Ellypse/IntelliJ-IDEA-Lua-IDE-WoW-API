@@ -86,22 +86,12 @@ function C_Transmog.LoadOutfit(outfitID) end
 ---@param pendingInfo table 
 function C_Transmog.SetPending(transmogLocation, pendingInfo) end
 
----@class TransmogModification
-local TransmogModification = {}
-TransmogModification.Main = 0
-TransmogModification.Secondary = 1
-
 ---@class TransmogPendingType
 local TransmogPendingType = {}
 TransmogPendingType.Apply = 0
 TransmogPendingType.Revert = 1
 TransmogPendingType.ToggleOn = 2
 TransmogPendingType.ToggleOff = 3
-
----@class TransmogType
-local TransmogType = {}
-TransmogType.Appearance = 0
-TransmogType.Illusion = 1
 
 ---@class TransmogApplyWarningInfo
 ---@field itemLink string 

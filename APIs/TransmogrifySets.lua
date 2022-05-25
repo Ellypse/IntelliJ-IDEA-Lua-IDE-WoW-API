@@ -89,9 +89,14 @@ function C_TransmogSets.IsNewSource(sourceID) end
 ---@return boolean isVisible
 function C_TransmogSets.IsSetVisible(transmogSetID) end
 
+---@return boolean isUsingDefaultBaseSetsFilters
+function C_TransmogSets.IsUsingDefaultBaseSetsFilters() end
+
 ---@param index number 
 ---@param isChecked boolean 
 function C_TransmogSets.SetBaseSetsFilter(index, isChecked) end
+
+function C_TransmogSets.SetDefaultBaseSetsFilters() end
 
 ---@param transmogSetID number 
 ---@return boolean hasNewSources

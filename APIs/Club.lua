@@ -39,8 +39,10 @@ function C_Club.CompareBattleNetDisplayName(clubId, lhsMemberId, rhsMemberId) en
 ---@param description string 
 ---@param clubType ClubType @ Valid types are BattleNet or Character
 ---@param avatarId number 
+---@param isCrossFaction boolean @ [OPTIONAL]
+---@overload fun(name:string, description:string, clubType:ClubType, avatarId:number, isCrossFaction:bool)
 ---@overload fun(name:string, description:string, clubType:ClubType, avatarId:number)
-function C_Club.CreateClub(name, shortName, description, clubType, avatarId) end
+function C_Club.CreateClub(name, shortName, description, clubType, avatarId, isCrossFaction) end
 
 --- Check the canCreateStream privilege.
 ---@param clubId string 
@@ -54,10 +56,12 @@ function C_Club.CreateStream(clubId, name, subject, leadersAndModeratorsOnly) en
 ---@param allowedRedeemCount number @ Number of uses. nil means unlimited [OPTIONAL]
 ---@param duration number @ Duration in seconds. nil never expires [OPTIONAL]
 ---@param defaultStreamId string @ [OPTIONAL]
----@overload fun(clubId:string, duration:number, defaultStreamId:string)
----@overload fun(clubId:string, defaultStreamId:string)
+---@param isCrossFaction boolean @ [OPTIONAL]
+---@overload fun(clubId:string, duration:number, defaultStreamId:string, isCrossFaction:bool)
+---@overload fun(clubId:string, defaultStreamId:string, isCrossFaction:bool)
+---@overload fun(clubId:string, isCrossFaction:bool)
 ---@overload fun(clubId:string)
-function C_Club.CreateTicket(clubId, allowedRedeemCount, duration, defaultStreamId) end
+function C_Club.CreateTicket(clubId, allowedRedeemCount, duration, defaultStreamId, isCrossFaction) end
 
 ---@param clubId string 
 function C_Club.DeclineInvitation(clubId) end
@@ -81,6 +85,10 @@ function C_Club.DestroyStream(clubId, streamId) end
 ---@param ticketId string 
 function C_Club.DestroyTicket(clubId, ticketId) end
 
+---@param clubId string 
+---@return boolean hasMembersOfOppositeFaction
+function C_Club.DoesCommunityHaveMembersOfTheOppositeFaction(clubId) end
+
 --- nil arguments will not change existing club data
 ---@param clubId string 
 ---@param name string @ [OPTIONAL]
@@ -88,12 +96,14 @@ function C_Club.DestroyTicket(clubId, ticketId) end
 ---@param description string @ [OPTIONAL]
 ---@param avatarId number @ [OPTIONAL]
 ---@param broadcast string @ [OPTIONAL]
----@overload fun(clubId:string, shortName:string, description:string, avatarId:number, broadcast:string)
----@overload fun(clubId:string, description:string, avatarId:number, broadcast:string)
----@overload fun(clubId:string, avatarId:number, broadcast:string)
----@overload fun(clubId:string, broadcast:string)
+---@param crossFaction boolean @ [OPTIONAL]
+---@overload fun(clubId:string, shortName:string, description:string, avatarId:number, broadcast:string, crossFaction:bool)
+---@overload fun(clubId:string, description:string, avatarId:number, broadcast:string, crossFaction:bool)
+---@overload fun(clubId:string, avatarId:number, broadcast:string, crossFaction:bool)
+---@overload fun(clubId:string, broadcast:string, crossFaction:bool)
+---@overload fun(clubId:string, crossFaction:bool)
 ---@overload fun(clubId:string)
-function C_Club.EditClub(clubId, name, shortName, description, avatarId, broadcast) end
+function C_Club.EditClub(clubId, name, shortName, description, avatarId, broadcast, crossFaction) end
 
 ---@param clubId string 
 ---@param streamId string 
@@ -457,6 +467,8 @@ ClubErrorType.ErrorClubBanCountAtMax = 36
 ClubErrorType.ErrorClubTicketCountAtMax = 37
 ClubErrorType.ErrorClubTicketNoSuchTicket = 38
 ClubErrorType.ErrorClubTicketHasConsumedAllowedRedeemCount = 39
+ClubErrorType.ErrorClubDoesntAllowCrossFaction = 40
+ClubErrorType.ErrorClubEditHasCrossFactionMembers = 41
 
 ---@class ClubFieldType
 local ClubFieldType = {}
@@ -555,6 +567,7 @@ ValidateNameResult.NameSpacesDisallowed = 17
 ---@field favoriteTimeStamp number|nil 
 ---@field joinTime number|nil 
 ---@field socialQueueingEnabled bool|nil 
+---@field crossFaction bool|nil 
 local ClubInfo = {}
 
 ---@class ClubInvitationCandidateInfo
@@ -604,6 +617,7 @@ local ClubLimits = {}
 ---@field guildRankOrder number|nil 
 ---@field isRemoteChat bool|nil 
 ---@field overallDungeonScore number|nil 
+---@field faction PvPFaction|nil 
 local ClubMemberInfo = {}
 
 ---@class ClubMessageIdentifier

@@ -94,6 +94,9 @@ function C_MountJournal.IsSourceChecked(filterIndex) end
 ---@return boolean isChecked
 function C_MountJournal.IsTypeChecked(filterIndex) end
 
+---@return boolean isUsingDefaultFilters
+function C_MountJournal.IsUsingDefaultFilters() end
+
 ---@param filterIndex number 
 ---@return boolean isValid
 function C_MountJournal.IsValidSourceFilter(filterIndex) end
@@ -118,6 +121,8 @@ function C_MountJournal.SetAllTypeFilters(isChecked) end
 ---@param filterIndex number 
 ---@param isChecked boolean 
 function C_MountJournal.SetCollectedFilterSetting(filterIndex, isChecked) end
+
+function C_MountJournal.SetDefaultFilters() end
 
 ---@param mountIndex number 
 ---@param isFavorite boolean 

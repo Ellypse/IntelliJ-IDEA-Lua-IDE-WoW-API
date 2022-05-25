@@ -245,7 +245,8 @@ local BrawlType = {}
 BrawlType.None = 0
 BrawlType.Battleground = 1
 BrawlType.Arena = 2
-BrawlType.Lfg = 3
+BrawlType.LFG = 3
+BrawlType.SoloShuffle = 4
 
 ---@class PvPMatchState
 local PvPMatchState = {}

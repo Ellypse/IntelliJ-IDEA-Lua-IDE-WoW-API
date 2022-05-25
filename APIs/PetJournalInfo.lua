@@ -35,6 +35,9 @@ function C_PetJournal.GetPetLoadOutInfo(slot) end
 ---@return boolean, PetJournalError, string isSummonable, error, errorText
 function C_PetJournal.GetPetSummonInfo(battlePetGUID) end
 
+---@return boolean isUsingDefaultFilters
+function C_PetJournal.IsUsingDefaultFilters() end
+
 ---@param battlePetGUID string 
 ---@return boolean isSummonable
 function C_PetJournal.PetIsSummonable(battlePetGUID) end
@@ -42,6 +45,8 @@ function C_PetJournal.PetIsSummonable(battlePetGUID) end
 ---@param speciesID number 
 ---@return boolean|nil usesRandomDisplay
 function C_PetJournal.PetUsesRandomDisplay(speciesID) end
+
+function C_PetJournal.SetDefaultFilters() end
 
 ---@class PetJournalError
 local PetJournalError = {}
