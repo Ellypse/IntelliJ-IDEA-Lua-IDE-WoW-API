@@ -1805,7 +1805,7 @@ end
 
 --- Performs an emote.
 --- [https://wowpedia.fandom.com/wiki/API_DoEmote]
---- @param token string @ EmoteToken
+--- @param token string @ EmoteToken - The emote to perform.
 --- @param unit string @ ? : UnitId - Who the emote will be performed on. Defaults to the current target.
 --- @param hold boolean @ ? - Supposedly holds the emote animation until canceled, like for the /read emote.
 --- @return boolean @ restricted
@@ -6851,7 +6851,7 @@ end
 
 --- Retrieves the spell name and spell rank for a spell in the player's spell book.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpellBookItemName]
---- @param index number @ Spellbook slot index, ranging from 1 through total number of spells in the spell book on all pages and all tabs.
+--- @param index number @ Spellbook slot index, ranging from 1 through total number of spells in the spell book on all tabs and pages.
 --- @param bookType string @ BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook. Internally the game only tests if this is equal to pet and treats any other string value as spell.
 --- @return string, string, number @ spellName, spellSubName, spellID
 function GetSpellBookItemName(index, bookType)
@@ -6868,7 +6868,7 @@ end
 --- Returns information about the charges of a charge-accumulating player ability.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpellCharges]
 --- @param index number @ Spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
---- @param bookType string
+--- @param bookType string @ BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook.
 --- @return void
 function GetSpellCharges(index, bookType)
 end
@@ -6889,7 +6889,7 @@ end
 --- Returns the number of times a spell can be cast. Generally used for spells limited by the number of available item reagents.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpellCount]
 --- @param index number @ Spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
---- @param bookType string
+--- @param bookType string @ BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook.
 --- @return number @ numCasts
 function GetSpellCount(index, bookType)
 end
@@ -6917,7 +6917,7 @@ end
 --- Returns spell info.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpellInfo]
 --- @param index number @ Spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
---- @param bookType string
+--- @param bookType string @ BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook.
 --- @return void
 function GetSpellInfo(index, bookType)
 end
@@ -6929,10 +6929,10 @@ end
 
 --- Returns a hyperlink for a spell.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpellLink]
---- @param slot number @ Valid values are 1 through total number of spells in the spellbook on all pages and all tabs, ignoring empty slots.
---- @param bookType string @ BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook. Internally the game only tests if this value is equal to pet and treats any other string value as spell.
+--- @param index number @ Spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
+--- @param bookType string @ BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook.
 --- @return string, number @ link, spellId
-function GetSpellLink(slot, bookType)
+function GetSpellLink(index, bookType)
 end
 
 --- Returns information about a loss-of-control cooldown affecting a spell.
@@ -6952,7 +6952,7 @@ end
 --- Returns a table describing the resource cost of a spell.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpellPowerCost]
 --- @param index number @ Spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
---- @param bookType string
+--- @param bookType string @ BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook.
 --- @return table @ costs
 function GetSpellPowerCost(index, bookType)
 end
@@ -6982,7 +6982,7 @@ end
 --- Returns the icon of the specified spell.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpellTexture]
 --- @param index number @ Spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
---- @param bookType string
+--- @param bookType string @ BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook.
 --- @return number @ icon
 function GetSpellTexture(index, bookType)
 end
@@ -9014,7 +9014,7 @@ end
 --- Determines whether a spell can be used by the player character.
 --- [https://wowpedia.fandom.com/wiki/API_IsUsableSpell]
 --- @param index number @ Spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
---- @param bookType string
+--- @param bookType string @ BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook.
 --- @return boolean, boolean @ usable, noMana
 function IsUsableSpell(index, bookType)
 end
