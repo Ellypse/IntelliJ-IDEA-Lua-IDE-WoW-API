@@ -46,6 +46,8 @@ function C_WeeklyRewards.HasGeneratedRewards() end
 ---@return boolean isInteracting
 function C_WeeklyRewards.HasInteraction() end
 
+function C_WeeklyRewards.OnUIInteract() end
+
 ---@class ConquestProgressBarDisplayType
 local ConquestProgressBarDisplayType = {}
 ConquestProgressBarDisplayType.FirstChest = 0
@@ -76,6 +78,7 @@ local WeeklyRewardActivityEncounterInfo = {}
 ---@field id number 
 ---@field level number 
 ---@field claimID number|nil 
+---@field raidString string|nil 
 ---@field rewards table 
 local WeeklyRewardActivityInfo = {}
 

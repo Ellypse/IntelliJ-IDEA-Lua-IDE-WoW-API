@@ -19,8 +19,10 @@ function C_TradeSkillUI.GetAllProfessionTradeSkillLines() end
 function C_TradeSkillUI.GetOptionalReagentBonusText(recipeSpellID, optionalReagentIndex, optionalReagents) end
 
 ---@param recipeSpellID number 
+---@param recipeLevel number @ [OPTIONAL]
+---@overload fun(recipeSpellID:number)
 ---@return OptionalReagentSlot slots
-function C_TradeSkillUI.GetOptionalReagentInfo(recipeSpellID) end
+function C_TradeSkillUI.GetOptionalReagentInfo(recipeSpellID, recipeLevel) end
 
 ---@param recipeSpellID number 
 ---@param recipeLevel number @ [OPTIONAL]

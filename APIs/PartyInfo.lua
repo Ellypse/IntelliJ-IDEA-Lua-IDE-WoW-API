@@ -5,6 +5,9 @@ C_PartyInfo = {}
 ---@return boolean allowed
 function C_PartyInfo.AllowedToDoPartyConversion(toRaid) end
 
+---@return boolean canFormCrossFactionParties
+function C_PartyInfo.CanFormCrossFactionParties() end
+
 ---@return boolean allowedToInvite
 function C_PartyInfo.CanInvite() end
 
@@ -61,6 +64,11 @@ function C_PartyInfo.GetMinLevel(category) end
 --- Attempt to invite the named unit to a party, requires confirmation in some cases (e.g. the party will convert to a raid, or if there is a party sync in progress).
 ---@param targetName string 
 function C_PartyInfo.InviteUnit(targetName) end
+
+---@param category number @ If not provided, the active party is used [OPTIONAL]
+---@overload fun()
+---@return boolean isCrossFactionParty
+function C_PartyInfo.IsCrossFactionParty(category) end
 
 ---@param category number @ If not provided, the active party is used [OPTIONAL]
 ---@overload fun()

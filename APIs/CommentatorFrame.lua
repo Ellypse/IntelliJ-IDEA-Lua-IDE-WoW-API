@@ -340,11 +340,11 @@ function C_Commentator.SetAdditionalCameraWeight(teamIndex, playerIndex, weight)
 function C_Commentator.SetAdditionalCameraWeightByToken(unitToken, weight) end
 
 ---@param spellIDs number 
-function C_Commentator.SetBlacklistedAuras(spellIDs) end
+function C_Commentator.SetBlocklistedAuras(spellIDs) end
 
 ---@param specID number 
 ---@param spellIDs number 
-function C_Commentator.SetBlacklistedCooldowns(specID, spellIDs) end
+function C_Commentator.SetBlocklistedCooldowns(specID, spellIDs) end
 
 ---@param xPos number 
 ---@param yPos number 
@@ -511,6 +511,8 @@ local CommentatorOverrideNameEntry = {}
 ---@field healingTaken number 
 ---@field kills number 
 ---@field deaths number 
+---@field soloShuffleRoundWins number 
+---@field soloShuffleRoundLosses number 
 local CommentatorPlayerData = {}
 
 ---@class CommentatorSeries

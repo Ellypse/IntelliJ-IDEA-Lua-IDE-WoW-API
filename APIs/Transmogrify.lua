@@ -25,6 +25,10 @@ function C_Transmog.ClearPending(transmogLocation) end
 
 function C_Transmog.Close() end
 
+---@param input string 
+---@return number transmogIDList
+function C_Transmog.ExtractTransmogIDList(input) end
+
 ---@return number|nil cost
 function C_Transmog.GetApplyCost() end
 
@@ -82,35 +86,12 @@ function C_Transmog.LoadOutfit(outfitID) end
 ---@param pendingInfo table 
 function C_Transmog.SetPending(transmogLocation, pendingInfo) end
 
----@class TransmogModification
-local TransmogModification = {}
-TransmogModification.Main = 0
-TransmogModification.Secondary = 1
-
 ---@class TransmogPendingType
 local TransmogPendingType = {}
 TransmogPendingType.Apply = 0
 TransmogPendingType.Revert = 1
 TransmogPendingType.ToggleOn = 2
 TransmogPendingType.ToggleOff = 3
-
----@class TransmogSource
-local TransmogSource = {}
-TransmogSource.None = 0
-TransmogSource.JournalEncounter = 1
-TransmogSource.Quest = 2
-TransmogSource.Vendor = 3
-TransmogSource.WorldDrop = 4
-TransmogSource.HiddenUntilCollected = 5
-TransmogSource.CantCollect = 6
-TransmogSource.Achievement = 7
-TransmogSource.Profession = 8
-TransmogSource.NotValidForTransmog = 9
-
----@class TransmogType
-local TransmogType = {}
-TransmogType.Appearance = 0
-TransmogType.Illusion = 1
 
 ---@class TransmogApplyWarningInfo
 ---@field itemLink string 

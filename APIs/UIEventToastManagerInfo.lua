@@ -43,6 +43,8 @@ EventToastEventType.LevelUpOther = 15
 EventToastEventType.PlayerAuraAdded = 16
 EventToastEventType.PlayerAuraRemoved = 17
 EventToastEventType.SpellScript = 18
+EventToastEventType.CriteriaUpdated = 19
+EventToastEventType.PvPTierUpdate = 20
 
 ---@class EventToastInfo
 ---@field eventToastID number 

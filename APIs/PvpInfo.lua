@@ -2,10 +2,19 @@
 C_PvP = {}
 
 ---@return boolean canDisplay
+function C_PvP.CanDisplayDamage() end
+
+---@return boolean canDisplay
 function C_PvP.CanDisplayDeaths() end
 
 ---@return boolean canDisplay
+function C_PvP.CanDisplayHealing() end
+
+---@return boolean canDisplay
 function C_PvP.CanDisplayHonorableKills() end
+
+---@return boolean canDisplay
+function C_PvP.CanDisplayKillingBlows() end
 
 ---@return boolean, string canUse, failureReason
 function C_PvP.CanPlayerUseRatedPVPUI() end
@@ -50,6 +59,11 @@ function C_PvP.GetArenaSkirmishRewards() end
 ---@return PvpBrawlInfo|nil brawlInfo
 function C_PvP.GetAvailableBrawlInfo() end
 
+---@param flagIndex number 
+---@param uiMapId number 
+---@return number|nil, number|nil, number uiPosx, uiPosy, flagTexture
+function C_PvP.GetBattlefieldFlagPosition(flagIndex, uiMapId) end
+
 ---@param vehicleIndex number 
 ---@param uiMapID number 
 ---@return BattlefieldVehicleInfo info
@@ -62,6 +76,9 @@ function C_PvP.GetBattlefieldVehicles(uiMapID) end
 ---@param brawlType BrawlType 
 ---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil, boolean honor, experience, itemRewards, currencyRewards, hasWon
 function C_PvP.GetBrawlRewards(brawlType) end
+
+---@return number statID
+function C_PvP.GetCustomVictoryStatID() end
 
 ---@param specializationID number 
 ---@return PvpScalingData pvpScalingData
@@ -92,6 +109,9 @@ function C_PvP.GetOutdoorPvPWaitTime(uiMapID) end
 
 ---@return PVPPersonalRatedInfo|nil info
 function C_PvP.GetPVPActiveMatchPersonalRatedInfo() end
+
+---@return number achievementID
+function C_PvP.GetPVPSeasonRewardAchievementID() end
 
 ---@return PVPPostMatchCurrencyReward rewards
 function C_PvP.GetPostMatchCurrencyRewards() end
@@ -142,11 +162,8 @@ function C_PvP.GetSeasonBestInfo() end
 ---@return BattlemasterListInfo battlemasterListInfo
 function C_PvP.GetSkirmishInfo(pvpBracket) end
 
----@return SpecialEventDetails|nil info
-function C_PvP.GetSpecialEventDetails() end
-
----@return RandomBGInfo info
-function C_PvP.GetSpecialEventInfo() end
+---@return PvpBrawlInfo|nil brawlInfo
+function C_PvP.GetSpecialEventBrawlInfo() end
 
 ---@param factionIndex number 
 ---@return PVPTeamInfo|nil info
@@ -200,6 +217,9 @@ function C_PvP.IsRatedBattleground() end
 ---@return boolean isRatedMap
 function C_PvP.IsRatedMap() end
 
+---@return boolean isSoloShuffle
+function C_PvP.IsSoloShuffle() end
+
 ---@return boolean warModeActive
 function C_PvP.IsWarModeActive() end
 
@@ -209,7 +229,8 @@ function C_PvP.IsWarModeDesired() end
 ---@return boolean warModeEnabled
 function C_PvP.IsWarModeFeatureEnabled() end
 
-function C_PvP.JoinBrawl() end
+---@param isSpecialBrawl boolean 
+function C_PvP.JoinBrawl(isSpecialBrawl) end
 
 ---@param playerToken string 
 function C_PvP.RequestCrowdControlSpell(playerToken) end
@@ -224,7 +245,8 @@ local BrawlType = {}
 BrawlType.None = 0
 BrawlType.Battleground = 1
 BrawlType.Arena = 2
-BrawlType.Lfg = 3
+BrawlType.LFG = 3
+BrawlType.SoloShuffle = 4
 
 ---@class PvPMatchState
 local PvPMatchState = {}
@@ -290,13 +312,15 @@ local LevelUpBattlegroundInfo = {}
 local MatchPVPStatColumn = {}
 
 ---@class PvpBrawlInfo
+---@field brawlID number 
 ---@field name string 
 ---@field shortDescription string 
 ---@field longDescription string 
 ---@field canQueue bool 
----@field timeLeftUntilNextChange number 
+---@field timeLeftUntilNextChange number|nil 
 ---@field brawlType BrawlType 
 ---@field mapNames table 
+---@field includesAllArenas bool 
 local PvpBrawlInfo = {}
 
 ---@class PVPPersonalRatedInfo
@@ -327,6 +351,13 @@ local PVPPostMatchCurrencyReward = {}
 ---@field isUpgraded bool 
 local PVPPostMatchItemReward = {}
 
+---@class PvpRoleQueueInfo
+---@field role string 
+---@field totalRole number 
+---@field totalAccepted number 
+---@field totalDeclined number 
+local PvpRoleQueueInfo = {}
+
 ---@class PvpScalingData
 ---@field scalingDataID number 
 ---@field specializationID number 
@@ -353,6 +384,7 @@ local PvpScalingData = {}
 ---@field mmrChange number 
 ---@field talentSpec string 
 ---@field honorLevel number 
+---@field roleAssigned number 
 ---@field stats table 
 local PVPScoreInfo = {}
 
@@ -390,12 +422,4 @@ local PvpTierInfo = {}
 ---@field minLevel number 
 ---@field maxLevel number 
 local RandomBGInfo = {}
-
----@class SpecialEventDetails
----@field name string 
----@field shortDescription string 
----@field longDescription string 
----@field questID number|nil 
----@field isActive bool 
-local SpecialEventDetails = {}
 

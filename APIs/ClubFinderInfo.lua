@@ -113,14 +113,9 @@ function C_ClubFinder.PlayerReturnPendingGuildsList() end
 ---@param avatarId number 
 ---@param specs number 
 ---@param type ClubFinderRequestType 
+---@param crossFaction boolean 
 ---@return boolean succesful
-function C_ClubFinder.PostClub(clubId, itemLevelRequirement, name, description, avatarId, specs, type) end
-
----@param reportType ClubFinderPostingReportType 
----@param clubFinderGUID string 
----@param playerGUID string 
----@param complaintNote string 
-function C_ClubFinder.ReportPosting(reportType, clubFinderGUID, playerGUID, complaintNote) end
+function C_ClubFinder.PostClub(clubId, itemLevelRequirement, name, description, avatarId, specs, type, crossFaction) end
 
 ---@param type ClubFinderRequestType 
 function C_ClubFinder.RequestApplicantList(type) end
@@ -174,6 +169,12 @@ function C_ClubFinder.ReturnMatchingGuildList() end
 ---@param clubId string 
 ---@return ClubFinderApplicantInfo info
 function C_ClubFinder.ReturnPendingClubApplicantList(clubId) end
+
+---@param clubFinderGUID string 
+---@param playerGUID string 
+---@param applicantType ClubFinderRequestType 
+---@param name string 
+function C_ClubFinder.SendChatWhisper(clubFinderGUID, playerGUID, applicantType, name) end
 
 ---@param value number 
 function C_ClubFinder.SetAllRecruitmentSettings(value) end
@@ -288,6 +289,7 @@ PlayerClubRequestStatus.Canceled = 7
 ---@field requestStatus PlayerClubRequestStatus 
 ---@field lookupSuccess bool 
 ---@field lastUpdatedTime number 
+---@field faction number 
 local ClubFinderApplicantInfo = {}
 
 ---@class ClubSettingsInfo
@@ -308,6 +310,7 @@ local ClubFinderApplicantInfo = {}
 ---@field sortMembers bool 
 ---@field sortNewest bool 
 ---@field autoAccept bool 
+---@field crossFaction bool 
 local ClubSettingsInfo = {}
 
 ---@class RecruitingClubInfo
@@ -329,5 +332,6 @@ local ClubSettingsInfo = {}
 ---@field lastPosterGUID string 
 ---@field clubId string 
 ---@field lastUpdatedTime number 
+---@field isCrossFaction bool 
 local RecruitingClubInfo = {}
 

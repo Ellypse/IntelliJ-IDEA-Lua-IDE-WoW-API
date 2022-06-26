@@ -1,6 +1,16 @@
 ---@class TransmogrifyCollection
 C_TransmogCollection = {}
 
+---@param sourceID number 
+---@return boolean, boolean hasItemData, canCollect
+function C_TransmogCollection.AccountCanCollectSource(sourceID) end
+
+---@return boolean areAllCollectionTypeFiltersChecked
+function C_TransmogCollection.AreAllCollectionTypeFiltersChecked() end
+
+---@return boolean areAllSourceTypeFiltersChecked
+function C_TransmogCollection.AreAllSourceTypeFiltersChecked() end
+
 ---@param appearanceID number 
 ---@return boolean canHaveIllusion
 function C_TransmogCollection.CanAppearanceHaveIllusion(appearanceID) end
@@ -46,20 +56,27 @@ function C_TransmogCollection.GetAppearanceSourceDrops(itemModifiedAppearanceID)
 function C_TransmogCollection.GetAppearanceSourceInfo(itemModifiedAppearanceID) end
 
 ---@param appearanceID number 
+---@param categoryType TransmogCollectionType 
+---@param transmogLocation table 
 ---@return AppearanceSourceInfo sources
-function C_TransmogCollection.GetAppearanceSources(appearanceID) end
+function C_TransmogCollection.GetAppearanceSources(appearanceID, categoryType, transmogLocation) end
 
 ---@param appearanceID number 
 ---@return string, string name, hyperlink
 function C_TransmogCollection.GetArtifactAppearanceStrings(appearanceID) end
 
 ---@param category TransmogCollectionType 
+---@param transmogLocation table 
 ---@return TransmogCategoryAppearanceInfo appearances
-function C_TransmogCollection.GetCategoryAppearances(category) end
+function C_TransmogCollection.GetCategoryAppearances(category, transmogLocation) end
 
 ---@param category TransmogCollectionType 
 ---@return number count
 function C_TransmogCollection.GetCategoryCollectedCount(category) end
+
+---@param itemModifiedAppearanceID number 
+---@return TransmogCollectionType collectionCategory
+function C_TransmogCollection.GetCategoryForItem(itemModifiedAppearanceID) end
 
 ---@param category TransmogCollectionType 
 ---@return string, boolean, boolean, boolean, boolean name, isWeapon, canHaveIllusions, canMainHand, canOffHand
@@ -97,6 +114,10 @@ function C_TransmogCollection.GetIsAppearanceFavorite(itemAppearanceID) end
 ---@return number, number itemAppearanceID, itemModifiedAppearanceID
 function C_TransmogCollection.GetItemInfo(itemInfo) end
 
+---@param hyperlink string 
+---@return table list
+function C_TransmogCollection.GetItemTransmogInfoListFromOutfitHyperlink(hyperlink) end
+
 ---@return number, TransmogCollectionType visualID, category
 function C_TransmogCollection.GetLatestAppearance() end
 
@@ -105,6 +126,10 @@ function C_TransmogCollection.GetNumMaxOutfits() end
 
 ---@return number count
 function C_TransmogCollection.GetNumTransmogSources() end
+
+---@param itemTransmogInfoList table 
+---@return string hyperlink
+function C_TransmogCollection.GetOutfitHyperlinkFromItemTransmogInfoList(itemTransmogInfoList) end
 
 ---@param outfitID number 
 ---@return string, number name, icon
@@ -118,12 +143,20 @@ function C_TransmogCollection.GetOutfitItemTransmogInfoList(outfitID) end
 function C_TransmogCollection.GetOutfits() end
 
 ---@param itemModifiedAppearanceID number 
+---@return number pairedItemModifiedAppearanceID
+function C_TransmogCollection.GetPairedArtifactAppearance(itemModifiedAppearanceID) end
+
+---@param itemModifiedAppearanceID number 
 ---@return number icon
 function C_TransmogCollection.GetSourceIcon(itemModifiedAppearanceID) end
 
 ---@param sourceID number 
 ---@return AppearanceSourceInfo sourceInfo
 function C_TransmogCollection.GetSourceInfo(sourceID) end
+
+---@param itemModifiedAppearanceID number 
+---@return number itemID
+function C_TransmogCollection.GetSourceItemID(itemModifiedAppearanceID) end
 
 ---@param itemModifiedAppearanceID number 
 ---@return string holidayName
@@ -159,6 +192,9 @@ function C_TransmogCollection.IsSearchInProgress(searchType) end
 ---@return boolean checked
 function C_TransmogCollection.IsSourceTypeFilterChecked(index) end
 
+---@return boolean isUsingDefaultFilters
+function C_TransmogCollection.IsUsingDefaultFilters() end
+
 ---@param outfitID number 
 ---@param itemTransmogInfoList table 
 function C_TransmogCollection.ModifyOutfit(outfitID, itemTransmogInfoList) end
@@ -177,6 +213,10 @@ function C_TransmogCollection.PlayerCanCollectSource(sourceID) end
 ---@param itemAppearanceModID number 
 ---@return boolean hasTransmog
 function C_TransmogCollection.PlayerHasTransmog(itemID, itemAppearanceModID) end
+
+---@param itemInfo string 
+---@return boolean hasTransmog
+function C_TransmogCollection.PlayerHasTransmogByItemInfo(itemInfo) end
 
 ---@param itemModifiedAppearanceID number 
 ---@return boolean hasTransmog
@@ -199,10 +239,15 @@ function C_TransmogCollection.SearchProgress(searchType) end
 function C_TransmogCollection.SearchSize(searchType) end
 
 ---@param checked boolean 
+function C_TransmogCollection.SetAllCollectionTypeFilters(checked) end
+
+---@param checked boolean 
 function C_TransmogCollection.SetAllSourceTypeFilters(checked) end
 
 ---@param shown boolean 
 function C_TransmogCollection.SetCollectedShown(shown) end
+
+function C_TransmogCollection.SetDefaultFilters() end
 
 ---@param itemAppearanceID number 
 ---@param isFavorite boolean 
@@ -242,6 +287,7 @@ TransmogCameraVariation.CloakBackpack = 1
 ---@field appearanceMeetsNonLevelRequirements bool 
 ---@field appearanceIsUsable bool 
 ---@field appearanceNumSources number 
+---@field sourceIsKnown bool 
 local TransmogAppearanceInfoBySourceData = {}
 
 ---@class TransmogAppearanceJournalEncounterInfo

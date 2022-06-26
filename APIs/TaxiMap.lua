@@ -43,5 +43,7 @@ local MapTaxiNodeInfo = {}
 ---@field state FlightPathState 
 ---@field slotIndex number 
 ---@field textureKit string 
+---@field useSpecialIcon bool 
+---@field specialIconCostString string|nil 
 local TaxiNodeInfo = {}
 

@@ -35,8 +35,6 @@ function C_Calendar.ContextMenuEventCanRemove(offsetMonths, monthDay, eventIndex
 ---@return boolean exists
 function C_Calendar.ContextMenuEventClipboard() end
 
-function C_Calendar.ContextMenuEventComplain() end
-
 function C_Calendar.ContextMenuEventCopy() end
 
 ---@return string|nil calendarType
@@ -317,10 +315,10 @@ function C_Calendar.UpdateEvent() end
 ---@field eventType CalendarEventType 
 ---@field iconTexture number|nil 
 ---@field modStatus string 
----@field inviteStatus number 
+---@field inviteStatus CalendarStatus 
 ---@field invitedBy string 
 ---@field difficulty number 
----@field inviteType number 
+---@field inviteType CalendarInviteType 
 ---@field sequenceIndex number 
 ---@field numSequenceDays number 
 ---@field difficultyName string 
@@ -341,7 +339,7 @@ local CalendarEventIndexInfo = {}
 ---@field description string 
 ---@field creator string|nil 
 ---@field eventType CalendarEventType 
----@field repeatOption number 
+---@field repeatOption CalendarEventRepeatOptions 
 ---@field maxSize number 
 ---@field textureIndex number|nil 
 ---@field time CalendarTime 
@@ -349,8 +347,8 @@ local CalendarEventIndexInfo = {}
 ---@field isLocked bool 
 ---@field isAutoApprove bool 
 ---@field hasPendingInvite bool 
----@field inviteStatus number|nil 
----@field inviteType number|nil 
+---@field inviteStatus CalendarStatus|nil 
+---@field inviteType CalendarInviteType|nil 
 ---@field calendarType string 
 ---@field communityName string|nil 
 local CalendarEventInfo = {}
@@ -360,10 +358,10 @@ local CalendarEventInfo = {}
 ---@field level number 
 ---@field className string|nil 
 ---@field classFilename string|nil 
----@field inviteStatus number|nil 
+---@field inviteStatus CalendarStatus|nil 
 ---@field modStatus string|nil 
 ---@field inviteIsMine bool 
----@field type number 
+---@field type CalendarInviteType 
 ---@field notes string 
 ---@field classID number|nil 
 ---@field guid string 
@@ -400,7 +398,7 @@ local CalendarEventTypeDisplayInfo = {}
 ---@field title string 
 ---@field calendarType string 
 ---@field texture number 
----@field inviteStatus number 
+---@field inviteStatus CalendarStatus 
 ---@field clubID string 
 local CalendarGuildEventInfo = {}
 

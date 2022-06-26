@@ -19,7 +19,7 @@ function C_ChallengeMode.GetActiveKeystoneInfo() end
 ---@return string, string, number name, description, filedataid
 function C_ChallengeMode.GetAffixInfo(affixID) end
 
----@return number, number, number, boolean, number, boolean, number, number, boolean, boolean, number, ChallengeModeCompletionMemberInfo mapChallengeModeID, level, time, onTime, keystoneUpgradeLevels, practiceRun, oldOverallDungeonScore, newOverallDungeonScore, IsMapRecord, IsAffixRecord, PrimaryAffix, members
+---@return number, number, number, boolean, number, boolean, number|nil, number|nil, boolean, boolean, number, boolean, ChallengeModeCompletionMemberInfo mapChallengeModeID, level, time, onTime, keystoneUpgradeLevels, practiceRun, oldOverallDungeonScore, newOverallDungeonScore, IsMapRecord, IsAffixRecord, PrimaryAffix, isEligibleForScore, members
 function C_ChallengeMode.GetCompletionInfo() end
 
 ---@return number, number numDeaths, timeLost
@@ -37,6 +37,9 @@ function C_ChallengeMode.GetGuildLeaders() end
 ---@param level number 
 ---@return table levelScore
 function C_ChallengeMode.GetKeystoneLevelRarityColor(level) end
+
+---@return MythicPlusRatingLinkInfo displayScores
+function C_ChallengeMode.GetMapScoreInfo() end
 
 ---@return number mapChallengeModeIDs
 function C_ChallengeMode.GetMapTable() end
