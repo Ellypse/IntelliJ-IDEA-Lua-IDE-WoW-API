@@ -10,6 +10,9 @@ function C_MythicPlus.GetCurrentSeason() end
 ---@return number, number, number displaySeasonID, milestoneSeasonID, rewardSeasonID
 function C_MythicPlus.GetCurrentSeasonValues() end
 
+---@return number|nil seasonID
+function C_MythicPlus.GetCurrentUIDisplaySeason() end
+
 ---@return number, number challengeMapId, level
 function C_MythicPlus.GetLastWeeklyBestInformation() end
 

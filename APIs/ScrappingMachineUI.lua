@@ -28,8 +28,5 @@ function C_ScrappingMachineUI.RemoveItemToScrap(index) end
 
 function C_ScrappingMachineUI.ScrapItems() end
 
----@param gameObject string 
-function C_ScrappingMachineUI.SetScrappingMachine(gameObject) end
-
 function C_ScrappingMachineUI.ValidateScrappingList() end
 

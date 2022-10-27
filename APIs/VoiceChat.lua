@@ -53,7 +53,7 @@ function C_VoiceChat.GetChannelForCommunityStream(clubId, streamId) end
 ---@return CommunicationMode|nil communicationMode
 function C_VoiceChat.GetCommunicationMode() end
 
----@return VoiceChatStatusCode statusCode
+---@return VoiceChatStatusCode|nil statusCode
 function C_VoiceChat.GetCurrentVoiceChatConnectionStatusCode() end
 
 ---@return number|nil volume
@@ -178,6 +178,9 @@ function C_VoiceChat.IsSpeakForMeAllowed() end
 
 ---@return boolean isAllowed
 function C_VoiceChat.IsTranscriptionAllowed() end
+
+---@return boolean connected
+function C_VoiceChat.IsVoiceChatConnected() end
 
 ---@param channelID number 
 function C_VoiceChat.LeaveChannel(channelID) end

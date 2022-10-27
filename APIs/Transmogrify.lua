@@ -98,3 +98,26 @@ TransmogPendingType.ToggleOff = 3
 ---@field text string 
 local TransmogApplyWarningInfo = {}
 
+---@class TransmogSlotInfo
+---@field isTransmogrified bool 
+---@field hasPending bool 
+---@field isPendingCollected bool 
+---@field canTransmogrify bool 
+---@field cannotTransmogrifyReason number 
+---@field hasUndo bool 
+---@field isHideVisual bool 
+---@field texture number|nil 
+local TransmogSlotInfo = {}
+
+---@class TransmogSlotVisualInfo
+---@field baseSourceID number 
+---@field baseVisualID number 
+---@field appliedSourceID number 
+---@field appliedVisualID number 
+---@field pendingSourceID number 
+---@field pendingVisualID number 
+---@field hasUndo bool 
+---@field isHideVisual bool 
+---@field itemSubclass number 
+local TransmogSlotVisualInfo = {}
+

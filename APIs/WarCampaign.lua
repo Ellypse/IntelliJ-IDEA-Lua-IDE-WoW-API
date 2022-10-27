@@ -37,6 +37,10 @@ function C_CampaignInfo.GetState(campaignID) end
 function C_CampaignInfo.IsCampaignQuest(questID) end
 
 ---@param campaignID number 
+---@return boolean sortAsNormalQuest
+function C_CampaignInfo.SortAsNormalQuest(campaignID) end
+
+---@param campaignID number 
 ---@return boolean useNormalQuestIcons
 function C_CampaignInfo.UsesNormalQuestIcons(campaignID) end
 

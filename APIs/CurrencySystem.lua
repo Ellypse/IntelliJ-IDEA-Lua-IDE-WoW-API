@@ -27,6 +27,10 @@ function C_CurrencyInfo.GetBasicCurrencyInfo(currencyType, quantity) end
 ---@return CurrencyDisplayInfo info
 function C_CurrencyInfo.GetCurrencyContainerInfo(currencyType, quantity) end
 
+---@param type number 
+---@return string description
+function C_CurrencyInfo.GetCurrencyDescription(type) end
+
 ---@param currencyLink string 
 ---@return number currencyID
 function C_CurrencyInfo.GetCurrencyIDFromLink(currencyLink) end
@@ -98,6 +102,7 @@ local CurrencyDisplayInfo = {}
 
 ---@class CurrencyInfo
 ---@field name string 
+---@field description string 
 ---@field isHeader bool 
 ---@field isHeaderExpanded bool 
 ---@field isTypeUnused bool 

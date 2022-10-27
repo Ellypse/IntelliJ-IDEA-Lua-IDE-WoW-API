@@ -145,6 +145,7 @@ LFGListDisplayType.RoleEnumerate = 1
 LFGListDisplayType.ClassEnumerate = 2
 LFGListDisplayType.HideAll = 3
 LFGListDisplayType.PlayerCount = 4
+LFGListDisplayType.Comment = 5
 
 ---@class BestDungeonScoreMapInfo
 ---@field mapScore number 
@@ -172,6 +173,7 @@ local BestDungeonScoreMapInfo = {}
 ---@field isPvpActivity bool 
 ---@field isMythicActivity bool 
 ---@field allowCrossFaction bool 
+---@field useDungeonRoleExpectations bool 
 local GroupFinderActivityInfo = {}
 
 ---@class LfgApplicantData
@@ -220,6 +222,7 @@ local LfgEntryData = {}
 ---@field voiceChat string 
 ---@field requiredItemLevel number 
 ---@field requiredHonorLevel number 
+---@field hasSelf bool 
 ---@field numMembers number 
 ---@field numBNetFriends number 
 ---@field numCharFriends number 

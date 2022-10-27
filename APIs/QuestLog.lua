@@ -114,6 +114,10 @@ function C_QuestLog.GetQuestIDForQuestWatchIndex(questWatchIndex) end
 ---@return number|nil questID
 function C_QuestLog.GetQuestIDForWorldQuestWatchIndex(questWatchIndex) end
 
+---@param questID number 
+---@return QuestReputationRewardInfo reputationRewards
+function C_QuestLog.GetQuestLogMajorFactionReputationRewards(questID) end
+
 ---@param questLogIndex number @ [OPTIONAL]
 ---@overload fun()
 ---@return number, string, string, number, number|nil portraitGiver, portraitGiverText, portraitGiverName, portraitGiverMount, portraitGiverModelSceneID
@@ -305,6 +309,10 @@ function C_QuestLog.ShouldDisplayTimeRemaining(questID) end
 function C_QuestLog.ShouldShowQuestRewards(questID) end
 
 function C_QuestLog.SortQuestWatches() end
+
+---@param unit string 
+---@return boolean isRelatedToActiveQuest
+function C_QuestLog.UnitIsRelatedToActiveQuest(unit) end
 
 ---@class MapOverlayDisplayLocation
 local MapOverlayDisplayLocation = {}

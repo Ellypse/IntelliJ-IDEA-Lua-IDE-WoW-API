@@ -78,6 +78,8 @@ SubscriptionInterstitialType.MaxLevel = 2
 ---@field logo number 
 ---@field banner string 
 ---@field features table 
+---@field highResBackgroundID number 
+---@field lowResBackgroundID number 
 local ExpansionDisplayInfo = {}
 
 ---@class ExpansionDisplayInfoFeature

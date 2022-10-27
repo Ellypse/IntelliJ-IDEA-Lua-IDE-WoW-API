@@ -21,6 +21,9 @@ function C_BarberShop.GetCurrentCharacterData() end
 ---@return number cost
 function C_BarberShop.GetCurrentCost() end
 
+---@return number|nil chrModelID
+function C_BarberShop.GetViewingChrModel() end
+
 ---@return boolean hasChanges
 function C_BarberShop.HasAnyChanges() end
 
@@ -69,6 +72,10 @@ function C_BarberShop.SetSelectedSex(sex) end
 ---@param isViewingAlteredForm boolean 
 function C_BarberShop.SetViewingAlteredForm(isViewingAlteredForm) end
 
+---@param chrModelID number @ [OPTIONAL]
+---@overload fun()
+function C_BarberShop.SetViewingChrModel(chrModelID) end
+
 ---@param shapeshiftFormID number @ [OPTIONAL]
 ---@overload fun()
 function C_BarberShop.SetViewingShapeshiftForm(shapeshiftFormID) end
@@ -85,5 +92,6 @@ local BarberShopCharacterData = {}
 ---@field name string 
 ---@field fileName string 
 ---@field alternateFormRaceData CharacterAlternateFormData|nil 
+---@field createScreenIconAtlas string 
 local BarberShopRaceData = {}
 

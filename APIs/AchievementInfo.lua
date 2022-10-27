@@ -10,6 +10,10 @@ function C_AchievementInfo.GetRewardItemID(achievementID) end
 function C_AchievementInfo.GetSupercedingAchievements(achievementID) end
 
 ---@param achievementId number 
+---@return boolean isGuild
+function C_AchievementInfo.IsGuildAchievement(achievementId) end
+
+---@param achievementId number 
 ---@return boolean isValidAchievement
 function C_AchievementInfo.IsValidAchievement(achievementId) end
 

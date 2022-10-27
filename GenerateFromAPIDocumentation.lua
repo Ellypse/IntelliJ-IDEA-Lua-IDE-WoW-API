@@ -4,17 +4,13 @@
 ]]
 
 local OUTPUT_DIRECTORY = "./APIs/"
-local PATH_TO_THE_API_DOCS = "../wow-ui-source/Interface/AddOns/Blizzard_APIDocumentation"
+local PATH_TO_THE_API_DOCS = "../wow-ui-source/Interface/AddOns/Blizzard_APIDocumentationGenerated"
 local BLACKLISTED_FILES = {
-	["BaseAPIMixin.lua"] = true,
-	["EventsAPIMixin.lua"] = true,
-	["FieldsAPIMixin.lua"] = true,
-	["FunctionsAPIMixin.lua"] = true,
-	["SystemsAPIMixin.lua"] = true,
-	["TablesAPIMixin.lua"] = true,
-	["Blizzard_APIDocumentation.toc"] = true,
-	["Blizzard_APIDocumentation.lua"] = true,
+	["Blizzard_APIDocumentationGenerated.toc"] = true,
+	--would be great if we could fix these
+	["CharacterCustomizationSharedDocumentation.lua"] = true,
 	["CurrencyConstantsDocumentation.lua"] = true,
+	["UITimerDocumentation.lua"] = true,
 	["."] = true,
 	[".."] = true,
 }

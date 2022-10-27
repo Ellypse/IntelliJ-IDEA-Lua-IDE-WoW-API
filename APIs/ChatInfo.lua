@@ -115,3 +115,10 @@ function C_ChatInfo.SendAddonMessageLogged(prefix, message, chatType, target) en
 ---@param secondChannelIndex number 
 function C_ChatInfo.SwapChatChannelsByChannelIndex(firstChannelIndex, secondChannelIndex) end
 
+---@class AddonMessageParams
+---@field prefix string 
+---@field message string 
+---@field chatType string|nil @ ChatType, defaults to SLASH_CMD_PARTY.
+---@field target string|nil @ Only applies for targeted channels
+local AddonMessageParams = {}
+

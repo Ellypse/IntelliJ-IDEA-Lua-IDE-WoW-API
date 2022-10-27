@@ -23,6 +23,7 @@ local UiMapExplorationHitRect = {}
 ---@field offsetX number 
 ---@field offsetY number 
 ---@field isShownByMouseOver bool 
+---@field isDrawOnTopLayer bool 
 ---@field fileDataIDs table 
 ---@field hitRect UiMapExplorationHitRect 
 local UiMapExplorationInfo = {}

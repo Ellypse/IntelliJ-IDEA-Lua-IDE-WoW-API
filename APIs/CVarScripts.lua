@@ -27,17 +27,13 @@ function C_CVar.ResetTestCVars() end
 
 ---@param name string 
 ---@param value string @ [OPTIONAL]
----@param scriptCVar string @ [OPTIONAL]
----@overload fun(name:string, scriptCVar:string)
 ---@overload fun(name:string)
 ---@return boolean success
-function C_CVar.SetCVar(name, value, scriptCVar) end
+function C_CVar.SetCVar(name, value) end
 
 ---@param name string 
 ---@param index number 
 ---@param value boolean 
----@param scriptCVar string @ [OPTIONAL]
----@overload fun(name:string, index:number, value:bool)
 ---@return boolean success
-function C_CVar.SetCVarBitfield(name, index, value, scriptCVar) end
+function C_CVar.SetCVarBitfield(name, index, value) end
 

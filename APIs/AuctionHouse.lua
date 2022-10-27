@@ -30,6 +30,21 @@ function C_AuctionHouse.CloseAuctionHouse() end
 ---@param quantity number 
 function C_AuctionHouse.ConfirmCommoditiesPurchase(itemID, quantity) end
 
+---@param item table 
+---@param duration number 
+---@param quantity number 
+---@param unitPrice number 
+function C_AuctionHouse.ConfirmPostCommodity(item, duration, quantity, unitPrice) end
+
+---@param item table 
+---@param duration number 
+---@param quantity number 
+---@param bid number @ [OPTIONAL]
+---@param buyout number @ [OPTIONAL]
+---@overload fun(item:table, duration:number, quantity:number, buyout:number)
+---@overload fun(item:table, duration:number, quantity:number)
+function C_AuctionHouse.ConfirmPostItem(item, duration, quantity, bid, buyout) end
+
 ---@return boolean favoritesAreAvailable
 function C_AuctionHouse.FavoritesAreAvailable() end
 
@@ -240,6 +255,7 @@ function C_AuctionHouse.PlaceBid(auctionID, bidAmount) end
 ---@param duration number 
 ---@param quantity number 
 ---@param unitPrice number 
+---@return boolean needsConfirmation
 function C_AuctionHouse.PostCommodity(item, duration, quantity, unitPrice) end
 
 ---@param item table 
@@ -249,6 +265,7 @@ function C_AuctionHouse.PostCommodity(item, duration, quantity, unitPrice) end
 ---@param buyout number @ [OPTIONAL]
 ---@overload fun(item:table, duration:number, quantity:number, buyout:number)
 ---@overload fun(item:table, duration:number, quantity:number)
+---@return boolean needsConfirmation
 function C_AuctionHouse.PostItem(item, duration, quantity, bid, buyout) end
 
 ---@param sorts AuctionHouseSortType 
@@ -410,6 +427,8 @@ local CommoditySearchResultInfo = {}
 local ItemKey = {}
 
 ---@class ItemKeyInfo
+---@field itemID number 
+---@field battlePetSpeciesID number 
 ---@field itemName string 
 ---@field battlePetLink string|nil 
 ---@field appearanceLink string|nil 
@@ -450,4 +469,25 @@ local ItemSearchResultInfo = {}
 ---@field buyoutAmount number|nil 
 ---@field bidder string|nil 
 local OwnedAuctionInfo = {}
+
+---@class ReplicateItemInfo
+---@field name string|nil 
+---@field texture number|nil 
+---@field count number 
+---@field qualityID number 
+---@field usable bool|nil 
+---@field level number 
+---@field levelType string|nil 
+---@field minBid number 
+---@field minIncrement number 
+---@field buyoutPrice number 
+---@field bidAmount number 
+---@field highBidder string|nil 
+---@field bidderFullName string|nil 
+---@field owner string|nil 
+---@field ownerFullName string|nil 
+---@field saleStatus number 
+---@field itemID number 
+---@field hasAllInfo bool|nil 
+local ReplicateItemInfo = {}
 
