@@ -6,8 +6,6 @@ C_AzeriteEmpoweredItem = {}
 ---@return boolean canSelect
 function C_AzeriteEmpoweredItem.CanSelectPower(azeriteEmpoweredItemLocation, powerID) end
 
-function C_AzeriteEmpoweredItem.CloseAzeriteEmpoweredItemRespec() end
-
 ---@param azeriteEmpoweredItemLocation table 
 function C_AzeriteEmpoweredItem.ConfirmAzeriteEmpoweredItemRespec(azeriteEmpoweredItemLocation) end
 

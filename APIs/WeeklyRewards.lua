@@ -46,6 +46,9 @@ function C_WeeklyRewards.HasGeneratedRewards() end
 ---@return boolean isInteracting
 function C_WeeklyRewards.HasInteraction() end
 
+---@return boolean isRetired
+function C_WeeklyRewards.IsWeeklyChestRetired() end
+
 function C_WeeklyRewards.OnUIInteract() end
 
 ---@class ConquestProgressBarDisplayType

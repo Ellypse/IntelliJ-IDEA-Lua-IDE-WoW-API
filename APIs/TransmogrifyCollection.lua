@@ -56,8 +56,10 @@ function C_TransmogCollection.GetAppearanceSourceDrops(itemModifiedAppearanceID)
 function C_TransmogCollection.GetAppearanceSourceInfo(itemModifiedAppearanceID) end
 
 ---@param appearanceID number 
----@param categoryType TransmogCollectionType 
----@param transmogLocation table 
+---@param categoryType TransmogCollectionType @ [OPTIONAL]
+---@param transmogLocation table @ [OPTIONAL]
+---@overload fun(appearanceID:number, transmogLocation:table)
+---@overload fun(appearanceID:number)
 ---@return AppearanceSourceInfo sources
 function C_TransmogCollection.GetAppearanceSources(appearanceID, categoryType, transmogLocation) end
 
@@ -66,7 +68,8 @@ function C_TransmogCollection.GetAppearanceSources(appearanceID, categoryType, t
 function C_TransmogCollection.GetArtifactAppearanceStrings(appearanceID) end
 
 ---@param category TransmogCollectionType 
----@param transmogLocation table 
+---@param transmogLocation table @ [OPTIONAL]
+---@overload fun(category:TransmogCollectionType)
 ---@return TransmogCategoryAppearanceInfo appearances
 function C_TransmogCollection.GetCategoryAppearances(category, transmogLocation) end
 
@@ -298,6 +301,18 @@ local TransmogAppearanceInfoBySourceData = {}
 ---@field difficulties table 
 local TransmogAppearanceJournalEncounterInfo = {}
 
+---@class TransmogAppearanceSourceInfoData
+---@field category TransmogCollectionType 
+---@field itemAppearanceID number 
+---@field canHaveIllusion bool 
+---@field icon number 
+---@field isCollected bool 
+---@field itemLink string 
+---@field transmoglink string 
+---@field sourceType number|nil 
+---@field itemSubClass number 
+local TransmogAppearanceSourceInfoData = {}
+
 ---@class TransmogCategoryAppearanceInfo
 ---@field visualID number 
 ---@field isCollected bool 
@@ -312,6 +327,14 @@ local TransmogAppearanceJournalEncounterInfo = {}
 ---@field alwaysShowItem bool|nil @ For internal testing only
 local TransmogCategoryAppearanceInfo = {}
 
+---@class TransmogCategoryInfo
+---@field name string 
+---@field isWeapon bool 
+---@field canHaveIllusions bool 
+---@field canMainHand bool 
+---@field canOffHand bool 
+local TransmogCategoryInfo = {}
+
 ---@class TransmogIllusionInfo
 ---@field visualID number 
 ---@field sourceID number 
@@ -320,4 +343,9 @@ local TransmogCategoryAppearanceInfo = {}
 ---@field isUsable bool 
 ---@field isHideVisual bool 
 local TransmogIllusionInfo = {}
+
+---@class TransmogOutfitInfo
+---@field name string 
+---@field icon number 
+local TransmogOutfitInfo = {}
 

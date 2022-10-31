@@ -216,6 +216,27 @@ function C_ArtifactUI.SetPreviewAppearance(artifactAppearanceID) end
 ---@return boolean shouldSuppressForgeRotation
 function C_ArtifactUI.ShouldSuppressForgeRotation() end
 
+---@class ArtifactAppearanceInfo
+---@field artifactAppearanceID number 
+---@field appearanceName string 
+---@field displayIndex number 
+---@field unlocked bool 
+---@field failureDescription string|nil 
+---@field uiCameraID number 
+---@field altHandCameraID number|nil 
+---@field swatchColor table 
+---@field modelOpacity number 
+---@field modelSaturation number 
+---@field obtainable bool 
+local ArtifactAppearanceInfo = {}
+
+---@class ArtifactAppearanceSetInfo
+---@field artifactAppearanceSetID number 
+---@field appearanceSetName string 
+---@field appearanceSetDescription string 
+---@field numAppearances number 
+local ArtifactAppearanceSetInfo = {}
+
 ---@class ArtifactArtInfo
 ---@field textureKit string 
 ---@field titleName string 
@@ -225,6 +246,28 @@ function C_ArtifactUI.ShouldSuppressForgeRotation() end
 ---@field uiModelSceneID number 
 ---@field spellVisualKitID number 
 local ArtifactArtInfo = {}
+
+---@class ArtifactInfo
+---@field itemID number 
+---@field altItemID number|nil 
+---@field name string 
+---@field icon number 
+---@field xp number 
+---@field pointsSpent number 
+---@field quality number 
+---@field artifactAppearanceID number 
+---@field appearanceModID number 
+---@field itemAppearanceID number|nil 
+---@field altItemAppearanceID number|nil 
+---@field altOnTop bool 
+---@field tier number 
+local ArtifactInfo = {}
+
+---@class ArtifactMetaPowerInfo
+---@field spellID number 
+---@field powerCost number 
+---@field currentRank number 
+local ArtifactMetaPowerInfo = {}
 
 ---@class ArtifactPowerInfo
 ---@field spellID number 
@@ -242,4 +285,11 @@ local ArtifactArtInfo = {}
 ---@field offset table|nil 
 ---@field linearIndex number|nil 
 local ArtifactPowerInfo = {}
+
+---@class ArtifactRelicInfo
+---@field name string 
+---@field icon number 
+---@field slotTypeName string @ Matches the socket identifiers used in the socketing system.
+---@field link string 
+local ArtifactRelicInfo = {}
 

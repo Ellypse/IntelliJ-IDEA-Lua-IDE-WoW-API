@@ -46,12 +46,16 @@ function C_Item.GetCurrentItemTransmogInfo(itemLoc) end
 function C_Item.GetItemConversionOutputIcon(itemLoc) end
 
 ---@param itemLocation table 
----@return string itemGuid
+---@return string itemGUID
 function C_Item.GetItemGUID(itemLocation) end
 
 ---@param itemLocation table 
 ---@return number itemID
 function C_Item.GetItemID(itemLocation) end
+
+---@param itemGUID string 
+---@return number|nil itemID
+function C_Item.GetItemIDByGUID(itemGUID) end
 
 ---@param itemLocation table 
 ---@return number|nil icon
@@ -72,6 +76,18 @@ function C_Item.GetItemInventoryTypeByID(itemInfo) end
 ---@param itemLocation table 
 ---@return string|nil itemLink
 function C_Item.GetItemLink(itemLocation) end
+
+---@param itemGUID string 
+---@return table|nil itemLocation
+function C_Item.GetItemLocation(itemGUID) end
+
+---@param itemLocation table 
+---@return number|nil stackSize
+function C_Item.GetItemMaxStackSize(itemLocation) end
+
+---@param itemInfo string 
+---@return number|nil stackSize
+function C_Item.GetItemMaxStackSizeByID(itemInfo) end
 
 ---@param itemLocation table 
 ---@return string|nil itemName
@@ -140,6 +156,10 @@ function C_Item.IsItemDataCached(itemLocation) end
 ---@param itemInfo string 
 ---@return boolean isCached
 function C_Item.IsItemDataCachedByID(itemInfo) end
+
+---@param itemGUID string 
+---@return boolean valid
+function C_Item.IsItemGUIDInInventory(itemGUID) end
 
 ---@param itemInfo string 
 ---@return boolean isKeystone

@@ -37,6 +37,10 @@ function C_UIWidgetManager.GetDoubleStateIconRowVisualizationInfo(widgetID) end
 function C_UIWidgetManager.GetDoubleStatusBarWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
+---@return FillUpFramesWidgetVisualizationInfo|nil widgetInfo
+function C_UIWidgetManager.GetFillUpFramesWidgetVisualizationInfo(widgetID) end
+
+---@param widgetID number 
 ---@return HorizontalCurrenciesWidgetVisualizationInfo|nil widgetInfo
 function C_UIWidgetManager.GetHorizontalCurrenciesWidgetVisualizationInfo(widgetID) end
 
@@ -155,6 +159,18 @@ local IconState = {}
 IconState.Hidden = 0
 IconState.ShowState1 = 1
 IconState.ShowState2 = 2
+
+---@class SpellDisplayBorderColor
+local SpellDisplayBorderColor = {}
+SpellDisplayBorderColor.None = 0
+SpellDisplayBorderColor.Black = 1
+SpellDisplayBorderColor.White = 2
+SpellDisplayBorderColor.Red = 3
+SpellDisplayBorderColor.Yellow = 4
+SpellDisplayBorderColor.Orange = 5
+SpellDisplayBorderColor.Purple = 6
+SpellDisplayBorderColor.Green = 7
+SpellDisplayBorderColor.Blue = 8
 
 ---@class SpellDisplayIconDisplayType
 local SpellDisplayIconDisplayType = {}
@@ -478,6 +494,30 @@ local DoubleStateIconRowVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 local DoubleStatusBarWidgetVisualizationInfo = {}
 
+---@class FillUpFramesWidgetVisualizationInfo
+---@field shownState WidgetShownState 
+---@field fillMin number 
+---@field fillMax number 
+---@field fillValue number 
+---@field numTotalFrames number 
+---@field numFullFrames number 
+---@field pulseFillingFrame bool 
+---@field tooltip string 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit string 
+---@field frameTextureKit string 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
+local FillUpFramesWidgetVisualizationInfo = {}
+
 ---@class HorizontalCurrenciesWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field currencies table 
@@ -743,6 +783,7 @@ local TextureAndTextEntryInfo = {}
 ---@field shownState WidgetShownState 
 ---@field entries table 
 ---@field textSizeType UIWidgetTextSizeType 
+---@field fixedWidth number|nil 
 ---@field tooltipLoc UIWidgetTooltipLocation 
 ---@field widgetSizeSetting number 
 ---@field textureKit string 
@@ -823,9 +864,11 @@ local UIWidgetSetInfo = {}
 ---@field iconSizeType SpellDisplayIconSizeType 
 ---@field iconDisplayType SpellDisplayIconDisplayType 
 ---@field textShownState SpellDisplayTextShownStateType 
+---@field borderColor SpellDisplayBorderColor 
 ---@field textFontType UIWidgetFontType 
 ---@field textSizeType UIWidgetTextSizeType 
 ---@field hAlignType WidgetTextHorizontalAlignmentType 
+---@field isLootObject bool 
 local UIWidgetSpellInfo = {}
 
 ---@class UIWidgetStateIconInfo
@@ -833,6 +876,11 @@ local UIWidgetSpellInfo = {}
 ---@field state1Tooltip string 
 ---@field state2Tooltip string 
 local UIWidgetStateIconInfo = {}
+
+---@class UIWidgetTextTooltipPair
+---@field text string 
+---@field tooltip string 
+local UIWidgetTextTooltipPair = {}
 
 ---@class UnitPowerBarWidgetVisualizationInfo
 ---@field shownState WidgetShownState 

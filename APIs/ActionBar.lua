@@ -17,6 +17,10 @@ function C_ActionBar.FindSpellActionButtons(spellID) end
 ---@return number|nil bonusBarIndex
 function C_ActionBar.GetBonusBarIndexForSlot(slotID) end
 
+---@param actionID number 
+---@return number|nil onEquipSpellID
+function C_ActionBar.GetItemActionOnEquipSpellID(actionID) end
+
 ---@param petActionID number 
 ---@return number slots
 function C_ActionBar.GetPetActionPetBarIndices(petActionID) end

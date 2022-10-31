@@ -18,6 +18,9 @@ function C_MountJournal.Dismiss() end
 ---@return number|nil itemID
 function C_MountJournal.GetAppliedMountEquipmentID() end
 
+---@return number mountIDs
+function C_MountJournal.GetCollectedDragonridingMounts() end
+
 ---@param filterIndex number 
 ---@return boolean isChecked
 function C_MountJournal.GetCollectedFilterSetting(filterIndex) end
@@ -27,7 +30,11 @@ function C_MountJournal.GetCollectedFilterSetting(filterIndex) end
 function C_MountJournal.GetDisplayedMountAllCreatureDisplayInfo(mountIndex) end
 
 ---@param displayIndex number 
----@return string, number, number, boolean, boolean, number, boolean, boolean, number|nil, boolean, boolean, number name, spellID, icon, isActive, isUsable, sourceType, isFavorite, isFactionSpecific, faction, shouldHideOnChar, isCollected, mountID
+---@return number mountID
+function C_MountJournal.GetDisplayedMountID(displayIndex) end
+
+---@param displayIndex number 
+---@return string, number, number, boolean, boolean, number, boolean, boolean, number|nil, boolean, boolean, number, boolean name, spellID, icon, isActive, isUsable, sourceType, isFavorite, isFactionSpecific, faction, shouldHideOnChar, isCollected, mountID, isForDragonriding
 function C_MountJournal.GetDisplayedMountInfo(displayIndex) end
 
 ---@param mountIndex number 
@@ -57,12 +64,16 @@ function C_MountJournal.GetMountFromSpell(spellID) end
 function C_MountJournal.GetMountIDs() end
 
 ---@param mountID number 
----@return string, number, number, boolean, boolean, number, boolean, boolean, number|nil, boolean, boolean, number name, spellID, icon, isActive, isUsable, sourceType, isFavorite, isFactionSpecific, faction, shouldHideOnChar, isCollected, mountID
+---@return string, number, number, boolean, boolean, number, boolean, boolean, number|nil, boolean, boolean, number, boolean name, spellID, icon, isActive, isUsable, sourceType, isFavorite, isFactionSpecific, faction, shouldHideOnChar, isCollected, mountID, isForDragonriding
 function C_MountJournal.GetMountInfoByID(mountID) end
 
 ---@param mountID number 
 ---@return number|nil, string, string, boolean, number, number, number, number, boolean creatureDisplayInfoID, description, source, isSelfMount, mountTypeID, uiModelSceneID, animID, spellVisualKitID, disablePlayerMountPreview
 function C_MountJournal.GetMountInfoExtraByID(mountID) end
+
+---@param spellID number 
+---@return string|nil mountCreatureDisplayInfoLink
+function C_MountJournal.GetMountLink(spellID) end
 
 ---@param mountID number 
 ---@param checkIndoors boolean 
@@ -147,14 +158,44 @@ local MountType = {}
 MountType.Ground = 0
 MountType.Flying = 1
 MountType.Aquatic = 2
+MountType.Dragonriding = 3
 
 ---@class MountTypeFlag
 local MountTypeFlag = {}
 MountTypeFlag.IsFlyingMount = 1
 MountTypeFlag.IsAquaticMount = 2
+MountTypeFlag.IsDragonRidingMount = 4
 
 ---@class MountCreatureDisplayInfo
 ---@field creatureDisplayID number 
 ---@field isVisible bool 
 local MountCreatureDisplayInfo = {}
+
+---@class MountInfo
+---@field name string 
+---@field spellID number 
+---@field icon number 
+---@field isActive bool 
+---@field isUsable bool 
+---@field sourceType number 
+---@field isFavorite bool 
+---@field isFactionSpecific bool 
+---@field faction number|nil 
+---@field shouldHideOnChar bool 
+---@field isCollected bool 
+---@field mountID number 
+---@field isForDragonriding bool 
+local MountInfo = {}
+
+---@class MountInfoExtra
+---@field creatureDisplayInfoID number|nil 
+---@field description string 
+---@field source string 
+---@field isSelfMount bool 
+---@field mountTypeID number 
+---@field uiModelSceneID number 
+---@field animID number 
+---@field spellVisualKitID number 
+---@field disablePlayerMountPreview bool 
+local MountInfoExtra = {}
 

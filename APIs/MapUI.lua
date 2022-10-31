@@ -227,6 +227,17 @@ local UiMapDetails = {}
 ---@field name string 
 local UiMapGroupMemberInfo = {}
 
+---@class UiMapHighlightInfo
+---@field fileDataID number 
+---@field atlasID string 
+---@field texturePercentageX number 
+---@field texturePercentageY number 
+---@field textureX number 
+---@field textureY number 
+---@field scrollChildX number 
+---@field scrollChildY number 
+local UiMapHighlightInfo = {}
+
 ---@class UiMapLayerInfo
 ---@field layerWidth number 
 ---@field layerHeight number 

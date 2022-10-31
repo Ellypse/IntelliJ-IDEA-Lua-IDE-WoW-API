@@ -5,6 +5,19 @@ function GetNegativeCorruptionEffectInfo() end
 ---@return number pointIndices
 function GetUnitChargedPowerPoints(unit) end
 
+---@param unit string 
+---@return number holdAtMaxTime
+function GetUnitEmpowerHoldAtMaxTime(unit) end
+
+---@param unit string 
+---@return number minHoldTime
+function GetUnitEmpowerMinHoldTime(unit) end
+
+---@param unit string 
+---@param index number 
+---@return number duration
+function GetUnitEmpowerStageDuration(unit, index) end
+
 ---@param unitToken string 
 ---@return UnitPowerBarInfo info
 function GetUnitPowerBarInfo(unitToken) end
@@ -33,6 +46,10 @@ function GetUnitPowerBarTextureInfo(unitToken, textureIndex, timerIndex) end
 ---@return number, number, number, number, number texture, colorR, colorG, colorB, colorA
 function GetUnitPowerBarTextureInfoByID(barID, textureIndex) end
 
+---@param playerGUID string 
+---@return boolean IsInGuild
+function IsPlayerInGuildFromGUID(playerGUID) end
+
 ---@param unitToken string 
 ---@return boolean isReady
 function IsUnitModelReadyForUI(unitToken) end
@@ -42,11 +59,21 @@ function PlayerVehicleHasComboPoints() end
 
 ---@param textureObject table 
 ---@param unitToken string 
-function SetPortraitTexture(textureObject, unitToken) end
+---@param disableMasking boolean 
+function SetPortraitTexture(textureObject, unitToken, disableMasking) end
 
 ---@param textureObject table 
 ---@param creatureDisplayID number 
 function SetPortraitTextureFromCreatureDisplayID(textureObject, creatureDisplayID) end
+
+---@param textureObject table 
+---@param unit string 
+---@param style CursorStyle @ [OPTIONAL]
+---@param includeLowPriority boolean @ [OPTIONAL]
+---@overload fun(textureObject:table, unit:string, includeLowPriority:bool)
+---@overload fun(textureObject:table, unit:string)
+---@return boolean hasCursor
+function SetUnitCursorTexture(textureObject, unit, style, includeLowPriority) end
 
 ---@param unit string 
 ---@return boolean, boolean isAlliedRace, hasHeritageArmorUnlocked
@@ -159,7 +186,11 @@ PowerType.Obsolete2 = 15
 PowerType.ArcaneCharges = 16
 PowerType.Fury = 17
 PowerType.Pain = 18
-PowerType.NumPowerTypes = 19
+PowerType.Essence = 19
+PowerType.RuneBlood = 20
+PowerType.RuneFrost = 21
+PowerType.RuneUnholy = 22
+PowerType.NumPowerTypes = 23
 
 ---@class PvPUnitClassification
 local PvPUnitClassification = {}

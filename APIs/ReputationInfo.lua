@@ -10,5 +10,12 @@ function C_Reputation.GetFactionParagonInfo(factionID) end
 function C_Reputation.IsFactionParagon(factionID) end
 
 ---@param factionID number 
+---@return boolean isMajorFaction
+function C_Reputation.IsMajorFaction(factionID) end
+
+---@param factionID number 
 function C_Reputation.RequestFactionParagonPreloadRewardData(factionID) end
+
+---@param factionID number 
+function C_Reputation.SetWatchedFaction(factionID) end
 

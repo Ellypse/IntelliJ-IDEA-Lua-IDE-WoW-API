@@ -18,14 +18,19 @@ function C_GossipInfo.GetCompletedOptionDescriptionString() end
 ---@return string|nil description
 function C_GossipInfo.GetCustomGossipDescriptionString() end
 
+---@param friendshipFactionID number 
+---@return FriendshipReputationInfo reputationInfo
+function C_GossipInfo.GetFriendshipReputation(friendshipFactionID) end
+
+---@param friendshipFactionID number 
+---@return FriendshipReputationRankInfo rankInfo
+function C_GossipInfo.GetFriendshipReputationRanks(friendshipFactionID) end
+
 ---@return number numQuests
 function C_GossipInfo.GetNumActiveQuests() end
 
 ---@return number numQuests
 function C_GossipInfo.GetNumAvailableQuests() end
-
----@return number numOptions
-function C_GossipInfo.GetNumOptions() end
 
 ---@return GossipOptionUIInfo info
 function C_GossipInfo.GetOptions() end
@@ -44,18 +49,18 @@ function C_GossipInfo.GetText() end
 
 function C_GossipInfo.RefreshOptions() end
 
----@param index number 
-function C_GossipInfo.SelectActiveQuest(index) end
+---@param optionID number 
+function C_GossipInfo.SelectActiveQuest(optionID) end
 
----@param index number 
-function C_GossipInfo.SelectAvailableQuest(index) end
+---@param optionID number 
+function C_GossipInfo.SelectAvailableQuest(optionID) end
 
----@param index number 
+---@param optionID number 
 ---@param text string @ [OPTIONAL]
 ---@param confirmed boolean @ [OPTIONAL]
----@overload fun(index:number, confirmed:bool)
----@overload fun(index:number)
-function C_GossipInfo.SelectOption(index, text, confirmed) end
+---@overload fun(optionID:number, confirmed:bool)
+---@overload fun(optionID:number)
+function C_GossipInfo.SelectOption(optionID, text, confirmed) end
 
 ---@class GossipOptionRewardType
 local GossipOptionRewardType = {}
@@ -69,6 +74,25 @@ GossipOptionStatus.Unavailable = 1
 GossipOptionStatus.Locked = 2
 GossipOptionStatus.AlreadyComplete = 3
 
+---@class FriendshipReputationInfo
+---@field friendshipFactionID number 
+---@field standing number 
+---@field maxRep number 
+---@field name string|nil 
+---@field text string 
+---@field texture number 
+---@field reaction string 
+---@field reactionThreshold number 
+---@field nextThreshold number|nil 
+---@field reversedColor bool 
+---@field overrideColor number|nil 
+local FriendshipReputationInfo = {}
+
+---@class FriendshipReputationRankInfo
+---@field currentLevel number 
+---@field maxLevel number 
+local FriendshipReputationRankInfo = {}
+
 ---@class GossipOptionRewardInfo
 ---@field id number 
 ---@field quantity number 
@@ -76,11 +100,16 @@ GossipOptionStatus.AlreadyComplete = 3
 local GossipOptionRewardInfo = {}
 
 ---@class GossipOptionUIInfo
+---@field gossipOptionID number 
 ---@field name string 
----@field type string 
+---@field icon number 
 ---@field rewards table 
 ---@field status GossipOptionStatus 
 ---@field spellID number|nil 
+---@field flags number 
+---@field overrideIconID number|nil 
+---@field selectOptionWhenOnlyOption bool 
+---@field orderIndex number 
 local GossipOptionUIInfo = {}
 
 ---@class GossipPoiInfo

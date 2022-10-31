@@ -19,6 +19,9 @@ function C_PaperDollInfo.GetInspectAzeriteItemEmpoweredChoices(unit, equipmentSl
 ---@return number equippedItemLevel
 function C_PaperDollInfo.GetInspectItemLevel(unit) end
 
+---@return InspectPVPData ratedSoloShuffleData
+function C_PaperDollInfo.GetInspectRatedSoloShuffleData() end
+
 ---@return number|nil minItemLevel
 function C_PaperDollInfo.GetMinItemLevel() end
 
@@ -31,4 +34,12 @@ function C_PaperDollInfo.OffhandHasShield() end
 
 ---@return boolean offhandHasWeapon
 function C_PaperDollInfo.OffhandHasWeapon() end
+
+---@class InspectPVPData
+---@field rating number 
+---@field gamesWon number 
+---@field gamesPlayed number 
+---@field roundsWon number 
+---@field roundsPlayed number 
+local InspectPVPData = {}
 

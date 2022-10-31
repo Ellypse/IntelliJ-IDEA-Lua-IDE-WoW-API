@@ -113,6 +113,9 @@ function C_PvP.GetPVPActiveMatchPersonalRatedInfo() end
 ---@return number achievementID
 function C_PvP.GetPVPSeasonRewardAchievementID() end
 
+---@return RatedSoloShuffleSpecStats|nil specStats
+function C_PvP.GetPersonalRatedSoloShuffleSpecStats() end
+
 ---@return PVPPostMatchCurrencyReward rewards
 function C_PvP.GetPostMatchCurrencyRewards() end
 
@@ -142,6 +145,12 @@ function C_PvP.GetRandomEpicBGRewards() end
 
 ---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil honor, experience, itemRewards, currencyRewards
 function C_PvP.GetRatedBGRewards() end
+
+---@return number minItemLevel
+function C_PvP.GetRatedSoloShuffleMinItemLevel() end
+
+---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil honor, experience, itemRewards, currencyRewards
+function C_PvP.GetRatedSoloShuffleRewards() end
 
 ---@param pvpTierEnum number 
 ---@return number, number activityItemLevel, weeklyItemLevel
@@ -196,6 +205,9 @@ function C_PvP.IsBattleground() end
 ---@return boolean, boolean battlegroundActive, brawlActive
 function C_PvP.IsBattlegroundEnlistmentBonusActive() end
 
+---@return boolean isBrawlSoloShuffle
+function C_PvP.IsBrawlSoloShuffle() end
+
 ---@return boolean isInBrawl
 function C_PvP.IsInBrawl() end
 
@@ -216,6 +228,9 @@ function C_PvP.IsRatedBattleground() end
 
 ---@return boolean isRatedMap
 function C_PvP.IsRatedMap() end
+
+---@return boolean isRatedSoloShuffle
+function C_PvP.IsRatedSoloShuffle() end
 
 ---@return boolean isSoloShuffle
 function C_PvP.IsSoloShuffle() end
@@ -265,6 +280,13 @@ local BattlefieldCurrencyReward = {}
 ---@field texture number 
 ---@field quantity number 
 local BattlefieldItemReward = {}
+
+---@class BattlefieldRewards
+---@field honor number 
+---@field experience number 
+---@field itemRewards table|nil 
+---@field currencyRewards table|nil 
+local BattlefieldRewards = {}
 
 ---@class BattlefieldVehicleInfo
 ---@field x number 
@@ -335,6 +357,10 @@ local PvpBrawlInfo = {}
 ---@field hasWonBracketToday bool 
 ---@field tier number 
 ---@field ranking number|nil 
+---@field roundsSeasonPlayed number 
+---@field roundsSeasonWon number 
+---@field roundsWeeklyPlayed number 
+---@field roundsWeeklyWon number 
 local PVPPersonalRatedInfo = {}
 
 ---@class PVPPostMatchCurrencyReward
@@ -422,4 +448,11 @@ local PvpTierInfo = {}
 ---@field minLevel number 
 ---@field maxLevel number 
 local RandomBGInfo = {}
+
+---@class RatedSoloShuffleSpecStats
+---@field weeklyMostPlayedSpecID number 
+---@field weeklyMostPlayedSpecRounds number 
+---@field seasonMostPlayedSpecID number 
+---@field seasonMostPlayedSpecRounds number 
+local RatedSoloShuffleSpecStats = {}
 

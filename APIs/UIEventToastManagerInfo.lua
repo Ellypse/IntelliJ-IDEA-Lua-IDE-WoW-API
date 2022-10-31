@@ -45,6 +45,8 @@ EventToastEventType.PlayerAuraRemoved = 17
 EventToastEventType.SpellScript = 18
 EventToastEventType.CriteriaUpdated = 19
 EventToastEventType.PvPTierUpdate = 20
+EventToastEventType.SpellLearned = 21
+EventToastEventType.TreasureItem = 22
 
 ---@class EventToastInfo
 ---@field eventToastID number 

@@ -534,27 +534,6 @@ ClubType.Character = 1
 ClubType.Guild = 2
 ClubType.Other = 3
 
----@class ValidateNameResult
-local ValidateNameResult = {}
-ValidateNameResult.NameSuccess = 0
-ValidateNameResult.NameFailure = 1
-ValidateNameResult.NameNoName = 2
-ValidateNameResult.NameTooShort = 3
-ValidateNameResult.NameTooLong = 4
-ValidateNameResult.NameInvalidCharacter = 5
-ValidateNameResult.NameMixedLanguages = 6
-ValidateNameResult.NameProfane = 7
-ValidateNameResult.NameReserved = 8
-ValidateNameResult.NameInvalidApostrophe = 9
-ValidateNameResult.NameMultipleApostrophes = 10
-ValidateNameResult.NameThreeConsecutive = 11
-ValidateNameResult.NameInvalidSpace = 12
-ValidateNameResult.NameConsecutiveSpaces = 13
-ValidateNameResult.NameRussianConsecutiveSilentCharacters = 14
-ValidateNameResult.NameRussianSilentCharacterAtBeginningOrEnd = 15
-ValidateNameResult.NameDeclensionDoesntMatchBaseName = 16
-ValidateNameResult.NameSpacesDisallowed = 17
-
 ---@class ClubInfo
 ---@field clubId string 
 ---@field name string 
@@ -683,6 +662,13 @@ local ClubMessageRange = {}
 ---@field canPinMessage bool 
 ---@field kickableRoleIds table @ Roles that can be kicked and banned
 local ClubPrivilegeInfo = {}
+
+---@class ClubRoleInfo
+---@field roleId number 
+---@field name string 
+---@field required bool @ At least one user must be in this role
+---@field unique bool @ At most one user can be in this role
+local ClubRoleInfo = {}
 
 ---@class ClubSelfInvitationInfo
 ---@field invitationId string 

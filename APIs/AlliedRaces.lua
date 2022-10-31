@@ -1,8 +1,6 @@
 ---@class AlliedRaces
 C_AlliedRaces = {}
 
-function C_AlliedRaces.ClearAlliedRaceDetailsGiver() end
-
 ---@param raceID number 
 ---@return AlliedRaceRacialAbility allDisplayInfo
 function C_AlliedRaces.GetAllRacialAbilitiesFromID(raceID) end
