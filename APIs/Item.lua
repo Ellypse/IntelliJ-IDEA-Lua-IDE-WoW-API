@@ -78,6 +78,10 @@ function C_Item.GetItemInventoryTypeByID(itemInfo) end
 function C_Item.GetItemLink(itemLocation) end
 
 ---@param itemGUID string 
+---@return string|nil itemLink
+function C_Item.GetItemLinkByGUID(itemGUID) end
+
+---@param itemGUID string 
 ---@return table|nil itemLocation
 function C_Item.GetItemLocation(itemGUID) end
 

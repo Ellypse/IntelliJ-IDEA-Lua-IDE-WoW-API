@@ -1,6 +1,13 @@
 ---@class PaperDollInfo
 C_PaperDollInfo = {}
 
+---@return boolean canAutoEquip
+function C_PaperDollInfo.CanAutoEquipCursorItem() end
+
+---@param slotIndex number 
+---@return boolean canOccupySlot
+function C_PaperDollInfo.CanCursorCanGoInSlot(slotIndex) end
+
 ---@param armor number 
 ---@param attackerLevel number 
 ---@return number effectiveness

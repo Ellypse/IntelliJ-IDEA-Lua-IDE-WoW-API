@@ -83,8 +83,6 @@ function C_ChallengeMode.RequestLeaders(mapChallengeModeID) end
 
 function C_ChallengeMode.Reset() end
 
-function C_ChallengeMode.SetKeystoneTooltip() end
-
 function C_ChallengeMode.SlotKeystone() end
 
 ---@return boolean success

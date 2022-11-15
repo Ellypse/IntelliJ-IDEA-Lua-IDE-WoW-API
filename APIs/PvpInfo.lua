@@ -178,6 +178,9 @@ function C_PvP.GetSpecialEventBrawlInfo() end
 ---@return PVPTeamInfo|nil info
 function C_PvP.GetTeamInfo(factionIndex) end
 
+---@return number uiDisplaySeason
+function C_PvP.GetUIDisplaySeason() end
+
 ---@return number rewardBonus
 function C_PvP.GetWarModeRewardBonus() end
 
@@ -339,6 +342,9 @@ local MatchPVPStatColumn = {}
 ---@field shortDescription string 
 ---@field longDescription string 
 ---@field canQueue bool 
+---@field minLevel number 
+---@field maxLevel number 
+---@field groupsAllowed bool 
 ---@field timeLeftUntilNextChange number|nil 
 ---@field brawlType BrawlType 
 ---@field mapNames table 

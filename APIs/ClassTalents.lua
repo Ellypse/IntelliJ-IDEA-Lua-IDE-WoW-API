@@ -1,11 +1,16 @@
 ---@class ClassTalents
 C_ClassTalents = {}
 
+--- Returns true only if the player has staged changes and can commit their talents in their current state.
 ---@return boolean, boolean, string canChange, canAdd, changeError
 function C_ClassTalents.CanChangeTalents() end
 
 ---@return boolean canCreate
 function C_ClassTalents.CanCreateNewConfig() end
+
+--- Returns true if the player could switch talents if they staged a proper loadout.
+---@return boolean, string canEdit, changeError
+function C_ClassTalents.CanEditTalents() end
 
 ---@param savedConfigID number @ [OPTIONAL]
 ---@overload fun()

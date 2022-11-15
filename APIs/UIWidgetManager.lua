@@ -95,6 +95,10 @@ function C_UIWidgetManager.GetTextColumnRowVisualizationInfo(widgetID) end
 function C_UIWidgetManager.GetTextWithStateWidgetVisualizationInfo(widgetID) end
 
 ---@param widgetID number 
+---@return TextWithSubtextWidgetVisualizationInfo|nil widgetInfo
+function C_UIWidgetManager.GetTextWithSubtextWidgetVisualizationInfo(widgetID) end
+
+---@param widgetID number 
 ---@return TextureAndTextRowVisualizationInfo|nil widgetInfo
 function C_UIWidgetManager.GetTextureAndTextRowVisualizationInfo(widgetID) end
 
@@ -247,11 +251,23 @@ UIWidgetMotionType.Smooth = 1
 
 ---@class UIWidgetTextSizeType
 local UIWidgetTextSizeType = {}
-UIWidgetTextSizeType.Small = 0
-UIWidgetTextSizeType.Medium = 1
-UIWidgetTextSizeType.Large = 2
-UIWidgetTextSizeType.Huge = 3
-UIWidgetTextSizeType.Standard = 4
+UIWidgetTextSizeType.Small12Pt = 0
+UIWidgetTextSizeType.Medium16Pt = 1
+UIWidgetTextSizeType.Large24Pt = 2
+UIWidgetTextSizeType.Huge27Pt = 3
+UIWidgetTextSizeType.Standard14Pt = 4
+UIWidgetTextSizeType.Small10Pt = 5
+UIWidgetTextSizeType.Small11Pt = 6
+UIWidgetTextSizeType.Medium18Pt = 7
+UIWidgetTextSizeType.Large20Pt = 8
+
+---@class UIWidgetTextureAndTextSizeType
+local UIWidgetTextureAndTextSizeType = {}
+UIWidgetTextureAndTextSizeType.Small = 0
+UIWidgetTextureAndTextSizeType.Medium = 1
+UIWidgetTextureAndTextSizeType.Large = 2
+UIWidgetTextureAndTextSizeType.Huge = 3
+UIWidgetTextureAndTextSizeType.Standard = 4
 
 ---@class UIWidgetTooltipLocation
 local UIWidgetTooltipLocation = {}
@@ -774,6 +790,36 @@ local TextColumnRowVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 local TextWithStateWidgetVisualizationInfo = {}
 
+---@class TextWithSubtextWidgetVisualizationInfo
+---@field shownState WidgetShownState 
+---@field enabledState WidgetEnabledState 
+---@field text string 
+---@field widgetWidth number 
+---@field tooltip string 
+---@field textSizeType UIWidgetTextSizeType 
+---@field fontType UIWidgetFontType 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field hAlign WidgetTextHorizontalAlignmentType 
+---@field subText string 
+---@field subTextSizeType UIWidgetTextSizeType 
+---@field subTextFontType UIWidgetFontType 
+---@field subTextHAlign WidgetTextHorizontalAlignmentType 
+---@field subTextEnabledState WidgetEnabledState 
+---@field widgetSizeSetting number 
+---@field textureKit string 
+---@field frameTextureKit string 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
+---@field spacing number 
+local TextWithSubtextWidgetVisualizationInfo = {}
+
 ---@class TextureAndTextEntryInfo
 ---@field text string 
 ---@field tooltip string 
@@ -782,7 +828,7 @@ local TextureAndTextEntryInfo = {}
 ---@class TextureAndTextRowVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field entries table 
----@field textSizeType UIWidgetTextSizeType 
+---@field textSizeType UIWidgetTextureAndTextSizeType 
 ---@field fixedWidth number|nil 
 ---@field tooltipLoc UIWidgetTooltipLocation 
 ---@field widgetSizeSetting number 

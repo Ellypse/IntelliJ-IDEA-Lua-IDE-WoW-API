@@ -19,6 +19,11 @@ function C_QuestLog.AddWorldQuestWatch(questID, watchType) end
 ---@return boolean canAbandon
 function C_QuestLog.CanAbandonQuest(questID) end
 
+---@param questID number 
+---@param factionID number 
+---@return boolean awardsReputation
+function C_QuestLog.DoesQuestAwardReputationWithFaction(questID, factionID) end
+
 ---@return number questID
 function C_QuestLog.GetAbandonQuest() end
 
@@ -36,7 +41,7 @@ function C_QuestLog.GetAllCompletedQuestIDs() end
 function C_QuestLog.GetBountiesForMapID(uiMapID) end
 
 ---@param uiMapID number 
----@return MapOverlayDisplayLocation, number, number displayLocation, lockQuestID, bountySetID
+---@return MapOverlayDisplayLocation, number, number, boolean displayLocation, lockQuestID, bountySetID, isActivitySet
 function C_QuestLog.GetBountySetInfoForMapID(uiMapID) end
 
 ---@param questID number 
@@ -364,6 +369,7 @@ WorldQuestQuality.Epic = 2
 ---@field suggestedGroup number 
 ---@field frequency QuestFrequency|nil 
 ---@field isHeader bool 
+---@field useMinimalHeader bool 
 ---@field isCollapsed bool 
 ---@field startEvent bool 
 ---@field isTask bool 

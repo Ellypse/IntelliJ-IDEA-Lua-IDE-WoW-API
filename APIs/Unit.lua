@@ -108,6 +108,10 @@ function UnitIsOwnerOrControllerOfUnit(controllingUnit, controlledUnit) end
 ---@return boolean nameplateShowsWidgetsOnly
 function UnitNameplateShowsWidgetsOnly(unit) end
 
+---@param unitGUID string 
+---@return number|nil percentHealth
+function UnitPercentHealthFromGUID(unitGUID) end
+
 ---@param unit string 
 ---@return PhaseReason|nil reason
 function UnitPhaseReason(unit) end
@@ -147,6 +151,10 @@ function UnitQuestTrivialLevelRangeScaling(unit) end
 ---@param unit string 
 ---@return number|nil sex
 function UnitSex(unit) end
+
+---@param unitGUID string 
+---@return string|nil unitToken
+function UnitTokenFromGUID(unitGUID) end
 
 ---@param unit string 
 ---@return boolean treatAsPlayer

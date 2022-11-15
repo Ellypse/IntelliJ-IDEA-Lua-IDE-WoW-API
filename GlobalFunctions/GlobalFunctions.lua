@@ -2158,7 +2158,7 @@ end
 
 --- Returns the frame which follows the current frame.
 --- [https://wowpedia.fandom.com/wiki/API_EnumerateFrames]
---- @param currentFrame Frame @ current frame or nil to get first frame.
+--- @param currentFrame Frame @ ? - The current frame. If omitted, returns the first frame.
 --- @return Frame @ nextFrame
 function EnumerateFrames(currentFrame)
 end
@@ -2234,7 +2234,7 @@ end
 function FactionToggleAtWar(rowIndex)
 end
 
---- Fills a table with localized (female) class names.
+--- Fills a table with localized male or female class names.
 --- [https://wowpedia.fandom.com/wiki/API_FillLocalizedClassList]
 --- @param tbl unknown
 --- @param isFemale boolean @ ? - If the table should be filled with female class names.
@@ -6505,8 +6505,8 @@ end
 
 --- Returns the Death Knight's cooldown info for the specified rune.
 --- [https://wowpedia.fandom.com/wiki/API_GetRuneCooldown]
---- @param id unknown @ A number between 1 and 6 denoting which rune to be queried.
---- @return unknown, unknown, unknown @ start, duration, runeReady
+--- @param id number @ The rune index, ranging between 1 and 6.
+--- @return number, number, boolean @ start, duration, runeReady
 function GetRuneCooldown(id)
 end
 
@@ -7974,7 +7974,7 @@ end
 
 --- True if the combat lockdown restrictions are active.
 --- [https://wowpedia.fandom.com/wiki/API_InCombatLockdown]
---- @return unknown @ inLockdown
+--- @return boolean @ inLockdown
 function InCombatLockdown()
 end
 
@@ -8664,7 +8664,7 @@ end
 
 --- True if the character is currently mounted.
 --- [https://wowpedia.fandom.com/wiki/API_IsMounted]
---- @return unknown @ mounted
+--- @return boolean @ mounted
 function IsMounted()
 end
 
@@ -10037,18 +10037,18 @@ end
 
 --- Plays the specified sound by SoundKitID.
 --- [https://wowpedia.fandom.com/wiki/API_PlaySound]
---- @param soundKitID number @ All sounds used by Blizzard's UI are defined in the SOUNDKIT table.
---- @param channel string @ ? - The sound volume slider setting the sound should use, one of: Master, SFX (Sound), Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to SFX if not specified. There is also a Talking Head channel.[1]
---- @param forceNoDuplicates boolean @ ? - Allow duplicate sounds if false. Defaults to true.
---- @param runFinishCallback boolean @ ? - Fires SOUNDKIT_FINISHED when sound is done, arg1 will be soundHandle given below. Defaults to false.
+--- @param soundKitID number @ Sound Kit ID in SoundKitEntry.db2. Sounds used in FrameXML are defined in the SOUNDKIT table.
+--- @param channel string @ ? SFX - The sound channel.
+--- @param forceNoDuplicates boolean @ ? true - Allows duplicate sounds if false.
+--- @param runFinishCallback boolean @ ? false - Fires SOUNDKIT_FINISHED when the sound has finished playing, arg1 will be soundHandle.
 --- @return boolean, number @ willPlay, soundHandle
 function PlaySound(soundKitID, channel, forceNoDuplicates, runFinishCallback)
 end
 
 --- Plays the specified sound by FileDataID or addon file path.
 --- [https://wowpedia.fandom.com/wiki/API_PlaySoundFile]
---- @param sound number @ |string - a) The FileDataID or b) the path to a sound file, only works for sound files in an addon.
---- @param channel string @ ? - The sound volume slider setting the sound should use, one of: Master, SFX (Sound), Music, Ambience, Dialog. Individual channels (except Master) have user-configurable volume settings and may be muted, preventing playback. Defaults to SFX if not specified.
+--- @param sound number @ |string - Either a FileDataID, or the path to a sound file from an addon.
+--- @param channel string @ ? SFX - The sound channel.
 --- @return boolean, number @ willPlay, soundHandle
 function PlaySoundFile(sound, channel)
 end
@@ -12457,9 +12457,11 @@ end
 function UnitAuraSlots(unit, filter, maxSlots, continuationToken)
 end
 
---- [https://wowpedia.fandom.com/wiki/API_UnitBattlePetLevel?action=edit&amp;redlink=1]
---- @return void
-function UnitBattlePetLevel()
+--- Returns the level of a wild battle pet or tamer battle pet.
+--- [https://wowpedia.fandom.com/wiki/API_UnitBattlePetLevel]
+--- @param unit string @ UnitId
+--- @return number @ level
+function UnitBattlePetLevel(unit)
 end
 
 --- Returns the battle pet species ID of a specified unit.

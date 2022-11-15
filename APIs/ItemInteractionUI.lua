@@ -24,10 +24,6 @@ function C_ItemInteraction.PerformItemInteraction() end
 
 function C_ItemInteraction.Reset() end
 
-function C_ItemInteraction.SetCorruptionReforgerItemTooltip() end
-
-function C_ItemInteraction.SetItemConversionOutputTooltip() end
-
 ---@param item table @ [OPTIONAL]
 ---@overload fun()
 ---@return boolean success
@@ -56,6 +52,7 @@ local ItemInteractionChargeInfo = {}
 ---@field description string|nil 
 ---@field buttonTooltip string|nil 
 ---@field confirmationDescription string|nil 
+---@field slotTooltip string|nil 
 ---@field cost number|nil 
 ---@field currencyTypeId number|nil 
 ---@field dropInSlotSoundKitId number|nil 

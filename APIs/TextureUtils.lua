@@ -5,6 +5,10 @@ C_Texture = {}
 ---@return AtlasInfo info
 function C_Texture.GetAtlasInfo(atlas) end
 
+---@param quality number 
+---@return string textureMarkup
+function C_Texture.GetCraftingReagentQualityChatIcon(quality) end
+
 ---@param fileDataID number 
 ---@return string filename
 function C_Texture.GetFilenameFromFileDataID(fileDataID) end

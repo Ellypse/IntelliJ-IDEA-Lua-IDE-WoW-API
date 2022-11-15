@@ -21,6 +21,10 @@ function C_SpecializationInfo.GetInspectSelectedPvpTalent(inspectedUnit, talentI
 ---@return boolean, boolean hasUnspentSlot, hasNewTalent
 function C_SpecializationInfo.GetPvpTalentAlertStatus() end
 
+---@param talentID number 
+---@return PvpTalentInfo|nil talentInfo
+function C_SpecializationInfo.GetPvpTalentInfo(talentID) end
+
 ---@param talentIndex number 
 ---@return PvpTalentSlotInfo|nil slotInfo
 function C_SpecializationInfo.GetPvpTalentSlotInfo(talentIndex) end
@@ -55,6 +59,20 @@ function C_SpecializationInfo.MatchesCurrentSpecSet(specSetID) end
 ---@param talentID number 
 ---@param locked boolean 
 function C_SpecializationInfo.SetPvpTalentLocked(talentID, locked) end
+
+---@class PvpTalentInfo
+---@field talentID number 
+---@field name string 
+---@field icon number 
+---@field selected bool 
+---@field available bool 
+---@field spellID number 
+---@field unlocked bool 
+---@field known bool 
+---@field grantedByAura bool 
+---@field dependenciesUnmet bool 
+---@field dependenciesUnmetReason string|nil 
+local PvpTalentInfo = {}
 
 ---@class PvpTalentSlotInfo
 ---@field enabled bool 

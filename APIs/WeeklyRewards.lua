@@ -37,6 +37,9 @@ function C_WeeklyRewards.GetItemHyperlink(itemDBID) end
 ---@return boolean, number|nil, number|nil hasSeasonData, nextMythicPlusLevel, itemLevel
 function C_WeeklyRewards.GetNextMythicPlusIncrease(mythicPlusLevel) end
 
+---@return string uiTextureKit
+function C_WeeklyRewards.GetWeeklyRewardTextureKit() end
+
 ---@return boolean hasAvailableRewards
 function C_WeeklyRewards.HasAvailableRewards() end
 
@@ -50,6 +53,12 @@ function C_WeeklyRewards.HasInteraction() end
 function C_WeeklyRewards.IsWeeklyChestRetired() end
 
 function C_WeeklyRewards.OnUIInteract() end
+
+---@return boolean showRetirementMessage
+function C_WeeklyRewards.ShouldShowFinalRetirementMessage() end
+
+---@return boolean showRetirementMessage
+function C_WeeklyRewards.ShouldShowRetirementMessage() end
 
 ---@class ConquestProgressBarDisplayType
 local ConquestProgressBarDisplayType = {}
