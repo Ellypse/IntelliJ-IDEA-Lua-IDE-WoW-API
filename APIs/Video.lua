@@ -51,16 +51,19 @@ GraphicsValidationResult.NeedsWindows_10 = 25
 GraphicsValidationResult.NeedsWindows_11 = 26
 GraphicsValidationResult.MacOsUnsupported = 27
 GraphicsValidationResult.WindowsUnsupported = 28
-GraphicsValidationResult.Dx12Win7Unsupported = 29
-GraphicsValidationResult.WineUnsupported = 30
-GraphicsValidationResult.NvapiWineUnsupported = 31
-GraphicsValidationResult.AppleGpuUnsupported = 32
-GraphicsValidationResult.AmdGpuUnsupported = 33
-GraphicsValidationResult.IntelGpuUnsupported = 34
-GraphicsValidationResult.NvidiaGpuUnsupported = 35
-GraphicsValidationResult.QualcommGpuUnsupported = 36
-GraphicsValidationResult.GpuDriver = 37
-GraphicsValidationResult.Unknown = 38
+GraphicsValidationResult.LegacyUnsupported = 29
+GraphicsValidationResult.Dx11Unsupported = 30
+GraphicsValidationResult.Dx12Win7Unsupported = 31
+GraphicsValidationResult.RemoteDesktopUnsupported = 32
+GraphicsValidationResult.WineUnsupported = 33
+GraphicsValidationResult.NvapiWineUnsupported = 34
+GraphicsValidationResult.AppleGpuUnsupported = 35
+GraphicsValidationResult.AmdGpuUnsupported = 36
+GraphicsValidationResult.IntelGpuUnsupported = 37
+GraphicsValidationResult.NvidiaGpuUnsupported = 38
+GraphicsValidationResult.QualcommGpuUnsupported = 39
+GraphicsValidationResult.GpuDriver = 40
+GraphicsValidationResult.Unknown = 41
 
 ---@class GxAdapterInfoDetails
 ---@field name string 

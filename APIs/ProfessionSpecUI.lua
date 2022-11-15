@@ -19,7 +19,11 @@ function C_ProfSpecs.GetChildrenForPath(pathID) end
 ---@return number configID
 function C_ProfSpecs.GetConfigIDForSkillLine(skillLineID) end
 
----@return number defaultSpecSkillLine
+---@param skillLineID number 
+---@return SpecializationCurrencyInfo info
+function C_ProfSpecs.GetCurrencyInfoForSkillLine(skillLineID) end
+
+---@return number|nil defaultSpecSkillLine
 function C_ProfSpecs.GetDefaultSpecSkillLine() end
 
 ---@param pathID number 
@@ -35,7 +39,7 @@ function C_ProfSpecs.GetDescriptionForPerk(perkID) end
 function C_ProfSpecs.GetEntryIDForPerk(perkID) end
 
 ---@param pathID number 
----@return number perkIDs
+---@return SpecPerkInfo perkInfos
 function C_ProfSpecs.GetPerksForPath(pathID) end
 
 ---@param tabTreeID number 
@@ -89,9 +93,12 @@ function C_ProfSpecs.GetUnlockEntryForPath(pathID) end
 ---@return number|nil unlockRank
 function C_ProfSpecs.GetUnlockRankForPerk(perkID) end
 
+---@return boolean showReminder
+function C_ProfSpecs.ShouldShowPointsReminder() end
+
 ---@param skillLineID number 
----@return number unspentPoints
-function C_ProfSpecs.GetUnspentPointsForSkillLine(skillLineID) end
+---@return boolean showReminder
+function C_ProfSpecs.ShouldShowPointsReminderForSkillLine(skillLineID) end
 
 ---@return boolean showSpecTab
 function C_ProfSpecs.ShouldShowSpecTab() end

@@ -60,6 +60,9 @@ function C_Traits.GetDefinitionInfo(definitionID) end
 ---@return TraitEntryInfo entryInfo
 function C_Traits.GetEntryInfo(configID, entryID) end
 
+---@return number serializationVersion
+function C_Traits.GetLoadoutSerializationVersion() end
+
 ---@param configID number 
 ---@param nodeID number 
 ---@return TraitCurrencyCost costs
@@ -86,6 +89,9 @@ function C_Traits.GetTraitCurrencyInfo(traitCurrencyID) end
 ---@param rank number 
 ---@return string description
 function C_Traits.GetTraitDescription(entryID, rank) end
+
+---@return number uiWidgetSetID
+function C_Traits.GetTraitSystemWidgetSetID() end
 
 ---@param configID number 
 ---@param treeID number 
@@ -182,6 +188,7 @@ local TraitCurrencyCost = {}
 ---@field overrideDescription string|nil 
 ---@field overrideIcon number|nil 
 ---@field overriddenSpellID number|nil 
+---@field subType TraitDefinitionSubType|nil 
 local TraitDefinitionInfo = {}
 
 ---@class TraitEntryInfo

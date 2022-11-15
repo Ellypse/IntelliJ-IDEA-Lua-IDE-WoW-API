@@ -37,10 +37,6 @@ function C_MajorFactions.GetRenownRewardsForLevel(majorFactionID, renownLevel) e
 ---@return boolean hasMaxRenown
 function C_MajorFactions.HasMaximumRenown(majorFactionID) end
 
----@param factionID number 
----@return boolean IsMajorFaction
-function C_MajorFactions.IsMajorFaction(factionID) end
-
 ---@return boolean isInCatchUpMode
 function C_MajorFactions.IsPlayerInRenownCatchUpMode() end
 
@@ -56,6 +52,8 @@ function C_MajorFactions.RequestCatchUpState() end
 ---@field expansionID number 
 ---@field bountySetID number 
 ---@field isUnlocked bool 
+---@field unlockDescription string|nil 
+---@field unlockOrder number 
 ---@field renownLevel number 
 ---@field renownReputationEarned number 
 ---@field renownLevelThreshold number 

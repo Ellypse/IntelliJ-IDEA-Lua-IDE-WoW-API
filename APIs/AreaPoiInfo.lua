@@ -30,5 +30,8 @@ function C_AreaPoiInfo.IsAreaPOITimed(areaPoiID) end
 ---@field atlasName string|nil 
 ---@field uiTextureKit string|nil 
 ---@field shouldGlow bool 
+---@field factionID number|nil 
+---@field isPrimaryMapForPOI bool 
+---@field isAlwaysOnFlightmap bool 
 local AreaPOIInfo = {}
 

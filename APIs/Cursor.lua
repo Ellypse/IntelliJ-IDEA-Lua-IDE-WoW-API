@@ -27,3 +27,10 @@ UICursorType.Mount = 18
 UICursorType.Toy = 19
 UICursorType.ConduitCollectionItem = 20
 
+---@class WorldCursorAnchorType
+local WorldCursorAnchorType = {}
+WorldCursorAnchorType.None = 0
+WorldCursorAnchorType.Default = 1
+WorldCursorAnchorType.Cursor = 2
+WorldCursorAnchorType.Nameplate = 3
+

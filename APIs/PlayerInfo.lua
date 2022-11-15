@@ -31,6 +31,14 @@ function C_PlayerInfo.GetInstancesUnlockedAtLevel(level, isRaid) end
 ---@return MythicPlusRatingSummary ratingSummary
 function C_PlayerInfo.GetPlayerMythicPlusRatingSummary(playerToken) end
 
+---@param slot number 
+---@return boolean isVisible
+function C_PlayerInfo.HasVisibleInvSlot(slot) end
+
+---@param expansionID number 
+---@return boolean isUnlocked
+function C_PlayerInfo.IsExpansionLandingPageUnlockedForPlayer(expansionID) end
+
 ---@return boolean, string isEligible, failureReason
 function C_PlayerInfo.IsPlayerEligibleForNPE() end
 

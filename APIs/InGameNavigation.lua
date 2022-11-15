@@ -21,4 +21,5 @@ local NavigationState = {}
 NavigationState.Invalid = 0
 NavigationState.Occluded = 1
 NavigationState.InRange = 2
+NavigationState.Disabled = 3
 

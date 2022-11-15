@@ -21,6 +21,9 @@ function C_BarberShop.GetCurrentCharacterData() end
 ---@return number cost
 function C_BarberShop.GetCurrentCost() end
 
+---@return number customizationScope
+function C_BarberShop.GetCustomizationScope() end
+
 ---@return number|nil chrModelID
 function C_BarberShop.GetViewingChrModel() end
 

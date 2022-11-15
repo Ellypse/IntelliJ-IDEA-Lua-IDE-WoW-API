@@ -322,7 +322,7 @@ function C_AuctionHouse.SendBrowseQuery(query) end
 ---@param maxLevelFilter number 
 function C_AuctionHouse.SendSearchQuery(itemKey, sorts, separateOwnerItems, minLevelFilter, maxLevelFilter) end
 
---- Search queries are restricted to 100 calls per minute. These should not be used to query the entire auction house. See ReplicateItems
+--- Search queries are restricted to 100 calls per minute. These should not be used to query the entire auction house. See ReplicateItems. ItemKey should have its iLVL and suffix cleared before calling.
 ---@param itemKey ItemKey 
 ---@param sorts AuctionHouseSortType 
 ---@param separateOwnerItems boolean 
