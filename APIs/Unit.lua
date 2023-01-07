@@ -108,6 +108,12 @@ function UnitIsOwnerOrControllerOfUnit(controllingUnit, controlledUnit) end
 ---@return boolean nameplateShowsWidgetsOnly
 function UnitNameplateShowsWidgetsOnly(unit) end
 
+---@param unitToken string 
+---@param powerType PowerType 
+---@param unmodified boolean 
+---@return number partialPower
+function UnitPartialPower(unitToken, powerType, unmodified) end
+
 ---@param unitGUID string 
 ---@return number|nil percentHealth
 function UnitPercentHealthFromGUID(unitGUID) end

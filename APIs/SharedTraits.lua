@@ -90,8 +90,9 @@ function C_Traits.GetTraitCurrencyInfo(traitCurrencyID) end
 ---@return string description
 function C_Traits.GetTraitDescription(entryID, rank) end
 
+---@param configID number 
 ---@return number uiWidgetSetID
-function C_Traits.GetTraitSystemWidgetSetID() end
+function C_Traits.GetTraitSystemWidgetSetID(configID) end
 
 ---@param configID number 
 ---@param treeID number 

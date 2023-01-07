@@ -283,6 +283,10 @@ function C_TradeSkillUI.IsRecipeProfessionLearned(recipeID) end
 ---@return boolean tracked
 function C_TradeSkillUI.IsRecipeTracked(recipeID) end
 
+---@param recraftItemGUID string 
+---@return boolean isEquipped
+function C_TradeSkillUI.IsRecraftItemEquipped(recraftItemGUID) end
+
 ---@return boolean result
 function C_TradeSkillUI.IsRuneforging() end
 
@@ -292,6 +296,10 @@ function C_TradeSkillUI.OpenRecipe(recipeID) end
 ---@param skillLineID number 
 ---@return boolean opened
 function C_TradeSkillUI.OpenTradeSkill(skillLineID) end
+
+---@param reagentItemID number 
+---@return boolean recraftValid
+function C_TradeSkillUI.RecraftLimitCategoryValid(reagentItemID) end
 
 ---@param itemGUID string 
 ---@param craftingReagents CraftingReagentInfo @ [OPTIONAL]

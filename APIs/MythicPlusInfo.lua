@@ -13,6 +13,10 @@ function C_MythicPlus.GetCurrentSeasonValues() end
 ---@return number|nil seasonID
 function C_MythicPlus.GetCurrentUIDisplaySeason() end
 
+---@param keystoneLevel number 
+---@return number|nil sequenceLevel
+function C_MythicPlus.GetEndOfRunGearSequenceLevel(keystoneLevel) end
+
 ---@return number, number challengeMapId, level
 function C_MythicPlus.GetLastWeeklyBestInformation() end
 

@@ -383,6 +383,13 @@ local PVPPostMatchCurrencyReward = {}
 ---@field isUpgraded bool 
 local PVPPostMatchItemReward = {}
 
+---@class PvpReadyCheckInfo
+---@field roles table 
+---@field numPlayersAccepted number 
+---@field numPlayersDeclined number 
+---@field totalNumPlayers number 
+local PvpReadyCheckInfo = {}
+
 ---@class PvpRoleQueueInfo
 ---@field role string 
 ---@field totalRole number 
