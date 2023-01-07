@@ -1429,7 +1429,7 @@ end
 
 --- Returns the current COMBAT_LOG_EVENT payload.
 --- [https://wowpedia.fandom.com/wiki/API_CombatLogGetCurrentEventInfo]
---- @return unknown @ eventInfo
+--- @return unknown, unknown, unknown @ arg1, arg2, ...
 function CombatLogGetCurrentEventInfo()
 end
 
@@ -3037,7 +3037,7 @@ end
 --- Returns information on a console variable.
 --- [https://wowpedia.fandom.com/wiki/API_GetCVarInfo]
 --- @param name string @ name of the CVar to query the value of. Only accepts console variables (i.e. not console commands)
---- @return string, string, boolean, boolean, boolean, boolean, boolean @ value, defaultValue, account, character, unknown5, setCvarOnly, readOnly
+--- @return string, string, boolean, boolean, boolean, boolean, boolean @ value, defaultValue, account, character, unknown5, secure, readOnly
 function GetCVarInfo(name)
 end
 
@@ -3680,7 +3680,7 @@ end
 --- Describes an action bar flyout slot.
 --- [https://wowpedia.fandom.com/wiki/API_GetFlyoutSlotInfo]
 --- @param flyoutID number @ The second return value of GetSpellBookItemInfo() or GetActionInfo().
---- @param slot unknown
+--- @param slot number
 --- @return number, number, boolean, string, number @ flyoutSpellID, overrideSpellID, isKnown, spellName, slotSpecID
 function GetFlyoutSlotInfo(flyoutID, slot)
 end
@@ -4333,7 +4333,7 @@ end
 
 --- Returns the color for an item quality.
 --- [https://wowpedia.fandom.com/wiki/API_GetItemQualityColor]
---- @param quality number @ Enum.ItemQuality
+--- @param quality unknown @ Enum.ItemQuality🔗
 --- @return number, number, number, string @ r, g, b, hex
 function GetItemQualityColor(quality)
 end
@@ -5933,7 +5933,7 @@ end
 
 --- Gets details on a profession from its index including name, icon, and skill level.
 --- [https://wowpedia.fandom.com/wiki/API_GetProfessionInfo]
---- @param index number @ The skill index number (can be found with API GetProfessions())
+--- @param index number @ The skillLineIDs from GetProfessions
 --- @return string, string, number, number, number, number, number, number, number, number @ name, icon, skillLevel, maxSkillLevel, numAbilities, spelloffset, skillLine, skillModifier, specializationIndex, specializationOffset
 function GetProfessionInfo(index)
 end
@@ -6028,7 +6028,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_GetQuestItemInfo]
 --- @param type string @ type of the item to query. One of the following values:
 --- @param index number @ index of the item of the specified type to return information about, ascending from 1.
---- @return string, string, number, number, boolean @ name, texture, count, quality, isUsable
+--- @return string, number, number, unknown, boolean, number @ name, texture, count, quality, isUsable, itemID
 function GetQuestItemInfo(type, index)
 end
 
@@ -6581,7 +6581,7 @@ end
 function GetScreenHeight()
 end
 
---- Returns a list of available screen resolutions
+--- Returns a list of available preset windowed screen resolutions.
 --- [https://wowpedia.fandom.com/wiki/API_GetScreenResolutions]
 --- @return unknown, unknown, unknown, unknown @ resolution1, resolution2, resolution3, ...
 function GetScreenResolutions()
@@ -7282,7 +7282,7 @@ end
 --- Returns information about a trade item.
 --- [https://wowpedia.fandom.com/wiki/API_GetTradePlayerItemInfo]
 --- @param id number @ The trade slot index to query.
---- @return string, unknown, number, unknown, string, boolean @ name, texture, numItems, quality, enchantment, canLoseTransmog
+--- @return string, number, number, unknown, string, boolean @ name, texture, numItems, quality, enchantment, canLoseTransmog
 function GetTradePlayerItemInfo(id)
 end
 
@@ -8282,7 +8282,7 @@ end
 
 --- True if the specified spell ID is currently being casted or queued. If spell is current then action bar indicates its slot with highlighted frame.
 --- [https://wowpedia.fandom.com/wiki/API_IsCurrentSpell]
---- @param spellID boolean @ spell ID to query.
+--- @param spellID number @ spell ID to query.
 --- @return boolean @ isCurrent
 function IsCurrentSpell(spellID)
 end
@@ -8515,8 +8515,9 @@ end
 function IsInJailersTower()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_IsInLFGDungeon?action=edit&amp;redlink=1]
---- @return void
+--- Returns true if the player is in an LFD instance.
+--- [https://wowpedia.fandom.com/wiki/API_IsInLFGDungeon]
+--- @return unknown @ isInLFDInstance
 function IsInLFGDungeon()
 end
 
@@ -11411,10 +11412,11 @@ end
 
 --- Sets a texture to a unit's 2D portrait.
 --- [https://wowpedia.fandom.com/wiki/API_SetPortraitTexture]
---- @param textureObject unknown @ widget : Texture
+--- @param textureObject unknown @ Object : Texture
 --- @param unitToken string @ UnitId
+--- @param disableMasking boolean @ ? false
 --- @return void
-function SetPortraitTexture(textureObject, unitToken)
+function SetPortraitTexture(textureObject, unitToken, disableMasking)
 end
 
 --- Needs summary.
@@ -11570,7 +11572,7 @@ end
 
 --- Sets the amount of money offered as part of the player's trade offer.
 --- [https://wowpedia.fandom.com/wiki/API_SetTradeMoney]
---- @param copper unknown @ Amount of money, in copper, to offer for trade.
+--- @param copper number @ Amount of money, in copper, to offer for trade.
 --- @return void
 function SetTradeMoney(copper)
 end
@@ -12608,8 +12610,9 @@ end
 
 --- Returns the unit's effective (scaled) level.
 --- [https://wowpedia.fandom.com/wiki/API_UnitEffectiveLevel]
---- @return void
-function UnitEffectiveLevel()
+--- @param unit string @ UnitId
+--- @return number @ level
+function UnitEffectiveLevel(unit)
 end
 
 --- True if the unit exists.

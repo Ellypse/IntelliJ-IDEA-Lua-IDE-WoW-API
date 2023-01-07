@@ -25,6 +25,10 @@ function C_ActionBar.GetItemActionOnEquipSpellID(actionID) end
 ---@return number slots
 function C_ActionBar.GetPetActionPetBarIndices(petActionID) end
 
+---@param actionID number 
+---@return number|nil quality
+function C_ActionBar.GetProfessionQuality(actionID) end
+
 ---@param flyoutID number 
 ---@return boolean hasFlyoutActionButtons
 function C_ActionBar.HasFlyoutActionButtons(flyoutID) end

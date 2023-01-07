@@ -180,6 +180,10 @@ function C_ArtifactUI.GetTotalPurchasedRanks() end
 ---@return boolean artifactDisabled
 function C_ArtifactUI.IsArtifactDisabled() end
 
+---@param itemLocation table 
+---@return boolean isArtifact
+function C_ArtifactUI.IsArtifactItem(itemLocation) end
+
 ---@return boolean isAtForge
 function C_ArtifactUI.IsAtForge() end
 

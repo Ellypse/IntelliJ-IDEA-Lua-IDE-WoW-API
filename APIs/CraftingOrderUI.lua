@@ -1,6 +1,9 @@
 ---@class CraftingOrderUI
 C_CraftingOrders = {}
 
+---@return boolean areNotesDisabled
+function C_CraftingOrders.AreOrderNotesDisabled() end
+
 ---@param skillLineAbilityID number 
 ---@param orderType CraftingOrderType 
 ---@param orderDuration CraftingOrderDuration 
