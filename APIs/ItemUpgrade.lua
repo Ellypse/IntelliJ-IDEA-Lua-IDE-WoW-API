@@ -44,6 +44,11 @@ function C_ItemUpgrade.UpgradeItem(numUpgrades) end
 ---@field currencyID number 
 local ItemUpgradeCurrencyCost = {}
 
+---@class ItemUpgradeItemCost
+---@field cost number 
+---@field itemID number 
+local ItemUpgradeItemCost = {}
+
 ---@class ItemUpgradeItemInfo
 ---@field iconID number 
 ---@field name string 
@@ -59,7 +64,8 @@ local ItemUpgradeItemInfo = {}
 ---@field displayQuality number 
 ---@field itemLevelIncrement number 
 ---@field levelStats table 
----@field costsToUpgrade table 
+---@field currencyCostsToUpgrade table 
+---@field itemCostsToUpgrade table 
 ---@field failureMessage string|nil 
 local ItemUpgradeLevelInfo = {}
 

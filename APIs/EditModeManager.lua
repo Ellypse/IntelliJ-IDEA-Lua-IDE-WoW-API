@@ -18,7 +18,9 @@ function C_EditMode.GetLayouts() end
 function C_EditMode.OnEditModeExit() end
 
 ---@param addedLayoutIndex number 
-function C_EditMode.OnLayoutAdded(addedLayoutIndex) end
+---@param activateNewLayout boolean 
+---@param isLayoutImported boolean 
+function C_EditMode.OnLayoutAdded(addedLayoutIndex, activateNewLayout, isLayoutImported) end
 
 ---@param deletedLayoutIndex number 
 function C_EditMode.OnLayoutDeleted(deletedLayoutIndex) end

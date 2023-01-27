@@ -58,9 +58,15 @@ function C_CraftingOrders.GetDefaultOrdersSkillLine() end
 ---@return CraftingOrderInfo myOrders
 function C_CraftingOrders.GetMyOrders() end
 
+---@return number numFavorites
+function C_CraftingOrders.GetNumFavoriteCustomerOptions() end
+
 ---@param profession Profession 
 ---@return CraftingOrderClaimsRemainingInfo claimInfo
 function C_CraftingOrders.GetOrderClaimInfo(profession) end
+
+---@return CraftingOrderPersonalOrdersInfo infos
+function C_CraftingOrders.GetPersonalOrdersInfo() end
 
 ---@return boolean hasFavorites
 function C_CraftingOrders.HasFavoriteCustomerOptions() end

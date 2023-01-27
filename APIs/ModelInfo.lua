@@ -32,7 +32,7 @@ function C_ModelInfo.GetModelSceneActorInfoByID(modelActorID) end
 function C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID) end
 
 ---@param modelSceneID number 
----@return ModelSceneType, number, number modelSceneType, modelCameraIDs, modelActorsIDs
+---@return ModelSceneType, number, number, number modelSceneType, modelCameraIDs, modelActorsIDs, flags
 function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
 ---@class ItemTryOnReason

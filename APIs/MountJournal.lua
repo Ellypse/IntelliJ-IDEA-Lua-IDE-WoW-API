@@ -15,6 +15,10 @@ function C_MountJournal.ClearRecentFanfares() end
 
 function C_MountJournal.Dismiss() end
 
+---@param mountID number 
+---@return number creatureDisplayIDs
+function C_MountJournal.GetAllCreatureDisplayIDsForMountID(mountID) end
+
 ---@return number|nil itemID
 function C_MountJournal.GetAppliedMountEquipmentID() end
 

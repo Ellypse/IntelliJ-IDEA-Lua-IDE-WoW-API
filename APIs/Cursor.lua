@@ -26,6 +26,7 @@ UICursorType.BattlePet = 17
 UICursorType.Mount = 18
 UICursorType.Toy = 19
 UICursorType.ConduitCollectionItem = 20
+UICursorType.PerksProgramVendorItem = 21
 
 ---@class WorldCursorAnchorType
 local WorldCursorAnchorType = {}

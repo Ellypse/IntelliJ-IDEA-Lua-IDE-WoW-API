@@ -10,6 +10,10 @@ function C_PlayerInfo.CanPlayerUseAreaLoot() end
 ---@return boolean, string canUseMountEquipment, failureReason
 function C_PlayerInfo.CanPlayerUseMountEquipment() end
 
+---@param itemID number 
+---@return boolean isUseable
+function C_PlayerInfo.CanUseItem(itemID) end
+
 ---@return boolean, boolean hasAlternateForm, inAlternateForm
 function C_PlayerInfo.GetAlternateFormInfo() end
 
@@ -21,10 +25,19 @@ function C_PlayerInfo.GetContentDifficultyCreatureForPlayer(unitToken) end
 ---@return RelativeContentDifficulty difficulty
 function C_PlayerInfo.GetContentDifficultyQuestForPlayer(questID) end
 
+---@return number displayID
+function C_PlayerInfo.GetDisplayID() end
+
+---@return boolean, boolean, number isGliding, canGlide, forwardSpeed
+function C_PlayerInfo.GetGlidingInfo() end
+
 ---@param level number 
 ---@param isRaid boolean 
 ---@return number dungeonID
 function C_PlayerInfo.GetInstancesUnlockedAtLevel(level, isRaid) end
+
+---@return PlayerInfoCharacterData characterData
+function C_PlayerInfo.GetPlayerCharacterData() end
 
 --- Returns the players mythic+ rating summary which includes the runs they've completed as well as their current season m+ rating
 ---@param playerToken string 
@@ -50,6 +63,12 @@ function C_PlayerInfo.IsPlayerInChromieTime() end
 
 ---@return boolean isRestricted
 function C_PlayerInfo.IsPlayerNPERestricted() end
+
+---@return boolean isAvailable
+function C_PlayerInfo.IsTradingPostAvailable() end
+
+---@return boolean isAvailable
+function C_PlayerInfo.IsTravelersLogAvailable() end
 
 ---@class MythicPlusRatingMapSummary
 ---@field challengeModeID number 
