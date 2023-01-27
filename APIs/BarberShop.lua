@@ -15,7 +15,7 @@ function C_BarberShop.GetAvailableCustomizations() end
 ---@return number zoomLevel
 function C_BarberShop.GetCurrentCameraZoom() end
 
----@return BarberShopCharacterData characterData
+---@return PlayerInfoCharacterData characterData
 function C_BarberShop.GetCurrentCharacterData() end
 
 ---@return number cost
@@ -85,16 +85,4 @@ function C_BarberShop.SetViewingShapeshiftForm(shapeshiftFormID) end
 
 ---@param zoomAmount number 
 function C_BarberShop.ZoomCamera(zoomAmount) end
-
----@class BarberShopCharacterData
----@field raceData BarberShopRaceData 
----@field sex number 
-local BarberShopCharacterData = {}
-
----@class BarberShopRaceData
----@field name string 
----@field fileName string 
----@field alternateFormRaceData CharacterAlternateFormData|nil 
----@field createScreenIconAtlas string 
-local BarberShopRaceData = {}
 

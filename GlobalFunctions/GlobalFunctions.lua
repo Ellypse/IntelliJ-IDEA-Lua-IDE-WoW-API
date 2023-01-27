@@ -5223,8 +5223,9 @@ end
 function GetNumBindings()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_GetNumBuybackItems?action=edit&amp;redlink=1]
---- @return void
+--- Returns the number of items available for buyback.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumBuybackItems]
+--- @return number @ numItems
 function GetNumBuybackItems()
 end
 
@@ -8854,7 +8855,7 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_IsRecognizedName]
 --- @param text string @ Name of the character to test.
 --- @param includeBitfield number @ Bitfield of filters that the name must match at least one of.
---- @param excludeBitfield number @ Bitfield of filters that the name must not match at any of.
+--- @param excludeBitfield number @ Bitfield of filters that the name must not match any of.
 --- @return boolean @ isRecognized
 function IsRecognizedName(text, includeBitfield, excludeBitfield)
 end
@@ -14550,7 +14551,7 @@ end
 function tostring(arg)
 end
 
---- Remove an element from a table. If a position is specified the element at that the position is removed. The remaining elements are reindexed sequentially and the size of the table is updated to reflect the change. The element removed is returned by this function. E.g.,
+--- Remove an element from a table. If a position is specified the element at that position is removed. The remaining elements are reindexed sequentially and the size of the table is updated to reflect the change. The element removed is returned by this function. E.g.,
 --- [https://wowpedia.fandom.com/wiki/API_tremove]
 --- @param table unknown
 --- @param pos unknown

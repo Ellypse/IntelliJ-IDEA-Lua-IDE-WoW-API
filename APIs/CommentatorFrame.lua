@@ -487,7 +487,8 @@ local TrackedSpellCategory = {}
 TrackedSpellCategory.Offensive = 0
 TrackedSpellCategory.Defensive = 1
 TrackedSpellCategory.Debuff = 2
-TrackedSpellCategory.Count = 3
+TrackedSpellCategory.RacialAbility = 3
+TrackedSpellCategory.Count = 4
 
 ---@class CommentatorHistory
 ---@field series table 

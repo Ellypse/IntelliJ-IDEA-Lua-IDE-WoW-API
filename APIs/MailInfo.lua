@@ -15,3 +15,6 @@ function C_Mail.HasInboxMoney(inboxIndex) end
 ---@return boolean isCommandPending
 function C_Mail.IsCommandPending() end
 
+---@param openingAll boolean 
+function C_Mail.SetOpeningAll(openingAll) end
+

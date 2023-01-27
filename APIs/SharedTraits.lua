@@ -30,6 +30,10 @@ function C_Traits.CommitConfig(configID) end
 ---@return boolean hasChanges
 function C_Traits.ConfigHasStagedChanges(configID) end
 
+---@param target string 
+---@return string importString
+function C_Traits.GenerateInspectImportString(target) end
+
 ---@param configID number 
 ---@param condID number 
 ---@return TraitCondInfo condInfo
@@ -136,6 +140,12 @@ function C_Traits.RefundRank(configID, nodeID) end
 ---@param treeID number 
 ---@return boolean success
 function C_Traits.ResetTree(configID, treeID) end
+
+---@param configID number 
+---@param treeID number 
+---@param traitCurrencyID number 
+---@return boolean success
+function C_Traits.ResetTreeByCurrency(configID, treeID, traitCurrencyID) end
 
 ---@param configID number 
 ---@return boolean success

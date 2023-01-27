@@ -3,8 +3,6 @@ C_TradeSkillUI = {}
 
 function C_TradeSkillUI.CloseTradeSkill() end
 
-function C_TradeSkillUI.ContinueRecast() end
-
 ---@param recipeSpellID number 
 ---@param numCasts number 
 ---@param craftingReagents CraftingReagentInfo @ [OPTIONAL]
@@ -190,11 +188,13 @@ function C_TradeSkillUI.GetRecipeInfoForSkillLineAbility(skillLineAbilityID, rec
 ---@param reagents CraftingReagentInfo @ [OPTIONAL]
 ---@param allocationItemGUID string @ [OPTIONAL]
 ---@param overrideQualityID number @ [OPTIONAL]
----@overload fun(recipeSpellID:number, allocationItemGUID:string, overrideQualityID:number)
----@overload fun(recipeSpellID:number, overrideQualityID:number)
+---@param recraftOrderID number @ [OPTIONAL]
+---@overload fun(recipeSpellID:number, allocationItemGUID:string, overrideQualityID:number, recraftOrderID:number)
+---@overload fun(recipeSpellID:number, overrideQualityID:number, recraftOrderID:number)
+---@overload fun(recipeSpellID:number, recraftOrderID:number)
 ---@overload fun(recipeSpellID:number)
 ---@return CraftingRecipeOutputInfo outputInfo
-function C_TradeSkillUI.GetRecipeOutputItemData(recipeSpellID, reagents, allocationItemGUID, overrideQualityID) end
+function C_TradeSkillUI.GetRecipeOutputItemData(recipeSpellID, reagents, allocationItemGUID, overrideQualityID, recraftOrderID) end
 
 ---@param recipeSpellID number 
 ---@return number|nil qualityItemIDs
@@ -205,9 +205,6 @@ function C_TradeSkillUI.GetRecipeQualityItemIDs(recipeSpellID) end
 ---@param qualityIndex number 
 ---@return string link
 function C_TradeSkillUI.GetRecipeQualityReagentItemLink(recipeID, dataSlotIndex, qualityIndex) end
-
----@return number recastTimes
-function C_TradeSkillUI.GetRecipeRepeatCount() end
 
 ---@param recipeID number 
 ---@return CraftingRecipeRequirement requirements
@@ -220,13 +217,17 @@ function C_TradeSkillUI.GetRecipeRequirements(recipeID) end
 ---@return CraftingRecipeSchematic schematic
 function C_TradeSkillUI.GetRecipeSchematic(recipeSpellID, isRecraft, recipeLevel) end
 
+---@param isRecraft boolean 
 ---@return number recipeIDs
-function C_TradeSkillUI.GetRecipesTracked() end
+function C_TradeSkillUI.GetRecipesTracked(isRecraft) end
 
 ---@param recipeID number @ [OPTIONAL]
 ---@overload fun()
 ---@return string items
 function C_TradeSkillUI.GetRecraftItems(recipeID) end
+
+---@return number remaining
+function C_TradeSkillUI.GetRemainingRecasts() end
 
 ---@param recipeID number 
 ---@return number itemIDs
@@ -252,9 +253,6 @@ function C_TradeSkillUI.GetTradeSkillDisplayName(skillLineID) end
 ---@return boolean hasFavorites
 function C_TradeSkillUI.HasFavoriteOrderRecipes() end
 
----@return boolean hasRecipesTracked
-function C_TradeSkillUI.HasRecipesTracked() end
-
 ---@return boolean result
 function C_TradeSkillUI.IsNPCCrafting() end
 
@@ -265,6 +263,10 @@ function C_TradeSkillUI.IsNearProfessionSpellFocus(profession) end
 ---@param itemGUID string 
 ---@return boolean learned
 function C_TradeSkillUI.IsOriginalCraftRecipeLearned(itemGUID) end
+
+---@param recipeID number 
+---@return boolean result
+function C_TradeSkillUI.IsRecipeFirstCraft(recipeID) end
 
 ---@param recipeID number 
 ---@return boolean result
@@ -280,8 +282,9 @@ function C_TradeSkillUI.IsRecipeInSkillLine(recipeID, skillLineID) end
 function C_TradeSkillUI.IsRecipeProfessionLearned(recipeID) end
 
 ---@param recipeID number 
+---@param isRecraft boolean 
 ---@return boolean tracked
-function C_TradeSkillUI.IsRecipeTracked(recipeID) end
+function C_TradeSkillUI.IsRecipeTracked(recipeID, isRecraft) end
 
 ---@param recraftItemGUID string 
 ---@return boolean isEquipped
@@ -322,7 +325,8 @@ function C_TradeSkillUI.SetProfessionChildSkillLineID(skillLineID) end
 
 ---@param recipeID number 
 ---@param tracked boolean 
-function C_TradeSkillUI.SetRecipeTracked(recipeID, tracked) end
+---@param isRecraft boolean 
+function C_TradeSkillUI.SetRecipeTracked(recipeID, tracked, isRecraft) end
 
 ---@param flag boolean 
 function C_TradeSkillUI.SetShowLearned(flag) end

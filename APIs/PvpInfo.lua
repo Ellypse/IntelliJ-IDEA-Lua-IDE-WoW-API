@@ -1,6 +1,9 @@
 ---@class PvpInfo
 C_PvP = {}
 
+---@return boolean arePvpTalentsUnlocked
+function C_PvP.ArePvpTalentsUnlocked() end
+
 ---@return boolean canDisplay
 function C_PvP.CanDisplayDamage() end
 
@@ -110,6 +113,9 @@ function C_PvP.GetOutdoorPvPWaitTime(uiMapID) end
 ---@return PVPPersonalRatedInfo|nil info
 function C_PvP.GetPVPActiveMatchPersonalRatedInfo() end
 
+---@return RatedMatchDeserterPenalty|nil deserterPenalty
+function C_PvP.GetPVPActiveRatedMatchDeserterPenalty() end
+
 ---@return number achievementID
 function C_PvP.GetPVPSeasonRewardAchievementID() end
 
@@ -121,6 +127,9 @@ function C_PvP.GetPostMatchCurrencyRewards() end
 
 ---@return PVPPostMatchItemReward rewards
 function C_PvP.GetPostMatchItemRewards() end
+
+---@return number unlockLevel
+function C_PvP.GetPvpTalentsUnlockedLevel() end
 
 ---@param tierEnum number 
 ---@param bracketEnum number 
@@ -213,6 +222,9 @@ function C_PvP.IsBrawlSoloShuffle() end
 
 ---@return boolean isInBrawl
 function C_PvP.IsInBrawl() end
+
+---@return boolean isInRatedMatchWithDeserterPenalty
+function C_PvP.IsInRatedMatchWithDeserterPenalty() end
 
 ---@return boolean asArena
 function C_PvP.IsMatchConsideredArena() end
@@ -461,6 +473,12 @@ local PvpTierInfo = {}
 ---@field minLevel number 
 ---@field maxLevel number 
 local RandomBGInfo = {}
+
+---@class RatedMatchDeserterPenalty
+---@field personalRatingChange number 
+---@field queuePenaltySpellID number 
+---@field queuePenaltyDuration number 
+local RatedMatchDeserterPenalty = {}
 
 ---@class RatedSoloShuffleSpecStats
 ---@field weeklyMostPlayedSpecID number 

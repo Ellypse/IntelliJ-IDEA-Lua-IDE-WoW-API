@@ -58,7 +58,7 @@ function C_ClassTalents.IsConfigPopulated(configID) end
 
 ---@param configID number 
 ---@param autoApply boolean 
----@return LoadConfigResult result
+---@return LoadConfigResult, string, number result, changeError, newLearnedNodeIDs
 function C_ClassTalents.LoadConfig(configID, autoApply) end
 
 ---@param configID number 
