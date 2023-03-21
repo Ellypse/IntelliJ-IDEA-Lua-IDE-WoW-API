@@ -20,7 +20,6 @@ function C_EventToastManager.RemoveCurrentToast() end
 ---@field Scenario EventToastDisplayType 
 ---@field ChallengeMode EventToastDisplayType 
 ---@field ScenarioClickExpand EventToastDisplayType 
-EventToastDisplayType = {}
 
 ---@type EventToastDisplayType 
 Enum.EventToastDisplayType = {}
@@ -58,7 +57,6 @@ Enum.EventToastDisplayType.ScenarioClickExpand = 8
 ---@field PvPTierUpdate EventToastEventType 
 ---@field SpellLearned EventToastEventType 
 ---@field TreasureItem EventToastEventType 
-EventToastEventType = {}
 
 ---@type EventToastEventType 
 Enum.EventToastEventType = {}

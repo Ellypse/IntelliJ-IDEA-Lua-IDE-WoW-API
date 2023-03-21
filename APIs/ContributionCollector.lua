@@ -72,7 +72,6 @@ function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 
 ---@class ContributionAppearanceFlags : Enum
 ---@field TooltipUseTimeRemaining ContributionAppearanceFlags 
-ContributionAppearanceFlags = {}
 
 ---@type ContributionAppearanceFlags 
 Enum.ContributionAppearanceFlags = {}
@@ -87,7 +86,6 @@ Enum.ContributionAppearanceFlags.TooltipUseTimeRemaining = 0
 ---@field FailedConditionCheck ContributionResult 
 ---@field UnableToCompleteTurnIn ContributionResult 
 ---@field InternalError ContributionResult 
-ContributionResult = {}
 
 ---@type ContributionResult 
 Enum.ContributionResult = {}

@@ -25,7 +25,6 @@ function C_PlayerChoice.SendPlayerChoiceResponse(responseID) end
 ---@field Uncommon PlayerChoiceRarity 
 ---@field Rare PlayerChoiceRarity 
 ---@field Epic PlayerChoiceRarity 
-PlayerChoiceRarity = {}
 
 ---@type PlayerChoiceRarity 
 Enum.PlayerChoiceRarity = {}

@@ -17,7 +17,6 @@ function C_TooltipComparison.GetItemComparisonInfo(comparisonItem) end
 ---@field WithBothHands TooltipComparisonMethod 
 ---@field WithBagMainHandItem TooltipComparisonMethod 
 ---@field WithBagOffHandItem TooltipComparisonMethod 
-TooltipComparisonMethod = {}
 
 ---@type TooltipComparisonMethod 
 Enum.TooltipComparisonMethod = {}

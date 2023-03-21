@@ -156,7 +156,6 @@ function C_Map.SetUserWaypoint(point) end
 ---@field BottomRight MapCanvasPosition 
 ---@field TopLeft MapCanvasPosition 
 ---@field TopRight MapCanvasPosition 
-MapCanvasPosition = {}
 
 ---@type MapCanvasPosition 
 Enum.MapCanvasPosition = {}
@@ -184,7 +183,6 @@ Enum.MapCanvasPosition.TopRight = 4
 ---@field FlightMapAutoZoom UIMapFlag 
 ---@field ForceOnNavbar UIMapFlag 
 ---@field AlwaysAllowUserWaypoints UIMapFlag 
-UIMapFlag = {}
 
 ---@type UIMapFlag 
 Enum.UIMapFlag = {}
@@ -211,7 +209,6 @@ Enum.UIMapFlag.AlwaysAllowUserWaypoints = 65536
 ---@field Taxi UIMapSystem 
 ---@field Adventure UIMapSystem 
 ---@field Minimap UIMapSystem 
-UIMapSystem = {}
 
 ---@type UIMapSystem 
 Enum.UIMapSystem = {}
@@ -228,7 +225,6 @@ Enum.UIMapSystem.Minimap = 3
 ---@field Dungeon UIMapType 
 ---@field Micro UIMapType 
 ---@field Orphan UIMapType 
-UIMapType = {}
 
 ---@type UIMapType 
 Enum.UIMapType = {}

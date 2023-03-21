@@ -4,7 +4,6 @@ C_ClientScene = {}
 ---@class ClientSceneType : Enum
 ---@field DefaultSceneType ClientSceneType 
 ---@field MinigameSceneType ClientSceneType 
-ClientSceneType = {}
 
 ---@type ClientSceneType 
 Enum.ClientSceneType = {}

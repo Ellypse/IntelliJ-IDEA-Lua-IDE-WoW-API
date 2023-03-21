@@ -49,7 +49,6 @@ function C_CampaignInfo.UsesNormalQuestIcons(campaignID) end
 ---@field Complete CampaignState 
 ---@field InProgress CampaignState 
 ---@field Stalled CampaignState 
-CampaignState = {}
 
 ---@type CampaignState 
 Enum.CampaignState = {}

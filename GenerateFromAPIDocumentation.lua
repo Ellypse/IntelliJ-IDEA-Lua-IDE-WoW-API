@@ -197,7 +197,7 @@ function APIDocumentation:AddDocumentationTable(documentation)
 							value.Documentation and ("@ " .. table.concat(value.Documentation, "\n")) or ""
 					))
 				end
-				write(GLOBAL_DECLARATION:format(tab.Name))
+				--write(GLOBAL_DECLARATION:format(tab.Name))
 				write("")
 
 				write(TYPE_DECLARATION:format(

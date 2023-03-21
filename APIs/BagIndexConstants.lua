@@ -16,7 +16,6 @@
 ---@field BankBag_5 BagIndex 
 ---@field BankBag_6 BagIndex 
 ---@field BankBag_7 BagIndex 
-BagIndex = {}
 
 ---@type BagIndex 
 Enum.BagIndex = {}

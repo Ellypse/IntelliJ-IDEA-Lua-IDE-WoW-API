@@ -66,7 +66,6 @@ function C_PetJournal.SpellTargetBattlePet(battlePetGUID) end
 ---@field NoFavoritesToSummon PetJournalError 
 ---@field NoValidRandomSummon PetJournalError 
 ---@field InvalidCovenant PetJournalError 
-PetJournalError = {}
 
 ---@type PetJournalError 
 Enum.PetJournalError = {}

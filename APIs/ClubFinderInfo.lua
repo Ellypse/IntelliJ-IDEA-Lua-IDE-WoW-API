@@ -200,7 +200,6 @@ function C_ClubFinder.ShouldShowClubFinder() end
 ---@field AcceptInvite ClubFinderApplicationUpdateType 
 ---@field DeclineInvite ClubFinderApplicationUpdateType 
 ---@field Cancel ClubFinderApplicationUpdateType 
-ClubFinderApplicationUpdateType = {}
 
 ---@type ClubFinderApplicationUpdateType 
 Enum.ClubFinderApplicationUpdateType = {}
@@ -219,7 +218,6 @@ Enum.ClubFinderApplicationUpdateType.Cancel = 3
 ---@field FakePost ClubFinderClubPostingStatusFlags 
 ---@field PendingDelete ClubFinderClubPostingStatusFlags 
 ---@field PostDelisted ClubFinderClubPostingStatusFlags 
-ClubFinderClubPostingStatusFlags = {}
 
 ---@type ClubFinderClubPostingStatusFlags 
 Enum.ClubFinderClubPostingStatusFlags = {}
@@ -237,7 +235,6 @@ Enum.ClubFinderClubPostingStatusFlags.PostDelisted = 8
 ---@field Muted ClubFinderDisableReason 
 ---@field Silenced ClubFinderDisableReason 
 ---@field VeteranTrial ClubFinderDisableReason 
-ClubFinderDisableReason = {}
 
 ---@type ClubFinderDisableReason 
 Enum.ClubFinderDisableReason = {}
@@ -251,7 +248,6 @@ Enum.ClubFinderDisableReason.VeteranTrial = 2
 ---@field PostingDescription ClubFinderPostingReportType 
 ---@field ApplicantsName ClubFinderPostingReportType 
 ---@field JoinNote ClubFinderPostingReportType 
-ClubFinderPostingReportType = {}
 
 ---@type ClubFinderPostingReportType 
 Enum.ClubFinderPostingReportType = {}
@@ -266,7 +262,6 @@ Enum.ClubFinderPostingReportType.JoinNote = 4
 ---@field Guild ClubFinderRequestType 
 ---@field Community ClubFinderRequestType 
 ---@field All ClubFinderRequestType 
-ClubFinderRequestType = {}
 
 ---@type ClubFinderRequestType 
 Enum.ClubFinderRequestType = {}
@@ -302,7 +297,6 @@ Enum.ClubFinderRequestType.All = 3
 ---@field LanguageReserved3 ClubFinderSettingFlags 
 ---@field LanguageReserved4 ClubFinderSettingFlags 
 ---@field LanguageReserved5 ClubFinderSettingFlags 
-ClubFinderSettingFlags = {}
 
 ---@type ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags = {}
@@ -342,7 +336,6 @@ Enum.ClubFinderSettingFlags.LanguageReserved5 = 25
 ---@field Joined PlayerClubRequestStatus 
 ---@field JoinedAnother PlayerClubRequestStatus 
 ---@field Canceled PlayerClubRequestStatus 
-PlayerClubRequestStatus = {}
 
 ---@type PlayerClubRequestStatus 
 Enum.PlayerClubRequestStatus = {}

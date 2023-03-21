@@ -66,7 +66,6 @@ function C_EncounterJournal.SetSlotFilter(filterSlot) end
 ---@field Trinket ItemSlotFilterType 
 ---@field Other ItemSlotFilterType 
 ---@field NoFilter ItemSlotFilterType 
-ItemSlotFilterType = {}
 
 ---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType = {}

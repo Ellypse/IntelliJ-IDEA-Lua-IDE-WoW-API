@@ -28,7 +28,6 @@ function C_ScenarioInfo.GetScenarioStepInfo(scenarioStepID) end
 ---@field ForgottenCatacombs JailersTowerType 
 ---@field Ossuary JailersTowerType 
 ---@field BossRush JailersTowerType 
-JailersTowerType = {}
 
 ---@type JailersTowerType 
 Enum.JailersTowerType = {}

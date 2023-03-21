@@ -25,7 +25,6 @@ function C_ConfigurationWarnings.SetConfigurationWarningSeen(configurationWarnin
 ---@field DeviceBlocklisted ConfigurationWarning 
 ---@field GraphicsApiWillBeOutdated ConfigurationWarning 
 ---@field OsBitsWillBeOutdated ConfigurationWarning 
-ConfigurationWarning = {}
 
 ---@type ConfigurationWarning 
 Enum.ConfigurationWarning = {}

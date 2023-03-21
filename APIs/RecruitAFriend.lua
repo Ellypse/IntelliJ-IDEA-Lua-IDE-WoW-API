@@ -44,7 +44,6 @@ function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 ---@field Incomplete RafRecruitActivityState 
 ---@field Complete RafRecruitActivityState 
 ---@field RewardClaimed RafRecruitActivityState 
-RafRecruitActivityState = {}
 
 ---@type RafRecruitActivityState 
 Enum.RafRecruitActivityState = {}
@@ -56,7 +55,6 @@ Enum.RafRecruitActivityState.RewardClaimed = 2
 ---@field Trial RafRecruitSubStatus 
 ---@field Active RafRecruitSubStatus 
 ---@field Inactive RafRecruitSubStatus 
-RafRecruitSubStatus = {}
 
 ---@type RafRecruitSubStatus 
 Enum.RafRecruitSubStatus = {}
@@ -73,7 +71,6 @@ Enum.RafRecruitSubStatus.Inactive = 2
 ---@field AppearanceSet RafRewardType 
 ---@field Illusion RafRewardType 
 ---@field Invalid RafRewardType 
-RafRewardType = {}
 
 ---@type RafRewardType 
 Enum.RafRewardType = {}

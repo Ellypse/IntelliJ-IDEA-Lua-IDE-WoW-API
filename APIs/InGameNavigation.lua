@@ -21,7 +21,6 @@ function C_Navigation.WasClampedToScreen() end
 ---@field Occluded NavigationState 
 ---@field InRange NavigationState 
 ---@field Disabled NavigationState 
-NavigationState = {}
 
 ---@type NavigationState 
 Enum.NavigationState = {}

@@ -322,7 +322,6 @@ function C_QuestLog.UnitIsRelatedToActiveQuest(unit) end
 ---@field BottomRight MapOverlayDisplayLocation 
 ---@field TopRight MapOverlayDisplayLocation 
 ---@field Hidden MapOverlayDisplayLocation 
-MapOverlayDisplayLocation = {}
 
 ---@type MapOverlayDisplayLocation 
 Enum.MapOverlayDisplayLocation = {}
@@ -337,7 +336,6 @@ Enum.MapOverlayDisplayLocation.Hidden = 5
 ---@field Default QuestFrequency 
 ---@field Daily QuestFrequency 
 ---@field Weekly QuestFrequency 
-QuestFrequency = {}
 
 ---@type QuestFrequency 
 Enum.QuestFrequency = {}
@@ -357,7 +355,6 @@ Enum.QuestFrequency.Weekly = 2
 ---@field Scenario QuestTag 
 ---@field Account QuestTag 
 ---@field CombatAlly QuestTag 
-QuestTag = {}
 
 ---@type QuestTag 
 Enum.QuestTag = {}
@@ -376,7 +373,6 @@ Enum.QuestTag.CombatAlly = 266
 ---@class QuestWatchType : Enum
 ---@field Automatic QuestWatchType 
 ---@field Manual QuestWatchType 
-QuestWatchType = {}
 
 ---@type QuestWatchType 
 Enum.QuestWatchType = {}
@@ -387,7 +383,6 @@ Enum.QuestWatchType.Manual = 1
 ---@field Common WorldQuestQuality 
 ---@field Rare WorldQuestQuality 
 ---@field Epic WorldQuestQuality 
-WorldQuestQuality = {}
 
 ---@type WorldQuestQuality 
 Enum.WorldQuestQuality = {}

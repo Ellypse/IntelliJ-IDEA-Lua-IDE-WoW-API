@@ -40,7 +40,6 @@ function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 ---@field WrongRace ItemTryOnReason 
 ---@field NotEquippable ItemTryOnReason 
 ---@field DataPending ItemTryOnReason 
-ItemTryOnReason = {}
 
 ---@type ItemTryOnReason 
 Enum.ItemTryOnReason = {}
@@ -51,7 +50,6 @@ Enum.ItemTryOnReason.DataPending = 3
 
 ---@class ModelSceneSetting : Enum
 ---@field AlignLightToOrbitDelta ModelSceneSetting 
-ModelSceneSetting = {}
 
 ---@type ModelSceneSetting 
 Enum.ModelSceneSetting = {}
@@ -78,7 +76,6 @@ Enum.ModelSceneSetting.AlignLightToOrbitDelta = 1
 ---@field WorldMapThreat ModelSceneType 
 ---@field Soulbinds ModelSceneType 
 ---@field JailersTowerAnimaGlow ModelSceneType 
-ModelSceneType = {}
 
 ---@type ModelSceneType 
 Enum.ModelSceneType = {}

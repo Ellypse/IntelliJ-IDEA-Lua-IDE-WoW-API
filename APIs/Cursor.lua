@@ -26,7 +26,6 @@ function C_Cursor.GetCursorItem() end
 ---@field Toy UICursorType 
 ---@field ConduitCollectionItem UICursorType 
 ---@field PerksProgramVendorItem UICursorType 
-UICursorType = {}
 
 ---@type UICursorType 
 Enum.UICursorType = {}
@@ -57,7 +56,6 @@ Enum.UICursorType.PerksProgramVendorItem = 21
 ---@field Default WorldCursorAnchorType 
 ---@field Cursor WorldCursorAnchorType 
 ---@field Nameplate WorldCursorAnchorType 
-WorldCursorAnchorType = {}
 
 ---@type WorldCursorAnchorType 
 Enum.WorldCursorAnchorType = {}

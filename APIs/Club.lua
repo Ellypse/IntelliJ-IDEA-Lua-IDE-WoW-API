@@ -401,7 +401,6 @@ function C_Club.ValidateText(clubType, text, clubFieldType) end
 ---@field ErrorClubActionCreateMessage ClubActionType 
 ---@field ErrorClubActionEditMessage ClubActionType 
 ---@field ErrorClubActionDestroyMessage ClubActionType 
-ClubActionType = {}
 
 ---@type ClubActionType 
 Enum.ClubActionType = {}
@@ -476,7 +475,6 @@ Enum.ClubActionType.ErrorClubActionDestroyMessage = 26
 ---@field ErrorClubTicketHasConsumedAllowedRedeemCount ClubErrorType 
 ---@field ErrorClubDoesntAllowCrossFaction ClubErrorType 
 ---@field ErrorClubEditHasCrossFactionMembers ClubErrorType 
-ClubErrorType = {}
 
 ---@type ClubErrorType 
 Enum.ClubErrorType = {}
@@ -531,7 +529,6 @@ Enum.ClubErrorType.ErrorClubEditHasCrossFactionMembers = 41
 ---@field ClubStreamName ClubFieldType 
 ---@field ClubStreamSubject ClubFieldType 
 ---@field NumTypes ClubFieldType 
-ClubFieldType = {}
 
 ---@type ClubFieldType 
 Enum.ClubFieldType = {}
@@ -547,7 +544,6 @@ Enum.ClubFieldType.NumTypes = 6
 ---@field Available ClubInvitationCandidateStatus 
 ---@field InvitePending ClubInvitationCandidateStatus 
 ---@field AlreadyMember ClubInvitationCandidateStatus 
-ClubInvitationCandidateStatus = {}
 
 ---@type ClubInvitationCandidateStatus 
 Enum.ClubInvitationCandidateStatus = {}
@@ -562,7 +558,6 @@ Enum.ClubInvitationCandidateStatus.AlreadyMember = 2
 ---@field Offline ClubMemberPresence 
 ---@field Away ClubMemberPresence 
 ---@field Busy ClubMemberPresence 
-ClubMemberPresence = {}
 
 ---@type ClubMemberPresence 
 Enum.ClubMemberPresence = {}
@@ -578,7 +573,6 @@ Enum.ClubMemberPresence.Busy = 5
 ---@field Banned ClubRemovedReason 
 ---@field Removed ClubRemovedReason 
 ---@field ClubDestroyed ClubRemovedReason 
-ClubRemovedReason = {}
 
 ---@type ClubRemovedReason 
 Enum.ClubRemovedReason = {}
@@ -590,7 +584,6 @@ Enum.ClubRemovedReason.ClubDestroyed = 3
 ---@class ClubRestrictionReason : Enum
 ---@field None ClubRestrictionReason 
 ---@field Unavailable ClubRestrictionReason 
-ClubRestrictionReason = {}
 
 ---@type ClubRestrictionReason 
 Enum.ClubRestrictionReason = {}
@@ -602,7 +595,6 @@ Enum.ClubRestrictionReason.Unavailable = 1
 ---@field Leader ClubRoleIdentifier 
 ---@field Moderator ClubRoleIdentifier 
 ---@field Member ClubRoleIdentifier 
-ClubRoleIdentifier = {}
 
 ---@type ClubRoleIdentifier 
 Enum.ClubRoleIdentifier = {}
@@ -615,7 +607,6 @@ Enum.ClubRoleIdentifier.Member = 4
 ---@field None ClubStreamNotificationFilter 
 ---@field Mention ClubStreamNotificationFilter 
 ---@field All ClubStreamNotificationFilter 
-ClubStreamNotificationFilter = {}
 
 ---@type ClubStreamNotificationFilter 
 Enum.ClubStreamNotificationFilter = {}
@@ -628,7 +619,6 @@ Enum.ClubStreamNotificationFilter.All = 2
 ---@field Guild ClubStreamType 
 ---@field Officer ClubStreamType 
 ---@field Other ClubStreamType 
-ClubStreamType = {}
 
 ---@type ClubStreamType 
 Enum.ClubStreamType = {}
@@ -642,7 +632,6 @@ Enum.ClubStreamType.Other = 3
 ---@field Character ClubType 
 ---@field Guild ClubType 
 ---@field Other ClubType 
-ClubType = {}
 
 ---@type ClubType 
 Enum.ClubType = {}
