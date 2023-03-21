@@ -272,8 +272,11 @@ function C_TransmogCollection.UpdateUsableAppearances() end
 ---@field None TransmogCameraVariation @ 0
 ---@field RightShoulder TransmogCameraVariation @ 1
 ---@field CloakBackpack TransmogCameraVariation @ 1
----@type TransmogCameraVariation 
+---@type number 
 Enum.TransmogCameraVariation = {}
+Enum.TransmogCameraVariation["None"] = 0
+Enum.TransmogCameraVariation["RightShoulder"] = 1
+Enum.TransmogCameraVariation["CloakBackpack"] = 1
 
 ---@class TransmogAppearanceInfoBySourceData
 ---@field appearanceID number 

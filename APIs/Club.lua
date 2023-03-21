@@ -401,8 +401,35 @@ function C_Club.ValidateText(clubType, text, clubFieldType) end
 ---@field ErrorClubActionCreateMessage ClubActionType @ 24
 ---@field ErrorClubActionEditMessage ClubActionType @ 25
 ---@field ErrorClubActionDestroyMessage ClubActionType @ 26
----@type ClubActionType 
+---@type number 
 Enum.ClubActionType = {}
+Enum.ClubActionType["ErrorClubActionSubscribe"] = 0
+Enum.ClubActionType["ErrorClubActionCreate"] = 1
+Enum.ClubActionType["ErrorClubActionEdit"] = 2
+Enum.ClubActionType["ErrorClubActionDestroy"] = 3
+Enum.ClubActionType["ErrorClubActionLeave"] = 4
+Enum.ClubActionType["ErrorClubActionCreateTicket"] = 5
+Enum.ClubActionType["ErrorClubActionDestroyTicket"] = 6
+Enum.ClubActionType["ErrorClubActionRedeemTicket"] = 7
+Enum.ClubActionType["ErrorClubActionGetTicket"] = 8
+Enum.ClubActionType["ErrorClubActionGetTickets"] = 9
+Enum.ClubActionType["ErrorClubActionGetBans"] = 10
+Enum.ClubActionType["ErrorClubActionGetInvitations"] = 11
+Enum.ClubActionType["ErrorClubActionRevokeInvitation"] = 12
+Enum.ClubActionType["ErrorClubActionAcceptInvitation"] = 13
+Enum.ClubActionType["ErrorClubActionDeclineInvitation"] = 14
+Enum.ClubActionType["ErrorClubActionCreateStream"] = 15
+Enum.ClubActionType["ErrorClubActionEditStream"] = 16
+Enum.ClubActionType["ErrorClubActionDestroyStream"] = 17
+Enum.ClubActionType["ErrorClubActionInviteMember"] = 18
+Enum.ClubActionType["ErrorClubActionEditMember"] = 19
+Enum.ClubActionType["ErrorClubActionEditMemberNote"] = 20
+Enum.ClubActionType["ErrorClubActionKickMember"] = 21
+Enum.ClubActionType["ErrorClubActionAddBan"] = 22
+Enum.ClubActionType["ErrorClubActionRemoveBan"] = 23
+Enum.ClubActionType["ErrorClubActionCreateMessage"] = 24
+Enum.ClubActionType["ErrorClubActionEditMessage"] = 25
+Enum.ClubActionType["ErrorClubActionDestroyMessage"] = 26
 
 ---@class ClubErrorType : Enum
 ---@field ErrorCommunitiesNone ClubErrorType @ 0
@@ -447,8 +474,50 @@ Enum.ClubActionType = {}
 ---@field ErrorClubTicketHasConsumedAllowedRedeemCount ClubErrorType @ 39
 ---@field ErrorClubDoesntAllowCrossFaction ClubErrorType @ 40
 ---@field ErrorClubEditHasCrossFactionMembers ClubErrorType @ 41
----@type ClubErrorType 
+---@type number 
 Enum.ClubErrorType = {}
+Enum.ClubErrorType["ErrorCommunitiesNone"] = 0
+Enum.ClubErrorType["ErrorCommunitiesUnknown"] = 1
+Enum.ClubErrorType["ErrorCommunitiesNeutralFaction"] = 2
+Enum.ClubErrorType["ErrorCommunitiesUnknownRealm"] = 3
+Enum.ClubErrorType["ErrorCommunitiesBadTarget"] = 4
+Enum.ClubErrorType["ErrorCommunitiesWrongFaction"] = 5
+Enum.ClubErrorType["ErrorCommunitiesRestricted"] = 6
+Enum.ClubErrorType["ErrorCommunitiesIgnored"] = 7
+Enum.ClubErrorType["ErrorCommunitiesGuild"] = 8
+Enum.ClubErrorType["ErrorCommunitiesWrongRegion"] = 9
+Enum.ClubErrorType["ErrorCommunitiesUnknownTicket"] = 10
+Enum.ClubErrorType["ErrorCommunitiesMissingShortName"] = 11
+Enum.ClubErrorType["ErrorCommunitiesProfanity"] = 12
+Enum.ClubErrorType["ErrorCommunitiesTrial"] = 13
+Enum.ClubErrorType["ErrorCommunitiesVeteranTrial"] = 14
+Enum.ClubErrorType["ErrorCommunitiesChatMute"] = 15
+Enum.ClubErrorType["ErrorClubFull"] = 16
+Enum.ClubErrorType["ErrorClubNoClub"] = 17
+Enum.ClubErrorType["ErrorClubNotMember"] = 18
+Enum.ClubErrorType["ErrorClubAlreadyMember"] = 19
+Enum.ClubErrorType["ErrorClubNoSuchMember"] = 20
+Enum.ClubErrorType["ErrorClubNoSuchInvitation"] = 21
+Enum.ClubErrorType["ErrorClubInvitationAlreadyExists"] = 22
+Enum.ClubErrorType["ErrorClubInvalidRoleID"] = 23
+Enum.ClubErrorType["ErrorClubInsufficientPrivileges"] = 24
+Enum.ClubErrorType["ErrorClubTooManyClubsJoined"] = 25
+Enum.ClubErrorType["ErrorClubVoiceFull"] = 26
+Enum.ClubErrorType["ErrorClubStreamNoStream"] = 27
+Enum.ClubErrorType["ErrorClubStreamInvalidName"] = 28
+Enum.ClubErrorType["ErrorClubStreamCountAtMin"] = 29
+Enum.ClubErrorType["ErrorClubStreamCountAtMax"] = 30
+Enum.ClubErrorType["ErrorClubMemberHasRequiredRole"] = 31
+Enum.ClubErrorType["ErrorClubSentInvitationCountAtMax"] = 32
+Enum.ClubErrorType["ErrorClubReceivedInvitationCountAtMax"] = 33
+Enum.ClubErrorType["ErrorClubTargetIsBanned"] = 34
+Enum.ClubErrorType["ErrorClubBanAlreadyExists"] = 35
+Enum.ClubErrorType["ErrorClubBanCountAtMax"] = 36
+Enum.ClubErrorType["ErrorClubTicketCountAtMax"] = 37
+Enum.ClubErrorType["ErrorClubTicketNoSuchTicket"] = 38
+Enum.ClubErrorType["ErrorClubTicketHasConsumedAllowedRedeemCount"] = 39
+Enum.ClubErrorType["ErrorClubDoesntAllowCrossFaction"] = 40
+Enum.ClubErrorType["ErrorClubEditHasCrossFactionMembers"] = 41
 
 ---@class ClubFieldType : Enum
 ---@field ClubName ClubFieldType @ 0
@@ -458,15 +527,25 @@ Enum.ClubErrorType = {}
 ---@field ClubStreamName ClubFieldType @ 4
 ---@field ClubStreamSubject ClubFieldType @ 5
 ---@field NumTypes ClubFieldType @ 6
----@type ClubFieldType 
+---@type number 
 Enum.ClubFieldType = {}
+Enum.ClubFieldType["ClubName"] = 0
+Enum.ClubFieldType["ClubShortName"] = 1
+Enum.ClubFieldType["ClubDescription"] = 2
+Enum.ClubFieldType["ClubBroadcast"] = 3
+Enum.ClubFieldType["ClubStreamName"] = 4
+Enum.ClubFieldType["ClubStreamSubject"] = 5
+Enum.ClubFieldType["NumTypes"] = 6
 
 ---@class ClubInvitationCandidateStatus : Enum
 ---@field Available ClubInvitationCandidateStatus @ 0
 ---@field InvitePending ClubInvitationCandidateStatus @ 1
 ---@field AlreadyMember ClubInvitationCandidateStatus @ 2
----@type ClubInvitationCandidateStatus 
+---@type number 
 Enum.ClubInvitationCandidateStatus = {}
+Enum.ClubInvitationCandidateStatus["Available"] = 0
+Enum.ClubInvitationCandidateStatus["InvitePending"] = 1
+Enum.ClubInvitationCandidateStatus["AlreadyMember"] = 2
 
 ---@class ClubMemberPresence : Enum
 ---@field Unknown ClubMemberPresence @ 0
@@ -475,53 +554,80 @@ Enum.ClubInvitationCandidateStatus = {}
 ---@field Offline ClubMemberPresence @ 3
 ---@field Away ClubMemberPresence @ 4
 ---@field Busy ClubMemberPresence @ 5
----@type ClubMemberPresence 
+---@type number 
 Enum.ClubMemberPresence = {}
+Enum.ClubMemberPresence["Unknown"] = 0
+Enum.ClubMemberPresence["Online"] = 1
+Enum.ClubMemberPresence["OnlineMobile"] = 2
+Enum.ClubMemberPresence["Offline"] = 3
+Enum.ClubMemberPresence["Away"] = 4
+Enum.ClubMemberPresence["Busy"] = 5
 
 ---@class ClubRemovedReason : Enum
 ---@field None ClubRemovedReason @ 0
 ---@field Banned ClubRemovedReason @ 1
 ---@field Removed ClubRemovedReason @ 2
 ---@field ClubDestroyed ClubRemovedReason @ 3
----@type ClubRemovedReason 
+---@type number 
 Enum.ClubRemovedReason = {}
+Enum.ClubRemovedReason["None"] = 0
+Enum.ClubRemovedReason["Banned"] = 1
+Enum.ClubRemovedReason["Removed"] = 2
+Enum.ClubRemovedReason["ClubDestroyed"] = 3
 
 ---@class ClubRestrictionReason : Enum
 ---@field None ClubRestrictionReason @ 0
 ---@field Unavailable ClubRestrictionReason @ 1
----@type ClubRestrictionReason 
+---@type number 
 Enum.ClubRestrictionReason = {}
+Enum.ClubRestrictionReason["None"] = 0
+Enum.ClubRestrictionReason["Unavailable"] = 1
 
 ---@class ClubRoleIdentifier : Enum
 ---@field Owner ClubRoleIdentifier @ 1
 ---@field Leader ClubRoleIdentifier @ 2
 ---@field Moderator ClubRoleIdentifier @ 3
 ---@field Member ClubRoleIdentifier @ 4
----@type ClubRoleIdentifier 
+---@type number 
 Enum.ClubRoleIdentifier = {}
+Enum.ClubRoleIdentifier["Owner"] = 1
+Enum.ClubRoleIdentifier["Leader"] = 2
+Enum.ClubRoleIdentifier["Moderator"] = 3
+Enum.ClubRoleIdentifier["Member"] = 4
 
 ---@class ClubStreamNotificationFilter : Enum
 ---@field None ClubStreamNotificationFilter @ 0
 ---@field Mention ClubStreamNotificationFilter @ 1
 ---@field All ClubStreamNotificationFilter @ 2
----@type ClubStreamNotificationFilter 
+---@type number 
 Enum.ClubStreamNotificationFilter = {}
+Enum.ClubStreamNotificationFilter["None"] = 0
+Enum.ClubStreamNotificationFilter["Mention"] = 1
+Enum.ClubStreamNotificationFilter["All"] = 2
 
 ---@class ClubStreamType : Enum
 ---@field General ClubStreamType @ 0
 ---@field Guild ClubStreamType @ 1
 ---@field Officer ClubStreamType @ 2
 ---@field Other ClubStreamType @ 3
----@type ClubStreamType 
+---@type number 
 Enum.ClubStreamType = {}
+Enum.ClubStreamType["General"] = 0
+Enum.ClubStreamType["Guild"] = 1
+Enum.ClubStreamType["Officer"] = 2
+Enum.ClubStreamType["Other"] = 3
 
 ---@class ClubType : Enum
 ---@field BattleNet ClubType @ 0
 ---@field Character ClubType @ 1
 ---@field Guild ClubType @ 2
 ---@field Other ClubType @ 3
----@type ClubType 
+---@type number 
 Enum.ClubType = {}
+Enum.ClubType["BattleNet"] = 0
+Enum.ClubType["Character"] = 1
+Enum.ClubType["Guild"] = 2
+Enum.ClubType["Other"] = 3
 
 ---@class ClubInfo
 ---@field clubId ClubId 

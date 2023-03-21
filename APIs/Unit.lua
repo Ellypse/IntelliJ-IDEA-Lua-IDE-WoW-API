@@ -176,8 +176,12 @@ function UnitWidgetSet(unit) end
 ---@field Sharding PhaseReason @ 1
 ---@field WarMode PhaseReason @ 2
 ---@field ChromieTime PhaseReason @ 3
----@type PhaseReason 
+---@type number 
 Enum.PhaseReason = {}
+Enum.PhaseReason["Phasing"] = 0
+Enum.PhaseReason["Sharding"] = 1
+Enum.PhaseReason["WarMode"] = 2
+Enum.PhaseReason["ChromieTime"] = 3
 
 ---@class PowerType : Enum
 ---@field HealthCost PowerType @ -2
@@ -206,8 +210,34 @@ Enum.PhaseReason = {}
 ---@field RuneFrost PowerType @ 21
 ---@field RuneUnholy PowerType @ 22
 ---@field NumPowerTypes PowerType @ 23
----@type PowerType 
+---@type number 
 Enum.PowerType = {}
+Enum.PowerType["HealthCost"] = -2
+Enum.PowerType["None"] = -1
+Enum.PowerType["Mana"] = 0
+Enum.PowerType["Rage"] = 1
+Enum.PowerType["Focus"] = 2
+Enum.PowerType["Energy"] = 3
+Enum.PowerType["ComboPoints"] = 4
+Enum.PowerType["Runes"] = 5
+Enum.PowerType["RunicPower"] = 6
+Enum.PowerType["SoulShards"] = 7
+Enum.PowerType["LunarPower"] = 8
+Enum.PowerType["HolyPower"] = 9
+Enum.PowerType["Alternate"] = 10
+Enum.PowerType["Maelstrom"] = 11
+Enum.PowerType["Chi"] = 12
+Enum.PowerType["Insanity"] = 13
+Enum.PowerType["Obsolete"] = 14
+Enum.PowerType["Obsolete2"] = 15
+Enum.PowerType["ArcaneCharges"] = 16
+Enum.PowerType["Fury"] = 17
+Enum.PowerType["Pain"] = 18
+Enum.PowerType["Essence"] = 19
+Enum.PowerType["RuneBlood"] = 20
+Enum.PowerType["RuneFrost"] = 21
+Enum.PowerType["RuneUnholy"] = 22
+Enum.PowerType["NumPowerTypes"] = 23
 
 ---@class PvPUnitClassification : Enum
 ---@field FlagCarrierHorde PvPUnitClassification @ 0
@@ -221,8 +251,19 @@ Enum.PowerType = {}
 ---@field OrbCarrierGreen PvPUnitClassification @ 8
 ---@field OrbCarrierOrange PvPUnitClassification @ 9
 ---@field OrbCarrierPurple PvPUnitClassification @ 10
----@type PvPUnitClassification 
+---@type number 
 Enum.PvPUnitClassification = {}
+Enum.PvPUnitClassification["FlagCarrierHorde"] = 0
+Enum.PvPUnitClassification["FlagCarrierAlliance"] = 1
+Enum.PvPUnitClassification["FlagCarrierNeutral"] = 2
+Enum.PvPUnitClassification["CartRunnerHorde"] = 3
+Enum.PvPUnitClassification["CartRunnerAlliance"] = 4
+Enum.PvPUnitClassification["AssassinHorde"] = 5
+Enum.PvPUnitClassification["AssassinAlliance"] = 6
+Enum.PvPUnitClassification["OrbCarrierBlue"] = 7
+Enum.PvPUnitClassification["OrbCarrierGreen"] = 8
+Enum.PvPUnitClassification["OrbCarrierOrange"] = 9
+Enum.PvPUnitClassification["OrbCarrierPurple"] = 10
 
 ---@class CorruptionEffectInfo
 ---@field name string 

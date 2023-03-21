@@ -66,8 +66,24 @@ function C_EncounterJournal.SetSlotFilter(filterSlot) end
 ---@field Trinket ItemSlotFilterType @ 13
 ---@field Other ItemSlotFilterType @ 14
 ---@field NoFilter ItemSlotFilterType @ 15
----@type ItemSlotFilterType 
+---@type number 
 Enum.ItemSlotFilterType = {}
+Enum.ItemSlotFilterType["Head"] = 0
+Enum.ItemSlotFilterType["Neck"] = 1
+Enum.ItemSlotFilterType["Shoulder"] = 2
+Enum.ItemSlotFilterType["Cloak"] = 3
+Enum.ItemSlotFilterType["Chest"] = 4
+Enum.ItemSlotFilterType["Wrist"] = 5
+Enum.ItemSlotFilterType["Hand"] = 6
+Enum.ItemSlotFilterType["Waist"] = 7
+Enum.ItemSlotFilterType["Legs"] = 8
+Enum.ItemSlotFilterType["Feet"] = 9
+Enum.ItemSlotFilterType["MainHand"] = 10
+Enum.ItemSlotFilterType["OffHand"] = 11
+Enum.ItemSlotFilterType["Finger"] = 12
+Enum.ItemSlotFilterType["Trinket"] = 13
+Enum.ItemSlotFilterType["Other"] = 14
+Enum.ItemSlotFilterType["NoFilter"] = 15
 
 ---@class DungeonEntranceMapInfo
 ---@field areaPoiID number 

@@ -27,8 +27,13 @@ function C_AnimaDiversion.SelectAnimaNode(talentID, temporary) end
 ---@field SelectedTemporary AnimaDiversionNodeState @ 2
 ---@field SelectedPermanent AnimaDiversionNodeState @ 3
 ---@field Cooldown AnimaDiversionNodeState @ 4
----@type AnimaDiversionNodeState 
+---@type number 
 Enum.AnimaDiversionNodeState = {}
+Enum.AnimaDiversionNodeState["Unavailable"] = 0
+Enum.AnimaDiversionNodeState["Available"] = 1
+Enum.AnimaDiversionNodeState["SelectedTemporary"] = 2
+Enum.AnimaDiversionNodeState["SelectedPermanent"] = 3
+Enum.AnimaDiversionNodeState["Cooldown"] = 4
 
 ---@class AnimaDiversionCostInfo
 ---@field currencyID number 

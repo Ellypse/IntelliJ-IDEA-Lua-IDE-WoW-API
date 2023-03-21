@@ -322,15 +322,24 @@ function C_QuestLog.UnitIsRelatedToActiveQuest(unit) end
 ---@field BottomRight MapOverlayDisplayLocation @ 3
 ---@field TopRight MapOverlayDisplayLocation @ 4
 ---@field Hidden MapOverlayDisplayLocation @ 5
----@type MapOverlayDisplayLocation 
+---@type number 
 Enum.MapOverlayDisplayLocation = {}
+Enum.MapOverlayDisplayLocation["Default"] = 0
+Enum.MapOverlayDisplayLocation["BottomLeft"] = 1
+Enum.MapOverlayDisplayLocation["TopLeft"] = 2
+Enum.MapOverlayDisplayLocation["BottomRight"] = 3
+Enum.MapOverlayDisplayLocation["TopRight"] = 4
+Enum.MapOverlayDisplayLocation["Hidden"] = 5
 
 ---@class QuestFrequency : Enum
 ---@field Default QuestFrequency @ 0
 ---@field Daily QuestFrequency @ 1
 ---@field Weekly QuestFrequency @ 2
----@type QuestFrequency 
+---@type number 
 Enum.QuestFrequency = {}
+Enum.QuestFrequency["Default"] = 0
+Enum.QuestFrequency["Daily"] = 1
+Enum.QuestFrequency["Weekly"] = 2
 
 ---@class QuestTag : Enum
 ---@field Group QuestTag @ 1
@@ -344,21 +353,37 @@ Enum.QuestFrequency = {}
 ---@field Scenario QuestTag @ 98
 ---@field Account QuestTag @ 102
 ---@field CombatAlly QuestTag @ 266
----@type QuestTag 
+---@type number 
 Enum.QuestTag = {}
+Enum.QuestTag["Group"] = 1
+Enum.QuestTag["PvP"] = 41
+Enum.QuestTag["Raid"] = 62
+Enum.QuestTag["Dungeon"] = 81
+Enum.QuestTag["Legendary"] = 83
+Enum.QuestTag["Heroic"] = 85
+Enum.QuestTag["Raid10"] = 88
+Enum.QuestTag["Raid25"] = 89
+Enum.QuestTag["Scenario"] = 98
+Enum.QuestTag["Account"] = 102
+Enum.QuestTag["CombatAlly"] = 266
 
 ---@class QuestWatchType : Enum
 ---@field Automatic QuestWatchType @ 0
 ---@field Manual QuestWatchType @ 1
----@type QuestWatchType 
+---@type number 
 Enum.QuestWatchType = {}
+Enum.QuestWatchType["Automatic"] = 0
+Enum.QuestWatchType["Manual"] = 1
 
 ---@class WorldQuestQuality : Enum
 ---@field Common WorldQuestQuality @ 0
 ---@field Rare WorldQuestQuality @ 1
 ---@field Epic WorldQuestQuality @ 2
----@type WorldQuestQuality 
+---@type number 
 Enum.WorldQuestQuality = {}
+Enum.WorldQuestQuality["Common"] = 0
+Enum.WorldQuestQuality["Rare"] = 1
+Enum.WorldQuestQuality["Epic"] = 2
 
 ---@class QuestInfo
 ---@field title string 

@@ -270,14 +270,18 @@ function C_VoiceChat.ToggleMuted() end
 ---@class CommunicationMode : Enum
 ---@field PushToTalk CommunicationMode @ 0
 ---@field OpenMic CommunicationMode @ 1
----@type CommunicationMode 
+---@type number 
 Enum.CommunicationMode = {}
+Enum.CommunicationMode["PushToTalk"] = 0
+Enum.CommunicationMode["OpenMic"] = 1
 
 ---@class VoiceChannelErrorReason : Enum
 ---@field Unknown VoiceChannelErrorReason @ 0
 ---@field IsBattleNetChannel VoiceChannelErrorReason @ 1
----@type VoiceChannelErrorReason 
+---@type number 
 Enum.VoiceChannelErrorReason = {}
+Enum.VoiceChannelErrorReason["Unknown"] = 0
+Enum.VoiceChannelErrorReason["IsBattleNetChannel"] = 1
 
 ---@class VoiceChatStatusCode : Enum
 ---@field Success VoiceChatStatusCode @ 0
@@ -305,8 +309,33 @@ Enum.VoiceChannelErrorReason = {}
 ---@field PlayerVoiceChatParentalDisabled VoiceChatStatusCode @ 22
 ---@field InvalidInputDevice VoiceChatStatusCode @ 23
 ---@field InvalidOutputDevice VoiceChatStatusCode @ 24
----@type VoiceChatStatusCode 
+---@type number 
 Enum.VoiceChatStatusCode = {}
+Enum.VoiceChatStatusCode["Success"] = 0
+Enum.VoiceChatStatusCode["OperationPending"] = 1
+Enum.VoiceChatStatusCode["TooManyRequests"] = 2
+Enum.VoiceChatStatusCode["LoginProhibited"] = 3
+Enum.VoiceChatStatusCode["ClientNotInitialized"] = 4
+Enum.VoiceChatStatusCode["ClientNotLoggedIn"] = 5
+Enum.VoiceChatStatusCode["ClientAlreadyLoggedIn"] = 6
+Enum.VoiceChatStatusCode["ChannelNameTooShort"] = 7
+Enum.VoiceChatStatusCode["ChannelNameTooLong"] = 8
+Enum.VoiceChatStatusCode["ChannelAlreadyExists"] = 9
+Enum.VoiceChatStatusCode["AlreadyInChannel"] = 10
+Enum.VoiceChatStatusCode["TargetNotFound"] = 11
+Enum.VoiceChatStatusCode["Failure"] = 12
+Enum.VoiceChatStatusCode["ServiceLost"] = 13
+Enum.VoiceChatStatusCode["UnableToLaunchProxy"] = 14
+Enum.VoiceChatStatusCode["ProxyConnectionTimeOut"] = 15
+Enum.VoiceChatStatusCode["ProxyConnectionUnableToConnect"] = 16
+Enum.VoiceChatStatusCode["ProxyConnectionUnexpectedDisconnect"] = 17
+Enum.VoiceChatStatusCode["Disabled"] = 18
+Enum.VoiceChatStatusCode["UnsupportedChatChannelType"] = 19
+Enum.VoiceChatStatusCode["InvalidCommunityStream"] = 20
+Enum.VoiceChatStatusCode["PlayerSilenced"] = 21
+Enum.VoiceChatStatusCode["PlayerVoiceChatParentalDisabled"] = 22
+Enum.VoiceChatStatusCode["InvalidInputDevice"] = 23
+Enum.VoiceChatStatusCode["InvalidOutputDevice"] = 24
 
 ---@class VoiceTtsDestination : Enum
 ---@field RemoteTransmission VoiceTtsDestination @ 0
@@ -316,8 +345,15 @@ Enum.VoiceChatStatusCode = {}
 ---@field QueuedLocalPlayback VoiceTtsDestination @ 4
 ---@field QueuedRemoteTransmissionWithLocalPlayback VoiceTtsDestination @ 5
 ---@field ScreenReader VoiceTtsDestination @ 6
----@type VoiceTtsDestination 
+---@type number 
 Enum.VoiceTtsDestination = {}
+Enum.VoiceTtsDestination["RemoteTransmission"] = 0
+Enum.VoiceTtsDestination["LocalPlayback"] = 1
+Enum.VoiceTtsDestination["RemoteTransmissionWithLocalPlayback"] = 2
+Enum.VoiceTtsDestination["QueuedRemoteTransmission"] = 3
+Enum.VoiceTtsDestination["QueuedLocalPlayback"] = 4
+Enum.VoiceTtsDestination["QueuedRemoteTransmissionWithLocalPlayback"] = 5
+Enum.VoiceTtsDestination["ScreenReader"] = 6
 
 ---@class VoiceTtsStatusCode : Enum
 ---@field Success VoiceTtsStatusCode @ 0
@@ -334,8 +370,22 @@ Enum.VoiceTtsDestination = {}
 ---@field ManagerNotFound VoiceTtsStatusCode @ 11
 ---@field InvalidArgument VoiceTtsStatusCode @ 12
 ---@field InternalError VoiceTtsStatusCode @ 13
----@type VoiceTtsStatusCode 
+---@type number 
 Enum.VoiceTtsStatusCode = {}
+Enum.VoiceTtsStatusCode["Success"] = 0
+Enum.VoiceTtsStatusCode["InvalidEngineType"] = 1
+Enum.VoiceTtsStatusCode["EngineAllocationFailed"] = 2
+Enum.VoiceTtsStatusCode["NotSupported"] = 3
+Enum.VoiceTtsStatusCode["MaxCharactersExceeded"] = 4
+Enum.VoiceTtsStatusCode["UtteranceBelowMinimumDuration"] = 5
+Enum.VoiceTtsStatusCode["InputTextEnqueued"] = 6
+Enum.VoiceTtsStatusCode["SdkNotInitialized"] = 7
+Enum.VoiceTtsStatusCode["DestinationQueueFull"] = 8
+Enum.VoiceTtsStatusCode["EnqueueNotNecessary"] = 9
+Enum.VoiceTtsStatusCode["UtteranceNotFound"] = 10
+Enum.VoiceTtsStatusCode["ManagerNotFound"] = 11
+Enum.VoiceTtsStatusCode["InvalidArgument"] = 12
+Enum.VoiceTtsStatusCode["InternalError"] = 13
 
 ---@class VoiceAudioDevice
 ---@field deviceID string 

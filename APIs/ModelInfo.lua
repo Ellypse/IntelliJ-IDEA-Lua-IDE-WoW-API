@@ -40,13 +40,18 @@ function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 ---@field WrongRace ItemTryOnReason @ 1
 ---@field NotEquippable ItemTryOnReason @ 2
 ---@field DataPending ItemTryOnReason @ 3
----@type ItemTryOnReason 
+---@type number 
 Enum.ItemTryOnReason = {}
+Enum.ItemTryOnReason["Success"] = 0
+Enum.ItemTryOnReason["WrongRace"] = 1
+Enum.ItemTryOnReason["NotEquippable"] = 2
+Enum.ItemTryOnReason["DataPending"] = 3
 
 ---@class ModelSceneSetting : Enum
 ---@field AlignLightToOrbitDelta ModelSceneSetting @ 1
----@type ModelSceneSetting 
+---@type number 
 Enum.ModelSceneSetting = {}
+Enum.ModelSceneSetting["AlignLightToOrbitDelta"] = 1
 
 ---@class ModelSceneType : Enum
 ---@field MountJournal ModelSceneType @ 0
@@ -69,8 +74,28 @@ Enum.ModelSceneSetting = {}
 ---@field WorldMapThreat ModelSceneType @ 17
 ---@field Soulbinds ModelSceneType @ 18
 ---@field JailersTowerAnimaGlow ModelSceneType @ 19
----@type ModelSceneType 
+---@type number 
 Enum.ModelSceneType = {}
+Enum.ModelSceneType["MountJournal"] = 0
+Enum.ModelSceneType["PetJournalCard"] = 1
+Enum.ModelSceneType["ShopCard"] = 2
+Enum.ModelSceneType["EncounterJournal"] = 3
+Enum.ModelSceneType["PetJournalLoadout"] = 4
+Enum.ModelSceneType["ArtifactTier2"] = 5
+Enum.ModelSceneType["ArtifactTier2ForgingScene"] = 6
+Enum.ModelSceneType["ArtifactTier2SlamEffect"] = 7
+Enum.ModelSceneType["CommentatorVictoryFanfare"] = 8
+Enum.ModelSceneType["ArtifactRelicTalentEffect"] = 9
+Enum.ModelSceneType["PvPWarModeOrb"] = 10
+Enum.ModelSceneType["PvPWarModeFire"] = 11
+Enum.ModelSceneType["PartyPose"] = 12
+Enum.ModelSceneType["AzeriteItemLevelUpToast"] = 13
+Enum.ModelSceneType["AzeritePowers"] = 14
+Enum.ModelSceneType["AzeriteRewardGlow"] = 15
+Enum.ModelSceneType["HeartOfAzeroth"] = 16
+Enum.ModelSceneType["WorldMapThreat"] = 17
+Enum.ModelSceneType["Soulbinds"] = 18
+Enum.ModelSceneType["JailersTowerAnimaGlow"] = 19
 
 ---@class UIModelSceneActorDisplayInfo
 ---@field animation number 

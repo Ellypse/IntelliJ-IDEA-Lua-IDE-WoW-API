@@ -12,6 +12,16 @@ C_WowEntitlementInfo = {}
 ---@field Title WoWEntitlementType @ 7
 ---@field Illusion WoWEntitlementType @ 8
 ---@field Invalid WoWEntitlementType @ 9
----@type WoWEntitlementType 
+---@type number 
 Enum.WoWEntitlementType = {}
+Enum.WoWEntitlementType["Item"] = 0
+Enum.WoWEntitlementType["Mount"] = 1
+Enum.WoWEntitlementType["Battlepet"] = 2
+Enum.WoWEntitlementType["Toy"] = 3
+Enum.WoWEntitlementType["Appearance"] = 4
+Enum.WoWEntitlementType["AppearanceSet"] = 5
+Enum.WoWEntitlementType["GameTime"] = 6
+Enum.WoWEntitlementType["Title"] = 7
+Enum.WoWEntitlementType["Illusion"] = 8
+Enum.WoWEntitlementType["Invalid"] = 9
 

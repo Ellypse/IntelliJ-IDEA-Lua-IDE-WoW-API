@@ -156,8 +156,13 @@ function C_Map.SetUserWaypoint(point) end
 ---@field BottomRight MapCanvasPosition @ 2
 ---@field TopLeft MapCanvasPosition @ 3
 ---@field TopRight MapCanvasPosition @ 4
----@type MapCanvasPosition 
+---@type number 
 Enum.MapCanvasPosition = {}
+Enum.MapCanvasPosition["None"] = 0
+Enum.MapCanvasPosition["BottomLeft"] = 1
+Enum.MapCanvasPosition["BottomRight"] = 2
+Enum.MapCanvasPosition["TopLeft"] = 3
+Enum.MapCanvasPosition["TopRight"] = 4
 
 ---@class UIMapFlag : Enum
 ---@field NoHighlight UIMapFlag @ 1
@@ -177,16 +182,37 @@ Enum.MapCanvasPosition = {}
 ---@field FlightMapAutoZoom UIMapFlag @ 16384
 ---@field ForceOnNavbar UIMapFlag @ 32768
 ---@field AlwaysAllowUserWaypoints UIMapFlag @ 65536
----@type UIMapFlag 
+---@type number 
 Enum.UIMapFlag = {}
+Enum.UIMapFlag["NoHighlight"] = 1
+Enum.UIMapFlag["ShowOverlays"] = 2
+Enum.UIMapFlag["ShowTaxiNodes"] = 4
+Enum.UIMapFlag["GarrisonMap"] = 8
+Enum.UIMapFlag["FallbackToParentMap"] = 16
+Enum.UIMapFlag["NoHighlightTexture"] = 32
+Enum.UIMapFlag["ShowTaskObjectives"] = 64
+Enum.UIMapFlag["NoWorldPositions"] = 128
+Enum.UIMapFlag["HideArchaeologyDigs"] = 256
+Enum.UIMapFlag["Deprecated"] = 512
+Enum.UIMapFlag["HideIcons"] = 1024
+Enum.UIMapFlag["HideVignettes"] = 2048
+Enum.UIMapFlag["ForceAllOverlayExplored"] = 4096
+Enum.UIMapFlag["FlightMapShowZoomOut"] = 8192
+Enum.UIMapFlag["FlightMapAutoZoom"] = 16384
+Enum.UIMapFlag["ForceOnNavbar"] = 32768
+Enum.UIMapFlag["AlwaysAllowUserWaypoints"] = 65536
 
 ---@class UIMapSystem : Enum
 ---@field World UIMapSystem @ 0
 ---@field Taxi UIMapSystem @ 1
 ---@field Adventure UIMapSystem @ 2
 ---@field Minimap UIMapSystem @ 3
----@type UIMapSystem 
+---@type number 
 Enum.UIMapSystem = {}
+Enum.UIMapSystem["World"] = 0
+Enum.UIMapSystem["Taxi"] = 1
+Enum.UIMapSystem["Adventure"] = 2
+Enum.UIMapSystem["Minimap"] = 3
 
 ---@class UIMapType : Enum
 ---@field Cosmic UIMapType @ 0
@@ -196,8 +222,15 @@ Enum.UIMapSystem = {}
 ---@field Dungeon UIMapType @ 4
 ---@field Micro UIMapType @ 5
 ---@field Orphan UIMapType @ 6
----@type UIMapType 
+---@type number 
 Enum.UIMapType = {}
+Enum.UIMapType["Cosmic"] = 0
+Enum.UIMapType["World"] = 1
+Enum.UIMapType["Continent"] = 2
+Enum.UIMapType["Zone"] = 3
+Enum.UIMapType["Dungeon"] = 4
+Enum.UIMapType["Micro"] = 5
+Enum.UIMapType["Orphan"] = 6
 
 ---@class MapBannerInfo
 ---@field areaPoiID number 

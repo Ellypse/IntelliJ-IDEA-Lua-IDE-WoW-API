@@ -66,15 +66,21 @@ function SendSubscriptionInterstitialResponse(response) end
 ---@field Clicked SubscriptionInterstitialResponseType @ 0
 ---@field Closed SubscriptionInterstitialResponseType @ 1
 ---@field WebRedirect SubscriptionInterstitialResponseType @ 2
----@type SubscriptionInterstitialResponseType 
+---@type number 
 Enum.SubscriptionInterstitialResponseType = {}
+Enum.SubscriptionInterstitialResponseType["Clicked"] = 0
+Enum.SubscriptionInterstitialResponseType["Closed"] = 1
+Enum.SubscriptionInterstitialResponseType["WebRedirect"] = 2
 
 ---@class SubscriptionInterstitialType : Enum
 ---@field Standard SubscriptionInterstitialType @ 0
 ---@field LeftNpeArea SubscriptionInterstitialType @ 1
 ---@field MaxLevel SubscriptionInterstitialType @ 2
----@type SubscriptionInterstitialType 
+---@type number 
 Enum.SubscriptionInterstitialType = {}
+Enum.SubscriptionInterstitialType["Standard"] = 0
+Enum.SubscriptionInterstitialType["LeftNpeArea"] = 1
+Enum.SubscriptionInterstitialType["MaxLevel"] = 2
 
 ---@class ExpansionDisplayInfo
 ---@field logo fileID 
