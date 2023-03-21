@@ -71,19 +71,23 @@ function C_ContributionCollector.HasPendingContribution(contributionID) end
 function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 
 ---@class ContributionAppearanceFlags
-local ContributionAppearanceFlags = {}
-ContributionAppearanceFlags.TooltipUseTimeRemaining = 0
+---@field TooltipUseTimeRemaining number @ Default value is [ 0 ]
+
+---@type ContributionAppearanceFlags 
+ContributionAppearanceFlags = {}
 
 ---@class ContributionResult
-local ContributionResult = {}
-ContributionResult.Success = 0
-ContributionResult.MustBeNearNpc = 1
-ContributionResult.IncorrectState = 2
-ContributionResult.InvalidID = 3
-ContributionResult.QuestDataMissing = 4
-ContributionResult.FailedConditionCheck = 5
-ContributionResult.UnableToCompleteTurnIn = 6
-ContributionResult.InternalError = 7
+---@field Success number @ Default value is [ 0 ]
+---@field MustBeNearNpc number @ Default value is [ 1 ]
+---@field IncorrectState number @ Default value is [ 2 ]
+---@field InvalidID number @ Default value is [ 3 ]
+---@field QuestDataMissing number @ Default value is [ 4 ]
+---@field FailedConditionCheck number @ Default value is [ 5 ]
+---@field UnableToCompleteTurnIn number @ Default value is [ 6 ]
+---@field InternalError number @ Default value is [ 7 ]
+
+---@type ContributionResult 
+ContributionResult = {}
 
 ---@class ContributionAppearance
 ---@field stateName cstring 
@@ -93,7 +97,7 @@ ContributionResult.InternalError = 7
 ---@field statusBarAtlas textureAtlas 
 ---@field borderAtlas textureAtlas 
 ---@field bannerAtlas textureAtlas 
-local ContributionAppearance = {}
+ContributionAppearance = {}
 
 ---@class ContributionMapInfo
 ---@field areaPoiID number 
@@ -101,5 +105,5 @@ local ContributionAppearance = {}
 ---@field name cstring 
 ---@field atlasName string 
 ---@field collectorCreatureID number 
-local ContributionMapInfo = {}
+ContributionMapInfo = {}
 

@@ -232,14 +232,14 @@ function C_ArtifactUI.ShouldSuppressForgeRotation() end
 ---@field modelOpacity number 
 ---@field modelSaturation number 
 ---@field obtainable bool 
-local ArtifactAppearanceInfo = {}
+ArtifactAppearanceInfo = {}
 
 ---@class ArtifactAppearanceSetInfo
 ---@field artifactAppearanceSetID number 
 ---@field appearanceSetName string 
 ---@field appearanceSetDescription string 
 ---@field numAppearances number 
-local ArtifactAppearanceSetInfo = {}
+ArtifactAppearanceSetInfo = {}
 
 ---@class ArtifactArtInfo
 ---@field textureKit textureKit 
@@ -249,7 +249,7 @@ local ArtifactAppearanceSetInfo = {}
 ---@field barDisconnectedColor colorRGB 
 ---@field uiModelSceneID number 
 ---@field spellVisualKitID number 
-local ArtifactArtInfo = {}
+ArtifactArtInfo = {}
 
 ---@class ArtifactInfo
 ---@field itemID number 
@@ -265,13 +265,13 @@ local ArtifactArtInfo = {}
 ---@field altItemAppearanceID number|nil 
 ---@field altOnTop bool 
 ---@field tier luaIndex 
-local ArtifactInfo = {}
+ArtifactInfo = {}
 
 ---@class ArtifactMetaPowerInfo
 ---@field spellID number 
 ---@field powerCost number 
 ---@field currentRank number 
-local ArtifactMetaPowerInfo = {}
+ArtifactMetaPowerInfo = {}
 
 ---@class ArtifactPowerInfo
 ---@field spellID number 
@@ -288,12 +288,12 @@ local ArtifactMetaPowerInfo = {}
 ---@field position vector2 
 ---@field offset vector2|nil 
 ---@field linearIndex luaIndex|nil 
-local ArtifactPowerInfo = {}
+ArtifactPowerInfo = {}
 
 ---@class ArtifactRelicInfo
 ---@field name string 
 ---@field icon fileID 
 ---@field slotTypeName cstring @ Matches the socket identifiers used in the socketing system.
 ---@field link string 
-local ArtifactRelicInfo = {}
+ArtifactRelicInfo = {}
 

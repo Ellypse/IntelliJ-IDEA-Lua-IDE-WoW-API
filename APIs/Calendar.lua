@@ -141,7 +141,6 @@ function C_Calendar.EventSelectInvite(inviteIndex) end
 function C_Calendar.EventSetAutoApprove() end
 
 ---@param clubId ClubId @ [OPTIONAL]
----@overload fun()
 function C_Calendar.EventSetClubId(clubId) end
 
 ---@param month luaIndex 
@@ -203,8 +202,6 @@ function C_Calendar.GetEventIndex() end
 ---@param eventID CalendarEventID 
 ---@param monthOffset number @ [OPTIONAL]
 ---@param monthDay number @ [OPTIONAL]
----@overload fun(eventID:CalendarEventID, monthDay:number)
----@overload fun(eventID:CalendarEventID)
 ---@return CalendarEventIndexInfo|nil eventIndexInfo
 function C_Calendar.GetEventIndexInfo(eventID, monthOffset, monthDay) end
 
@@ -273,7 +270,6 @@ function C_Calendar.IsEventOpen() end
 ---@param minLevel number 
 ---@param maxLevel number 
 ---@param maxRankOrder luaIndex @ [OPTIONAL]
----@overload fun(clubId:ClubId, minLevel:number, maxLevel:number)
 function C_Calendar.MassInviteCommunity(clubId, minLevel, maxLevel, maxRankOrder) end
 
 ---@param minLevel number 
@@ -299,7 +295,6 @@ function C_Calendar.SetAbsMonth(month, year) end
 function C_Calendar.SetMonth(offsetMonths) end
 
 ---@param clubId ClubId @ [OPTIONAL]
----@overload fun()
 function C_Calendar.SetNextClubId(clubId) end
 
 function C_Calendar.UpdateEvent() end
@@ -326,13 +321,13 @@ function C_Calendar.UpdateEvent() end
 ---@field dontDisplayEnd bool 
 ---@field clubID ClubId 
 ---@field isLocked bool 
-local CalendarDayEvent = {}
+CalendarDayEvent = {}
 
 ---@class CalendarEventIndexInfo
 ---@field offsetMonths number 
 ---@field monthDay luaIndex 
 ---@field eventIndex luaIndex 
-local CalendarEventIndexInfo = {}
+CalendarEventIndexInfo = {}
 
 ---@class CalendarEventInfo
 ---@field title string 
@@ -351,7 +346,7 @@ local CalendarEventIndexInfo = {}
 ---@field inviteType CalendarInviteType|nil 
 ---@field calendarType string 
 ---@field communityName string|nil 
-local CalendarEventInfo = {}
+CalendarEventInfo = {}
 
 ---@class CalendarEventInviteInfo
 ---@field name string|nil 
@@ -365,12 +360,12 @@ local CalendarEventInfo = {}
 ---@field notes string 
 ---@field classID number|nil 
 ---@field guid WOWGUID 
-local CalendarEventInviteInfo = {}
+CalendarEventInviteInfo = {}
 
 ---@class CalendarEventStatusOption
 ---@field status CalendarStatus 
 ---@field statusString string 
-local CalendarEventStatusOption = {}
+CalendarEventStatusOption = {}
 
 ---@class CalendarEventTextureInfo
 ---@field title string 
@@ -379,12 +374,12 @@ local CalendarEventStatusOption = {}
 ---@field difficultyId number|nil 
 ---@field mapId number|nil 
 ---@field isLfr bool|nil 
-local CalendarEventTextureInfo = {}
+CalendarEventTextureInfo = {}
 
 ---@class CalendarEventTypeDisplayInfo
 ---@field displayString string 
 ---@field eventType CalendarEventType 
-local CalendarEventTypeDisplayInfo = {}
+CalendarEventTypeDisplayInfo = {}
 
 ---@class CalendarGuildEventInfo
 ---@field eventID CalendarEventID 
@@ -400,13 +395,13 @@ local CalendarEventTypeDisplayInfo = {}
 ---@field texture fileID 
 ---@field inviteStatus CalendarStatus 
 ---@field clubID ClubId 
-local CalendarGuildEventInfo = {}
+CalendarGuildEventInfo = {}
 
 ---@class CalendarGuildFilterInfo
 ---@field minLevel number 
 ---@field maxLevel number 
 ---@field rank number 
-local CalendarGuildFilterInfo = {}
+CalendarGuildFilterInfo = {}
 
 ---@class CalendarHolidayInfo
 ---@field name cstring 
@@ -414,14 +409,14 @@ local CalendarGuildFilterInfo = {}
 ---@field texture fileID 
 ---@field startTime CalendarTime|nil 
 ---@field endTime CalendarTime|nil 
-local CalendarHolidayInfo = {}
+CalendarHolidayInfo = {}
 
 ---@class CalendarMonthInfo
 ---@field month luaIndex 
 ---@field year number 
 ---@field numDays number 
 ---@field firstWeekday luaIndex 
-local CalendarMonthInfo = {}
+CalendarMonthInfo = {}
 
 ---@class CalendarRaidInfo
 ---@field name string 
@@ -430,5 +425,5 @@ local CalendarMonthInfo = {}
 ---@field time CalendarTime 
 ---@field difficulty number 
 ---@field difficultyName string|nil 
-local CalendarRaidInfo = {}
+CalendarRaidInfo = {}
 

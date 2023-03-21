@@ -141,7 +141,6 @@ function SetRotation(radians) end
 ---@param colorG number 
 ---@param colorB number 
 ---@param a SingleColorValue @ [OPTIONAL]
----@overload fun(colorR:number, colorG:number, colorB:number)
 function SetShadowColor(colorR, colorG, colorB, a) end
 
 ---@param offsetX number 
@@ -158,7 +157,6 @@ function SetText(text) end
 ---@param colorG number 
 ---@param colorB number 
 ---@param a SingleColorValue @ [OPTIONAL]
----@overload fun(colorR:number, colorG:number, colorB:number)
 function SetTextColor(colorR, colorG, colorB, a) end
 
 ---@param height uiUnit 

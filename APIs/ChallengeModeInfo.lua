@@ -91,12 +91,12 @@ function C_ChallengeMode.StartChallengeMode() end
 ---@class ChallengeModeCompletionMemberInfo
 ---@field memberGUID WOWGUID 
 ---@field name string 
-local ChallengeModeCompletionMemberInfo = {}
+ChallengeModeCompletionMemberInfo = {}
 
 ---@class ChallengeModeGuildAttemptMember
 ---@field name string 
 ---@field classFileName cstring 
-local ChallengeModeGuildAttemptMember = {}
+ChallengeModeGuildAttemptMember = {}
 
 ---@class ChallengeModeGuildTopAttempt
 ---@field name string 
@@ -105,5 +105,5 @@ local ChallengeModeGuildAttemptMember = {}
 ---@field mapChallengeModeID number 
 ---@field isYou bool 
 ---@field members table 
-local ChallengeModeGuildTopAttempt = {}
+ChallengeModeGuildTopAttempt = {}
 

@@ -33,5 +33,5 @@ function C_AreaPoiInfo.IsAreaPOITimed(areaPoiID) end
 ---@field factionID number|nil 
 ---@field isPrimaryMapForPOI bool 
 ---@field isAlwaysOnFlightmap bool 
-local AreaPOIInfo = {}
+AreaPOIInfo = {}
 

@@ -21,9 +21,11 @@ function C_DeathInfo.GetSelfResurrectOptions() end
 function C_DeathInfo.UseSelfResurrectOption(optionType, id) end
 
 ---@class SelfResurrectOptionType
-local SelfResurrectOptionType = {}
-SelfResurrectOptionType.Spell = 0
-SelfResurrectOptionType.Item = 1
+---@field Spell number @ Default value is [ 0 ]
+---@field Item number @ Default value is [ 1 ]
+
+---@type SelfResurrectOptionType 
+SelfResurrectOptionType = {}
 
 ---@class GraveyardMapInfo
 ---@field areaPoiID number 
@@ -32,7 +34,7 @@ SelfResurrectOptionType.Item = 1
 ---@field textureIndex number 
 ---@field graveyardID number 
 ---@field isGraveyardSelectable bool 
-local GraveyardMapInfo = {}
+GraveyardMapInfo = {}
 
 ---@class SelfResurrectOption
 ---@field name string 
@@ -41,5 +43,5 @@ local GraveyardMapInfo = {}
 ---@field canUse bool 
 ---@field isLimited bool 
 ---@field priority number 
-local SelfResurrectOption = {}
+SelfResurrectOption = {}
 

@@ -9,27 +9,28 @@ function C_ScenarioInfo.GetJailersTowerTypeString(runType) end
 function C_ScenarioInfo.GetScenarioInfo() end
 
 ---@param scenarioStepID number @ [OPTIONAL]
----@overload fun()
 ---@return ScenarioStepInfo scenarioStepInfo
 function C_ScenarioInfo.GetScenarioStepInfo(scenarioStepID) end
 
 ---@class JailersTowerType
-local JailersTowerType = {}
-JailersTowerType.TwistingCorridors = 0
-JailersTowerType.SkoldusHalls = 1
-JailersTowerType.FractureChambers = 2
-JailersTowerType.Soulforges = 3
-JailersTowerType.Coldheart = 4
-JailersTowerType.Mortregar = 5
-JailersTowerType.UpperReaches = 6
-JailersTowerType.ArkobanHall = 7
-JailersTowerType.TormentChamberJaina = 8
-JailersTowerType.TormentChamberThrall = 9
-JailersTowerType.TormentChamberAnduin = 10
-JailersTowerType.AdamantVaults = 11
-JailersTowerType.ForgottenCatacombs = 12
-JailersTowerType.Ossuary = 13
-JailersTowerType.BossRush = 14
+---@field TwistingCorridors number @ Default value is [ 0 ]
+---@field SkoldusHalls number @ Default value is [ 1 ]
+---@field FractureChambers number @ Default value is [ 2 ]
+---@field Soulforges number @ Default value is [ 3 ]
+---@field Coldheart number @ Default value is [ 4 ]
+---@field Mortregar number @ Default value is [ 5 ]
+---@field UpperReaches number @ Default value is [ 6 ]
+---@field ArkobanHall number @ Default value is [ 7 ]
+---@field TormentChamberJaina number @ Default value is [ 8 ]
+---@field TormentChamberThrall number @ Default value is [ 9 ]
+---@field TormentChamberAnduin number @ Default value is [ 10 ]
+---@field AdamantVaults number @ Default value is [ 11 ]
+---@field ForgottenCatacombs number @ Default value is [ 12 ]
+---@field Ossuary number @ Default value is [ 13 ]
+---@field BossRush number @ Default value is [ 14 ]
+
+---@type JailersTowerType 
+JailersTowerType = {}
 
 ---@class ScenarioInformation
 ---@field name string 
@@ -42,7 +43,7 @@ JailersTowerType.BossRush = 14
 ---@field type number 
 ---@field area string 
 ---@field uiTextureKit textureKit 
-local ScenarioInformation = {}
+ScenarioInformation = {}
 
 ---@class ScenarioStepInfo
 ---@field title string 
@@ -56,11 +57,11 @@ local ScenarioInformation = {}
 ---@field weightedProgress number|nil 
 ---@field rewardQuestID number 
 ---@field widgetSetID number|nil 
-local ScenarioStepInfo = {}
+ScenarioStepInfo = {}
 
 ---@class ScenarioStepSpellInfo
 ---@field spellID number 
 ---@field name string 
 ---@field icon number 
-local ScenarioStepSpellInfo = {}
+ScenarioStepSpellInfo = {}
 

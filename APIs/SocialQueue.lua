@@ -60,7 +60,7 @@ function C_SocialQueue.SignalToastDisplayed(groupGUID, priority) end
 ---@field THROTTLE_RF_ILVL_SCALING_ABOVE number 
 ---@field THROTTLE_DF_MAX_ITEM_LEVEL number 
 ---@field THROTTLE_DF_BEST_PRIORITY number 
-local SocialQueueConfig = {}
+SocialQueueConfig = {}
 
 ---@class SocialQueueGroupInfo
 ---@field canJoin bool 
@@ -71,7 +71,7 @@ local SocialQueueConfig = {}
 ---@field isSoloQueueParty bool 
 ---@field questSessionActive bool 
 ---@field leaderGUID WOWGUID 
-local SocialQueueGroupInfo = {}
+SocialQueueGroupInfo = {}
 
 ---@class SocialQueueGroupQueueInfo
 ---@field clientID number 
@@ -81,10 +81,10 @@ local SocialQueueGroupInfo = {}
 ---@field needDamage bool 
 ---@field isAutoAccept bool 
 ---@field queueData QueueSpecificInfo 
-local SocialQueueGroupQueueInfo = {}
+SocialQueueGroupQueueInfo = {}
 
 ---@class SocialQueuePlayerInfo
 ---@field guid WOWGUID 
 ---@field clubId ClubId|nil 
-local SocialQueuePlayerInfo = {}
+SocialQueuePlayerInfo = {}
 

@@ -13,7 +13,6 @@ function C_ClassTalents.CanCreateNewConfig() end
 function C_ClassTalents.CanEditTalents() end
 
 ---@param savedConfigID number @ [OPTIONAL]
----@overload fun()
 ---@return boolean success
 function C_ClassTalents.CommitConfig(savedConfigID) end
 
@@ -25,7 +24,6 @@ function C_ClassTalents.DeleteConfig(configID) end
 function C_ClassTalents.GetActiveConfigID() end
 
 ---@param specID number @ [OPTIONAL]
----@overload fun()
 ---@return number configIDs
 function C_ClassTalents.GetConfigIDsBySpecID(specID) end
 
@@ -84,19 +82,20 @@ function C_ClassTalents.SetUsesSharedActionBars(configID, usesShared) end
 
 ---@param specID number 
 ---@param configID number @ [OPTIONAL]
----@overload fun(specID:number)
 function C_ClassTalents.UpdateLastSelectedSavedConfigID(specID, configID) end
 
 ---@class LoadConfigResult
-local LoadConfigResult = {}
-LoadConfigResult.Error = 0
-LoadConfigResult.NoChangesNecessary = 1
-LoadConfigResult.LoadInProgress = 2
-LoadConfigResult.Ready = 3
+---@field Error number @ Default value is [ 0 ]
+---@field NoChangesNecessary number @ Default value is [ 1 ]
+---@field LoadInProgress number @ Default value is [ 2 ]
+---@field Ready number @ Default value is [ 3 ]
+
+---@type LoadConfigResult 
+LoadConfigResult = {}
 
 ---@class ImportLoadoutEntryInfo
 ---@field nodeID number 
 ---@field ranksPurchased number 
 ---@field selectionEntryID number 
-local ImportLoadoutEntryInfo = {}
+ImportLoadoutEntryInfo = {}
 

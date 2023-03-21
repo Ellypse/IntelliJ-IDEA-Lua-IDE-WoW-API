@@ -19,7 +19,6 @@ function C_LFGList.CopyActiveEntryInfoToCreationFields() end
 ---@param activityID number 
 ---@param groupID number 
 ---@param playstyle LFGEntryPlaystyle @ [OPTIONAL]
----@overload fun(activityID:number, groupID:number)
 ---@return boolean matches
 function C_LFGList.DoesEntryTitleMatchPrebuiltTitle(activityID, groupID, playstyle) end
 
@@ -29,8 +28,6 @@ function C_LFGList.GetActiveEntryInfo() end
 ---@param activityID number 
 ---@param questID number @ [OPTIONAL]
 ---@param showWarmode boolean @ [OPTIONAL]
----@overload fun(activityID:number, showWarmode:bool)
----@overload fun(activityID:number)
 ---@return string fullName
 function C_LFGList.GetActivityFullName(activityID, questID, showWarmode) end
 
@@ -41,8 +38,6 @@ function C_LFGList.GetActivityGroupInfo(groupID) end
 ---@param activityID number 
 ---@param questID number @ [OPTIONAL]
 ---@param showWarmode boolean @ [OPTIONAL]
----@overload fun(activityID:number, showWarmode:bool)
----@overload fun(activityID:number)
 ---@return GroupFinderActivityInfo activityInfo
 function C_LFGList.GetActivityInfoTable(activityID, questID, showWarmode) end
 
@@ -97,7 +92,6 @@ function C_LFGList.HasActiveEntryInfo() end
 function C_LFGList.HasSearchResultInfo(searchResultID) end
 
 ---@param activityID number @ [OPTIONAL]
----@overload fun()
 ---@return boolean isAuthenticated
 function C_LFGList.IsPlayerAuthenticatedForLFG(activityID) end
 
@@ -106,14 +100,11 @@ function C_LFGList.IsPlayerAuthenticatedForLFG(activityID) end
 ---@param preferredFilters number 
 ---@param languageFilter WowLocale @ [OPTIONAL]
 ---@param searchCrossFactionListings boolean @ [OPTIONAL]
----@overload fun(categoryID:number, filter:number, preferredFilters:number, searchCrossFactionListings:bool)
----@overload fun(categoryID:number, filter:number, preferredFilters:number)
 function C_LFGList.Search(categoryID, filter, preferredFilters, languageFilter, searchCrossFactionListings) end
 
 ---@param activityID number 
 ---@param groupID number 
 ---@param playstyle LFGEntryPlaystyle @ [OPTIONAL]
----@overload fun(activityID:number, groupID:number)
 function C_LFGList.SetEntryTitle(activityID, groupID, playstyle) end
 
 ---@param activityID number 
@@ -132,27 +123,31 @@ function C_LFGList.ValidateRequiredDungeonScore(dungeonScore) end
 function C_LFGList.ValidateRequiredPvpRatingForActivity(activityID, rating) end
 
 ---@class LFGEntryPlaystyle
-local LFGEntryPlaystyle = {}
-LFGEntryPlaystyle.None = 0
-LFGEntryPlaystyle.Standard = 1
-LFGEntryPlaystyle.Casual = 2
-LFGEntryPlaystyle.Hardcore = 3
+---@field None number @ Default value is [ 0 ]
+---@field Standard number @ Default value is [ 1 ]
+---@field Casual number @ Default value is [ 2 ]
+---@field Hardcore number @ Default value is [ 3 ]
+
+---@type LFGEntryPlaystyle 
+LFGEntryPlaystyle = {}
 
 ---@class LFGListDisplayType
-local LFGListDisplayType = {}
-LFGListDisplayType.RoleCount = 0
-LFGListDisplayType.RoleEnumerate = 1
-LFGListDisplayType.ClassEnumerate = 2
-LFGListDisplayType.HideAll = 3
-LFGListDisplayType.PlayerCount = 4
-LFGListDisplayType.Comment = 5
+---@field RoleCount number @ Default value is [ 0 ]
+---@field RoleEnumerate number @ Default value is [ 1 ]
+---@field ClassEnumerate number @ Default value is [ 2 ]
+---@field HideAll number @ Default value is [ 3 ]
+---@field PlayerCount number @ Default value is [ 4 ]
+---@field Comment number @ Default value is [ 5 ]
+
+---@type LFGListDisplayType 
+LFGListDisplayType = {}
 
 ---@class BestDungeonScoreMapInfo
 ---@field mapScore number 
 ---@field mapName string 
 ---@field bestRunLevel number 
 ---@field finishedSuccess bool 
-local BestDungeonScoreMapInfo = {}
+BestDungeonScoreMapInfo = {}
 
 ---@class GroupFinderActivityInfo
 ---@field fullName string 
@@ -174,7 +169,7 @@ local BestDungeonScoreMapInfo = {}
 ---@field isMythicActivity bool 
 ---@field allowCrossFaction bool 
 ---@field useDungeonRoleExpectations bool 
-local GroupFinderActivityInfo = {}
+GroupFinderActivityInfo = {}
 
 ---@class LfgApplicantData
 ---@field applicantID number 
@@ -184,7 +179,7 @@ local GroupFinderActivityInfo = {}
 ---@field isNew bool 
 ---@field comment kstringLfgListApplicant 
 ---@field displayOrderID number 
-local LfgApplicantData = {}
+LfgApplicantData = {}
 
 ---@class LfgCategoryData
 ---@field name cstring 
@@ -194,7 +189,7 @@ local LfgApplicantData = {}
 ---@field preferCurrentArea bool 
 ---@field showPlaystyleDropdown bool 
 ---@field allowCrossFaction bool 
-local LfgCategoryData = {}
+LfgCategoryData = {}
 
 ---@class LfgEntryData
 ---@field activityID number 
@@ -211,7 +206,7 @@ local LfgCategoryData = {}
 ---@field requiredPvpRating number|nil 
 ---@field playstyle LFGEntryPlaystyle|nil 
 ---@field isCrossFactionListing bool 
-local LfgEntryData = {}
+LfgEntryData = {}
 
 ---@class LfgSearchResultData
 ---@field searchResultID number 
@@ -240,14 +235,14 @@ local LfgEntryData = {}
 ---@field playstyle LFGEntryPlaystyle|nil 
 ---@field crossFactionListing bool|nil 
 ---@field leaderFactionGroup number 
-local LfgSearchResultData = {}
+LfgSearchResultData = {}
 
 ---@class PvpRatingInfo
 ---@field bracket number 
 ---@field rating number 
 ---@field activityName string 
 ---@field tier number 
-local PvpRatingInfo = {}
+PvpRatingInfo = {}
 
 ---@class WowLocale
 ---@field enUS bool 
@@ -261,5 +256,5 @@ local PvpRatingInfo = {}
 ---@field ruRU bool 
 ---@field ptBR bool 
 ---@field itIT bool 
-local WowLocale = {}
+WowLocale = {}
 

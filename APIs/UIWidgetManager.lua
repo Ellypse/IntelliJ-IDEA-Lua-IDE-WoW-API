@@ -130,11 +130,9 @@ function C_UIWidgetManager.GetZoneControlVisualizationInfo(widgetID) end
 function C_UIWidgetManager.RegisterUnitForWidgetUpdates(unitToken, isGuid) end
 
 ---@param unit UnitToken @ [OPTIONAL]
----@overload fun()
 function C_UIWidgetManager.SetProcessingUnit(unit) end
 
 ---@param unit WOWGUID @ [OPTIONAL]
----@overload fun()
 function C_UIWidgetManager.SetProcessingUnitGuid(unit) end
 
 ---@param unitToken string 
@@ -142,217 +140,279 @@ function C_UIWidgetManager.SetProcessingUnitGuid(unit) end
 function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 
 ---@class CaptureBarWidgetFillDirectionType
-local CaptureBarWidgetFillDirectionType = {}
-CaptureBarWidgetFillDirectionType.RightToLeft = 0
-CaptureBarWidgetFillDirectionType.LeftToRight = 1
+---@field RightToLeft number @ Default value is [ 0 ]
+---@field LeftToRight number @ Default value is [ 1 ]
+
+---@type CaptureBarWidgetFillDirectionType 
+CaptureBarWidgetFillDirectionType = {}
 
 ---@class CaptureBarWidgetGlowAnimType
-local CaptureBarWidgetGlowAnimType = {}
-CaptureBarWidgetGlowAnimType.None = 0
-CaptureBarWidgetGlowAnimType.Pulse = 1
+---@field None number @ Default value is [ 0 ]
+---@field Pulse number @ Default value is [ 1 ]
+
+---@type CaptureBarWidgetGlowAnimType 
+CaptureBarWidgetGlowAnimType = {}
 
 ---@class IconAndTextWidgetState
-local IconAndTextWidgetState = {}
-IconAndTextWidgetState.Hidden = 0
-IconAndTextWidgetState.Shown = 1
-IconAndTextWidgetState.ShownWithDynamicIconFlashing = 2
-IconAndTextWidgetState.ShownWithDynamicIconNotFlashing = 3
+---@field Hidden number @ Default value is [ 0 ]
+---@field Shown number @ Default value is [ 1 ]
+---@field ShownWithDynamicIconFlashing number @ Default value is [ 2 ]
+---@field ShownWithDynamicIconNotFlashing number @ Default value is [ 3 ]
+
+---@type IconAndTextWidgetState 
+IconAndTextWidgetState = {}
 
 ---@class IconState
-local IconState = {}
-IconState.Hidden = 0
-IconState.ShowState1 = 1
-IconState.ShowState2 = 2
+---@field Hidden number @ Default value is [ 0 ]
+---@field ShowState1 number @ Default value is [ 1 ]
+---@field ShowState2 number @ Default value is [ 2 ]
+
+---@type IconState 
+IconState = {}
 
 ---@class SpellDisplayBorderColor
-local SpellDisplayBorderColor = {}
-SpellDisplayBorderColor.None = 0
-SpellDisplayBorderColor.Black = 1
-SpellDisplayBorderColor.White = 2
-SpellDisplayBorderColor.Red = 3
-SpellDisplayBorderColor.Yellow = 4
-SpellDisplayBorderColor.Orange = 5
-SpellDisplayBorderColor.Purple = 6
-SpellDisplayBorderColor.Green = 7
-SpellDisplayBorderColor.Blue = 8
+---@field None number @ Default value is [ 0 ]
+---@field Black number @ Default value is [ 1 ]
+---@field White number @ Default value is [ 2 ]
+---@field Red number @ Default value is [ 3 ]
+---@field Yellow number @ Default value is [ 4 ]
+---@field Orange number @ Default value is [ 5 ]
+---@field Purple number @ Default value is [ 6 ]
+---@field Green number @ Default value is [ 7 ]
+---@field Blue number @ Default value is [ 8 ]
+
+---@type SpellDisplayBorderColor 
+SpellDisplayBorderColor = {}
 
 ---@class SpellDisplayIconDisplayType
-local SpellDisplayIconDisplayType = {}
-SpellDisplayIconDisplayType.Buff = 0
-SpellDisplayIconDisplayType.Debuff = 1
-SpellDisplayIconDisplayType.Circular = 2
-SpellDisplayIconDisplayType.NoBorder = 3
+---@field Buff number @ Default value is [ 0 ]
+---@field Debuff number @ Default value is [ 1 ]
+---@field Circular number @ Default value is [ 2 ]
+---@field NoBorder number @ Default value is [ 3 ]
+
+---@type SpellDisplayIconDisplayType 
+SpellDisplayIconDisplayType = {}
 
 ---@class SpellDisplayIconSizeType
-local SpellDisplayIconSizeType = {}
-SpellDisplayIconSizeType.Small = 0
-SpellDisplayIconSizeType.Medium = 1
-SpellDisplayIconSizeType.Large = 2
+---@field Small number @ Default value is [ 0 ]
+---@field Medium number @ Default value is [ 1 ]
+---@field Large number @ Default value is [ 2 ]
+
+---@type SpellDisplayIconSizeType 
+SpellDisplayIconSizeType = {}
 
 ---@class SpellDisplayTextShownStateType
-local SpellDisplayTextShownStateType = {}
-SpellDisplayTextShownStateType.Shown = 0
-SpellDisplayTextShownStateType.Hidden = 1
+---@field Shown number @ Default value is [ 0 ]
+---@field Hidden number @ Default value is [ 1 ]
+
+---@type SpellDisplayTextShownStateType 
+SpellDisplayTextShownStateType = {}
 
 ---@class StatusBarColorTintValue
-local StatusBarColorTintValue = {}
-StatusBarColorTintValue.None = 0
-StatusBarColorTintValue.Black = 1
-StatusBarColorTintValue.White = 2
-StatusBarColorTintValue.Red = 3
-StatusBarColorTintValue.Yellow = 4
-StatusBarColorTintValue.Orange = 5
-StatusBarColorTintValue.Purple = 6
-StatusBarColorTintValue.Green = 7
-StatusBarColorTintValue.Blue = 8
+---@field None number @ Default value is [ 0 ]
+---@field Black number @ Default value is [ 1 ]
+---@field White number @ Default value is [ 2 ]
+---@field Red number @ Default value is [ 3 ]
+---@field Yellow number @ Default value is [ 4 ]
+---@field Orange number @ Default value is [ 5 ]
+---@field Purple number @ Default value is [ 6 ]
+---@field Green number @ Default value is [ 7 ]
+---@field Blue number @ Default value is [ 8 ]
+
+---@type StatusBarColorTintValue 
+StatusBarColorTintValue = {}
 
 ---@class StatusBarOverrideBarTextShownType
-local StatusBarOverrideBarTextShownType = {}
-StatusBarOverrideBarTextShownType.Never = 0
-StatusBarOverrideBarTextShownType.Always = 1
-StatusBarOverrideBarTextShownType.OnlyOnMouseover = 2
-StatusBarOverrideBarTextShownType.OnlyNotOnMouseover = 3
+---@field Never number @ Default value is [ 0 ]
+---@field Always number @ Default value is [ 1 ]
+---@field OnlyOnMouseover number @ Default value is [ 2 ]
+---@field OnlyNotOnMouseover number @ Default value is [ 3 ]
+
+---@type StatusBarOverrideBarTextShownType 
+StatusBarOverrideBarTextShownType = {}
 
 ---@class StatusBarValueTextType
-local StatusBarValueTextType = {}
-StatusBarValueTextType.Hidden = 0
-StatusBarValueTextType.Percentage = 1
-StatusBarValueTextType.Value = 2
-StatusBarValueTextType.Time = 3
-StatusBarValueTextType.TimeShowOneLevelOnly = 4
-StatusBarValueTextType.ValueOverMax = 5
-StatusBarValueTextType.ValueOverMaxNormalized = 6
+---@field Hidden number @ Default value is [ 0 ]
+---@field Percentage number @ Default value is [ 1 ]
+---@field Value number @ Default value is [ 2 ]
+---@field Time number @ Default value is [ 3 ]
+---@field TimeShowOneLevelOnly number @ Default value is [ 4 ]
+---@field ValueOverMax number @ Default value is [ 5 ]
+---@field ValueOverMaxNormalized number @ Default value is [ 6 ]
+
+---@type StatusBarValueTextType 
+StatusBarValueTextType = {}
 
 ---@class UIWidgetBlendModeType
-local UIWidgetBlendModeType = {}
-UIWidgetBlendModeType.Opaque = 0
-UIWidgetBlendModeType.Additive = 1
+---@field Opaque number @ Default value is [ 0 ]
+---@field Additive number @ Default value is [ 1 ]
+
+---@type UIWidgetBlendModeType 
+UIWidgetBlendModeType = {}
 
 ---@class UIWidgetFlag
-local UIWidgetFlag = {}
-UIWidgetFlag.UniversalWidget = 1
+---@field UniversalWidget number @ Default value is [ 1 ]
+
+---@type UIWidgetFlag 
+UIWidgetFlag = {}
 
 ---@class UIWidgetFontType
-local UIWidgetFontType = {}
-UIWidgetFontType.Normal = 0
-UIWidgetFontType.Shadow = 1
-UIWidgetFontType.Outline = 2
+---@field Normal number @ Default value is [ 0 ]
+---@field Shadow number @ Default value is [ 1 ]
+---@field Outline number @ Default value is [ 2 ]
+
+---@type UIWidgetFontType 
+UIWidgetFontType = {}
 
 ---@class UIWidgetModelSceneLayer
-local UIWidgetModelSceneLayer = {}
-UIWidgetModelSceneLayer.None = 0
-UIWidgetModelSceneLayer.Front = 1
-UIWidgetModelSceneLayer.Back = 2
+---@field None number @ Default value is [ 0 ]
+---@field Front number @ Default value is [ 1 ]
+---@field Back number @ Default value is [ 2 ]
+
+---@type UIWidgetModelSceneLayer 
+UIWidgetModelSceneLayer = {}
 
 ---@class UIWidgetMotionType
-local UIWidgetMotionType = {}
-UIWidgetMotionType.Instant = 0
-UIWidgetMotionType.Smooth = 1
+---@field Instant number @ Default value is [ 0 ]
+---@field Smooth number @ Default value is [ 1 ]
+
+---@type UIWidgetMotionType 
+UIWidgetMotionType = {}
 
 ---@class UIWidgetTextSizeType
-local UIWidgetTextSizeType = {}
-UIWidgetTextSizeType.Small12Pt = 0
-UIWidgetTextSizeType.Medium16Pt = 1
-UIWidgetTextSizeType.Large24Pt = 2
-UIWidgetTextSizeType.Huge27Pt = 3
-UIWidgetTextSizeType.Standard14Pt = 4
-UIWidgetTextSizeType.Small10Pt = 5
-UIWidgetTextSizeType.Small11Pt = 6
-UIWidgetTextSizeType.Medium18Pt = 7
-UIWidgetTextSizeType.Large20Pt = 8
+---@field Small12Pt number @ Default value is [ 0 ]
+---@field Medium16Pt number @ Default value is [ 1 ]
+---@field Large24Pt number @ Default value is [ 2 ]
+---@field Huge27Pt number @ Default value is [ 3 ]
+---@field Standard14Pt number @ Default value is [ 4 ]
+---@field Small10Pt number @ Default value is [ 5 ]
+---@field Small11Pt number @ Default value is [ 6 ]
+---@field Medium18Pt number @ Default value is [ 7 ]
+---@field Large20Pt number @ Default value is [ 8 ]
+
+---@type UIWidgetTextSizeType 
+UIWidgetTextSizeType = {}
 
 ---@class UIWidgetTextureAndTextSizeType
-local UIWidgetTextureAndTextSizeType = {}
-UIWidgetTextureAndTextSizeType.Small = 0
-UIWidgetTextureAndTextSizeType.Medium = 1
-UIWidgetTextureAndTextSizeType.Large = 2
-UIWidgetTextureAndTextSizeType.Huge = 3
-UIWidgetTextureAndTextSizeType.Standard = 4
+---@field Small number @ Default value is [ 0 ]
+---@field Medium number @ Default value is [ 1 ]
+---@field Large number @ Default value is [ 2 ]
+---@field Huge number @ Default value is [ 3 ]
+---@field Standard number @ Default value is [ 4 ]
+
+---@type UIWidgetTextureAndTextSizeType 
+UIWidgetTextureAndTextSizeType = {}
 
 ---@class UIWidgetTooltipLocation
-local UIWidgetTooltipLocation = {}
-UIWidgetTooltipLocation.Default = 0
-UIWidgetTooltipLocation.BottomLeft = 1
-UIWidgetTooltipLocation.Left = 2
-UIWidgetTooltipLocation.TopLeft = 3
-UIWidgetTooltipLocation.Top = 4
-UIWidgetTooltipLocation.TopRight = 5
-UIWidgetTooltipLocation.Right = 6
-UIWidgetTooltipLocation.BottomRight = 7
-UIWidgetTooltipLocation.Bottom = 8
+---@field Default number @ Default value is [ 0 ]
+---@field BottomLeft number @ Default value is [ 1 ]
+---@field Left number @ Default value is [ 2 ]
+---@field TopLeft number @ Default value is [ 3 ]
+---@field Top number @ Default value is [ 4 ]
+---@field TopRight number @ Default value is [ 5 ]
+---@field Right number @ Default value is [ 6 ]
+---@field BottomRight number @ Default value is [ 7 ]
+---@field Bottom number @ Default value is [ 8 ]
+
+---@type UIWidgetTooltipLocation 
+UIWidgetTooltipLocation = {}
 
 ---@class WidgetAnimationType
-local WidgetAnimationType = {}
-WidgetAnimationType.None = 0
-WidgetAnimationType.Fade = 1
+---@field None number @ Default value is [ 0 ]
+---@field Fade number @ Default value is [ 1 ]
+
+---@type WidgetAnimationType 
+WidgetAnimationType = {}
 
 ---@class WidgetCurrencyClass
-local WidgetCurrencyClass = {}
-WidgetCurrencyClass.Currency = 0
-WidgetCurrencyClass.Item = 1
+---@field Currency number @ Default value is [ 0 ]
+---@field Item number @ Default value is [ 1 ]
+
+---@type WidgetCurrencyClass 
+WidgetCurrencyClass = {}
 
 ---@class WidgetEnabledState
-local WidgetEnabledState = {}
-WidgetEnabledState.Disabled = 0
-WidgetEnabledState.Enabled = 1
-WidgetEnabledState.Red = 2
-WidgetEnabledState.White = 3
-WidgetEnabledState.Green = 4
-WidgetEnabledState.Gold = 5
-WidgetEnabledState.Black = 6
+---@field Disabled number @ Default value is [ 0 ]
+---@field Enabled number @ Default value is [ 1 ]
+---@field Red number @ Default value is [ 2 ]
+---@field White number @ Default value is [ 3 ]
+---@field Green number @ Default value is [ 4 ]
+---@field Gold number @ Default value is [ 5 ]
+---@field Black number @ Default value is [ 6 ]
+
+---@type WidgetEnabledState 
+WidgetEnabledState = {}
 
 ---@class WidgetShownState
-local WidgetShownState = {}
-WidgetShownState.Hidden = 0
-WidgetShownState.Shown = 1
+---@field Hidden number @ Default value is [ 0 ]
+---@field Shown number @ Default value is [ 1 ]
+
+---@type WidgetShownState 
+WidgetShownState = {}
 
 ---@class WidgetTextHorizontalAlignmentType
-local WidgetTextHorizontalAlignmentType = {}
-WidgetTextHorizontalAlignmentType.Left = 0
-WidgetTextHorizontalAlignmentType.Center = 1
-WidgetTextHorizontalAlignmentType.Right = 2
+---@field Left number @ Default value is [ 0 ]
+---@field Center number @ Default value is [ 1 ]
+---@field Right number @ Default value is [ 2 ]
+
+---@type WidgetTextHorizontalAlignmentType 
+WidgetTextHorizontalAlignmentType = {}
 
 ---@class WidgetUnitPowerBarFlashMomentType
-local WidgetUnitPowerBarFlashMomentType = {}
-WidgetUnitPowerBarFlashMomentType.FlashWhenMax = 0
-WidgetUnitPowerBarFlashMomentType.FlashWhenMin = 1
-WidgetUnitPowerBarFlashMomentType.NeverFlash = 2
+---@field FlashWhenMax number @ Default value is [ 0 ]
+---@field FlashWhenMin number @ Default value is [ 1 ]
+---@field NeverFlash number @ Default value is [ 2 ]
+
+---@type WidgetUnitPowerBarFlashMomentType 
+WidgetUnitPowerBarFlashMomentType = {}
 
 ---@class ZoneControlActiveState
-local ZoneControlActiveState = {}
-ZoneControlActiveState.Inactive = 0
-ZoneControlActiveState.Active = 1
+---@field Inactive number @ Default value is [ 0 ]
+---@field Active number @ Default value is [ 1 ]
+
+---@type ZoneControlActiveState 
+ZoneControlActiveState = {}
 
 ---@class ZoneControlDangerFlashType
-local ZoneControlDangerFlashType = {}
-ZoneControlDangerFlashType.ShowOnGoodStates = 0
-ZoneControlDangerFlashType.ShowOnBadStates = 1
-ZoneControlDangerFlashType.ShowOnBoth = 2
-ZoneControlDangerFlashType.ShowOnNeither = 3
+---@field ShowOnGoodStates number @ Default value is [ 0 ]
+---@field ShowOnBadStates number @ Default value is [ 1 ]
+---@field ShowOnBoth number @ Default value is [ 2 ]
+---@field ShowOnNeither number @ Default value is [ 3 ]
+
+---@type ZoneControlDangerFlashType 
+ZoneControlDangerFlashType = {}
 
 ---@class ZoneControlFillType
-local ZoneControlFillType = {}
-ZoneControlFillType.SingleFillClockwise = 0
-ZoneControlFillType.SingleFillCounterClockwise = 1
-ZoneControlFillType.DoubleFillClockwise = 2
-ZoneControlFillType.DoubleFillCounterClockwise = 3
+---@field SingleFillClockwise number @ Default value is [ 0 ]
+---@field SingleFillCounterClockwise number @ Default value is [ 1 ]
+---@field DoubleFillClockwise number @ Default value is [ 2 ]
+---@field DoubleFillCounterClockwise number @ Default value is [ 3 ]
+
+---@type ZoneControlFillType 
+ZoneControlFillType = {}
 
 ---@class ZoneControlLeadingEdgeType
-local ZoneControlLeadingEdgeType = {}
-ZoneControlLeadingEdgeType.NoLeadingEdge = 0
-ZoneControlLeadingEdgeType.UseLeadingEdge = 1
+---@field NoLeadingEdge number @ Default value is [ 0 ]
+---@field UseLeadingEdge number @ Default value is [ 1 ]
+
+---@type ZoneControlLeadingEdgeType 
+ZoneControlLeadingEdgeType = {}
 
 ---@class ZoneControlMode
-local ZoneControlMode = {}
-ZoneControlMode.BothStatesAreGood = 0
-ZoneControlMode.State1IsGood = 1
-ZoneControlMode.State2IsGood = 2
-ZoneControlMode.NeitherStateIsGood = 3
+---@field BothStatesAreGood number @ Default value is [ 0 ]
+---@field State1IsGood number @ Default value is [ 1 ]
+---@field State2IsGood number @ Default value is [ 2 ]
+---@field NeitherStateIsGood number @ Default value is [ 3 ]
+
+---@type ZoneControlMode 
+ZoneControlMode = {}
 
 ---@class ZoneControlState
-local ZoneControlState = {}
-ZoneControlState.State1 = 0
-ZoneControlState.State2 = 1
+---@field State1 number @ Default value is [ 0 ]
+---@field State2 number @ Default value is [ 1 ]
+
+---@type ZoneControlState 
+ZoneControlState = {}
 
 ---@class BulletTextListWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -370,7 +430,7 @@ ZoneControlState.State2 = 1
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local BulletTextListWidgetVisualizationInfo = {}
+BulletTextListWidgetVisualizationInfo = {}
 
 ---@class CaptureBarWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -395,7 +455,7 @@ local BulletTextListWidgetVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local CaptureBarWidgetVisualizationInfo = {}
+CaptureBarWidgetVisualizationInfo = {}
 
 ---@class CaptureZoneVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -416,7 +476,7 @@ local CaptureBarWidgetVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local CaptureZoneVisualizationInfo = {}
+CaptureZoneVisualizationInfo = {}
 
 ---@class DiscreteProgressStepsVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -438,7 +498,7 @@ local CaptureZoneVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local DiscreteProgressStepsVisualizationInfo = {}
+DiscreteProgressStepsVisualizationInfo = {}
 
 ---@class DoubleIconAndTextWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -460,7 +520,7 @@ local DiscreteProgressStepsVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local DoubleIconAndTextWidgetVisualizationInfo = {}
+DoubleIconAndTextWidgetVisualizationInfo = {}
 
 ---@class DoubleStateIconRowVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -479,7 +539,7 @@ local DoubleIconAndTextWidgetVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local DoubleStateIconRowVisualizationInfo = {}
+DoubleStateIconRowVisualizationInfo = {}
 
 ---@class DoubleStatusBarWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -508,7 +568,7 @@ local DoubleStateIconRowVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local DoubleStatusBarWidgetVisualizationInfo = {}
+DoubleStatusBarWidgetVisualizationInfo = {}
 
 ---@class FillUpFramesWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -532,7 +592,7 @@ local DoubleStatusBarWidgetVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local FillUpFramesWidgetVisualizationInfo = {}
+FillUpFramesWidgetVisualizationInfo = {}
 
 ---@class HorizontalCurrenciesWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -550,7 +610,7 @@ local FillUpFramesWidgetVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local HorizontalCurrenciesWidgetVisualizationInfo = {}
+HorizontalCurrenciesWidgetVisualizationInfo = {}
 
 ---@class IconAndTextWidgetVisualizationInfo
 ---@field state IconAndTextWidgetState 
@@ -570,7 +630,7 @@ local HorizontalCurrenciesWidgetVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local IconAndTextWidgetVisualizationInfo = {}
+IconAndTextWidgetVisualizationInfo = {}
 
 ---@class IconTextAndBackgroundWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -587,7 +647,7 @@ local IconAndTextWidgetVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local IconTextAndBackgroundWidgetVisualizationInfo = {}
+IconTextAndBackgroundWidgetVisualizationInfo = {}
 
 ---@class IconTextAndCurrenciesWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -610,7 +670,7 @@ local IconTextAndBackgroundWidgetVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local IconTextAndCurrenciesWidgetVisualizationInfo = {}
+IconTextAndCurrenciesWidgetVisualizationInfo = {}
 
 ---@class ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -628,7 +688,7 @@ local IconTextAndCurrenciesWidgetVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo = {}
+ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo = {}
 
 ---@class ScenarioHeaderTimerWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -649,7 +709,7 @@ local ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local ScenarioHeaderTimerWidgetVisualizationInfo = {}
+ScenarioHeaderTimerWidgetVisualizationInfo = {}
 
 ---@class SpacerVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -667,7 +727,7 @@ local ScenarioHeaderTimerWidgetVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local SpacerVisualizationInfo = {}
+SpacerVisualizationInfo = {}
 
 ---@class SpellDisplayVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -686,7 +746,7 @@ local SpacerVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local SpellDisplayVisualizationInfo = {}
+SpellDisplayVisualizationInfo = {}
 
 ---@class StackedResourceTrackerWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -704,7 +764,7 @@ local SpellDisplayVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local StackedResourceTrackerWidgetVisualizationInfo = {}
+StackedResourceTrackerWidgetVisualizationInfo = {}
 
 ---@class StatusBarWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -735,14 +795,14 @@ local StackedResourceTrackerWidgetVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local StatusBarWidgetVisualizationInfo = {}
+StatusBarWidgetVisualizationInfo = {}
 
 ---@class TextColumnRowEntryInfo
 ---@field text string 
 ---@field enabledState WidgetEnabledState 
 ---@field hAlign WidgetTextHorizontalAlignmentType 
 ---@field columnWidth number 
-local TextColumnRowEntryInfo = {}
+TextColumnRowEntryInfo = {}
 
 ---@class TextColumnRowVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -764,7 +824,7 @@ local TextColumnRowEntryInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local TextColumnRowVisualizationInfo = {}
+TextColumnRowVisualizationInfo = {}
 
 ---@class TextWithStateWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -788,7 +848,7 @@ local TextColumnRowVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local TextWithStateWidgetVisualizationInfo = {}
+TextWithStateWidgetVisualizationInfo = {}
 
 ---@class TextWithSubtextWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -818,12 +878,12 @@ local TextWithStateWidgetVisualizationInfo = {}
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
 ---@field spacing number 
-local TextWithSubtextWidgetVisualizationInfo = {}
+TextWithSubtextWidgetVisualizationInfo = {}
 
 ---@class TextureAndTextEntryInfo
 ---@field text string 
 ---@field tooltip string 
-local TextureAndTextEntryInfo = {}
+TextureAndTextEntryInfo = {}
 
 ---@class TextureAndTextRowVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -843,7 +903,7 @@ local TextureAndTextEntryInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local TextureAndTextRowVisualizationInfo = {}
+TextureAndTextRowVisualizationInfo = {}
 
 ---@class TextureAndTextVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -862,7 +922,7 @@ local TextureAndTextRowVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local TextureAndTextVisualizationInfo = {}
+TextureAndTextVisualizationInfo = {}
 
 ---@class TextureWithAnimationVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -880,7 +940,7 @@ local TextureAndTextVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local TextureWithAnimationVisualizationInfo = {}
+TextureWithAnimationVisualizationInfo = {}
 
 ---@class UIWidgetCurrencyInfo
 ---@field iconFileID fileID 
@@ -888,19 +948,19 @@ local TextureWithAnimationVisualizationInfo = {}
 ---@field text string 
 ---@field tooltip string 
 ---@field isCurrencyMaxed bool 
-local UIWidgetCurrencyInfo = {}
+UIWidgetCurrencyInfo = {}
 
 ---@class UIWidgetInfo
 ---@field widgetID number 
 ---@field widgetSetID number 
 ---@field widgetType UIWidgetVisualizationType 
 ---@field unitToken string|nil 
-local UIWidgetInfo = {}
+UIWidgetInfo = {}
 
 ---@class UIWidgetSetInfo
 ---@field layoutDirection UIWidgetSetLayoutDirection 
 ---@field verticalPadding number 
-local UIWidgetSetInfo = {}
+UIWidgetSetInfo = {}
 
 ---@class UIWidgetSpellInfo
 ---@field spellID number 
@@ -915,18 +975,18 @@ local UIWidgetSetInfo = {}
 ---@field textSizeType UIWidgetTextSizeType 
 ---@field hAlignType WidgetTextHorizontalAlignmentType 
 ---@field isLootObject bool 
-local UIWidgetSpellInfo = {}
+UIWidgetSpellInfo = {}
 
 ---@class UIWidgetStateIconInfo
 ---@field iconState IconState 
 ---@field state1Tooltip string 
 ---@field state2Tooltip string 
-local UIWidgetStateIconInfo = {}
+UIWidgetStateIconInfo = {}
 
 ---@class UIWidgetTextTooltipPair
 ---@field text string 
 ---@field tooltip string 
-local UIWidgetTextTooltipPair = {}
+UIWidgetTextTooltipPair = {}
 
 ---@class UnitPowerBarWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -954,7 +1014,7 @@ local UIWidgetTextTooltipPair = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local UnitPowerBarWidgetVisualizationInfo = {}
+UnitPowerBarWidgetVisualizationInfo = {}
 
 ---@class ZoneControlVisualizationInfo
 ---@field shownState WidgetShownState 
@@ -975,7 +1035,7 @@ local UnitPowerBarWidgetVisualizationInfo = {}
 ---@field layoutDirection UIWidgetLayoutDirection 
 ---@field modelSceneLayer UIWidgetModelSceneLayer 
 ---@field scriptedAnimationEffectID number 
-local ZoneControlVisualizationInfo = {}
+ZoneControlVisualizationInfo = {}
 
 ---@class ZoneEntry
 ---@field state ZoneControlState 
@@ -986,5 +1046,5 @@ local ZoneControlVisualizationInfo = {}
 ---@field current number 
 ---@field capturePoint number 
 ---@field tooltip string 
-local ZoneEntry = {}
+ZoneEntry = {}
 

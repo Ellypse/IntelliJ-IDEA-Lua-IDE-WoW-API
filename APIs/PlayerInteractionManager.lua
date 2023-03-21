@@ -2,11 +2,9 @@
 C_PlayerInteractionManager = {}
 
 ---@param type PlayerInteractionType @ [OPTIONAL]
----@overload fun()
 function C_PlayerInteractionManager.ClearInteraction(type) end
 
 ---@param type PlayerInteractionType @ [OPTIONAL]
----@overload fun()
 function C_PlayerInteractionManager.ConfirmationInteraction(type) end
 
 ---@param unit string 

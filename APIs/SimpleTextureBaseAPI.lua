@@ -62,8 +62,6 @@ function IsSnappingToPixelGrid() end
 ---@param useAtlasSize boolean 
 ---@param filterMode FilterMode @ [OPTIONAL]
 ---@param resetTexCoords boolean @ [OPTIONAL]
----@overload fun(atlas:textureAtlas, useAtlasSize:bool, resetTexCoords:bool)
----@overload fun(atlas:textureAtlas, useAtlasSize:bool)
 function SetAtlas(atlas, useAtlasSize, filterMode, resetTexCoords) end
 
 ---@param blendMode BlendMode 
@@ -76,7 +74,6 @@ function SetBlockingLoadsRequested(blocking) end
 ---@param colorG number 
 ---@param colorB number 
 ---@param a SingleColorValue @ [OPTIONAL]
----@overload fun(colorR:number, colorG:number, colorB:number)
 function SetColorTexture(colorR, colorG, colorB, a) end
 
 ---@param desaturated boolean 
@@ -98,7 +95,6 @@ function SetMask(file) end
 
 ---@param radians number 
 ---@param normalizedRotationPoint vector2 @ [OPTIONAL]
----@overload fun(radians:number)
 function SetRotation(radians, normalizedRotationPoint) end
 
 ---@param snap boolean 
@@ -117,10 +113,6 @@ function SetTexelSnappingBias(bias) end
 ---@param wrapModeHorizontal cstring @ [OPTIONAL]
 ---@param wrapModeVertical cstring @ [OPTIONAL]
 ---@param filterMode cstring @ [OPTIONAL]
----@overload fun(wrapModeHorizontal:cstring, wrapModeVertical:cstring, filterMode:cstring)
----@overload fun(wrapModeVertical:cstring, filterMode:cstring)
----@overload fun(filterMode:cstring)
----@overload fun()
 ---@return boolean success
 function SetTexture(textureAsset, wrapModeHorizontal, wrapModeVertical, filterMode) end
 

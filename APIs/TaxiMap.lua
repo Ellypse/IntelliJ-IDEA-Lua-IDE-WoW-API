@@ -16,16 +16,20 @@ function C_TaxiMap.GetTaxiNodesForMap(uiMapID) end
 function C_TaxiMap.ShouldMapShowTaxiNodes(uiMapID) end
 
 ---@class FlightPathFaction
-local FlightPathFaction = {}
-FlightPathFaction.Neutral = 0
-FlightPathFaction.Horde = 1
-FlightPathFaction.Alliance = 2
+---@field Neutral number @ Default value is [ 0 ]
+---@field Horde number @ Default value is [ 1 ]
+---@field Alliance number @ Default value is [ 2 ]
+
+---@type FlightPathFaction 
+FlightPathFaction = {}
 
 ---@class FlightPathState
-local FlightPathState = {}
-FlightPathState.Current = 0
-FlightPathState.Reachable = 1
-FlightPathState.Unreachable = 2
+---@field Current number @ Default value is [ 0 ]
+---@field Reachable number @ Default value is [ 1 ]
+---@field Unreachable number @ Default value is [ 2 ]
+
+---@type FlightPathState 
+FlightPathState = {}
 
 ---@class MapTaxiNodeInfo
 ---@field nodeID number 
@@ -34,7 +38,7 @@ FlightPathState.Unreachable = 2
 ---@field atlasName cstring 
 ---@field faction FlightPathFaction 
 ---@field textureKit textureKit 
-local MapTaxiNodeInfo = {}
+MapTaxiNodeInfo = {}
 
 ---@class TaxiNodeInfo
 ---@field nodeID number 
@@ -45,5 +49,5 @@ local MapTaxiNodeInfo = {}
 ---@field textureKit textureKit 
 ---@field useSpecialIcon bool 
 ---@field specialIconCostString string|nil 
-local TaxiNodeInfo = {}
+TaxiNodeInfo = {}
 

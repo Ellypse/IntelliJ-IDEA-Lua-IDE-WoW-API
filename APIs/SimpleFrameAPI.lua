@@ -5,9 +5,6 @@ function CanChangeAttribute() end
 ---@param name cstring @ [OPTIONAL]
 ---@param drawLayer DrawLayer @ [OPTIONAL]
 ---@param templateName cstring @ [OPTIONAL]
----@overload fun(drawLayer:DrawLayer, templateName:cstring)
----@overload fun(templateName:cstring)
----@overload fun()
 ---@return SimpleFontString line
 function CreateFontString(name, drawLayer, templateName) end
 
@@ -15,10 +12,6 @@ function CreateFontString(name, drawLayer, templateName) end
 ---@param drawLayer DrawLayer @ [OPTIONAL]
 ---@param templateName cstring @ [OPTIONAL]
 ---@param subLevel number @ [OPTIONAL]
----@overload fun(drawLayer:DrawLayer, templateName:cstring, subLevel:number)
----@overload fun(templateName:cstring, subLevel:number)
----@overload fun(subLevel:number)
----@overload fun()
 ---@return SimpleLine line
 function CreateLine(name, drawLayer, templateName, subLevel) end
 
@@ -26,10 +19,6 @@ function CreateLine(name, drawLayer, templateName, subLevel) end
 ---@param drawLayer DrawLayer @ [OPTIONAL]
 ---@param templateName cstring @ [OPTIONAL]
 ---@param subLevel number @ [OPTIONAL]
----@overload fun(drawLayer:DrawLayer, templateName:cstring, subLevel:number)
----@overload fun(templateName:cstring, subLevel:number)
----@overload fun(subLevel:number)
----@overload fun()
 ---@return SimpleMaskTexture maskTexture
 function CreateMaskTexture(name, drawLayer, templateName, subLevel) end
 
@@ -37,10 +26,6 @@ function CreateMaskTexture(name, drawLayer, templateName, subLevel) end
 ---@param drawLayer DrawLayer @ [OPTIONAL]
 ---@param templateName cstring @ [OPTIONAL]
 ---@param subLevel number @ [OPTIONAL]
----@overload fun(drawLayer:DrawLayer, templateName:cstring, subLevel:number)
----@overload fun(templateName:cstring, subLevel:number)
----@overload fun(subLevel:number)
----@overload fun()
 ---@return SimpleTexture texture
 function CreateTexture(name, drawLayer, templateName, subLevel) end
 
@@ -328,8 +313,6 @@ function SetResizable(resizable) end
 ---@param minHeight uiUnit 
 ---@param maxWidth uiUnit @ [OPTIONAL]
 ---@param maxHeight uiUnit @ [OPTIONAL]
----@overload fun(minWidth:uiUnit, minHeight:uiUnit, maxHeight:uiUnit)
----@overload fun(minWidth:uiUnit, minHeight:uiUnit)
 function SetResizeBounds(minWidth, minHeight, maxWidth, maxHeight) end
 
 ---@param scale number 
@@ -352,7 +335,6 @@ function StartMoving(alwaysStartFromMouse) end
 
 ---@param resizePoint FramePoint @ [OPTIONAL]
 ---@param alwaysStartFromMouse boolean 
----@overload fun(alwaysStartFromMouse:bool)
 function StartSizing(resizePoint, alwaysStartFromMouse) end
 
 

@@ -79,7 +79,7 @@ function C_AzeriteEssence.UnlockMilestone(milestoneID) end
 ---@field unlocked bool 
 ---@field valid bool 
 ---@field icon fileID 
-local AzeriteEssenceInfo = {}
+AzeriteEssenceInfo = {}
 
 ---@class AzeriteMilestoneInfo
 ---@field ID number 
@@ -88,5 +88,5 @@ local AzeriteEssenceInfo = {}
 ---@field unlocked bool 
 ---@field rank number|nil 
 ---@field slot AzeriteEssenceSlot|nil 
-local AzeriteMilestoneInfo = {}
+AzeriteMilestoneInfo = {}
 

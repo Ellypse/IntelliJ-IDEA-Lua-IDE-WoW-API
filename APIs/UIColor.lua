@@ -7,5 +7,5 @@ function C_UIColor.GetColors() end
 ---@class DBColorExport
 ---@field baseTag cstring 
 ---@field color colorRGBA 
-local DBColorExport = {}
+DBColorExport = {}
 

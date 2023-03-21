@@ -5,8 +5,6 @@ C_TooltipComparison = {}
 ---@param equippedItem TooltipComparisonItem 
 ---@param pairedItem TooltipComparisonItem @ [OPTIONAL]
 ---@param addPairedStats boolean @ Whether the paired item's stats are added or subtracted [OPTIONAL]
----@overload fun(comparisonItem:TooltipComparisonItem, equippedItem:TooltipComparisonItem, addPairedStats:bool)
----@overload fun(comparisonItem:TooltipComparisonItem, equippedItem:TooltipComparisonItem)
 ---@return string lines
 function C_TooltipComparison.GetItemComparisonDelta(comparisonItem, equippedItem, pairedItem, addPairedStats) end
 
@@ -15,15 +13,17 @@ function C_TooltipComparison.GetItemComparisonDelta(comparisonItem, equippedItem
 function C_TooltipComparison.GetItemComparisonInfo(comparisonItem) end
 
 ---@class TooltipComparisonMethod
-local TooltipComparisonMethod = {}
-TooltipComparisonMethod.Single = 0
-TooltipComparisonMethod.WithBothHands = 1
-TooltipComparisonMethod.WithBagMainHandItem = 2
-TooltipComparisonMethod.WithBagOffHandItem = 3
+---@field Single number @ Default value is [ 0 ]
+---@field WithBothHands number @ Default value is [ 1 ]
+---@field WithBagMainHandItem number @ Default value is [ 2 ]
+---@field WithBagOffHandItem number @ Default value is [ 3 ]
+
+---@type TooltipComparisonMethod 
+TooltipComparisonMethod = {}
 
 ---@class TooltipItemComparisonInfo
 ---@field method TooltipComparisonMethod 
 ---@field item TooltipComparisonItem 
 ---@field additionalItems table 
-local TooltipItemComparisonInfo = {}
+TooltipItemComparisonInfo = {}
 

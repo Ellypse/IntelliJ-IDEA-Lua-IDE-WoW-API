@@ -113,7 +113,6 @@ function SetFormattedText(text) end
 
 ---@param atlas textureAtlas 
 ---@param blendMode BlendMode @ [OPTIONAL]
----@overload fun(atlas:textureAtlas)
 function SetHighlightAtlas(atlas, blendMode) end
 
 ---@param font SimpleFont 
@@ -124,7 +123,6 @@ function SetHighlightLocked(locked) end
 
 ---@param asset TextureAsset 
 ---@param blendMode BlendMode @ [OPTIONAL]
----@overload fun(asset:TextureAsset)
 function SetHighlightTexture(asset, blendMode) end
 
 ---@param motionScriptsWhileDisabled boolean 

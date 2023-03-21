@@ -87,16 +87,18 @@ function C_Transmog.LoadOutfit(outfitID) end
 function C_Transmog.SetPending(transmogLocation, pendingInfo) end
 
 ---@class TransmogPendingType
-local TransmogPendingType = {}
-TransmogPendingType.Apply = 0
-TransmogPendingType.Revert = 1
-TransmogPendingType.ToggleOn = 2
-TransmogPendingType.ToggleOff = 3
+---@field Apply number @ Default value is [ 0 ]
+---@field Revert number @ Default value is [ 1 ]
+---@field ToggleOn number @ Default value is [ 2 ]
+---@field ToggleOff number @ Default value is [ 3 ]
+
+---@type TransmogPendingType 
+TransmogPendingType = {}
 
 ---@class TransmogApplyWarningInfo
 ---@field itemLink string 
 ---@field text string 
-local TransmogApplyWarningInfo = {}
+TransmogApplyWarningInfo = {}
 
 ---@class TransmogSlotInfo
 ---@field isTransmogrified bool 
@@ -107,7 +109,7 @@ local TransmogApplyWarningInfo = {}
 ---@field hasUndo bool 
 ---@field isHideVisual bool 
 ---@field texture fileID|nil 
-local TransmogSlotInfo = {}
+TransmogSlotInfo = {}
 
 ---@class TransmogSlotVisualInfo
 ---@field baseSourceID number 
@@ -119,5 +121,5 @@ local TransmogSlotInfo = {}
 ---@field hasUndo bool 
 ---@field isHideVisual bool 
 ---@field itemSubclass number 
-local TransmogSlotVisualInfo = {}
+TransmogSlotVisualInfo = {}
 

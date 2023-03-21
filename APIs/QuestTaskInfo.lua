@@ -59,5 +59,5 @@ function C_TaskQuest.RequestPreloadRewardData(questID) end
 ---@field isDaily bool 
 ---@field isCombatAllyQuest bool 
 ---@field childDepth number|nil 
-local TaskPOIData = {}
+TaskPOIData = {}
 

@@ -153,7 +153,6 @@ function C_ClubFinder.ResetClubPostingMapCache() end
 ---@param playerName string 
 ---@param forceAccept boolean 
 ---@param reported boolean @ [OPTIONAL]
----@overload fun(clubFinderGUID:WOWGUID, playerGUID:WOWGUID, shouldAccept:bool, requestType:ClubFinderRequestType, playerName:string, forceAccept:bool)
 function C_ClubFinder.RespondToApplicant(clubFinderGUID, playerGUID, shouldAccept, requestType, playerName, forceAccept, reported) end
 
 ---@param clubId ClubId 
@@ -197,84 +196,98 @@ function C_ClubFinder.SetRecruitmentSettings(index, checked) end
 function C_ClubFinder.ShouldShowClubFinder() end
 
 ---@class ClubFinderApplicationUpdateType
-local ClubFinderApplicationUpdateType = {}
-ClubFinderApplicationUpdateType.None = 0
-ClubFinderApplicationUpdateType.AcceptInvite = 1
-ClubFinderApplicationUpdateType.DeclineInvite = 2
-ClubFinderApplicationUpdateType.Cancel = 3
+---@field None number @ Default value is [ 0 ]
+---@field AcceptInvite number @ Default value is [ 1 ]
+---@field DeclineInvite number @ Default value is [ 2 ]
+---@field Cancel number @ Default value is [ 3 ]
+
+---@type ClubFinderApplicationUpdateType 
+ClubFinderApplicationUpdateType = {}
 
 ---@class ClubFinderClubPostingStatusFlags
-local ClubFinderClubPostingStatusFlags = {}
-ClubFinderClubPostingStatusFlags.None = 0
-ClubFinderClubPostingStatusFlags.NeedsCacheUpdate = 1
-ClubFinderClubPostingStatusFlags.ForceDescriptionChange = 2
-ClubFinderClubPostingStatusFlags.ForceNameChange = 3
-ClubFinderClubPostingStatusFlags.UnderReview = 4
-ClubFinderClubPostingStatusFlags.Banned = 5
-ClubFinderClubPostingStatusFlags.FakePost = 6
-ClubFinderClubPostingStatusFlags.PendingDelete = 7
-ClubFinderClubPostingStatusFlags.PostDelisted = 8
+---@field None number @ Default value is [ 0 ]
+---@field NeedsCacheUpdate number @ Default value is [ 1 ]
+---@field ForceDescriptionChange number @ Default value is [ 2 ]
+---@field ForceNameChange number @ Default value is [ 3 ]
+---@field UnderReview number @ Default value is [ 4 ]
+---@field Banned number @ Default value is [ 5 ]
+---@field FakePost number @ Default value is [ 6 ]
+---@field PendingDelete number @ Default value is [ 7 ]
+---@field PostDelisted number @ Default value is [ 8 ]
+
+---@type ClubFinderClubPostingStatusFlags 
+ClubFinderClubPostingStatusFlags = {}
 
 ---@class ClubFinderDisableReason
-local ClubFinderDisableReason = {}
-ClubFinderDisableReason.Muted = 0
-ClubFinderDisableReason.Silenced = 1
-ClubFinderDisableReason.VeteranTrial = 2
+---@field Muted number @ Default value is [ 0 ]
+---@field Silenced number @ Default value is [ 1 ]
+---@field VeteranTrial number @ Default value is [ 2 ]
+
+---@type ClubFinderDisableReason 
+ClubFinderDisableReason = {}
 
 ---@class ClubFinderPostingReportType
-local ClubFinderPostingReportType = {}
-ClubFinderPostingReportType.PostersName = 0
-ClubFinderPostingReportType.ClubName = 1
-ClubFinderPostingReportType.PostingDescription = 2
-ClubFinderPostingReportType.ApplicantsName = 3
-ClubFinderPostingReportType.JoinNote = 4
+---@field PostersName number @ Default value is [ 0 ]
+---@field ClubName number @ Default value is [ 1 ]
+---@field PostingDescription number @ Default value is [ 2 ]
+---@field ApplicantsName number @ Default value is [ 3 ]
+---@field JoinNote number @ Default value is [ 4 ]
+
+---@type ClubFinderPostingReportType 
+ClubFinderPostingReportType = {}
 
 ---@class ClubFinderRequestType
-local ClubFinderRequestType = {}
-ClubFinderRequestType.None = 0
-ClubFinderRequestType.Guild = 1
-ClubFinderRequestType.Community = 2
-ClubFinderRequestType.All = 3
+---@field None number @ Default value is [ 0 ]
+---@field Guild number @ Default value is [ 1 ]
+---@field Community number @ Default value is [ 2 ]
+---@field All number @ Default value is [ 3 ]
+
+---@type ClubFinderRequestType 
+ClubFinderRequestType = {}
 
 ---@class ClubFinderSettingFlags
-local ClubFinderSettingFlags = {}
-ClubFinderSettingFlags.None = 0
-ClubFinderSettingFlags.Dungeons = 1
-ClubFinderSettingFlags.Raids = 2
-ClubFinderSettingFlags.PvP = 3
-ClubFinderSettingFlags.RP = 4
-ClubFinderSettingFlags.Social = 5
-ClubFinderSettingFlags.Small = 6
-ClubFinderSettingFlags.Medium = 7
-ClubFinderSettingFlags.Large = 8
-ClubFinderSettingFlags.Tank = 9
-ClubFinderSettingFlags.Healer = 10
-ClubFinderSettingFlags.Damage = 11
-ClubFinderSettingFlags.EnableListing = 12
-ClubFinderSettingFlags.MaxLevelOnly = 13
-ClubFinderSettingFlags.AutoAccept = 14
-ClubFinderSettingFlags.FactionHorde = 15
-ClubFinderSettingFlags.FactionAlliance = 16
-ClubFinderSettingFlags.FactionNeutral = 17
-ClubFinderSettingFlags.SortRelevance = 18
-ClubFinderSettingFlags.SortMemberCount = 19
-ClubFinderSettingFlags.SortNewest = 20
-ClubFinderSettingFlags.LanguageReserved1 = 21
-ClubFinderSettingFlags.LanguageReserved2 = 22
-ClubFinderSettingFlags.LanguageReserved3 = 23
-ClubFinderSettingFlags.LanguageReserved4 = 24
-ClubFinderSettingFlags.LanguageReserved5 = 25
+---@field None number @ Default value is [ 0 ]
+---@field Dungeons number @ Default value is [ 1 ]
+---@field Raids number @ Default value is [ 2 ]
+---@field PvP number @ Default value is [ 3 ]
+---@field RP number @ Default value is [ 4 ]
+---@field Social number @ Default value is [ 5 ]
+---@field Small number @ Default value is [ 6 ]
+---@field Medium number @ Default value is [ 7 ]
+---@field Large number @ Default value is [ 8 ]
+---@field Tank number @ Default value is [ 9 ]
+---@field Healer number @ Default value is [ 10 ]
+---@field Damage number @ Default value is [ 11 ]
+---@field EnableListing number @ Default value is [ 12 ]
+---@field MaxLevelOnly number @ Default value is [ 13 ]
+---@field AutoAccept number @ Default value is [ 14 ]
+---@field FactionHorde number @ Default value is [ 15 ]
+---@field FactionAlliance number @ Default value is [ 16 ]
+---@field FactionNeutral number @ Default value is [ 17 ]
+---@field SortRelevance number @ Default value is [ 18 ]
+---@field SortMemberCount number @ Default value is [ 19 ]
+---@field SortNewest number @ Default value is [ 20 ]
+---@field LanguageReserved1 number @ Default value is [ 21 ]
+---@field LanguageReserved2 number @ Default value is [ 22 ]
+---@field LanguageReserved3 number @ Default value is [ 23 ]
+---@field LanguageReserved4 number @ Default value is [ 24 ]
+---@field LanguageReserved5 number @ Default value is [ 25 ]
+
+---@type ClubFinderSettingFlags 
+ClubFinderSettingFlags = {}
 
 ---@class PlayerClubRequestStatus
-local PlayerClubRequestStatus = {}
-PlayerClubRequestStatus.None = 0
-PlayerClubRequestStatus.Pending = 1
-PlayerClubRequestStatus.AutoApproved = 2
-PlayerClubRequestStatus.Declined = 3
-PlayerClubRequestStatus.Approved = 4
-PlayerClubRequestStatus.Joined = 5
-PlayerClubRequestStatus.JoinedAnother = 6
-PlayerClubRequestStatus.Canceled = 7
+---@field None number @ Default value is [ 0 ]
+---@field Pending number @ Default value is [ 1 ]
+---@field AutoApproved number @ Default value is [ 2 ]
+---@field Declined number @ Default value is [ 3 ]
+---@field Approved number @ Default value is [ 4 ]
+---@field Joined number @ Default value is [ 5 ]
+---@field JoinedAnother number @ Default value is [ 6 ]
+---@field Canceled number @ Default value is [ 7 ]
+
+---@type PlayerClubRequestStatus 
+PlayerClubRequestStatus = {}
 
 ---@class ClubFinderApplicantInfo
 ---@field clubFinderGUID WOWGUID 
@@ -290,7 +303,7 @@ PlayerClubRequestStatus.Canceled = 7
 ---@field lookupSuccess bool 
 ---@field lastUpdatedTime BigInteger 
 ---@field faction number 
-local ClubFinderApplicantInfo = {}
+ClubFinderApplicantInfo = {}
 
 ---@class ClubSettingsInfo
 ---@field playStyleDungeon bool 
@@ -311,7 +324,7 @@ local ClubFinderApplicantInfo = {}
 ---@field sortNewest bool 
 ---@field autoAccept bool 
 ---@field crossFaction bool 
-local ClubSettingsInfo = {}
+ClubSettingsInfo = {}
 
 ---@class RecruitingClubInfo
 ---@field clubFinderGUID WOWGUID 
@@ -333,5 +346,5 @@ local ClubSettingsInfo = {}
 ---@field clubId ClubId 
 ---@field lastUpdatedTime BigInteger 
 ---@field isCrossFaction bool 
-local RecruitingClubInfo = {}
+RecruitingClubInfo = {}
 

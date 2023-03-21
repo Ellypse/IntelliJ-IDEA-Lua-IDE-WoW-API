@@ -21,11 +21,11 @@ function C_AlliedRaces.GetRaceInfoByID(raceID) end
 ---@field crestAtlas textureAtlas 
 ---@field modelBackgroundAtlas textureAtlas 
 ---@field bannerColor colorRGB 
-local AlliedRaceInfo = {}
+AlliedRaceInfo = {}
 
 ---@class AlliedRaceRacialAbility
 ---@field description cstring 
 ---@field name cstring 
 ---@field icon fileID 
-local AlliedRaceRacialAbility = {}
+AlliedRaceRacialAbility = {}
 
