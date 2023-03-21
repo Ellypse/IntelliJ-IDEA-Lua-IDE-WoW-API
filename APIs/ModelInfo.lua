@@ -36,23 +36,22 @@ function C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID) end
 function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
 ---@class ItemTryOnReason : Enum
-Enum.ItemTryOnReason = {}
 ---@field Success ItemTryOnReason 
 ---@field WrongRace ItemTryOnReason 
 ---@field NotEquippable ItemTryOnReason 
 ---@field DataPending ItemTryOnReason 
+Enum.ItemTryOnReason = {}
 Enum.ItemTryOnReason.Success = 0
 Enum.ItemTryOnReason.WrongRace = 1
 Enum.ItemTryOnReason.NotEquippable = 2
 Enum.ItemTryOnReason.DataPending = 3
 
 ---@class ModelSceneSetting : Enum
-Enum.ModelSceneSetting = {}
 ---@field AlignLightToOrbitDelta ModelSceneSetting 
+Enum.ModelSceneSetting = {}
 Enum.ModelSceneSetting.AlignLightToOrbitDelta = 1
 
 ---@class ModelSceneType : Enum
-Enum.ModelSceneType = {}
 ---@field MountJournal ModelSceneType 
 ---@field PetJournalCard ModelSceneType 
 ---@field ShopCard ModelSceneType 
@@ -73,6 +72,7 @@ Enum.ModelSceneType = {}
 ---@field WorldMapThreat ModelSceneType 
 ---@field Soulbinds ModelSceneType 
 ---@field JailersTowerAnimaGlow ModelSceneType 
+Enum.ModelSceneType = {}
 Enum.ModelSceneType.MountJournal = 0
 Enum.ModelSceneType.PetJournalCard = 1
 Enum.ModelSceneType.ShopCard = 2

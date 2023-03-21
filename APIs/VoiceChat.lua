@@ -268,21 +268,20 @@ function C_VoiceChat.ToggleMemberMuted(playerLocation) end
 function C_VoiceChat.ToggleMuted() end
 
 ---@class CommunicationMode : Enum
-Enum.CommunicationMode = {}
 ---@field PushToTalk CommunicationMode 
 ---@field OpenMic CommunicationMode 
+Enum.CommunicationMode = {}
 Enum.CommunicationMode.PushToTalk = 0
 Enum.CommunicationMode.OpenMic = 1
 
 ---@class VoiceChannelErrorReason : Enum
-Enum.VoiceChannelErrorReason = {}
 ---@field Unknown VoiceChannelErrorReason 
 ---@field IsBattleNetChannel VoiceChannelErrorReason 
+Enum.VoiceChannelErrorReason = {}
 Enum.VoiceChannelErrorReason.Unknown = 0
 Enum.VoiceChannelErrorReason.IsBattleNetChannel = 1
 
 ---@class VoiceChatStatusCode : Enum
-Enum.VoiceChatStatusCode = {}
 ---@field Success VoiceChatStatusCode 
 ---@field OperationPending VoiceChatStatusCode 
 ---@field TooManyRequests VoiceChatStatusCode 
@@ -308,6 +307,7 @@ Enum.VoiceChatStatusCode = {}
 ---@field PlayerVoiceChatParentalDisabled VoiceChatStatusCode 
 ---@field InvalidInputDevice VoiceChatStatusCode 
 ---@field InvalidOutputDevice VoiceChatStatusCode 
+Enum.VoiceChatStatusCode = {}
 Enum.VoiceChatStatusCode.Success = 0
 Enum.VoiceChatStatusCode.OperationPending = 1
 Enum.VoiceChatStatusCode.TooManyRequests = 2
@@ -335,7 +335,6 @@ Enum.VoiceChatStatusCode.InvalidInputDevice = 23
 Enum.VoiceChatStatusCode.InvalidOutputDevice = 24
 
 ---@class VoiceTtsDestination : Enum
-Enum.VoiceTtsDestination = {}
 ---@field RemoteTransmission VoiceTtsDestination 
 ---@field LocalPlayback VoiceTtsDestination 
 ---@field RemoteTransmissionWithLocalPlayback VoiceTtsDestination 
@@ -343,6 +342,7 @@ Enum.VoiceTtsDestination = {}
 ---@field QueuedLocalPlayback VoiceTtsDestination 
 ---@field QueuedRemoteTransmissionWithLocalPlayback VoiceTtsDestination 
 ---@field ScreenReader VoiceTtsDestination 
+Enum.VoiceTtsDestination = {}
 Enum.VoiceTtsDestination.RemoteTransmission = 0
 Enum.VoiceTtsDestination.LocalPlayback = 1
 Enum.VoiceTtsDestination.RemoteTransmissionWithLocalPlayback = 2
@@ -352,7 +352,6 @@ Enum.VoiceTtsDestination.QueuedRemoteTransmissionWithLocalPlayback = 5
 Enum.VoiceTtsDestination.ScreenReader = 6
 
 ---@class VoiceTtsStatusCode : Enum
-Enum.VoiceTtsStatusCode = {}
 ---@field Success VoiceTtsStatusCode 
 ---@field InvalidEngineType VoiceTtsStatusCode 
 ---@field EngineAllocationFailed VoiceTtsStatusCode 
@@ -367,6 +366,7 @@ Enum.VoiceTtsStatusCode = {}
 ---@field ManagerNotFound VoiceTtsStatusCode 
 ---@field InvalidArgument VoiceTtsStatusCode 
 ---@field InternalError VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode = {}
 Enum.VoiceTtsStatusCode.Success = 0
 Enum.VoiceTtsStatusCode.InvalidEngineType = 1
 Enum.VoiceTtsStatusCode.EngineAllocationFailed = 2

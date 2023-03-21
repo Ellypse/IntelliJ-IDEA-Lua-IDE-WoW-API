@@ -5,7 +5,6 @@ C_Cursor = {}
 function C_Cursor.GetCursorItem() end
 
 ---@class UICursorType : Enum
-Enum.UICursorType = {}
 ---@field Default UICursorType 
 ---@field Item UICursorType 
 ---@field Money UICursorType 
@@ -27,6 +26,7 @@ Enum.UICursorType = {}
 ---@field Toy UICursorType 
 ---@field ConduitCollectionItem UICursorType 
 ---@field PerksProgramVendorItem UICursorType 
+Enum.UICursorType = {}
 Enum.UICursorType.Default = 0
 Enum.UICursorType.Item = 1
 Enum.UICursorType.Money = 2
@@ -50,11 +50,11 @@ Enum.UICursorType.ConduitCollectionItem = 20
 Enum.UICursorType.PerksProgramVendorItem = 21
 
 ---@class WorldCursorAnchorType : Enum
-Enum.WorldCursorAnchorType = {}
 ---@field None WorldCursorAnchorType 
 ---@field Default WorldCursorAnchorType 
 ---@field Cursor WorldCursorAnchorType 
 ---@field Nameplate WorldCursorAnchorType 
+Enum.WorldCursorAnchorType = {}
 Enum.WorldCursorAnchorType.None = 0
 Enum.WorldCursorAnchorType.Default = 1
 Enum.WorldCursorAnchorType.Cursor = 2

@@ -63,19 +63,19 @@ function IsVeteranTrialAccount() end
 function SendSubscriptionInterstitialResponse(response) end
 
 ---@class SubscriptionInterstitialResponseType : Enum
-Enum.SubscriptionInterstitialResponseType = {}
 ---@field Clicked SubscriptionInterstitialResponseType 
 ---@field Closed SubscriptionInterstitialResponseType 
 ---@field WebRedirect SubscriptionInterstitialResponseType 
+Enum.SubscriptionInterstitialResponseType = {}
 Enum.SubscriptionInterstitialResponseType.Clicked = 0
 Enum.SubscriptionInterstitialResponseType.Closed = 1
 Enum.SubscriptionInterstitialResponseType.WebRedirect = 2
 
 ---@class SubscriptionInterstitialType : Enum
-Enum.SubscriptionInterstitialType = {}
 ---@field Standard SubscriptionInterstitialType 
 ---@field LeftNpeArea SubscriptionInterstitialType 
 ---@field MaxLevel SubscriptionInterstitialType 
+Enum.SubscriptionInterstitialType = {}
 Enum.SubscriptionInterstitialType.Standard = 0
 Enum.SubscriptionInterstitialType.LeftNpeArea = 1
 Enum.SubscriptionInterstitialType.MaxLevel = 2

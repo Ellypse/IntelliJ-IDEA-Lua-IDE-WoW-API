@@ -316,13 +316,13 @@ function C_QuestLog.SortQuestWatches() end
 function C_QuestLog.UnitIsRelatedToActiveQuest(unit) end
 
 ---@class MapOverlayDisplayLocation : Enum
-Enum.MapOverlayDisplayLocation = {}
 ---@field Default MapOverlayDisplayLocation 
 ---@field BottomLeft MapOverlayDisplayLocation 
 ---@field TopLeft MapOverlayDisplayLocation 
 ---@field BottomRight MapOverlayDisplayLocation 
 ---@field TopRight MapOverlayDisplayLocation 
 ---@field Hidden MapOverlayDisplayLocation 
+Enum.MapOverlayDisplayLocation = {}
 Enum.MapOverlayDisplayLocation.Default = 0
 Enum.MapOverlayDisplayLocation.BottomLeft = 1
 Enum.MapOverlayDisplayLocation.TopLeft = 2
@@ -331,16 +331,15 @@ Enum.MapOverlayDisplayLocation.TopRight = 4
 Enum.MapOverlayDisplayLocation.Hidden = 5
 
 ---@class QuestFrequency : Enum
-Enum.QuestFrequency = {}
 ---@field Default QuestFrequency 
 ---@field Daily QuestFrequency 
 ---@field Weekly QuestFrequency 
+Enum.QuestFrequency = {}
 Enum.QuestFrequency.Default = 0
 Enum.QuestFrequency.Daily = 1
 Enum.QuestFrequency.Weekly = 2
 
 ---@class QuestTag : Enum
-Enum.QuestTag = {}
 ---@field Group QuestTag 
 ---@field PvP QuestTag 
 ---@field Raid QuestTag 
@@ -352,6 +351,7 @@ Enum.QuestTag = {}
 ---@field Scenario QuestTag 
 ---@field Account QuestTag 
 ---@field CombatAlly QuestTag 
+Enum.QuestTag = {}
 Enum.QuestTag.Group = 1
 Enum.QuestTag.PvP = 41
 Enum.QuestTag.Raid = 62
@@ -365,17 +365,17 @@ Enum.QuestTag.Account = 102
 Enum.QuestTag.CombatAlly = 266
 
 ---@class QuestWatchType : Enum
-Enum.QuestWatchType = {}
 ---@field Automatic QuestWatchType 
 ---@field Manual QuestWatchType 
+Enum.QuestWatchType = {}
 Enum.QuestWatchType.Automatic = 0
 Enum.QuestWatchType.Manual = 1
 
 ---@class WorldQuestQuality : Enum
-Enum.WorldQuestQuality = {}
 ---@field Common WorldQuestQuality 
 ---@field Rare WorldQuestQuality 
 ---@field Epic WorldQuestQuality 
+Enum.WorldQuestQuality = {}
 Enum.WorldQuestQuality.Common = 0
 Enum.WorldQuestQuality.Rare = 1
 Enum.WorldQuestQuality.Epic = 2

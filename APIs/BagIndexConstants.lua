@@ -1,5 +1,4 @@
 ---@class BagIndex : Enum
-Enum.BagIndex = {}
 ---@field Bankbag BagIndex 
 ---@field Reagentbank BagIndex 
 ---@field Keyring BagIndex 
@@ -17,6 +16,7 @@ Enum.BagIndex = {}
 ---@field BankBag_5 BagIndex 
 ---@field BankBag_6 BagIndex 
 ---@field BankBag_7 BagIndex 
+Enum.BagIndex = {}
 Enum.BagIndex.Bankbag = -4
 Enum.BagIndex.Reagentbank = -3
 Enum.BagIndex.Keyring = -2

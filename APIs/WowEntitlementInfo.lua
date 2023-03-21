@@ -2,7 +2,6 @@
 C_WowEntitlementInfo = {}
 
 ---@class WoWEntitlementType : Enum
-Enum.WoWEntitlementType = {}
 ---@field Item WoWEntitlementType 
 ---@field Mount WoWEntitlementType 
 ---@field Battlepet WoWEntitlementType 
@@ -13,6 +12,7 @@ Enum.WoWEntitlementType = {}
 ---@field Title WoWEntitlementType 
 ---@field Illusion WoWEntitlementType 
 ---@field Invalid WoWEntitlementType 
+Enum.WoWEntitlementType = {}
 Enum.WoWEntitlementType.Item = 0
 Enum.WoWEntitlementType.Mount = 1
 Enum.WoWEntitlementType.Battlepet = 2

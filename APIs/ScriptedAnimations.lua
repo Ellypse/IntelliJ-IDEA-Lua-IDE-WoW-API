@@ -5,13 +5,13 @@ C_ScriptedAnimations = {}
 function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 
 ---@class ScriptedAnimationBehavior : Enum
-Enum.ScriptedAnimationBehavior = {}
 ---@field None ScriptedAnimationBehavior 
 ---@field TargetShake ScriptedAnimationBehavior 
 ---@field TargetKnockBack ScriptedAnimationBehavior 
 ---@field SourceRecoil ScriptedAnimationBehavior 
 ---@field SourceCollideWithTarget ScriptedAnimationBehavior 
 ---@field UIParentShake ScriptedAnimationBehavior 
+Enum.ScriptedAnimationBehavior = {}
 Enum.ScriptedAnimationBehavior.None = 0
 Enum.ScriptedAnimationBehavior.TargetShake = 1
 Enum.ScriptedAnimationBehavior.TargetKnockBack = 2
@@ -20,12 +20,11 @@ Enum.ScriptedAnimationBehavior.SourceCollideWithTarget = 4
 Enum.ScriptedAnimationBehavior.UIParentShake = 5
 
 ---@class ScriptedAnimationFlags : Enum
-Enum.ScriptedAnimationFlags = {}
 ---@field UseTargetAsSource ScriptedAnimationFlags 
+Enum.ScriptedAnimationFlags = {}
 Enum.ScriptedAnimationFlags.UseTargetAsSource = 1
 
 ---@class ScriptedAnimationTrajectory : Enum
-Enum.ScriptedAnimationTrajectory = {}
 ---@field AtSource ScriptedAnimationTrajectory 
 ---@field AtTarget ScriptedAnimationTrajectory 
 ---@field Straight ScriptedAnimationTrajectory 
@@ -33,6 +32,7 @@ Enum.ScriptedAnimationTrajectory = {}
 ---@field CurveRight ScriptedAnimationTrajectory 
 ---@field CurveRandom ScriptedAnimationTrajectory 
 ---@field HalfwayBetween ScriptedAnimationTrajectory 
+Enum.ScriptedAnimationTrajectory = {}
 Enum.ScriptedAnimationTrajectory.AtSource = 0
 Enum.ScriptedAnimationTrajectory.AtTarget = 1
 Enum.ScriptedAnimationTrajectory.Straight = 2

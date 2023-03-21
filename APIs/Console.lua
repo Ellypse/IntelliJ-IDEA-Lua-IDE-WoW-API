@@ -18,7 +18,6 @@ function C_Console.PrintAllMatchingCommands(partialCommandText) end
 function C_Console.SetFontHeight(fontHeightInPixels) end
 
 ---@class ConsoleCategory : Enum
-Enum.ConsoleCategory = {}
 ---@field Debug ConsoleCategory 
 ---@field Graphics ConsoleCategory 
 ---@field Console ConsoleCategory 
@@ -30,6 +29,7 @@ Enum.ConsoleCategory = {}
 ---@field Gm ConsoleCategory 
 ---@field Reveal ConsoleCategory 
 ---@field None ConsoleCategory 
+Enum.ConsoleCategory = {}
 Enum.ConsoleCategory.Debug = 0
 Enum.ConsoleCategory.Graphics = 1
 Enum.ConsoleCategory.Console = 2
@@ -43,7 +43,6 @@ Enum.ConsoleCategory.Reveal = 9
 Enum.ConsoleCategory.None = 10
 
 ---@class ConsoleColorType : Enum
-Enum.ConsoleColorType = {}
 ---@field DefaultColor ConsoleColorType 
 ---@field InputColor ConsoleColorType 
 ---@field EchoColor ConsoleColorType 
@@ -56,6 +55,7 @@ Enum.ConsoleColorType = {}
 ---@field ClickbufferColor ConsoleColorType 
 ---@field PrivateColor ConsoleColorType 
 ---@field DefaultGreen ConsoleColorType 
+Enum.ConsoleColorType = {}
 Enum.ConsoleColorType.DefaultColor = 0
 Enum.ConsoleColorType.InputColor = 1
 Enum.ConsoleColorType.EchoColor = 2
@@ -70,11 +70,11 @@ Enum.ConsoleColorType.PrivateColor = 10
 Enum.ConsoleColorType.DefaultGreen = 11
 
 ---@class ConsoleCommandType : Enum
-Enum.ConsoleCommandType = {}
 ---@field Cvar ConsoleCommandType 
 ---@field Command ConsoleCommandType 
 ---@field Macro ConsoleCommandType 
 ---@field Script ConsoleCommandType 
+Enum.ConsoleCommandType = {}
 Enum.ConsoleCommandType.Cvar = 0
 Enum.ConsoleCommandType.Command = 1
 Enum.ConsoleCommandType.Macro = 2

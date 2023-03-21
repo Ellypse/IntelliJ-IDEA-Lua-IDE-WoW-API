@@ -172,18 +172,17 @@ function UnitTrialBankedLevels(unit) end
 function UnitWidgetSet(unit) end
 
 ---@class PhaseReason : Enum
-Enum.PhaseReason = {}
 ---@field Phasing PhaseReason 
 ---@field Sharding PhaseReason 
 ---@field WarMode PhaseReason 
 ---@field ChromieTime PhaseReason 
+Enum.PhaseReason = {}
 Enum.PhaseReason.Phasing = 0
 Enum.PhaseReason.Sharding = 1
 Enum.PhaseReason.WarMode = 2
 Enum.PhaseReason.ChromieTime = 3
 
 ---@class PowerType : Enum
-Enum.PowerType = {}
 ---@field HealthCost PowerType 
 ---@field None PowerType 
 ---@field Mana PowerType 
@@ -210,6 +209,7 @@ Enum.PowerType = {}
 ---@field RuneFrost PowerType 
 ---@field RuneUnholy PowerType 
 ---@field NumPowerTypes PowerType 
+Enum.PowerType = {}
 Enum.PowerType.HealthCost = -2
 Enum.PowerType.None = -1
 Enum.PowerType.Mana = 0
@@ -238,7 +238,6 @@ Enum.PowerType.RuneUnholy = 22
 Enum.PowerType.NumPowerTypes = 23
 
 ---@class PvPUnitClassification : Enum
-Enum.PvPUnitClassification = {}
 ---@field FlagCarrierHorde PvPUnitClassification 
 ---@field FlagCarrierAlliance PvPUnitClassification 
 ---@field FlagCarrierNeutral PvPUnitClassification 
@@ -250,6 +249,7 @@ Enum.PvPUnitClassification = {}
 ---@field OrbCarrierGreen PvPUnitClassification 
 ---@field OrbCarrierOrange PvPUnitClassification 
 ---@field OrbCarrierPurple PvPUnitClassification 
+Enum.PvPUnitClassification = {}
 Enum.PvPUnitClassification.FlagCarrierHorde = 0
 Enum.PvPUnitClassification.FlagCarrierAlliance = 1
 Enum.PvPUnitClassification.FlagCarrierNeutral = 2

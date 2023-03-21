@@ -71,12 +71,11 @@ function C_ContributionCollector.HasPendingContribution(contributionID) end
 function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 
 ---@class ContributionAppearanceFlags : Enum
-Enum.ContributionAppearanceFlags = {}
 ---@field TooltipUseTimeRemaining ContributionAppearanceFlags 
+Enum.ContributionAppearanceFlags = {}
 Enum.ContributionAppearanceFlags.TooltipUseTimeRemaining = 0
 
 ---@class ContributionResult : Enum
-Enum.ContributionResult = {}
 ---@field Success ContributionResult 
 ---@field MustBeNearNpc ContributionResult 
 ---@field IncorrectState ContributionResult 
@@ -85,6 +84,7 @@ Enum.ContributionResult = {}
 ---@field FailedConditionCheck ContributionResult 
 ---@field UnableToCompleteTurnIn ContributionResult 
 ---@field InternalError ContributionResult 
+Enum.ContributionResult = {}
 Enum.ContributionResult.Success = 0
 Enum.ContributionResult.MustBeNearNpc = 1
 Enum.ContributionResult.IncorrectState = 2
