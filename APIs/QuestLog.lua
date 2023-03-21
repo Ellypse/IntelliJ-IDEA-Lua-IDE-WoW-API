@@ -316,69 +316,69 @@ function C_QuestLog.SortQuestWatches() end
 function C_QuestLog.UnitIsRelatedToActiveQuest(unit) end
 
 ---@class MapOverlayDisplayLocation : Enum
-Enum.MapOverlayDisplayLocation = {}
----@type MapOverlayDisplayLocation 
+---@field Default MapOverlayDisplayLocation 
+---@field BottomLeft MapOverlayDisplayLocation 
+---@field TopLeft MapOverlayDisplayLocation 
+---@field BottomRight MapOverlayDisplayLocation 
+---@field TopRight MapOverlayDisplayLocation 
+---@field Hidden MapOverlayDisplayLocation 
 Enum.MapOverlayDisplayLocation.Default = 0
----@type MapOverlayDisplayLocation 
 Enum.MapOverlayDisplayLocation.BottomLeft = 1
----@type MapOverlayDisplayLocation 
 Enum.MapOverlayDisplayLocation.TopLeft = 2
----@type MapOverlayDisplayLocation 
 Enum.MapOverlayDisplayLocation.BottomRight = 3
----@type MapOverlayDisplayLocation 
 Enum.MapOverlayDisplayLocation.TopRight = 4
----@type MapOverlayDisplayLocation 
 Enum.MapOverlayDisplayLocation.Hidden = 5
+Enum.MapOverlayDisplayLocation = {}
 
 ---@class QuestFrequency : Enum
-Enum.QuestFrequency = {}
----@type QuestFrequency 
+---@field Default QuestFrequency 
+---@field Daily QuestFrequency 
+---@field Weekly QuestFrequency 
 Enum.QuestFrequency.Default = 0
----@type QuestFrequency 
 Enum.QuestFrequency.Daily = 1
----@type QuestFrequency 
 Enum.QuestFrequency.Weekly = 2
+Enum.QuestFrequency = {}
 
 ---@class QuestTag : Enum
-Enum.QuestTag = {}
----@type QuestTag 
+---@field Group QuestTag 
+---@field PvP QuestTag 
+---@field Raid QuestTag 
+---@field Dungeon QuestTag 
+---@field Legendary QuestTag 
+---@field Heroic QuestTag 
+---@field Raid10 QuestTag 
+---@field Raid25 QuestTag 
+---@field Scenario QuestTag 
+---@field Account QuestTag 
+---@field CombatAlly QuestTag 
 Enum.QuestTag.Group = 1
----@type QuestTag 
 Enum.QuestTag.PvP = 41
----@type QuestTag 
 Enum.QuestTag.Raid = 62
----@type QuestTag 
 Enum.QuestTag.Dungeon = 81
----@type QuestTag 
 Enum.QuestTag.Legendary = 83
----@type QuestTag 
 Enum.QuestTag.Heroic = 85
----@type QuestTag 
 Enum.QuestTag.Raid10 = 88
----@type QuestTag 
 Enum.QuestTag.Raid25 = 89
----@type QuestTag 
 Enum.QuestTag.Scenario = 98
----@type QuestTag 
 Enum.QuestTag.Account = 102
----@type QuestTag 
 Enum.QuestTag.CombatAlly = 266
+Enum.QuestTag = {}
 
 ---@class QuestWatchType : Enum
-Enum.QuestWatchType = {}
----@type QuestWatchType 
+---@field Automatic QuestWatchType 
+---@field Manual QuestWatchType 
 Enum.QuestWatchType.Automatic = 0
----@type QuestWatchType 
 Enum.QuestWatchType.Manual = 1
+Enum.QuestWatchType = {}
 
 ---@class WorldQuestQuality : Enum
-Enum.WorldQuestQuality = {}
----@type WorldQuestQuality 
+---@field Common WorldQuestQuality 
+---@field Rare WorldQuestQuality 
+---@field Epic WorldQuestQuality 
 Enum.WorldQuestQuality.Common = 0
----@type WorldQuestQuality 
 Enum.WorldQuestQuality.Rare = 1
----@type WorldQuestQuality 
 Enum.WorldQuestQuality.Epic = 2
+Enum.WorldQuestQuality = {}
 
 ---@class QuestInfo
 ---@field title string 

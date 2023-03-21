@@ -78,13 +78,13 @@ function C_AzeriteEmpoweredItem.SelectPower(azeriteEmpoweredItemLocation, powerI
 function C_AzeriteEmpoweredItem.SetHasBeenViewed(azeriteEmpoweredItemLocation) end
 
 ---@class AzeritePowerLevel : Enum
-Enum.AzeritePowerLevel = {}
----@type AzeritePowerLevel 
+---@field Base AzeritePowerLevel 
+---@field Upgraded AzeritePowerLevel 
+---@field Downgraded AzeritePowerLevel 
 Enum.AzeritePowerLevel.Base = 0
----@type AzeritePowerLevel 
 Enum.AzeritePowerLevel.Upgraded = 1
----@type AzeritePowerLevel 
 Enum.AzeritePowerLevel.Downgraded = 2
+Enum.AzeritePowerLevel = {}
 
 ---@class AzeriteEmpoweredItemPowerInfo
 ---@field azeritePowerID number 

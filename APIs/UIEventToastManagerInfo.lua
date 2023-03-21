@@ -11,74 +11,74 @@ function C_EventToastManager.GetNextToastToDisplay() end
 function C_EventToastManager.RemoveCurrentToast() end
 
 ---@class EventToastDisplayType : Enum
-Enum.EventToastDisplayType = {}
----@type EventToastDisplayType 
+---@field NormalSingleLine EventToastDisplayType 
+---@field NormalBlockText EventToastDisplayType 
+---@field NormalTitleAndSubTitle EventToastDisplayType 
+---@field NormalTextWithIcon EventToastDisplayType 
+---@field LargeTextWithIcon EventToastDisplayType 
+---@field NormalTextWithIconAndRarity EventToastDisplayType 
+---@field Scenario EventToastDisplayType 
+---@field ChallengeMode EventToastDisplayType 
+---@field ScenarioClickExpand EventToastDisplayType 
 Enum.EventToastDisplayType.NormalSingleLine = 0
----@type EventToastDisplayType 
 Enum.EventToastDisplayType.NormalBlockText = 1
----@type EventToastDisplayType 
 Enum.EventToastDisplayType.NormalTitleAndSubTitle = 2
----@type EventToastDisplayType 
 Enum.EventToastDisplayType.NormalTextWithIcon = 3
----@type EventToastDisplayType 
 Enum.EventToastDisplayType.LargeTextWithIcon = 4
----@type EventToastDisplayType 
 Enum.EventToastDisplayType.NormalTextWithIconAndRarity = 5
----@type EventToastDisplayType 
 Enum.EventToastDisplayType.Scenario = 6
----@type EventToastDisplayType 
 Enum.EventToastDisplayType.ChallengeMode = 7
----@type EventToastDisplayType 
 Enum.EventToastDisplayType.ScenarioClickExpand = 8
+Enum.EventToastDisplayType = {}
 
 ---@class EventToastEventType : Enum
-Enum.EventToastEventType = {}
----@type EventToastEventType 
+---@field LevelUp EventToastEventType 
+---@field LevelUpSpell EventToastEventType 
+---@field LevelUpDungeon EventToastEventType 
+---@field LevelUpRaid EventToastEventType 
+---@field LevelUpPvP EventToastEventType 
+---@field PetBattleNewAbility EventToastEventType 
+---@field PetBattleFinalRound EventToastEventType 
+---@field PetBattleCapture EventToastEventType 
+---@field BattlePetLevelChanged EventToastEventType 
+---@field BattlePetLevelUpAbility EventToastEventType 
+---@field QuestBossEmote EventToastEventType 
+---@field MythicPlusWeeklyRecord EventToastEventType 
+---@field QuestTurnedIn EventToastEventType 
+---@field WorldStateChange EventToastEventType 
+---@field Scenario EventToastEventType 
+---@field LevelUpOther EventToastEventType 
+---@field PlayerAuraAdded EventToastEventType 
+---@field PlayerAuraRemoved EventToastEventType 
+---@field SpellScript EventToastEventType 
+---@field CriteriaUpdated EventToastEventType 
+---@field PvPTierUpdate EventToastEventType 
+---@field SpellLearned EventToastEventType 
+---@field TreasureItem EventToastEventType 
 Enum.EventToastEventType.LevelUp = 0
----@type EventToastEventType 
 Enum.EventToastEventType.LevelUpSpell = 1
----@type EventToastEventType 
 Enum.EventToastEventType.LevelUpDungeon = 2
----@type EventToastEventType 
 Enum.EventToastEventType.LevelUpRaid = 3
----@type EventToastEventType 
 Enum.EventToastEventType.LevelUpPvP = 4
----@type EventToastEventType 
 Enum.EventToastEventType.PetBattleNewAbility = 5
----@type EventToastEventType 
 Enum.EventToastEventType.PetBattleFinalRound = 6
----@type EventToastEventType 
 Enum.EventToastEventType.PetBattleCapture = 7
----@type EventToastEventType 
 Enum.EventToastEventType.BattlePetLevelChanged = 8
----@type EventToastEventType 
 Enum.EventToastEventType.BattlePetLevelUpAbility = 9
----@type EventToastEventType 
 Enum.EventToastEventType.QuestBossEmote = 10
----@type EventToastEventType 
 Enum.EventToastEventType.MythicPlusWeeklyRecord = 11
----@type EventToastEventType 
 Enum.EventToastEventType.QuestTurnedIn = 12
----@type EventToastEventType 
 Enum.EventToastEventType.WorldStateChange = 13
----@type EventToastEventType 
 Enum.EventToastEventType.Scenario = 14
----@type EventToastEventType 
 Enum.EventToastEventType.LevelUpOther = 15
----@type EventToastEventType 
 Enum.EventToastEventType.PlayerAuraAdded = 16
----@type EventToastEventType 
 Enum.EventToastEventType.PlayerAuraRemoved = 17
----@type EventToastEventType 
 Enum.EventToastEventType.SpellScript = 18
----@type EventToastEventType 
 Enum.EventToastEventType.CriteriaUpdated = 19
----@type EventToastEventType 
 Enum.EventToastEventType.PvPTierUpdate = 20
----@type EventToastEventType 
 Enum.EventToastEventType.SpellLearned = 21
----@type EventToastEventType 
 Enum.EventToastEventType.TreasureItem = 22
+Enum.EventToastEventType = {}
 
 ---@class EventToastInfo
 ---@field eventToastID number 

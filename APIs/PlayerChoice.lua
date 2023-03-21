@@ -21,15 +21,15 @@ function C_PlayerChoice.RequestRerollPlayerChoice() end
 function C_PlayerChoice.SendPlayerChoiceResponse(responseID) end
 
 ---@class PlayerChoiceRarity : Enum
-Enum.PlayerChoiceRarity = {}
----@type PlayerChoiceRarity 
+---@field Common PlayerChoiceRarity 
+---@field Uncommon PlayerChoiceRarity 
+---@field Rare PlayerChoiceRarity 
+---@field Epic PlayerChoiceRarity 
 Enum.PlayerChoiceRarity.Common = 0
----@type PlayerChoiceRarity 
 Enum.PlayerChoiceRarity.Uncommon = 1
----@type PlayerChoiceRarity 
 Enum.PlayerChoiceRarity.Rare = 2
----@type PlayerChoiceRarity 
 Enum.PlayerChoiceRarity.Epic = 3
+Enum.PlayerChoiceRarity = {}
 
 ---@class PlayerChoiceInfo
 ---@field objectGUID WOWGUID 

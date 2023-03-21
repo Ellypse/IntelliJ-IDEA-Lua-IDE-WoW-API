@@ -50,39 +50,39 @@ function C_EncounterJournal.SetPreviewPvpTier(tier) end
 function C_EncounterJournal.SetSlotFilter(filterSlot) end
 
 ---@class ItemSlotFilterType : Enum
-Enum.ItemSlotFilterType = {}
----@type ItemSlotFilterType 
+---@field Head ItemSlotFilterType 
+---@field Neck ItemSlotFilterType 
+---@field Shoulder ItemSlotFilterType 
+---@field Cloak ItemSlotFilterType 
+---@field Chest ItemSlotFilterType 
+---@field Wrist ItemSlotFilterType 
+---@field Hand ItemSlotFilterType 
+---@field Waist ItemSlotFilterType 
+---@field Legs ItemSlotFilterType 
+---@field Feet ItemSlotFilterType 
+---@field MainHand ItemSlotFilterType 
+---@field OffHand ItemSlotFilterType 
+---@field Finger ItemSlotFilterType 
+---@field Trinket ItemSlotFilterType 
+---@field Other ItemSlotFilterType 
+---@field NoFilter ItemSlotFilterType 
 Enum.ItemSlotFilterType.Head = 0
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Neck = 1
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Shoulder = 2
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Cloak = 3
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Chest = 4
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Wrist = 5
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Hand = 6
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Waist = 7
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Legs = 8
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Feet = 9
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.MainHand = 10
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.OffHand = 11
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Finger = 12
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Trinket = 13
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Other = 14
----@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.NoFilter = 15
+Enum.ItemSlotFilterType = {}
 
 ---@class DungeonEntranceMapInfo
 ---@field areaPoiID number 

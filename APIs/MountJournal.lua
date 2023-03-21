@@ -158,24 +158,24 @@ function C_MountJournal.SetTypeFilter(filterIndex, isChecked) end
 function C_MountJournal.SummonByID(mountID) end
 
 ---@class MountType : Enum
-Enum.MountType = {}
----@type MountType 
+---@field Ground MountType 
+---@field Flying MountType 
+---@field Aquatic MountType 
+---@field Dragonriding MountType 
 Enum.MountType.Ground = 0
----@type MountType 
 Enum.MountType.Flying = 1
----@type MountType 
 Enum.MountType.Aquatic = 2
----@type MountType 
 Enum.MountType.Dragonriding = 3
+Enum.MountType = {}
 
 ---@class MountTypeFlag : Enum
-Enum.MountTypeFlag = {}
----@type MountTypeFlag 
+---@field IsFlyingMount MountTypeFlag 
+---@field IsAquaticMount MountTypeFlag 
+---@field IsDragonRidingMount MountTypeFlag 
 Enum.MountTypeFlag.IsFlyingMount = 1
----@type MountTypeFlag 
 Enum.MountTypeFlag.IsAquaticMount = 2
----@type MountTypeFlag 
 Enum.MountTypeFlag.IsDragonRidingMount = 4
+Enum.MountTypeFlag = {}
 
 ---@class MountCreatureDisplayInfo
 ---@field creatureDisplayID number 

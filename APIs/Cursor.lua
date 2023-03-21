@@ -5,58 +5,58 @@ C_Cursor = {}
 function C_Cursor.GetCursorItem() end
 
 ---@class UICursorType : Enum
-Enum.UICursorType = {}
----@type UICursorType 
+---@field Default UICursorType 
+---@field Item UICursorType 
+---@field Money UICursorType 
+---@field Spell UICursorType 
+---@field PetAction UICursorType 
+---@field Merchant UICursorType 
+---@field ActionBar UICursorType 
+---@field Macro UICursorType 
+---@field AmmoObsolete UICursorType 
+---@field Pet UICursorType 
+---@field GuildBank UICursorType 
+---@field GuildBankMoney UICursorType 
+---@field EquipmentSet UICursorType 
+---@field Currency UICursorType 
+---@field Flyout UICursorType 
+---@field VoidItem UICursorType 
+---@field BattlePet UICursorType 
+---@field Mount UICursorType 
+---@field Toy UICursorType 
+---@field ConduitCollectionItem UICursorType 
+---@field PerksProgramVendorItem UICursorType 
 Enum.UICursorType.Default = 0
----@type UICursorType 
 Enum.UICursorType.Item = 1
----@type UICursorType 
 Enum.UICursorType.Money = 2
----@type UICursorType 
 Enum.UICursorType.Spell = 3
----@type UICursorType 
 Enum.UICursorType.PetAction = 4
----@type UICursorType 
 Enum.UICursorType.Merchant = 5
----@type UICursorType 
 Enum.UICursorType.ActionBar = 6
----@type UICursorType 
 Enum.UICursorType.Macro = 7
----@type UICursorType 
 Enum.UICursorType.AmmoObsolete = 9
----@type UICursorType 
 Enum.UICursorType.Pet = 10
----@type UICursorType 
 Enum.UICursorType.GuildBank = 11
----@type UICursorType 
 Enum.UICursorType.GuildBankMoney = 12
----@type UICursorType 
 Enum.UICursorType.EquipmentSet = 13
----@type UICursorType 
 Enum.UICursorType.Currency = 14
----@type UICursorType 
 Enum.UICursorType.Flyout = 15
----@type UICursorType 
 Enum.UICursorType.VoidItem = 16
----@type UICursorType 
 Enum.UICursorType.BattlePet = 17
----@type UICursorType 
 Enum.UICursorType.Mount = 18
----@type UICursorType 
 Enum.UICursorType.Toy = 19
----@type UICursorType 
 Enum.UICursorType.ConduitCollectionItem = 20
----@type UICursorType 
 Enum.UICursorType.PerksProgramVendorItem = 21
+Enum.UICursorType = {}
 
 ---@class WorldCursorAnchorType : Enum
-Enum.WorldCursorAnchorType = {}
----@type WorldCursorAnchorType 
+---@field None WorldCursorAnchorType 
+---@field Default WorldCursorAnchorType 
+---@field Cursor WorldCursorAnchorType 
+---@field Nameplate WorldCursorAnchorType 
 Enum.WorldCursorAnchorType.None = 0
----@type WorldCursorAnchorType 
 Enum.WorldCursorAnchorType.Default = 1
----@type WorldCursorAnchorType 
 Enum.WorldCursorAnchorType.Cursor = 2
----@type WorldCursorAnchorType 
 Enum.WorldCursorAnchorType.Nameplate = 3
+Enum.WorldCursorAnchorType = {}
 

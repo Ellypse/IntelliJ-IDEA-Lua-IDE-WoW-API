@@ -13,15 +13,15 @@ function C_TooltipComparison.GetItemComparisonDelta(comparisonItem, equippedItem
 function C_TooltipComparison.GetItemComparisonInfo(comparisonItem) end
 
 ---@class TooltipComparisonMethod : Enum
-Enum.TooltipComparisonMethod = {}
----@type TooltipComparisonMethod 
+---@field Single TooltipComparisonMethod 
+---@field WithBothHands TooltipComparisonMethod 
+---@field WithBagMainHandItem TooltipComparisonMethod 
+---@field WithBagOffHandItem TooltipComparisonMethod 
 Enum.TooltipComparisonMethod.Single = 0
----@type TooltipComparisonMethod 
 Enum.TooltipComparisonMethod.WithBothHands = 1
----@type TooltipComparisonMethod 
 Enum.TooltipComparisonMethod.WithBagMainHandItem = 2
----@type TooltipComparisonMethod 
 Enum.TooltipComparisonMethod.WithBagOffHandItem = 3
+Enum.TooltipComparisonMethod = {}
 
 ---@class TooltipItemComparisonInfo
 ---@field method TooltipComparisonMethod 

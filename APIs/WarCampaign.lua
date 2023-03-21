@@ -45,15 +45,15 @@ function C_CampaignInfo.SortAsNormalQuest(campaignID) end
 function C_CampaignInfo.UsesNormalQuestIcons(campaignID) end
 
 ---@class CampaignState : Enum
-Enum.CampaignState = {}
----@type CampaignState 
+---@field Invalid CampaignState 
+---@field Complete CampaignState 
+---@field InProgress CampaignState 
+---@field Stalled CampaignState 
 Enum.CampaignState.Invalid = 0
----@type CampaignState 
 Enum.CampaignState.Complete = 1
----@type CampaignState 
 Enum.CampaignState.InProgress = 2
----@type CampaignState 
 Enum.CampaignState.Stalled = 3
+Enum.CampaignState = {}
 
 ---@class CampaignChapterInfo
 ---@field name cstring 

@@ -151,82 +151,82 @@ function C_Map.RequestPreloadMap(uiMapID) end
 function C_Map.SetUserWaypoint(point) end
 
 ---@class MapCanvasPosition : Enum
-Enum.MapCanvasPosition = {}
----@type MapCanvasPosition 
+---@field None MapCanvasPosition 
+---@field BottomLeft MapCanvasPosition 
+---@field BottomRight MapCanvasPosition 
+---@field TopLeft MapCanvasPosition 
+---@field TopRight MapCanvasPosition 
 Enum.MapCanvasPosition.None = 0
----@type MapCanvasPosition 
 Enum.MapCanvasPosition.BottomLeft = 1
----@type MapCanvasPosition 
 Enum.MapCanvasPosition.BottomRight = 2
----@type MapCanvasPosition 
 Enum.MapCanvasPosition.TopLeft = 3
----@type MapCanvasPosition 
 Enum.MapCanvasPosition.TopRight = 4
+Enum.MapCanvasPosition = {}
 
 ---@class UIMapFlag : Enum
-Enum.UIMapFlag = {}
----@type UIMapFlag 
+---@field NoHighlight UIMapFlag 
+---@field ShowOverlays UIMapFlag 
+---@field ShowTaxiNodes UIMapFlag 
+---@field GarrisonMap UIMapFlag 
+---@field FallbackToParentMap UIMapFlag 
+---@field NoHighlightTexture UIMapFlag 
+---@field ShowTaskObjectives UIMapFlag 
+---@field NoWorldPositions UIMapFlag 
+---@field HideArchaeologyDigs UIMapFlag 
+---@field Deprecated UIMapFlag 
+---@field HideIcons UIMapFlag 
+---@field HideVignettes UIMapFlag 
+---@field ForceAllOverlayExplored UIMapFlag 
+---@field FlightMapShowZoomOut UIMapFlag 
+---@field FlightMapAutoZoom UIMapFlag 
+---@field ForceOnNavbar UIMapFlag 
+---@field AlwaysAllowUserWaypoints UIMapFlag 
 Enum.UIMapFlag.NoHighlight = 1
----@type UIMapFlag 
 Enum.UIMapFlag.ShowOverlays = 2
----@type UIMapFlag 
 Enum.UIMapFlag.ShowTaxiNodes = 4
----@type UIMapFlag 
 Enum.UIMapFlag.GarrisonMap = 8
----@type UIMapFlag 
 Enum.UIMapFlag.FallbackToParentMap = 16
----@type UIMapFlag 
 Enum.UIMapFlag.NoHighlightTexture = 32
----@type UIMapFlag 
 Enum.UIMapFlag.ShowTaskObjectives = 64
----@type UIMapFlag 
 Enum.UIMapFlag.NoWorldPositions = 128
----@type UIMapFlag 
 Enum.UIMapFlag.HideArchaeologyDigs = 256
----@type UIMapFlag 
 Enum.UIMapFlag.Deprecated = 512
----@type UIMapFlag 
 Enum.UIMapFlag.HideIcons = 1024
----@type UIMapFlag 
 Enum.UIMapFlag.HideVignettes = 2048
----@type UIMapFlag 
 Enum.UIMapFlag.ForceAllOverlayExplored = 4096
----@type UIMapFlag 
 Enum.UIMapFlag.FlightMapShowZoomOut = 8192
----@type UIMapFlag 
 Enum.UIMapFlag.FlightMapAutoZoom = 16384
----@type UIMapFlag 
 Enum.UIMapFlag.ForceOnNavbar = 32768
----@type UIMapFlag 
 Enum.UIMapFlag.AlwaysAllowUserWaypoints = 65536
+Enum.UIMapFlag = {}
 
 ---@class UIMapSystem : Enum
-Enum.UIMapSystem = {}
----@type UIMapSystem 
+---@field World UIMapSystem 
+---@field Taxi UIMapSystem 
+---@field Adventure UIMapSystem 
+---@field Minimap UIMapSystem 
 Enum.UIMapSystem.World = 0
----@type UIMapSystem 
 Enum.UIMapSystem.Taxi = 1
----@type UIMapSystem 
 Enum.UIMapSystem.Adventure = 2
----@type UIMapSystem 
 Enum.UIMapSystem.Minimap = 3
+Enum.UIMapSystem = {}
 
 ---@class UIMapType : Enum
-Enum.UIMapType = {}
----@type UIMapType 
+---@field Cosmic UIMapType 
+---@field World UIMapType 
+---@field Continent UIMapType 
+---@field Zone UIMapType 
+---@field Dungeon UIMapType 
+---@field Micro UIMapType 
+---@field Orphan UIMapType 
 Enum.UIMapType.Cosmic = 0
----@type UIMapType 
 Enum.UIMapType.World = 1
----@type UIMapType 
 Enum.UIMapType.Continent = 2
----@type UIMapType 
 Enum.UIMapType.Zone = 3
----@type UIMapType 
 Enum.UIMapType.Dungeon = 4
----@type UIMapType 
 Enum.UIMapType.Micro = 5
----@type UIMapType 
 Enum.UIMapType.Orphan = 6
+Enum.UIMapType = {}
 
 ---@class MapBannerInfo
 ---@field areaPoiID number 

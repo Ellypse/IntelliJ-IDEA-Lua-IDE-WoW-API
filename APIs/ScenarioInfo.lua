@@ -13,37 +13,37 @@ function C_ScenarioInfo.GetScenarioInfo() end
 function C_ScenarioInfo.GetScenarioStepInfo(scenarioStepID) end
 
 ---@class JailersTowerType : Enum
-Enum.JailersTowerType = {}
----@type JailersTowerType 
+---@field TwistingCorridors JailersTowerType 
+---@field SkoldusHalls JailersTowerType 
+---@field FractureChambers JailersTowerType 
+---@field Soulforges JailersTowerType 
+---@field Coldheart JailersTowerType 
+---@field Mortregar JailersTowerType 
+---@field UpperReaches JailersTowerType 
+---@field ArkobanHall JailersTowerType 
+---@field TormentChamberJaina JailersTowerType 
+---@field TormentChamberThrall JailersTowerType 
+---@field TormentChamberAnduin JailersTowerType 
+---@field AdamantVaults JailersTowerType 
+---@field ForgottenCatacombs JailersTowerType 
+---@field Ossuary JailersTowerType 
+---@field BossRush JailersTowerType 
 Enum.JailersTowerType.TwistingCorridors = 0
----@type JailersTowerType 
 Enum.JailersTowerType.SkoldusHalls = 1
----@type JailersTowerType 
 Enum.JailersTowerType.FractureChambers = 2
----@type JailersTowerType 
 Enum.JailersTowerType.Soulforges = 3
----@type JailersTowerType 
 Enum.JailersTowerType.Coldheart = 4
----@type JailersTowerType 
 Enum.JailersTowerType.Mortregar = 5
----@type JailersTowerType 
 Enum.JailersTowerType.UpperReaches = 6
----@type JailersTowerType 
 Enum.JailersTowerType.ArkobanHall = 7
----@type JailersTowerType 
 Enum.JailersTowerType.TormentChamberJaina = 8
----@type JailersTowerType 
 Enum.JailersTowerType.TormentChamberThrall = 9
----@type JailersTowerType 
 Enum.JailersTowerType.TormentChamberAnduin = 10
----@type JailersTowerType 
 Enum.JailersTowerType.AdamantVaults = 11
----@type JailersTowerType 
 Enum.JailersTowerType.ForgottenCatacombs = 12
----@type JailersTowerType 
 Enum.JailersTowerType.Ossuary = 13
----@type JailersTowerType 
 Enum.JailersTowerType.BossRush = 14
+Enum.JailersTowerType = {}
 
 ---@class ScenarioInformation
 ---@field name string 

@@ -268,119 +268,119 @@ function C_VoiceChat.ToggleMemberMuted(playerLocation) end
 function C_VoiceChat.ToggleMuted() end
 
 ---@class CommunicationMode : Enum
-Enum.CommunicationMode = {}
----@type CommunicationMode 
+---@field PushToTalk CommunicationMode 
+---@field OpenMic CommunicationMode 
 Enum.CommunicationMode.PushToTalk = 0
----@type CommunicationMode 
 Enum.CommunicationMode.OpenMic = 1
+Enum.CommunicationMode = {}
 
 ---@class VoiceChannelErrorReason : Enum
-Enum.VoiceChannelErrorReason = {}
----@type VoiceChannelErrorReason 
+---@field Unknown VoiceChannelErrorReason 
+---@field IsBattleNetChannel VoiceChannelErrorReason 
 Enum.VoiceChannelErrorReason.Unknown = 0
----@type VoiceChannelErrorReason 
 Enum.VoiceChannelErrorReason.IsBattleNetChannel = 1
+Enum.VoiceChannelErrorReason = {}
 
 ---@class VoiceChatStatusCode : Enum
-Enum.VoiceChatStatusCode = {}
----@type VoiceChatStatusCode 
+---@field Success VoiceChatStatusCode 
+---@field OperationPending VoiceChatStatusCode 
+---@field TooManyRequests VoiceChatStatusCode 
+---@field LoginProhibited VoiceChatStatusCode 
+---@field ClientNotInitialized VoiceChatStatusCode 
+---@field ClientNotLoggedIn VoiceChatStatusCode 
+---@field ClientAlreadyLoggedIn VoiceChatStatusCode 
+---@field ChannelNameTooShort VoiceChatStatusCode 
+---@field ChannelNameTooLong VoiceChatStatusCode 
+---@field ChannelAlreadyExists VoiceChatStatusCode 
+---@field AlreadyInChannel VoiceChatStatusCode 
+---@field TargetNotFound VoiceChatStatusCode 
+---@field Failure VoiceChatStatusCode 
+---@field ServiceLost VoiceChatStatusCode 
+---@field UnableToLaunchProxy VoiceChatStatusCode 
+---@field ProxyConnectionTimeOut VoiceChatStatusCode 
+---@field ProxyConnectionUnableToConnect VoiceChatStatusCode 
+---@field ProxyConnectionUnexpectedDisconnect VoiceChatStatusCode 
+---@field Disabled VoiceChatStatusCode 
+---@field UnsupportedChatChannelType VoiceChatStatusCode 
+---@field InvalidCommunityStream VoiceChatStatusCode 
+---@field PlayerSilenced VoiceChatStatusCode 
+---@field PlayerVoiceChatParentalDisabled VoiceChatStatusCode 
+---@field InvalidInputDevice VoiceChatStatusCode 
+---@field InvalidOutputDevice VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.Success = 0
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.OperationPending = 1
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.TooManyRequests = 2
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.LoginProhibited = 3
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.ClientNotInitialized = 4
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.ClientNotLoggedIn = 5
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.ClientAlreadyLoggedIn = 6
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.ChannelNameTooShort = 7
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.ChannelNameTooLong = 8
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.ChannelAlreadyExists = 9
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.AlreadyInChannel = 10
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.TargetNotFound = 11
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.Failure = 12
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.ServiceLost = 13
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.UnableToLaunchProxy = 14
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.ProxyConnectionTimeOut = 15
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.ProxyConnectionUnableToConnect = 16
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.ProxyConnectionUnexpectedDisconnect = 17
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.Disabled = 18
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.UnsupportedChatChannelType = 19
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.InvalidCommunityStream = 20
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.PlayerSilenced = 21
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.PlayerVoiceChatParentalDisabled = 22
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.InvalidInputDevice = 23
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.InvalidOutputDevice = 24
+Enum.VoiceChatStatusCode = {}
 
 ---@class VoiceTtsDestination : Enum
-Enum.VoiceTtsDestination = {}
----@type VoiceTtsDestination 
+---@field RemoteTransmission VoiceTtsDestination 
+---@field LocalPlayback VoiceTtsDestination 
+---@field RemoteTransmissionWithLocalPlayback VoiceTtsDestination 
+---@field QueuedRemoteTransmission VoiceTtsDestination 
+---@field QueuedLocalPlayback VoiceTtsDestination 
+---@field QueuedRemoteTransmissionWithLocalPlayback VoiceTtsDestination 
+---@field ScreenReader VoiceTtsDestination 
 Enum.VoiceTtsDestination.RemoteTransmission = 0
----@type VoiceTtsDestination 
 Enum.VoiceTtsDestination.LocalPlayback = 1
----@type VoiceTtsDestination 
 Enum.VoiceTtsDestination.RemoteTransmissionWithLocalPlayback = 2
----@type VoiceTtsDestination 
 Enum.VoiceTtsDestination.QueuedRemoteTransmission = 3
----@type VoiceTtsDestination 
 Enum.VoiceTtsDestination.QueuedLocalPlayback = 4
----@type VoiceTtsDestination 
 Enum.VoiceTtsDestination.QueuedRemoteTransmissionWithLocalPlayback = 5
----@type VoiceTtsDestination 
 Enum.VoiceTtsDestination.ScreenReader = 6
+Enum.VoiceTtsDestination = {}
 
 ---@class VoiceTtsStatusCode : Enum
-Enum.VoiceTtsStatusCode = {}
----@type VoiceTtsStatusCode 
+---@field Success VoiceTtsStatusCode 
+---@field InvalidEngineType VoiceTtsStatusCode 
+---@field EngineAllocationFailed VoiceTtsStatusCode 
+---@field NotSupported VoiceTtsStatusCode 
+---@field MaxCharactersExceeded VoiceTtsStatusCode 
+---@field UtteranceBelowMinimumDuration VoiceTtsStatusCode 
+---@field InputTextEnqueued VoiceTtsStatusCode 
+---@field SdkNotInitialized VoiceTtsStatusCode 
+---@field DestinationQueueFull VoiceTtsStatusCode 
+---@field EnqueueNotNecessary VoiceTtsStatusCode 
+---@field UtteranceNotFound VoiceTtsStatusCode 
+---@field ManagerNotFound VoiceTtsStatusCode 
+---@field InvalidArgument VoiceTtsStatusCode 
+---@field InternalError VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.Success = 0
----@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.InvalidEngineType = 1
----@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.EngineAllocationFailed = 2
----@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.NotSupported = 3
----@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.MaxCharactersExceeded = 4
----@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.UtteranceBelowMinimumDuration = 5
----@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.InputTextEnqueued = 6
----@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.SdkNotInitialized = 7
----@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.DestinationQueueFull = 8
----@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.EnqueueNotNecessary = 9
----@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.UtteranceNotFound = 10
----@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.ManagerNotFound = 11
----@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.InvalidArgument = 12
----@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.InternalError = 13
+Enum.VoiceTtsStatusCode = {}
 
 ---@class VoiceAudioDevice
 ---@field deviceID string 
