@@ -172,6 +172,7 @@ function UnitTrialBankedLevels(unit) end
 function UnitWidgetSet(unit) end
 
 ---@class PhaseReason : Enum
+Enum.PhaseReason = {}
 ---@field Phasing PhaseReason 
 ---@field Sharding PhaseReason 
 ---@field WarMode PhaseReason 
@@ -180,9 +181,9 @@ Enum.PhaseReason.Phasing = 0
 Enum.PhaseReason.Sharding = 1
 Enum.PhaseReason.WarMode = 2
 Enum.PhaseReason.ChromieTime = 3
-Enum.PhaseReason = {}
 
 ---@class PowerType : Enum
+Enum.PowerType = {}
 ---@field HealthCost PowerType 
 ---@field None PowerType 
 ---@field Mana PowerType 
@@ -235,9 +236,9 @@ Enum.PowerType.RuneBlood = 20
 Enum.PowerType.RuneFrost = 21
 Enum.PowerType.RuneUnholy = 22
 Enum.PowerType.NumPowerTypes = 23
-Enum.PowerType = {}
 
 ---@class PvPUnitClassification : Enum
+Enum.PvPUnitClassification = {}
 ---@field FlagCarrierHorde PvPUnitClassification 
 ---@field FlagCarrierAlliance PvPUnitClassification 
 ---@field FlagCarrierNeutral PvPUnitClassification 
@@ -260,7 +261,6 @@ Enum.PvPUnitClassification.OrbCarrierBlue = 7
 Enum.PvPUnitClassification.OrbCarrierGreen = 8
 Enum.PvPUnitClassification.OrbCarrierOrange = 9
 Enum.PvPUnitClassification.OrbCarrierPurple = 10
-Enum.PvPUnitClassification = {}
 
 ---@class CorruptionEffectInfo
 ---@field name string 

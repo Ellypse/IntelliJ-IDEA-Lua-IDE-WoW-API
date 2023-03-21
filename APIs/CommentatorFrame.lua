@@ -479,6 +479,7 @@ function C_Commentator.ZoomIn() end
 function C_Commentator.ZoomOut() end
 
 ---@class TrackedSpellCategory : Enum
+Enum.TrackedSpellCategory = {}
 ---@field Offensive TrackedSpellCategory 
 ---@field Defensive TrackedSpellCategory 
 ---@field Debuff TrackedSpellCategory 
@@ -489,7 +490,6 @@ Enum.TrackedSpellCategory.Defensive = 1
 Enum.TrackedSpellCategory.Debuff = 2
 Enum.TrackedSpellCategory.RacialAbility = 3
 Enum.TrackedSpellCategory.Count = 4
-Enum.TrackedSpellCategory = {}
 
 ---@class CommentatorHistory
 ---@field series table 

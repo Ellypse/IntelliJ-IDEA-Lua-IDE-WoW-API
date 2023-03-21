@@ -36,6 +36,7 @@ function C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID) end
 function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
 ---@class ItemTryOnReason : Enum
+Enum.ItemTryOnReason = {}
 ---@field Success ItemTryOnReason 
 ---@field WrongRace ItemTryOnReason 
 ---@field NotEquippable ItemTryOnReason 
@@ -44,14 +45,14 @@ Enum.ItemTryOnReason.Success = 0
 Enum.ItemTryOnReason.WrongRace = 1
 Enum.ItemTryOnReason.NotEquippable = 2
 Enum.ItemTryOnReason.DataPending = 3
-Enum.ItemTryOnReason = {}
 
 ---@class ModelSceneSetting : Enum
+Enum.ModelSceneSetting = {}
 ---@field AlignLightToOrbitDelta ModelSceneSetting 
 Enum.ModelSceneSetting.AlignLightToOrbitDelta = 1
-Enum.ModelSceneSetting = {}
 
 ---@class ModelSceneType : Enum
+Enum.ModelSceneType = {}
 ---@field MountJournal ModelSceneType 
 ---@field PetJournalCard ModelSceneType 
 ---@field ShopCard ModelSceneType 
@@ -92,7 +93,6 @@ Enum.ModelSceneType.HeartOfAzeroth = 16
 Enum.ModelSceneType.WorldMapThreat = 17
 Enum.ModelSceneType.Soulbinds = 18
 Enum.ModelSceneType.JailersTowerAnimaGlow = 19
-Enum.ModelSceneType = {}
 
 ---@class UIModelSceneActorDisplayInfo
 ---@field animation number 

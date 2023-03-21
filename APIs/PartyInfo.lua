@@ -83,6 +83,7 @@ function C_PartyInfo.LeaveParty(category) end
 function C_PartyInfo.RequestInviteFromUnit(targetName, tank, healer, dps) end
 
 ---@class PartyRequestJoinRelation : Enum
+Enum.PartyRequestJoinRelation = {}
 ---@field None PartyRequestJoinRelation 
 ---@field Friend PartyRequestJoinRelation 
 ---@field Guild PartyRequestJoinRelation 
@@ -93,5 +94,4 @@ Enum.PartyRequestJoinRelation.Friend = 1
 Enum.PartyRequestJoinRelation.Guild = 2
 Enum.PartyRequestJoinRelation.Club = 3
 Enum.PartyRequestJoinRelation.NumPartyRequestJoinRelations = 4
-Enum.PartyRequestJoinRelation = {}
 

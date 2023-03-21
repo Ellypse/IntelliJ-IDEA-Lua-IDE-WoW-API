@@ -189,6 +189,7 @@ function APIDocumentation:AddDocumentationTable(documentation)
 
 			elseif tab.Type == "Enumeration" then
 				write(CLASS_DECLARATION:format(tab.Name .. " : Enum"))
+				write(GLOBAL_TYPE_DECLARATION:format("Enum."..tab.Name))
 				for k, value in pairs(tab.Fields) do
 					write(FIELD_DOCUMENTATION:format(
 							value.Name,
@@ -200,7 +201,6 @@ function APIDocumentation:AddDocumentationTable(documentation)
 					write("Enum."..tab.Name .. "." .. value.Name .. " = " .. (value.EnumValue or ""))
 				end
 
-				write(GLOBAL_TYPE_DECLARATION:format("Enum."..tab.Name))
 				--[[for k, value in pairs(tab.Fields) do
 					write(TYPE_DECLARATION:format(
 							value.Type,

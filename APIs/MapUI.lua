@@ -151,6 +151,7 @@ function C_Map.RequestPreloadMap(uiMapID) end
 function C_Map.SetUserWaypoint(point) end
 
 ---@class MapCanvasPosition : Enum
+Enum.MapCanvasPosition = {}
 ---@field None MapCanvasPosition 
 ---@field BottomLeft MapCanvasPosition 
 ---@field BottomRight MapCanvasPosition 
@@ -161,9 +162,9 @@ Enum.MapCanvasPosition.BottomLeft = 1
 Enum.MapCanvasPosition.BottomRight = 2
 Enum.MapCanvasPosition.TopLeft = 3
 Enum.MapCanvasPosition.TopRight = 4
-Enum.MapCanvasPosition = {}
 
 ---@class UIMapFlag : Enum
+Enum.UIMapFlag = {}
 ---@field NoHighlight UIMapFlag 
 ---@field ShowOverlays UIMapFlag 
 ---@field ShowTaxiNodes UIMapFlag 
@@ -198,9 +199,9 @@ Enum.UIMapFlag.FlightMapShowZoomOut = 8192
 Enum.UIMapFlag.FlightMapAutoZoom = 16384
 Enum.UIMapFlag.ForceOnNavbar = 32768
 Enum.UIMapFlag.AlwaysAllowUserWaypoints = 65536
-Enum.UIMapFlag = {}
 
 ---@class UIMapSystem : Enum
+Enum.UIMapSystem = {}
 ---@field World UIMapSystem 
 ---@field Taxi UIMapSystem 
 ---@field Adventure UIMapSystem 
@@ -209,9 +210,9 @@ Enum.UIMapSystem.World = 0
 Enum.UIMapSystem.Taxi = 1
 Enum.UIMapSystem.Adventure = 2
 Enum.UIMapSystem.Minimap = 3
-Enum.UIMapSystem = {}
 
 ---@class UIMapType : Enum
+Enum.UIMapType = {}
 ---@field Cosmic UIMapType 
 ---@field World UIMapType 
 ---@field Continent UIMapType 
@@ -226,7 +227,6 @@ Enum.UIMapType.Zone = 3
 Enum.UIMapType.Dungeon = 4
 Enum.UIMapType.Micro = 5
 Enum.UIMapType.Orphan = 6
-Enum.UIMapType = {}
 
 ---@class MapBannerInfo
 ---@field areaPoiID number 

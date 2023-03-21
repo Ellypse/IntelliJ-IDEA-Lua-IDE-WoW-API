@@ -269,13 +269,13 @@ function C_TransmogCollection.SetUncollectedShown(shown) end
 function C_TransmogCollection.UpdateUsableAppearances() end
 
 ---@class TransmogCameraVariation : Enum
+Enum.TransmogCameraVariation = {}
 ---@field None TransmogCameraVariation 
 ---@field RightShoulder TransmogCameraVariation 
 ---@field CloakBackpack TransmogCameraVariation 
 Enum.TransmogCameraVariation.None = 0
 Enum.TransmogCameraVariation.RightShoulder = 1
 Enum.TransmogCameraVariation.CloakBackpack = 1
-Enum.TransmogCameraVariation = {}
 
 ---@class TransmogAppearanceInfoBySourceData
 ---@field appearanceID number 

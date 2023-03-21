@@ -196,6 +196,7 @@ function C_ClubFinder.SetRecruitmentSettings(index, checked) end
 function C_ClubFinder.ShouldShowClubFinder() end
 
 ---@class ClubFinderApplicationUpdateType : Enum
+Enum.ClubFinderApplicationUpdateType = {}
 ---@field None ClubFinderApplicationUpdateType 
 ---@field AcceptInvite ClubFinderApplicationUpdateType 
 ---@field DeclineInvite ClubFinderApplicationUpdateType 
@@ -204,9 +205,9 @@ Enum.ClubFinderApplicationUpdateType.None = 0
 Enum.ClubFinderApplicationUpdateType.AcceptInvite = 1
 Enum.ClubFinderApplicationUpdateType.DeclineInvite = 2
 Enum.ClubFinderApplicationUpdateType.Cancel = 3
-Enum.ClubFinderApplicationUpdateType = {}
 
 ---@class ClubFinderClubPostingStatusFlags : Enum
+Enum.ClubFinderClubPostingStatusFlags = {}
 ---@field None ClubFinderClubPostingStatusFlags 
 ---@field NeedsCacheUpdate ClubFinderClubPostingStatusFlags 
 ---@field ForceDescriptionChange ClubFinderClubPostingStatusFlags 
@@ -225,18 +226,18 @@ Enum.ClubFinderClubPostingStatusFlags.Banned = 5
 Enum.ClubFinderClubPostingStatusFlags.FakePost = 6
 Enum.ClubFinderClubPostingStatusFlags.PendingDelete = 7
 Enum.ClubFinderClubPostingStatusFlags.PostDelisted = 8
-Enum.ClubFinderClubPostingStatusFlags = {}
 
 ---@class ClubFinderDisableReason : Enum
+Enum.ClubFinderDisableReason = {}
 ---@field Muted ClubFinderDisableReason 
 ---@field Silenced ClubFinderDisableReason 
 ---@field VeteranTrial ClubFinderDisableReason 
 Enum.ClubFinderDisableReason.Muted = 0
 Enum.ClubFinderDisableReason.Silenced = 1
 Enum.ClubFinderDisableReason.VeteranTrial = 2
-Enum.ClubFinderDisableReason = {}
 
 ---@class ClubFinderPostingReportType : Enum
+Enum.ClubFinderPostingReportType = {}
 ---@field PostersName ClubFinderPostingReportType 
 ---@field ClubName ClubFinderPostingReportType 
 ---@field PostingDescription ClubFinderPostingReportType 
@@ -247,9 +248,9 @@ Enum.ClubFinderPostingReportType.ClubName = 1
 Enum.ClubFinderPostingReportType.PostingDescription = 2
 Enum.ClubFinderPostingReportType.ApplicantsName = 3
 Enum.ClubFinderPostingReportType.JoinNote = 4
-Enum.ClubFinderPostingReportType = {}
 
 ---@class ClubFinderRequestType : Enum
+Enum.ClubFinderRequestType = {}
 ---@field None ClubFinderRequestType 
 ---@field Guild ClubFinderRequestType 
 ---@field Community ClubFinderRequestType 
@@ -258,9 +259,9 @@ Enum.ClubFinderRequestType.None = 0
 Enum.ClubFinderRequestType.Guild = 1
 Enum.ClubFinderRequestType.Community = 2
 Enum.ClubFinderRequestType.All = 3
-Enum.ClubFinderRequestType = {}
 
 ---@class ClubFinderSettingFlags : Enum
+Enum.ClubFinderSettingFlags = {}
 ---@field None ClubFinderSettingFlags 
 ---@field Dungeons ClubFinderSettingFlags 
 ---@field Raids ClubFinderSettingFlags 
@@ -313,9 +314,9 @@ Enum.ClubFinderSettingFlags.LanguageReserved2 = 22
 Enum.ClubFinderSettingFlags.LanguageReserved3 = 23
 Enum.ClubFinderSettingFlags.LanguageReserved4 = 24
 Enum.ClubFinderSettingFlags.LanguageReserved5 = 25
-Enum.ClubFinderSettingFlags = {}
 
 ---@class PlayerClubRequestStatus : Enum
+Enum.PlayerClubRequestStatus = {}
 ---@field None PlayerClubRequestStatus 
 ---@field Pending PlayerClubRequestStatus 
 ---@field AutoApproved PlayerClubRequestStatus 
@@ -332,7 +333,6 @@ Enum.PlayerClubRequestStatus.Approved = 4
 Enum.PlayerClubRequestStatus.Joined = 5
 Enum.PlayerClubRequestStatus.JoinedAnother = 6
 Enum.PlayerClubRequestStatus.Canceled = 7
-Enum.PlayerClubRequestStatus = {}
 
 ---@class ClubFinderApplicantInfo
 ---@field clubFinderGUID WOWGUID 

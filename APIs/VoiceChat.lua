@@ -268,20 +268,21 @@ function C_VoiceChat.ToggleMemberMuted(playerLocation) end
 function C_VoiceChat.ToggleMuted() end
 
 ---@class CommunicationMode : Enum
+Enum.CommunicationMode = {}
 ---@field PushToTalk CommunicationMode 
 ---@field OpenMic CommunicationMode 
 Enum.CommunicationMode.PushToTalk = 0
 Enum.CommunicationMode.OpenMic = 1
-Enum.CommunicationMode = {}
 
 ---@class VoiceChannelErrorReason : Enum
+Enum.VoiceChannelErrorReason = {}
 ---@field Unknown VoiceChannelErrorReason 
 ---@field IsBattleNetChannel VoiceChannelErrorReason 
 Enum.VoiceChannelErrorReason.Unknown = 0
 Enum.VoiceChannelErrorReason.IsBattleNetChannel = 1
-Enum.VoiceChannelErrorReason = {}
 
 ---@class VoiceChatStatusCode : Enum
+Enum.VoiceChatStatusCode = {}
 ---@field Success VoiceChatStatusCode 
 ---@field OperationPending VoiceChatStatusCode 
 ---@field TooManyRequests VoiceChatStatusCode 
@@ -332,9 +333,9 @@ Enum.VoiceChatStatusCode.PlayerSilenced = 21
 Enum.VoiceChatStatusCode.PlayerVoiceChatParentalDisabled = 22
 Enum.VoiceChatStatusCode.InvalidInputDevice = 23
 Enum.VoiceChatStatusCode.InvalidOutputDevice = 24
-Enum.VoiceChatStatusCode = {}
 
 ---@class VoiceTtsDestination : Enum
+Enum.VoiceTtsDestination = {}
 ---@field RemoteTransmission VoiceTtsDestination 
 ---@field LocalPlayback VoiceTtsDestination 
 ---@field RemoteTransmissionWithLocalPlayback VoiceTtsDestination 
@@ -349,9 +350,9 @@ Enum.VoiceTtsDestination.QueuedRemoteTransmission = 3
 Enum.VoiceTtsDestination.QueuedLocalPlayback = 4
 Enum.VoiceTtsDestination.QueuedRemoteTransmissionWithLocalPlayback = 5
 Enum.VoiceTtsDestination.ScreenReader = 6
-Enum.VoiceTtsDestination = {}
 
 ---@class VoiceTtsStatusCode : Enum
+Enum.VoiceTtsStatusCode = {}
 ---@field Success VoiceTtsStatusCode 
 ---@field InvalidEngineType VoiceTtsStatusCode 
 ---@field EngineAllocationFailed VoiceTtsStatusCode 
@@ -380,7 +381,6 @@ Enum.VoiceTtsStatusCode.UtteranceNotFound = 10
 Enum.VoiceTtsStatusCode.ManagerNotFound = 11
 Enum.VoiceTtsStatusCode.InvalidArgument = 12
 Enum.VoiceTtsStatusCode.InternalError = 13
-Enum.VoiceTtsStatusCode = {}
 
 ---@class VoiceAudioDevice
 ---@field deviceID string 

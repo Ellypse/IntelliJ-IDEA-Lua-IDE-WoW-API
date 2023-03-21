@@ -11,6 +11,7 @@ function C_EventToastManager.GetNextToastToDisplay() end
 function C_EventToastManager.RemoveCurrentToast() end
 
 ---@class EventToastDisplayType : Enum
+Enum.EventToastDisplayType = {}
 ---@field NormalSingleLine EventToastDisplayType 
 ---@field NormalBlockText EventToastDisplayType 
 ---@field NormalTitleAndSubTitle EventToastDisplayType 
@@ -29,9 +30,9 @@ Enum.EventToastDisplayType.NormalTextWithIconAndRarity = 5
 Enum.EventToastDisplayType.Scenario = 6
 Enum.EventToastDisplayType.ChallengeMode = 7
 Enum.EventToastDisplayType.ScenarioClickExpand = 8
-Enum.EventToastDisplayType = {}
 
 ---@class EventToastEventType : Enum
+Enum.EventToastEventType = {}
 ---@field LevelUp EventToastEventType 
 ---@field LevelUpSpell EventToastEventType 
 ---@field LevelUpDungeon EventToastEventType 
@@ -78,7 +79,6 @@ Enum.EventToastEventType.CriteriaUpdated = 19
 Enum.EventToastEventType.PvPTierUpdate = 20
 Enum.EventToastEventType.SpellLearned = 21
 Enum.EventToastEventType.TreasureItem = 22
-Enum.EventToastEventType = {}
 
 ---@class EventToastInfo
 ---@field eventToastID number 

@@ -10,11 +10,11 @@ function C_SplashScreen.CanViewSplashScreen() end
 function C_SplashScreen.RequestLatestSplashScreen(fromGameMenu) end
 
 ---@class SplashScreenType : Enum
+Enum.SplashScreenType = {}
 ---@field WhatsNew SplashScreenType 
 ---@field SeasonRollOver SplashScreenType 
 Enum.SplashScreenType.WhatsNew = 0
 Enum.SplashScreenType.SeasonRollOver = 1
-Enum.SplashScreenType = {}
 
 ---@class SplashScreenInfo
 ---@field textureKit textureKit 

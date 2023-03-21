@@ -21,6 +21,7 @@ function C_VideoOptions.GetGxAdapterInfo() end
 function C_VideoOptions.SetGameWindowSize(x, y) end
 
 ---@class GraphicsValidationResult : Enum
+Enum.GraphicsValidationResult = {}
 ---@field Supported GraphicsValidationResult 
 ---@field Illegal GraphicsValidationResult 
 ---@field Unsupported GraphicsValidationResult 
@@ -105,7 +106,6 @@ Enum.GraphicsValidationResult.NvidiaGpuUnsupported = 38
 Enum.GraphicsValidationResult.QualcommGpuUnsupported = 39
 Enum.GraphicsValidationResult.GpuDriver = 40
 Enum.GraphicsValidationResult.Unknown = 41
-Enum.GraphicsValidationResult = {}
 
 ---@class GxAdapterInfoDetails
 ---@field name string 
