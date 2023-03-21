@@ -186,13 +186,13 @@ function C_Container.UseHearthstone() end
 ---@field hasNoValue bool 
 ---@field itemID number 
 ---@field isBound bool 
-ContainerItemInfo = {}
+local ContainerItemInfo = {}
 
 ---@class ItemPurchaseCurrency
 ---@field iconFileID number|nil 
 ---@field currencyCount number 
 ---@field name cstring 
-ItemPurchaseCurrency = {}
+local ItemPurchaseCurrency = {}
 
 ---@class ItemPurchaseInfo
 ---@field money WOWMONEY 
@@ -200,17 +200,17 @@ ItemPurchaseCurrency = {}
 ---@field refundSeconds time_t 
 ---@field currencyCount number 
 ---@field hasEnchants bool 
-ItemPurchaseInfo = {}
+local ItemPurchaseInfo = {}
 
 ---@class ItemPurchaseItem
 ---@field iconFileID number|nil 
 ---@field itemCount number 
 ---@field hyperlink string 
-ItemPurchaseItem = {}
+local ItemPurchaseItem = {}
 
 ---@class ItemQuestInfo
 ---@field isQuestItem bool 
 ---@field questID number|nil 
 ---@field isActive bool 
-ItemQuestInfo = {}
+local ItemQuestInfo = {}
 

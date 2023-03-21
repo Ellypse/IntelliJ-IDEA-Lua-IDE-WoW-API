@@ -26,5 +26,5 @@ function C_Covenants.GetCovenantIDs() end
 ---@field renownFanfareSoundKitID number 
 ---@field name cstring 
 ---@field soulbindIDs table 
-CovenantData = {}
+local CovenantData = {}
 

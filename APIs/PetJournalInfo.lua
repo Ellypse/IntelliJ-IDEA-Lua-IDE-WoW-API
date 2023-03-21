@@ -68,12 +68,12 @@ function C_PetJournal.SpellTargetBattlePet(battlePetGUID) end
 ---@field InvalidCovenant number @ Default value is [ 6 ]
 
 ---@type PetJournalError 
-PetJournalError = {}
+local PetJournalError = {}
 
 ---@class PetAbilityLevelInfo
 ---@field abilityID number 
 ---@field level number 
-PetAbilityLevelInfo = {}
+local PetAbilityLevelInfo = {}
 
 ---@class PetJournalPetInfo
 ---@field speciesID number 
@@ -94,5 +94,5 @@ PetAbilityLevelInfo = {}
 ---@field tradable bool 
 ---@field unique bool 
 ---@field obtainable bool 
-PetJournalPetInfo = {}
+local PetJournalPetInfo = {}
 

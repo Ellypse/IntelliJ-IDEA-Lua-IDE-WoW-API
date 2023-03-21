@@ -68,7 +68,7 @@ function C_EncounterJournal.SetSlotFilter(filterSlot) end
 ---@field NoFilter number @ Default value is [ 15 ]
 
 ---@type ItemSlotFilterType 
-ItemSlotFilterType = {}
+local ItemSlotFilterType = {}
 
 ---@class DungeonEntranceMapInfo
 ---@field areaPoiID number 
@@ -77,7 +77,7 @@ ItemSlotFilterType = {}
 ---@field description cstring 
 ---@field atlasName string 
 ---@field journalInstanceID number 
-DungeonEntranceMapInfo = {}
+local DungeonEntranceMapInfo = {}
 
 ---@class EncounterJournalItemInfo
 ---@field itemID number 
@@ -94,13 +94,13 @@ DungeonEntranceMapInfo = {}
 ---@field displayAsPerPlayerLoot bool|nil 
 ---@field displayAsVeryRare bool|nil 
 ---@field displayAsExtremelyRare bool|nil 
-EncounterJournalItemInfo = {}
+local EncounterJournalItemInfo = {}
 
 ---@class EncounterJournalMapEncounterInfo
 ---@field encounterID number 
 ---@field mapX number 
 ---@field mapY number 
-EncounterJournalMapEncounterInfo = {}
+local EncounterJournalMapEncounterInfo = {}
 
 ---@class EncounterJournalSectionInfo
 ---@field spellID number 
@@ -115,5 +115,5 @@ EncounterJournalMapEncounterInfo = {}
 ---@field filteredByDifficulty bool 
 ---@field link string 
 ---@field startsOpen bool 
-EncounterJournalSectionInfo = {}
+local EncounterJournalSectionInfo = {}
 

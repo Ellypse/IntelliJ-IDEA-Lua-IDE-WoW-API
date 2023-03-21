@@ -74,7 +74,7 @@ function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 ---@field TooltipUseTimeRemaining number @ Default value is [ 0 ]
 
 ---@type ContributionAppearanceFlags 
-ContributionAppearanceFlags = {}
+local ContributionAppearanceFlags = {}
 
 ---@class ContributionResult
 ---@field Success number @ Default value is [ 0 ]
@@ -87,7 +87,7 @@ ContributionAppearanceFlags = {}
 ---@field InternalError number @ Default value is [ 7 ]
 
 ---@type ContributionResult 
-ContributionResult = {}
+local ContributionResult = {}
 
 ---@class ContributionAppearance
 ---@field stateName cstring 
@@ -97,7 +97,7 @@ ContributionResult = {}
 ---@field statusBarAtlas textureAtlas 
 ---@field borderAtlas textureAtlas 
 ---@field bannerAtlas textureAtlas 
-ContributionAppearance = {}
+local ContributionAppearance = {}
 
 ---@class ContributionMapInfo
 ---@field areaPoiID number 
@@ -105,5 +105,5 @@ ContributionAppearance = {}
 ---@field name cstring 
 ---@field atlasName string 
 ---@field collectorCreatureID number 
-ContributionMapInfo = {}
+local ContributionMapInfo = {}
 

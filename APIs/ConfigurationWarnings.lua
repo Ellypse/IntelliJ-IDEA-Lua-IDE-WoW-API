@@ -27,5 +27,5 @@ function C_ConfigurationWarnings.SetConfigurationWarningSeen(configurationWarnin
 ---@field OsBitsWillBeOutdated number @ Default value is [ 7 ]
 
 ---@type ConfigurationWarning 
-ConfigurationWarning = {}
+local ConfigurationWarning = {}
 

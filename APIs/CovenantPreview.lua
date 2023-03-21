@@ -13,18 +13,18 @@ function C_CovenantPreview.GetCovenantInfoForPlayerChoiceResponseID(playerChoice
 ---@field Soulbind number @ Default value is [ 2 ]
 
 ---@type CovenantAbilityType 
-CovenantAbilityType = {}
+local CovenantAbilityType = {}
 
 ---@class CovenantAbilityInfo
 ---@field spellID number 
 ---@field type CovenantAbilityType 
-CovenantAbilityInfo = {}
+local CovenantAbilityInfo = {}
 
 ---@class CovenantFeatureInfo
 ---@field name cstring 
 ---@field description cstring 
 ---@field texture number 
-CovenantFeatureInfo = {}
+local CovenantFeatureInfo = {}
 
 ---@class CovenantPreviewInfo
 ---@field textureKit textureKit 
@@ -38,7 +38,7 @@ CovenantFeatureInfo = {}
 ---@field fromPlayerChoice bool 
 ---@field covenantSoulbinds table 
 ---@field featureInfo CovenantFeatureInfo 
-CovenantPreviewInfo = {}
+local CovenantPreviewInfo = {}
 
 ---@class CovenantSoulbindInfo
 ---@field spellID number 
@@ -46,5 +46,5 @@ CovenantPreviewInfo = {}
 ---@field name cstring 
 ---@field description cstring 
 ---@field sortOrder number 
-CovenantSoulbindInfo = {}
+local CovenantSoulbindInfo = {}
 

@@ -66,7 +66,7 @@ function C_Minimap.ShouldUseHybridMinimap() end
 ---@class MinimapScriptTrackingFilter
 ---@field spellID number|nil 
 ---@field filterID MinimapTrackingFilter|nil 
-MinimapScriptTrackingFilter = {}
+local MinimapScriptTrackingFilter = {}
 
 ---@class MinimapScriptTrackingInfo
 ---@field name cstring 
@@ -75,5 +75,5 @@ MinimapScriptTrackingFilter = {}
 ---@field type cstring 
 ---@field subType number 
 ---@field spellID number|nil 
-MinimapScriptTrackingInfo = {}
+local MinimapScriptTrackingInfo = {}
 

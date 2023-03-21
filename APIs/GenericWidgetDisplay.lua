@@ -7,5 +7,5 @@ C_GenericWidgetDisplay = {}
 ---@field title string|nil 
 ---@field frameWidth number 
 ---@field frameHeight number 
-GenericWidgetDisplayFrameInfo = {}
+local GenericWidgetDisplayFrameInfo = {}
 

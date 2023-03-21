@@ -70,7 +70,7 @@ function C_GossipInfo.SelectOptionByIndex(optionID, text, confirmed) end
 ---@field Currency number @ Default value is [ 1 ]
 
 ---@type GossipOptionRewardType 
-GossipOptionRewardType = {}
+local GossipOptionRewardType = {}
 
 ---@class GossipOptionStatus
 ---@field Available number @ Default value is [ 0 ]
@@ -79,7 +79,7 @@ GossipOptionRewardType = {}
 ---@field AlreadyComplete number @ Default value is [ 3 ]
 
 ---@type GossipOptionStatus 
-GossipOptionStatus = {}
+local GossipOptionStatus = {}
 
 ---@class FriendshipReputationInfo
 ---@field friendshipFactionID number 
@@ -93,18 +93,18 @@ GossipOptionStatus = {}
 ---@field nextThreshold number|nil 
 ---@field reversedColor bool 
 ---@field overrideColor number|nil 
-FriendshipReputationInfo = {}
+local FriendshipReputationInfo = {}
 
 ---@class FriendshipReputationRankInfo
 ---@field currentLevel number 
 ---@field maxLevel number 
-FriendshipReputationRankInfo = {}
+local FriendshipReputationRankInfo = {}
 
 ---@class GossipOptionRewardInfo
 ---@field id number 
 ---@field quantity number 
 ---@field rewardType GossipOptionRewardType 
-GossipOptionRewardInfo = {}
+local GossipOptionRewardInfo = {}
 
 ---@class GossipOptionUIInfo
 ---@field gossipOptionID number|nil 
@@ -117,14 +117,14 @@ GossipOptionRewardInfo = {}
 ---@field overrideIconID fileID|nil 
 ---@field selectOptionWhenOnlyOption bool 
 ---@field orderIndex number 
-GossipOptionUIInfo = {}
+local GossipOptionUIInfo = {}
 
 ---@class GossipPoiInfo
 ---@field name string 
 ---@field textureIndex number 
 ---@field position vector2 
 ---@field inBattleMap bool 
-GossipPoiInfo = {}
+local GossipPoiInfo = {}
 
 ---@class GossipQuestUIInfo
 ---@field title string 
@@ -136,5 +136,5 @@ GossipPoiInfo = {}
 ---@field isLegendary bool 
 ---@field isIgnored bool 
 ---@field questID number 
-GossipQuestUIInfo = {}
+local GossipQuestUIInfo = {}
 

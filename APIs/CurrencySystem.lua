@@ -87,7 +87,7 @@ function C_CurrencyInfo.SetCurrencyUnused(index, unused) end
 ---@field quantity number 
 ---@field iconFileID fileID 
 ---@field currencyTypesID number 
-BackpackCurrencyInfo = {}
+local BackpackCurrencyInfo = {}
 
 ---@class CurrencyDisplayInfo
 ---@field name string 
@@ -96,7 +96,7 @@ BackpackCurrencyInfo = {}
 ---@field quality number 
 ---@field displayAmount number 
 ---@field actualAmount number 
-CurrencyDisplayInfo = {}
+local CurrencyDisplayInfo = {}
 
 ---@class CurrencyInfo
 ---@field name cstring 
@@ -117,5 +117,5 @@ CurrencyDisplayInfo = {}
 ---@field totalEarned number 
 ---@field discovered bool 
 ---@field useTotalEarnedForMaxQty bool 
-CurrencyInfo = {}
+local CurrencyInfo = {}
 

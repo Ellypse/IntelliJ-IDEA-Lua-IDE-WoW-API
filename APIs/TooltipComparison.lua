@@ -19,11 +19,11 @@ function C_TooltipComparison.GetItemComparisonInfo(comparisonItem) end
 ---@field WithBagOffHandItem number @ Default value is [ 3 ]
 
 ---@type TooltipComparisonMethod 
-TooltipComparisonMethod = {}
+local TooltipComparisonMethod = {}
 
 ---@class TooltipItemComparisonInfo
 ---@field method TooltipComparisonMethod 
 ---@field item TooltipComparisonItem 
 ---@field additionalItems table 
-TooltipItemComparisonInfo = {}
+local TooltipItemComparisonInfo = {}
 

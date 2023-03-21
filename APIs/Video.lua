@@ -65,11 +65,11 @@ function C_VideoOptions.SetGameWindowSize(x, y) end
 ---@field Unknown number @ Default value is [ 41 ]
 
 ---@type GraphicsValidationResult 
-GraphicsValidationResult = {}
+local GraphicsValidationResult = {}
 
 ---@class GxAdapterInfoDetails
 ---@field name string 
 ---@field isLowPower bool 
 ---@field isExternal bool 
-GxAdapterInfoDetails = {}
+local GxAdapterInfoDetails = {}
 

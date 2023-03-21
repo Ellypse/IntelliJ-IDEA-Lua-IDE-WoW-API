@@ -14,5 +14,5 @@ C_WowEntitlementInfo = {}
 ---@field Invalid number @ Default value is [ 9 ]
 
 ---@type WoWEntitlementType 
-WoWEntitlementType = {}
+local WoWEntitlementType = {}
 

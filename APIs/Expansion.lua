@@ -68,7 +68,7 @@ function SendSubscriptionInterstitialResponse(response) end
 ---@field WebRedirect number @ Default value is [ 2 ]
 
 ---@type SubscriptionInterstitialResponseType 
-SubscriptionInterstitialResponseType = {}
+local SubscriptionInterstitialResponseType = {}
 
 ---@class SubscriptionInterstitialType
 ---@field Standard number @ Default value is [ 0 ]
@@ -76,7 +76,7 @@ SubscriptionInterstitialResponseType = {}
 ---@field MaxLevel number @ Default value is [ 2 ]
 
 ---@type SubscriptionInterstitialType 
-SubscriptionInterstitialType = {}
+local SubscriptionInterstitialType = {}
 
 ---@class ExpansionDisplayInfo
 ---@field logo fileID 
@@ -84,10 +84,10 @@ SubscriptionInterstitialType = {}
 ---@field features table 
 ---@field highResBackgroundID fileID 
 ---@field lowResBackgroundID fileID 
-ExpansionDisplayInfo = {}
+local ExpansionDisplayInfo = {}
 
 ---@class ExpansionDisplayInfoFeature
 ---@field icon fileID 
 ---@field text cstring 
-ExpansionDisplayInfoFeature = {}
+local ExpansionDisplayInfoFeature = {}
 

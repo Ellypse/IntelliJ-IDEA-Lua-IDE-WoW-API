@@ -6,5 +6,5 @@ C_Platform = {}
 ---@field Macintosh number @ Default value is [ 1 ]
 
 ---@type ClientPlatformType 
-ClientPlatformType = {}
+local ClientPlatformType = {}
 

@@ -403,7 +403,7 @@ function C_Club.ValidateText(clubType, text, clubFieldType) end
 ---@field ErrorClubActionDestroyMessage number @ Default value is [ 26 ]
 
 ---@type ClubActionType 
-ClubActionType = {}
+local ClubActionType = {}
 
 ---@class ClubErrorType
 ---@field ErrorCommunitiesNone number @ Default value is [ 0 ]
@@ -450,7 +450,7 @@ ClubActionType = {}
 ---@field ErrorClubEditHasCrossFactionMembers number @ Default value is [ 41 ]
 
 ---@type ClubErrorType 
-ClubErrorType = {}
+local ClubErrorType = {}
 
 ---@class ClubFieldType
 ---@field ClubName number @ Default value is [ 0 ]
@@ -462,7 +462,7 @@ ClubErrorType = {}
 ---@field NumTypes number @ Default value is [ 6 ]
 
 ---@type ClubFieldType 
-ClubFieldType = {}
+local ClubFieldType = {}
 
 ---@class ClubInvitationCandidateStatus
 ---@field Available number @ Default value is [ 0 ]
@@ -470,7 +470,7 @@ ClubFieldType = {}
 ---@field AlreadyMember number @ Default value is [ 2 ]
 
 ---@type ClubInvitationCandidateStatus 
-ClubInvitationCandidateStatus = {}
+local ClubInvitationCandidateStatus = {}
 
 ---@class ClubMemberPresence
 ---@field Unknown number @ Default value is [ 0 ]
@@ -481,7 +481,7 @@ ClubInvitationCandidateStatus = {}
 ---@field Busy number @ Default value is [ 5 ]
 
 ---@type ClubMemberPresence 
-ClubMemberPresence = {}
+local ClubMemberPresence = {}
 
 ---@class ClubRemovedReason
 ---@field None number @ Default value is [ 0 ]
@@ -490,14 +490,14 @@ ClubMemberPresence = {}
 ---@field ClubDestroyed number @ Default value is [ 3 ]
 
 ---@type ClubRemovedReason 
-ClubRemovedReason = {}
+local ClubRemovedReason = {}
 
 ---@class ClubRestrictionReason
 ---@field None number @ Default value is [ 0 ]
 ---@field Unavailable number @ Default value is [ 1 ]
 
 ---@type ClubRestrictionReason 
-ClubRestrictionReason = {}
+local ClubRestrictionReason = {}
 
 ---@class ClubRoleIdentifier
 ---@field Owner number @ Default value is [ 1 ]
@@ -506,7 +506,7 @@ ClubRestrictionReason = {}
 ---@field Member number @ Default value is [ 4 ]
 
 ---@type ClubRoleIdentifier 
-ClubRoleIdentifier = {}
+local ClubRoleIdentifier = {}
 
 ---@class ClubStreamNotificationFilter
 ---@field None number @ Default value is [ 0 ]
@@ -514,7 +514,7 @@ ClubRoleIdentifier = {}
 ---@field All number @ Default value is [ 2 ]
 
 ---@type ClubStreamNotificationFilter 
-ClubStreamNotificationFilter = {}
+local ClubStreamNotificationFilter = {}
 
 ---@class ClubStreamType
 ---@field General number @ Default value is [ 0 ]
@@ -523,7 +523,7 @@ ClubStreamNotificationFilter = {}
 ---@field Other number @ Default value is [ 3 ]
 
 ---@type ClubStreamType 
-ClubStreamType = {}
+local ClubStreamType = {}
 
 ---@class ClubType
 ---@field BattleNet number @ Default value is [ 0 ]
@@ -532,7 +532,7 @@ ClubStreamType = {}
 ---@field Other number @ Default value is [ 3 ]
 
 ---@type ClubType 
-ClubType = {}
+local ClubType = {}
 
 ---@class ClubInfo
 ---@field clubId ClubId 
@@ -547,24 +547,24 @@ ClubType = {}
 ---@field joinTime BigUInteger|nil 
 ---@field socialQueueingEnabled bool|nil 
 ---@field crossFaction bool|nil 
-ClubInfo = {}
+local ClubInfo = {}
 
 ---@class ClubInvitationCandidateInfo
 ---@field memberId number 
 ---@field name string 
 ---@field priority luaIndex 
 ---@field status ClubInvitationCandidateStatus 
-ClubInvitationCandidateInfo = {}
+local ClubInvitationCandidateInfo = {}
 
 ---@class ClubInvitationInfo
 ---@field invitationId ClubInvitationId 
 ---@field isMyInvitation bool 
 ---@field invitee ClubMemberInfo 
-ClubInvitationInfo = {}
+local ClubInvitationInfo = {}
 
 ---@class ClubLimits
 ---@field maximumNumberOfStreams number 
-ClubLimits = {}
+local ClubLimits = {}
 
 ---@class ClubMemberInfo
 ---@field isSelf bool 
@@ -597,12 +597,12 @@ ClubLimits = {}
 ---@field isRemoteChat bool|nil 
 ---@field overallDungeonScore number|nil 
 ---@field faction PvPFaction|nil 
-ClubMemberInfo = {}
+local ClubMemberInfo = {}
 
 ---@class ClubMessageIdentifier
 ---@field epoch BigUInteger @ number of microseconds since the UNIX epoch.
 ---@field position BigUInteger @ sort order for messages at the same time
-ClubMessageIdentifier = {}
+local ClubMessageIdentifier = {}
 
 ---@class ClubMessageInfo
 ---@field messageId ClubMessageIdentifier 
@@ -611,12 +611,12 @@ ClubMessageIdentifier = {}
 ---@field destroyer ClubMemberInfo|nil @ May be nil even if the message has been destroyed
 ---@field destroyed bool 
 ---@field edited bool 
-ClubMessageInfo = {}
+local ClubMessageInfo = {}
 
 ---@class ClubMessageRange
 ---@field oldestMessageId ClubMessageIdentifier 
 ---@field newestMessageId ClubMessageIdentifier 
-ClubMessageRange = {}
+local ClubMessageRange = {}
 
 ---@class ClubPrivilegeInfo
 ---@field canDestroy bool 
@@ -661,21 +661,21 @@ ClubMessageRange = {}
 ---@field canEditOwnMessage bool 
 ---@field canPinMessage bool 
 ---@field kickableRoleIds table @ Roles that can be kicked and banned
-ClubPrivilegeInfo = {}
+local ClubPrivilegeInfo = {}
 
 ---@class ClubRoleInfo
 ---@field roleId number 
 ---@field name string 
 ---@field required bool @ At least one user must be in this role
 ---@field unique bool @ At most one user can be in this role
-ClubRoleInfo = {}
+local ClubRoleInfo = {}
 
 ---@class ClubSelfInvitationInfo
 ---@field invitationId ClubInvitationId 
 ---@field club ClubInfo 
 ---@field inviter ClubMemberInfo 
 ---@field leaders table 
-ClubSelfInvitationInfo = {}
+local ClubSelfInvitationInfo = {}
 
 ---@class ClubStreamInfo
 ---@field streamId ClubStreamId 
@@ -684,12 +684,12 @@ ClubSelfInvitationInfo = {}
 ---@field leadersAndModeratorsOnly bool 
 ---@field streamType ClubStreamType 
 ---@field creationTime BigUInteger 
-ClubStreamInfo = {}
+local ClubStreamInfo = {}
 
 ---@class ClubStreamNotificationSetting
 ---@field streamId ClubStreamId 
 ---@field filter ClubStreamNotificationFilter 
-ClubStreamNotificationSetting = {}
+local ClubStreamNotificationSetting = {}
 
 ---@class ClubTicketInfo
 ---@field ticketId string 
@@ -699,5 +699,5 @@ ClubStreamNotificationSetting = {}
 ---@field expirationTime BigUInteger @ Expiration time in microseconds since the UNIX epoch.
 ---@field defaultStreamId ClubStreamId|nil 
 ---@field creator ClubMemberInfo 
-ClubTicketInfo = {}
+local ClubTicketInfo = {}
 

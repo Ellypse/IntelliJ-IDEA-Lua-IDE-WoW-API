@@ -41,23 +41,23 @@ function C_EditMode.SetActiveLayout(activeLayout) end
 ---@field relativePoint FramePoint 
 ---@field offsetX number 
 ---@field offsetY number 
-EditModeAnchorInfo = {}
+local EditModeAnchorInfo = {}
 
 ---@class EditModeLayoutInfo
 ---@field layoutName string 
 ---@field layoutType EditModeLayoutType 
 ---@field systems table 
-EditModeLayoutInfo = {}
+local EditModeLayoutInfo = {}
 
 ---@class EditModeLayouts
 ---@field layouts table 
 ---@field activeLayout luaIndex 
-EditModeLayouts = {}
+local EditModeLayouts = {}
 
 ---@class EditModeSettingInfo
 ---@field setting number 
 ---@field value number 
-EditModeSettingInfo = {}
+local EditModeSettingInfo = {}
 
 ---@class EditModeSystemInfo
 ---@field system EditModeSystem 
@@ -66,5 +66,5 @@ EditModeSettingInfo = {}
 ---@field anchorInfo2 EditModeAnchorInfo|nil 
 ---@field settings table 
 ---@field isInDefaultPosition bool 
-EditModeSystemInfo = {}
+local EditModeSystemInfo = {}
 

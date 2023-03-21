@@ -29,18 +29,18 @@ function C_AnimaDiversion.SelectAnimaNode(talentID, temporary) end
 ---@field Cooldown number @ Default value is [ 4 ]
 
 ---@type AnimaDiversionNodeState 
-AnimaDiversionNodeState = {}
+local AnimaDiversionNodeState = {}
 
 ---@class AnimaDiversionCostInfo
 ---@field currencyID number 
 ---@field quantity number 
-AnimaDiversionCostInfo = {}
+local AnimaDiversionCostInfo = {}
 
 ---@class AnimaDiversionFrameInfo
 ---@field textureKit textureKit 
 ---@field title string 
 ---@field mapID number 
-AnimaDiversionFrameInfo = {}
+local AnimaDiversionFrameInfo = {}
 
 ---@class AnimaDiversionNodeInfo
 ---@field talentID number 
@@ -51,5 +51,5 @@ AnimaDiversionFrameInfo = {}
 ---@field icon number 
 ---@field normalizedPosition vector2 
 ---@field state AnimaDiversionNodeState 
-AnimaDiversionNodeInfo = {}
+local AnimaDiversionNodeInfo = {}
 

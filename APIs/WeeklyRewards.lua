@@ -65,7 +65,7 @@ function C_WeeklyRewards.ShouldShowRetirementMessage() end
 ---@field Seasonal number @ Default value is [ 2 ]
 
 ---@type ConquestProgressBarDisplayType 
-ConquestProgressBarDisplayType = {}
+local ConquestProgressBarDisplayType = {}
 
 ---@class ConquestWeeklyProgress
 ---@field progress number 
@@ -74,14 +74,14 @@ ConquestProgressBarDisplayType = {}
 ---@field unlocksCompleted number 
 ---@field maxUnlocks number 
 ---@field sampleItemHyperlink string 
-ConquestWeeklyProgress = {}
+local ConquestWeeklyProgress = {}
 
 ---@class WeeklyRewardActivityEncounterInfo
 ---@field encounterID number 
 ---@field bestDifficulty number 
 ---@field uiOrder number 
 ---@field instanceID number 
-WeeklyRewardActivityEncounterInfo = {}
+local WeeklyRewardActivityEncounterInfo = {}
 
 ---@class WeeklyRewardActivityInfo
 ---@field type WeeklyRewardChestThresholdType 
@@ -93,12 +93,12 @@ WeeklyRewardActivityEncounterInfo = {}
 ---@field claimID number|nil 
 ---@field raidString cstring|nil 
 ---@field rewards table 
-WeeklyRewardActivityInfo = {}
+local WeeklyRewardActivityInfo = {}
 
 ---@class WeeklyRewardActivityRewardInfo
 ---@field type CachedRewardType 
 ---@field id number 
 ---@field quantity number 
 ---@field itemDBID WeeklyRewardItemDBID|nil 
-WeeklyRewardActivityRewardInfo = {}
+local WeeklyRewardActivityRewardInfo = {}
 

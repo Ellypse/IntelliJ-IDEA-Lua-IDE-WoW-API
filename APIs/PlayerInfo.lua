@@ -76,10 +76,10 @@ function C_PlayerInfo.IsTravelersLogAvailable() end
 ---@field bestRunLevel number 
 ---@field bestRunDurationMS number 
 ---@field finishedSuccess bool 
-MythicPlusRatingMapSummary = {}
+local MythicPlusRatingMapSummary = {}
 
 ---@class MythicPlusRatingSummary
 ---@field currentSeasonScore number 
 ---@field runs table 
-MythicPlusRatingSummary = {}
+local MythicPlusRatingSummary = {}
 

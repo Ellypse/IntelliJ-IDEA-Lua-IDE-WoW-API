@@ -126,10 +126,10 @@ function C_TransmogSets.SetIsFavorite(transmogSetID, isFavorite) end
 ---@field collected bool 
 ---@field favorite bool 
 ---@field limitedTimeSet bool 
-TransmogSetInfo = {}
+local TransmogSetInfo = {}
 
 ---@class TransmogSetPrimaryAppearanceInfo
 ---@field appearanceID number 
 ---@field collected bool 
-TransmogSetPrimaryAppearanceInfo = {}
+local TransmogSetPrimaryAppearanceInfo = {}
 

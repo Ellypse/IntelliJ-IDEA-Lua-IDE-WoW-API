@@ -83,25 +83,25 @@ function C_AzeriteEmpoweredItem.SetHasBeenViewed(azeriteEmpoweredItemLocation) e
 ---@field Downgraded number @ Default value is [ 2 ]
 
 ---@type AzeritePowerLevel 
-AzeritePowerLevel = {}
+local AzeritePowerLevel = {}
 
 ---@class AzeriteEmpoweredItemPowerInfo
 ---@field azeritePowerID number 
 ---@field spellID number 
-AzeriteEmpoweredItemPowerInfo = {}
+local AzeriteEmpoweredItemPowerInfo = {}
 
 ---@class AzeriteEmpoweredItemPowerText
 ---@field name string 
 ---@field description string 
-AzeriteEmpoweredItemPowerText = {}
+local AzeriteEmpoweredItemPowerText = {}
 
 ---@class AzeriteEmpoweredItemTierInfo
 ---@field azeritePowerIDs table 
 ---@field unlockLevel number 
-AzeriteEmpoweredItemTierInfo = {}
+local AzeriteEmpoweredItemTierInfo = {}
 
 ---@class AzeriteSpecInfo
 ---@field classID number 
 ---@field specID number 
-AzeriteSpecInfo = {}
+local AzeriteSpecInfo = {}
 

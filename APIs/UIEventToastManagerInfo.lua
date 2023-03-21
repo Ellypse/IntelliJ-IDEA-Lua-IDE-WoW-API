@@ -22,7 +22,7 @@ function C_EventToastManager.RemoveCurrentToast() end
 ---@field ScenarioClickExpand number @ Default value is [ 8 ]
 
 ---@type EventToastDisplayType 
-EventToastDisplayType = {}
+local EventToastDisplayType = {}
 
 ---@class EventToastEventType
 ---@field LevelUp number @ Default value is [ 0 ]
@@ -50,7 +50,7 @@ EventToastDisplayType = {}
 ---@field TreasureItem number @ Default value is [ 22 ]
 
 ---@type EventToastEventType 
-EventToastEventType = {}
+local EventToastEventType = {}
 
 ---@class EventToastInfo
 ---@field eventToastID number 
@@ -77,5 +77,5 @@ EventToastEventType = {}
 ---@field showSoundKitID number|nil 
 ---@field hideSoundKitID number|nil 
 ---@field colorTint colorRGB|nil 
-EventToastInfo = {}
+local EventToastInfo = {}
 

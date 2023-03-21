@@ -13,13 +13,13 @@ function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 ---@field UIParentShake number @ Default value is [ 5 ]
 
 ---@type ScriptedAnimationBehavior 
-ScriptedAnimationBehavior = {}
+local ScriptedAnimationBehavior = {}
 
 ---@class ScriptedAnimationFlags
 ---@field UseTargetAsSource number @ Default value is [ 1 ]
 
 ---@type ScriptedAnimationFlags 
-ScriptedAnimationFlags = {}
+local ScriptedAnimationFlags = {}
 
 ---@class ScriptedAnimationTrajectory
 ---@field AtSource number @ Default value is [ 0 ]
@@ -31,7 +31,7 @@ ScriptedAnimationFlags = {}
 ---@field HalfwayBetween number @ Default value is [ 6 ]
 
 ---@type ScriptedAnimationTrajectory 
-ScriptedAnimationTrajectory = {}
+local ScriptedAnimationTrajectory = {}
 
 ---@class ScriptedAnimationEffect
 ---@field id number 
@@ -61,5 +61,5 @@ ScriptedAnimationTrajectory = {}
 ---@field animationStartOffset number|nil 
 ---@field loopingSoundKitID number|nil 
 ---@field particleOverrideScale number|nil 
-ScriptedAnimationEffect = {}
+local ScriptedAnimationEffect = {}
 

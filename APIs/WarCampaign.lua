@@ -51,24 +51,24 @@ function C_CampaignInfo.UsesNormalQuestIcons(campaignID) end
 ---@field Stalled number @ Default value is [ 3 ]
 
 ---@type CampaignState 
-CampaignState = {}
+local CampaignState = {}
 
 ---@class CampaignChapterInfo
 ---@field name cstring 
 ---@field description cstring 
 ---@field rewardQuestID number 
-CampaignChapterInfo = {}
+local CampaignChapterInfo = {}
 
 ---@class CampaignFailureReason
 ---@field text string 
 ---@field questID number|nil 
 ---@field mapID number|nil 
-CampaignFailureReason = {}
+local CampaignFailureReason = {}
 
 ---@class CampaignInfo
 ---@field name cstring 
 ---@field description cstring 
 ---@field uiTextureKit textureKit 
 ---@field isWarCampaign bool 
-CampaignInfo = {}
+local CampaignInfo = {}
 

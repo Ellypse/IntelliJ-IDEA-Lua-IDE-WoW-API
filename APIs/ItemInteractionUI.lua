@@ -31,13 +31,13 @@ function C_ItemInteraction.SetPendingItem(item) end
 ---@class ConversionCurrencyCost
 ---@field currencyID number 
 ---@field amount number 
-ConversionCurrencyCost = {}
+local ConversionCurrencyCost = {}
 
 ---@class ItemInteractionChargeInfo
 ---@field newChargeAmount number 
 ---@field rechargeRate number 
 ---@field timeToNextCharge number 
-ItemInteractionChargeInfo = {}
+local ItemInteractionChargeInfo = {}
 
 ---@class ItemInteractionFrameInfo
 ---@field textureKit textureKit 
@@ -55,5 +55,5 @@ ItemInteractionChargeInfo = {}
 ---@field cost number|nil 
 ---@field currencyTypeId number|nil 
 ---@field dropInSlotSoundKitId number|nil 
-ItemInteractionFrameInfo = {}
+local ItemInteractionFrameInfo = {}
 

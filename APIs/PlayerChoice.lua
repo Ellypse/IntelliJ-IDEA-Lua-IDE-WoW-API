@@ -27,7 +27,7 @@ function C_PlayerChoice.SendPlayerChoiceResponse(responseID) end
 ---@field Epic number @ Default value is [ 3 ]
 
 ---@type PlayerChoiceRarity 
-PlayerChoiceRarity = {}
+local PlayerChoiceRarity = {}
 
 ---@class PlayerChoiceInfo
 ---@field objectGUID WOWGUID 
@@ -40,7 +40,7 @@ PlayerChoiceRarity = {}
 ---@field options table 
 ---@field soundKitID number|nil 
 ---@field closeUISoundKitID number|nil 
-PlayerChoiceInfo = {}
+local PlayerChoiceInfo = {}
 
 ---@class PlayerChoiceOptionButtonInfo
 ---@field id number 
@@ -50,7 +50,7 @@ PlayerChoiceInfo = {}
 ---@field tooltip string|nil 
 ---@field rewardQuestID number|nil 
 ---@field soundKitID number|nil 
-PlayerChoiceOptionButtonInfo = {}
+local PlayerChoiceOptionButtonInfo = {}
 
 ---@class PlayerChoiceOptionInfo
 ---@field id number 
@@ -71,13 +71,13 @@ PlayerChoiceOptionButtonInfo = {}
 ---@field typeArtID number|nil 
 ---@field headerIconAtlasElement string|nil 
 ---@field subHeader string|nil 
-PlayerChoiceOptionInfo = {}
+local PlayerChoiceOptionInfo = {}
 
 ---@class PlayerChoiceOptionRewardInfo
 ---@field currencyRewards table 
 ---@field itemRewards table 
 ---@field repRewards table 
-PlayerChoiceOptionRewardInfo = {}
+local PlayerChoiceOptionRewardInfo = {}
 
 ---@class PlayerChoiceRewardCurrencyInfo
 ---@field currencyId number 
@@ -85,16 +85,16 @@ PlayerChoiceOptionRewardInfo = {}
 ---@field currencyTexture number 
 ---@field quantity number 
 ---@field isCurrencyContainer bool 
-PlayerChoiceRewardCurrencyInfo = {}
+local PlayerChoiceRewardCurrencyInfo = {}
 
 ---@class PlayerChoiceRewardItemInfo
 ---@field itemId number 
 ---@field name string 
 ---@field quantity number 
-PlayerChoiceRewardItemInfo = {}
+local PlayerChoiceRewardItemInfo = {}
 
 ---@class PlayerChoiceRewardReputationInfo
 ---@field factionId number 
 ---@field quantity number 
-PlayerChoiceRewardReputationInfo = {}
+local PlayerChoiceRewardReputationInfo = {}
 

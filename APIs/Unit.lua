@@ -178,7 +178,7 @@ function UnitWidgetSet(unit) end
 ---@field ChromieTime number @ Default value is [ 3 ]
 
 ---@type PhaseReason 
-PhaseReason = {}
+local PhaseReason = {}
 
 ---@class PowerType
 ---@field HealthCost number @ Default value is [ -2 ]
@@ -209,7 +209,7 @@ PhaseReason = {}
 ---@field NumPowerTypes number @ Default value is [ 23 ]
 
 ---@type PowerType 
-PowerType = {}
+local PowerType = {}
 
 ---@class PvPUnitClassification
 ---@field FlagCarrierHorde number @ Default value is [ 0 ]
@@ -225,13 +225,13 @@ PowerType = {}
 ---@field OrbCarrierPurple number @ Default value is [ 10 ]
 
 ---@type PvPUnitClassification 
-PvPUnitClassification = {}
+local PvPUnitClassification = {}
 
 ---@class CorruptionEffectInfo
 ---@field name string 
 ---@field description string 
 ---@field minCorruption number 
-CorruptionEffectInfo = {}
+local CorruptionEffectInfo = {}
 
 ---@class UnitPowerBarInfo
 ---@field ID number 
@@ -250,5 +250,5 @@ CorruptionEffectInfo = {}
 ---@field flashAtMinPower bool 
 ---@field fractionalCounter bool 
 ---@field animateNumbers bool 
-UnitPowerBarInfo = {}
+local UnitPowerBarInfo = {}
 

@@ -16,11 +16,11 @@ function C_KeyBindings.GetCustomBindingType(bindingIndex) end
 ---@field Current number @ Default value is [ 3 ]
 
 ---@type BindingSet 
-BindingSet = {}
+local BindingSet = {}
 
 ---@class CustomBindingType
 ---@field VoicePushToTalk number @ Default value is [ 0 ]
 
 ---@type CustomBindingType 
-CustomBindingType = {}
+local CustomBindingType = {}
 

@@ -158,7 +158,7 @@ function C_Map.SetUserWaypoint(point) end
 ---@field TopRight number @ Default value is [ 4 ]
 
 ---@type MapCanvasPosition 
-MapCanvasPosition = {}
+local MapCanvasPosition = {}
 
 ---@class UIMapFlag
 ---@field NoHighlight number @ Default value is [ 1 ]
@@ -180,7 +180,7 @@ MapCanvasPosition = {}
 ---@field AlwaysAllowUserWaypoints number @ Default value is [ 65536 ]
 
 ---@type UIMapFlag 
-UIMapFlag = {}
+local UIMapFlag = {}
 
 ---@class UIMapSystem
 ---@field World number @ Default value is [ 0 ]
@@ -189,7 +189,7 @@ UIMapFlag = {}
 ---@field Minimap number @ Default value is [ 3 ]
 
 ---@type UIMapSystem 
-UIMapSystem = {}
+local UIMapSystem = {}
 
 ---@class UIMapType
 ---@field Cosmic number @ Default value is [ 0 ]
@@ -201,14 +201,14 @@ UIMapSystem = {}
 ---@field Orphan number @ Default value is [ 6 ]
 
 ---@type UIMapType 
-UIMapType = {}
+local UIMapType = {}
 
 ---@class MapBannerInfo
 ---@field areaPoiID number 
 ---@field name cstring 
 ---@field atlasName string 
 ---@field uiTextureKit textureKit|nil 
-MapBannerInfo = {}
+local MapBannerInfo = {}
 
 ---@class MapLinkInfo
 ---@field areaPoiID number 
@@ -216,7 +216,7 @@ MapBannerInfo = {}
 ---@field name cstring 
 ---@field atlasName string 
 ---@field linkedUiMapID number 
-MapLinkInfo = {}
+local MapLinkInfo = {}
 
 ---@class UiMapDetails
 ---@field mapID number 
@@ -224,13 +224,13 @@ MapLinkInfo = {}
 ---@field mapType UIMapType 
 ---@field parentMapID number 
 ---@field flags number 
-UiMapDetails = {}
+local UiMapDetails = {}
 
 ---@class UiMapGroupMemberInfo
 ---@field mapID number 
 ---@field relativeHeightIndex number 
 ---@field name cstring 
-UiMapGroupMemberInfo = {}
+local UiMapGroupMemberInfo = {}
 
 ---@class UiMapHighlightInfo
 ---@field fileDataID fileID 
@@ -241,7 +241,7 @@ UiMapGroupMemberInfo = {}
 ---@field textureY number 
 ---@field scrollChildX number 
 ---@field scrollChildY number 
-UiMapHighlightInfo = {}
+local UiMapHighlightInfo = {}
 
 ---@class UiMapLayerInfo
 ---@field layerWidth number 
@@ -251,5 +251,5 @@ UiMapHighlightInfo = {}
 ---@field minScale number 
 ---@field maxScale number 
 ---@field additionalZoomSteps number 
-UiMapLayerInfo = {}
+local UiMapLayerInfo = {}
 

@@ -48,7 +48,7 @@ function C_BattleNet.GetGameAccountInfoByID(id) end
 ---@field note string 
 ---@field rafLinkType RafLinkType 
 ---@field gameAccountInfo BNetGameAccountInfo 
-BNetAccountInfo = {}
+local BNetAccountInfo = {}
 
 ---@class BNetGameAccountInfo
 ---@field gameAccountID number 
@@ -73,5 +73,5 @@ BNetAccountInfo = {}
 ---@field hasFocus bool 
 ---@field regionID number 
 ---@field isInCurrentRegion bool 
-BNetGameAccountInfo = {}
+local BNetGameAccountInfo = {}
 

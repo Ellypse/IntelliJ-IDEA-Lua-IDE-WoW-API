@@ -59,12 +59,12 @@ function C_MajorFactions.RequestCatchUpState() end
 ---@field textureKit textureKit 
 ---@field celebrationSoundKit number 
 ---@field renownFanfareSoundKitID number 
-MajorFactionData = {}
+local MajorFactionData = {}
 
 ---@class MajorFactionFeatureAbilityInfo
 ---@field featureAbilityType number 
 ---@field uiOrder number 
-MajorFactionFeatureAbilityInfo = {}
+local MajorFactionFeatureAbilityInfo = {}
 
 ---@class MajorFactionRenownLevelInfo
 ---@field factionID number 
@@ -72,7 +72,7 @@ MajorFactionFeatureAbilityInfo = {}
 ---@field locked bool 
 ---@field isMilestone bool 
 ---@field isCapstone bool 
-MajorFactionRenownLevelInfo = {}
+local MajorFactionRenownLevelInfo = {}
 
 ---@class MajorFactionRenownRewardInfo
 ---@field renownRewardID number 
@@ -88,5 +88,5 @@ MajorFactionRenownLevelInfo = {}
 ---@field name cstring|nil 
 ---@field description cstring|nil 
 ---@field toastDescription cstring|nil 
-MajorFactionRenownRewardInfo = {}
+local MajorFactionRenownRewardInfo = {}
 

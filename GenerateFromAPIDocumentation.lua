@@ -159,7 +159,7 @@ function APIDocumentation:AddDocumentationTable(documentation)
 							value.Documentation and ("@ " .. table.concat(value.Documentation, "\n")) or ""
 					))
 				end
-				write(GLOBAL_DECLARATION:format(tab.Name))
+				write(INNER_DECLARATION:format(tab.Name))
 
 				-- this is a relatively new type of type found in the "Tables" section of the documentation
 				-- TODO: I genuinely have no idea how to do callback documentation
@@ -201,11 +201,11 @@ function APIDocumentation:AddDocumentationTable(documentation)
 						parentType,
 						""
 				))
-				write(GLOBAL_DECLARATION:format(tab.Name))
+				write(INNER_DECLARATION:format(tab.Name))
 
 			else
 				write(CLASS_DECLARATION:format(tab.Name))
-				write(GLOBAL_DECLARATION:format(tab.Name))
+				write(INNER_DECLARATION:format(tab.Name))
 				for k, value in pairs(tab.Fields) do
 					write(tab.Name .. "." .. value.Name .. " = " .. (value.EnumValue or ""))
 				end

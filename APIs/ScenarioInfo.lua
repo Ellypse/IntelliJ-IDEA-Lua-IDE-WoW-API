@@ -30,7 +30,7 @@ function C_ScenarioInfo.GetScenarioStepInfo(scenarioStepID) end
 ---@field BossRush number @ Default value is [ 14 ]
 
 ---@type JailersTowerType 
-JailersTowerType = {}
+local JailersTowerType = {}
 
 ---@class ScenarioInformation
 ---@field name string 
@@ -43,7 +43,7 @@ JailersTowerType = {}
 ---@field type number 
 ---@field area string 
 ---@field uiTextureKit textureKit 
-ScenarioInformation = {}
+local ScenarioInformation = {}
 
 ---@class ScenarioStepInfo
 ---@field title string 
@@ -57,11 +57,11 @@ ScenarioInformation = {}
 ---@field weightedProgress number|nil 
 ---@field rewardQuestID number 
 ---@field widgetSetID number|nil 
-ScenarioStepInfo = {}
+local ScenarioStepInfo = {}
 
 ---@class ScenarioStepSpellInfo
 ---@field spellID number 
 ---@field name string 
 ---@field icon number 
-ScenarioStepSpellInfo = {}
+local ScenarioStepSpellInfo = {}
 

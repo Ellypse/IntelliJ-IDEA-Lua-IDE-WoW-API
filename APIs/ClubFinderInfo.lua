@@ -202,7 +202,7 @@ function C_ClubFinder.ShouldShowClubFinder() end
 ---@field Cancel number @ Default value is [ 3 ]
 
 ---@type ClubFinderApplicationUpdateType 
-ClubFinderApplicationUpdateType = {}
+local ClubFinderApplicationUpdateType = {}
 
 ---@class ClubFinderClubPostingStatusFlags
 ---@field None number @ Default value is [ 0 ]
@@ -216,7 +216,7 @@ ClubFinderApplicationUpdateType = {}
 ---@field PostDelisted number @ Default value is [ 8 ]
 
 ---@type ClubFinderClubPostingStatusFlags 
-ClubFinderClubPostingStatusFlags = {}
+local ClubFinderClubPostingStatusFlags = {}
 
 ---@class ClubFinderDisableReason
 ---@field Muted number @ Default value is [ 0 ]
@@ -224,7 +224,7 @@ ClubFinderClubPostingStatusFlags = {}
 ---@field VeteranTrial number @ Default value is [ 2 ]
 
 ---@type ClubFinderDisableReason 
-ClubFinderDisableReason = {}
+local ClubFinderDisableReason = {}
 
 ---@class ClubFinderPostingReportType
 ---@field PostersName number @ Default value is [ 0 ]
@@ -234,7 +234,7 @@ ClubFinderDisableReason = {}
 ---@field JoinNote number @ Default value is [ 4 ]
 
 ---@type ClubFinderPostingReportType 
-ClubFinderPostingReportType = {}
+local ClubFinderPostingReportType = {}
 
 ---@class ClubFinderRequestType
 ---@field None number @ Default value is [ 0 ]
@@ -243,7 +243,7 @@ ClubFinderPostingReportType = {}
 ---@field All number @ Default value is [ 3 ]
 
 ---@type ClubFinderRequestType 
-ClubFinderRequestType = {}
+local ClubFinderRequestType = {}
 
 ---@class ClubFinderSettingFlags
 ---@field None number @ Default value is [ 0 ]
@@ -274,7 +274,7 @@ ClubFinderRequestType = {}
 ---@field LanguageReserved5 number @ Default value is [ 25 ]
 
 ---@type ClubFinderSettingFlags 
-ClubFinderSettingFlags = {}
+local ClubFinderSettingFlags = {}
 
 ---@class PlayerClubRequestStatus
 ---@field None number @ Default value is [ 0 ]
@@ -287,7 +287,7 @@ ClubFinderSettingFlags = {}
 ---@field Canceled number @ Default value is [ 7 ]
 
 ---@type PlayerClubRequestStatus 
-PlayerClubRequestStatus = {}
+local PlayerClubRequestStatus = {}
 
 ---@class ClubFinderApplicantInfo
 ---@field clubFinderGUID WOWGUID 
@@ -303,7 +303,7 @@ PlayerClubRequestStatus = {}
 ---@field lookupSuccess bool 
 ---@field lastUpdatedTime BigInteger 
 ---@field faction number 
-ClubFinderApplicantInfo = {}
+local ClubFinderApplicantInfo = {}
 
 ---@class ClubSettingsInfo
 ---@field playStyleDungeon bool 
@@ -324,7 +324,7 @@ ClubFinderApplicantInfo = {}
 ---@field sortNewest bool 
 ---@field autoAccept bool 
 ---@field crossFaction bool 
-ClubSettingsInfo = {}
+local ClubSettingsInfo = {}
 
 ---@class RecruitingClubInfo
 ---@field clubFinderGUID WOWGUID 
@@ -346,5 +346,5 @@ ClubSettingsInfo = {}
 ---@field clubId ClubId 
 ---@field lastUpdatedTime BigInteger 
 ---@field isCrossFaction bool 
-RecruitingClubInfo = {}
+local RecruitingClubInfo = {}
 

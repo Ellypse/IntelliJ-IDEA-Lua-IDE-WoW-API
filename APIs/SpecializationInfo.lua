@@ -72,12 +72,12 @@ function C_SpecializationInfo.SetPvpTalentLocked(talentID, locked) end
 ---@field grantedByAura bool 
 ---@field dependenciesUnmet bool 
 ---@field dependenciesUnmetReason string|nil 
-PvpTalentInfo = {}
+local PvpTalentInfo = {}
 
 ---@class PvpTalentSlotInfo
 ---@field enabled bool 
 ---@field level number 
 ---@field selectedTalentID number|nil 
 ---@field availableTalentIDs table 
-PvpTalentSlotInfo = {}
+local PvpTalentSlotInfo = {}
 

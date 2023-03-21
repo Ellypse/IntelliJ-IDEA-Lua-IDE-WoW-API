@@ -37,7 +37,7 @@ function C_Texture.SetTitleIconTexture(texture, titleID, version) end
 ---@field Large number @ Default value is [ 2 ]
 
 ---@type TitleIconVersion 
-TitleIconVersion = {}
+local TitleIconVersion = {}
 
 ---@class AtlasInfo
 ---@field width number 
@@ -50,6 +50,6 @@ TitleIconVersion = {}
 ---@field tilesVertically bool 
 ---@field file fileID|nil 
 ---@field filename string|nil 
-AtlasInfo = {}
+local AtlasInfo = {}
 
 

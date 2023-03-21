@@ -21,7 +21,7 @@ function C_TaxiMap.ShouldMapShowTaxiNodes(uiMapID) end
 ---@field Alliance number @ Default value is [ 2 ]
 
 ---@type FlightPathFaction 
-FlightPathFaction = {}
+local FlightPathFaction = {}
 
 ---@class FlightPathState
 ---@field Current number @ Default value is [ 0 ]
@@ -29,7 +29,7 @@ FlightPathFaction = {}
 ---@field Unreachable number @ Default value is [ 2 ]
 
 ---@type FlightPathState 
-FlightPathState = {}
+local FlightPathState = {}
 
 ---@class MapTaxiNodeInfo
 ---@field nodeID number 
@@ -38,7 +38,7 @@ FlightPathState = {}
 ---@field atlasName cstring 
 ---@field faction FlightPathFaction 
 ---@field textureKit textureKit 
-MapTaxiNodeInfo = {}
+local MapTaxiNodeInfo = {}
 
 ---@class TaxiNodeInfo
 ---@field nodeID number 
@@ -49,5 +49,5 @@ MapTaxiNodeInfo = {}
 ---@field textureKit textureKit 
 ---@field useSpecialIcon bool 
 ---@field specialIconCostString string|nil 
-TaxiNodeInfo = {}
+local TaxiNodeInfo = {}
 

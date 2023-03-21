@@ -90,5 +90,5 @@ function C_PartyInfo.RequestInviteFromUnit(targetName, tank, healer, dps) end
 ---@field NumPartyRequestJoinRelations number @ Default value is [ 4 ]
 
 ---@type PartyRequestJoinRelation 
-PartyRequestJoinRelation = {}
+local PartyRequestJoinRelation = {}
 

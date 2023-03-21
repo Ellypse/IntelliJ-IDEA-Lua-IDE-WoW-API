@@ -27,7 +27,7 @@ function C_QuestLine.RequestQuestLinesForMap(uiMapID) end
 ---@field Same number @ Default value is [ 2 ]
 
 ---@type QuestLineFloorLocation 
-QuestLineFloorLocation = {}
+local QuestLineFloorLocation = {}
 
 ---@class QuestLineInfo
 ---@field questLineName cstring 
@@ -41,5 +41,5 @@ QuestLineFloorLocation = {}
 ---@field isDaily bool 
 ---@field isCampaign bool 
 ---@field floorLocation QuestLineFloorLocation 
-QuestLineInfo = {}
+local QuestLineInfo = {}
 

@@ -14,7 +14,7 @@ function C_SplashScreen.RequestLatestSplashScreen(fromGameMenu) end
 ---@field SeasonRollOver number @ Default value is [ 1 ]
 
 ---@type SplashScreenType 
-SplashScreenType = {}
+local SplashScreenType = {}
 
 ---@class SplashScreenInfo
 ---@field textureKit textureKit 
@@ -32,5 +32,5 @@ SplashScreenType = {}
 ---@field rightFeatureDesc string 
 ---@field shouldShowQuest bool 
 ---@field screenType SplashScreenType 
-SplashScreenInfo = {}
+local SplashScreenInfo = {}
 

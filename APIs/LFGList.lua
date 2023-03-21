@@ -129,7 +129,7 @@ function C_LFGList.ValidateRequiredPvpRatingForActivity(activityID, rating) end
 ---@field Hardcore number @ Default value is [ 3 ]
 
 ---@type LFGEntryPlaystyle 
-LFGEntryPlaystyle = {}
+local LFGEntryPlaystyle = {}
 
 ---@class LFGListDisplayType
 ---@field RoleCount number @ Default value is [ 0 ]
@@ -140,14 +140,14 @@ LFGEntryPlaystyle = {}
 ---@field Comment number @ Default value is [ 5 ]
 
 ---@type LFGListDisplayType 
-LFGListDisplayType = {}
+local LFGListDisplayType = {}
 
 ---@class BestDungeonScoreMapInfo
 ---@field mapScore number 
 ---@field mapName string 
 ---@field bestRunLevel number 
 ---@field finishedSuccess bool 
-BestDungeonScoreMapInfo = {}
+local BestDungeonScoreMapInfo = {}
 
 ---@class GroupFinderActivityInfo
 ---@field fullName string 
@@ -169,7 +169,7 @@ BestDungeonScoreMapInfo = {}
 ---@field isMythicActivity bool 
 ---@field allowCrossFaction bool 
 ---@field useDungeonRoleExpectations bool 
-GroupFinderActivityInfo = {}
+local GroupFinderActivityInfo = {}
 
 ---@class LfgApplicantData
 ---@field applicantID number 
@@ -179,7 +179,7 @@ GroupFinderActivityInfo = {}
 ---@field isNew bool 
 ---@field comment kstringLfgListApplicant 
 ---@field displayOrderID number 
-LfgApplicantData = {}
+local LfgApplicantData = {}
 
 ---@class LfgCategoryData
 ---@field name cstring 
@@ -189,7 +189,7 @@ LfgApplicantData = {}
 ---@field preferCurrentArea bool 
 ---@field showPlaystyleDropdown bool 
 ---@field allowCrossFaction bool 
-LfgCategoryData = {}
+local LfgCategoryData = {}
 
 ---@class LfgEntryData
 ---@field activityID number 
@@ -206,7 +206,7 @@ LfgCategoryData = {}
 ---@field requiredPvpRating number|nil 
 ---@field playstyle LFGEntryPlaystyle|nil 
 ---@field isCrossFactionListing bool 
-LfgEntryData = {}
+local LfgEntryData = {}
 
 ---@class LfgSearchResultData
 ---@field searchResultID number 
@@ -235,14 +235,14 @@ LfgEntryData = {}
 ---@field playstyle LFGEntryPlaystyle|nil 
 ---@field crossFactionListing bool|nil 
 ---@field leaderFactionGroup number 
-LfgSearchResultData = {}
+local LfgSearchResultData = {}
 
 ---@class PvpRatingInfo
 ---@field bracket number 
 ---@field rating number 
 ---@field activityName string 
 ---@field tier number 
-PvpRatingInfo = {}
+local PvpRatingInfo = {}
 
 ---@class WowLocale
 ---@field enUS bool 
@@ -256,5 +256,5 @@ PvpRatingInfo = {}
 ---@field ruRU bool 
 ---@field ptBR bool 
 ---@field itIT bool 
-WowLocale = {}
+local WowLocale = {}
 

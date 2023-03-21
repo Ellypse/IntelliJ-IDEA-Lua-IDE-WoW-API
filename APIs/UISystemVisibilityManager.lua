@@ -9,5 +9,5 @@ function C_SystemVisibilityManager.IsSystemVisible(system) end
 ---@field InGameNavigation number @ Default value is [ 0 ]
 
 ---@type UISystemType 
-UISystemType = {}
+local UISystemType = {}
 

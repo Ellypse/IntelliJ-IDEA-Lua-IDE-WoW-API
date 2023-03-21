@@ -71,7 +71,7 @@ function C_PerksProgram.SetFrozenPerksVendorItem() end
 ---@field pitch number|nil 
 ---@field roll number|nil 
 ---@field normalizedScale number|nil 
-ModelSceneActorData = {}
+local ModelSceneActorData = {}
 
 ---@class ModelSceneCameraData
 ---@field cameraID number|nil 
@@ -85,11 +85,11 @@ ModelSceneActorData = {}
 ---@field defaultZoom number|nil 
 ---@field zoomMin number|nil 
 ---@field zoomMax number|nil 
-ModelSceneCameraData = {}
+local ModelSceneCameraData = {}
 
 ---@class PerksProgramItemDisplayInfo
 ---@field overrideModelSceneID number|nil 
-PerksProgramItemDisplayInfo = {}
+local PerksProgramItemDisplayInfo = {}
 
 ---@class PerksProgramPendingChestRewards
 ---@field rewardTypeID number 
@@ -98,13 +98,13 @@ PerksProgramItemDisplayInfo = {}
 ---@field monthRewarded string|nil 
 ---@field activityMonthID number 
 ---@field activityThresholdID number 
-PerksProgramPendingChestRewards = {}
+local PerksProgramPendingChestRewards = {}
 
 ---@class PerksVendorCategoryInfo
 ---@field ID number 
 ---@field displayName cstring 
 ---@field defaultUIModelSceneID number 
-PerksVendorCategoryInfo = {}
+local PerksVendorCategoryInfo = {}
 
 ---@class PerksVendorItemInfo
 ---@field name string 
@@ -121,5 +121,5 @@ PerksVendorCategoryInfo = {}
 ---@field speciesID number 
 ---@field transmogSetID number 
 ---@field itemModifiedAppearanceID number 
-PerksVendorItemInfo = {}
+local PerksVendorItemInfo = {}
 

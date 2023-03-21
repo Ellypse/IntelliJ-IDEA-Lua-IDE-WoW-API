@@ -46,7 +46,7 @@ function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 ---@field RewardClaimed number @ Default value is [ 2 ]
 
 ---@type RafRecruitActivityState 
-RafRecruitActivityState = {}
+local RafRecruitActivityState = {}
 
 ---@class RafRecruitSubStatus
 ---@field Trial number @ Default value is [ 0 ]
@@ -54,7 +54,7 @@ RafRecruitActivityState = {}
 ---@field Inactive number @ Default value is [ 2 ]
 
 ---@type RafRecruitSubStatus 
-RafRecruitSubStatus = {}
+local RafRecruitSubStatus = {}
 
 ---@class RafRewardType
 ---@field Pet number @ Default value is [ 0 ]
@@ -67,39 +67,39 @@ RafRecruitSubStatus = {}
 ---@field Invalid number @ Default value is [ 7 ]
 
 ---@type RafRewardType 
-RafRewardType = {}
+local RafRewardType = {}
 
 ---@class RafAppearanceInfo
 ---@field appearanceID number 
-RafAppearanceInfo = {}
+local RafAppearanceInfo = {}
 
 ---@class RafAppearanceSetInfo
 ---@field setID number 
 ---@field setName string 
 ---@field appearanceIDs table 
-RafAppearanceSetInfo = {}
+local RafAppearanceSetInfo = {}
 
 ---@class RafIllusionInfo
 ---@field spellItemEnchantmentID number 
-RafIllusionInfo = {}
+local RafIllusionInfo = {}
 
 ---@class RafInfo
 ---@field versions table 
 ---@field recruitmentInfo RafRecruitmentinfo|nil 
 ---@field recruits table 
 ---@field claimInProgress bool 
-RafInfo = {}
+local RafInfo = {}
 
 ---@class RafMonthCount
 ---@field lifetimeMonths number 
 ---@field spentMonths number 
 ---@field availableMonths number 
-RafMonthCount = {}
+local RafMonthCount = {}
 
 ---@class RafMountInfo
 ---@field spellID number 
 ---@field mountID number 
-RafMountInfo = {}
+local RafMountInfo = {}
 
 ---@class RafPetInfo
 ---@field creatureID number 
@@ -107,7 +107,7 @@ RafMountInfo = {}
 ---@field displayID number 
 ---@field speciesName string 
 ---@field description string 
-RafPetInfo = {}
+local RafPetInfo = {}
 
 ---@class RafRecruit
 ---@field bnetAccountID number 
@@ -118,13 +118,13 @@ RafPetInfo = {}
 ---@field acceptanceID RecruitAcceptanceID 
 ---@field versionRecruited RecruitAFriendRewardsVersion 
 ---@field activities table 
-RafRecruit = {}
+local RafRecruit = {}
 
 ---@class RafRecruitActivity
 ---@field activityID number 
 ---@field rewardQuestID number 
 ---@field state RafRecruitActivityState 
-RafRecruitActivity = {}
+local RafRecruitActivity = {}
 
 ---@class RafRecruitmentinfo
 ---@field recruitmentCode string 
@@ -135,7 +135,7 @@ RafRecruitActivity = {}
 ---@field remainingUses number 
 ---@field sourceRealm string 
 ---@field sourceFaction string 
-RafRecruitmentinfo = {}
+local RafRecruitmentinfo = {}
 
 ---@class RafReward
 ---@field rewardID number 
@@ -157,18 +157,18 @@ RafRecruitmentinfo = {}
 ---@field monthCost number 
 ---@field availableInMonths number 
 ---@field iconID fileID 
-RafReward = {}
+local RafReward = {}
 
 ---@class RafSystemInfo
 ---@field maxRecruits number 
 ---@field maxRecruitMonths number 
 ---@field maxRecruitmentUses number 
 ---@field daysInCycle number 
-RafSystemInfo = {}
+local RafSystemInfo = {}
 
 ---@class RafTitleInfo
 ---@field titleMaskID number 
-RafTitleInfo = {}
+local RafTitleInfo = {}
 
 ---@class RafVersionInfo
 ---@field rafVersion RecruitAFriendRewardsVersion 
@@ -177,5 +177,5 @@ RafTitleInfo = {}
 ---@field nextReward RafReward|nil 
 ---@field numAffordableRewards number 
 ---@field numRecruits number 
-RafVersionInfo = {}
+local RafVersionInfo = {}
 

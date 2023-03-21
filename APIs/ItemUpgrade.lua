@@ -41,12 +41,12 @@ function C_ItemUpgrade.UpgradeItem(numUpgrades) end
 ---@class ItemUpgradeCurrencyCost
 ---@field cost number 
 ---@field currencyID number 
-ItemUpgradeCurrencyCost = {}
+local ItemUpgradeCurrencyCost = {}
 
 ---@class ItemUpgradeItemCost
 ---@field cost number 
 ---@field itemID number 
-ItemUpgradeItemCost = {}
+local ItemUpgradeItemCost = {}
 
 ---@class ItemUpgradeItemInfo
 ---@field iconID number 
@@ -56,7 +56,7 @@ ItemUpgradeItemCost = {}
 ---@field currUpgrade number 
 ---@field maxUpgrade number 
 ---@field upgradeLevelInfos table 
-ItemUpgradeItemInfo = {}
+local ItemUpgradeItemInfo = {}
 
 ---@class ItemUpgradeLevelInfo
 ---@field upgradeLevel number 
@@ -66,11 +66,11 @@ ItemUpgradeItemInfo = {}
 ---@field currencyCostsToUpgrade table 
 ---@field itemCostsToUpgrade table 
 ---@field failureMessage string|nil 
-ItemUpgradeLevelInfo = {}
+local ItemUpgradeLevelInfo = {}
 
 ---@class ItemUpgradeStat
 ---@field displayString string 
 ---@field statValue number 
 ---@field active bool 
-ItemUpgradeStat = {}
+local ItemUpgradeStat = {}
 

@@ -272,14 +272,14 @@ function C_VoiceChat.ToggleMuted() end
 ---@field OpenMic number @ Default value is [ 1 ]
 
 ---@type CommunicationMode 
-CommunicationMode = {}
+local CommunicationMode = {}
 
 ---@class VoiceChannelErrorReason
 ---@field Unknown number @ Default value is [ 0 ]
 ---@field IsBattleNetChannel number @ Default value is [ 1 ]
 
 ---@type VoiceChannelErrorReason 
-VoiceChannelErrorReason = {}
+local VoiceChannelErrorReason = {}
 
 ---@class VoiceChatStatusCode
 ---@field Success number @ Default value is [ 0 ]
@@ -309,7 +309,7 @@ VoiceChannelErrorReason = {}
 ---@field InvalidOutputDevice number @ Default value is [ 24 ]
 
 ---@type VoiceChatStatusCode 
-VoiceChatStatusCode = {}
+local VoiceChatStatusCode = {}
 
 ---@class VoiceTtsDestination
 ---@field RemoteTransmission number @ Default value is [ 0 ]
@@ -321,7 +321,7 @@ VoiceChatStatusCode = {}
 ---@field ScreenReader number @ Default value is [ 6 ]
 
 ---@type VoiceTtsDestination 
-VoiceTtsDestination = {}
+local VoiceTtsDestination = {}
 
 ---@class VoiceTtsStatusCode
 ---@field Success number @ Default value is [ 0 ]
@@ -340,7 +340,7 @@ VoiceTtsDestination = {}
 ---@field InternalError number @ Default value is [ 13 ]
 
 ---@type VoiceTtsStatusCode 
-VoiceTtsStatusCode = {}
+local VoiceTtsStatusCode = {}
 
 ---@class VoiceAudioDevice
 ---@field deviceID string 
@@ -348,7 +348,7 @@ VoiceTtsStatusCode = {}
 ---@field isActive bool 
 ---@field isSystemDefault bool 
 ---@field isCommsDefault bool 
-VoiceAudioDevice = {}
+local VoiceAudioDevice = {}
 
 ---@class VoiceChatChannel
 ---@field name string 
@@ -362,7 +362,7 @@ VoiceAudioDevice = {}
 ---@field isTransmitting bool 
 ---@field isTranscribing bool 
 ---@field members table 
-VoiceChatChannel = {}
+local VoiceChatChannel = {}
 
 ---@class VoiceChatMember
 ---@field energy number 
@@ -371,15 +371,15 @@ VoiceChatChannel = {}
 ---@field isSpeaking bool 
 ---@field isMutedForAll bool 
 ---@field isSilenced bool 
-VoiceChatMember = {}
+local VoiceChatMember = {}
 
 ---@class VoiceChatProcess
 ---@field name string 
 ---@field channels table 
-VoiceChatProcess = {}
+local VoiceChatProcess = {}
 
 ---@class VoiceTtsVoiceType
 ---@field voiceID number 
 ---@field name string 
-VoiceTtsVoiceType = {}
+local VoiceTtsVoiceType = {}
 

@@ -164,12 +164,12 @@ function C_Soulbinds.UnmodifyNode(nodeID) end
 ---@field conduitSpecName cstring|nil 
 ---@field covenantID number|nil 
 ---@field conduitItemID number 
-ConduitCollectionData = {}
+local ConduitCollectionData = {}
 
 ---@class SoulbindConduitData
 ---@field conduitID number 
 ---@field conduitRank number 
-SoulbindConduitData = {}
+local SoulbindConduitData = {}
 
 ---@class SoulbindData
 ---@field ID number 
@@ -183,12 +183,12 @@ SoulbindConduitData = {}
 ---@field modelSceneData SoulbindModelSceneData 
 ---@field activationSoundKitID number 
 ---@field playerConditionReason cstring|nil 
-SoulbindData = {}
+local SoulbindData = {}
 
 ---@class SoulbindModelSceneData
 ---@field creatureDisplayInfoID number 
 ---@field modelSceneActorID number 
-SoulbindModelSceneData = {}
+local SoulbindModelSceneData = {}
 
 ---@class SoulbindNode
 ---@field ID number 
@@ -204,10 +204,10 @@ SoulbindModelSceneData = {}
 ---@field parentNodeIDs table 
 ---@field failureRenownRequirement number|nil 
 ---@field socketEnhanced bool|nil 
-SoulbindNode = {}
+local SoulbindNode = {}
 
 ---@class SoulbindTree
 ---@field editable bool 
 ---@field nodes table 
-SoulbindTree = {}
+local SoulbindTree = {}
 

@@ -324,7 +324,7 @@ function C_QuestLog.UnitIsRelatedToActiveQuest(unit) end
 ---@field Hidden number @ Default value is [ 5 ]
 
 ---@type MapOverlayDisplayLocation 
-MapOverlayDisplayLocation = {}
+local MapOverlayDisplayLocation = {}
 
 ---@class QuestFrequency
 ---@field Default number @ Default value is [ 0 ]
@@ -332,7 +332,7 @@ MapOverlayDisplayLocation = {}
 ---@field Weekly number @ Default value is [ 2 ]
 
 ---@type QuestFrequency 
-QuestFrequency = {}
+local QuestFrequency = {}
 
 ---@class QuestTag
 ---@field Group number @ Default value is [ 1 ]
@@ -348,14 +348,14 @@ QuestFrequency = {}
 ---@field CombatAlly number @ Default value is [ 266 ]
 
 ---@type QuestTag 
-QuestTag = {}
+local QuestTag = {}
 
 ---@class QuestWatchType
 ---@field Automatic number @ Default value is [ 0 ]
 ---@field Manual number @ Default value is [ 1 ]
 
 ---@type QuestWatchType 
-QuestWatchType = {}
+local QuestWatchType = {}
 
 ---@class WorldQuestQuality
 ---@field Common number @ Default value is [ 0 ]
@@ -363,7 +363,7 @@ QuestWatchType = {}
 ---@field Epic number @ Default value is [ 2 ]
 
 ---@type WorldQuestQuality 
-WorldQuestQuality = {}
+local WorldQuestQuality = {}
 
 ---@class QuestInfo
 ---@field title string 
@@ -388,7 +388,7 @@ WorldQuestQuality = {}
 ---@field isAutoComplete bool 
 ---@field overridesSortOrder bool 
 ---@field readyForTranslation bool 
-QuestInfo = {}
+local QuestInfo = {}
 
 ---@class QuestObjectiveInfo
 ---@field text string 
@@ -396,7 +396,7 @@ QuestInfo = {}
 ---@field finished bool 
 ---@field numFulfilled number 
 ---@field numRequired number 
-QuestObjectiveInfo = {}
+local QuestObjectiveInfo = {}
 
 ---@class QuestOnMapInfo
 ---@field questID number 
@@ -404,7 +404,7 @@ QuestObjectiveInfo = {}
 ---@field y number 
 ---@field type number 
 ---@field isMapIndicatorQuest bool 
-QuestOnMapInfo = {}
+local QuestOnMapInfo = {}
 
 ---@class QuestTagInfo
 ---@field tagName cstring 
@@ -414,12 +414,12 @@ QuestOnMapInfo = {}
 ---@field tradeskillLineID number|nil 
 ---@field isElite bool|nil 
 ---@field displayExpiration bool|nil 
-QuestTagInfo = {}
+local QuestTagInfo = {}
 
 ---@class QuestTheme
 ---@field background textureAtlas 
 ---@field seal textureAtlas 
 ---@field signature cstring 
 ---@field poiIcon textureAtlas 
-QuestTheme = {}
+local QuestTheme = {}
 

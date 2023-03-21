@@ -486,18 +486,18 @@ function C_Commentator.ZoomOut() end
 ---@field Count number @ Default value is [ 4 ]
 
 ---@type TrackedSpellCategory 
-TrackedSpellCategory = {}
+local TrackedSpellCategory = {}
 
 ---@class CommentatorHistory
 ---@field series table 
 ---@field teamDirectory table 
 ---@field overrideNameDirectory table 
-CommentatorHistory = {}
+local CommentatorHistory = {}
 
 ---@class CommentatorOverrideNameEntry
 ---@field originalName string 
 ---@field newName string 
-CommentatorOverrideNameEntry = {}
+local CommentatorOverrideNameEntry = {}
 
 ---@class CommentatorPlayerData
 ---@field unitToken string 
@@ -512,21 +512,21 @@ CommentatorOverrideNameEntry = {}
 ---@field deaths number 
 ---@field soloShuffleRoundWins number 
 ---@field soloShuffleRoundLosses number 
-CommentatorPlayerData = {}
+local CommentatorPlayerData = {}
 
 ---@class CommentatorSeries
 ---@field teams table 
-CommentatorSeries = {}
+local CommentatorSeries = {}
 
 ---@class CommentatorSeriesTeam
 ---@field name string 
 ---@field score number 
-CommentatorSeriesTeam = {}
+local CommentatorSeriesTeam = {}
 
 ---@class CommentatorTeamDirectoryEntry
 ---@field playerName string 
 ---@field teamName string 
-CommentatorTeamDirectoryEntry = {}
+local CommentatorTeamDirectoryEntry = {}
 
 ---@class CommentatorUnitData
 ---@field healthMax number 
@@ -537,10 +537,10 @@ CommentatorTeamDirectoryEntry = {}
 ---@field powerTypeToken string 
 ---@field power number 
 ---@field powerMax number 
-CommentatorUnitData = {}
+local CommentatorUnitData = {}
 
 ---@class NameOverrideEntry
 ---@field originalName string 
 ---@field overrideName string 
-NameOverrideEntry = {}
+local NameOverrideEntry = {}
 

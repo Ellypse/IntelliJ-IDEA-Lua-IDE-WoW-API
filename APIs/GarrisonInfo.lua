@@ -162,12 +162,12 @@ function C_Garrison.SetAutoCombatSpellFastForward(state) end
 ---@class AutoCombatDamageClassString
 ---@field damageClassValue number 
 ---@field locString cstring 
-AutoCombatDamageClassString = {}
+local AutoCombatDamageClassString = {}
 
 ---@class AutoCombatResult
 ---@field winner bool 
 ---@field combatLog table 
-AutoCombatResult = {}
+local AutoCombatResult = {}
 
 ---@class AutoCombatSpellInfo
 ---@field autoCombatSpellID number 
@@ -180,7 +180,7 @@ AutoCombatResult = {}
 ---@field icon fileID 
 ---@field spellTutorialFlag number 
 ---@field hasThornsEffect bool 
-AutoCombatSpellInfo = {}
+local AutoCombatSpellInfo = {}
 
 ---@class AutoCombatTroopInfo
 ---@field name cstring 
@@ -211,7 +211,7 @@ AutoCombatSpellInfo = {}
 ---@field isSoulbind bool 
 ---@field isCollected bool 
 ---@field autoCombatStats FollowerAutoCombatStatsInfo 
-AutoCombatTroopInfo = {}
+local AutoCombatTroopInfo = {}
 
 ---@class AutoMissionCombatEventInfo
 ---@field boardIndex number 
@@ -219,12 +219,12 @@ AutoCombatTroopInfo = {}
 ---@field newHealth number 
 ---@field maxHealth number 
 ---@field points number|nil 
-AutoMissionCombatEventInfo = {}
+local AutoMissionCombatEventInfo = {}
 
 ---@class AutoMissionEnvironmentEffect
 ---@field name string 
 ---@field autoCombatSpellInfo AutoCombatSpellInfo 
-AutoMissionEnvironmentEffect = {}
+local AutoMissionEnvironmentEffect = {}
 
 ---@class AutoMissionEvent
 ---@field type number 
@@ -234,18 +234,18 @@ AutoMissionEnvironmentEffect = {}
 ---@field casterBoardIndex number 
 ---@field auraType number 
 ---@field targetInfo table 
-AutoMissionEvent = {}
+local AutoMissionEvent = {}
 
 ---@class AutoMissionRound
 ---@field events table 
-AutoMissionRound = {}
+local AutoMissionRound = {}
 
 ---@class AutoMissionTargetingInfo
 ---@field targetIndex number 
 ---@field previewType number 
 ---@field spellID number 
 ---@field effectIndex number 
-AutoMissionTargetingInfo = {}
+local AutoMissionTargetingInfo = {}
 
 ---@class FollowerAutoCombatStatsInfo
 ---@field currentHealth number 
@@ -254,13 +254,13 @@ AutoMissionTargetingInfo = {}
 ---@field healingTimestamp time_t 
 ---@field healCost number 
 ---@field minutesHealingRemaining number 
-FollowerAutoCombatStatsInfo = {}
+local FollowerAutoCombatStatsInfo = {}
 
 ---@class FollowerDisplayID
 ---@field id number 
 ---@field followerPageScale number 
 ---@field showWeapon bool 
-FollowerDisplayID = {}
+local FollowerDisplayID = {}
 
 ---@class FollowerMissionCompleteInfo
 ---@field name cstring 
@@ -288,7 +288,7 @@ FollowerDisplayID = {}
 ---@field health number 
 ---@field maxHealth number 
 ---@field role number 
-FollowerMissionCompleteInfo = {}
+local FollowerMissionCompleteInfo = {}
 
 ---@class GarrisonAbilityCounterInfo
 ---@field id number 
@@ -296,7 +296,7 @@ FollowerMissionCompleteInfo = {}
 ---@field name cstring 
 ---@field factor number 
 ---@field description cstring 
-GarrisonAbilityCounterInfo = {}
+local GarrisonAbilityCounterInfo = {}
 
 ---@class GarrisonAbilityInfo
 ---@field id number 
@@ -309,7 +309,7 @@ GarrisonAbilityCounterInfo = {}
 ---@field category string|nil 
 ---@field counters table 
 ---@field isEmptySlot bool 
-GarrisonAbilityInfo = {}
+local GarrisonAbilityInfo = {}
 
 ---@class GarrisonEnemyEncounterInfo
 ---@field name cstring 
@@ -327,12 +327,12 @@ GarrisonAbilityInfo = {}
 ---@field attack number 
 ---@field boardIndex number 
 ---@field isElite bool 
-GarrisonEnemyEncounterInfo = {}
+local GarrisonEnemyEncounterInfo = {}
 
 ---@class GarrisonFollowerDeathInfo
 ---@field followerID GarrisonFollower 
 ---@field state luaIndex 
-GarrisonFollowerDeathInfo = {}
+local GarrisonFollowerDeathInfo = {}
 
 ---@class GarrisonMechanicInfo
 ---@field mechanicTypeID number 
@@ -341,14 +341,14 @@ GarrisonFollowerDeathInfo = {}
 ---@field factor number 
 ---@field description cstring 
 ---@field ability GarrisonAbilityInfo|nil 
-GarrisonMechanicInfo = {}
+local GarrisonMechanicInfo = {}
 
 ---@class GarrisonPlotInstanceMapInfo
 ---@field buildingPlotInstanceID number 
 ---@field position vector2 
 ---@field name cstring 
 ---@field atlasName textureAtlas 
-GarrisonPlotInstanceMapInfo = {}
+local GarrisonPlotInstanceMapInfo = {}
 
 ---@class MissionDeploymentInfo
 ---@field location cstring 
@@ -359,12 +359,12 @@ GarrisonPlotInstanceMapInfo = {}
 ---@field locTextureKit textureKit 
 ---@field isExhausting bool 
 ---@field enemies table 
-MissionDeploymentInfo = {}
+local MissionDeploymentInfo = {}
 
 ---@class MissionEncounterIconInfo
 ---@field portraitFileDataID fileID 
 ---@field missionScalar number 
 ---@field isElite bool 
 ---@field isRare bool 
-MissionEncounterIconInfo = {}
+local MissionEncounterIconInfo = {}
 

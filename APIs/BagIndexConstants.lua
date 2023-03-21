@@ -18,5 +18,5 @@
 ---@field BankBag_7 number @ Default value is [ 12 ]
 
 ---@type BagIndex 
-BagIndex = {}
+local BagIndex = {}
 

@@ -6,5 +6,5 @@ C_ClientScene = {}
 ---@field MinigameSceneType number @ Default value is [ 1 ]
 
 ---@type ClientSceneType 
-ClientSceneType = {}
+local ClientSceneType = {}
 

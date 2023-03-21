@@ -23,5 +23,5 @@ function C_Navigation.WasClampedToScreen() end
 ---@field Disabled number @ Default value is [ 3 ]
 
 ---@type NavigationState 
-NavigationState = {}
+local NavigationState = {}
 

@@ -43,7 +43,7 @@ function C_SpellBook.IsSpellDisabled(spellID) end
 ---@field priority number 
 ---@field warningText string 
 ---@field soundKitID number|nil 
-DeadlyDebuffInfo = {}
+local DeadlyDebuffInfo = {}
 
 ---@class SpellInfo
 ---@field name string 
@@ -52,5 +52,5 @@ DeadlyDebuffInfo = {}
 ---@field minRange number 
 ---@field maxRange number 
 ---@field spellID number 
-SpellInfo = {}
+local SpellInfo = {}
 

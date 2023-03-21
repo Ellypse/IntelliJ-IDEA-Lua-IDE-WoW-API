@@ -42,13 +42,13 @@ function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 ---@field DataPending number @ Default value is [ 3 ]
 
 ---@type ItemTryOnReason 
-ItemTryOnReason = {}
+local ItemTryOnReason = {}
 
 ---@class ModelSceneSetting
 ---@field AlignLightToOrbitDelta number @ Default value is [ 1 ]
 
 ---@type ModelSceneSetting 
-ModelSceneSetting = {}
+local ModelSceneSetting = {}
 
 ---@class ModelSceneType
 ---@field MountJournal number @ Default value is [ 0 ]
@@ -73,7 +73,7 @@ ModelSceneSetting = {}
 ---@field JailersTowerAnimaGlow number @ Default value is [ 19 ]
 
 ---@type ModelSceneType 
-ModelSceneType = {}
+local ModelSceneType = {}
 
 ---@class UIModelSceneActorDisplayInfo
 ---@field animation number 
@@ -83,7 +83,7 @@ ModelSceneType = {}
 ---@field spellVisualKitID number|nil 
 ---@field alpha number 
 ---@field scale number 
-UIModelSceneActorDisplayInfo = {}
+local UIModelSceneActorDisplayInfo = {}
 
 ---@class UIModelSceneActorInfo
 ---@field modelActorID number 
@@ -97,7 +97,7 @@ UIModelSceneActorDisplayInfo = {}
 ---@field useCenterForOriginY bool 
 ---@field useCenterForOriginZ bool 
 ---@field modelActorDisplayID number|nil 
-UIModelSceneActorInfo = {}
+local UIModelSceneActorInfo = {}
 
 ---@class UIModelSceneCameraInfo
 ---@field modelSceneCameraID number 
@@ -115,5 +115,5 @@ UIModelSceneActorInfo = {}
 ---@field zoomedPitchOffset number 
 ---@field zoomedRollOffset number 
 ---@field flags ModelSceneSetting 
-UIModelSceneCameraInfo = {}
+local UIModelSceneCameraInfo = {}
 

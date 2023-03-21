@@ -321,13 +321,13 @@ function C_Calendar.UpdateEvent() end
 ---@field dontDisplayEnd bool 
 ---@field clubID ClubId 
 ---@field isLocked bool 
-CalendarDayEvent = {}
+local CalendarDayEvent = {}
 
 ---@class CalendarEventIndexInfo
 ---@field offsetMonths number 
 ---@field monthDay luaIndex 
 ---@field eventIndex luaIndex 
-CalendarEventIndexInfo = {}
+local CalendarEventIndexInfo = {}
 
 ---@class CalendarEventInfo
 ---@field title string 
@@ -346,7 +346,7 @@ CalendarEventIndexInfo = {}
 ---@field inviteType CalendarInviteType|nil 
 ---@field calendarType string 
 ---@field communityName string|nil 
-CalendarEventInfo = {}
+local CalendarEventInfo = {}
 
 ---@class CalendarEventInviteInfo
 ---@field name string|nil 
@@ -360,12 +360,12 @@ CalendarEventInfo = {}
 ---@field notes string 
 ---@field classID number|nil 
 ---@field guid WOWGUID 
-CalendarEventInviteInfo = {}
+local CalendarEventInviteInfo = {}
 
 ---@class CalendarEventStatusOption
 ---@field status CalendarStatus 
 ---@field statusString string 
-CalendarEventStatusOption = {}
+local CalendarEventStatusOption = {}
 
 ---@class CalendarEventTextureInfo
 ---@field title string 
@@ -374,12 +374,12 @@ CalendarEventStatusOption = {}
 ---@field difficultyId number|nil 
 ---@field mapId number|nil 
 ---@field isLfr bool|nil 
-CalendarEventTextureInfo = {}
+local CalendarEventTextureInfo = {}
 
 ---@class CalendarEventTypeDisplayInfo
 ---@field displayString string 
 ---@field eventType CalendarEventType 
-CalendarEventTypeDisplayInfo = {}
+local CalendarEventTypeDisplayInfo = {}
 
 ---@class CalendarGuildEventInfo
 ---@field eventID CalendarEventID 
@@ -395,13 +395,13 @@ CalendarEventTypeDisplayInfo = {}
 ---@field texture fileID 
 ---@field inviteStatus CalendarStatus 
 ---@field clubID ClubId 
-CalendarGuildEventInfo = {}
+local CalendarGuildEventInfo = {}
 
 ---@class CalendarGuildFilterInfo
 ---@field minLevel number 
 ---@field maxLevel number 
 ---@field rank number 
-CalendarGuildFilterInfo = {}
+local CalendarGuildFilterInfo = {}
 
 ---@class CalendarHolidayInfo
 ---@field name cstring 
@@ -409,14 +409,14 @@ CalendarGuildFilterInfo = {}
 ---@field texture fileID 
 ---@field startTime CalendarTime|nil 
 ---@field endTime CalendarTime|nil 
-CalendarHolidayInfo = {}
+local CalendarHolidayInfo = {}
 
 ---@class CalendarMonthInfo
 ---@field month luaIndex 
 ---@field year number 
 ---@field numDays number 
 ---@field firstWeekday luaIndex 
-CalendarMonthInfo = {}
+local CalendarMonthInfo = {}
 
 ---@class CalendarRaidInfo
 ---@field name string 
@@ -425,5 +425,5 @@ CalendarMonthInfo = {}
 ---@field time CalendarTime 
 ---@field difficulty number 
 ---@field difficultyName string|nil 
-CalendarRaidInfo = {}
+local CalendarRaidInfo = {}
 

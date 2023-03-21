@@ -93,12 +93,12 @@ function C_Transmog.SetPending(transmogLocation, pendingInfo) end
 ---@field ToggleOff number @ Default value is [ 3 ]
 
 ---@type TransmogPendingType 
-TransmogPendingType = {}
+local TransmogPendingType = {}
 
 ---@class TransmogApplyWarningInfo
 ---@field itemLink string 
 ---@field text string 
-TransmogApplyWarningInfo = {}
+local TransmogApplyWarningInfo = {}
 
 ---@class TransmogSlotInfo
 ---@field isTransmogrified bool 
@@ -109,7 +109,7 @@ TransmogApplyWarningInfo = {}
 ---@field hasUndo bool 
 ---@field isHideVisual bool 
 ---@field texture fileID|nil 
-TransmogSlotInfo = {}
+local TransmogSlotInfo = {}
 
 ---@class TransmogSlotVisualInfo
 ---@field baseSourceID number 
@@ -121,5 +121,5 @@ TransmogSlotInfo = {}
 ---@field hasUndo bool 
 ---@field isHideVisual bool 
 ---@field itemSubclass number 
-TransmogSlotVisualInfo = {}
+local TransmogSlotVisualInfo = {}
 

@@ -10,5 +10,5 @@ function C_ZoneAbility.GetActiveAbilities() end
 ---@field spellID number 
 ---@field textureKit textureKit 
 ---@field tutorialText cstring|nil 
-ZoneAbilityInfo = {}
+local ZoneAbilityInfo = {}
 

@@ -31,7 +31,7 @@ function C_Console.SetFontHeight(fontHeightInPixels) end
 ---@field None number @ Default value is [ 10 ]
 
 ---@type ConsoleCategory 
-ConsoleCategory = {}
+local ConsoleCategory = {}
 
 ---@class ConsoleColorType
 ---@field DefaultColor number @ Default value is [ 0 ]
@@ -48,7 +48,7 @@ ConsoleCategory = {}
 ---@field DefaultGreen number @ Default value is [ 11 ]
 
 ---@type ConsoleColorType 
-ConsoleColorType = {}
+local ConsoleColorType = {}
 
 ---@class ConsoleCommandType
 ---@field Cvar number @ Default value is [ 0 ]
@@ -57,7 +57,7 @@ ConsoleColorType = {}
 ---@field Script number @ Default value is [ 3 ]
 
 ---@type ConsoleCommandType 
-ConsoleCommandType = {}
+local ConsoleCommandType = {}
 
 ---@class ConsoleCommandInfo
 ---@field command cstring 
@@ -66,5 +66,5 @@ ConsoleCommandType = {}
 ---@field commandType ConsoleCommandType 
 ---@field scriptContents cstring 
 ---@field scriptParameters cstring 
-ConsoleCommandInfo = {}
+local ConsoleCommandInfo = {}
 

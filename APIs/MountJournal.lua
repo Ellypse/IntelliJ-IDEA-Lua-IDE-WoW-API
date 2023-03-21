@@ -164,7 +164,7 @@ function C_MountJournal.SummonByID(mountID) end
 ---@field Dragonriding number @ Default value is [ 3 ]
 
 ---@type MountType 
-MountType = {}
+local MountType = {}
 
 ---@class MountTypeFlag
 ---@field IsFlyingMount number @ Default value is [ 1 ]
@@ -172,12 +172,12 @@ MountType = {}
 ---@field IsDragonRidingMount number @ Default value is [ 4 ]
 
 ---@type MountTypeFlag 
-MountTypeFlag = {}
+local MountTypeFlag = {}
 
 ---@class MountCreatureDisplayInfo
 ---@field creatureDisplayID number 
 ---@field isVisible bool 
-MountCreatureDisplayInfo = {}
+local MountCreatureDisplayInfo = {}
 
 ---@class MountInfo
 ---@field name cstring 
@@ -193,7 +193,7 @@ MountCreatureDisplayInfo = {}
 ---@field isCollected bool 
 ---@field mountID number 
 ---@field isForDragonriding bool 
-MountInfo = {}
+local MountInfo = {}
 
 ---@class MountInfoExtra
 ---@field creatureDisplayInfoID number|nil 
@@ -205,5 +205,5 @@ MountInfo = {}
 ---@field animID number 
 ---@field spellVisualKitID number 
 ---@field disablePlayerMountPreview bool 
-MountInfoExtra = {}
+local MountInfoExtra = {}
 

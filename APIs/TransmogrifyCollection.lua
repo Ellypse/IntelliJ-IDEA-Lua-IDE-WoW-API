@@ -274,7 +274,7 @@ function C_TransmogCollection.UpdateUsableAppearances() end
 ---@field CloakBackpack number @ Default value is [ 1 ]
 
 ---@type TransmogCameraVariation 
-TransmogCameraVariation = {}
+local TransmogCameraVariation = {}
 
 ---@class TransmogAppearanceInfoBySourceData
 ---@field appearanceID number 
@@ -288,7 +288,7 @@ TransmogCameraVariation = {}
 ---@field appearanceIsUsable bool 
 ---@field appearanceNumSources number 
 ---@field sourceIsKnown bool 
-TransmogAppearanceInfoBySourceData = {}
+local TransmogAppearanceInfoBySourceData = {}
 
 ---@class TransmogAppearanceJournalEncounterInfo
 ---@field instance string 
@@ -296,7 +296,7 @@ TransmogAppearanceInfoBySourceData = {}
 ---@field tiers table 
 ---@field encounter string 
 ---@field difficulties table 
-TransmogAppearanceJournalEncounterInfo = {}
+local TransmogAppearanceJournalEncounterInfo = {}
 
 ---@class TransmogAppearanceSourceInfoData
 ---@field category TransmogCollectionType 
@@ -308,7 +308,7 @@ TransmogAppearanceJournalEncounterInfo = {}
 ---@field transmoglink string 
 ---@field sourceType luaIndex|nil 
 ---@field itemSubClass number 
-TransmogAppearanceSourceInfoData = {}
+local TransmogAppearanceSourceInfoData = {}
 
 ---@class TransmogCategoryAppearanceInfo
 ---@field visualID number 
@@ -322,7 +322,7 @@ TransmogAppearanceSourceInfoData = {}
 ---@field hasRequiredHoliday bool 
 ---@field hasActiveRequiredHoliday bool 
 ---@field alwaysShowItem bool|nil @ For internal testing only
-TransmogCategoryAppearanceInfo = {}
+local TransmogCategoryAppearanceInfo = {}
 
 ---@class TransmogCategoryInfo
 ---@field name cstring 
@@ -330,7 +330,7 @@ TransmogCategoryAppearanceInfo = {}
 ---@field canHaveIllusions bool 
 ---@field canMainHand bool 
 ---@field canOffHand bool 
-TransmogCategoryInfo = {}
+local TransmogCategoryInfo = {}
 
 ---@class TransmogIllusionInfo
 ---@field visualID number 
@@ -339,10 +339,10 @@ TransmogCategoryInfo = {}
 ---@field isCollected bool 
 ---@field isUsable bool 
 ---@field isHideVisual bool 
-TransmogIllusionInfo = {}
+local TransmogIllusionInfo = {}
 
 ---@class TransmogOutfitInfo
 ---@field name cstring 
 ---@field icon fileID 
-TransmogOutfitInfo = {}
+local TransmogOutfitInfo = {}
 

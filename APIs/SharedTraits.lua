@@ -183,7 +183,7 @@ function C_Traits.TalentTestUnlearnSpells() end
 ---@field traitCurrencyID number|nil 
 ---@field spentAmountRequired number|nil 
 ---@field tooltipFormat string|nil 
-TraitCondInfo = {}
+local TraitCondInfo = {}
 
 ---@class TraitConfigInfo
 ---@field ID number 
@@ -191,12 +191,12 @@ TraitCondInfo = {}
 ---@field name string 
 ---@field treeIDs table 
 ---@field usesSharedActionBars bool 
-TraitConfigInfo = {}
+local TraitConfigInfo = {}
 
 ---@class TraitCurrencyCost
 ---@field ID number 
 ---@field amount number 
-TraitCurrencyCost = {}
+local TraitCurrencyCost = {}
 
 ---@class TraitDefinitionInfo
 ---@field spellID number|nil 
@@ -206,7 +206,7 @@ TraitCurrencyCost = {}
 ---@field overrideIcon number|nil 
 ---@field overriddenSpellID number|nil 
 ---@field subType TraitDefinitionSubType|nil 
-TraitDefinitionInfo = {}
+local TraitDefinitionInfo = {}
 
 ---@class TraitEntryInfo
 ---@field definitionID number 
@@ -214,17 +214,17 @@ TraitDefinitionInfo = {}
 ---@field maxRanks number 
 ---@field isAvailable bool 
 ---@field conditionIDs table 
-TraitEntryInfo = {}
+local TraitEntryInfo = {}
 
 ---@class TraitEntryRankInfo
 ---@field entryID number 
 ---@field rank number 
-TraitEntryRankInfo = {}
+local TraitEntryRankInfo = {}
 
 ---@class TraitGateInfo
 ---@field topLeftNodeID number 
 ---@field conditionID number 
-TraitGateInfo = {}
+local TraitGateInfo = {}
 
 ---@class TraitNodeInfo
 ---@field ID number 
@@ -250,7 +250,7 @@ TraitGateInfo = {}
 ---@field conditionIDs table 
 ---@field isCascadeRepurchasable bool 
 ---@field cascadeRepurchaseEntryID number|nil 
-TraitNodeInfo = {}
+local TraitNodeInfo = {}
 
 ---@class TraitNodeInfoPartial
 ---@field canPurchaseRank bool|nil 
@@ -262,25 +262,25 @@ TraitNodeInfo = {}
 ---@field currentRank number|nil 
 ---@field meetsEdgeRequirements bool|nil 
 ---@field isCascadeRepurchasable bool|nil 
-TraitNodeInfoPartial = {}
+local TraitNodeInfoPartial = {}
 
 ---@class TraitOutEdgeInfo
 ---@field targetNode number 
 ---@field type number 
 ---@field visualStyle number 
 ---@field isActive bool 
-TraitOutEdgeInfo = {}
+local TraitOutEdgeInfo = {}
 
 ---@class TraitTreeInfo
 ---@field ID number 
 ---@field gates table 
 ---@field hideSingleRankNumbers bool 
-TraitTreeInfo = {}
+local TraitTreeInfo = {}
 
 ---@class TreeCurrencyInfo
 ---@field traitCurrencyID number 
 ---@field quantity number 
 ---@field maxQuantity number|nil 
 ---@field spent number 
-TreeCurrencyInfo = {}
+local TreeCurrencyInfo = {}
 

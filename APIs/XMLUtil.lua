@@ -14,17 +14,17 @@ function C_XMLUtil.GetTemplates() end
 ---@field height number 
 ---@field keyValues table 
 ---@field inherits cstring|nil 
-XMLTemplateInfo = {}
+local XMLTemplateInfo = {}
 
 ---@class XMLTemplateKeyValue
 ---@field key cstring 
 ---@field keyType cstring 
 ---@field type cstring 
 ---@field value cstring 
-XMLTemplateKeyValue = {}
+local XMLTemplateKeyValue = {}
 
 ---@class XMLTemplateListInfo
 ---@field name cstring 
 ---@field type cstring 
-XMLTemplateListInfo = {}
+local XMLTemplateListInfo = {}
 

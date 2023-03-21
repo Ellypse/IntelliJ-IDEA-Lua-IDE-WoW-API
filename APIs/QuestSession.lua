@@ -45,5 +45,5 @@ function C_QuestSession.SetQuestIsSuperTracked(questID, superTrack) end
 ---@class QuestSessionPlayerDetails
 ---@field name string 
 ---@field guid WOWGUID 
-QuestSessionPlayerDetails = {}
+local QuestSessionPlayerDetails = {}
 
