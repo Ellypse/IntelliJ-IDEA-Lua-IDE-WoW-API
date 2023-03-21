@@ -10,10 +10,10 @@ function C_KeyBindings.GetBindingIndex(action) end
 function C_KeyBindings.GetCustomBindingType(bindingIndex) end
 
 ---@class BindingSet : Enum
----@field Default number @ Value is set to: 0
----@field Account number @ Value is set to: 1
----@field Character number @ Value is set to: 2
----@field Current number @ Value is set to: 3
+---@field Default number @ Default value is [ 0 ]
+---@field Account number @ Default value is [ 1 ]
+---@field Character number @ Default value is [ 2 ]
+---@field Current number @ Default value is [ 3 ]
 
 ---@type BindingSet 
 Enum.BindingSet = {}
@@ -23,7 +23,7 @@ Enum.BindingSet["Character"] = 2
 Enum.BindingSet["Current"] = 3
 
 ---@class CustomBindingType : Enum
----@field VoicePushToTalk number @ Value is set to: 0
+---@field VoicePushToTalk number @ Default value is [ 0 ]
 
 ---@type CustomBindingType 
 Enum.CustomBindingType = {}

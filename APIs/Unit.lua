@@ -172,10 +172,10 @@ function UnitTrialBankedLevels(unit) end
 function UnitWidgetSet(unit) end
 
 ---@class PhaseReason : Enum
----@field Phasing number @ Value is set to: 0
----@field Sharding number @ Value is set to: 1
----@field WarMode number @ Value is set to: 2
----@field ChromieTime number @ Value is set to: 3
+---@field Phasing number @ Default value is [ 0 ]
+---@field Sharding number @ Default value is [ 1 ]
+---@field WarMode number @ Default value is [ 2 ]
+---@field ChromieTime number @ Default value is [ 3 ]
 
 ---@type PhaseReason 
 Enum.PhaseReason = {}
@@ -185,32 +185,32 @@ Enum.PhaseReason["WarMode"] = 2
 Enum.PhaseReason["ChromieTime"] = 3
 
 ---@class PowerType : Enum
----@field HealthCost number @ Value is set to: -2
----@field None number @ Value is set to: -1
----@field Mana number @ Value is set to: 0
----@field Rage number @ Value is set to: 1
----@field Focus number @ Value is set to: 2
----@field Energy number @ Value is set to: 3
----@field ComboPoints number @ Value is set to: 4
----@field Runes number @ Value is set to: 5
----@field RunicPower number @ Value is set to: 6
----@field SoulShards number @ Value is set to: 7
----@field LunarPower number @ Value is set to: 8
----@field HolyPower number @ Value is set to: 9
----@field Alternate number @ Value is set to: 10
----@field Maelstrom number @ Value is set to: 11
----@field Chi number @ Value is set to: 12
----@field Insanity number @ Value is set to: 13
----@field Obsolete number @ Value is set to: 14
----@field Obsolete2 number @ Value is set to: 15
----@field ArcaneCharges number @ Value is set to: 16
----@field Fury number @ Value is set to: 17
----@field Pain number @ Value is set to: 18
----@field Essence number @ Value is set to: 19
----@field RuneBlood number @ Value is set to: 20
----@field RuneFrost number @ Value is set to: 21
----@field RuneUnholy number @ Value is set to: 22
----@field NumPowerTypes number @ Value is set to: 23
+---@field HealthCost number @ Default value is [ -2 ]
+---@field None number @ Default value is [ -1 ]
+---@field Mana number @ Default value is [ 0 ]
+---@field Rage number @ Default value is [ 1 ]
+---@field Focus number @ Default value is [ 2 ]
+---@field Energy number @ Default value is [ 3 ]
+---@field ComboPoints number @ Default value is [ 4 ]
+---@field Runes number @ Default value is [ 5 ]
+---@field RunicPower number @ Default value is [ 6 ]
+---@field SoulShards number @ Default value is [ 7 ]
+---@field LunarPower number @ Default value is [ 8 ]
+---@field HolyPower number @ Default value is [ 9 ]
+---@field Alternate number @ Default value is [ 10 ]
+---@field Maelstrom number @ Default value is [ 11 ]
+---@field Chi number @ Default value is [ 12 ]
+---@field Insanity number @ Default value is [ 13 ]
+---@field Obsolete number @ Default value is [ 14 ]
+---@field Obsolete2 number @ Default value is [ 15 ]
+---@field ArcaneCharges number @ Default value is [ 16 ]
+---@field Fury number @ Default value is [ 17 ]
+---@field Pain number @ Default value is [ 18 ]
+---@field Essence number @ Default value is [ 19 ]
+---@field RuneBlood number @ Default value is [ 20 ]
+---@field RuneFrost number @ Default value is [ 21 ]
+---@field RuneUnholy number @ Default value is [ 22 ]
+---@field NumPowerTypes number @ Default value is [ 23 ]
 
 ---@type PowerType 
 Enum.PowerType = {}
@@ -242,17 +242,17 @@ Enum.PowerType["RuneUnholy"] = 22
 Enum.PowerType["NumPowerTypes"] = 23
 
 ---@class PvPUnitClassification : Enum
----@field FlagCarrierHorde number @ Value is set to: 0
----@field FlagCarrierAlliance number @ Value is set to: 1
----@field FlagCarrierNeutral number @ Value is set to: 2
----@field CartRunnerHorde number @ Value is set to: 3
----@field CartRunnerAlliance number @ Value is set to: 4
----@field AssassinHorde number @ Value is set to: 5
----@field AssassinAlliance number @ Value is set to: 6
----@field OrbCarrierBlue number @ Value is set to: 7
----@field OrbCarrierGreen number @ Value is set to: 8
----@field OrbCarrierOrange number @ Value is set to: 9
----@field OrbCarrierPurple number @ Value is set to: 10
+---@field FlagCarrierHorde number @ Default value is [ 0 ]
+---@field FlagCarrierAlliance number @ Default value is [ 1 ]
+---@field FlagCarrierNeutral number @ Default value is [ 2 ]
+---@field CartRunnerHorde number @ Default value is [ 3 ]
+---@field CartRunnerAlliance number @ Default value is [ 4 ]
+---@field AssassinHorde number @ Default value is [ 5 ]
+---@field AssassinAlliance number @ Default value is [ 6 ]
+---@field OrbCarrierBlue number @ Default value is [ 7 ]
+---@field OrbCarrierGreen number @ Default value is [ 8 ]
+---@field OrbCarrierOrange number @ Default value is [ 9 ]
+---@field OrbCarrierPurple number @ Default value is [ 10 ]
 
 ---@type PvPUnitClassification 
 Enum.PvPUnitClassification = {}

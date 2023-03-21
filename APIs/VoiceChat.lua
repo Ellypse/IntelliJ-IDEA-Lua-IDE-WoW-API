@@ -268,8 +268,8 @@ function C_VoiceChat.ToggleMemberMuted(playerLocation) end
 function C_VoiceChat.ToggleMuted() end
 
 ---@class CommunicationMode : Enum
----@field PushToTalk number @ Value is set to: 0
----@field OpenMic number @ Value is set to: 1
+---@field PushToTalk number @ Default value is [ 0 ]
+---@field OpenMic number @ Default value is [ 1 ]
 
 ---@type CommunicationMode 
 Enum.CommunicationMode = {}
@@ -277,8 +277,8 @@ Enum.CommunicationMode["PushToTalk"] = 0
 Enum.CommunicationMode["OpenMic"] = 1
 
 ---@class VoiceChannelErrorReason : Enum
----@field Unknown number @ Value is set to: 0
----@field IsBattleNetChannel number @ Value is set to: 1
+---@field Unknown number @ Default value is [ 0 ]
+---@field IsBattleNetChannel number @ Default value is [ 1 ]
 
 ---@type VoiceChannelErrorReason 
 Enum.VoiceChannelErrorReason = {}
@@ -286,31 +286,31 @@ Enum.VoiceChannelErrorReason["Unknown"] = 0
 Enum.VoiceChannelErrorReason["IsBattleNetChannel"] = 1
 
 ---@class VoiceChatStatusCode : Enum
----@field Success number @ Value is set to: 0
----@field OperationPending number @ Value is set to: 1
----@field TooManyRequests number @ Value is set to: 2
----@field LoginProhibited number @ Value is set to: 3
----@field ClientNotInitialized number @ Value is set to: 4
----@field ClientNotLoggedIn number @ Value is set to: 5
----@field ClientAlreadyLoggedIn number @ Value is set to: 6
----@field ChannelNameTooShort number @ Value is set to: 7
----@field ChannelNameTooLong number @ Value is set to: 8
----@field ChannelAlreadyExists number @ Value is set to: 9
----@field AlreadyInChannel number @ Value is set to: 10
----@field TargetNotFound number @ Value is set to: 11
----@field Failure number @ Value is set to: 12
----@field ServiceLost number @ Value is set to: 13
----@field UnableToLaunchProxy number @ Value is set to: 14
----@field ProxyConnectionTimeOut number @ Value is set to: 15
----@field ProxyConnectionUnableToConnect number @ Value is set to: 16
----@field ProxyConnectionUnexpectedDisconnect number @ Value is set to: 17
----@field Disabled number @ Value is set to: 18
----@field UnsupportedChatChannelType number @ Value is set to: 19
----@field InvalidCommunityStream number @ Value is set to: 20
----@field PlayerSilenced number @ Value is set to: 21
----@field PlayerVoiceChatParentalDisabled number @ Value is set to: 22
----@field InvalidInputDevice number @ Value is set to: 23
----@field InvalidOutputDevice number @ Value is set to: 24
+---@field Success number @ Default value is [ 0 ]
+---@field OperationPending number @ Default value is [ 1 ]
+---@field TooManyRequests number @ Default value is [ 2 ]
+---@field LoginProhibited number @ Default value is [ 3 ]
+---@field ClientNotInitialized number @ Default value is [ 4 ]
+---@field ClientNotLoggedIn number @ Default value is [ 5 ]
+---@field ClientAlreadyLoggedIn number @ Default value is [ 6 ]
+---@field ChannelNameTooShort number @ Default value is [ 7 ]
+---@field ChannelNameTooLong number @ Default value is [ 8 ]
+---@field ChannelAlreadyExists number @ Default value is [ 9 ]
+---@field AlreadyInChannel number @ Default value is [ 10 ]
+---@field TargetNotFound number @ Default value is [ 11 ]
+---@field Failure number @ Default value is [ 12 ]
+---@field ServiceLost number @ Default value is [ 13 ]
+---@field UnableToLaunchProxy number @ Default value is [ 14 ]
+---@field ProxyConnectionTimeOut number @ Default value is [ 15 ]
+---@field ProxyConnectionUnableToConnect number @ Default value is [ 16 ]
+---@field ProxyConnectionUnexpectedDisconnect number @ Default value is [ 17 ]
+---@field Disabled number @ Default value is [ 18 ]
+---@field UnsupportedChatChannelType number @ Default value is [ 19 ]
+---@field InvalidCommunityStream number @ Default value is [ 20 ]
+---@field PlayerSilenced number @ Default value is [ 21 ]
+---@field PlayerVoiceChatParentalDisabled number @ Default value is [ 22 ]
+---@field InvalidInputDevice number @ Default value is [ 23 ]
+---@field InvalidOutputDevice number @ Default value is [ 24 ]
 
 ---@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode = {}
@@ -341,13 +341,13 @@ Enum.VoiceChatStatusCode["InvalidInputDevice"] = 23
 Enum.VoiceChatStatusCode["InvalidOutputDevice"] = 24
 
 ---@class VoiceTtsDestination : Enum
----@field RemoteTransmission number @ Value is set to: 0
----@field LocalPlayback number @ Value is set to: 1
----@field RemoteTransmissionWithLocalPlayback number @ Value is set to: 2
----@field QueuedRemoteTransmission number @ Value is set to: 3
----@field QueuedLocalPlayback number @ Value is set to: 4
----@field QueuedRemoteTransmissionWithLocalPlayback number @ Value is set to: 5
----@field ScreenReader number @ Value is set to: 6
+---@field RemoteTransmission number @ Default value is [ 0 ]
+---@field LocalPlayback number @ Default value is [ 1 ]
+---@field RemoteTransmissionWithLocalPlayback number @ Default value is [ 2 ]
+---@field QueuedRemoteTransmission number @ Default value is [ 3 ]
+---@field QueuedLocalPlayback number @ Default value is [ 4 ]
+---@field QueuedRemoteTransmissionWithLocalPlayback number @ Default value is [ 5 ]
+---@field ScreenReader number @ Default value is [ 6 ]
 
 ---@type VoiceTtsDestination 
 Enum.VoiceTtsDestination = {}
@@ -360,20 +360,20 @@ Enum.VoiceTtsDestination["QueuedRemoteTransmissionWithLocalPlayback"] = 5
 Enum.VoiceTtsDestination["ScreenReader"] = 6
 
 ---@class VoiceTtsStatusCode : Enum
----@field Success number @ Value is set to: 0
----@field InvalidEngineType number @ Value is set to: 1
----@field EngineAllocationFailed number @ Value is set to: 2
----@field NotSupported number @ Value is set to: 3
----@field MaxCharactersExceeded number @ Value is set to: 4
----@field UtteranceBelowMinimumDuration number @ Value is set to: 5
----@field InputTextEnqueued number @ Value is set to: 6
----@field SdkNotInitialized number @ Value is set to: 7
----@field DestinationQueueFull number @ Value is set to: 8
----@field EnqueueNotNecessary number @ Value is set to: 9
----@field UtteranceNotFound number @ Value is set to: 10
----@field ManagerNotFound number @ Value is set to: 11
----@field InvalidArgument number @ Value is set to: 12
----@field InternalError number @ Value is set to: 13
+---@field Success number @ Default value is [ 0 ]
+---@field InvalidEngineType number @ Default value is [ 1 ]
+---@field EngineAllocationFailed number @ Default value is [ 2 ]
+---@field NotSupported number @ Default value is [ 3 ]
+---@field MaxCharactersExceeded number @ Default value is [ 4 ]
+---@field UtteranceBelowMinimumDuration number @ Default value is [ 5 ]
+---@field InputTextEnqueued number @ Default value is [ 6 ]
+---@field SdkNotInitialized number @ Default value is [ 7 ]
+---@field DestinationQueueFull number @ Default value is [ 8 ]
+---@field EnqueueNotNecessary number @ Default value is [ 9 ]
+---@field UtteranceNotFound number @ Default value is [ 10 ]
+---@field ManagerNotFound number @ Default value is [ 11 ]
+---@field InvalidArgument number @ Default value is [ 12 ]
+---@field InternalError number @ Default value is [ 13 ]
 
 ---@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode = {}

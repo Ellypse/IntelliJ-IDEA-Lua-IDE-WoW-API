@@ -1,21 +1,21 @@
 ---@class BagIndex : Enum
----@field Bankbag number @ Value is set to: -4
----@field Reagentbank number @ Value is set to: -3
----@field Keyring number @ Value is set to: -2
----@field Bank number @ Value is set to: -1
----@field Backpack number @ Value is set to: 0
----@field Bag_1 number @ Value is set to: 1
----@field Bag_2 number @ Value is set to: 2
----@field Bag_3 number @ Value is set to: 3
----@field Bag_4 number @ Value is set to: 4
----@field ReagentBag number @ Value is set to: 5
----@field BankBag_1 number @ Value is set to: 6
----@field BankBag_2 number @ Value is set to: 7
----@field BankBag_3 number @ Value is set to: 8
----@field BankBag_4 number @ Value is set to: 9
----@field BankBag_5 number @ Value is set to: 10
----@field BankBag_6 number @ Value is set to: 11
----@field BankBag_7 number @ Value is set to: 12
+---@field Bankbag number @ Default value is [ -4 ]
+---@field Reagentbank number @ Default value is [ -3 ]
+---@field Keyring number @ Default value is [ -2 ]
+---@field Bank number @ Default value is [ -1 ]
+---@field Backpack number @ Default value is [ 0 ]
+---@field Bag_1 number @ Default value is [ 1 ]
+---@field Bag_2 number @ Default value is [ 2 ]
+---@field Bag_3 number @ Default value is [ 3 ]
+---@field Bag_4 number @ Default value is [ 4 ]
+---@field ReagentBag number @ Default value is [ 5 ]
+---@field BankBag_1 number @ Default value is [ 6 ]
+---@field BankBag_2 number @ Default value is [ 7 ]
+---@field BankBag_3 number @ Default value is [ 8 ]
+---@field BankBag_4 number @ Default value is [ 9 ]
+---@field BankBag_5 number @ Default value is [ 10 ]
+---@field BankBag_6 number @ Default value is [ 11 ]
+---@field BankBag_7 number @ Default value is [ 12 ]
 
 ---@type BagIndex 
 Enum.BagIndex = {}

@@ -374,33 +374,33 @@ function C_Club.UnfocusStream(clubId, streamId) end
 function C_Club.ValidateText(clubType, text, clubFieldType) end
 
 ---@class ClubActionType : Enum
----@field ErrorClubActionSubscribe number @ Value is set to: 0
----@field ErrorClubActionCreate number @ Value is set to: 1
----@field ErrorClubActionEdit number @ Value is set to: 2
----@field ErrorClubActionDestroy number @ Value is set to: 3
----@field ErrorClubActionLeave number @ Value is set to: 4
----@field ErrorClubActionCreateTicket number @ Value is set to: 5
----@field ErrorClubActionDestroyTicket number @ Value is set to: 6
----@field ErrorClubActionRedeemTicket number @ Value is set to: 7
----@field ErrorClubActionGetTicket number @ Value is set to: 8
----@field ErrorClubActionGetTickets number @ Value is set to: 9
----@field ErrorClubActionGetBans number @ Value is set to: 10
----@field ErrorClubActionGetInvitations number @ Value is set to: 11
----@field ErrorClubActionRevokeInvitation number @ Value is set to: 12
----@field ErrorClubActionAcceptInvitation number @ Value is set to: 13
----@field ErrorClubActionDeclineInvitation number @ Value is set to: 14
----@field ErrorClubActionCreateStream number @ Value is set to: 15
----@field ErrorClubActionEditStream number @ Value is set to: 16
----@field ErrorClubActionDestroyStream number @ Value is set to: 17
----@field ErrorClubActionInviteMember number @ Value is set to: 18
----@field ErrorClubActionEditMember number @ Value is set to: 19
----@field ErrorClubActionEditMemberNote number @ Value is set to: 20
----@field ErrorClubActionKickMember number @ Value is set to: 21
----@field ErrorClubActionAddBan number @ Value is set to: 22
----@field ErrorClubActionRemoveBan number @ Value is set to: 23
----@field ErrorClubActionCreateMessage number @ Value is set to: 24
----@field ErrorClubActionEditMessage number @ Value is set to: 25
----@field ErrorClubActionDestroyMessage number @ Value is set to: 26
+---@field ErrorClubActionSubscribe number @ Default value is [ 0 ]
+---@field ErrorClubActionCreate number @ Default value is [ 1 ]
+---@field ErrorClubActionEdit number @ Default value is [ 2 ]
+---@field ErrorClubActionDestroy number @ Default value is [ 3 ]
+---@field ErrorClubActionLeave number @ Default value is [ 4 ]
+---@field ErrorClubActionCreateTicket number @ Default value is [ 5 ]
+---@field ErrorClubActionDestroyTicket number @ Default value is [ 6 ]
+---@field ErrorClubActionRedeemTicket number @ Default value is [ 7 ]
+---@field ErrorClubActionGetTicket number @ Default value is [ 8 ]
+---@field ErrorClubActionGetTickets number @ Default value is [ 9 ]
+---@field ErrorClubActionGetBans number @ Default value is [ 10 ]
+---@field ErrorClubActionGetInvitations number @ Default value is [ 11 ]
+---@field ErrorClubActionRevokeInvitation number @ Default value is [ 12 ]
+---@field ErrorClubActionAcceptInvitation number @ Default value is [ 13 ]
+---@field ErrorClubActionDeclineInvitation number @ Default value is [ 14 ]
+---@field ErrorClubActionCreateStream number @ Default value is [ 15 ]
+---@field ErrorClubActionEditStream number @ Default value is [ 16 ]
+---@field ErrorClubActionDestroyStream number @ Default value is [ 17 ]
+---@field ErrorClubActionInviteMember number @ Default value is [ 18 ]
+---@field ErrorClubActionEditMember number @ Default value is [ 19 ]
+---@field ErrorClubActionEditMemberNote number @ Default value is [ 20 ]
+---@field ErrorClubActionKickMember number @ Default value is [ 21 ]
+---@field ErrorClubActionAddBan number @ Default value is [ 22 ]
+---@field ErrorClubActionRemoveBan number @ Default value is [ 23 ]
+---@field ErrorClubActionCreateMessage number @ Default value is [ 24 ]
+---@field ErrorClubActionEditMessage number @ Default value is [ 25 ]
+---@field ErrorClubActionDestroyMessage number @ Default value is [ 26 ]
 
 ---@type ClubActionType 
 Enum.ClubActionType = {}
@@ -433,48 +433,48 @@ Enum.ClubActionType["ErrorClubActionEditMessage"] = 25
 Enum.ClubActionType["ErrorClubActionDestroyMessage"] = 26
 
 ---@class ClubErrorType : Enum
----@field ErrorCommunitiesNone number @ Value is set to: 0
----@field ErrorCommunitiesUnknown number @ Value is set to: 1
----@field ErrorCommunitiesNeutralFaction number @ Value is set to: 2
----@field ErrorCommunitiesUnknownRealm number @ Value is set to: 3
----@field ErrorCommunitiesBadTarget number @ Value is set to: 4
----@field ErrorCommunitiesWrongFaction number @ Value is set to: 5
----@field ErrorCommunitiesRestricted number @ Value is set to: 6
----@field ErrorCommunitiesIgnored number @ Value is set to: 7
----@field ErrorCommunitiesGuild number @ Value is set to: 8
----@field ErrorCommunitiesWrongRegion number @ Value is set to: 9
----@field ErrorCommunitiesUnknownTicket number @ Value is set to: 10
----@field ErrorCommunitiesMissingShortName number @ Value is set to: 11
----@field ErrorCommunitiesProfanity number @ Value is set to: 12
----@field ErrorCommunitiesTrial number @ Value is set to: 13
----@field ErrorCommunitiesVeteranTrial number @ Value is set to: 14
----@field ErrorCommunitiesChatMute number @ Value is set to: 15
----@field ErrorClubFull number @ Value is set to: 16
----@field ErrorClubNoClub number @ Value is set to: 17
----@field ErrorClubNotMember number @ Value is set to: 18
----@field ErrorClubAlreadyMember number @ Value is set to: 19
----@field ErrorClubNoSuchMember number @ Value is set to: 20
----@field ErrorClubNoSuchInvitation number @ Value is set to: 21
----@field ErrorClubInvitationAlreadyExists number @ Value is set to: 22
----@field ErrorClubInvalidRoleID number @ Value is set to: 23
----@field ErrorClubInsufficientPrivileges number @ Value is set to: 24
----@field ErrorClubTooManyClubsJoined number @ Value is set to: 25
----@field ErrorClubVoiceFull number @ Value is set to: 26
----@field ErrorClubStreamNoStream number @ Value is set to: 27
----@field ErrorClubStreamInvalidName number @ Value is set to: 28
----@field ErrorClubStreamCountAtMin number @ Value is set to: 29
----@field ErrorClubStreamCountAtMax number @ Value is set to: 30
----@field ErrorClubMemberHasRequiredRole number @ Value is set to: 31
----@field ErrorClubSentInvitationCountAtMax number @ Value is set to: 32
----@field ErrorClubReceivedInvitationCountAtMax number @ Value is set to: 33
----@field ErrorClubTargetIsBanned number @ Value is set to: 34
----@field ErrorClubBanAlreadyExists number @ Value is set to: 35
----@field ErrorClubBanCountAtMax number @ Value is set to: 36
----@field ErrorClubTicketCountAtMax number @ Value is set to: 37
----@field ErrorClubTicketNoSuchTicket number @ Value is set to: 38
----@field ErrorClubTicketHasConsumedAllowedRedeemCount number @ Value is set to: 39
----@field ErrorClubDoesntAllowCrossFaction number @ Value is set to: 40
----@field ErrorClubEditHasCrossFactionMembers number @ Value is set to: 41
+---@field ErrorCommunitiesNone number @ Default value is [ 0 ]
+---@field ErrorCommunitiesUnknown number @ Default value is [ 1 ]
+---@field ErrorCommunitiesNeutralFaction number @ Default value is [ 2 ]
+---@field ErrorCommunitiesUnknownRealm number @ Default value is [ 3 ]
+---@field ErrorCommunitiesBadTarget number @ Default value is [ 4 ]
+---@field ErrorCommunitiesWrongFaction number @ Default value is [ 5 ]
+---@field ErrorCommunitiesRestricted number @ Default value is [ 6 ]
+---@field ErrorCommunitiesIgnored number @ Default value is [ 7 ]
+---@field ErrorCommunitiesGuild number @ Default value is [ 8 ]
+---@field ErrorCommunitiesWrongRegion number @ Default value is [ 9 ]
+---@field ErrorCommunitiesUnknownTicket number @ Default value is [ 10 ]
+---@field ErrorCommunitiesMissingShortName number @ Default value is [ 11 ]
+---@field ErrorCommunitiesProfanity number @ Default value is [ 12 ]
+---@field ErrorCommunitiesTrial number @ Default value is [ 13 ]
+---@field ErrorCommunitiesVeteranTrial number @ Default value is [ 14 ]
+---@field ErrorCommunitiesChatMute number @ Default value is [ 15 ]
+---@field ErrorClubFull number @ Default value is [ 16 ]
+---@field ErrorClubNoClub number @ Default value is [ 17 ]
+---@field ErrorClubNotMember number @ Default value is [ 18 ]
+---@field ErrorClubAlreadyMember number @ Default value is [ 19 ]
+---@field ErrorClubNoSuchMember number @ Default value is [ 20 ]
+---@field ErrorClubNoSuchInvitation number @ Default value is [ 21 ]
+---@field ErrorClubInvitationAlreadyExists number @ Default value is [ 22 ]
+---@field ErrorClubInvalidRoleID number @ Default value is [ 23 ]
+---@field ErrorClubInsufficientPrivileges number @ Default value is [ 24 ]
+---@field ErrorClubTooManyClubsJoined number @ Default value is [ 25 ]
+---@field ErrorClubVoiceFull number @ Default value is [ 26 ]
+---@field ErrorClubStreamNoStream number @ Default value is [ 27 ]
+---@field ErrorClubStreamInvalidName number @ Default value is [ 28 ]
+---@field ErrorClubStreamCountAtMin number @ Default value is [ 29 ]
+---@field ErrorClubStreamCountAtMax number @ Default value is [ 30 ]
+---@field ErrorClubMemberHasRequiredRole number @ Default value is [ 31 ]
+---@field ErrorClubSentInvitationCountAtMax number @ Default value is [ 32 ]
+---@field ErrorClubReceivedInvitationCountAtMax number @ Default value is [ 33 ]
+---@field ErrorClubTargetIsBanned number @ Default value is [ 34 ]
+---@field ErrorClubBanAlreadyExists number @ Default value is [ 35 ]
+---@field ErrorClubBanCountAtMax number @ Default value is [ 36 ]
+---@field ErrorClubTicketCountAtMax number @ Default value is [ 37 ]
+---@field ErrorClubTicketNoSuchTicket number @ Default value is [ 38 ]
+---@field ErrorClubTicketHasConsumedAllowedRedeemCount number @ Default value is [ 39 ]
+---@field ErrorClubDoesntAllowCrossFaction number @ Default value is [ 40 ]
+---@field ErrorClubEditHasCrossFactionMembers number @ Default value is [ 41 ]
 
 ---@type ClubErrorType 
 Enum.ClubErrorType = {}
@@ -522,13 +522,13 @@ Enum.ClubErrorType["ErrorClubDoesntAllowCrossFaction"] = 40
 Enum.ClubErrorType["ErrorClubEditHasCrossFactionMembers"] = 41
 
 ---@class ClubFieldType : Enum
----@field ClubName number @ Value is set to: 0
----@field ClubShortName number @ Value is set to: 1
----@field ClubDescription number @ Value is set to: 2
----@field ClubBroadcast number @ Value is set to: 3
----@field ClubStreamName number @ Value is set to: 4
----@field ClubStreamSubject number @ Value is set to: 5
----@field NumTypes number @ Value is set to: 6
+---@field ClubName number @ Default value is [ 0 ]
+---@field ClubShortName number @ Default value is [ 1 ]
+---@field ClubDescription number @ Default value is [ 2 ]
+---@field ClubBroadcast number @ Default value is [ 3 ]
+---@field ClubStreamName number @ Default value is [ 4 ]
+---@field ClubStreamSubject number @ Default value is [ 5 ]
+---@field NumTypes number @ Default value is [ 6 ]
 
 ---@type ClubFieldType 
 Enum.ClubFieldType = {}
@@ -541,9 +541,9 @@ Enum.ClubFieldType["ClubStreamSubject"] = 5
 Enum.ClubFieldType["NumTypes"] = 6
 
 ---@class ClubInvitationCandidateStatus : Enum
----@field Available number @ Value is set to: 0
----@field InvitePending number @ Value is set to: 1
----@field AlreadyMember number @ Value is set to: 2
+---@field Available number @ Default value is [ 0 ]
+---@field InvitePending number @ Default value is [ 1 ]
+---@field AlreadyMember number @ Default value is [ 2 ]
 
 ---@type ClubInvitationCandidateStatus 
 Enum.ClubInvitationCandidateStatus = {}
@@ -552,12 +552,12 @@ Enum.ClubInvitationCandidateStatus["InvitePending"] = 1
 Enum.ClubInvitationCandidateStatus["AlreadyMember"] = 2
 
 ---@class ClubMemberPresence : Enum
----@field Unknown number @ Value is set to: 0
----@field Online number @ Value is set to: 1
----@field OnlineMobile number @ Value is set to: 2
----@field Offline number @ Value is set to: 3
----@field Away number @ Value is set to: 4
----@field Busy number @ Value is set to: 5
+---@field Unknown number @ Default value is [ 0 ]
+---@field Online number @ Default value is [ 1 ]
+---@field OnlineMobile number @ Default value is [ 2 ]
+---@field Offline number @ Default value is [ 3 ]
+---@field Away number @ Default value is [ 4 ]
+---@field Busy number @ Default value is [ 5 ]
 
 ---@type ClubMemberPresence 
 Enum.ClubMemberPresence = {}
@@ -569,10 +569,10 @@ Enum.ClubMemberPresence["Away"] = 4
 Enum.ClubMemberPresence["Busy"] = 5
 
 ---@class ClubRemovedReason : Enum
----@field None number @ Value is set to: 0
----@field Banned number @ Value is set to: 1
----@field Removed number @ Value is set to: 2
----@field ClubDestroyed number @ Value is set to: 3
+---@field None number @ Default value is [ 0 ]
+---@field Banned number @ Default value is [ 1 ]
+---@field Removed number @ Default value is [ 2 ]
+---@field ClubDestroyed number @ Default value is [ 3 ]
 
 ---@type ClubRemovedReason 
 Enum.ClubRemovedReason = {}
@@ -582,8 +582,8 @@ Enum.ClubRemovedReason["Removed"] = 2
 Enum.ClubRemovedReason["ClubDestroyed"] = 3
 
 ---@class ClubRestrictionReason : Enum
----@field None number @ Value is set to: 0
----@field Unavailable number @ Value is set to: 1
+---@field None number @ Default value is [ 0 ]
+---@field Unavailable number @ Default value is [ 1 ]
 
 ---@type ClubRestrictionReason 
 Enum.ClubRestrictionReason = {}
@@ -591,10 +591,10 @@ Enum.ClubRestrictionReason["None"] = 0
 Enum.ClubRestrictionReason["Unavailable"] = 1
 
 ---@class ClubRoleIdentifier : Enum
----@field Owner number @ Value is set to: 1
----@field Leader number @ Value is set to: 2
----@field Moderator number @ Value is set to: 3
----@field Member number @ Value is set to: 4
+---@field Owner number @ Default value is [ 1 ]
+---@field Leader number @ Default value is [ 2 ]
+---@field Moderator number @ Default value is [ 3 ]
+---@field Member number @ Default value is [ 4 ]
 
 ---@type ClubRoleIdentifier 
 Enum.ClubRoleIdentifier = {}
@@ -604,9 +604,9 @@ Enum.ClubRoleIdentifier["Moderator"] = 3
 Enum.ClubRoleIdentifier["Member"] = 4
 
 ---@class ClubStreamNotificationFilter : Enum
----@field None number @ Value is set to: 0
----@field Mention number @ Value is set to: 1
----@field All number @ Value is set to: 2
+---@field None number @ Default value is [ 0 ]
+---@field Mention number @ Default value is [ 1 ]
+---@field All number @ Default value is [ 2 ]
 
 ---@type ClubStreamNotificationFilter 
 Enum.ClubStreamNotificationFilter = {}
@@ -615,10 +615,10 @@ Enum.ClubStreamNotificationFilter["Mention"] = 1
 Enum.ClubStreamNotificationFilter["All"] = 2
 
 ---@class ClubStreamType : Enum
----@field General number @ Value is set to: 0
----@field Guild number @ Value is set to: 1
----@field Officer number @ Value is set to: 2
----@field Other number @ Value is set to: 3
+---@field General number @ Default value is [ 0 ]
+---@field Guild number @ Default value is [ 1 ]
+---@field Officer number @ Default value is [ 2 ]
+---@field Other number @ Default value is [ 3 ]
 
 ---@type ClubStreamType 
 Enum.ClubStreamType = {}
@@ -628,10 +628,10 @@ Enum.ClubStreamType["Officer"] = 2
 Enum.ClubStreamType["Other"] = 3
 
 ---@class ClubType : Enum
----@field BattleNet number @ Value is set to: 0
----@field Character number @ Value is set to: 1
----@field Guild number @ Value is set to: 2
----@field Other number @ Value is set to: 3
+---@field BattleNet number @ Default value is [ 0 ]
+---@field Character number @ Default value is [ 1 ]
+---@field Guild number @ Default value is [ 2 ]
+---@field Other number @ Default value is [ 3 ]
 
 ---@type ClubType 
 Enum.ClubType = {}

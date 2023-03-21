@@ -21,48 +21,48 @@ function C_VideoOptions.GetGxAdapterInfo() end
 function C_VideoOptions.SetGameWindowSize(x, y) end
 
 ---@class GraphicsValidationResult : Enum
----@field Supported number @ Value is set to: 0
----@field Illegal number @ Value is set to: 1
----@field Unsupported number @ Value is set to: 2
----@field Graphics number @ Value is set to: 3
----@field DualCore number @ Value is set to: 4
----@field QuadCore number @ Value is set to: 5
----@field CpuMem_2 number @ Value is set to: 6
----@field CpuMem_4 number @ Value is set to: 7
----@field CpuMem_8 number @ Value is set to: 8
----@field Needs_5_0 number @ Value is set to: 9
----@field Needs_6_0 number @ Value is set to: 10
----@field NeedsRt number @ Value is set to: 11
----@field NeedsDx12 number @ Value is set to: 12
----@field NeedsDx12Vrs2 number @ Value is set to: 13
----@field NeedsAppleGpu number @ Value is set to: 14
----@field NeedsAmdGpu number @ Value is set to: 15
----@field NeedsIntelGpu number @ Value is set to: 16
----@field NeedsNvidiaGpu number @ Value is set to: 17
----@field NeedsQualcommGpu number @ Value is set to: 18
----@field NeedsMacOs_10_13 number @ Value is set to: 19
----@field NeedsMacOs_10_14 number @ Value is set to: 20
----@field NeedsMacOs_10_15 number @ Value is set to: 21
----@field NeedsMacOs_11_0 number @ Value is set to: 22
----@field NeedsMacOs_12_0 number @ Value is set to: 23
----@field NeedsMacOs_13_0 number @ Value is set to: 24
----@field NeedsWindows_10 number @ Value is set to: 25
----@field NeedsWindows_11 number @ Value is set to: 26
----@field MacOsUnsupported number @ Value is set to: 27
----@field WindowsUnsupported number @ Value is set to: 28
----@field LegacyUnsupported number @ Value is set to: 29
----@field Dx11Unsupported number @ Value is set to: 30
----@field Dx12Win7Unsupported number @ Value is set to: 31
----@field RemoteDesktopUnsupported number @ Value is set to: 32
----@field WineUnsupported number @ Value is set to: 33
----@field NvapiWineUnsupported number @ Value is set to: 34
----@field AppleGpuUnsupported number @ Value is set to: 35
----@field AmdGpuUnsupported number @ Value is set to: 36
----@field IntelGpuUnsupported number @ Value is set to: 37
----@field NvidiaGpuUnsupported number @ Value is set to: 38
----@field QualcommGpuUnsupported number @ Value is set to: 39
----@field GpuDriver number @ Value is set to: 40
----@field Unknown number @ Value is set to: 41
+---@field Supported number @ Default value is [ 0 ]
+---@field Illegal number @ Default value is [ 1 ]
+---@field Unsupported number @ Default value is [ 2 ]
+---@field Graphics number @ Default value is [ 3 ]
+---@field DualCore number @ Default value is [ 4 ]
+---@field QuadCore number @ Default value is [ 5 ]
+---@field CpuMem_2 number @ Default value is [ 6 ]
+---@field CpuMem_4 number @ Default value is [ 7 ]
+---@field CpuMem_8 number @ Default value is [ 8 ]
+---@field Needs_5_0 number @ Default value is [ 9 ]
+---@field Needs_6_0 number @ Default value is [ 10 ]
+---@field NeedsRt number @ Default value is [ 11 ]
+---@field NeedsDx12 number @ Default value is [ 12 ]
+---@field NeedsDx12Vrs2 number @ Default value is [ 13 ]
+---@field NeedsAppleGpu number @ Default value is [ 14 ]
+---@field NeedsAmdGpu number @ Default value is [ 15 ]
+---@field NeedsIntelGpu number @ Default value is [ 16 ]
+---@field NeedsNvidiaGpu number @ Default value is [ 17 ]
+---@field NeedsQualcommGpu number @ Default value is [ 18 ]
+---@field NeedsMacOs_10_13 number @ Default value is [ 19 ]
+---@field NeedsMacOs_10_14 number @ Default value is [ 20 ]
+---@field NeedsMacOs_10_15 number @ Default value is [ 21 ]
+---@field NeedsMacOs_11_0 number @ Default value is [ 22 ]
+---@field NeedsMacOs_12_0 number @ Default value is [ 23 ]
+---@field NeedsMacOs_13_0 number @ Default value is [ 24 ]
+---@field NeedsWindows_10 number @ Default value is [ 25 ]
+---@field NeedsWindows_11 number @ Default value is [ 26 ]
+---@field MacOsUnsupported number @ Default value is [ 27 ]
+---@field WindowsUnsupported number @ Default value is [ 28 ]
+---@field LegacyUnsupported number @ Default value is [ 29 ]
+---@field Dx11Unsupported number @ Default value is [ 30 ]
+---@field Dx12Win7Unsupported number @ Default value is [ 31 ]
+---@field RemoteDesktopUnsupported number @ Default value is [ 32 ]
+---@field WineUnsupported number @ Default value is [ 33 ]
+---@field NvapiWineUnsupported number @ Default value is [ 34 ]
+---@field AppleGpuUnsupported number @ Default value is [ 35 ]
+---@field AmdGpuUnsupported number @ Default value is [ 36 ]
+---@field IntelGpuUnsupported number @ Default value is [ 37 ]
+---@field NvidiaGpuUnsupported number @ Default value is [ 38 ]
+---@field QualcommGpuUnsupported number @ Default value is [ 39 ]
+---@field GpuDriver number @ Default value is [ 40 ]
+---@field Unknown number @ Default value is [ 41 ]
 
 ---@type GraphicsValidationResult 
 Enum.GraphicsValidationResult = {}

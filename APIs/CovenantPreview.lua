@@ -8,9 +8,9 @@ function C_CovenantPreview.CloseFromUI() end
 function C_CovenantPreview.GetCovenantInfoForPlayerChoiceResponseID(playerChoiceResponseID) end
 
 ---@class CovenantAbilityType : Enum
----@field Class number @ Value is set to: 0
----@field Signature number @ Value is set to: 1
----@field Soulbind number @ Value is set to: 2
+---@field Class number @ Default value is [ 0 ]
+---@field Signature number @ Default value is [ 1 ]
+---@field Soulbind number @ Default value is [ 2 ]
 
 ---@type CovenantAbilityType 
 Enum.CovenantAbilityType = {}

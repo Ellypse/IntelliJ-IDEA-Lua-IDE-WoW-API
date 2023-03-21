@@ -6,7 +6,7 @@ C_SystemVisibilityManager = {}
 function C_SystemVisibilityManager.IsSystemVisible(system) end
 
 ---@class UISystemType : Enum
----@field InGameNavigation number @ Value is set to: 0
+---@field InGameNavigation number @ Default value is [ 0 ]
 
 ---@type UISystemType 
 Enum.UISystemType = {}

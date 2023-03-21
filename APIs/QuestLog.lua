@@ -316,12 +316,12 @@ function C_QuestLog.SortQuestWatches() end
 function C_QuestLog.UnitIsRelatedToActiveQuest(unit) end
 
 ---@class MapOverlayDisplayLocation : Enum
----@field Default number @ Value is set to: 0
----@field BottomLeft number @ Value is set to: 1
----@field TopLeft number @ Value is set to: 2
----@field BottomRight number @ Value is set to: 3
----@field TopRight number @ Value is set to: 4
----@field Hidden number @ Value is set to: 5
+---@field Default number @ Default value is [ 0 ]
+---@field BottomLeft number @ Default value is [ 1 ]
+---@field TopLeft number @ Default value is [ 2 ]
+---@field BottomRight number @ Default value is [ 3 ]
+---@field TopRight number @ Default value is [ 4 ]
+---@field Hidden number @ Default value is [ 5 ]
 
 ---@type MapOverlayDisplayLocation 
 Enum.MapOverlayDisplayLocation = {}
@@ -333,9 +333,9 @@ Enum.MapOverlayDisplayLocation["TopRight"] = 4
 Enum.MapOverlayDisplayLocation["Hidden"] = 5
 
 ---@class QuestFrequency : Enum
----@field Default number @ Value is set to: 0
----@field Daily number @ Value is set to: 1
----@field Weekly number @ Value is set to: 2
+---@field Default number @ Default value is [ 0 ]
+---@field Daily number @ Default value is [ 1 ]
+---@field Weekly number @ Default value is [ 2 ]
 
 ---@type QuestFrequency 
 Enum.QuestFrequency = {}
@@ -344,17 +344,17 @@ Enum.QuestFrequency["Daily"] = 1
 Enum.QuestFrequency["Weekly"] = 2
 
 ---@class QuestTag : Enum
----@field Group number @ Value is set to: 1
----@field PvP number @ Value is set to: 41
----@field Raid number @ Value is set to: 62
----@field Dungeon number @ Value is set to: 81
----@field Legendary number @ Value is set to: 83
----@field Heroic number @ Value is set to: 85
----@field Raid10 number @ Value is set to: 88
----@field Raid25 number @ Value is set to: 89
----@field Scenario number @ Value is set to: 98
----@field Account number @ Value is set to: 102
----@field CombatAlly number @ Value is set to: 266
+---@field Group number @ Default value is [ 1 ]
+---@field PvP number @ Default value is [ 41 ]
+---@field Raid number @ Default value is [ 62 ]
+---@field Dungeon number @ Default value is [ 81 ]
+---@field Legendary number @ Default value is [ 83 ]
+---@field Heroic number @ Default value is [ 85 ]
+---@field Raid10 number @ Default value is [ 88 ]
+---@field Raid25 number @ Default value is [ 89 ]
+---@field Scenario number @ Default value is [ 98 ]
+---@field Account number @ Default value is [ 102 ]
+---@field CombatAlly number @ Default value is [ 266 ]
 
 ---@type QuestTag 
 Enum.QuestTag = {}
@@ -371,8 +371,8 @@ Enum.QuestTag["Account"] = 102
 Enum.QuestTag["CombatAlly"] = 266
 
 ---@class QuestWatchType : Enum
----@field Automatic number @ Value is set to: 0
----@field Manual number @ Value is set to: 1
+---@field Automatic number @ Default value is [ 0 ]
+---@field Manual number @ Default value is [ 1 ]
 
 ---@type QuestWatchType 
 Enum.QuestWatchType = {}
@@ -380,9 +380,9 @@ Enum.QuestWatchType["Automatic"] = 0
 Enum.QuestWatchType["Manual"] = 1
 
 ---@class WorldQuestQuality : Enum
----@field Common number @ Value is set to: 0
----@field Rare number @ Value is set to: 1
----@field Epic number @ Value is set to: 2
+---@field Common number @ Default value is [ 0 ]
+---@field Rare number @ Default value is [ 1 ]
+---@field Epic number @ Default value is [ 2 ]
 
 ---@type WorldQuestQuality 
 Enum.WorldQuestQuality = {}

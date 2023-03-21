@@ -41,9 +41,9 @@ function C_RecruitAFriend.RemoveRAFRecruit(wowAccountGUID) end
 function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 
 ---@class RafRecruitActivityState : Enum
----@field Incomplete number @ Value is set to: 0
----@field Complete number @ Value is set to: 1
----@field RewardClaimed number @ Value is set to: 2
+---@field Incomplete number @ Default value is [ 0 ]
+---@field Complete number @ Default value is [ 1 ]
+---@field RewardClaimed number @ Default value is [ 2 ]
 
 ---@type RafRecruitActivityState 
 Enum.RafRecruitActivityState = {}
@@ -52,9 +52,9 @@ Enum.RafRecruitActivityState["Complete"] = 1
 Enum.RafRecruitActivityState["RewardClaimed"] = 2
 
 ---@class RafRecruitSubStatus : Enum
----@field Trial number @ Value is set to: 0
----@field Active number @ Value is set to: 1
----@field Inactive number @ Value is set to: 2
+---@field Trial number @ Default value is [ 0 ]
+---@field Active number @ Default value is [ 1 ]
+---@field Inactive number @ Default value is [ 2 ]
 
 ---@type RafRecruitSubStatus 
 Enum.RafRecruitSubStatus = {}
@@ -63,14 +63,14 @@ Enum.RafRecruitSubStatus["Active"] = 1
 Enum.RafRecruitSubStatus["Inactive"] = 2
 
 ---@class RafRewardType : Enum
----@field Pet number @ Value is set to: 0
----@field Mount number @ Value is set to: 1
----@field Appearance number @ Value is set to: 2
----@field Title number @ Value is set to: 3
----@field GameTime number @ Value is set to: 4
----@field AppearanceSet number @ Value is set to: 5
----@field Illusion number @ Value is set to: 6
----@field Invalid number @ Value is set to: 7
+---@field Pet number @ Default value is [ 0 ]
+---@field Mount number @ Default value is [ 1 ]
+---@field Appearance number @ Default value is [ 2 ]
+---@field Title number @ Default value is [ 3 ]
+---@field GameTime number @ Default value is [ 4 ]
+---@field AppearanceSet number @ Default value is [ 5 ]
+---@field Illusion number @ Default value is [ 6 ]
+---@field Invalid number @ Default value is [ 7 ]
 
 ---@type RafRewardType 
 Enum.RafRewardType = {}

@@ -194,7 +194,7 @@ function APIDocumentation:AddDocumentationTable(documentation)
 					write(FIELD_DOCUMENTATION:format(
 							value.Name,
 							"number",
-							("@ Value is set to: ".. value.EnumValue)
+							"@ Default value is [ ".. value.EnumValue .. " ]"
 					))
 				end
 				--write(GLOBAL_DECLARATION:format(tab.Name))

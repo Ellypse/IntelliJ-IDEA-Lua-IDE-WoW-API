@@ -22,11 +22,11 @@ function C_AnimaDiversion.OpenAnimaDiversionUI() end
 function C_AnimaDiversion.SelectAnimaNode(talentID, temporary) end
 
 ---@class AnimaDiversionNodeState : Enum
----@field Unavailable number @ Value is set to: 0
----@field Available number @ Value is set to: 1
----@field SelectedTemporary number @ Value is set to: 2
----@field SelectedPermanent number @ Value is set to: 3
----@field Cooldown number @ Value is set to: 4
+---@field Unavailable number @ Default value is [ 0 ]
+---@field Available number @ Default value is [ 1 ]
+---@field SelectedTemporary number @ Default value is [ 2 ]
+---@field SelectedPermanent number @ Default value is [ 3 ]
+---@field Cooldown number @ Default value is [ 4 ]
 
 ---@type AnimaDiversionNodeState 
 Enum.AnimaDiversionNodeState = {}

@@ -18,17 +18,17 @@ function C_Console.PrintAllMatchingCommands(partialCommandText) end
 function C_Console.SetFontHeight(fontHeightInPixels) end
 
 ---@class ConsoleCategory : Enum
----@field Debug number @ Value is set to: 0
----@field Graphics number @ Value is set to: 1
----@field Console number @ Value is set to: 2
----@field Combat number @ Value is set to: 3
----@field Game number @ Value is set to: 4
----@field Default number @ Value is set to: 5
----@field Net number @ Value is set to: 6
----@field Sound number @ Value is set to: 7
----@field Gm number @ Value is set to: 8
----@field Reveal number @ Value is set to: 9
----@field None number @ Value is set to: 10
+---@field Debug number @ Default value is [ 0 ]
+---@field Graphics number @ Default value is [ 1 ]
+---@field Console number @ Default value is [ 2 ]
+---@field Combat number @ Default value is [ 3 ]
+---@field Game number @ Default value is [ 4 ]
+---@field Default number @ Default value is [ 5 ]
+---@field Net number @ Default value is [ 6 ]
+---@field Sound number @ Default value is [ 7 ]
+---@field Gm number @ Default value is [ 8 ]
+---@field Reveal number @ Default value is [ 9 ]
+---@field None number @ Default value is [ 10 ]
 
 ---@type ConsoleCategory 
 Enum.ConsoleCategory = {}
@@ -45,18 +45,18 @@ Enum.ConsoleCategory["Reveal"] = 9
 Enum.ConsoleCategory["None"] = 10
 
 ---@class ConsoleColorType : Enum
----@field DefaultColor number @ Value is set to: 0
----@field InputColor number @ Value is set to: 1
----@field EchoColor number @ Value is set to: 2
----@field ErrorColor number @ Value is set to: 3
----@field WarningColor number @ Value is set to: 4
----@field GlobalColor number @ Value is set to: 5
----@field AdminColor number @ Value is set to: 6
----@field HighlightColor number @ Value is set to: 7
----@field BackgroundColor number @ Value is set to: 8
----@field ClickbufferColor number @ Value is set to: 9
----@field PrivateColor number @ Value is set to: 10
----@field DefaultGreen number @ Value is set to: 11
+---@field DefaultColor number @ Default value is [ 0 ]
+---@field InputColor number @ Default value is [ 1 ]
+---@field EchoColor number @ Default value is [ 2 ]
+---@field ErrorColor number @ Default value is [ 3 ]
+---@field WarningColor number @ Default value is [ 4 ]
+---@field GlobalColor number @ Default value is [ 5 ]
+---@field AdminColor number @ Default value is [ 6 ]
+---@field HighlightColor number @ Default value is [ 7 ]
+---@field BackgroundColor number @ Default value is [ 8 ]
+---@field ClickbufferColor number @ Default value is [ 9 ]
+---@field PrivateColor number @ Default value is [ 10 ]
+---@field DefaultGreen number @ Default value is [ 11 ]
 
 ---@type ConsoleColorType 
 Enum.ConsoleColorType = {}
@@ -74,10 +74,10 @@ Enum.ConsoleColorType["PrivateColor"] = 10
 Enum.ConsoleColorType["DefaultGreen"] = 11
 
 ---@class ConsoleCommandType : Enum
----@field Cvar number @ Value is set to: 0
----@field Command number @ Value is set to: 1
----@field Macro number @ Value is set to: 2
----@field Script number @ Value is set to: 3
+---@field Cvar number @ Default value is [ 0 ]
+---@field Command number @ Default value is [ 1 ]
+---@field Macro number @ Default value is [ 2 ]
+---@field Script number @ Default value is [ 3 ]
 
 ---@type ConsoleCommandType 
 Enum.ConsoleCommandType = {}
