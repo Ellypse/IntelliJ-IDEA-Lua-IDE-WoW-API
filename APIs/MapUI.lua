@@ -150,22 +150,14 @@ function C_Map.RequestPreloadMap(uiMapID) end
 ---@param point UiMapPoint 
 function C_Map.SetUserWaypoint(point) end
 
----@class MapCanvasPosition : Enum
+---@class MapCanvasPosition
 ---@field None number @ Default value is [ 0 ]
 ---@field BottomLeft number @ Default value is [ 1 ]
 ---@field BottomRight number @ Default value is [ 2 ]
 ---@field TopLeft number @ Default value is [ 3 ]
 ---@field TopRight number @ Default value is [ 4 ]
 
----@type MapCanvasPosition 
-Enum.MapCanvasPosition = {}
-Enum.MapCanvasPosition["None"] = 0
-Enum.MapCanvasPosition["BottomLeft"] = 1
-Enum.MapCanvasPosition["BottomRight"] = 2
-Enum.MapCanvasPosition["TopLeft"] = 3
-Enum.MapCanvasPosition["TopRight"] = 4
-
----@class UIMapFlag : Enum
+---@class UIMapFlag
 ---@field NoHighlight number @ Default value is [ 1 ]
 ---@field ShowOverlays number @ Default value is [ 2 ]
 ---@field ShowTaxiNodes number @ Default value is [ 4 ]
@@ -184,40 +176,13 @@ Enum.MapCanvasPosition["TopRight"] = 4
 ---@field ForceOnNavbar number @ Default value is [ 32768 ]
 ---@field AlwaysAllowUserWaypoints number @ Default value is [ 65536 ]
 
----@type UIMapFlag 
-Enum.UIMapFlag = {}
-Enum.UIMapFlag["NoHighlight"] = 1
-Enum.UIMapFlag["ShowOverlays"] = 2
-Enum.UIMapFlag["ShowTaxiNodes"] = 4
-Enum.UIMapFlag["GarrisonMap"] = 8
-Enum.UIMapFlag["FallbackToParentMap"] = 16
-Enum.UIMapFlag["NoHighlightTexture"] = 32
-Enum.UIMapFlag["ShowTaskObjectives"] = 64
-Enum.UIMapFlag["NoWorldPositions"] = 128
-Enum.UIMapFlag["HideArchaeologyDigs"] = 256
-Enum.UIMapFlag["Deprecated"] = 512
-Enum.UIMapFlag["HideIcons"] = 1024
-Enum.UIMapFlag["HideVignettes"] = 2048
-Enum.UIMapFlag["ForceAllOverlayExplored"] = 4096
-Enum.UIMapFlag["FlightMapShowZoomOut"] = 8192
-Enum.UIMapFlag["FlightMapAutoZoom"] = 16384
-Enum.UIMapFlag["ForceOnNavbar"] = 32768
-Enum.UIMapFlag["AlwaysAllowUserWaypoints"] = 65536
-
----@class UIMapSystem : Enum
+---@class UIMapSystem
 ---@field World number @ Default value is [ 0 ]
 ---@field Taxi number @ Default value is [ 1 ]
 ---@field Adventure number @ Default value is [ 2 ]
 ---@field Minimap number @ Default value is [ 3 ]
 
----@type UIMapSystem 
-Enum.UIMapSystem = {}
-Enum.UIMapSystem["World"] = 0
-Enum.UIMapSystem["Taxi"] = 1
-Enum.UIMapSystem["Adventure"] = 2
-Enum.UIMapSystem["Minimap"] = 3
-
----@class UIMapType : Enum
+---@class UIMapType
 ---@field Cosmic number @ Default value is [ 0 ]
 ---@field World number @ Default value is [ 1 ]
 ---@field Continent number @ Default value is [ 2 ]
@@ -225,16 +190,6 @@ Enum.UIMapSystem["Minimap"] = 3
 ---@field Dungeon number @ Default value is [ 4 ]
 ---@field Micro number @ Default value is [ 5 ]
 ---@field Orphan number @ Default value is [ 6 ]
-
----@type UIMapType 
-Enum.UIMapType = {}
-Enum.UIMapType["Cosmic"] = 0
-Enum.UIMapType["World"] = 1
-Enum.UIMapType["Continent"] = 2
-Enum.UIMapType["Zone"] = 3
-Enum.UIMapType["Dungeon"] = 4
-Enum.UIMapType["Micro"] = 5
-Enum.UIMapType["Orphan"] = 6
 
 ---@class MapBannerInfo
 ---@field areaPoiID number 

@@ -171,20 +171,13 @@ function UnitTrialBankedLevels(unit) end
 ---@return number uiWidgetSet
 function UnitWidgetSet(unit) end
 
----@class PhaseReason : Enum
+---@class PhaseReason
 ---@field Phasing number @ Default value is [ 0 ]
 ---@field Sharding number @ Default value is [ 1 ]
 ---@field WarMode number @ Default value is [ 2 ]
 ---@field ChromieTime number @ Default value is [ 3 ]
 
----@type PhaseReason 
-Enum.PhaseReason = {}
-Enum.PhaseReason["Phasing"] = 0
-Enum.PhaseReason["Sharding"] = 1
-Enum.PhaseReason["WarMode"] = 2
-Enum.PhaseReason["ChromieTime"] = 3
-
----@class PowerType : Enum
+---@class PowerType
 ---@field HealthCost number @ Default value is [ -2 ]
 ---@field None number @ Default value is [ -1 ]
 ---@field Mana number @ Default value is [ 0 ]
@@ -212,36 +205,7 @@ Enum.PhaseReason["ChromieTime"] = 3
 ---@field RuneUnholy number @ Default value is [ 22 ]
 ---@field NumPowerTypes number @ Default value is [ 23 ]
 
----@type PowerType 
-Enum.PowerType = {}
-Enum.PowerType["HealthCost"] = -2
-Enum.PowerType["None"] = -1
-Enum.PowerType["Mana"] = 0
-Enum.PowerType["Rage"] = 1
-Enum.PowerType["Focus"] = 2
-Enum.PowerType["Energy"] = 3
-Enum.PowerType["ComboPoints"] = 4
-Enum.PowerType["Runes"] = 5
-Enum.PowerType["RunicPower"] = 6
-Enum.PowerType["SoulShards"] = 7
-Enum.PowerType["LunarPower"] = 8
-Enum.PowerType["HolyPower"] = 9
-Enum.PowerType["Alternate"] = 10
-Enum.PowerType["Maelstrom"] = 11
-Enum.PowerType["Chi"] = 12
-Enum.PowerType["Insanity"] = 13
-Enum.PowerType["Obsolete"] = 14
-Enum.PowerType["Obsolete2"] = 15
-Enum.PowerType["ArcaneCharges"] = 16
-Enum.PowerType["Fury"] = 17
-Enum.PowerType["Pain"] = 18
-Enum.PowerType["Essence"] = 19
-Enum.PowerType["RuneBlood"] = 20
-Enum.PowerType["RuneFrost"] = 21
-Enum.PowerType["RuneUnholy"] = 22
-Enum.PowerType["NumPowerTypes"] = 23
-
----@class PvPUnitClassification : Enum
+---@class PvPUnitClassification
 ---@field FlagCarrierHorde number @ Default value is [ 0 ]
 ---@field FlagCarrierAlliance number @ Default value is [ 1 ]
 ---@field FlagCarrierNeutral number @ Default value is [ 2 ]
@@ -253,20 +217,6 @@ Enum.PowerType["NumPowerTypes"] = 23
 ---@field OrbCarrierGreen number @ Default value is [ 8 ]
 ---@field OrbCarrierOrange number @ Default value is [ 9 ]
 ---@field OrbCarrierPurple number @ Default value is [ 10 ]
-
----@type PvPUnitClassification 
-Enum.PvPUnitClassification = {}
-Enum.PvPUnitClassification["FlagCarrierHorde"] = 0
-Enum.PvPUnitClassification["FlagCarrierAlliance"] = 1
-Enum.PvPUnitClassification["FlagCarrierNeutral"] = 2
-Enum.PvPUnitClassification["CartRunnerHorde"] = 3
-Enum.PvPUnitClassification["CartRunnerAlliance"] = 4
-Enum.PvPUnitClassification["AssassinHorde"] = 5
-Enum.PvPUnitClassification["AssassinAlliance"] = 6
-Enum.PvPUnitClassification["OrbCarrierBlue"] = 7
-Enum.PvPUnitClassification["OrbCarrierGreen"] = 8
-Enum.PvPUnitClassification["OrbCarrierOrange"] = 9
-Enum.PvPUnitClassification["OrbCarrierPurple"] = 10
 
 ---@class CorruptionEffectInfo
 ---@field name string 

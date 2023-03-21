@@ -4,7 +4,7 @@ C_Cursor = {}
 ---@return ItemLocation item
 function C_Cursor.GetCursorItem() end
 
----@class UICursorType : Enum
+---@class UICursorType
 ---@field Default number @ Default value is [ 0 ]
 ---@field Item number @ Default value is [ 1 ]
 ---@field Money number @ Default value is [ 2 ]
@@ -27,40 +27,9 @@ function C_Cursor.GetCursorItem() end
 ---@field ConduitCollectionItem number @ Default value is [ 20 ]
 ---@field PerksProgramVendorItem number @ Default value is [ 21 ]
 
----@type UICursorType 
-Enum.UICursorType = {}
-Enum.UICursorType["Default"] = 0
-Enum.UICursorType["Item"] = 1
-Enum.UICursorType["Money"] = 2
-Enum.UICursorType["Spell"] = 3
-Enum.UICursorType["PetAction"] = 4
-Enum.UICursorType["Merchant"] = 5
-Enum.UICursorType["ActionBar"] = 6
-Enum.UICursorType["Macro"] = 7
-Enum.UICursorType["AmmoObsolete"] = 9
-Enum.UICursorType["Pet"] = 10
-Enum.UICursorType["GuildBank"] = 11
-Enum.UICursorType["GuildBankMoney"] = 12
-Enum.UICursorType["EquipmentSet"] = 13
-Enum.UICursorType["Currency"] = 14
-Enum.UICursorType["Flyout"] = 15
-Enum.UICursorType["VoidItem"] = 16
-Enum.UICursorType["BattlePet"] = 17
-Enum.UICursorType["Mount"] = 18
-Enum.UICursorType["Toy"] = 19
-Enum.UICursorType["ConduitCollectionItem"] = 20
-Enum.UICursorType["PerksProgramVendorItem"] = 21
-
----@class WorldCursorAnchorType : Enum
+---@class WorldCursorAnchorType
 ---@field None number @ Default value is [ 0 ]
 ---@field Default number @ Default value is [ 1 ]
 ---@field Cursor number @ Default value is [ 2 ]
 ---@field Nameplate number @ Default value is [ 3 ]
-
----@type WorldCursorAnchorType 
-Enum.WorldCursorAnchorType = {}
-Enum.WorldCursorAnchorType["None"] = 0
-Enum.WorldCursorAnchorType["Default"] = 1
-Enum.WorldCursorAnchorType["Cursor"] = 2
-Enum.WorldCursorAnchorType["Nameplate"] = 3
 

@@ -40,29 +40,17 @@ function C_RecruitAFriend.RemoveRAFRecruit(wowAccountGUID) end
 ---@return boolean success
 function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 
----@class RafRecruitActivityState : Enum
+---@class RafRecruitActivityState
 ---@field Incomplete number @ Default value is [ 0 ]
 ---@field Complete number @ Default value is [ 1 ]
 ---@field RewardClaimed number @ Default value is [ 2 ]
 
----@type RafRecruitActivityState 
-Enum.RafRecruitActivityState = {}
-Enum.RafRecruitActivityState["Incomplete"] = 0
-Enum.RafRecruitActivityState["Complete"] = 1
-Enum.RafRecruitActivityState["RewardClaimed"] = 2
-
----@class RafRecruitSubStatus : Enum
+---@class RafRecruitSubStatus
 ---@field Trial number @ Default value is [ 0 ]
 ---@field Active number @ Default value is [ 1 ]
 ---@field Inactive number @ Default value is [ 2 ]
 
----@type RafRecruitSubStatus 
-Enum.RafRecruitSubStatus = {}
-Enum.RafRecruitSubStatus["Trial"] = 0
-Enum.RafRecruitSubStatus["Active"] = 1
-Enum.RafRecruitSubStatus["Inactive"] = 2
-
----@class RafRewardType : Enum
+---@class RafRewardType
 ---@field Pet number @ Default value is [ 0 ]
 ---@field Mount number @ Default value is [ 1 ]
 ---@field Appearance number @ Default value is [ 2 ]
@@ -71,17 +59,6 @@ Enum.RafRecruitSubStatus["Inactive"] = 2
 ---@field AppearanceSet number @ Default value is [ 5 ]
 ---@field Illusion number @ Default value is [ 6 ]
 ---@field Invalid number @ Default value is [ 7 ]
-
----@type RafRewardType 
-Enum.RafRewardType = {}
-Enum.RafRewardType["Pet"] = 0
-Enum.RafRewardType["Mount"] = 1
-Enum.RafRewardType["Appearance"] = 2
-Enum.RafRewardType["Title"] = 3
-Enum.RafRewardType["GameTime"] = 4
-Enum.RafRewardType["AppearanceSet"] = 5
-Enum.RafRewardType["Illusion"] = 6
-Enum.RafRewardType["Invalid"] = 7
 
 ---@class RafAppearanceInfo
 ---@field appearanceID number 

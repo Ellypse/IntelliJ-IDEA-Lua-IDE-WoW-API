@@ -35,27 +35,16 @@ function C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID) end
 ---@return ModelSceneType, number, number, number modelSceneType, modelCameraIDs, modelActorsIDs, flags
 function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
----@class ItemTryOnReason : Enum
+---@class ItemTryOnReason
 ---@field Success number @ Default value is [ 0 ]
 ---@field WrongRace number @ Default value is [ 1 ]
 ---@field NotEquippable number @ Default value is [ 2 ]
 ---@field DataPending number @ Default value is [ 3 ]
 
----@type ItemTryOnReason 
-Enum.ItemTryOnReason = {}
-Enum.ItemTryOnReason["Success"] = 0
-Enum.ItemTryOnReason["WrongRace"] = 1
-Enum.ItemTryOnReason["NotEquippable"] = 2
-Enum.ItemTryOnReason["DataPending"] = 3
-
----@class ModelSceneSetting : Enum
+---@class ModelSceneSetting
 ---@field AlignLightToOrbitDelta number @ Default value is [ 1 ]
 
----@type ModelSceneSetting 
-Enum.ModelSceneSetting = {}
-Enum.ModelSceneSetting["AlignLightToOrbitDelta"] = 1
-
----@class ModelSceneType : Enum
+---@class ModelSceneType
 ---@field MountJournal number @ Default value is [ 0 ]
 ---@field PetJournalCard number @ Default value is [ 1 ]
 ---@field ShopCard number @ Default value is [ 2 ]
@@ -76,29 +65,6 @@ Enum.ModelSceneSetting["AlignLightToOrbitDelta"] = 1
 ---@field WorldMapThreat number @ Default value is [ 17 ]
 ---@field Soulbinds number @ Default value is [ 18 ]
 ---@field JailersTowerAnimaGlow number @ Default value is [ 19 ]
-
----@type ModelSceneType 
-Enum.ModelSceneType = {}
-Enum.ModelSceneType["MountJournal"] = 0
-Enum.ModelSceneType["PetJournalCard"] = 1
-Enum.ModelSceneType["ShopCard"] = 2
-Enum.ModelSceneType["EncounterJournal"] = 3
-Enum.ModelSceneType["PetJournalLoadout"] = 4
-Enum.ModelSceneType["ArtifactTier2"] = 5
-Enum.ModelSceneType["ArtifactTier2ForgingScene"] = 6
-Enum.ModelSceneType["ArtifactTier2SlamEffect"] = 7
-Enum.ModelSceneType["CommentatorVictoryFanfare"] = 8
-Enum.ModelSceneType["ArtifactRelicTalentEffect"] = 9
-Enum.ModelSceneType["PvPWarModeOrb"] = 10
-Enum.ModelSceneType["PvPWarModeFire"] = 11
-Enum.ModelSceneType["PartyPose"] = 12
-Enum.ModelSceneType["AzeriteItemLevelUpToast"] = 13
-Enum.ModelSceneType["AzeritePowers"] = 14
-Enum.ModelSceneType["AzeriteRewardGlow"] = 15
-Enum.ModelSceneType["HeartOfAzeroth"] = 16
-Enum.ModelSceneType["WorldMapThreat"] = 17
-Enum.ModelSceneType["Soulbinds"] = 18
-Enum.ModelSceneType["JailersTowerAnimaGlow"] = 19
 
 ---@class UIModelSceneActorDisplayInfo
 ---@field animation number 

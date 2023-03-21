@@ -4,7 +4,7 @@ C_ScriptedAnimations = {}
 ---@return ScriptedAnimationEffect scriptedAnimationEffects
 function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 
----@class ScriptedAnimationBehavior : Enum
+---@class ScriptedAnimationBehavior
 ---@field None number @ Default value is [ 0 ]
 ---@field TargetShake number @ Default value is [ 1 ]
 ---@field TargetKnockBack number @ Default value is [ 2 ]
@@ -12,23 +12,10 @@ function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 ---@field SourceCollideWithTarget number @ Default value is [ 4 ]
 ---@field UIParentShake number @ Default value is [ 5 ]
 
----@type ScriptedAnimationBehavior 
-Enum.ScriptedAnimationBehavior = {}
-Enum.ScriptedAnimationBehavior["None"] = 0
-Enum.ScriptedAnimationBehavior["TargetShake"] = 1
-Enum.ScriptedAnimationBehavior["TargetKnockBack"] = 2
-Enum.ScriptedAnimationBehavior["SourceRecoil"] = 3
-Enum.ScriptedAnimationBehavior["SourceCollideWithTarget"] = 4
-Enum.ScriptedAnimationBehavior["UIParentShake"] = 5
-
----@class ScriptedAnimationFlags : Enum
+---@class ScriptedAnimationFlags
 ---@field UseTargetAsSource number @ Default value is [ 1 ]
 
----@type ScriptedAnimationFlags 
-Enum.ScriptedAnimationFlags = {}
-Enum.ScriptedAnimationFlags["UseTargetAsSource"] = 1
-
----@class ScriptedAnimationTrajectory : Enum
+---@class ScriptedAnimationTrajectory
 ---@field AtSource number @ Default value is [ 0 ]
 ---@field AtTarget number @ Default value is [ 1 ]
 ---@field Straight number @ Default value is [ 2 ]
@@ -36,16 +23,6 @@ Enum.ScriptedAnimationFlags["UseTargetAsSource"] = 1
 ---@field CurveRight number @ Default value is [ 4 ]
 ---@field CurveRandom number @ Default value is [ 5 ]
 ---@field HalfwayBetween number @ Default value is [ 6 ]
-
----@type ScriptedAnimationTrajectory 
-Enum.ScriptedAnimationTrajectory = {}
-Enum.ScriptedAnimationTrajectory["AtSource"] = 0
-Enum.ScriptedAnimationTrajectory["AtTarget"] = 1
-Enum.ScriptedAnimationTrajectory["Straight"] = 2
-Enum.ScriptedAnimationTrajectory["CurveLeft"] = 3
-Enum.ScriptedAnimationTrajectory["CurveRight"] = 4
-Enum.ScriptedAnimationTrajectory["CurveRandom"] = 5
-Enum.ScriptedAnimationTrajectory["HalfwayBetween"] = 6
 
 ---@class ScriptedAnimationEffect
 ---@field id number 

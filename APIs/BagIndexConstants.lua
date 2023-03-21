@@ -1,4 +1,4 @@
----@class BagIndex : Enum
+---@class BagIndex
 ---@field Bankbag number @ Default value is [ -4 ]
 ---@field Reagentbank number @ Default value is [ -3 ]
 ---@field Keyring number @ Default value is [ -2 ]
@@ -16,24 +16,4 @@
 ---@field BankBag_5 number @ Default value is [ 10 ]
 ---@field BankBag_6 number @ Default value is [ 11 ]
 ---@field BankBag_7 number @ Default value is [ 12 ]
-
----@type BagIndex 
-Enum.BagIndex = {}
-Enum.BagIndex["Bankbag"] = -4
-Enum.BagIndex["Reagentbank"] = -3
-Enum.BagIndex["Keyring"] = -2
-Enum.BagIndex["Bank"] = -1
-Enum.BagIndex["Backpack"] = 0
-Enum.BagIndex["Bag_1"] = 1
-Enum.BagIndex["Bag_2"] = 2
-Enum.BagIndex["Bag_3"] = 3
-Enum.BagIndex["Bag_4"] = 4
-Enum.BagIndex["ReagentBag"] = 5
-Enum.BagIndex["BankBag_1"] = 6
-Enum.BagIndex["BankBag_2"] = 7
-Enum.BagIndex["BankBag_3"] = 8
-Enum.BagIndex["BankBag_4"] = 9
-Enum.BagIndex["BankBag_5"] = 10
-Enum.BagIndex["BankBag_6"] = 11
-Enum.BagIndex["BankBag_7"] = 12
 

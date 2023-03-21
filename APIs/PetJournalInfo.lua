@@ -58,7 +58,7 @@ function C_PetJournal.SetDefaultFilters() end
 ---@param battlePetGUID WOWGUID 
 function C_PetJournal.SpellTargetBattlePet(battlePetGUID) end
 
----@class PetJournalError : Enum
+---@class PetJournalError
 ---@field None number @ Default value is [ 0 ]
 ---@field PetIsDead number @ Default value is [ 1 ]
 ---@field JournalIsLocked number @ Default value is [ 2 ]
@@ -66,16 +66,6 @@ function C_PetJournal.SpellTargetBattlePet(battlePetGUID) end
 ---@field NoFavoritesToSummon number @ Default value is [ 4 ]
 ---@field NoValidRandomSummon number @ Default value is [ 5 ]
 ---@field InvalidCovenant number @ Default value is [ 6 ]
-
----@type PetJournalError 
-Enum.PetJournalError = {}
-Enum.PetJournalError["None"] = 0
-Enum.PetJournalError["PetIsDead"] = 1
-Enum.PetJournalError["JournalIsLocked"] = 2
-Enum.PetJournalError["InvalidFaction"] = 3
-Enum.PetJournalError["NoFavoritesToSummon"] = 4
-Enum.PetJournalError["NoValidRandomSummon"] = 5
-Enum.PetJournalError["InvalidCovenant"] = 6
 
 ---@class PetAbilityLevelInfo
 ---@field abilityID number 

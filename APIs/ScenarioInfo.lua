@@ -12,7 +12,7 @@ function C_ScenarioInfo.GetScenarioInfo() end
 ---@return ScenarioStepInfo scenarioStepInfo
 function C_ScenarioInfo.GetScenarioStepInfo(scenarioStepID) end
 
----@class JailersTowerType : Enum
+---@class JailersTowerType
 ---@field TwistingCorridors number @ Default value is [ 0 ]
 ---@field SkoldusHalls number @ Default value is [ 1 ]
 ---@field FractureChambers number @ Default value is [ 2 ]
@@ -28,24 +28,6 @@ function C_ScenarioInfo.GetScenarioStepInfo(scenarioStepID) end
 ---@field ForgottenCatacombs number @ Default value is [ 12 ]
 ---@field Ossuary number @ Default value is [ 13 ]
 ---@field BossRush number @ Default value is [ 14 ]
-
----@type JailersTowerType 
-Enum.JailersTowerType = {}
-Enum.JailersTowerType["TwistingCorridors"] = 0
-Enum.JailersTowerType["SkoldusHalls"] = 1
-Enum.JailersTowerType["FractureChambers"] = 2
-Enum.JailersTowerType["Soulforges"] = 3
-Enum.JailersTowerType["Coldheart"] = 4
-Enum.JailersTowerType["Mortregar"] = 5
-Enum.JailersTowerType["UpperReaches"] = 6
-Enum.JailersTowerType["ArkobanHall"] = 7
-Enum.JailersTowerType["TormentChamberJaina"] = 8
-Enum.JailersTowerType["TormentChamberThrall"] = 9
-Enum.JailersTowerType["TormentChamberAnduin"] = 10
-Enum.JailersTowerType["AdamantVaults"] = 11
-Enum.JailersTowerType["ForgottenCatacombs"] = 12
-Enum.JailersTowerType["Ossuary"] = 13
-Enum.JailersTowerType["BossRush"] = 14
 
 ---@class ScenarioInformation
 ---@field name string 

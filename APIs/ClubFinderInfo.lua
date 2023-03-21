@@ -195,20 +195,13 @@ function C_ClubFinder.SetRecruitmentSettings(index, checked) end
 ---@return boolean shouldShow
 function C_ClubFinder.ShouldShowClubFinder() end
 
----@class ClubFinderApplicationUpdateType : Enum
+---@class ClubFinderApplicationUpdateType
 ---@field None number @ Default value is [ 0 ]
 ---@field AcceptInvite number @ Default value is [ 1 ]
 ---@field DeclineInvite number @ Default value is [ 2 ]
 ---@field Cancel number @ Default value is [ 3 ]
 
----@type ClubFinderApplicationUpdateType 
-Enum.ClubFinderApplicationUpdateType = {}
-Enum.ClubFinderApplicationUpdateType["None"] = 0
-Enum.ClubFinderApplicationUpdateType["AcceptInvite"] = 1
-Enum.ClubFinderApplicationUpdateType["DeclineInvite"] = 2
-Enum.ClubFinderApplicationUpdateType["Cancel"] = 3
-
----@class ClubFinderClubPostingStatusFlags : Enum
+---@class ClubFinderClubPostingStatusFlags
 ---@field None number @ Default value is [ 0 ]
 ---@field NeedsCacheUpdate number @ Default value is [ 1 ]
 ---@field ForceDescriptionChange number @ Default value is [ 2 ]
@@ -219,58 +212,25 @@ Enum.ClubFinderApplicationUpdateType["Cancel"] = 3
 ---@field PendingDelete number @ Default value is [ 7 ]
 ---@field PostDelisted number @ Default value is [ 8 ]
 
----@type ClubFinderClubPostingStatusFlags 
-Enum.ClubFinderClubPostingStatusFlags = {}
-Enum.ClubFinderClubPostingStatusFlags["None"] = 0
-Enum.ClubFinderClubPostingStatusFlags["NeedsCacheUpdate"] = 1
-Enum.ClubFinderClubPostingStatusFlags["ForceDescriptionChange"] = 2
-Enum.ClubFinderClubPostingStatusFlags["ForceNameChange"] = 3
-Enum.ClubFinderClubPostingStatusFlags["UnderReview"] = 4
-Enum.ClubFinderClubPostingStatusFlags["Banned"] = 5
-Enum.ClubFinderClubPostingStatusFlags["FakePost"] = 6
-Enum.ClubFinderClubPostingStatusFlags["PendingDelete"] = 7
-Enum.ClubFinderClubPostingStatusFlags["PostDelisted"] = 8
-
----@class ClubFinderDisableReason : Enum
+---@class ClubFinderDisableReason
 ---@field Muted number @ Default value is [ 0 ]
 ---@field Silenced number @ Default value is [ 1 ]
 ---@field VeteranTrial number @ Default value is [ 2 ]
 
----@type ClubFinderDisableReason 
-Enum.ClubFinderDisableReason = {}
-Enum.ClubFinderDisableReason["Muted"] = 0
-Enum.ClubFinderDisableReason["Silenced"] = 1
-Enum.ClubFinderDisableReason["VeteranTrial"] = 2
-
----@class ClubFinderPostingReportType : Enum
+---@class ClubFinderPostingReportType
 ---@field PostersName number @ Default value is [ 0 ]
 ---@field ClubName number @ Default value is [ 1 ]
 ---@field PostingDescription number @ Default value is [ 2 ]
 ---@field ApplicantsName number @ Default value is [ 3 ]
 ---@field JoinNote number @ Default value is [ 4 ]
 
----@type ClubFinderPostingReportType 
-Enum.ClubFinderPostingReportType = {}
-Enum.ClubFinderPostingReportType["PostersName"] = 0
-Enum.ClubFinderPostingReportType["ClubName"] = 1
-Enum.ClubFinderPostingReportType["PostingDescription"] = 2
-Enum.ClubFinderPostingReportType["ApplicantsName"] = 3
-Enum.ClubFinderPostingReportType["JoinNote"] = 4
-
----@class ClubFinderRequestType : Enum
+---@class ClubFinderRequestType
 ---@field None number @ Default value is [ 0 ]
 ---@field Guild number @ Default value is [ 1 ]
 ---@field Community number @ Default value is [ 2 ]
 ---@field All number @ Default value is [ 3 ]
 
----@type ClubFinderRequestType 
-Enum.ClubFinderRequestType = {}
-Enum.ClubFinderRequestType["None"] = 0
-Enum.ClubFinderRequestType["Guild"] = 1
-Enum.ClubFinderRequestType["Community"] = 2
-Enum.ClubFinderRequestType["All"] = 3
-
----@class ClubFinderSettingFlags : Enum
+---@class ClubFinderSettingFlags
 ---@field None number @ Default value is [ 0 ]
 ---@field Dungeons number @ Default value is [ 1 ]
 ---@field Raids number @ Default value is [ 2 ]
@@ -298,36 +258,7 @@ Enum.ClubFinderRequestType["All"] = 3
 ---@field LanguageReserved4 number @ Default value is [ 24 ]
 ---@field LanguageReserved5 number @ Default value is [ 25 ]
 
----@type ClubFinderSettingFlags 
-Enum.ClubFinderSettingFlags = {}
-Enum.ClubFinderSettingFlags["None"] = 0
-Enum.ClubFinderSettingFlags["Dungeons"] = 1
-Enum.ClubFinderSettingFlags["Raids"] = 2
-Enum.ClubFinderSettingFlags["PvP"] = 3
-Enum.ClubFinderSettingFlags["RP"] = 4
-Enum.ClubFinderSettingFlags["Social"] = 5
-Enum.ClubFinderSettingFlags["Small"] = 6
-Enum.ClubFinderSettingFlags["Medium"] = 7
-Enum.ClubFinderSettingFlags["Large"] = 8
-Enum.ClubFinderSettingFlags["Tank"] = 9
-Enum.ClubFinderSettingFlags["Healer"] = 10
-Enum.ClubFinderSettingFlags["Damage"] = 11
-Enum.ClubFinderSettingFlags["EnableListing"] = 12
-Enum.ClubFinderSettingFlags["MaxLevelOnly"] = 13
-Enum.ClubFinderSettingFlags["AutoAccept"] = 14
-Enum.ClubFinderSettingFlags["FactionHorde"] = 15
-Enum.ClubFinderSettingFlags["FactionAlliance"] = 16
-Enum.ClubFinderSettingFlags["FactionNeutral"] = 17
-Enum.ClubFinderSettingFlags["SortRelevance"] = 18
-Enum.ClubFinderSettingFlags["SortMemberCount"] = 19
-Enum.ClubFinderSettingFlags["SortNewest"] = 20
-Enum.ClubFinderSettingFlags["LanguageReserved1"] = 21
-Enum.ClubFinderSettingFlags["LanguageReserved2"] = 22
-Enum.ClubFinderSettingFlags["LanguageReserved3"] = 23
-Enum.ClubFinderSettingFlags["LanguageReserved4"] = 24
-Enum.ClubFinderSettingFlags["LanguageReserved5"] = 25
-
----@class PlayerClubRequestStatus : Enum
+---@class PlayerClubRequestStatus
 ---@field None number @ Default value is [ 0 ]
 ---@field Pending number @ Default value is [ 1 ]
 ---@field AutoApproved number @ Default value is [ 2 ]
@@ -336,17 +267,6 @@ Enum.ClubFinderSettingFlags["LanguageReserved5"] = 25
 ---@field Joined number @ Default value is [ 5 ]
 ---@field JoinedAnother number @ Default value is [ 6 ]
 ---@field Canceled number @ Default value is [ 7 ]
-
----@type PlayerClubRequestStatus 
-Enum.PlayerClubRequestStatus = {}
-Enum.PlayerClubRequestStatus["None"] = 0
-Enum.PlayerClubRequestStatus["Pending"] = 1
-Enum.PlayerClubRequestStatus["AutoApproved"] = 2
-Enum.PlayerClubRequestStatus["Declined"] = 3
-Enum.PlayerClubRequestStatus["Approved"] = 4
-Enum.PlayerClubRequestStatus["Joined"] = 5
-Enum.PlayerClubRequestStatus["JoinedAnother"] = 6
-Enum.PlayerClubRequestStatus["Canceled"] = 7
 
 ---@class ClubFinderApplicantInfo
 ---@field clubFinderGUID WOWGUID 

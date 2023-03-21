@@ -31,16 +31,10 @@ function C_Texture.IsTitleIconTextureReady(titleID, version) end
 ---@param version TitleIconVersion 
 function C_Texture.SetTitleIconTexture(texture, titleID, version) end
 
----@class TitleIconVersion : Enum
+---@class TitleIconVersion
 ---@field Small number @ Default value is [ 0 ]
 ---@field Medium number @ Default value is [ 1 ]
 ---@field Large number @ Default value is [ 2 ]
-
----@type TitleIconVersion 
-Enum.TitleIconVersion = {}
-Enum.TitleIconVersion["Small"] = 0
-Enum.TitleIconVersion["Medium"] = 1
-Enum.TitleIconVersion["Large"] = 2
 
 ---@class AtlasInfo
 ---@field width number 

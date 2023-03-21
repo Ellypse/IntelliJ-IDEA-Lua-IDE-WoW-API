@@ -478,20 +478,12 @@ function C_Commentator.ZoomIn() end
 
 function C_Commentator.ZoomOut() end
 
----@class TrackedSpellCategory : Enum
+---@class TrackedSpellCategory
 ---@field Offensive number @ Default value is [ 0 ]
 ---@field Defensive number @ Default value is [ 1 ]
 ---@field Debuff number @ Default value is [ 2 ]
 ---@field RacialAbility number @ Default value is [ 3 ]
 ---@field Count number @ Default value is [ 4 ]
-
----@type TrackedSpellCategory 
-Enum.TrackedSpellCategory = {}
-Enum.TrackedSpellCategory["Offensive"] = 0
-Enum.TrackedSpellCategory["Defensive"] = 1
-Enum.TrackedSpellCategory["Debuff"] = 2
-Enum.TrackedSpellCategory["RacialAbility"] = 3
-Enum.TrackedSpellCategory["Count"] = 4
 
 ---@class CommentatorHistory
 ---@field series table 

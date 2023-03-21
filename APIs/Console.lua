@@ -17,7 +17,7 @@ function C_Console.PrintAllMatchingCommands(partialCommandText) end
 ---@param fontHeightInPixels number 
 function C_Console.SetFontHeight(fontHeightInPixels) end
 
----@class ConsoleCategory : Enum
+---@class ConsoleCategory
 ---@field Debug number @ Default value is [ 0 ]
 ---@field Graphics number @ Default value is [ 1 ]
 ---@field Console number @ Default value is [ 2 ]
@@ -30,21 +30,7 @@ function C_Console.SetFontHeight(fontHeightInPixels) end
 ---@field Reveal number @ Default value is [ 9 ]
 ---@field None number @ Default value is [ 10 ]
 
----@type ConsoleCategory 
-Enum.ConsoleCategory = {}
-Enum.ConsoleCategory["Debug"] = 0
-Enum.ConsoleCategory["Graphics"] = 1
-Enum.ConsoleCategory["Console"] = 2
-Enum.ConsoleCategory["Combat"] = 3
-Enum.ConsoleCategory["Game"] = 4
-Enum.ConsoleCategory["Default"] = 5
-Enum.ConsoleCategory["Net"] = 6
-Enum.ConsoleCategory["Sound"] = 7
-Enum.ConsoleCategory["Gm"] = 8
-Enum.ConsoleCategory["Reveal"] = 9
-Enum.ConsoleCategory["None"] = 10
-
----@class ConsoleColorType : Enum
+---@class ConsoleColorType
 ---@field DefaultColor number @ Default value is [ 0 ]
 ---@field InputColor number @ Default value is [ 1 ]
 ---@field EchoColor number @ Default value is [ 2 ]
@@ -58,33 +44,11 @@ Enum.ConsoleCategory["None"] = 10
 ---@field PrivateColor number @ Default value is [ 10 ]
 ---@field DefaultGreen number @ Default value is [ 11 ]
 
----@type ConsoleColorType 
-Enum.ConsoleColorType = {}
-Enum.ConsoleColorType["DefaultColor"] = 0
-Enum.ConsoleColorType["InputColor"] = 1
-Enum.ConsoleColorType["EchoColor"] = 2
-Enum.ConsoleColorType["ErrorColor"] = 3
-Enum.ConsoleColorType["WarningColor"] = 4
-Enum.ConsoleColorType["GlobalColor"] = 5
-Enum.ConsoleColorType["AdminColor"] = 6
-Enum.ConsoleColorType["HighlightColor"] = 7
-Enum.ConsoleColorType["BackgroundColor"] = 8
-Enum.ConsoleColorType["ClickbufferColor"] = 9
-Enum.ConsoleColorType["PrivateColor"] = 10
-Enum.ConsoleColorType["DefaultGreen"] = 11
-
----@class ConsoleCommandType : Enum
+---@class ConsoleCommandType
 ---@field Cvar number @ Default value is [ 0 ]
 ---@field Command number @ Default value is [ 1 ]
 ---@field Macro number @ Default value is [ 2 ]
 ---@field Script number @ Default value is [ 3 ]
-
----@type ConsoleCommandType 
-Enum.ConsoleCommandType = {}
-Enum.ConsoleCommandType["Cvar"] = 0
-Enum.ConsoleCommandType["Command"] = 1
-Enum.ConsoleCommandType["Macro"] = 2
-Enum.ConsoleCommandType["Script"] = 3
 
 ---@class ConsoleCommandInfo
 ---@field command cstring 

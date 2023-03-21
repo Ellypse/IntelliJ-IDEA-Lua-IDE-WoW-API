@@ -49,7 +49,7 @@ function C_EncounterJournal.SetPreviewPvpTier(tier) end
 ---@param filterSlot ItemSlotFilterType 
 function C_EncounterJournal.SetSlotFilter(filterSlot) end
 
----@class ItemSlotFilterType : Enum
+---@class ItemSlotFilterType
 ---@field Head number @ Default value is [ 0 ]
 ---@field Neck number @ Default value is [ 1 ]
 ---@field Shoulder number @ Default value is [ 2 ]
@@ -66,25 +66,6 @@ function C_EncounterJournal.SetSlotFilter(filterSlot) end
 ---@field Trinket number @ Default value is [ 13 ]
 ---@field Other number @ Default value is [ 14 ]
 ---@field NoFilter number @ Default value is [ 15 ]
-
----@type ItemSlotFilterType 
-Enum.ItemSlotFilterType = {}
-Enum.ItemSlotFilterType["Head"] = 0
-Enum.ItemSlotFilterType["Neck"] = 1
-Enum.ItemSlotFilterType["Shoulder"] = 2
-Enum.ItemSlotFilterType["Cloak"] = 3
-Enum.ItemSlotFilterType["Chest"] = 4
-Enum.ItemSlotFilterType["Wrist"] = 5
-Enum.ItemSlotFilterType["Hand"] = 6
-Enum.ItemSlotFilterType["Waist"] = 7
-Enum.ItemSlotFilterType["Legs"] = 8
-Enum.ItemSlotFilterType["Feet"] = 9
-Enum.ItemSlotFilterType["MainHand"] = 10
-Enum.ItemSlotFilterType["OffHand"] = 11
-Enum.ItemSlotFilterType["Finger"] = 12
-Enum.ItemSlotFilterType["Trinket"] = 13
-Enum.ItemSlotFilterType["Other"] = 14
-Enum.ItemSlotFilterType["NoFilter"] = 15
 
 ---@class DungeonEntranceMapInfo
 ---@field areaPoiID number 

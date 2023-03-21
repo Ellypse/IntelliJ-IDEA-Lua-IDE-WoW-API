@@ -188,8 +188,8 @@ function APIDocumentation:AddDocumentationTable(documentation)
 				write(FUNCTIONS_FORMAT:format(tab.Name, printArguments))]]
 
 			elseif tab.Type == "Enumeration" then
-				write(CLASS_DECLARATION:format(tab.Name .. " : Enum"))
-				local parentType = tab.Name
+				write(CLASS_DECLARATION:format(tab.Name))
+				--local parentType = tab.Name
 				for k, value in pairs(tab.Fields) do
 					write(FIELD_DOCUMENTATION:format(
 							value.Name,
@@ -198,7 +198,7 @@ function APIDocumentation:AddDocumentationTable(documentation)
 					))
 				end
 				--write(GLOBAL_DECLARATION:format(tab.Name))
-				write("")
+				--[[write("")
 
 				write(TYPE_DECLARATION:format(
 						parentType,
@@ -208,7 +208,7 @@ function APIDocumentation:AddDocumentationTable(documentation)
 				
 				for k, value in pairs(tab.Fields) do
 					write("Enum."..tab.Name .. "[\"" .. value.Name .. "\"] = " .. (value.EnumValue or ""))
-				end
+				end]]
 
 				--[[for k, value in pairs(tab.Fields) do
 					write(TYPE_DECLARATION:format(

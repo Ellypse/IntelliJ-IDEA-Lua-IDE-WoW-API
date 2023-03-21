@@ -16,7 +16,7 @@ function C_ConfigurationWarnings.GetConfigurationWarnings(includeSeenWarnings) e
 ---@param configurationWarning ConfigurationWarning 
 function C_ConfigurationWarnings.SetConfigurationWarningSeen(configurationWarning) end
 
----@class ConfigurationWarning : Enum
+---@class ConfigurationWarning
 ---@field ShaderModelWillBeOutdated number @ Default value is [ 0 ]
 ---@field ShaderModelIsOutdated number @ Default value is [ 1 ]
 ---@field ConsoleDeviceSseOutdated number @ Default value is [ 2 ]
@@ -25,15 +25,4 @@ function C_ConfigurationWarnings.SetConfigurationWarningSeen(configurationWarnin
 ---@field DeviceBlocklisted number @ Default value is [ 5 ]
 ---@field GraphicsApiWillBeOutdated number @ Default value is [ 6 ]
 ---@field OsBitsWillBeOutdated number @ Default value is [ 7 ]
-
----@type ConfigurationWarning 
-Enum.ConfigurationWarning = {}
-Enum.ConfigurationWarning["ShaderModelWillBeOutdated"] = 0
-Enum.ConfigurationWarning["ShaderModelIsOutdated"] = 1
-Enum.ConfigurationWarning["ConsoleDeviceSseOutdated"] = 2
-Enum.ConfigurationWarning["DriverBlocklisted"] = 3
-Enum.ConfigurationWarning["DriverOutOfDate"] = 4
-Enum.ConfigurationWarning["DeviceBlocklisted"] = 5
-Enum.ConfigurationWarning["GraphicsApiWillBeOutdated"] = 6
-Enum.ConfigurationWarning["OsBitsWillBeOutdated"] = 7
 
