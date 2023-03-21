@@ -270,20 +270,16 @@ function C_VoiceChat.ToggleMuted() end
 ---@class CommunicationMode : Enum
 ---@field protected PushToTalk CommunicationMode 
 ---@field protected OpenMic CommunicationMode 
-CommunicationMode = {}
-
----@type CommunicationMode 
 Enum.CommunicationMode = {}
+
 Enum.CommunicationMode.PushToTalk = 0
 Enum.CommunicationMode.OpenMic = 1
 
 ---@class VoiceChannelErrorReason : Enum
 ---@field protected Unknown VoiceChannelErrorReason 
 ---@field protected IsBattleNetChannel VoiceChannelErrorReason 
-VoiceChannelErrorReason = {}
-
----@type VoiceChannelErrorReason 
 Enum.VoiceChannelErrorReason = {}
+
 Enum.VoiceChannelErrorReason.Unknown = 0
 Enum.VoiceChannelErrorReason.IsBattleNetChannel = 1
 
@@ -313,10 +309,8 @@ Enum.VoiceChannelErrorReason.IsBattleNetChannel = 1
 ---@field protected PlayerVoiceChatParentalDisabled VoiceChatStatusCode 
 ---@field protected InvalidInputDevice VoiceChatStatusCode 
 ---@field protected InvalidOutputDevice VoiceChatStatusCode 
-VoiceChatStatusCode = {}
-
----@type VoiceChatStatusCode 
 Enum.VoiceChatStatusCode = {}
+
 Enum.VoiceChatStatusCode.Success = 0
 Enum.VoiceChatStatusCode.OperationPending = 1
 Enum.VoiceChatStatusCode.TooManyRequests = 2
@@ -351,10 +345,8 @@ Enum.VoiceChatStatusCode.InvalidOutputDevice = 24
 ---@field protected QueuedLocalPlayback VoiceTtsDestination 
 ---@field protected QueuedRemoteTransmissionWithLocalPlayback VoiceTtsDestination 
 ---@field protected ScreenReader VoiceTtsDestination 
-VoiceTtsDestination = {}
-
----@type VoiceTtsDestination 
 Enum.VoiceTtsDestination = {}
+
 Enum.VoiceTtsDestination.RemoteTransmission = 0
 Enum.VoiceTtsDestination.LocalPlayback = 1
 Enum.VoiceTtsDestination.RemoteTransmissionWithLocalPlayback = 2
@@ -378,10 +370,8 @@ Enum.VoiceTtsDestination.ScreenReader = 6
 ---@field protected ManagerNotFound VoiceTtsStatusCode 
 ---@field protected InvalidArgument VoiceTtsStatusCode 
 ---@field protected InternalError VoiceTtsStatusCode 
-VoiceTtsStatusCode = {}
-
----@type VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode = {}
+
 Enum.VoiceTtsStatusCode.Success = 0
 Enum.VoiceTtsStatusCode.InvalidEngineType = 1
 Enum.VoiceTtsStatusCode.EngineAllocationFailed = 2

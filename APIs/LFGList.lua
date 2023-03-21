@@ -127,10 +127,8 @@ function C_LFGList.ValidateRequiredPvpRatingForActivity(activityID, rating) end
 ---@field protected Standard LFGEntryPlaystyle 
 ---@field protected Casual LFGEntryPlaystyle 
 ---@field protected Hardcore LFGEntryPlaystyle 
-LFGEntryPlaystyle = {}
-
----@type LFGEntryPlaystyle 
 Enum.LFGEntryPlaystyle = {}
+
 Enum.LFGEntryPlaystyle.None = 0
 Enum.LFGEntryPlaystyle.Standard = 1
 Enum.LFGEntryPlaystyle.Casual = 2
@@ -143,10 +141,8 @@ Enum.LFGEntryPlaystyle.Hardcore = 3
 ---@field protected HideAll LFGListDisplayType 
 ---@field protected PlayerCount LFGListDisplayType 
 ---@field protected Comment LFGListDisplayType 
-LFGListDisplayType = {}
-
----@type LFGListDisplayType 
 Enum.LFGListDisplayType = {}
+
 Enum.LFGListDisplayType.RoleCount = 0
 Enum.LFGListDisplayType.RoleEnumerate = 1
 Enum.LFGListDisplayType.ClassEnumerate = 2

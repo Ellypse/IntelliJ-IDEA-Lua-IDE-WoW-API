@@ -190,7 +190,6 @@ function APIDocumentation:AddDocumentationTable(documentation)
 
 			elseif tab.Type == "Enumeration" then
 				write(CLASS_DECLARATION:format(tab.Name .. " : Enum"))
-				local parentType = tab.Name
 				for k, value in pairs(tab.Fields) do
 					write(ENUM_FIELD_DOCUMENTATION:format(
 							"protected",
@@ -199,14 +198,8 @@ function APIDocumentation:AddDocumentationTable(documentation)
 							value.Documentation and ("@ " .. table.concat(value.Documentation, "\n")) or ""
 					))
 				end
-				write(GLOBAL_DECLARATION:format(tab.Name))
-
-				write("")
-				write(TYPE_DECLARATION:format(
-						parentType,
-						""
-				))
 				write(GLOBAL_DECLARATION:format("Enum."..tab.Name))
+				write("")
 				
 				for k, value in pairs(tab.Fields) do
 					write("Enum."..tab.Name .. "." .. value.Name .. " = " .. (value.EnumValue or ""))

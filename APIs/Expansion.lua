@@ -66,10 +66,8 @@ function SendSubscriptionInterstitialResponse(response) end
 ---@field protected Clicked SubscriptionInterstitialResponseType 
 ---@field protected Closed SubscriptionInterstitialResponseType 
 ---@field protected WebRedirect SubscriptionInterstitialResponseType 
-SubscriptionInterstitialResponseType = {}
-
----@type SubscriptionInterstitialResponseType 
 Enum.SubscriptionInterstitialResponseType = {}
+
 Enum.SubscriptionInterstitialResponseType.Clicked = 0
 Enum.SubscriptionInterstitialResponseType.Closed = 1
 Enum.SubscriptionInterstitialResponseType.WebRedirect = 2
@@ -78,10 +76,8 @@ Enum.SubscriptionInterstitialResponseType.WebRedirect = 2
 ---@field protected Standard SubscriptionInterstitialType 
 ---@field protected LeftNpeArea SubscriptionInterstitialType 
 ---@field protected MaxLevel SubscriptionInterstitialType 
-SubscriptionInterstitialType = {}
-
----@type SubscriptionInterstitialType 
 Enum.SubscriptionInterstitialType = {}
+
 Enum.SubscriptionInterstitialType.Standard = 0
 Enum.SubscriptionInterstitialType.LeftNpeArea = 1
 Enum.SubscriptionInterstitialType.MaxLevel = 2

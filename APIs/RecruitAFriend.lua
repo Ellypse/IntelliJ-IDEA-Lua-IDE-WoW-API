@@ -44,10 +44,8 @@ function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 ---@field protected Incomplete RafRecruitActivityState 
 ---@field protected Complete RafRecruitActivityState 
 ---@field protected RewardClaimed RafRecruitActivityState 
-RafRecruitActivityState = {}
-
----@type RafRecruitActivityState 
 Enum.RafRecruitActivityState = {}
+
 Enum.RafRecruitActivityState.Incomplete = 0
 Enum.RafRecruitActivityState.Complete = 1
 Enum.RafRecruitActivityState.RewardClaimed = 2
@@ -56,10 +54,8 @@ Enum.RafRecruitActivityState.RewardClaimed = 2
 ---@field protected Trial RafRecruitSubStatus 
 ---@field protected Active RafRecruitSubStatus 
 ---@field protected Inactive RafRecruitSubStatus 
-RafRecruitSubStatus = {}
-
----@type RafRecruitSubStatus 
 Enum.RafRecruitSubStatus = {}
+
 Enum.RafRecruitSubStatus.Trial = 0
 Enum.RafRecruitSubStatus.Active = 1
 Enum.RafRecruitSubStatus.Inactive = 2
@@ -73,10 +69,8 @@ Enum.RafRecruitSubStatus.Inactive = 2
 ---@field protected AppearanceSet RafRewardType 
 ---@field protected Illusion RafRewardType 
 ---@field protected Invalid RafRewardType 
-RafRewardType = {}
-
----@type RafRewardType 
 Enum.RafRewardType = {}
+
 Enum.RafRewardType.Pet = 0
 Enum.RafRewardType.Mount = 1
 Enum.RafRewardType.Appearance = 2

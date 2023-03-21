@@ -11,10 +11,8 @@ function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 ---@field protected SourceRecoil ScriptedAnimationBehavior 
 ---@field protected SourceCollideWithTarget ScriptedAnimationBehavior 
 ---@field protected UIParentShake ScriptedAnimationBehavior 
-ScriptedAnimationBehavior = {}
-
----@type ScriptedAnimationBehavior 
 Enum.ScriptedAnimationBehavior = {}
+
 Enum.ScriptedAnimationBehavior.None = 0
 Enum.ScriptedAnimationBehavior.TargetShake = 1
 Enum.ScriptedAnimationBehavior.TargetKnockBack = 2
@@ -24,10 +22,8 @@ Enum.ScriptedAnimationBehavior.UIParentShake = 5
 
 ---@class ScriptedAnimationFlags : Enum
 ---@field protected UseTargetAsSource ScriptedAnimationFlags 
-ScriptedAnimationFlags = {}
-
----@type ScriptedAnimationFlags 
 Enum.ScriptedAnimationFlags = {}
+
 Enum.ScriptedAnimationFlags.UseTargetAsSource = 1
 
 ---@class ScriptedAnimationTrajectory : Enum
@@ -38,10 +34,8 @@ Enum.ScriptedAnimationFlags.UseTargetAsSource = 1
 ---@field protected CurveRight ScriptedAnimationTrajectory 
 ---@field protected CurveRandom ScriptedAnimationTrajectory 
 ---@field protected HalfwayBetween ScriptedAnimationTrajectory 
-ScriptedAnimationTrajectory = {}
-
----@type ScriptedAnimationTrajectory 
 Enum.ScriptedAnimationTrajectory = {}
+
 Enum.ScriptedAnimationTrajectory.AtSource = 0
 Enum.ScriptedAnimationTrajectory.AtTarget = 1
 Enum.ScriptedAnimationTrajectory.Straight = 2

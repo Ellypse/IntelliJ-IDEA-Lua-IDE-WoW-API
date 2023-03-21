@@ -63,10 +63,8 @@ function C_VideoOptions.SetGameWindowSize(x, y) end
 ---@field protected QualcommGpuUnsupported GraphicsValidationResult 
 ---@field protected GpuDriver GraphicsValidationResult 
 ---@field protected Unknown GraphicsValidationResult 
-GraphicsValidationResult = {}
-
----@type GraphicsValidationResult 
 Enum.GraphicsValidationResult = {}
+
 Enum.GraphicsValidationResult.Supported = 0
 Enum.GraphicsValidationResult.Illegal = 1
 Enum.GraphicsValidationResult.Unsupported = 2
