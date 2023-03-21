@@ -59,23 +59,13 @@ function C_PetJournal.SetDefaultFilters() end
 function C_PetJournal.SpellTargetBattlePet(battlePetGUID) end
 
 ---@class PetJournalError : Enum
----@field None PetJournalError 
----@field PetIsDead PetJournalError 
----@field JournalIsLocked PetJournalError 
----@field InvalidFaction PetJournalError 
----@field NoFavoritesToSummon PetJournalError 
----@field NoValidRandomSummon PetJournalError 
----@field InvalidCovenant PetJournalError 
-
----@type PetJournalError 
-Enum.PetJournalError = {}
-Enum.PetJournalError.None = 0
-Enum.PetJournalError.PetIsDead = 1
-Enum.PetJournalError.JournalIsLocked = 2
-Enum.PetJournalError.InvalidFaction = 3
-Enum.PetJournalError.NoFavoritesToSummon = 4
-Enum.PetJournalError.NoValidRandomSummon = 5
-Enum.PetJournalError.InvalidCovenant = 6
+---@field None PetJournalError @ 0
+---@field PetIsDead PetJournalError @ 1
+---@field JournalIsLocked PetJournalError @ 2
+---@field InvalidFaction PetJournalError @ 3
+---@field NoFavoritesToSummon PetJournalError @ 4
+---@field NoValidRandomSummon PetJournalError @ 5
+---@field InvalidCovenant PetJournalError @ 6
 
 ---@class PetAbilityLevelInfo
 ---@field abilityID number 

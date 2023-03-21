@@ -41,47 +41,24 @@ function C_RecruitAFriend.RemoveRAFRecruit(wowAccountGUID) end
 function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 
 ---@class RafRecruitActivityState : Enum
----@field Incomplete RafRecruitActivityState 
----@field Complete RafRecruitActivityState 
----@field RewardClaimed RafRecruitActivityState 
-
----@type RafRecruitActivityState 
-Enum.RafRecruitActivityState = {}
-Enum.RafRecruitActivityState.Incomplete = 0
-Enum.RafRecruitActivityState.Complete = 1
-Enum.RafRecruitActivityState.RewardClaimed = 2
+---@field Incomplete RafRecruitActivityState @ 0
+---@field Complete RafRecruitActivityState @ 1
+---@field RewardClaimed RafRecruitActivityState @ 2
 
 ---@class RafRecruitSubStatus : Enum
----@field Trial RafRecruitSubStatus 
----@field Active RafRecruitSubStatus 
----@field Inactive RafRecruitSubStatus 
-
----@type RafRecruitSubStatus 
-Enum.RafRecruitSubStatus = {}
-Enum.RafRecruitSubStatus.Trial = 0
-Enum.RafRecruitSubStatus.Active = 1
-Enum.RafRecruitSubStatus.Inactive = 2
+---@field Trial RafRecruitSubStatus @ 0
+---@field Active RafRecruitSubStatus @ 1
+---@field Inactive RafRecruitSubStatus @ 2
 
 ---@class RafRewardType : Enum
----@field Pet RafRewardType 
----@field Mount RafRewardType 
----@field Appearance RafRewardType 
----@field Title RafRewardType 
----@field GameTime RafRewardType 
----@field AppearanceSet RafRewardType 
----@field Illusion RafRewardType 
----@field Invalid RafRewardType 
-
----@type RafRewardType 
-Enum.RafRewardType = {}
-Enum.RafRewardType.Pet = 0
-Enum.RafRewardType.Mount = 1
-Enum.RafRewardType.Appearance = 2
-Enum.RafRewardType.Title = 3
-Enum.RafRewardType.GameTime = 4
-Enum.RafRewardType.AppearanceSet = 5
-Enum.RafRewardType.Illusion = 6
-Enum.RafRewardType.Invalid = 7
+---@field Pet RafRewardType @ 0
+---@field Mount RafRewardType @ 1
+---@field Appearance RafRewardType @ 2
+---@field Title RafRewardType @ 3
+---@field GameTime RafRewardType @ 4
+---@field AppearanceSet RafRewardType @ 5
+---@field Illusion RafRewardType @ 6
+---@field Invalid RafRewardType @ 7
 
 ---@class RafAppearanceInfo
 ---@field appearanceID number 

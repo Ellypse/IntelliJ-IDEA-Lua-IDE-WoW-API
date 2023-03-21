@@ -33,9 +33,5 @@ function C_DateAndTime.GetSecondsUntilWeeklyReset() end
 function C_DateAndTime.GetServerTimeLocal() end
 
 ---@class TimeEventFlag : Enum
----@field GlueScreenShortcut TimeEventFlag 
-
----@type TimeEventFlag 
-Enum.TimeEventFlag = {}
-Enum.TimeEventFlag.GlueScreenShortcut = 1
+---@field GlueScreenShortcut TimeEventFlag @ 1
 

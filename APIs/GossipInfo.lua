@@ -66,26 +66,14 @@ function C_GossipInfo.SelectOption(optionID, text, confirmed) end
 function C_GossipInfo.SelectOptionByIndex(optionID, text, confirmed) end
 
 ---@class GossipOptionRewardType : Enum
----@field Item GossipOptionRewardType 
----@field Currency GossipOptionRewardType 
-
----@type GossipOptionRewardType 
-Enum.GossipOptionRewardType = {}
-Enum.GossipOptionRewardType.Item = 0
-Enum.GossipOptionRewardType.Currency = 1
+---@field Item GossipOptionRewardType @ 0
+---@field Currency GossipOptionRewardType @ 1
 
 ---@class GossipOptionStatus : Enum
----@field Available GossipOptionStatus 
----@field Unavailable GossipOptionStatus 
----@field Locked GossipOptionStatus 
----@field AlreadyComplete GossipOptionStatus 
-
----@type GossipOptionStatus 
-Enum.GossipOptionStatus = {}
-Enum.GossipOptionStatus.Available = 0
-Enum.GossipOptionStatus.Unavailable = 1
-Enum.GossipOptionStatus.Locked = 2
-Enum.GossipOptionStatus.AlreadyComplete = 3
+---@field Available GossipOptionStatus @ 0
+---@field Unavailable GossipOptionStatus @ 1
+---@field Locked GossipOptionStatus @ 2
+---@field AlreadyComplete GossipOptionStatus @ 3
 
 ---@class FriendshipReputationInfo
 ---@field friendshipFactionID number 

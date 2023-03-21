@@ -5,47 +5,24 @@ C_ScriptedAnimations = {}
 function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 
 ---@class ScriptedAnimationBehavior : Enum
----@field None ScriptedAnimationBehavior 
----@field TargetShake ScriptedAnimationBehavior 
----@field TargetKnockBack ScriptedAnimationBehavior 
----@field SourceRecoil ScriptedAnimationBehavior 
----@field SourceCollideWithTarget ScriptedAnimationBehavior 
----@field UIParentShake ScriptedAnimationBehavior 
-
----@type ScriptedAnimationBehavior 
-Enum.ScriptedAnimationBehavior = {}
-Enum.ScriptedAnimationBehavior.None = 0
-Enum.ScriptedAnimationBehavior.TargetShake = 1
-Enum.ScriptedAnimationBehavior.TargetKnockBack = 2
-Enum.ScriptedAnimationBehavior.SourceRecoil = 3
-Enum.ScriptedAnimationBehavior.SourceCollideWithTarget = 4
-Enum.ScriptedAnimationBehavior.UIParentShake = 5
+---@field None ScriptedAnimationBehavior @ 0
+---@field TargetShake ScriptedAnimationBehavior @ 1
+---@field TargetKnockBack ScriptedAnimationBehavior @ 2
+---@field SourceRecoil ScriptedAnimationBehavior @ 3
+---@field SourceCollideWithTarget ScriptedAnimationBehavior @ 4
+---@field UIParentShake ScriptedAnimationBehavior @ 5
 
 ---@class ScriptedAnimationFlags : Enum
----@field UseTargetAsSource ScriptedAnimationFlags 
-
----@type ScriptedAnimationFlags 
-Enum.ScriptedAnimationFlags = {}
-Enum.ScriptedAnimationFlags.UseTargetAsSource = 1
+---@field UseTargetAsSource ScriptedAnimationFlags @ 1
 
 ---@class ScriptedAnimationTrajectory : Enum
----@field AtSource ScriptedAnimationTrajectory 
----@field AtTarget ScriptedAnimationTrajectory 
----@field Straight ScriptedAnimationTrajectory 
----@field CurveLeft ScriptedAnimationTrajectory 
----@field CurveRight ScriptedAnimationTrajectory 
----@field CurveRandom ScriptedAnimationTrajectory 
----@field HalfwayBetween ScriptedAnimationTrajectory 
-
----@type ScriptedAnimationTrajectory 
-Enum.ScriptedAnimationTrajectory = {}
-Enum.ScriptedAnimationTrajectory.AtSource = 0
-Enum.ScriptedAnimationTrajectory.AtTarget = 1
-Enum.ScriptedAnimationTrajectory.Straight = 2
-Enum.ScriptedAnimationTrajectory.CurveLeft = 3
-Enum.ScriptedAnimationTrajectory.CurveRight = 4
-Enum.ScriptedAnimationTrajectory.CurveRandom = 5
-Enum.ScriptedAnimationTrajectory.HalfwayBetween = 6
+---@field AtSource ScriptedAnimationTrajectory @ 0
+---@field AtTarget ScriptedAnimationTrajectory @ 1
+---@field Straight ScriptedAnimationTrajectory @ 2
+---@field CurveLeft ScriptedAnimationTrajectory @ 3
+---@field CurveRight ScriptedAnimationTrajectory @ 4
+---@field CurveRandom ScriptedAnimationTrajectory @ 5
+---@field HalfwayBetween ScriptedAnimationTrajectory @ 6
 
 ---@class ScriptedAnimationEffect
 ---@field id number 

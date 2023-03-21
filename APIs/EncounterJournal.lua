@@ -50,41 +50,22 @@ function C_EncounterJournal.SetPreviewPvpTier(tier) end
 function C_EncounterJournal.SetSlotFilter(filterSlot) end
 
 ---@class ItemSlotFilterType : Enum
----@field Head ItemSlotFilterType 
----@field Neck ItemSlotFilterType 
----@field Shoulder ItemSlotFilterType 
----@field Cloak ItemSlotFilterType 
----@field Chest ItemSlotFilterType 
----@field Wrist ItemSlotFilterType 
----@field Hand ItemSlotFilterType 
----@field Waist ItemSlotFilterType 
----@field Legs ItemSlotFilterType 
----@field Feet ItemSlotFilterType 
----@field MainHand ItemSlotFilterType 
----@field OffHand ItemSlotFilterType 
----@field Finger ItemSlotFilterType 
----@field Trinket ItemSlotFilterType 
----@field Other ItemSlotFilterType 
----@field NoFilter ItemSlotFilterType 
-
----@type ItemSlotFilterType 
-Enum.ItemSlotFilterType = {}
-Enum.ItemSlotFilterType.Head = 0
-Enum.ItemSlotFilterType.Neck = 1
-Enum.ItemSlotFilterType.Shoulder = 2
-Enum.ItemSlotFilterType.Cloak = 3
-Enum.ItemSlotFilterType.Chest = 4
-Enum.ItemSlotFilterType.Wrist = 5
-Enum.ItemSlotFilterType.Hand = 6
-Enum.ItemSlotFilterType.Waist = 7
-Enum.ItemSlotFilterType.Legs = 8
-Enum.ItemSlotFilterType.Feet = 9
-Enum.ItemSlotFilterType.MainHand = 10
-Enum.ItemSlotFilterType.OffHand = 11
-Enum.ItemSlotFilterType.Finger = 12
-Enum.ItemSlotFilterType.Trinket = 13
-Enum.ItemSlotFilterType.Other = 14
-Enum.ItemSlotFilterType.NoFilter = 15
+---@field Head ItemSlotFilterType @ 0
+---@field Neck ItemSlotFilterType @ 1
+---@field Shoulder ItemSlotFilterType @ 2
+---@field Cloak ItemSlotFilterType @ 3
+---@field Chest ItemSlotFilterType @ 4
+---@field Wrist ItemSlotFilterType @ 5
+---@field Hand ItemSlotFilterType @ 6
+---@field Waist ItemSlotFilterType @ 7
+---@field Legs ItemSlotFilterType @ 8
+---@field Feet ItemSlotFilterType @ 9
+---@field MainHand ItemSlotFilterType @ 10
+---@field OffHand ItemSlotFilterType @ 11
+---@field Finger ItemSlotFilterType @ 12
+---@field Trinket ItemSlotFilterType @ 13
+---@field Other ItemSlotFilterType @ 14
+---@field NoFilter ItemSlotFilterType @ 15
 
 ---@class DungeonEntranceMapInfo
 ---@field areaPoiID number 

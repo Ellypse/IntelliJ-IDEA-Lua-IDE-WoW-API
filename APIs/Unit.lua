@@ -172,101 +172,51 @@ function UnitTrialBankedLevels(unit) end
 function UnitWidgetSet(unit) end
 
 ---@class PhaseReason : Enum
----@field Phasing PhaseReason 
----@field Sharding PhaseReason 
----@field WarMode PhaseReason 
----@field ChromieTime PhaseReason 
-
----@type PhaseReason 
-Enum.PhaseReason = {}
-Enum.PhaseReason.Phasing = 0
-Enum.PhaseReason.Sharding = 1
-Enum.PhaseReason.WarMode = 2
-Enum.PhaseReason.ChromieTime = 3
+---@field Phasing PhaseReason @ 0
+---@field Sharding PhaseReason @ 1
+---@field WarMode PhaseReason @ 2
+---@field ChromieTime PhaseReason @ 3
 
 ---@class PowerType : Enum
----@field HealthCost PowerType 
----@field None PowerType 
----@field Mana PowerType 
----@field Rage PowerType 
----@field Focus PowerType 
----@field Energy PowerType 
----@field ComboPoints PowerType 
----@field Runes PowerType 
----@field RunicPower PowerType 
----@field SoulShards PowerType 
----@field LunarPower PowerType 
----@field HolyPower PowerType 
----@field Alternate PowerType 
----@field Maelstrom PowerType 
----@field Chi PowerType 
----@field Insanity PowerType 
----@field Obsolete PowerType 
----@field Obsolete2 PowerType 
----@field ArcaneCharges PowerType 
----@field Fury PowerType 
----@field Pain PowerType 
----@field Essence PowerType 
----@field RuneBlood PowerType 
----@field RuneFrost PowerType 
----@field RuneUnholy PowerType 
----@field NumPowerTypes PowerType 
-
----@type PowerType 
-Enum.PowerType = {}
-Enum.PowerType.HealthCost = -2
-Enum.PowerType.None = -1
-Enum.PowerType.Mana = 0
-Enum.PowerType.Rage = 1
-Enum.PowerType.Focus = 2
-Enum.PowerType.Energy = 3
-Enum.PowerType.ComboPoints = 4
-Enum.PowerType.Runes = 5
-Enum.PowerType.RunicPower = 6
-Enum.PowerType.SoulShards = 7
-Enum.PowerType.LunarPower = 8
-Enum.PowerType.HolyPower = 9
-Enum.PowerType.Alternate = 10
-Enum.PowerType.Maelstrom = 11
-Enum.PowerType.Chi = 12
-Enum.PowerType.Insanity = 13
-Enum.PowerType.Obsolete = 14
-Enum.PowerType.Obsolete2 = 15
-Enum.PowerType.ArcaneCharges = 16
-Enum.PowerType.Fury = 17
-Enum.PowerType.Pain = 18
-Enum.PowerType.Essence = 19
-Enum.PowerType.RuneBlood = 20
-Enum.PowerType.RuneFrost = 21
-Enum.PowerType.RuneUnholy = 22
-Enum.PowerType.NumPowerTypes = 23
+---@field HealthCost PowerType @ -2
+---@field None PowerType @ -1
+---@field Mana PowerType @ 0
+---@field Rage PowerType @ 1
+---@field Focus PowerType @ 2
+---@field Energy PowerType @ 3
+---@field ComboPoints PowerType @ 4
+---@field Runes PowerType @ 5
+---@field RunicPower PowerType @ 6
+---@field SoulShards PowerType @ 7
+---@field LunarPower PowerType @ 8
+---@field HolyPower PowerType @ 9
+---@field Alternate PowerType @ 10
+---@field Maelstrom PowerType @ 11
+---@field Chi PowerType @ 12
+---@field Insanity PowerType @ 13
+---@field Obsolete PowerType @ 14
+---@field Obsolete2 PowerType @ 15
+---@field ArcaneCharges PowerType @ 16
+---@field Fury PowerType @ 17
+---@field Pain PowerType @ 18
+---@field Essence PowerType @ 19
+---@field RuneBlood PowerType @ 20
+---@field RuneFrost PowerType @ 21
+---@field RuneUnholy PowerType @ 22
+---@field NumPowerTypes PowerType @ 23
 
 ---@class PvPUnitClassification : Enum
----@field FlagCarrierHorde PvPUnitClassification 
----@field FlagCarrierAlliance PvPUnitClassification 
----@field FlagCarrierNeutral PvPUnitClassification 
----@field CartRunnerHorde PvPUnitClassification 
----@field CartRunnerAlliance PvPUnitClassification 
----@field AssassinHorde PvPUnitClassification 
----@field AssassinAlliance PvPUnitClassification 
----@field OrbCarrierBlue PvPUnitClassification 
----@field OrbCarrierGreen PvPUnitClassification 
----@field OrbCarrierOrange PvPUnitClassification 
----@field OrbCarrierPurple PvPUnitClassification 
-
----@type PvPUnitClassification 
-Enum.PvPUnitClassification = {}
-Enum.PvPUnitClassification.FlagCarrierHorde = 0
-Enum.PvPUnitClassification.FlagCarrierAlliance = 1
-Enum.PvPUnitClassification.FlagCarrierNeutral = 2
-Enum.PvPUnitClassification.CartRunnerHorde = 3
-Enum.PvPUnitClassification.CartRunnerAlliance = 4
-Enum.PvPUnitClassification.AssassinHorde = 5
-Enum.PvPUnitClassification.AssassinAlliance = 6
-Enum.PvPUnitClassification.OrbCarrierBlue = 7
-Enum.PvPUnitClassification.OrbCarrierGreen = 8
-Enum.PvPUnitClassification.OrbCarrierOrange = 9
-Enum.PvPUnitClassification.OrbCarrierPurple = 10
+---@field FlagCarrierHorde PvPUnitClassification @ 0
+---@field FlagCarrierAlliance PvPUnitClassification @ 1
+---@field FlagCarrierNeutral PvPUnitClassification @ 2
+---@field CartRunnerHorde PvPUnitClassification @ 3
+---@field CartRunnerAlliance PvPUnitClassification @ 4
+---@field AssassinHorde PvPUnitClassification @ 5
+---@field AssassinAlliance PvPUnitClassification @ 6
+---@field OrbCarrierBlue PvPUnitClassification @ 7
+---@field OrbCarrierGreen PvPUnitClassification @ 8
+---@field OrbCarrierOrange PvPUnitClassification @ 9
+---@field OrbCarrierPurple PvPUnitClassification @ 10
 
 ---@class CorruptionEffectInfo
 ---@field name string 

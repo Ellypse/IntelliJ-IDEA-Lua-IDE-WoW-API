@@ -374,271 +374,132 @@ function C_Club.UnfocusStream(clubId, streamId) end
 function C_Club.ValidateText(clubType, text, clubFieldType) end
 
 ---@class ClubActionType : Enum
----@field ErrorClubActionSubscribe ClubActionType 
----@field ErrorClubActionCreate ClubActionType 
----@field ErrorClubActionEdit ClubActionType 
----@field ErrorClubActionDestroy ClubActionType 
----@field ErrorClubActionLeave ClubActionType 
----@field ErrorClubActionCreateTicket ClubActionType 
----@field ErrorClubActionDestroyTicket ClubActionType 
----@field ErrorClubActionRedeemTicket ClubActionType 
----@field ErrorClubActionGetTicket ClubActionType 
----@field ErrorClubActionGetTickets ClubActionType 
----@field ErrorClubActionGetBans ClubActionType 
----@field ErrorClubActionGetInvitations ClubActionType 
----@field ErrorClubActionRevokeInvitation ClubActionType 
----@field ErrorClubActionAcceptInvitation ClubActionType 
----@field ErrorClubActionDeclineInvitation ClubActionType 
----@field ErrorClubActionCreateStream ClubActionType 
----@field ErrorClubActionEditStream ClubActionType 
----@field ErrorClubActionDestroyStream ClubActionType 
----@field ErrorClubActionInviteMember ClubActionType 
----@field ErrorClubActionEditMember ClubActionType 
----@field ErrorClubActionEditMemberNote ClubActionType 
----@field ErrorClubActionKickMember ClubActionType 
----@field ErrorClubActionAddBan ClubActionType 
----@field ErrorClubActionRemoveBan ClubActionType 
----@field ErrorClubActionCreateMessage ClubActionType 
----@field ErrorClubActionEditMessage ClubActionType 
----@field ErrorClubActionDestroyMessage ClubActionType 
-
----@type ClubActionType 
-Enum.ClubActionType = {}
-Enum.ClubActionType.ErrorClubActionSubscribe = 0
-Enum.ClubActionType.ErrorClubActionCreate = 1
-Enum.ClubActionType.ErrorClubActionEdit = 2
-Enum.ClubActionType.ErrorClubActionDestroy = 3
-Enum.ClubActionType.ErrorClubActionLeave = 4
-Enum.ClubActionType.ErrorClubActionCreateTicket = 5
-Enum.ClubActionType.ErrorClubActionDestroyTicket = 6
-Enum.ClubActionType.ErrorClubActionRedeemTicket = 7
-Enum.ClubActionType.ErrorClubActionGetTicket = 8
-Enum.ClubActionType.ErrorClubActionGetTickets = 9
-Enum.ClubActionType.ErrorClubActionGetBans = 10
-Enum.ClubActionType.ErrorClubActionGetInvitations = 11
-Enum.ClubActionType.ErrorClubActionRevokeInvitation = 12
-Enum.ClubActionType.ErrorClubActionAcceptInvitation = 13
-Enum.ClubActionType.ErrorClubActionDeclineInvitation = 14
-Enum.ClubActionType.ErrorClubActionCreateStream = 15
-Enum.ClubActionType.ErrorClubActionEditStream = 16
-Enum.ClubActionType.ErrorClubActionDestroyStream = 17
-Enum.ClubActionType.ErrorClubActionInviteMember = 18
-Enum.ClubActionType.ErrorClubActionEditMember = 19
-Enum.ClubActionType.ErrorClubActionEditMemberNote = 20
-Enum.ClubActionType.ErrorClubActionKickMember = 21
-Enum.ClubActionType.ErrorClubActionAddBan = 22
-Enum.ClubActionType.ErrorClubActionRemoveBan = 23
-Enum.ClubActionType.ErrorClubActionCreateMessage = 24
-Enum.ClubActionType.ErrorClubActionEditMessage = 25
-Enum.ClubActionType.ErrorClubActionDestroyMessage = 26
+---@field ErrorClubActionSubscribe ClubActionType @ 0
+---@field ErrorClubActionCreate ClubActionType @ 1
+---@field ErrorClubActionEdit ClubActionType @ 2
+---@field ErrorClubActionDestroy ClubActionType @ 3
+---@field ErrorClubActionLeave ClubActionType @ 4
+---@field ErrorClubActionCreateTicket ClubActionType @ 5
+---@field ErrorClubActionDestroyTicket ClubActionType @ 6
+---@field ErrorClubActionRedeemTicket ClubActionType @ 7
+---@field ErrorClubActionGetTicket ClubActionType @ 8
+---@field ErrorClubActionGetTickets ClubActionType @ 9
+---@field ErrorClubActionGetBans ClubActionType @ 10
+---@field ErrorClubActionGetInvitations ClubActionType @ 11
+---@field ErrorClubActionRevokeInvitation ClubActionType @ 12
+---@field ErrorClubActionAcceptInvitation ClubActionType @ 13
+---@field ErrorClubActionDeclineInvitation ClubActionType @ 14
+---@field ErrorClubActionCreateStream ClubActionType @ 15
+---@field ErrorClubActionEditStream ClubActionType @ 16
+---@field ErrorClubActionDestroyStream ClubActionType @ 17
+---@field ErrorClubActionInviteMember ClubActionType @ 18
+---@field ErrorClubActionEditMember ClubActionType @ 19
+---@field ErrorClubActionEditMemberNote ClubActionType @ 20
+---@field ErrorClubActionKickMember ClubActionType @ 21
+---@field ErrorClubActionAddBan ClubActionType @ 22
+---@field ErrorClubActionRemoveBan ClubActionType @ 23
+---@field ErrorClubActionCreateMessage ClubActionType @ 24
+---@field ErrorClubActionEditMessage ClubActionType @ 25
+---@field ErrorClubActionDestroyMessage ClubActionType @ 26
 
 ---@class ClubErrorType : Enum
----@field ErrorCommunitiesNone ClubErrorType 
----@field ErrorCommunitiesUnknown ClubErrorType 
----@field ErrorCommunitiesNeutralFaction ClubErrorType 
----@field ErrorCommunitiesUnknownRealm ClubErrorType 
----@field ErrorCommunitiesBadTarget ClubErrorType 
----@field ErrorCommunitiesWrongFaction ClubErrorType 
----@field ErrorCommunitiesRestricted ClubErrorType 
----@field ErrorCommunitiesIgnored ClubErrorType 
----@field ErrorCommunitiesGuild ClubErrorType 
----@field ErrorCommunitiesWrongRegion ClubErrorType 
----@field ErrorCommunitiesUnknownTicket ClubErrorType 
----@field ErrorCommunitiesMissingShortName ClubErrorType 
----@field ErrorCommunitiesProfanity ClubErrorType 
----@field ErrorCommunitiesTrial ClubErrorType 
----@field ErrorCommunitiesVeteranTrial ClubErrorType 
----@field ErrorCommunitiesChatMute ClubErrorType 
----@field ErrorClubFull ClubErrorType 
----@field ErrorClubNoClub ClubErrorType 
----@field ErrorClubNotMember ClubErrorType 
----@field ErrorClubAlreadyMember ClubErrorType 
----@field ErrorClubNoSuchMember ClubErrorType 
----@field ErrorClubNoSuchInvitation ClubErrorType 
----@field ErrorClubInvitationAlreadyExists ClubErrorType 
----@field ErrorClubInvalidRoleID ClubErrorType 
----@field ErrorClubInsufficientPrivileges ClubErrorType 
----@field ErrorClubTooManyClubsJoined ClubErrorType 
----@field ErrorClubVoiceFull ClubErrorType 
----@field ErrorClubStreamNoStream ClubErrorType 
----@field ErrorClubStreamInvalidName ClubErrorType 
----@field ErrorClubStreamCountAtMin ClubErrorType 
----@field ErrorClubStreamCountAtMax ClubErrorType 
----@field ErrorClubMemberHasRequiredRole ClubErrorType 
----@field ErrorClubSentInvitationCountAtMax ClubErrorType 
----@field ErrorClubReceivedInvitationCountAtMax ClubErrorType 
----@field ErrorClubTargetIsBanned ClubErrorType 
----@field ErrorClubBanAlreadyExists ClubErrorType 
----@field ErrorClubBanCountAtMax ClubErrorType 
----@field ErrorClubTicketCountAtMax ClubErrorType 
----@field ErrorClubTicketNoSuchTicket ClubErrorType 
----@field ErrorClubTicketHasConsumedAllowedRedeemCount ClubErrorType 
----@field ErrorClubDoesntAllowCrossFaction ClubErrorType 
----@field ErrorClubEditHasCrossFactionMembers ClubErrorType 
-
----@type ClubErrorType 
-Enum.ClubErrorType = {}
-Enum.ClubErrorType.ErrorCommunitiesNone = 0
-Enum.ClubErrorType.ErrorCommunitiesUnknown = 1
-Enum.ClubErrorType.ErrorCommunitiesNeutralFaction = 2
-Enum.ClubErrorType.ErrorCommunitiesUnknownRealm = 3
-Enum.ClubErrorType.ErrorCommunitiesBadTarget = 4
-Enum.ClubErrorType.ErrorCommunitiesWrongFaction = 5
-Enum.ClubErrorType.ErrorCommunitiesRestricted = 6
-Enum.ClubErrorType.ErrorCommunitiesIgnored = 7
-Enum.ClubErrorType.ErrorCommunitiesGuild = 8
-Enum.ClubErrorType.ErrorCommunitiesWrongRegion = 9
-Enum.ClubErrorType.ErrorCommunitiesUnknownTicket = 10
-Enum.ClubErrorType.ErrorCommunitiesMissingShortName = 11
-Enum.ClubErrorType.ErrorCommunitiesProfanity = 12
-Enum.ClubErrorType.ErrorCommunitiesTrial = 13
-Enum.ClubErrorType.ErrorCommunitiesVeteranTrial = 14
-Enum.ClubErrorType.ErrorCommunitiesChatMute = 15
-Enum.ClubErrorType.ErrorClubFull = 16
-Enum.ClubErrorType.ErrorClubNoClub = 17
-Enum.ClubErrorType.ErrorClubNotMember = 18
-Enum.ClubErrorType.ErrorClubAlreadyMember = 19
-Enum.ClubErrorType.ErrorClubNoSuchMember = 20
-Enum.ClubErrorType.ErrorClubNoSuchInvitation = 21
-Enum.ClubErrorType.ErrorClubInvitationAlreadyExists = 22
-Enum.ClubErrorType.ErrorClubInvalidRoleID = 23
-Enum.ClubErrorType.ErrorClubInsufficientPrivileges = 24
-Enum.ClubErrorType.ErrorClubTooManyClubsJoined = 25
-Enum.ClubErrorType.ErrorClubVoiceFull = 26
-Enum.ClubErrorType.ErrorClubStreamNoStream = 27
-Enum.ClubErrorType.ErrorClubStreamInvalidName = 28
-Enum.ClubErrorType.ErrorClubStreamCountAtMin = 29
-Enum.ClubErrorType.ErrorClubStreamCountAtMax = 30
-Enum.ClubErrorType.ErrorClubMemberHasRequiredRole = 31
-Enum.ClubErrorType.ErrorClubSentInvitationCountAtMax = 32
-Enum.ClubErrorType.ErrorClubReceivedInvitationCountAtMax = 33
-Enum.ClubErrorType.ErrorClubTargetIsBanned = 34
-Enum.ClubErrorType.ErrorClubBanAlreadyExists = 35
-Enum.ClubErrorType.ErrorClubBanCountAtMax = 36
-Enum.ClubErrorType.ErrorClubTicketCountAtMax = 37
-Enum.ClubErrorType.ErrorClubTicketNoSuchTicket = 38
-Enum.ClubErrorType.ErrorClubTicketHasConsumedAllowedRedeemCount = 39
-Enum.ClubErrorType.ErrorClubDoesntAllowCrossFaction = 40
-Enum.ClubErrorType.ErrorClubEditHasCrossFactionMembers = 41
+---@field ErrorCommunitiesNone ClubErrorType @ 0
+---@field ErrorCommunitiesUnknown ClubErrorType @ 1
+---@field ErrorCommunitiesNeutralFaction ClubErrorType @ 2
+---@field ErrorCommunitiesUnknownRealm ClubErrorType @ 3
+---@field ErrorCommunitiesBadTarget ClubErrorType @ 4
+---@field ErrorCommunitiesWrongFaction ClubErrorType @ 5
+---@field ErrorCommunitiesRestricted ClubErrorType @ 6
+---@field ErrorCommunitiesIgnored ClubErrorType @ 7
+---@field ErrorCommunitiesGuild ClubErrorType @ 8
+---@field ErrorCommunitiesWrongRegion ClubErrorType @ 9
+---@field ErrorCommunitiesUnknownTicket ClubErrorType @ 10
+---@field ErrorCommunitiesMissingShortName ClubErrorType @ 11
+---@field ErrorCommunitiesProfanity ClubErrorType @ 12
+---@field ErrorCommunitiesTrial ClubErrorType @ 13
+---@field ErrorCommunitiesVeteranTrial ClubErrorType @ 14
+---@field ErrorCommunitiesChatMute ClubErrorType @ 15
+---@field ErrorClubFull ClubErrorType @ 16
+---@field ErrorClubNoClub ClubErrorType @ 17
+---@field ErrorClubNotMember ClubErrorType @ 18
+---@field ErrorClubAlreadyMember ClubErrorType @ 19
+---@field ErrorClubNoSuchMember ClubErrorType @ 20
+---@field ErrorClubNoSuchInvitation ClubErrorType @ 21
+---@field ErrorClubInvitationAlreadyExists ClubErrorType @ 22
+---@field ErrorClubInvalidRoleID ClubErrorType @ 23
+---@field ErrorClubInsufficientPrivileges ClubErrorType @ 24
+---@field ErrorClubTooManyClubsJoined ClubErrorType @ 25
+---@field ErrorClubVoiceFull ClubErrorType @ 26
+---@field ErrorClubStreamNoStream ClubErrorType @ 27
+---@field ErrorClubStreamInvalidName ClubErrorType @ 28
+---@field ErrorClubStreamCountAtMin ClubErrorType @ 29
+---@field ErrorClubStreamCountAtMax ClubErrorType @ 30
+---@field ErrorClubMemberHasRequiredRole ClubErrorType @ 31
+---@field ErrorClubSentInvitationCountAtMax ClubErrorType @ 32
+---@field ErrorClubReceivedInvitationCountAtMax ClubErrorType @ 33
+---@field ErrorClubTargetIsBanned ClubErrorType @ 34
+---@field ErrorClubBanAlreadyExists ClubErrorType @ 35
+---@field ErrorClubBanCountAtMax ClubErrorType @ 36
+---@field ErrorClubTicketCountAtMax ClubErrorType @ 37
+---@field ErrorClubTicketNoSuchTicket ClubErrorType @ 38
+---@field ErrorClubTicketHasConsumedAllowedRedeemCount ClubErrorType @ 39
+---@field ErrorClubDoesntAllowCrossFaction ClubErrorType @ 40
+---@field ErrorClubEditHasCrossFactionMembers ClubErrorType @ 41
 
 ---@class ClubFieldType : Enum
----@field ClubName ClubFieldType 
----@field ClubShortName ClubFieldType 
----@field ClubDescription ClubFieldType 
----@field ClubBroadcast ClubFieldType 
----@field ClubStreamName ClubFieldType 
----@field ClubStreamSubject ClubFieldType 
----@field NumTypes ClubFieldType 
-
----@type ClubFieldType 
-Enum.ClubFieldType = {}
-Enum.ClubFieldType.ClubName = 0
-Enum.ClubFieldType.ClubShortName = 1
-Enum.ClubFieldType.ClubDescription = 2
-Enum.ClubFieldType.ClubBroadcast = 3
-Enum.ClubFieldType.ClubStreamName = 4
-Enum.ClubFieldType.ClubStreamSubject = 5
-Enum.ClubFieldType.NumTypes = 6
+---@field ClubName ClubFieldType @ 0
+---@field ClubShortName ClubFieldType @ 1
+---@field ClubDescription ClubFieldType @ 2
+---@field ClubBroadcast ClubFieldType @ 3
+---@field ClubStreamName ClubFieldType @ 4
+---@field ClubStreamSubject ClubFieldType @ 5
+---@field NumTypes ClubFieldType @ 6
 
 ---@class ClubInvitationCandidateStatus : Enum
----@field Available ClubInvitationCandidateStatus 
----@field InvitePending ClubInvitationCandidateStatus 
----@field AlreadyMember ClubInvitationCandidateStatus 
-
----@type ClubInvitationCandidateStatus 
-Enum.ClubInvitationCandidateStatus = {}
-Enum.ClubInvitationCandidateStatus.Available = 0
-Enum.ClubInvitationCandidateStatus.InvitePending = 1
-Enum.ClubInvitationCandidateStatus.AlreadyMember = 2
+---@field Available ClubInvitationCandidateStatus @ 0
+---@field InvitePending ClubInvitationCandidateStatus @ 1
+---@field AlreadyMember ClubInvitationCandidateStatus @ 2
 
 ---@class ClubMemberPresence : Enum
----@field Unknown ClubMemberPresence 
----@field Online ClubMemberPresence 
----@field OnlineMobile ClubMemberPresence 
----@field Offline ClubMemberPresence 
----@field Away ClubMemberPresence 
----@field Busy ClubMemberPresence 
-
----@type ClubMemberPresence 
-Enum.ClubMemberPresence = {}
-Enum.ClubMemberPresence.Unknown = 0
-Enum.ClubMemberPresence.Online = 1
-Enum.ClubMemberPresence.OnlineMobile = 2
-Enum.ClubMemberPresence.Offline = 3
-Enum.ClubMemberPresence.Away = 4
-Enum.ClubMemberPresence.Busy = 5
+---@field Unknown ClubMemberPresence @ 0
+---@field Online ClubMemberPresence @ 1
+---@field OnlineMobile ClubMemberPresence @ 2
+---@field Offline ClubMemberPresence @ 3
+---@field Away ClubMemberPresence @ 4
+---@field Busy ClubMemberPresence @ 5
 
 ---@class ClubRemovedReason : Enum
----@field None ClubRemovedReason 
----@field Banned ClubRemovedReason 
----@field Removed ClubRemovedReason 
----@field ClubDestroyed ClubRemovedReason 
-
----@type ClubRemovedReason 
-Enum.ClubRemovedReason = {}
-Enum.ClubRemovedReason.None = 0
-Enum.ClubRemovedReason.Banned = 1
-Enum.ClubRemovedReason.Removed = 2
-Enum.ClubRemovedReason.ClubDestroyed = 3
+---@field None ClubRemovedReason @ 0
+---@field Banned ClubRemovedReason @ 1
+---@field Removed ClubRemovedReason @ 2
+---@field ClubDestroyed ClubRemovedReason @ 3
 
 ---@class ClubRestrictionReason : Enum
----@field None ClubRestrictionReason 
----@field Unavailable ClubRestrictionReason 
-
----@type ClubRestrictionReason 
-Enum.ClubRestrictionReason = {}
-Enum.ClubRestrictionReason.None = 0
-Enum.ClubRestrictionReason.Unavailable = 1
+---@field None ClubRestrictionReason @ 0
+---@field Unavailable ClubRestrictionReason @ 1
 
 ---@class ClubRoleIdentifier : Enum
----@field Owner ClubRoleIdentifier 
----@field Leader ClubRoleIdentifier 
----@field Moderator ClubRoleIdentifier 
----@field Member ClubRoleIdentifier 
-
----@type ClubRoleIdentifier 
-Enum.ClubRoleIdentifier = {}
-Enum.ClubRoleIdentifier.Owner = 1
-Enum.ClubRoleIdentifier.Leader = 2
-Enum.ClubRoleIdentifier.Moderator = 3
-Enum.ClubRoleIdentifier.Member = 4
+---@field Owner ClubRoleIdentifier @ 1
+---@field Leader ClubRoleIdentifier @ 2
+---@field Moderator ClubRoleIdentifier @ 3
+---@field Member ClubRoleIdentifier @ 4
 
 ---@class ClubStreamNotificationFilter : Enum
----@field None ClubStreamNotificationFilter 
----@field Mention ClubStreamNotificationFilter 
----@field All ClubStreamNotificationFilter 
-
----@type ClubStreamNotificationFilter 
-Enum.ClubStreamNotificationFilter = {}
-Enum.ClubStreamNotificationFilter.None = 0
-Enum.ClubStreamNotificationFilter.Mention = 1
-Enum.ClubStreamNotificationFilter.All = 2
+---@field None ClubStreamNotificationFilter @ 0
+---@field Mention ClubStreamNotificationFilter @ 1
+---@field All ClubStreamNotificationFilter @ 2
 
 ---@class ClubStreamType : Enum
----@field General ClubStreamType 
----@field Guild ClubStreamType 
----@field Officer ClubStreamType 
----@field Other ClubStreamType 
-
----@type ClubStreamType 
-Enum.ClubStreamType = {}
-Enum.ClubStreamType.General = 0
-Enum.ClubStreamType.Guild = 1
-Enum.ClubStreamType.Officer = 2
-Enum.ClubStreamType.Other = 3
+---@field General ClubStreamType @ 0
+---@field Guild ClubStreamType @ 1
+---@field Officer ClubStreamType @ 2
+---@field Other ClubStreamType @ 3
 
 ---@class ClubType : Enum
----@field BattleNet ClubType 
----@field Character ClubType 
----@field Guild ClubType 
----@field Other ClubType 
-
----@type ClubType 
-Enum.ClubType = {}
-Enum.ClubType.BattleNet = 0
-Enum.ClubType.Character = 1
-Enum.ClubType.Guild = 2
-Enum.ClubType.Other = 3
+---@field BattleNet ClubType @ 0
+---@field Character ClubType @ 1
+---@field Guild ClubType @ 2
+---@field Other ClubType @ 3
 
 ---@class ClubInfo
 ---@field clubId ClubId 

@@ -71,32 +71,17 @@ function C_ContributionCollector.HasPendingContribution(contributionID) end
 function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 
 ---@class ContributionAppearanceFlags : Enum
----@field TooltipUseTimeRemaining ContributionAppearanceFlags 
-
----@type ContributionAppearanceFlags 
-Enum.ContributionAppearanceFlags = {}
-Enum.ContributionAppearanceFlags.TooltipUseTimeRemaining = 0
+---@field TooltipUseTimeRemaining ContributionAppearanceFlags @ 0
 
 ---@class ContributionResult : Enum
----@field Success ContributionResult 
----@field MustBeNearNpc ContributionResult 
----@field IncorrectState ContributionResult 
----@field InvalidID ContributionResult 
----@field QuestDataMissing ContributionResult 
----@field FailedConditionCheck ContributionResult 
----@field UnableToCompleteTurnIn ContributionResult 
----@field InternalError ContributionResult 
-
----@type ContributionResult 
-Enum.ContributionResult = {}
-Enum.ContributionResult.Success = 0
-Enum.ContributionResult.MustBeNearNpc = 1
-Enum.ContributionResult.IncorrectState = 2
-Enum.ContributionResult.InvalidID = 3
-Enum.ContributionResult.QuestDataMissing = 4
-Enum.ContributionResult.FailedConditionCheck = 5
-Enum.ContributionResult.UnableToCompleteTurnIn = 6
-Enum.ContributionResult.InternalError = 7
+---@field Success ContributionResult @ 0
+---@field MustBeNearNpc ContributionResult @ 1
+---@field IncorrectState ContributionResult @ 2
+---@field InvalidID ContributionResult @ 3
+---@field QuestDataMissing ContributionResult @ 4
+---@field FailedConditionCheck ContributionResult @ 5
+---@field UnableToCompleteTurnIn ContributionResult @ 6
+---@field InternalError ContributionResult @ 7
 
 ---@class ContributionAppearance
 ---@field stateName cstring 

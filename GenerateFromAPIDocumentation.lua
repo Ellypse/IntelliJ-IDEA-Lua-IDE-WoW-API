@@ -194,21 +194,21 @@ function APIDocumentation:AddDocumentationTable(documentation)
 					write(FIELD_DOCUMENTATION:format(
 							value.Name,
 							value.Type,
-							value.Documentation and ("@ " .. table.concat(value.Documentation, "\n")) or ""
+							("@ " .. value.EnumValue)
 					))
 				end
 				--write(GLOBAL_DECLARATION:format(tab.Name))
-				write("")
+				--write("")
 
-				write(TYPE_DECLARATION:format(
+				--[[write(TYPE_DECLARATION:format(
 						parentType,
 						""
-				))
-				write(GLOBAL_DECLARATION:format("Enum."..tab.Name))
+				))]]
+				--[[write(GLOBAL_DECLARATION:format("Enum."..tab.Name))
 				
 				for k, value in pairs(tab.Fields) do
 					write("Enum."..tab.Name .. "." .. value.Name .. " = " .. (value.EnumValue or ""))
-				end
+				end]]
 
 				--[[for k, value in pairs(tab.Fields) do
 					write(TYPE_DECLARATION:format(

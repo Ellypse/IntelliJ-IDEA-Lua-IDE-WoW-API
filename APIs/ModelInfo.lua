@@ -36,69 +36,35 @@ function C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID) end
 function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
 ---@class ItemTryOnReason : Enum
----@field Success ItemTryOnReason 
----@field WrongRace ItemTryOnReason 
----@field NotEquippable ItemTryOnReason 
----@field DataPending ItemTryOnReason 
-
----@type ItemTryOnReason 
-Enum.ItemTryOnReason = {}
-Enum.ItemTryOnReason.Success = 0
-Enum.ItemTryOnReason.WrongRace = 1
-Enum.ItemTryOnReason.NotEquippable = 2
-Enum.ItemTryOnReason.DataPending = 3
+---@field Success ItemTryOnReason @ 0
+---@field WrongRace ItemTryOnReason @ 1
+---@field NotEquippable ItemTryOnReason @ 2
+---@field DataPending ItemTryOnReason @ 3
 
 ---@class ModelSceneSetting : Enum
----@field AlignLightToOrbitDelta ModelSceneSetting 
-
----@type ModelSceneSetting 
-Enum.ModelSceneSetting = {}
-Enum.ModelSceneSetting.AlignLightToOrbitDelta = 1
+---@field AlignLightToOrbitDelta ModelSceneSetting @ 1
 
 ---@class ModelSceneType : Enum
----@field MountJournal ModelSceneType 
----@field PetJournalCard ModelSceneType 
----@field ShopCard ModelSceneType 
----@field EncounterJournal ModelSceneType 
----@field PetJournalLoadout ModelSceneType 
----@field ArtifactTier2 ModelSceneType 
----@field ArtifactTier2ForgingScene ModelSceneType 
----@field ArtifactTier2SlamEffect ModelSceneType 
----@field CommentatorVictoryFanfare ModelSceneType 
----@field ArtifactRelicTalentEffect ModelSceneType 
----@field PvPWarModeOrb ModelSceneType 
----@field PvPWarModeFire ModelSceneType 
----@field PartyPose ModelSceneType 
----@field AzeriteItemLevelUpToast ModelSceneType 
----@field AzeritePowers ModelSceneType 
----@field AzeriteRewardGlow ModelSceneType 
----@field HeartOfAzeroth ModelSceneType 
----@field WorldMapThreat ModelSceneType 
----@field Soulbinds ModelSceneType 
----@field JailersTowerAnimaGlow ModelSceneType 
-
----@type ModelSceneType 
-Enum.ModelSceneType = {}
-Enum.ModelSceneType.MountJournal = 0
-Enum.ModelSceneType.PetJournalCard = 1
-Enum.ModelSceneType.ShopCard = 2
-Enum.ModelSceneType.EncounterJournal = 3
-Enum.ModelSceneType.PetJournalLoadout = 4
-Enum.ModelSceneType.ArtifactTier2 = 5
-Enum.ModelSceneType.ArtifactTier2ForgingScene = 6
-Enum.ModelSceneType.ArtifactTier2SlamEffect = 7
-Enum.ModelSceneType.CommentatorVictoryFanfare = 8
-Enum.ModelSceneType.ArtifactRelicTalentEffect = 9
-Enum.ModelSceneType.PvPWarModeOrb = 10
-Enum.ModelSceneType.PvPWarModeFire = 11
-Enum.ModelSceneType.PartyPose = 12
-Enum.ModelSceneType.AzeriteItemLevelUpToast = 13
-Enum.ModelSceneType.AzeritePowers = 14
-Enum.ModelSceneType.AzeriteRewardGlow = 15
-Enum.ModelSceneType.HeartOfAzeroth = 16
-Enum.ModelSceneType.WorldMapThreat = 17
-Enum.ModelSceneType.Soulbinds = 18
-Enum.ModelSceneType.JailersTowerAnimaGlow = 19
+---@field MountJournal ModelSceneType @ 0
+---@field PetJournalCard ModelSceneType @ 1
+---@field ShopCard ModelSceneType @ 2
+---@field EncounterJournal ModelSceneType @ 3
+---@field PetJournalLoadout ModelSceneType @ 4
+---@field ArtifactTier2 ModelSceneType @ 5
+---@field ArtifactTier2ForgingScene ModelSceneType @ 6
+---@field ArtifactTier2SlamEffect ModelSceneType @ 7
+---@field CommentatorVictoryFanfare ModelSceneType @ 8
+---@field ArtifactRelicTalentEffect ModelSceneType @ 9
+---@field PvPWarModeOrb ModelSceneType @ 10
+---@field PvPWarModeFire ModelSceneType @ 11
+---@field PartyPose ModelSceneType @ 12
+---@field AzeriteItemLevelUpToast ModelSceneType @ 13
+---@field AzeritePowers ModelSceneType @ 14
+---@field AzeriteRewardGlow ModelSceneType @ 15
+---@field HeartOfAzeroth ModelSceneType @ 16
+---@field WorldMapThreat ModelSceneType @ 17
+---@field Soulbinds ModelSceneType @ 18
+---@field JailersTowerAnimaGlow ModelSceneType @ 19
 
 ---@class UIModelSceneActorDisplayInfo
 ---@field animation number 
