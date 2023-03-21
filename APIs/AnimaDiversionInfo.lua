@@ -23,15 +23,15 @@ function C_AnimaDiversion.SelectAnimaNode(talentID, temporary) end
 
 ---@class AnimaDiversionNodeState
 Enum.AnimaDiversionNodeState = {}
----@field Unavailable AnimaDiversionNodeState 
+---@field protected Unavailable AnimaDiversionNodeState 
 Enum.AnimaDiversionNodeState.Unavailable = 0
----@field Available AnimaDiversionNodeState 
+---@field protected Available AnimaDiversionNodeState 
 Enum.AnimaDiversionNodeState.Available = 1
----@field SelectedTemporary AnimaDiversionNodeState 
+---@field protected SelectedTemporary AnimaDiversionNodeState 
 Enum.AnimaDiversionNodeState.SelectedTemporary = 2
----@field SelectedPermanent AnimaDiversionNodeState 
+---@field protected SelectedPermanent AnimaDiversionNodeState 
 Enum.AnimaDiversionNodeState.SelectedPermanent = 3
----@field Cooldown AnimaDiversionNodeState 
+---@field protected Cooldown AnimaDiversionNodeState 
 Enum.AnimaDiversionNodeState.Cooldown = 4
 
 ---@class AnimaDiversionCostInfo

@@ -72,26 +72,26 @@ function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 
 ---@class ContributionAppearanceFlags
 Enum.ContributionAppearanceFlags = {}
----@field TooltipUseTimeRemaining ContributionAppearanceFlags 
+---@field protected TooltipUseTimeRemaining ContributionAppearanceFlags 
 Enum.ContributionAppearanceFlags.TooltipUseTimeRemaining = 0
 
 ---@class ContributionResult
 Enum.ContributionResult = {}
----@field Success ContributionResult 
+---@field protected Success ContributionResult 
 Enum.ContributionResult.Success = 0
----@field MustBeNearNpc ContributionResult 
+---@field protected MustBeNearNpc ContributionResult 
 Enum.ContributionResult.MustBeNearNpc = 1
----@field IncorrectState ContributionResult 
+---@field protected IncorrectState ContributionResult 
 Enum.ContributionResult.IncorrectState = 2
----@field InvalidID ContributionResult 
+---@field protected InvalidID ContributionResult 
 Enum.ContributionResult.InvalidID = 3
----@field QuestDataMissing ContributionResult 
+---@field protected QuestDataMissing ContributionResult 
 Enum.ContributionResult.QuestDataMissing = 4
----@field FailedConditionCheck ContributionResult 
+---@field protected FailedConditionCheck ContributionResult 
 Enum.ContributionResult.FailedConditionCheck = 5
----@field UnableToCompleteTurnIn ContributionResult 
+---@field protected UnableToCompleteTurnIn ContributionResult 
 Enum.ContributionResult.UnableToCompleteTurnIn = 6
----@field InternalError ContributionResult 
+---@field protected InternalError ContributionResult 
 Enum.ContributionResult.InternalError = 7
 
 ---@class ContributionAppearance

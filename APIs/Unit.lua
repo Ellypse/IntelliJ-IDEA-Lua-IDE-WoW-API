@@ -173,93 +173,93 @@ function UnitWidgetSet(unit) end
 
 ---@class PhaseReason
 Enum.PhaseReason = {}
----@field Phasing PhaseReason 
+---@field protected Phasing PhaseReason 
 Enum.PhaseReason.Phasing = 0
----@field Sharding PhaseReason 
+---@field protected Sharding PhaseReason 
 Enum.PhaseReason.Sharding = 1
----@field WarMode PhaseReason 
+---@field protected WarMode PhaseReason 
 Enum.PhaseReason.WarMode = 2
----@field ChromieTime PhaseReason 
+---@field protected ChromieTime PhaseReason 
 Enum.PhaseReason.ChromieTime = 3
 
 ---@class PowerType
 Enum.PowerType = {}
----@field HealthCost PowerType 
+---@field protected HealthCost PowerType 
 Enum.PowerType.HealthCost = -2
----@field None PowerType 
+---@field protected None PowerType 
 Enum.PowerType.None = -1
----@field Mana PowerType 
+---@field protected Mana PowerType 
 Enum.PowerType.Mana = 0
----@field Rage PowerType 
+---@field protected Rage PowerType 
 Enum.PowerType.Rage = 1
----@field Focus PowerType 
+---@field protected Focus PowerType 
 Enum.PowerType.Focus = 2
----@field Energy PowerType 
+---@field protected Energy PowerType 
 Enum.PowerType.Energy = 3
----@field ComboPoints PowerType 
+---@field protected ComboPoints PowerType 
 Enum.PowerType.ComboPoints = 4
----@field Runes PowerType 
+---@field protected Runes PowerType 
 Enum.PowerType.Runes = 5
----@field RunicPower PowerType 
+---@field protected RunicPower PowerType 
 Enum.PowerType.RunicPower = 6
----@field SoulShards PowerType 
+---@field protected SoulShards PowerType 
 Enum.PowerType.SoulShards = 7
----@field LunarPower PowerType 
+---@field protected LunarPower PowerType 
 Enum.PowerType.LunarPower = 8
----@field HolyPower PowerType 
+---@field protected HolyPower PowerType 
 Enum.PowerType.HolyPower = 9
----@field Alternate PowerType 
+---@field protected Alternate PowerType 
 Enum.PowerType.Alternate = 10
----@field Maelstrom PowerType 
+---@field protected Maelstrom PowerType 
 Enum.PowerType.Maelstrom = 11
----@field Chi PowerType 
+---@field protected Chi PowerType 
 Enum.PowerType.Chi = 12
----@field Insanity PowerType 
+---@field protected Insanity PowerType 
 Enum.PowerType.Insanity = 13
----@field Obsolete PowerType 
+---@field protected Obsolete PowerType 
 Enum.PowerType.Obsolete = 14
----@field Obsolete2 PowerType 
+---@field protected Obsolete2 PowerType 
 Enum.PowerType.Obsolete2 = 15
----@field ArcaneCharges PowerType 
+---@field protected ArcaneCharges PowerType 
 Enum.PowerType.ArcaneCharges = 16
----@field Fury PowerType 
+---@field protected Fury PowerType 
 Enum.PowerType.Fury = 17
----@field Pain PowerType 
+---@field protected Pain PowerType 
 Enum.PowerType.Pain = 18
----@field Essence PowerType 
+---@field protected Essence PowerType 
 Enum.PowerType.Essence = 19
----@field RuneBlood PowerType 
+---@field protected RuneBlood PowerType 
 Enum.PowerType.RuneBlood = 20
----@field RuneFrost PowerType 
+---@field protected RuneFrost PowerType 
 Enum.PowerType.RuneFrost = 21
----@field RuneUnholy PowerType 
+---@field protected RuneUnholy PowerType 
 Enum.PowerType.RuneUnholy = 22
----@field NumPowerTypes PowerType 
+---@field protected NumPowerTypes PowerType 
 Enum.PowerType.NumPowerTypes = 23
 
 ---@class PvPUnitClassification
 Enum.PvPUnitClassification = {}
----@field FlagCarrierHorde PvPUnitClassification 
+---@field protected FlagCarrierHorde PvPUnitClassification 
 Enum.PvPUnitClassification.FlagCarrierHorde = 0
----@field FlagCarrierAlliance PvPUnitClassification 
+---@field protected FlagCarrierAlliance PvPUnitClassification 
 Enum.PvPUnitClassification.FlagCarrierAlliance = 1
----@field FlagCarrierNeutral PvPUnitClassification 
+---@field protected FlagCarrierNeutral PvPUnitClassification 
 Enum.PvPUnitClassification.FlagCarrierNeutral = 2
----@field CartRunnerHorde PvPUnitClassification 
+---@field protected CartRunnerHorde PvPUnitClassification 
 Enum.PvPUnitClassification.CartRunnerHorde = 3
----@field CartRunnerAlliance PvPUnitClassification 
+---@field protected CartRunnerAlliance PvPUnitClassification 
 Enum.PvPUnitClassification.CartRunnerAlliance = 4
----@field AssassinHorde PvPUnitClassification 
+---@field protected AssassinHorde PvPUnitClassification 
 Enum.PvPUnitClassification.AssassinHorde = 5
----@field AssassinAlliance PvPUnitClassification 
+---@field protected AssassinAlliance PvPUnitClassification 
 Enum.PvPUnitClassification.AssassinAlliance = 6
----@field OrbCarrierBlue PvPUnitClassification 
+---@field protected OrbCarrierBlue PvPUnitClassification 
 Enum.PvPUnitClassification.OrbCarrierBlue = 7
----@field OrbCarrierGreen PvPUnitClassification 
+---@field protected OrbCarrierGreen PvPUnitClassification 
 Enum.PvPUnitClassification.OrbCarrierGreen = 8
----@field OrbCarrierOrange PvPUnitClassification 
+---@field protected OrbCarrierOrange PvPUnitClassification 
 Enum.PvPUnitClassification.OrbCarrierOrange = 9
----@field OrbCarrierPurple PvPUnitClassification 
+---@field protected OrbCarrierPurple PvPUnitClassification 
 Enum.PvPUnitClassification.OrbCarrierPurple = 10
 
 ---@class CorruptionEffectInfo

@@ -22,13 +22,13 @@ function C_PlayerChoice.SendPlayerChoiceResponse(responseID) end
 
 ---@class PlayerChoiceRarity
 Enum.PlayerChoiceRarity = {}
----@field Common PlayerChoiceRarity 
+---@field protected Common PlayerChoiceRarity 
 Enum.PlayerChoiceRarity.Common = 0
----@field Uncommon PlayerChoiceRarity 
+---@field protected Uncommon PlayerChoiceRarity 
 Enum.PlayerChoiceRarity.Uncommon = 1
----@field Rare PlayerChoiceRarity 
+---@field protected Rare PlayerChoiceRarity 
 Enum.PlayerChoiceRarity.Rare = 2
----@field Epic PlayerChoiceRarity 
+---@field protected Epic PlayerChoiceRarity 
 Enum.PlayerChoiceRarity.Epic = 3
 
 ---@class PlayerChoiceInfo

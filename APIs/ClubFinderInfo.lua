@@ -197,141 +197,141 @@ function C_ClubFinder.ShouldShowClubFinder() end
 
 ---@class ClubFinderApplicationUpdateType
 Enum.ClubFinderApplicationUpdateType = {}
----@field None ClubFinderApplicationUpdateType 
+---@field protected None ClubFinderApplicationUpdateType 
 Enum.ClubFinderApplicationUpdateType.None = 0
----@field AcceptInvite ClubFinderApplicationUpdateType 
+---@field protected AcceptInvite ClubFinderApplicationUpdateType 
 Enum.ClubFinderApplicationUpdateType.AcceptInvite = 1
----@field DeclineInvite ClubFinderApplicationUpdateType 
+---@field protected DeclineInvite ClubFinderApplicationUpdateType 
 Enum.ClubFinderApplicationUpdateType.DeclineInvite = 2
----@field Cancel ClubFinderApplicationUpdateType 
+---@field protected Cancel ClubFinderApplicationUpdateType 
 Enum.ClubFinderApplicationUpdateType.Cancel = 3
 
 ---@class ClubFinderClubPostingStatusFlags
 Enum.ClubFinderClubPostingStatusFlags = {}
----@field None ClubFinderClubPostingStatusFlags 
+---@field protected None ClubFinderClubPostingStatusFlags 
 Enum.ClubFinderClubPostingStatusFlags.None = 0
----@field NeedsCacheUpdate ClubFinderClubPostingStatusFlags 
+---@field protected NeedsCacheUpdate ClubFinderClubPostingStatusFlags 
 Enum.ClubFinderClubPostingStatusFlags.NeedsCacheUpdate = 1
----@field ForceDescriptionChange ClubFinderClubPostingStatusFlags 
+---@field protected ForceDescriptionChange ClubFinderClubPostingStatusFlags 
 Enum.ClubFinderClubPostingStatusFlags.ForceDescriptionChange = 2
----@field ForceNameChange ClubFinderClubPostingStatusFlags 
+---@field protected ForceNameChange ClubFinderClubPostingStatusFlags 
 Enum.ClubFinderClubPostingStatusFlags.ForceNameChange = 3
----@field UnderReview ClubFinderClubPostingStatusFlags 
+---@field protected UnderReview ClubFinderClubPostingStatusFlags 
 Enum.ClubFinderClubPostingStatusFlags.UnderReview = 4
----@field Banned ClubFinderClubPostingStatusFlags 
+---@field protected Banned ClubFinderClubPostingStatusFlags 
 Enum.ClubFinderClubPostingStatusFlags.Banned = 5
----@field FakePost ClubFinderClubPostingStatusFlags 
+---@field protected FakePost ClubFinderClubPostingStatusFlags 
 Enum.ClubFinderClubPostingStatusFlags.FakePost = 6
----@field PendingDelete ClubFinderClubPostingStatusFlags 
+---@field protected PendingDelete ClubFinderClubPostingStatusFlags 
 Enum.ClubFinderClubPostingStatusFlags.PendingDelete = 7
----@field PostDelisted ClubFinderClubPostingStatusFlags 
+---@field protected PostDelisted ClubFinderClubPostingStatusFlags 
 Enum.ClubFinderClubPostingStatusFlags.PostDelisted = 8
 
 ---@class ClubFinderDisableReason
 Enum.ClubFinderDisableReason = {}
----@field Muted ClubFinderDisableReason 
+---@field protected Muted ClubFinderDisableReason 
 Enum.ClubFinderDisableReason.Muted = 0
----@field Silenced ClubFinderDisableReason 
+---@field protected Silenced ClubFinderDisableReason 
 Enum.ClubFinderDisableReason.Silenced = 1
----@field VeteranTrial ClubFinderDisableReason 
+---@field protected VeteranTrial ClubFinderDisableReason 
 Enum.ClubFinderDisableReason.VeteranTrial = 2
 
 ---@class ClubFinderPostingReportType
 Enum.ClubFinderPostingReportType = {}
----@field PostersName ClubFinderPostingReportType 
+---@field protected PostersName ClubFinderPostingReportType 
 Enum.ClubFinderPostingReportType.PostersName = 0
----@field ClubName ClubFinderPostingReportType 
+---@field protected ClubName ClubFinderPostingReportType 
 Enum.ClubFinderPostingReportType.ClubName = 1
----@field PostingDescription ClubFinderPostingReportType 
+---@field protected PostingDescription ClubFinderPostingReportType 
 Enum.ClubFinderPostingReportType.PostingDescription = 2
----@field ApplicantsName ClubFinderPostingReportType 
+---@field protected ApplicantsName ClubFinderPostingReportType 
 Enum.ClubFinderPostingReportType.ApplicantsName = 3
----@field JoinNote ClubFinderPostingReportType 
+---@field protected JoinNote ClubFinderPostingReportType 
 Enum.ClubFinderPostingReportType.JoinNote = 4
 
 ---@class ClubFinderRequestType
 Enum.ClubFinderRequestType = {}
----@field None ClubFinderRequestType 
+---@field protected None ClubFinderRequestType 
 Enum.ClubFinderRequestType.None = 0
----@field Guild ClubFinderRequestType 
+---@field protected Guild ClubFinderRequestType 
 Enum.ClubFinderRequestType.Guild = 1
----@field Community ClubFinderRequestType 
+---@field protected Community ClubFinderRequestType 
 Enum.ClubFinderRequestType.Community = 2
----@field All ClubFinderRequestType 
+---@field protected All ClubFinderRequestType 
 Enum.ClubFinderRequestType.All = 3
 
 ---@class ClubFinderSettingFlags
 Enum.ClubFinderSettingFlags = {}
----@field None ClubFinderSettingFlags 
+---@field protected None ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.None = 0
----@field Dungeons ClubFinderSettingFlags 
+---@field protected Dungeons ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.Dungeons = 1
----@field Raids ClubFinderSettingFlags 
+---@field protected Raids ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.Raids = 2
----@field PvP ClubFinderSettingFlags 
+---@field protected PvP ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.PvP = 3
----@field RP ClubFinderSettingFlags 
+---@field protected RP ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.RP = 4
----@field Social ClubFinderSettingFlags 
+---@field protected Social ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.Social = 5
----@field Small ClubFinderSettingFlags 
+---@field protected Small ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.Small = 6
----@field Medium ClubFinderSettingFlags 
+---@field protected Medium ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.Medium = 7
----@field Large ClubFinderSettingFlags 
+---@field protected Large ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.Large = 8
----@field Tank ClubFinderSettingFlags 
+---@field protected Tank ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.Tank = 9
----@field Healer ClubFinderSettingFlags 
+---@field protected Healer ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.Healer = 10
----@field Damage ClubFinderSettingFlags 
+---@field protected Damage ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.Damage = 11
----@field EnableListing ClubFinderSettingFlags 
+---@field protected EnableListing ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.EnableListing = 12
----@field MaxLevelOnly ClubFinderSettingFlags 
+---@field protected MaxLevelOnly ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.MaxLevelOnly = 13
----@field AutoAccept ClubFinderSettingFlags 
+---@field protected AutoAccept ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.AutoAccept = 14
----@field FactionHorde ClubFinderSettingFlags 
+---@field protected FactionHorde ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.FactionHorde = 15
----@field FactionAlliance ClubFinderSettingFlags 
+---@field protected FactionAlliance ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.FactionAlliance = 16
----@field FactionNeutral ClubFinderSettingFlags 
+---@field protected FactionNeutral ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.FactionNeutral = 17
----@field SortRelevance ClubFinderSettingFlags 
+---@field protected SortRelevance ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.SortRelevance = 18
----@field SortMemberCount ClubFinderSettingFlags 
+---@field protected SortMemberCount ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.SortMemberCount = 19
----@field SortNewest ClubFinderSettingFlags 
+---@field protected SortNewest ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.SortNewest = 20
----@field LanguageReserved1 ClubFinderSettingFlags 
+---@field protected LanguageReserved1 ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.LanguageReserved1 = 21
----@field LanguageReserved2 ClubFinderSettingFlags 
+---@field protected LanguageReserved2 ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.LanguageReserved2 = 22
----@field LanguageReserved3 ClubFinderSettingFlags 
+---@field protected LanguageReserved3 ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.LanguageReserved3 = 23
----@field LanguageReserved4 ClubFinderSettingFlags 
+---@field protected LanguageReserved4 ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.LanguageReserved4 = 24
----@field LanguageReserved5 ClubFinderSettingFlags 
+---@field protected LanguageReserved5 ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.LanguageReserved5 = 25
 
 ---@class PlayerClubRequestStatus
 Enum.PlayerClubRequestStatus = {}
----@field None PlayerClubRequestStatus 
+---@field protected None PlayerClubRequestStatus 
 Enum.PlayerClubRequestStatus.None = 0
----@field Pending PlayerClubRequestStatus 
+---@field protected Pending PlayerClubRequestStatus 
 Enum.PlayerClubRequestStatus.Pending = 1
----@field AutoApproved PlayerClubRequestStatus 
+---@field protected AutoApproved PlayerClubRequestStatus 
 Enum.PlayerClubRequestStatus.AutoApproved = 2
----@field Declined PlayerClubRequestStatus 
+---@field protected Declined PlayerClubRequestStatus 
 Enum.PlayerClubRequestStatus.Declined = 3
----@field Approved PlayerClubRequestStatus 
+---@field protected Approved PlayerClubRequestStatus 
 Enum.PlayerClubRequestStatus.Approved = 4
----@field Joined PlayerClubRequestStatus 
+---@field protected Joined PlayerClubRequestStatus 
 Enum.PlayerClubRequestStatus.Joined = 5
----@field JoinedAnother PlayerClubRequestStatus 
+---@field protected JoinedAnother PlayerClubRequestStatus 
 Enum.PlayerClubRequestStatus.JoinedAnother = 6
----@field Canceled PlayerClubRequestStatus 
+---@field protected Canceled PlayerClubRequestStatus 
 Enum.PlayerClubRequestStatus.Canceled = 7
 
 ---@class ClubFinderApplicantInfo

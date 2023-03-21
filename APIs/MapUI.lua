@@ -152,80 +152,80 @@ function C_Map.SetUserWaypoint(point) end
 
 ---@class MapCanvasPosition
 Enum.MapCanvasPosition = {}
----@field None MapCanvasPosition 
+---@field protected None MapCanvasPosition 
 Enum.MapCanvasPosition.None = 0
----@field BottomLeft MapCanvasPosition 
+---@field protected BottomLeft MapCanvasPosition 
 Enum.MapCanvasPosition.BottomLeft = 1
----@field BottomRight MapCanvasPosition 
+---@field protected BottomRight MapCanvasPosition 
 Enum.MapCanvasPosition.BottomRight = 2
----@field TopLeft MapCanvasPosition 
+---@field protected TopLeft MapCanvasPosition 
 Enum.MapCanvasPosition.TopLeft = 3
----@field TopRight MapCanvasPosition 
+---@field protected TopRight MapCanvasPosition 
 Enum.MapCanvasPosition.TopRight = 4
 
 ---@class UIMapFlag
 Enum.UIMapFlag = {}
----@field NoHighlight UIMapFlag 
+---@field protected NoHighlight UIMapFlag 
 Enum.UIMapFlag.NoHighlight = 1
----@field ShowOverlays UIMapFlag 
+---@field protected ShowOverlays UIMapFlag 
 Enum.UIMapFlag.ShowOverlays = 2
----@field ShowTaxiNodes UIMapFlag 
+---@field protected ShowTaxiNodes UIMapFlag 
 Enum.UIMapFlag.ShowTaxiNodes = 4
----@field GarrisonMap UIMapFlag 
+---@field protected GarrisonMap UIMapFlag 
 Enum.UIMapFlag.GarrisonMap = 8
----@field FallbackToParentMap UIMapFlag 
+---@field protected FallbackToParentMap UIMapFlag 
 Enum.UIMapFlag.FallbackToParentMap = 16
----@field NoHighlightTexture UIMapFlag 
+---@field protected NoHighlightTexture UIMapFlag 
 Enum.UIMapFlag.NoHighlightTexture = 32
----@field ShowTaskObjectives UIMapFlag 
+---@field protected ShowTaskObjectives UIMapFlag 
 Enum.UIMapFlag.ShowTaskObjectives = 64
----@field NoWorldPositions UIMapFlag 
+---@field protected NoWorldPositions UIMapFlag 
 Enum.UIMapFlag.NoWorldPositions = 128
----@field HideArchaeologyDigs UIMapFlag 
+---@field protected HideArchaeologyDigs UIMapFlag 
 Enum.UIMapFlag.HideArchaeologyDigs = 256
----@field Deprecated UIMapFlag 
+---@field protected Deprecated UIMapFlag 
 Enum.UIMapFlag.Deprecated = 512
----@field HideIcons UIMapFlag 
+---@field protected HideIcons UIMapFlag 
 Enum.UIMapFlag.HideIcons = 1024
----@field HideVignettes UIMapFlag 
+---@field protected HideVignettes UIMapFlag 
 Enum.UIMapFlag.HideVignettes = 2048
----@field ForceAllOverlayExplored UIMapFlag 
+---@field protected ForceAllOverlayExplored UIMapFlag 
 Enum.UIMapFlag.ForceAllOverlayExplored = 4096
----@field FlightMapShowZoomOut UIMapFlag 
+---@field protected FlightMapShowZoomOut UIMapFlag 
 Enum.UIMapFlag.FlightMapShowZoomOut = 8192
----@field FlightMapAutoZoom UIMapFlag 
+---@field protected FlightMapAutoZoom UIMapFlag 
 Enum.UIMapFlag.FlightMapAutoZoom = 16384
----@field ForceOnNavbar UIMapFlag 
+---@field protected ForceOnNavbar UIMapFlag 
 Enum.UIMapFlag.ForceOnNavbar = 32768
----@field AlwaysAllowUserWaypoints UIMapFlag 
+---@field protected AlwaysAllowUserWaypoints UIMapFlag 
 Enum.UIMapFlag.AlwaysAllowUserWaypoints = 65536
 
 ---@class UIMapSystem
 Enum.UIMapSystem = {}
----@field World UIMapSystem 
+---@field protected World UIMapSystem 
 Enum.UIMapSystem.World = 0
----@field Taxi UIMapSystem 
+---@field protected Taxi UIMapSystem 
 Enum.UIMapSystem.Taxi = 1
----@field Adventure UIMapSystem 
+---@field protected Adventure UIMapSystem 
 Enum.UIMapSystem.Adventure = 2
----@field Minimap UIMapSystem 
+---@field protected Minimap UIMapSystem 
 Enum.UIMapSystem.Minimap = 3
 
 ---@class UIMapType
 Enum.UIMapType = {}
----@field Cosmic UIMapType 
+---@field protected Cosmic UIMapType 
 Enum.UIMapType.Cosmic = 0
----@field World UIMapType 
+---@field protected World UIMapType 
 Enum.UIMapType.World = 1
----@field Continent UIMapType 
+---@field protected Continent UIMapType 
 Enum.UIMapType.Continent = 2
----@field Zone UIMapType 
+---@field protected Zone UIMapType 
 Enum.UIMapType.Zone = 3
----@field Dungeon UIMapType 
+---@field protected Dungeon UIMapType 
 Enum.UIMapType.Dungeon = 4
----@field Micro UIMapType 
+---@field protected Micro UIMapType 
 Enum.UIMapType.Micro = 5
----@field Orphan UIMapType 
+---@field protected Orphan UIMapType 
 Enum.UIMapType.Orphan = 6
 
 ---@class MapBannerInfo

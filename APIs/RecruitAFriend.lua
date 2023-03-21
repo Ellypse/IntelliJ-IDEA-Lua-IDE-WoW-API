@@ -42,39 +42,39 @@ function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 
 ---@class RafRecruitActivityState
 Enum.RafRecruitActivityState = {}
----@field Incomplete RafRecruitActivityState 
+---@field protected Incomplete RafRecruitActivityState 
 Enum.RafRecruitActivityState.Incomplete = 0
----@field Complete RafRecruitActivityState 
+---@field protected Complete RafRecruitActivityState 
 Enum.RafRecruitActivityState.Complete = 1
----@field RewardClaimed RafRecruitActivityState 
+---@field protected RewardClaimed RafRecruitActivityState 
 Enum.RafRecruitActivityState.RewardClaimed = 2
 
 ---@class RafRecruitSubStatus
 Enum.RafRecruitSubStatus = {}
----@field Trial RafRecruitSubStatus 
+---@field protected Trial RafRecruitSubStatus 
 Enum.RafRecruitSubStatus.Trial = 0
----@field Active RafRecruitSubStatus 
+---@field protected Active RafRecruitSubStatus 
 Enum.RafRecruitSubStatus.Active = 1
----@field Inactive RafRecruitSubStatus 
+---@field protected Inactive RafRecruitSubStatus 
 Enum.RafRecruitSubStatus.Inactive = 2
 
 ---@class RafRewardType
 Enum.RafRewardType = {}
----@field Pet RafRewardType 
+---@field protected Pet RafRewardType 
 Enum.RafRewardType.Pet = 0
----@field Mount RafRewardType 
+---@field protected Mount RafRewardType 
 Enum.RafRewardType.Mount = 1
----@field Appearance RafRewardType 
+---@field protected Appearance RafRewardType 
 Enum.RafRewardType.Appearance = 2
----@field Title RafRewardType 
+---@field protected Title RafRewardType 
 Enum.RafRewardType.Title = 3
----@field GameTime RafRewardType 
+---@field protected GameTime RafRewardType 
 Enum.RafRewardType.GameTime = 4
----@field AppearanceSet RafRewardType 
+---@field protected AppearanceSet RafRewardType 
 Enum.RafRewardType.AppearanceSet = 5
----@field Illusion RafRewardType 
+---@field protected Illusion RafRewardType 
 Enum.RafRewardType.Illusion = 6
----@field Invalid RafRewardType 
+---@field protected Invalid RafRewardType 
 Enum.RafRewardType.Invalid = 7
 
 ---@class RafAppearanceInfo

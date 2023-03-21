@@ -86,13 +86,13 @@ function C_ClassTalents.UpdateLastSelectedSavedConfigID(specID, configID) end
 
 ---@class LoadConfigResult
 Enum.LoadConfigResult = {}
----@field Error LoadConfigResult 
+---@field protected Error LoadConfigResult 
 Enum.LoadConfigResult.Error = 0
----@field NoChangesNecessary LoadConfigResult 
+---@field protected NoChangesNecessary LoadConfigResult 
 Enum.LoadConfigResult.NoChangesNecessary = 1
----@field LoadInProgress LoadConfigResult 
+---@field protected LoadInProgress LoadConfigResult 
 Enum.LoadConfigResult.LoadInProgress = 2
----@field Ready LoadConfigResult 
+---@field protected Ready LoadConfigResult 
 Enum.LoadConfigResult.Ready = 3
 
 ---@class ImportLoadoutEntryInfo

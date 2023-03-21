@@ -61,11 +61,11 @@ function C_WeeklyRewards.ShouldShowRetirementMessage() end
 
 ---@class ConquestProgressBarDisplayType
 Enum.ConquestProgressBarDisplayType = {}
----@field FirstChest ConquestProgressBarDisplayType 
+---@field protected FirstChest ConquestProgressBarDisplayType 
 Enum.ConquestProgressBarDisplayType.FirstChest = 0
----@field AdditionalChest ConquestProgressBarDisplayType 
+---@field protected AdditionalChest ConquestProgressBarDisplayType 
 Enum.ConquestProgressBarDisplayType.AdditionalChest = 1
----@field Seasonal ConquestProgressBarDisplayType 
+---@field protected Seasonal ConquestProgressBarDisplayType 
 Enum.ConquestProgressBarDisplayType.Seasonal = 2
 
 ---@class ConquestWeeklyProgress

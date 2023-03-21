@@ -3,8 +3,8 @@ C_ClientScene = {}
 
 ---@class ClientSceneType
 Enum.ClientSceneType = {}
----@field DefaultSceneType ClientSceneType 
+---@field protected DefaultSceneType ClientSceneType 
 Enum.ClientSceneType.DefaultSceneType = 0
----@field MinigameSceneType ClientSceneType 
+---@field protected MinigameSceneType ClientSceneType 
 Enum.ClientSceneType.MinigameSceneType = 1
 

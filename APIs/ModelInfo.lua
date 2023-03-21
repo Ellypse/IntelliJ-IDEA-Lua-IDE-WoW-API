@@ -37,61 +37,61 @@ function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
 ---@class ItemTryOnReason
 Enum.ItemTryOnReason = {}
----@field Success ItemTryOnReason 
+---@field protected Success ItemTryOnReason 
 Enum.ItemTryOnReason.Success = 0
----@field WrongRace ItemTryOnReason 
+---@field protected WrongRace ItemTryOnReason 
 Enum.ItemTryOnReason.WrongRace = 1
----@field NotEquippable ItemTryOnReason 
+---@field protected NotEquippable ItemTryOnReason 
 Enum.ItemTryOnReason.NotEquippable = 2
----@field DataPending ItemTryOnReason 
+---@field protected DataPending ItemTryOnReason 
 Enum.ItemTryOnReason.DataPending = 3
 
 ---@class ModelSceneSetting
 Enum.ModelSceneSetting = {}
----@field AlignLightToOrbitDelta ModelSceneSetting 
+---@field protected AlignLightToOrbitDelta ModelSceneSetting 
 Enum.ModelSceneSetting.AlignLightToOrbitDelta = 1
 
 ---@class ModelSceneType
 Enum.ModelSceneType = {}
----@field MountJournal ModelSceneType 
+---@field protected MountJournal ModelSceneType 
 Enum.ModelSceneType.MountJournal = 0
----@field PetJournalCard ModelSceneType 
+---@field protected PetJournalCard ModelSceneType 
 Enum.ModelSceneType.PetJournalCard = 1
----@field ShopCard ModelSceneType 
+---@field protected ShopCard ModelSceneType 
 Enum.ModelSceneType.ShopCard = 2
----@field EncounterJournal ModelSceneType 
+---@field protected EncounterJournal ModelSceneType 
 Enum.ModelSceneType.EncounterJournal = 3
----@field PetJournalLoadout ModelSceneType 
+---@field protected PetJournalLoadout ModelSceneType 
 Enum.ModelSceneType.PetJournalLoadout = 4
----@field ArtifactTier2 ModelSceneType 
+---@field protected ArtifactTier2 ModelSceneType 
 Enum.ModelSceneType.ArtifactTier2 = 5
----@field ArtifactTier2ForgingScene ModelSceneType 
+---@field protected ArtifactTier2ForgingScene ModelSceneType 
 Enum.ModelSceneType.ArtifactTier2ForgingScene = 6
----@field ArtifactTier2SlamEffect ModelSceneType 
+---@field protected ArtifactTier2SlamEffect ModelSceneType 
 Enum.ModelSceneType.ArtifactTier2SlamEffect = 7
----@field CommentatorVictoryFanfare ModelSceneType 
+---@field protected CommentatorVictoryFanfare ModelSceneType 
 Enum.ModelSceneType.CommentatorVictoryFanfare = 8
----@field ArtifactRelicTalentEffect ModelSceneType 
+---@field protected ArtifactRelicTalentEffect ModelSceneType 
 Enum.ModelSceneType.ArtifactRelicTalentEffect = 9
----@field PvPWarModeOrb ModelSceneType 
+---@field protected PvPWarModeOrb ModelSceneType 
 Enum.ModelSceneType.PvPWarModeOrb = 10
----@field PvPWarModeFire ModelSceneType 
+---@field protected PvPWarModeFire ModelSceneType 
 Enum.ModelSceneType.PvPWarModeFire = 11
----@field PartyPose ModelSceneType 
+---@field protected PartyPose ModelSceneType 
 Enum.ModelSceneType.PartyPose = 12
----@field AzeriteItemLevelUpToast ModelSceneType 
+---@field protected AzeriteItemLevelUpToast ModelSceneType 
 Enum.ModelSceneType.AzeriteItemLevelUpToast = 13
----@field AzeritePowers ModelSceneType 
+---@field protected AzeritePowers ModelSceneType 
 Enum.ModelSceneType.AzeritePowers = 14
----@field AzeriteRewardGlow ModelSceneType 
+---@field protected AzeriteRewardGlow ModelSceneType 
 Enum.ModelSceneType.AzeriteRewardGlow = 15
----@field HeartOfAzeroth ModelSceneType 
+---@field protected HeartOfAzeroth ModelSceneType 
 Enum.ModelSceneType.HeartOfAzeroth = 16
----@field WorldMapThreat ModelSceneType 
+---@field protected WorldMapThreat ModelSceneType 
 Enum.ModelSceneType.WorldMapThreat = 17
----@field Soulbinds ModelSceneType 
+---@field protected Soulbinds ModelSceneType 
 Enum.ModelSceneType.Soulbinds = 18
----@field JailersTowerAnimaGlow ModelSceneType 
+---@field protected JailersTowerAnimaGlow ModelSceneType 
 Enum.ModelSceneType.JailersTowerAnimaGlow = 19
 
 ---@class UIModelSceneActorDisplayInfo

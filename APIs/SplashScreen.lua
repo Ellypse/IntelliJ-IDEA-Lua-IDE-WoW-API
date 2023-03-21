@@ -11,9 +11,9 @@ function C_SplashScreen.RequestLatestSplashScreen(fromGameMenu) end
 
 ---@class SplashScreenType
 Enum.SplashScreenType = {}
----@field WhatsNew SplashScreenType 
+---@field protected WhatsNew SplashScreenType 
 Enum.SplashScreenType.WhatsNew = 0
----@field SeasonRollOver SplashScreenType 
+---@field protected SeasonRollOver SplashScreenType 
 Enum.SplashScreenType.SeasonRollOver = 1
 
 ---@class SplashScreenInfo

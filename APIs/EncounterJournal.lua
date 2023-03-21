@@ -51,37 +51,37 @@ function C_EncounterJournal.SetSlotFilter(filterSlot) end
 
 ---@class ItemSlotFilterType
 Enum.ItemSlotFilterType = {}
----@field Head ItemSlotFilterType 
+---@field protected Head ItemSlotFilterType 
 Enum.ItemSlotFilterType.Head = 0
----@field Neck ItemSlotFilterType 
+---@field protected Neck ItemSlotFilterType 
 Enum.ItemSlotFilterType.Neck = 1
----@field Shoulder ItemSlotFilterType 
+---@field protected Shoulder ItemSlotFilterType 
 Enum.ItemSlotFilterType.Shoulder = 2
----@field Cloak ItemSlotFilterType 
+---@field protected Cloak ItemSlotFilterType 
 Enum.ItemSlotFilterType.Cloak = 3
----@field Chest ItemSlotFilterType 
+---@field protected Chest ItemSlotFilterType 
 Enum.ItemSlotFilterType.Chest = 4
----@field Wrist ItemSlotFilterType 
+---@field protected Wrist ItemSlotFilterType 
 Enum.ItemSlotFilterType.Wrist = 5
----@field Hand ItemSlotFilterType 
+---@field protected Hand ItemSlotFilterType 
 Enum.ItemSlotFilterType.Hand = 6
----@field Waist ItemSlotFilterType 
+---@field protected Waist ItemSlotFilterType 
 Enum.ItemSlotFilterType.Waist = 7
----@field Legs ItemSlotFilterType 
+---@field protected Legs ItemSlotFilterType 
 Enum.ItemSlotFilterType.Legs = 8
----@field Feet ItemSlotFilterType 
+---@field protected Feet ItemSlotFilterType 
 Enum.ItemSlotFilterType.Feet = 9
----@field MainHand ItemSlotFilterType 
+---@field protected MainHand ItemSlotFilterType 
 Enum.ItemSlotFilterType.MainHand = 10
----@field OffHand ItemSlotFilterType 
+---@field protected OffHand ItemSlotFilterType 
 Enum.ItemSlotFilterType.OffHand = 11
----@field Finger ItemSlotFilterType 
+---@field protected Finger ItemSlotFilterType 
 Enum.ItemSlotFilterType.Finger = 12
----@field Trinket ItemSlotFilterType 
+---@field protected Trinket ItemSlotFilterType 
 Enum.ItemSlotFilterType.Trinket = 13
----@field Other ItemSlotFilterType 
+---@field protected Other ItemSlotFilterType 
 Enum.ItemSlotFilterType.Other = 14
----@field NoFilter ItemSlotFilterType 
+---@field protected NoFilter ItemSlotFilterType 
 Enum.ItemSlotFilterType.NoFilter = 15
 
 ---@class DungeonEntranceMapInfo
