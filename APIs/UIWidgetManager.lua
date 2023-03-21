@@ -140,21 +140,21 @@ function C_UIWidgetManager.SetProcessingUnitGuid(unit) end
 function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 
 ---@class Enum.CaptureBarWidgetFillDirectionType
-local Enum.CaptureBarWidgetFillDirectionType = {}
+Enum.CaptureBarWidgetFillDirectionType = {}
 ---@field RightToLeft CaptureBarWidgetFillDirectionType 
 Enum.CaptureBarWidgetFillDirectionType.RightToLeft = 0
 ---@field LeftToRight CaptureBarWidgetFillDirectionType 
 Enum.CaptureBarWidgetFillDirectionType.LeftToRight = 1
 
 ---@class Enum.CaptureBarWidgetGlowAnimType
-local Enum.CaptureBarWidgetGlowAnimType = {}
+Enum.CaptureBarWidgetGlowAnimType = {}
 ---@field None CaptureBarWidgetGlowAnimType 
 Enum.CaptureBarWidgetGlowAnimType.None = 0
 ---@field Pulse CaptureBarWidgetGlowAnimType 
 Enum.CaptureBarWidgetGlowAnimType.Pulse = 1
 
 ---@class Enum.IconAndTextWidgetState
-local Enum.IconAndTextWidgetState = {}
+Enum.IconAndTextWidgetState = {}
 ---@field Hidden IconAndTextWidgetState 
 Enum.IconAndTextWidgetState.Hidden = 0
 ---@field Shown IconAndTextWidgetState 
@@ -165,7 +165,7 @@ Enum.IconAndTextWidgetState.ShownWithDynamicIconFlashing = 2
 Enum.IconAndTextWidgetState.ShownWithDynamicIconNotFlashing = 3
 
 ---@class Enum.IconState
-local Enum.IconState = {}
+Enum.IconState = {}
 ---@field Hidden IconState 
 Enum.IconState.Hidden = 0
 ---@field ShowState1 IconState 
@@ -174,7 +174,7 @@ Enum.IconState.ShowState1 = 1
 Enum.IconState.ShowState2 = 2
 
 ---@class Enum.SpellDisplayBorderColor
-local Enum.SpellDisplayBorderColor = {}
+Enum.SpellDisplayBorderColor = {}
 ---@field None SpellDisplayBorderColor 
 Enum.SpellDisplayBorderColor.None = 0
 ---@field Black SpellDisplayBorderColor 
@@ -195,7 +195,7 @@ Enum.SpellDisplayBorderColor.Green = 7
 Enum.SpellDisplayBorderColor.Blue = 8
 
 ---@class Enum.SpellDisplayIconDisplayType
-local Enum.SpellDisplayIconDisplayType = {}
+Enum.SpellDisplayIconDisplayType = {}
 ---@field Buff SpellDisplayIconDisplayType 
 Enum.SpellDisplayIconDisplayType.Buff = 0
 ---@field Debuff SpellDisplayIconDisplayType 
@@ -206,7 +206,7 @@ Enum.SpellDisplayIconDisplayType.Circular = 2
 Enum.SpellDisplayIconDisplayType.NoBorder = 3
 
 ---@class Enum.SpellDisplayIconSizeType
-local Enum.SpellDisplayIconSizeType = {}
+Enum.SpellDisplayIconSizeType = {}
 ---@field Small SpellDisplayIconSizeType 
 Enum.SpellDisplayIconSizeType.Small = 0
 ---@field Medium SpellDisplayIconSizeType 
@@ -215,14 +215,14 @@ Enum.SpellDisplayIconSizeType.Medium = 1
 Enum.SpellDisplayIconSizeType.Large = 2
 
 ---@class Enum.SpellDisplayTextShownStateType
-local Enum.SpellDisplayTextShownStateType = {}
+Enum.SpellDisplayTextShownStateType = {}
 ---@field Shown SpellDisplayTextShownStateType 
 Enum.SpellDisplayTextShownStateType.Shown = 0
 ---@field Hidden SpellDisplayTextShownStateType 
 Enum.SpellDisplayTextShownStateType.Hidden = 1
 
 ---@class Enum.StatusBarColorTintValue
-local Enum.StatusBarColorTintValue = {}
+Enum.StatusBarColorTintValue = {}
 ---@field None StatusBarColorTintValue 
 Enum.StatusBarColorTintValue.None = 0
 ---@field Black StatusBarColorTintValue 
@@ -243,7 +243,7 @@ Enum.StatusBarColorTintValue.Green = 7
 Enum.StatusBarColorTintValue.Blue = 8
 
 ---@class Enum.StatusBarOverrideBarTextShownType
-local Enum.StatusBarOverrideBarTextShownType = {}
+Enum.StatusBarOverrideBarTextShownType = {}
 ---@field Never StatusBarOverrideBarTextShownType 
 Enum.StatusBarOverrideBarTextShownType.Never = 0
 ---@field Always StatusBarOverrideBarTextShownType 
@@ -254,7 +254,7 @@ Enum.StatusBarOverrideBarTextShownType.OnlyOnMouseover = 2
 Enum.StatusBarOverrideBarTextShownType.OnlyNotOnMouseover = 3
 
 ---@class Enum.StatusBarValueTextType
-local Enum.StatusBarValueTextType = {}
+Enum.StatusBarValueTextType = {}
 ---@field Hidden StatusBarValueTextType 
 Enum.StatusBarValueTextType.Hidden = 0
 ---@field Percentage StatusBarValueTextType 
@@ -271,19 +271,19 @@ Enum.StatusBarValueTextType.ValueOverMax = 5
 Enum.StatusBarValueTextType.ValueOverMaxNormalized = 6
 
 ---@class Enum.UIWidgetBlendModeType
-local Enum.UIWidgetBlendModeType = {}
+Enum.UIWidgetBlendModeType = {}
 ---@field Opaque UIWidgetBlendModeType 
 Enum.UIWidgetBlendModeType.Opaque = 0
 ---@field Additive UIWidgetBlendModeType 
 Enum.UIWidgetBlendModeType.Additive = 1
 
 ---@class Enum.UIWidgetFlag
-local Enum.UIWidgetFlag = {}
+Enum.UIWidgetFlag = {}
 ---@field UniversalWidget UIWidgetFlag 
 Enum.UIWidgetFlag.UniversalWidget = 1
 
 ---@class Enum.UIWidgetFontType
-local Enum.UIWidgetFontType = {}
+Enum.UIWidgetFontType = {}
 ---@field Normal UIWidgetFontType 
 Enum.UIWidgetFontType.Normal = 0
 ---@field Shadow UIWidgetFontType 
@@ -292,7 +292,7 @@ Enum.UIWidgetFontType.Shadow = 1
 Enum.UIWidgetFontType.Outline = 2
 
 ---@class Enum.UIWidgetModelSceneLayer
-local Enum.UIWidgetModelSceneLayer = {}
+Enum.UIWidgetModelSceneLayer = {}
 ---@field None UIWidgetModelSceneLayer 
 Enum.UIWidgetModelSceneLayer.None = 0
 ---@field Front UIWidgetModelSceneLayer 
@@ -301,14 +301,14 @@ Enum.UIWidgetModelSceneLayer.Front = 1
 Enum.UIWidgetModelSceneLayer.Back = 2
 
 ---@class Enum.UIWidgetMotionType
-local Enum.UIWidgetMotionType = {}
+Enum.UIWidgetMotionType = {}
 ---@field Instant UIWidgetMotionType 
 Enum.UIWidgetMotionType.Instant = 0
 ---@field Smooth UIWidgetMotionType 
 Enum.UIWidgetMotionType.Smooth = 1
 
 ---@class Enum.UIWidgetTextSizeType
-local Enum.UIWidgetTextSizeType = {}
+Enum.UIWidgetTextSizeType = {}
 ---@field Small12Pt UIWidgetTextSizeType 
 Enum.UIWidgetTextSizeType.Small12Pt = 0
 ---@field Medium16Pt UIWidgetTextSizeType 
@@ -329,7 +329,7 @@ Enum.UIWidgetTextSizeType.Medium18Pt = 7
 Enum.UIWidgetTextSizeType.Large20Pt = 8
 
 ---@class Enum.UIWidgetTextureAndTextSizeType
-local Enum.UIWidgetTextureAndTextSizeType = {}
+Enum.UIWidgetTextureAndTextSizeType = {}
 ---@field Small UIWidgetTextureAndTextSizeType 
 Enum.UIWidgetTextureAndTextSizeType.Small = 0
 ---@field Medium UIWidgetTextureAndTextSizeType 
@@ -342,7 +342,7 @@ Enum.UIWidgetTextureAndTextSizeType.Huge = 3
 Enum.UIWidgetTextureAndTextSizeType.Standard = 4
 
 ---@class Enum.UIWidgetTooltipLocation
-local Enum.UIWidgetTooltipLocation = {}
+Enum.UIWidgetTooltipLocation = {}
 ---@field Default UIWidgetTooltipLocation 
 Enum.UIWidgetTooltipLocation.Default = 0
 ---@field BottomLeft UIWidgetTooltipLocation 
@@ -363,21 +363,21 @@ Enum.UIWidgetTooltipLocation.BottomRight = 7
 Enum.UIWidgetTooltipLocation.Bottom = 8
 
 ---@class Enum.WidgetAnimationType
-local Enum.WidgetAnimationType = {}
+Enum.WidgetAnimationType = {}
 ---@field None WidgetAnimationType 
 Enum.WidgetAnimationType.None = 0
 ---@field Fade WidgetAnimationType 
 Enum.WidgetAnimationType.Fade = 1
 
 ---@class Enum.WidgetCurrencyClass
-local Enum.WidgetCurrencyClass = {}
+Enum.WidgetCurrencyClass = {}
 ---@field Currency WidgetCurrencyClass 
 Enum.WidgetCurrencyClass.Currency = 0
 ---@field Item WidgetCurrencyClass 
 Enum.WidgetCurrencyClass.Item = 1
 
 ---@class Enum.WidgetEnabledState
-local Enum.WidgetEnabledState = {}
+Enum.WidgetEnabledState = {}
 ---@field Disabled WidgetEnabledState 
 Enum.WidgetEnabledState.Disabled = 0
 ---@field Enabled WidgetEnabledState 
@@ -394,14 +394,14 @@ Enum.WidgetEnabledState.Gold = 5
 Enum.WidgetEnabledState.Black = 6
 
 ---@class Enum.WidgetShownState
-local Enum.WidgetShownState = {}
+Enum.WidgetShownState = {}
 ---@field Hidden WidgetShownState 
 Enum.WidgetShownState.Hidden = 0
 ---@field Shown WidgetShownState 
 Enum.WidgetShownState.Shown = 1
 
 ---@class Enum.WidgetTextHorizontalAlignmentType
-local Enum.WidgetTextHorizontalAlignmentType = {}
+Enum.WidgetTextHorizontalAlignmentType = {}
 ---@field Left WidgetTextHorizontalAlignmentType 
 Enum.WidgetTextHorizontalAlignmentType.Left = 0
 ---@field Center WidgetTextHorizontalAlignmentType 
@@ -410,7 +410,7 @@ Enum.WidgetTextHorizontalAlignmentType.Center = 1
 Enum.WidgetTextHorizontalAlignmentType.Right = 2
 
 ---@class Enum.WidgetUnitPowerBarFlashMomentType
-local Enum.WidgetUnitPowerBarFlashMomentType = {}
+Enum.WidgetUnitPowerBarFlashMomentType = {}
 ---@field FlashWhenMax WidgetUnitPowerBarFlashMomentType 
 Enum.WidgetUnitPowerBarFlashMomentType.FlashWhenMax = 0
 ---@field FlashWhenMin WidgetUnitPowerBarFlashMomentType 
@@ -419,14 +419,14 @@ Enum.WidgetUnitPowerBarFlashMomentType.FlashWhenMin = 1
 Enum.WidgetUnitPowerBarFlashMomentType.NeverFlash = 2
 
 ---@class Enum.ZoneControlActiveState
-local Enum.ZoneControlActiveState = {}
+Enum.ZoneControlActiveState = {}
 ---@field Inactive ZoneControlActiveState 
 Enum.ZoneControlActiveState.Inactive = 0
 ---@field Active ZoneControlActiveState 
 Enum.ZoneControlActiveState.Active = 1
 
 ---@class Enum.ZoneControlDangerFlashType
-local Enum.ZoneControlDangerFlashType = {}
+Enum.ZoneControlDangerFlashType = {}
 ---@field ShowOnGoodStates ZoneControlDangerFlashType 
 Enum.ZoneControlDangerFlashType.ShowOnGoodStates = 0
 ---@field ShowOnBadStates ZoneControlDangerFlashType 
@@ -437,7 +437,7 @@ Enum.ZoneControlDangerFlashType.ShowOnBoth = 2
 Enum.ZoneControlDangerFlashType.ShowOnNeither = 3
 
 ---@class Enum.ZoneControlFillType
-local Enum.ZoneControlFillType = {}
+Enum.ZoneControlFillType = {}
 ---@field SingleFillClockwise ZoneControlFillType 
 Enum.ZoneControlFillType.SingleFillClockwise = 0
 ---@field SingleFillCounterClockwise ZoneControlFillType 
@@ -448,14 +448,14 @@ Enum.ZoneControlFillType.DoubleFillClockwise = 2
 Enum.ZoneControlFillType.DoubleFillCounterClockwise = 3
 
 ---@class Enum.ZoneControlLeadingEdgeType
-local Enum.ZoneControlLeadingEdgeType = {}
+Enum.ZoneControlLeadingEdgeType = {}
 ---@field NoLeadingEdge ZoneControlLeadingEdgeType 
 Enum.ZoneControlLeadingEdgeType.NoLeadingEdge = 0
 ---@field UseLeadingEdge ZoneControlLeadingEdgeType 
 Enum.ZoneControlLeadingEdgeType.UseLeadingEdge = 1
 
 ---@class Enum.ZoneControlMode
-local Enum.ZoneControlMode = {}
+Enum.ZoneControlMode = {}
 ---@field BothStatesAreGood ZoneControlMode 
 Enum.ZoneControlMode.BothStatesAreGood = 0
 ---@field State1IsGood ZoneControlMode 
@@ -466,7 +466,7 @@ Enum.ZoneControlMode.State2IsGood = 2
 Enum.ZoneControlMode.NeitherStateIsGood = 3
 
 ---@class Enum.ZoneControlState
-local Enum.ZoneControlState = {}
+Enum.ZoneControlState = {}
 ---@field State1 ZoneControlState 
 Enum.ZoneControlState.State1 = 0
 ---@field State2 ZoneControlState 

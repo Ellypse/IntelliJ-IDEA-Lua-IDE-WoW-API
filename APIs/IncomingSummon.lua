@@ -10,7 +10,7 @@ function C_IncomingSummon.HasIncomingSummon(unit) end
 function C_IncomingSummon.IncomingSummonStatus(unit) end
 
 ---@class Enum.SummonStatus
-local Enum.SummonStatus = {}
+Enum.SummonStatus = {}
 ---@field None SummonStatus 
 Enum.SummonStatus.None = 0
 ---@field Pending SummonStatus 

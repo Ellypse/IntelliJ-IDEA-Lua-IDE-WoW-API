@@ -21,7 +21,7 @@ function C_VideoOptions.GetGxAdapterInfo() end
 function C_VideoOptions.SetGameWindowSize(x, y) end
 
 ---@class Enum.GraphicsValidationResult
-local Enum.GraphicsValidationResult = {}
+Enum.GraphicsValidationResult = {}
 ---@field Supported GraphicsValidationResult 
 Enum.GraphicsValidationResult.Supported = 0
 ---@field Illegal GraphicsValidationResult 

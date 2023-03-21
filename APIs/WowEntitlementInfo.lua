@@ -2,7 +2,7 @@
 C_WowEntitlementInfo = {}
 
 ---@class Enum.WoWEntitlementType
-local Enum.WoWEntitlementType = {}
+Enum.WoWEntitlementType = {}
 ---@field Item WoWEntitlementType 
 Enum.WoWEntitlementType.Item = 0
 ---@field Mount WoWEntitlementType 

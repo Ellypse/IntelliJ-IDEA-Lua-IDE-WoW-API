@@ -13,7 +13,7 @@ function C_ScenarioInfo.GetScenarioInfo() end
 function C_ScenarioInfo.GetScenarioStepInfo(scenarioStepID) end
 
 ---@class Enum.JailersTowerType
-local Enum.JailersTowerType = {}
+Enum.JailersTowerType = {}
 ---@field TwistingCorridors JailersTowerType 
 Enum.JailersTowerType.TwistingCorridors = 0
 ---@field SkoldusHalls JailersTowerType 

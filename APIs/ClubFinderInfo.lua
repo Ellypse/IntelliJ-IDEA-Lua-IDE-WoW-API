@@ -196,7 +196,7 @@ function C_ClubFinder.SetRecruitmentSettings(index, checked) end
 function C_ClubFinder.ShouldShowClubFinder() end
 
 ---@class Enum.ClubFinderApplicationUpdateType
-local Enum.ClubFinderApplicationUpdateType = {}
+Enum.ClubFinderApplicationUpdateType = {}
 ---@field None ClubFinderApplicationUpdateType 
 Enum.ClubFinderApplicationUpdateType.None = 0
 ---@field AcceptInvite ClubFinderApplicationUpdateType 
@@ -207,7 +207,7 @@ Enum.ClubFinderApplicationUpdateType.DeclineInvite = 2
 Enum.ClubFinderApplicationUpdateType.Cancel = 3
 
 ---@class Enum.ClubFinderClubPostingStatusFlags
-local Enum.ClubFinderClubPostingStatusFlags = {}
+Enum.ClubFinderClubPostingStatusFlags = {}
 ---@field None ClubFinderClubPostingStatusFlags 
 Enum.ClubFinderClubPostingStatusFlags.None = 0
 ---@field NeedsCacheUpdate ClubFinderClubPostingStatusFlags 
@@ -228,7 +228,7 @@ Enum.ClubFinderClubPostingStatusFlags.PendingDelete = 7
 Enum.ClubFinderClubPostingStatusFlags.PostDelisted = 8
 
 ---@class Enum.ClubFinderDisableReason
-local Enum.ClubFinderDisableReason = {}
+Enum.ClubFinderDisableReason = {}
 ---@field Muted ClubFinderDisableReason 
 Enum.ClubFinderDisableReason.Muted = 0
 ---@field Silenced ClubFinderDisableReason 
@@ -237,7 +237,7 @@ Enum.ClubFinderDisableReason.Silenced = 1
 Enum.ClubFinderDisableReason.VeteranTrial = 2
 
 ---@class Enum.ClubFinderPostingReportType
-local Enum.ClubFinderPostingReportType = {}
+Enum.ClubFinderPostingReportType = {}
 ---@field PostersName ClubFinderPostingReportType 
 Enum.ClubFinderPostingReportType.PostersName = 0
 ---@field ClubName ClubFinderPostingReportType 
@@ -250,7 +250,7 @@ Enum.ClubFinderPostingReportType.ApplicantsName = 3
 Enum.ClubFinderPostingReportType.JoinNote = 4
 
 ---@class Enum.ClubFinderRequestType
-local Enum.ClubFinderRequestType = {}
+Enum.ClubFinderRequestType = {}
 ---@field None ClubFinderRequestType 
 Enum.ClubFinderRequestType.None = 0
 ---@field Guild ClubFinderRequestType 
@@ -261,7 +261,7 @@ Enum.ClubFinderRequestType.Community = 2
 Enum.ClubFinderRequestType.All = 3
 
 ---@class Enum.ClubFinderSettingFlags
-local Enum.ClubFinderSettingFlags = {}
+Enum.ClubFinderSettingFlags = {}
 ---@field None ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags.None = 0
 ---@field Dungeons ClubFinderSettingFlags 
@@ -316,7 +316,7 @@ Enum.ClubFinderSettingFlags.LanguageReserved4 = 24
 Enum.ClubFinderSettingFlags.LanguageReserved5 = 25
 
 ---@class Enum.PlayerClubRequestStatus
-local Enum.PlayerClubRequestStatus = {}
+Enum.PlayerClubRequestStatus = {}
 ---@field None PlayerClubRequestStatus 
 Enum.PlayerClubRequestStatus.None = 0
 ---@field Pending PlayerClubRequestStatus 

@@ -151,7 +151,7 @@ function C_Map.RequestPreloadMap(uiMapID) end
 function C_Map.SetUserWaypoint(point) end
 
 ---@class Enum.MapCanvasPosition
-local Enum.MapCanvasPosition = {}
+Enum.MapCanvasPosition = {}
 ---@field None MapCanvasPosition 
 Enum.MapCanvasPosition.None = 0
 ---@field BottomLeft MapCanvasPosition 
@@ -164,7 +164,7 @@ Enum.MapCanvasPosition.TopLeft = 3
 Enum.MapCanvasPosition.TopRight = 4
 
 ---@class Enum.UIMapFlag
-local Enum.UIMapFlag = {}
+Enum.UIMapFlag = {}
 ---@field NoHighlight UIMapFlag 
 Enum.UIMapFlag.NoHighlight = 1
 ---@field ShowOverlays UIMapFlag 
@@ -201,7 +201,7 @@ Enum.UIMapFlag.ForceOnNavbar = 32768
 Enum.UIMapFlag.AlwaysAllowUserWaypoints = 65536
 
 ---@class Enum.UIMapSystem
-local Enum.UIMapSystem = {}
+Enum.UIMapSystem = {}
 ---@field World UIMapSystem 
 Enum.UIMapSystem.World = 0
 ---@field Taxi UIMapSystem 
@@ -212,7 +212,7 @@ Enum.UIMapSystem.Adventure = 2
 Enum.UIMapSystem.Minimap = 3
 
 ---@class Enum.UIMapType
-local Enum.UIMapType = {}
+Enum.UIMapType = {}
 ---@field Cosmic UIMapType 
 Enum.UIMapType.Cosmic = 0
 ---@field World UIMapType 

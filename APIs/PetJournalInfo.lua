@@ -59,7 +59,7 @@ function C_PetJournal.SetDefaultFilters() end
 function C_PetJournal.SpellTargetBattlePet(battlePetGUID) end
 
 ---@class Enum.PetJournalError
-local Enum.PetJournalError = {}
+Enum.PetJournalError = {}
 ---@field None PetJournalError 
 Enum.PetJournalError.None = 0
 ---@field PetIsDead PetJournalError 

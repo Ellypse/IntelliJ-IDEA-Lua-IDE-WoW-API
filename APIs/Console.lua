@@ -18,7 +18,7 @@ function C_Console.PrintAllMatchingCommands(partialCommandText) end
 function C_Console.SetFontHeight(fontHeightInPixels) end
 
 ---@class Enum.ConsoleCategory
-local Enum.ConsoleCategory = {}
+Enum.ConsoleCategory = {}
 ---@field Debug ConsoleCategory 
 Enum.ConsoleCategory.Debug = 0
 ---@field Graphics ConsoleCategory 
@@ -43,7 +43,7 @@ Enum.ConsoleCategory.Reveal = 9
 Enum.ConsoleCategory.None = 10
 
 ---@class Enum.ConsoleColorType
-local Enum.ConsoleColorType = {}
+Enum.ConsoleColorType = {}
 ---@field DefaultColor ConsoleColorType 
 Enum.ConsoleColorType.DefaultColor = 0
 ---@field InputColor ConsoleColorType 
@@ -70,7 +70,7 @@ Enum.ConsoleColorType.PrivateColor = 10
 Enum.ConsoleColorType.DefaultGreen = 11
 
 ---@class Enum.ConsoleCommandType
-local Enum.ConsoleCommandType = {}
+Enum.ConsoleCommandType = {}
 ---@field Cvar ConsoleCommandType 
 Enum.ConsoleCommandType.Cvar = 0
 ---@field Command ConsoleCommandType 

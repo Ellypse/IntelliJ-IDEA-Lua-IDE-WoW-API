@@ -50,7 +50,7 @@ function C_EncounterJournal.SetPreviewPvpTier(tier) end
 function C_EncounterJournal.SetSlotFilter(filterSlot) end
 
 ---@class Enum.ItemSlotFilterType
-local Enum.ItemSlotFilterType = {}
+Enum.ItemSlotFilterType = {}
 ---@field Head ItemSlotFilterType 
 Enum.ItemSlotFilterType.Head = 0
 ---@field Neck ItemSlotFilterType 

@@ -11,7 +11,7 @@ function C_EventToastManager.GetNextToastToDisplay() end
 function C_EventToastManager.RemoveCurrentToast() end
 
 ---@class Enum.EventToastDisplayType
-local Enum.EventToastDisplayType = {}
+Enum.EventToastDisplayType = {}
 ---@field NormalSingleLine EventToastDisplayType 
 Enum.EventToastDisplayType.NormalSingleLine = 0
 ---@field NormalBlockText EventToastDisplayType 
@@ -32,7 +32,7 @@ Enum.EventToastDisplayType.ChallengeMode = 7
 Enum.EventToastDisplayType.ScenarioClickExpand = 8
 
 ---@class Enum.EventToastEventType
-local Enum.EventToastEventType = {}
+Enum.EventToastEventType = {}
 ---@field LevelUp EventToastEventType 
 Enum.EventToastEventType.LevelUp = 0
 ---@field LevelUpSpell EventToastEventType 

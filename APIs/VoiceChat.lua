@@ -268,21 +268,21 @@ function C_VoiceChat.ToggleMemberMuted(playerLocation) end
 function C_VoiceChat.ToggleMuted() end
 
 ---@class Enum.CommunicationMode
-local Enum.CommunicationMode = {}
+Enum.CommunicationMode = {}
 ---@field PushToTalk CommunicationMode 
 Enum.CommunicationMode.PushToTalk = 0
 ---@field OpenMic CommunicationMode 
 Enum.CommunicationMode.OpenMic = 1
 
 ---@class Enum.VoiceChannelErrorReason
-local Enum.VoiceChannelErrorReason = {}
+Enum.VoiceChannelErrorReason = {}
 ---@field Unknown VoiceChannelErrorReason 
 Enum.VoiceChannelErrorReason.Unknown = 0
 ---@field IsBattleNetChannel VoiceChannelErrorReason 
 Enum.VoiceChannelErrorReason.IsBattleNetChannel = 1
 
 ---@class Enum.VoiceChatStatusCode
-local Enum.VoiceChatStatusCode = {}
+Enum.VoiceChatStatusCode = {}
 ---@field Success VoiceChatStatusCode 
 Enum.VoiceChatStatusCode.Success = 0
 ---@field OperationPending VoiceChatStatusCode 
@@ -335,7 +335,7 @@ Enum.VoiceChatStatusCode.InvalidInputDevice = 23
 Enum.VoiceChatStatusCode.InvalidOutputDevice = 24
 
 ---@class Enum.VoiceTtsDestination
-local Enum.VoiceTtsDestination = {}
+Enum.VoiceTtsDestination = {}
 ---@field RemoteTransmission VoiceTtsDestination 
 Enum.VoiceTtsDestination.RemoteTransmission = 0
 ---@field LocalPlayback VoiceTtsDestination 
@@ -352,7 +352,7 @@ Enum.VoiceTtsDestination.QueuedRemoteTransmissionWithLocalPlayback = 5
 Enum.VoiceTtsDestination.ScreenReader = 6
 
 ---@class Enum.VoiceTtsStatusCode
-local Enum.VoiceTtsStatusCode = {}
+Enum.VoiceTtsStatusCode = {}
 ---@field Success VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.Success = 0
 ---@field InvalidEngineType VoiceTtsStatusCode 

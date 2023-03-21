@@ -1,5 +1,5 @@
 ---@class Enum.BagIndex
-local Enum.BagIndex = {}
+Enum.BagIndex = {}
 ---@field Bankbag BagIndex 
 Enum.BagIndex.Bankbag = -4
 ---@field Reagentbank BagIndex 

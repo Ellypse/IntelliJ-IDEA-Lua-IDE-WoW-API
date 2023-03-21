@@ -318,7 +318,7 @@ function C_TradeSkillUI.SetShowUnlearned(flag) end
 function C_TradeSkillUI.SetSourceTypeFilter(sourceTypeFilter) end
 
 ---@class Enum.CraftingReagentItemFlag
-local Enum.CraftingReagentItemFlag = {}
+Enum.CraftingReagentItemFlag = {}
 ---@field TooltipShowsAsStatModifications CraftingReagentItemFlag 
 Enum.CraftingReagentItemFlag.TooltipShowsAsStatModifications = 0
 

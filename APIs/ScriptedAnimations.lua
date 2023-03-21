@@ -5,7 +5,7 @@ C_ScriptedAnimations = {}
 function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 
 ---@class Enum.ScriptedAnimationBehavior
-local Enum.ScriptedAnimationBehavior = {}
+Enum.ScriptedAnimationBehavior = {}
 ---@field None ScriptedAnimationBehavior 
 Enum.ScriptedAnimationBehavior.None = 0
 ---@field TargetShake ScriptedAnimationBehavior 
@@ -20,12 +20,12 @@ Enum.ScriptedAnimationBehavior.SourceCollideWithTarget = 4
 Enum.ScriptedAnimationBehavior.UIParentShake = 5
 
 ---@class Enum.ScriptedAnimationFlags
-local Enum.ScriptedAnimationFlags = {}
+Enum.ScriptedAnimationFlags = {}
 ---@field UseTargetAsSource ScriptedAnimationFlags 
 Enum.ScriptedAnimationFlags.UseTargetAsSource = 1
 
 ---@class Enum.ScriptedAnimationTrajectory
-local Enum.ScriptedAnimationTrajectory = {}
+Enum.ScriptedAnimationTrajectory = {}
 ---@field AtSource ScriptedAnimationTrajectory 
 Enum.ScriptedAnimationTrajectory.AtSource = 0
 ---@field AtTarget ScriptedAnimationTrajectory 

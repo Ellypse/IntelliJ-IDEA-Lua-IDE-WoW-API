@@ -71,12 +71,12 @@ function C_ContributionCollector.HasPendingContribution(contributionID) end
 function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 
 ---@class Enum.ContributionAppearanceFlags
-local Enum.ContributionAppearanceFlags = {}
+Enum.ContributionAppearanceFlags = {}
 ---@field TooltipUseTimeRemaining ContributionAppearanceFlags 
 Enum.ContributionAppearanceFlags.TooltipUseTimeRemaining = 0
 
 ---@class Enum.ContributionResult
-local Enum.ContributionResult = {}
+Enum.ContributionResult = {}
 ---@field Success ContributionResult 
 Enum.ContributionResult.Success = 0
 ---@field MustBeNearNpc ContributionResult 
