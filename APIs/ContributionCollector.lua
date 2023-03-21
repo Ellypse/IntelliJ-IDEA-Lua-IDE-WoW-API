@@ -73,6 +73,9 @@ function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 ---@class ContributionAppearanceFlags
 ---@field TooltipUseTimeRemaining number @ Default value is [ 0 ]
 
+---@type ContributionAppearanceFlags 
+ContributionAppearanceFlags = {}
+
 ---@class ContributionResult
 ---@field Success number @ Default value is [ 0 ]
 ---@field MustBeNearNpc number @ Default value is [ 1 ]
@@ -82,6 +85,9 @@ function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 ---@field FailedConditionCheck number @ Default value is [ 5 ]
 ---@field UnableToCompleteTurnIn number @ Default value is [ 6 ]
 ---@field InternalError number @ Default value is [ 7 ]
+
+---@type ContributionResult 
+ContributionResult = {}
 
 ---@class ContributionAppearance
 ---@field stateName cstring 

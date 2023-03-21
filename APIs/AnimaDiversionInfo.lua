@@ -28,6 +28,9 @@ function C_AnimaDiversion.SelectAnimaNode(talentID, temporary) end
 ---@field SelectedPermanent number @ Default value is [ 3 ]
 ---@field Cooldown number @ Default value is [ 4 ]
 
+---@type AnimaDiversionNodeState 
+AnimaDiversionNodeState = {}
+
 ---@class AnimaDiversionCostInfo
 ---@field currencyID number 
 ---@field quantity number 

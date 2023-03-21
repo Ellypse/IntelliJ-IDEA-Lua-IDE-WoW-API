@@ -281,10 +281,16 @@ function C_PvP.ToggleWarMode() end
 ---@field LFG number @ Default value is [ 3 ]
 ---@field SoloShuffle number @ Default value is [ 4 ]
 
+---@type BrawlType 
+BrawlType = {}
+
 ---@class PvPMatchState
 ---@field Inactive number @ Default value is [ 0 ]
 ---@field Active number @ Default value is [ 1 ]
 ---@field Complete number @ Default value is [ 2 ]
+
+---@type PvPMatchState 
+PvPMatchState = {}
 
 ---@class BattlefieldCurrencyReward
 ---@field id number 

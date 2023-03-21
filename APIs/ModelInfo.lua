@@ -41,8 +41,14 @@ function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 ---@field NotEquippable number @ Default value is [ 2 ]
 ---@field DataPending number @ Default value is [ 3 ]
 
+---@type ItemTryOnReason 
+ItemTryOnReason = {}
+
 ---@class ModelSceneSetting
 ---@field AlignLightToOrbitDelta number @ Default value is [ 1 ]
+
+---@type ModelSceneSetting 
+ModelSceneSetting = {}
 
 ---@class ModelSceneType
 ---@field MountJournal number @ Default value is [ 0 ]
@@ -65,6 +71,9 @@ function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 ---@field WorldMapThreat number @ Default value is [ 17 ]
 ---@field Soulbinds number @ Default value is [ 18 ]
 ---@field JailersTowerAnimaGlow number @ Default value is [ 19 ]
+
+---@type ModelSceneType 
+ModelSceneType = {}
 
 ---@class UIModelSceneActorDisplayInfo
 ---@field animation number 

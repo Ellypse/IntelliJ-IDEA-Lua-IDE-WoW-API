@@ -323,10 +323,16 @@ function C_QuestLog.UnitIsRelatedToActiveQuest(unit) end
 ---@field TopRight number @ Default value is [ 4 ]
 ---@field Hidden number @ Default value is [ 5 ]
 
+---@type MapOverlayDisplayLocation 
+MapOverlayDisplayLocation = {}
+
 ---@class QuestFrequency
 ---@field Default number @ Default value is [ 0 ]
 ---@field Daily number @ Default value is [ 1 ]
 ---@field Weekly number @ Default value is [ 2 ]
+
+---@type QuestFrequency 
+QuestFrequency = {}
 
 ---@class QuestTag
 ---@field Group number @ Default value is [ 1 ]
@@ -341,14 +347,23 @@ function C_QuestLog.UnitIsRelatedToActiveQuest(unit) end
 ---@field Account number @ Default value is [ 102 ]
 ---@field CombatAlly number @ Default value is [ 266 ]
 
+---@type QuestTag 
+QuestTag = {}
+
 ---@class QuestWatchType
 ---@field Automatic number @ Default value is [ 0 ]
 ---@field Manual number @ Default value is [ 1 ]
+
+---@type QuestWatchType 
+QuestWatchType = {}
 
 ---@class WorldQuestQuality
 ---@field Common number @ Default value is [ 0 ]
 ---@field Rare number @ Default value is [ 1 ]
 ---@field Epic number @ Default value is [ 2 ]
+
+---@type WorldQuestQuality 
+WorldQuestQuality = {}
 
 ---@class QuestInfo
 ---@field title string 

@@ -64,6 +64,9 @@ function C_WeeklyRewards.ShouldShowRetirementMessage() end
 ---@field AdditionalChest number @ Default value is [ 1 ]
 ---@field Seasonal number @ Default value is [ 2 ]
 
+---@type ConquestProgressBarDisplayType 
+ConquestProgressBarDisplayType = {}
+
 ---@class ConquestWeeklyProgress
 ---@field progress number 
 ---@field maxProgress number 

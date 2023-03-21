@@ -17,3 +17,6 @@
 ---@field BankBag_6 number @ Default value is [ 11 ]
 ---@field BankBag_7 number @ Default value is [ 12 ]
 
+---@type BagIndex 
+BagIndex = {}
+

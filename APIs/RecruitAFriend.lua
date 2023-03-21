@@ -45,10 +45,16 @@ function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 ---@field Complete number @ Default value is [ 1 ]
 ---@field RewardClaimed number @ Default value is [ 2 ]
 
+---@type RafRecruitActivityState 
+RafRecruitActivityState = {}
+
 ---@class RafRecruitSubStatus
 ---@field Trial number @ Default value is [ 0 ]
 ---@field Active number @ Default value is [ 1 ]
 ---@field Inactive number @ Default value is [ 2 ]
+
+---@type RafRecruitSubStatus 
+RafRecruitSubStatus = {}
 
 ---@class RafRewardType
 ---@field Pet number @ Default value is [ 0 ]
@@ -59,6 +65,9 @@ function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 ---@field AppearanceSet number @ Default value is [ 5 ]
 ---@field Illusion number @ Default value is [ 6 ]
 ---@field Invalid number @ Default value is [ 7 ]
+
+---@type RafRewardType 
+RafRewardType = {}
 
 ---@class RafAppearanceInfo
 ---@field appearanceID number 

@@ -128,6 +128,9 @@ function C_LFGList.ValidateRequiredPvpRatingForActivity(activityID, rating) end
 ---@field Casual number @ Default value is [ 2 ]
 ---@field Hardcore number @ Default value is [ 3 ]
 
+---@type LFGEntryPlaystyle 
+LFGEntryPlaystyle = {}
+
 ---@class LFGListDisplayType
 ---@field RoleCount number @ Default value is [ 0 ]
 ---@field RoleEnumerate number @ Default value is [ 1 ]
@@ -135,6 +138,9 @@ function C_LFGList.ValidateRequiredPvpRatingForActivity(activityID, rating) end
 ---@field HideAll number @ Default value is [ 3 ]
 ---@field PlayerCount number @ Default value is [ 4 ]
 ---@field Comment number @ Default value is [ 5 ]
+
+---@type LFGListDisplayType 
+LFGListDisplayType = {}
 
 ---@class BestDungeonScoreMapInfo
 ---@field mapScore number 

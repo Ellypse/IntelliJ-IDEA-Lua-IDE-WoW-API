@@ -320,3 +320,6 @@ function C_TradeSkillUI.SetSourceTypeFilter(sourceTypeFilter) end
 ---@class CraftingReagentItemFlag
 ---@field TooltipShowsAsStatModifications number @ Default value is [ 0 ]
 
+---@type CraftingReagentItemFlag 
+CraftingReagentItemFlag = {}
+

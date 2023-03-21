@@ -35,3 +35,6 @@ function C_DateAndTime.GetServerTimeLocal() end
 ---@class TimeEventFlag
 ---@field GlueScreenShortcut number @ Default value is [ 1 ]
 
+---@type TimeEventFlag 
+TimeEventFlag = {}
+

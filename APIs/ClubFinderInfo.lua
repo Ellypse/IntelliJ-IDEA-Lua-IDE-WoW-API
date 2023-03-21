@@ -201,6 +201,9 @@ function C_ClubFinder.ShouldShowClubFinder() end
 ---@field DeclineInvite number @ Default value is [ 2 ]
 ---@field Cancel number @ Default value is [ 3 ]
 
+---@type ClubFinderApplicationUpdateType 
+ClubFinderApplicationUpdateType = {}
+
 ---@class ClubFinderClubPostingStatusFlags
 ---@field None number @ Default value is [ 0 ]
 ---@field NeedsCacheUpdate number @ Default value is [ 1 ]
@@ -212,10 +215,16 @@ function C_ClubFinder.ShouldShowClubFinder() end
 ---@field PendingDelete number @ Default value is [ 7 ]
 ---@field PostDelisted number @ Default value is [ 8 ]
 
+---@type ClubFinderClubPostingStatusFlags 
+ClubFinderClubPostingStatusFlags = {}
+
 ---@class ClubFinderDisableReason
 ---@field Muted number @ Default value is [ 0 ]
 ---@field Silenced number @ Default value is [ 1 ]
 ---@field VeteranTrial number @ Default value is [ 2 ]
+
+---@type ClubFinderDisableReason 
+ClubFinderDisableReason = {}
 
 ---@class ClubFinderPostingReportType
 ---@field PostersName number @ Default value is [ 0 ]
@@ -224,11 +233,17 @@ function C_ClubFinder.ShouldShowClubFinder() end
 ---@field ApplicantsName number @ Default value is [ 3 ]
 ---@field JoinNote number @ Default value is [ 4 ]
 
+---@type ClubFinderPostingReportType 
+ClubFinderPostingReportType = {}
+
 ---@class ClubFinderRequestType
 ---@field None number @ Default value is [ 0 ]
 ---@field Guild number @ Default value is [ 1 ]
 ---@field Community number @ Default value is [ 2 ]
 ---@field All number @ Default value is [ 3 ]
+
+---@type ClubFinderRequestType 
+ClubFinderRequestType = {}
 
 ---@class ClubFinderSettingFlags
 ---@field None number @ Default value is [ 0 ]
@@ -258,6 +273,9 @@ function C_ClubFinder.ShouldShowClubFinder() end
 ---@field LanguageReserved4 number @ Default value is [ 24 ]
 ---@field LanguageReserved5 number @ Default value is [ 25 ]
 
+---@type ClubFinderSettingFlags 
+ClubFinderSettingFlags = {}
+
 ---@class PlayerClubRequestStatus
 ---@field None number @ Default value is [ 0 ]
 ---@field Pending number @ Default value is [ 1 ]
@@ -267,6 +285,9 @@ function C_ClubFinder.ShouldShowClubFinder() end
 ---@field Joined number @ Default value is [ 5 ]
 ---@field JoinedAnother number @ Default value is [ 6 ]
 ---@field Canceled number @ Default value is [ 7 ]
+
+---@type PlayerClubRequestStatus 
+PlayerClubRequestStatus = {}
 
 ---@class ClubFinderApplicantInfo
 ---@field clubFinderGUID WOWGUID 

@@ -143,9 +143,15 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field RightToLeft number @ Default value is [ 0 ]
 ---@field LeftToRight number @ Default value is [ 1 ]
 
+---@type CaptureBarWidgetFillDirectionType 
+CaptureBarWidgetFillDirectionType = {}
+
 ---@class CaptureBarWidgetGlowAnimType
 ---@field None number @ Default value is [ 0 ]
 ---@field Pulse number @ Default value is [ 1 ]
+
+---@type CaptureBarWidgetGlowAnimType 
+CaptureBarWidgetGlowAnimType = {}
 
 ---@class IconAndTextWidgetState
 ---@field Hidden number @ Default value is [ 0 ]
@@ -153,10 +159,16 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field ShownWithDynamicIconFlashing number @ Default value is [ 2 ]
 ---@field ShownWithDynamicIconNotFlashing number @ Default value is [ 3 ]
 
+---@type IconAndTextWidgetState 
+IconAndTextWidgetState = {}
+
 ---@class IconState
 ---@field Hidden number @ Default value is [ 0 ]
 ---@field ShowState1 number @ Default value is [ 1 ]
 ---@field ShowState2 number @ Default value is [ 2 ]
+
+---@type IconState 
+IconState = {}
 
 ---@class SpellDisplayBorderColor
 ---@field None number @ Default value is [ 0 ]
@@ -169,20 +181,32 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field Green number @ Default value is [ 7 ]
 ---@field Blue number @ Default value is [ 8 ]
 
+---@type SpellDisplayBorderColor 
+SpellDisplayBorderColor = {}
+
 ---@class SpellDisplayIconDisplayType
 ---@field Buff number @ Default value is [ 0 ]
 ---@field Debuff number @ Default value is [ 1 ]
 ---@field Circular number @ Default value is [ 2 ]
 ---@field NoBorder number @ Default value is [ 3 ]
 
+---@type SpellDisplayIconDisplayType 
+SpellDisplayIconDisplayType = {}
+
 ---@class SpellDisplayIconSizeType
 ---@field Small number @ Default value is [ 0 ]
 ---@field Medium number @ Default value is [ 1 ]
 ---@field Large number @ Default value is [ 2 ]
 
+---@type SpellDisplayIconSizeType 
+SpellDisplayIconSizeType = {}
+
 ---@class SpellDisplayTextShownStateType
 ---@field Shown number @ Default value is [ 0 ]
 ---@field Hidden number @ Default value is [ 1 ]
+
+---@type SpellDisplayTextShownStateType 
+SpellDisplayTextShownStateType = {}
 
 ---@class StatusBarColorTintValue
 ---@field None number @ Default value is [ 0 ]
@@ -195,11 +219,17 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field Green number @ Default value is [ 7 ]
 ---@field Blue number @ Default value is [ 8 ]
 
+---@type StatusBarColorTintValue 
+StatusBarColorTintValue = {}
+
 ---@class StatusBarOverrideBarTextShownType
 ---@field Never number @ Default value is [ 0 ]
 ---@field Always number @ Default value is [ 1 ]
 ---@field OnlyOnMouseover number @ Default value is [ 2 ]
 ---@field OnlyNotOnMouseover number @ Default value is [ 3 ]
+
+---@type StatusBarOverrideBarTextShownType 
+StatusBarOverrideBarTextShownType = {}
 
 ---@class StatusBarValueTextType
 ---@field Hidden number @ Default value is [ 0 ]
@@ -210,26 +240,44 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field ValueOverMax number @ Default value is [ 5 ]
 ---@field ValueOverMaxNormalized number @ Default value is [ 6 ]
 
+---@type StatusBarValueTextType 
+StatusBarValueTextType = {}
+
 ---@class UIWidgetBlendModeType
 ---@field Opaque number @ Default value is [ 0 ]
 ---@field Additive number @ Default value is [ 1 ]
 
+---@type UIWidgetBlendModeType 
+UIWidgetBlendModeType = {}
+
 ---@class UIWidgetFlag
 ---@field UniversalWidget number @ Default value is [ 1 ]
+
+---@type UIWidgetFlag 
+UIWidgetFlag = {}
 
 ---@class UIWidgetFontType
 ---@field Normal number @ Default value is [ 0 ]
 ---@field Shadow number @ Default value is [ 1 ]
 ---@field Outline number @ Default value is [ 2 ]
 
+---@type UIWidgetFontType 
+UIWidgetFontType = {}
+
 ---@class UIWidgetModelSceneLayer
 ---@field None number @ Default value is [ 0 ]
 ---@field Front number @ Default value is [ 1 ]
 ---@field Back number @ Default value is [ 2 ]
 
+---@type UIWidgetModelSceneLayer 
+UIWidgetModelSceneLayer = {}
+
 ---@class UIWidgetMotionType
 ---@field Instant number @ Default value is [ 0 ]
 ---@field Smooth number @ Default value is [ 1 ]
+
+---@type UIWidgetMotionType 
+UIWidgetMotionType = {}
 
 ---@class UIWidgetTextSizeType
 ---@field Small12Pt number @ Default value is [ 0 ]
@@ -242,12 +290,18 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field Medium18Pt number @ Default value is [ 7 ]
 ---@field Large20Pt number @ Default value is [ 8 ]
 
+---@type UIWidgetTextSizeType 
+UIWidgetTextSizeType = {}
+
 ---@class UIWidgetTextureAndTextSizeType
 ---@field Small number @ Default value is [ 0 ]
 ---@field Medium number @ Default value is [ 1 ]
 ---@field Large number @ Default value is [ 2 ]
 ---@field Huge number @ Default value is [ 3 ]
 ---@field Standard number @ Default value is [ 4 ]
+
+---@type UIWidgetTextureAndTextSizeType 
+UIWidgetTextureAndTextSizeType = {}
 
 ---@class UIWidgetTooltipLocation
 ---@field Default number @ Default value is [ 0 ]
@@ -260,13 +314,22 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field BottomRight number @ Default value is [ 7 ]
 ---@field Bottom number @ Default value is [ 8 ]
 
+---@type UIWidgetTooltipLocation 
+UIWidgetTooltipLocation = {}
+
 ---@class WidgetAnimationType
 ---@field None number @ Default value is [ 0 ]
 ---@field Fade number @ Default value is [ 1 ]
 
+---@type WidgetAnimationType 
+WidgetAnimationType = {}
+
 ---@class WidgetCurrencyClass
 ---@field Currency number @ Default value is [ 0 ]
 ---@field Item number @ Default value is [ 1 ]
+
+---@type WidgetCurrencyClass 
+WidgetCurrencyClass = {}
 
 ---@class WidgetEnabledState
 ---@field Disabled number @ Default value is [ 0 ]
@@ -277,23 +340,38 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field Gold number @ Default value is [ 5 ]
 ---@field Black number @ Default value is [ 6 ]
 
+---@type WidgetEnabledState 
+WidgetEnabledState = {}
+
 ---@class WidgetShownState
 ---@field Hidden number @ Default value is [ 0 ]
 ---@field Shown number @ Default value is [ 1 ]
+
+---@type WidgetShownState 
+WidgetShownState = {}
 
 ---@class WidgetTextHorizontalAlignmentType
 ---@field Left number @ Default value is [ 0 ]
 ---@field Center number @ Default value is [ 1 ]
 ---@field Right number @ Default value is [ 2 ]
 
+---@type WidgetTextHorizontalAlignmentType 
+WidgetTextHorizontalAlignmentType = {}
+
 ---@class WidgetUnitPowerBarFlashMomentType
 ---@field FlashWhenMax number @ Default value is [ 0 ]
 ---@field FlashWhenMin number @ Default value is [ 1 ]
 ---@field NeverFlash number @ Default value is [ 2 ]
 
+---@type WidgetUnitPowerBarFlashMomentType 
+WidgetUnitPowerBarFlashMomentType = {}
+
 ---@class ZoneControlActiveState
 ---@field Inactive number @ Default value is [ 0 ]
 ---@field Active number @ Default value is [ 1 ]
+
+---@type ZoneControlActiveState 
+ZoneControlActiveState = {}
 
 ---@class ZoneControlDangerFlashType
 ---@field ShowOnGoodStates number @ Default value is [ 0 ]
@@ -301,15 +379,24 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field ShowOnBoth number @ Default value is [ 2 ]
 ---@field ShowOnNeither number @ Default value is [ 3 ]
 
+---@type ZoneControlDangerFlashType 
+ZoneControlDangerFlashType = {}
+
 ---@class ZoneControlFillType
 ---@field SingleFillClockwise number @ Default value is [ 0 ]
 ---@field SingleFillCounterClockwise number @ Default value is [ 1 ]
 ---@field DoubleFillClockwise number @ Default value is [ 2 ]
 ---@field DoubleFillCounterClockwise number @ Default value is [ 3 ]
 
+---@type ZoneControlFillType 
+ZoneControlFillType = {}
+
 ---@class ZoneControlLeadingEdgeType
 ---@field NoLeadingEdge number @ Default value is [ 0 ]
 ---@field UseLeadingEdge number @ Default value is [ 1 ]
+
+---@type ZoneControlLeadingEdgeType 
+ZoneControlLeadingEdgeType = {}
 
 ---@class ZoneControlMode
 ---@field BothStatesAreGood number @ Default value is [ 0 ]
@@ -317,9 +404,15 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field State2IsGood number @ Default value is [ 2 ]
 ---@field NeitherStateIsGood number @ Default value is [ 3 ]
 
+---@type ZoneControlMode 
+ZoneControlMode = {}
+
 ---@class ZoneControlState
 ---@field State1 number @ Default value is [ 0 ]
 ---@field State2 number @ Default value is [ 1 ]
+
+---@type ZoneControlState 
+ZoneControlState = {}
 
 ---@class BulletTextListWidgetVisualizationInfo
 ---@field shownState WidgetShownState 

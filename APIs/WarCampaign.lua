@@ -50,6 +50,9 @@ function C_CampaignInfo.UsesNormalQuestIcons(campaignID) end
 ---@field InProgress number @ Default value is [ 2 ]
 ---@field Stalled number @ Default value is [ 3 ]
 
+---@type CampaignState 
+CampaignState = {}
+
 ---@class CampaignChapterInfo
 ---@field name cstring 
 ---@field description cstring 

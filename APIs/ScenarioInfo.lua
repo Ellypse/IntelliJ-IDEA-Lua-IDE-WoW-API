@@ -29,6 +29,9 @@ function C_ScenarioInfo.GetScenarioStepInfo(scenarioStepID) end
 ---@field Ossuary number @ Default value is [ 13 ]
 ---@field BossRush number @ Default value is [ 14 ]
 
+---@type JailersTowerType 
+JailersTowerType = {}
+
 ---@class ScenarioInformation
 ---@field name string 
 ---@field currentStage number 

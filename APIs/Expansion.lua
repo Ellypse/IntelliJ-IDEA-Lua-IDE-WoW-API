@@ -67,10 +67,16 @@ function SendSubscriptionInterstitialResponse(response) end
 ---@field Closed number @ Default value is [ 1 ]
 ---@field WebRedirect number @ Default value is [ 2 ]
 
+---@type SubscriptionInterstitialResponseType 
+SubscriptionInterstitialResponseType = {}
+
 ---@class SubscriptionInterstitialType
 ---@field Standard number @ Default value is [ 0 ]
 ---@field LeftNpeArea number @ Default value is [ 1 ]
 ---@field MaxLevel number @ Default value is [ 2 ]
+
+---@type SubscriptionInterstitialType 
+SubscriptionInterstitialType = {}
 
 ---@class ExpansionDisplayInfo
 ---@field logo fileID 

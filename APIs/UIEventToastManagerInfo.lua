@@ -21,6 +21,9 @@ function C_EventToastManager.RemoveCurrentToast() end
 ---@field ChallengeMode number @ Default value is [ 7 ]
 ---@field ScenarioClickExpand number @ Default value is [ 8 ]
 
+---@type EventToastDisplayType 
+EventToastDisplayType = {}
+
 ---@class EventToastEventType
 ---@field LevelUp number @ Default value is [ 0 ]
 ---@field LevelUpSpell number @ Default value is [ 1 ]
@@ -45,6 +48,9 @@ function C_EventToastManager.RemoveCurrentToast() end
 ---@field PvPTierUpdate number @ Default value is [ 20 ]
 ---@field SpellLearned number @ Default value is [ 21 ]
 ---@field TreasureItem number @ Default value is [ 22 ]
+
+---@type EventToastEventType 
+EventToastEventType = {}
 
 ---@class EventToastInfo
 ---@field eventToastID number 

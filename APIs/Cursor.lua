@@ -27,9 +27,15 @@ function C_Cursor.GetCursorItem() end
 ---@field ConduitCollectionItem number @ Default value is [ 20 ]
 ---@field PerksProgramVendorItem number @ Default value is [ 21 ]
 
+---@type UICursorType 
+UICursorType = {}
+
 ---@class WorldCursorAnchorType
 ---@field None number @ Default value is [ 0 ]
 ---@field Default number @ Default value is [ 1 ]
 ---@field Cursor number @ Default value is [ 2 ]
 ---@field Nameplate number @ Default value is [ 3 ]
+
+---@type WorldCursorAnchorType 
+WorldCursorAnchorType = {}
 

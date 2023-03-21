@@ -36,6 +36,9 @@ function C_Texture.SetTitleIconTexture(texture, titleID, version) end
 ---@field Medium number @ Default value is [ 1 ]
 ---@field Large number @ Default value is [ 2 ]
 
+---@type TitleIconVersion 
+TitleIconVersion = {}
+
 ---@class AtlasInfo
 ---@field width number 
 ---@field height number 

@@ -12,6 +12,9 @@ function C_CovenantPreview.GetCovenantInfoForPlayerChoiceResponseID(playerChoice
 ---@field Signature number @ Default value is [ 1 ]
 ---@field Soulbind number @ Default value is [ 2 ]
 
+---@type CovenantAbilityType 
+CovenantAbilityType = {}
+
 ---@class CovenantAbilityInfo
 ---@field spellID number 
 ---@field type CovenantAbilityType 

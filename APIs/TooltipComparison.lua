@@ -18,6 +18,9 @@ function C_TooltipComparison.GetItemComparisonInfo(comparisonItem) end
 ---@field WithBagMainHandItem number @ Default value is [ 2 ]
 ---@field WithBagOffHandItem number @ Default value is [ 3 ]
 
+---@type TooltipComparisonMethod 
+TooltipComparisonMethod = {}
+
 ---@class TooltipItemComparisonInfo
 ---@field method TooltipComparisonMethod 
 ---@field item TooltipComparisonItem 

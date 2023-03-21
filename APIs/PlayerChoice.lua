@@ -26,6 +26,9 @@ function C_PlayerChoice.SendPlayerChoiceResponse(responseID) end
 ---@field Rare number @ Default value is [ 2 ]
 ---@field Epic number @ Default value is [ 3 ]
 
+---@type PlayerChoiceRarity 
+PlayerChoiceRarity = {}
+
 ---@class PlayerChoiceInfo
 ---@field objectGUID WOWGUID 
 ---@field choiceID number 

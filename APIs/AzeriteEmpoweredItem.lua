@@ -82,6 +82,9 @@ function C_AzeriteEmpoweredItem.SetHasBeenViewed(azeriteEmpoweredItemLocation) e
 ---@field Upgraded number @ Default value is [ 1 ]
 ---@field Downgraded number @ Default value is [ 2 ]
 
+---@type AzeritePowerLevel 
+AzeritePowerLevel = {}
+
 ---@class AzeriteEmpoweredItemPowerInfo
 ---@field azeritePowerID number 
 ---@field spellID number 

@@ -177,6 +177,9 @@ function UnitWidgetSet(unit) end
 ---@field WarMode number @ Default value is [ 2 ]
 ---@field ChromieTime number @ Default value is [ 3 ]
 
+---@type PhaseReason 
+PhaseReason = {}
+
 ---@class PowerType
 ---@field HealthCost number @ Default value is [ -2 ]
 ---@field None number @ Default value is [ -1 ]
@@ -205,6 +208,9 @@ function UnitWidgetSet(unit) end
 ---@field RuneUnholy number @ Default value is [ 22 ]
 ---@field NumPowerTypes number @ Default value is [ 23 ]
 
+---@type PowerType 
+PowerType = {}
+
 ---@class PvPUnitClassification
 ---@field FlagCarrierHorde number @ Default value is [ 0 ]
 ---@field FlagCarrierAlliance number @ Default value is [ 1 ]
@@ -217,6 +223,9 @@ function UnitWidgetSet(unit) end
 ---@field OrbCarrierGreen number @ Default value is [ 8 ]
 ---@field OrbCarrierOrange number @ Default value is [ 9 ]
 ---@field OrbCarrierPurple number @ Default value is [ 10 ]
+
+---@type PvPUnitClassification 
+PvPUnitClassification = {}
 
 ---@class CorruptionEffectInfo
 ---@field name string 

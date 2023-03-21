@@ -90,6 +90,9 @@ function C_ClassTalents.UpdateLastSelectedSavedConfigID(specID, configID) end
 ---@field LoadInProgress number @ Default value is [ 2 ]
 ---@field Ready number @ Default value is [ 3 ]
 
+---@type LoadConfigResult 
+LoadConfigResult = {}
+
 ---@class ImportLoadoutEntryInfo
 ---@field nodeID number 
 ---@field ranksPurchased number 

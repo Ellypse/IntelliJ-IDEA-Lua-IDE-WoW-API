@@ -157,6 +157,9 @@ function C_Map.SetUserWaypoint(point) end
 ---@field TopLeft number @ Default value is [ 3 ]
 ---@field TopRight number @ Default value is [ 4 ]
 
+---@type MapCanvasPosition 
+MapCanvasPosition = {}
+
 ---@class UIMapFlag
 ---@field NoHighlight number @ Default value is [ 1 ]
 ---@field ShowOverlays number @ Default value is [ 2 ]
@@ -176,11 +179,17 @@ function C_Map.SetUserWaypoint(point) end
 ---@field ForceOnNavbar number @ Default value is [ 32768 ]
 ---@field AlwaysAllowUserWaypoints number @ Default value is [ 65536 ]
 
+---@type UIMapFlag 
+UIMapFlag = {}
+
 ---@class UIMapSystem
 ---@field World number @ Default value is [ 0 ]
 ---@field Taxi number @ Default value is [ 1 ]
 ---@field Adventure number @ Default value is [ 2 ]
 ---@field Minimap number @ Default value is [ 3 ]
+
+---@type UIMapSystem 
+UIMapSystem = {}
 
 ---@class UIMapType
 ---@field Cosmic number @ Default value is [ 0 ]
@@ -190,6 +199,9 @@ function C_Map.SetUserWaypoint(point) end
 ---@field Dungeon number @ Default value is [ 4 ]
 ---@field Micro number @ Default value is [ 5 ]
 ---@field Orphan number @ Default value is [ 6 ]
+
+---@type UIMapType 
+UIMapType = {}
 
 ---@class MapBannerInfo
 ---@field areaPoiID number 

@@ -12,8 +12,14 @@ function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 ---@field SourceCollideWithTarget number @ Default value is [ 4 ]
 ---@field UIParentShake number @ Default value is [ 5 ]
 
+---@type ScriptedAnimationBehavior 
+ScriptedAnimationBehavior = {}
+
 ---@class ScriptedAnimationFlags
 ---@field UseTargetAsSource number @ Default value is [ 1 ]
+
+---@type ScriptedAnimationFlags 
+ScriptedAnimationFlags = {}
 
 ---@class ScriptedAnimationTrajectory
 ---@field AtSource number @ Default value is [ 0 ]
@@ -23,6 +29,9 @@ function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 ---@field CurveRight number @ Default value is [ 4 ]
 ---@field CurveRandom number @ Default value is [ 5 ]
 ---@field HalfwayBetween number @ Default value is [ 6 ]
+
+---@type ScriptedAnimationTrajectory 
+ScriptedAnimationTrajectory = {}
 
 ---@class ScriptedAnimationEffect
 ---@field id number 

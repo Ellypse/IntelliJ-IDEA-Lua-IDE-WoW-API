@@ -67,6 +67,9 @@ function C_EncounterJournal.SetSlotFilter(filterSlot) end
 ---@field Other number @ Default value is [ 14 ]
 ---@field NoFilter number @ Default value is [ 15 ]
 
+---@type ItemSlotFilterType 
+ItemSlotFilterType = {}
+
 ---@class DungeonEntranceMapInfo
 ---@field areaPoiID number 
 ---@field position vector2 

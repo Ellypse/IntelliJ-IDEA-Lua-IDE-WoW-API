@@ -402,6 +402,9 @@ function C_Club.ValidateText(clubType, text, clubFieldType) end
 ---@field ErrorClubActionEditMessage number @ Default value is [ 25 ]
 ---@field ErrorClubActionDestroyMessage number @ Default value is [ 26 ]
 
+---@type ClubActionType 
+ClubActionType = {}
+
 ---@class ClubErrorType
 ---@field ErrorCommunitiesNone number @ Default value is [ 0 ]
 ---@field ErrorCommunitiesUnknown number @ Default value is [ 1 ]
@@ -446,6 +449,9 @@ function C_Club.ValidateText(clubType, text, clubFieldType) end
 ---@field ErrorClubDoesntAllowCrossFaction number @ Default value is [ 40 ]
 ---@field ErrorClubEditHasCrossFactionMembers number @ Default value is [ 41 ]
 
+---@type ClubErrorType 
+ClubErrorType = {}
+
 ---@class ClubFieldType
 ---@field ClubName number @ Default value is [ 0 ]
 ---@field ClubShortName number @ Default value is [ 1 ]
@@ -455,10 +461,16 @@ function C_Club.ValidateText(clubType, text, clubFieldType) end
 ---@field ClubStreamSubject number @ Default value is [ 5 ]
 ---@field NumTypes number @ Default value is [ 6 ]
 
+---@type ClubFieldType 
+ClubFieldType = {}
+
 ---@class ClubInvitationCandidateStatus
 ---@field Available number @ Default value is [ 0 ]
 ---@field InvitePending number @ Default value is [ 1 ]
 ---@field AlreadyMember number @ Default value is [ 2 ]
+
+---@type ClubInvitationCandidateStatus 
+ClubInvitationCandidateStatus = {}
 
 ---@class ClubMemberPresence
 ---@field Unknown number @ Default value is [ 0 ]
@@ -468,15 +480,24 @@ function C_Club.ValidateText(clubType, text, clubFieldType) end
 ---@field Away number @ Default value is [ 4 ]
 ---@field Busy number @ Default value is [ 5 ]
 
+---@type ClubMemberPresence 
+ClubMemberPresence = {}
+
 ---@class ClubRemovedReason
 ---@field None number @ Default value is [ 0 ]
 ---@field Banned number @ Default value is [ 1 ]
 ---@field Removed number @ Default value is [ 2 ]
 ---@field ClubDestroyed number @ Default value is [ 3 ]
 
+---@type ClubRemovedReason 
+ClubRemovedReason = {}
+
 ---@class ClubRestrictionReason
 ---@field None number @ Default value is [ 0 ]
 ---@field Unavailable number @ Default value is [ 1 ]
+
+---@type ClubRestrictionReason 
+ClubRestrictionReason = {}
 
 ---@class ClubRoleIdentifier
 ---@field Owner number @ Default value is [ 1 ]
@@ -484,10 +505,16 @@ function C_Club.ValidateText(clubType, text, clubFieldType) end
 ---@field Moderator number @ Default value is [ 3 ]
 ---@field Member number @ Default value is [ 4 ]
 
+---@type ClubRoleIdentifier 
+ClubRoleIdentifier = {}
+
 ---@class ClubStreamNotificationFilter
 ---@field None number @ Default value is [ 0 ]
 ---@field Mention number @ Default value is [ 1 ]
 ---@field All number @ Default value is [ 2 ]
+
+---@type ClubStreamNotificationFilter 
+ClubStreamNotificationFilter = {}
 
 ---@class ClubStreamType
 ---@field General number @ Default value is [ 0 ]
@@ -495,11 +522,17 @@ function C_Club.ValidateText(clubType, text, clubFieldType) end
 ---@field Officer number @ Default value is [ 2 ]
 ---@field Other number @ Default value is [ 3 ]
 
+---@type ClubStreamType 
+ClubStreamType = {}
+
 ---@class ClubType
 ---@field BattleNet number @ Default value is [ 0 ]
 ---@field Character number @ Default value is [ 1 ]
 ---@field Guild number @ Default value is [ 2 ]
 ---@field Other number @ Default value is [ 3 ]
+
+---@type ClubType 
+ClubType = {}
 
 ---@class ClubInfo
 ---@field clubId ClubId 

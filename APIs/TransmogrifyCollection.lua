@@ -273,6 +273,9 @@ function C_TransmogCollection.UpdateUsableAppearances() end
 ---@field RightShoulder number @ Default value is [ 1 ]
 ---@field CloakBackpack number @ Default value is [ 1 ]
 
+---@type TransmogCameraVariation 
+TransmogCameraVariation = {}
+
 ---@class TransmogAppearanceInfoBySourceData
 ---@field appearanceID number 
 ---@field appearanceIsCollected bool 

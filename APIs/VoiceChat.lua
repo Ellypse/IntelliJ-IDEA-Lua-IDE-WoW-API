@@ -271,9 +271,15 @@ function C_VoiceChat.ToggleMuted() end
 ---@field PushToTalk number @ Default value is [ 0 ]
 ---@field OpenMic number @ Default value is [ 1 ]
 
+---@type CommunicationMode 
+CommunicationMode = {}
+
 ---@class VoiceChannelErrorReason
 ---@field Unknown number @ Default value is [ 0 ]
 ---@field IsBattleNetChannel number @ Default value is [ 1 ]
+
+---@type VoiceChannelErrorReason 
+VoiceChannelErrorReason = {}
 
 ---@class VoiceChatStatusCode
 ---@field Success number @ Default value is [ 0 ]
@@ -302,6 +308,9 @@ function C_VoiceChat.ToggleMuted() end
 ---@field InvalidInputDevice number @ Default value is [ 23 ]
 ---@field InvalidOutputDevice number @ Default value is [ 24 ]
 
+---@type VoiceChatStatusCode 
+VoiceChatStatusCode = {}
+
 ---@class VoiceTtsDestination
 ---@field RemoteTransmission number @ Default value is [ 0 ]
 ---@field LocalPlayback number @ Default value is [ 1 ]
@@ -310,6 +319,9 @@ function C_VoiceChat.ToggleMuted() end
 ---@field QueuedLocalPlayback number @ Default value is [ 4 ]
 ---@field QueuedRemoteTransmissionWithLocalPlayback number @ Default value is [ 5 ]
 ---@field ScreenReader number @ Default value is [ 6 ]
+
+---@type VoiceTtsDestination 
+VoiceTtsDestination = {}
 
 ---@class VoiceTtsStatusCode
 ---@field Success number @ Default value is [ 0 ]
@@ -326,6 +338,9 @@ function C_VoiceChat.ToggleMuted() end
 ---@field ManagerNotFound number @ Default value is [ 11 ]
 ---@field InvalidArgument number @ Default value is [ 12 ]
 ---@field InternalError number @ Default value is [ 13 ]
+
+---@type VoiceTtsStatusCode 
+VoiceTtsStatusCode = {}
 
 ---@class VoiceAudioDevice
 ---@field deviceID string 

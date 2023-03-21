@@ -69,11 +69,17 @@ function C_GossipInfo.SelectOptionByIndex(optionID, text, confirmed) end
 ---@field Item number @ Default value is [ 0 ]
 ---@field Currency number @ Default value is [ 1 ]
 
+---@type GossipOptionRewardType 
+GossipOptionRewardType = {}
+
 ---@class GossipOptionStatus
 ---@field Available number @ Default value is [ 0 ]
 ---@field Unavailable number @ Default value is [ 1 ]
 ---@field Locked number @ Default value is [ 2 ]
 ---@field AlreadyComplete number @ Default value is [ 3 ]
+
+---@type GossipOptionStatus 
+GossipOptionStatus = {}
 
 ---@class FriendshipReputationInfo
 ---@field friendshipFactionID number 

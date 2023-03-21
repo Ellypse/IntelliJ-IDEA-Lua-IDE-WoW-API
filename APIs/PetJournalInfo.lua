@@ -67,6 +67,9 @@ function C_PetJournal.SpellTargetBattlePet(battlePetGUID) end
 ---@field NoValidRandomSummon number @ Default value is [ 5 ]
 ---@field InvalidCovenant number @ Default value is [ 6 ]
 
+---@type PetJournalError 
+PetJournalError = {}
+
 ---@class PetAbilityLevelInfo
 ---@field abilityID number 
 ---@field level number 

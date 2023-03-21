@@ -92,6 +92,9 @@ function C_Transmog.SetPending(transmogLocation, pendingInfo) end
 ---@field ToggleOn number @ Default value is [ 2 ]
 ---@field ToggleOff number @ Default value is [ 3 ]
 
+---@type TransmogPendingType 
+TransmogPendingType = {}
+
 ---@class TransmogApplyWarningInfo
 ---@field itemLink string 
 ---@field text string 

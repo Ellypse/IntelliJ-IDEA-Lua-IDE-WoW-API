@@ -163,10 +163,16 @@ function C_MountJournal.SummonByID(mountID) end
 ---@field Aquatic number @ Default value is [ 2 ]
 ---@field Dragonriding number @ Default value is [ 3 ]
 
+---@type MountType 
+MountType = {}
+
 ---@class MountTypeFlag
 ---@field IsFlyingMount number @ Default value is [ 1 ]
 ---@field IsAquaticMount number @ Default value is [ 2 ]
 ---@field IsDragonRidingMount number @ Default value is [ 4 ]
+
+---@type MountTypeFlag 
+MountTypeFlag = {}
 
 ---@class MountCreatureDisplayInfo
 ---@field creatureDisplayID number 

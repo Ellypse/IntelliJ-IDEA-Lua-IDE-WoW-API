@@ -485,6 +485,9 @@ function C_Commentator.ZoomOut() end
 ---@field RacialAbility number @ Default value is [ 3 ]
 ---@field Count number @ Default value is [ 4 ]
 
+---@type TrackedSpellCategory 
+TrackedSpellCategory = {}
+
 ---@class CommentatorHistory
 ---@field series table 
 ---@field teamDirectory table 

@@ -15,3 +15,6 @@ function C_IncomingSummon.IncomingSummonStatus(unit) end
 ---@field Accepted number @ Default value is [ 2 ]
 ---@field Declined number @ Default value is [ 3 ]
 
+---@type SummonStatus 
+SummonStatus = {}
+

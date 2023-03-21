@@ -15,6 +15,12 @@ function C_KeyBindings.GetCustomBindingType(bindingIndex) end
 ---@field Character number @ Default value is [ 2 ]
 ---@field Current number @ Default value is [ 3 ]
 
+---@type BindingSet 
+BindingSet = {}
+
 ---@class CustomBindingType
 ---@field VoicePushToTalk number @ Default value is [ 0 ]
+
+---@type CustomBindingType 
+CustomBindingType = {}
 

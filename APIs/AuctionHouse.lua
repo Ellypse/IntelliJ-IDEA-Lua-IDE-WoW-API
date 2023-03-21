@@ -335,14 +335,23 @@ function C_AuctionHouse.StartCommoditiesPurchase(itemID, quantity) end
 ---@field Equipment number @ Default value is [ 1 ]
 ---@field Rarity number @ Default value is [ 2 ]
 
+---@type AuctionHouseFilterCategory 
+AuctionHouseFilterCategory = {}
+
 ---@class AuctionStatus
 ---@field Active number @ Default value is [ 0 ]
 ---@field Sold number @ Default value is [ 1 ]
+
+---@type AuctionStatus 
+AuctionStatus = {}
 
 ---@class ItemCommodityStatus
 ---@field Unknown number @ Default value is [ 0 ]
 ---@field Item number @ Default value is [ 1 ]
 ---@field Commodity number @ Default value is [ 2 ]
+
+---@type ItemCommodityStatus 
+ItemCommodityStatus = {}
 
 ---@class AuctionHouseBrowseQuery
 ---@field searchString string 

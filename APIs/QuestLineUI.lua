@@ -26,6 +26,9 @@ function C_QuestLine.RequestQuestLinesForMap(uiMapID) end
 ---@field Below number @ Default value is [ 1 ]
 ---@field Same number @ Default value is [ 2 ]
 
+---@type QuestLineFloorLocation 
+QuestLineFloorLocation = {}
+
 ---@class QuestLineInfo
 ---@field questLineName cstring 
 ---@field questName cstring 

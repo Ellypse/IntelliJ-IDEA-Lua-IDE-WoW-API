@@ -13,3 +13,6 @@ C_WowEntitlementInfo = {}
 ---@field Illusion number @ Default value is [ 8 ]
 ---@field Invalid number @ Default value is [ 9 ]
 
+---@type WoWEntitlementType 
+WoWEntitlementType = {}
+
