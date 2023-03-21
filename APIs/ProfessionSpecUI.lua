@@ -38,6 +38,9 @@ function C_ProfSpecs.GetDescriptionForPerk(perkID) end
 ---@return number entryID
 function C_ProfSpecs.GetEntryIDForPerk(perkID) end
 
+---@return cstring|nil profName
+function C_ProfSpecs.GetNewSpecReminderProfName() end
+
 ---@param pathID number 
 ---@return SpecPerkInfo perkInfos
 function C_ProfSpecs.GetPerksForPath(pathID) end
@@ -48,7 +51,7 @@ function C_ProfSpecs.GetRootPathForTab(tabTreeID) end
 
 ---@param pathID number 
 ---@param configID number 
----@return string sourceText
+---@return cstring sourceText
 function C_ProfSpecs.GetSourceTextForPath(pathID, configID) end
 
 ---@param skillLineID number 

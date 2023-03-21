@@ -30,7 +30,7 @@ function C_Traits.CommitConfig(configID) end
 ---@return boolean hasChanges
 function C_Traits.ConfigHasStagedChanges(configID) end
 
----@param target string 
+---@param target cstring 
 ---@return string importString
 function C_Traits.GenerateInspectImportString(target) end
 
@@ -95,6 +95,10 @@ function C_Traits.GetTraitCurrencyInfo(traitCurrencyID) end
 function C_Traits.GetTraitDescription(entryID, rank) end
 
 ---@param configID number 
+---@return number flags
+function C_Traits.GetTraitSystemFlags(configID) end
+
+---@param configID number 
 ---@return number uiWidgetSetID
 function C_Traits.GetTraitSystemWidgetSetID(configID) end
 
@@ -120,6 +124,9 @@ function C_Traits.GetTreeNodes(treeID) end
 
 ---@return boolean hasValidInspectData
 function C_Traits.HasValidInspectData() end
+
+---@return boolean isReadyForCommit
+function C_Traits.IsReadyForCommit() end
 
 ---@param configID number 
 ---@param nodeID number 

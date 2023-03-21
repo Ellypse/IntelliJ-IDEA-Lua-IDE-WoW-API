@@ -13,7 +13,7 @@ function GetMinMaxValues() end
 function GetObeyStepOnDrag() end
 
 
----@return string orientation
+---@return Orientation orientation
 function GetOrientation() end
 
 
@@ -21,7 +21,7 @@ function GetOrientation() end
 function GetStepsPerPage() end
 
 
----@return table texture
+---@return SimpleTexture texture
 function GetThumbTexture() end
 
 
@@ -50,13 +50,13 @@ function SetMinMaxValues(minValue, maxValue) end
 ---@param obeyStepOnDrag boolean 
 function SetObeyStepOnDrag(obeyStepOnDrag) end
 
----@param orientation string 
+---@param orientation Orientation 
 function SetOrientation(orientation) end
 
 ---@param stepsPerPage number 
 function SetStepsPerPage(stepsPerPage) end
 
----@param asset string 
+---@param asset TextureAsset 
 function SetThumbTexture(asset) end
 
 ---@param value number 

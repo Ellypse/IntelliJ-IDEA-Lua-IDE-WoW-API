@@ -6,19 +6,19 @@ function C_LegendaryCrafting.CloseRuneforgeInteraction() end
 ---@param description RuneforgeLegendaryCraftDescription 
 function C_LegendaryCrafting.CraftRuneforgeLegendary(description) end
 
----@param baseItem table 
+---@param baseItem ItemLocation 
 ---@param runeforgePowerID number @ [OPTIONAL]
 ---@param modifiers number @ [OPTIONAL]
----@overload fun(baseItem:table, modifiers:number)
----@overload fun(baseItem:table)
+---@overload fun(baseItem:ItemLocation, modifiers:number)
+---@overload fun(baseItem:ItemLocation)
 ---@return RuneforgeItemPreviewInfo|nil info
 function C_LegendaryCrafting.GetRuneforgeItemPreviewInfo(baseItem, runeforgePowerID, modifiers) end
 
----@param runeforgeLegendary table 
+---@param runeforgeLegendary ItemLocation 
 ---@return RuneforgeLegendaryComponentInfo componentInfo
 function C_LegendaryCrafting.GetRuneforgeLegendaryComponentInfo(runeforgeLegendary) end
 
----@param baseItem table 
+---@param baseItem ItemLocation 
 ---@return CurrencyCost cost
 function C_LegendaryCrafting.GetRuneforgeLegendaryCost(baseItem) end
 
@@ -28,16 +28,16 @@ function C_LegendaryCrafting.GetRuneforgeLegendaryCraftSpellID() end
 ---@return number currencies
 function C_LegendaryCrafting.GetRuneforgeLegendaryCurrencies() end
 
----@param runeforgeLegendary table 
----@param upgradeItem table 
+---@param runeforgeLegendary ItemLocation 
+---@param upgradeItem ItemLocation 
 ---@return CurrencyCost cost
 function C_LegendaryCrafting.GetRuneforgeLegendaryUpgradeCost(runeforgeLegendary, upgradeItem) end
 
----@param baseItem table 
+---@param baseItem ItemLocation 
 ---@param powerID number @ [OPTIONAL]
----@param addedModifierIndex number 
+---@param addedModifierIndex luaIndex 
 ---@param modifiers number 
----@overload fun(baseItem:table, addedModifierIndex:number, modifiers:number)
+---@overload fun(baseItem:ItemLocation, addedModifierIndex:luaIndex, modifiers:number)
 ---@return string, string name, description
 function C_LegendaryCrafting.GetRuneforgeModifierInfo(baseItem, powerID, addedModifierIndex, modifiers) end
 
@@ -49,10 +49,10 @@ function C_LegendaryCrafting.GetRuneforgeModifiers() end
 function C_LegendaryCrafting.GetRuneforgePowerInfo(runeforgePowerID) end
 
 ---@param runeforgePowerID number 
----@return string slotNames
+---@return cstring slotNames
 function C_LegendaryCrafting.GetRuneforgePowerSlots(runeforgePowerID) end
 
----@param baseItem table @ [OPTIONAL]
+---@param baseItem ItemLocation @ [OPTIONAL]
 ---@param filter RuneforgePowerFilter @ [OPTIONAL]
 ---@overload fun(filter:RuneforgePowerFilter)
 ---@overload fun()
@@ -70,30 +70,30 @@ function C_LegendaryCrafting.GetRuneforgePowers(baseItem, filter) end
 ---@return number runeforgePowerIDs
 function C_LegendaryCrafting.GetRuneforgePowersByClassSpecAndCovenant(classID, specID, covenantID, filter) end
 
----@param item table 
+---@param item ItemLocation 
 ---@return boolean isRuneforgeLegendary
 function C_LegendaryCrafting.IsRuneforgeLegendary(item) end
 
----@param runeforgeLegendary table 
+---@param runeforgeLegendary ItemLocation 
 ---@return boolean isMaxLevel
 function C_LegendaryCrafting.IsRuneforgeLegendaryMaxLevel(runeforgeLegendary) end
 
----@param runeforgeLegendary table 
----@param upgradeItem table 
+---@param runeforgeLegendary ItemLocation 
+---@param upgradeItem ItemLocation 
 ---@return boolean isValid
 function C_LegendaryCrafting.IsUpgradeItemValidForRuneforgeLegendary(runeforgeLegendary, upgradeItem) end
 
----@param baseItem table 
+---@param baseItem ItemLocation 
 ---@return boolean isValid
 function C_LegendaryCrafting.IsValidRuneforgeBaseItem(baseItem) end
 
----@param baseItem table 
+---@param baseItem ItemLocation 
 ---@param runeforgePowerID number 
 ---@param modifiers number 
 ---@return RuneforgeLegendaryCraftDescription description
 function C_LegendaryCrafting.MakeRuneforgeCraftDescription(baseItem, runeforgePowerID, modifiers) end
 
----@param runeforgeLegendary table 
----@param upgradeItem table 
+---@param runeforgeLegendary ItemLocation 
+---@param upgradeItem ItemLocation 
 function C_LegendaryCrafting.UpgradeRuneforgeLegendary(runeforgeLegendary, upgradeItem) end
 

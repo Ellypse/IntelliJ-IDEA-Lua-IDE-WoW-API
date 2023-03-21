@@ -1,10 +1,10 @@
----@param name string @ [OPTIONAL]
----@param templateName string @ [OPTIONAL]
+---@param name cstring @ [OPTIONAL]
+---@param templateName cstring @ [OPTIONAL]
 ---@param order number @ [OPTIONAL]
----@overload fun(templateName:string, order:number)
+---@overload fun(templateName:cstring, order:number)
 ---@overload fun(order:number)
 ---@overload fun()
----@return table point
+---@return SimpleControlPoint point
 function CreateControlPoint(name, templateName, order) end
 
 
@@ -12,13 +12,13 @@ function CreateControlPoint(name, templateName, order) end
 function GetControlPoints() end
 
 
----@return string curveType
+---@return CurveType curveType
 function GetCurveType() end
 
 
 ---@return number maxOrder
 function GetMaxControlPointOrder() end
 
----@param curveType string 
+---@param curveType CurveType 
 function SetCurveType(curveType) end
 

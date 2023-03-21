@@ -2,9 +2,9 @@
 C_Garrison = {}
 
 ---@param missionID number 
----@param followerID string 
+---@param followerID GarrisonFollower 
 ---@param boardIndex number @ [OPTIONAL]
----@overload fun(missionID:number, followerID:string)
+---@overload fun(missionID:number, followerID:GarrisonFollower)
 ---@return boolean followerAdded
 function C_Garrison.AddFollowerToMission(missionID, followerID, boardIndex) end
 
@@ -20,7 +20,7 @@ function C_Garrison.GetAutoMissionBoardState(missionID) end
 function C_Garrison.GetAutoMissionEnvironmentEffect(missionID) end
 
 ---@param missionID number 
----@param followerID string 
+---@param followerID GarrisonFollower 
 ---@param casterBoardIndex number 
 ---@return AutoMissionTargetingInfo targetInfo
 function C_Garrison.GetAutoMissionTargetingInfo(missionID, followerID, casterBoardIndex) end
@@ -51,16 +51,16 @@ function C_Garrison.GetCurrentGarrTalentTreeID() end
 ---@return number|nil cyphersToNext
 function C_Garrison.GetCyphersToNextEquipmentLevel() end
 
----@param garrFollowerID string 
+---@param garrFollowerID GarrisonFollower 
 ---@param followerLevel number 
 ---@return AutoCombatSpellInfo, AutoCombatSpellInfo|nil autoCombatSpells, autoCombatAutoAttack
 function C_Garrison.GetFollowerAutoCombatSpells(garrFollowerID, followerLevel) end
 
----@param garrFollowerID string 
+---@param garrFollowerID GarrisonFollower 
 ---@return FollowerAutoCombatStatsInfo|nil autoCombatInfo
 function C_Garrison.GetFollowerAutoCombatStats(garrFollowerID) end
 
----@param followerID string 
+---@param followerID GarrisonFollower 
 ---@return FollowerMissionCompleteInfo followerMissionCompleteInfo
 function C_Garrison.GetFollowerMissionCompleteInfo(followerID) end
 
@@ -134,12 +134,12 @@ function C_Garrison.IsAtGarrisonMissionNPC() end
 ---@return boolean environmentCountered
 function C_Garrison.IsEnvironmentCountered(missionID) end
 
----@param followerID string 
+---@param followerID GarrisonFollower 
 ---@return boolean followerOnCompletedMission
 function C_Garrison.IsFollowerOnCompletedMission(followerID) end
 
 ---@param talentID number 
----@return boolean, string|nil isMet, failureString
+---@return boolean, cstring|nil isMet, failureString
 function C_Garrison.IsTalentConditionMet(talentID) end
 
 ---@param missionID number 
@@ -147,15 +147,15 @@ function C_Garrison.IsTalentConditionMet(talentID) end
 function C_Garrison.RegenerateCombatLog(missionID) end
 
 ---@param missionID number 
----@param followerID string 
+---@param followerID GarrisonFollower 
 ---@param boardIndex number @ [OPTIONAL]
----@overload fun(missionID:number, followerID:string)
+---@overload fun(missionID:number, followerID:GarrisonFollower)
 function C_Garrison.RemoveFollowerFromMission(missionID, followerID, boardIndex) end
 
 ---@param followerType number 
 function C_Garrison.RushHealAllFollowers(followerType) end
 
----@param garrFollowerID string 
+---@param garrFollowerID GarrisonFollower 
 function C_Garrison.RushHealFollower(garrFollowerID) end
 
 ---@param state boolean 
@@ -163,7 +163,7 @@ function C_Garrison.SetAutoCombatSpellFastForward(state) end
 
 ---@class AutoCombatDamageClassString
 ---@field damageClassValue number 
----@field locString string 
+---@field locString cstring 
 local AutoCombatDamageClassString = {}
 
 ---@class AutoCombatResult
@@ -173,21 +173,21 @@ local AutoCombatResult = {}
 
 ---@class AutoCombatSpellInfo
 ---@field autoCombatSpellID number 
----@field name string 
+---@field name cstring 
 ---@field description string 
 ---@field cooldown number 
 ---@field duration number 
 ---@field schoolMask number 
 ---@field previewMask number 
----@field icon number 
+---@field icon fileID 
 ---@field spellTutorialFlag number 
 ---@field hasThornsEffect bool 
 local AutoCombatSpellInfo = {}
 
 ---@class AutoCombatTroopInfo
----@field name string 
----@field followerID string 
----@field garrFollowerID string 
+---@field name cstring 
+---@field followerID GarrisonFollower 
+---@field garrFollowerID GarrisonFollower 
 ---@field followerTypeID number 
 ---@field displayIDs table 
 ---@field level number 
@@ -201,9 +201,9 @@ local AutoCombatSpellInfo = {}
 ---@field classSpec number|nil 
 ---@field className string|nil 
 ---@field flavorText string|nil 
----@field classAtlas string 
----@field portraitIconID number 
----@field textureKit string 
+---@field classAtlas textureAtlas 
+---@field portraitIconID fileID 
+---@field textureKit textureKit 
 ---@field isTroop bool 
 ---@field raceID number 
 ---@field health number 
@@ -253,7 +253,7 @@ local AutoMissionTargetingInfo = {}
 ---@field currentHealth number 
 ---@field maxHealth number 
 ---@field attack number 
----@field healingTimestamp number 
+---@field healingTimestamp time_t 
 ---@field healCost number 
 ---@field minutesHealingRemaining number 
 local FollowerAutoCombatStatsInfo = {}
@@ -265,7 +265,7 @@ local FollowerAutoCombatStatsInfo = {}
 local FollowerDisplayID = {}
 
 ---@class FollowerMissionCompleteInfo
----@field name string 
+---@field name cstring 
 ---@field displayIDs table 
 ---@field level number 
 ---@field quality number 
@@ -282,9 +282,9 @@ local FollowerDisplayID = {}
 ---@field targetImpactID number|nil 
 ---@field targetImpactSoundID number|nil 
 ---@field className string|nil 
----@field classAtlas string 
----@field portraitIconID number 
----@field textureKit string 
+---@field classAtlas textureAtlas 
+---@field portraitIconID fileID 
+---@field textureKit textureKit 
 ---@field isTroop bool 
 ---@field boardIndex number 
 ---@field health number 
@@ -294,17 +294,17 @@ local FollowerMissionCompleteInfo = {}
 
 ---@class GarrisonAbilityCounterInfo
 ---@field id number 
----@field icon number 
----@field name string 
+---@field icon fileID 
+---@field name cstring 
 ---@field factor number 
----@field description string 
+---@field description cstring 
 local GarrisonAbilityCounterInfo = {}
 
 ---@class GarrisonAbilityInfo
 ---@field id number 
----@field name string 
+---@field name cstring 
 ---@field description string 
----@field icon number 
+---@field icon fileID 
 ---@field isTrait bool 
 ---@field isSpecialization bool 
 ---@field temporary bool 
@@ -314,10 +314,10 @@ local GarrisonAbilityCounterInfo = {}
 local GarrisonAbilityInfo = {}
 
 ---@class GarrisonEnemyEncounterInfo
----@field name string 
----@field displayID number 
----@field portraitFileDataID number 
----@field textureKit string 
+---@field name cstring 
+---@field displayID fileID 
+---@field portraitFileDataID fileID 
+---@field textureKit textureKit 
 ---@field scale number 
 ---@field height number 
 ---@field mechanics table 
@@ -332,39 +332,39 @@ local GarrisonAbilityInfo = {}
 local GarrisonEnemyEncounterInfo = {}
 
 ---@class GarrisonFollowerDeathInfo
----@field followerID string 
----@field state number 
+---@field followerID GarrisonFollower 
+---@field state luaIndex 
 local GarrisonFollowerDeathInfo = {}
 
 ---@class GarrisonMechanicInfo
 ---@field mechanicTypeID number 
----@field icon number 
----@field name string 
+---@field icon fileID 
+---@field name cstring 
 ---@field factor number 
----@field description string 
+---@field description cstring 
 ---@field ability GarrisonAbilityInfo|nil 
 local GarrisonMechanicInfo = {}
 
 ---@class GarrisonPlotInstanceMapInfo
 ---@field buildingPlotInstanceID number 
----@field position table 
----@field name string 
----@field atlasName string 
+---@field position vector2 
+---@field name cstring 
+---@field atlasName textureAtlas 
 local GarrisonPlotInstanceMapInfo = {}
 
 ---@class MissionDeploymentInfo
----@field location string 
+---@field location cstring 
 ---@field xp number 
 ---@field environment string|nil 
 ---@field environmentDesc string|nil 
----@field environmentTexture number 
----@field locTextureKit string 
+---@field environmentTexture fileID 
+---@field locTextureKit textureKit 
 ---@field isExhausting bool 
 ---@field enemies table 
 local MissionDeploymentInfo = {}
 
 ---@class MissionEncounterIconInfo
----@field portraitFileDataID number 
+---@field portraitFileDataID fileID 
 ---@field missionScalar number 
 ---@field isElite bool 
 ---@field isRare bool 

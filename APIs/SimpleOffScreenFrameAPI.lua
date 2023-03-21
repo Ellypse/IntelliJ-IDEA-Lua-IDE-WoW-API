@@ -1,4 +1,4 @@
----@param texture table 
+---@param texture SimpleTexture 
 ---@param snapshotID number 
 ---@return boolean success
 function ApplySnapshot(texture, snapshotID) end
@@ -23,7 +23,7 @@ function TakeSnapshot() end
 
 --- Unavailable in public builds
 ---@param snapshotID number 
----@param filename string 
+---@param filename cstring 
 ---@return boolean success
 function TestPrintToFile(snapshotID, filename) end
 

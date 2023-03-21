@@ -17,12 +17,12 @@ function C_EditMode.GetLayouts() end
 
 function C_EditMode.OnEditModeExit() end
 
----@param addedLayoutIndex number 
+---@param addedLayoutIndex luaIndex 
 ---@param activateNewLayout boolean 
 ---@param isLayoutImported boolean 
 function C_EditMode.OnLayoutAdded(addedLayoutIndex, activateNewLayout, isLayoutImported) end
 
----@param deletedLayoutIndex number 
+---@param deletedLayoutIndex luaIndex 
 function C_EditMode.OnLayoutDeleted(deletedLayoutIndex) end
 
 ---@param saveInfo EditModeLayouts 
@@ -32,7 +32,7 @@ function C_EditMode.SaveLayouts(saveInfo) end
 ---@param value number 
 function C_EditMode.SetAccountSetting(setting, value) end
 
----@param activeLayout number 
+---@param activeLayout luaIndex 
 function C_EditMode.SetActiveLayout(activeLayout) end
 
 ---@class EditModeAnchorInfo
@@ -51,7 +51,7 @@ local EditModeLayoutInfo = {}
 
 ---@class EditModeLayouts
 ---@field layouts table 
----@field activeLayout number 
+---@field activeLayout luaIndex 
 local EditModeLayouts = {}
 
 ---@class EditModeSettingInfo
@@ -61,7 +61,7 @@ local EditModeSettingInfo = {}
 
 ---@class EditModeSystemInfo
 ---@field system EditModeSystem 
----@field systemIndex number|nil 
+---@field systemIndex luaIndex|nil 
 ---@field anchorInfo EditModeAnchorInfo 
 ---@field anchorInfo2 EditModeAnchorInfo|nil 
 ---@field settings table 

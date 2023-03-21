@@ -20,8 +20,8 @@ function C_CreatureInfo.GetRaceInfo(raceID) end
 local ClassInfo = {}
 
 ---@class FactionInfo
----@field name string 
----@field groupTag string 
+---@field name cstring 
+---@field groupTag cstring 
 local FactionInfo = {}
 
 ---@class RaceInfo

@@ -5,19 +5,19 @@ C_ClickBindings = {}
 ---@return boolean canBeBound
 function C_ClickBindings.CanSpellBeClickBound(spellID) end
 
----@param targetToken string 
----@param button string 
+---@param targetToken cstring 
+---@param button cstring 
 ---@param modifiers number 
 function C_ClickBindings.ExecuteBinding(targetToken, button, modifiers) end
 
----@param button string 
+---@param button cstring 
 ---@param modifiers number 
 ---@return ClickBindingType type
 function C_ClickBindings.GetBindingType(button, modifiers) end
 
----@param button string 
+---@param button cstring 
 ---@param modifiers number 
----@return string effectiveButton
+---@return cstring effectiveButton
 function C_ClickBindings.GetEffectiveInteractionButton(button, modifiers) end
 
 ---@return ClickBindingInfo infoVec

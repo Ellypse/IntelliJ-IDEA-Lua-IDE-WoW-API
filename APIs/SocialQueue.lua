@@ -3,36 +3,36 @@ C_SocialQueue = {}
 
 ---@param allowNonJoinable boolean 
 ---@param allowNonQueuedGroups boolean 
----@return string groupGUIDs
+---@return WOWGUID groupGUIDs
 function C_SocialQueue.GetAllGroups(allowNonJoinable, allowNonQueuedGroups) end
 
 ---@return SocialQueueConfig config
 function C_SocialQueue.GetConfig() end
 
----@param playerGUID string 
----@return string, boolean groupGUID, isSoloQueueParty
+---@param playerGUID WOWGUID 
+---@return WOWGUID, boolean groupGUID, isSoloQueueParty
 function C_SocialQueue.GetGroupForPlayer(playerGUID) end
 
----@param groupGUID string 
----@return boolean, number, boolean, boolean, boolean, boolean, boolean, string canJoin, numQueues, needTank, needHealer, needDamage, isSoloQueueParty, questSessionActive, leaderGUID
+---@param groupGUID WOWGUID 
+---@return boolean, number, boolean, boolean, boolean, boolean, boolean, WOWGUID canJoin, numQueues, needTank, needHealer, needDamage, isSoloQueueParty, questSessionActive, leaderGUID
 function C_SocialQueue.GetGroupInfo(groupGUID) end
 
----@param groupGUID string 
+---@param groupGUID WOWGUID 
 ---@return SocialQueuePlayerInfo groupMembers
 function C_SocialQueue.GetGroupMembers(groupGUID) end
 
----@param groupGUID string 
+---@param groupGUID WOWGUID 
 ---@return SocialQueueGroupQueueInfo queues
 function C_SocialQueue.GetGroupQueues(groupGUID) end
 
----@param groupGUID string 
+---@param groupGUID WOWGUID 
 ---@param applyAsTank boolean 
 ---@param applyAsHealer boolean 
 ---@param applyAsDamage boolean 
 ---@return boolean requestSuccessful
 function C_SocialQueue.RequestToJoin(groupGUID, applyAsTank, applyAsHealer, applyAsDamage) end
 
----@param groupGUID string 
+---@param groupGUID WOWGUID 
 ---@param priority number 
 function C_SocialQueue.SignalToastDisplayed(groupGUID, priority) end
 
@@ -70,7 +70,7 @@ local SocialQueueConfig = {}
 ---@field needDamage bool 
 ---@field isSoloQueueParty bool 
 ---@field questSessionActive bool 
----@field leaderGUID string 
+---@field leaderGUID WOWGUID 
 local SocialQueueGroupInfo = {}
 
 ---@class SocialQueueGroupQueueInfo
@@ -84,7 +84,7 @@ local SocialQueueGroupInfo = {}
 local SocialQueueGroupQueueInfo = {}
 
 ---@class SocialQueuePlayerInfo
----@field guid string 
----@field clubId string|nil 
+---@field guid WOWGUID 
+---@field clubId ClubId|nil 
 local SocialQueuePlayerInfo = {}
 

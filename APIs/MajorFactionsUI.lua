@@ -47,17 +47,17 @@ function C_MajorFactions.IsWeeklyRenownCapped(majorFactionID) end
 function C_MajorFactions.RequestCatchUpState() end
 
 ---@class MajorFactionData
----@field name string 
+---@field name cstring 
 ---@field factionID number 
 ---@field expansionID number 
 ---@field bountySetID number 
 ---@field isUnlocked bool 
----@field unlockDescription string|nil 
+---@field unlockDescription cstring|nil 
 ---@field unlockOrder number 
 ---@field renownLevel number 
 ---@field renownReputationEarned number 
 ---@field renownLevelThreshold number 
----@field textureKit string 
+---@field textureKit textureKit 
 ---@field celebrationSoundKit number 
 ---@field renownFanfareSoundKitID number 
 local MajorFactionData = {}
@@ -85,9 +85,9 @@ local MajorFactionRenownLevelInfo = {}
 ---@field transmogSetID number|nil 
 ---@field titleMaskID number|nil 
 ---@field transmogIllusionSourceID number|nil 
----@field icon number|nil 
----@field name string|nil 
----@field description string|nil 
----@field toastDescription string|nil 
+---@field icon fileID|nil 
+---@field name cstring|nil 
+---@field description cstring|nil 
+---@field toastDescription cstring|nil 
 local MajorFactionRenownRewardInfo = {}
 

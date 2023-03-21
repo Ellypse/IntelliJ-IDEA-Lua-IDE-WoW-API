@@ -2,26 +2,26 @@
 C_GamePad = {}
 
 ---@param platform ClientPlatformType 
----@param mapping string 
+---@param mapping cstring 
 ---@return boolean success
 function C_GamePad.AddSDLMapping(platform, mapping) end
 
 function C_GamePad.ApplyConfigs() end
 
 ---@param axisIndex number 
----@return string|nil configName
+---@return cstring|nil configName
 function C_GamePad.AxisIndexToConfigName(axisIndex) end
 
----@param bindingName string 
+---@param bindingName cstring 
 ---@return number|nil buttonIndex
 function C_GamePad.ButtonBindingToIndex(bindingName) end
 
 ---@param buttonIndex number 
----@return string|nil bindingName
+---@return cstring|nil bindingName
 function C_GamePad.ButtonIndexToBinding(buttonIndex) end
 
 ---@param buttonIndex number 
----@return string|nil configName
+---@return cstring|nil configName
 function C_GamePad.ButtonIndexToConfigName(buttonIndex) end
 
 function C_GamePad.ClearLedColor() end
@@ -54,7 +54,7 @@ function C_GamePad.GetDeviceMappedState(deviceID) end
 ---@return GamePadRawState|nil rawState
 function C_GamePad.GetDeviceRawState(deviceID) end
 
----@return table color
+---@return colorRGB color
 function C_GamePad.GetLedColor() end
 
 ---@param deviceID number @ [OPTIONAL]
@@ -68,15 +68,15 @@ function C_GamePad.IsEnabled() end
 ---@param config GamePadConfig 
 function C_GamePad.SetConfig(config) end
 
----@param color table 
+---@param color colorRGB 
 function C_GamePad.SetLedColor(color) end
 
----@param vibrationType string 
+---@param vibrationType cstring 
 ---@param intensity number 
 function C_GamePad.SetVibration(vibrationType, intensity) end
 
 ---@param stickIndex number 
----@return string|nil configName
+---@return cstring|nil configName
 function C_GamePad.StickIndexToConfigName(stickIndex) end
 
 function C_GamePad.StopVibration() end

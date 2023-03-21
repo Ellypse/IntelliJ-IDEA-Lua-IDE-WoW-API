@@ -52,8 +52,8 @@ CampaignState.InProgress = 2
 CampaignState.Stalled = 3
 
 ---@class CampaignChapterInfo
----@field name string 
----@field description string 
+---@field name cstring 
+---@field description cstring 
 ---@field rewardQuestID number 
 local CampaignChapterInfo = {}
 
@@ -64,9 +64,9 @@ local CampaignChapterInfo = {}
 local CampaignFailureReason = {}
 
 ---@class CampaignInfo
----@field name string 
----@field description string 
----@field uiTextureKit string 
+---@field name cstring 
+---@field description cstring 
+---@field uiTextureKit textureKit 
 ---@field isWarCampaign bool 
 local CampaignInfo = {}
 

@@ -38,7 +38,7 @@ function C_PvP.GetActiveBrawlInfo() end
 ---@return number bracket
 function C_PvP.GetActiveMatchBracket() end
 
----@return number seconds
+---@return time_t seconds
 function C_PvP.GetActiveMatchDuration() end
 
 ---@return PvPMatchState state
@@ -47,7 +47,7 @@ function C_PvP.GetActiveMatchState() end
 ---@return number winner
 function C_PvP.GetActiveMatchWinner() end
 
----@param playerToken string 
+---@param playerToken UnitToken 
 ---@return number, number, number spellID, startTime, duration
 function C_PvP.GetArenaCrowdControlInfo(playerToken) end
 
@@ -58,16 +58,20 @@ function C_PvP.GetArenaRewards(teamSize) end
 ---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil honor, experience, itemRewards, currencyRewards
 function C_PvP.GetArenaSkirmishRewards() end
 
+---@param queueID number 
+---@return number|nil specializationID
+function C_PvP.GetAssignedSpecForBattlefieldQueue(queueID) end
+
 --- If nil is returned, PVP_BRAWL_INFO_UPDATED event will be sent when the data is ready.
 ---@return PvpBrawlInfo|nil brawlInfo
 function C_PvP.GetAvailableBrawlInfo() end
 
----@param flagIndex number 
+---@param flagIndex luaIndex 
 ---@param uiMapId number 
 ---@return number|nil, number|nil, number uiPosx, uiPosy, flagTexture
 function C_PvP.GetBattlefieldFlagPosition(flagIndex, uiMapId) end
 
----@param vehicleIndex number 
+---@param vehicleIndex luaIndex 
 ---@param uiMapID number 
 ---@return BattlefieldVehicleInfo info
 function C_PvP.GetBattlefieldVehicleInfo(vehicleIndex, uiMapID) end
@@ -107,7 +111,7 @@ function C_PvP.GetMatchPVPStatColumns() end
 function C_PvP.GetNextHonorLevelForReward(honorLevel) end
 
 ---@param uiMapID number 
----@return number pvpWaitTime
+---@return time_t pvpWaitTime
 function C_PvP.GetOutdoorPvPWaitTime(uiMapID) end
 
 ---@return PVPPersonalRatedInfo|nil info
@@ -132,7 +136,7 @@ function C_PvP.GetPostMatchItemRewards() end
 function C_PvP.GetPvpTalentsUnlockedLevel() end
 
 ---@param tierEnum number 
----@param bracketEnum number 
+---@param bracketEnum luaIndex 
 ---@return number|nil id
 function C_PvP.GetPvpTierID(tierEnum, bracketEnum) end
 
@@ -165,11 +169,11 @@ function C_PvP.GetRatedSoloShuffleRewards() end
 ---@return number, number activityItemLevel, weeklyItemLevel
 function C_PvP.GetRewardItemLevelsByTierEnum(pvpTierEnum) end
 
----@param offsetIndex number 
+---@param offsetIndex luaIndex 
 ---@return PVPScoreInfo|nil info
 function C_PvP.GetScoreInfo(offsetIndex) end
 
----@param guid string 
+---@param guid WOWGUID 
 ---@return PVPScoreInfo|nil info
 function C_PvP.GetScoreInfoByPlayerGuid(guid) end
 
@@ -262,7 +266,7 @@ function C_PvP.IsWarModeFeatureEnabled() end
 ---@param isSpecialBrawl boolean 
 function C_PvP.JoinBrawl(isSpecialBrawl) end
 
----@param playerToken string 
+---@param playerToken UnitToken 
 function C_PvP.RequestCrowdControlSpell(playerToken) end
 
 ---@param warModeDesired boolean 
@@ -291,8 +295,8 @@ local BattlefieldCurrencyReward = {}
 
 ---@class BattlefieldItemReward
 ---@field id number 
----@field name string 
----@field texture number 
+---@field name cstring 
+---@field texture fileID 
 ---@field quantity number 
 local BattlefieldItemReward = {}
 
@@ -306,9 +310,9 @@ local BattlefieldRewards = {}
 ---@class BattlefieldVehicleInfo
 ---@field x number 
 ---@field y number 
----@field name string 
+---@field name cstring 
 ---@field isOccupied bool 
----@field atlas string 
+---@field atlas textureAtlas 
 ---@field textureWidth number 
 ---@field textureHeight number 
 ---@field facing number 
@@ -322,20 +326,20 @@ local BattlefieldVehicleInfo = {}
 ---@field instanceType number 
 ---@field minPlayers number 
 ---@field maxPlayers number 
----@field icon number 
+---@field icon fileID 
 ---@field longDescription string 
 ---@field shortDescription string 
 local BattlemasterListInfo = {}
 
 ---@class HonorRewardInfo
 ---@field honorLevelName string 
----@field badgeFileDataID number 
+---@field badgeFileDataID fileID 
 ---@field achievementRewardedID number 
 local HonorRewardInfo = {}
 
 ---@class LevelUpBattlegroundInfo
 ---@field id number 
----@field icon number 
+---@field icon fileID 
 ---@field name string 
 ---@field isEpic bool 
 local LevelUpBattlegroundInfo = {}
@@ -403,7 +407,7 @@ local PVPPostMatchItemReward = {}
 local PvpReadyCheckInfo = {}
 
 ---@class PvpRoleQueueInfo
----@field role string 
+---@field role cstring 
 ---@field totalRole number 
 ---@field totalAccepted number 
 ---@field totalDeclined number 
@@ -412,13 +416,13 @@ local PvpRoleQueueInfo = {}
 ---@class PvpScalingData
 ---@field scalingDataID number 
 ---@field specializationID number 
----@field name string 
+---@field name cstring 
 ---@field value number 
 local PvpScalingData = {}
 
 ---@class PVPScoreInfo
 ---@field name string 
----@field guid string 
+---@field guid WOWGUID 
 ---@field killingBlows number 
 ---@field honorableKills number 
 ---@field deaths number 
@@ -463,7 +467,7 @@ local PVPTeamInfo = {}
 ---@field descendTier number 
 ---@field ascendTier number 
 ---@field pvpTierEnum number 
----@field tierIconID number 
+---@field tierIconID fileID 
 local PvpTierInfo = {}
 
 ---@class RandomBGInfo

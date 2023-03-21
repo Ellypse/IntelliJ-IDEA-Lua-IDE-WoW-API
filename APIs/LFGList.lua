@@ -47,7 +47,7 @@ function C_LFGList.GetActivityGroupInfo(groupID) end
 function C_LFGList.GetActivityInfoTable(activityID, questID, showWarmode) end
 
 ---@param localID number 
----@param applicantIndex number 
+---@param applicantIndex luaIndex 
 ---@param activityID number 
 ---@return BestDungeonScoreMapInfo bestDungeonScoreForListing
 function C_LFGList.GetApplicantDungeonScoreForListing(localID, applicantIndex, activityID) end
@@ -57,7 +57,7 @@ function C_LFGList.GetApplicantDungeonScoreForListing(localID, applicantIndex, a
 function C_LFGList.GetApplicantInfo(applicantID) end
 
 ---@param localID number 
----@param applicantIndex number 
+---@param applicantIndex luaIndex 
 ---@param activityID number 
 ---@return PvpRatingInfo pvpRatingInfo
 function C_LFGList.GetApplicantPvpRatingInfoForListing(localID, applicantIndex, activityID) end
@@ -178,17 +178,17 @@ local GroupFinderActivityInfo = {}
 
 ---@class LfgApplicantData
 ---@field applicantID number 
----@field applicationStatus string 
----@field pendingApplicationStatus string|nil 
+---@field applicationStatus cstring 
+---@field pendingApplicationStatus cstring|nil 
 ---@field numMembers number 
 ---@field isNew bool 
----@field comment string 
+---@field comment kstringLfgListApplicant 
 ---@field displayOrderID number 
 local LfgApplicantData = {}
 
 ---@class LfgCategoryData
----@field name string 
----@field searchPromptOverride string|nil 
+---@field name cstring 
+---@field searchPromptOverride cstring|nil 
 ---@field separateRecommended bool 
 ---@field autoChooseActivity bool 
 ---@field preferCurrentArea bool 
@@ -200,10 +200,10 @@ local LfgCategoryData = {}
 ---@field activityID number 
 ---@field requiredItemLevel number 
 ---@field requiredHonorLevel number 
----@field name string 
----@field comment string 
----@field voiceChat string 
----@field duration number 
+---@field name kstringLfgListApplicant 
+---@field comment kstringLfgListApplicant 
+---@field voiceChat kstringLfgListApplicant 
+---@field duration time_t 
 ---@field autoAccept bool 
 ---@field privateGroup bool 
 ---@field questID number|nil 
@@ -217,9 +217,9 @@ local LfgEntryData = {}
 ---@field searchResultID number 
 ---@field activityID number 
 ---@field leaderName string|nil 
----@field name string 
----@field comment string 
----@field voiceChat string 
+---@field name kstringLfgListSearch 
+---@field comment kstringLfgListSearch 
+---@field voiceChat kstringLfgListSearch 
 ---@field requiredItemLevel number 
 ---@field requiredHonorLevel number 
 ---@field hasSelf bool 
@@ -230,7 +230,7 @@ local LfgEntryData = {}
 ---@field isDelisted bool 
 ---@field autoAccept bool 
 ---@field isWarMode bool 
----@field age number 
+---@field age time_t 
 ---@field questID number|nil 
 ---@field leaderOverallDungeonScore number|nil 
 ---@field leaderDungeonScoreInfo BestDungeonScoreMapInfo|nil 

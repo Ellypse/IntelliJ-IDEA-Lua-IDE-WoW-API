@@ -17,7 +17,7 @@ function C_PlayerInfo.CanUseItem(itemID) end
 ---@return boolean, boolean hasAlternateForm, inAlternateForm
 function C_PlayerInfo.GetAlternateFormInfo() end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@return RelativeContentDifficulty difficulty
 function C_PlayerInfo.GetContentDifficultyCreatureForPlayer(unitToken) end
 
@@ -40,11 +40,11 @@ function C_PlayerInfo.GetInstancesUnlockedAtLevel(level, isRaid) end
 function C_PlayerInfo.GetPlayerCharacterData() end
 
 --- Returns the players mythic+ rating summary which includes the runs they've completed as well as their current season m+ rating
----@param playerToken string 
+---@param playerToken UnitToken 
 ---@return MythicPlusRatingSummary ratingSummary
 function C_PlayerInfo.GetPlayerMythicPlusRatingSummary(playerToken) end
 
----@param slot number 
+---@param slot luaIndex 
 ---@return boolean isVisible
 function C_PlayerInfo.HasVisibleInvSlot(slot) end
 

@@ -1,7 +1,7 @@
 ---@class EventUtils
 C_EventUtils = {}
 
----@param eventName string 
+---@param eventName cstring 
 ---@return boolean valid
 function C_EventUtils.IsEventValid(eventName) end
 

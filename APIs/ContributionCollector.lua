@@ -10,7 +10,7 @@ function C_ContributionCollector.Contribute(contributionID) end
 function C_ContributionCollector.GetActive() end
 
 ---@param contributionID number 
----@return string atlasName
+---@return textureAtlas atlasName
 function C_ContributionCollector.GetAtlases(contributionID) end
 
 ---@param contributionID number 
@@ -31,7 +31,7 @@ function C_ContributionCollector.GetContributionCollectorsForMap(uiMapID) end
 function C_ContributionCollector.GetContributionResult(contributionID) end
 
 ---@param contributionID number 
----@return string description
+---@return cstring description
 function C_ContributionCollector.GetDescription(contributionID) end
 
 ---@param creatureID number 
@@ -39,7 +39,7 @@ function C_ContributionCollector.GetDescription(contributionID) end
 function C_ContributionCollector.GetManagedContributionsForCreatureID(creatureID) end
 
 ---@param contributionID number 
----@return string name
+---@return cstring name
 function C_ContributionCollector.GetName(contributionID) end
 
 ---@param contributionID number 
@@ -59,7 +59,7 @@ function C_ContributionCollector.GetRequiredContributionItem(contributionID) end
 function C_ContributionCollector.GetRewardQuestID(contributionID) end
 
 ---@param contributionID number 
----@return ContributionState, number, number|nil, number contributionState, contributionPercentageComplete, timeOfNextStateChange, startTime
+---@return ContributionState, number, time_t|nil, time_t contributionState, contributionPercentageComplete, timeOfNextStateChange, startTime
 function C_ContributionCollector.GetState(contributionID) end
 
 ---@param contributionID number 
@@ -86,19 +86,19 @@ ContributionResult.UnableToCompleteTurnIn = 6
 ContributionResult.InternalError = 7
 
 ---@class ContributionAppearance
----@field stateName string 
----@field stateColor table 
----@field tooltipLine string 
+---@field stateName cstring 
+---@field stateColor colorRGB 
+---@field tooltipLine cstring 
 ---@field tooltipUseTimeRemaining bool 
----@field statusBarAtlas string 
----@field borderAtlas string 
----@field bannerAtlas string 
+---@field statusBarAtlas textureAtlas 
+---@field borderAtlas textureAtlas 
+---@field bannerAtlas textureAtlas 
 local ContributionAppearance = {}
 
 ---@class ContributionMapInfo
 ---@field areaPoiID number 
----@field position table 
----@field name string 
+---@field position vector2 
+---@field name cstring 
 ---@field atlasName string 
 ---@field collectorCreatureID number 
 local ContributionMapInfo = {}

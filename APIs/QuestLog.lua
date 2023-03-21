@@ -48,13 +48,13 @@ function C_QuestLog.GetBountySetInfoForMapID(uiMapID) end
 ---@return number, boolean distanceSq, onContinent
 function C_QuestLog.GetDistanceSqToQuest(questID) end
 
----@param questLogIndex number 
+---@param questLogIndex luaIndex 
 ---@return QuestInfo|nil info
 function C_QuestLog.GetInfo(questLogIndex) end
 
 --- Only returns a log index for actual quests, not headers
 ---@param questID number 
----@return number|nil questLogIndex
+---@return luaIndex|nil questLogIndex
 function C_QuestLog.GetLogIndexForQuestID(questID) end
 
 ---@return number uiMapID
@@ -107,15 +107,15 @@ function C_QuestLog.GetQuestDetailsTheme(questID) end
 function C_QuestLog.GetQuestDifficultyLevel(questID) end
 
 --- Only returns a questID for actual quests, not headers
----@param questLogIndex number 
+---@param questLogIndex luaIndex 
 ---@return number|nil questID
 function C_QuestLog.GetQuestIDForLogIndex(questLogIndex) end
 
----@param questWatchIndex number 
+---@param questWatchIndex luaIndex 
 ---@return number|nil questID
 function C_QuestLog.GetQuestIDForQuestWatchIndex(questWatchIndex) end
 
----@param questWatchIndex number 
+---@param questWatchIndex luaIndex 
 ---@return number|nil questID
 function C_QuestLog.GetQuestIDForWorldQuestWatchIndex(questWatchIndex) end
 
@@ -123,9 +123,9 @@ function C_QuestLog.GetQuestIDForWorldQuestWatchIndex(questWatchIndex) end
 ---@return QuestReputationRewardInfo reputationRewards
 function C_QuestLog.GetQuestLogMajorFactionReputationRewards(questID) end
 
----@param questLogIndex number @ [OPTIONAL]
+---@param questLogIndex luaIndex @ [OPTIONAL]
 ---@overload fun()
----@return number, string, string, number, number|nil portraitGiver, portraitGiverText, portraitGiverName, portraitGiverMount, portraitGiverModelSceneID
+---@return number, cstring, cstring, number, number|nil portraitGiver, portraitGiverText, portraitGiverName, portraitGiverMount, portraitGiverModelSceneID
 function C_QuestLog.GetQuestLogPortraitGiver(questLogIndex) end
 
 ---@param questID number 
@@ -166,13 +166,13 @@ function C_QuestLog.GetSuggestedGroupSize(questID) end
 function C_QuestLog.GetTimeAllowed(questID) end
 
 --- Returns a valid title for anything that is in the quest log.
----@param questLogIndex number 
----@return string|nil title
+---@param questLogIndex luaIndex 
+---@return cstring|nil title
 function C_QuestLog.GetTitleForLogIndex(questLogIndex) end
 
 --- Only returns a valid title for quests, header titles cannot be discovered using this.
 ---@param questID number 
----@return string|nil title
+---@return cstring|nil title
 function C_QuestLog.GetTitleForQuestID(questID) end
 
 ---@param uiMapID number 
@@ -259,7 +259,7 @@ function C_QuestLog.IsRepeatableQuest(questID) end
 ---@return boolean isThreat
 function C_QuestLog.IsThreatQuest(questID) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@param questID number 
 ---@return boolean isOnQuest
 function C_QuestLog.IsUnitOnQuest(unit, questID) end
@@ -315,7 +315,7 @@ function C_QuestLog.ShouldShowQuestRewards(questID) end
 
 function C_QuestLog.SortQuestWatches() end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return boolean isRelatedToActiveQuest
 function C_QuestLog.UnitIsRelatedToActiveQuest(unit) end
 
@@ -361,7 +361,7 @@ WorldQuestQuality.Epic = 2
 
 ---@class QuestInfo
 ---@field title string 
----@field questLogIndex number 
+---@field questLogIndex luaIndex 
 ---@field questID number 
 ---@field campaignID number|nil 
 ---@field level number 
@@ -401,7 +401,7 @@ local QuestObjectiveInfo = {}
 local QuestOnMapInfo = {}
 
 ---@class QuestTagInfo
----@field tagName string 
+---@field tagName cstring 
 ---@field tagID number 
 ---@field worldQuestType number|nil 
 ---@field quality WorldQuestQuality|nil 
@@ -411,9 +411,9 @@ local QuestOnMapInfo = {}
 local QuestTagInfo = {}
 
 ---@class QuestTheme
----@field background string 
----@field seal string 
----@field signature string 
----@field poiIcon string 
+---@field background textureAtlas 
+---@field seal textureAtlas 
+---@field signature cstring 
+---@field poiIcon textureAtlas 
 local QuestTheme = {}
 

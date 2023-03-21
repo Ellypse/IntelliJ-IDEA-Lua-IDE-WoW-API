@@ -1,20 +1,20 @@
 
----@return number, number offsetX, offsetY
+---@return uiUnit, uiUnit offsetX, offsetY
 function GetOffset() end
 
 
 ---@return number order
 function GetOrder() end
 
----@param offsetX number 
----@param offsetY number 
+---@param offsetX uiUnit 
+---@param offsetY uiUnit 
 function SetOffset(offsetX, offsetY) end
 
 ---@param order number 
 function SetOrder(order) end
 
----@param parent table 
+---@param parent SimplePathAnim 
 ---@param order number @ [OPTIONAL]
----@overload fun(parent:table)
+---@overload fun(parent:SimplePathAnim)
 function SetParent(parent, order) end
 

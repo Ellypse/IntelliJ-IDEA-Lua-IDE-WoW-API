@@ -1,5 +1,5 @@
----@param leftIndex number 
----@param rightIndex number 
+---@param leftIndex luaIndex 
+---@param rightIndex luaIndex 
 ---@return uiRect|nil areas
 function CalculateScreenAreaFromCharacterSpan(leftIndex, rightIndex) end
 
@@ -11,9 +11,9 @@ function CanNonSpaceWrap() end
 ---@return boolean wrap
 function CanWordWrap() end
 
----@param x number 
----@param y number 
----@return number, boolean characterIndex, inside
+---@param x uiUnit 
+---@param y uiUnit 
+---@return luaIndex, boolean characterIndex, inside
 function FindCharacterIndexAtCoordinate(x, y) end
 
 
@@ -21,11 +21,11 @@ function FindCharacterIndexAtCoordinate(x, y) end
 function GetFieldSize() end
 
 
----@return string|nil, number, string fontFile, fontHeight, flags
+---@return cstring|nil, uiUnit, TBFFlags fontFile, fontHeight, flags
 function GetFont() end
 
 
----@return table font
+---@return SimpleFont font
 function GetFontObject() end
 
 
@@ -33,15 +33,15 @@ function GetFontObject() end
 function GetIndentedWordWrap() end
 
 
----@return string justifyH
+---@return TBFStyleFlags justifyH
 function GetJustifyH() end
 
 
----@return string justifyH
+---@return TBFStyleFlags justifyH
 function GetJustifyV() end
 
 
----@return number lineHeight
+---@return uiUnit lineHeight
 function GetLineHeight() end
 
 
@@ -65,19 +65,19 @@ function GetShadowColor() end
 function GetShadowOffset() end
 
 
----@return number spacing
+---@return uiUnit spacing
 function GetSpacing() end
 
 
----@return number height
+---@return uiUnit height
 function GetStringHeight() end
 
 
----@return number width
+---@return uiUnit width
 function GetStringWidth() end
 
 
----@return string text
+---@return cstring text
 function GetText() end
 
 
@@ -89,11 +89,11 @@ function GetTextColor() end
 function GetTextScale() end
 
 
----@return number width
+---@return uiUnit width
 function GetUnboundedStringWidth() end
 
 
----@return number width
+---@return uiUnit width
 function GetWrappedWidth() end
 
 
@@ -108,24 +108,24 @@ function SetAlphaGradient(start, length) end
 ---@param fixedColor boolean 
 function SetFixedColor(fixedColor) end
 
----@param fontFile string 
----@param fontHeight number 
----@param flags string 
+---@param fontFile cstring 
+---@param fontHeight uiUnit 
+---@param flags TBFFlags 
 function SetFont(fontFile, fontHeight, flags) end
 
----@param font table 
+---@param font SimpleFont 
 function SetFontObject(font) end
 
----@param text string 
+---@param text cstring 
 function SetFormattedText(text) end
 
 ---@param wrap boolean 
 function SetIndentedWordWrap(wrap) end
 
----@param justifyH string 
+---@param justifyH TBFStyleFlags 
 function SetJustifyH(justifyH) end
 
----@param justifyV string 
+---@param justifyV TBFStyleFlags 
 function SetJustifyV(justifyV) end
 
 ---@param maxLines number 
@@ -140,7 +140,7 @@ function SetRotation(radians) end
 ---@param colorR number 
 ---@param colorG number 
 ---@param colorB number 
----@param a number @ [OPTIONAL]
+---@param a SingleColorValue @ [OPTIONAL]
 ---@overload fun(colorR:number, colorG:number, colorB:number)
 function SetShadowColor(colorR, colorG, colorB, a) end
 
@@ -148,20 +148,20 @@ function SetShadowColor(colorR, colorG, colorB, a) end
 ---@param offsetY number 
 function SetShadowOffset(offsetX, offsetY) end
 
----@param spacing number 
+---@param spacing uiUnit 
 function SetSpacing(spacing) end
 
----@param text string 
+---@param text cstring 
 function SetText(text) end
 
 ---@param colorR number 
 ---@param colorG number 
 ---@param colorB number 
----@param a number @ [OPTIONAL]
+---@param a SingleColorValue @ [OPTIONAL]
 ---@overload fun(colorR:number, colorG:number, colorB:number)
 function SetTextColor(colorR, colorG, colorB, a) end
 
----@param height number 
+---@param height uiUnit 
 function SetTextHeight(height) end
 
 ---@param textScale number 

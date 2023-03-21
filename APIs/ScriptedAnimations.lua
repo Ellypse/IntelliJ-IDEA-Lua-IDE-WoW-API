@@ -29,7 +29,7 @@ ScriptedAnimationTrajectory.HalfwayBetween = 6
 
 ---@class ScriptedAnimationEffect
 ---@field id number 
----@field visual number 
+---@field visual fileID 
 ---@field visualScale number 
 ---@field duration number 
 ---@field trajectory ScriptedAnimationTrajectory 

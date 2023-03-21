@@ -53,14 +53,14 @@ EventToastEventType.TreasureItem = 22
 ---@field title string 
 ---@field subtitle string 
 ---@field instructionText string 
----@field iconFileID number 
----@field subIcon string|nil 
+---@field iconFileID fileID 
+---@field subIcon textureAtlas|nil 
 ---@field link string 
 ---@field qualityString string|nil 
 ---@field quality number|nil 
 ---@field eventType EventToastEventType 
 ---@field displayType EventToastDisplayType 
----@field uiTextureKit string 
+---@field uiTextureKit textureKit 
 ---@field sortOrder number 
 ---@field time number|nil 
 ---@field uiWidgetSetID number|nil 
@@ -72,6 +72,6 @@ EventToastEventType.TreasureItem = 22
 ---@field hideDefaultAtlas bool|nil 
 ---@field showSoundKitID number|nil 
 ---@field hideSoundKitID number|nil 
----@field colorTint table|nil 
+---@field colorTint colorRGB|nil 
 local EventToastInfo = {}
 

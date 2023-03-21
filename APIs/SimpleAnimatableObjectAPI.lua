@@ -1,8 +1,8 @@
----@param name string @ [OPTIONAL]
----@param templateName string @ [OPTIONAL]
----@overload fun(templateName:string)
+---@param name cstring @ [OPTIONAL]
+---@param templateName cstring @ [OPTIONAL]
+---@overload fun(templateName:cstring)
 ---@overload fun()
----@return table group
+---@return SimpleAnimGroup group
 function CreateAnimationGroup(name, templateName) end
 
 

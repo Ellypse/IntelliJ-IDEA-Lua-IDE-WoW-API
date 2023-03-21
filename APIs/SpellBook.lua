@@ -20,7 +20,7 @@ function C_SpellBook.GetDeadlyDebuffInfo(spellID) end
 function C_SpellBook.GetOverrideSpell(spellID, spec, onlyKnown, ignoreOverrideSpellID) end
 
 ---@param skillLineID number 
----@return number|nil skillIndex
+---@return luaIndex|nil skillIndex
 function C_SpellBook.GetSkillLineIndexByID(skillLineID) end
 
 ---@param spellID number 
@@ -47,7 +47,7 @@ local DeadlyDebuffInfo = {}
 
 ---@class SpellInfo
 ---@field name string 
----@field iconID number 
+---@field iconID fileID 
 ---@field castTime number 
 ---@field minRange number 
 ---@field maxRange number 

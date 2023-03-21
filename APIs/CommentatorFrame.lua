@@ -22,7 +22,7 @@ function C_Commentator.AssignPlayerToTeam(playerName, teamName) end
 ---@param teamName string 
 function C_Commentator.AssignPlayersToTeam(playerName, teamName) end
 
----@param teamIndex number 
+---@param teamIndex luaIndex 
 ---@param teamName string 
 function C_Commentator.AssignPlayersToTeamInCurrentInstance(teamIndex, teamName) end
 
@@ -33,7 +33,7 @@ function C_Commentator.ClearCameraTarget() end
 
 function C_Commentator.ClearFollowTarget() end
 
----@param lookAtIndex number @ [OPTIONAL]
+---@param lookAtIndex luaIndex @ [OPTIONAL]
 ---@overload fun()
 function C_Commentator.ClearLookAtTarget(lookAtIndex) end
 
@@ -41,11 +41,11 @@ function C_Commentator.EnterInstance() end
 
 function C_Commentator.ExitInstance() end
 
----@param unitToken string 
----@return number, number, boolean playerIndex, teamIndex, isPet
+---@param unitToken UnitToken 
+---@return luaIndex, luaIndex, boolean playerIndex, teamIndex, isPet
 function C_Commentator.FindSpectatedUnit(unitToken) end
 
----@param teamIndex number 
+---@param teamIndex luaIndex 
 ---@return string|nil teamName
 function C_Commentator.FindTeamNameInCurrentInstance(teamIndex) end
 
@@ -55,10 +55,10 @@ function C_Commentator.FindTeamNameInDirectory(playerNames) end
 
 function C_Commentator.FlushCommentatorHistory() end
 
----@param factionIndex number 
----@param playerIndex number 
+---@param factionIndex luaIndex 
+---@param playerIndex luaIndex 
 ---@param forceInstantTransition boolean @ [OPTIONAL]
----@overload fun(factionIndex:number, playerIndex:number)
+---@overload fun(factionIndex:luaIndex, playerIndex:luaIndex)
 function C_Commentator.FollowPlayer(factionIndex, playerIndex, forceInstantTransition) end
 
 ---@param token string 
@@ -66,10 +66,10 @@ function C_Commentator.FollowUnit(token) end
 
 function C_Commentator.ForceFollowTransition() end
 
----@return number, number teamIndex, playerIndex
+---@return luaIndex, luaIndex teamIndex, playerIndex
 function C_Commentator.GetAdditionalCameraWeight() end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@return number weight
 function C_Commentator.GetAdditionalCameraWeightByToken(unitToken) end
 
@@ -113,19 +113,19 @@ function C_Commentator.GetHorizontalAngleThresholdToSmooth() end
 ---@return number indirectSpellID
 function C_Commentator.GetIndirectSpellID(trackedSpellID) end
 
----@param mapIndex number 
----@param instanceIndex number 
+---@param mapIndex luaIndex 
+---@param instanceIndex luaIndex 
 ---@return number, string|nil, number, number, number mapID, mapName, status, instanceIDLow, instanceIDHigh
 function C_Commentator.GetInstanceInfo(mapIndex, instanceIndex) end
 
 ---@return number amount
 function C_Commentator.GetLookAtLerpAmount() end
 
----@param mapIndex number 
+---@param mapIndex luaIndex 
 ---@return number, number, number, number teamSize, minLevel, maxLevel, numInstances
 function C_Commentator.GetMapInfo(mapIndex) end
 
----@return number seconds
+---@return time_t seconds
 function C_Commentator.GetMatchDuration() end
 
 ---@return number maxNumPlayersPerTeam
@@ -152,7 +152,7 @@ function C_Commentator.GetMsToSmoothVerticalChange() end
 ---@return number numMaps
 function C_Commentator.GetNumMaps() end
 
----@param factionIndex number 
+---@param factionIndex luaIndex 
 ---@return number numPlayers
 function C_Commentator.GetNumPlayers(factionIndex) end
 
@@ -161,48 +161,48 @@ function C_Commentator.GetNumPlayers(factionIndex) end
 ---@return CommentatorSeries data
 function C_Commentator.GetOrCreateSeries(teamName1, teamName2) end
 
----@param teamIndex number 
----@param playerIndex number 
+---@param teamIndex luaIndex 
+---@param playerIndex luaIndex 
 ---@param spellID number 
 ---@return number, number, boolean startTime, duration, enable
 function C_Commentator.GetPlayerAuraInfo(teamIndex, playerIndex, spellID) end
 
----@param token string 
+---@param token UnitToken 
 ---@param spellID number 
 ---@return number, number, boolean startTime, duration, enable
 function C_Commentator.GetPlayerAuraInfoByUnit(token, spellID) end
 
----@param teamIndex number 
----@param playerIndex number 
+---@param teamIndex luaIndex 
+---@param playerIndex luaIndex 
 ---@param spellID number 
 ---@return number, number, boolean startTime, duration, enable
 function C_Commentator.GetPlayerCooldownInfo(teamIndex, playerIndex, spellID) end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@param spellID number 
 ---@return number, number, boolean startTime, duration, enable
 function C_Commentator.GetPlayerCooldownInfoByUnit(unitToken, spellID) end
 
----@param teamIndex number 
----@param playerIndex number 
+---@param teamIndex luaIndex 
+---@param playerIndex luaIndex 
 ---@return number, number, number spellID, expiration, duration
 function C_Commentator.GetPlayerCrowdControlInfo(teamIndex, playerIndex) end
 
----@param token string 
+---@param token UnitToken 
 ---@return number, number, number spellID, expiration, duration
 function C_Commentator.GetPlayerCrowdControlInfoByUnit(token) end
 
----@param teamIndex number 
----@param playerIndex number 
+---@param teamIndex luaIndex 
+---@param playerIndex luaIndex 
 ---@return CommentatorPlayerData|nil info
 function C_Commentator.GetPlayerData(teamIndex, playerIndex) end
 
----@param teamIndex number 
----@param playerIndex number 
+---@param teamIndex luaIndex 
+---@param playerIndex luaIndex 
 ---@return boolean hasFlag
 function C_Commentator.GetPlayerFlagInfo(teamIndex, playerIndex) end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@return boolean hasFlag
 function C_Commentator.GetPlayerFlagInfoByUnit(unitToken) end
 
@@ -210,13 +210,13 @@ function C_Commentator.GetPlayerFlagInfoByUnit(unitToken) end
 ---@return string overrideName
 function C_Commentator.GetPlayerOverrideName(originalName) end
 
----@param teamIndex number 
----@param playerIndex number 
+---@param teamIndex luaIndex 
+---@param playerIndex luaIndex 
 ---@param spellID number 
 ---@return number, number, number, number charges, maxCharges, startTime, duration
 function C_Commentator.GetPlayerSpellCharges(teamIndex, playerIndex, spellID) end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@param spellID number 
 ---@return number, number, number, number charges, maxCharges, startTime, duration
 function C_Commentator.GetPlayerSpellChargesByUnit(unitToken, spellID) end
@@ -234,15 +234,15 @@ function C_Commentator.GetSoftlockWeight() end
 function C_Commentator.GetSpeedFactor() end
 
 ---@param mapID number 
----@return table pos
+---@return vector3 pos
 function C_Commentator.GetStartLocation(mapID) end
 
----@param teamIndex number 
----@return table color
+---@param teamIndex luaIndex 
+---@return colorRGB color
 function C_Commentator.GetTeamColor(teamIndex) end
 
----@param unitToken string 
----@return table color
+---@param unitToken UnitToken 
+---@return colorRGB color
 function C_Commentator.GetTeamColorByUnit(unitToken) end
 
 ---@return number|nil timeLeft
@@ -252,18 +252,18 @@ function C_Commentator.GetTimeLeftInMatch() end
 ---@return number trackedSpellID
 function C_Commentator.GetTrackedSpellID(indirectSpellID) end
 
----@param teamIndex number 
----@param playerIndex number 
+---@param teamIndex luaIndex 
+---@param playerIndex luaIndex 
 ---@param category TrackedSpellCategory 
 ---@return number|nil spells
 function C_Commentator.GetTrackedSpells(teamIndex, playerIndex, category) end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@param category TrackedSpellCategory 
 ---@return number|nil spells
 function C_Commentator.GetTrackedSpellsByUnit(unitToken, category) end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@return CommentatorUnitData data
 function C_Commentator.GetUnitData(unitToken) end
 
@@ -271,7 +271,7 @@ function C_Commentator.GetUnitData(unitToken) end
 ---@return string, number, number, boolean name, minPlayers, maxPlayers, isArena
 function C_Commentator.GetWargameInfo(listID) end
 
----@param token string 
+---@param token UnitToken 
 ---@return boolean, boolean hasOffensiveAura, hasDefensiveAura
 function C_Commentator.HasTrackedAuras(token) end
 
@@ -289,14 +289,14 @@ function C_Commentator.IsTrackedDefensiveAura(spellID) end
 ---@return boolean isOffensiveTrigger
 function C_Commentator.IsTrackedOffensiveAura(spellID) end
 
----@param teamIndex number 
----@param playerIndex number 
+---@param teamIndex luaIndex 
+---@param playerIndex luaIndex 
 ---@param spellID number 
 ---@param category TrackedSpellCategory 
 ---@return boolean isTracked
 function C_Commentator.IsTrackedSpell(teamIndex, playerIndex, spellID, category) end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@param spellID number 
 ---@param category TrackedSpellCategory 
 ---@return boolean isTracked
@@ -305,10 +305,10 @@ function C_Commentator.IsTrackedSpellByUnit(unitToken, spellID, category) end
 ---@return boolean isUsingSmartCamera
 function C_Commentator.IsUsingSmartCamera() end
 
----@param factionIndex number 
----@param playerIndex number 
----@param lookAtIndex number @ [OPTIONAL]
----@overload fun(factionIndex:number, playerIndex:number)
+---@param factionIndex luaIndex 
+---@param playerIndex luaIndex 
+---@param lookAtIndex luaIndex @ [OPTIONAL]
+---@overload fun(factionIndex:luaIndex, playerIndex:luaIndex)
 function C_Commentator.LookAtPlayer(factionIndex, playerIndex, lookAtIndex) end
 
 function C_Commentator.RemoveAllOverrideNames() end
@@ -316,8 +316,8 @@ function C_Commentator.RemoveAllOverrideNames() end
 ---@param originalPlayerName string 
 function C_Commentator.RemovePlayerOverrideName(originalPlayerName) end
 
----@param teamIndex number 
----@param playerIndex number 
+---@param teamIndex luaIndex 
+---@param playerIndex luaIndex 
 function C_Commentator.RequestPlayerCooldownInfo(teamIndex, playerIndex) end
 
 function C_Commentator.ResetFoVTarget() end
@@ -330,12 +330,12 @@ function C_Commentator.ResetSettings() end
 
 function C_Commentator.ResetTrackedAuras() end
 
----@param teamIndex number 
----@param playerIndex number 
+---@param teamIndex luaIndex 
+---@param playerIndex luaIndex 
 ---@param weight number 
 function C_Commentator.SetAdditionalCameraWeight(teamIndex, playerIndex, weight) end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@param weight number 
 function C_Commentator.SetAdditionalCameraWeightByToken(unitToken, weight) end
 
@@ -392,8 +392,8 @@ function C_Commentator.SetHorizontalAngleThresholdToSmooth(angle) end
 ---@param amount number 
 function C_Commentator.SetLookAtLerpAmount(amount) end
 
----@param mapIndex number 
----@param instanceIndex number 
+---@param mapIndex luaIndex 
+---@param instanceIndex luaIndex 
 function C_Commentator.SetMapAndInstanceIndex(mapIndex, instanceIndex) end
 
 ---@param disabled boolean 

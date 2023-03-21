@@ -3,13 +3,13 @@
 function GetDebugName(preferParentKey) end
 
 
----@return table parent
+---@return CScriptObject parent
 function GetParent() end
 
 
----@return string parentKey
+---@return cstring parentKey
 function GetParentKey() end
 
----@param parentKey string 
+---@param parentKey cstring 
 function SetParentKey(parentKey) end
 

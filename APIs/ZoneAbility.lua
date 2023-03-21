@@ -8,7 +8,7 @@ function C_ZoneAbility.GetActiveAbilities() end
 ---@field zoneAbilityID number 
 ---@field uiPriority number 
 ---@field spellID number 
----@field textureKit string 
----@field tutorialText string|nil 
+---@field textureKit textureKit 
+---@field tutorialText cstring|nil 
 local ZoneAbilityInfo = {}
 

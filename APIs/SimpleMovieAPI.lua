@@ -6,7 +6,7 @@ function EnableSubtitles(enable) end
 ---@return boolean, number success, returnCode
 function StartMovie(movieID, looping) end
 
----@param movieName string 
+---@param movieName cstring 
 ---@param looping boolean 
 ---@param resolution number 
 ---@return boolean, number success, returnCode

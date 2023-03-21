@@ -10,7 +10,7 @@ function C_ModifiedInstance.GetModifiedInstanceInfoFromMapID(mapID) end
 ---@field normalItemLevel number|nil 
 ---@field heroicItemLevel number|nil 
 ---@field mythicItemLevel number|nil 
----@field uiTextureKit string 
+---@field uiTextureKit textureKit 
 ---@field description string 
 local ModifiedInstanceInfo = {}
 

@@ -7,7 +7,7 @@ function C_ScrappingMachineUI.CloseScrappingMachine() end
 function C_ScrappingMachineUI.DropPendingScrapItemFromCursor(index) end
 
 ---@param index number 
----@return table itemLoc
+---@return ItemLocation itemLoc
 function C_ScrappingMachineUI.GetCurrentPendingScrapItemLocationByIndex(index) end
 
 ---@return number spellID

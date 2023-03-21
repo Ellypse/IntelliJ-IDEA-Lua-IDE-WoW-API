@@ -1,11 +1,11 @@
----@param text string 
+---@param text cstring 
 ---@param colorR number 
 ---@param colorG number 
 ---@param colorB number 
----@param a number @ [OPTIONAL]
+---@param a SingleColorValue @ [OPTIONAL]
 ---@param messageID number @ [OPTIONAL]
----@overload fun(text:string, colorR:number, colorG:number, colorB:number, messageID:number)
----@overload fun(text:string, colorR:number, colorG:number, colorB:number)
+---@overload fun(text:cstring, colorR:number, colorG:number, colorB:number, messageID:number)
+---@overload fun(text:cstring, colorR:number, colorG:number, colorB:number)
 function AddMessage(text, colorR, colorG, colorB, a, messageID) end
 
 
@@ -24,15 +24,15 @@ function GetFadePower() end
 function GetFading() end
 
 
----@return string, number, string fontFile, height, flags
+---@return cstring, uiFontHeight, TBFFlags fontFile, height, flags
 function GetFont() end
 
 
----@return table font
+---@return SimpleFont font
 function GetFontObject() end
 
 ---@param messageID number 
----@return table fontString
+---@return SimpleFontString fontString
 function GetFontStringByID(messageID) end
 
 
@@ -40,15 +40,15 @@ function GetFontStringByID(messageID) end
 function GetIndentedWordWrap() end
 
 
----@return string mode
+---@return InsertMode mode
 function GetInsertMode() end
 
 
----@return string justifyH
+---@return TBFStyleFlags justifyH
 function GetJustifyH() end
 
 
----@return string justifyV
+---@return TBFStyleFlags justifyV
 function GetJustifyV() end
 
 
@@ -60,7 +60,7 @@ function GetShadowColor() end
 function GetShadowOffset() end
 
 
----@return number spacing
+---@return uiUnit spacing
 function GetSpacing() end
 
 
@@ -87,30 +87,30 @@ function SetFadePower(fadePower) end
 ---@param fading boolean 
 function SetFading(fading) end
 
----@param fontFile string 
----@param height number 
----@param flags string 
+---@param fontFile cstring 
+---@param height uiFontHeight 
+---@param flags TBFFlags 
 function SetFont(fontFile, height, flags) end
 
----@param font table 
+---@param font SimpleFont 
 function SetFontObject(font) end
 
 ---@param wordWrap boolean 
 function SetIndentedWordWrap(wordWrap) end
 
----@param mode string 
+---@param mode InsertMode 
 function SetInsertMode(mode) end
 
----@param justifyH string 
+---@param justifyH TBFStyleFlags 
 function SetJustifyH(justifyH) end
 
----@param justifyV string 
+---@param justifyV TBFStyleFlags 
 function SetJustifyV(justifyV) end
 
 ---@param colorR number 
 ---@param colorG number 
 ---@param colorB number 
----@param a number @ [OPTIONAL]
+---@param a SingleColorValue @ [OPTIONAL]
 ---@overload fun(colorR:number, colorG:number, colorB:number)
 function SetShadowColor(colorR, colorG, colorB, a) end
 
@@ -118,13 +118,13 @@ function SetShadowColor(colorR, colorG, colorB, a) end
 ---@param offsetY number 
 function SetShadowOffset(offsetX, offsetY) end
 
----@param spacing number 
+---@param spacing uiUnit 
 function SetSpacing(spacing) end
 
 ---@param colorR number 
 ---@param colorG number 
 ---@param colorB number 
----@param a number @ [OPTIONAL]
+---@param a SingleColorValue @ [OPTIONAL]
 ---@overload fun(colorR:number, colorG:number, colorB:number)
 function SetTextColor(colorR, colorG, colorB, a) end
 

@@ -10,20 +10,20 @@ function C_GuildInfo.CanSpeakInGuildChat() end
 ---@return boolean canViewOfficerNote
 function C_GuildInfo.CanViewOfficerNote() end
 
----@param index number 
+---@param index luaIndex 
 ---@return GuildNewsInfo newsInfo
 function C_GuildInfo.GetGuildNewsInfo(index) end
 
----@param guid string 
----@return number rankOrder
+---@param guid WOWGUID 
+---@return luaIndex rankOrder
 function C_GuildInfo.GetGuildRankOrder(guid) end
 
----@param unit string @ [OPTIONAL]
+---@param unit UnitToken @ [OPTIONAL]
 ---@overload fun()
 ---@return GuildTabardInfo|nil tabardInfo
 function C_GuildInfo.GetGuildTabardInfo(unit) end
 
----@param rankOrder number 
+---@param rankOrder luaIndex 
 ---@return boolean permissions
 function C_GuildInfo.GuildControlGetRankFlags(rankOrder) end
 
@@ -32,31 +32,31 @@ function C_GuildInfo.GuildRoster() end
 ---@return boolean isOfficer
 function C_GuildInfo.IsGuildOfficer() end
 
----@param guid string 
----@param rankOrder number 
+---@param guid WOWGUID 
+---@param rankOrder luaIndex 
 ---@return boolean isGuildRankAssignmentAllowed
 function C_GuildInfo.IsGuildRankAssignmentAllowed(guid, rankOrder) end
 
----@param guildMemberGUID string 
+---@param guildMemberGUID WOWGUID 
 ---@param skillLineID number 
 function C_GuildInfo.QueryGuildMemberRecipes(guildMemberGUID, skillLineID) end
 
 ---@param skillLineID number 
 ---@param recipeSpellID number 
----@param recipeLevel number @ [OPTIONAL]
+---@param recipeLevel luaIndex @ [OPTIONAL]
 ---@overload fun(skillLineID:number, recipeSpellID:number)
 ---@return number updatedRecipeSpellID
 function C_GuildInfo.QueryGuildMembersForRecipe(skillLineID, recipeSpellID, recipeLevel) end
 
----@param guid string 
+---@param guid WOWGUID 
 function C_GuildInfo.RemoveFromGuild(guid) end
 
----@param guid string 
----@param rankOrder number 
+---@param guid WOWGUID 
+---@param rankOrder luaIndex 
 function C_GuildInfo.SetGuildRankOrder(guid, rankOrder) end
 
----@param guid string 
----@param note string 
+---@param guid WOWGUID 
+---@param note cstring 
 ---@param isPublic boolean 
 function C_GuildInfo.SetNote(guid, note, isPublic) end
 

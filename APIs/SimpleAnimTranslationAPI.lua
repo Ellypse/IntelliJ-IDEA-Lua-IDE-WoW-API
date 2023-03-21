@@ -1,8 +1,8 @@
 
----@return number, number offsetX, offsetY
+---@return uiUnit, uiUnit offsetX, offsetY
 function GetOffset() end
 
----@param offsetX number 
----@param offsetY number 
+---@param offsetX uiUnit 
+---@param offsetY uiUnit 
 function SetOffset(offsetX, offsetY) end
 

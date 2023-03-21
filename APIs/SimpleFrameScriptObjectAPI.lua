@@ -1,16 +1,16 @@
 
----@return string name
+---@return cstring name
 function GetName() end
 
 
----@return string objectType
+---@return cstring objectType
 function GetObjectType() end
 
 
 ---@return boolean isForbidden
 function IsForbidden() end
 
----@param objectType string 
+---@param objectType cstring 
 ---@return boolean isType
 function IsObjectType(objectType) end
 

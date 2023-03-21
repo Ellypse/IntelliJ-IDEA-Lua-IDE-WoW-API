@@ -1,16 +1,16 @@
 ---@class Video
 C_VideoOptions = {}
 
----@return table size
+---@return vector2 size
 function C_VideoOptions.GetCurrentGameWindowSize() end
 
 ---@param monitor number 
----@return table size
+---@return vector2 size
 function C_VideoOptions.GetDefaultGameWindowSize(monitor) end
 
 ---@param monitor number 
 ---@param fullscreen boolean 
----@return table sizes
+---@return vector2 sizes
 function C_VideoOptions.GetGameWindowSizes(monitor, fullscreen) end
 
 ---@return GxAdapterInfoDetails adapters

@@ -9,41 +9,41 @@ function EnableMouse(enable) end
 function EnableMouseWheel(enable) end
 
 
----@return number bottom
+---@return uiUnit bottom
 function GetBottom() end
 
 
----@return number, number x, y
+---@return uiUnit, uiUnit x, y
 function GetCenter() end
 
 ---@param ignoreRect boolean 
----@return number height
+---@return uiUnit height
 function GetHeight(ignoreRect) end
 
 
----@return number left
+---@return uiUnit left
 function GetLeft() end
 
 
----@return number, number, number, number left, bottom, width, height
+---@return uiUnit, uiUnit, uiUnit, uiUnit left, bottom, width, height
 function GetRect() end
 
 
----@return number right
+---@return uiUnit right
 function GetRight() end
 
 
----@return number, number, number, number left, bottom, width, height
+---@return uiUnit, uiUnit, uiUnit, uiUnit left, bottom, width, height
 function GetScaledRect() end
 
----@param scriptTypeName string 
+---@param scriptTypeName cstring 
 ---@param bindingType number @ [OPTIONAL]
----@overload fun(scriptTypeName:string)
----@return function script
+---@overload fun(scriptTypeName:cstring)
+---@return luaFunction script
 function GetScript(scriptTypeName, bindingType) end
 
 ---@param ignoreRect boolean 
----@return number, number width, height
+---@return uiUnit, uiUnit width, height
 function GetSize(ignoreRect) end
 
 
@@ -51,24 +51,24 @@ function GetSize(ignoreRect) end
 function GetSourceLocation() end
 
 
----@return number top
+---@return uiUnit top
 function GetTop() end
 
 ---@param ignoreRect boolean 
----@return number width
+---@return uiUnit width
 function GetWidth(ignoreRect) end
 
----@param scriptName string 
+---@param scriptName cstring 
 ---@return boolean hasScript
 function HasScript(scriptName) end
 
 
 function Hide() end
 
----@param scriptTypeName string 
----@param script function 
+---@param scriptTypeName cstring 
+---@param script luaFunction 
 ---@param bindingType number @ [OPTIONAL]
----@overload fun(scriptTypeName:string, script:function)
+---@overload fun(scriptTypeName:cstring, script:luaFunction)
 function HookScript(scriptTypeName, script, bindingType) end
 
 
@@ -91,10 +91,10 @@ function IsMouseEnabled() end
 ---@return boolean enabled
 function IsMouseMotionEnabled() end
 
----@param offsetTop number 
----@param offsetBottom number 
----@param offsetLeft number 
----@param offsetRight number 
+---@param offsetTop uiUnit 
+---@param offsetBottom uiUnit 
+---@param offsetLeft uiUnit 
+---@param offsetRight uiUnit 
 ---@return boolean isMouseOver
 function IsMouseOver(offsetTop, offsetBottom, offsetLeft, offsetRight) end
 
@@ -124,16 +124,16 @@ function SetMouseClickEnabled(enabled) end
 ---@param enabled boolean 
 function SetMouseMotionEnabled(enabled) end
 
----@param parent table @ [OPTIONAL]
+---@param parent SimpleFrame @ [OPTIONAL]
 ---@overload fun()
 function SetParent(parent) end
 
 ---@param unpackedPrimitiveType number 
 function SetPassThroughButtons(unpackedPrimitiveType) end
 
----@param scriptTypeName string 
----@param script function @ [OPTIONAL]
----@overload fun(scriptTypeName:string)
+---@param scriptTypeName cstring 
+---@param script luaFunction @ [OPTIONAL]
+---@overload fun(scriptTypeName:cstring)
 function SetScript(scriptTypeName, script) end
 
 ---@param show boolean 

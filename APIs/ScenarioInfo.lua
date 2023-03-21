@@ -2,7 +2,7 @@
 C_ScenarioInfo = {}
 
 ---@param runType JailersTowerType 
----@return string|nil typeString
+---@return cstring|nil typeString
 function C_ScenarioInfo.GetJailersTowerTypeString(runType) end
 
 ---@return ScenarioInformation scenarioInfo
@@ -41,7 +41,7 @@ JailersTowerType.BossRush = 14
 ---@field money number 
 ---@field type number 
 ---@field area string 
----@field uiTextureKit string 
+---@field uiTextureKit textureKit 
 local ScenarioInformation = {}
 
 ---@class ScenarioStepInfo

@@ -13,7 +13,7 @@ function NavigateBack() end
 
 function NavigateForward() end
 
----@param urlType string 
+---@param urlType cstring 
 function NavigateHome(urlType) end
 
 
@@ -23,7 +23,7 @@ function NavigateReload() end
 function NavigateStop() end
 
 --- Not functional in public builds
----@param url string 
+---@param url cstring 
 function NavigateTo(url) end
 
 

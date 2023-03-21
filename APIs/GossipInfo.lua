@@ -44,7 +44,7 @@ function C_GossipInfo.GetPoiForUiMapID(uiMapID) end
 ---@return GossipPoiInfo|nil gossipPoiInfo
 function C_GossipInfo.GetPoiInfo(uiMapID, gossipPoiID) end
 
----@return string gossipText
+---@return cstring gossipText
 function C_GossipInfo.GetText() end
 
 function C_GossipInfo.RefreshOptions() end
@@ -56,11 +56,18 @@ function C_GossipInfo.SelectActiveQuest(optionID) end
 function C_GossipInfo.SelectAvailableQuest(optionID) end
 
 ---@param optionID number 
----@param text string @ [OPTIONAL]
+---@param text cstring @ [OPTIONAL]
 ---@param confirmed boolean @ [OPTIONAL]
 ---@overload fun(optionID:number, confirmed:bool)
 ---@overload fun(optionID:number)
 function C_GossipInfo.SelectOption(optionID, text, confirmed) end
+
+---@param optionID number 
+---@param text cstring @ [OPTIONAL]
+---@param confirmed boolean @ [OPTIONAL]
+---@overload fun(optionID:number, confirmed:bool)
+---@overload fun(optionID:number)
+function C_GossipInfo.SelectOptionByIndex(optionID, text, confirmed) end
 
 ---@class GossipOptionRewardType
 local GossipOptionRewardType = {}
@@ -100,14 +107,14 @@ local FriendshipReputationRankInfo = {}
 local GossipOptionRewardInfo = {}
 
 ---@class GossipOptionUIInfo
----@field gossipOptionID number 
+---@field gossipOptionID number|nil 
 ---@field name string 
----@field icon number 
+---@field icon fileID 
 ---@field rewards table 
 ---@field status GossipOptionStatus 
 ---@field spellID number|nil 
 ---@field flags number 
----@field overrideIconID number|nil 
+---@field overrideIconID fileID|nil 
 ---@field selectOptionWhenOnlyOption bool 
 ---@field orderIndex number 
 local GossipOptionUIInfo = {}
@@ -115,7 +122,7 @@ local GossipOptionUIInfo = {}
 ---@class GossipPoiInfo
 ---@field name string 
 ---@field textureIndex number 
----@field position table 
+---@field position vector2 
 ---@field inBattleMap bool 
 local GossipPoiInfo = {}
 

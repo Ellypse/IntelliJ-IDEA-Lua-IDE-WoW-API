@@ -1,11 +1,11 @@
 ---@class IncomingSummon
 C_IncomingSummon = {}
 
----@param unit string 
+---@param unit UnitToken 
 ---@return boolean summon
 function C_IncomingSummon.HasIncomingSummon(unit) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return SummonStatus status
 function C_IncomingSummon.IncomingSummonStatus(unit) end
 

@@ -10,11 +10,11 @@ function C_Map.ClearUserWaypoint() end
 function C_Map.CloseWorldMapInteraction() end
 
 ---@param areaID number 
----@return string name
+---@return cstring name
 function C_Map.GetAreaInfo(areaID) end
 
 --- Only works for the player and party members.
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@return number|nil uiMapID
 function C_Map.GetBestMapForUnit(unitToken) end
 
@@ -26,7 +26,7 @@ function C_Map.GetBountySetMaps(bountySetID) end
 function C_Map.GetFallbackWorldMapID() end
 
 ---@param uiMapID number 
----@return string atlasName
+---@return textureAtlas atlasName
 function C_Map.GetMapArtBackgroundAtlas(uiMapID) end
 
 ---@param uiMapID number 
@@ -38,8 +38,8 @@ function C_Map.GetMapArtHelpTextPosition(uiMapID) end
 function C_Map.GetMapArtID(uiMapID) end
 
 ---@param uiMapID number 
----@param layerIndex number 
----@return number textures
+---@param layerIndex luaIndex 
+---@return fileID textures
 function C_Map.GetMapArtLayerTextures(uiMapID, layerIndex) end
 
 ---@param uiMapID number 
@@ -73,7 +73,7 @@ function C_Map.GetMapGroupMembersInfo(uiMapGroupID) end
 ---@param uiMapID number 
 ---@param x number 
 ---@param y number 
----@return number, string, number, number, number, number, number, number fileDataID, atlasID, texturePercentageX, texturePercentageY, textureX, textureY, scrollChildX, scrollChildY
+---@return fileID, textureAtlas, number, number, number, number, number, number fileDataID, atlasID, texturePercentageX, texturePercentageY, textureX, textureY, scrollChildX, scrollChildY
 function C_Map.GetMapHighlightInfoAtPosition(uiMapID, x, y) end
 
 ---@param uiMapID number 
@@ -95,10 +95,10 @@ function C_Map.GetMapLevels(uiMapID) end
 function C_Map.GetMapLinksForMap(uiMapID) end
 
 ---@param continentID number 
----@param worldPosition table 
+---@param worldPosition vector2 
 ---@param overrideUiMapID number @ [OPTIONAL]
----@overload fun(continentID:number, worldPosition:table)
----@return number, table uiMapID, mapPosition
+---@overload fun(continentID:number, worldPosition:vector2)
+---@return number, vector2 uiMapID, mapPosition
 function C_Map.GetMapPosFromWorldPos(continentID, worldPosition, overrideUiMapID) end
 
 ---@param uiMapID number 
@@ -113,27 +113,27 @@ function C_Map.GetMapWorldSize(uiMapID) end
 
 --- Only works for the player and party members.
 ---@param uiMapID number 
----@param unitToken string 
----@return table|nil position
+---@param unitToken UnitToken 
+---@return vector2|nil position
 function C_Map.GetPlayerMapPosition(uiMapID, unitToken) end
 
----@return table point
+---@return UiMapPoint point
 function C_Map.GetUserWaypoint() end
 
 ---@param hyperlink string 
----@return table point
+---@return UiMapPoint point
 function C_Map.GetUserWaypointFromHyperlink(hyperlink) end
 
 ---@return string hyperlink
 function C_Map.GetUserWaypointHyperlink() end
 
 ---@param uiMapID number 
----@return table mapPosition
+---@return vector2 mapPosition
 function C_Map.GetUserWaypointPositionForMap(uiMapID) end
 
 ---@param uiMapID number 
----@param mapPosition table 
----@return number, table continentID, worldPosition
+---@param mapPosition vector2 
+---@return number, vector2 continentID, worldPosition
 function C_Map.GetWorldPosFromMapPos(uiMapID, mapPosition) end
 
 ---@return boolean hasUserWaypoint
@@ -150,7 +150,7 @@ function C_Map.MapHasArt(uiMapID) end
 ---@param uiMapID number 
 function C_Map.RequestPreloadMap(uiMapID) end
 
----@param point table 
+---@param point UiMapPoint 
 function C_Map.SetUserWaypoint(point) end
 
 ---@class MapCanvasPosition
@@ -200,22 +200,22 @@ UIMapType.Orphan = 6
 
 ---@class MapBannerInfo
 ---@field areaPoiID number 
----@field name string 
+---@field name cstring 
 ---@field atlasName string 
----@field uiTextureKit string|nil 
+---@field uiTextureKit textureKit|nil 
 local MapBannerInfo = {}
 
 ---@class MapLinkInfo
 ---@field areaPoiID number 
----@field position table 
----@field name string 
+---@field position vector2 
+---@field name cstring 
 ---@field atlasName string 
 ---@field linkedUiMapID number 
 local MapLinkInfo = {}
 
 ---@class UiMapDetails
 ---@field mapID number 
----@field name string 
+---@field name cstring 
 ---@field mapType UIMapType 
 ---@field parentMapID number 
 ---@field flags number 
@@ -224,12 +224,12 @@ local UiMapDetails = {}
 ---@class UiMapGroupMemberInfo
 ---@field mapID number 
 ---@field relativeHeightIndex number 
----@field name string 
+---@field name cstring 
 local UiMapGroupMemberInfo = {}
 
 ---@class UiMapHighlightInfo
----@field fileDataID number 
----@field atlasID string 
+---@field fileDataID fileID 
+---@field atlasID textureAtlas 
 ---@field texturePercentageX number 
 ---@field texturePercentageY number 
 ---@field textureX number 

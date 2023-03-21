@@ -13,7 +13,7 @@ function C_Covenants.GetCovenantIDs() end
 
 ---@class CovenantData
 ---@field ID number 
----@field textureKit string 
+---@field textureKit textureKit 
 ---@field celebrationSoundKit number 
 ---@field animaChannelSelectSoundKit number 
 ---@field animaChannelActiveSoundKit number 
@@ -24,7 +24,7 @@ function C_Covenants.GetCovenantIDs() end
 ---@field reservoirFullSoundKitID number 
 ---@field beginResearchSoundKitID number 
 ---@field renownFanfareSoundKitID number 
----@field name string 
+---@field name cstring 
 ---@field soulbindIDs table 
 local CovenantData = {}
 

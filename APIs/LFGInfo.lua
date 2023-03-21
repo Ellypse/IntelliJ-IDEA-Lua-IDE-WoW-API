@@ -18,7 +18,7 @@ function C_LFGInfo.CanPlayerUsePremadeGroup() end
 
 function C_LFGInfo.ConfirmLfgExpandSearch() end
 
----@param category number 
+---@param category luaIndex 
 ---@return number lfgDungeonIDs
 function C_LFGInfo.GetAllEntriesForCategory(category) end
 
@@ -38,7 +38,7 @@ function C_LFGInfo.HideNameFromUI(dungeonID) end
 
 ---@class LFGDungeonInfo
 ---@field name string 
----@field iconID number 
+---@field iconID fileID 
 ---@field link string|nil 
 local LFGDungeonInfo = {}
 

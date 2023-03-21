@@ -72,9 +72,9 @@ local CovenantSanctumRenownLevelInfo = {}
 ---@field titleMaskID number|nil 
 ---@field garrFollowerID number|nil 
 ---@field transmogIllusionSourceID number|nil 
----@field icon number|nil 
----@field name string|nil 
----@field description string|nil 
----@field toastDescription string|nil 
+---@field icon fileID|nil 
+---@field name cstring|nil 
+---@field description cstring|nil 
+---@field toastDescription cstring|nil 
 local CovenantSanctumRenownRewardInfo = {}
 

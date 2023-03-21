@@ -15,7 +15,7 @@ SplashScreenType.WhatsNew = 0
 SplashScreenType.SeasonRollOver = 1
 
 ---@class SplashScreenInfo
----@field textureKit string 
+---@field textureKit textureKit 
 ---@field minDisplayCharLevel number 
 ---@field minQuestDisplayLevel number 
 ---@field soundKitID number 

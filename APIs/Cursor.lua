@@ -1,7 +1,7 @@
 ---@class Cursor
 C_Cursor = {}
 
----@return table item
+---@return ItemLocation item
 function C_Cursor.GetCursorItem() end
 
 ---@class UICursorType

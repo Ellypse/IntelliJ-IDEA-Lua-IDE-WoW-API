@@ -6,7 +6,7 @@ C_Spell = {}
 function C_Spell.DoesSpellExist(spellID) end
 
 ---@param spellID number 
----@return string rarityBorderAtlas
+---@return textureAtlas rarityBorderAtlas
 function C_Spell.GetMawPowerBorderAtlasBySpellID(spellID) end
 
 ---@param spellID number 

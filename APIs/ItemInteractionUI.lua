@@ -8,7 +8,7 @@ function C_ItemInteraction.CloseUI() end
 ---@return ItemInteractionChargeInfo chargeInfo
 function C_ItemInteraction.GetChargeInfo() end
 
----@param item table 
+---@param item ItemLocation 
 ---@return ConversionCurrencyCost conversionCost
 function C_ItemInteraction.GetItemConversionCurrencyCost(item) end
 
@@ -24,7 +24,7 @@ function C_ItemInteraction.PerformItemInteraction() end
 
 function C_ItemInteraction.Reset() end
 
----@param item table @ [OPTIONAL]
+---@param item ItemLocation @ [OPTIONAL]
 ---@overload fun()
 ---@return boolean success
 function C_ItemInteraction.SetPendingItem(item) end
@@ -41,7 +41,7 @@ local ConversionCurrencyCost = {}
 local ItemInteractionChargeInfo = {}
 
 ---@class ItemInteractionFrameInfo
----@field textureKit string 
+---@field textureKit textureKit 
 ---@field openSoundKitID number 
 ---@field closeSoundKitID number 
 ---@field titleText string 

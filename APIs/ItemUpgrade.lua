@@ -1,7 +1,7 @@
 ---@class ItemUpgrade
 C_ItemUpgrade = {}
 
----@param baseItem table 
+---@param baseItem ItemLocation 
 ---@return boolean isValid
 function C_ItemUpgrade.CanUpgradeItem(baseItem) end
 
@@ -9,7 +9,7 @@ function C_ItemUpgrade.ClearItemUpgrade() end
 
 function C_ItemUpgrade.CloseItemUpgrade() end
 
----@return string link
+---@return cstring link
 function C_ItemUpgrade.GetItemHyperlink() end
 
 ---@return number, boolean itemLevel, isPvpItemLevel
@@ -33,7 +33,7 @@ function C_ItemUpgrade.GetNumItemUpgradeEffects() end
 
 function C_ItemUpgrade.SetItemUpgradeFromCursorItem() end
 
----@param itemToSet table 
+---@param itemToSet ItemLocation 
 function C_ItemUpgrade.SetItemUpgradeFromLocation(itemToSet) end
 
 ---@param numUpgrades number 

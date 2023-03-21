@@ -11,6 +11,7 @@ local BLACKLISTED_FILES = {
 	["CharacterCustomizationSharedDocumentation.lua"] = true,
 	["CurrencyConstantsDocumentation.lua"] = true,
 	["UITimerDocumentation.lua"] = true,
+	["TextureUtilsDocumentation.lua"] = true,
 	["."] = true,
 	[".."] = true,
 }

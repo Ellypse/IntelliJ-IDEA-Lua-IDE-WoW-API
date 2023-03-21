@@ -10,7 +10,7 @@ function ClearNormalTexture() end
 
 function ClearPushedTexture() end
 
----@param button string 
+---@param button cstring 
 ---@param isDown boolean 
 function Click(button, isDown) end
 
@@ -21,27 +21,27 @@ function Disable() end
 function Enable() end
 
 
----@return string buttonState
+---@return SimpleButtonStateToken buttonState
 function GetButtonState() end
 
 
----@return table font
+---@return SimpleFont font
 function GetDisabledFontObject() end
 
 
----@return table texture
+---@return SimpleTexture texture
 function GetDisabledTexture() end
 
 
----@return table fontString
+---@return SimpleFontString fontString
 function GetFontString() end
 
 
----@return table font
+---@return SimpleFont font
 function GetHighlightFontObject() end
 
 
----@return table texture
+---@return SimpleTexture texture
 function GetHighlightTexture() end
 
 
@@ -49,31 +49,31 @@ function GetHighlightTexture() end
 function GetMotionScriptsWhileDisabled() end
 
 
----@return table font
+---@return SimpleFont font
 function GetNormalFontObject() end
 
 
----@return table texture
+---@return SimpleTexture texture
 function GetNormalTexture() end
 
 
----@return number, number offsetX, offsetY
+---@return uiUnit, uiUnit offsetX, offsetY
 function GetPushedTextOffset() end
 
 
----@return table texture
+---@return SimpleTexture texture
 function GetPushedTexture() end
 
 
----@return string text
+---@return cstring text
 function GetText() end
 
 
----@return number height
+---@return uiUnit height
 function GetTextHeight() end
 
 
----@return number width
+---@return uiUnit width
 function GetTextWidth() end
 
 
@@ -89,67 +89,67 @@ function RegisterForClicks(unpackedPrimitiveType) end
 ---@param unpackedPrimitiveType number 
 function RegisterForMouse(unpackedPrimitiveType) end
 
----@param buttonState string 
+---@param buttonState SimpleButtonStateToken 
 ---@param lock boolean 
 function SetButtonState(buttonState, lock) end
 
----@param atlas string 
+---@param atlas textureAtlas 
 function SetDisabledAtlas(atlas) end
 
----@param font table 
+---@param font SimpleFont 
 function SetDisabledFontObject(font) end
 
----@param asset string 
+---@param asset TextureAsset 
 function SetDisabledTexture(asset) end
 
 ---@param enabled boolean 
 function SetEnabled(enabled) end
 
----@param fontString table 
+---@param fontString SimpleFontString 
 function SetFontString(fontString) end
 
----@param text string 
+---@param text cstring 
 function SetFormattedText(text) end
 
----@param atlas string 
----@param blendMode string @ [OPTIONAL]
----@overload fun(atlas:string)
+---@param atlas textureAtlas 
+---@param blendMode BlendMode @ [OPTIONAL]
+---@overload fun(atlas:textureAtlas)
 function SetHighlightAtlas(atlas, blendMode) end
 
----@param font table 
+---@param font SimpleFont 
 function SetHighlightFontObject(font) end
 
 ---@param locked boolean 
 function SetHighlightLocked(locked) end
 
----@param asset string 
----@param blendMode string @ [OPTIONAL]
----@overload fun(asset:string)
+---@param asset TextureAsset 
+---@param blendMode BlendMode @ [OPTIONAL]
+---@overload fun(asset:TextureAsset)
 function SetHighlightTexture(asset, blendMode) end
 
 ---@param motionScriptsWhileDisabled boolean 
 function SetMotionScriptsWhileDisabled(motionScriptsWhileDisabled) end
 
----@param atlas string 
+---@param atlas textureAtlas 
 function SetNormalAtlas(atlas) end
 
----@param font table 
+---@param font SimpleFont 
 function SetNormalFontObject(font) end
 
----@param asset string 
+---@param asset TextureAsset 
 function SetNormalTexture(asset) end
 
----@param atlas string 
+---@param atlas textureAtlas 
 function SetPushedAtlas(atlas) end
 
----@param offsetX number 
----@param offsetY number 
+---@param offsetX uiUnit 
+---@param offsetY uiUnit 
 function SetPushedTextOffset(offsetX, offsetY) end
 
----@param asset string 
+---@param asset TextureAsset 
 function SetPushedTexture(asset) end
 
----@param text string 
+---@param text cstring 
 function SetText(text) end
 
 

@@ -1,8 +1,8 @@
 ---@class QuestOffer
 C_QuestOffer = {}
 
----@return boolean hideRequiredItemsOnTurnIn
-function C_QuestOffer.GetHideRequiredItemsOnTurnIn() end
+---@return boolean hideRequiredItems
+function C_QuestOffer.GetHideRequiredItems() end
 
 ---@return QuestReputationRewardInfo reputationRewards
 function C_QuestOffer.GetQuestOfferMajorFactionReputationRewards() end

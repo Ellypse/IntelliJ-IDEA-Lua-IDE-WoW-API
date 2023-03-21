@@ -7,7 +7,7 @@ function C_TransmogSets.ClearLatestSource() end
 function C_TransmogSets.ClearNewSource(sourceID) end
 
 ---@param transmogSetID number 
----@param slot number 
+---@param slot luaIndex 
 function C_TransmogSets.ClearSetNewSourcesForSlot(transmogSetID, slot) end
 
 ---@return TransmogSetInfo sets
@@ -27,7 +27,7 @@ function C_TransmogSets.GetBaseSets() end
 ---@return number, number numCollected, numTotal
 function C_TransmogSets.GetBaseSetsCounts() end
 
----@param index number 
+---@param index luaIndex 
 ---@return boolean isChecked
 function C_TransmogSets.GetBaseSetsFilter(index) end
 
@@ -58,12 +58,12 @@ function C_TransmogSets.GetSetPrimaryAppearances(transmogSetID) end
 function C_TransmogSets.GetSetsContainingSourceID(sourceID) end
 
 ---@param transmogSetID number 
----@param slot number 
+---@param slot luaIndex 
 ---@return number sources
 function C_TransmogSets.GetSourceIDsForSlot(transmogSetID, slot) end
 
 ---@param transmogSetID number 
----@param slot number 
+---@param slot luaIndex 
 ---@return AppearanceSourceInfo sources
 function C_TransmogSets.GetSourcesForSlot(transmogSetID, slot) end
 
@@ -92,7 +92,7 @@ function C_TransmogSets.IsSetVisible(transmogSetID) end
 ---@return boolean isUsingDefaultBaseSetsFilters
 function C_TransmogSets.IsUsingDefaultBaseSetsFilters() end
 
----@param index number 
+---@param index luaIndex 
 ---@param isChecked boolean 
 function C_TransmogSets.SetBaseSetsFilter(index, isChecked) end
 
@@ -103,7 +103,7 @@ function C_TransmogSets.SetDefaultBaseSetsFilters() end
 function C_TransmogSets.SetHasNewSources(transmogSetID) end
 
 ---@param transmogSetID number 
----@param slot number 
+---@param slot luaIndex 
 ---@return boolean hasNewSources
 function C_TransmogSets.SetHasNewSourcesForSlot(transmogSetID, slot) end
 
@@ -115,14 +115,14 @@ function C_TransmogSets.SetIsFavorite(transmogSetID, isFavorite) end
 ---@field setID number 
 ---@field name string 
 ---@field baseSetID number|nil 
----@field description string|nil 
----@field label string|nil 
+---@field description cstring|nil 
+---@field label cstring|nil 
 ---@field expansionID number 
 ---@field patchID number 
 ---@field uiOrder number 
 ---@field classMask number 
 ---@field hiddenUntilCollected bool 
----@field requiredFaction string|nil 
+---@field requiredFaction cstring|nil 
 ---@field collected bool 
 ---@field favorite bool 
 ---@field limitedTimeSet bool 

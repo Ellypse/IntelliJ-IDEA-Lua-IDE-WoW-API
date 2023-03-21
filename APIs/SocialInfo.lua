@@ -1,10 +1,10 @@
 ---@class SocialInfo
 C_Social = {}
 
----@return number, string, string, number achievementID, achievementName, achievementDesc, iconFileID
+---@return number, string, string, fileID achievementID, achievementName, achievementDesc, iconFileID
 function C_Social.GetLastAchievement() end
 
----@return number, string, number, number, number, string itemID, itemName, iconFileID, itemQuality, itemLevel, itemLinkString
+---@return number, string, fileID, number, number, string itemID, itemName, iconFileID, itemQuality, itemLevel, itemLinkString
 function C_Social.GetLastItem() end
 
 ---@return number screenShotIndex
@@ -13,7 +13,7 @@ function C_Social.GetLastScreenshotIndex() end
 ---@return number maxTweetLength
 function C_Social.GetMaxTweetLength() end
 
----@param index number 
+---@param index luaIndex 
 ---@return number, number screenWidth, screenHeight
 function C_Social.GetScreenshotInfoByIndex(index) end
 

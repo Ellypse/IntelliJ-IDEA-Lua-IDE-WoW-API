@@ -10,7 +10,7 @@ function GetAccountExpansionLevel() end
 ---@return number expansionLevel
 function GetClientDisplayExpansionLevel() end
 
----@return string regionName
+---@return cstring regionName
 function GetCurrentRegionName() end
 
 ---@param expansionLevel number 
@@ -24,7 +24,7 @@ function GetExpansionForLevel(playerLevel) end
 ---@return number expansionLevel
 function GetExpansionLevel() end
 
----@return boolean, number|nil isExpansionTrialAccount, expansionTrialRemainingSeconds
+---@return boolean, time_t|nil isExpansionTrialAccount, expansionTrialRemainingSeconds
 function GetExpansionTrialInfo() end
 
 --- Maps an expansion level to a maximum character level for that expansion.
@@ -75,15 +75,15 @@ SubscriptionInterstitialType.LeftNpeArea = 1
 SubscriptionInterstitialType.MaxLevel = 2
 
 ---@class ExpansionDisplayInfo
----@field logo number 
----@field banner string 
+---@field logo fileID 
+---@field banner textureAtlas 
 ---@field features table 
----@field highResBackgroundID number 
----@field lowResBackgroundID number 
+---@field highResBackgroundID fileID 
+---@field lowResBackgroundID fileID 
 local ExpansionDisplayInfo = {}
 
 ---@class ExpansionDisplayInfoFeature
----@field icon number 
----@field text string 
+---@field icon fileID 
+---@field text cstring 
 local ExpansionDisplayInfoFeature = {}
 

@@ -32,7 +32,7 @@ function C_PerksProgram.GetPendingChestRewards() end
 function C_PerksProgram.GetPerksProgramItemDisplayInfo(id) end
 
 ---@param vendorItemID number 
----@return number timeRemaining
+---@return time_t timeRemaining
 function C_PerksProgram.GetTimeRemaining(vendorItemID) end
 
 ---@param vendorItemID number 
@@ -40,7 +40,7 @@ function C_PerksProgram.GetTimeRemaining(vendorItemID) end
 function C_PerksProgram.GetVendorItemInfo(vendorItemID) end
 
 ---@param vendorItemID number 
----@return number refundTimeRemaining
+---@return time_t refundTimeRemaining
 function C_PerksProgram.GetVendorItemInfoRefundTimeLeft(vendorItemID) end
 
 ---@param perksVendorItemID number 
@@ -102,7 +102,7 @@ local PerksProgramPendingChestRewards = {}
 
 ---@class PerksVendorCategoryInfo
 ---@field ID number 
----@field displayName string 
+---@field displayName cstring 
 ---@field defaultUIModelSceneID number 
 local PerksVendorCategoryInfo = {}
 
@@ -110,7 +110,7 @@ local PerksVendorCategoryInfo = {}
 ---@field name string 
 ---@field perksVendorCategoryID number 
 ---@field description string 
----@field timeRemaining number 
+---@field timeRemaining time_t 
 ---@field purchased bool 
 ---@field refundable bool 
 ---@field price number 

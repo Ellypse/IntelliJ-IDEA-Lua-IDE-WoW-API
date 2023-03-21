@@ -7,7 +7,7 @@ function C_HeirloomInfo.AreAllCollectionFiltersChecked() end
 ---@return boolean areAllSourceFiltersChecked
 function C_HeirloomInfo.AreAllSourceFiltersChecked() end
 
----@param source number 
+---@param source luaIndex 
 ---@return boolean isHeirloomSourceValid
 function C_HeirloomInfo.IsHeirloomSourceValid(source) end
 

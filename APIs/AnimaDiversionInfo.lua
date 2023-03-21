@@ -6,13 +6,13 @@ function C_AnimaDiversion.CloseUI() end
 ---@return AnimaDiversionNodeInfo animaNodes
 function C_AnimaDiversion.GetAnimaDiversionNodes() end
 
----@return table|nil normalizedPosition
+---@return vector2|nil normalizedPosition
 function C_AnimaDiversion.GetOriginPosition() end
 
 ---@return number progress
 function C_AnimaDiversion.GetReinforceProgress() end
 
----@return string textureKit
+---@return textureKit textureKit
 function C_AnimaDiversion.GetTextureKit() end
 
 function C_AnimaDiversion.OpenAnimaDiversionUI() end
@@ -35,7 +35,7 @@ AnimaDiversionNodeState.Cooldown = 4
 local AnimaDiversionCostInfo = {}
 
 ---@class AnimaDiversionFrameInfo
----@field textureKit string 
+---@field textureKit textureKit 
 ---@field title string 
 ---@field mapID number 
 local AnimaDiversionFrameInfo = {}
@@ -47,7 +47,7 @@ local AnimaDiversionFrameInfo = {}
 ---@field costs table 
 ---@field currencyID number 
 ---@field icon number 
----@field normalizedPosition table 
+---@field normalizedPosition vector2 
 ---@field state AnimaDiversionNodeState 
 local AnimaDiversionNodeInfo = {}
 

@@ -1,24 +1,24 @@
 ---@return CorruptionEffectInfo corruptionEffects
 function GetNegativeCorruptionEffectInfo() end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return number pointIndices
 function GetUnitChargedPowerPoints(unit) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return number holdAtMaxTime
 function GetUnitEmpowerHoldAtMaxTime(unit) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return number minHoldTime
 function GetUnitEmpowerMinHoldTime(unit) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@param index number 
 ---@return number duration
 function GetUnitEmpowerStageDuration(unit, index) end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@return UnitPowerBarInfo info
 function GetUnitPowerBarInfo(unitToken) end
 
@@ -26,109 +26,109 @@ function GetUnitPowerBarInfo(unitToken) end
 ---@return UnitPowerBarInfo info
 function GetUnitPowerBarInfoByID(barID) end
 
----@param unitToken string 
----@return string|nil, string|nil, string|nil name, tooltip, cost
+---@param unitToken UnitToken 
+---@return cstring|nil, cstring|nil, cstring|nil name, tooltip, cost
 function GetUnitPowerBarStrings(unitToken) end
 
 ---@param barID number 
----@return string|nil, string|nil, string|nil name, tooltip, cost
+---@return cstring|nil, cstring|nil, cstring|nil name, tooltip, cost
 function GetUnitPowerBarStringsByID(barID) end
 
----@param unitToken string 
----@param textureIndex number 
----@param timerIndex number @ [OPTIONAL]
----@overload fun(unitToken:string, textureIndex:number)
----@return number, number, number, number, number texture, colorR, colorG, colorB, colorA
+---@param unitToken UnitToken 
+---@param textureIndex luaIndex 
+---@param timerIndex luaIndex @ [OPTIONAL]
+---@overload fun(unitToken:UnitToken, textureIndex:luaIndex)
+---@return fileID, number, number, number, number texture, colorR, colorG, colorB, colorA
 function GetUnitPowerBarTextureInfo(unitToken, textureIndex, timerIndex) end
 
 ---@param barID number 
----@param textureIndex number 
----@return number, number, number, number, number texture, colorR, colorG, colorB, colorA
+---@param textureIndex luaIndex 
+---@return fileID, number, number, number, number texture, colorR, colorG, colorB, colorA
 function GetUnitPowerBarTextureInfoByID(barID, textureIndex) end
 
----@param playerGUID string 
+---@param playerGUID WOWGUID 
 ---@return boolean IsInGuild
 function IsPlayerInGuildFromGUID(playerGUID) end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@return boolean isReady
 function IsUnitModelReadyForUI(unitToken) end
 
 ---@return boolean vehicleHasComboPoints
 function PlayerVehicleHasComboPoints() end
 
----@param textureObject table 
----@param unitToken string 
+---@param textureObject SimpleTexture 
+---@param unitToken UnitToken 
 ---@param disableMasking boolean 
 function SetPortraitTexture(textureObject, unitToken, disableMasking) end
 
----@param textureObject table 
+---@param textureObject SimpleTexture 
 ---@param creatureDisplayID number 
 function SetPortraitTextureFromCreatureDisplayID(textureObject, creatureDisplayID) end
 
----@param textureObject table 
----@param unit string 
+---@param textureObject SimpleTexture 
+---@param unit UnitToken 
 ---@param style CursorStyle @ [OPTIONAL]
 ---@param includeLowPriority boolean @ [OPTIONAL]
----@overload fun(textureObject:table, unit:string, includeLowPriority:bool)
----@overload fun(textureObject:table, unit:string)
+---@overload fun(textureObject:SimpleTexture, unit:UnitToken, includeLowPriority:bool)
+---@overload fun(textureObject:SimpleTexture, unit:UnitToken)
 ---@return boolean hasCursor
 function SetUnitCursorTexture(textureObject, unit, style, includeLowPriority) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return boolean, boolean isAlliedRace, hasHeritageArmorUnlocked
 function UnitAlliedRaceInfo(unit) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return number ID
 function UnitChromieTimeID(unit) end
 
----@param unit string 
----@return string, string, number className, classFilename, classID
+---@param unit UnitToken 
+---@return cstring, cstring, number className, classFilename, classID
 function UnitClass(unit) end
 
----@param unit string 
----@return string, number classFilename, classID
+---@param unit UnitToken 
+---@return cstring, number classFilename, classID
 function UnitClassBase(unit) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return boolean inPartyShard
 function UnitInPartyShard(unit) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return boolean isConnected
 function UnitIsConnected(unit) end
 
----@param controllingUnit string 
----@param controlledUnit string 
+---@param controllingUnit UnitToken 
+---@param controlledUnit UnitToken 
 ---@return boolean unitIsOwnerOrControllerOfUnit
 function UnitIsOwnerOrControllerOfUnit(controllingUnit, controlledUnit) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return boolean nameplateShowsWidgetsOnly
 function UnitNameplateShowsWidgetsOnly(unit) end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@param powerType PowerType 
 ---@param unmodified boolean 
 ---@return number partialPower
 function UnitPartialPower(unitToken, powerType, unmodified) end
 
----@param unitGUID string 
+---@param unitGUID WOWGUID 
 ---@return number|nil percentHealth
 function UnitPercentHealthFromGUID(unitGUID) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return PhaseReason|nil reason
 function UnitPhaseReason(unit) end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@param powerType PowerType 
 ---@param unmodified boolean 
 ---@return number power
 function UnitPower(unitToken, powerType, unmodified) end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@return number barID
 function UnitPowerBarID(unitToken) end
 
@@ -136,37 +136,41 @@ function UnitPowerBarID(unitToken) end
 ---@return number displayMod
 function UnitPowerDisplayMod(powerType) end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@param powerType PowerType 
 ---@param unmodified boolean 
 ---@return number maxPower
 function UnitPowerMax(unitToken, powerType, unmodified) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return PvPUnitClassification|nil classification
 function UnitPvpClassification(unit) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return number levelRange
 function UnitQuestTrivialLevelRange(unit) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return number levelRange
 function UnitQuestTrivialLevelRangeScaling(unit) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return number|nil sex
 function UnitSex(unit) end
 
----@param unitGUID string 
+---@param unitGUID WOWGUID 
 ---@return string|nil unitToken
 function UnitTokenFromGUID(unitGUID) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return boolean treatAsPlayer
 function UnitTreatAsPlayerForDisplay(unit) end
 
----@param unit string 
+---@param unit UnitToken 
+---@return number, number, number bankedLevels, xpIntoCurrentLevel, xpForNextLevel
+function UnitTrialBankedLevels(unit) end
+
+---@param unit UnitToken 
 ---@return number uiWidgetSet
 function UnitWidgetSet(unit) end
 

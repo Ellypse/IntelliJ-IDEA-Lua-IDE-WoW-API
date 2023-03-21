@@ -1,13 +1,13 @@
 ---@class ClubFinderInfo
 C_ClubFinder = {}
 
----@param clubFinderGUID string 
+---@param clubFinderGUID WOWGUID 
 function C_ClubFinder.ApplicantAcceptClubInvite(clubFinderGUID) end
 
----@param clubFinderGUID string 
+---@param clubFinderGUID WOWGUID 
 function C_ClubFinder.ApplicantDeclineClubInvite(clubFinderGUID) end
 
----@param clubFinderGUID string 
+---@param clubFinderGUID WOWGUID 
 function C_ClubFinder.CancelMembershipRequest(clubFinderGUID) end
 
 function C_ClubFinder.CheckAllPlayerApplicantSettings() end
@@ -18,7 +18,7 @@ function C_ClubFinder.ClearClubApplicantsCache() end
 
 function C_ClubFinder.ClearClubFinderPostingsCache() end
 
----@param clubFinderGUID string 
+---@param clubFinderGUID WOWGUID 
 ---@return boolean belongsToClub
 function C_ClubFinder.DoesPlayerBelongToClubFromClubGUID(clubFinderGUID) end
 
@@ -28,7 +28,7 @@ function C_ClubFinder.GetClubFinderDisableReason() end
 ---@return ClubSettingsInfo settings
 function C_ClubFinder.GetClubRecruitmentSettings() end
 
----@param clubFinderGUID string 
+---@param clubFinderGUID WOWGUID 
 ---@return ClubFinderRequestType clubType
 function C_ClubFinder.GetClubTypeFromFinderGUID(clubFinderGUID) end
 
@@ -42,26 +42,26 @@ function C_ClubFinder.GetPlayerApplicantLocaleFlags() end
 ---@return ClubSettingsInfo settings
 function C_ClubFinder.GetPlayerApplicantSettings() end
 
----@param clubFinderGUID string 
+---@param clubFinderGUID WOWGUID 
 ---@return PlayerClubRequestStatus clubStatus
 function C_ClubFinder.GetPlayerClubApplicationStatus(clubFinderGUID) end
 
 ---@return number focusCount
 function C_ClubFinder.GetPlayerSettingsFocusFlagsSelectedCount() end
 
----@param clubFinderGUID string 
+---@param clubFinderGUID WOWGUID 
 ---@return number|nil postingID
 function C_ClubFinder.GetPostingIDFromClubFinderGUID(clubFinderGUID) end
 
----@param clubId string 
+---@param clubId ClubId 
 ---@return RecruitingClubInfo|nil clubInfo
 function C_ClubFinder.GetRecruitingClubInfoFromClubID(clubId) end
 
----@param clubFinderGUID string 
+---@param clubFinderGUID WOWGUID 
 ---@return RecruitingClubInfo clubInfo
 function C_ClubFinder.GetRecruitingClubInfoFromFinderGUID(clubFinderGUID) end
 
----@param postingID string 
+---@param postingID ClubId 
 ---@return ClubFinderClubPostingStatusFlags postingFlags
 function C_ClubFinder.GetStatusOfPostingFromClubId(postingID) end
 
@@ -71,11 +71,11 @@ function C_ClubFinder.GetTotalMatchingCommunityListSize() end
 ---@return number totalSize
 function C_ClubFinder.GetTotalMatchingGuildListSize() end
 
----@param clubFinderGUID string 
+---@param clubFinderGUID WOWGUID 
 ---@return boolean hasAlreadyApplied
 function C_ClubFinder.HasAlreadyAppliedToLinkedPosting(clubFinderGUID) end
 
----@param postingID string 
+---@param postingID ClubId 
 ---@return boolean postingDelisted
 function C_ClubFinder.HasPostingBeenDelisted(postingID) end
 
@@ -86,11 +86,11 @@ function C_ClubFinder.IsEnabled() end
 ---@return boolean isListed
 function C_ClubFinder.IsListingEnabledFromFlags(flags) end
 
----@param postingID string 
+---@param postingID ClubId 
 ---@return boolean postingBanned
 function C_ClubFinder.IsPostingBanned(postingID) end
 
----@param clubFinderGUID string 
+---@param clubFinderGUID WOWGUID 
 ---@param isLinkedPosting boolean 
 function C_ClubFinder.LookupClubPostingFromClubFinderGUID(clubFinderGUID, isLinkedPosting) end
 
@@ -106,7 +106,7 @@ function C_ClubFinder.PlayerReturnPendingCommunitiesList() end
 ---@return RecruitingClubInfo info
 function C_ClubFinder.PlayerReturnPendingGuildsList() end
 
----@param clubId string 
+---@param clubId ClubId 
 ---@param itemLevelRequirement number 
 ---@param name string 
 ---@param description string 
@@ -125,7 +125,7 @@ function C_ClubFinder.RequestApplicantList(type) end
 ---@param specIDs number 
 function C_ClubFinder.RequestClubsList(guildListRequested, searchString, specIDs) end
 
----@param clubFinderGUID string 
+---@param clubFinderGUID WOWGUID 
 ---@param comment string 
 ---@param specIDs number 
 function C_ClubFinder.RequestMembershipToClub(clubFinderGUID, comment, specIDs) end
@@ -138,7 +138,7 @@ function C_ClubFinder.RequestNextCommunityPage(startingIndex, pageSize) end
 ---@param pageSize number 
 function C_ClubFinder.RequestNextGuildPage(startingIndex, pageSize) end
 
----@param clubId string 
+---@param clubId ClubId 
 ---@return boolean success
 function C_ClubFinder.RequestPostingInformationFromClubId(clubId) end
 
@@ -146,17 +146,17 @@ function C_ClubFinder.RequestSubscribedClubPostingIDs() end
 
 function C_ClubFinder.ResetClubPostingMapCache() end
 
----@param clubFinderGUID string 
----@param playerGUID string 
+---@param clubFinderGUID WOWGUID 
+---@param playerGUID WOWGUID 
 ---@param shouldAccept boolean 
 ---@param requestType ClubFinderRequestType 
 ---@param playerName string 
 ---@param forceAccept boolean 
 ---@param reported boolean @ [OPTIONAL]
----@overload fun(clubFinderGUID:string, playerGUID:string, shouldAccept:bool, requestType:ClubFinderRequestType, playerName:string, forceAccept:bool)
+---@overload fun(clubFinderGUID:WOWGUID, playerGUID:WOWGUID, shouldAccept:bool, requestType:ClubFinderRequestType, playerName:string, forceAccept:bool)
 function C_ClubFinder.RespondToApplicant(clubFinderGUID, playerGUID, shouldAccept, requestType, playerName, forceAccept, reported) end
 
----@param clubId string 
+---@param clubId ClubId 
 ---@return ClubFinderApplicantInfo info
 function C_ClubFinder.ReturnClubApplicantList(clubId) end
 
@@ -166,12 +166,12 @@ function C_ClubFinder.ReturnMatchingCommunityList() end
 ---@return RecruitingClubInfo recruitingClubs
 function C_ClubFinder.ReturnMatchingGuildList() end
 
----@param clubId string 
+---@param clubId ClubId 
 ---@return ClubFinderApplicantInfo info
 function C_ClubFinder.ReturnPendingClubApplicantList(clubId) end
 
----@param clubFinderGUID string 
----@param playerGUID string 
+---@param clubFinderGUID WOWGUID 
+---@param playerGUID WOWGUID 
 ---@param applicantType ClubFinderRequestType 
 ---@param name string 
 function C_ClubFinder.SendChatWhisper(clubFinderGUID, playerGUID, applicantType, name) end
@@ -277,8 +277,8 @@ PlayerClubRequestStatus.JoinedAnother = 6
 PlayerClubRequestStatus.Canceled = 7
 
 ---@class ClubFinderApplicantInfo
----@field clubFinderGUID string 
----@field playerGUID string 
+---@field clubFinderGUID WOWGUID 
+---@field playerGUID WOWGUID 
 ---@field closed number 
 ---@field name string 
 ---@field message string 
@@ -288,7 +288,7 @@ PlayerClubRequestStatus.Canceled = 7
 ---@field specIds table 
 ---@field requestStatus PlayerClubRequestStatus 
 ---@field lookupSuccess bool 
----@field lastUpdatedTime number 
+---@field lastUpdatedTime BigInteger 
 ---@field faction number 
 local ClubFinderApplicantInfo = {}
 
@@ -314,7 +314,7 @@ local ClubFinderApplicantInfo = {}
 local ClubSettingsInfo = {}
 
 ---@class RecruitingClubInfo
----@field clubFinderGUID string 
+---@field clubFinderGUID WOWGUID 
 ---@field numActiveMembers number 
 ---@field name string 
 ---@field comment string 
@@ -329,9 +329,9 @@ local ClubSettingsInfo = {}
 ---@field minILvl number 
 ---@field cached number 
 ---@field cacheRequested number 
----@field lastPosterGUID string 
----@field clubId string 
----@field lastUpdatedTime number 
+---@field lastPosterGUID WOWGUID 
+---@field clubId ClubId 
+---@field lastUpdatedTime BigInteger 
 ---@field isCrossFaction bool 
 local RecruitingClubInfo = {}
 
