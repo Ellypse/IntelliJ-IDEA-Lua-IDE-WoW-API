@@ -172,11 +172,11 @@ function UnitTrialBankedLevels(unit) end
 function UnitWidgetSet(unit) end
 
 ---@class PhaseReason : Enum
----@field Phasing PhaseReason @ 0
----@field Sharding PhaseReason @ 1
----@field WarMode PhaseReason @ 2
----@field ChromieTime PhaseReason @ 3
----@type number 
+---@field Phasing number @ Default value is 0
+---@field Sharding number @ Default value is 1
+---@field WarMode number @ Default value is 2
+---@field ChromieTime number @ Default value is 3
+---@type PhaseReason 
 Enum.PhaseReason = {}
 Enum.PhaseReason["Phasing"] = 0
 Enum.PhaseReason["Sharding"] = 1
@@ -184,33 +184,33 @@ Enum.PhaseReason["WarMode"] = 2
 Enum.PhaseReason["ChromieTime"] = 3
 
 ---@class PowerType : Enum
----@field HealthCost PowerType @ -2
----@field None PowerType @ -1
----@field Mana PowerType @ 0
----@field Rage PowerType @ 1
----@field Focus PowerType @ 2
----@field Energy PowerType @ 3
----@field ComboPoints PowerType @ 4
----@field Runes PowerType @ 5
----@field RunicPower PowerType @ 6
----@field SoulShards PowerType @ 7
----@field LunarPower PowerType @ 8
----@field HolyPower PowerType @ 9
----@field Alternate PowerType @ 10
----@field Maelstrom PowerType @ 11
----@field Chi PowerType @ 12
----@field Insanity PowerType @ 13
----@field Obsolete PowerType @ 14
----@field Obsolete2 PowerType @ 15
----@field ArcaneCharges PowerType @ 16
----@field Fury PowerType @ 17
----@field Pain PowerType @ 18
----@field Essence PowerType @ 19
----@field RuneBlood PowerType @ 20
----@field RuneFrost PowerType @ 21
----@field RuneUnholy PowerType @ 22
----@field NumPowerTypes PowerType @ 23
----@type number 
+---@field HealthCost number @ Default value is -2
+---@field None number @ Default value is -1
+---@field Mana number @ Default value is 0
+---@field Rage number @ Default value is 1
+---@field Focus number @ Default value is 2
+---@field Energy number @ Default value is 3
+---@field ComboPoints number @ Default value is 4
+---@field Runes number @ Default value is 5
+---@field RunicPower number @ Default value is 6
+---@field SoulShards number @ Default value is 7
+---@field LunarPower number @ Default value is 8
+---@field HolyPower number @ Default value is 9
+---@field Alternate number @ Default value is 10
+---@field Maelstrom number @ Default value is 11
+---@field Chi number @ Default value is 12
+---@field Insanity number @ Default value is 13
+---@field Obsolete number @ Default value is 14
+---@field Obsolete2 number @ Default value is 15
+---@field ArcaneCharges number @ Default value is 16
+---@field Fury number @ Default value is 17
+---@field Pain number @ Default value is 18
+---@field Essence number @ Default value is 19
+---@field RuneBlood number @ Default value is 20
+---@field RuneFrost number @ Default value is 21
+---@field RuneUnholy number @ Default value is 22
+---@field NumPowerTypes number @ Default value is 23
+---@type PowerType 
 Enum.PowerType = {}
 Enum.PowerType["HealthCost"] = -2
 Enum.PowerType["None"] = -1
@@ -240,18 +240,18 @@ Enum.PowerType["RuneUnholy"] = 22
 Enum.PowerType["NumPowerTypes"] = 23
 
 ---@class PvPUnitClassification : Enum
----@field FlagCarrierHorde PvPUnitClassification @ 0
----@field FlagCarrierAlliance PvPUnitClassification @ 1
----@field FlagCarrierNeutral PvPUnitClassification @ 2
----@field CartRunnerHorde PvPUnitClassification @ 3
----@field CartRunnerAlliance PvPUnitClassification @ 4
----@field AssassinHorde PvPUnitClassification @ 5
----@field AssassinAlliance PvPUnitClassification @ 6
----@field OrbCarrierBlue PvPUnitClassification @ 7
----@field OrbCarrierGreen PvPUnitClassification @ 8
----@field OrbCarrierOrange PvPUnitClassification @ 9
----@field OrbCarrierPurple PvPUnitClassification @ 10
----@type number 
+---@field FlagCarrierHorde number @ Default value is 0
+---@field FlagCarrierAlliance number @ Default value is 1
+---@field FlagCarrierNeutral number @ Default value is 2
+---@field CartRunnerHorde number @ Default value is 3
+---@field CartRunnerAlliance number @ Default value is 4
+---@field AssassinHorde number @ Default value is 5
+---@field AssassinAlliance number @ Default value is 6
+---@field OrbCarrierBlue number @ Default value is 7
+---@field OrbCarrierGreen number @ Default value is 8
+---@field OrbCarrierOrange number @ Default value is 9
+---@field OrbCarrierPurple number @ Default value is 10
+---@type PvPUnitClassification 
 Enum.PvPUnitClassification = {}
 Enum.PvPUnitClassification["FlagCarrierHorde"] = 0
 Enum.PvPUnitClassification["FlagCarrierAlliance"] = 1

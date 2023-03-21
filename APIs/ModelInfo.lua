@@ -36,11 +36,11 @@ function C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID) end
 function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
 ---@class ItemTryOnReason : Enum
----@field Success ItemTryOnReason @ 0
----@field WrongRace ItemTryOnReason @ 1
----@field NotEquippable ItemTryOnReason @ 2
----@field DataPending ItemTryOnReason @ 3
----@type number 
+---@field Success number @ Default value is 0
+---@field WrongRace number @ Default value is 1
+---@field NotEquippable number @ Default value is 2
+---@field DataPending number @ Default value is 3
+---@type ItemTryOnReason 
 Enum.ItemTryOnReason = {}
 Enum.ItemTryOnReason["Success"] = 0
 Enum.ItemTryOnReason["WrongRace"] = 1
@@ -48,33 +48,33 @@ Enum.ItemTryOnReason["NotEquippable"] = 2
 Enum.ItemTryOnReason["DataPending"] = 3
 
 ---@class ModelSceneSetting : Enum
----@field AlignLightToOrbitDelta ModelSceneSetting @ 1
----@type number 
+---@field AlignLightToOrbitDelta number @ Default value is 1
+---@type ModelSceneSetting 
 Enum.ModelSceneSetting = {}
 Enum.ModelSceneSetting["AlignLightToOrbitDelta"] = 1
 
 ---@class ModelSceneType : Enum
----@field MountJournal ModelSceneType @ 0
----@field PetJournalCard ModelSceneType @ 1
----@field ShopCard ModelSceneType @ 2
----@field EncounterJournal ModelSceneType @ 3
----@field PetJournalLoadout ModelSceneType @ 4
----@field ArtifactTier2 ModelSceneType @ 5
----@field ArtifactTier2ForgingScene ModelSceneType @ 6
----@field ArtifactTier2SlamEffect ModelSceneType @ 7
----@field CommentatorVictoryFanfare ModelSceneType @ 8
----@field ArtifactRelicTalentEffect ModelSceneType @ 9
----@field PvPWarModeOrb ModelSceneType @ 10
----@field PvPWarModeFire ModelSceneType @ 11
----@field PartyPose ModelSceneType @ 12
----@field AzeriteItemLevelUpToast ModelSceneType @ 13
----@field AzeritePowers ModelSceneType @ 14
----@field AzeriteRewardGlow ModelSceneType @ 15
----@field HeartOfAzeroth ModelSceneType @ 16
----@field WorldMapThreat ModelSceneType @ 17
----@field Soulbinds ModelSceneType @ 18
----@field JailersTowerAnimaGlow ModelSceneType @ 19
----@type number 
+---@field MountJournal number @ Default value is 0
+---@field PetJournalCard number @ Default value is 1
+---@field ShopCard number @ Default value is 2
+---@field EncounterJournal number @ Default value is 3
+---@field PetJournalLoadout number @ Default value is 4
+---@field ArtifactTier2 number @ Default value is 5
+---@field ArtifactTier2ForgingScene number @ Default value is 6
+---@field ArtifactTier2SlamEffect number @ Default value is 7
+---@field CommentatorVictoryFanfare number @ Default value is 8
+---@field ArtifactRelicTalentEffect number @ Default value is 9
+---@field PvPWarModeOrb number @ Default value is 10
+---@field PvPWarModeFire number @ Default value is 11
+---@field PartyPose number @ Default value is 12
+---@field AzeriteItemLevelUpToast number @ Default value is 13
+---@field AzeritePowers number @ Default value is 14
+---@field AzeriteRewardGlow number @ Default value is 15
+---@field HeartOfAzeroth number @ Default value is 16
+---@field WorldMapThreat number @ Default value is 17
+---@field Soulbinds number @ Default value is 18
+---@field JailersTowerAnimaGlow number @ Default value is 19
+---@type ModelSceneType 
 Enum.ModelSceneType = {}
 Enum.ModelSceneType["MountJournal"] = 0
 Enum.ModelSceneType["PetJournalCard"] = 1

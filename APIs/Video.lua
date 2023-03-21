@@ -21,49 +21,49 @@ function C_VideoOptions.GetGxAdapterInfo() end
 function C_VideoOptions.SetGameWindowSize(x, y) end
 
 ---@class GraphicsValidationResult : Enum
----@field Supported GraphicsValidationResult @ 0
----@field Illegal GraphicsValidationResult @ 1
----@field Unsupported GraphicsValidationResult @ 2
----@field Graphics GraphicsValidationResult @ 3
----@field DualCore GraphicsValidationResult @ 4
----@field QuadCore GraphicsValidationResult @ 5
----@field CpuMem_2 GraphicsValidationResult @ 6
----@field CpuMem_4 GraphicsValidationResult @ 7
----@field CpuMem_8 GraphicsValidationResult @ 8
----@field Needs_5_0 GraphicsValidationResult @ 9
----@field Needs_6_0 GraphicsValidationResult @ 10
----@field NeedsRt GraphicsValidationResult @ 11
----@field NeedsDx12 GraphicsValidationResult @ 12
----@field NeedsDx12Vrs2 GraphicsValidationResult @ 13
----@field NeedsAppleGpu GraphicsValidationResult @ 14
----@field NeedsAmdGpu GraphicsValidationResult @ 15
----@field NeedsIntelGpu GraphicsValidationResult @ 16
----@field NeedsNvidiaGpu GraphicsValidationResult @ 17
----@field NeedsQualcommGpu GraphicsValidationResult @ 18
----@field NeedsMacOs_10_13 GraphicsValidationResult @ 19
----@field NeedsMacOs_10_14 GraphicsValidationResult @ 20
----@field NeedsMacOs_10_15 GraphicsValidationResult @ 21
----@field NeedsMacOs_11_0 GraphicsValidationResult @ 22
----@field NeedsMacOs_12_0 GraphicsValidationResult @ 23
----@field NeedsMacOs_13_0 GraphicsValidationResult @ 24
----@field NeedsWindows_10 GraphicsValidationResult @ 25
----@field NeedsWindows_11 GraphicsValidationResult @ 26
----@field MacOsUnsupported GraphicsValidationResult @ 27
----@field WindowsUnsupported GraphicsValidationResult @ 28
----@field LegacyUnsupported GraphicsValidationResult @ 29
----@field Dx11Unsupported GraphicsValidationResult @ 30
----@field Dx12Win7Unsupported GraphicsValidationResult @ 31
----@field RemoteDesktopUnsupported GraphicsValidationResult @ 32
----@field WineUnsupported GraphicsValidationResult @ 33
----@field NvapiWineUnsupported GraphicsValidationResult @ 34
----@field AppleGpuUnsupported GraphicsValidationResult @ 35
----@field AmdGpuUnsupported GraphicsValidationResult @ 36
----@field IntelGpuUnsupported GraphicsValidationResult @ 37
----@field NvidiaGpuUnsupported GraphicsValidationResult @ 38
----@field QualcommGpuUnsupported GraphicsValidationResult @ 39
----@field GpuDriver GraphicsValidationResult @ 40
----@field Unknown GraphicsValidationResult @ 41
----@type number 
+---@field Supported number @ Default value is 0
+---@field Illegal number @ Default value is 1
+---@field Unsupported number @ Default value is 2
+---@field Graphics number @ Default value is 3
+---@field DualCore number @ Default value is 4
+---@field QuadCore number @ Default value is 5
+---@field CpuMem_2 number @ Default value is 6
+---@field CpuMem_4 number @ Default value is 7
+---@field CpuMem_8 number @ Default value is 8
+---@field Needs_5_0 number @ Default value is 9
+---@field Needs_6_0 number @ Default value is 10
+---@field NeedsRt number @ Default value is 11
+---@field NeedsDx12 number @ Default value is 12
+---@field NeedsDx12Vrs2 number @ Default value is 13
+---@field NeedsAppleGpu number @ Default value is 14
+---@field NeedsAmdGpu number @ Default value is 15
+---@field NeedsIntelGpu number @ Default value is 16
+---@field NeedsNvidiaGpu number @ Default value is 17
+---@field NeedsQualcommGpu number @ Default value is 18
+---@field NeedsMacOs_10_13 number @ Default value is 19
+---@field NeedsMacOs_10_14 number @ Default value is 20
+---@field NeedsMacOs_10_15 number @ Default value is 21
+---@field NeedsMacOs_11_0 number @ Default value is 22
+---@field NeedsMacOs_12_0 number @ Default value is 23
+---@field NeedsMacOs_13_0 number @ Default value is 24
+---@field NeedsWindows_10 number @ Default value is 25
+---@field NeedsWindows_11 number @ Default value is 26
+---@field MacOsUnsupported number @ Default value is 27
+---@field WindowsUnsupported number @ Default value is 28
+---@field LegacyUnsupported number @ Default value is 29
+---@field Dx11Unsupported number @ Default value is 30
+---@field Dx12Win7Unsupported number @ Default value is 31
+---@field RemoteDesktopUnsupported number @ Default value is 32
+---@field WineUnsupported number @ Default value is 33
+---@field NvapiWineUnsupported number @ Default value is 34
+---@field AppleGpuUnsupported number @ Default value is 35
+---@field AmdGpuUnsupported number @ Default value is 36
+---@field IntelGpuUnsupported number @ Default value is 37
+---@field NvidiaGpuUnsupported number @ Default value is 38
+---@field QualcommGpuUnsupported number @ Default value is 39
+---@field GpuDriver number @ Default value is 40
+---@field Unknown number @ Default value is 41
+---@type GraphicsValidationResult 
 Enum.GraphicsValidationResult = {}
 Enum.GraphicsValidationResult["Supported"] = 0
 Enum.GraphicsValidationResult["Illegal"] = 1

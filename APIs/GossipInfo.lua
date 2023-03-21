@@ -66,19 +66,19 @@ function C_GossipInfo.SelectOption(optionID, text, confirmed) end
 function C_GossipInfo.SelectOptionByIndex(optionID, text, confirmed) end
 
 ---@class GossipOptionRewardType : Enum
----@field Item GossipOptionRewardType @ 0
----@field Currency GossipOptionRewardType @ 1
----@type number 
+---@field Item number @ Default value is 0
+---@field Currency number @ Default value is 1
+---@type GossipOptionRewardType 
 Enum.GossipOptionRewardType = {}
 Enum.GossipOptionRewardType["Item"] = 0
 Enum.GossipOptionRewardType["Currency"] = 1
 
 ---@class GossipOptionStatus : Enum
----@field Available GossipOptionStatus @ 0
----@field Unavailable GossipOptionStatus @ 1
----@field Locked GossipOptionStatus @ 2
----@field AlreadyComplete GossipOptionStatus @ 3
----@type number 
+---@field Available number @ Default value is 0
+---@field Unavailable number @ Default value is 1
+---@field Locked number @ Default value is 2
+---@field AlreadyComplete number @ Default value is 3
+---@type GossipOptionStatus 
 Enum.GossipOptionStatus = {}
 Enum.GossipOptionStatus["Available"] = 0
 Enum.GossipOptionStatus["Unavailable"] = 1

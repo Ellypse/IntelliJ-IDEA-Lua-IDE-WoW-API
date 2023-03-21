@@ -2,17 +2,17 @@
 C_WowEntitlementInfo = {}
 
 ---@class WoWEntitlementType : Enum
----@field Item WoWEntitlementType @ 0
----@field Mount WoWEntitlementType @ 1
----@field Battlepet WoWEntitlementType @ 2
----@field Toy WoWEntitlementType @ 3
----@field Appearance WoWEntitlementType @ 4
----@field AppearanceSet WoWEntitlementType @ 5
----@field GameTime WoWEntitlementType @ 6
----@field Title WoWEntitlementType @ 7
----@field Illusion WoWEntitlementType @ 8
----@field Invalid WoWEntitlementType @ 9
----@type number 
+---@field Item number @ Default value is 0
+---@field Mount number @ Default value is 1
+---@field Battlepet number @ Default value is 2
+---@field Toy number @ Default value is 3
+---@field Appearance number @ Default value is 4
+---@field AppearanceSet number @ Default value is 5
+---@field GameTime number @ Default value is 6
+---@field Title number @ Default value is 7
+---@field Illusion number @ Default value is 8
+---@field Invalid number @ Default value is 9
+---@type WoWEntitlementType 
 Enum.WoWEntitlementType = {}
 Enum.WoWEntitlementType["Item"] = 0
 Enum.WoWEntitlementType["Mount"] = 1

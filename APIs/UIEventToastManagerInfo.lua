@@ -11,16 +11,16 @@ function C_EventToastManager.GetNextToastToDisplay() end
 function C_EventToastManager.RemoveCurrentToast() end
 
 ---@class EventToastDisplayType : Enum
----@field NormalSingleLine EventToastDisplayType @ 0
----@field NormalBlockText EventToastDisplayType @ 1
----@field NormalTitleAndSubTitle EventToastDisplayType @ 2
----@field NormalTextWithIcon EventToastDisplayType @ 3
----@field LargeTextWithIcon EventToastDisplayType @ 4
----@field NormalTextWithIconAndRarity EventToastDisplayType @ 5
----@field Scenario EventToastDisplayType @ 6
----@field ChallengeMode EventToastDisplayType @ 7
----@field ScenarioClickExpand EventToastDisplayType @ 8
----@type number 
+---@field NormalSingleLine number @ Default value is 0
+---@field NormalBlockText number @ Default value is 1
+---@field NormalTitleAndSubTitle number @ Default value is 2
+---@field NormalTextWithIcon number @ Default value is 3
+---@field LargeTextWithIcon number @ Default value is 4
+---@field NormalTextWithIconAndRarity number @ Default value is 5
+---@field Scenario number @ Default value is 6
+---@field ChallengeMode number @ Default value is 7
+---@field ScenarioClickExpand number @ Default value is 8
+---@type EventToastDisplayType 
 Enum.EventToastDisplayType = {}
 Enum.EventToastDisplayType["NormalSingleLine"] = 0
 Enum.EventToastDisplayType["NormalBlockText"] = 1
@@ -33,30 +33,30 @@ Enum.EventToastDisplayType["ChallengeMode"] = 7
 Enum.EventToastDisplayType["ScenarioClickExpand"] = 8
 
 ---@class EventToastEventType : Enum
----@field LevelUp EventToastEventType @ 0
----@field LevelUpSpell EventToastEventType @ 1
----@field LevelUpDungeon EventToastEventType @ 2
----@field LevelUpRaid EventToastEventType @ 3
----@field LevelUpPvP EventToastEventType @ 4
----@field PetBattleNewAbility EventToastEventType @ 5
----@field PetBattleFinalRound EventToastEventType @ 6
----@field PetBattleCapture EventToastEventType @ 7
----@field BattlePetLevelChanged EventToastEventType @ 8
----@field BattlePetLevelUpAbility EventToastEventType @ 9
----@field QuestBossEmote EventToastEventType @ 10
----@field MythicPlusWeeklyRecord EventToastEventType @ 11
----@field QuestTurnedIn EventToastEventType @ 12
----@field WorldStateChange EventToastEventType @ 13
----@field Scenario EventToastEventType @ 14
----@field LevelUpOther EventToastEventType @ 15
----@field PlayerAuraAdded EventToastEventType @ 16
----@field PlayerAuraRemoved EventToastEventType @ 17
----@field SpellScript EventToastEventType @ 18
----@field CriteriaUpdated EventToastEventType @ 19
----@field PvPTierUpdate EventToastEventType @ 20
----@field SpellLearned EventToastEventType @ 21
----@field TreasureItem EventToastEventType @ 22
----@type number 
+---@field LevelUp number @ Default value is 0
+---@field LevelUpSpell number @ Default value is 1
+---@field LevelUpDungeon number @ Default value is 2
+---@field LevelUpRaid number @ Default value is 3
+---@field LevelUpPvP number @ Default value is 4
+---@field PetBattleNewAbility number @ Default value is 5
+---@field PetBattleFinalRound number @ Default value is 6
+---@field PetBattleCapture number @ Default value is 7
+---@field BattlePetLevelChanged number @ Default value is 8
+---@field BattlePetLevelUpAbility number @ Default value is 9
+---@field QuestBossEmote number @ Default value is 10
+---@field MythicPlusWeeklyRecord number @ Default value is 11
+---@field QuestTurnedIn number @ Default value is 12
+---@field WorldStateChange number @ Default value is 13
+---@field Scenario number @ Default value is 14
+---@field LevelUpOther number @ Default value is 15
+---@field PlayerAuraAdded number @ Default value is 16
+---@field PlayerAuraRemoved number @ Default value is 17
+---@field SpellScript number @ Default value is 18
+---@field CriteriaUpdated number @ Default value is 19
+---@field PvPTierUpdate number @ Default value is 20
+---@field SpellLearned number @ Default value is 21
+---@field TreasureItem number @ Default value is 22
+---@type EventToastEventType 
 Enum.EventToastEventType = {}
 Enum.EventToastEventType["LevelUp"] = 0
 Enum.EventToastEventType["LevelUpSpell"] = 1

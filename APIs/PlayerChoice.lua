@@ -21,11 +21,11 @@ function C_PlayerChoice.RequestRerollPlayerChoice() end
 function C_PlayerChoice.SendPlayerChoiceResponse(responseID) end
 
 ---@class PlayerChoiceRarity : Enum
----@field Common PlayerChoiceRarity @ 0
----@field Uncommon PlayerChoiceRarity @ 1
----@field Rare PlayerChoiceRarity @ 2
----@field Epic PlayerChoiceRarity @ 3
----@type number 
+---@field Common number @ Default value is 0
+---@field Uncommon number @ Default value is 1
+---@field Rare number @ Default value is 2
+---@field Epic number @ Default value is 3
+---@type PlayerChoiceRarity 
 Enum.PlayerChoiceRarity = {}
 Enum.PlayerChoiceRarity["Common"] = 0
 Enum.PlayerChoiceRarity["Uncommon"] = 1

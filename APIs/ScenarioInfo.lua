@@ -13,22 +13,22 @@ function C_ScenarioInfo.GetScenarioInfo() end
 function C_ScenarioInfo.GetScenarioStepInfo(scenarioStepID) end
 
 ---@class JailersTowerType : Enum
----@field TwistingCorridors JailersTowerType @ 0
----@field SkoldusHalls JailersTowerType @ 1
----@field FractureChambers JailersTowerType @ 2
----@field Soulforges JailersTowerType @ 3
----@field Coldheart JailersTowerType @ 4
----@field Mortregar JailersTowerType @ 5
----@field UpperReaches JailersTowerType @ 6
----@field ArkobanHall JailersTowerType @ 7
----@field TormentChamberJaina JailersTowerType @ 8
----@field TormentChamberThrall JailersTowerType @ 9
----@field TormentChamberAnduin JailersTowerType @ 10
----@field AdamantVaults JailersTowerType @ 11
----@field ForgottenCatacombs JailersTowerType @ 12
----@field Ossuary JailersTowerType @ 13
----@field BossRush JailersTowerType @ 14
----@type number 
+---@field TwistingCorridors number @ Default value is 0
+---@field SkoldusHalls number @ Default value is 1
+---@field FractureChambers number @ Default value is 2
+---@field Soulforges number @ Default value is 3
+---@field Coldheart number @ Default value is 4
+---@field Mortregar number @ Default value is 5
+---@field UpperReaches number @ Default value is 6
+---@field ArkobanHall number @ Default value is 7
+---@field TormentChamberJaina number @ Default value is 8
+---@field TormentChamberThrall number @ Default value is 9
+---@field TormentChamberAnduin number @ Default value is 10
+---@field AdamantVaults number @ Default value is 11
+---@field ForgottenCatacombs number @ Default value is 12
+---@field Ossuary number @ Default value is 13
+---@field BossRush number @ Default value is 14
+---@type JailersTowerType 
 Enum.JailersTowerType = {}
 Enum.JailersTowerType["TwistingCorridors"] = 0
 Enum.JailersTowerType["SkoldusHalls"] = 1

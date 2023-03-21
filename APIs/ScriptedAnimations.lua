@@ -5,13 +5,13 @@ C_ScriptedAnimations = {}
 function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 
 ---@class ScriptedAnimationBehavior : Enum
----@field None ScriptedAnimationBehavior @ 0
----@field TargetShake ScriptedAnimationBehavior @ 1
----@field TargetKnockBack ScriptedAnimationBehavior @ 2
----@field SourceRecoil ScriptedAnimationBehavior @ 3
----@field SourceCollideWithTarget ScriptedAnimationBehavior @ 4
----@field UIParentShake ScriptedAnimationBehavior @ 5
----@type number 
+---@field None number @ Default value is 0
+---@field TargetShake number @ Default value is 1
+---@field TargetKnockBack number @ Default value is 2
+---@field SourceRecoil number @ Default value is 3
+---@field SourceCollideWithTarget number @ Default value is 4
+---@field UIParentShake number @ Default value is 5
+---@type ScriptedAnimationBehavior 
 Enum.ScriptedAnimationBehavior = {}
 Enum.ScriptedAnimationBehavior["None"] = 0
 Enum.ScriptedAnimationBehavior["TargetShake"] = 1
@@ -21,20 +21,20 @@ Enum.ScriptedAnimationBehavior["SourceCollideWithTarget"] = 4
 Enum.ScriptedAnimationBehavior["UIParentShake"] = 5
 
 ---@class ScriptedAnimationFlags : Enum
----@field UseTargetAsSource ScriptedAnimationFlags @ 1
----@type number 
+---@field UseTargetAsSource number @ Default value is 1
+---@type ScriptedAnimationFlags 
 Enum.ScriptedAnimationFlags = {}
 Enum.ScriptedAnimationFlags["UseTargetAsSource"] = 1
 
 ---@class ScriptedAnimationTrajectory : Enum
----@field AtSource ScriptedAnimationTrajectory @ 0
----@field AtTarget ScriptedAnimationTrajectory @ 1
----@field Straight ScriptedAnimationTrajectory @ 2
----@field CurveLeft ScriptedAnimationTrajectory @ 3
----@field CurveRight ScriptedAnimationTrajectory @ 4
----@field CurveRandom ScriptedAnimationTrajectory @ 5
----@field HalfwayBetween ScriptedAnimationTrajectory @ 6
----@type number 
+---@field AtSource number @ Default value is 0
+---@field AtTarget number @ Default value is 1
+---@field Straight number @ Default value is 2
+---@field CurveLeft number @ Default value is 3
+---@field CurveRight number @ Default value is 4
+---@field CurveRandom number @ Default value is 5
+---@field HalfwayBetween number @ Default value is 6
+---@type ScriptedAnimationTrajectory 
 Enum.ScriptedAnimationTrajectory = {}
 Enum.ScriptedAnimationTrajectory["AtSource"] = 0
 Enum.ScriptedAnimationTrajectory["AtTarget"] = 1

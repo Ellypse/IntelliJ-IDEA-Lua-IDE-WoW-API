@@ -151,12 +151,12 @@ function C_Map.RequestPreloadMap(uiMapID) end
 function C_Map.SetUserWaypoint(point) end
 
 ---@class MapCanvasPosition : Enum
----@field None MapCanvasPosition @ 0
----@field BottomLeft MapCanvasPosition @ 1
----@field BottomRight MapCanvasPosition @ 2
----@field TopLeft MapCanvasPosition @ 3
----@field TopRight MapCanvasPosition @ 4
----@type number 
+---@field None number @ Default value is 0
+---@field BottomLeft number @ Default value is 1
+---@field BottomRight number @ Default value is 2
+---@field TopLeft number @ Default value is 3
+---@field TopRight number @ Default value is 4
+---@type MapCanvasPosition 
 Enum.MapCanvasPosition = {}
 Enum.MapCanvasPosition["None"] = 0
 Enum.MapCanvasPosition["BottomLeft"] = 1
@@ -165,24 +165,24 @@ Enum.MapCanvasPosition["TopLeft"] = 3
 Enum.MapCanvasPosition["TopRight"] = 4
 
 ---@class UIMapFlag : Enum
----@field NoHighlight UIMapFlag @ 1
----@field ShowOverlays UIMapFlag @ 2
----@field ShowTaxiNodes UIMapFlag @ 4
----@field GarrisonMap UIMapFlag @ 8
----@field FallbackToParentMap UIMapFlag @ 16
----@field NoHighlightTexture UIMapFlag @ 32
----@field ShowTaskObjectives UIMapFlag @ 64
----@field NoWorldPositions UIMapFlag @ 128
----@field HideArchaeologyDigs UIMapFlag @ 256
----@field Deprecated UIMapFlag @ 512
----@field HideIcons UIMapFlag @ 1024
----@field HideVignettes UIMapFlag @ 2048
----@field ForceAllOverlayExplored UIMapFlag @ 4096
----@field FlightMapShowZoomOut UIMapFlag @ 8192
----@field FlightMapAutoZoom UIMapFlag @ 16384
----@field ForceOnNavbar UIMapFlag @ 32768
----@field AlwaysAllowUserWaypoints UIMapFlag @ 65536
----@type number 
+---@field NoHighlight number @ Default value is 1
+---@field ShowOverlays number @ Default value is 2
+---@field ShowTaxiNodes number @ Default value is 4
+---@field GarrisonMap number @ Default value is 8
+---@field FallbackToParentMap number @ Default value is 16
+---@field NoHighlightTexture number @ Default value is 32
+---@field ShowTaskObjectives number @ Default value is 64
+---@field NoWorldPositions number @ Default value is 128
+---@field HideArchaeologyDigs number @ Default value is 256
+---@field Deprecated number @ Default value is 512
+---@field HideIcons number @ Default value is 1024
+---@field HideVignettes number @ Default value is 2048
+---@field ForceAllOverlayExplored number @ Default value is 4096
+---@field FlightMapShowZoomOut number @ Default value is 8192
+---@field FlightMapAutoZoom number @ Default value is 16384
+---@field ForceOnNavbar number @ Default value is 32768
+---@field AlwaysAllowUserWaypoints number @ Default value is 65536
+---@type UIMapFlag 
 Enum.UIMapFlag = {}
 Enum.UIMapFlag["NoHighlight"] = 1
 Enum.UIMapFlag["ShowOverlays"] = 2
@@ -203,11 +203,11 @@ Enum.UIMapFlag["ForceOnNavbar"] = 32768
 Enum.UIMapFlag["AlwaysAllowUserWaypoints"] = 65536
 
 ---@class UIMapSystem : Enum
----@field World UIMapSystem @ 0
----@field Taxi UIMapSystem @ 1
----@field Adventure UIMapSystem @ 2
----@field Minimap UIMapSystem @ 3
----@type number 
+---@field World number @ Default value is 0
+---@field Taxi number @ Default value is 1
+---@field Adventure number @ Default value is 2
+---@field Minimap number @ Default value is 3
+---@type UIMapSystem 
 Enum.UIMapSystem = {}
 Enum.UIMapSystem["World"] = 0
 Enum.UIMapSystem["Taxi"] = 1
@@ -215,14 +215,14 @@ Enum.UIMapSystem["Adventure"] = 2
 Enum.UIMapSystem["Minimap"] = 3
 
 ---@class UIMapType : Enum
----@field Cosmic UIMapType @ 0
----@field World UIMapType @ 1
----@field Continent UIMapType @ 2
----@field Zone UIMapType @ 3
----@field Dungeon UIMapType @ 4
----@field Micro UIMapType @ 5
----@field Orphan UIMapType @ 6
----@type number 
+---@field Cosmic number @ Default value is 0
+---@field World number @ Default value is 1
+---@field Continent number @ Default value is 2
+---@field Zone number @ Default value is 3
+---@field Dungeon number @ Default value is 4
+---@field Micro number @ Default value is 5
+---@field Orphan number @ Default value is 6
+---@type UIMapType 
 Enum.UIMapType = {}
 Enum.UIMapType["Cosmic"] = 0
 Enum.UIMapType["World"] = 1

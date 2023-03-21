@@ -87,11 +87,11 @@ function C_Transmog.LoadOutfit(outfitID) end
 function C_Transmog.SetPending(transmogLocation, pendingInfo) end
 
 ---@class TransmogPendingType : Enum
----@field Apply TransmogPendingType @ 0
----@field Revert TransmogPendingType @ 1
----@field ToggleOn TransmogPendingType @ 2
----@field ToggleOff TransmogPendingType @ 3
----@type number 
+---@field Apply number @ Default value is 0
+---@field Revert number @ Default value is 1
+---@field ToggleOn number @ Default value is 2
+---@field ToggleOff number @ Default value is 3
+---@type TransmogPendingType 
 Enum.TransmogPendingType = {}
 Enum.TransmogPendingType["Apply"] = 0
 Enum.TransmogPendingType["Revert"] = 1

@@ -140,27 +140,27 @@ function C_UIWidgetManager.SetProcessingUnitGuid(unit) end
 function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 
 ---@class CaptureBarWidgetFillDirectionType : Enum
----@field RightToLeft CaptureBarWidgetFillDirectionType @ 0
----@field LeftToRight CaptureBarWidgetFillDirectionType @ 1
----@type number 
+---@field RightToLeft number @ Default value is 0
+---@field LeftToRight number @ Default value is 1
+---@type CaptureBarWidgetFillDirectionType 
 Enum.CaptureBarWidgetFillDirectionType = {}
 Enum.CaptureBarWidgetFillDirectionType["RightToLeft"] = 0
 Enum.CaptureBarWidgetFillDirectionType["LeftToRight"] = 1
 
 ---@class CaptureBarWidgetGlowAnimType : Enum
----@field None CaptureBarWidgetGlowAnimType @ 0
----@field Pulse CaptureBarWidgetGlowAnimType @ 1
----@type number 
+---@field None number @ Default value is 0
+---@field Pulse number @ Default value is 1
+---@type CaptureBarWidgetGlowAnimType 
 Enum.CaptureBarWidgetGlowAnimType = {}
 Enum.CaptureBarWidgetGlowAnimType["None"] = 0
 Enum.CaptureBarWidgetGlowAnimType["Pulse"] = 1
 
 ---@class IconAndTextWidgetState : Enum
----@field Hidden IconAndTextWidgetState @ 0
----@field Shown IconAndTextWidgetState @ 1
----@field ShownWithDynamicIconFlashing IconAndTextWidgetState @ 2
----@field ShownWithDynamicIconNotFlashing IconAndTextWidgetState @ 3
----@type number 
+---@field Hidden number @ Default value is 0
+---@field Shown number @ Default value is 1
+---@field ShownWithDynamicIconFlashing number @ Default value is 2
+---@field ShownWithDynamicIconNotFlashing number @ Default value is 3
+---@type IconAndTextWidgetState 
 Enum.IconAndTextWidgetState = {}
 Enum.IconAndTextWidgetState["Hidden"] = 0
 Enum.IconAndTextWidgetState["Shown"] = 1
@@ -168,26 +168,26 @@ Enum.IconAndTextWidgetState["ShownWithDynamicIconFlashing"] = 2
 Enum.IconAndTextWidgetState["ShownWithDynamicIconNotFlashing"] = 3
 
 ---@class IconState : Enum
----@field Hidden IconState @ 0
----@field ShowState1 IconState @ 1
----@field ShowState2 IconState @ 2
----@type number 
+---@field Hidden number @ Default value is 0
+---@field ShowState1 number @ Default value is 1
+---@field ShowState2 number @ Default value is 2
+---@type IconState 
 Enum.IconState = {}
 Enum.IconState["Hidden"] = 0
 Enum.IconState["ShowState1"] = 1
 Enum.IconState["ShowState2"] = 2
 
 ---@class SpellDisplayBorderColor : Enum
----@field None SpellDisplayBorderColor @ 0
----@field Black SpellDisplayBorderColor @ 1
----@field White SpellDisplayBorderColor @ 2
----@field Red SpellDisplayBorderColor @ 3
----@field Yellow SpellDisplayBorderColor @ 4
----@field Orange SpellDisplayBorderColor @ 5
----@field Purple SpellDisplayBorderColor @ 6
----@field Green SpellDisplayBorderColor @ 7
----@field Blue SpellDisplayBorderColor @ 8
----@type number 
+---@field None number @ Default value is 0
+---@field Black number @ Default value is 1
+---@field White number @ Default value is 2
+---@field Red number @ Default value is 3
+---@field Yellow number @ Default value is 4
+---@field Orange number @ Default value is 5
+---@field Purple number @ Default value is 6
+---@field Green number @ Default value is 7
+---@field Blue number @ Default value is 8
+---@type SpellDisplayBorderColor 
 Enum.SpellDisplayBorderColor = {}
 Enum.SpellDisplayBorderColor["None"] = 0
 Enum.SpellDisplayBorderColor["Black"] = 1
@@ -200,11 +200,11 @@ Enum.SpellDisplayBorderColor["Green"] = 7
 Enum.SpellDisplayBorderColor["Blue"] = 8
 
 ---@class SpellDisplayIconDisplayType : Enum
----@field Buff SpellDisplayIconDisplayType @ 0
----@field Debuff SpellDisplayIconDisplayType @ 1
----@field Circular SpellDisplayIconDisplayType @ 2
----@field NoBorder SpellDisplayIconDisplayType @ 3
----@type number 
+---@field Buff number @ Default value is 0
+---@field Debuff number @ Default value is 1
+---@field Circular number @ Default value is 2
+---@field NoBorder number @ Default value is 3
+---@type SpellDisplayIconDisplayType 
 Enum.SpellDisplayIconDisplayType = {}
 Enum.SpellDisplayIconDisplayType["Buff"] = 0
 Enum.SpellDisplayIconDisplayType["Debuff"] = 1
@@ -212,34 +212,34 @@ Enum.SpellDisplayIconDisplayType["Circular"] = 2
 Enum.SpellDisplayIconDisplayType["NoBorder"] = 3
 
 ---@class SpellDisplayIconSizeType : Enum
----@field Small SpellDisplayIconSizeType @ 0
----@field Medium SpellDisplayIconSizeType @ 1
----@field Large SpellDisplayIconSizeType @ 2
----@type number 
+---@field Small number @ Default value is 0
+---@field Medium number @ Default value is 1
+---@field Large number @ Default value is 2
+---@type SpellDisplayIconSizeType 
 Enum.SpellDisplayIconSizeType = {}
 Enum.SpellDisplayIconSizeType["Small"] = 0
 Enum.SpellDisplayIconSizeType["Medium"] = 1
 Enum.SpellDisplayIconSizeType["Large"] = 2
 
 ---@class SpellDisplayTextShownStateType : Enum
----@field Shown SpellDisplayTextShownStateType @ 0
----@field Hidden SpellDisplayTextShownStateType @ 1
----@type number 
+---@field Shown number @ Default value is 0
+---@field Hidden number @ Default value is 1
+---@type SpellDisplayTextShownStateType 
 Enum.SpellDisplayTextShownStateType = {}
 Enum.SpellDisplayTextShownStateType["Shown"] = 0
 Enum.SpellDisplayTextShownStateType["Hidden"] = 1
 
 ---@class StatusBarColorTintValue : Enum
----@field None StatusBarColorTintValue @ 0
----@field Black StatusBarColorTintValue @ 1
----@field White StatusBarColorTintValue @ 2
----@field Red StatusBarColorTintValue @ 3
----@field Yellow StatusBarColorTintValue @ 4
----@field Orange StatusBarColorTintValue @ 5
----@field Purple StatusBarColorTintValue @ 6
----@field Green StatusBarColorTintValue @ 7
----@field Blue StatusBarColorTintValue @ 8
----@type number 
+---@field None number @ Default value is 0
+---@field Black number @ Default value is 1
+---@field White number @ Default value is 2
+---@field Red number @ Default value is 3
+---@field Yellow number @ Default value is 4
+---@field Orange number @ Default value is 5
+---@field Purple number @ Default value is 6
+---@field Green number @ Default value is 7
+---@field Blue number @ Default value is 8
+---@type StatusBarColorTintValue 
 Enum.StatusBarColorTintValue = {}
 Enum.StatusBarColorTintValue["None"] = 0
 Enum.StatusBarColorTintValue["Black"] = 1
@@ -252,11 +252,11 @@ Enum.StatusBarColorTintValue["Green"] = 7
 Enum.StatusBarColorTintValue["Blue"] = 8
 
 ---@class StatusBarOverrideBarTextShownType : Enum
----@field Never StatusBarOverrideBarTextShownType @ 0
----@field Always StatusBarOverrideBarTextShownType @ 1
----@field OnlyOnMouseover StatusBarOverrideBarTextShownType @ 2
----@field OnlyNotOnMouseover StatusBarOverrideBarTextShownType @ 3
----@type number 
+---@field Never number @ Default value is 0
+---@field Always number @ Default value is 1
+---@field OnlyOnMouseover number @ Default value is 2
+---@field OnlyNotOnMouseover number @ Default value is 3
+---@type StatusBarOverrideBarTextShownType 
 Enum.StatusBarOverrideBarTextShownType = {}
 Enum.StatusBarOverrideBarTextShownType["Never"] = 0
 Enum.StatusBarOverrideBarTextShownType["Always"] = 1
@@ -264,14 +264,14 @@ Enum.StatusBarOverrideBarTextShownType["OnlyOnMouseover"] = 2
 Enum.StatusBarOverrideBarTextShownType["OnlyNotOnMouseover"] = 3
 
 ---@class StatusBarValueTextType : Enum
----@field Hidden StatusBarValueTextType @ 0
----@field Percentage StatusBarValueTextType @ 1
----@field Value StatusBarValueTextType @ 2
----@field Time StatusBarValueTextType @ 3
----@field TimeShowOneLevelOnly StatusBarValueTextType @ 4
----@field ValueOverMax StatusBarValueTextType @ 5
----@field ValueOverMaxNormalized StatusBarValueTextType @ 6
----@type number 
+---@field Hidden number @ Default value is 0
+---@field Percentage number @ Default value is 1
+---@field Value number @ Default value is 2
+---@field Time number @ Default value is 3
+---@field TimeShowOneLevelOnly number @ Default value is 4
+---@field ValueOverMax number @ Default value is 5
+---@field ValueOverMaxNormalized number @ Default value is 6
+---@type StatusBarValueTextType 
 Enum.StatusBarValueTextType = {}
 Enum.StatusBarValueTextType["Hidden"] = 0
 Enum.StatusBarValueTextType["Percentage"] = 1
@@ -282,58 +282,58 @@ Enum.StatusBarValueTextType["ValueOverMax"] = 5
 Enum.StatusBarValueTextType["ValueOverMaxNormalized"] = 6
 
 ---@class UIWidgetBlendModeType : Enum
----@field Opaque UIWidgetBlendModeType @ 0
----@field Additive UIWidgetBlendModeType @ 1
----@type number 
+---@field Opaque number @ Default value is 0
+---@field Additive number @ Default value is 1
+---@type UIWidgetBlendModeType 
 Enum.UIWidgetBlendModeType = {}
 Enum.UIWidgetBlendModeType["Opaque"] = 0
 Enum.UIWidgetBlendModeType["Additive"] = 1
 
 ---@class UIWidgetFlag : Enum
----@field UniversalWidget UIWidgetFlag @ 1
----@type number 
+---@field UniversalWidget number @ Default value is 1
+---@type UIWidgetFlag 
 Enum.UIWidgetFlag = {}
 Enum.UIWidgetFlag["UniversalWidget"] = 1
 
 ---@class UIWidgetFontType : Enum
----@field Normal UIWidgetFontType @ 0
----@field Shadow UIWidgetFontType @ 1
----@field Outline UIWidgetFontType @ 2
----@type number 
+---@field Normal number @ Default value is 0
+---@field Shadow number @ Default value is 1
+---@field Outline number @ Default value is 2
+---@type UIWidgetFontType 
 Enum.UIWidgetFontType = {}
 Enum.UIWidgetFontType["Normal"] = 0
 Enum.UIWidgetFontType["Shadow"] = 1
 Enum.UIWidgetFontType["Outline"] = 2
 
 ---@class UIWidgetModelSceneLayer : Enum
----@field None UIWidgetModelSceneLayer @ 0
----@field Front UIWidgetModelSceneLayer @ 1
----@field Back UIWidgetModelSceneLayer @ 2
----@type number 
+---@field None number @ Default value is 0
+---@field Front number @ Default value is 1
+---@field Back number @ Default value is 2
+---@type UIWidgetModelSceneLayer 
 Enum.UIWidgetModelSceneLayer = {}
 Enum.UIWidgetModelSceneLayer["None"] = 0
 Enum.UIWidgetModelSceneLayer["Front"] = 1
 Enum.UIWidgetModelSceneLayer["Back"] = 2
 
 ---@class UIWidgetMotionType : Enum
----@field Instant UIWidgetMotionType @ 0
----@field Smooth UIWidgetMotionType @ 1
----@type number 
+---@field Instant number @ Default value is 0
+---@field Smooth number @ Default value is 1
+---@type UIWidgetMotionType 
 Enum.UIWidgetMotionType = {}
 Enum.UIWidgetMotionType["Instant"] = 0
 Enum.UIWidgetMotionType["Smooth"] = 1
 
 ---@class UIWidgetTextSizeType : Enum
----@field Small12Pt UIWidgetTextSizeType @ 0
----@field Medium16Pt UIWidgetTextSizeType @ 1
----@field Large24Pt UIWidgetTextSizeType @ 2
----@field Huge27Pt UIWidgetTextSizeType @ 3
----@field Standard14Pt UIWidgetTextSizeType @ 4
----@field Small10Pt UIWidgetTextSizeType @ 5
----@field Small11Pt UIWidgetTextSizeType @ 6
----@field Medium18Pt UIWidgetTextSizeType @ 7
----@field Large20Pt UIWidgetTextSizeType @ 8
----@type number 
+---@field Small12Pt number @ Default value is 0
+---@field Medium16Pt number @ Default value is 1
+---@field Large24Pt number @ Default value is 2
+---@field Huge27Pt number @ Default value is 3
+---@field Standard14Pt number @ Default value is 4
+---@field Small10Pt number @ Default value is 5
+---@field Small11Pt number @ Default value is 6
+---@field Medium18Pt number @ Default value is 7
+---@field Large20Pt number @ Default value is 8
+---@type UIWidgetTextSizeType 
 Enum.UIWidgetTextSizeType = {}
 Enum.UIWidgetTextSizeType["Small12Pt"] = 0
 Enum.UIWidgetTextSizeType["Medium16Pt"] = 1
@@ -346,12 +346,12 @@ Enum.UIWidgetTextSizeType["Medium18Pt"] = 7
 Enum.UIWidgetTextSizeType["Large20Pt"] = 8
 
 ---@class UIWidgetTextureAndTextSizeType : Enum
----@field Small UIWidgetTextureAndTextSizeType @ 0
----@field Medium UIWidgetTextureAndTextSizeType @ 1
----@field Large UIWidgetTextureAndTextSizeType @ 2
----@field Huge UIWidgetTextureAndTextSizeType @ 3
----@field Standard UIWidgetTextureAndTextSizeType @ 4
----@type number 
+---@field Small number @ Default value is 0
+---@field Medium number @ Default value is 1
+---@field Large number @ Default value is 2
+---@field Huge number @ Default value is 3
+---@field Standard number @ Default value is 4
+---@type UIWidgetTextureAndTextSizeType 
 Enum.UIWidgetTextureAndTextSizeType = {}
 Enum.UIWidgetTextureAndTextSizeType["Small"] = 0
 Enum.UIWidgetTextureAndTextSizeType["Medium"] = 1
@@ -360,16 +360,16 @@ Enum.UIWidgetTextureAndTextSizeType["Huge"] = 3
 Enum.UIWidgetTextureAndTextSizeType["Standard"] = 4
 
 ---@class UIWidgetTooltipLocation : Enum
----@field Default UIWidgetTooltipLocation @ 0
----@field BottomLeft UIWidgetTooltipLocation @ 1
----@field Left UIWidgetTooltipLocation @ 2
----@field TopLeft UIWidgetTooltipLocation @ 3
----@field Top UIWidgetTooltipLocation @ 4
----@field TopRight UIWidgetTooltipLocation @ 5
----@field Right UIWidgetTooltipLocation @ 6
----@field BottomRight UIWidgetTooltipLocation @ 7
----@field Bottom UIWidgetTooltipLocation @ 8
----@type number 
+---@field Default number @ Default value is 0
+---@field BottomLeft number @ Default value is 1
+---@field Left number @ Default value is 2
+---@field TopLeft number @ Default value is 3
+---@field Top number @ Default value is 4
+---@field TopRight number @ Default value is 5
+---@field Right number @ Default value is 6
+---@field BottomRight number @ Default value is 7
+---@field Bottom number @ Default value is 8
+---@type UIWidgetTooltipLocation 
 Enum.UIWidgetTooltipLocation = {}
 Enum.UIWidgetTooltipLocation["Default"] = 0
 Enum.UIWidgetTooltipLocation["BottomLeft"] = 1
@@ -382,30 +382,30 @@ Enum.UIWidgetTooltipLocation["BottomRight"] = 7
 Enum.UIWidgetTooltipLocation["Bottom"] = 8
 
 ---@class WidgetAnimationType : Enum
----@field None WidgetAnimationType @ 0
----@field Fade WidgetAnimationType @ 1
----@type number 
+---@field None number @ Default value is 0
+---@field Fade number @ Default value is 1
+---@type WidgetAnimationType 
 Enum.WidgetAnimationType = {}
 Enum.WidgetAnimationType["None"] = 0
 Enum.WidgetAnimationType["Fade"] = 1
 
 ---@class WidgetCurrencyClass : Enum
----@field Currency WidgetCurrencyClass @ 0
----@field Item WidgetCurrencyClass @ 1
----@type number 
+---@field Currency number @ Default value is 0
+---@field Item number @ Default value is 1
+---@type WidgetCurrencyClass 
 Enum.WidgetCurrencyClass = {}
 Enum.WidgetCurrencyClass["Currency"] = 0
 Enum.WidgetCurrencyClass["Item"] = 1
 
 ---@class WidgetEnabledState : Enum
----@field Disabled WidgetEnabledState @ 0
----@field Enabled WidgetEnabledState @ 1
----@field Red WidgetEnabledState @ 2
----@field White WidgetEnabledState @ 3
----@field Green WidgetEnabledState @ 4
----@field Gold WidgetEnabledState @ 5
----@field Black WidgetEnabledState @ 6
----@type number 
+---@field Disabled number @ Default value is 0
+---@field Enabled number @ Default value is 1
+---@field Red number @ Default value is 2
+---@field White number @ Default value is 3
+---@field Green number @ Default value is 4
+---@field Gold number @ Default value is 5
+---@field Black number @ Default value is 6
+---@type WidgetEnabledState 
 Enum.WidgetEnabledState = {}
 Enum.WidgetEnabledState["Disabled"] = 0
 Enum.WidgetEnabledState["Enabled"] = 1
@@ -416,47 +416,47 @@ Enum.WidgetEnabledState["Gold"] = 5
 Enum.WidgetEnabledState["Black"] = 6
 
 ---@class WidgetShownState : Enum
----@field Hidden WidgetShownState @ 0
----@field Shown WidgetShownState @ 1
----@type number 
+---@field Hidden number @ Default value is 0
+---@field Shown number @ Default value is 1
+---@type WidgetShownState 
 Enum.WidgetShownState = {}
 Enum.WidgetShownState["Hidden"] = 0
 Enum.WidgetShownState["Shown"] = 1
 
 ---@class WidgetTextHorizontalAlignmentType : Enum
----@field Left WidgetTextHorizontalAlignmentType @ 0
----@field Center WidgetTextHorizontalAlignmentType @ 1
----@field Right WidgetTextHorizontalAlignmentType @ 2
----@type number 
+---@field Left number @ Default value is 0
+---@field Center number @ Default value is 1
+---@field Right number @ Default value is 2
+---@type WidgetTextHorizontalAlignmentType 
 Enum.WidgetTextHorizontalAlignmentType = {}
 Enum.WidgetTextHorizontalAlignmentType["Left"] = 0
 Enum.WidgetTextHorizontalAlignmentType["Center"] = 1
 Enum.WidgetTextHorizontalAlignmentType["Right"] = 2
 
 ---@class WidgetUnitPowerBarFlashMomentType : Enum
----@field FlashWhenMax WidgetUnitPowerBarFlashMomentType @ 0
----@field FlashWhenMin WidgetUnitPowerBarFlashMomentType @ 1
----@field NeverFlash WidgetUnitPowerBarFlashMomentType @ 2
----@type number 
+---@field FlashWhenMax number @ Default value is 0
+---@field FlashWhenMin number @ Default value is 1
+---@field NeverFlash number @ Default value is 2
+---@type WidgetUnitPowerBarFlashMomentType 
 Enum.WidgetUnitPowerBarFlashMomentType = {}
 Enum.WidgetUnitPowerBarFlashMomentType["FlashWhenMax"] = 0
 Enum.WidgetUnitPowerBarFlashMomentType["FlashWhenMin"] = 1
 Enum.WidgetUnitPowerBarFlashMomentType["NeverFlash"] = 2
 
 ---@class ZoneControlActiveState : Enum
----@field Inactive ZoneControlActiveState @ 0
----@field Active ZoneControlActiveState @ 1
----@type number 
+---@field Inactive number @ Default value is 0
+---@field Active number @ Default value is 1
+---@type ZoneControlActiveState 
 Enum.ZoneControlActiveState = {}
 Enum.ZoneControlActiveState["Inactive"] = 0
 Enum.ZoneControlActiveState["Active"] = 1
 
 ---@class ZoneControlDangerFlashType : Enum
----@field ShowOnGoodStates ZoneControlDangerFlashType @ 0
----@field ShowOnBadStates ZoneControlDangerFlashType @ 1
----@field ShowOnBoth ZoneControlDangerFlashType @ 2
----@field ShowOnNeither ZoneControlDangerFlashType @ 3
----@type number 
+---@field ShowOnGoodStates number @ Default value is 0
+---@field ShowOnBadStates number @ Default value is 1
+---@field ShowOnBoth number @ Default value is 2
+---@field ShowOnNeither number @ Default value is 3
+---@type ZoneControlDangerFlashType 
 Enum.ZoneControlDangerFlashType = {}
 Enum.ZoneControlDangerFlashType["ShowOnGoodStates"] = 0
 Enum.ZoneControlDangerFlashType["ShowOnBadStates"] = 1
@@ -464,11 +464,11 @@ Enum.ZoneControlDangerFlashType["ShowOnBoth"] = 2
 Enum.ZoneControlDangerFlashType["ShowOnNeither"] = 3
 
 ---@class ZoneControlFillType : Enum
----@field SingleFillClockwise ZoneControlFillType @ 0
----@field SingleFillCounterClockwise ZoneControlFillType @ 1
----@field DoubleFillClockwise ZoneControlFillType @ 2
----@field DoubleFillCounterClockwise ZoneControlFillType @ 3
----@type number 
+---@field SingleFillClockwise number @ Default value is 0
+---@field SingleFillCounterClockwise number @ Default value is 1
+---@field DoubleFillClockwise number @ Default value is 2
+---@field DoubleFillCounterClockwise number @ Default value is 3
+---@type ZoneControlFillType 
 Enum.ZoneControlFillType = {}
 Enum.ZoneControlFillType["SingleFillClockwise"] = 0
 Enum.ZoneControlFillType["SingleFillCounterClockwise"] = 1
@@ -476,19 +476,19 @@ Enum.ZoneControlFillType["DoubleFillClockwise"] = 2
 Enum.ZoneControlFillType["DoubleFillCounterClockwise"] = 3
 
 ---@class ZoneControlLeadingEdgeType : Enum
----@field NoLeadingEdge ZoneControlLeadingEdgeType @ 0
----@field UseLeadingEdge ZoneControlLeadingEdgeType @ 1
----@type number 
+---@field NoLeadingEdge number @ Default value is 0
+---@field UseLeadingEdge number @ Default value is 1
+---@type ZoneControlLeadingEdgeType 
 Enum.ZoneControlLeadingEdgeType = {}
 Enum.ZoneControlLeadingEdgeType["NoLeadingEdge"] = 0
 Enum.ZoneControlLeadingEdgeType["UseLeadingEdge"] = 1
 
 ---@class ZoneControlMode : Enum
----@field BothStatesAreGood ZoneControlMode @ 0
----@field State1IsGood ZoneControlMode @ 1
----@field State2IsGood ZoneControlMode @ 2
----@field NeitherStateIsGood ZoneControlMode @ 3
----@type number 
+---@field BothStatesAreGood number @ Default value is 0
+---@field State1IsGood number @ Default value is 1
+---@field State2IsGood number @ Default value is 2
+---@field NeitherStateIsGood number @ Default value is 3
+---@type ZoneControlMode 
 Enum.ZoneControlMode = {}
 Enum.ZoneControlMode["BothStatesAreGood"] = 0
 Enum.ZoneControlMode["State1IsGood"] = 1
@@ -496,9 +496,9 @@ Enum.ZoneControlMode["State2IsGood"] = 2
 Enum.ZoneControlMode["NeitherStateIsGood"] = 3
 
 ---@class ZoneControlState : Enum
----@field State1 ZoneControlState @ 0
----@field State2 ZoneControlState @ 1
----@type number 
+---@field State1 number @ Default value is 0
+---@field State2 number @ Default value is 1
+---@type ZoneControlState 
 Enum.ZoneControlState = {}
 Enum.ZoneControlState["State1"] = 0
 Enum.ZoneControlState["State2"] = 1

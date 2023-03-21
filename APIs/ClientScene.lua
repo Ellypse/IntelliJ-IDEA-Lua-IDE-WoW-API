@@ -2,9 +2,9 @@
 C_ClientScene = {}
 
 ---@class ClientSceneType : Enum
----@field DefaultSceneType ClientSceneType @ 0
----@field MinigameSceneType ClientSceneType @ 1
----@type number 
+---@field DefaultSceneType number @ Default value is 0
+---@field MinigameSceneType number @ Default value is 1
+---@type ClientSceneType 
 Enum.ClientSceneType = {}
 Enum.ClientSceneType["DefaultSceneType"] = 0
 Enum.ClientSceneType["MinigameSceneType"] = 1

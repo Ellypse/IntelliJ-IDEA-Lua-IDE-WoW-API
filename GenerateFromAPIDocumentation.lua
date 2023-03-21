@@ -189,18 +189,19 @@ function APIDocumentation:AddDocumentationTable(documentation)
 
 			elseif tab.Type == "Enumeration" then
 				write(CLASS_DECLARATION:format(tab.Name .. " : Enum"))
+				local parentType = tab.Name
 				for k, value in pairs(tab.Fields) do
 					write(FIELD_DOCUMENTATION:format(
 							value.Name,
-							value.Type,
-							("@ " .. value.EnumValue)
+							"number",
+							("@ Default value is ".. value.EnumValue)
 					))
 				end
 				--write(GLOBAL_DECLARATION:format(tab.Name))
 				--write("")
 
 				write(TYPE_DECLARATION:format(
-						"number",
+						parentType,
 						""
 				))
 				write(GLOBAL_DECLARATION:format("Enum."..tab.Name))
