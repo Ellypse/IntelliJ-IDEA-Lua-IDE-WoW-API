@@ -10,8 +10,6 @@ local BLACKLISTED_FILES = {
 	--would be great if we could fix these
 	["CharacterCustomizationSharedDocumentation.lua"] = true,
 	["CurrencyConstantsDocumentation.lua"] = true,
-	["UITimerDocumentation.lua"] = true,
-	--["TextureUtilsDocumentation.lua"] = true,
 	["."] = true,
 	[".."] = true,
 }
@@ -197,7 +195,6 @@ function APIDocumentation:AddDocumentationTable(documentation)
 							"@ Default value is [ ".. value.EnumValue .. " ]"
 					))
 				end
-				--write(GLOBAL_DECLARATION:format(tab.Name))
 				write("")
 
 				write(TYPE_DECLARATION:format(
@@ -206,16 +203,7 @@ function APIDocumentation:AddDocumentationTable(documentation)
 				))
 				write(GLOBAL_DECLARATION:format(tab.Name))
 
-				--[[for k, value in pairs(tab.Fields) do
-					write(TYPE_DECLARATION:format(
-							value.Type,
-							value.Documentation and ("@ " .. table.concat(value.Documentation, "\n")) or ""
-					))
-					write("Enum."..tab.Name .. "." .. value.Name .. " = " .. (value.EnumValue or ""))
-				end]]
-
 			else
-
 				write(CLASS_DECLARATION:format(tab.Name))
 				write(GLOBAL_DECLARATION:format(tab.Name))
 				for k, value in pairs(tab.Fields) do
