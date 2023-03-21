@@ -39,10 +39,11 @@ local NAMESPACE_DECLARATION = [[
 local ARGUMENT_DOCUMENTATION = [[---@param %s %s %s]]
 local RETURN_DOCUMENTATION = [[---@return %s %s]]
 local FIELD_DOCUMENTATION = [[---@field %s %s %s]]
+local ENUM_FIELD_DOCUMENTATION = [[---@field %s %s %s %s]]
 local CLASS_DECLARATION = [[---@class %s]]
 local TYPE_DECLARATION = [[---@type %s %s]]
-local INNER_TYPE_DECLARATION = [[local %s = {}]]
-local GLOBAL_TYPE_DECLARATION = [[%s = {}]]
+local INNER_DECLARATION = [[local %s = {}]]
+local GLOBAL_DECLARATION = [[%s = {}]]
 local FUNCTION_OVERLOAD = [[---@overload fun(%s)]]
 function APIDocumentation:AddDocumentationTable(documentation)
 	if not documentation.Type then return end
@@ -161,7 +162,7 @@ function APIDocumentation:AddDocumentationTable(documentation)
 							value.Documentation and ("@ " .. table.concat(value.Documentation, "\n")) or ""
 					))
 				end
-				write(GLOBAL_TYPE_DECLARATION:format(tab.Name))
+				write(GLOBAL_DECLARATION:format(tab.Name))
 
 				-- this is a relatively new type of type found in the "Tables" section of the documentation
 				-- TODO: I genuinely have no idea how to do callback documentation
@@ -189,15 +190,24 @@ function APIDocumentation:AddDocumentationTable(documentation)
 
 			elseif tab.Type == "Enumeration" then
 				write(CLASS_DECLARATION:format(tab.Name .. " : Enum"))
+				local parentType = tab.Name
 				for k, value in pairs(tab.Fields) do
-					write(FIELD_DOCUMENTATION:format(
+					write(ENUM_FIELD_DOCUMENTATION:format(
+							"protected",
 							value.Name,
 							value.Type,
 							value.Documentation and ("@ " .. table.concat(value.Documentation, "\n")) or ""
 					))
 				end
-				write(GLOBAL_TYPE_DECLARATION:format("Enum."..tab.Name))
+				write(GLOBAL_DECLARATION:format(tab.Name))
 
+				write("")
+				write(TYPE_DECLARATION:format(
+						parentType,
+						""
+				))
+				write(GLOBAL_DECLARATION:format("Enum."..tab.Name))
+				
 				for k, value in pairs(tab.Fields) do
 					write("Enum."..tab.Name .. "." .. value.Name .. " = " .. (value.EnumValue or ""))
 				end
@@ -213,7 +223,7 @@ function APIDocumentation:AddDocumentationTable(documentation)
 			else
 
 				write(CLASS_DECLARATION:format(tab.Name))
-				write(GLOBAL_TYPE_DECLARATION:format(tab.Name))
+				write(GLOBAL_DECLARATION:format(tab.Name))
 				for k, value in pairs(tab.Fields) do
 					write(tab.Name .. "." .. value.Name .. " = " .. (value.EnumValue or ""))
 				end

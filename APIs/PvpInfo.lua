@@ -275,11 +275,14 @@ function C_PvP.SetWarModeDesired(warModeDesired) end
 function C_PvP.ToggleWarMode() end
 
 ---@class BrawlType : Enum
----@field None BrawlType 
----@field Battleground BrawlType 
----@field Arena BrawlType 
----@field LFG BrawlType 
----@field SoloShuffle BrawlType 
+---@field protected None BrawlType 
+---@field protected Battleground BrawlType 
+---@field protected Arena BrawlType 
+---@field protected LFG BrawlType 
+---@field protected SoloShuffle BrawlType 
+BrawlType = {}
+
+---@type BrawlType 
 Enum.BrawlType = {}
 Enum.BrawlType.None = 0
 Enum.BrawlType.Battleground = 1
@@ -288,9 +291,12 @@ Enum.BrawlType.LFG = 3
 Enum.BrawlType.SoloShuffle = 4
 
 ---@class PvPMatchState : Enum
----@field Inactive PvPMatchState 
----@field Active PvPMatchState 
----@field Complete PvPMatchState 
+---@field protected Inactive PvPMatchState 
+---@field protected Active PvPMatchState 
+---@field protected Complete PvPMatchState 
+PvPMatchState = {}
+
+---@type PvPMatchState 
 Enum.PvPMatchState = {}
 Enum.PvPMatchState.Inactive = 0
 Enum.PvPMatchState.Active = 1

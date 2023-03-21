@@ -5,27 +5,30 @@ C_Cursor = {}
 function C_Cursor.GetCursorItem() end
 
 ---@class UICursorType : Enum
----@field Default UICursorType 
----@field Item UICursorType 
----@field Money UICursorType 
----@field Spell UICursorType 
----@field PetAction UICursorType 
----@field Merchant UICursorType 
----@field ActionBar UICursorType 
----@field Macro UICursorType 
----@field AmmoObsolete UICursorType 
----@field Pet UICursorType 
----@field GuildBank UICursorType 
----@field GuildBankMoney UICursorType 
----@field EquipmentSet UICursorType 
----@field Currency UICursorType 
----@field Flyout UICursorType 
----@field VoidItem UICursorType 
----@field BattlePet UICursorType 
----@field Mount UICursorType 
----@field Toy UICursorType 
----@field ConduitCollectionItem UICursorType 
----@field PerksProgramVendorItem UICursorType 
+---@field protected Default UICursorType 
+---@field protected Item UICursorType 
+---@field protected Money UICursorType 
+---@field protected Spell UICursorType 
+---@field protected PetAction UICursorType 
+---@field protected Merchant UICursorType 
+---@field protected ActionBar UICursorType 
+---@field protected Macro UICursorType 
+---@field protected AmmoObsolete UICursorType 
+---@field protected Pet UICursorType 
+---@field protected GuildBank UICursorType 
+---@field protected GuildBankMoney UICursorType 
+---@field protected EquipmentSet UICursorType 
+---@field protected Currency UICursorType 
+---@field protected Flyout UICursorType 
+---@field protected VoidItem UICursorType 
+---@field protected BattlePet UICursorType 
+---@field protected Mount UICursorType 
+---@field protected Toy UICursorType 
+---@field protected ConduitCollectionItem UICursorType 
+---@field protected PerksProgramVendorItem UICursorType 
+UICursorType = {}
+
+---@type UICursorType 
 Enum.UICursorType = {}
 Enum.UICursorType.Default = 0
 Enum.UICursorType.Item = 1
@@ -50,10 +53,13 @@ Enum.UICursorType.ConduitCollectionItem = 20
 Enum.UICursorType.PerksProgramVendorItem = 21
 
 ---@class WorldCursorAnchorType : Enum
----@field None WorldCursorAnchorType 
----@field Default WorldCursorAnchorType 
----@field Cursor WorldCursorAnchorType 
----@field Nameplate WorldCursorAnchorType 
+---@field protected None WorldCursorAnchorType 
+---@field protected Default WorldCursorAnchorType 
+---@field protected Cursor WorldCursorAnchorType 
+---@field protected Nameplate WorldCursorAnchorType 
+WorldCursorAnchorType = {}
+
+---@type WorldCursorAnchorType 
 Enum.WorldCursorAnchorType = {}
 Enum.WorldCursorAnchorType.None = 0
 Enum.WorldCursorAnchorType.Default = 1

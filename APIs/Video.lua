@@ -21,48 +21,51 @@ function C_VideoOptions.GetGxAdapterInfo() end
 function C_VideoOptions.SetGameWindowSize(x, y) end
 
 ---@class GraphicsValidationResult : Enum
----@field Supported GraphicsValidationResult 
----@field Illegal GraphicsValidationResult 
----@field Unsupported GraphicsValidationResult 
----@field Graphics GraphicsValidationResult 
----@field DualCore GraphicsValidationResult 
----@field QuadCore GraphicsValidationResult 
----@field CpuMem_2 GraphicsValidationResult 
----@field CpuMem_4 GraphicsValidationResult 
----@field CpuMem_8 GraphicsValidationResult 
----@field Needs_5_0 GraphicsValidationResult 
----@field Needs_6_0 GraphicsValidationResult 
----@field NeedsRt GraphicsValidationResult 
----@field NeedsDx12 GraphicsValidationResult 
----@field NeedsDx12Vrs2 GraphicsValidationResult 
----@field NeedsAppleGpu GraphicsValidationResult 
----@field NeedsAmdGpu GraphicsValidationResult 
----@field NeedsIntelGpu GraphicsValidationResult 
----@field NeedsNvidiaGpu GraphicsValidationResult 
----@field NeedsQualcommGpu GraphicsValidationResult 
----@field NeedsMacOs_10_13 GraphicsValidationResult 
----@field NeedsMacOs_10_14 GraphicsValidationResult 
----@field NeedsMacOs_10_15 GraphicsValidationResult 
----@field NeedsMacOs_11_0 GraphicsValidationResult 
----@field NeedsMacOs_12_0 GraphicsValidationResult 
----@field NeedsMacOs_13_0 GraphicsValidationResult 
----@field NeedsWindows_10 GraphicsValidationResult 
----@field NeedsWindows_11 GraphicsValidationResult 
----@field MacOsUnsupported GraphicsValidationResult 
----@field WindowsUnsupported GraphicsValidationResult 
----@field LegacyUnsupported GraphicsValidationResult 
----@field Dx11Unsupported GraphicsValidationResult 
----@field Dx12Win7Unsupported GraphicsValidationResult 
----@field RemoteDesktopUnsupported GraphicsValidationResult 
----@field WineUnsupported GraphicsValidationResult 
----@field NvapiWineUnsupported GraphicsValidationResult 
----@field AppleGpuUnsupported GraphicsValidationResult 
----@field AmdGpuUnsupported GraphicsValidationResult 
----@field IntelGpuUnsupported GraphicsValidationResult 
----@field NvidiaGpuUnsupported GraphicsValidationResult 
----@field QualcommGpuUnsupported GraphicsValidationResult 
----@field GpuDriver GraphicsValidationResult 
----@field Unknown GraphicsValidationResult 
+---@field protected Supported GraphicsValidationResult 
+---@field protected Illegal GraphicsValidationResult 
+---@field protected Unsupported GraphicsValidationResult 
+---@field protected Graphics GraphicsValidationResult 
+---@field protected DualCore GraphicsValidationResult 
+---@field protected QuadCore GraphicsValidationResult 
+---@field protected CpuMem_2 GraphicsValidationResult 
+---@field protected CpuMem_4 GraphicsValidationResult 
+---@field protected CpuMem_8 GraphicsValidationResult 
+---@field protected Needs_5_0 GraphicsValidationResult 
+---@field protected Needs_6_0 GraphicsValidationResult 
+---@field protected NeedsRt GraphicsValidationResult 
+---@field protected NeedsDx12 GraphicsValidationResult 
+---@field protected NeedsDx12Vrs2 GraphicsValidationResult 
+---@field protected NeedsAppleGpu GraphicsValidationResult 
+---@field protected NeedsAmdGpu GraphicsValidationResult 
+---@field protected NeedsIntelGpu GraphicsValidationResult 
+---@field protected NeedsNvidiaGpu GraphicsValidationResult 
+---@field protected NeedsQualcommGpu GraphicsValidationResult 
+---@field protected NeedsMacOs_10_13 GraphicsValidationResult 
+---@field protected NeedsMacOs_10_14 GraphicsValidationResult 
+---@field protected NeedsMacOs_10_15 GraphicsValidationResult 
+---@field protected NeedsMacOs_11_0 GraphicsValidationResult 
+---@field protected NeedsMacOs_12_0 GraphicsValidationResult 
+---@field protected NeedsMacOs_13_0 GraphicsValidationResult 
+---@field protected NeedsWindows_10 GraphicsValidationResult 
+---@field protected NeedsWindows_11 GraphicsValidationResult 
+---@field protected MacOsUnsupported GraphicsValidationResult 
+---@field protected WindowsUnsupported GraphicsValidationResult 
+---@field protected LegacyUnsupported GraphicsValidationResult 
+---@field protected Dx11Unsupported GraphicsValidationResult 
+---@field protected Dx12Win7Unsupported GraphicsValidationResult 
+---@field protected RemoteDesktopUnsupported GraphicsValidationResult 
+---@field protected WineUnsupported GraphicsValidationResult 
+---@field protected NvapiWineUnsupported GraphicsValidationResult 
+---@field protected AppleGpuUnsupported GraphicsValidationResult 
+---@field protected AmdGpuUnsupported GraphicsValidationResult 
+---@field protected IntelGpuUnsupported GraphicsValidationResult 
+---@field protected NvidiaGpuUnsupported GraphicsValidationResult 
+---@field protected QualcommGpuUnsupported GraphicsValidationResult 
+---@field protected GpuDriver GraphicsValidationResult 
+---@field protected Unknown GraphicsValidationResult 
+GraphicsValidationResult = {}
+
+---@type GraphicsValidationResult 
 Enum.GraphicsValidationResult = {}
 Enum.GraphicsValidationResult.Supported = 0
 Enum.GraphicsValidationResult.Illegal = 1

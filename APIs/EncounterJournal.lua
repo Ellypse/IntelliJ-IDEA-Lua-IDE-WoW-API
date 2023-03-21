@@ -50,22 +50,25 @@ function C_EncounterJournal.SetPreviewPvpTier(tier) end
 function C_EncounterJournal.SetSlotFilter(filterSlot) end
 
 ---@class ItemSlotFilterType : Enum
----@field Head ItemSlotFilterType 
----@field Neck ItemSlotFilterType 
----@field Shoulder ItemSlotFilterType 
----@field Cloak ItemSlotFilterType 
----@field Chest ItemSlotFilterType 
----@field Wrist ItemSlotFilterType 
----@field Hand ItemSlotFilterType 
----@field Waist ItemSlotFilterType 
----@field Legs ItemSlotFilterType 
----@field Feet ItemSlotFilterType 
----@field MainHand ItemSlotFilterType 
----@field OffHand ItemSlotFilterType 
----@field Finger ItemSlotFilterType 
----@field Trinket ItemSlotFilterType 
----@field Other ItemSlotFilterType 
----@field NoFilter ItemSlotFilterType 
+---@field protected Head ItemSlotFilterType 
+---@field protected Neck ItemSlotFilterType 
+---@field protected Shoulder ItemSlotFilterType 
+---@field protected Cloak ItemSlotFilterType 
+---@field protected Chest ItemSlotFilterType 
+---@field protected Wrist ItemSlotFilterType 
+---@field protected Hand ItemSlotFilterType 
+---@field protected Waist ItemSlotFilterType 
+---@field protected Legs ItemSlotFilterType 
+---@field protected Feet ItemSlotFilterType 
+---@field protected MainHand ItemSlotFilterType 
+---@field protected OffHand ItemSlotFilterType 
+---@field protected Finger ItemSlotFilterType 
+---@field protected Trinket ItemSlotFilterType 
+---@field protected Other ItemSlotFilterType 
+---@field protected NoFilter ItemSlotFilterType 
+ItemSlotFilterType = {}
+
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType = {}
 Enum.ItemSlotFilterType.Head = 0
 Enum.ItemSlotFilterType.Neck = 1

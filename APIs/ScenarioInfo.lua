@@ -13,21 +13,24 @@ function C_ScenarioInfo.GetScenarioInfo() end
 function C_ScenarioInfo.GetScenarioStepInfo(scenarioStepID) end
 
 ---@class JailersTowerType : Enum
----@field TwistingCorridors JailersTowerType 
----@field SkoldusHalls JailersTowerType 
----@field FractureChambers JailersTowerType 
----@field Soulforges JailersTowerType 
----@field Coldheart JailersTowerType 
----@field Mortregar JailersTowerType 
----@field UpperReaches JailersTowerType 
----@field ArkobanHall JailersTowerType 
----@field TormentChamberJaina JailersTowerType 
----@field TormentChamberThrall JailersTowerType 
----@field TormentChamberAnduin JailersTowerType 
----@field AdamantVaults JailersTowerType 
----@field ForgottenCatacombs JailersTowerType 
----@field Ossuary JailersTowerType 
----@field BossRush JailersTowerType 
+---@field protected TwistingCorridors JailersTowerType 
+---@field protected SkoldusHalls JailersTowerType 
+---@field protected FractureChambers JailersTowerType 
+---@field protected Soulforges JailersTowerType 
+---@field protected Coldheart JailersTowerType 
+---@field protected Mortregar JailersTowerType 
+---@field protected UpperReaches JailersTowerType 
+---@field protected ArkobanHall JailersTowerType 
+---@field protected TormentChamberJaina JailersTowerType 
+---@field protected TormentChamberThrall JailersTowerType 
+---@field protected TormentChamberAnduin JailersTowerType 
+---@field protected AdamantVaults JailersTowerType 
+---@field protected ForgottenCatacombs JailersTowerType 
+---@field protected Ossuary JailersTowerType 
+---@field protected BossRush JailersTowerType 
+JailersTowerType = {}
+
+---@type JailersTowerType 
 Enum.JailersTowerType = {}
 Enum.JailersTowerType.TwistingCorridors = 0
 Enum.JailersTowerType.SkoldusHalls = 1

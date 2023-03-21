@@ -85,10 +85,13 @@ function C_ClassTalents.SetUsesSharedActionBars(configID, usesShared) end
 function C_ClassTalents.UpdateLastSelectedSavedConfigID(specID, configID) end
 
 ---@class LoadConfigResult : Enum
----@field Error LoadConfigResult 
----@field NoChangesNecessary LoadConfigResult 
----@field LoadInProgress LoadConfigResult 
----@field Ready LoadConfigResult 
+---@field protected Error LoadConfigResult 
+---@field protected NoChangesNecessary LoadConfigResult 
+---@field protected LoadInProgress LoadConfigResult 
+---@field protected Ready LoadConfigResult 
+LoadConfigResult = {}
+
+---@type LoadConfigResult 
 Enum.LoadConfigResult = {}
 Enum.LoadConfigResult.Error = 0
 Enum.LoadConfigResult.NoChangesNecessary = 1

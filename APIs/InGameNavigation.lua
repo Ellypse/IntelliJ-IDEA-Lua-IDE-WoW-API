@@ -17,10 +17,13 @@ function C_Navigation.HasValidScreenPosition() end
 function C_Navigation.WasClampedToScreen() end
 
 ---@class NavigationState : Enum
----@field Invalid NavigationState 
----@field Occluded NavigationState 
----@field InRange NavigationState 
----@field Disabled NavigationState 
+---@field protected Invalid NavigationState 
+---@field protected Occluded NavigationState 
+---@field protected InRange NavigationState 
+---@field protected Disabled NavigationState 
+NavigationState = {}
+
+---@type NavigationState 
 Enum.NavigationState = {}
 Enum.NavigationState.Invalid = 0
 Enum.NavigationState.Occluded = 1

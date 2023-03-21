@@ -10,10 +10,13 @@ function C_IncomingSummon.HasIncomingSummon(unit) end
 function C_IncomingSummon.IncomingSummonStatus(unit) end
 
 ---@class SummonStatus : Enum
----@field None SummonStatus 
----@field Pending SummonStatus 
----@field Accepted SummonStatus 
----@field Declined SummonStatus 
+---@field protected None SummonStatus 
+---@field protected Pending SummonStatus 
+---@field protected Accepted SummonStatus 
+---@field protected Declined SummonStatus 
+SummonStatus = {}
+
+---@type SummonStatus 
 Enum.SummonStatus = {}
 Enum.SummonStatus.None = 0
 Enum.SummonStatus.Pending = 1

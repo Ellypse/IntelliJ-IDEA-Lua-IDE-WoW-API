@@ -331,25 +331,34 @@ function C_AuctionHouse.SetFavoriteItem(itemKey, setFavorite) end
 function C_AuctionHouse.StartCommoditiesPurchase(itemID, quantity) end
 
 ---@class AuctionHouseFilterCategory : Enum
----@field Uncategorized AuctionHouseFilterCategory 
----@field Equipment AuctionHouseFilterCategory 
----@field Rarity AuctionHouseFilterCategory 
+---@field protected Uncategorized AuctionHouseFilterCategory 
+---@field protected Equipment AuctionHouseFilterCategory 
+---@field protected Rarity AuctionHouseFilterCategory 
+AuctionHouseFilterCategory = {}
+
+---@type AuctionHouseFilterCategory 
 Enum.AuctionHouseFilterCategory = {}
 Enum.AuctionHouseFilterCategory.Uncategorized = 0
 Enum.AuctionHouseFilterCategory.Equipment = 1
 Enum.AuctionHouseFilterCategory.Rarity = 2
 
 ---@class AuctionStatus : Enum
----@field Active AuctionStatus 
----@field Sold AuctionStatus 
+---@field protected Active AuctionStatus 
+---@field protected Sold AuctionStatus 
+AuctionStatus = {}
+
+---@type AuctionStatus 
 Enum.AuctionStatus = {}
 Enum.AuctionStatus.Active = 0
 Enum.AuctionStatus.Sold = 1
 
 ---@class ItemCommodityStatus : Enum
----@field Unknown ItemCommodityStatus 
----@field Item ItemCommodityStatus 
----@field Commodity ItemCommodityStatus 
+---@field protected Unknown ItemCommodityStatus 
+---@field protected Item ItemCommodityStatus 
+---@field protected Commodity ItemCommodityStatus 
+ItemCommodityStatus = {}
+
+---@type ItemCommodityStatus 
 Enum.ItemCommodityStatus = {}
 Enum.ItemCommodityStatus.Unknown = 0
 Enum.ItemCommodityStatus.Item = 1

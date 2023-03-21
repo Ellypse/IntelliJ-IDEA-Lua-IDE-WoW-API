@@ -41,32 +41,41 @@ function C_RecruitAFriend.RemoveRAFRecruit(wowAccountGUID) end
 function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 
 ---@class RafRecruitActivityState : Enum
----@field Incomplete RafRecruitActivityState 
----@field Complete RafRecruitActivityState 
----@field RewardClaimed RafRecruitActivityState 
+---@field protected Incomplete RafRecruitActivityState 
+---@field protected Complete RafRecruitActivityState 
+---@field protected RewardClaimed RafRecruitActivityState 
+RafRecruitActivityState = {}
+
+---@type RafRecruitActivityState 
 Enum.RafRecruitActivityState = {}
 Enum.RafRecruitActivityState.Incomplete = 0
 Enum.RafRecruitActivityState.Complete = 1
 Enum.RafRecruitActivityState.RewardClaimed = 2
 
 ---@class RafRecruitSubStatus : Enum
----@field Trial RafRecruitSubStatus 
----@field Active RafRecruitSubStatus 
----@field Inactive RafRecruitSubStatus 
+---@field protected Trial RafRecruitSubStatus 
+---@field protected Active RafRecruitSubStatus 
+---@field protected Inactive RafRecruitSubStatus 
+RafRecruitSubStatus = {}
+
+---@type RafRecruitSubStatus 
 Enum.RafRecruitSubStatus = {}
 Enum.RafRecruitSubStatus.Trial = 0
 Enum.RafRecruitSubStatus.Active = 1
 Enum.RafRecruitSubStatus.Inactive = 2
 
 ---@class RafRewardType : Enum
----@field Pet RafRewardType 
----@field Mount RafRewardType 
----@field Appearance RafRewardType 
----@field Title RafRewardType 
----@field GameTime RafRewardType 
----@field AppearanceSet RafRewardType 
----@field Illusion RafRewardType 
----@field Invalid RafRewardType 
+---@field protected Pet RafRewardType 
+---@field protected Mount RafRewardType 
+---@field protected Appearance RafRewardType 
+---@field protected Title RafRewardType 
+---@field protected GameTime RafRewardType 
+---@field protected AppearanceSet RafRewardType 
+---@field protected Illusion RafRewardType 
+---@field protected Invalid RafRewardType 
+RafRewardType = {}
+
+---@type RafRewardType 
 Enum.RafRewardType = {}
 Enum.RafRewardType.Pet = 0
 Enum.RafRewardType.Mount = 1
