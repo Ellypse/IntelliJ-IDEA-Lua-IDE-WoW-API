@@ -5,14 +5,14 @@ C_CurrencyInfo = {}
 ---@return boolean|nil, boolean|nil warModeApplies, limitOncePerTooltip
 function C_CurrencyInfo.DoesWarModeBonusApply(currencyID) end
 
----@param index number 
+---@param index luaIndex 
 ---@param expand boolean 
 function C_CurrencyInfo.ExpandCurrencyList(index, expand) end
 
 ---@return number azeriteCurrencyID
 function C_CurrencyInfo.GetAzeriteCurrencyID() end
 
----@param index number 
+---@param index luaIndex 
 ---@return BackpackCurrencyInfo info
 function C_CurrencyInfo.GetBackpackCurrencyInfo(index) end
 
@@ -28,10 +28,10 @@ function C_CurrencyInfo.GetBasicCurrencyInfo(currencyType, quantity) end
 function C_CurrencyInfo.GetCurrencyContainerInfo(currencyType, quantity) end
 
 ---@param type number 
----@return string description
+---@return cstring description
 function C_CurrencyInfo.GetCurrencyDescription(type) end
 
----@param currencyLink string 
+---@param currencyLink cstring 
 ---@return number currencyID
 function C_CurrencyInfo.GetCurrencyIDFromLink(currencyLink) end
 
@@ -46,15 +46,15 @@ function C_CurrencyInfo.GetCurrencyInfoFromLink(link) end
 ---@param type number 
 ---@param amount number @ [OPTIONAL]
 ---@overload fun(type:number)
----@return string link
+---@return cstring link
 function C_CurrencyInfo.GetCurrencyLink(type, amount) end
 
----@param index number 
+---@param index luaIndex 
 ---@return CurrencyInfo info
 function C_CurrencyInfo.GetCurrencyListInfo(index) end
 
----@param index number 
----@return string link
+---@param index luaIndex 
+---@return cstring link
 function C_CurrencyInfo.GetCurrencyListLink(index) end
 
 ---@return number currencyListSize
@@ -76,18 +76,18 @@ function C_CurrencyInfo.IsCurrencyContainer(currencyID, quantity) end
 ---@param type number 
 function C_CurrencyInfo.PickupCurrency(type) end
 
----@param index number 
+---@param index luaIndex 
 ---@param backpack boolean 
 function C_CurrencyInfo.SetCurrencyBackpack(index, backpack) end
 
----@param index number 
+---@param index luaIndex 
 ---@param unused boolean 
 function C_CurrencyInfo.SetCurrencyUnused(index, unused) end
 
 ---@class BackpackCurrencyInfo
 ---@field name string 
 ---@field quantity number 
----@field iconFileID number 
+---@field iconFileID fileID 
 ---@field currencyTypesID number 
 local BackpackCurrencyInfo = {}
 
@@ -101,15 +101,15 @@ local BackpackCurrencyInfo = {}
 local CurrencyDisplayInfo = {}
 
 ---@class CurrencyInfo
----@field name string 
----@field description string 
+---@field name cstring 
+---@field description cstring 
 ---@field isHeader bool 
 ---@field isHeaderExpanded bool 
 ---@field isTypeUnused bool 
 ---@field isShowInBackpack bool 
 ---@field quantity number 
 ---@field trackedQuantity number 
----@field iconFileID number 
+---@field iconFileID fileID 
 ---@field maxQuantity number 
 ---@field canEarnPerWeek bool 
 ---@field quantityEarnedThisWeek number 

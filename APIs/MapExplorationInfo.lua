@@ -2,7 +2,7 @@
 C_MapExplorationInfo = {}
 
 ---@param uiMapID number 
----@param normalizedPosition table 
+---@param normalizedPosition vector2 
 ---@return number|nil areaID
 function C_MapExplorationInfo.GetExploredAreaIDsAtPosition(uiMapID, normalizedPosition) end
 

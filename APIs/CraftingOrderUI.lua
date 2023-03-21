@@ -7,17 +7,17 @@ function C_CraftingOrders.AreOrderNotesDisabled() end
 ---@param skillLineAbilityID number 
 ---@param orderType CraftingOrderType 
 ---@param orderDuration CraftingOrderDuration 
----@return number deposit
+---@return WOWMONEY deposit
 function C_CraftingOrders.CalculateCraftingOrderPostingFee(skillLineAbilityID, orderType, orderDuration) end
 
 ---@param skillLineAbilityID number 
 ---@return boolean canOrder
 function C_CraftingOrders.CanOrderSkillAbility(skillLineAbilityID) end
 
----@param orderID number 
+---@param orderID BigUInteger 
 function C_CraftingOrders.CancelOrder(orderID) end
 
----@param orderID number 
+---@param orderID BigUInteger 
 ---@param profession Profession 
 function C_CraftingOrders.ClaimOrder(orderID, profession) end
 
@@ -25,7 +25,7 @@ function C_CraftingOrders.CloseCrafterCraftingOrders() end
 
 function C_CraftingOrders.CloseCustomerCraftingOrders() end
 
----@param orderID number 
+---@param orderID BigUInteger 
 ---@param crafterNote string 
 ---@param profession Profession 
 function C_CraftingOrders.FulfillOrder(orderID, crafterNote, profession) end
@@ -39,7 +39,7 @@ function C_CraftingOrders.GetCrafterBuckets() end
 ---@return CraftingOrderInfo orders
 function C_CraftingOrders.GetCrafterOrders() end
 
----@return number time
+---@return BigUInteger time
 function C_CraftingOrders.GetCraftingOrderTime() end
 
 ---@return CraftingOrderCustomerCategory categories
@@ -58,7 +58,7 @@ function C_CraftingOrders.GetDefaultOrdersSkillLine() end
 ---@return CraftingOrderInfo myOrders
 function C_CraftingOrders.GetMyOrders() end
 
----@return number numFavorites
+---@return BigUInteger numFavorites
 function C_CraftingOrders.GetNumFavoriteCustomerOptions() end
 
 ---@param profession Profession 
@@ -82,7 +82,7 @@ function C_CraftingOrders.OpenCrafterCraftingOrders() end
 
 function C_CraftingOrders.OpenCustomerCraftingOrders() end
 
----@param orderID number 
+---@param orderID BigUInteger 
 ---@return boolean recraftable
 function C_CraftingOrders.OrderCanBeRecrafted(orderID) end
 
@@ -91,12 +91,12 @@ function C_CraftingOrders.ParseCustomerOptions() end
 ---@param orderInfo NewCraftingOrderInfo 
 function C_CraftingOrders.PlaceNewOrder(orderInfo) end
 
----@param orderID number 
+---@param orderID BigUInteger 
 ---@param crafterNote string 
 ---@param profession Profession 
 function C_CraftingOrders.RejectOrder(orderID, crafterNote, profession) end
 
----@param orderID number 
+---@param orderID BigUInteger 
 ---@param profession Profession 
 function C_CraftingOrders.ReleaseOrder(orderID, profession) end
 

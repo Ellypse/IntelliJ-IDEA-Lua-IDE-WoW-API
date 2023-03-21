@@ -15,10 +15,10 @@ function C_ChromieTime.SelectChromieTimeOption(chromieTimeExpansionInfoId) end
 
 ---@class ChromieTimeExpansionInfo
 ---@field id number 
----@field name string 
----@field description string 
----@field mapAtlas string 
----@field previewAtlas string 
+---@field name cstring 
+---@field description cstring 
+---@field mapAtlas textureAtlas 
+---@field previewAtlas textureAtlas 
 ---@field completed bool 
 ---@field alreadyOn bool 
 local ChromieTimeExpansionInfo = {}

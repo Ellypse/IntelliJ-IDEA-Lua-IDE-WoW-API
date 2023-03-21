@@ -28,11 +28,11 @@ PlayerChoiceRarity.Rare = 2
 PlayerChoiceRarity.Epic = 3
 
 ---@class PlayerChoiceInfo
----@field objectGUID string 
+---@field objectGUID WOWGUID 
 ---@field choiceID number 
 ---@field questionText string 
 ---@field pendingChoiceText string 
----@field uiTextureKit string 
+---@field uiTextureKit textureKit 
 ---@field hideWarboardHeader bool 
 ---@field keepOpenAfterChoice bool 
 ---@field options table 
@@ -59,13 +59,13 @@ local PlayerChoiceOptionButtonInfo = {}
 ---@field disabledOption bool 
 ---@field hasRewards bool 
 ---@field rewardInfo PlayerChoiceOptionRewardInfo 
----@field uiTextureKit string 
+---@field uiTextureKit textureKit 
 ---@field maxStacks number 
 ---@field buttons table 
 ---@field widgetSetID number|nil 
 ---@field spellID number|nil 
 ---@field rarity PlayerChoiceRarity|nil 
----@field rarityColor table|nil 
+---@field rarityColor colorRGBA|nil 
 ---@field typeArtID number|nil 
 ---@field headerIconAtlasElement string|nil 
 ---@field subHeader string|nil 

@@ -10,6 +10,6 @@ function C_Sound.GetSoundScaledVolume(soundHandle) end
 function C_Sound.IsPlaying(soundHandle) end
 
 ---@param soundType ItemSoundType 
----@param itemLocation table 
+---@param itemLocation ItemLocation 
 function C_Sound.PlayItemSound(soundType, itemLocation) end
 

@@ -25,12 +25,12 @@ function C_Minimap.GetObjectIconTextureCoords(index) end
 ---@return number, number, number, number textureCoordsX, textureCoordsY, textureCoordsZ, textureCoordsW
 function C_Minimap.GetPOITextureCoords(index) end
 
----@param spellIndex number 
+---@param spellIndex luaIndex 
 ---@return MinimapScriptTrackingFilter trackingType
 function C_Minimap.GetTrackingFilter(spellIndex) end
 
----@param spellIndex number 
----@return string, number, boolean, string, number, number|nil name, textureFileID, active, type, subType, spellID
+---@param spellIndex luaIndex 
+---@return cstring, fileID, boolean, cstring, number, number|nil name, textureFileID, active, type, subType, spellID
 function C_Minimap.GetTrackingInfo(spellIndex) end
 
 ---@return number|nil uiMapID
@@ -58,7 +58,7 @@ function C_Minimap.SetDrawGroundTextures(draw) end
 ---@param ignore boolean 
 function C_Minimap.SetIgnoreRotateMinimap(ignore) end
 
----@param index number 
+---@param index luaIndex 
 ---@param on boolean 
 function C_Minimap.SetTracking(index, on) end
 
@@ -71,10 +71,10 @@ function C_Minimap.ShouldUseHybridMinimap() end
 local MinimapScriptTrackingFilter = {}
 
 ---@class MinimapScriptTrackingInfo
----@field name string 
----@field textureFileID number 
+---@field name cstring 
+---@field textureFileID fileID 
 ---@field active bool 
----@field type string 
+---@field type cstring 
 ---@field subType number 
 ---@field spellID number|nil 
 local MinimapScriptTrackingInfo = {}

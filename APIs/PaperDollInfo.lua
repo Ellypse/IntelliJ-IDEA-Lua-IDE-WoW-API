@@ -4,7 +4,7 @@ C_PaperDollInfo = {}
 ---@return boolean canAutoEquip
 function C_PaperDollInfo.CanAutoEquipCursorItem() end
 
----@param slotIndex number 
+---@param slotIndex luaIndex 
 ---@return boolean canOccupySlot
 function C_PaperDollInfo.CanCursorCanGoInSlot(slotIndex) end
 
@@ -17,12 +17,12 @@ function C_PaperDollInfo.GetArmorEffectiveness(armor, attackerLevel) end
 ---@return number|nil effectiveness
 function C_PaperDollInfo.GetArmorEffectivenessAgainstTarget(armor) end
 
----@param unit string 
----@param equipmentSlotIndex number 
+---@param unit UnitToken 
+---@param equipmentSlotIndex luaIndex 
 ---@return number azeritePowerIDs
 function C_PaperDollInfo.GetInspectAzeriteItemEmpoweredChoices(unit, equipmentSlotIndex) end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return number equippedItemLevel
 function C_PaperDollInfo.GetInspectItemLevel(unit) end
 
@@ -32,7 +32,7 @@ function C_PaperDollInfo.GetInspectRatedSoloShuffleData() end
 ---@return number|nil minItemLevel
 function C_PaperDollInfo.GetMinItemLevel() end
 
----@param unit string 
+---@param unit UnitToken 
 ---@return number, number|nil stagger, staggerAgainstTarget
 function C_PaperDollInfo.GetStaggerPercentage(unit) end
 

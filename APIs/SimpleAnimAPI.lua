@@ -19,13 +19,13 @@ function GetOrder() end
 function GetProgress() end
 
 
----@return table region
+---@return CScriptObject region
 function GetRegionParent() end
 
----@param scriptTypeName string 
+---@param scriptTypeName cstring 
 ---@param bindingType number @ [OPTIONAL]
----@overload fun(scriptTypeName:string)
----@return function script
+---@overload fun(scriptTypeName:cstring)
+---@return luaFunction script
 function GetScript(scriptTypeName, bindingType) end
 
 
@@ -33,7 +33,7 @@ function GetScript(scriptTypeName, bindingType) end
 function GetSmoothProgress() end
 
 
----@return string weights
+---@return SmoothingType weights
 function GetSmoothing() end
 
 
@@ -41,17 +41,17 @@ function GetSmoothing() end
 function GetStartDelay() end
 
 
----@return table target
+---@return CScriptObject target
 function GetTarget() end
 
----@param scriptName string 
+---@param scriptName cstring 
 ---@return boolean hasScript
 function HasScript(scriptName) end
 
----@param scriptTypeName string 
----@param script function 
+---@param scriptTypeName cstring 
+---@param script luaFunction 
 ---@param bindingType number @ [OPTIONAL]
----@overload fun(scriptTypeName:string, script:function)
+---@overload fun(scriptTypeName:cstring, script:luaFunction)
 function HookScript(scriptTypeName, script, bindingType) end
 
 
@@ -83,7 +83,7 @@ function Play() end
 
 function Restart() end
 
----@param childKey string 
+---@param childKey cstring 
 ---@return boolean success
 function SetChildKey(childKey) end
 
@@ -98,38 +98,38 @@ function SetEndDelay(delaySec, recomputeGroupDuration) end
 ---@param newOrder number 
 function SetOrder(newOrder) end
 
----@param parent table 
+---@param parent SimpleAnimGroup 
 ---@param order number @ [OPTIONAL]
----@overload fun(parent:table)
+---@overload fun(parent:SimpleAnimGroup)
 function SetParent(parent, order) end
 
 ---@param play boolean 
 function SetPlaying(play) end
 
----@param scriptTypeName string 
----@param script function @ [OPTIONAL]
----@overload fun(scriptTypeName:string)
+---@param scriptTypeName cstring 
+---@param script luaFunction @ [OPTIONAL]
+---@overload fun(scriptTypeName:cstring)
 function SetScript(scriptTypeName, script) end
 
 ---@param durationSec number 
 function SetSmoothProgress(durationSec) end
 
----@param weights string 
+---@param weights SmoothingType 
 function SetSmoothing(weights) end
 
 ---@param delaySec number 
 ---@param recomputeGroupDuration boolean 
 function SetStartDelay(delaySec, recomputeGroupDuration) end
 
----@param target table 
+---@param target CScriptObject 
 ---@return boolean success
 function SetTarget(target) end
 
----@param key string 
+---@param key cstring 
 ---@return boolean success
 function SetTargetKey(key) end
 
----@param name string 
+---@param name cstring 
 ---@return boolean success
 function SetTargetName(name) end
 

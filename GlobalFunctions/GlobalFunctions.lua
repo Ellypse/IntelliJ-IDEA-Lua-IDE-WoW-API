@@ -3018,7 +3018,7 @@ end
 
 --- Returns info for the current client build.
 --- [https://wowpedia.fandom.com/wiki/API_GetBuildInfo]
---- @return string, string, string, number @ version, build, date, tocversion
+--- @return string, string, string, number, unknown, string @ version, build, date, tocversion, izedVersion, buildType
 function GetBuildInfo()
 end
 
@@ -4821,9 +4821,9 @@ end
 
 --- Returns the name of an eligible player for receiving master loot by index.
 --- [https://wowpedia.fandom.com/wiki/API_GetMasterLootCandidate]
---- @param slot unknown @ The loot slot number of the item you want to get information about
---- @param index unknown @ The number of the player whose name you wish to return. Typically between 1 and 40.  Can exceed the value of GetNumRaidMembers()
---- @return unknown @ candidate
+--- @param slot number @ The loot slot number of the item you want to get information about
+--- @param index number @ The number of the player whose name you wish to return. Typically between 1 and 40.
+--- @return string @ candidate
 function GetMasterLootCandidate(slot, index)
 end
 
@@ -4947,9 +4947,11 @@ end
 function GetMerchantItemCostItem(index, itemIndex)
 end
 
---- [https://wowpedia.fandom.com/wiki/API_GetMerchantItemID?action=edit&amp;redlink=1]
---- @return void
-function GetMerchantItemID()
+--- Returns the itemID of an item of the current merchant window.
+--- [https://wowpedia.fandom.com/wiki/API_GetMerchantItemID]
+--- @param Index number @ Index
+--- @return unknown @ itemID
+function GetMerchantItemID(Index)
 end
 
 --- Returns info for a merchant item.
@@ -6546,7 +6548,7 @@ end
 --- Returns instance lock info.
 --- [https://wowpedia.fandom.com/wiki/API_GetSavedInstanceInfo]
 --- @param index number @ index of the saved instance, from 1 to GetNumSavedInstances()
---- @return unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown @ name, id, reset, difficulty, locked, extended, instanceIDMostSig, isRaid, maxPlayers, difficultyName, numEncounters, encounterProgress, extendDisabled
+--- @return unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown @ name, lockoutId, reset, difficultyId, locked, extended, instanceIDMostSig, isRaid, maxPlayers, difficultyName, numEncounters, encounterProgress, extendDisabled, instanceId
 function GetSavedInstanceInfo(index)
 end
 
@@ -6764,7 +6766,7 @@ end
 --- Returns info for a specialization.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpecializationInfo]
 --- @param specIndex number @ Index of the specialization to query, ascending from 1 to GetNumSpecializations().
---- @param isInspect boolean @ ? - Whether to query specialization information for the inspected unit. Does not actually seem to work, see #Details.
+--- @param isInspect boolean @ ? - Whether to query specialization information for the inspected unit.
 --- @param isPet boolean @ ? - Whether to query specialization information for the player's pet.
 --- @param inspectTarget string @ ? - The unit to request data for, when inspecting.
 --- @param sex number @ ? - Player's sex as returned by UnitSex()
@@ -8399,7 +8401,7 @@ end
 
 --- True if the current zone is a flyable area.
 --- [https://wowpedia.fandom.com/wiki/API_IsFlyableArea]
---- @return unknown @ canFly
+--- @return boolean @ flyable
 function IsFlyableArea()
 end
 
@@ -8536,7 +8538,7 @@ end
 
 --- True if the character is currently indoors.
 --- [https://wowpedia.fandom.com/wiki/API_IsIndoors]
---- @return unknown @ indoors
+--- @return boolean @ indoors
 function IsIndoors()
 end
 
@@ -8719,7 +8721,7 @@ end
 
 --- True if the character is currently outdoors.
 --- [https://wowpedia.fandom.com/wiki/API_IsOutdoors]
---- @return unknown @ outdoors
+--- @return boolean @ outdoors
 function IsOutdoors()
 end
 
@@ -11631,11 +11633,11 @@ end
 function ShouldShowSpecialSplashScreen()
 end
 
---- Sets whether account-wide achievements are shown to other players.
+--- Toggles account-wide achievements shown on your character through in-game inspections, on the website armory, or through API data obtained by third-party sites. This setting makes the system pretend your character is alone on your account, hiding achievements they did not specifically earn. Achievements that are account-wide but were earned by your character will be shown.
 --- [https://wowpedia.fandom.com/wiki/API_ShowAccountAchievements]
---- @param show boolean @ true to allow other players to view all achievements your account has achieved, false to only allow viewing achievements for individual characters.
+--- @param hide boolean @ true to hide account-wide achievements, false to show all achievements.
 --- @return void
-function ShowAccountAchievements(show)
+function ShowAccountAchievements(hide)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_ShowBossFrameWhenUninteractable?action=edit&amp;redlink=1]
@@ -14377,9 +14379,11 @@ end
 function strlen(s)
 end
 
---- [https://wowpedia.fandom.com/wiki/API_strlenutf8?action=edit&amp;redlink=1]
---- @return void
-function strlenutf8()
+--- Returns the number of characters in a UTF8-encoded string.
+--- [https://wowpedia.fandom.com/wiki/API_strlenutf8]
+--- @param str string @ UTF8-encoded string.
+--- @return number @ amount
+function strlenutf8(str)
 end
 
 --- Gets a string with all lower case letters instead of upper case.

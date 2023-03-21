@@ -1,32 +1,32 @@
 ---@class BattleNet
 C_BattleNet = {}
 
----@param guid string 
+---@param guid WOWGUID 
 ---@return BNetAccountInfo|nil accountInfo
 function C_BattleNet.GetAccountInfoByGUID(guid) end
 
 ---@param id number 
----@param wowAccountGUID string @ [OPTIONAL]
+---@param wowAccountGUID WOWGUID @ [OPTIONAL]
 ---@overload fun(id:number)
 ---@return BNetAccountInfo|nil accountInfo
 function C_BattleNet.GetAccountInfoByID(id, wowAccountGUID) end
 
----@param friendIndex number 
----@param wowAccountGUID string @ [OPTIONAL]
----@overload fun(friendIndex:number)
+---@param friendIndex luaIndex 
+---@param wowAccountGUID WOWGUID @ [OPTIONAL]
+---@overload fun(friendIndex:luaIndex)
 ---@return BNetAccountInfo|nil accountInfo
 function C_BattleNet.GetFriendAccountInfo(friendIndex, wowAccountGUID) end
 
----@param friendIndex number 
----@param accountIndex number 
+---@param friendIndex luaIndex 
+---@param accountIndex luaIndex 
 ---@return BNetGameAccountInfo|nil gameAccountInfo
 function C_BattleNet.GetFriendGameAccountInfo(friendIndex, accountIndex) end
 
----@param friendIndex number 
+---@param friendIndex luaIndex 
 ---@return number numGameAccounts
 function C_BattleNet.GetFriendNumGameAccounts(friendIndex) end
 
----@param guid string 
+---@param guid WOWGUID 
 ---@return BNetGameAccountInfo|nil gameAccountInfo
 function C_BattleNet.GetGameAccountInfoByGUID(guid) end
 
@@ -53,7 +53,7 @@ function C_BattleNet.GetGameAccountInfoByID(id) end
 local BNetAccountInfo = {}
 
 ---@class BNetGameAccountInfo
----@field gameAccountID number|nil 
+---@field gameAccountID number 
 ---@field clientProgram string 
 ---@field isOnline bool 
 ---@field isGameBusy bool 
@@ -69,7 +69,7 @@ local BNetAccountInfo = {}
 ---@field areaName string|nil 
 ---@field characterLevel number|nil 
 ---@field richPresence string|nil 
----@field playerGuid string|nil 
+---@field playerGuid WOWGUID|nil 
 ---@field isWowMobile bool 
 ---@field canSummon bool 
 ---@field hasFocus bool 

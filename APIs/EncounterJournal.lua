@@ -13,9 +13,9 @@ function C_EncounterJournal.GetEncountersOnMap(uiMapID) end
 ---@return EncounterJournalItemInfo itemInfo
 function C_EncounterJournal.GetLootInfo(id) end
 
----@param index number 
----@param encounterIndex number @ [OPTIONAL]
----@overload fun(index:number)
+---@param index luaIndex 
+---@param encounterIndex luaIndex @ [OPTIONAL]
+---@overload fun(index:luaIndex)
 ---@return EncounterJournalItemInfo itemInfo
 function C_EncounterJournal.GetLootInfoByIndex(index, encounterIndex) end
 
@@ -72,9 +72,9 @@ ItemSlotFilterType.NoFilter = 15
 
 ---@class DungeonEntranceMapInfo
 ---@field areaPoiID number 
----@field position table 
----@field name string 
----@field description string 
+---@field position vector2 
+---@field name cstring 
+---@field description cstring 
 ---@field atlasName string 
 ---@field journalInstanceID number 
 local DungeonEntranceMapInfo = {}
@@ -85,7 +85,7 @@ local DungeonEntranceMapInfo = {}
 ---@field name string|nil 
 ---@field itemQuality string|nil 
 ---@field filterType ItemSlotFilterType|nil 
----@field icon number|nil 
+---@field icon fileID|nil 
 ---@field slot string|nil 
 ---@field armorType string|nil 
 ---@field link string|nil 
@@ -104,10 +104,10 @@ local EncounterJournalMapEncounterInfo = {}
 
 ---@class EncounterJournalSectionInfo
 ---@field spellID number 
----@field title string 
+---@field title cstring 
 ---@field description string|nil 
 ---@field headerType number 
----@field abilityIcon number 
+---@field abilityIcon fileID 
 ---@field creatureDisplayID number 
 ---@field uiModelSceneID number 
 ---@field siblingSectionID number|nil 

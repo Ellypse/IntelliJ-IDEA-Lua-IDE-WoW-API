@@ -8,7 +8,7 @@ function C_TTSSettings.GetChannelEnabled(channelInfo) end
 ---@return boolean settingsBeenSaved
 function C_TTSSettings.GetCharacterSettingsSaved() end
 
----@param chatName string 
+---@param chatName cstring 
 ---@return boolean enabled
 function C_TTSSettings.GetChatTypeEnabled(chatName) end
 
@@ -27,7 +27,7 @@ function C_TTSSettings.GetSpeechVolume() end
 function C_TTSSettings.GetVoiceOptionID(voiceType) end
 
 ---@param voiceType TtsVoiceType 
----@return string voiceName
+---@return cstring voiceName
 function C_TTSSettings.GetVoiceOptionName(voiceType) end
 
 function C_TTSSettings.MarkCharacterSettingsSaved() end
@@ -40,7 +40,7 @@ function C_TTSSettings.SetChannelEnabled(channelInfo, newVal) end
 ---@param newVal boolean 
 function C_TTSSettings.SetChannelKeyEnabled(channelKey, newVal) end
 
----@param chatName string 
+---@param chatName cstring 
 ---@param newVal boolean 
 function C_TTSSettings.SetChatTypeEnabled(chatName, newVal) end
 
@@ -65,6 +65,7 @@ function C_TTSSettings.SetVoiceOption(voiceType, voiceID) end
 function C_TTSSettings.SetVoiceOptionName(voiceType, voiceName) end
 
 ---@param language number 
+---@param messageText string 
 ---@return boolean overrideMessage
-function C_TTSSettings.ShouldOverrideMessage(language) end
+function C_TTSSettings.ShouldOverrideMessage(language, messageText) end
 

@@ -5,14 +5,14 @@ C_Soulbinds = {}
 function C_Soulbinds.ActivateSoulbind(soulbindID) end
 
 ---@param soulbindID number 
----@return boolean, string|nil result, errorDescription
+---@return boolean, cstring|nil result, errorDescription
 function C_Soulbinds.CanActivateSoulbind(soulbindID) end
 
 ---@return boolean result
 function C_Soulbinds.CanModifySoulbind() end
 
 ---@param soulbindID number 
----@return boolean, string|nil result, errorDescription
+---@return boolean, cstring|nil result, errorDescription
 function C_Soulbinds.CanResetConduitsInSoulbind(soulbindID) end
 
 ---@return boolean result
@@ -70,7 +70,7 @@ function C_Soulbinds.GetConduitDisplayed(nodeID) end
 
 ---@param conduitID number 
 ---@param rank number 
----@return string link
+---@return cstring link
 function C_Soulbinds.GetConduitHyperlink(conduitID, rank) end
 
 ---@param nodeID number 
@@ -131,7 +131,7 @@ function C_Soulbinds.IsConduitInstalled(nodeID) end
 ---@return boolean result
 function C_Soulbinds.IsConduitInstalledInSoulbind(soulbindID, conduitID) end
 
----@param itemInfo string 
+---@param itemInfo ItemInfo 
 ---@return boolean result
 function C_Soulbinds.IsItemConduitByItemInfo(itemInfo) end
 
@@ -161,7 +161,7 @@ function C_Soulbinds.UnmodifyNode(nodeID) end
 ---@field conduitType SoulbindConduitType 
 ---@field conduitSpecSetID number 
 ---@field conduitSpecIDs table 
----@field conduitSpecName string|nil 
+---@field conduitSpecName cstring|nil 
 ---@field covenantID number|nil 
 ---@field conduitItemID number 
 local ConduitCollectionData = {}
@@ -174,15 +174,15 @@ local SoulbindConduitData = {}
 ---@class SoulbindData
 ---@field ID number 
 ---@field covenantID number 
----@field name string 
----@field description string 
----@field textureKit string 
+---@field name cstring 
+---@field description cstring 
+---@field textureKit textureKit 
 ---@field unlocked bool 
----@field cvarIndex number 
+---@field cvarIndex luaIndex 
 ---@field tree SoulbindTree 
 ---@field modelSceneData SoulbindModelSceneData 
 ---@field activationSoundKitID number 
----@field playerConditionReason string|nil 
+---@field playerConditionReason cstring|nil 
 local SoulbindData = {}
 
 ---@class SoulbindModelSceneData
@@ -194,9 +194,9 @@ local SoulbindModelSceneData = {}
 ---@field ID number 
 ---@field row number 
 ---@field column number 
----@field icon number 
+---@field icon fileID 
 ---@field spellID number 
----@field playerConditionReason string|nil 
+---@field playerConditionReason cstring|nil 
 ---@field conduitID number 
 ---@field conduitRank number 
 ---@field state SoulbindNodeState 

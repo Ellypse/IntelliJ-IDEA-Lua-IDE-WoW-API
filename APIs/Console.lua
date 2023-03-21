@@ -5,13 +5,13 @@ C_Console = {}
 function C_Console.GetAllCommands() end
 
 ---@param colorType ConsoleColorType 
----@return table color
+---@return colorRGB color
 function C_Console.GetColorFromType(colorType) end
 
 ---@return number fontHeightInPixels
 function C_Console.GetFontHeight() end
 
----@param partialCommandText string 
+---@param partialCommandText cstring 
 function C_Console.PrintAllMatchingCommands(partialCommandText) end
 
 ---@param fontHeightInPixels number 
@@ -54,11 +54,11 @@ ConsoleCommandType.Macro = 2
 ConsoleCommandType.Script = 3
 
 ---@class ConsoleCommandInfo
----@field command string 
----@field help string 
+---@field command cstring 
+---@field help cstring 
 ---@field category ConsoleCategory 
 ---@field commandType ConsoleCommandType 
----@field scriptContents string 
----@field scriptParameters string 
+---@field scriptContents cstring 
+---@field scriptParameters cstring 
 local ConsoleCommandInfo = {}
 

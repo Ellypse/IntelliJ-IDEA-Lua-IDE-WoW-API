@@ -11,8 +11,9 @@ function C_PlayerInteractionManager.ConfirmationInteraction(type) end
 
 ---@param unit string 
 ---@param exactMatch boolean 
+---@param looseTargeting boolean 
 ---@return boolean success
-function C_PlayerInteractionManager.InteractUnit(unit, exactMatch) end
+function C_PlayerInteractionManager.InteractUnit(unit, exactMatch, looseTargeting) end
 
 ---@param type PlayerInteractionType 
 ---@return boolean interacting

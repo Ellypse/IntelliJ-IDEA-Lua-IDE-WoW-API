@@ -6,7 +6,7 @@ C_TaskQuest = {}
 function C_TaskQuest.DoesMapShowTaskQuestObjectives(uiMapID) end
 
 ---@param questID number 
----@return string, number|nil, boolean|nil, boolean|nil questTitle, factionID, capped, displayAsObjective
+---@return cstring, number|nil, boolean|nil, boolean|nil questTitle, factionID, capped, displayAsObjective
 function C_TaskQuest.GetQuestInfoByQuestID(questID) end
 
 ---@param questID number 

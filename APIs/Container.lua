@@ -1,23 +1,23 @@
 ---@class Container
 C_Container = {}
 
----@param containerID number 
----@return number inventoryID
+---@param containerID BagIndex 
+---@return luaIndex inventoryID
 function C_Container.ContainerIDToInventoryID(containerID) end
 
----@param containerIndex number 
----@param slotIndex number 
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
 ---@param isEquipped boolean 
 function C_Container.ContainerRefundItemPurchase(containerIndex, slotIndex, isEquipped) end
 
 ---@return boolean isDisabled
 function C_Container.GetBackpackAutosortDisabled() end
 
----@param bagIndex number 
----@return string name
+---@param bagIndex BagIndex 
+---@return cstring name
 function C_Container.GetBagName(bagIndex) end
 
----@param bagIndex number 
+---@param bagIndex BagIndex 
 ---@param flag BagSlotFlags 
 ---@return boolean isSet
 function C_Container.GetBagSlotFlag(bagIndex, flag) end
@@ -25,70 +25,70 @@ function C_Container.GetBagSlotFlag(bagIndex, flag) end
 ---@return boolean isDisabled
 function C_Container.GetBankAutosortDisabled() end
 
----@param containerIndex number 
----@return number freeSlots
+---@param containerIndex BagIndex 
+---@return luaIndex freeSlots
 function C_Container.GetContainerFreeSlots(containerIndex) end
 
----@param containerIndex number 
----@param slotIndex number 
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
 ---@return number, number, number startTime, duration, enable
 function C_Container.GetContainerItemCooldown(containerIndex, slotIndex) end
 
----@param containerIndex number 
----@param slotIndex number 
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
 ---@return number, number durability, maxDurability
 function C_Container.GetContainerItemDurability(containerIndex, slotIndex) end
 
----@param containerIndex number 
----@param slotIndex number 
----@return boolean, string inSet, setList
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
+---@return boolean, cstring inSet, setList
 function C_Container.GetContainerItemEquipmentSetInfo(containerIndex, slotIndex) end
 
----@param containerIndex number 
----@param slotIndex number 
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
 ---@return number containerID
 function C_Container.GetContainerItemID(containerIndex, slotIndex) end
 
----@param containerIndex number 
----@param slotIndex number 
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
 ---@return ContainerItemInfo containerInfo
 function C_Container.GetContainerItemInfo(containerIndex, slotIndex) end
 
----@param containerIndex number 
----@param slotIndex number 
----@return string itemLink
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
+---@return cstring itemLink
 function C_Container.GetContainerItemLink(containerIndex, slotIndex) end
 
----@param containerIndex number 
----@param slotIndex number 
----@param itemIndex number 
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
+---@param itemIndex luaIndex 
 ---@param isEquipped boolean 
 ---@return ItemPurchaseCurrency currencyInfo
 function C_Container.GetContainerItemPurchaseCurrency(containerIndex, slotIndex, itemIndex, isEquipped) end
 
----@param containerIndex number 
----@param slotIndex number 
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
 ---@param isEquipped boolean 
 ---@return ItemPurchaseInfo info
 function C_Container.GetContainerItemPurchaseInfo(containerIndex, slotIndex, isEquipped) end
 
----@param containerIndex number 
----@param slotIndex number 
----@param itemIndex number 
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
+---@param itemIndex luaIndex 
 ---@param isEquipped boolean 
 ---@return ItemPurchaseItem itemInfo
 function C_Container.GetContainerItemPurchaseItem(containerIndex, slotIndex, itemIndex, isEquipped) end
 
----@param containerIndex number 
----@param slotIndex number 
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
 ---@return ItemQuestInfo questInfo
 function C_Container.GetContainerItemQuestInfo(containerIndex, slotIndex) end
 
----@param bagIndex number 
+---@param bagIndex BagIndex 
 ---@return number, number|nil numFreeSlots, bagFamily
 function C_Container.GetContainerNumFreeSlots(bagIndex) end
 
----@param containerIndex number 
+---@param containerIndex BagIndex 
 ---@return number numSlots
 function C_Container.GetContainerNumSlots(containerIndex) end
 
@@ -105,17 +105,17 @@ function C_Container.GetMaxArenaCurrency() end
 ---@return boolean isEnabled
 function C_Container.GetSortBagsRightToLeft() end
 
----@param containerIndex number 
----@param slotIndex number 
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
 ---@return boolean isBattlePayItem
 function C_Container.IsBattlePayItem(containerIndex, slotIndex) end
 
----@param containerIndex number 
+---@param containerIndex BagIndex 
 ---@return boolean isFiltered
 function C_Container.IsContainerFiltered(containerIndex) end
 
----@param containerIndex number 
----@param slotIndex number 
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
 function C_Container.PickupContainerItem(containerIndex, slotIndex) end
 
 ---@return number|nil itemID
@@ -124,11 +124,11 @@ function C_Container.PlayerHasHearthstone() end
 ---@param disable boolean 
 function C_Container.SetBackpackAutosortDisabled(disable) end
 
----@param texture table 
----@param bagIndex number 
+---@param texture SimpleTexture 
+---@param bagIndex BagIndex 
 function C_Container.SetBagPortraitTexture(texture, bagIndex) end
 
----@param bagIndex number 
+---@param bagIndex BagIndex 
 ---@param flag BagSlotFlags 
 ---@param isSet boolean 
 function C_Container.SetBagSlotFlag(bagIndex, flag, isSet) end
@@ -139,18 +139,18 @@ function C_Container.SetBankAutosortDisabled(disable) end
 ---@param enable boolean 
 function C_Container.SetInsertItemsLeftToRight(enable) end
 
----@param searchString string 
+---@param searchString cstring 
 function C_Container.SetItemSearch(searchString) end
 
 ---@param enable boolean 
 function C_Container.SetSortBagsRightToLeft(enable) end
 
----@param containerIndex number 
----@param slotIndex number 
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
 function C_Container.ShowContainerSellCursor(containerIndex, slotIndex) end
 
----@param containerIndex number 
----@param slotIndex number 
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
 ---@return boolean success
 function C_Container.SocketContainerItem(containerIndex, slotIndex) end
 
@@ -160,23 +160,23 @@ function C_Container.SortBankBags() end
 
 function C_Container.SortReagentBankBags() end
 
----@param containerIndex number 
----@param slotIndex number 
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
 ---@param amount number 
 function C_Container.SplitContainerItem(containerIndex, slotIndex, amount) end
 
----@param containerIndex number 
----@param slotIndex number 
----@param unitToken string @ [OPTIONAL]
+---@param containerIndex BagIndex 
+---@param slotIndex luaIndex 
+---@param unitToken UnitToken @ [OPTIONAL]
 ---@param reagentBankOpen boolean 
----@overload fun(containerIndex:number, slotIndex:number, reagentBankOpen:bool)
+---@overload fun(containerIndex:BagIndex, slotIndex:luaIndex, reagentBankOpen:bool)
 function C_Container.UseContainerItem(containerIndex, slotIndex, unitToken, reagentBankOpen) end
 
 ---@return boolean used
 function C_Container.UseHearthstone() end
 
 ---@class ContainerItemInfo
----@field iconFileID number 
+---@field iconFileID fileID 
 ---@field stackCount number 
 ---@field isLocked bool 
 ---@field quality ItemQuality|nil 
@@ -192,13 +192,13 @@ local ContainerItemInfo = {}
 ---@class ItemPurchaseCurrency
 ---@field iconFileID number|nil 
 ---@field currencyCount number 
----@field name string 
+---@field name cstring 
 local ItemPurchaseCurrency = {}
 
 ---@class ItemPurchaseInfo
----@field money number 
+---@field money WOWMONEY 
 ---@field itemCount number 
----@field refundSeconds number 
+---@field refundSeconds time_t 
 ---@field currencyCount number 
 ---@field hasEnchants bool 
 local ItemPurchaseInfo = {}

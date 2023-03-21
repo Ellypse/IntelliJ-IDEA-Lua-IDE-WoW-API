@@ -3,19 +3,19 @@
 function GetChecked() end
 
 
----@return table texture
+---@return SimpleTexture texture
 function GetCheckedTexture() end
 
 
----@return table texture
+---@return SimpleTexture texture
 function GetDisabledCheckedTexture() end
 
 ---@param checked boolean 
 function SetChecked(checked) end
 
----@param asset string 
+---@param asset TextureAsset 
 function SetCheckedTexture(asset) end
 
----@param asset string 
+---@param asset TextureAsset 
 function SetDisabledCheckedTexture(asset) end
 

@@ -18,7 +18,7 @@ function C_WeeklyRewards.CloseInteraction() end
 function C_WeeklyRewards.GetActivities(type) end
 
 ---@param type WeeklyRewardChestThresholdType 
----@param index number 
+---@param index luaIndex 
 ---@return WeeklyRewardActivityEncounterInfo info
 function C_WeeklyRewards.GetActivityEncounterInfo(type, index) end
 
@@ -29,15 +29,15 @@ function C_WeeklyRewards.GetConquestWeeklyProgress() end
 ---@return string, string hyperlink, upgradeHyperlink
 function C_WeeklyRewards.GetExampleRewardItemHyperlinks(id) end
 
----@param itemDBID string 
----@return string hyperlink
+---@param itemDBID WeeklyRewardItemDBID 
+---@return cstring hyperlink
 function C_WeeklyRewards.GetItemHyperlink(itemDBID) end
 
 ---@param mythicPlusLevel number 
 ---@return boolean, number|nil, number|nil hasSeasonData, nextMythicPlusLevel, itemLevel
 function C_WeeklyRewards.GetNextMythicPlusIncrease(mythicPlusLevel) end
 
----@return string uiTextureKit
+---@return textureKit uiTextureKit
 function C_WeeklyRewards.GetWeeklyRewardTextureKit() end
 
 ---@return boolean hasAvailableRewards
@@ -84,13 +84,13 @@ local WeeklyRewardActivityEncounterInfo = {}
 
 ---@class WeeklyRewardActivityInfo
 ---@field type WeeklyRewardChestThresholdType 
----@field index number 
+---@field index luaIndex 
 ---@field threshold number 
 ---@field progress number 
 ---@field id number 
 ---@field level number 
 ---@field claimID number|nil 
----@field raidString string|nil 
+---@field raidString cstring|nil 
 ---@field rewards table 
 local WeeklyRewardActivityInfo = {}
 
@@ -98,6 +98,6 @@ local WeeklyRewardActivityInfo = {}
 ---@field type CachedRewardType 
 ---@field id number 
 ---@field quantity number 
----@field itemDBID string|nil 
+---@field itemDBID WeeklyRewardItemDBID|nil 
 local WeeklyRewardActivityRewardInfo = {}
 

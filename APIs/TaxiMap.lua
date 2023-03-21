@@ -29,20 +29,20 @@ FlightPathState.Unreachable = 2
 
 ---@class MapTaxiNodeInfo
 ---@field nodeID number 
----@field position table 
----@field name string 
----@field atlasName string 
+---@field position vector2 
+---@field name cstring 
+---@field atlasName cstring 
 ---@field faction FlightPathFaction 
----@field textureKit string 
+---@field textureKit textureKit 
 local MapTaxiNodeInfo = {}
 
 ---@class TaxiNodeInfo
 ---@field nodeID number 
----@field position table 
----@field name string 
+---@field position vector2 
+---@field name cstring 
 ---@field state FlightPathState 
----@field slotIndex number 
----@field textureKit string 
+---@field slotIndex luaIndex 
+---@field textureKit textureKit 
 ---@field useSpecialIcon bool 
 ---@field specialIconCostString string|nil 
 local TaxiNodeInfo = {}

@@ -2,21 +2,21 @@
 C_ModelInfo = {}
 
 --- This function does nothing in public clients
----@param modelSceneFrame table 
+---@param modelSceneFrame ModelSceneFrame 
 ---@param modelSceneID number 
 function C_ModelInfo.AddActiveModelScene(modelSceneFrame, modelSceneID) end
 
 --- This function does nothing in public clients
----@param modelSceneFrameActor table 
+---@param modelSceneFrameActor ModelSceneFrameActor 
 ---@param modelSceneActorID number 
 function C_ModelInfo.AddActiveModelSceneActor(modelSceneFrameActor, modelSceneActorID) end
 
 --- This function does nothing in public clients
----@param modelSceneFrame table 
+---@param modelSceneFrame ModelSceneFrame 
 function C_ModelInfo.ClearActiveModelScene(modelSceneFrame) end
 
 --- This function does nothing in public clients
----@param modelSceneFrameActor table 
+---@param modelSceneFrameActor ModelSceneFrameActor 
 function C_ModelInfo.ClearActiveModelSceneActor(modelSceneFrameActor) end
 
 ---@param modelActorDisplayID number 
@@ -81,8 +81,8 @@ local UIModelSceneActorDisplayInfo = {}
 
 ---@class UIModelSceneActorInfo
 ---@field modelActorID number 
----@field scriptTag string 
----@field position table 
+---@field scriptTag cstring 
+---@field position vector3 
 ---@field yaw number 
 ---@field pitch number 
 ---@field roll number 
@@ -95,16 +95,16 @@ local UIModelSceneActorInfo = {}
 
 ---@class UIModelSceneCameraInfo
 ---@field modelSceneCameraID number 
----@field scriptTag string 
----@field cameraType string 
----@field target table 
+---@field scriptTag cstring 
+---@field cameraType cstring 
+---@field target vector3 
 ---@field yaw number 
 ---@field pitch number 
 ---@field roll number 
 ---@field zoomDistance number 
 ---@field minZoomDistance number 
 ---@field maxZoomDistance number 
----@field zoomedTargetOffset table 
+---@field zoomedTargetOffset vector3 
 ---@field zoomedYawOffset number 
 ---@field zoomedPitchOffset number 
 ---@field zoomedRollOffset number 

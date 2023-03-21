@@ -1,9 +1,9 @@
 
----@return number alpha
+---@return SingleColorValue alpha
 function GetAlpha() end
 
 
----@return string, number layer, sublayer
+---@return DrawLayer, number layer, sublayer
 function GetDrawLayer() end
 
 
@@ -30,10 +30,10 @@ function IsIgnoringParentScale() end
 ---@return boolean isLoaded
 function IsObjectLoaded() end
 
----@param alpha number 
+---@param alpha SingleColorValue 
 function SetAlpha(alpha) end
 
----@param layer string 
+---@param layer DrawLayer 
 ---@param sublevel number 
 function SetDrawLayer(layer, sublevel) end
 
@@ -49,7 +49,7 @@ function SetScale(scale) end
 ---@param colorR number 
 ---@param colorG number 
 ---@param colorB number 
----@param a number @ [OPTIONAL]
+---@param a SingleColorValue @ [OPTIONAL]
 ---@overload fun(colorR:number, colorG:number, colorB:number)
 function SetVertexColor(colorR, colorG, colorB, a) end
 

@@ -16,19 +16,23 @@ function C_DateAndTime.AdjustTimeByMinutes(date, minutes) end
 ---@return number comparison
 function C_DateAndTime.CompareCalendarTime(lhsCalendarTime, rhsCalendarTime) end
 
----@param epoch number 
+---@param epoch BigUInteger 
 ---@return CalendarTime date
 function C_DateAndTime.GetCalendarTimeFromEpoch(epoch) end
 
 ---@return CalendarTime date
 function C_DateAndTime.GetCurrentCalendarTime() end
 
----@return number seconds
+---@return time_t seconds
 function C_DateAndTime.GetSecondsUntilDailyReset() end
 
----@return number seconds
+---@return time_t seconds
 function C_DateAndTime.GetSecondsUntilWeeklyReset() end
 
----@return number serverTimeLocal
+---@return time_t serverTimeLocal
 function C_DateAndTime.GetServerTimeLocal() end
+
+---@class TimeEventFlag
+local TimeEventFlag = {}
+TimeEventFlag.GlueScreenShortcut = 1
 

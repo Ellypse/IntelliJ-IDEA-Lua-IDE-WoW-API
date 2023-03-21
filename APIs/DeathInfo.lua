@@ -2,11 +2,11 @@
 C_DeathInfo = {}
 
 ---@param uiMapID number 
----@return table|nil position
+---@return vector2|nil position
 function C_DeathInfo.GetCorpseMapPosition(uiMapID) end
 
 ---@param uiMapID number 
----@return table|nil position
+---@return vector2|nil position
 function C_DeathInfo.GetDeathReleasePosition(uiMapID) end
 
 ---@param uiMapID number 
@@ -27,8 +27,8 @@ SelfResurrectOptionType.Item = 1
 
 ---@class GraveyardMapInfo
 ---@field areaPoiID number 
----@field position table 
----@field name string 
+---@field position vector2 
+---@field name cstring 
 ---@field textureIndex number 
 ---@field graveyardID number 
 ---@field isGraveyardSelectable bool 

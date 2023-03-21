@@ -1,30 +1,30 @@
 
----@return number offset
+---@return uiUnit offset
 function GetHorizontalScroll() end
 
 
----@return number range
+---@return uiUnit range
 function GetHorizontalScrollRange() end
 
 
----@return table scrollChild
+---@return SimpleFrame scrollChild
 function GetScrollChild() end
 
 
----@return number offset
+---@return uiUnit offset
 function GetVerticalScroll() end
 
 
----@return number range
+---@return uiUnit range
 function GetVerticalScrollRange() end
 
----@param offset number 
+---@param offset uiUnit 
 function SetHorizontalScroll(offset) end
 
----@param scrollChild table 
+---@param scrollChild SimpleFrame 
 function SetScrollChild(scrollChild) end
 
----@param offset number 
+---@param offset uiUnit 
 function SetVerticalScroll(offset) end
 
 

@@ -1,26 +1,26 @@
 ---@class LossOfControl
 C_LossOfControl = {}
 
----@param index number 
+---@param index luaIndex 
 ---@return LossOfControlData|nil event
 function C_LossOfControl.GetActiveLossOfControlData(index) end
 
----@param unitToken string 
----@param index number 
+---@param unitToken UnitToken 
+---@param index luaIndex 
 ---@return LossOfControlData|nil event
 function C_LossOfControl.GetActiveLossOfControlDataByUnit(unitToken, index) end
 
 ---@return number count
 function C_LossOfControl.GetActiveLossOfControlDataCount() end
 
----@param unitToken string 
+---@param unitToken UnitToken 
 ---@return number count
 function C_LossOfControl.GetActiveLossOfControlDataCountByUnit(unitToken) end
 
 ---@class LossOfControlData
----@field locType string 
+---@field locType cstring 
 ---@field spellID number 
----@field displayText string 
+---@field displayText cstring 
 ---@field iconTexture number 
 ---@field startTime number|nil 
 ---@field timeRemaining number|nil 

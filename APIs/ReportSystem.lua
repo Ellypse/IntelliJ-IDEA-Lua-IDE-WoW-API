@@ -1,11 +1,11 @@
 ---@class ReportSystem
 C_ReportSystem = {}
 
----@param playerLocation table 
+---@param playerLocation PlayerLocation 
 ---@return boolean canReport
 function C_ReportSystem.CanReportPlayer(playerLocation) end
 
----@param playerLocation table 
+---@param playerLocation PlayerLocation 
 ---@return boolean canReport
 function C_ReportSystem.CanReportPlayerForLanguage(playerLocation) end
 
@@ -14,7 +14,7 @@ function C_ReportSystem.CanReportPlayerForLanguage(playerLocation) end
 function C_ReportSystem.GetMajorCategoriesForReportType(reportType) end
 
 ---@param majorCategory ReportMajorCategory 
----@return string majorCategoryString
+---@return cstring majorCategoryString
 function C_ReportSystem.GetMajorCategoryString(majorCategory) end
 
 ---@param reportType ReportType 
@@ -23,7 +23,7 @@ function C_ReportSystem.GetMajorCategoryString(majorCategory) end
 function C_ReportSystem.GetMinorCategoriesForReportTypeAndMajorCategory(reportType, majorCategory) end
 
 ---@param minorCategory ReportMinorCategory 
----@return string minorCategoryString
+---@return cstring minorCategoryString
 function C_ReportSystem.GetMinorCategoryString(minorCategory) end
 
 function C_ReportSystem.ReportServerLag() end
@@ -31,8 +31,8 @@ function C_ReportSystem.ReportServerLag() end
 function C_ReportSystem.ReportStuckInCombat() end
 
 --- Not allowed to be called by addons
----@param reportInfo table 
----@param playerLocation table @ [OPTIONAL]
----@overload fun(reportInfo:table)
+---@param reportInfo ReportInfo 
+---@param playerLocation PlayerLocation @ [OPTIONAL]
+---@overload fun(reportInfo:ReportInfo)
 function C_ReportSystem.SendReport(reportInfo, playerLocation) end
 

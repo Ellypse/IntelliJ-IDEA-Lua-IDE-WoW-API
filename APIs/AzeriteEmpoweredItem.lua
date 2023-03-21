@@ -1,21 +1,21 @@
 ---@class AzeriteEmpoweredItem
 C_AzeriteEmpoweredItem = {}
 
----@param azeriteEmpoweredItemLocation table 
+---@param azeriteEmpoweredItemLocation AzeriteEmpoweredItemLocation 
 ---@param powerID number 
 ---@return boolean canSelect
 function C_AzeriteEmpoweredItem.CanSelectPower(azeriteEmpoweredItemLocation, powerID) end
 
----@param azeriteEmpoweredItemLocation table 
+---@param azeriteEmpoweredItemLocation AzeriteEmpoweredItemLocation 
 function C_AzeriteEmpoweredItem.ConfirmAzeriteEmpoweredItemRespec(azeriteEmpoweredItemLocation) end
 
----@param azeriteEmpoweredItemLocation table 
+---@param azeriteEmpoweredItemLocation AzeriteEmpoweredItemLocation 
 ---@return AzeriteEmpoweredItemTierInfo tierInfo
 function C_AzeriteEmpoweredItem.GetAllTierInfo(azeriteEmpoweredItemLocation) end
 
----@param itemInfo string 
+---@param itemInfo ItemInfo 
 ---@param classID number @ Specify a class ID to get tier information about that class, otherwise uses the player's class if left nil [OPTIONAL]
----@overload fun(itemInfo:string)
+---@overload fun(itemInfo:ItemInfo)
 ---@return AzeriteEmpoweredItemTierInfo tierInfo
 function C_AzeriteEmpoweredItem.GetAllTierInfoByItemID(itemInfo, classID) end
 
@@ -26,7 +26,7 @@ function C_AzeriteEmpoweredItem.GetAzeriteEmpoweredItemRespecCost() end
 ---@return AzeriteEmpoweredItemPowerInfo powerInfo
 function C_AzeriteEmpoweredItem.GetPowerInfo(powerID) end
 
----@param azeriteEmpoweredItemLocation table 
+---@param azeriteEmpoweredItemLocation AzeriteEmpoweredItemLocation 
 ---@param powerID number 
 ---@param level AzeritePowerLevel 
 ---@return AzeriteEmpoweredItemPowerText powerText
@@ -36,25 +36,25 @@ function C_AzeriteEmpoweredItem.GetPowerText(azeriteEmpoweredItemLocation, power
 ---@return AzeriteSpecInfo specInfo
 function C_AzeriteEmpoweredItem.GetSpecsForPower(powerID) end
 
----@param azeriteEmpoweredItemLocation table 
+---@param azeriteEmpoweredItemLocation AzeriteEmpoweredItemLocation 
 ---@return boolean hasAnyUnselectedPowers
 function C_AzeriteEmpoweredItem.HasAnyUnselectedPowers(azeriteEmpoweredItemLocation) end
 
----@param azeriteEmpoweredItemLocation table 
+---@param azeriteEmpoweredItemLocation AzeriteEmpoweredItemLocation 
 ---@return boolean hasBeenViewed
 function C_AzeriteEmpoweredItem.HasBeenViewed(azeriteEmpoweredItemLocation) end
 
----@param itemLocation table 
+---@param itemLocation ItemLocation 
 ---@return boolean isAzeriteEmpoweredItem
 function C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItem(itemLocation) end
 
----@param itemInfo string 
+---@param itemInfo ItemInfo 
 ---@return boolean isAzeriteEmpoweredItem
 function C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(itemInfo) end
 
----@param itemInfo string 
+---@param itemInfo ItemInfo 
 ---@param classID number @ Specify a class ID to determine if its displayable for that class, otherwise uses the player's class if left nil [OPTIONAL]
----@overload fun(itemInfo:string)
+---@overload fun(itemInfo:ItemInfo)
 ---@return boolean isAzeritePreviewSourceDisplayable
 function C_AzeriteEmpoweredItem.IsAzeritePreviewSourceDisplayable(itemInfo, classID) end
 
@@ -66,17 +66,17 @@ function C_AzeriteEmpoweredItem.IsHeartOfAzerothEquipped() end
 ---@return boolean isPowerAvailableForSpec
 function C_AzeriteEmpoweredItem.IsPowerAvailableForSpec(powerID, specID) end
 
----@param azeriteEmpoweredItemLocation table 
+---@param azeriteEmpoweredItemLocation AzeriteEmpoweredItemLocation 
 ---@param powerID number 
 ---@return boolean isSelected
 function C_AzeriteEmpoweredItem.IsPowerSelected(azeriteEmpoweredItemLocation, powerID) end
 
----@param azeriteEmpoweredItemLocation table 
+---@param azeriteEmpoweredItemLocation AzeriteEmpoweredItemLocation 
 ---@param powerID number 
 ---@return boolean success
 function C_AzeriteEmpoweredItem.SelectPower(azeriteEmpoweredItemLocation, powerID) end
 
----@param azeriteEmpoweredItemLocation table 
+---@param azeriteEmpoweredItemLocation AzeriteEmpoweredItemLocation 
 function C_AzeriteEmpoweredItem.SetHasBeenViewed(azeriteEmpoweredItemLocation) end
 
 ---@class AzeritePowerLevel

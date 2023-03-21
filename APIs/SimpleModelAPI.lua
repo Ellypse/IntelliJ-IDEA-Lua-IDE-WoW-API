@@ -59,11 +59,11 @@ function GetLight() end
 function GetModelAlpha() end
 
 
----@return string, number layer, sublayer
+---@return DrawLayer, number layer, sublayer
 function GetModelDrawLayer() end
 
 
----@return number modelFileID
+---@return fileID modelFileID
 function GetModelFileID() end
 
 
@@ -91,11 +91,11 @@ function GetRoll() end
 function GetShadowEffect() end
 
 
----@return number, number, number, number left, right, top, bottom
+---@return uiUnit, uiUnit, uiUnit, uiUnit left, right, top, bottom
 function GetViewInsets() end
 
 
----@return number, number x, y
+---@return uiUnit, uiUnit x, y
 function GetViewTranslation() end
 
 
@@ -117,7 +117,7 @@ function IsUsingModelCenterToTransform() end
 
 function MakeCurrentCameraCustom() end
 
----@param asset string 
+---@param asset FileAsset 
 function ReplaceIconTexture(asset) end
 
 ---@param cameraIndex number 
@@ -154,7 +154,7 @@ function SetFacing(facing) end
 ---@param colorR number 
 ---@param colorG number 
 ---@param colorB number 
----@param a number @ [OPTIONAL]
+---@param a SingleColorValue @ [OPTIONAL]
 ---@overload fun(colorR:number, colorG:number, colorB:number)
 function SetFogColor(colorR, colorG, colorB, a) end
 
@@ -171,14 +171,14 @@ function SetGlow(glow) end
 ---@param light ModelLight 
 function SetLight(enabled, light) end
 
----@param asset string 
+---@param asset ModelAsset 
 ---@param noMip boolean 
 function SetModel(asset, noMip) end
 
 ---@param alpha number 
 function SetModelAlpha(alpha) end
 
----@param layer string 
+---@param layer DrawLayer 
 function SetModelDrawLayer(layer) end
 
 ---@param scale number 
@@ -211,26 +211,26 @@ function SetSequenceTime(sequence, timeOffset) end
 ---@param strength number 
 function SetShadowEffect(strength) end
 
----@param translation table @ [OPTIONAL]
----@param rotation table @ [OPTIONAL]
+---@param translation vector3 @ [OPTIONAL]
+---@param rotation vector3 @ [OPTIONAL]
 ---@param scale number @ [OPTIONAL]
----@overload fun(rotation:table, scale:number)
+---@overload fun(rotation:vector3, scale:number)
 ---@overload fun(scale:number)
 ---@overload fun()
 function SetTransform(translation, rotation, scale) end
 
----@param left number 
----@param right number 
----@param top number 
----@param bottom number 
+---@param left uiUnit 
+---@param right uiUnit 
+---@param top uiUnit 
+---@param bottom uiUnit 
 function SetViewInsets(left, right, top, bottom) end
 
----@param x number 
----@param y number 
+---@param x uiUnit 
+---@param y uiUnit 
 function SetViewTranslation(x, y) end
 
----@param cameraPosition table 
----@return table modelPosition
+---@param cameraPosition vector3 
+---@return vector3 modelPosition
 function TransformCameraSpaceToModelSpace(cameraPosition) end
 
 ---@param useCenter boolean 

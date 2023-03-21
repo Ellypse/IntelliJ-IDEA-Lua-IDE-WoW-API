@@ -1,11 +1,11 @@
 ---@class KeyBindings
 C_KeyBindings = {}
 
----@param action string 
----@return number|nil bindingIndex
+---@param action cstring 
+---@return luaIndex|nil bindingIndex
 function C_KeyBindings.GetBindingIndex(action) end
 
----@param bindingIndex number 
+---@param bindingIndex luaIndex 
 ---@return CustomBindingType|nil customBindingType
 function C_KeyBindings.GetCustomBindingType(bindingIndex) end
 

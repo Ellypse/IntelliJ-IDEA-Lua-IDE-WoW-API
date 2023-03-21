@@ -52,23 +52,23 @@ function C_TransmogCollection.GetAppearanceInfoBySource(itemModifiedAppearanceID
 function C_TransmogCollection.GetAppearanceSourceDrops(itemModifiedAppearanceID) end
 
 ---@param itemModifiedAppearanceID number 
----@return TransmogCollectionType, number, boolean, number, boolean, string, string, number|nil, number category, itemAppearanceID, canHaveIllusion, icon, isCollected, itemLink, transmoglink, sourceType, itemSubClass
+---@return TransmogCollectionType, number, boolean, fileID, boolean, string, string, luaIndex|nil, number category, itemAppearanceID, canHaveIllusion, icon, isCollected, itemLink, transmoglink, sourceType, itemSubClass
 function C_TransmogCollection.GetAppearanceSourceInfo(itemModifiedAppearanceID) end
 
 ---@param appearanceID number 
 ---@param categoryType TransmogCollectionType @ [OPTIONAL]
----@param transmogLocation table @ [OPTIONAL]
----@overload fun(appearanceID:number, transmogLocation:table)
+---@param transmogLocation TransmogLocation @ [OPTIONAL]
+---@overload fun(appearanceID:number, transmogLocation:TransmogLocation)
 ---@overload fun(appearanceID:number)
 ---@return AppearanceSourceInfo sources
 function C_TransmogCollection.GetAppearanceSources(appearanceID, categoryType, transmogLocation) end
 
 ---@param appearanceID number 
----@return string, string name, hyperlink
+---@return cstring, cstring name, hyperlink
 function C_TransmogCollection.GetArtifactAppearanceStrings(appearanceID) end
 
 ---@param category TransmogCollectionType 
----@param transmogLocation table @ [OPTIONAL]
+---@param transmogLocation TransmogLocation @ [OPTIONAL]
 ---@overload fun(category:TransmogCollectionType)
 ---@return TransmogCategoryAppearanceInfo appearances
 function C_TransmogCollection.GetCategoryAppearances(category, transmogLocation) end
@@ -82,7 +82,7 @@ function C_TransmogCollection.GetCategoryCollectedCount(category) end
 function C_TransmogCollection.GetCategoryForItem(itemModifiedAppearanceID) end
 
 ---@param category TransmogCollectionType 
----@return string, boolean, boolean, boolean, boolean name, isWeapon, canHaveIllusions, canMainHand, canOffHand
+---@return cstring, boolean, boolean, boolean, boolean name, isWeapon, canHaveIllusions, canMainHand, canOffHand
 function C_TransmogCollection.GetCategoryInfo(category) end
 
 ---@param category TransmogCollectionType 
@@ -106,19 +106,19 @@ function C_TransmogCollection.GetIllusionStrings(illusionID) end
 ---@return TransmogIllusionInfo illusions
 function C_TransmogCollection.GetIllusions() end
 
----@return table list
+---@return ItemTransmogInfo list
 function C_TransmogCollection.GetInspectItemTransmogInfoList() end
 
 ---@param itemAppearanceID number 
 ---@return boolean isFavorite
 function C_TransmogCollection.GetIsAppearanceFavorite(itemAppearanceID) end
 
----@param itemInfo string 
+---@param itemInfo ItemInfo 
 ---@return number, number itemAppearanceID, itemModifiedAppearanceID
 function C_TransmogCollection.GetItemInfo(itemInfo) end
 
----@param hyperlink string 
----@return table list
+---@param hyperlink cstring 
+---@return ItemTransmogInfo list
 function C_TransmogCollection.GetItemTransmogInfoListFromOutfitHyperlink(hyperlink) end
 
 ---@return number, TransmogCollectionType visualID, category
@@ -130,16 +130,16 @@ function C_TransmogCollection.GetNumMaxOutfits() end
 ---@return number count
 function C_TransmogCollection.GetNumTransmogSources() end
 
----@param itemTransmogInfoList table 
----@return string hyperlink
+---@param itemTransmogInfoList ItemTransmogInfo 
+---@return cstring hyperlink
 function C_TransmogCollection.GetOutfitHyperlinkFromItemTransmogInfoList(itemTransmogInfoList) end
 
 ---@param outfitID number 
----@return string, number name, icon
+---@return cstring, fileID name, icon
 function C_TransmogCollection.GetOutfitInfo(outfitID) end
 
 ---@param outfitID number 
----@return table list
+---@return ItemTransmogInfo list
 function C_TransmogCollection.GetOutfitItemTransmogInfoList(outfitID) end
 
 ---@return number outfitID
@@ -150,7 +150,7 @@ function C_TransmogCollection.GetOutfits() end
 function C_TransmogCollection.GetPairedArtifactAppearance(itemModifiedAppearanceID) end
 
 ---@param itemModifiedAppearanceID number 
----@return number icon
+---@return fileID icon
 function C_TransmogCollection.GetSourceIcon(itemModifiedAppearanceID) end
 
 ---@param sourceID number 
@@ -176,7 +176,7 @@ function C_TransmogCollection.HasFavorites() end
 function C_TransmogCollection.IsAppearanceHiddenVisual(appearanceID) end
 
 ---@param category TransmogCollectionType 
----@param itemInfo string 
+---@param itemInfo ItemInfo 
 ---@return boolean isValid
 function C_TransmogCollection.IsCategoryValidForItem(category, itemInfo) end
 
@@ -191,7 +191,7 @@ function C_TransmogCollection.IsSearchDBLoading() end
 ---@return boolean inProgress
 function C_TransmogCollection.IsSearchInProgress(searchType) end
 
----@param index number 
+---@param index luaIndex 
 ---@return boolean checked
 function C_TransmogCollection.IsSourceTypeFilterChecked(index) end
 
@@ -199,12 +199,12 @@ function C_TransmogCollection.IsSourceTypeFilterChecked(index) end
 function C_TransmogCollection.IsUsingDefaultFilters() end
 
 ---@param outfitID number 
----@param itemTransmogInfoList table 
+---@param itemTransmogInfoList ItemTransmogInfo 
 function C_TransmogCollection.ModifyOutfit(outfitID, itemTransmogInfoList) end
 
----@param name string 
----@param icon number 
----@param itemTransmogInfoList table 
+---@param name cstring 
+---@param icon fileID 
+---@param itemTransmogInfoList ItemTransmogInfo 
 ---@return number|nil outfitID
 function C_TransmogCollection.NewOutfit(name, icon, itemTransmogInfoList) end
 
@@ -217,7 +217,7 @@ function C_TransmogCollection.PlayerCanCollectSource(sourceID) end
 ---@return boolean hasTransmog
 function C_TransmogCollection.PlayerHasTransmog(itemID, itemAppearanceModID) end
 
----@param itemInfo string 
+---@param itemInfo ItemInfo 
 ---@return boolean hasTransmog
 function C_TransmogCollection.PlayerHasTransmogByItemInfo(itemInfo) end
 
@@ -230,7 +230,7 @@ function C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance(itemModifi
 function C_TransmogCollection.PlayerKnowsSource(sourceID) end
 
 ---@param outfitID number 
----@param name string 
+---@param name cstring 
 function C_TransmogCollection.RenameOutfit(outfitID, name) end
 
 ---@param searchType TransmogSearchType 
@@ -264,7 +264,7 @@ function C_TransmogCollection.SetSearch(searchType, searchText) end
 ---@param category TransmogCollectionType 
 function C_TransmogCollection.SetSearchAndFilterCategory(category) end
 
----@param index number 
+---@param index luaIndex 
 ---@param checked boolean 
 function C_TransmogCollection.SetSourceTypeFilter(index, checked) end
 
@@ -305,11 +305,11 @@ local TransmogAppearanceJournalEncounterInfo = {}
 ---@field category TransmogCollectionType 
 ---@field itemAppearanceID number 
 ---@field canHaveIllusion bool 
----@field icon number 
+---@field icon fileID 
 ---@field isCollected bool 
 ---@field itemLink string 
 ---@field transmoglink string 
----@field sourceType number|nil 
+---@field sourceType luaIndex|nil 
 ---@field itemSubClass number 
 local TransmogAppearanceSourceInfoData = {}
 
@@ -320,7 +320,7 @@ local TransmogAppearanceSourceInfoData = {}
 ---@field isHideVisual bool 
 ---@field uiOrder number 
 ---@field exclusions number 
----@field restrictedSlotID number|nil 
+---@field restrictedSlotID luaIndex|nil 
 ---@field isUsable bool 
 ---@field hasRequiredHoliday bool 
 ---@field hasActiveRequiredHoliday bool 
@@ -328,7 +328,7 @@ local TransmogAppearanceSourceInfoData = {}
 local TransmogCategoryAppearanceInfo = {}
 
 ---@class TransmogCategoryInfo
----@field name string 
+---@field name cstring 
 ---@field isWeapon bool 
 ---@field canHaveIllusions bool 
 ---@field canMainHand bool 
@@ -338,14 +338,14 @@ local TransmogCategoryInfo = {}
 ---@class TransmogIllusionInfo
 ---@field visualID number 
 ---@field sourceID number 
----@field icon number 
+---@field icon fileID 
 ---@field isCollected bool 
 ---@field isUsable bool 
 ---@field isHideVisual bool 
 local TransmogIllusionInfo = {}
 
 ---@class TransmogOutfitInfo
----@field name string 
----@field icon number 
+---@field name cstring 
+---@field icon fileID 
 local TransmogOutfitInfo = {}
 

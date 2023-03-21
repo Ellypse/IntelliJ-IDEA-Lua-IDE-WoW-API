@@ -1,7 +1,7 @@
 ---@class MountJournal
 C_MountJournal = {}
 
----@param itemLocation table 
+---@param itemLocation ItemLocation 
 ---@return boolean canContinue
 function C_MountJournal.ApplyMountEquipment(itemLocation) end
 
@@ -25,27 +25,27 @@ function C_MountJournal.GetAppliedMountEquipmentID() end
 ---@return number mountIDs
 function C_MountJournal.GetCollectedDragonridingMounts() end
 
----@param filterIndex number 
+---@param filterIndex luaIndex 
 ---@return boolean isChecked
 function C_MountJournal.GetCollectedFilterSetting(filterIndex) end
 
----@param mountIndex number 
+---@param mountIndex luaIndex 
 ---@return MountCreatureDisplayInfo allDisplayInfo
 function C_MountJournal.GetDisplayedMountAllCreatureDisplayInfo(mountIndex) end
 
----@param displayIndex number 
+---@param displayIndex luaIndex 
 ---@return number mountID
 function C_MountJournal.GetDisplayedMountID(displayIndex) end
 
----@param displayIndex number 
----@return string, number, number, boolean, boolean, number, boolean, boolean, number|nil, boolean, boolean, number, boolean name, spellID, icon, isActive, isUsable, sourceType, isFavorite, isFactionSpecific, faction, shouldHideOnChar, isCollected, mountID, isForDragonriding
+---@param displayIndex luaIndex 
+---@return cstring, number, fileID, boolean, boolean, number, boolean, boolean, number|nil, boolean, boolean, number, boolean name, spellID, icon, isActive, isUsable, sourceType, isFavorite, isFactionSpecific, faction, shouldHideOnChar, isCollected, mountID, isForDragonriding
 function C_MountJournal.GetDisplayedMountInfo(displayIndex) end
 
----@param mountIndex number 
----@return number|nil, string, string, boolean, number, number, number, number, boolean creatureDisplayInfoID, description, source, isSelfMount, mountTypeID, uiModelSceneID, animID, spellVisualKitID, disablePlayerMountPreview
+---@param mountIndex luaIndex 
+---@return number|nil, cstring, cstring, boolean, number, number, number, number, boolean creatureDisplayInfoID, description, source, isSelfMount, mountTypeID, uiModelSceneID, animID, spellVisualKitID, disablePlayerMountPreview
 function C_MountJournal.GetDisplayedMountInfoExtra(mountIndex) end
 
----@param mountIndex number 
+---@param mountIndex luaIndex 
 ---@return boolean, boolean isFavorite, canSetFavorite
 function C_MountJournal.GetIsFavorite(mountIndex) end
 
@@ -68,11 +68,11 @@ function C_MountJournal.GetMountFromSpell(spellID) end
 function C_MountJournal.GetMountIDs() end
 
 ---@param mountID number 
----@return string, number, number, boolean, boolean, number, boolean, boolean, number|nil, boolean, boolean, number, boolean name, spellID, icon, isActive, isUsable, sourceType, isFavorite, isFactionSpecific, faction, shouldHideOnChar, isCollected, mountID, isForDragonriding
+---@return cstring, number, fileID, boolean, boolean, number, boolean, boolean, number|nil, boolean, boolean, number, boolean name, spellID, icon, isActive, isUsable, sourceType, isFavorite, isFactionSpecific, faction, shouldHideOnChar, isCollected, mountID, isForDragonriding
 function C_MountJournal.GetMountInfoByID(mountID) end
 
 ---@param mountID number 
----@return number|nil, string, string, boolean, number, number, number, number, boolean creatureDisplayInfoID, description, source, isSelfMount, mountTypeID, uiModelSceneID, animID, spellVisualKitID, disablePlayerMountPreview
+---@return number|nil, cstring, cstring, boolean, number, number, number, number, boolean creatureDisplayInfoID, description, source, isSelfMount, mountTypeID, uiModelSceneID, animID, spellVisualKitID, disablePlayerMountPreview
 function C_MountJournal.GetMountInfoExtraByID(mountID) end
 
 ---@param spellID number 
@@ -81,7 +81,7 @@ function C_MountJournal.GetMountLink(spellID) end
 
 ---@param mountID number 
 ---@param checkIndoors boolean 
----@return boolean, string|nil isUsable, useError
+---@return boolean, cstring|nil isUsable, useError
 function C_MountJournal.GetMountUsabilityByID(mountID, checkIndoors) end
 
 ---@return number numMounts
@@ -94,29 +94,29 @@ function C_MountJournal.GetNumMounts() end
 function C_MountJournal.GetNumMountsNeedingFanfare() end
 
 --- Determines if the item is mount equipment based on its class and subclass.
----@param itemLocation table 
+---@param itemLocation ItemLocation 
 ---@return boolean isMountEquipment
 function C_MountJournal.IsItemMountEquipment(itemLocation) end
 
 ---@return boolean isApplied
 function C_MountJournal.IsMountEquipmentApplied() end
 
----@param filterIndex number 
+---@param filterIndex luaIndex 
 ---@return boolean isChecked
 function C_MountJournal.IsSourceChecked(filterIndex) end
 
----@param filterIndex number 
+---@param filterIndex luaIndex 
 ---@return boolean isChecked
 function C_MountJournal.IsTypeChecked(filterIndex) end
 
 ---@return boolean isUsingDefaultFilters
 function C_MountJournal.IsUsingDefaultFilters() end
 
----@param filterIndex number 
+---@param filterIndex luaIndex 
 ---@return boolean isValid
 function C_MountJournal.IsValidSourceFilter(filterIndex) end
 
----@param filterIndex number 
+---@param filterIndex luaIndex 
 ---@return boolean isValid
 function C_MountJournal.IsValidTypeFilter(filterIndex) end
 
@@ -124,7 +124,7 @@ function C_MountJournal.IsValidTypeFilter(filterIndex) end
 ---@return boolean needsFanfare
 function C_MountJournal.NeedsFanfare(mountID) end
 
----@param displayIndex number 
+---@param displayIndex luaIndex 
 function C_MountJournal.Pickup(displayIndex) end
 
 ---@param isChecked boolean 
@@ -133,24 +133,24 @@ function C_MountJournal.SetAllSourceFilters(isChecked) end
 ---@param isChecked boolean 
 function C_MountJournal.SetAllTypeFilters(isChecked) end
 
----@param filterIndex number 
+---@param filterIndex luaIndex 
 ---@param isChecked boolean 
 function C_MountJournal.SetCollectedFilterSetting(filterIndex, isChecked) end
 
 function C_MountJournal.SetDefaultFilters() end
 
----@param mountIndex number 
+---@param mountIndex luaIndex 
 ---@param isFavorite boolean 
 function C_MountJournal.SetIsFavorite(mountIndex, isFavorite) end
 
----@param searchValue string 
+---@param searchValue cstring 
 function C_MountJournal.SetSearch(searchValue) end
 
----@param filterIndex number 
+---@param filterIndex luaIndex 
 ---@param isChecked boolean 
 function C_MountJournal.SetSourceFilter(filterIndex, isChecked) end
 
----@param filterIndex number 
+---@param filterIndex luaIndex 
 ---@param isChecked boolean 
 function C_MountJournal.SetTypeFilter(filterIndex, isChecked) end
 
@@ -176,9 +176,9 @@ MountTypeFlag.IsDragonRidingMount = 4
 local MountCreatureDisplayInfo = {}
 
 ---@class MountInfo
----@field name string 
+---@field name cstring 
 ---@field spellID number 
----@field icon number 
+---@field icon fileID 
 ---@field isActive bool 
 ---@field isUsable bool 
 ---@field sourceType number 
@@ -193,8 +193,8 @@ local MountInfo = {}
 
 ---@class MountInfoExtra
 ---@field creatureDisplayInfoID number|nil 
----@field description string 
----@field source string 
+---@field description cstring 
+---@field source cstring 
 ---@field isSelfMount bool 
 ---@field mountTypeID number 
 ---@field uiModelSceneID number 

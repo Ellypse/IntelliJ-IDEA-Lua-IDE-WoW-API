@@ -2,14 +2,14 @@
 C_ClassTalents = {}
 
 --- Returns true only if the player has staged changes and can commit their talents in their current state.
----@return boolean, boolean, string canChange, canAdd, changeError
+---@return boolean, boolean, cstring canChange, canAdd, changeError
 function C_ClassTalents.CanChangeTalents() end
 
 ---@return boolean canCreate
 function C_ClassTalents.CanCreateNewConfig() end
 
 --- Returns true if the player could switch talents if they staged a proper loadout.
----@return boolean, string canEdit, changeError
+---@return boolean, cstring canEdit, changeError
 function C_ClassTalents.CanEditTalents() end
 
 ---@param savedConfigID number @ [OPTIONAL]
@@ -48,7 +48,7 @@ function C_ClassTalents.HasUnspentTalentPoints() end
 ---@param configID number 
 ---@param entries ImportLoadoutEntryInfo 
 ---@param name string 
----@return boolean, string success, importError
+---@return boolean, cstring success, importError
 function C_ClassTalents.ImportLoadout(configID, entries, name) end
 
 --- New configs may or may not be populated and ready to load immediately after creation. Avoid calling for configs intentionally created empty.
@@ -58,7 +58,7 @@ function C_ClassTalents.IsConfigPopulated(configID) end
 
 ---@param configID number 
 ---@param autoApply boolean 
----@return LoadConfigResult, string, number result, changeError, newLearnedNodeIDs
+---@return LoadConfigResult, cstring, number result, changeError, newLearnedNodeIDs
 function C_ClassTalents.LoadConfig(configID, autoApply) end
 
 ---@param configID number 

@@ -1,5 +1,5 @@
 
----@return string fillStyle
+---@return StatusBarFillStyle fillStyle
 function GetFillStyle() end
 
 
@@ -7,7 +7,7 @@ function GetFillStyle() end
 function GetMinMaxValues() end
 
 
----@return string orientation
+---@return Orientation orientation
 function GetOrientation() end
 
 
@@ -23,11 +23,11 @@ function GetRotatesTexture() end
 function GetStatusBarColor() end
 
 
----@return number desaturation
+---@return normalizedValue desaturation
 function GetStatusBarDesaturation() end
 
 
----@return table texture
+---@return SimpleTexture texture
 function GetStatusBarTexture() end
 
 
@@ -41,18 +41,18 @@ function IsStatusBarDesaturated() end
 ---@param colorR number 
 ---@param colorG number 
 ---@param colorB number 
----@param a number @ [OPTIONAL]
+---@param a SingleColorValue @ [OPTIONAL]
 ---@overload fun(colorR:number, colorG:number, colorB:number)
 function SetColorFill(colorR, colorG, colorB, a) end
 
----@param fillStyle string 
+---@param fillStyle StatusBarFillStyle 
 function SetFillStyle(fillStyle) end
 
 ---@param minValue number 
 ---@param maxValue number 
 function SetMinMaxValues(minValue, maxValue) end
 
----@param orientation string 
+---@param orientation Orientation 
 function SetOrientation(orientation) end
 
 ---@param isReverseFill boolean 
@@ -64,17 +64,17 @@ function SetRotatesTexture(rotatesTexture) end
 ---@param colorR number 
 ---@param colorG number 
 ---@param colorB number 
----@param a number @ [OPTIONAL]
+---@param a SingleColorValue @ [OPTIONAL]
 ---@overload fun(colorR:number, colorG:number, colorB:number)
 function SetStatusBarColor(colorR, colorG, colorB, a) end
 
 ---@param desaturated boolean 
 function SetStatusBarDesaturated(desaturated) end
 
----@param desaturation number 
+---@param desaturation normalizedValue 
 function SetStatusBarDesaturation(desaturation) end
 
----@param asset string 
+---@param asset TextureAsset 
 function SetStatusBarTexture(asset) end
 
 ---@param value number 

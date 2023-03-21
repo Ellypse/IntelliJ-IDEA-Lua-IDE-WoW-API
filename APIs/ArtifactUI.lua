@@ -5,7 +5,7 @@ C_ArtifactUI = {}
 ---@return boolean success
 function C_ArtifactUI.AddPower(powerID) end
 
----@param relicSlotIndex number 
+---@param relicSlotIndex luaIndex 
 function C_ArtifactUI.ApplyCursorRelicToSlot(relicSlotIndex) end
 
 ---@param relicItemID number 
@@ -13,17 +13,17 @@ function C_ArtifactUI.ApplyCursorRelicToSlot(relicSlotIndex) end
 ---@return boolean canApply
 function C_ArtifactUI.CanApplyArtifactRelic(relicItemID, onlyUnlocked) end
 
----@param relicSlotIndex number 
+---@param relicSlotIndex luaIndex 
 ---@return boolean canApply
 function C_ArtifactUI.CanApplyCursorRelicToSlot(relicSlotIndex) end
 
 ---@param relicItemID number 
----@param relicSlotIndex number 
+---@param relicSlotIndex luaIndex 
 ---@return boolean canApply
 function C_ArtifactUI.CanApplyRelicItemIDToEquippedArtifactSlot(relicItemID, relicSlotIndex) end
 
 ---@param relicItemID number 
----@param relicSlotIndex number 
+---@param relicSlotIndex luaIndex 
 ---@return boolean canApply
 function C_ArtifactUI.CanApplyRelicItemIDToSlot(relicItemID, relicSlotIndex) end
 
@@ -55,28 +55,28 @@ function C_ArtifactUI.GetAppearanceSetInfo(appearanceSetIndex) end
 ---@return ArtifactArtInfo artifactArtInfo
 function C_ArtifactUI.GetArtifactArtInfo() end
 
----@return number, number|nil, string, number, number, number, number, number, number, number|nil, number|nil, boolean, number itemID, altItemID, name, icon, xp, pointsSpent, quality, artifactAppearanceID, appearanceModID, itemAppearanceID, altItemAppearanceID, altOnTop, tier
+---@return number, number|nil, string, fileID, number, number, number, number, number, number|nil, number|nil, boolean, luaIndex itemID, altItemID, name, icon, xp, pointsSpent, quality, artifactAppearanceID, appearanceModID, itemAppearanceID, altItemAppearanceID, altOnTop, tier
 function C_ArtifactUI.GetArtifactInfo() end
 
 ---@return number itemID
 function C_ArtifactUI.GetArtifactItemID() end
 
----@return number|nil tier
+---@return luaIndex|nil tier
 function C_ArtifactUI.GetArtifactTier() end
 
 ---@param artifactCategoryID number 
----@return string, number name, icon
+---@return string, fileID name, icon
 function C_ArtifactUI.GetArtifactXPRewardTargetInfo(artifactCategoryID) end
 
 ---@param rank number 
----@param tier number 
+---@param tier luaIndex 
 ---@return number cost
 function C_ArtifactUI.GetCostForPointAtRank(rank, tier) end
 
 ---@return ArtifactArtInfo artifactArtInfo
 function C_ArtifactUI.GetEquippedArtifactArtInfo() end
 
----@return number, number|nil, string, number, number, number, number, number, number, number|nil, number|nil, boolean, number itemID, altItemID, name, icon, xp, pointsSpent, quality, artifactAppearanceID, appearanceModID, itemAppearanceID, altItemAppearanceID, altOnTop, tier
+---@return number, number|nil, string, fileID, number, number, number, number, number, number|nil, number|nil, boolean, luaIndex itemID, altItemID, name, icon, xp, pointsSpent, quality, artifactAppearanceID, appearanceModID, itemAppearanceID, altItemAppearanceID, altOnTop, tier
 function C_ArtifactUI.GetEquippedArtifactInfo() end
 
 ---@return number itemID
@@ -86,18 +86,18 @@ function C_ArtifactUI.GetEquippedArtifactItemID() end
 ---@return number numRelicSlots
 function C_ArtifactUI.GetEquippedArtifactNumRelicSlots(onlyUnlocked) end
 
----@param relicSlotIndex number 
----@return string, number, string, string name, icon, slotTypeName, link
+---@param relicSlotIndex luaIndex 
+---@return string, fileID, cstring, string name, icon, slotTypeName, link
 function C_ArtifactUI.GetEquippedArtifactRelicInfo(relicSlotIndex) end
 
----@param relicSlotIndex number 
+---@param relicSlotIndex luaIndex 
 ---@return string|nil lockedReason
 function C_ArtifactUI.GetEquippedRelicLockedReason(relicSlotIndex) end
 
 ---@return number, number, number forgeRotationX, forgeRotationY, forgeRotationZ
 function C_ArtifactUI.GetForgeRotation() end
 
----@param itemLinkOrID string 
+---@param itemLinkOrID ItemInfo 
 ---@return number itemIevelIncrease
 function C_ArtifactUI.GetItemLevelIncreaseProvidedByRelic(itemLinkOrID) end
 
@@ -118,7 +118,7 @@ function C_ArtifactUI.GetNumRelicSlots(onlyUnlocked) end
 function C_ArtifactUI.GetPointsRemaining() end
 
 ---@param powerID number 
----@return string link
+---@return cstring link
 function C_ArtifactUI.GetPowerHyperlink(powerID) end
 
 ---@param powerID number 
@@ -132,45 +132,45 @@ function C_ArtifactUI.GetPowerLinks(powerID) end
 ---@return number powerID
 function C_ArtifactUI.GetPowers() end
 
----@param relicSlotIndex number 
+---@param relicSlotIndex luaIndex 
 ---@return number powerIDs
 function C_ArtifactUI.GetPowersAffectedByRelic(relicSlotIndex) end
 
----@param relicItemInfo string 
+---@param relicItemInfo ItemInfo 
 ---@return number powerIDs
 function C_ArtifactUI.GetPowersAffectedByRelicItemLink(relicItemInfo) end
 
 ---@return number|nil artifactAppearanceID
 function C_ArtifactUI.GetPreviewAppearance() end
 
----@param relicSlotIndex number 
----@return string, number, string, string name, icon, slotTypeName, link
+---@param relicSlotIndex luaIndex 
+---@return string, fileID, cstring, string name, icon, slotTypeName, link
 function C_ArtifactUI.GetRelicInfo(relicSlotIndex) end
 
 ---@param itemID number 
----@return string, number, string, string name, icon, slotTypeName, link
+---@return string, fileID, cstring, string name, icon, slotTypeName, link
 function C_ArtifactUI.GetRelicInfoByItemID(itemID) end
 
----@param relicSlotIndex number 
+---@param relicSlotIndex luaIndex 
 ---@return string|nil lockedReason
 function C_ArtifactUI.GetRelicLockedReason(relicSlotIndex) end
 
----@param relicSlotIndex number 
----@return string slotTypeName
+---@param relicSlotIndex luaIndex 
+---@return cstring slotTypeName
 function C_ArtifactUI.GetRelicSlotType(relicSlotIndex) end
 
 ---@return ArtifactArtInfo artifactArtInfo
 function C_ArtifactUI.GetRespecArtifactArtInfo() end
 
----@return number, number|nil, string, number, number, number, number, number, number, number|nil, number|nil, boolean, number itemID, altItemID, name, icon, xp, pointsSpent, quality, artifactAppearanceID, appearanceModID, itemAppearanceID, altItemAppearanceID, altOnTop, tier
+---@return number, number|nil, string, fileID, number, number, number, number, number, number|nil, number|nil, boolean, luaIndex itemID, altItemID, name, icon, xp, pointsSpent, quality, artifactAppearanceID, appearanceModID, itemAppearanceID, altItemAppearanceID, altOnTop, tier
 function C_ArtifactUI.GetRespecArtifactInfo() end
 
 ---@return number cost
 function C_ArtifactUI.GetRespecCost() end
 
----@param startingTrait number 
+---@param startingTrait luaIndex 
 ---@param numTraits number 
----@param artifactTier number 
+---@param artifactTier luaIndex 
 ---@return number totalArtifactPowerCost
 function C_ArtifactUI.GetTotalPowerCost(startingTrait, numTraits, artifactTier) end
 
@@ -180,7 +180,7 @@ function C_ArtifactUI.GetTotalPurchasedRanks() end
 ---@return boolean artifactDisabled
 function C_ArtifactUI.IsArtifactDisabled() end
 
----@param itemLocation table 
+---@param itemLocation ItemLocation 
 ---@return boolean isArtifact
 function C_ArtifactUI.IsArtifactItem(itemLocation) end
 
@@ -228,7 +228,7 @@ function C_ArtifactUI.ShouldSuppressForgeRotation() end
 ---@field failureDescription string|nil 
 ---@field uiCameraID number 
 ---@field altHandCameraID number|nil 
----@field swatchColor table 
+---@field swatchColor colorRGB 
 ---@field modelOpacity number 
 ---@field modelSaturation number 
 ---@field obtainable bool 
@@ -242,11 +242,11 @@ local ArtifactAppearanceInfo = {}
 local ArtifactAppearanceSetInfo = {}
 
 ---@class ArtifactArtInfo
----@field textureKit string 
+---@field textureKit textureKit 
 ---@field titleName string 
----@field titleColor table 
----@field barConnectedColor table 
----@field barDisconnectedColor table 
+---@field titleColor colorRGB 
+---@field barConnectedColor colorRGB 
+---@field barDisconnectedColor colorRGB 
 ---@field uiModelSceneID number 
 ---@field spellVisualKitID number 
 local ArtifactArtInfo = {}
@@ -255,7 +255,7 @@ local ArtifactArtInfo = {}
 ---@field itemID number 
 ---@field altItemID number|nil 
 ---@field name string 
----@field icon number 
+---@field icon fileID 
 ---@field xp number 
 ---@field pointsSpent number 
 ---@field quality number 
@@ -264,7 +264,7 @@ local ArtifactArtInfo = {}
 ---@field itemAppearanceID number|nil 
 ---@field altItemAppearanceID number|nil 
 ---@field altOnTop bool 
----@field tier number 
+---@field tier luaIndex 
 local ArtifactInfo = {}
 
 ---@class ArtifactMetaPowerInfo
@@ -284,16 +284,16 @@ local ArtifactMetaPowerInfo = {}
 ---@field isStart bool 
 ---@field isGoldMedal bool 
 ---@field isFinal bool 
----@field tier number 
----@field position table 
----@field offset table|nil 
----@field linearIndex number|nil 
+---@field tier luaIndex 
+---@field position vector2 
+---@field offset vector2|nil 
+---@field linearIndex luaIndex|nil 
 local ArtifactPowerInfo = {}
 
 ---@class ArtifactRelicInfo
 ---@field name string 
----@field icon number 
----@field slotTypeName string @ Matches the socket identifiers used in the socketing system.
+---@field icon fileID 
+---@field slotTypeName cstring @ Matches the socket identifiers used in the socketing system.
 ---@field link string 
 local ArtifactRelicInfo = {}
 

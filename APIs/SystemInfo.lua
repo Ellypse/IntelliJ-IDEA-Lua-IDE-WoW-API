@@ -1,6 +1,6 @@
 ---@class SystemInfo
 C_System = {}
 
----@return table objects
+---@return ScriptRegion objects
 function C_System.GetFrameStack() end
 

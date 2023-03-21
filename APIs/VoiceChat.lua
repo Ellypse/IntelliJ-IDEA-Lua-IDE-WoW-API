@@ -13,7 +13,7 @@ function C_VoiceChat.BeginLocalCapture(listenToLocalUser) end
 ---@return boolean canUseVoiceChat
 function C_VoiceChat.CanPlayerUseVoiceChat() end
 
----@param channelDisplayName string 
+---@param channelDisplayName cstring 
 ---@return VoiceChatStatusCode status
 function C_VoiceChat.CreateChannel(channelDisplayName) end
 
@@ -45,8 +45,8 @@ function C_VoiceChat.GetChannel(channelID) end
 ---@return VoiceChatChannel|nil channel
 function C_VoiceChat.GetChannelForChannelType(channelType) end
 
----@param clubId string 
----@param streamId string 
+---@param clubId ClubId 
+---@param streamId ClubStreamId 
 ---@return VoiceChatChannel|nil channel
 function C_VoiceChat.GetChannelForCommunityStream(clubId, streamId) end
 
@@ -59,7 +59,7 @@ function C_VoiceChat.GetCurrentVoiceChatConnectionStatusCode() end
 ---@return number|nil volume
 function C_VoiceChat.GetInputVolume() end
 
----@param clubId string 
+---@param clubId ClubId 
 ---@return VoiceChannelErrorReason|nil errorReason
 function C_VoiceChat.GetJoinClubVoiceChannelError(clubId) end
 
@@ -75,11 +75,11 @@ function C_VoiceChat.GetMasterVolumeScale() end
 
 ---@param memberID number 
 ---@param channelID number 
----@return string memberGUID
+---@return WOWGUID memberGUID
 function C_VoiceChat.GetMemberGUID(memberID, channelID) end
 
 ---@param channelID number 
----@param memberGUID string 
+---@param memberGUID WOWGUID 
 ---@return number|nil memberID
 function C_VoiceChat.GetMemberID(channelID, memberGUID) end
 
@@ -93,7 +93,7 @@ function C_VoiceChat.GetMemberInfo(memberID, channelID) end
 ---@return string|nil memberName
 function C_VoiceChat.GetMemberName(memberID, channelID) end
 
----@param playerLocation table 
+---@param playerLocation PlayerLocation 
 ---@return number|nil volume
 function C_VoiceChat.GetMemberVolume(playerLocation) end
 
@@ -119,9 +119,9 @@ function C_VoiceChat.GetTtsVoices() end
 function C_VoiceChat.GetVADSensitivity() end
 
 ---@param channelType ChatChannelType 
----@param clubId string @ [OPTIONAL]
----@param streamId string @ [OPTIONAL]
----@overload fun(channelType:ChatChannelType, streamId:string)
+---@param clubId ClubId @ [OPTIONAL]
+---@param streamId ClubStreamId @ [OPTIONAL]
+---@overload fun(channelType:ChatChannelType, streamId:ClubStreamId)
 ---@overload fun(channelType:ChatChannelType)
 ---@return boolean isPending
 function C_VoiceChat.IsChannelJoinPending(channelType, clubId, streamId) end
@@ -140,7 +140,7 @@ function C_VoiceChat.IsLoggedIn() end
 ---@return boolean isLocalPlayer
 function C_VoiceChat.IsMemberLocalPlayer(memberID, channelID) end
 
----@param playerLocation table 
+---@param playerLocation PlayerLocation 
 ---@return boolean|nil mutedForMe
 function C_VoiceChat.IsMemberMuted(playerLocation) end
 
@@ -163,7 +163,7 @@ function C_VoiceChat.IsParentalDisabled() end
 ---@return boolean isParentalMuted
 function C_VoiceChat.IsParentalMuted() end
 
----@param playerLocation table 
+---@param playerLocation PlayerLocation 
 ---@return boolean isUsingVoice
 function C_VoiceChat.IsPlayerUsingVoice(playerLocation) end
 
@@ -194,8 +194,8 @@ function C_VoiceChat.Logout() end
 --- Once the UI has enumerated all channels, use this to reset the channel discovery state, it will be updated again if appropriate
 function C_VoiceChat.MarkChannelsDiscovered() end
 
----@param clubId string 
----@param streamId string 
+---@param clubId ClubId 
+---@param streamId ClubStreamId 
 function C_VoiceChat.RequestJoinAndActivateCommunityStreamChannel(clubId, streamId) end
 
 ---@param channelType ChatChannelType 
@@ -218,12 +218,12 @@ function C_VoiceChat.SetInputVolume(volume) end
 ---@param scale number 
 function C_VoiceChat.SetMasterVolumeScale(scale) end
 
----@param playerLocation table 
+---@param playerLocation PlayerLocation 
 ---@param muted boolean 
 function C_VoiceChat.SetMemberMuted(playerLocation, muted) end
 
 --- Adjusts member volume across all channels
----@param playerLocation table 
+---@param playerLocation PlayerLocation 
 ---@param volume number 
 function C_VoiceChat.SetMemberVolume(playerLocation, volume) end
 
@@ -236,7 +236,7 @@ function C_VoiceChat.SetOutputDevice(deviceID) end
 ---@param volume number 
 function C_VoiceChat.SetOutputVolume(volume) end
 
----@param textureObject table 
+---@param textureObject SimpleTexture 
 ---@param memberID number 
 ---@param channelID number 
 function C_VoiceChat.SetPortraitTexture(textureObject, memberID, channelID) end
@@ -255,7 +255,7 @@ function C_VoiceChat.ShouldDiscoverChannels() end
 function C_VoiceChat.SpeakRemoteTextSample(text) end
 
 ---@param voiceID number 
----@param text string 
+---@param text cstring 
 ---@param destination VoiceTtsDestination 
 ---@param rate number 
 ---@param volume number 
@@ -265,7 +265,7 @@ function C_VoiceChat.StopSpeakingText() end
 
 function C_VoiceChat.ToggleDeafened() end
 
----@param playerLocation table 
+---@param playerLocation PlayerLocation 
 function C_VoiceChat.ToggleMemberMuted(playerLocation) end
 
 function C_VoiceChat.ToggleMuted() end
@@ -347,8 +347,8 @@ local VoiceAudioDevice = {}
 ---@field name string 
 ---@field channelID number 
 ---@field channelType ChatChannelType 
----@field clubId string 
----@field streamId string 
+---@field clubId ClubId 
+---@field streamId ClubStreamId 
 ---@field volume number 
 ---@field isActive bool 
 ---@field isMuted bool 

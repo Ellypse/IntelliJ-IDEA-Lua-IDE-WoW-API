@@ -16,7 +16,7 @@ function C_PerksActivities.GetPerksActivitiesInfo() end
 function C_PerksActivities.GetPerksActivitiesPendingCompletion() end
 
 ---@param perksActivityID number 
----@return string link
+---@return cstring link
 function C_PerksActivities.GetPerksActivityChatLink(perksActivityID) end
 
 ---@param perksActivityID number 
@@ -31,7 +31,7 @@ function C_PerksActivities.RemoveTrackedPerksActivity(perksActivityID) end
 
 ---@class PerksActivitiesInfo
 ---@field activePerksMonth number 
----@field displayMonthName string 
+---@field displayMonthName cstring 
 ---@field activities table 
 ---@field thresholds table 
 local PerksActivitiesInfo = {}
@@ -44,14 +44,20 @@ local PerksActivitiesPending = {}
 ---@field trackedIDs table 
 local PerksActivitiesTracked = {}
 
+---@class PerksActivityCriteria
+---@field criteriaID number 
+---@field requiredValue number 
+local PerksActivityCriteria = {}
+
 ---@class PerksActivityInfo
 ---@field ID number 
----@field activityName string 
----@field description string 
+---@field activityName cstring 
+---@field description cstring 
 ---@field thresholdContributionAmount number 
 ---@field completed bool 
 ---@field tracked bool 
 ---@field requirementsList table 
+---@field criteriaList table 
 ---@field tagNames table 
 local PerksActivityInfo = {}
 

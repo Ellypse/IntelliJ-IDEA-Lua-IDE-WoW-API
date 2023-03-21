@@ -22,13 +22,13 @@ function C_AreaPoiInfo.IsAreaPOITimed(areaPoiID) end
 
 ---@class AreaPOIInfo
 ---@field areaPoiID number 
----@field position table 
----@field name string 
----@field description string|nil 
+---@field position vector2 
+---@field name cstring 
+---@field description cstring|nil 
 ---@field textureIndex number|nil 
 ---@field widgetSetID number|nil 
 ---@field atlasName string|nil 
----@field uiTextureKit string|nil 
+---@field uiTextureKit textureKit|nil 
 ---@field shouldGlow bool 
 ---@field factionID number|nil 
 ---@field isPrimaryMapForPOI bool 

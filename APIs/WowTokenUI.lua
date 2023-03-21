@@ -1,6 +1,6 @@
 ---@class WowTokenUI
 C_WowTokenUI = {}
 
----@param tokenGUID string 
+---@param tokenGUID WOWGUID 
 function C_WowTokenUI.StartTokenSell(tokenGUID) end
 

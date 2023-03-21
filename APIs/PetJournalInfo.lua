@@ -2,12 +2,12 @@
 C_PetJournal = {}
 
 ---@param speciesID number 
----@param index number 
+---@param index luaIndex 
 ---@return number|nil displayID
 function C_PetJournal.GetDisplayIDByIndex(speciesID, index) end
 
 ---@param speciesID number 
----@param index number 
+---@param index luaIndex 
 ---@return number|nil displayProbability
 function C_PetJournal.GetDisplayProbabilityByIndex(speciesID, index) end
 
@@ -15,24 +15,28 @@ function C_PetJournal.GetDisplayProbabilityByIndex(speciesID, index) end
 ---@return number|nil numDisplays
 function C_PetJournal.GetNumDisplays(speciesID) end
 
+---@param creatureID number 
+---@return number, number maxAllowed, numPets
+function C_PetJournal.GetNumPetsInJournal(creatureID) end
+
 ---@param abilityID number 
----@return string, number, number name, icon, petType
+---@return string, fileID, number name, icon, petType
 function C_PetJournal.GetPetAbilityInfo(abilityID) end
 
 ---@param speciesID number 
 ---@return PetAbilityLevelInfo info
 function C_PetJournal.GetPetAbilityListTable(speciesID) end
 
----@param petID string 
+---@param petID WOWGUID 
 ---@return PetJournalPetInfo info
 function C_PetJournal.GetPetInfoTableByPetID(petID) end
 
----@param slot number 
----@return string|nil, number, number, number, boolean petID, ability1ID, ability2ID, ability3ID, locked
+---@param slot luaIndex 
+---@return WOWGUID|nil, number, number, number, boolean petID, ability1ID, ability2ID, ability3ID, locked
 function C_PetJournal.GetPetLoadOutInfo(slot) end
 
----@param battlePetGUID string 
----@return boolean, PetJournalError, string isSummonable, error, errorText
+---@param battlePetGUID WOWGUID 
+---@return boolean, PetJournalError, cstring isSummonable, error, errorText
 function C_PetJournal.GetPetSummonInfo(battlePetGUID) end
 
 ---@return boolean hasFavorites
@@ -41,7 +45,7 @@ function C_PetJournal.HasFavoritePets() end
 ---@return boolean isUsingDefaultFilters
 function C_PetJournal.IsUsingDefaultFilters() end
 
----@param battlePetGUID string 
+---@param battlePetGUID WOWGUID 
 ---@return boolean isSummonable
 function C_PetJournal.PetIsSummonable(battlePetGUID) end
 
@@ -51,7 +55,7 @@ function C_PetJournal.PetUsesRandomDisplay(speciesID) end
 
 function C_PetJournal.SetDefaultFilters() end
 
----@param battlePetGUID string 
+---@param battlePetGUID WOWGUID 
 function C_PetJournal.SpellTargetBattlePet(battlePetGUID) end
 
 ---@class PetJournalError
@@ -77,7 +81,7 @@ local PetAbilityLevelInfo = {}
 ---@field maxXP number 
 ---@field displayID number 
 ---@field isFavorite bool 
----@field icon number 
+---@field icon fileID 
 ---@field petType number 
 ---@field creatureID number 
 ---@field name string|nil 

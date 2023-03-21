@@ -4,7 +4,7 @@ C_Navigation = {}
 ---@return number distance
 function C_Navigation.GetDistance() end
 
----@return table|nil frame
+---@return ScriptRegion|nil frame
 function C_Navigation.GetFrame() end
 
 ---@return NavigationState state

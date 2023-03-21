@@ -2,12 +2,14 @@
 C_RecruitAFriend = {}
 
 ---@param activityID number 
----@param acceptanceID string 
+---@param acceptanceID RecruitAcceptanceID 
 ---@return boolean success
 function C_RecruitAFriend.ClaimActivityReward(activityID, acceptanceID) end
 
+---@param rafVersion RecruitAFriendRewardsVersion @ [OPTIONAL]
+---@overload fun()
 ---@return boolean success
-function C_RecruitAFriend.ClaimNextReward() end
+function C_RecruitAFriend.ClaimNextReward(rafVersion) end
 
 ---@return boolean success
 function C_RecruitAFriend.GenerateRecruitmentLink() end
@@ -19,7 +21,7 @@ function C_RecruitAFriend.GetRAFInfo() end
 function C_RecruitAFriend.GetRAFSystemInfo() end
 
 ---@param activityID number 
----@param acceptanceID string 
+---@param acceptanceID RecruitAcceptanceID 
 ---@return string requirementsText
 function C_RecruitAFriend.GetRecruitActivityRequirementsText(activityID, acceptanceID) end
 
@@ -32,7 +34,7 @@ function C_RecruitAFriend.IsEnabled() end
 ---@return boolean enabled
 function C_RecruitAFriend.IsRecruitingEnabled() end
 
----@param wowAccountGUID string 
+---@param wowAccountGUID WOWGUID 
 ---@return boolean success
 function C_RecruitAFriend.RemoveRAFRecruit(wowAccountGUID) end
 
@@ -77,15 +79,17 @@ local RafAppearanceSetInfo = {}
 local RafIllusionInfo = {}
 
 ---@class RafInfo
+---@field versions table 
+---@field recruitmentInfo RafRecruitmentinfo|nil 
+---@field recruits table 
+---@field claimInProgress bool 
+local RafInfo = {}
+
+---@class RafMonthCount
 ---@field lifetimeMonths number 
 ---@field spentMonths number 
 ---@field availableMonths number 
----@field claimInProgress bool 
----@field rewards table 
----@field nextReward RafReward|nil 
----@field recruitmentInfo RafRecruitmentinfo|nil 
----@field recruits table 
-local RafInfo = {}
+local RafMonthCount = {}
 
 ---@class RafMountInfo
 ---@field spellID number 
@@ -102,11 +106,12 @@ local RafPetInfo = {}
 
 ---@class RafRecruit
 ---@field bnetAccountID number 
----@field wowAccountGUID string 
+---@field wowAccountGUID WOWGUID 
 ---@field battleTag string 
 ---@field monthsRemaining number 
 ---@field subStatus RafRecruitSubStatus 
----@field acceptanceID string 
+---@field acceptanceID RecruitAcceptanceID 
+---@field versionRecruited RecruitAFriendRewardsVersion 
 ---@field activities table 
 local RafRecruit = {}
 
@@ -129,6 +134,7 @@ local RafRecruitmentinfo = {}
 
 ---@class RafReward
 ---@field rewardID number 
+---@field rafVersion RecruitAFriendRewardsVersion 
 ---@field itemID number 
 ---@field rewardType RafRewardType 
 ---@field petInfo RafPetInfo|nil 
@@ -139,12 +145,13 @@ local RafRecruitmentinfo = {}
 ---@field illusionInfo RafIllusionInfo|nil 
 ---@field canClaim bool 
 ---@field claimed bool 
+---@field canAfford bool 
 ---@field repeatable bool 
 ---@field repeatableClaimCount number 
 ---@field monthsRequired number 
 ---@field monthCost number 
 ---@field availableInMonths number 
----@field iconID number 
+---@field iconID fileID 
 local RafReward = {}
 
 ---@class RafSystemInfo
@@ -157,4 +164,13 @@ local RafSystemInfo = {}
 ---@class RafTitleInfo
 ---@field titleMaskID number 
 local RafTitleInfo = {}
+
+---@class RafVersionInfo
+---@field rafVersion RecruitAFriendRewardsVersion 
+---@field monthCount RafMonthCount 
+---@field rewards table 
+---@field nextReward RafReward|nil 
+---@field numAffordableRewards number 
+---@field numRecruits number 
+local RafVersionInfo = {}
 

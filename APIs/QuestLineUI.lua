@@ -28,8 +28,8 @@ QuestLineFloorLocation.Below = 1
 QuestLineFloorLocation.Same = 2
 
 ---@class QuestLineInfo
----@field questLineName string 
----@field questName string 
+---@field questLineName cstring 
+---@field questName cstring 
 ---@field questLineID number 
 ---@field questID number 
 ---@field x number 

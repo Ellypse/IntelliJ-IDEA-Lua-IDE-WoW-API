@@ -2,29 +2,29 @@
 function ClearAllPoints() end
 
 
----@return FramePoint, table, number, number relativePoint, relativeTo, offsetX, offsetY
+---@return FramePoint, ScriptRegion, uiUnit, uiUnit relativePoint, relativeTo, offsetX, offsetY
 function GetEndPoint() end
 
 
----@return FramePoint, table, number, number relativePoint, relativeTo, offsetX, offsetY
+---@return FramePoint, ScriptRegion, uiUnit, uiUnit relativePoint, relativeTo, offsetX, offsetY
 function GetStartPoint() end
 
 
----@return number thickness
+---@return uiUnit thickness
 function GetThickness() end
 
 ---@param relativePoint FramePoint 
----@param relativeTo table 
----@param offsetX number 
----@param offsetY number 
+---@param relativeTo ScriptRegion 
+---@param offsetX uiUnit 
+---@param offsetY uiUnit 
 function SetEndPoint(relativePoint, relativeTo, offsetX, offsetY) end
 
 ---@param relativePoint FramePoint 
----@param relativeTo table 
----@param offsetX number 
----@param offsetY number 
+---@param relativeTo ScriptRegion 
+---@param offsetX uiUnit 
+---@param offsetY uiUnit 
 function SetStartPoint(relativePoint, relativeTo, offsetX, offsetY) end
 
----@param thickness number 
+---@param thickness uiUnit 
 function SetThickness(thickness) end
 

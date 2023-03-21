@@ -5,27 +5,27 @@ C_Transmog = {}
 ---@return boolean requestSent
 function C_Transmog.ApplyAllPending(currentSpecOnly) end
 
----@param slotID number 
+---@param slotID luaIndex 
 ---@return boolean canHaveSecondaryAppearance
 function C_Transmog.CanHaveSecondaryAppearanceForSlotID(slotID) end
 
----@param itemInfo string 
----@return boolean, string|nil, boolean, string|nil canBeTransmogged, selfFailureReason, canTransmogOthers, othersFailureReason
+---@param itemInfo ItemInfo 
+---@return boolean, cstring|nil, boolean, cstring|nil canBeTransmogged, selfFailureReason, canTransmogOthers, othersFailureReason
 function C_Transmog.CanTransmogItem(itemInfo) end
 
----@param targetItemInfo string 
----@param sourceItemInfo string 
----@return boolean, string|nil canTransmog, failureReason
+---@param targetItemInfo ItemInfo 
+---@param sourceItemInfo ItemInfo 
+---@return boolean, cstring|nil canTransmog, failureReason
 function C_Transmog.CanTransmogItemWithItem(targetItemInfo, sourceItemInfo) end
 
 function C_Transmog.ClearAllPending() end
 
----@param transmogLocation table 
+---@param transmogLocation TransmogLocation 
 function C_Transmog.ClearPending(transmogLocation) end
 
 function C_Transmog.Close() end
 
----@param input string 
+---@param input cstring 
 ---@return number transmogIDList
 function C_Transmog.ExtractTransmogIDList(input) end
 
@@ -47,27 +47,27 @@ function C_Transmog.GetCreatureDisplayIDForSource(itemModifiedAppearanceID) end
 ---@return number|nil itemID
 function C_Transmog.GetItemIDForSource(itemModifiedAppearanceID) end
 
----@param transmogLocation table 
----@return table pendingInfo
+---@param transmogLocation TransmogLocation 
+---@return TransmogPendingInfo pendingInfo
 function C_Transmog.GetPending(transmogLocation) end
 
----@param transmogLocation table 
+---@param transmogLocation TransmogLocation 
 ---@return TransmogCollectionType categoryID
 function C_Transmog.GetSlotEffectiveCategory(transmogLocation) end
 
----@param inventoryType number 
----@return number slot
+---@param inventoryType luaIndex 
+---@return luaIndex slot
 function C_Transmog.GetSlotForInventoryType(inventoryType) end
 
----@param transmogLocation table 
----@return boolean, boolean, boolean, boolean, number, boolean, boolean, number|nil isTransmogrified, hasPending, isPendingCollected, canTransmogrify, cannotTransmogrifyReason, hasUndo, isHideVisual, texture
+---@param transmogLocation TransmogLocation 
+---@return boolean, boolean, boolean, boolean, number, boolean, boolean, fileID|nil isTransmogrified, hasPending, isPendingCollected, canTransmogrify, cannotTransmogrifyReason, hasUndo, isHideVisual, texture
 function C_Transmog.GetSlotInfo(transmogLocation) end
 
----@param transmogLocation table 
----@return number, string errorCode, errorString
+---@param transmogLocation TransmogLocation 
+---@return number, cstring errorCode, errorString
 function C_Transmog.GetSlotUseError(transmogLocation) end
 
----@param transmogLocation table 
+---@param transmogLocation TransmogLocation 
 ---@return number, number, number, number, number, number, boolean, boolean, number baseSourceID, baseVisualID, appliedSourceID, appliedVisualID, pendingSourceID, pendingVisualID, hasUndo, isHideVisual, itemSubclass
 function C_Transmog.GetSlotVisualInfo(transmogLocation) end
 
@@ -75,15 +75,15 @@ function C_Transmog.GetSlotVisualInfo(transmogLocation) end
 function C_Transmog.IsAtTransmogNPC() end
 
 --- Returns true if the only pending for the location's slot is a ToggleOff for the secondary appearance.
----@param transmogLocation table 
+---@param transmogLocation TransmogLocation 
 ---@return boolean isBeingCollapsed
 function C_Transmog.IsSlotBeingCollapsed(transmogLocation) end
 
 ---@param outfitID number 
 function C_Transmog.LoadOutfit(outfitID) end
 
----@param transmogLocation table 
----@param pendingInfo table 
+---@param transmogLocation TransmogLocation 
+---@param pendingInfo TransmogPendingInfo 
 function C_Transmog.SetPending(transmogLocation, pendingInfo) end
 
 ---@class TransmogPendingType
@@ -106,7 +106,7 @@ local TransmogApplyWarningInfo = {}
 ---@field cannotTransmogrifyReason number 
 ---@field hasUndo bool 
 ---@field isHideVisual bool 
----@field texture number|nil 
+---@field texture fileID|nil 
 local TransmogSlotInfo = {}
 
 ---@class TransmogSlotVisualInfo
