@@ -22,7 +22,6 @@ function C_PlayerInfo.GetRace(playerLocation) end
 function C_PlayerInfo.GetSex(playerLocation) end
 
 ---@param playerLocation PlayerLocation @ [OPTIONAL]
----@overload fun()
 ---@return boolean|nil isConnected
 function C_PlayerInfo.IsConnected(playerLocation) end
 

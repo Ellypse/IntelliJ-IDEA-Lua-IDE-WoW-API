@@ -35,41 +35,66 @@ function C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID) end
 ---@return ModelSceneType, number, number, number modelSceneType, modelCameraIDs, modelActorsIDs, flags
 function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
----@class ItemTryOnReason
-local ItemTryOnReason = {}
-ItemTryOnReason.Success = 0
-ItemTryOnReason.WrongRace = 1
-ItemTryOnReason.NotEquippable = 2
-ItemTryOnReason.DataPending = 3
+---@class Enum.ItemTryOnReason
+local Enum.ItemTryOnReason = {}
+---@field Success ItemTryOnReason 
+Enum.ItemTryOnReason.Success = 0
+---@field WrongRace ItemTryOnReason 
+Enum.ItemTryOnReason.WrongRace = 1
+---@field NotEquippable ItemTryOnReason 
+Enum.ItemTryOnReason.NotEquippable = 2
+---@field DataPending ItemTryOnReason 
+Enum.ItemTryOnReason.DataPending = 3
 
----@class ModelSceneSetting
-local ModelSceneSetting = {}
-ModelSceneSetting.AlignLightToOrbitDelta = 1
+---@class Enum.ModelSceneSetting
+local Enum.ModelSceneSetting = {}
+---@field AlignLightToOrbitDelta ModelSceneSetting 
+Enum.ModelSceneSetting.AlignLightToOrbitDelta = 1
 
----@class ModelSceneType
-local ModelSceneType = {}
-ModelSceneType.MountJournal = 0
-ModelSceneType.PetJournalCard = 1
-ModelSceneType.ShopCard = 2
-ModelSceneType.EncounterJournal = 3
-ModelSceneType.PetJournalLoadout = 4
-ModelSceneType.ArtifactTier2 = 5
-ModelSceneType.ArtifactTier2ForgingScene = 6
-ModelSceneType.ArtifactTier2SlamEffect = 7
-ModelSceneType.CommentatorVictoryFanfare = 8
-ModelSceneType.ArtifactRelicTalentEffect = 9
-ModelSceneType.PvPWarModeOrb = 10
-ModelSceneType.PvPWarModeFire = 11
-ModelSceneType.PartyPose = 12
-ModelSceneType.AzeriteItemLevelUpToast = 13
-ModelSceneType.AzeritePowers = 14
-ModelSceneType.AzeriteRewardGlow = 15
-ModelSceneType.HeartOfAzeroth = 16
-ModelSceneType.WorldMapThreat = 17
-ModelSceneType.Soulbinds = 18
-ModelSceneType.JailersTowerAnimaGlow = 19
+---@class Enum.ModelSceneType
+local Enum.ModelSceneType = {}
+---@field MountJournal ModelSceneType 
+Enum.ModelSceneType.MountJournal = 0
+---@field PetJournalCard ModelSceneType 
+Enum.ModelSceneType.PetJournalCard = 1
+---@field ShopCard ModelSceneType 
+Enum.ModelSceneType.ShopCard = 2
+---@field EncounterJournal ModelSceneType 
+Enum.ModelSceneType.EncounterJournal = 3
+---@field PetJournalLoadout ModelSceneType 
+Enum.ModelSceneType.PetJournalLoadout = 4
+---@field ArtifactTier2 ModelSceneType 
+Enum.ModelSceneType.ArtifactTier2 = 5
+---@field ArtifactTier2ForgingScene ModelSceneType 
+Enum.ModelSceneType.ArtifactTier2ForgingScene = 6
+---@field ArtifactTier2SlamEffect ModelSceneType 
+Enum.ModelSceneType.ArtifactTier2SlamEffect = 7
+---@field CommentatorVictoryFanfare ModelSceneType 
+Enum.ModelSceneType.CommentatorVictoryFanfare = 8
+---@field ArtifactRelicTalentEffect ModelSceneType 
+Enum.ModelSceneType.ArtifactRelicTalentEffect = 9
+---@field PvPWarModeOrb ModelSceneType 
+Enum.ModelSceneType.PvPWarModeOrb = 10
+---@field PvPWarModeFire ModelSceneType 
+Enum.ModelSceneType.PvPWarModeFire = 11
+---@field PartyPose ModelSceneType 
+Enum.ModelSceneType.PartyPose = 12
+---@field AzeriteItemLevelUpToast ModelSceneType 
+Enum.ModelSceneType.AzeriteItemLevelUpToast = 13
+---@field AzeritePowers ModelSceneType 
+Enum.ModelSceneType.AzeritePowers = 14
+---@field AzeriteRewardGlow ModelSceneType 
+Enum.ModelSceneType.AzeriteRewardGlow = 15
+---@field HeartOfAzeroth ModelSceneType 
+Enum.ModelSceneType.HeartOfAzeroth = 16
+---@field WorldMapThreat ModelSceneType 
+Enum.ModelSceneType.WorldMapThreat = 17
+---@field Soulbinds ModelSceneType 
+Enum.ModelSceneType.Soulbinds = 18
+---@field JailersTowerAnimaGlow ModelSceneType 
+Enum.ModelSceneType.JailersTowerAnimaGlow = 19
 
----@class UIModelSceneActorDisplayInfo
+---@type UIModelSceneActorDisplayInfo
 ---@field animation number 
 ---@field animationVariation number 
 ---@field animSpeed number 
@@ -77,9 +102,9 @@ ModelSceneType.JailersTowerAnimaGlow = 19
 ---@field spellVisualKitID number|nil 
 ---@field alpha number 
 ---@field scale number 
-local UIModelSceneActorDisplayInfo = {}
+UIModelSceneActorDisplayInfo = {}
 
----@class UIModelSceneActorInfo
+---@type UIModelSceneActorInfo
 ---@field modelActorID number 
 ---@field scriptTag cstring 
 ---@field position vector3 
@@ -91,9 +116,9 @@ local UIModelSceneActorDisplayInfo = {}
 ---@field useCenterForOriginY bool 
 ---@field useCenterForOriginZ bool 
 ---@field modelActorDisplayID number|nil 
-local UIModelSceneActorInfo = {}
+UIModelSceneActorInfo = {}
 
----@class UIModelSceneCameraInfo
+---@type UIModelSceneCameraInfo
 ---@field modelSceneCameraID number 
 ---@field scriptTag cstring 
 ---@field cameraType cstring 
@@ -109,5 +134,5 @@ local UIModelSceneActorInfo = {}
 ---@field zoomedPitchOffset number 
 ---@field zoomedRollOffset number 
 ---@field flags ModelSceneSetting 
-local UIModelSceneCameraInfo = {}
+UIModelSceneCameraInfo = {}
 

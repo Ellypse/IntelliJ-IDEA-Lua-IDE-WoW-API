@@ -157,25 +157,32 @@ function C_MountJournal.SetTypeFilter(filterIndex, isChecked) end
 ---@param mountID number 
 function C_MountJournal.SummonByID(mountID) end
 
----@class MountType
-local MountType = {}
-MountType.Ground = 0
-MountType.Flying = 1
-MountType.Aquatic = 2
-MountType.Dragonriding = 3
+---@class Enum.MountType
+local Enum.MountType = {}
+---@field Ground MountType 
+Enum.MountType.Ground = 0
+---@field Flying MountType 
+Enum.MountType.Flying = 1
+---@field Aquatic MountType 
+Enum.MountType.Aquatic = 2
+---@field Dragonriding MountType 
+Enum.MountType.Dragonriding = 3
 
----@class MountTypeFlag
-local MountTypeFlag = {}
-MountTypeFlag.IsFlyingMount = 1
-MountTypeFlag.IsAquaticMount = 2
-MountTypeFlag.IsDragonRidingMount = 4
+---@class Enum.MountTypeFlag
+local Enum.MountTypeFlag = {}
+---@field IsFlyingMount MountTypeFlag 
+Enum.MountTypeFlag.IsFlyingMount = 1
+---@field IsAquaticMount MountTypeFlag 
+Enum.MountTypeFlag.IsAquaticMount = 2
+---@field IsDragonRidingMount MountTypeFlag 
+Enum.MountTypeFlag.IsDragonRidingMount = 4
 
----@class MountCreatureDisplayInfo
+---@type MountCreatureDisplayInfo
 ---@field creatureDisplayID number 
 ---@field isVisible bool 
-local MountCreatureDisplayInfo = {}
+MountCreatureDisplayInfo = {}
 
----@class MountInfo
+---@type MountInfo
 ---@field name cstring 
 ---@field spellID number 
 ---@field icon fileID 
@@ -189,9 +196,9 @@ local MountCreatureDisplayInfo = {}
 ---@field isCollected bool 
 ---@field mountID number 
 ---@field isForDragonriding bool 
-local MountInfo = {}
+MountInfo = {}
 
----@class MountInfoExtra
+---@type MountInfoExtra
 ---@field creatureDisplayInfoID number|nil 
 ---@field description cstring 
 ---@field source cstring 
@@ -201,5 +208,5 @@ local MountInfo = {}
 ---@field animID number 
 ---@field spellVisualKitID number 
 ---@field disablePlayerMountPreview bool 
-local MountInfoExtra = {}
+MountInfoExtra = {}
 

@@ -50,6 +50,5 @@ function SetScale(scale) end
 ---@param colorG number 
 ---@param colorB number 
 ---@param a SingleColorValue @ [OPTIONAL]
----@overload fun(colorR:number, colorG:number, colorB:number)
 function SetVertexColor(colorR, colorG, colorB, a) end
 

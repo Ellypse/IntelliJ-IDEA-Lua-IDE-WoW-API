@@ -42,11 +42,11 @@ function C_PaperDollInfo.OffhandHasShield() end
 ---@return boolean offhandHasWeapon
 function C_PaperDollInfo.OffhandHasWeapon() end
 
----@class InspectPVPData
+---@type InspectPVPData
 ---@field rating number 
 ---@field gamesWon number 
 ---@field gamesPlayed number 
 ---@field roundsWon number 
 ---@field roundsPlayed number 
-local InspectPVPData = {}
+InspectPVPData = {}
 

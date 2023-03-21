@@ -17,48 +17,75 @@ function C_Console.PrintAllMatchingCommands(partialCommandText) end
 ---@param fontHeightInPixels number 
 function C_Console.SetFontHeight(fontHeightInPixels) end
 
----@class ConsoleCategory
-local ConsoleCategory = {}
-ConsoleCategory.Debug = 0
-ConsoleCategory.Graphics = 1
-ConsoleCategory.Console = 2
-ConsoleCategory.Combat = 3
-ConsoleCategory.Game = 4
-ConsoleCategory.Default = 5
-ConsoleCategory.Net = 6
-ConsoleCategory.Sound = 7
-ConsoleCategory.Gm = 8
-ConsoleCategory.Reveal = 9
-ConsoleCategory.None = 10
+---@class Enum.ConsoleCategory
+local Enum.ConsoleCategory = {}
+---@field Debug ConsoleCategory 
+Enum.ConsoleCategory.Debug = 0
+---@field Graphics ConsoleCategory 
+Enum.ConsoleCategory.Graphics = 1
+---@field Console ConsoleCategory 
+Enum.ConsoleCategory.Console = 2
+---@field Combat ConsoleCategory 
+Enum.ConsoleCategory.Combat = 3
+---@field Game ConsoleCategory 
+Enum.ConsoleCategory.Game = 4
+---@field Default ConsoleCategory 
+Enum.ConsoleCategory.Default = 5
+---@field Net ConsoleCategory 
+Enum.ConsoleCategory.Net = 6
+---@field Sound ConsoleCategory 
+Enum.ConsoleCategory.Sound = 7
+---@field Gm ConsoleCategory 
+Enum.ConsoleCategory.Gm = 8
+---@field Reveal ConsoleCategory 
+Enum.ConsoleCategory.Reveal = 9
+---@field None ConsoleCategory 
+Enum.ConsoleCategory.None = 10
 
----@class ConsoleColorType
-local ConsoleColorType = {}
-ConsoleColorType.DefaultColor = 0
-ConsoleColorType.InputColor = 1
-ConsoleColorType.EchoColor = 2
-ConsoleColorType.ErrorColor = 3
-ConsoleColorType.WarningColor = 4
-ConsoleColorType.GlobalColor = 5
-ConsoleColorType.AdminColor = 6
-ConsoleColorType.HighlightColor = 7
-ConsoleColorType.BackgroundColor = 8
-ConsoleColorType.ClickbufferColor = 9
-ConsoleColorType.PrivateColor = 10
-ConsoleColorType.DefaultGreen = 11
+---@class Enum.ConsoleColorType
+local Enum.ConsoleColorType = {}
+---@field DefaultColor ConsoleColorType 
+Enum.ConsoleColorType.DefaultColor = 0
+---@field InputColor ConsoleColorType 
+Enum.ConsoleColorType.InputColor = 1
+---@field EchoColor ConsoleColorType 
+Enum.ConsoleColorType.EchoColor = 2
+---@field ErrorColor ConsoleColorType 
+Enum.ConsoleColorType.ErrorColor = 3
+---@field WarningColor ConsoleColorType 
+Enum.ConsoleColorType.WarningColor = 4
+---@field GlobalColor ConsoleColorType 
+Enum.ConsoleColorType.GlobalColor = 5
+---@field AdminColor ConsoleColorType 
+Enum.ConsoleColorType.AdminColor = 6
+---@field HighlightColor ConsoleColorType 
+Enum.ConsoleColorType.HighlightColor = 7
+---@field BackgroundColor ConsoleColorType 
+Enum.ConsoleColorType.BackgroundColor = 8
+---@field ClickbufferColor ConsoleColorType 
+Enum.ConsoleColorType.ClickbufferColor = 9
+---@field PrivateColor ConsoleColorType 
+Enum.ConsoleColorType.PrivateColor = 10
+---@field DefaultGreen ConsoleColorType 
+Enum.ConsoleColorType.DefaultGreen = 11
 
----@class ConsoleCommandType
-local ConsoleCommandType = {}
-ConsoleCommandType.Cvar = 0
-ConsoleCommandType.Command = 1
-ConsoleCommandType.Macro = 2
-ConsoleCommandType.Script = 3
+---@class Enum.ConsoleCommandType
+local Enum.ConsoleCommandType = {}
+---@field Cvar ConsoleCommandType 
+Enum.ConsoleCommandType.Cvar = 0
+---@field Command ConsoleCommandType 
+Enum.ConsoleCommandType.Command = 1
+---@field Macro ConsoleCommandType 
+Enum.ConsoleCommandType.Macro = 2
+---@field Script ConsoleCommandType 
+Enum.ConsoleCommandType.Script = 3
 
----@class ConsoleCommandInfo
+---@type ConsoleCommandInfo
 ---@field command cstring 
 ---@field help cstring 
 ---@field category ConsoleCategory 
 ---@field commandType ConsoleCommandType 
 ---@field scriptContents cstring 
 ---@field scriptParameters cstring 
-local ConsoleCommandInfo = {}
+ConsoleCommandInfo = {}
 

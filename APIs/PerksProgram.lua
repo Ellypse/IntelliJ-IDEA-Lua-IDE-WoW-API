@@ -61,7 +61,7 @@ function C_PerksProgram.ResetHeldItemDragAndDrop() end
 
 function C_PerksProgram.SetFrozenPerksVendorItem() end
 
----@class ModelSceneActorData
+---@type ModelSceneActorData
 ---@field actorID number|nil 
 ---@field scriptTag string|nil 
 ---@field posX number|nil 
@@ -71,9 +71,9 @@ function C_PerksProgram.SetFrozenPerksVendorItem() end
 ---@field pitch number|nil 
 ---@field roll number|nil 
 ---@field normalizedScale number|nil 
-local ModelSceneActorData = {}
+ModelSceneActorData = {}
 
----@class ModelSceneCameraData
+---@type ModelSceneCameraData
 ---@field cameraID number|nil 
 ---@field scriptTag string|nil 
 ---@field targetX number|nil 
@@ -85,28 +85,28 @@ local ModelSceneActorData = {}
 ---@field defaultZoom number|nil 
 ---@field zoomMin number|nil 
 ---@field zoomMax number|nil 
-local ModelSceneCameraData = {}
+ModelSceneCameraData = {}
 
----@class PerksProgramItemDisplayInfo
+---@type PerksProgramItemDisplayInfo
 ---@field overrideModelSceneID number|nil 
-local PerksProgramItemDisplayInfo = {}
+PerksProgramItemDisplayInfo = {}
 
----@class PerksProgramPendingChestRewards
+---@type PerksProgramPendingChestRewards
 ---@field rewardTypeID number 
 ---@field perksVendorItemID number|nil 
 ---@field rewardAmount number 
 ---@field monthRewarded string|nil 
 ---@field activityMonthID number 
 ---@field activityThresholdID number 
-local PerksProgramPendingChestRewards = {}
+PerksProgramPendingChestRewards = {}
 
----@class PerksVendorCategoryInfo
+---@type PerksVendorCategoryInfo
 ---@field ID number 
 ---@field displayName cstring 
 ---@field defaultUIModelSceneID number 
-local PerksVendorCategoryInfo = {}
+PerksVendorCategoryInfo = {}
 
----@class PerksVendorItemInfo
+---@type PerksVendorItemInfo
 ---@field name string 
 ---@field perksVendorCategoryID number 
 ---@field description string 
@@ -121,5 +121,5 @@ local PerksVendorCategoryInfo = {}
 ---@field speciesID number 
 ---@field transmogSetID number 
 ---@field itemModifiedAppearanceID number 
-local PerksVendorItemInfo = {}
+PerksVendorItemInfo = {}
 

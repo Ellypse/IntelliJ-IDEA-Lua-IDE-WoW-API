@@ -9,12 +9,14 @@ function C_SplashScreen.CanViewSplashScreen() end
 ---@param fromGameMenu boolean 
 function C_SplashScreen.RequestLatestSplashScreen(fromGameMenu) end
 
----@class SplashScreenType
-local SplashScreenType = {}
-SplashScreenType.WhatsNew = 0
-SplashScreenType.SeasonRollOver = 1
+---@class Enum.SplashScreenType
+local Enum.SplashScreenType = {}
+---@field WhatsNew SplashScreenType 
+Enum.SplashScreenType.WhatsNew = 0
+---@field SeasonRollOver SplashScreenType 
+Enum.SplashScreenType.SeasonRollOver = 1
 
----@class SplashScreenInfo
+---@type SplashScreenInfo
 ---@field textureKit textureKit 
 ---@field minDisplayCharLevel number 
 ---@field minQuestDisplayLevel number 
@@ -30,5 +32,5 @@ SplashScreenType.SeasonRollOver = 1
 ---@field rightFeatureDesc string 
 ---@field shouldShowQuest bool 
 ---@field screenType SplashScreenType 
-local SplashScreenInfo = {}
+SplashScreenInfo = {}
 

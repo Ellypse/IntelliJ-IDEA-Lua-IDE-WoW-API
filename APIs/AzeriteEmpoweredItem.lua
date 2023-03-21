@@ -15,7 +15,6 @@ function C_AzeriteEmpoweredItem.GetAllTierInfo(azeriteEmpoweredItemLocation) end
 
 ---@param itemInfo ItemInfo 
 ---@param classID number @ Specify a class ID to get tier information about that class, otherwise uses the player's class if left nil [OPTIONAL]
----@overload fun(itemInfo:ItemInfo)
 ---@return AzeriteEmpoweredItemTierInfo tierInfo
 function C_AzeriteEmpoweredItem.GetAllTierInfoByItemID(itemInfo, classID) end
 
@@ -54,7 +53,6 @@ function C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(itemInfo) end
 
 ---@param itemInfo ItemInfo 
 ---@param classID number @ Specify a class ID to determine if its displayable for that class, otherwise uses the player's class if left nil [OPTIONAL]
----@overload fun(itemInfo:ItemInfo)
 ---@return boolean isAzeritePreviewSourceDisplayable
 function C_AzeriteEmpoweredItem.IsAzeritePreviewSourceDisplayable(itemInfo, classID) end
 
@@ -79,29 +77,32 @@ function C_AzeriteEmpoweredItem.SelectPower(azeriteEmpoweredItemLocation, powerI
 ---@param azeriteEmpoweredItemLocation AzeriteEmpoweredItemLocation 
 function C_AzeriteEmpoweredItem.SetHasBeenViewed(azeriteEmpoweredItemLocation) end
 
----@class AzeritePowerLevel
-local AzeritePowerLevel = {}
-AzeritePowerLevel.Base = 0
-AzeritePowerLevel.Upgraded = 1
-AzeritePowerLevel.Downgraded = 2
+---@class Enum.AzeritePowerLevel
+local Enum.AzeritePowerLevel = {}
+---@field Base AzeritePowerLevel 
+Enum.AzeritePowerLevel.Base = 0
+---@field Upgraded AzeritePowerLevel 
+Enum.AzeritePowerLevel.Upgraded = 1
+---@field Downgraded AzeritePowerLevel 
+Enum.AzeritePowerLevel.Downgraded = 2
 
----@class AzeriteEmpoweredItemPowerInfo
+---@type AzeriteEmpoweredItemPowerInfo
 ---@field azeritePowerID number 
 ---@field spellID number 
-local AzeriteEmpoweredItemPowerInfo = {}
+AzeriteEmpoweredItemPowerInfo = {}
 
----@class AzeriteEmpoweredItemPowerText
+---@type AzeriteEmpoweredItemPowerText
 ---@field name string 
 ---@field description string 
-local AzeriteEmpoweredItemPowerText = {}
+AzeriteEmpoweredItemPowerText = {}
 
----@class AzeriteEmpoweredItemTierInfo
+---@type AzeriteEmpoweredItemTierInfo
 ---@field azeritePowerIDs table 
 ---@field unlockLevel number 
-local AzeriteEmpoweredItemTierInfo = {}
+AzeriteEmpoweredItemTierInfo = {}
 
----@class AzeriteSpecInfo
+---@type AzeriteSpecInfo
 ---@field classID number 
 ---@field specID number 
-local AzeriteSpecInfo = {}
+AzeriteSpecInfo = {}
 

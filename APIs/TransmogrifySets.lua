@@ -111,7 +111,7 @@ function C_TransmogSets.SetHasNewSourcesForSlot(transmogSetID, slot) end
 ---@param isFavorite boolean 
 function C_TransmogSets.SetIsFavorite(transmogSetID, isFavorite) end
 
----@class TransmogSetInfo
+---@type TransmogSetInfo
 ---@field setID number 
 ---@field name string 
 ---@field baseSetID number|nil 
@@ -126,10 +126,10 @@ function C_TransmogSets.SetIsFavorite(transmogSetID, isFavorite) end
 ---@field collected bool 
 ---@field favorite bool 
 ---@field limitedTimeSet bool 
-local TransmogSetInfo = {}
+TransmogSetInfo = {}
 
----@class TransmogSetPrimaryAppearanceInfo
+---@type TransmogSetPrimaryAppearanceInfo
 ---@field appearanceID number 
 ---@field collected bool 
-local TransmogSetPrimaryAppearanceInfo = {}
+TransmogSetPrimaryAppearanceInfo = {}
 

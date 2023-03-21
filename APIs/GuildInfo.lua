@@ -19,7 +19,6 @@ function C_GuildInfo.GetGuildNewsInfo(index) end
 function C_GuildInfo.GetGuildRankOrder(guid) end
 
 ---@param unit UnitToken @ [OPTIONAL]
----@overload fun()
 ---@return GuildTabardInfo|nil tabardInfo
 function C_GuildInfo.GetGuildTabardInfo(unit) end
 
@@ -44,7 +43,6 @@ function C_GuildInfo.QueryGuildMemberRecipes(guildMemberGUID, skillLineID) end
 ---@param skillLineID number 
 ---@param recipeSpellID number 
 ---@param recipeLevel luaIndex @ [OPTIONAL]
----@overload fun(skillLineID:number, recipeSpellID:number)
 ---@return number updatedRecipeSpellID
 function C_GuildInfo.QueryGuildMembersForRecipe(skillLineID, recipeSpellID, recipeLevel) end
 
@@ -60,7 +58,7 @@ function C_GuildInfo.SetGuildRankOrder(guid, rankOrder) end
 ---@param isPublic boolean 
 function C_GuildInfo.SetNote(guid, note, isPublic) end
 
----@class GuildNewsInfo
+---@type GuildNewsInfo
 ---@field isSticky bool 
 ---@field isHeader bool 
 ---@field newsType number 
@@ -73,5 +71,5 @@ function C_GuildInfo.SetNote(guid, note, isPublic) end
 ---@field month number 
 ---@field year number 
 ---@field guildMembersPresent number 
-local GuildNewsInfo = {}
+GuildNewsInfo = {}
 

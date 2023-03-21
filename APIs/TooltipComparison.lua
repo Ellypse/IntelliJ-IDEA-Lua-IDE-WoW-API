@@ -5,8 +5,6 @@ C_TooltipComparison = {}
 ---@param equippedItem TooltipComparisonItem 
 ---@param pairedItem TooltipComparisonItem @ [OPTIONAL]
 ---@param addPairedStats boolean @ Whether the paired item's stats are added or subtracted [OPTIONAL]
----@overload fun(comparisonItem:TooltipComparisonItem, equippedItem:TooltipComparisonItem, addPairedStats:bool)
----@overload fun(comparisonItem:TooltipComparisonItem, equippedItem:TooltipComparisonItem)
 ---@return string lines
 function C_TooltipComparison.GetItemComparisonDelta(comparisonItem, equippedItem, pairedItem, addPairedStats) end
 
@@ -14,16 +12,20 @@ function C_TooltipComparison.GetItemComparisonDelta(comparisonItem, equippedItem
 ---@return TooltipItemComparisonInfo info
 function C_TooltipComparison.GetItemComparisonInfo(comparisonItem) end
 
----@class TooltipComparisonMethod
-local TooltipComparisonMethod = {}
-TooltipComparisonMethod.Single = 0
-TooltipComparisonMethod.WithBothHands = 1
-TooltipComparisonMethod.WithBagMainHandItem = 2
-TooltipComparisonMethod.WithBagOffHandItem = 3
+---@class Enum.TooltipComparisonMethod
+local Enum.TooltipComparisonMethod = {}
+---@field Single TooltipComparisonMethod 
+Enum.TooltipComparisonMethod.Single = 0
+---@field WithBothHands TooltipComparisonMethod 
+Enum.TooltipComparisonMethod.WithBothHands = 1
+---@field WithBagMainHandItem TooltipComparisonMethod 
+Enum.TooltipComparisonMethod.WithBagMainHandItem = 2
+---@field WithBagOffHandItem TooltipComparisonMethod 
+Enum.TooltipComparisonMethod.WithBagOffHandItem = 3
 
----@class TooltipItemComparisonInfo
+---@type TooltipItemComparisonInfo
 ---@field method TooltipComparisonMethod 
 ---@field item TooltipComparisonItem 
 ---@field additionalItems table 
-local TooltipItemComparisonInfo = {}
+TooltipItemComparisonInfo = {}
 

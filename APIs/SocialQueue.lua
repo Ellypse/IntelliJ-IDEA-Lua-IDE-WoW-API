@@ -36,7 +36,7 @@ function C_SocialQueue.RequestToJoin(groupGUID, applyAsTank, applyAsHealer, appl
 ---@param priority number 
 function C_SocialQueue.SignalToastDisplayed(groupGUID, priority) end
 
----@class SocialQueueConfig
+---@type SocialQueueConfig
 ---@field TOASTS_DISABLED bool 
 ---@field TOAST_DURATION number 
 ---@field DELAY_DURATION number 
@@ -60,9 +60,9 @@ function C_SocialQueue.SignalToastDisplayed(groupGUID, priority) end
 ---@field THROTTLE_RF_ILVL_SCALING_ABOVE number 
 ---@field THROTTLE_DF_MAX_ITEM_LEVEL number 
 ---@field THROTTLE_DF_BEST_PRIORITY number 
-local SocialQueueConfig = {}
+SocialQueueConfig = {}
 
----@class SocialQueueGroupInfo
+---@type SocialQueueGroupInfo
 ---@field canJoin bool 
 ---@field numQueues number 
 ---@field needTank bool 
@@ -71,9 +71,9 @@ local SocialQueueConfig = {}
 ---@field isSoloQueueParty bool 
 ---@field questSessionActive bool 
 ---@field leaderGUID WOWGUID 
-local SocialQueueGroupInfo = {}
+SocialQueueGroupInfo = {}
 
----@class SocialQueueGroupQueueInfo
+---@type SocialQueueGroupQueueInfo
 ---@field clientID number 
 ---@field eligible bool 
 ---@field needTank bool 
@@ -81,10 +81,10 @@ local SocialQueueGroupInfo = {}
 ---@field needDamage bool 
 ---@field isAutoAccept bool 
 ---@field queueData QueueSpecificInfo 
-local SocialQueueGroupQueueInfo = {}
+SocialQueueGroupQueueInfo = {}
 
----@class SocialQueuePlayerInfo
+---@type SocialQueuePlayerInfo
 ---@field guid WOWGUID 
 ---@field clubId ClubId|nil 
-local SocialQueuePlayerInfo = {}
+SocialQueuePlayerInfo = {}
 

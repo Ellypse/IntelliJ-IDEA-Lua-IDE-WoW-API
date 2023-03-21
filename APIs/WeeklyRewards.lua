@@ -13,7 +13,6 @@ function C_WeeklyRewards.ClaimReward(id) end
 function C_WeeklyRewards.CloseInteraction() end
 
 ---@param type WeeklyRewardChestThresholdType @ [OPTIONAL]
----@overload fun()
 ---@return WeeklyRewardActivityInfo activities
 function C_WeeklyRewards.GetActivities(type) end
 
@@ -60,29 +59,32 @@ function C_WeeklyRewards.ShouldShowFinalRetirementMessage() end
 ---@return boolean showRetirementMessage
 function C_WeeklyRewards.ShouldShowRetirementMessage() end
 
----@class ConquestProgressBarDisplayType
-local ConquestProgressBarDisplayType = {}
-ConquestProgressBarDisplayType.FirstChest = 0
-ConquestProgressBarDisplayType.AdditionalChest = 1
-ConquestProgressBarDisplayType.Seasonal = 2
+---@class Enum.ConquestProgressBarDisplayType
+local Enum.ConquestProgressBarDisplayType = {}
+---@field FirstChest ConquestProgressBarDisplayType 
+Enum.ConquestProgressBarDisplayType.FirstChest = 0
+---@field AdditionalChest ConquestProgressBarDisplayType 
+Enum.ConquestProgressBarDisplayType.AdditionalChest = 1
+---@field Seasonal ConquestProgressBarDisplayType 
+Enum.ConquestProgressBarDisplayType.Seasonal = 2
 
----@class ConquestWeeklyProgress
+---@type ConquestWeeklyProgress
 ---@field progress number 
 ---@field maxProgress number 
 ---@field displayType ConquestProgressBarDisplayType 
 ---@field unlocksCompleted number 
 ---@field maxUnlocks number 
 ---@field sampleItemHyperlink string 
-local ConquestWeeklyProgress = {}
+ConquestWeeklyProgress = {}
 
----@class WeeklyRewardActivityEncounterInfo
+---@type WeeklyRewardActivityEncounterInfo
 ---@field encounterID number 
 ---@field bestDifficulty number 
 ---@field uiOrder number 
 ---@field instanceID number 
-local WeeklyRewardActivityEncounterInfo = {}
+WeeklyRewardActivityEncounterInfo = {}
 
----@class WeeklyRewardActivityInfo
+---@type WeeklyRewardActivityInfo
 ---@field type WeeklyRewardChestThresholdType 
 ---@field index luaIndex 
 ---@field threshold number 
@@ -92,12 +94,12 @@ local WeeklyRewardActivityEncounterInfo = {}
 ---@field claimID number|nil 
 ---@field raidString cstring|nil 
 ---@field rewards table 
-local WeeklyRewardActivityInfo = {}
+WeeklyRewardActivityInfo = {}
 
----@class WeeklyRewardActivityRewardInfo
+---@type WeeklyRewardActivityRewardInfo
 ---@field type CachedRewardType 
 ---@field id number 
 ---@field quantity number 
 ---@field itemDBID WeeklyRewardItemDBID|nil 
-local WeeklyRewardActivityRewardInfo = {}
+WeeklyRewardActivityRewardInfo = {}
 

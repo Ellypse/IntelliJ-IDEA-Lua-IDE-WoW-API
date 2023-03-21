@@ -42,8 +42,8 @@ function C_QuestSession.SendSessionBeginResponse(beginSession) end
 ---@param superTrack boolean 
 function C_QuestSession.SetQuestIsSuperTracked(questID, superTrack) end
 
----@class QuestSessionPlayerDetails
+---@type QuestSessionPlayerDetails
 ---@field name string 
 ---@field guid WOWGUID 
-local QuestSessionPlayerDetails = {}
+QuestSessionPlayerDetails = {}
 

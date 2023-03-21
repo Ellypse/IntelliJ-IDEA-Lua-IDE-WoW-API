@@ -17,7 +17,7 @@ function C_VignetteInfo.GetVignettePosition(vignetteGUID, uiMapID) end
 ---@return WOWGUID vignetteGUIDs
 function C_VignetteInfo.GetVignettes() end
 
----@class VignetteInfo
+---@type VignetteInfo
 ---@field vignetteGUID WOWGUID 
 ---@field objectGUID WOWGUID 
 ---@field name cstring 
@@ -33,5 +33,5 @@ function C_VignetteInfo.GetVignettes() end
 ---@field type VignetteType 
 ---@field rewardQuestID number 
 ---@field widgetSetID number|nil 
-local VignetteInfo = {}
+VignetteInfo = {}
 

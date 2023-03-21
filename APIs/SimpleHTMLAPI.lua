@@ -76,7 +76,6 @@ function SetJustifyV(textType, justifyV) end
 ---@param colorG number 
 ---@param colorB number 
 ---@param a SingleColorValue @ [OPTIONAL]
----@overload fun(textType:HTMLTextType, colorR:number, colorG:number, colorB:number)
 function SetShadowColor(textType, colorR, colorG, colorB, a) end
 
 ---@param textType HTMLTextType 
@@ -97,6 +96,5 @@ function SetText(text, ignoreMarkup) end
 ---@param colorG number 
 ---@param colorB number 
 ---@param a SingleColorValue @ [OPTIONAL]
----@overload fun(textType:HTMLTextType, colorR:number, colorG:number, colorB:number)
 function SetTextColor(textType, colorR, colorG, colorB, a) end
 

@@ -70,22 +70,31 @@ function C_ContributionCollector.HasPendingContribution(contributionID) end
 ---@return boolean awaitingData
 function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 
----@class ContributionAppearanceFlags
-local ContributionAppearanceFlags = {}
-ContributionAppearanceFlags.TooltipUseTimeRemaining = 0
+---@class Enum.ContributionAppearanceFlags
+local Enum.ContributionAppearanceFlags = {}
+---@field TooltipUseTimeRemaining ContributionAppearanceFlags 
+Enum.ContributionAppearanceFlags.TooltipUseTimeRemaining = 0
 
----@class ContributionResult
-local ContributionResult = {}
-ContributionResult.Success = 0
-ContributionResult.MustBeNearNpc = 1
-ContributionResult.IncorrectState = 2
-ContributionResult.InvalidID = 3
-ContributionResult.QuestDataMissing = 4
-ContributionResult.FailedConditionCheck = 5
-ContributionResult.UnableToCompleteTurnIn = 6
-ContributionResult.InternalError = 7
+---@class Enum.ContributionResult
+local Enum.ContributionResult = {}
+---@field Success ContributionResult 
+Enum.ContributionResult.Success = 0
+---@field MustBeNearNpc ContributionResult 
+Enum.ContributionResult.MustBeNearNpc = 1
+---@field IncorrectState ContributionResult 
+Enum.ContributionResult.IncorrectState = 2
+---@field InvalidID ContributionResult 
+Enum.ContributionResult.InvalidID = 3
+---@field QuestDataMissing ContributionResult 
+Enum.ContributionResult.QuestDataMissing = 4
+---@field FailedConditionCheck ContributionResult 
+Enum.ContributionResult.FailedConditionCheck = 5
+---@field UnableToCompleteTurnIn ContributionResult 
+Enum.ContributionResult.UnableToCompleteTurnIn = 6
+---@field InternalError ContributionResult 
+Enum.ContributionResult.InternalError = 7
 
----@class ContributionAppearance
+---@type ContributionAppearance
 ---@field stateName cstring 
 ---@field stateColor colorRGB 
 ---@field tooltipLine cstring 
@@ -93,13 +102,13 @@ ContributionResult.InternalError = 7
 ---@field statusBarAtlas textureAtlas 
 ---@field borderAtlas textureAtlas 
 ---@field bannerAtlas textureAtlas 
-local ContributionAppearance = {}
+ContributionAppearance = {}
 
----@class ContributionMapInfo
+---@type ContributionMapInfo
 ---@field areaPoiID number 
 ---@field position vector2 
 ---@field name cstring 
 ---@field atlasName string 
 ---@field collectorCreatureID number 
-local ContributionMapInfo = {}
+ContributionMapInfo = {}
 

@@ -21,13 +21,16 @@ function C_QuestLine.IsComplete(questLineID) end
 ---@param uiMapID number 
 function C_QuestLine.RequestQuestLinesForMap(uiMapID) end
 
----@class QuestLineFloorLocation
-local QuestLineFloorLocation = {}
-QuestLineFloorLocation.Above = 0
-QuestLineFloorLocation.Below = 1
-QuestLineFloorLocation.Same = 2
+---@class Enum.QuestLineFloorLocation
+local Enum.QuestLineFloorLocation = {}
+---@field Above QuestLineFloorLocation 
+Enum.QuestLineFloorLocation.Above = 0
+---@field Below QuestLineFloorLocation 
+Enum.QuestLineFloorLocation.Below = 1
+---@field Same QuestLineFloorLocation 
+Enum.QuestLineFloorLocation.Same = 2
 
----@class QuestLineInfo
+---@type QuestLineInfo
 ---@field questLineName cstring 
 ---@field questName cstring 
 ---@field questLineID number 
@@ -39,5 +42,5 @@ QuestLineFloorLocation.Same = 2
 ---@field isDaily bool 
 ---@field isCampaign bool 
 ---@field floorLocation QuestLineFloorLocation 
-local QuestLineInfo = {}
+QuestLineInfo = {}
 

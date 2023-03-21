@@ -4,11 +4,11 @@ C_ZoneAbility = {}
 ---@return ZoneAbilityInfo zoneAbilities
 function C_ZoneAbility.GetActiveAbilities() end
 
----@class ZoneAbilityInfo
+---@type ZoneAbilityInfo
 ---@field zoneAbilityID number 
 ---@field uiPriority number 
 ---@field spellID number 
 ---@field textureKit textureKit 
 ---@field tutorialText cstring|nil 
-local ZoneAbilityInfo = {}
+ZoneAbilityInfo = {}
 

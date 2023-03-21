@@ -92,7 +92,6 @@ function C_ChatInfo.IsPartyChannelType(channelType) end
 function C_ChatInfo.IsRegionalServiceAvailable() end
 
 ---@param chatLine number @ [OPTIONAL]
----@overload fun()
 ---@return boolean isValid
 function C_ChatInfo.IsValidChatLine(chatLine) end
 
@@ -104,8 +103,6 @@ function C_ChatInfo.RegisterAddonMessagePrefix(prefix) end
 ---@param input string 
 ---@param noIconReplacement boolean @ [OPTIONAL]
 ---@param noGroupReplacement boolean @ [OPTIONAL]
----@overload fun(input:string, noGroupReplacement:bool)
----@overload fun(input:string)
 ---@return string output
 function C_ChatInfo.ReplaceIconAndGroupExpressions(input, noIconReplacement, noGroupReplacement) end
 
@@ -119,8 +116,6 @@ function C_ChatInfo.ResetDefaultZoneChannels() end
 ---@param message cstring 
 ---@param chatType cstring @ ChatType, defaults to SLASH_CMD_PARTY. [OPTIONAL]
 ---@param target cstring @ Only applies for targeted channels [OPTIONAL]
----@overload fun(prefix:cstring, message:cstring, target:cstring)
----@overload fun(prefix:cstring, message:cstring)
 ---@return boolean success
 function C_ChatInfo.SendAddonMessage(prefix, message, chatType, target) end
 
@@ -129,8 +124,6 @@ function C_ChatInfo.SendAddonMessage(prefix, message, chatType, target) end
 ---@param message cstring 
 ---@param chatType cstring @ ChatType, defaults to SLASH_CMD_PARTY. [OPTIONAL]
 ---@param target cstring @ Only applies for targeted channels [OPTIONAL]
----@overload fun(prefix:cstring, message:cstring, target:cstring)
----@overload fun(prefix:cstring, message:cstring)
 ---@return boolean success
 function C_ChatInfo.SendAddonMessageLogged(prefix, message, chatType, target) end
 
@@ -141,10 +134,10 @@ function C_ChatInfo.SwapChatChannelsByChannelIndex(firstChannelIndex, secondChan
 ---@param chatLine number 
 function C_ChatInfo.UncensorChatLine(chatLine) end
 
----@class AddonMessageParams
+---@type AddonMessageParams
 ---@field prefix cstring 
 ---@field message cstring 
 ---@field chatType cstring|nil @ ChatType, defaults to SLASH_CMD_PARTY.
 ---@field target cstring|nil @ Only applies for targeted channels
-local AddonMessageParams = {}
+AddonMessageParams = {}
 

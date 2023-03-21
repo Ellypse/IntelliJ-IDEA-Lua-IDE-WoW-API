@@ -20,14 +20,18 @@ function C_PlayerChoice.RequestRerollPlayerChoice() end
 ---@param responseID number 
 function C_PlayerChoice.SendPlayerChoiceResponse(responseID) end
 
----@class PlayerChoiceRarity
-local PlayerChoiceRarity = {}
-PlayerChoiceRarity.Common = 0
-PlayerChoiceRarity.Uncommon = 1
-PlayerChoiceRarity.Rare = 2
-PlayerChoiceRarity.Epic = 3
+---@class Enum.PlayerChoiceRarity
+local Enum.PlayerChoiceRarity = {}
+---@field Common PlayerChoiceRarity 
+Enum.PlayerChoiceRarity.Common = 0
+---@field Uncommon PlayerChoiceRarity 
+Enum.PlayerChoiceRarity.Uncommon = 1
+---@field Rare PlayerChoiceRarity 
+Enum.PlayerChoiceRarity.Rare = 2
+---@field Epic PlayerChoiceRarity 
+Enum.PlayerChoiceRarity.Epic = 3
 
----@class PlayerChoiceInfo
+---@type PlayerChoiceInfo
 ---@field objectGUID WOWGUID 
 ---@field choiceID number 
 ---@field questionText string 
@@ -38,9 +42,9 @@ PlayerChoiceRarity.Epic = 3
 ---@field options table 
 ---@field soundKitID number|nil 
 ---@field closeUISoundKitID number|nil 
-local PlayerChoiceInfo = {}
+PlayerChoiceInfo = {}
 
----@class PlayerChoiceOptionButtonInfo
+---@type PlayerChoiceOptionButtonInfo
 ---@field id number 
 ---@field text string 
 ---@field disabled bool 
@@ -48,9 +52,9 @@ local PlayerChoiceInfo = {}
 ---@field tooltip string|nil 
 ---@field rewardQuestID number|nil 
 ---@field soundKitID number|nil 
-local PlayerChoiceOptionButtonInfo = {}
+PlayerChoiceOptionButtonInfo = {}
 
----@class PlayerChoiceOptionInfo
+---@type PlayerChoiceOptionInfo
 ---@field id number 
 ---@field description string 
 ---@field header string 
@@ -69,30 +73,30 @@ local PlayerChoiceOptionButtonInfo = {}
 ---@field typeArtID number|nil 
 ---@field headerIconAtlasElement string|nil 
 ---@field subHeader string|nil 
-local PlayerChoiceOptionInfo = {}
+PlayerChoiceOptionInfo = {}
 
----@class PlayerChoiceOptionRewardInfo
+---@type PlayerChoiceOptionRewardInfo
 ---@field currencyRewards table 
 ---@field itemRewards table 
 ---@field repRewards table 
-local PlayerChoiceOptionRewardInfo = {}
+PlayerChoiceOptionRewardInfo = {}
 
----@class PlayerChoiceRewardCurrencyInfo
+---@type PlayerChoiceRewardCurrencyInfo
 ---@field currencyId number 
 ---@field name string 
 ---@field currencyTexture number 
 ---@field quantity number 
 ---@field isCurrencyContainer bool 
-local PlayerChoiceRewardCurrencyInfo = {}
+PlayerChoiceRewardCurrencyInfo = {}
 
----@class PlayerChoiceRewardItemInfo
+---@type PlayerChoiceRewardItemInfo
 ---@field itemId number 
 ---@field name string 
 ---@field quantity number 
-local PlayerChoiceRewardItemInfo = {}
+PlayerChoiceRewardItemInfo = {}
 
----@class PlayerChoiceRewardReputationInfo
+---@type PlayerChoiceRewardReputationInfo
 ---@field factionId number 
 ---@field quantity number 
-local PlayerChoiceRewardReputationInfo = {}
+PlayerChoiceRewardReputationInfo = {}
 

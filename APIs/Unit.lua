@@ -37,7 +37,6 @@ function GetUnitPowerBarStringsByID(barID) end
 ---@param unitToken UnitToken 
 ---@param textureIndex luaIndex 
 ---@param timerIndex luaIndex @ [OPTIONAL]
----@overload fun(unitToken:UnitToken, textureIndex:luaIndex)
 ---@return fileID, number, number, number, number texture, colorR, colorG, colorB, colorA
 function GetUnitPowerBarTextureInfo(unitToken, textureIndex, timerIndex) end
 
@@ -70,8 +69,6 @@ function SetPortraitTextureFromCreatureDisplayID(textureObject, creatureDisplayI
 ---@param unit UnitToken 
 ---@param style CursorStyle @ [OPTIONAL]
 ---@param includeLowPriority boolean @ [OPTIONAL]
----@overload fun(textureObject:SimpleTexture, unit:UnitToken, includeLowPriority:bool)
----@overload fun(textureObject:SimpleTexture, unit:UnitToken)
 ---@return boolean hasCursor
 function SetUnitCursorTexture(textureObject, unit, style, includeLowPriority) end
 
@@ -174,63 +171,104 @@ function UnitTrialBankedLevels(unit) end
 ---@return number uiWidgetSet
 function UnitWidgetSet(unit) end
 
----@class PhaseReason
-local PhaseReason = {}
-PhaseReason.Phasing = 0
-PhaseReason.Sharding = 1
-PhaseReason.WarMode = 2
-PhaseReason.ChromieTime = 3
+---@class Enum.PhaseReason
+local Enum.PhaseReason = {}
+---@field Phasing PhaseReason 
+Enum.PhaseReason.Phasing = 0
+---@field Sharding PhaseReason 
+Enum.PhaseReason.Sharding = 1
+---@field WarMode PhaseReason 
+Enum.PhaseReason.WarMode = 2
+---@field ChromieTime PhaseReason 
+Enum.PhaseReason.ChromieTime = 3
 
----@class PowerType
-local PowerType = {}
-PowerType.HealthCost = -2
-PowerType.None = -1
-PowerType.Mana = 0
-PowerType.Rage = 1
-PowerType.Focus = 2
-PowerType.Energy = 3
-PowerType.ComboPoints = 4
-PowerType.Runes = 5
-PowerType.RunicPower = 6
-PowerType.SoulShards = 7
-PowerType.LunarPower = 8
-PowerType.HolyPower = 9
-PowerType.Alternate = 10
-PowerType.Maelstrom = 11
-PowerType.Chi = 12
-PowerType.Insanity = 13
-PowerType.Obsolete = 14
-PowerType.Obsolete2 = 15
-PowerType.ArcaneCharges = 16
-PowerType.Fury = 17
-PowerType.Pain = 18
-PowerType.Essence = 19
-PowerType.RuneBlood = 20
-PowerType.RuneFrost = 21
-PowerType.RuneUnholy = 22
-PowerType.NumPowerTypes = 23
+---@class Enum.PowerType
+local Enum.PowerType = {}
+---@field HealthCost PowerType 
+Enum.PowerType.HealthCost = -2
+---@field None PowerType 
+Enum.PowerType.None = -1
+---@field Mana PowerType 
+Enum.PowerType.Mana = 0
+---@field Rage PowerType 
+Enum.PowerType.Rage = 1
+---@field Focus PowerType 
+Enum.PowerType.Focus = 2
+---@field Energy PowerType 
+Enum.PowerType.Energy = 3
+---@field ComboPoints PowerType 
+Enum.PowerType.ComboPoints = 4
+---@field Runes PowerType 
+Enum.PowerType.Runes = 5
+---@field RunicPower PowerType 
+Enum.PowerType.RunicPower = 6
+---@field SoulShards PowerType 
+Enum.PowerType.SoulShards = 7
+---@field LunarPower PowerType 
+Enum.PowerType.LunarPower = 8
+---@field HolyPower PowerType 
+Enum.PowerType.HolyPower = 9
+---@field Alternate PowerType 
+Enum.PowerType.Alternate = 10
+---@field Maelstrom PowerType 
+Enum.PowerType.Maelstrom = 11
+---@field Chi PowerType 
+Enum.PowerType.Chi = 12
+---@field Insanity PowerType 
+Enum.PowerType.Insanity = 13
+---@field Obsolete PowerType 
+Enum.PowerType.Obsolete = 14
+---@field Obsolete2 PowerType 
+Enum.PowerType.Obsolete2 = 15
+---@field ArcaneCharges PowerType 
+Enum.PowerType.ArcaneCharges = 16
+---@field Fury PowerType 
+Enum.PowerType.Fury = 17
+---@field Pain PowerType 
+Enum.PowerType.Pain = 18
+---@field Essence PowerType 
+Enum.PowerType.Essence = 19
+---@field RuneBlood PowerType 
+Enum.PowerType.RuneBlood = 20
+---@field RuneFrost PowerType 
+Enum.PowerType.RuneFrost = 21
+---@field RuneUnholy PowerType 
+Enum.PowerType.RuneUnholy = 22
+---@field NumPowerTypes PowerType 
+Enum.PowerType.NumPowerTypes = 23
 
----@class PvPUnitClassification
-local PvPUnitClassification = {}
-PvPUnitClassification.FlagCarrierHorde = 0
-PvPUnitClassification.FlagCarrierAlliance = 1
-PvPUnitClassification.FlagCarrierNeutral = 2
-PvPUnitClassification.CartRunnerHorde = 3
-PvPUnitClassification.CartRunnerAlliance = 4
-PvPUnitClassification.AssassinHorde = 5
-PvPUnitClassification.AssassinAlliance = 6
-PvPUnitClassification.OrbCarrierBlue = 7
-PvPUnitClassification.OrbCarrierGreen = 8
-PvPUnitClassification.OrbCarrierOrange = 9
-PvPUnitClassification.OrbCarrierPurple = 10
+---@class Enum.PvPUnitClassification
+local Enum.PvPUnitClassification = {}
+---@field FlagCarrierHorde PvPUnitClassification 
+Enum.PvPUnitClassification.FlagCarrierHorde = 0
+---@field FlagCarrierAlliance PvPUnitClassification 
+Enum.PvPUnitClassification.FlagCarrierAlliance = 1
+---@field FlagCarrierNeutral PvPUnitClassification 
+Enum.PvPUnitClassification.FlagCarrierNeutral = 2
+---@field CartRunnerHorde PvPUnitClassification 
+Enum.PvPUnitClassification.CartRunnerHorde = 3
+---@field CartRunnerAlliance PvPUnitClassification 
+Enum.PvPUnitClassification.CartRunnerAlliance = 4
+---@field AssassinHorde PvPUnitClassification 
+Enum.PvPUnitClassification.AssassinHorde = 5
+---@field AssassinAlliance PvPUnitClassification 
+Enum.PvPUnitClassification.AssassinAlliance = 6
+---@field OrbCarrierBlue PvPUnitClassification 
+Enum.PvPUnitClassification.OrbCarrierBlue = 7
+---@field OrbCarrierGreen PvPUnitClassification 
+Enum.PvPUnitClassification.OrbCarrierGreen = 8
+---@field OrbCarrierOrange PvPUnitClassification 
+Enum.PvPUnitClassification.OrbCarrierOrange = 9
+---@field OrbCarrierPurple PvPUnitClassification 
+Enum.PvPUnitClassification.OrbCarrierPurple = 10
 
----@class CorruptionEffectInfo
+---@type CorruptionEffectInfo
 ---@field name string 
 ---@field description string 
 ---@field minCorruption number 
-local CorruptionEffectInfo = {}
+CorruptionEffectInfo = {}
 
----@class UnitPowerBarInfo
+---@type UnitPowerBarInfo
 ---@field ID number 
 ---@field barType number 
 ---@field minPower number 
@@ -247,5 +285,5 @@ local CorruptionEffectInfo = {}
 ---@field flashAtMinPower bool 
 ---@field fractionalCounter bool 
 ---@field animateNumbers bool 
-local UnitPowerBarInfo = {}
+UnitPowerBarInfo = {}
 

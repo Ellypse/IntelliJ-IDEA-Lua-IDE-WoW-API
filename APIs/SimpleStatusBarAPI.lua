@@ -42,7 +42,6 @@ function IsStatusBarDesaturated() end
 ---@param colorG number 
 ---@param colorB number 
 ---@param a SingleColorValue @ [OPTIONAL]
----@overload fun(colorR:number, colorG:number, colorB:number)
 function SetColorFill(colorR, colorG, colorB, a) end
 
 ---@param fillStyle StatusBarFillStyle 
@@ -65,7 +64,6 @@ function SetRotatesTexture(rotatesTexture) end
 ---@param colorG number 
 ---@param colorB number 
 ---@param a SingleColorValue @ [OPTIONAL]
----@overload fun(colorR:number, colorG:number, colorB:number)
 function SetStatusBarColor(colorR, colorG, colorB, a) end
 
 ---@param desaturated boolean 

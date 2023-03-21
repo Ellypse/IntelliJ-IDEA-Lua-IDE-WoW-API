@@ -35,36 +35,36 @@ function C_EditMode.SetAccountSetting(setting, value) end
 ---@param activeLayout luaIndex 
 function C_EditMode.SetActiveLayout(activeLayout) end
 
----@class EditModeAnchorInfo
+---@type EditModeAnchorInfo
 ---@field point FramePoint 
 ---@field relativeTo string 
 ---@field relativePoint FramePoint 
 ---@field offsetX number 
 ---@field offsetY number 
-local EditModeAnchorInfo = {}
+EditModeAnchorInfo = {}
 
----@class EditModeLayoutInfo
+---@type EditModeLayoutInfo
 ---@field layoutName string 
 ---@field layoutType EditModeLayoutType 
 ---@field systems table 
-local EditModeLayoutInfo = {}
+EditModeLayoutInfo = {}
 
----@class EditModeLayouts
+---@type EditModeLayouts
 ---@field layouts table 
 ---@field activeLayout luaIndex 
-local EditModeLayouts = {}
+EditModeLayouts = {}
 
----@class EditModeSettingInfo
+---@type EditModeSettingInfo
 ---@field setting number 
 ---@field value number 
-local EditModeSettingInfo = {}
+EditModeSettingInfo = {}
 
----@class EditModeSystemInfo
+---@type EditModeSystemInfo
 ---@field system EditModeSystem 
 ---@field systemIndex luaIndex|nil 
 ---@field anchorInfo EditModeAnchorInfo 
 ---@field anchorInfo2 EditModeAnchorInfo|nil 
 ---@field settings table 
 ---@field isInDefaultPosition bool 
-local EditModeSystemInfo = {}
+EditModeSystemInfo = {}
 

@@ -15,7 +15,6 @@ function C_EncounterJournal.GetLootInfo(id) end
 
 ---@param index luaIndex 
 ---@param encounterIndex luaIndex @ [OPTIONAL]
----@overload fun(index:luaIndex)
 ---@return EncounterJournalItemInfo itemInfo
 function C_EncounterJournal.GetLootInfoByIndex(index, encounterIndex) end
 
@@ -32,7 +31,6 @@ function C_EncounterJournal.GetSectionInfo(sectionID) end
 function C_EncounterJournal.GetSlotFilter() end
 
 ---@param instanceID number @ [OPTIONAL]
----@overload fun()
 ---@return boolean hasLoot
 function C_EncounterJournal.InstanceHasLoot(instanceID) end
 
@@ -51,35 +49,51 @@ function C_EncounterJournal.SetPreviewPvpTier(tier) end
 ---@param filterSlot ItemSlotFilterType 
 function C_EncounterJournal.SetSlotFilter(filterSlot) end
 
----@class ItemSlotFilterType
-local ItemSlotFilterType = {}
-ItemSlotFilterType.Head = 0
-ItemSlotFilterType.Neck = 1
-ItemSlotFilterType.Shoulder = 2
-ItemSlotFilterType.Cloak = 3
-ItemSlotFilterType.Chest = 4
-ItemSlotFilterType.Wrist = 5
-ItemSlotFilterType.Hand = 6
-ItemSlotFilterType.Waist = 7
-ItemSlotFilterType.Legs = 8
-ItemSlotFilterType.Feet = 9
-ItemSlotFilterType.MainHand = 10
-ItemSlotFilterType.OffHand = 11
-ItemSlotFilterType.Finger = 12
-ItemSlotFilterType.Trinket = 13
-ItemSlotFilterType.Other = 14
-ItemSlotFilterType.NoFilter = 15
+---@class Enum.ItemSlotFilterType
+local Enum.ItemSlotFilterType = {}
+---@field Head ItemSlotFilterType 
+Enum.ItemSlotFilterType.Head = 0
+---@field Neck ItemSlotFilterType 
+Enum.ItemSlotFilterType.Neck = 1
+---@field Shoulder ItemSlotFilterType 
+Enum.ItemSlotFilterType.Shoulder = 2
+---@field Cloak ItemSlotFilterType 
+Enum.ItemSlotFilterType.Cloak = 3
+---@field Chest ItemSlotFilterType 
+Enum.ItemSlotFilterType.Chest = 4
+---@field Wrist ItemSlotFilterType 
+Enum.ItemSlotFilterType.Wrist = 5
+---@field Hand ItemSlotFilterType 
+Enum.ItemSlotFilterType.Hand = 6
+---@field Waist ItemSlotFilterType 
+Enum.ItemSlotFilterType.Waist = 7
+---@field Legs ItemSlotFilterType 
+Enum.ItemSlotFilterType.Legs = 8
+---@field Feet ItemSlotFilterType 
+Enum.ItemSlotFilterType.Feet = 9
+---@field MainHand ItemSlotFilterType 
+Enum.ItemSlotFilterType.MainHand = 10
+---@field OffHand ItemSlotFilterType 
+Enum.ItemSlotFilterType.OffHand = 11
+---@field Finger ItemSlotFilterType 
+Enum.ItemSlotFilterType.Finger = 12
+---@field Trinket ItemSlotFilterType 
+Enum.ItemSlotFilterType.Trinket = 13
+---@field Other ItemSlotFilterType 
+Enum.ItemSlotFilterType.Other = 14
+---@field NoFilter ItemSlotFilterType 
+Enum.ItemSlotFilterType.NoFilter = 15
 
----@class DungeonEntranceMapInfo
+---@type DungeonEntranceMapInfo
 ---@field areaPoiID number 
 ---@field position vector2 
 ---@field name cstring 
 ---@field description cstring 
 ---@field atlasName string 
 ---@field journalInstanceID number 
-local DungeonEntranceMapInfo = {}
+DungeonEntranceMapInfo = {}
 
----@class EncounterJournalItemInfo
+---@type EncounterJournalItemInfo
 ---@field itemID number 
 ---@field encounterID number|nil 
 ---@field name string|nil 
@@ -94,15 +108,15 @@ local DungeonEntranceMapInfo = {}
 ---@field displayAsPerPlayerLoot bool|nil 
 ---@field displayAsVeryRare bool|nil 
 ---@field displayAsExtremelyRare bool|nil 
-local EncounterJournalItemInfo = {}
+EncounterJournalItemInfo = {}
 
----@class EncounterJournalMapEncounterInfo
+---@type EncounterJournalMapEncounterInfo
 ---@field encounterID number 
 ---@field mapX number 
 ---@field mapY number 
-local EncounterJournalMapEncounterInfo = {}
+EncounterJournalMapEncounterInfo = {}
 
----@class EncounterJournalSectionInfo
+---@type EncounterJournalSectionInfo
 ---@field spellID number 
 ---@field title cstring 
 ---@field description string|nil 
@@ -115,5 +129,5 @@ local EncounterJournalMapEncounterInfo = {}
 ---@field filteredByDifficulty bool 
 ---@field link string 
 ---@field startsOpen bool 
-local EncounterJournalSectionInfo = {}
+EncounterJournalSectionInfo = {}
 

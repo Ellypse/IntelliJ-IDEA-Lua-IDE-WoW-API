@@ -29,27 +29,27 @@ function C_PerksActivities.GetTrackedPerksActivities() end
 ---@param perksActivityID number 
 function C_PerksActivities.RemoveTrackedPerksActivity(perksActivityID) end
 
----@class PerksActivitiesInfo
+---@type PerksActivitiesInfo
 ---@field activePerksMonth number 
 ---@field displayMonthName cstring 
 ---@field activities table 
 ---@field thresholds table 
-local PerksActivitiesInfo = {}
+PerksActivitiesInfo = {}
 
----@class PerksActivitiesPending
+---@type PerksActivitiesPending
 ---@field pendingIDs table 
-local PerksActivitiesPending = {}
+PerksActivitiesPending = {}
 
----@class PerksActivitiesTracked
+---@type PerksActivitiesTracked
 ---@field trackedIDs table 
-local PerksActivitiesTracked = {}
+PerksActivitiesTracked = {}
 
----@class PerksActivityCriteria
+---@type PerksActivityCriteria
 ---@field criteriaID number 
 ---@field requiredValue number 
-local PerksActivityCriteria = {}
+PerksActivityCriteria = {}
 
----@class PerksActivityInfo
+---@type PerksActivityInfo
 ---@field ID number 
 ---@field activityName cstring 
 ---@field description cstring 
@@ -59,22 +59,22 @@ local PerksActivityCriteria = {}
 ---@field requirementsList table 
 ---@field criteriaList table 
 ---@field tagNames table 
-local PerksActivityInfo = {}
+PerksActivityInfo = {}
 
----@class PerksActivityRequirement
+---@type PerksActivityRequirement
 ---@field completed bool 
 ---@field requirementText string 
-local PerksActivityRequirement = {}
+PerksActivityRequirement = {}
 
----@class PerksActivityTags
+---@type PerksActivityTags
 ---@field tagName table 
-local PerksActivityTags = {}
+PerksActivityTags = {}
 
----@class PerksActivityThresholdInfo
+---@type PerksActivityThresholdInfo
 ---@field thresholdID number 
 ---@field currencyAwardAmount number 
 ---@field requiredContributionAmount number 
 ---@field pendingReward bool 
 ---@field itemReward number|nil 
-local PerksActivityThresholdInfo = {}
+PerksActivityThresholdInfo = {}
 

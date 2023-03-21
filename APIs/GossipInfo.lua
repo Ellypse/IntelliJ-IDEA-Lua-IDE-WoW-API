@@ -58,30 +58,32 @@ function C_GossipInfo.SelectAvailableQuest(optionID) end
 ---@param optionID number 
 ---@param text cstring @ [OPTIONAL]
 ---@param confirmed boolean @ [OPTIONAL]
----@overload fun(optionID:number, confirmed:bool)
----@overload fun(optionID:number)
 function C_GossipInfo.SelectOption(optionID, text, confirmed) end
 
 ---@param optionID number 
 ---@param text cstring @ [OPTIONAL]
 ---@param confirmed boolean @ [OPTIONAL]
----@overload fun(optionID:number, confirmed:bool)
----@overload fun(optionID:number)
 function C_GossipInfo.SelectOptionByIndex(optionID, text, confirmed) end
 
----@class GossipOptionRewardType
-local GossipOptionRewardType = {}
-GossipOptionRewardType.Item = 0
-GossipOptionRewardType.Currency = 1
+---@class Enum.GossipOptionRewardType
+local Enum.GossipOptionRewardType = {}
+---@field Item GossipOptionRewardType 
+Enum.GossipOptionRewardType.Item = 0
+---@field Currency GossipOptionRewardType 
+Enum.GossipOptionRewardType.Currency = 1
 
----@class GossipOptionStatus
-local GossipOptionStatus = {}
-GossipOptionStatus.Available = 0
-GossipOptionStatus.Unavailable = 1
-GossipOptionStatus.Locked = 2
-GossipOptionStatus.AlreadyComplete = 3
+---@class Enum.GossipOptionStatus
+local Enum.GossipOptionStatus = {}
+---@field Available GossipOptionStatus 
+Enum.GossipOptionStatus.Available = 0
+---@field Unavailable GossipOptionStatus 
+Enum.GossipOptionStatus.Unavailable = 1
+---@field Locked GossipOptionStatus 
+Enum.GossipOptionStatus.Locked = 2
+---@field AlreadyComplete GossipOptionStatus 
+Enum.GossipOptionStatus.AlreadyComplete = 3
 
----@class FriendshipReputationInfo
+---@type FriendshipReputationInfo
 ---@field friendshipFactionID number 
 ---@field standing number 
 ---@field maxRep number 
@@ -93,20 +95,20 @@ GossipOptionStatus.AlreadyComplete = 3
 ---@field nextThreshold number|nil 
 ---@field reversedColor bool 
 ---@field overrideColor number|nil 
-local FriendshipReputationInfo = {}
+FriendshipReputationInfo = {}
 
----@class FriendshipReputationRankInfo
+---@type FriendshipReputationRankInfo
 ---@field currentLevel number 
 ---@field maxLevel number 
-local FriendshipReputationRankInfo = {}
+FriendshipReputationRankInfo = {}
 
----@class GossipOptionRewardInfo
+---@type GossipOptionRewardInfo
 ---@field id number 
 ---@field quantity number 
 ---@field rewardType GossipOptionRewardType 
-local GossipOptionRewardInfo = {}
+GossipOptionRewardInfo = {}
 
----@class GossipOptionUIInfo
+---@type GossipOptionUIInfo
 ---@field gossipOptionID number|nil 
 ---@field name string 
 ---@field icon fileID 
@@ -117,16 +119,16 @@ local GossipOptionRewardInfo = {}
 ---@field overrideIconID fileID|nil 
 ---@field selectOptionWhenOnlyOption bool 
 ---@field orderIndex number 
-local GossipOptionUIInfo = {}
+GossipOptionUIInfo = {}
 
----@class GossipPoiInfo
+---@type GossipPoiInfo
 ---@field name string 
 ---@field textureIndex number 
 ---@field position vector2 
 ---@field inBattleMap bool 
-local GossipPoiInfo = {}
+GossipPoiInfo = {}
 
----@class GossipQuestUIInfo
+---@type GossipQuestUIInfo
 ---@field title string 
 ---@field questLevel number 
 ---@field isTrivial bool 
@@ -136,5 +138,5 @@ local GossipPoiInfo = {}
 ---@field isLegendary bool 
 ---@field isIgnored bool 
 ---@field questID number 
-local GossipQuestUIInfo = {}
+GossipQuestUIInfo = {}
 

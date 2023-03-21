@@ -34,7 +34,6 @@ function C_Commentator.ClearCameraTarget() end
 function C_Commentator.ClearFollowTarget() end
 
 ---@param lookAtIndex luaIndex @ [OPTIONAL]
----@overload fun()
 function C_Commentator.ClearLookAtTarget(lookAtIndex) end
 
 function C_Commentator.EnterInstance() end
@@ -58,7 +57,6 @@ function C_Commentator.FlushCommentatorHistory() end
 ---@param factionIndex luaIndex 
 ---@param playerIndex luaIndex 
 ---@param forceInstantTransition boolean @ [OPTIONAL]
----@overload fun(factionIndex:luaIndex, playerIndex:luaIndex)
 function C_Commentator.FollowPlayer(factionIndex, playerIndex, forceInstantTransition) end
 
 ---@param token string 
@@ -308,7 +306,6 @@ function C_Commentator.IsUsingSmartCamera() end
 ---@param factionIndex luaIndex 
 ---@param playerIndex luaIndex 
 ---@param lookAtIndex luaIndex @ [OPTIONAL]
----@overload fun(factionIndex:luaIndex, playerIndex:luaIndex)
 function C_Commentator.LookAtPlayer(factionIndex, playerIndex, lookAtIndex) end
 
 function C_Commentator.RemoveAllOverrideNames() end
@@ -473,7 +470,6 @@ function C_Commentator.SwapTeamSides() end
 function C_Commentator.ToggleCheats() end
 
 ---@param targetPlayer string @ [OPTIONAL]
----@overload fun()
 function C_Commentator.UpdateMapInfo(targetPlayer) end
 
 function C_Commentator.UpdatePlayerInfo() end
@@ -482,26 +478,31 @@ function C_Commentator.ZoomIn() end
 
 function C_Commentator.ZoomOut() end
 
----@class TrackedSpellCategory
-local TrackedSpellCategory = {}
-TrackedSpellCategory.Offensive = 0
-TrackedSpellCategory.Defensive = 1
-TrackedSpellCategory.Debuff = 2
-TrackedSpellCategory.RacialAbility = 3
-TrackedSpellCategory.Count = 4
+---@class Enum.TrackedSpellCategory
+local Enum.TrackedSpellCategory = {}
+---@field Offensive TrackedSpellCategory 
+Enum.TrackedSpellCategory.Offensive = 0
+---@field Defensive TrackedSpellCategory 
+Enum.TrackedSpellCategory.Defensive = 1
+---@field Debuff TrackedSpellCategory 
+Enum.TrackedSpellCategory.Debuff = 2
+---@field RacialAbility TrackedSpellCategory 
+Enum.TrackedSpellCategory.RacialAbility = 3
+---@field Count TrackedSpellCategory 
+Enum.TrackedSpellCategory.Count = 4
 
----@class CommentatorHistory
+---@type CommentatorHistory
 ---@field series table 
 ---@field teamDirectory table 
 ---@field overrideNameDirectory table 
-local CommentatorHistory = {}
+CommentatorHistory = {}
 
----@class CommentatorOverrideNameEntry
+---@type CommentatorOverrideNameEntry
 ---@field originalName string 
 ---@field newName string 
-local CommentatorOverrideNameEntry = {}
+CommentatorOverrideNameEntry = {}
 
----@class CommentatorPlayerData
+---@type CommentatorPlayerData
 ---@field unitToken string 
 ---@field name string 
 ---@field faction number 
@@ -514,23 +515,23 @@ local CommentatorOverrideNameEntry = {}
 ---@field deaths number 
 ---@field soloShuffleRoundWins number 
 ---@field soloShuffleRoundLosses number 
-local CommentatorPlayerData = {}
+CommentatorPlayerData = {}
 
----@class CommentatorSeries
+---@type CommentatorSeries
 ---@field teams table 
-local CommentatorSeries = {}
+CommentatorSeries = {}
 
----@class CommentatorSeriesTeam
+---@type CommentatorSeriesTeam
 ---@field name string 
 ---@field score number 
-local CommentatorSeriesTeam = {}
+CommentatorSeriesTeam = {}
 
----@class CommentatorTeamDirectoryEntry
+---@type CommentatorTeamDirectoryEntry
 ---@field playerName string 
 ---@field teamName string 
-local CommentatorTeamDirectoryEntry = {}
+CommentatorTeamDirectoryEntry = {}
 
----@class CommentatorUnitData
+---@type CommentatorUnitData
 ---@field healthMax number 
 ---@field health number 
 ---@field absorbTotal number 
@@ -539,10 +540,10 @@ local CommentatorTeamDirectoryEntry = {}
 ---@field powerTypeToken string 
 ---@field power number 
 ---@field powerMax number 
-local CommentatorUnitData = {}
+CommentatorUnitData = {}
 
----@class NameOverrideEntry
+---@type NameOverrideEntry
 ---@field originalName string 
 ---@field overrideName string 
-local NameOverrideEntry = {}
+NameOverrideEntry = {}
 

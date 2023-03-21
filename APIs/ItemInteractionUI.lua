@@ -25,22 +25,21 @@ function C_ItemInteraction.PerformItemInteraction() end
 function C_ItemInteraction.Reset() end
 
 ---@param item ItemLocation @ [OPTIONAL]
----@overload fun()
 ---@return boolean success
 function C_ItemInteraction.SetPendingItem(item) end
 
----@class ConversionCurrencyCost
+---@type ConversionCurrencyCost
 ---@field currencyID number 
 ---@field amount number 
-local ConversionCurrencyCost = {}
+ConversionCurrencyCost = {}
 
----@class ItemInteractionChargeInfo
+---@type ItemInteractionChargeInfo
 ---@field newChargeAmount number 
 ---@field rechargeRate number 
 ---@field timeToNextCharge number 
-local ItemInteractionChargeInfo = {}
+ItemInteractionChargeInfo = {}
 
----@class ItemInteractionFrameInfo
+---@type ItemInteractionFrameInfo
 ---@field textureKit textureKit 
 ---@field openSoundKitID number 
 ---@field closeSoundKitID number 
@@ -56,5 +55,5 @@ local ItemInteractionChargeInfo = {}
 ---@field cost number|nil 
 ---@field currencyTypeId number|nil 
 ---@field dropInSlotSoundKitId number|nil 
-local ItemInteractionFrameInfo = {}
+ItemInteractionFrameInfo = {}
 

@@ -18,7 +18,6 @@ function C_TooltipInfo.GetArtifactPowerByID(powerID) end
 
 ---@param essenceID number 
 ---@param rank number @ [OPTIONAL]
----@overload fun(essenceID:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetAzeriteEssence(essenceID, rank) end
 
@@ -30,7 +29,6 @@ function C_TooltipInfo.GetAzeriteEssenceSlot(slot) end
 ---@param itemLevel number 
 ---@param powerID number 
 ---@param owningItemLink cstring @ [OPTIONAL]
----@overload fun(itemID:number, itemLevel:number, powerID:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetAzeritePower(itemID, itemLevel, powerID, owningItemLink) end
 
@@ -64,7 +62,6 @@ function C_TooltipInfo.GetConduit(conduitID, conduitRank) end
 
 ---@param currencyID number 
 ---@param amount number @ [OPTIONAL]
----@overload fun(currencyID:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetCurrencyByID(currencyID, amount) end
 
@@ -83,7 +80,6 @@ function C_TooltipInfo.GetEquipmentSet(setID) end
 
 ---@param index luaIndex 
 ---@param toDestroy boolean @ [OPTIONAL]
----@overload fun(index:luaIndex)
 ---@return TooltipData data
 function C_TooltipInfo.GetExistingSocketGem(index, toDestroy) end
 
@@ -100,15 +96,11 @@ function C_TooltipInfo.GetHeirloomByItemID(itemID) end
 ---@param optionalArg1 number @ [OPTIONAL]
 ---@param optionalArg2 number @ [OPTIONAL]
 ---@param hideVendorPrice boolean @ [OPTIONAL]
----@overload fun(hyperlink:cstring, optionalArg2:number, hideVendorPrice:bool)
----@overload fun(hyperlink:cstring, hideVendorPrice:bool)
----@overload fun(hyperlink:cstring)
 ---@return TooltipData data
 function C_TooltipInfo.GetHyperlink(hyperlink, optionalArg1, optionalArg2, hideVendorPrice) end
 
 ---@param messageIndex luaIndex 
 ---@param attachmentIndex luaIndex @ [OPTIONAL]
----@overload fun(messageIndex:luaIndex)
 ---@return TooltipData data
 function C_TooltipInfo.GetInboxItem(messageIndex, attachmentIndex) end
 
@@ -119,7 +111,6 @@ function C_TooltipInfo.GetInstanceLockEncountersComplete(index) end
 ---@param unit UnitToken 
 ---@param slot luaIndex 
 ---@param hideUselessStats boolean @ [OPTIONAL]
----@overload fun(unit:UnitToken, slot:luaIndex)
 ---@return TooltipData data
 function C_TooltipInfo.GetInventoryItem(unit, slot, hideUselessStats) end
 
@@ -133,7 +124,6 @@ function C_TooltipInfo.GetItemByGUID(guid) end
 
 ---@param itemID number 
 ---@param quality number @ [OPTIONAL]
----@overload fun(itemID:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetItemByID(itemID, quality) end
 
@@ -144,7 +134,6 @@ function C_TooltipInfo.GetItemInteractionItem() end
 ---@param itemLevel number 
 ---@param itemSuffix number 
 ---@param requiredLevel number @ [OPTIONAL]
----@overload fun(itemID:number, itemLevel:number, itemSuffix:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetItemKey(itemID, itemLevel, itemSuffix, requiredLevel) end
 
@@ -185,7 +174,6 @@ function C_TooltipInfo.GetMinimapMouseover() end
 
 ---@param spellID number 
 ---@param checkIndoors boolean @ [OPTIONAL]
----@overload fun(spellID:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetMountBySpellID(spellID, checkIndoors) end
 
@@ -202,7 +190,6 @@ function C_TooltipInfo.GetPetAction(slot) end
 function C_TooltipInfo.GetPossession(slot) end
 
 ---@param isSpecial boolean @ [OPTIONAL]
----@overload fun()
 ---@return TooltipData data
 function C_TooltipInfo.GetPvpBrawl(isSpecial) end
 
@@ -210,9 +197,6 @@ function C_TooltipInfo.GetPvpBrawl(isSpecial) end
 ---@param isInspect boolean @ [OPTIONAL]
 ---@param groupIndex luaIndex @ [OPTIONAL]
 ---@param talentIndex number @ [OPTIONAL]
----@overload fun(talentID:number, groupIndex:luaIndex, talentIndex:number)
----@overload fun(talentID:number, talentIndex:number)
----@overload fun(talentID:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetPvpTalent(talentID, isInspect, groupIndex, talentIndex) end
 
@@ -224,14 +208,12 @@ function C_TooltipInfo.GetQuestCurrency(type, currencyIndex) end
 ---@param type cstring 
 ---@param itemIndex luaIndex 
 ---@param allowCollectionText boolean @ [OPTIONAL]
----@overload fun(type:cstring, itemIndex:luaIndex)
 ---@return TooltipData data
 function C_TooltipInfo.GetQuestItem(type, itemIndex, allowCollectionText) end
 
 ---@param type cstring 
 ---@param currencyIndex luaIndex 
 ---@param questID number @ [OPTIONAL]
----@overload fun(type:cstring, currencyIndex:luaIndex)
 ---@return TooltipData data
 function C_TooltipInfo.GetQuestLogCurrency(type, currencyIndex, questID) end
 
@@ -239,14 +221,11 @@ function C_TooltipInfo.GetQuestLogCurrency(type, currencyIndex, questID) end
 ---@param itemIndex luaIndex 
 ---@param questID number @ [OPTIONAL]
 ---@param allowCollectionText boolean @ [OPTIONAL]
----@overload fun(type:cstring, itemIndex:luaIndex, allowCollectionText:bool)
----@overload fun(type:cstring, itemIndex:luaIndex)
 ---@return TooltipData data
 function C_TooltipInfo.GetQuestLogItem(type, itemIndex, questID, allowCollectionText) end
 
 ---@param spellIndex luaIndex 
 ---@param questID number @ [OPTIONAL]
----@overload fun(spellIndex:luaIndex)
 ---@return TooltipData data
 function C_TooltipInfo.GetQuestLogRewardSpell(spellIndex, questID) end
 
@@ -257,8 +236,6 @@ function C_TooltipInfo.GetQuestLogSpecialItem(questIndex) end
 ---@param questID number 
 ---@param omitTitle boolean @ [OPTIONAL]
 ---@param ignoreActivePlayer boolean @ [OPTIONAL]
----@overload fun(questID:number, ignoreActivePlayer:bool)
----@overload fun(questID:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetQuestPartyProgress(questID, omitTitle, ignoreActivePlayer) end
 
@@ -281,10 +258,6 @@ function C_TooltipInfo.GetRecipeReagentItem(recipeSpellID, dataSlotIndex) end
 ---@param recraftItemGUID WOWGUID @ [OPTIONAL]
 ---@param recipeLevel luaIndex @ [OPTIONAL]
 ---@param overrideQualityID number @ [OPTIONAL]
----@overload fun(recipeID:number, recraftItemGUID:WOWGUID, recipeLevel:luaIndex, overrideQualityID:number)
----@overload fun(recipeID:number, recipeLevel:luaIndex, overrideQualityID:number)
----@overload fun(recipeID:number, overrideQualityID:number)
----@overload fun(recipeID:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetRecipeResultItem(recipeID, craftingReagents, recraftItemGUID, recipeLevel, overrideQualityID) end
 
@@ -293,10 +266,6 @@ function C_TooltipInfo.GetRecipeResultItem(recipeID, craftingReagents, recraftIt
 ---@param orderID BigUInteger @ [OPTIONAL]
 ---@param recipeLevel luaIndex @ [OPTIONAL]
 ---@param overrideQualityID number @ [OPTIONAL]
----@overload fun(recipeID:number, orderID:BigUInteger, recipeLevel:luaIndex, overrideQualityID:number)
----@overload fun(recipeID:number, recipeLevel:luaIndex, overrideQualityID:number)
----@overload fun(recipeID:number, overrideQualityID:number)
----@overload fun(recipeID:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetRecipeResultItemForOrder(recipeID, craftingReagents, orderID, recipeLevel, overrideQualityID) end
 
@@ -304,13 +273,10 @@ function C_TooltipInfo.GetRecipeResultItemForOrder(recipeID, craftingReagents, o
 ---@param itemLevel number 
 ---@param powerID number @ [OPTIONAL]
 ---@param modifiers number @ [OPTIONAL]
----@overload fun(itemGUID:WOWGUID, itemLevel:number, modifiers:number)
----@overload fun(itemGUID:WOWGUID, itemLevel:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetRuneforgeResultItem(itemGUID, itemLevel, powerID, modifiers) end
 
 ---@param attachmentIndex luaIndex @ [OPTIONAL]
----@overload fun()
 ---@return TooltipData data
 function C_TooltipInfo.GetSendMailItem(attachmentIndex) end
 
@@ -343,19 +309,12 @@ function C_TooltipInfo.GetSpellBookItem(slot, spellBookType) end
 ---@param dontOverride boolean @ [OPTIONAL]
 ---@param difficultyID number @ [OPTIONAL]
 ---@param isLink boolean @ [OPTIONAL]
----@overload fun(spellID:number, showSubtext:bool, dontOverride:bool, difficultyID:number, isLink:bool)
----@overload fun(spellID:number, dontOverride:bool, difficultyID:number, isLink:bool)
----@overload fun(spellID:number, difficultyID:number, isLink:bool)
----@overload fun(spellID:number, isLink:bool)
----@overload fun(spellID:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetSpellByID(spellID, isPet, showSubtext, dontOverride, difficultyID, isLink) end
 
 ---@param talentID number 
 ---@param isInspect boolean @ [OPTIONAL]
 ---@param groupIndex luaIndex @ [OPTIONAL]
----@overload fun(talentID:number, groupIndex:luaIndex)
----@overload fun(talentID:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetTalent(talentID, isInspect, groupIndex) end
 
@@ -381,7 +340,6 @@ function C_TooltipInfo.GetTrainerService(serviceIndex) end
 
 ---@param entryID number 
 ---@param rank number @ [OPTIONAL]
----@overload fun(entryID:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetTraitEntry(entryID, rank) end
 
@@ -391,42 +349,36 @@ function C_TooltipInfo.GetTransmogrifyItem(transmogLocation) end
 
 ---@param unit UnitToken 
 ---@param hideStatus boolean @ [OPTIONAL]
----@overload fun(unit:UnitToken)
 ---@return TooltipData data
 function C_TooltipInfo.GetUnit(unit, hideStatus) end
 
 ---@param unitToken UnitToken 
 ---@param index luaIndex 
 ---@param filter cstring @ [OPTIONAL]
----@overload fun(unitToken:UnitToken, index:luaIndex)
 ---@return TooltipData data
 function C_TooltipInfo.GetUnitAura(unitToken, index, filter) end
 
 ---@param unitToken UnitToken 
 ---@param index luaIndex 
 ---@param filter cstring @ [OPTIONAL]
----@overload fun(unitToken:UnitToken, index:luaIndex)
 ---@return TooltipData data
 function C_TooltipInfo.GetUnitBuff(unitToken, index, filter) end
 
 ---@param unitTokenString cstring 
 ---@param auraInstanceID number 
 ---@param filter cstring @ [OPTIONAL]
----@overload fun(unitTokenString:cstring, auraInstanceID:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetUnitBuffByAuraInstanceID(unitTokenString, auraInstanceID, filter) end
 
 ---@param unitToken UnitToken 
 ---@param index luaIndex 
 ---@param filter cstring @ [OPTIONAL]
----@overload fun(unitToken:UnitToken, index:luaIndex)
 ---@return TooltipData data
 function C_TooltipInfo.GetUnitDebuff(unitToken, index, filter) end
 
 ---@param unitTokenString cstring 
 ---@param auraInstanceID number 
 ---@param filter cstring @ [OPTIONAL]
----@overload fun(unitTokenString:cstring, auraInstanceID:number)
 ---@return TooltipData data
 function C_TooltipInfo.GetUnitDebuffByAuraInstanceID(unitTokenString, auraInstanceID, filter) end
 

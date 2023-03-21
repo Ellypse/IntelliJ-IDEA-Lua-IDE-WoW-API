@@ -220,7 +220,7 @@ function C_ArtifactUI.SetPreviewAppearance(artifactAppearanceID) end
 ---@return boolean shouldSuppressForgeRotation
 function C_ArtifactUI.ShouldSuppressForgeRotation() end
 
----@class ArtifactAppearanceInfo
+---@type ArtifactAppearanceInfo
 ---@field artifactAppearanceID number 
 ---@field appearanceName string 
 ---@field displayIndex number 
@@ -232,16 +232,16 @@ function C_ArtifactUI.ShouldSuppressForgeRotation() end
 ---@field modelOpacity number 
 ---@field modelSaturation number 
 ---@field obtainable bool 
-local ArtifactAppearanceInfo = {}
+ArtifactAppearanceInfo = {}
 
----@class ArtifactAppearanceSetInfo
+---@type ArtifactAppearanceSetInfo
 ---@field artifactAppearanceSetID number 
 ---@field appearanceSetName string 
 ---@field appearanceSetDescription string 
 ---@field numAppearances number 
-local ArtifactAppearanceSetInfo = {}
+ArtifactAppearanceSetInfo = {}
 
----@class ArtifactArtInfo
+---@type ArtifactArtInfo
 ---@field textureKit textureKit 
 ---@field titleName string 
 ---@field titleColor colorRGB 
@@ -249,9 +249,9 @@ local ArtifactAppearanceSetInfo = {}
 ---@field barDisconnectedColor colorRGB 
 ---@field uiModelSceneID number 
 ---@field spellVisualKitID number 
-local ArtifactArtInfo = {}
+ArtifactArtInfo = {}
 
----@class ArtifactInfo
+---@type ArtifactInfo
 ---@field itemID number 
 ---@field altItemID number|nil 
 ---@field name string 
@@ -265,15 +265,15 @@ local ArtifactArtInfo = {}
 ---@field altItemAppearanceID number|nil 
 ---@field altOnTop bool 
 ---@field tier luaIndex 
-local ArtifactInfo = {}
+ArtifactInfo = {}
 
----@class ArtifactMetaPowerInfo
+---@type ArtifactMetaPowerInfo
 ---@field spellID number 
 ---@field powerCost number 
 ---@field currentRank number 
-local ArtifactMetaPowerInfo = {}
+ArtifactMetaPowerInfo = {}
 
----@class ArtifactPowerInfo
+---@type ArtifactPowerInfo
 ---@field spellID number 
 ---@field cost number 
 ---@field currentRank number 
@@ -288,12 +288,12 @@ local ArtifactMetaPowerInfo = {}
 ---@field position vector2 
 ---@field offset vector2|nil 
 ---@field linearIndex luaIndex|nil 
-local ArtifactPowerInfo = {}
+ArtifactPowerInfo = {}
 
----@class ArtifactRelicInfo
+---@type ArtifactRelicInfo
 ---@field name string 
 ---@field icon fileID 
 ---@field slotTypeName cstring @ Matches the socket identifiers used in the socketing system.
 ---@field link string 
-local ArtifactRelicInfo = {}
+ArtifactRelicInfo = {}
 

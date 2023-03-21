@@ -7,8 +7,6 @@ function C_TradeSkillUI.CloseTradeSkill() end
 ---@param numCasts number 
 ---@param craftingReagents CraftingReagentInfo @ [OPTIONAL]
 ---@param itemTarget ItemLocation @ [OPTIONAL]
----@overload fun(recipeSpellID:number, numCasts:number, itemTarget:ItemLocation)
----@overload fun(recipeSpellID:number, numCasts:number)
 function C_TradeSkillUI.CraftEnchant(recipeSpellID, numCasts, craftingReagents, itemTarget) end
 
 ---@param recipeSpellID number 
@@ -16,9 +14,6 @@ function C_TradeSkillUI.CraftEnchant(recipeSpellID, numCasts, craftingReagents, 
 ---@param craftingReagents CraftingReagentInfo @ [OPTIONAL]
 ---@param recipeLevel luaIndex @ [OPTIONAL]
 ---@param orderID BigUInteger @ [OPTIONAL]
----@overload fun(recipeSpellID:number, numCasts:number, recipeLevel:luaIndex, orderID:BigUInteger)
----@overload fun(recipeSpellID:number, numCasts:number, orderID:BigUInteger)
----@overload fun(recipeSpellID:number, numCasts:number)
 function C_TradeSkillUI.CraftRecipe(recipeSpellID, numCasts, craftingReagents, recipeLevel, orderID) end
 
 ---@param recipeSpellID number 
@@ -45,14 +40,12 @@ function C_TradeSkillUI.GetChildProfessionInfos() end
 
 ---@param recipeSpellID number 
 ---@param recipeLevel luaIndex @ [OPTIONAL]
----@overload fun(recipeSpellID:number)
 ---@return number numAvailable
 function C_TradeSkillUI.GetCraftableCount(recipeSpellID, recipeLevel) end
 
 ---@param recipeID number 
 ---@param craftingReagents CraftingReagentInfo 
 ---@param allocationItemGUID WOWGUID @ [OPTIONAL]
----@overload fun(recipeID:number, craftingReagents:CraftingReagentInfo)
 ---@return CraftingOperationInfo|nil info
 function C_TradeSkillUI.GetCraftingOperationInfo(recipeID, craftingReagents, allocationItemGUID) end
 
@@ -66,7 +59,6 @@ function C_TradeSkillUI.GetCraftingOperationInfoForOrder(recipeID, craftingReage
 ---@param craftingReagentIndex luaIndex 
 ---@param craftingReagents CraftingReagentInfo 
 ---@param allocationItemGUID WOWGUID @ [OPTIONAL]
----@overload fun(recipeSpellID:number, craftingReagentIndex:luaIndex, craftingReagents:CraftingReagentInfo)
 ---@return string bonusText
 function C_TradeSkillUI.GetCraftingReagentBonusText(recipeSpellID, craftingReagentIndex, craftingReagents, allocationItemGUID) end
 
@@ -141,7 +133,6 @@ function C_TradeSkillUI.GetProfessionSlots(profession) end
 
 ---@param professionID number 
 ---@param skillLineID number @ [OPTIONAL]
----@overload fun(professionID:number)
 ---@return number knownSpells
 function C_TradeSkillUI.GetProfessionSpells(professionID, skillLineID) end
 
@@ -163,7 +154,6 @@ function C_TradeSkillUI.GetReagentSlotStatus(mcrSlotID, recipeSpellID, skillLine
 ---@param recipeID number 
 ---@param craftingReagents CraftingReagentInfo 
 ---@param allocationItemGUID WOWGUID @ [OPTIONAL]
----@overload fun(recipeID:number, craftingReagents:CraftingReagentInfo)
 ---@return string description
 function C_TradeSkillUI.GetRecipeDescription(recipeID, craftingReagents, allocationItemGUID) end
 
@@ -174,13 +164,11 @@ function C_TradeSkillUI.GetRecipeFixedReagentItemLink(recipeID, dataSlotIndex) e
 
 ---@param recipeSpellID number 
 ---@param recipeLevel luaIndex @ [OPTIONAL]
----@overload fun(recipeSpellID:number)
 ---@return TradeSkillRecipeInfo|nil recipeInfo
 function C_TradeSkillUI.GetRecipeInfo(recipeSpellID, recipeLevel) end
 
 ---@param skillLineAbilityID number 
 ---@param recipeLevel luaIndex @ [OPTIONAL]
----@overload fun(skillLineAbilityID:number)
 ---@return TradeSkillRecipeInfo|nil recipeInfo
 function C_TradeSkillUI.GetRecipeInfoForSkillLineAbility(skillLineAbilityID, recipeLevel) end
 
@@ -189,10 +177,6 @@ function C_TradeSkillUI.GetRecipeInfoForSkillLineAbility(skillLineAbilityID, rec
 ---@param allocationItemGUID WOWGUID @ [OPTIONAL]
 ---@param overrideQualityID number @ [OPTIONAL]
 ---@param recraftOrderID BigUInteger @ [OPTIONAL]
----@overload fun(recipeSpellID:number, allocationItemGUID:WOWGUID, overrideQualityID:number, recraftOrderID:BigUInteger)
----@overload fun(recipeSpellID:number, overrideQualityID:number, recraftOrderID:BigUInteger)
----@overload fun(recipeSpellID:number, recraftOrderID:BigUInteger)
----@overload fun(recipeSpellID:number)
 ---@return CraftingRecipeOutputInfo outputInfo
 function C_TradeSkillUI.GetRecipeOutputItemData(recipeSpellID, reagents, allocationItemGUID, overrideQualityID, recraftOrderID) end
 
@@ -213,7 +197,6 @@ function C_TradeSkillUI.GetRecipeRequirements(recipeID) end
 ---@param recipeSpellID number 
 ---@param isRecraft boolean 
 ---@param recipeLevel luaIndex @ [OPTIONAL]
----@overload fun(recipeSpellID:number, isRecraft:bool)
 ---@return CraftingRecipeSchematic schematic
 function C_TradeSkillUI.GetRecipeSchematic(recipeSpellID, isRecraft, recipeLevel) end
 
@@ -222,7 +205,6 @@ function C_TradeSkillUI.GetRecipeSchematic(recipeSpellID, isRecraft, recipeLevel
 function C_TradeSkillUI.GetRecipesTracked(isRecraft) end
 
 ---@param recipeID number @ [OPTIONAL]
----@overload fun()
 ---@return WOWGUID items
 function C_TradeSkillUI.GetRecraftItems(recipeID) end
 
@@ -306,14 +288,12 @@ function C_TradeSkillUI.RecraftLimitCategoryValid(reagentItemID) end
 
 ---@param itemGUID WOWGUID 
 ---@param craftingReagents CraftingReagentInfo @ [OPTIONAL]
----@overload fun(itemGUID:WOWGUID)
 ---@return boolean result
 function C_TradeSkillUI.RecraftRecipe(itemGUID, craftingReagents) end
 
 ---@param orderID BigUInteger 
 ---@param itemGUID WOWGUID 
 ---@param craftingReagents CraftingReagentInfo @ [OPTIONAL]
----@overload fun(orderID:BigUInteger, itemGUID:WOWGUID)
 ---@return boolean result
 function C_TradeSkillUI.RecraftRecipeForOrder(orderID, itemGUID, craftingReagents) end
 
@@ -337,7 +317,8 @@ function C_TradeSkillUI.SetShowUnlearned(flag) end
 ---@param sourceTypeFilter number 
 function C_TradeSkillUI.SetSourceTypeFilter(sourceTypeFilter) end
 
----@class CraftingReagentItemFlag
-local CraftingReagentItemFlag = {}
-CraftingReagentItemFlag.TooltipShowsAsStatModifications = 0
+---@class Enum.CraftingReagentItemFlag
+local Enum.CraftingReagentItemFlag = {}
+---@field TooltipShowsAsStatModifications CraftingReagentItemFlag 
+Enum.CraftingReagentItemFlag.TooltipShowsAsStatModifications = 0
 

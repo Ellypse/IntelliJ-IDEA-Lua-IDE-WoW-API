@@ -53,8 +53,6 @@ function C_Map.GetMapBannersForMap(uiMapID) end
 ---@param uiMapID number 
 ---@param mapType UIMapType @ [OPTIONAL]
 ---@param allDescendants boolean @ [OPTIONAL]
----@overload fun(uiMapID:number, allDescendants:bool)
----@overload fun(uiMapID:number)
 ---@return UiMapDetails info
 function C_Map.GetMapChildrenInfo(uiMapID, mapType, allDescendants) end
 
@@ -97,7 +95,6 @@ function C_Map.GetMapLinksForMap(uiMapID) end
 ---@param continentID number 
 ---@param worldPosition vector2 
 ---@param overrideUiMapID number @ [OPTIONAL]
----@overload fun(continentID:number, worldPosition:vector2)
 ---@return number, vector2 uiMapID, mapPosition
 function C_Map.GetMapPosFromWorldPos(continentID, worldPosition, overrideUiMapID) end
 
@@ -153,81 +150,114 @@ function C_Map.RequestPreloadMap(uiMapID) end
 ---@param point UiMapPoint 
 function C_Map.SetUserWaypoint(point) end
 
----@class MapCanvasPosition
-local MapCanvasPosition = {}
-MapCanvasPosition.None = 0
-MapCanvasPosition.BottomLeft = 1
-MapCanvasPosition.BottomRight = 2
-MapCanvasPosition.TopLeft = 3
-MapCanvasPosition.TopRight = 4
+---@class Enum.MapCanvasPosition
+local Enum.MapCanvasPosition = {}
+---@field None MapCanvasPosition 
+Enum.MapCanvasPosition.None = 0
+---@field BottomLeft MapCanvasPosition 
+Enum.MapCanvasPosition.BottomLeft = 1
+---@field BottomRight MapCanvasPosition 
+Enum.MapCanvasPosition.BottomRight = 2
+---@field TopLeft MapCanvasPosition 
+Enum.MapCanvasPosition.TopLeft = 3
+---@field TopRight MapCanvasPosition 
+Enum.MapCanvasPosition.TopRight = 4
 
----@class UIMapFlag
-local UIMapFlag = {}
-UIMapFlag.NoHighlight = 1
-UIMapFlag.ShowOverlays = 2
-UIMapFlag.ShowTaxiNodes = 4
-UIMapFlag.GarrisonMap = 8
-UIMapFlag.FallbackToParentMap = 16
-UIMapFlag.NoHighlightTexture = 32
-UIMapFlag.ShowTaskObjectives = 64
-UIMapFlag.NoWorldPositions = 128
-UIMapFlag.HideArchaeologyDigs = 256
-UIMapFlag.Deprecated = 512
-UIMapFlag.HideIcons = 1024
-UIMapFlag.HideVignettes = 2048
-UIMapFlag.ForceAllOverlayExplored = 4096
-UIMapFlag.FlightMapShowZoomOut = 8192
-UIMapFlag.FlightMapAutoZoom = 16384
-UIMapFlag.ForceOnNavbar = 32768
-UIMapFlag.AlwaysAllowUserWaypoints = 65536
+---@class Enum.UIMapFlag
+local Enum.UIMapFlag = {}
+---@field NoHighlight UIMapFlag 
+Enum.UIMapFlag.NoHighlight = 1
+---@field ShowOverlays UIMapFlag 
+Enum.UIMapFlag.ShowOverlays = 2
+---@field ShowTaxiNodes UIMapFlag 
+Enum.UIMapFlag.ShowTaxiNodes = 4
+---@field GarrisonMap UIMapFlag 
+Enum.UIMapFlag.GarrisonMap = 8
+---@field FallbackToParentMap UIMapFlag 
+Enum.UIMapFlag.FallbackToParentMap = 16
+---@field NoHighlightTexture UIMapFlag 
+Enum.UIMapFlag.NoHighlightTexture = 32
+---@field ShowTaskObjectives UIMapFlag 
+Enum.UIMapFlag.ShowTaskObjectives = 64
+---@field NoWorldPositions UIMapFlag 
+Enum.UIMapFlag.NoWorldPositions = 128
+---@field HideArchaeologyDigs UIMapFlag 
+Enum.UIMapFlag.HideArchaeologyDigs = 256
+---@field Deprecated UIMapFlag 
+Enum.UIMapFlag.Deprecated = 512
+---@field HideIcons UIMapFlag 
+Enum.UIMapFlag.HideIcons = 1024
+---@field HideVignettes UIMapFlag 
+Enum.UIMapFlag.HideVignettes = 2048
+---@field ForceAllOverlayExplored UIMapFlag 
+Enum.UIMapFlag.ForceAllOverlayExplored = 4096
+---@field FlightMapShowZoomOut UIMapFlag 
+Enum.UIMapFlag.FlightMapShowZoomOut = 8192
+---@field FlightMapAutoZoom UIMapFlag 
+Enum.UIMapFlag.FlightMapAutoZoom = 16384
+---@field ForceOnNavbar UIMapFlag 
+Enum.UIMapFlag.ForceOnNavbar = 32768
+---@field AlwaysAllowUserWaypoints UIMapFlag 
+Enum.UIMapFlag.AlwaysAllowUserWaypoints = 65536
 
----@class UIMapSystem
-local UIMapSystem = {}
-UIMapSystem.World = 0
-UIMapSystem.Taxi = 1
-UIMapSystem.Adventure = 2
-UIMapSystem.Minimap = 3
+---@class Enum.UIMapSystem
+local Enum.UIMapSystem = {}
+---@field World UIMapSystem 
+Enum.UIMapSystem.World = 0
+---@field Taxi UIMapSystem 
+Enum.UIMapSystem.Taxi = 1
+---@field Adventure UIMapSystem 
+Enum.UIMapSystem.Adventure = 2
+---@field Minimap UIMapSystem 
+Enum.UIMapSystem.Minimap = 3
 
----@class UIMapType
-local UIMapType = {}
-UIMapType.Cosmic = 0
-UIMapType.World = 1
-UIMapType.Continent = 2
-UIMapType.Zone = 3
-UIMapType.Dungeon = 4
-UIMapType.Micro = 5
-UIMapType.Orphan = 6
+---@class Enum.UIMapType
+local Enum.UIMapType = {}
+---@field Cosmic UIMapType 
+Enum.UIMapType.Cosmic = 0
+---@field World UIMapType 
+Enum.UIMapType.World = 1
+---@field Continent UIMapType 
+Enum.UIMapType.Continent = 2
+---@field Zone UIMapType 
+Enum.UIMapType.Zone = 3
+---@field Dungeon UIMapType 
+Enum.UIMapType.Dungeon = 4
+---@field Micro UIMapType 
+Enum.UIMapType.Micro = 5
+---@field Orphan UIMapType 
+Enum.UIMapType.Orphan = 6
 
----@class MapBannerInfo
+---@type MapBannerInfo
 ---@field areaPoiID number 
 ---@field name cstring 
 ---@field atlasName string 
 ---@field uiTextureKit textureKit|nil 
-local MapBannerInfo = {}
+MapBannerInfo = {}
 
----@class MapLinkInfo
+---@type MapLinkInfo
 ---@field areaPoiID number 
 ---@field position vector2 
 ---@field name cstring 
 ---@field atlasName string 
 ---@field linkedUiMapID number 
-local MapLinkInfo = {}
+MapLinkInfo = {}
 
----@class UiMapDetails
+---@type UiMapDetails
 ---@field mapID number 
 ---@field name cstring 
 ---@field mapType UIMapType 
 ---@field parentMapID number 
 ---@field flags number 
-local UiMapDetails = {}
+UiMapDetails = {}
 
----@class UiMapGroupMemberInfo
+---@type UiMapGroupMemberInfo
 ---@field mapID number 
 ---@field relativeHeightIndex number 
 ---@field name cstring 
-local UiMapGroupMemberInfo = {}
+UiMapGroupMemberInfo = {}
 
----@class UiMapHighlightInfo
+---@type UiMapHighlightInfo
 ---@field fileDataID fileID 
 ---@field atlasID textureAtlas 
 ---@field texturePercentageX number 
@@ -236,9 +266,9 @@ local UiMapGroupMemberInfo = {}
 ---@field textureY number 
 ---@field scrollChildX number 
 ---@field scrollChildY number 
-local UiMapHighlightInfo = {}
+UiMapHighlightInfo = {}
 
----@class UiMapLayerInfo
+---@type UiMapLayerInfo
 ---@field layerWidth number 
 ---@field layerHeight number 
 ---@field tileWidth number 
@@ -246,5 +276,5 @@ local UiMapHighlightInfo = {}
 ---@field minScale number 
 ---@field maxScale number 
 ---@field additionalZoomSteps number 
-local UiMapLayerInfo = {}
+UiMapLayerInfo = {}
 

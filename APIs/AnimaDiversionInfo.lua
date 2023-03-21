@@ -21,26 +21,31 @@ function C_AnimaDiversion.OpenAnimaDiversionUI() end
 ---@param temporary boolean 
 function C_AnimaDiversion.SelectAnimaNode(talentID, temporary) end
 
----@class AnimaDiversionNodeState
-local AnimaDiversionNodeState = {}
-AnimaDiversionNodeState.Unavailable = 0
-AnimaDiversionNodeState.Available = 1
-AnimaDiversionNodeState.SelectedTemporary = 2
-AnimaDiversionNodeState.SelectedPermanent = 3
-AnimaDiversionNodeState.Cooldown = 4
+---@class Enum.AnimaDiversionNodeState
+local Enum.AnimaDiversionNodeState = {}
+---@field Unavailable AnimaDiversionNodeState 
+Enum.AnimaDiversionNodeState.Unavailable = 0
+---@field Available AnimaDiversionNodeState 
+Enum.AnimaDiversionNodeState.Available = 1
+---@field SelectedTemporary AnimaDiversionNodeState 
+Enum.AnimaDiversionNodeState.SelectedTemporary = 2
+---@field SelectedPermanent AnimaDiversionNodeState 
+Enum.AnimaDiversionNodeState.SelectedPermanent = 3
+---@field Cooldown AnimaDiversionNodeState 
+Enum.AnimaDiversionNodeState.Cooldown = 4
 
----@class AnimaDiversionCostInfo
+---@type AnimaDiversionCostInfo
 ---@field currencyID number 
 ---@field quantity number 
-local AnimaDiversionCostInfo = {}
+AnimaDiversionCostInfo = {}
 
----@class AnimaDiversionFrameInfo
+---@type AnimaDiversionFrameInfo
 ---@field textureKit textureKit 
 ---@field title string 
 ---@field mapID number 
-local AnimaDiversionFrameInfo = {}
+AnimaDiversionFrameInfo = {}
 
----@class AnimaDiversionNodeInfo
+---@type AnimaDiversionNodeInfo
 ---@field talentID number 
 ---@field name string 
 ---@field description string 
@@ -49,5 +54,5 @@ local AnimaDiversionFrameInfo = {}
 ---@field icon number 
 ---@field normalizedPosition vector2 
 ---@field state AnimaDiversionNodeState 
-local AnimaDiversionNodeInfo = {}
+AnimaDiversionNodeInfo = {}
 

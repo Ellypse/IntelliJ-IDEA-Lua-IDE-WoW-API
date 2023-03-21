@@ -48,7 +48,7 @@ function C_TaskQuest.IsActive(questID) end
 ---@param questID number 
 function C_TaskQuest.RequestPreloadRewardData(questID) end
 
----@class TaskPOIData
+---@type TaskPOIData
 ---@field questId number 
 ---@field x number 
 ---@field y number 
@@ -59,5 +59,5 @@ function C_TaskQuest.RequestPreloadRewardData(questID) end
 ---@field isDaily bool 
 ---@field isCombatAllyQuest bool 
 ---@field childDepth number|nil 
-local TaskPOIData = {}
+TaskPOIData = {}
 

@@ -121,8 +121,6 @@ function C_VoiceChat.GetVADSensitivity() end
 ---@param channelType ChatChannelType 
 ---@param clubId ClubId @ [OPTIONAL]
 ---@param streamId ClubStreamId @ [OPTIONAL]
----@overload fun(channelType:ChatChannelType, streamId:ClubStreamId)
----@overload fun(channelType:ChatChannelType)
 ---@return boolean isPending
 function C_VoiceChat.IsChannelJoinPending(channelType, clubId, streamId) end
 
@@ -200,7 +198,6 @@ function C_VoiceChat.RequestJoinAndActivateCommunityStreamChannel(clubId, stream
 
 ---@param channelType ChatChannelType 
 ---@param autoActivate boolean @ [OPTIONAL]
----@overload fun(channelType:ChatChannelType)
 function C_VoiceChat.RequestJoinChannelByChannelType(channelType, autoActivate) end
 
 ---@param communicationMode CommunicationMode 
@@ -270,80 +267,130 @@ function C_VoiceChat.ToggleMemberMuted(playerLocation) end
 
 function C_VoiceChat.ToggleMuted() end
 
----@class CommunicationMode
-local CommunicationMode = {}
-CommunicationMode.PushToTalk = 0
-CommunicationMode.OpenMic = 1
+---@class Enum.CommunicationMode
+local Enum.CommunicationMode = {}
+---@field PushToTalk CommunicationMode 
+Enum.CommunicationMode.PushToTalk = 0
+---@field OpenMic CommunicationMode 
+Enum.CommunicationMode.OpenMic = 1
 
----@class VoiceChannelErrorReason
-local VoiceChannelErrorReason = {}
-VoiceChannelErrorReason.Unknown = 0
-VoiceChannelErrorReason.IsBattleNetChannel = 1
+---@class Enum.VoiceChannelErrorReason
+local Enum.VoiceChannelErrorReason = {}
+---@field Unknown VoiceChannelErrorReason 
+Enum.VoiceChannelErrorReason.Unknown = 0
+---@field IsBattleNetChannel VoiceChannelErrorReason 
+Enum.VoiceChannelErrorReason.IsBattleNetChannel = 1
 
----@class VoiceChatStatusCode
-local VoiceChatStatusCode = {}
-VoiceChatStatusCode.Success = 0
-VoiceChatStatusCode.OperationPending = 1
-VoiceChatStatusCode.TooManyRequests = 2
-VoiceChatStatusCode.LoginProhibited = 3
-VoiceChatStatusCode.ClientNotInitialized = 4
-VoiceChatStatusCode.ClientNotLoggedIn = 5
-VoiceChatStatusCode.ClientAlreadyLoggedIn = 6
-VoiceChatStatusCode.ChannelNameTooShort = 7
-VoiceChatStatusCode.ChannelNameTooLong = 8
-VoiceChatStatusCode.ChannelAlreadyExists = 9
-VoiceChatStatusCode.AlreadyInChannel = 10
-VoiceChatStatusCode.TargetNotFound = 11
-VoiceChatStatusCode.Failure = 12
-VoiceChatStatusCode.ServiceLost = 13
-VoiceChatStatusCode.UnableToLaunchProxy = 14
-VoiceChatStatusCode.ProxyConnectionTimeOut = 15
-VoiceChatStatusCode.ProxyConnectionUnableToConnect = 16
-VoiceChatStatusCode.ProxyConnectionUnexpectedDisconnect = 17
-VoiceChatStatusCode.Disabled = 18
-VoiceChatStatusCode.UnsupportedChatChannelType = 19
-VoiceChatStatusCode.InvalidCommunityStream = 20
-VoiceChatStatusCode.PlayerSilenced = 21
-VoiceChatStatusCode.PlayerVoiceChatParentalDisabled = 22
-VoiceChatStatusCode.InvalidInputDevice = 23
-VoiceChatStatusCode.InvalidOutputDevice = 24
+---@class Enum.VoiceChatStatusCode
+local Enum.VoiceChatStatusCode = {}
+---@field Success VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.Success = 0
+---@field OperationPending VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.OperationPending = 1
+---@field TooManyRequests VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.TooManyRequests = 2
+---@field LoginProhibited VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.LoginProhibited = 3
+---@field ClientNotInitialized VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.ClientNotInitialized = 4
+---@field ClientNotLoggedIn VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.ClientNotLoggedIn = 5
+---@field ClientAlreadyLoggedIn VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.ClientAlreadyLoggedIn = 6
+---@field ChannelNameTooShort VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.ChannelNameTooShort = 7
+---@field ChannelNameTooLong VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.ChannelNameTooLong = 8
+---@field ChannelAlreadyExists VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.ChannelAlreadyExists = 9
+---@field AlreadyInChannel VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.AlreadyInChannel = 10
+---@field TargetNotFound VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.TargetNotFound = 11
+---@field Failure VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.Failure = 12
+---@field ServiceLost VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.ServiceLost = 13
+---@field UnableToLaunchProxy VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.UnableToLaunchProxy = 14
+---@field ProxyConnectionTimeOut VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.ProxyConnectionTimeOut = 15
+---@field ProxyConnectionUnableToConnect VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.ProxyConnectionUnableToConnect = 16
+---@field ProxyConnectionUnexpectedDisconnect VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.ProxyConnectionUnexpectedDisconnect = 17
+---@field Disabled VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.Disabled = 18
+---@field UnsupportedChatChannelType VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.UnsupportedChatChannelType = 19
+---@field InvalidCommunityStream VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.InvalidCommunityStream = 20
+---@field PlayerSilenced VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.PlayerSilenced = 21
+---@field PlayerVoiceChatParentalDisabled VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.PlayerVoiceChatParentalDisabled = 22
+---@field InvalidInputDevice VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.InvalidInputDevice = 23
+---@field InvalidOutputDevice VoiceChatStatusCode 
+Enum.VoiceChatStatusCode.InvalidOutputDevice = 24
 
----@class VoiceTtsDestination
-local VoiceTtsDestination = {}
-VoiceTtsDestination.RemoteTransmission = 0
-VoiceTtsDestination.LocalPlayback = 1
-VoiceTtsDestination.RemoteTransmissionWithLocalPlayback = 2
-VoiceTtsDestination.QueuedRemoteTransmission = 3
-VoiceTtsDestination.QueuedLocalPlayback = 4
-VoiceTtsDestination.QueuedRemoteTransmissionWithLocalPlayback = 5
-VoiceTtsDestination.ScreenReader = 6
+---@class Enum.VoiceTtsDestination
+local Enum.VoiceTtsDestination = {}
+---@field RemoteTransmission VoiceTtsDestination 
+Enum.VoiceTtsDestination.RemoteTransmission = 0
+---@field LocalPlayback VoiceTtsDestination 
+Enum.VoiceTtsDestination.LocalPlayback = 1
+---@field RemoteTransmissionWithLocalPlayback VoiceTtsDestination 
+Enum.VoiceTtsDestination.RemoteTransmissionWithLocalPlayback = 2
+---@field QueuedRemoteTransmission VoiceTtsDestination 
+Enum.VoiceTtsDestination.QueuedRemoteTransmission = 3
+---@field QueuedLocalPlayback VoiceTtsDestination 
+Enum.VoiceTtsDestination.QueuedLocalPlayback = 4
+---@field QueuedRemoteTransmissionWithLocalPlayback VoiceTtsDestination 
+Enum.VoiceTtsDestination.QueuedRemoteTransmissionWithLocalPlayback = 5
+---@field ScreenReader VoiceTtsDestination 
+Enum.VoiceTtsDestination.ScreenReader = 6
 
----@class VoiceTtsStatusCode
-local VoiceTtsStatusCode = {}
-VoiceTtsStatusCode.Success = 0
-VoiceTtsStatusCode.InvalidEngineType = 1
-VoiceTtsStatusCode.EngineAllocationFailed = 2
-VoiceTtsStatusCode.NotSupported = 3
-VoiceTtsStatusCode.MaxCharactersExceeded = 4
-VoiceTtsStatusCode.UtteranceBelowMinimumDuration = 5
-VoiceTtsStatusCode.InputTextEnqueued = 6
-VoiceTtsStatusCode.SdkNotInitialized = 7
-VoiceTtsStatusCode.DestinationQueueFull = 8
-VoiceTtsStatusCode.EnqueueNotNecessary = 9
-VoiceTtsStatusCode.UtteranceNotFound = 10
-VoiceTtsStatusCode.ManagerNotFound = 11
-VoiceTtsStatusCode.InvalidArgument = 12
-VoiceTtsStatusCode.InternalError = 13
+---@class Enum.VoiceTtsStatusCode
+local Enum.VoiceTtsStatusCode = {}
+---@field Success VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode.Success = 0
+---@field InvalidEngineType VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode.InvalidEngineType = 1
+---@field EngineAllocationFailed VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode.EngineAllocationFailed = 2
+---@field NotSupported VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode.NotSupported = 3
+---@field MaxCharactersExceeded VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode.MaxCharactersExceeded = 4
+---@field UtteranceBelowMinimumDuration VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode.UtteranceBelowMinimumDuration = 5
+---@field InputTextEnqueued VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode.InputTextEnqueued = 6
+---@field SdkNotInitialized VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode.SdkNotInitialized = 7
+---@field DestinationQueueFull VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode.DestinationQueueFull = 8
+---@field EnqueueNotNecessary VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode.EnqueueNotNecessary = 9
+---@field UtteranceNotFound VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode.UtteranceNotFound = 10
+---@field ManagerNotFound VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode.ManagerNotFound = 11
+---@field InvalidArgument VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode.InvalidArgument = 12
+---@field InternalError VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode.InternalError = 13
 
----@class VoiceAudioDevice
+---@type VoiceAudioDevice
 ---@field deviceID string 
 ---@field displayName string 
 ---@field isActive bool 
 ---@field isSystemDefault bool 
 ---@field isCommsDefault bool 
-local VoiceAudioDevice = {}
+VoiceAudioDevice = {}
 
----@class VoiceChatChannel
+---@type VoiceChatChannel
 ---@field name string 
 ---@field channelID number 
 ---@field channelType ChatChannelType 
@@ -355,24 +402,24 @@ local VoiceAudioDevice = {}
 ---@field isTransmitting bool 
 ---@field isTranscribing bool 
 ---@field members table 
-local VoiceChatChannel = {}
+VoiceChatChannel = {}
 
----@class VoiceChatMember
+---@type VoiceChatMember
 ---@field energy number 
 ---@field memberID number 
 ---@field isActive bool 
 ---@field isSpeaking bool 
 ---@field isMutedForAll bool 
 ---@field isSilenced bool 
-local VoiceChatMember = {}
+VoiceChatMember = {}
 
----@class VoiceChatProcess
+---@type VoiceChatProcess
 ---@field name string 
 ---@field channels table 
-local VoiceChatProcess = {}
+VoiceChatProcess = {}
 
----@class VoiceTtsVoiceType
+---@type VoiceTtsVoiceType
 ---@field voiceID number 
 ---@field name string 
-local VoiceTtsVoiceType = {}
+VoiceTtsVoiceType = {}
 

@@ -4,8 +4,8 @@ C_LoreText = {}
 ---@param campaignID number 
 function C_LoreText.RequestLoreTextForCampaignID(campaignID) end
 
----@class LoreTextEntry
+---@type LoreTextEntry
 ---@field text string 
 ---@field isHeader bool 
-local LoreTextEntry = {}
+LoreTextEntry = {}
 

@@ -169,13 +169,12 @@ function C_Container.SplitContainerItem(containerIndex, slotIndex, amount) end
 ---@param slotIndex luaIndex 
 ---@param unitToken UnitToken @ [OPTIONAL]
 ---@param reagentBankOpen boolean 
----@overload fun(containerIndex:BagIndex, slotIndex:luaIndex, reagentBankOpen:bool)
 function C_Container.UseContainerItem(containerIndex, slotIndex, unitToken, reagentBankOpen) end
 
 ---@return boolean used
 function C_Container.UseHearthstone() end
 
----@class ContainerItemInfo
+---@type ContainerItemInfo
 ---@field iconFileID fileID 
 ---@field stackCount number 
 ---@field isLocked bool 
@@ -187,31 +186,31 @@ function C_Container.UseHearthstone() end
 ---@field hasNoValue bool 
 ---@field itemID number 
 ---@field isBound bool 
-local ContainerItemInfo = {}
+ContainerItemInfo = {}
 
----@class ItemPurchaseCurrency
+---@type ItemPurchaseCurrency
 ---@field iconFileID number|nil 
 ---@field currencyCount number 
 ---@field name cstring 
-local ItemPurchaseCurrency = {}
+ItemPurchaseCurrency = {}
 
----@class ItemPurchaseInfo
+---@type ItemPurchaseInfo
 ---@field money WOWMONEY 
 ---@field itemCount number 
 ---@field refundSeconds time_t 
 ---@field currencyCount number 
 ---@field hasEnchants bool 
-local ItemPurchaseInfo = {}
+ItemPurchaseInfo = {}
 
----@class ItemPurchaseItem
+---@type ItemPurchaseItem
 ---@field iconFileID number|nil 
 ---@field itemCount number 
 ---@field hyperlink string 
-local ItemPurchaseItem = {}
+ItemPurchaseItem = {}
 
----@class ItemQuestInfo
+---@type ItemQuestInfo
 ---@field isQuestItem bool 
 ---@field questID number|nil 
 ---@field isActive bool 
-local ItemQuestInfo = {}
+ItemQuestInfo = {}
 

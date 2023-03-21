@@ -5,13 +5,11 @@ function C_QuestLog.AbandonQuest() end
 
 ---@param questID number 
 ---@param watchType QuestWatchType @ [OPTIONAL]
----@overload fun(questID:number)
 ---@return boolean wasWatched
 function C_QuestLog.AddQuestWatch(questID, watchType) end
 
 ---@param questID number 
 ---@param watchType QuestWatchType @ [OPTIONAL]
----@overload fun(questID:number)
 ---@return boolean wasWatched
 function C_QuestLog.AddWorldQuestWatch(questID, watchType) end
 
@@ -124,7 +122,6 @@ function C_QuestLog.GetQuestIDForWorldQuestWatchIndex(questWatchIndex) end
 function C_QuestLog.GetQuestLogMajorFactionReputationRewards(questID) end
 
 ---@param questLogIndex luaIndex @ [OPTIONAL]
----@overload fun()
 ---@return number, cstring, cstring, number, number|nil portraitGiver, portraitGiverText, portraitGiverName, portraitGiverMount, portraitGiverModelSceneID
 function C_QuestLog.GetQuestLogPortraitGiver(questLogIndex) end
 
@@ -150,7 +147,6 @@ function C_QuestLog.GetQuestsOnMap(uiMapID) end
 
 --- Uses the selected quest if no questID is provided
 ---@param questID number @ [OPTIONAL]
----@overload fun()
 ---@return number requiredMoney
 function C_QuestLog.GetRequiredMoney(questID) end
 
@@ -319,47 +315,72 @@ function C_QuestLog.SortQuestWatches() end
 ---@return boolean isRelatedToActiveQuest
 function C_QuestLog.UnitIsRelatedToActiveQuest(unit) end
 
----@class MapOverlayDisplayLocation
-local MapOverlayDisplayLocation = {}
-MapOverlayDisplayLocation.Default = 0
-MapOverlayDisplayLocation.BottomLeft = 1
-MapOverlayDisplayLocation.TopLeft = 2
-MapOverlayDisplayLocation.BottomRight = 3
-MapOverlayDisplayLocation.TopRight = 4
-MapOverlayDisplayLocation.Hidden = 5
+---@class Enum.MapOverlayDisplayLocation
+local Enum.MapOverlayDisplayLocation = {}
+---@field Default MapOverlayDisplayLocation 
+Enum.MapOverlayDisplayLocation.Default = 0
+---@field BottomLeft MapOverlayDisplayLocation 
+Enum.MapOverlayDisplayLocation.BottomLeft = 1
+---@field TopLeft MapOverlayDisplayLocation 
+Enum.MapOverlayDisplayLocation.TopLeft = 2
+---@field BottomRight MapOverlayDisplayLocation 
+Enum.MapOverlayDisplayLocation.BottomRight = 3
+---@field TopRight MapOverlayDisplayLocation 
+Enum.MapOverlayDisplayLocation.TopRight = 4
+---@field Hidden MapOverlayDisplayLocation 
+Enum.MapOverlayDisplayLocation.Hidden = 5
 
----@class QuestFrequency
-local QuestFrequency = {}
-QuestFrequency.Default = 0
-QuestFrequency.Daily = 1
-QuestFrequency.Weekly = 2
+---@class Enum.QuestFrequency
+local Enum.QuestFrequency = {}
+---@field Default QuestFrequency 
+Enum.QuestFrequency.Default = 0
+---@field Daily QuestFrequency 
+Enum.QuestFrequency.Daily = 1
+---@field Weekly QuestFrequency 
+Enum.QuestFrequency.Weekly = 2
 
----@class QuestTag
-local QuestTag = {}
-QuestTag.Group = 1
-QuestTag.PvP = 41
-QuestTag.Raid = 62
-QuestTag.Dungeon = 81
-QuestTag.Legendary = 83
-QuestTag.Heroic = 85
-QuestTag.Raid10 = 88
-QuestTag.Raid25 = 89
-QuestTag.Scenario = 98
-QuestTag.Account = 102
-QuestTag.CombatAlly = 266
+---@class Enum.QuestTag
+local Enum.QuestTag = {}
+---@field Group QuestTag 
+Enum.QuestTag.Group = 1
+---@field PvP QuestTag 
+Enum.QuestTag.PvP = 41
+---@field Raid QuestTag 
+Enum.QuestTag.Raid = 62
+---@field Dungeon QuestTag 
+Enum.QuestTag.Dungeon = 81
+---@field Legendary QuestTag 
+Enum.QuestTag.Legendary = 83
+---@field Heroic QuestTag 
+Enum.QuestTag.Heroic = 85
+---@field Raid10 QuestTag 
+Enum.QuestTag.Raid10 = 88
+---@field Raid25 QuestTag 
+Enum.QuestTag.Raid25 = 89
+---@field Scenario QuestTag 
+Enum.QuestTag.Scenario = 98
+---@field Account QuestTag 
+Enum.QuestTag.Account = 102
+---@field CombatAlly QuestTag 
+Enum.QuestTag.CombatAlly = 266
 
----@class QuestWatchType
-local QuestWatchType = {}
-QuestWatchType.Automatic = 0
-QuestWatchType.Manual = 1
+---@class Enum.QuestWatchType
+local Enum.QuestWatchType = {}
+---@field Automatic QuestWatchType 
+Enum.QuestWatchType.Automatic = 0
+---@field Manual QuestWatchType 
+Enum.QuestWatchType.Manual = 1
 
----@class WorldQuestQuality
-local WorldQuestQuality = {}
-WorldQuestQuality.Common = 0
-WorldQuestQuality.Rare = 1
-WorldQuestQuality.Epic = 2
+---@class Enum.WorldQuestQuality
+local Enum.WorldQuestQuality = {}
+---@field Common WorldQuestQuality 
+Enum.WorldQuestQuality.Common = 0
+---@field Rare WorldQuestQuality 
+Enum.WorldQuestQuality.Rare = 1
+---@field Epic WorldQuestQuality 
+Enum.WorldQuestQuality.Epic = 2
 
----@class QuestInfo
+---@type QuestInfo
 ---@field title string 
 ---@field questLogIndex luaIndex 
 ---@field questID number 
@@ -382,25 +403,25 @@ WorldQuestQuality.Epic = 2
 ---@field isAutoComplete bool 
 ---@field overridesSortOrder bool 
 ---@field readyForTranslation bool 
-local QuestInfo = {}
+QuestInfo = {}
 
----@class QuestObjectiveInfo
+---@type QuestObjectiveInfo
 ---@field text string 
 ---@field type string 
 ---@field finished bool 
 ---@field numFulfilled number 
 ---@field numRequired number 
-local QuestObjectiveInfo = {}
+QuestObjectiveInfo = {}
 
----@class QuestOnMapInfo
+---@type QuestOnMapInfo
 ---@field questID number 
 ---@field x number 
 ---@field y number 
 ---@field type number 
 ---@field isMapIndicatorQuest bool 
-local QuestOnMapInfo = {}
+QuestOnMapInfo = {}
 
----@class QuestTagInfo
+---@type QuestTagInfo
 ---@field tagName cstring 
 ---@field tagID number 
 ---@field worldQuestType number|nil 
@@ -408,12 +429,12 @@ local QuestOnMapInfo = {}
 ---@field tradeskillLineID number|nil 
 ---@field isElite bool|nil 
 ---@field displayExpiration bool|nil 
-local QuestTagInfo = {}
+QuestTagInfo = {}
 
----@class QuestTheme
+---@type QuestTheme
 ---@field background textureAtlas 
 ---@field seal textureAtlas 
 ---@field signature cstring 
 ---@field poiIcon textureAtlas 
-local QuestTheme = {}
+QuestTheme = {}
 

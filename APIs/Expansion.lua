@@ -62,28 +62,34 @@ function IsVeteranTrialAccount() end
 ---@param response SubscriptionInterstitialResponseType 
 function SendSubscriptionInterstitialResponse(response) end
 
----@class SubscriptionInterstitialResponseType
-local SubscriptionInterstitialResponseType = {}
-SubscriptionInterstitialResponseType.Clicked = 0
-SubscriptionInterstitialResponseType.Closed = 1
-SubscriptionInterstitialResponseType.WebRedirect = 2
+---@class Enum.SubscriptionInterstitialResponseType
+local Enum.SubscriptionInterstitialResponseType = {}
+---@field Clicked SubscriptionInterstitialResponseType 
+Enum.SubscriptionInterstitialResponseType.Clicked = 0
+---@field Closed SubscriptionInterstitialResponseType 
+Enum.SubscriptionInterstitialResponseType.Closed = 1
+---@field WebRedirect SubscriptionInterstitialResponseType 
+Enum.SubscriptionInterstitialResponseType.WebRedirect = 2
 
----@class SubscriptionInterstitialType
-local SubscriptionInterstitialType = {}
-SubscriptionInterstitialType.Standard = 0
-SubscriptionInterstitialType.LeftNpeArea = 1
-SubscriptionInterstitialType.MaxLevel = 2
+---@class Enum.SubscriptionInterstitialType
+local Enum.SubscriptionInterstitialType = {}
+---@field Standard SubscriptionInterstitialType 
+Enum.SubscriptionInterstitialType.Standard = 0
+---@field LeftNpeArea SubscriptionInterstitialType 
+Enum.SubscriptionInterstitialType.LeftNpeArea = 1
+---@field MaxLevel SubscriptionInterstitialType 
+Enum.SubscriptionInterstitialType.MaxLevel = 2
 
----@class ExpansionDisplayInfo
+---@type ExpansionDisplayInfo
 ---@field logo fileID 
 ---@field banner textureAtlas 
 ---@field features table 
 ---@field highResBackgroundID fileID 
 ---@field lowResBackgroundID fileID 
-local ExpansionDisplayInfo = {}
+ExpansionDisplayInfo = {}
 
----@class ExpansionDisplayInfoFeature
+---@type ExpansionDisplayInfoFeature
 ---@field icon fileID 
 ---@field text cstring 
-local ExpansionDisplayInfoFeature = {}
+ExpansionDisplayInfoFeature = {}
 

@@ -18,7 +18,6 @@ function C_CurrencyInfo.GetBackpackCurrencyInfo(index) end
 
 ---@param currencyType number 
 ---@param quantity number @ [OPTIONAL]
----@overload fun(currencyType:number)
 ---@return CurrencyDisplayInfo info
 function C_CurrencyInfo.GetBasicCurrencyInfo(currencyType, quantity) end
 
@@ -45,7 +44,6 @@ function C_CurrencyInfo.GetCurrencyInfoFromLink(link) end
 
 ---@param type number 
 ---@param amount number @ [OPTIONAL]
----@overload fun(type:number)
 ---@return cstring link
 function C_CurrencyInfo.GetCurrencyLink(type, amount) end
 
@@ -84,23 +82,23 @@ function C_CurrencyInfo.SetCurrencyBackpack(index, backpack) end
 ---@param unused boolean 
 function C_CurrencyInfo.SetCurrencyUnused(index, unused) end
 
----@class BackpackCurrencyInfo
+---@type BackpackCurrencyInfo
 ---@field name string 
 ---@field quantity number 
 ---@field iconFileID fileID 
 ---@field currencyTypesID number 
-local BackpackCurrencyInfo = {}
+BackpackCurrencyInfo = {}
 
----@class CurrencyDisplayInfo
+---@type CurrencyDisplayInfo
 ---@field name string 
 ---@field description string 
 ---@field icon number 
 ---@field quality number 
 ---@field displayAmount number 
 ---@field actualAmount number 
-local CurrencyDisplayInfo = {}
+CurrencyDisplayInfo = {}
 
----@class CurrencyInfo
+---@type CurrencyInfo
 ---@field name cstring 
 ---@field description cstring 
 ---@field isHeader bool 
@@ -119,5 +117,5 @@ local CurrencyDisplayInfo = {}
 ---@field totalEarned number 
 ---@field discovered bool 
 ---@field useTotalEarnedForMaxQty bool 
-local CurrencyInfo = {}
+CurrencyInfo = {}
 

@@ -72,21 +72,21 @@ function C_AzeriteEssence.SetPendingActivationEssence(essenceID) end
 ---@param milestoneID number 
 function C_AzeriteEssence.UnlockMilestone(milestoneID) end
 
----@class AzeriteEssenceInfo
+---@type AzeriteEssenceInfo
 ---@field ID number 
 ---@field name cstring 
 ---@field rank number 
 ---@field unlocked bool 
 ---@field valid bool 
 ---@field icon fileID 
-local AzeriteEssenceInfo = {}
+AzeriteEssenceInfo = {}
 
----@class AzeriteMilestoneInfo
+---@type AzeriteMilestoneInfo
 ---@field ID number 
 ---@field requiredLevel number 
 ---@field canUnlock bool 
 ---@field unlocked bool 
 ---@field rank number|nil 
 ---@field slot AzeriteEssenceSlot|nil 
-local AzeriteMilestoneInfo = {}
+AzeriteMilestoneInfo = {}
 

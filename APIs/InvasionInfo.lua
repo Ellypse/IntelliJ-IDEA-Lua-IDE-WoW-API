@@ -17,11 +17,11 @@ function C_InvasionInfo.GetInvasionInfo(invasionID) end
 ---@return number|nil timeLeftMinutes
 function C_InvasionInfo.GetInvasionTimeLeft(invasionID) end
 
----@class InvasionMapInfo
+---@type InvasionMapInfo
 ---@field invasionID number 
 ---@field name string 
 ---@field position vector2 
 ---@field atlasName textureAtlas 
 ---@field rewardQuestID number|nil 
-local InvasionMapInfo = {}
+InvasionMapInfo = {}
 

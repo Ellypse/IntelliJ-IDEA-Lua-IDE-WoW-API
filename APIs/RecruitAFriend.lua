@@ -7,7 +7,6 @@ C_RecruitAFriend = {}
 function C_RecruitAFriend.ClaimActivityReward(activityID, acceptanceID) end
 
 ---@param rafVersion RecruitAFriendRewardsVersion @ [OPTIONAL]
----@overload fun()
 ---@return boolean success
 function C_RecruitAFriend.ClaimNextReward(rafVersion) end
 
@@ -41,70 +40,84 @@ function C_RecruitAFriend.RemoveRAFRecruit(wowAccountGUID) end
 ---@return boolean success
 function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 
----@class RafRecruitActivityState
-local RafRecruitActivityState = {}
-RafRecruitActivityState.Incomplete = 0
-RafRecruitActivityState.Complete = 1
-RafRecruitActivityState.RewardClaimed = 2
+---@class Enum.RafRecruitActivityState
+local Enum.RafRecruitActivityState = {}
+---@field Incomplete RafRecruitActivityState 
+Enum.RafRecruitActivityState.Incomplete = 0
+---@field Complete RafRecruitActivityState 
+Enum.RafRecruitActivityState.Complete = 1
+---@field RewardClaimed RafRecruitActivityState 
+Enum.RafRecruitActivityState.RewardClaimed = 2
 
----@class RafRecruitSubStatus
-local RafRecruitSubStatus = {}
-RafRecruitSubStatus.Trial = 0
-RafRecruitSubStatus.Active = 1
-RafRecruitSubStatus.Inactive = 2
+---@class Enum.RafRecruitSubStatus
+local Enum.RafRecruitSubStatus = {}
+---@field Trial RafRecruitSubStatus 
+Enum.RafRecruitSubStatus.Trial = 0
+---@field Active RafRecruitSubStatus 
+Enum.RafRecruitSubStatus.Active = 1
+---@field Inactive RafRecruitSubStatus 
+Enum.RafRecruitSubStatus.Inactive = 2
 
----@class RafRewardType
-local RafRewardType = {}
-RafRewardType.Pet = 0
-RafRewardType.Mount = 1
-RafRewardType.Appearance = 2
-RafRewardType.Title = 3
-RafRewardType.GameTime = 4
-RafRewardType.AppearanceSet = 5
-RafRewardType.Illusion = 6
-RafRewardType.Invalid = 7
+---@class Enum.RafRewardType
+local Enum.RafRewardType = {}
+---@field Pet RafRewardType 
+Enum.RafRewardType.Pet = 0
+---@field Mount RafRewardType 
+Enum.RafRewardType.Mount = 1
+---@field Appearance RafRewardType 
+Enum.RafRewardType.Appearance = 2
+---@field Title RafRewardType 
+Enum.RafRewardType.Title = 3
+---@field GameTime RafRewardType 
+Enum.RafRewardType.GameTime = 4
+---@field AppearanceSet RafRewardType 
+Enum.RafRewardType.AppearanceSet = 5
+---@field Illusion RafRewardType 
+Enum.RafRewardType.Illusion = 6
+---@field Invalid RafRewardType 
+Enum.RafRewardType.Invalid = 7
 
----@class RafAppearanceInfo
+---@type RafAppearanceInfo
 ---@field appearanceID number 
-local RafAppearanceInfo = {}
+RafAppearanceInfo = {}
 
----@class RafAppearanceSetInfo
+---@type RafAppearanceSetInfo
 ---@field setID number 
 ---@field setName string 
 ---@field appearanceIDs table 
-local RafAppearanceSetInfo = {}
+RafAppearanceSetInfo = {}
 
----@class RafIllusionInfo
+---@type RafIllusionInfo
 ---@field spellItemEnchantmentID number 
-local RafIllusionInfo = {}
+RafIllusionInfo = {}
 
----@class RafInfo
+---@type RafInfo
 ---@field versions table 
 ---@field recruitmentInfo RafRecruitmentinfo|nil 
 ---@field recruits table 
 ---@field claimInProgress bool 
-local RafInfo = {}
+RafInfo = {}
 
----@class RafMonthCount
+---@type RafMonthCount
 ---@field lifetimeMonths number 
 ---@field spentMonths number 
 ---@field availableMonths number 
-local RafMonthCount = {}
+RafMonthCount = {}
 
----@class RafMountInfo
+---@type RafMountInfo
 ---@field spellID number 
 ---@field mountID number 
-local RafMountInfo = {}
+RafMountInfo = {}
 
----@class RafPetInfo
+---@type RafPetInfo
 ---@field creatureID number 
 ---@field speciesID number 
 ---@field displayID number 
 ---@field speciesName string 
 ---@field description string 
-local RafPetInfo = {}
+RafPetInfo = {}
 
----@class RafRecruit
+---@type RafRecruit
 ---@field bnetAccountID number 
 ---@field wowAccountGUID WOWGUID 
 ---@field battleTag string 
@@ -113,15 +126,15 @@ local RafPetInfo = {}
 ---@field acceptanceID RecruitAcceptanceID 
 ---@field versionRecruited RecruitAFriendRewardsVersion 
 ---@field activities table 
-local RafRecruit = {}
+RafRecruit = {}
 
----@class RafRecruitActivity
+---@type RafRecruitActivity
 ---@field activityID number 
 ---@field rewardQuestID number 
 ---@field state RafRecruitActivityState 
-local RafRecruitActivity = {}
+RafRecruitActivity = {}
 
----@class RafRecruitmentinfo
+---@type RafRecruitmentinfo
 ---@field recruitmentCode string 
 ---@field recruitmentURL string 
 ---@field expireTime number 
@@ -130,9 +143,9 @@ local RafRecruitActivity = {}
 ---@field remainingUses number 
 ---@field sourceRealm string 
 ---@field sourceFaction string 
-local RafRecruitmentinfo = {}
+RafRecruitmentinfo = {}
 
----@class RafReward
+---@type RafReward
 ---@field rewardID number 
 ---@field rafVersion RecruitAFriendRewardsVersion 
 ---@field itemID number 
@@ -152,25 +165,25 @@ local RafRecruitmentinfo = {}
 ---@field monthCost number 
 ---@field availableInMonths number 
 ---@field iconID fileID 
-local RafReward = {}
+RafReward = {}
 
----@class RafSystemInfo
+---@type RafSystemInfo
 ---@field maxRecruits number 
 ---@field maxRecruitMonths number 
 ---@field maxRecruitmentUses number 
 ---@field daysInCycle number 
-local RafSystemInfo = {}
+RafSystemInfo = {}
 
----@class RafTitleInfo
+---@type RafTitleInfo
 ---@field titleMaskID number 
-local RafTitleInfo = {}
+RafTitleInfo = {}
 
----@class RafVersionInfo
+---@type RafVersionInfo
 ---@field rafVersion RecruitAFriendRewardsVersion 
 ---@field monthCount RafMonthCount 
 ---@field rewards table 
 ---@field nextReward RafReward|nil 
 ---@field numAffordableRewards number 
 ---@field numRecruits number 
-local RafVersionInfo = {}
+RafVersionInfo = {}
 

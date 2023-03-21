@@ -33,13 +33,11 @@ function C_TransmogCollection.GetAllAppearanceSources(itemAppearanceID) end
 
 ---@param itemAppearanceID number 
 ---@param variation TransmogCameraVariation @ [OPTIONAL]
----@overload fun(itemAppearanceID:number)
 ---@return number cameraID
 function C_TransmogCollection.GetAppearanceCameraID(itemAppearanceID, variation) end
 
 ---@param itemModifiedAppearanceID number 
 ---@param variation TransmogCameraVariation @ [OPTIONAL]
----@overload fun(itemModifiedAppearanceID:number)
 ---@return number cameraID
 function C_TransmogCollection.GetAppearanceCameraIDBySource(itemModifiedAppearanceID, variation) end
 
@@ -58,8 +56,6 @@ function C_TransmogCollection.GetAppearanceSourceInfo(itemModifiedAppearanceID) 
 ---@param appearanceID number 
 ---@param categoryType TransmogCollectionType @ [OPTIONAL]
 ---@param transmogLocation TransmogLocation @ [OPTIONAL]
----@overload fun(appearanceID:number, transmogLocation:TransmogLocation)
----@overload fun(appearanceID:number)
 ---@return AppearanceSourceInfo sources
 function C_TransmogCollection.GetAppearanceSources(appearanceID, categoryType, transmogLocation) end
 
@@ -69,7 +65,6 @@ function C_TransmogCollection.GetArtifactAppearanceStrings(appearanceID) end
 
 ---@param category TransmogCollectionType 
 ---@param transmogLocation TransmogLocation @ [OPTIONAL]
----@overload fun(category:TransmogCollectionType)
 ---@return TransmogCategoryAppearanceInfo appearances
 function C_TransmogCollection.GetCategoryAppearances(category, transmogLocation) end
 
@@ -273,13 +268,16 @@ function C_TransmogCollection.SetUncollectedShown(shown) end
 
 function C_TransmogCollection.UpdateUsableAppearances() end
 
----@class TransmogCameraVariation
-local TransmogCameraVariation = {}
-TransmogCameraVariation.None = 0
-TransmogCameraVariation.RightShoulder = 1
-TransmogCameraVariation.CloakBackpack = 1
+---@class Enum.TransmogCameraVariation
+local Enum.TransmogCameraVariation = {}
+---@field None TransmogCameraVariation 
+Enum.TransmogCameraVariation.None = 0
+---@field RightShoulder TransmogCameraVariation 
+Enum.TransmogCameraVariation.RightShoulder = 1
+---@field CloakBackpack TransmogCameraVariation 
+Enum.TransmogCameraVariation.CloakBackpack = 1
 
----@class TransmogAppearanceInfoBySourceData
+---@type TransmogAppearanceInfoBySourceData
 ---@field appearanceID number 
 ---@field appearanceIsCollected bool 
 ---@field sourceIsCollected bool 
@@ -291,17 +289,17 @@ TransmogCameraVariation.CloakBackpack = 1
 ---@field appearanceIsUsable bool 
 ---@field appearanceNumSources number 
 ---@field sourceIsKnown bool 
-local TransmogAppearanceInfoBySourceData = {}
+TransmogAppearanceInfoBySourceData = {}
 
----@class TransmogAppearanceJournalEncounterInfo
+---@type TransmogAppearanceJournalEncounterInfo
 ---@field instance string 
 ---@field instanceType number 
 ---@field tiers table 
 ---@field encounter string 
 ---@field difficulties table 
-local TransmogAppearanceJournalEncounterInfo = {}
+TransmogAppearanceJournalEncounterInfo = {}
 
----@class TransmogAppearanceSourceInfoData
+---@type TransmogAppearanceSourceInfoData
 ---@field category TransmogCollectionType 
 ---@field itemAppearanceID number 
 ---@field canHaveIllusion bool 
@@ -311,9 +309,9 @@ local TransmogAppearanceJournalEncounterInfo = {}
 ---@field transmoglink string 
 ---@field sourceType luaIndex|nil 
 ---@field itemSubClass number 
-local TransmogAppearanceSourceInfoData = {}
+TransmogAppearanceSourceInfoData = {}
 
----@class TransmogCategoryAppearanceInfo
+---@type TransmogCategoryAppearanceInfo
 ---@field visualID number 
 ---@field isCollected bool 
 ---@field isFavorite bool 
@@ -325,27 +323,27 @@ local TransmogAppearanceSourceInfoData = {}
 ---@field hasRequiredHoliday bool 
 ---@field hasActiveRequiredHoliday bool 
 ---@field alwaysShowItem bool|nil @ For internal testing only
-local TransmogCategoryAppearanceInfo = {}
+TransmogCategoryAppearanceInfo = {}
 
----@class TransmogCategoryInfo
+---@type TransmogCategoryInfo
 ---@field name cstring 
 ---@field isWeapon bool 
 ---@field canHaveIllusions bool 
 ---@field canMainHand bool 
 ---@field canOffHand bool 
-local TransmogCategoryInfo = {}
+TransmogCategoryInfo = {}
 
----@class TransmogIllusionInfo
+---@type TransmogIllusionInfo
 ---@field visualID number 
 ---@field sourceID number 
 ---@field icon fileID 
 ---@field isCollected bool 
 ---@field isUsable bool 
 ---@field isHideVisual bool 
-local TransmogIllusionInfo = {}
+TransmogIllusionInfo = {}
 
----@class TransmogOutfitInfo
+---@type TransmogOutfitInfo
 ---@field name cstring 
 ---@field icon fileID 
-local TransmogOutfitInfo = {}
+TransmogOutfitInfo = {}
 

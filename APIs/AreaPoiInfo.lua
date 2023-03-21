@@ -20,7 +20,7 @@ function C_AreaPoiInfo.GetAreaPOISecondsLeft(areaPoiID) end
 ---@return boolean isTimed
 function C_AreaPoiInfo.IsAreaPOITimed(areaPoiID) end
 
----@class AreaPOIInfo
+---@type AreaPOIInfo
 ---@field areaPoiID number 
 ---@field position vector2 
 ---@field name cstring 
@@ -33,5 +33,5 @@ function C_AreaPoiInfo.IsAreaPOITimed(areaPoiID) end
 ---@field factionID number|nil 
 ---@field isPrimaryMapForPOI bool 
 ---@field isAlwaysOnFlightmap bool 
-local AreaPOIInfo = {}
+AreaPOIInfo = {}
 

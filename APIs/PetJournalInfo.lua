@@ -58,22 +58,29 @@ function C_PetJournal.SetDefaultFilters() end
 ---@param battlePetGUID WOWGUID 
 function C_PetJournal.SpellTargetBattlePet(battlePetGUID) end
 
----@class PetJournalError
-local PetJournalError = {}
-PetJournalError.None = 0
-PetJournalError.PetIsDead = 1
-PetJournalError.JournalIsLocked = 2
-PetJournalError.InvalidFaction = 3
-PetJournalError.NoFavoritesToSummon = 4
-PetJournalError.NoValidRandomSummon = 5
-PetJournalError.InvalidCovenant = 6
+---@class Enum.PetJournalError
+local Enum.PetJournalError = {}
+---@field None PetJournalError 
+Enum.PetJournalError.None = 0
+---@field PetIsDead PetJournalError 
+Enum.PetJournalError.PetIsDead = 1
+---@field JournalIsLocked PetJournalError 
+Enum.PetJournalError.JournalIsLocked = 2
+---@field InvalidFaction PetJournalError 
+Enum.PetJournalError.InvalidFaction = 3
+---@field NoFavoritesToSummon PetJournalError 
+Enum.PetJournalError.NoFavoritesToSummon = 4
+---@field NoValidRandomSummon PetJournalError 
+Enum.PetJournalError.NoValidRandomSummon = 5
+---@field InvalidCovenant PetJournalError 
+Enum.PetJournalError.InvalidCovenant = 6
 
----@class PetAbilityLevelInfo
+---@type PetAbilityLevelInfo
 ---@field abilityID number 
 ---@field level number 
-local PetAbilityLevelInfo = {}
+PetAbilityLevelInfo = {}
 
----@class PetJournalPetInfo
+---@type PetJournalPetInfo
 ---@field speciesID number 
 ---@field customName string|nil 
 ---@field petLevel number 
@@ -92,5 +99,5 @@ local PetAbilityLevelInfo = {}
 ---@field tradable bool 
 ---@field unique bool 
 ---@field obtainable bool 
-local PetJournalPetInfo = {}
+PetJournalPetInfo = {}
 

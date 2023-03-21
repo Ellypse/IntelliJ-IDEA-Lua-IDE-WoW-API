@@ -17,7 +17,7 @@ function C_LossOfControl.GetActiveLossOfControlDataCount() end
 ---@return number count
 function C_LossOfControl.GetActiveLossOfControlDataCountByUnit(unitToken) end
 
----@class LossOfControlData
+---@type LossOfControlData
 ---@field locType cstring 
 ---@field spellID number 
 ---@field displayText cstring 
@@ -28,5 +28,5 @@ function C_LossOfControl.GetActiveLossOfControlDataCountByUnit(unitToken) end
 ---@field lockoutSchool number 
 ---@field priority number 
 ---@field displayType number 
-local LossOfControlData = {}
+LossOfControlData = {}
 
