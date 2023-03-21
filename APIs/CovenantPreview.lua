@@ -7,7 +7,7 @@ function C_CovenantPreview.CloseFromUI() end
 ---@return CovenantPreviewInfo previewInfo
 function C_CovenantPreview.GetCovenantInfoForPlayerChoiceResponseID(playerChoiceResponseID) end
 
----@class CovenantAbilityType
+---@class CovenantAbilityType : Enum
 Enum.CovenantAbilityType = {}
 ---@field protected Class CovenantAbilityType 
 Enum.CovenantAbilityType.Class = 0

@@ -1,4 +1,4 @@
----@class BagIndex
+---@class BagIndex : Enum
 Enum.BagIndex = {}
 ---@field protected Bankbag BagIndex 
 Enum.BagIndex.Bankbag = -4

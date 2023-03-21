@@ -122,7 +122,7 @@ function C_LFGList.ValidateRequiredDungeonScore(dungeonScore) end
 ---@return boolean passes
 function C_LFGList.ValidateRequiredPvpRatingForActivity(activityID, rating) end
 
----@class LFGEntryPlaystyle
+---@class LFGEntryPlaystyle : Enum
 Enum.LFGEntryPlaystyle = {}
 ---@field protected None LFGEntryPlaystyle 
 Enum.LFGEntryPlaystyle.None = 0
@@ -133,7 +133,7 @@ Enum.LFGEntryPlaystyle.Casual = 2
 ---@field protected Hardcore LFGEntryPlaystyle 
 Enum.LFGEntryPlaystyle.Hardcore = 3
 
----@class LFGListDisplayType
+---@class LFGListDisplayType : Enum
 Enum.LFGListDisplayType = {}
 ---@field protected RoleCount LFGListDisplayType 
 Enum.LFGListDisplayType.RoleCount = 0

@@ -20,7 +20,7 @@ function C_DeathInfo.GetSelfResurrectOptions() end
 ---@param id number 
 function C_DeathInfo.UseSelfResurrectOption(optionType, id) end
 
----@class SelfResurrectOptionType
+---@class SelfResurrectOptionType : Enum
 Enum.SelfResurrectOptionType = {}
 ---@field protected Spell SelfResurrectOptionType 
 Enum.SelfResurrectOptionType.Spell = 0

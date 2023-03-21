@@ -16,7 +16,7 @@ function C_ConfigurationWarnings.GetConfigurationWarnings(includeSeenWarnings) e
 ---@param configurationWarning ConfigurationWarning 
 function C_ConfigurationWarnings.SetConfigurationWarningSeen(configurationWarning) end
 
----@class ConfigurationWarning
+---@class ConfigurationWarning : Enum
 Enum.ConfigurationWarning = {}
 ---@field protected ShaderModelWillBeOutdated ConfigurationWarning 
 Enum.ConfigurationWarning.ShaderModelWillBeOutdated = 0

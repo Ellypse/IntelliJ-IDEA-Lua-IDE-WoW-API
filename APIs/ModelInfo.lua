@@ -35,7 +35,7 @@ function C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID) end
 ---@return ModelSceneType, number, number, number modelSceneType, modelCameraIDs, modelActorsIDs, flags
 function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
----@class ItemTryOnReason
+---@class ItemTryOnReason : Enum
 Enum.ItemTryOnReason = {}
 ---@field protected Success ItemTryOnReason 
 Enum.ItemTryOnReason.Success = 0
@@ -46,12 +46,12 @@ Enum.ItemTryOnReason.NotEquippable = 2
 ---@field protected DataPending ItemTryOnReason 
 Enum.ItemTryOnReason.DataPending = 3
 
----@class ModelSceneSetting
+---@class ModelSceneSetting : Enum
 Enum.ModelSceneSetting = {}
 ---@field protected AlignLightToOrbitDelta ModelSceneSetting 
 Enum.ModelSceneSetting.AlignLightToOrbitDelta = 1
 
----@class ModelSceneType
+---@class ModelSceneType : Enum
 Enum.ModelSceneType = {}
 ---@field protected MountJournal ModelSceneType 
 Enum.ModelSceneType.MountJournal = 0

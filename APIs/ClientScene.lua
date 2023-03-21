@@ -1,7 +1,7 @@
 ---@class ClientScene
 C_ClientScene = {}
 
----@class ClientSceneType
+---@class ClientSceneType : Enum
 Enum.ClientSceneType = {}
 ---@field protected DefaultSceneType ClientSceneType 
 Enum.ClientSceneType.DefaultSceneType = 0

@@ -268,7 +268,7 @@ function C_TransmogCollection.SetUncollectedShown(shown) end
 
 function C_TransmogCollection.UpdateUsableAppearances() end
 
----@class TransmogCameraVariation
+---@class TransmogCameraVariation : Enum
 Enum.TransmogCameraVariation = {}
 ---@field protected None TransmogCameraVariation 
 Enum.TransmogCameraVariation.None = 0

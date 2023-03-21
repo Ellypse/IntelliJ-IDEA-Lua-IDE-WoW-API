@@ -40,7 +40,7 @@ function C_RecruitAFriend.RemoveRAFRecruit(wowAccountGUID) end
 ---@return boolean success
 function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 
----@class RafRecruitActivityState
+---@class RafRecruitActivityState : Enum
 Enum.RafRecruitActivityState = {}
 ---@field protected Incomplete RafRecruitActivityState 
 Enum.RafRecruitActivityState.Incomplete = 0
@@ -49,7 +49,7 @@ Enum.RafRecruitActivityState.Complete = 1
 ---@field protected RewardClaimed RafRecruitActivityState 
 Enum.RafRecruitActivityState.RewardClaimed = 2
 
----@class RafRecruitSubStatus
+---@class RafRecruitSubStatus : Enum
 Enum.RafRecruitSubStatus = {}
 ---@field protected Trial RafRecruitSubStatus 
 Enum.RafRecruitSubStatus.Trial = 0
@@ -58,7 +58,7 @@ Enum.RafRecruitSubStatus.Active = 1
 ---@field protected Inactive RafRecruitSubStatus 
 Enum.RafRecruitSubStatus.Inactive = 2
 
----@class RafRewardType
+---@class RafRewardType : Enum
 Enum.RafRewardType = {}
 ---@field protected Pet RafRewardType 
 Enum.RafRewardType.Pet = 0

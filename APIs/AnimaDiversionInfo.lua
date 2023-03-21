@@ -21,7 +21,7 @@ function C_AnimaDiversion.OpenAnimaDiversionUI() end
 ---@param temporary boolean 
 function C_AnimaDiversion.SelectAnimaNode(talentID, temporary) end
 
----@class AnimaDiversionNodeState
+---@class AnimaDiversionNodeState : Enum
 Enum.AnimaDiversionNodeState = {}
 ---@field protected Unavailable AnimaDiversionNodeState 
 Enum.AnimaDiversionNodeState.Unavailable = 0

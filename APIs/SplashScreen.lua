@@ -9,7 +9,7 @@ function C_SplashScreen.CanViewSplashScreen() end
 ---@param fromGameMenu boolean 
 function C_SplashScreen.RequestLatestSplashScreen(fromGameMenu) end
 
----@class SplashScreenType
+---@class SplashScreenType : Enum
 Enum.SplashScreenType = {}
 ---@field protected WhatsNew SplashScreenType 
 Enum.SplashScreenType.WhatsNew = 0

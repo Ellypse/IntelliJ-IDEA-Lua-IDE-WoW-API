@@ -9,7 +9,7 @@ function C_IncomingSummon.HasIncomingSummon(unit) end
 ---@return SummonStatus status
 function C_IncomingSummon.IncomingSummonStatus(unit) end
 
----@class SummonStatus
+---@class SummonStatus : Enum
 Enum.SummonStatus = {}
 ---@field protected None SummonStatus 
 Enum.SummonStatus.None = 0

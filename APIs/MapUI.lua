@@ -150,7 +150,7 @@ function C_Map.RequestPreloadMap(uiMapID) end
 ---@param point UiMapPoint 
 function C_Map.SetUserWaypoint(point) end
 
----@class MapCanvasPosition
+---@class MapCanvasPosition : Enum
 Enum.MapCanvasPosition = {}
 ---@field protected None MapCanvasPosition 
 Enum.MapCanvasPosition.None = 0
@@ -163,7 +163,7 @@ Enum.MapCanvasPosition.TopLeft = 3
 ---@field protected TopRight MapCanvasPosition 
 Enum.MapCanvasPosition.TopRight = 4
 
----@class UIMapFlag
+---@class UIMapFlag : Enum
 Enum.UIMapFlag = {}
 ---@field protected NoHighlight UIMapFlag 
 Enum.UIMapFlag.NoHighlight = 1
@@ -200,7 +200,7 @@ Enum.UIMapFlag.ForceOnNavbar = 32768
 ---@field protected AlwaysAllowUserWaypoints UIMapFlag 
 Enum.UIMapFlag.AlwaysAllowUserWaypoints = 65536
 
----@class UIMapSystem
+---@class UIMapSystem : Enum
 Enum.UIMapSystem = {}
 ---@field protected World UIMapSystem 
 Enum.UIMapSystem.World = 0
@@ -211,7 +211,7 @@ Enum.UIMapSystem.Adventure = 2
 ---@field protected Minimap UIMapSystem 
 Enum.UIMapSystem.Minimap = 3
 
----@class UIMapType
+---@class UIMapType : Enum
 Enum.UIMapType = {}
 ---@field protected Cosmic UIMapType 
 Enum.UIMapType.Cosmic = 0

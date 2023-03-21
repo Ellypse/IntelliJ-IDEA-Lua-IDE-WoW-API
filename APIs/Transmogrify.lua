@@ -86,7 +86,7 @@ function C_Transmog.LoadOutfit(outfitID) end
 ---@param pendingInfo TransmogPendingInfo 
 function C_Transmog.SetPending(transmogLocation, pendingInfo) end
 
----@class TransmogPendingType
+---@class TransmogPendingType : Enum
 Enum.TransmogPendingType = {}
 ---@field protected Apply TransmogPendingType 
 Enum.TransmogPendingType.Apply = 0

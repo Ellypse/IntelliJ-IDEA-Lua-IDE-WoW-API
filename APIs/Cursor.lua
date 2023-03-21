@@ -4,7 +4,7 @@ C_Cursor = {}
 ---@return ItemLocation item
 function C_Cursor.GetCursorItem() end
 
----@class UICursorType
+---@class UICursorType : Enum
 Enum.UICursorType = {}
 ---@field protected Default UICursorType 
 Enum.UICursorType.Default = 0
@@ -49,7 +49,7 @@ Enum.UICursorType.ConduitCollectionItem = 20
 ---@field protected PerksProgramVendorItem UICursorType 
 Enum.UICursorType.PerksProgramVendorItem = 21
 
----@class WorldCursorAnchorType
+---@class WorldCursorAnchorType : Enum
 Enum.WorldCursorAnchorType = {}
 ---@field protected None WorldCursorAnchorType 
 Enum.WorldCursorAnchorType.None = 0
