@@ -11,15 +11,15 @@ function C_EventToastManager.GetNextToastToDisplay() end
 function C_EventToastManager.RemoveCurrentToast() end
 
 ---@class EventToastDisplayType : Enum
----@field protected NormalSingleLine EventToastDisplayType 
----@field protected NormalBlockText EventToastDisplayType 
----@field protected NormalTitleAndSubTitle EventToastDisplayType 
----@field protected NormalTextWithIcon EventToastDisplayType 
----@field protected LargeTextWithIcon EventToastDisplayType 
----@field protected NormalTextWithIconAndRarity EventToastDisplayType 
----@field protected Scenario EventToastDisplayType 
----@field protected ChallengeMode EventToastDisplayType 
----@field protected ScenarioClickExpand EventToastDisplayType 
+---@field NormalSingleLine EventToastDisplayType 
+---@field NormalBlockText EventToastDisplayType 
+---@field NormalTitleAndSubTitle EventToastDisplayType 
+---@field NormalTextWithIcon EventToastDisplayType 
+---@field LargeTextWithIcon EventToastDisplayType 
+---@field NormalTextWithIconAndRarity EventToastDisplayType 
+---@field Scenario EventToastDisplayType 
+---@field ChallengeMode EventToastDisplayType 
+---@field ScenarioClickExpand EventToastDisplayType 
 EventToastDisplayType = {}
 
 ---@type EventToastDisplayType 
@@ -35,29 +35,29 @@ Enum.EventToastDisplayType.ChallengeMode = 7
 Enum.EventToastDisplayType.ScenarioClickExpand = 8
 
 ---@class EventToastEventType : Enum
----@field protected LevelUp EventToastEventType 
----@field protected LevelUpSpell EventToastEventType 
----@field protected LevelUpDungeon EventToastEventType 
----@field protected LevelUpRaid EventToastEventType 
----@field protected LevelUpPvP EventToastEventType 
----@field protected PetBattleNewAbility EventToastEventType 
----@field protected PetBattleFinalRound EventToastEventType 
----@field protected PetBattleCapture EventToastEventType 
----@field protected BattlePetLevelChanged EventToastEventType 
----@field protected BattlePetLevelUpAbility EventToastEventType 
----@field protected QuestBossEmote EventToastEventType 
----@field protected MythicPlusWeeklyRecord EventToastEventType 
----@field protected QuestTurnedIn EventToastEventType 
----@field protected WorldStateChange EventToastEventType 
----@field protected Scenario EventToastEventType 
----@field protected LevelUpOther EventToastEventType 
----@field protected PlayerAuraAdded EventToastEventType 
----@field protected PlayerAuraRemoved EventToastEventType 
----@field protected SpellScript EventToastEventType 
----@field protected CriteriaUpdated EventToastEventType 
----@field protected PvPTierUpdate EventToastEventType 
----@field protected SpellLearned EventToastEventType 
----@field protected TreasureItem EventToastEventType 
+---@field LevelUp EventToastEventType 
+---@field LevelUpSpell EventToastEventType 
+---@field LevelUpDungeon EventToastEventType 
+---@field LevelUpRaid EventToastEventType 
+---@field LevelUpPvP EventToastEventType 
+---@field PetBattleNewAbility EventToastEventType 
+---@field PetBattleFinalRound EventToastEventType 
+---@field PetBattleCapture EventToastEventType 
+---@field BattlePetLevelChanged EventToastEventType 
+---@field BattlePetLevelUpAbility EventToastEventType 
+---@field QuestBossEmote EventToastEventType 
+---@field MythicPlusWeeklyRecord EventToastEventType 
+---@field QuestTurnedIn EventToastEventType 
+---@field WorldStateChange EventToastEventType 
+---@field Scenario EventToastEventType 
+---@field LevelUpOther EventToastEventType 
+---@field PlayerAuraAdded EventToastEventType 
+---@field PlayerAuraRemoved EventToastEventType 
+---@field SpellScript EventToastEventType 
+---@field CriteriaUpdated EventToastEventType 
+---@field PvPTierUpdate EventToastEventType 
+---@field SpellLearned EventToastEventType 
+---@field TreasureItem EventToastEventType 
 EventToastEventType = {}
 
 ---@type EventToastEventType 

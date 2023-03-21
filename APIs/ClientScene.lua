@@ -2,8 +2,8 @@
 C_ClientScene = {}
 
 ---@class ClientSceneType : Enum
----@field protected DefaultSceneType ClientSceneType 
----@field protected MinigameSceneType ClientSceneType 
+---@field DefaultSceneType ClientSceneType 
+---@field MinigameSceneType ClientSceneType 
 ClientSceneType = {}
 
 ---@type ClientSceneType 

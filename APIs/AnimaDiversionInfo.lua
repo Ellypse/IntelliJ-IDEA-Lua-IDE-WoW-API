@@ -22,11 +22,11 @@ function C_AnimaDiversion.OpenAnimaDiversionUI() end
 function C_AnimaDiversion.SelectAnimaNode(talentID, temporary) end
 
 ---@class AnimaDiversionNodeState : Enum
----@field protected Unavailable AnimaDiversionNodeState 
----@field protected Available AnimaDiversionNodeState 
----@field protected SelectedTemporary AnimaDiversionNodeState 
----@field protected SelectedPermanent AnimaDiversionNodeState 
----@field protected Cooldown AnimaDiversionNodeState 
+---@field Unavailable AnimaDiversionNodeState 
+---@field Available AnimaDiversionNodeState 
+---@field SelectedTemporary AnimaDiversionNodeState 
+---@field SelectedPermanent AnimaDiversionNodeState 
+---@field Cooldown AnimaDiversionNodeState 
 AnimaDiversionNodeState = {}
 
 ---@type AnimaDiversionNodeState 

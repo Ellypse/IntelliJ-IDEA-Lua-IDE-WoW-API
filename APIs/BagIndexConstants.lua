@@ -1,21 +1,21 @@
 ---@class BagIndex : Enum
----@field protected Bankbag BagIndex 
----@field protected Reagentbank BagIndex 
----@field protected Keyring BagIndex 
----@field protected Bank BagIndex 
----@field protected Backpack BagIndex 
----@field protected Bag_1 BagIndex 
----@field protected Bag_2 BagIndex 
----@field protected Bag_3 BagIndex 
----@field protected Bag_4 BagIndex 
----@field protected ReagentBag BagIndex 
----@field protected BankBag_1 BagIndex 
----@field protected BankBag_2 BagIndex 
----@field protected BankBag_3 BagIndex 
----@field protected BankBag_4 BagIndex 
----@field protected BankBag_5 BagIndex 
----@field protected BankBag_6 BagIndex 
----@field protected BankBag_7 BagIndex 
+---@field Bankbag BagIndex 
+---@field Reagentbank BagIndex 
+---@field Keyring BagIndex 
+---@field Bank BagIndex 
+---@field Backpack BagIndex 
+---@field Bag_1 BagIndex 
+---@field Bag_2 BagIndex 
+---@field Bag_3 BagIndex 
+---@field Bag_4 BagIndex 
+---@field ReagentBag BagIndex 
+---@field BankBag_1 BagIndex 
+---@field BankBag_2 BagIndex 
+---@field BankBag_3 BagIndex 
+---@field BankBag_4 BagIndex 
+---@field BankBag_5 BagIndex 
+---@field BankBag_6 BagIndex 
+---@field BankBag_7 BagIndex 
 BagIndex = {}
 
 ---@type BagIndex 

@@ -2,16 +2,16 @@
 C_WowEntitlementInfo = {}
 
 ---@class WoWEntitlementType : Enum
----@field protected Item WoWEntitlementType 
----@field protected Mount WoWEntitlementType 
----@field protected Battlepet WoWEntitlementType 
----@field protected Toy WoWEntitlementType 
----@field protected Appearance WoWEntitlementType 
----@field protected AppearanceSet WoWEntitlementType 
----@field protected GameTime WoWEntitlementType 
----@field protected Title WoWEntitlementType 
----@field protected Illusion WoWEntitlementType 
----@field protected Invalid WoWEntitlementType 
+---@field Item WoWEntitlementType 
+---@field Mount WoWEntitlementType 
+---@field Battlepet WoWEntitlementType 
+---@field Toy WoWEntitlementType 
+---@field Appearance WoWEntitlementType 
+---@field AppearanceSet WoWEntitlementType 
+---@field GameTime WoWEntitlementType 
+---@field Title WoWEntitlementType 
+---@field Illusion WoWEntitlementType 
+---@field Invalid WoWEntitlementType 
 WoWEntitlementType = {}
 
 ---@type WoWEntitlementType 

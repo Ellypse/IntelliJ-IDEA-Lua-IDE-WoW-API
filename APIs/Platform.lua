@@ -2,8 +2,8 @@
 C_Platform = {}
 
 ---@class ClientPlatformType : Enum
----@field protected Windows ClientPlatformType 
----@field protected Macintosh ClientPlatformType 
+---@field Windows ClientPlatformType 
+---@field Macintosh ClientPlatformType 
 ClientPlatformType = {}
 
 ---@type ClientPlatformType 

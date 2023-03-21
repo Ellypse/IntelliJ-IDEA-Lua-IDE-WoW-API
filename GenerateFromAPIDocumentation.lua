@@ -39,7 +39,6 @@ local NAMESPACE_DECLARATION = [[
 local ARGUMENT_DOCUMENTATION = [[---@param %s %s %s]]
 local RETURN_DOCUMENTATION = [[---@return %s %s]]
 local FIELD_DOCUMENTATION = [[---@field %s %s %s]]
-local ENUM_FIELD_DOCUMENTATION = [[---@field %s %s %s %s]]
 local CLASS_DECLARATION = [[---@class %s]]
 local TYPE_DECLARATION = [[---@type %s %s]]
 local INNER_DECLARATION = [[local %s = {}]]
@@ -192,8 +191,7 @@ function APIDocumentation:AddDocumentationTable(documentation)
 				write(CLASS_DECLARATION:format(tab.Name .. " : Enum"))
 				local parentType = tab.Name
 				for k, value in pairs(tab.Fields) do
-					write(ENUM_FIELD_DOCUMENTATION:format(
-							"protected",
+					write(FIELD_DOCUMENTATION:format(
 							value.Name,
 							value.Type,
 							value.Documentation and ("@ " .. table.concat(value.Documentation, "\n")) or ""
@@ -201,7 +199,7 @@ function APIDocumentation:AddDocumentationTable(documentation)
 				end
 				write(GLOBAL_DECLARATION:format(tab.Name))
 				write("")
-				
+
 				write(TYPE_DECLARATION:format(
 						parentType,
 						""

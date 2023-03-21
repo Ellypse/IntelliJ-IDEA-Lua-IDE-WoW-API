@@ -151,11 +151,11 @@ function C_Map.RequestPreloadMap(uiMapID) end
 function C_Map.SetUserWaypoint(point) end
 
 ---@class MapCanvasPosition : Enum
----@field protected None MapCanvasPosition 
----@field protected BottomLeft MapCanvasPosition 
----@field protected BottomRight MapCanvasPosition 
----@field protected TopLeft MapCanvasPosition 
----@field protected TopRight MapCanvasPosition 
+---@field None MapCanvasPosition 
+---@field BottomLeft MapCanvasPosition 
+---@field BottomRight MapCanvasPosition 
+---@field TopLeft MapCanvasPosition 
+---@field TopRight MapCanvasPosition 
 MapCanvasPosition = {}
 
 ---@type MapCanvasPosition 
@@ -167,23 +167,23 @@ Enum.MapCanvasPosition.TopLeft = 3
 Enum.MapCanvasPosition.TopRight = 4
 
 ---@class UIMapFlag : Enum
----@field protected NoHighlight UIMapFlag 
----@field protected ShowOverlays UIMapFlag 
----@field protected ShowTaxiNodes UIMapFlag 
----@field protected GarrisonMap UIMapFlag 
----@field protected FallbackToParentMap UIMapFlag 
----@field protected NoHighlightTexture UIMapFlag 
----@field protected ShowTaskObjectives UIMapFlag 
----@field protected NoWorldPositions UIMapFlag 
----@field protected HideArchaeologyDigs UIMapFlag 
----@field protected Deprecated UIMapFlag 
----@field protected HideIcons UIMapFlag 
----@field protected HideVignettes UIMapFlag 
----@field protected ForceAllOverlayExplored UIMapFlag 
----@field protected FlightMapShowZoomOut UIMapFlag 
----@field protected FlightMapAutoZoom UIMapFlag 
----@field protected ForceOnNavbar UIMapFlag 
----@field protected AlwaysAllowUserWaypoints UIMapFlag 
+---@field NoHighlight UIMapFlag 
+---@field ShowOverlays UIMapFlag 
+---@field ShowTaxiNodes UIMapFlag 
+---@field GarrisonMap UIMapFlag 
+---@field FallbackToParentMap UIMapFlag 
+---@field NoHighlightTexture UIMapFlag 
+---@field ShowTaskObjectives UIMapFlag 
+---@field NoWorldPositions UIMapFlag 
+---@field HideArchaeologyDigs UIMapFlag 
+---@field Deprecated UIMapFlag 
+---@field HideIcons UIMapFlag 
+---@field HideVignettes UIMapFlag 
+---@field ForceAllOverlayExplored UIMapFlag 
+---@field FlightMapShowZoomOut UIMapFlag 
+---@field FlightMapAutoZoom UIMapFlag 
+---@field ForceOnNavbar UIMapFlag 
+---@field AlwaysAllowUserWaypoints UIMapFlag 
 UIMapFlag = {}
 
 ---@type UIMapFlag 
@@ -207,10 +207,10 @@ Enum.UIMapFlag.ForceOnNavbar = 32768
 Enum.UIMapFlag.AlwaysAllowUserWaypoints = 65536
 
 ---@class UIMapSystem : Enum
----@field protected World UIMapSystem 
----@field protected Taxi UIMapSystem 
----@field protected Adventure UIMapSystem 
----@field protected Minimap UIMapSystem 
+---@field World UIMapSystem 
+---@field Taxi UIMapSystem 
+---@field Adventure UIMapSystem 
+---@field Minimap UIMapSystem 
 UIMapSystem = {}
 
 ---@type UIMapSystem 
@@ -221,13 +221,13 @@ Enum.UIMapSystem.Adventure = 2
 Enum.UIMapSystem.Minimap = 3
 
 ---@class UIMapType : Enum
----@field protected Cosmic UIMapType 
----@field protected World UIMapType 
----@field protected Continent UIMapType 
----@field protected Zone UIMapType 
----@field protected Dungeon UIMapType 
----@field protected Micro UIMapType 
----@field protected Orphan UIMapType 
+---@field Cosmic UIMapType 
+---@field World UIMapType 
+---@field Continent UIMapType 
+---@field Zone UIMapType 
+---@field Dungeon UIMapType 
+---@field Micro UIMapType 
+---@field Orphan UIMapType 
 UIMapType = {}
 
 ---@type UIMapType 

@@ -18,17 +18,17 @@ function C_Console.PrintAllMatchingCommands(partialCommandText) end
 function C_Console.SetFontHeight(fontHeightInPixels) end
 
 ---@class ConsoleCategory : Enum
----@field protected Debug ConsoleCategory 
----@field protected Graphics ConsoleCategory 
----@field protected Console ConsoleCategory 
----@field protected Combat ConsoleCategory 
----@field protected Game ConsoleCategory 
----@field protected Default ConsoleCategory 
----@field protected Net ConsoleCategory 
----@field protected Sound ConsoleCategory 
----@field protected Gm ConsoleCategory 
----@field protected Reveal ConsoleCategory 
----@field protected None ConsoleCategory 
+---@field Debug ConsoleCategory 
+---@field Graphics ConsoleCategory 
+---@field Console ConsoleCategory 
+---@field Combat ConsoleCategory 
+---@field Game ConsoleCategory 
+---@field Default ConsoleCategory 
+---@field Net ConsoleCategory 
+---@field Sound ConsoleCategory 
+---@field Gm ConsoleCategory 
+---@field Reveal ConsoleCategory 
+---@field None ConsoleCategory 
 ConsoleCategory = {}
 
 ---@type ConsoleCategory 
@@ -46,18 +46,18 @@ Enum.ConsoleCategory.Reveal = 9
 Enum.ConsoleCategory.None = 10
 
 ---@class ConsoleColorType : Enum
----@field protected DefaultColor ConsoleColorType 
----@field protected InputColor ConsoleColorType 
----@field protected EchoColor ConsoleColorType 
----@field protected ErrorColor ConsoleColorType 
----@field protected WarningColor ConsoleColorType 
----@field protected GlobalColor ConsoleColorType 
----@field protected AdminColor ConsoleColorType 
----@field protected HighlightColor ConsoleColorType 
----@field protected BackgroundColor ConsoleColorType 
----@field protected ClickbufferColor ConsoleColorType 
----@field protected PrivateColor ConsoleColorType 
----@field protected DefaultGreen ConsoleColorType 
+---@field DefaultColor ConsoleColorType 
+---@field InputColor ConsoleColorType 
+---@field EchoColor ConsoleColorType 
+---@field ErrorColor ConsoleColorType 
+---@field WarningColor ConsoleColorType 
+---@field GlobalColor ConsoleColorType 
+---@field AdminColor ConsoleColorType 
+---@field HighlightColor ConsoleColorType 
+---@field BackgroundColor ConsoleColorType 
+---@field ClickbufferColor ConsoleColorType 
+---@field PrivateColor ConsoleColorType 
+---@field DefaultGreen ConsoleColorType 
 ConsoleColorType = {}
 
 ---@type ConsoleColorType 
@@ -76,10 +76,10 @@ Enum.ConsoleColorType.PrivateColor = 10
 Enum.ConsoleColorType.DefaultGreen = 11
 
 ---@class ConsoleCommandType : Enum
----@field protected Cvar ConsoleCommandType 
----@field protected Command ConsoleCommandType 
----@field protected Macro ConsoleCommandType 
----@field protected Script ConsoleCommandType 
+---@field Cvar ConsoleCommandType 
+---@field Command ConsoleCommandType 
+---@field Macro ConsoleCommandType 
+---@field Script ConsoleCommandType 
 ConsoleCommandType = {}
 
 ---@type ConsoleCommandType 

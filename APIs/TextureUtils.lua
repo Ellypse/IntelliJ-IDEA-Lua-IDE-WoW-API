@@ -32,9 +32,9 @@ function C_Texture.IsTitleIconTextureReady(titleID, version) end
 function C_Texture.SetTitleIconTexture(texture, titleID, version) end
 
 ---@class TitleIconVersion : Enum
----@field protected Small TitleIconVersion 
----@field protected Medium TitleIconVersion 
----@field protected Large TitleIconVersion 
+---@field Small TitleIconVersion 
+---@field Medium TitleIconVersion 
+---@field Large TitleIconVersion 
 TitleIconVersion = {}
 
 ---@type TitleIconVersion 

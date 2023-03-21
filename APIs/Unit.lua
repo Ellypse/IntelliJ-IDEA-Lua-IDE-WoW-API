@@ -172,10 +172,10 @@ function UnitTrialBankedLevels(unit) end
 function UnitWidgetSet(unit) end
 
 ---@class PhaseReason : Enum
----@field protected Phasing PhaseReason 
----@field protected Sharding PhaseReason 
----@field protected WarMode PhaseReason 
----@field protected ChromieTime PhaseReason 
+---@field Phasing PhaseReason 
+---@field Sharding PhaseReason 
+---@field WarMode PhaseReason 
+---@field ChromieTime PhaseReason 
 PhaseReason = {}
 
 ---@type PhaseReason 
@@ -186,32 +186,32 @@ Enum.PhaseReason.WarMode = 2
 Enum.PhaseReason.ChromieTime = 3
 
 ---@class PowerType : Enum
----@field protected HealthCost PowerType 
----@field protected None PowerType 
----@field protected Mana PowerType 
----@field protected Rage PowerType 
----@field protected Focus PowerType 
----@field protected Energy PowerType 
----@field protected ComboPoints PowerType 
----@field protected Runes PowerType 
----@field protected RunicPower PowerType 
----@field protected SoulShards PowerType 
----@field protected LunarPower PowerType 
----@field protected HolyPower PowerType 
----@field protected Alternate PowerType 
----@field protected Maelstrom PowerType 
----@field protected Chi PowerType 
----@field protected Insanity PowerType 
----@field protected Obsolete PowerType 
----@field protected Obsolete2 PowerType 
----@field protected ArcaneCharges PowerType 
----@field protected Fury PowerType 
----@field protected Pain PowerType 
----@field protected Essence PowerType 
----@field protected RuneBlood PowerType 
----@field protected RuneFrost PowerType 
----@field protected RuneUnholy PowerType 
----@field protected NumPowerTypes PowerType 
+---@field HealthCost PowerType 
+---@field None PowerType 
+---@field Mana PowerType 
+---@field Rage PowerType 
+---@field Focus PowerType 
+---@field Energy PowerType 
+---@field ComboPoints PowerType 
+---@field Runes PowerType 
+---@field RunicPower PowerType 
+---@field SoulShards PowerType 
+---@field LunarPower PowerType 
+---@field HolyPower PowerType 
+---@field Alternate PowerType 
+---@field Maelstrom PowerType 
+---@field Chi PowerType 
+---@field Insanity PowerType 
+---@field Obsolete PowerType 
+---@field Obsolete2 PowerType 
+---@field ArcaneCharges PowerType 
+---@field Fury PowerType 
+---@field Pain PowerType 
+---@field Essence PowerType 
+---@field RuneBlood PowerType 
+---@field RuneFrost PowerType 
+---@field RuneUnholy PowerType 
+---@field NumPowerTypes PowerType 
 PowerType = {}
 
 ---@type PowerType 
@@ -244,17 +244,17 @@ Enum.PowerType.RuneUnholy = 22
 Enum.PowerType.NumPowerTypes = 23
 
 ---@class PvPUnitClassification : Enum
----@field protected FlagCarrierHorde PvPUnitClassification 
----@field protected FlagCarrierAlliance PvPUnitClassification 
----@field protected FlagCarrierNeutral PvPUnitClassification 
----@field protected CartRunnerHorde PvPUnitClassification 
----@field protected CartRunnerAlliance PvPUnitClassification 
----@field protected AssassinHorde PvPUnitClassification 
----@field protected AssassinAlliance PvPUnitClassification 
----@field protected OrbCarrierBlue PvPUnitClassification 
----@field protected OrbCarrierGreen PvPUnitClassification 
----@field protected OrbCarrierOrange PvPUnitClassification 
----@field protected OrbCarrierPurple PvPUnitClassification 
+---@field FlagCarrierHorde PvPUnitClassification 
+---@field FlagCarrierAlliance PvPUnitClassification 
+---@field FlagCarrierNeutral PvPUnitClassification 
+---@field CartRunnerHorde PvPUnitClassification 
+---@field CartRunnerAlliance PvPUnitClassification 
+---@field AssassinHorde PvPUnitClassification 
+---@field AssassinAlliance PvPUnitClassification 
+---@field OrbCarrierBlue PvPUnitClassification 
+---@field OrbCarrierGreen PvPUnitClassification 
+---@field OrbCarrierOrange PvPUnitClassification 
+---@field OrbCarrierPurple PvPUnitClassification 
 PvPUnitClassification = {}
 
 ---@type PvPUnitClassification 
