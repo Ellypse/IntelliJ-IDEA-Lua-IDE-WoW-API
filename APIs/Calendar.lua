@@ -141,7 +141,6 @@ function C_Calendar.EventSelectInvite(inviteIndex) end
 function C_Calendar.EventSetAutoApprove() end
 
 ---@param clubId ClubId @ [OPTIONAL]
----@overload fun()
 function C_Calendar.EventSetClubId(clubId) end
 
 ---@param month luaIndex 
@@ -203,8 +202,6 @@ function C_Calendar.GetEventIndex() end
 ---@param eventID CalendarEventID 
 ---@param monthOffset number @ [OPTIONAL]
 ---@param monthDay number @ [OPTIONAL]
----@overload fun(eventID:CalendarEventID, monthDay:number)
----@overload fun(eventID:CalendarEventID)
 ---@return CalendarEventIndexInfo|nil eventIndexInfo
 function C_Calendar.GetEventIndexInfo(eventID, monthOffset, monthDay) end
 
@@ -273,7 +270,6 @@ function C_Calendar.IsEventOpen() end
 ---@param minLevel number 
 ---@param maxLevel number 
 ---@param maxRankOrder luaIndex @ [OPTIONAL]
----@overload fun(clubId:ClubId, minLevel:number, maxLevel:number)
 function C_Calendar.MassInviteCommunity(clubId, minLevel, maxLevel, maxRankOrder) end
 
 ---@param minLevel number 
@@ -299,7 +295,6 @@ function C_Calendar.SetAbsMonth(month, year) end
 function C_Calendar.SetMonth(offsetMonths) end
 
 ---@param clubId ClubId @ [OPTIONAL]
----@overload fun()
 function C_Calendar.SetNextClubId(clubId) end
 
 function C_Calendar.UpdateEvent() end

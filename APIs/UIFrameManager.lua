@@ -6,6 +6,8 @@ C_FrameManager = {}
 function C_FrameManager.GetFrameVisibilityState(frameType) end
 
 ---@class UIFrameType
+---@field JailersTowerBuffs number @ Default value is [ 0 ]
+
+---@type UIFrameType 
 local UIFrameType = {}
-UIFrameType.JailersTowerBuffs = 0
 

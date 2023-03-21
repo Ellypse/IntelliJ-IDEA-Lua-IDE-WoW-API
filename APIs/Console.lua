@@ -18,40 +18,46 @@ function C_Console.PrintAllMatchingCommands(partialCommandText) end
 function C_Console.SetFontHeight(fontHeightInPixels) end
 
 ---@class ConsoleCategory
+---@field Debug number @ Default value is [ 0 ]
+---@field Graphics number @ Default value is [ 1 ]
+---@field Console number @ Default value is [ 2 ]
+---@field Combat number @ Default value is [ 3 ]
+---@field Game number @ Default value is [ 4 ]
+---@field Default number @ Default value is [ 5 ]
+---@field Net number @ Default value is [ 6 ]
+---@field Sound number @ Default value is [ 7 ]
+---@field Gm number @ Default value is [ 8 ]
+---@field Reveal number @ Default value is [ 9 ]
+---@field None number @ Default value is [ 10 ]
+
+---@type ConsoleCategory 
 local ConsoleCategory = {}
-ConsoleCategory.Debug = 0
-ConsoleCategory.Graphics = 1
-ConsoleCategory.Console = 2
-ConsoleCategory.Combat = 3
-ConsoleCategory.Game = 4
-ConsoleCategory.Default = 5
-ConsoleCategory.Net = 6
-ConsoleCategory.Sound = 7
-ConsoleCategory.Gm = 8
-ConsoleCategory.Reveal = 9
-ConsoleCategory.None = 10
 
 ---@class ConsoleColorType
+---@field DefaultColor number @ Default value is [ 0 ]
+---@field InputColor number @ Default value is [ 1 ]
+---@field EchoColor number @ Default value is [ 2 ]
+---@field ErrorColor number @ Default value is [ 3 ]
+---@field WarningColor number @ Default value is [ 4 ]
+---@field GlobalColor number @ Default value is [ 5 ]
+---@field AdminColor number @ Default value is [ 6 ]
+---@field HighlightColor number @ Default value is [ 7 ]
+---@field BackgroundColor number @ Default value is [ 8 ]
+---@field ClickbufferColor number @ Default value is [ 9 ]
+---@field PrivateColor number @ Default value is [ 10 ]
+---@field DefaultGreen number @ Default value is [ 11 ]
+
+---@type ConsoleColorType 
 local ConsoleColorType = {}
-ConsoleColorType.DefaultColor = 0
-ConsoleColorType.InputColor = 1
-ConsoleColorType.EchoColor = 2
-ConsoleColorType.ErrorColor = 3
-ConsoleColorType.WarningColor = 4
-ConsoleColorType.GlobalColor = 5
-ConsoleColorType.AdminColor = 6
-ConsoleColorType.HighlightColor = 7
-ConsoleColorType.BackgroundColor = 8
-ConsoleColorType.ClickbufferColor = 9
-ConsoleColorType.PrivateColor = 10
-ConsoleColorType.DefaultGreen = 11
 
 ---@class ConsoleCommandType
+---@field Cvar number @ Default value is [ 0 ]
+---@field Command number @ Default value is [ 1 ]
+---@field Macro number @ Default value is [ 2 ]
+---@field Script number @ Default value is [ 3 ]
+
+---@type ConsoleCommandType 
 local ConsoleCommandType = {}
-ConsoleCommandType.Cvar = 0
-ConsoleCommandType.Command = 1
-ConsoleCommandType.Macro = 2
-ConsoleCommandType.Script = 3
 
 ---@class ConsoleCommandInfo
 ---@field command cstring 

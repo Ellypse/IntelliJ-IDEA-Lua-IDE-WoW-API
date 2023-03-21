@@ -158,17 +158,21 @@ function C_MountJournal.SetTypeFilter(filterIndex, isChecked) end
 function C_MountJournal.SummonByID(mountID) end
 
 ---@class MountType
+---@field Ground number @ Default value is [ 0 ]
+---@field Flying number @ Default value is [ 1 ]
+---@field Aquatic number @ Default value is [ 2 ]
+---@field Dragonriding number @ Default value is [ 3 ]
+
+---@type MountType 
 local MountType = {}
-MountType.Ground = 0
-MountType.Flying = 1
-MountType.Aquatic = 2
-MountType.Dragonriding = 3
 
 ---@class MountTypeFlag
+---@field IsFlyingMount number @ Default value is [ 1 ]
+---@field IsAquaticMount number @ Default value is [ 2 ]
+---@field IsDragonRidingMount number @ Default value is [ 4 ]
+
+---@type MountTypeFlag 
 local MountTypeFlag = {}
-MountTypeFlag.IsFlyingMount = 1
-MountTypeFlag.IsAquaticMount = 2
-MountTypeFlag.IsDragonRidingMount = 4
 
 ---@class MountCreatureDisplayInfo
 ---@field creatureDisplayID number 

@@ -108,7 +108,6 @@ function SetRotation(rotationRadians) end
 ---@param colorG number 
 ---@param colorB number 
 ---@param a SingleColorValue @ [OPTIONAL]
----@overload fun(colorR:number, colorG:number, colorB:number)
 function SetSwipeColor(colorR, colorG, colorB, a) end
 
 ---@param texture FileAsset 

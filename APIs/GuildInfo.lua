@@ -19,7 +19,6 @@ function C_GuildInfo.GetGuildNewsInfo(index) end
 function C_GuildInfo.GetGuildRankOrder(guid) end
 
 ---@param unit UnitToken @ [OPTIONAL]
----@overload fun()
 ---@return GuildTabardInfo|nil tabardInfo
 function C_GuildInfo.GetGuildTabardInfo(unit) end
 
@@ -44,7 +43,6 @@ function C_GuildInfo.QueryGuildMemberRecipes(guildMemberGUID, skillLineID) end
 ---@param skillLineID number 
 ---@param recipeSpellID number 
 ---@param recipeLevel luaIndex @ [OPTIONAL]
----@overload fun(skillLineID:number, recipeSpellID:number)
 ---@return number updatedRecipeSpellID
 function C_GuildInfo.QueryGuildMembersForRecipe(skillLineID, recipeSpellID, recipeLevel) end
 

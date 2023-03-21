@@ -275,18 +275,22 @@ function C_PvP.SetWarModeDesired(warModeDesired) end
 function C_PvP.ToggleWarMode() end
 
 ---@class BrawlType
+---@field None number @ Default value is [ 0 ]
+---@field Battleground number @ Default value is [ 1 ]
+---@field Arena number @ Default value is [ 2 ]
+---@field LFG number @ Default value is [ 3 ]
+---@field SoloShuffle number @ Default value is [ 4 ]
+
+---@type BrawlType 
 local BrawlType = {}
-BrawlType.None = 0
-BrawlType.Battleground = 1
-BrawlType.Arena = 2
-BrawlType.LFG = 3
-BrawlType.SoloShuffle = 4
 
 ---@class PvPMatchState
+---@field Inactive number @ Default value is [ 0 ]
+---@field Active number @ Default value is [ 1 ]
+---@field Complete number @ Default value is [ 2 ]
+
+---@type PvPMatchState 
 local PvPMatchState = {}
-PvPMatchState.Inactive = 0
-PvPMatchState.Active = 1
-PvPMatchState.Complete = 2
 
 ---@class BattlefieldCurrencyReward
 ---@field id number 

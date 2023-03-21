@@ -33,13 +33,11 @@ function C_TransmogCollection.GetAllAppearanceSources(itemAppearanceID) end
 
 ---@param itemAppearanceID number 
 ---@param variation TransmogCameraVariation @ [OPTIONAL]
----@overload fun(itemAppearanceID:number)
 ---@return number cameraID
 function C_TransmogCollection.GetAppearanceCameraID(itemAppearanceID, variation) end
 
 ---@param itemModifiedAppearanceID number 
 ---@param variation TransmogCameraVariation @ [OPTIONAL]
----@overload fun(itemModifiedAppearanceID:number)
 ---@return number cameraID
 function C_TransmogCollection.GetAppearanceCameraIDBySource(itemModifiedAppearanceID, variation) end
 
@@ -58,8 +56,6 @@ function C_TransmogCollection.GetAppearanceSourceInfo(itemModifiedAppearanceID) 
 ---@param appearanceID number 
 ---@param categoryType TransmogCollectionType @ [OPTIONAL]
 ---@param transmogLocation TransmogLocation @ [OPTIONAL]
----@overload fun(appearanceID:number, transmogLocation:TransmogLocation)
----@overload fun(appearanceID:number)
 ---@return AppearanceSourceInfo sources
 function C_TransmogCollection.GetAppearanceSources(appearanceID, categoryType, transmogLocation) end
 
@@ -69,7 +65,6 @@ function C_TransmogCollection.GetArtifactAppearanceStrings(appearanceID) end
 
 ---@param category TransmogCollectionType 
 ---@param transmogLocation TransmogLocation @ [OPTIONAL]
----@overload fun(category:TransmogCollectionType)
 ---@return TransmogCategoryAppearanceInfo appearances
 function C_TransmogCollection.GetCategoryAppearances(category, transmogLocation) end
 
@@ -274,10 +269,12 @@ function C_TransmogCollection.SetUncollectedShown(shown) end
 function C_TransmogCollection.UpdateUsableAppearances() end
 
 ---@class TransmogCameraVariation
+---@field None number @ Default value is [ 0 ]
+---@field RightShoulder number @ Default value is [ 1 ]
+---@field CloakBackpack number @ Default value is [ 1 ]
+
+---@type TransmogCameraVariation 
 local TransmogCameraVariation = {}
-TransmogCameraVariation.None = 0
-TransmogCameraVariation.RightShoulder = 1
-TransmogCameraVariation.CloakBackpack = 1
 
 ---@class TransmogAppearanceInfoBySourceData
 ---@field appearanceID number 

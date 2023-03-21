@@ -11,42 +11,46 @@ function C_EventToastManager.GetNextToastToDisplay() end
 function C_EventToastManager.RemoveCurrentToast() end
 
 ---@class EventToastDisplayType
+---@field NormalSingleLine number @ Default value is [ 0 ]
+---@field NormalBlockText number @ Default value is [ 1 ]
+---@field NormalTitleAndSubTitle number @ Default value is [ 2 ]
+---@field NormalTextWithIcon number @ Default value is [ 3 ]
+---@field LargeTextWithIcon number @ Default value is [ 4 ]
+---@field NormalTextWithIconAndRarity number @ Default value is [ 5 ]
+---@field Scenario number @ Default value is [ 6 ]
+---@field ChallengeMode number @ Default value is [ 7 ]
+---@field ScenarioClickExpand number @ Default value is [ 8 ]
+
+---@type EventToastDisplayType 
 local EventToastDisplayType = {}
-EventToastDisplayType.NormalSingleLine = 0
-EventToastDisplayType.NormalBlockText = 1
-EventToastDisplayType.NormalTitleAndSubTitle = 2
-EventToastDisplayType.NormalTextWithIcon = 3
-EventToastDisplayType.LargeTextWithIcon = 4
-EventToastDisplayType.NormalTextWithIconAndRarity = 5
-EventToastDisplayType.Scenario = 6
-EventToastDisplayType.ChallengeMode = 7
-EventToastDisplayType.ScenarioClickExpand = 8
 
 ---@class EventToastEventType
+---@field LevelUp number @ Default value is [ 0 ]
+---@field LevelUpSpell number @ Default value is [ 1 ]
+---@field LevelUpDungeon number @ Default value is [ 2 ]
+---@field LevelUpRaid number @ Default value is [ 3 ]
+---@field LevelUpPvP number @ Default value is [ 4 ]
+---@field PetBattleNewAbility number @ Default value is [ 5 ]
+---@field PetBattleFinalRound number @ Default value is [ 6 ]
+---@field PetBattleCapture number @ Default value is [ 7 ]
+---@field BattlePetLevelChanged number @ Default value is [ 8 ]
+---@field BattlePetLevelUpAbility number @ Default value is [ 9 ]
+---@field QuestBossEmote number @ Default value is [ 10 ]
+---@field MythicPlusWeeklyRecord number @ Default value is [ 11 ]
+---@field QuestTurnedIn number @ Default value is [ 12 ]
+---@field WorldStateChange number @ Default value is [ 13 ]
+---@field Scenario number @ Default value is [ 14 ]
+---@field LevelUpOther number @ Default value is [ 15 ]
+---@field PlayerAuraAdded number @ Default value is [ 16 ]
+---@field PlayerAuraRemoved number @ Default value is [ 17 ]
+---@field SpellScript number @ Default value is [ 18 ]
+---@field CriteriaUpdated number @ Default value is [ 19 ]
+---@field PvPTierUpdate number @ Default value is [ 20 ]
+---@field SpellLearned number @ Default value is [ 21 ]
+---@field TreasureItem number @ Default value is [ 22 ]
+
+---@type EventToastEventType 
 local EventToastEventType = {}
-EventToastEventType.LevelUp = 0
-EventToastEventType.LevelUpSpell = 1
-EventToastEventType.LevelUpDungeon = 2
-EventToastEventType.LevelUpRaid = 3
-EventToastEventType.LevelUpPvP = 4
-EventToastEventType.PetBattleNewAbility = 5
-EventToastEventType.PetBattleFinalRound = 6
-EventToastEventType.PetBattleCapture = 7
-EventToastEventType.BattlePetLevelChanged = 8
-EventToastEventType.BattlePetLevelUpAbility = 9
-EventToastEventType.QuestBossEmote = 10
-EventToastEventType.MythicPlusWeeklyRecord = 11
-EventToastEventType.QuestTurnedIn = 12
-EventToastEventType.WorldStateChange = 13
-EventToastEventType.Scenario = 14
-EventToastEventType.LevelUpOther = 15
-EventToastEventType.PlayerAuraAdded = 16
-EventToastEventType.PlayerAuraRemoved = 17
-EventToastEventType.SpellScript = 18
-EventToastEventType.CriteriaUpdated = 19
-EventToastEventType.PvPTierUpdate = 20
-EventToastEventType.SpellLearned = 21
-EventToastEventType.TreasureItem = 22
 
 ---@class EventToastInfo
 ---@field eventToastID number 

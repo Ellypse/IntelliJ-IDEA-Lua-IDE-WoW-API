@@ -7,13 +7,11 @@ function C_BattleNet.GetAccountInfoByGUID(guid) end
 
 ---@param id number 
 ---@param wowAccountGUID WOWGUID @ [OPTIONAL]
----@overload fun(id:number)
 ---@return BNetAccountInfo|nil accountInfo
 function C_BattleNet.GetAccountInfoByID(id, wowAccountGUID) end
 
 ---@param friendIndex luaIndex 
 ---@param wowAccountGUID WOWGUID @ [OPTIONAL]
----@overload fun(friendIndex:luaIndex)
 ---@return BNetAccountInfo|nil accountInfo
 function C_BattleNet.GetFriendAccountInfo(friendIndex, wowAccountGUID) end
 

@@ -7,7 +7,6 @@ C_RecruitAFriend = {}
 function C_RecruitAFriend.ClaimActivityReward(activityID, acceptanceID) end
 
 ---@param rafVersion RecruitAFriendRewardsVersion @ [OPTIONAL]
----@overload fun()
 ---@return boolean success
 function C_RecruitAFriend.ClaimNextReward(rafVersion) end
 
@@ -42,27 +41,33 @@ function C_RecruitAFriend.RemoveRAFRecruit(wowAccountGUID) end
 function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 
 ---@class RafRecruitActivityState
+---@field Incomplete number @ Default value is [ 0 ]
+---@field Complete number @ Default value is [ 1 ]
+---@field RewardClaimed number @ Default value is [ 2 ]
+
+---@type RafRecruitActivityState 
 local RafRecruitActivityState = {}
-RafRecruitActivityState.Incomplete = 0
-RafRecruitActivityState.Complete = 1
-RafRecruitActivityState.RewardClaimed = 2
 
 ---@class RafRecruitSubStatus
+---@field Trial number @ Default value is [ 0 ]
+---@field Active number @ Default value is [ 1 ]
+---@field Inactive number @ Default value is [ 2 ]
+
+---@type RafRecruitSubStatus 
 local RafRecruitSubStatus = {}
-RafRecruitSubStatus.Trial = 0
-RafRecruitSubStatus.Active = 1
-RafRecruitSubStatus.Inactive = 2
 
 ---@class RafRewardType
+---@field Pet number @ Default value is [ 0 ]
+---@field Mount number @ Default value is [ 1 ]
+---@field Appearance number @ Default value is [ 2 ]
+---@field Title number @ Default value is [ 3 ]
+---@field GameTime number @ Default value is [ 4 ]
+---@field AppearanceSet number @ Default value is [ 5 ]
+---@field Illusion number @ Default value is [ 6 ]
+---@field Invalid number @ Default value is [ 7 ]
+
+---@type RafRewardType 
 local RafRewardType = {}
-RafRewardType.Pet = 0
-RafRewardType.Mount = 1
-RafRewardType.Appearance = 2
-RafRewardType.Title = 3
-RafRewardType.GameTime = 4
-RafRewardType.AppearanceSet = 5
-RafRewardType.Illusion = 6
-RafRewardType.Invalid = 7
 
 ---@class RafAppearanceInfo
 ---@field appearanceID number 

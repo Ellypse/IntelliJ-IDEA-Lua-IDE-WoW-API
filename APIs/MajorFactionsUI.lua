@@ -17,7 +17,6 @@ function C_MajorFactions.GetFeatureAbilities() end
 function C_MajorFactions.GetMajorFactionData(majorFactionID) end
 
 ---@param expansionID number @ [OPTIONAL]
----@overload fun()
 ---@return number majorFactionIDs
 function C_MajorFactions.GetMajorFactionIDs(expansionID) end
 

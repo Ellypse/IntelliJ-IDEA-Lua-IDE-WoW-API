@@ -13,7 +13,6 @@ function C_WeeklyRewards.ClaimReward(id) end
 function C_WeeklyRewards.CloseInteraction() end
 
 ---@param type WeeklyRewardChestThresholdType @ [OPTIONAL]
----@overload fun()
 ---@return WeeklyRewardActivityInfo activities
 function C_WeeklyRewards.GetActivities(type) end
 
@@ -61,10 +60,12 @@ function C_WeeklyRewards.ShouldShowFinalRetirementMessage() end
 function C_WeeklyRewards.ShouldShowRetirementMessage() end
 
 ---@class ConquestProgressBarDisplayType
+---@field FirstChest number @ Default value is [ 0 ]
+---@field AdditionalChest number @ Default value is [ 1 ]
+---@field Seasonal number @ Default value is [ 2 ]
+
+---@type ConquestProgressBarDisplayType 
 local ConquestProgressBarDisplayType = {}
-ConquestProgressBarDisplayType.FirstChest = 0
-ConquestProgressBarDisplayType.AdditionalChest = 1
-ConquestProgressBarDisplayType.Seasonal = 2
 
 ---@class ConquestWeeklyProgress
 ---@field progress number 

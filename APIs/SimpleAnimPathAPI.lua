@@ -1,9 +1,6 @@
 ---@param name cstring @ [OPTIONAL]
 ---@param templateName cstring @ [OPTIONAL]
 ---@param order number @ [OPTIONAL]
----@overload fun(templateName:cstring, order:number)
----@overload fun(order:number)
----@overload fun()
 ---@return SimpleControlPoint point
 function CreateControlPoint(name, templateName, order) end
 

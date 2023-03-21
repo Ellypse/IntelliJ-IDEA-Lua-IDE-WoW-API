@@ -18,7 +18,6 @@ function C_CurrencyInfo.GetBackpackCurrencyInfo(index) end
 
 ---@param currencyType number 
 ---@param quantity number @ [OPTIONAL]
----@overload fun(currencyType:number)
 ---@return CurrencyDisplayInfo info
 function C_CurrencyInfo.GetBasicCurrencyInfo(currencyType, quantity) end
 
@@ -45,7 +44,6 @@ function C_CurrencyInfo.GetCurrencyInfoFromLink(link) end
 
 ---@param type number 
 ---@param amount number @ [OPTIONAL]
----@overload fun(type:number)
 ---@return cstring link
 function C_CurrencyInfo.GetCurrencyLink(type, amount) end
 

@@ -36,38 +36,44 @@ function C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID) end
 function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
 ---@class ItemTryOnReason
+---@field Success number @ Default value is [ 0 ]
+---@field WrongRace number @ Default value is [ 1 ]
+---@field NotEquippable number @ Default value is [ 2 ]
+---@field DataPending number @ Default value is [ 3 ]
+
+---@type ItemTryOnReason 
 local ItemTryOnReason = {}
-ItemTryOnReason.Success = 0
-ItemTryOnReason.WrongRace = 1
-ItemTryOnReason.NotEquippable = 2
-ItemTryOnReason.DataPending = 3
 
 ---@class ModelSceneSetting
+---@field AlignLightToOrbitDelta number @ Default value is [ 1 ]
+
+---@type ModelSceneSetting 
 local ModelSceneSetting = {}
-ModelSceneSetting.AlignLightToOrbitDelta = 1
 
 ---@class ModelSceneType
+---@field MountJournal number @ Default value is [ 0 ]
+---@field PetJournalCard number @ Default value is [ 1 ]
+---@field ShopCard number @ Default value is [ 2 ]
+---@field EncounterJournal number @ Default value is [ 3 ]
+---@field PetJournalLoadout number @ Default value is [ 4 ]
+---@field ArtifactTier2 number @ Default value is [ 5 ]
+---@field ArtifactTier2ForgingScene number @ Default value is [ 6 ]
+---@field ArtifactTier2SlamEffect number @ Default value is [ 7 ]
+---@field CommentatorVictoryFanfare number @ Default value is [ 8 ]
+---@field ArtifactRelicTalentEffect number @ Default value is [ 9 ]
+---@field PvPWarModeOrb number @ Default value is [ 10 ]
+---@field PvPWarModeFire number @ Default value is [ 11 ]
+---@field PartyPose number @ Default value is [ 12 ]
+---@field AzeriteItemLevelUpToast number @ Default value is [ 13 ]
+---@field AzeritePowers number @ Default value is [ 14 ]
+---@field AzeriteRewardGlow number @ Default value is [ 15 ]
+---@field HeartOfAzeroth number @ Default value is [ 16 ]
+---@field WorldMapThreat number @ Default value is [ 17 ]
+---@field Soulbinds number @ Default value is [ 18 ]
+---@field JailersTowerAnimaGlow number @ Default value is [ 19 ]
+
+---@type ModelSceneType 
 local ModelSceneType = {}
-ModelSceneType.MountJournal = 0
-ModelSceneType.PetJournalCard = 1
-ModelSceneType.ShopCard = 2
-ModelSceneType.EncounterJournal = 3
-ModelSceneType.PetJournalLoadout = 4
-ModelSceneType.ArtifactTier2 = 5
-ModelSceneType.ArtifactTier2ForgingScene = 6
-ModelSceneType.ArtifactTier2SlamEffect = 7
-ModelSceneType.CommentatorVictoryFanfare = 8
-ModelSceneType.ArtifactRelicTalentEffect = 9
-ModelSceneType.PvPWarModeOrb = 10
-ModelSceneType.PvPWarModeFire = 11
-ModelSceneType.PartyPose = 12
-ModelSceneType.AzeriteItemLevelUpToast = 13
-ModelSceneType.AzeritePowers = 14
-ModelSceneType.AzeriteRewardGlow = 15
-ModelSceneType.HeartOfAzeroth = 16
-ModelSceneType.WorldMapThreat = 17
-ModelSceneType.Soulbinds = 18
-ModelSceneType.JailersTowerAnimaGlow = 19
 
 ---@class UIModelSceneActorDisplayInfo
 ---@field animation number 

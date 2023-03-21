@@ -87,11 +87,13 @@ function C_Transmog.LoadOutfit(outfitID) end
 function C_Transmog.SetPending(transmogLocation, pendingInfo) end
 
 ---@class TransmogPendingType
+---@field Apply number @ Default value is [ 0 ]
+---@field Revert number @ Default value is [ 1 ]
+---@field ToggleOn number @ Default value is [ 2 ]
+---@field ToggleOff number @ Default value is [ 3 ]
+
+---@type TransmogPendingType 
 local TransmogPendingType = {}
-TransmogPendingType.Apply = 0
-TransmogPendingType.Revert = 1
-TransmogPendingType.ToggleOn = 2
-TransmogPendingType.ToggleOff = 3
 
 ---@class TransmogApplyWarningInfo
 ---@field itemLink string 

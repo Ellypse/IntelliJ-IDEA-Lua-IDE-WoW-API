@@ -169,7 +169,6 @@ function C_Container.SplitContainerItem(containerIndex, slotIndex, amount) end
 ---@param slotIndex luaIndex 
 ---@param unitToken UnitToken @ [OPTIONAL]
 ---@param reagentBankOpen boolean 
----@overload fun(containerIndex:BagIndex, slotIndex:luaIndex, reagentBankOpen:bool)
 function C_Container.UseContainerItem(containerIndex, slotIndex, unitToken, reagentBankOpen) end
 
 ---@return boolean used

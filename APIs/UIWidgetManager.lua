@@ -130,11 +130,9 @@ function C_UIWidgetManager.GetZoneControlVisualizationInfo(widgetID) end
 function C_UIWidgetManager.RegisterUnitForWidgetUpdates(unitToken, isGuid) end
 
 ---@param unit UnitToken @ [OPTIONAL]
----@overload fun()
 function C_UIWidgetManager.SetProcessingUnit(unit) end
 
 ---@param unit WOWGUID @ [OPTIONAL]
----@overload fun()
 function C_UIWidgetManager.SetProcessingUnitGuid(unit) end
 
 ---@param unitToken string 
@@ -142,217 +140,279 @@ function C_UIWidgetManager.SetProcessingUnitGuid(unit) end
 function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 
 ---@class CaptureBarWidgetFillDirectionType
+---@field RightToLeft number @ Default value is [ 0 ]
+---@field LeftToRight number @ Default value is [ 1 ]
+
+---@type CaptureBarWidgetFillDirectionType 
 local CaptureBarWidgetFillDirectionType = {}
-CaptureBarWidgetFillDirectionType.RightToLeft = 0
-CaptureBarWidgetFillDirectionType.LeftToRight = 1
 
 ---@class CaptureBarWidgetGlowAnimType
+---@field None number @ Default value is [ 0 ]
+---@field Pulse number @ Default value is [ 1 ]
+
+---@type CaptureBarWidgetGlowAnimType 
 local CaptureBarWidgetGlowAnimType = {}
-CaptureBarWidgetGlowAnimType.None = 0
-CaptureBarWidgetGlowAnimType.Pulse = 1
 
 ---@class IconAndTextWidgetState
+---@field Hidden number @ Default value is [ 0 ]
+---@field Shown number @ Default value is [ 1 ]
+---@field ShownWithDynamicIconFlashing number @ Default value is [ 2 ]
+---@field ShownWithDynamicIconNotFlashing number @ Default value is [ 3 ]
+
+---@type IconAndTextWidgetState 
 local IconAndTextWidgetState = {}
-IconAndTextWidgetState.Hidden = 0
-IconAndTextWidgetState.Shown = 1
-IconAndTextWidgetState.ShownWithDynamicIconFlashing = 2
-IconAndTextWidgetState.ShownWithDynamicIconNotFlashing = 3
 
 ---@class IconState
+---@field Hidden number @ Default value is [ 0 ]
+---@field ShowState1 number @ Default value is [ 1 ]
+---@field ShowState2 number @ Default value is [ 2 ]
+
+---@type IconState 
 local IconState = {}
-IconState.Hidden = 0
-IconState.ShowState1 = 1
-IconState.ShowState2 = 2
 
 ---@class SpellDisplayBorderColor
+---@field None number @ Default value is [ 0 ]
+---@field Black number @ Default value is [ 1 ]
+---@field White number @ Default value is [ 2 ]
+---@field Red number @ Default value is [ 3 ]
+---@field Yellow number @ Default value is [ 4 ]
+---@field Orange number @ Default value is [ 5 ]
+---@field Purple number @ Default value is [ 6 ]
+---@field Green number @ Default value is [ 7 ]
+---@field Blue number @ Default value is [ 8 ]
+
+---@type SpellDisplayBorderColor 
 local SpellDisplayBorderColor = {}
-SpellDisplayBorderColor.None = 0
-SpellDisplayBorderColor.Black = 1
-SpellDisplayBorderColor.White = 2
-SpellDisplayBorderColor.Red = 3
-SpellDisplayBorderColor.Yellow = 4
-SpellDisplayBorderColor.Orange = 5
-SpellDisplayBorderColor.Purple = 6
-SpellDisplayBorderColor.Green = 7
-SpellDisplayBorderColor.Blue = 8
 
 ---@class SpellDisplayIconDisplayType
+---@field Buff number @ Default value is [ 0 ]
+---@field Debuff number @ Default value is [ 1 ]
+---@field Circular number @ Default value is [ 2 ]
+---@field NoBorder number @ Default value is [ 3 ]
+
+---@type SpellDisplayIconDisplayType 
 local SpellDisplayIconDisplayType = {}
-SpellDisplayIconDisplayType.Buff = 0
-SpellDisplayIconDisplayType.Debuff = 1
-SpellDisplayIconDisplayType.Circular = 2
-SpellDisplayIconDisplayType.NoBorder = 3
 
 ---@class SpellDisplayIconSizeType
+---@field Small number @ Default value is [ 0 ]
+---@field Medium number @ Default value is [ 1 ]
+---@field Large number @ Default value is [ 2 ]
+
+---@type SpellDisplayIconSizeType 
 local SpellDisplayIconSizeType = {}
-SpellDisplayIconSizeType.Small = 0
-SpellDisplayIconSizeType.Medium = 1
-SpellDisplayIconSizeType.Large = 2
 
 ---@class SpellDisplayTextShownStateType
+---@field Shown number @ Default value is [ 0 ]
+---@field Hidden number @ Default value is [ 1 ]
+
+---@type SpellDisplayTextShownStateType 
 local SpellDisplayTextShownStateType = {}
-SpellDisplayTextShownStateType.Shown = 0
-SpellDisplayTextShownStateType.Hidden = 1
 
 ---@class StatusBarColorTintValue
+---@field None number @ Default value is [ 0 ]
+---@field Black number @ Default value is [ 1 ]
+---@field White number @ Default value is [ 2 ]
+---@field Red number @ Default value is [ 3 ]
+---@field Yellow number @ Default value is [ 4 ]
+---@field Orange number @ Default value is [ 5 ]
+---@field Purple number @ Default value is [ 6 ]
+---@field Green number @ Default value is [ 7 ]
+---@field Blue number @ Default value is [ 8 ]
+
+---@type StatusBarColorTintValue 
 local StatusBarColorTintValue = {}
-StatusBarColorTintValue.None = 0
-StatusBarColorTintValue.Black = 1
-StatusBarColorTintValue.White = 2
-StatusBarColorTintValue.Red = 3
-StatusBarColorTintValue.Yellow = 4
-StatusBarColorTintValue.Orange = 5
-StatusBarColorTintValue.Purple = 6
-StatusBarColorTintValue.Green = 7
-StatusBarColorTintValue.Blue = 8
 
 ---@class StatusBarOverrideBarTextShownType
+---@field Never number @ Default value is [ 0 ]
+---@field Always number @ Default value is [ 1 ]
+---@field OnlyOnMouseover number @ Default value is [ 2 ]
+---@field OnlyNotOnMouseover number @ Default value is [ 3 ]
+
+---@type StatusBarOverrideBarTextShownType 
 local StatusBarOverrideBarTextShownType = {}
-StatusBarOverrideBarTextShownType.Never = 0
-StatusBarOverrideBarTextShownType.Always = 1
-StatusBarOverrideBarTextShownType.OnlyOnMouseover = 2
-StatusBarOverrideBarTextShownType.OnlyNotOnMouseover = 3
 
 ---@class StatusBarValueTextType
+---@field Hidden number @ Default value is [ 0 ]
+---@field Percentage number @ Default value is [ 1 ]
+---@field Value number @ Default value is [ 2 ]
+---@field Time number @ Default value is [ 3 ]
+---@field TimeShowOneLevelOnly number @ Default value is [ 4 ]
+---@field ValueOverMax number @ Default value is [ 5 ]
+---@field ValueOverMaxNormalized number @ Default value is [ 6 ]
+
+---@type StatusBarValueTextType 
 local StatusBarValueTextType = {}
-StatusBarValueTextType.Hidden = 0
-StatusBarValueTextType.Percentage = 1
-StatusBarValueTextType.Value = 2
-StatusBarValueTextType.Time = 3
-StatusBarValueTextType.TimeShowOneLevelOnly = 4
-StatusBarValueTextType.ValueOverMax = 5
-StatusBarValueTextType.ValueOverMaxNormalized = 6
 
 ---@class UIWidgetBlendModeType
+---@field Opaque number @ Default value is [ 0 ]
+---@field Additive number @ Default value is [ 1 ]
+
+---@type UIWidgetBlendModeType 
 local UIWidgetBlendModeType = {}
-UIWidgetBlendModeType.Opaque = 0
-UIWidgetBlendModeType.Additive = 1
 
 ---@class UIWidgetFlag
+---@field UniversalWidget number @ Default value is [ 1 ]
+
+---@type UIWidgetFlag 
 local UIWidgetFlag = {}
-UIWidgetFlag.UniversalWidget = 1
 
 ---@class UIWidgetFontType
+---@field Normal number @ Default value is [ 0 ]
+---@field Shadow number @ Default value is [ 1 ]
+---@field Outline number @ Default value is [ 2 ]
+
+---@type UIWidgetFontType 
 local UIWidgetFontType = {}
-UIWidgetFontType.Normal = 0
-UIWidgetFontType.Shadow = 1
-UIWidgetFontType.Outline = 2
 
 ---@class UIWidgetModelSceneLayer
+---@field None number @ Default value is [ 0 ]
+---@field Front number @ Default value is [ 1 ]
+---@field Back number @ Default value is [ 2 ]
+
+---@type UIWidgetModelSceneLayer 
 local UIWidgetModelSceneLayer = {}
-UIWidgetModelSceneLayer.None = 0
-UIWidgetModelSceneLayer.Front = 1
-UIWidgetModelSceneLayer.Back = 2
 
 ---@class UIWidgetMotionType
+---@field Instant number @ Default value is [ 0 ]
+---@field Smooth number @ Default value is [ 1 ]
+
+---@type UIWidgetMotionType 
 local UIWidgetMotionType = {}
-UIWidgetMotionType.Instant = 0
-UIWidgetMotionType.Smooth = 1
 
 ---@class UIWidgetTextSizeType
+---@field Small12Pt number @ Default value is [ 0 ]
+---@field Medium16Pt number @ Default value is [ 1 ]
+---@field Large24Pt number @ Default value is [ 2 ]
+---@field Huge27Pt number @ Default value is [ 3 ]
+---@field Standard14Pt number @ Default value is [ 4 ]
+---@field Small10Pt number @ Default value is [ 5 ]
+---@field Small11Pt number @ Default value is [ 6 ]
+---@field Medium18Pt number @ Default value is [ 7 ]
+---@field Large20Pt number @ Default value is [ 8 ]
+
+---@type UIWidgetTextSizeType 
 local UIWidgetTextSizeType = {}
-UIWidgetTextSizeType.Small12Pt = 0
-UIWidgetTextSizeType.Medium16Pt = 1
-UIWidgetTextSizeType.Large24Pt = 2
-UIWidgetTextSizeType.Huge27Pt = 3
-UIWidgetTextSizeType.Standard14Pt = 4
-UIWidgetTextSizeType.Small10Pt = 5
-UIWidgetTextSizeType.Small11Pt = 6
-UIWidgetTextSizeType.Medium18Pt = 7
-UIWidgetTextSizeType.Large20Pt = 8
 
 ---@class UIWidgetTextureAndTextSizeType
+---@field Small number @ Default value is [ 0 ]
+---@field Medium number @ Default value is [ 1 ]
+---@field Large number @ Default value is [ 2 ]
+---@field Huge number @ Default value is [ 3 ]
+---@field Standard number @ Default value is [ 4 ]
+
+---@type UIWidgetTextureAndTextSizeType 
 local UIWidgetTextureAndTextSizeType = {}
-UIWidgetTextureAndTextSizeType.Small = 0
-UIWidgetTextureAndTextSizeType.Medium = 1
-UIWidgetTextureAndTextSizeType.Large = 2
-UIWidgetTextureAndTextSizeType.Huge = 3
-UIWidgetTextureAndTextSizeType.Standard = 4
 
 ---@class UIWidgetTooltipLocation
+---@field Default number @ Default value is [ 0 ]
+---@field BottomLeft number @ Default value is [ 1 ]
+---@field Left number @ Default value is [ 2 ]
+---@field TopLeft number @ Default value is [ 3 ]
+---@field Top number @ Default value is [ 4 ]
+---@field TopRight number @ Default value is [ 5 ]
+---@field Right number @ Default value is [ 6 ]
+---@field BottomRight number @ Default value is [ 7 ]
+---@field Bottom number @ Default value is [ 8 ]
+
+---@type UIWidgetTooltipLocation 
 local UIWidgetTooltipLocation = {}
-UIWidgetTooltipLocation.Default = 0
-UIWidgetTooltipLocation.BottomLeft = 1
-UIWidgetTooltipLocation.Left = 2
-UIWidgetTooltipLocation.TopLeft = 3
-UIWidgetTooltipLocation.Top = 4
-UIWidgetTooltipLocation.TopRight = 5
-UIWidgetTooltipLocation.Right = 6
-UIWidgetTooltipLocation.BottomRight = 7
-UIWidgetTooltipLocation.Bottom = 8
 
 ---@class WidgetAnimationType
+---@field None number @ Default value is [ 0 ]
+---@field Fade number @ Default value is [ 1 ]
+
+---@type WidgetAnimationType 
 local WidgetAnimationType = {}
-WidgetAnimationType.None = 0
-WidgetAnimationType.Fade = 1
 
 ---@class WidgetCurrencyClass
+---@field Currency number @ Default value is [ 0 ]
+---@field Item number @ Default value is [ 1 ]
+
+---@type WidgetCurrencyClass 
 local WidgetCurrencyClass = {}
-WidgetCurrencyClass.Currency = 0
-WidgetCurrencyClass.Item = 1
 
 ---@class WidgetEnabledState
+---@field Disabled number @ Default value is [ 0 ]
+---@field Enabled number @ Default value is [ 1 ]
+---@field Red number @ Default value is [ 2 ]
+---@field White number @ Default value is [ 3 ]
+---@field Green number @ Default value is [ 4 ]
+---@field Gold number @ Default value is [ 5 ]
+---@field Black number @ Default value is [ 6 ]
+
+---@type WidgetEnabledState 
 local WidgetEnabledState = {}
-WidgetEnabledState.Disabled = 0
-WidgetEnabledState.Enabled = 1
-WidgetEnabledState.Red = 2
-WidgetEnabledState.White = 3
-WidgetEnabledState.Green = 4
-WidgetEnabledState.Gold = 5
-WidgetEnabledState.Black = 6
 
 ---@class WidgetShownState
+---@field Hidden number @ Default value is [ 0 ]
+---@field Shown number @ Default value is [ 1 ]
+
+---@type WidgetShownState 
 local WidgetShownState = {}
-WidgetShownState.Hidden = 0
-WidgetShownState.Shown = 1
 
 ---@class WidgetTextHorizontalAlignmentType
+---@field Left number @ Default value is [ 0 ]
+---@field Center number @ Default value is [ 1 ]
+---@field Right number @ Default value is [ 2 ]
+
+---@type WidgetTextHorizontalAlignmentType 
 local WidgetTextHorizontalAlignmentType = {}
-WidgetTextHorizontalAlignmentType.Left = 0
-WidgetTextHorizontalAlignmentType.Center = 1
-WidgetTextHorizontalAlignmentType.Right = 2
 
 ---@class WidgetUnitPowerBarFlashMomentType
+---@field FlashWhenMax number @ Default value is [ 0 ]
+---@field FlashWhenMin number @ Default value is [ 1 ]
+---@field NeverFlash number @ Default value is [ 2 ]
+
+---@type WidgetUnitPowerBarFlashMomentType 
 local WidgetUnitPowerBarFlashMomentType = {}
-WidgetUnitPowerBarFlashMomentType.FlashWhenMax = 0
-WidgetUnitPowerBarFlashMomentType.FlashWhenMin = 1
-WidgetUnitPowerBarFlashMomentType.NeverFlash = 2
 
 ---@class ZoneControlActiveState
+---@field Inactive number @ Default value is [ 0 ]
+---@field Active number @ Default value is [ 1 ]
+
+---@type ZoneControlActiveState 
 local ZoneControlActiveState = {}
-ZoneControlActiveState.Inactive = 0
-ZoneControlActiveState.Active = 1
 
 ---@class ZoneControlDangerFlashType
+---@field ShowOnGoodStates number @ Default value is [ 0 ]
+---@field ShowOnBadStates number @ Default value is [ 1 ]
+---@field ShowOnBoth number @ Default value is [ 2 ]
+---@field ShowOnNeither number @ Default value is [ 3 ]
+
+---@type ZoneControlDangerFlashType 
 local ZoneControlDangerFlashType = {}
-ZoneControlDangerFlashType.ShowOnGoodStates = 0
-ZoneControlDangerFlashType.ShowOnBadStates = 1
-ZoneControlDangerFlashType.ShowOnBoth = 2
-ZoneControlDangerFlashType.ShowOnNeither = 3
 
 ---@class ZoneControlFillType
+---@field SingleFillClockwise number @ Default value is [ 0 ]
+---@field SingleFillCounterClockwise number @ Default value is [ 1 ]
+---@field DoubleFillClockwise number @ Default value is [ 2 ]
+---@field DoubleFillCounterClockwise number @ Default value is [ 3 ]
+
+---@type ZoneControlFillType 
 local ZoneControlFillType = {}
-ZoneControlFillType.SingleFillClockwise = 0
-ZoneControlFillType.SingleFillCounterClockwise = 1
-ZoneControlFillType.DoubleFillClockwise = 2
-ZoneControlFillType.DoubleFillCounterClockwise = 3
 
 ---@class ZoneControlLeadingEdgeType
+---@field NoLeadingEdge number @ Default value is [ 0 ]
+---@field UseLeadingEdge number @ Default value is [ 1 ]
+
+---@type ZoneControlLeadingEdgeType 
 local ZoneControlLeadingEdgeType = {}
-ZoneControlLeadingEdgeType.NoLeadingEdge = 0
-ZoneControlLeadingEdgeType.UseLeadingEdge = 1
 
 ---@class ZoneControlMode
+---@field BothStatesAreGood number @ Default value is [ 0 ]
+---@field State1IsGood number @ Default value is [ 1 ]
+---@field State2IsGood number @ Default value is [ 2 ]
+---@field NeitherStateIsGood number @ Default value is [ 3 ]
+
+---@type ZoneControlMode 
 local ZoneControlMode = {}
-ZoneControlMode.BothStatesAreGood = 0
-ZoneControlMode.State1IsGood = 1
-ZoneControlMode.State2IsGood = 2
-ZoneControlMode.NeitherStateIsGood = 3
 
 ---@class ZoneControlState
+---@field State1 number @ Default value is [ 0 ]
+---@field State2 number @ Default value is [ 1 ]
+
+---@type ZoneControlState 
 local ZoneControlState = {}
-ZoneControlState.State1 = 0
-ZoneControlState.State2 = 1
 
 ---@class BulletTextListWidgetVisualizationInfo
 ---@field shownState WidgetShownState 

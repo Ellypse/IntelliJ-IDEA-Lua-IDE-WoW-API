@@ -10,9 +10,11 @@ function C_SplashScreen.CanViewSplashScreen() end
 function C_SplashScreen.RequestLatestSplashScreen(fromGameMenu) end
 
 ---@class SplashScreenType
+---@field WhatsNew number @ Default value is [ 0 ]
+---@field SeasonRollOver number @ Default value is [ 1 ]
+
+---@type SplashScreenType 
 local SplashScreenType = {}
-SplashScreenType.WhatsNew = 0
-SplashScreenType.SeasonRollOver = 1
 
 ---@class SplashScreenInfo
 ---@field textureKit textureKit 

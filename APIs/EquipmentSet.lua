@@ -12,7 +12,6 @@ function C_EquipmentSet.ClearIgnoredSlotsForSave() end
 
 ---@param equipmentSetName cstring 
 ---@param icon cstring @ [OPTIONAL]
----@overload fun(equipmentSetName:cstring)
 function C_EquipmentSet.CreateEquipmentSet(equipmentSetName, icon) end
 
 ---@param equipmentSetID number 
@@ -66,7 +65,6 @@ function C_EquipmentSet.IsSlotIgnoredForSave(slot) end
 ---@param equipmentSetID number 
 ---@param newName cstring 
 ---@param newIcon cstring @ [OPTIONAL]
----@overload fun(equipmentSetID:number, newName:cstring)
 function C_EquipmentSet.ModifyEquipmentSet(equipmentSetID, newName, newIcon) end
 
 ---@param equipmentSetID number 
@@ -74,7 +72,6 @@ function C_EquipmentSet.PickupEquipmentSet(equipmentSetID) end
 
 ---@param equipmentSetID number 
 ---@param icon cstring @ [OPTIONAL]
----@overload fun(equipmentSetID:number)
 function C_EquipmentSet.SaveEquipmentSet(equipmentSetID, icon) end
 
 ---@param equipmentSetID number 

@@ -21,9 +21,11 @@ function C_DeathInfo.GetSelfResurrectOptions() end
 function C_DeathInfo.UseSelfResurrectOption(optionType, id) end
 
 ---@class SelfResurrectOptionType
+---@field Spell number @ Default value is [ 0 ]
+---@field Item number @ Default value is [ 1 ]
+
+---@type SelfResurrectOptionType 
 local SelfResurrectOptionType = {}
-SelfResurrectOptionType.Spell = 0
-SelfResurrectOptionType.Item = 1
 
 ---@class GraveyardMapInfo
 ---@field areaPoiID number 

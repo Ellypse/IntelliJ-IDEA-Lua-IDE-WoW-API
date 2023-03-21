@@ -25,7 +25,6 @@ function C_ItemInteraction.PerformItemInteraction() end
 function C_ItemInteraction.Reset() end
 
 ---@param item ItemLocation @ [OPTIONAL]
----@overload fun()
 ---@return boolean success
 function C_ItemInteraction.SetPendingItem(item) end
 

@@ -4,7 +4,6 @@ C_Garrison = {}
 ---@param missionID number 
 ---@param followerID GarrisonFollower 
 ---@param boardIndex number @ [OPTIONAL]
----@overload fun(missionID:number, followerID:GarrisonFollower)
 ---@return boolean followerAdded
 function C_Garrison.AddFollowerToMission(missionID, followerID, boardIndex) end
 
@@ -149,7 +148,6 @@ function C_Garrison.RegenerateCombatLog(missionID) end
 ---@param missionID number 
 ---@param followerID GarrisonFollower 
 ---@param boardIndex number @ [OPTIONAL]
----@overload fun(missionID:number, followerID:GarrisonFollower)
 function C_Garrison.RemoveFollowerFromMission(missionID, followerID, boardIndex) end
 
 ---@param followerType number 

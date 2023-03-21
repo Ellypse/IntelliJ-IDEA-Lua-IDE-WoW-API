@@ -37,7 +37,6 @@ function GetUnitPowerBarStringsByID(barID) end
 ---@param unitToken UnitToken 
 ---@param textureIndex luaIndex 
 ---@param timerIndex luaIndex @ [OPTIONAL]
----@overload fun(unitToken:UnitToken, textureIndex:luaIndex)
 ---@return fileID, number, number, number, number texture, colorR, colorG, colorB, colorA
 function GetUnitPowerBarTextureInfo(unitToken, textureIndex, timerIndex) end
 
@@ -70,8 +69,6 @@ function SetPortraitTextureFromCreatureDisplayID(textureObject, creatureDisplayI
 ---@param unit UnitToken 
 ---@param style CursorStyle @ [OPTIONAL]
 ---@param includeLowPriority boolean @ [OPTIONAL]
----@overload fun(textureObject:SimpleTexture, unit:UnitToken, includeLowPriority:bool)
----@overload fun(textureObject:SimpleTexture, unit:UnitToken)
 ---@return boolean hasCursor
 function SetUnitCursorTexture(textureObject, unit, style, includeLowPriority) end
 
@@ -175,54 +172,60 @@ function UnitTrialBankedLevels(unit) end
 function UnitWidgetSet(unit) end
 
 ---@class PhaseReason
+---@field Phasing number @ Default value is [ 0 ]
+---@field Sharding number @ Default value is [ 1 ]
+---@field WarMode number @ Default value is [ 2 ]
+---@field ChromieTime number @ Default value is [ 3 ]
+
+---@type PhaseReason 
 local PhaseReason = {}
-PhaseReason.Phasing = 0
-PhaseReason.Sharding = 1
-PhaseReason.WarMode = 2
-PhaseReason.ChromieTime = 3
 
 ---@class PowerType
+---@field HealthCost number @ Default value is [ -2 ]
+---@field None number @ Default value is [ -1 ]
+---@field Mana number @ Default value is [ 0 ]
+---@field Rage number @ Default value is [ 1 ]
+---@field Focus number @ Default value is [ 2 ]
+---@field Energy number @ Default value is [ 3 ]
+---@field ComboPoints number @ Default value is [ 4 ]
+---@field Runes number @ Default value is [ 5 ]
+---@field RunicPower number @ Default value is [ 6 ]
+---@field SoulShards number @ Default value is [ 7 ]
+---@field LunarPower number @ Default value is [ 8 ]
+---@field HolyPower number @ Default value is [ 9 ]
+---@field Alternate number @ Default value is [ 10 ]
+---@field Maelstrom number @ Default value is [ 11 ]
+---@field Chi number @ Default value is [ 12 ]
+---@field Insanity number @ Default value is [ 13 ]
+---@field Obsolete number @ Default value is [ 14 ]
+---@field Obsolete2 number @ Default value is [ 15 ]
+---@field ArcaneCharges number @ Default value is [ 16 ]
+---@field Fury number @ Default value is [ 17 ]
+---@field Pain number @ Default value is [ 18 ]
+---@field Essence number @ Default value is [ 19 ]
+---@field RuneBlood number @ Default value is [ 20 ]
+---@field RuneFrost number @ Default value is [ 21 ]
+---@field RuneUnholy number @ Default value is [ 22 ]
+---@field NumPowerTypes number @ Default value is [ 23 ]
+
+---@type PowerType 
 local PowerType = {}
-PowerType.HealthCost = -2
-PowerType.None = -1
-PowerType.Mana = 0
-PowerType.Rage = 1
-PowerType.Focus = 2
-PowerType.Energy = 3
-PowerType.ComboPoints = 4
-PowerType.Runes = 5
-PowerType.RunicPower = 6
-PowerType.SoulShards = 7
-PowerType.LunarPower = 8
-PowerType.HolyPower = 9
-PowerType.Alternate = 10
-PowerType.Maelstrom = 11
-PowerType.Chi = 12
-PowerType.Insanity = 13
-PowerType.Obsolete = 14
-PowerType.Obsolete2 = 15
-PowerType.ArcaneCharges = 16
-PowerType.Fury = 17
-PowerType.Pain = 18
-PowerType.Essence = 19
-PowerType.RuneBlood = 20
-PowerType.RuneFrost = 21
-PowerType.RuneUnholy = 22
-PowerType.NumPowerTypes = 23
 
 ---@class PvPUnitClassification
+---@field FlagCarrierHorde number @ Default value is [ 0 ]
+---@field FlagCarrierAlliance number @ Default value is [ 1 ]
+---@field FlagCarrierNeutral number @ Default value is [ 2 ]
+---@field CartRunnerHorde number @ Default value is [ 3 ]
+---@field CartRunnerAlliance number @ Default value is [ 4 ]
+---@field AssassinHorde number @ Default value is [ 5 ]
+---@field AssassinAlliance number @ Default value is [ 6 ]
+---@field OrbCarrierBlue number @ Default value is [ 7 ]
+---@field OrbCarrierGreen number @ Default value is [ 8 ]
+---@field OrbCarrierOrange number @ Default value is [ 9 ]
+---@field OrbCarrierPurple number @ Default value is [ 10 ]
+
+---@type PvPUnitClassification 
 local PvPUnitClassification = {}
-PvPUnitClassification.FlagCarrierHorde = 0
-PvPUnitClassification.FlagCarrierAlliance = 1
-PvPUnitClassification.FlagCarrierNeutral = 2
-PvPUnitClassification.CartRunnerHorde = 3
-PvPUnitClassification.CartRunnerAlliance = 4
-PvPUnitClassification.AssassinHorde = 5
-PvPUnitClassification.AssassinAlliance = 6
-PvPUnitClassification.OrbCarrierBlue = 7
-PvPUnitClassification.OrbCarrierGreen = 8
-PvPUnitClassification.OrbCarrierOrange = 9
-PvPUnitClassification.OrbCarrierPurple = 10
 
 ---@class CorruptionEffectInfo
 ---@field name string 

@@ -1,0 +1,55 @@
+---@class TextureUtils
+C_Texture = {}
+
+---@param texture SimpleTexture 
+function C_Texture.ClearTitleIconTexture(texture) end
+
+---@param atlas textureAtlas 
+---@return AtlasInfo info
+function C_Texture.GetAtlasInfo(atlas) end
+
+---@param quality number 
+---@return cstring textureMarkup
+function C_Texture.GetCraftingReagentQualityChatIcon(quality) end
+
+---@param fileDataID number 
+---@return string filename
+function C_Texture.GetFilenameFromFileDataID(fileDataID) end
+
+---@param titleID string 
+---@param version TitleIconVersion 
+---@param callback GetTitleIconTextureCallback 
+function C_Texture.GetTitleIconTexture(titleID, version, callback) end
+
+---@param titleID string 
+---@param version TitleIconVersion 
+---@return boolean ready
+function C_Texture.IsTitleIconTextureReady(titleID, version) end
+
+---@param texture SimpleTexture 
+---@param titleID string 
+---@param version TitleIconVersion 
+function C_Texture.SetTitleIconTexture(texture, titleID, version) end
+
+---@class TitleIconVersion
+---@field Small number @ Default value is [ 0 ]
+---@field Medium number @ Default value is [ 1 ]
+---@field Large number @ Default value is [ 2 ]
+
+---@type TitleIconVersion 
+local TitleIconVersion = {}
+
+---@class AtlasInfo
+---@field width number 
+---@field height number 
+---@field leftTexCoord number 
+---@field rightTexCoord number 
+---@field topTexCoord number 
+---@field bottomTexCoord number 
+---@field tilesHorizontally bool 
+---@field tilesVertically bool 
+---@field file fileID|nil 
+---@field filename string|nil 
+local AtlasInfo = {}
+
+

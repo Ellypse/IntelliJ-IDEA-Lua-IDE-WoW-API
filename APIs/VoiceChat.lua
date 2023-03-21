@@ -121,8 +121,6 @@ function C_VoiceChat.GetVADSensitivity() end
 ---@param channelType ChatChannelType 
 ---@param clubId ClubId @ [OPTIONAL]
 ---@param streamId ClubStreamId @ [OPTIONAL]
----@overload fun(channelType:ChatChannelType, streamId:ClubStreamId)
----@overload fun(channelType:ChatChannelType)
 ---@return boolean isPending
 function C_VoiceChat.IsChannelJoinPending(channelType, clubId, streamId) end
 
@@ -200,7 +198,6 @@ function C_VoiceChat.RequestJoinAndActivateCommunityStreamChannel(clubId, stream
 
 ---@param channelType ChatChannelType 
 ---@param autoActivate boolean @ [OPTIONAL]
----@overload fun(channelType:ChatChannelType)
 function C_VoiceChat.RequestJoinChannelByChannelType(channelType, autoActivate) end
 
 ---@param communicationMode CommunicationMode 
@@ -271,69 +268,79 @@ function C_VoiceChat.ToggleMemberMuted(playerLocation) end
 function C_VoiceChat.ToggleMuted() end
 
 ---@class CommunicationMode
+---@field PushToTalk number @ Default value is [ 0 ]
+---@field OpenMic number @ Default value is [ 1 ]
+
+---@type CommunicationMode 
 local CommunicationMode = {}
-CommunicationMode.PushToTalk = 0
-CommunicationMode.OpenMic = 1
 
 ---@class VoiceChannelErrorReason
+---@field Unknown number @ Default value is [ 0 ]
+---@field IsBattleNetChannel number @ Default value is [ 1 ]
+
+---@type VoiceChannelErrorReason 
 local VoiceChannelErrorReason = {}
-VoiceChannelErrorReason.Unknown = 0
-VoiceChannelErrorReason.IsBattleNetChannel = 1
 
 ---@class VoiceChatStatusCode
+---@field Success number @ Default value is [ 0 ]
+---@field OperationPending number @ Default value is [ 1 ]
+---@field TooManyRequests number @ Default value is [ 2 ]
+---@field LoginProhibited number @ Default value is [ 3 ]
+---@field ClientNotInitialized number @ Default value is [ 4 ]
+---@field ClientNotLoggedIn number @ Default value is [ 5 ]
+---@field ClientAlreadyLoggedIn number @ Default value is [ 6 ]
+---@field ChannelNameTooShort number @ Default value is [ 7 ]
+---@field ChannelNameTooLong number @ Default value is [ 8 ]
+---@field ChannelAlreadyExists number @ Default value is [ 9 ]
+---@field AlreadyInChannel number @ Default value is [ 10 ]
+---@field TargetNotFound number @ Default value is [ 11 ]
+---@field Failure number @ Default value is [ 12 ]
+---@field ServiceLost number @ Default value is [ 13 ]
+---@field UnableToLaunchProxy number @ Default value is [ 14 ]
+---@field ProxyConnectionTimeOut number @ Default value is [ 15 ]
+---@field ProxyConnectionUnableToConnect number @ Default value is [ 16 ]
+---@field ProxyConnectionUnexpectedDisconnect number @ Default value is [ 17 ]
+---@field Disabled number @ Default value is [ 18 ]
+---@field UnsupportedChatChannelType number @ Default value is [ 19 ]
+---@field InvalidCommunityStream number @ Default value is [ 20 ]
+---@field PlayerSilenced number @ Default value is [ 21 ]
+---@field PlayerVoiceChatParentalDisabled number @ Default value is [ 22 ]
+---@field InvalidInputDevice number @ Default value is [ 23 ]
+---@field InvalidOutputDevice number @ Default value is [ 24 ]
+
+---@type VoiceChatStatusCode 
 local VoiceChatStatusCode = {}
-VoiceChatStatusCode.Success = 0
-VoiceChatStatusCode.OperationPending = 1
-VoiceChatStatusCode.TooManyRequests = 2
-VoiceChatStatusCode.LoginProhibited = 3
-VoiceChatStatusCode.ClientNotInitialized = 4
-VoiceChatStatusCode.ClientNotLoggedIn = 5
-VoiceChatStatusCode.ClientAlreadyLoggedIn = 6
-VoiceChatStatusCode.ChannelNameTooShort = 7
-VoiceChatStatusCode.ChannelNameTooLong = 8
-VoiceChatStatusCode.ChannelAlreadyExists = 9
-VoiceChatStatusCode.AlreadyInChannel = 10
-VoiceChatStatusCode.TargetNotFound = 11
-VoiceChatStatusCode.Failure = 12
-VoiceChatStatusCode.ServiceLost = 13
-VoiceChatStatusCode.UnableToLaunchProxy = 14
-VoiceChatStatusCode.ProxyConnectionTimeOut = 15
-VoiceChatStatusCode.ProxyConnectionUnableToConnect = 16
-VoiceChatStatusCode.ProxyConnectionUnexpectedDisconnect = 17
-VoiceChatStatusCode.Disabled = 18
-VoiceChatStatusCode.UnsupportedChatChannelType = 19
-VoiceChatStatusCode.InvalidCommunityStream = 20
-VoiceChatStatusCode.PlayerSilenced = 21
-VoiceChatStatusCode.PlayerVoiceChatParentalDisabled = 22
-VoiceChatStatusCode.InvalidInputDevice = 23
-VoiceChatStatusCode.InvalidOutputDevice = 24
 
 ---@class VoiceTtsDestination
+---@field RemoteTransmission number @ Default value is [ 0 ]
+---@field LocalPlayback number @ Default value is [ 1 ]
+---@field RemoteTransmissionWithLocalPlayback number @ Default value is [ 2 ]
+---@field QueuedRemoteTransmission number @ Default value is [ 3 ]
+---@field QueuedLocalPlayback number @ Default value is [ 4 ]
+---@field QueuedRemoteTransmissionWithLocalPlayback number @ Default value is [ 5 ]
+---@field ScreenReader number @ Default value is [ 6 ]
+
+---@type VoiceTtsDestination 
 local VoiceTtsDestination = {}
-VoiceTtsDestination.RemoteTransmission = 0
-VoiceTtsDestination.LocalPlayback = 1
-VoiceTtsDestination.RemoteTransmissionWithLocalPlayback = 2
-VoiceTtsDestination.QueuedRemoteTransmission = 3
-VoiceTtsDestination.QueuedLocalPlayback = 4
-VoiceTtsDestination.QueuedRemoteTransmissionWithLocalPlayback = 5
-VoiceTtsDestination.ScreenReader = 6
 
 ---@class VoiceTtsStatusCode
+---@field Success number @ Default value is [ 0 ]
+---@field InvalidEngineType number @ Default value is [ 1 ]
+---@field EngineAllocationFailed number @ Default value is [ 2 ]
+---@field NotSupported number @ Default value is [ 3 ]
+---@field MaxCharactersExceeded number @ Default value is [ 4 ]
+---@field UtteranceBelowMinimumDuration number @ Default value is [ 5 ]
+---@field InputTextEnqueued number @ Default value is [ 6 ]
+---@field SdkNotInitialized number @ Default value is [ 7 ]
+---@field DestinationQueueFull number @ Default value is [ 8 ]
+---@field EnqueueNotNecessary number @ Default value is [ 9 ]
+---@field UtteranceNotFound number @ Default value is [ 10 ]
+---@field ManagerNotFound number @ Default value is [ 11 ]
+---@field InvalidArgument number @ Default value is [ 12 ]
+---@field InternalError number @ Default value is [ 13 ]
+
+---@type VoiceTtsStatusCode 
 local VoiceTtsStatusCode = {}
-VoiceTtsStatusCode.Success = 0
-VoiceTtsStatusCode.InvalidEngineType = 1
-VoiceTtsStatusCode.EngineAllocationFailed = 2
-VoiceTtsStatusCode.NotSupported = 3
-VoiceTtsStatusCode.MaxCharactersExceeded = 4
-VoiceTtsStatusCode.UtteranceBelowMinimumDuration = 5
-VoiceTtsStatusCode.InputTextEnqueued = 6
-VoiceTtsStatusCode.SdkNotInitialized = 7
-VoiceTtsStatusCode.DestinationQueueFull = 8
-VoiceTtsStatusCode.EnqueueNotNecessary = 9
-VoiceTtsStatusCode.UtteranceNotFound = 10
-VoiceTtsStatusCode.ManagerNotFound = 11
-VoiceTtsStatusCode.InvalidArgument = 12
-VoiceTtsStatusCode.InternalError = 13
 
 ---@class VoiceAudioDevice
 ---@field deviceID string 

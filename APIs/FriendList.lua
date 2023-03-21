@@ -3,7 +3,6 @@ C_FriendList = {}
 
 ---@param name cstring 
 ---@param notes cstring @ [OPTIONAL]
----@overload fun(name:cstring)
 function C_FriendList.AddFriend(name, notes) end
 
 ---@param name cstring 

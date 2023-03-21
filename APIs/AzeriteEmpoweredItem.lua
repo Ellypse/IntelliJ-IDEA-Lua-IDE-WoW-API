@@ -15,7 +15,6 @@ function C_AzeriteEmpoweredItem.GetAllTierInfo(azeriteEmpoweredItemLocation) end
 
 ---@param itemInfo ItemInfo 
 ---@param classID number @ Specify a class ID to get tier information about that class, otherwise uses the player's class if left nil [OPTIONAL]
----@overload fun(itemInfo:ItemInfo)
 ---@return AzeriteEmpoweredItemTierInfo tierInfo
 function C_AzeriteEmpoweredItem.GetAllTierInfoByItemID(itemInfo, classID) end
 
@@ -54,7 +53,6 @@ function C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(itemInfo) end
 
 ---@param itemInfo ItemInfo 
 ---@param classID number @ Specify a class ID to determine if its displayable for that class, otherwise uses the player's class if left nil [OPTIONAL]
----@overload fun(itemInfo:ItemInfo)
 ---@return boolean isAzeritePreviewSourceDisplayable
 function C_AzeriteEmpoweredItem.IsAzeritePreviewSourceDisplayable(itemInfo, classID) end
 
@@ -80,10 +78,12 @@ function C_AzeriteEmpoweredItem.SelectPower(azeriteEmpoweredItemLocation, powerI
 function C_AzeriteEmpoweredItem.SetHasBeenViewed(azeriteEmpoweredItemLocation) end
 
 ---@class AzeritePowerLevel
+---@field Base number @ Default value is [ 0 ]
+---@field Upgraded number @ Default value is [ 1 ]
+---@field Downgraded number @ Default value is [ 2 ]
+
+---@type AzeritePowerLevel 
 local AzeritePowerLevel = {}
-AzeritePowerLevel.Base = 0
-AzeritePowerLevel.Upgraded = 1
-AzeritePowerLevel.Downgraded = 2
 
 ---@class AzeriteEmpoweredItemPowerInfo
 ---@field azeritePowerID number 

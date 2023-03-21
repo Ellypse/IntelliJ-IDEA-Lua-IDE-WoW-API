@@ -21,11 +21,13 @@ function C_PlayerChoice.RequestRerollPlayerChoice() end
 function C_PlayerChoice.SendPlayerChoiceResponse(responseID) end
 
 ---@class PlayerChoiceRarity
+---@field Common number @ Default value is [ 0 ]
+---@field Uncommon number @ Default value is [ 1 ]
+---@field Rare number @ Default value is [ 2 ]
+---@field Epic number @ Default value is [ 3 ]
+
+---@type PlayerChoiceRarity 
 local PlayerChoiceRarity = {}
-PlayerChoiceRarity.Common = 0
-PlayerChoiceRarity.Uncommon = 1
-PlayerChoiceRarity.Rare = 2
-PlayerChoiceRarity.Epic = 3
 
 ---@class PlayerChoiceInfo
 ---@field objectGUID WOWGUID 

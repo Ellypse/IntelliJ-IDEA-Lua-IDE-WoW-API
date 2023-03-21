@@ -17,7 +17,6 @@ function C_ItemUpgrade.GetItemUpgradeCurrentLevel() end
 
 ---@param effectIndex number 
 ---@param numUpgradeLevels number @ [OPTIONAL]
----@overload fun(effectIndex:number)
 ---@return string, string outBaseEffect, outUpgradedEffect
 function C_ItemUpgrade.GetItemUpgradeEffect(effectIndex, numUpgradeLevels) end
 

@@ -22,12 +22,14 @@ function C_AnimaDiversion.OpenAnimaDiversionUI() end
 function C_AnimaDiversion.SelectAnimaNode(talentID, temporary) end
 
 ---@class AnimaDiversionNodeState
+---@field Unavailable number @ Default value is [ 0 ]
+---@field Available number @ Default value is [ 1 ]
+---@field SelectedTemporary number @ Default value is [ 2 ]
+---@field SelectedPermanent number @ Default value is [ 3 ]
+---@field Cooldown number @ Default value is [ 4 ]
+
+---@type AnimaDiversionNodeState 
 local AnimaDiversionNodeState = {}
-AnimaDiversionNodeState.Unavailable = 0
-AnimaDiversionNodeState.Available = 1
-AnimaDiversionNodeState.SelectedTemporary = 2
-AnimaDiversionNodeState.SelectedPermanent = 3
-AnimaDiversionNodeState.Cooldown = 4
 
 ---@class AnimaDiversionCostInfo
 ---@field currencyID number 

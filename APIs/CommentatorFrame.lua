@@ -34,7 +34,6 @@ function C_Commentator.ClearCameraTarget() end
 function C_Commentator.ClearFollowTarget() end
 
 ---@param lookAtIndex luaIndex @ [OPTIONAL]
----@overload fun()
 function C_Commentator.ClearLookAtTarget(lookAtIndex) end
 
 function C_Commentator.EnterInstance() end
@@ -58,7 +57,6 @@ function C_Commentator.FlushCommentatorHistory() end
 ---@param factionIndex luaIndex 
 ---@param playerIndex luaIndex 
 ---@param forceInstantTransition boolean @ [OPTIONAL]
----@overload fun(factionIndex:luaIndex, playerIndex:luaIndex)
 function C_Commentator.FollowPlayer(factionIndex, playerIndex, forceInstantTransition) end
 
 ---@param token string 
@@ -308,7 +306,6 @@ function C_Commentator.IsUsingSmartCamera() end
 ---@param factionIndex luaIndex 
 ---@param playerIndex luaIndex 
 ---@param lookAtIndex luaIndex @ [OPTIONAL]
----@overload fun(factionIndex:luaIndex, playerIndex:luaIndex)
 function C_Commentator.LookAtPlayer(factionIndex, playerIndex, lookAtIndex) end
 
 function C_Commentator.RemoveAllOverrideNames() end
@@ -473,7 +470,6 @@ function C_Commentator.SwapTeamSides() end
 function C_Commentator.ToggleCheats() end
 
 ---@param targetPlayer string @ [OPTIONAL]
----@overload fun()
 function C_Commentator.UpdateMapInfo(targetPlayer) end
 
 function C_Commentator.UpdatePlayerInfo() end
@@ -483,12 +479,14 @@ function C_Commentator.ZoomIn() end
 function C_Commentator.ZoomOut() end
 
 ---@class TrackedSpellCategory
+---@field Offensive number @ Default value is [ 0 ]
+---@field Defensive number @ Default value is [ 1 ]
+---@field Debuff number @ Default value is [ 2 ]
+---@field RacialAbility number @ Default value is [ 3 ]
+---@field Count number @ Default value is [ 4 ]
+
+---@type TrackedSpellCategory 
 local TrackedSpellCategory = {}
-TrackedSpellCategory.Offensive = 0
-TrackedSpellCategory.Defensive = 1
-TrackedSpellCategory.Debuff = 2
-TrackedSpellCategory.RacialAbility = 3
-TrackedSpellCategory.Count = 4
 
 ---@class CommentatorHistory
 ---@field series table 

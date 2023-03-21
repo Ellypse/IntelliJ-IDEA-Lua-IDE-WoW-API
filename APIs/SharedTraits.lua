@@ -161,7 +161,6 @@ function C_Traits.RollbackConfig(configID) end
 ---@param configID number 
 ---@param nodeID number 
 ---@param nodeEntryID number @ [OPTIONAL]
----@overload fun(configID:number, nodeID:number)
 ---@return boolean success
 function C_Traits.SetSelection(configID, nodeID, nodeEntryID) end
 

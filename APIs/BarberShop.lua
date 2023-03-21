@@ -59,7 +59,6 @@ function C_BarberShop.SetCameraDistanceOffset(offset) end
 
 ---@param zoomLevel number 
 ---@param keepCustomZoom boolean @ [OPTIONAL]
----@overload fun(zoomLevel:number)
 function C_BarberShop.SetCameraZoomLevel(zoomLevel, keepCustomZoom) end
 
 ---@param optionID number 
@@ -76,11 +75,9 @@ function C_BarberShop.SetSelectedSex(sex) end
 function C_BarberShop.SetViewingAlteredForm(isViewingAlteredForm) end
 
 ---@param chrModelID number @ [OPTIONAL]
----@overload fun()
 function C_BarberShop.SetViewingChrModel(chrModelID) end
 
 ---@param shapeshiftFormID number @ [OPTIONAL]
----@overload fun()
 function C_BarberShop.SetViewingShapeshiftForm(shapeshiftFormID) end
 
 ---@param zoomAmount number 

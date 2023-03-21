@@ -17,13 +17,15 @@ function C_ConfigurationWarnings.GetConfigurationWarnings(includeSeenWarnings) e
 function C_ConfigurationWarnings.SetConfigurationWarningSeen(configurationWarning) end
 
 ---@class ConfigurationWarning
+---@field ShaderModelWillBeOutdated number @ Default value is [ 0 ]
+---@field ShaderModelIsOutdated number @ Default value is [ 1 ]
+---@field ConsoleDeviceSseOutdated number @ Default value is [ 2 ]
+---@field DriverBlocklisted number @ Default value is [ 3 ]
+---@field DriverOutOfDate number @ Default value is [ 4 ]
+---@field DeviceBlocklisted number @ Default value is [ 5 ]
+---@field GraphicsApiWillBeOutdated number @ Default value is [ 6 ]
+---@field OsBitsWillBeOutdated number @ Default value is [ 7 ]
+
+---@type ConfigurationWarning 
 local ConfigurationWarning = {}
-ConfigurationWarning.ShaderModelWillBeOutdated = 0
-ConfigurationWarning.ShaderModelIsOutdated = 1
-ConfigurationWarning.ConsoleDeviceSseOutdated = 2
-ConfigurationWarning.DriverBlocklisted = 3
-ConfigurationWarning.DriverOutOfDate = 4
-ConfigurationWarning.DeviceBlocklisted = 5
-ConfigurationWarning.GraphicsApiWillBeOutdated = 6
-ConfigurationWarning.OsBitsWillBeOutdated = 7
 

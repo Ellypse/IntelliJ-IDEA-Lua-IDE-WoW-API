@@ -46,7 +46,6 @@ function C_GamePad.GetCombinedDeviceID() end
 function C_GamePad.GetConfig(configID) end
 
 ---@param deviceID number @ [OPTIONAL]
----@overload fun()
 ---@return GamePadMappedState|nil state
 function C_GamePad.GetDeviceMappedState(deviceID) end
 
@@ -58,7 +57,6 @@ function C_GamePad.GetDeviceRawState(deviceID) end
 function C_GamePad.GetLedColor() end
 
 ---@param deviceID number @ [OPTIONAL]
----@overload fun()
 ---@return GamePadPowerLevel powerLevel
 function C_GamePad.GetPowerLevel(deviceID) end
 
