@@ -5,10 +5,10 @@ C_ZoneAbility = {}
 function C_ZoneAbility.GetActiveAbilities() end
 
 ---@class ZoneAbilityInfo
----@type number 
----@type number 
----@type number 
----@type textureKit 
----@type cstring 
+---@field zoneAbilityID number 
+---@field uiPriority number 
+---@field spellID number 
+---@field textureKit textureKit 
+---@field tutorialText cstring|nil 
 ZoneAbilityInfo = {}
 

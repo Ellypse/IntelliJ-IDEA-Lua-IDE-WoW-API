@@ -33,24 +33,24 @@ function C_Texture.SetTitleIconTexture(texture, titleID, version) end
 
 ---@class TitleIconVersion : Enum
 Enum.TitleIconVersion = {}
----@field Small TitleIconVersion 
+---@type TitleIconVersion 
 Enum.TitleIconVersion.Small = 0
----@field Medium TitleIconVersion 
+---@type TitleIconVersion 
 Enum.TitleIconVersion.Medium = 1
----@field Large TitleIconVersion 
+---@type TitleIconVersion 
 Enum.TitleIconVersion.Large = 2
 
 ---@class AtlasInfo
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type bool 
----@type bool 
----@type fileID 
----@type string 
+---@field width number 
+---@field height number 
+---@field leftTexCoord number 
+---@field rightTexCoord number 
+---@field topTexCoord number 
+---@field bottomTexCoord number 
+---@field tilesHorizontally bool 
+---@field tilesVertically bool 
+---@field file fileID|nil 
+---@field filename string|nil 
 AtlasInfo = {}
 
 

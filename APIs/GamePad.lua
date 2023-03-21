@@ -80,80 +80,80 @@ function C_GamePad.StickIndexToConfigName(stickIndex) end
 function C_GamePad.StopVibration() end
 
 ---@class GamePadAxisConfig
----@type string 
----@type number 
----@type number 
----@type number 
----@type number 
----@type string 
----@type string 
----@type string 
+---@field axis string 
+---@field shift number|nil 
+---@field scale number|nil 
+---@field deadzone number|nil 
+---@field buttonThreshold number|nil 
+---@field buttonPos string|nil 
+---@field buttonNeg string|nil 
+---@field comment string|nil 
 GamePadAxisConfig = {}
 
 ---@class GamePadConfig
----@type string 
----@type string 
----@type GamePadConfigID 
----@type string 
----@type table 
----@type table 
----@type table 
----@type table 
+---@field comment string|nil 
+---@field name string|nil 
+---@field configID GamePadConfigID 
+---@field labelStyle string|nil 
+---@field rawButtonMappings table 
+---@field rawAxisMappings table 
+---@field axisConfigs table 
+---@field stickConfigs table 
 GamePadConfig = {}
 
 ---@class GamePadConfigID
----@type number 
----@type number 
+---@field vendorID number|nil 
+---@field productID number|nil 
 GamePadConfigID = {}
 
 ---@class GamePadMappedState
----@type string 
----@type string 
----@type number 
----@type number 
----@type number 
----@type table 
----@type table 
----@type table 
+---@field name string 
+---@field labelStyle string 
+---@field buttonCount number 
+---@field axisCount number 
+---@field stickCount number 
+---@field buttons table 
+---@field axes table 
+---@field sticks table 
 GamePadMappedState = {}
 
 ---@class GamePadRawAxisMapping
----@type number 
----@type string 
----@type string 
+---@field rawIndex number 
+---@field axis string|nil 
+---@field comment string|nil 
 GamePadRawAxisMapping = {}
 
 ---@class GamePadRawButtonMapping
----@type number 
----@type string 
----@type string 
----@type number 
----@type string 
+---@field rawIndex number 
+---@field button string|nil 
+---@field axis string|nil 
+---@field axisValue number|nil 
+---@field comment string|nil 
 GamePadRawButtonMapping = {}
 
 ---@class GamePadRawState
----@type string 
----@type number 
----@type number 
----@type number 
----@type number 
----@type table 
----@type table 
+---@field name string 
+---@field vendorID number 
+---@field productID number 
+---@field rawButtonCount number 
+---@field rawAxisCount number 
+---@field rawButtons table 
+---@field rawAxes table 
 GamePadRawState = {}
 
 ---@class GamePadStick
----@type number 
----@type number 
----@type number 
+---@field x number 
+---@field y number 
+---@field len number 
 GamePadStick = {}
 
 ---@class GamePadStickConfig
----@type string 
----@type string 
----@type string 
----@type number 
----@type number 
----@type number 
----@type string 
+---@field stick string 
+---@field axisX string|nil 
+---@field axisY string|nil 
+---@field deadzone number|nil 
+---@field deadzoneX number|nil 
+---@field deadzoneY number|nil 
+---@field comment string|nil 
 GamePadStickConfig = {}
 

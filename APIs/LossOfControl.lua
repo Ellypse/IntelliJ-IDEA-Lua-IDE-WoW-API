@@ -18,15 +18,15 @@ function C_LossOfControl.GetActiveLossOfControlDataCount() end
 function C_LossOfControl.GetActiveLossOfControlDataCountByUnit(unitToken) end
 
 ---@class LossOfControlData
----@type cstring 
----@type number 
----@type cstring 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
+---@field locType cstring 
+---@field spellID number 
+---@field displayText cstring 
+---@field iconTexture number 
+---@field startTime number|nil 
+---@field timeRemaining number|nil 
+---@field duration number|nil 
+---@field lockoutSchool number 
+---@field priority number 
+---@field displayType number 
 LossOfControlData = {}
 

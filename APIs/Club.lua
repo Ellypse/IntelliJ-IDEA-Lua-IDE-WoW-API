@@ -375,413 +375,413 @@ function C_Club.ValidateText(clubType, text, clubFieldType) end
 
 ---@class ClubActionType : Enum
 Enum.ClubActionType = {}
----@field ErrorClubActionSubscribe ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionSubscribe = 0
----@field ErrorClubActionCreate ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionCreate = 1
----@field ErrorClubActionEdit ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionEdit = 2
----@field ErrorClubActionDestroy ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionDestroy = 3
----@field ErrorClubActionLeave ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionLeave = 4
----@field ErrorClubActionCreateTicket ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionCreateTicket = 5
----@field ErrorClubActionDestroyTicket ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionDestroyTicket = 6
----@field ErrorClubActionRedeemTicket ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionRedeemTicket = 7
----@field ErrorClubActionGetTicket ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionGetTicket = 8
----@field ErrorClubActionGetTickets ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionGetTickets = 9
----@field ErrorClubActionGetBans ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionGetBans = 10
----@field ErrorClubActionGetInvitations ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionGetInvitations = 11
----@field ErrorClubActionRevokeInvitation ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionRevokeInvitation = 12
----@field ErrorClubActionAcceptInvitation ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionAcceptInvitation = 13
----@field ErrorClubActionDeclineInvitation ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionDeclineInvitation = 14
----@field ErrorClubActionCreateStream ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionCreateStream = 15
----@field ErrorClubActionEditStream ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionEditStream = 16
----@field ErrorClubActionDestroyStream ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionDestroyStream = 17
----@field ErrorClubActionInviteMember ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionInviteMember = 18
----@field ErrorClubActionEditMember ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionEditMember = 19
----@field ErrorClubActionEditMemberNote ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionEditMemberNote = 20
----@field ErrorClubActionKickMember ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionKickMember = 21
----@field ErrorClubActionAddBan ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionAddBan = 22
----@field ErrorClubActionRemoveBan ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionRemoveBan = 23
----@field ErrorClubActionCreateMessage ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionCreateMessage = 24
----@field ErrorClubActionEditMessage ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionEditMessage = 25
----@field ErrorClubActionDestroyMessage ClubActionType 
+---@type ClubActionType 
 Enum.ClubActionType.ErrorClubActionDestroyMessage = 26
 
 ---@class ClubErrorType : Enum
 Enum.ClubErrorType = {}
----@field ErrorCommunitiesNone ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesNone = 0
----@field ErrorCommunitiesUnknown ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesUnknown = 1
----@field ErrorCommunitiesNeutralFaction ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesNeutralFaction = 2
----@field ErrorCommunitiesUnknownRealm ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesUnknownRealm = 3
----@field ErrorCommunitiesBadTarget ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesBadTarget = 4
----@field ErrorCommunitiesWrongFaction ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesWrongFaction = 5
----@field ErrorCommunitiesRestricted ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesRestricted = 6
----@field ErrorCommunitiesIgnored ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesIgnored = 7
----@field ErrorCommunitiesGuild ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesGuild = 8
----@field ErrorCommunitiesWrongRegion ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesWrongRegion = 9
----@field ErrorCommunitiesUnknownTicket ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesUnknownTicket = 10
----@field ErrorCommunitiesMissingShortName ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesMissingShortName = 11
----@field ErrorCommunitiesProfanity ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesProfanity = 12
----@field ErrorCommunitiesTrial ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesTrial = 13
----@field ErrorCommunitiesVeteranTrial ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesVeteranTrial = 14
----@field ErrorCommunitiesChatMute ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorCommunitiesChatMute = 15
----@field ErrorClubFull ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubFull = 16
----@field ErrorClubNoClub ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubNoClub = 17
----@field ErrorClubNotMember ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubNotMember = 18
----@field ErrorClubAlreadyMember ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubAlreadyMember = 19
----@field ErrorClubNoSuchMember ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubNoSuchMember = 20
----@field ErrorClubNoSuchInvitation ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubNoSuchInvitation = 21
----@field ErrorClubInvitationAlreadyExists ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubInvitationAlreadyExists = 22
----@field ErrorClubInvalidRoleID ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubInvalidRoleID = 23
----@field ErrorClubInsufficientPrivileges ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubInsufficientPrivileges = 24
----@field ErrorClubTooManyClubsJoined ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubTooManyClubsJoined = 25
----@field ErrorClubVoiceFull ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubVoiceFull = 26
----@field ErrorClubStreamNoStream ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubStreamNoStream = 27
----@field ErrorClubStreamInvalidName ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubStreamInvalidName = 28
----@field ErrorClubStreamCountAtMin ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubStreamCountAtMin = 29
----@field ErrorClubStreamCountAtMax ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubStreamCountAtMax = 30
----@field ErrorClubMemberHasRequiredRole ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubMemberHasRequiredRole = 31
----@field ErrorClubSentInvitationCountAtMax ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubSentInvitationCountAtMax = 32
----@field ErrorClubReceivedInvitationCountAtMax ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubReceivedInvitationCountAtMax = 33
----@field ErrorClubTargetIsBanned ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubTargetIsBanned = 34
----@field ErrorClubBanAlreadyExists ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubBanAlreadyExists = 35
----@field ErrorClubBanCountAtMax ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubBanCountAtMax = 36
----@field ErrorClubTicketCountAtMax ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubTicketCountAtMax = 37
----@field ErrorClubTicketNoSuchTicket ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubTicketNoSuchTicket = 38
----@field ErrorClubTicketHasConsumedAllowedRedeemCount ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubTicketHasConsumedAllowedRedeemCount = 39
----@field ErrorClubDoesntAllowCrossFaction ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubDoesntAllowCrossFaction = 40
----@field ErrorClubEditHasCrossFactionMembers ClubErrorType 
+---@type ClubErrorType 
 Enum.ClubErrorType.ErrorClubEditHasCrossFactionMembers = 41
 
 ---@class ClubFieldType : Enum
 Enum.ClubFieldType = {}
----@field ClubName ClubFieldType 
+---@type ClubFieldType 
 Enum.ClubFieldType.ClubName = 0
----@field ClubShortName ClubFieldType 
+---@type ClubFieldType 
 Enum.ClubFieldType.ClubShortName = 1
----@field ClubDescription ClubFieldType 
+---@type ClubFieldType 
 Enum.ClubFieldType.ClubDescription = 2
----@field ClubBroadcast ClubFieldType 
+---@type ClubFieldType 
 Enum.ClubFieldType.ClubBroadcast = 3
----@field ClubStreamName ClubFieldType 
+---@type ClubFieldType 
 Enum.ClubFieldType.ClubStreamName = 4
----@field ClubStreamSubject ClubFieldType 
+---@type ClubFieldType 
 Enum.ClubFieldType.ClubStreamSubject = 5
----@field NumTypes ClubFieldType 
+---@type ClubFieldType 
 Enum.ClubFieldType.NumTypes = 6
 
 ---@class ClubInvitationCandidateStatus : Enum
 Enum.ClubInvitationCandidateStatus = {}
----@field Available ClubInvitationCandidateStatus 
+---@type ClubInvitationCandidateStatus 
 Enum.ClubInvitationCandidateStatus.Available = 0
----@field InvitePending ClubInvitationCandidateStatus 
+---@type ClubInvitationCandidateStatus 
 Enum.ClubInvitationCandidateStatus.InvitePending = 1
----@field AlreadyMember ClubInvitationCandidateStatus 
+---@type ClubInvitationCandidateStatus 
 Enum.ClubInvitationCandidateStatus.AlreadyMember = 2
 
 ---@class ClubMemberPresence : Enum
 Enum.ClubMemberPresence = {}
----@field Unknown ClubMemberPresence 
+---@type ClubMemberPresence 
 Enum.ClubMemberPresence.Unknown = 0
----@field Online ClubMemberPresence 
+---@type ClubMemberPresence 
 Enum.ClubMemberPresence.Online = 1
----@field OnlineMobile ClubMemberPresence 
+---@type ClubMemberPresence 
 Enum.ClubMemberPresence.OnlineMobile = 2
----@field Offline ClubMemberPresence 
+---@type ClubMemberPresence 
 Enum.ClubMemberPresence.Offline = 3
----@field Away ClubMemberPresence 
+---@type ClubMemberPresence 
 Enum.ClubMemberPresence.Away = 4
----@field Busy ClubMemberPresence 
+---@type ClubMemberPresence 
 Enum.ClubMemberPresence.Busy = 5
 
 ---@class ClubRemovedReason : Enum
 Enum.ClubRemovedReason = {}
----@field None ClubRemovedReason 
+---@type ClubRemovedReason 
 Enum.ClubRemovedReason.None = 0
----@field Banned ClubRemovedReason 
+---@type ClubRemovedReason 
 Enum.ClubRemovedReason.Banned = 1
----@field Removed ClubRemovedReason 
+---@type ClubRemovedReason 
 Enum.ClubRemovedReason.Removed = 2
----@field ClubDestroyed ClubRemovedReason 
+---@type ClubRemovedReason 
 Enum.ClubRemovedReason.ClubDestroyed = 3
 
 ---@class ClubRestrictionReason : Enum
 Enum.ClubRestrictionReason = {}
----@field None ClubRestrictionReason 
+---@type ClubRestrictionReason 
 Enum.ClubRestrictionReason.None = 0
----@field Unavailable ClubRestrictionReason 
+---@type ClubRestrictionReason 
 Enum.ClubRestrictionReason.Unavailable = 1
 
 ---@class ClubRoleIdentifier : Enum
 Enum.ClubRoleIdentifier = {}
----@field Owner ClubRoleIdentifier 
+---@type ClubRoleIdentifier 
 Enum.ClubRoleIdentifier.Owner = 1
----@field Leader ClubRoleIdentifier 
+---@type ClubRoleIdentifier 
 Enum.ClubRoleIdentifier.Leader = 2
----@field Moderator ClubRoleIdentifier 
+---@type ClubRoleIdentifier 
 Enum.ClubRoleIdentifier.Moderator = 3
----@field Member ClubRoleIdentifier 
+---@type ClubRoleIdentifier 
 Enum.ClubRoleIdentifier.Member = 4
 
 ---@class ClubStreamNotificationFilter : Enum
 Enum.ClubStreamNotificationFilter = {}
----@field None ClubStreamNotificationFilter 
+---@type ClubStreamNotificationFilter 
 Enum.ClubStreamNotificationFilter.None = 0
----@field Mention ClubStreamNotificationFilter 
+---@type ClubStreamNotificationFilter 
 Enum.ClubStreamNotificationFilter.Mention = 1
----@field All ClubStreamNotificationFilter 
+---@type ClubStreamNotificationFilter 
 Enum.ClubStreamNotificationFilter.All = 2
 
 ---@class ClubStreamType : Enum
 Enum.ClubStreamType = {}
----@field General ClubStreamType 
+---@type ClubStreamType 
 Enum.ClubStreamType.General = 0
----@field Guild ClubStreamType 
+---@type ClubStreamType 
 Enum.ClubStreamType.Guild = 1
----@field Officer ClubStreamType 
+---@type ClubStreamType 
 Enum.ClubStreamType.Officer = 2
----@field Other ClubStreamType 
+---@type ClubStreamType 
 Enum.ClubStreamType.Other = 3
 
 ---@class ClubType : Enum
 Enum.ClubType = {}
----@field BattleNet ClubType 
+---@type ClubType 
 Enum.ClubType.BattleNet = 0
----@field Character ClubType 
+---@type ClubType 
 Enum.ClubType.Character = 1
----@field Guild ClubType 
+---@type ClubType 
 Enum.ClubType.Guild = 2
----@field Other ClubType 
+---@type ClubType 
 Enum.ClubType.Other = 3
 
 ---@class ClubInfo
----@type ClubId 
----@type string 
----@type string 
----@type string 
----@type string 
----@type ClubType 
----@type number 
----@type number 
----@type BigUInteger 
----@type BigUInteger 
----@type bool 
----@type bool 
+---@field clubId ClubId 
+---@field name string 
+---@field shortName string|nil 
+---@field description string 
+---@field broadcast string 
+---@field clubType ClubType 
+---@field avatarId number 
+---@field memberCount number|nil 
+---@field favoriteTimeStamp BigUInteger|nil 
+---@field joinTime BigUInteger|nil 
+---@field socialQueueingEnabled bool|nil 
+---@field crossFaction bool|nil 
 ClubInfo = {}
 
 ---@class ClubInvitationCandidateInfo
----@type number 
----@type string 
----@type luaIndex 
----@type ClubInvitationCandidateStatus 
+---@field memberId number 
+---@field name string 
+---@field priority luaIndex 
+---@field status ClubInvitationCandidateStatus 
 ClubInvitationCandidateInfo = {}
 
 ---@class ClubInvitationInfo
----@type ClubInvitationId 
----@type bool 
----@type ClubMemberInfo 
+---@field invitationId ClubInvitationId 
+---@field isMyInvitation bool 
+---@field invitee ClubMemberInfo 
 ClubInvitationInfo = {}
 
 ---@class ClubLimits
----@type number 
+---@field maximumNumberOfStreams number 
 ClubLimits = {}
 
 ---@class ClubMemberInfo
----@type bool 
----@type number 
----@type string @ name may be encoded as a Kstring
----@type ClubRoleIdentifier 
----@type ClubMemberPresence 
----@type ClubType 
----@type WOWGUID 
----@type number 
----@type string 
----@type string 
----@type number 
----@type number 
----@type number 
----@type string 
----@type number 
----@type number 
----@type number 
----@type string 
----@type number 
----@type number 
----@type string 
----@type number 
----@type number 
----@type number 
----@type number 
----@type string 
----@type luaIndex 
----@type bool 
----@type number 
----@type PvPFaction 
+---@field isSelf bool 
+---@field memberId number 
+---@field name string|nil @ name may be encoded as a Kstring
+---@field role ClubRoleIdentifier|nil 
+---@field presence ClubMemberPresence 
+---@field clubType ClubType|nil 
+---@field guid WOWGUID|nil 
+---@field bnetAccountId number|nil 
+---@field memberNote string|nil 
+---@field officerNote string|nil 
+---@field classID number|nil 
+---@field race number|nil 
+---@field level number|nil 
+---@field zone string|nil 
+---@field achievementPoints number|nil 
+---@field profession1ID number|nil 
+---@field profession1Rank number|nil 
+---@field profession1Name string|nil 
+---@field profession2ID number|nil 
+---@field profession2Rank number|nil 
+---@field profession2Name string|nil 
+---@field lastOnlineYear number|nil 
+---@field lastOnlineMonth number|nil 
+---@field lastOnlineDay number|nil 
+---@field lastOnlineHour number|nil 
+---@field guildRank string|nil 
+---@field guildRankOrder luaIndex|nil 
+---@field isRemoteChat bool|nil 
+---@field overallDungeonScore number|nil 
+---@field faction PvPFaction|nil 
 ClubMemberInfo = {}
 
 ---@class ClubMessageIdentifier
----@type BigUInteger @ number of microseconds since the UNIX epoch.
----@type BigUInteger @ sort order for messages at the same time
+---@field epoch BigUInteger @ number of microseconds since the UNIX epoch.
+---@field position BigUInteger @ sort order for messages at the same time
 ClubMessageIdentifier = {}
 
 ---@class ClubMessageInfo
----@type ClubMessageIdentifier 
----@type kstringClubMessage 
----@type ClubMemberInfo 
----@type ClubMemberInfo @ May be nil even if the message has been destroyed
----@type bool 
----@type bool 
+---@field messageId ClubMessageIdentifier 
+---@field content kstringClubMessage 
+---@field author ClubMemberInfo 
+---@field destroyer ClubMemberInfo|nil @ May be nil even if the message has been destroyed
+---@field destroyed bool 
+---@field edited bool 
 ClubMessageInfo = {}
 
 ---@class ClubMessageRange
----@type ClubMessageIdentifier 
----@type ClubMessageIdentifier 
+---@field oldestMessageId ClubMessageIdentifier 
+---@field newestMessageId ClubMessageIdentifier 
 ClubMessageRange = {}
 
 ---@class ClubPrivilegeInfo
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type table @ Roles that can be kicked and banned
+---@field canDestroy bool 
+---@field canSetAttribute bool 
+---@field canSetName bool 
+---@field canSetDescription bool 
+---@field canSetAvatar bool 
+---@field canSetBroadcast bool 
+---@field canSetPrivacyLevel bool 
+---@field canSetOwnMemberAttribute bool 
+---@field canSetOtherMemberAttribute bool 
+---@field canSetOwnMemberNote bool 
+---@field canSetOtherMemberNote bool 
+---@field canSetOwnVoiceState bool 
+---@field canSetOwnPresenceLevel bool 
+---@field canUseVoice bool 
+---@field canVoiceMuteMemberForAll bool 
+---@field canGetInvitation bool 
+---@field canSendInvitation bool 
+---@field canSendGuestInvitation bool 
+---@field canRevokeOwnInvitation bool 
+---@field canRevokeOtherInvitation bool 
+---@field canGetBan bool 
+---@field canGetSuggestion bool 
+---@field canSuggestMember bool 
+---@field canGetTicket bool 
+---@field canCreateTicket bool 
+---@field canDestroyTicket bool 
+---@field canAddBan bool 
+---@field canRemoveBan bool 
+---@field canCreateStream bool 
+---@field canDestroyStream bool 
+---@field canSetStreamPosition bool 
+---@field canSetStreamAttribute bool 
+---@field canSetStreamName bool 
+---@field canSetStreamSubject bool 
+---@field canSetStreamAccess bool 
+---@field canSetStreamVoiceLevel bool 
+---@field canCreateMessage bool 
+---@field canDestroyOwnMessage bool 
+---@field canDestroyOtherMessage bool 
+---@field canEditOwnMessage bool 
+---@field canPinMessage bool 
+---@field kickableRoleIds table @ Roles that can be kicked and banned
 ClubPrivilegeInfo = {}
 
 ---@class ClubRoleInfo
----@type number 
----@type string 
----@type bool @ At least one user must be in this role
----@type bool @ At most one user can be in this role
+---@field roleId number 
+---@field name string 
+---@field required bool @ At least one user must be in this role
+---@field unique bool @ At most one user can be in this role
 ClubRoleInfo = {}
 
 ---@class ClubSelfInvitationInfo
----@type ClubInvitationId 
----@type ClubInfo 
----@type ClubMemberInfo 
----@type table 
+---@field invitationId ClubInvitationId 
+---@field club ClubInfo 
+---@field inviter ClubMemberInfo 
+---@field leaders table 
 ClubSelfInvitationInfo = {}
 
 ---@class ClubStreamInfo
----@type ClubStreamId 
----@type string 
----@type string 
----@type bool 
----@type ClubStreamType 
----@type BigUInteger 
+---@field streamId ClubStreamId 
+---@field name string 
+---@field subject string 
+---@field leadersAndModeratorsOnly bool 
+---@field streamType ClubStreamType 
+---@field creationTime BigUInteger 
 ClubStreamInfo = {}
 
 ---@class ClubStreamNotificationSetting
----@type ClubStreamId 
----@type ClubStreamNotificationFilter 
+---@field streamId ClubStreamId 
+---@field filter ClubStreamNotificationFilter 
 ClubStreamNotificationSetting = {}
 
 ---@class ClubTicketInfo
----@type string 
----@type number 
----@type number 
----@type BigUInteger @ Creation time in microseconds since the UNIX epoch.
----@type BigUInteger @ Expiration time in microseconds since the UNIX epoch.
----@type ClubStreamId 
----@type ClubMemberInfo 
+---@field ticketId string 
+---@field allowedRedeemCount number 
+---@field currentRedeemCount number 
+---@field creationTime BigUInteger @ Creation time in microseconds since the UNIX epoch.
+---@field expirationTime BigUInteger @ Expiration time in microseconds since the UNIX epoch.
+---@field defaultStreamId ClubStreamId|nil 
+---@field creator ClubMemberInfo 
 ClubTicketInfo = {}
 

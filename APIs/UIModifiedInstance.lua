@@ -6,11 +6,11 @@ C_ModifiedInstance = {}
 function C_ModifiedInstance.GetModifiedInstanceInfoFromMapID(mapID) end
 
 ---@class ModifiedInstanceInfo
----@type number 
----@type number 
----@type number 
----@type number 
----@type textureKit 
----@type string 
+---@field lfrItemLevel number|nil 
+---@field normalItemLevel number|nil 
+---@field heroicItemLevel number|nil 
+---@field mythicItemLevel number|nil 
+---@field uiTextureKit textureKit 
+---@field description string 
 ModifiedInstanceInfo = {}
 

@@ -6,10 +6,10 @@ C_PetInfo = {}
 function C_PetInfo.GetPetTamersForMap(uiMapID) end
 
 ---@class PetTamerMapInfo
----@type number 
----@type vector2 
----@type cstring 
----@type string 
----@type number 
+---@field areaPoiID number 
+---@field position vector2 
+---@field name cstring 
+---@field atlasName string|nil 
+---@field textureIndex number|nil 
 PetTamerMapInfo = {}
 

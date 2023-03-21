@@ -67,76 +67,76 @@ function C_GossipInfo.SelectOptionByIndex(optionID, text, confirmed) end
 
 ---@class GossipOptionRewardType : Enum
 Enum.GossipOptionRewardType = {}
----@field Item GossipOptionRewardType 
+---@type GossipOptionRewardType 
 Enum.GossipOptionRewardType.Item = 0
----@field Currency GossipOptionRewardType 
+---@type GossipOptionRewardType 
 Enum.GossipOptionRewardType.Currency = 1
 
 ---@class GossipOptionStatus : Enum
 Enum.GossipOptionStatus = {}
----@field Available GossipOptionStatus 
+---@type GossipOptionStatus 
 Enum.GossipOptionStatus.Available = 0
----@field Unavailable GossipOptionStatus 
+---@type GossipOptionStatus 
 Enum.GossipOptionStatus.Unavailable = 1
----@field Locked GossipOptionStatus 
+---@type GossipOptionStatus 
 Enum.GossipOptionStatus.Locked = 2
----@field AlreadyComplete GossipOptionStatus 
+---@type GossipOptionStatus 
 Enum.GossipOptionStatus.AlreadyComplete = 3
 
 ---@class FriendshipReputationInfo
----@type number 
----@type number 
----@type number 
----@type string 
----@type string 
----@type number 
----@type string 
----@type number 
----@type number 
----@type bool 
----@type number 
+---@field friendshipFactionID number 
+---@field standing number 
+---@field maxRep number 
+---@field name string|nil 
+---@field text string 
+---@field texture number 
+---@field reaction string 
+---@field reactionThreshold number 
+---@field nextThreshold number|nil 
+---@field reversedColor bool 
+---@field overrideColor number|nil 
 FriendshipReputationInfo = {}
 
 ---@class FriendshipReputationRankInfo
----@type number 
----@type number 
+---@field currentLevel number 
+---@field maxLevel number 
 FriendshipReputationRankInfo = {}
 
 ---@class GossipOptionRewardInfo
----@type number 
----@type number 
----@type GossipOptionRewardType 
+---@field id number 
+---@field quantity number 
+---@field rewardType GossipOptionRewardType 
 GossipOptionRewardInfo = {}
 
 ---@class GossipOptionUIInfo
----@type number 
----@type string 
----@type fileID 
----@type table 
----@type GossipOptionStatus 
----@type number 
----@type number 
----@type fileID 
----@type bool 
----@type number 
+---@field gossipOptionID number|nil 
+---@field name string 
+---@field icon fileID 
+---@field rewards table 
+---@field status GossipOptionStatus 
+---@field spellID number|nil 
+---@field flags number 
+---@field overrideIconID fileID|nil 
+---@field selectOptionWhenOnlyOption bool 
+---@field orderIndex number 
 GossipOptionUIInfo = {}
 
 ---@class GossipPoiInfo
----@type string 
----@type number 
----@type vector2 
----@type bool 
+---@field name string 
+---@field textureIndex number 
+---@field position vector2 
+---@field inBattleMap bool 
 GossipPoiInfo = {}
 
 ---@class GossipQuestUIInfo
----@type string 
----@type number 
----@type bool 
----@type number 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type number 
+---@field title string 
+---@field questLevel number 
+---@field isTrivial bool 
+---@field frequency number|nil 
+---@field repeatable bool|nil 
+---@field isComplete bool|nil 
+---@field isLegendary bool 
+---@field isIgnored bool 
+---@field questID number 
 GossipQuestUIInfo = {}
 

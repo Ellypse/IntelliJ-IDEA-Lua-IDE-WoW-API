@@ -317,124 +317,124 @@ function C_QuestLog.UnitIsRelatedToActiveQuest(unit) end
 
 ---@class MapOverlayDisplayLocation : Enum
 Enum.MapOverlayDisplayLocation = {}
----@field Default MapOverlayDisplayLocation 
+---@type MapOverlayDisplayLocation 
 Enum.MapOverlayDisplayLocation.Default = 0
----@field BottomLeft MapOverlayDisplayLocation 
+---@type MapOverlayDisplayLocation 
 Enum.MapOverlayDisplayLocation.BottomLeft = 1
----@field TopLeft MapOverlayDisplayLocation 
+---@type MapOverlayDisplayLocation 
 Enum.MapOverlayDisplayLocation.TopLeft = 2
----@field BottomRight MapOverlayDisplayLocation 
+---@type MapOverlayDisplayLocation 
 Enum.MapOverlayDisplayLocation.BottomRight = 3
----@field TopRight MapOverlayDisplayLocation 
+---@type MapOverlayDisplayLocation 
 Enum.MapOverlayDisplayLocation.TopRight = 4
----@field Hidden MapOverlayDisplayLocation 
+---@type MapOverlayDisplayLocation 
 Enum.MapOverlayDisplayLocation.Hidden = 5
 
 ---@class QuestFrequency : Enum
 Enum.QuestFrequency = {}
----@field Default QuestFrequency 
+---@type QuestFrequency 
 Enum.QuestFrequency.Default = 0
----@field Daily QuestFrequency 
+---@type QuestFrequency 
 Enum.QuestFrequency.Daily = 1
----@field Weekly QuestFrequency 
+---@type QuestFrequency 
 Enum.QuestFrequency.Weekly = 2
 
 ---@class QuestTag : Enum
 Enum.QuestTag = {}
----@field Group QuestTag 
+---@type QuestTag 
 Enum.QuestTag.Group = 1
----@field PvP QuestTag 
+---@type QuestTag 
 Enum.QuestTag.PvP = 41
----@field Raid QuestTag 
+---@type QuestTag 
 Enum.QuestTag.Raid = 62
----@field Dungeon QuestTag 
+---@type QuestTag 
 Enum.QuestTag.Dungeon = 81
----@field Legendary QuestTag 
+---@type QuestTag 
 Enum.QuestTag.Legendary = 83
----@field Heroic QuestTag 
+---@type QuestTag 
 Enum.QuestTag.Heroic = 85
----@field Raid10 QuestTag 
+---@type QuestTag 
 Enum.QuestTag.Raid10 = 88
----@field Raid25 QuestTag 
+---@type QuestTag 
 Enum.QuestTag.Raid25 = 89
----@field Scenario QuestTag 
+---@type QuestTag 
 Enum.QuestTag.Scenario = 98
----@field Account QuestTag 
+---@type QuestTag 
 Enum.QuestTag.Account = 102
----@field CombatAlly QuestTag 
+---@type QuestTag 
 Enum.QuestTag.CombatAlly = 266
 
 ---@class QuestWatchType : Enum
 Enum.QuestWatchType = {}
----@field Automatic QuestWatchType 
+---@type QuestWatchType 
 Enum.QuestWatchType.Automatic = 0
----@field Manual QuestWatchType 
+---@type QuestWatchType 
 Enum.QuestWatchType.Manual = 1
 
 ---@class WorldQuestQuality : Enum
 Enum.WorldQuestQuality = {}
----@field Common WorldQuestQuality 
+---@type WorldQuestQuality 
 Enum.WorldQuestQuality.Common = 0
----@field Rare WorldQuestQuality 
+---@type WorldQuestQuality 
 Enum.WorldQuestQuality.Rare = 1
----@field Epic WorldQuestQuality 
+---@type WorldQuestQuality 
 Enum.WorldQuestQuality.Epic = 2
 
 ---@class QuestInfo
----@type string 
----@type luaIndex 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type QuestFrequency 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
+---@field title string 
+---@field questLogIndex luaIndex 
+---@field questID number 
+---@field campaignID number|nil 
+---@field level number 
+---@field difficultyLevel number 
+---@field suggestedGroup number 
+---@field frequency QuestFrequency|nil 
+---@field isHeader bool 
+---@field useMinimalHeader bool 
+---@field isCollapsed bool 
+---@field startEvent bool 
+---@field isTask bool 
+---@field isBounty bool 
+---@field isStory bool 
+---@field isScaling bool 
+---@field isOnMap bool 
+---@field hasLocalPOI bool 
+---@field isHidden bool 
+---@field isAutoComplete bool 
+---@field overridesSortOrder bool 
+---@field readyForTranslation bool 
 QuestInfo = {}
 
 ---@class QuestObjectiveInfo
----@type string 
----@type string 
----@type bool 
----@type number 
----@type number 
+---@field text string 
+---@field type string 
+---@field finished bool 
+---@field numFulfilled number 
+---@field numRequired number 
 QuestObjectiveInfo = {}
 
 ---@class QuestOnMapInfo
----@type number 
----@type number 
----@type number 
----@type number 
----@type bool 
+---@field questID number 
+---@field x number 
+---@field y number 
+---@field type number 
+---@field isMapIndicatorQuest bool 
 QuestOnMapInfo = {}
 
 ---@class QuestTagInfo
----@type cstring 
----@type number 
----@type number 
----@type WorldQuestQuality 
----@type number 
----@type bool 
----@type bool 
+---@field tagName cstring 
+---@field tagID number 
+---@field worldQuestType number|nil 
+---@field quality WorldQuestQuality|nil 
+---@field tradeskillLineID number|nil 
+---@field isElite bool|nil 
+---@field displayExpiration bool|nil 
 QuestTagInfo = {}
 
 ---@class QuestTheme
----@type textureAtlas 
----@type textureAtlas 
----@type cstring 
----@type textureAtlas 
+---@field background textureAtlas 
+---@field seal textureAtlas 
+---@field signature cstring 
+---@field poiIcon textureAtlas 
 QuestTheme = {}
 

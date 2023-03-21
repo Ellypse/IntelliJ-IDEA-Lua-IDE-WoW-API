@@ -3,8 +3,8 @@ C_Platform = {}
 
 ---@class ClientPlatformType : Enum
 Enum.ClientPlatformType = {}
----@field Windows ClientPlatformType 
+---@type ClientPlatformType 
 Enum.ClientPlatformType.Windows = 0
----@field Macintosh ClientPlatformType 
+---@type ClientPlatformType 
 Enum.ClientPlatformType.Macintosh = 1
 

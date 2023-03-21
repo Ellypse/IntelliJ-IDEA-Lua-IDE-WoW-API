@@ -480,70 +480,70 @@ function C_Commentator.ZoomOut() end
 
 ---@class TrackedSpellCategory : Enum
 Enum.TrackedSpellCategory = {}
----@field Offensive TrackedSpellCategory 
+---@type TrackedSpellCategory 
 Enum.TrackedSpellCategory.Offensive = 0
----@field Defensive TrackedSpellCategory 
+---@type TrackedSpellCategory 
 Enum.TrackedSpellCategory.Defensive = 1
----@field Debuff TrackedSpellCategory 
+---@type TrackedSpellCategory 
 Enum.TrackedSpellCategory.Debuff = 2
----@field RacialAbility TrackedSpellCategory 
+---@type TrackedSpellCategory 
 Enum.TrackedSpellCategory.RacialAbility = 3
----@field Count TrackedSpellCategory 
+---@type TrackedSpellCategory 
 Enum.TrackedSpellCategory.Count = 4
 
 ---@class CommentatorHistory
----@type table 
----@type table 
----@type table 
+---@field series table 
+---@field teamDirectory table 
+---@field overrideNameDirectory table 
 CommentatorHistory = {}
 
 ---@class CommentatorOverrideNameEntry
----@type string 
----@type string 
+---@field originalName string 
+---@field newName string 
 CommentatorOverrideNameEntry = {}
 
 ---@class CommentatorPlayerData
----@type string 
----@type string 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
+---@field unitToken string 
+---@field name string 
+---@field faction number 
+---@field specialization number 
+---@field damageDone number 
+---@field damageTaken number 
+---@field healingDone number 
+---@field healingTaken number 
+---@field kills number 
+---@field deaths number 
+---@field soloShuffleRoundWins number 
+---@field soloShuffleRoundLosses number 
 CommentatorPlayerData = {}
 
 ---@class CommentatorSeries
----@type table 
+---@field teams table 
 CommentatorSeries = {}
 
 ---@class CommentatorSeriesTeam
----@type string 
----@type number 
+---@field name string 
+---@field score number 
 CommentatorSeriesTeam = {}
 
 ---@class CommentatorTeamDirectoryEntry
----@type string 
----@type string 
+---@field playerName string 
+---@field teamName string 
 CommentatorTeamDirectoryEntry = {}
 
 ---@class CommentatorUnitData
----@type number 
----@type number 
----@type number 
----@type bool 
----@type bool 
----@type string 
----@type number 
----@type number 
+---@field healthMax number 
+---@field health number 
+---@field absorbTotal number 
+---@field isDeadOrGhost bool 
+---@field isFeignDeath bool 
+---@field powerTypeToken string 
+---@field power number 
+---@field powerMax number 
 CommentatorUnitData = {}
 
 ---@class NameOverrideEntry
----@type string 
----@type string 
+---@field originalName string 
+---@field overrideName string 
 NameOverrideEntry = {}
 

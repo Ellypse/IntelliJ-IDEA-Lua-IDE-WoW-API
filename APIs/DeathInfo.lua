@@ -22,26 +22,26 @@ function C_DeathInfo.UseSelfResurrectOption(optionType, id) end
 
 ---@class SelfResurrectOptionType : Enum
 Enum.SelfResurrectOptionType = {}
----@field Spell SelfResurrectOptionType 
+---@type SelfResurrectOptionType 
 Enum.SelfResurrectOptionType.Spell = 0
----@field Item SelfResurrectOptionType 
+---@type SelfResurrectOptionType 
 Enum.SelfResurrectOptionType.Item = 1
 
 ---@class GraveyardMapInfo
----@type number 
----@type vector2 
----@type cstring 
----@type number 
----@type number 
----@type bool 
+---@field areaPoiID number 
+---@field position vector2 
+---@field name cstring 
+---@field textureIndex number 
+---@field graveyardID number 
+---@field isGraveyardSelectable bool 
 GraveyardMapInfo = {}
 
 ---@class SelfResurrectOption
----@type string 
----@type SelfResurrectOptionType 
----@type number 
----@type bool 
----@type bool 
----@type number 
+---@field name string 
+---@field optionType SelfResurrectOptionType 
+---@field id number 
+---@field canUse bool 
+---@field isLimited bool 
+---@field priority number 
 SelfResurrectOption = {}
 

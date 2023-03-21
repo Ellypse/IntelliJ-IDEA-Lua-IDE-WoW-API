@@ -17,39 +17,39 @@ function C_TaxiMap.ShouldMapShowTaxiNodes(uiMapID) end
 
 ---@class FlightPathFaction : Enum
 Enum.FlightPathFaction = {}
----@field Neutral FlightPathFaction 
+---@type FlightPathFaction 
 Enum.FlightPathFaction.Neutral = 0
----@field Horde FlightPathFaction 
+---@type FlightPathFaction 
 Enum.FlightPathFaction.Horde = 1
----@field Alliance FlightPathFaction 
+---@type FlightPathFaction 
 Enum.FlightPathFaction.Alliance = 2
 
 ---@class FlightPathState : Enum
 Enum.FlightPathState = {}
----@field Current FlightPathState 
+---@type FlightPathState 
 Enum.FlightPathState.Current = 0
----@field Reachable FlightPathState 
+---@type FlightPathState 
 Enum.FlightPathState.Reachable = 1
----@field Unreachable FlightPathState 
+---@type FlightPathState 
 Enum.FlightPathState.Unreachable = 2
 
 ---@class MapTaxiNodeInfo
----@type number 
----@type vector2 
----@type cstring 
----@type cstring 
----@type FlightPathFaction 
----@type textureKit 
+---@field nodeID number 
+---@field position vector2 
+---@field name cstring 
+---@field atlasName cstring 
+---@field faction FlightPathFaction 
+---@field textureKit textureKit 
 MapTaxiNodeInfo = {}
 
 ---@class TaxiNodeInfo
----@type number 
----@type vector2 
----@type cstring 
----@type FlightPathState 
----@type luaIndex 
----@type textureKit 
----@type bool 
----@type string 
+---@field nodeID number 
+---@field position vector2 
+---@field name cstring 
+---@field state FlightPathState 
+---@field slotIndex luaIndex 
+---@field textureKit textureKit 
+---@field useSpecialIcon bool 
+---@field specialIconCostString string|nil 
 TaxiNodeInfo = {}
 

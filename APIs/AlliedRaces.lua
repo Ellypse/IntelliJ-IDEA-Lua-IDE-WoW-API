@@ -10,22 +10,22 @@ function C_AlliedRaces.GetAllRacialAbilitiesFromID(raceID) end
 function C_AlliedRaces.GetRaceInfoByID(raceID) end
 
 ---@class AlliedRaceInfo
----@type number 
----@type number 
----@type number 
----@type table 
----@type cstring 
----@type cstring 
----@type cstring 
----@type cstring 
----@type textureAtlas 
----@type textureAtlas 
----@type colorRGB 
+---@field raceID number 
+---@field maleModelID number 
+---@field femaleModelID number 
+---@field achievementIds table 
+---@field maleName cstring 
+---@field femaleName cstring 
+---@field description cstring 
+---@field raceFileString cstring 
+---@field crestAtlas textureAtlas 
+---@field modelBackgroundAtlas textureAtlas 
+---@field bannerColor colorRGB 
 AlliedRaceInfo = {}
 
 ---@class AlliedRaceRacialAbility
----@type cstring 
----@type cstring 
----@type fileID 
+---@field description cstring 
+---@field name cstring 
+---@field icon fileID 
 AlliedRaceRacialAbility = {}
 

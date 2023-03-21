@@ -6,12 +6,12 @@ C_PartyPose = {}
 function C_PartyPose.GetPartyPoseInfoByMapID(mapID) end
 
 ---@class PartyPoseInfo
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
+---@field partyPoseID number 
+---@field mapID number 
+---@field widgetSetID number|nil 
+---@field victoryModelSceneID number 
+---@field defeatModelSceneID number 
+---@field victorySoundKitID number 
+---@field defeatSoundKitID number 
 PartyPoseInfo = {}
 

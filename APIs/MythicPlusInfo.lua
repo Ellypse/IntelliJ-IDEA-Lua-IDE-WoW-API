@@ -74,38 +74,38 @@ function C_MythicPlus.RequestMapInfo() end
 function C_MythicPlus.RequestRewards() end
 
 ---@class MapSeasonBestInfo
----@type number 
----@type number 
----@type MythicPlusDate 
----@type table 
----@type table 
----@type number 
+---@field durationSec number 
+---@field level number 
+---@field completionDate MythicPlusDate 
+---@field affixIDs table 
+---@field members table 
+---@field dungeonScore number 
 MapSeasonBestInfo = {}
 
 ---@class MythicPlusDate
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
+---@field year number 
+---@field month number 
+---@field day number 
+---@field hour number 
+---@field minute number 
 MythicPlusDate = {}
 
 ---@class MythicPlusKeystoneAffix
----@type number 
----@type number 
+---@field id number 
+---@field seasonID number 
 MythicPlusKeystoneAffix = {}
 
 ---@class MythicPlusMember
----@type string 
----@type number 
----@type number 
+---@field name string|nil 
+---@field specID number 
+---@field classID number 
 MythicPlusMember = {}
 
 ---@class MythicPlusRunInfo
----@type number 
----@type number 
----@type bool 
----@type bool 
----@type number 
+---@field mapChallengeModeID number 
+---@field level number 
+---@field thisWeek bool 
+---@field completed bool 
+---@field runScore number 
 MythicPlusRunInfo = {}
 

@@ -276,226 +276,226 @@ function C_PvP.ToggleWarMode() end
 
 ---@class BrawlType : Enum
 Enum.BrawlType = {}
----@field None BrawlType 
+---@type BrawlType 
 Enum.BrawlType.None = 0
----@field Battleground BrawlType 
+---@type BrawlType 
 Enum.BrawlType.Battleground = 1
----@field Arena BrawlType 
+---@type BrawlType 
 Enum.BrawlType.Arena = 2
----@field LFG BrawlType 
+---@type BrawlType 
 Enum.BrawlType.LFG = 3
----@field SoloShuffle BrawlType 
+---@type BrawlType 
 Enum.BrawlType.SoloShuffle = 4
 
 ---@class PvPMatchState : Enum
 Enum.PvPMatchState = {}
----@field Inactive PvPMatchState 
+---@type PvPMatchState 
 Enum.PvPMatchState.Inactive = 0
----@field Active PvPMatchState 
+---@type PvPMatchState 
 Enum.PvPMatchState.Active = 1
----@field Complete PvPMatchState 
+---@type PvPMatchState 
 Enum.PvPMatchState.Complete = 2
 
 ---@class BattlefieldCurrencyReward
----@type number 
----@type number 
+---@field id number 
+---@field quantity number 
 BattlefieldCurrencyReward = {}
 
 ---@class BattlefieldItemReward
----@type number 
----@type cstring 
----@type fileID 
----@type number 
+---@field id number 
+---@field name cstring 
+---@field texture fileID 
+---@field quantity number 
 BattlefieldItemReward = {}
 
 ---@class BattlefieldRewards
----@type number 
----@type number 
----@type table 
----@type table 
+---@field honor number 
+---@field experience number 
+---@field itemRewards table|nil 
+---@field currencyRewards table|nil 
 BattlefieldRewards = {}
 
 ---@class BattlefieldVehicleInfo
----@type number 
----@type number 
----@type cstring 
----@type bool 
----@type textureAtlas 
----@type number 
----@type number 
----@type number 
----@type bool 
----@type bool 
----@type bool 
+---@field x number 
+---@field y number 
+---@field name cstring 
+---@field isOccupied bool 
+---@field atlas textureAtlas 
+---@field textureWidth number 
+---@field textureHeight number 
+---@field facing number 
+---@field isPlayer bool 
+---@field isAlive bool 
+---@field shouldDrawBelowPlayerBlips bool 
 BattlefieldVehicleInfo = {}
 
 ---@class BattlemasterListInfo
----@type string 
----@type number 
----@type number 
----@type number 
----@type fileID 
----@type string 
----@type string 
+---@field name string 
+---@field instanceType number 
+---@field minPlayers number 
+---@field maxPlayers number 
+---@field icon fileID 
+---@field longDescription string 
+---@field shortDescription string 
 BattlemasterListInfo = {}
 
 ---@class HonorRewardInfo
----@type string 
----@type fileID 
----@type number 
+---@field honorLevelName string 
+---@field badgeFileDataID fileID 
+---@field achievementRewardedID number 
 HonorRewardInfo = {}
 
 ---@class LevelUpBattlegroundInfo
----@type number 
----@type fileID 
----@type string 
----@type bool 
+---@field id number 
+---@field icon fileID 
+---@field name string 
+---@field isEpic bool 
 LevelUpBattlegroundInfo = {}
 
 ---@class MatchPVPStatColumn
----@type number 
----@type number 
----@type number 
----@type string 
----@type string 
+---@field pvpStatID number 
+---@field columnHeaderID number 
+---@field orderIndex number 
+---@field name string 
+---@field tooltip string 
 MatchPVPStatColumn = {}
 
 ---@class PvpBrawlInfo
----@type number 
----@type string 
----@type string 
----@type string 
----@type bool 
----@type number 
----@type number 
----@type bool 
----@type number 
----@type BrawlType 
----@type table 
----@type bool 
+---@field brawlID number 
+---@field name string 
+---@field shortDescription string 
+---@field longDescription string 
+---@field canQueue bool 
+---@field minLevel number 
+---@field maxLevel number 
+---@field groupsAllowed bool 
+---@field timeLeftUntilNextChange number|nil 
+---@field brawlType BrawlType 
+---@field mapNames table 
+---@field includesAllArenas bool 
 PvpBrawlInfo = {}
 
 ---@class PVPPersonalRatedInfo
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type bool 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
+---@field personalRating number 
+---@field bestSeasonRating number 
+---@field bestWeeklyRating number 
+---@field seasonPlayed number 
+---@field seasonWon number 
+---@field weeklyPlayed number 
+---@field weeklyWon number 
+---@field lastWeeksBestRating number 
+---@field hasWonBracketToday bool 
+---@field tier number 
+---@field ranking number|nil 
+---@field roundsSeasonPlayed number 
+---@field roundsSeasonWon number 
+---@field roundsWeeklyPlayed number 
+---@field roundsWeeklyWon number 
 PVPPersonalRatedInfo = {}
 
 ---@class PVPPostMatchCurrencyReward
----@type number 
----@type number 
+---@field currencyType number 
+---@field quantityChanged number 
 PVPPostMatchCurrencyReward = {}
 
 ---@class PVPPostMatchItemReward
----@type string 
----@type string 
----@type number 
----@type number 
----@type number 
----@type bool 
+---@field type string 
+---@field link string 
+---@field quantity number 
+---@field specID number 
+---@field sex number 
+---@field isUpgraded bool 
 PVPPostMatchItemReward = {}
 
 ---@class PvpReadyCheckInfo
----@type table 
----@type number 
----@type number 
----@type number 
+---@field roles table 
+---@field numPlayersAccepted number 
+---@field numPlayersDeclined number 
+---@field totalNumPlayers number 
 PvpReadyCheckInfo = {}
 
 ---@class PvpRoleQueueInfo
----@type cstring 
----@type number 
----@type number 
----@type number 
+---@field role cstring 
+---@field totalRole number 
+---@field totalAccepted number 
+---@field totalDeclined number 
 PvpRoleQueueInfo = {}
 
 ---@class PvpScalingData
----@type number 
----@type number 
----@type cstring 
----@type number 
+---@field scalingDataID number 
+---@field specializationID number 
+---@field name cstring 
+---@field value number 
 PvpScalingData = {}
 
 ---@class PVPScoreInfo
----@type string 
----@type WOWGUID 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type string 
----@type string 
----@type string 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type string 
----@type number 
----@type number 
----@type table 
+---@field name string 
+---@field guid WOWGUID 
+---@field killingBlows number 
+---@field honorableKills number 
+---@field deaths number 
+---@field honorGained number 
+---@field faction number 
+---@field raceName string 
+---@field className string 
+---@field classToken string 
+---@field damageDone number 
+---@field healingDone number 
+---@field rating number 
+---@field ratingChange number 
+---@field prematchMMR number 
+---@field mmrChange number 
+---@field talentSpec string 
+---@field honorLevel number 
+---@field roleAssigned number 
+---@field stats table 
 PVPScoreInfo = {}
 
 ---@class PVPStatInfo
----@type number 
----@type number 
----@type number 
----@type string 
----@type string 
----@type string 
+---@field pvpStatID number 
+---@field pvpStatValue number 
+---@field orderIndex number 
+---@field name string 
+---@field tooltip string 
+---@field iconName string 
 PVPStatInfo = {}
 
 ---@class PVPTeamInfo
----@type string 
----@type number 
----@type number 
----@type number 
----@type number 
+---@field name string 
+---@field size number 
+---@field rating number 
+---@field ratingNew number 
+---@field ratingMMR number 
 PVPTeamInfo = {}
 
 ---@class PvpTierInfo
----@type string 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type fileID 
+---@field name string 
+---@field descendRating number 
+---@field ascendRating number 
+---@field descendTier number 
+---@field ascendTier number 
+---@field pvpTierEnum number 
+---@field tierIconID fileID 
 PvpTierInfo = {}
 
 ---@class RandomBGInfo
----@type bool 
----@type number 
----@type bool 
----@type number 
----@type number 
+---@field canQueue bool 
+---@field bgID number 
+---@field hasRandomWinToday bool 
+---@field minLevel number 
+---@field maxLevel number 
 RandomBGInfo = {}
 
 ---@class RatedMatchDeserterPenalty
----@type number 
----@type number 
----@type number 
+---@field personalRatingChange number 
+---@field queuePenaltySpellID number 
+---@field queuePenaltyDuration number 
 RatedMatchDeserterPenalty = {}
 
 ---@class RatedSoloShuffleSpecStats
----@type number 
----@type number 
----@type number 
----@type number 
+---@field weeklyMostPlayedSpecID number 
+---@field weeklyMostPlayedSpecRounds number 
+---@field seasonMostPlayedSpecID number 
+---@field seasonMostPlayedSpecRounds number 
 RatedSoloShuffleSpecStats = {}
 

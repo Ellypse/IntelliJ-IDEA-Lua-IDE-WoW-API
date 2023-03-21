@@ -3,24 +3,24 @@ C_WowEntitlementInfo = {}
 
 ---@class WoWEntitlementType : Enum
 Enum.WoWEntitlementType = {}
----@field Item WoWEntitlementType 
+---@type WoWEntitlementType 
 Enum.WoWEntitlementType.Item = 0
----@field Mount WoWEntitlementType 
+---@type WoWEntitlementType 
 Enum.WoWEntitlementType.Mount = 1
----@field Battlepet WoWEntitlementType 
+---@type WoWEntitlementType 
 Enum.WoWEntitlementType.Battlepet = 2
----@field Toy WoWEntitlementType 
+---@type WoWEntitlementType 
 Enum.WoWEntitlementType.Toy = 3
----@field Appearance WoWEntitlementType 
+---@type WoWEntitlementType 
 Enum.WoWEntitlementType.Appearance = 4
----@field AppearanceSet WoWEntitlementType 
+---@type WoWEntitlementType 
 Enum.WoWEntitlementType.AppearanceSet = 5
----@field GameTime WoWEntitlementType 
+---@type WoWEntitlementType 
 Enum.WoWEntitlementType.GameTime = 6
----@field Title WoWEntitlementType 
+---@type WoWEntitlementType 
 Enum.WoWEntitlementType.Title = 7
----@field Illusion WoWEntitlementType 
+---@type WoWEntitlementType 
 Enum.WoWEntitlementType.Illusion = 8
----@field Invalid WoWEntitlementType 
+---@type WoWEntitlementType 
 Enum.WoWEntitlementType.Invalid = 9
 

@@ -5,7 +5,7 @@ C_LoreText = {}
 function C_LoreText.RequestLoreTextForCampaignID(campaignID) end
 
 ---@class LoreTextEntry
----@type string 
----@type bool 
+---@field text string 
+---@field isHeader bool 
 LoreTextEntry = {}
 

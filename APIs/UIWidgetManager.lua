@@ -141,968 +141,968 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 
 ---@class CaptureBarWidgetFillDirectionType : Enum
 Enum.CaptureBarWidgetFillDirectionType = {}
----@field RightToLeft CaptureBarWidgetFillDirectionType 
+---@type CaptureBarWidgetFillDirectionType 
 Enum.CaptureBarWidgetFillDirectionType.RightToLeft = 0
----@field LeftToRight CaptureBarWidgetFillDirectionType 
+---@type CaptureBarWidgetFillDirectionType 
 Enum.CaptureBarWidgetFillDirectionType.LeftToRight = 1
 
 ---@class CaptureBarWidgetGlowAnimType : Enum
 Enum.CaptureBarWidgetGlowAnimType = {}
----@field None CaptureBarWidgetGlowAnimType 
+---@type CaptureBarWidgetGlowAnimType 
 Enum.CaptureBarWidgetGlowAnimType.None = 0
----@field Pulse CaptureBarWidgetGlowAnimType 
+---@type CaptureBarWidgetGlowAnimType 
 Enum.CaptureBarWidgetGlowAnimType.Pulse = 1
 
 ---@class IconAndTextWidgetState : Enum
 Enum.IconAndTextWidgetState = {}
----@field Hidden IconAndTextWidgetState 
+---@type IconAndTextWidgetState 
 Enum.IconAndTextWidgetState.Hidden = 0
----@field Shown IconAndTextWidgetState 
+---@type IconAndTextWidgetState 
 Enum.IconAndTextWidgetState.Shown = 1
----@field ShownWithDynamicIconFlashing IconAndTextWidgetState 
+---@type IconAndTextWidgetState 
 Enum.IconAndTextWidgetState.ShownWithDynamicIconFlashing = 2
----@field ShownWithDynamicIconNotFlashing IconAndTextWidgetState 
+---@type IconAndTextWidgetState 
 Enum.IconAndTextWidgetState.ShownWithDynamicIconNotFlashing = 3
 
 ---@class IconState : Enum
 Enum.IconState = {}
----@field Hidden IconState 
+---@type IconState 
 Enum.IconState.Hidden = 0
----@field ShowState1 IconState 
+---@type IconState 
 Enum.IconState.ShowState1 = 1
----@field ShowState2 IconState 
+---@type IconState 
 Enum.IconState.ShowState2 = 2
 
 ---@class SpellDisplayBorderColor : Enum
 Enum.SpellDisplayBorderColor = {}
----@field None SpellDisplayBorderColor 
+---@type SpellDisplayBorderColor 
 Enum.SpellDisplayBorderColor.None = 0
----@field Black SpellDisplayBorderColor 
+---@type SpellDisplayBorderColor 
 Enum.SpellDisplayBorderColor.Black = 1
----@field White SpellDisplayBorderColor 
+---@type SpellDisplayBorderColor 
 Enum.SpellDisplayBorderColor.White = 2
----@field Red SpellDisplayBorderColor 
+---@type SpellDisplayBorderColor 
 Enum.SpellDisplayBorderColor.Red = 3
----@field Yellow SpellDisplayBorderColor 
+---@type SpellDisplayBorderColor 
 Enum.SpellDisplayBorderColor.Yellow = 4
----@field Orange SpellDisplayBorderColor 
+---@type SpellDisplayBorderColor 
 Enum.SpellDisplayBorderColor.Orange = 5
----@field Purple SpellDisplayBorderColor 
+---@type SpellDisplayBorderColor 
 Enum.SpellDisplayBorderColor.Purple = 6
----@field Green SpellDisplayBorderColor 
+---@type SpellDisplayBorderColor 
 Enum.SpellDisplayBorderColor.Green = 7
----@field Blue SpellDisplayBorderColor 
+---@type SpellDisplayBorderColor 
 Enum.SpellDisplayBorderColor.Blue = 8
 
 ---@class SpellDisplayIconDisplayType : Enum
 Enum.SpellDisplayIconDisplayType = {}
----@field Buff SpellDisplayIconDisplayType 
+---@type SpellDisplayIconDisplayType 
 Enum.SpellDisplayIconDisplayType.Buff = 0
----@field Debuff SpellDisplayIconDisplayType 
+---@type SpellDisplayIconDisplayType 
 Enum.SpellDisplayIconDisplayType.Debuff = 1
----@field Circular SpellDisplayIconDisplayType 
+---@type SpellDisplayIconDisplayType 
 Enum.SpellDisplayIconDisplayType.Circular = 2
----@field NoBorder SpellDisplayIconDisplayType 
+---@type SpellDisplayIconDisplayType 
 Enum.SpellDisplayIconDisplayType.NoBorder = 3
 
 ---@class SpellDisplayIconSizeType : Enum
 Enum.SpellDisplayIconSizeType = {}
----@field Small SpellDisplayIconSizeType 
+---@type SpellDisplayIconSizeType 
 Enum.SpellDisplayIconSizeType.Small = 0
----@field Medium SpellDisplayIconSizeType 
+---@type SpellDisplayIconSizeType 
 Enum.SpellDisplayIconSizeType.Medium = 1
----@field Large SpellDisplayIconSizeType 
+---@type SpellDisplayIconSizeType 
 Enum.SpellDisplayIconSizeType.Large = 2
 
 ---@class SpellDisplayTextShownStateType : Enum
 Enum.SpellDisplayTextShownStateType = {}
----@field Shown SpellDisplayTextShownStateType 
+---@type SpellDisplayTextShownStateType 
 Enum.SpellDisplayTextShownStateType.Shown = 0
----@field Hidden SpellDisplayTextShownStateType 
+---@type SpellDisplayTextShownStateType 
 Enum.SpellDisplayTextShownStateType.Hidden = 1
 
 ---@class StatusBarColorTintValue : Enum
 Enum.StatusBarColorTintValue = {}
----@field None StatusBarColorTintValue 
+---@type StatusBarColorTintValue 
 Enum.StatusBarColorTintValue.None = 0
----@field Black StatusBarColorTintValue 
+---@type StatusBarColorTintValue 
 Enum.StatusBarColorTintValue.Black = 1
----@field White StatusBarColorTintValue 
+---@type StatusBarColorTintValue 
 Enum.StatusBarColorTintValue.White = 2
----@field Red StatusBarColorTintValue 
+---@type StatusBarColorTintValue 
 Enum.StatusBarColorTintValue.Red = 3
----@field Yellow StatusBarColorTintValue 
+---@type StatusBarColorTintValue 
 Enum.StatusBarColorTintValue.Yellow = 4
----@field Orange StatusBarColorTintValue 
+---@type StatusBarColorTintValue 
 Enum.StatusBarColorTintValue.Orange = 5
----@field Purple StatusBarColorTintValue 
+---@type StatusBarColorTintValue 
 Enum.StatusBarColorTintValue.Purple = 6
----@field Green StatusBarColorTintValue 
+---@type StatusBarColorTintValue 
 Enum.StatusBarColorTintValue.Green = 7
----@field Blue StatusBarColorTintValue 
+---@type StatusBarColorTintValue 
 Enum.StatusBarColorTintValue.Blue = 8
 
 ---@class StatusBarOverrideBarTextShownType : Enum
 Enum.StatusBarOverrideBarTextShownType = {}
----@field Never StatusBarOverrideBarTextShownType 
+---@type StatusBarOverrideBarTextShownType 
 Enum.StatusBarOverrideBarTextShownType.Never = 0
----@field Always StatusBarOverrideBarTextShownType 
+---@type StatusBarOverrideBarTextShownType 
 Enum.StatusBarOverrideBarTextShownType.Always = 1
----@field OnlyOnMouseover StatusBarOverrideBarTextShownType 
+---@type StatusBarOverrideBarTextShownType 
 Enum.StatusBarOverrideBarTextShownType.OnlyOnMouseover = 2
----@field OnlyNotOnMouseover StatusBarOverrideBarTextShownType 
+---@type StatusBarOverrideBarTextShownType 
 Enum.StatusBarOverrideBarTextShownType.OnlyNotOnMouseover = 3
 
 ---@class StatusBarValueTextType : Enum
 Enum.StatusBarValueTextType = {}
----@field Hidden StatusBarValueTextType 
+---@type StatusBarValueTextType 
 Enum.StatusBarValueTextType.Hidden = 0
----@field Percentage StatusBarValueTextType 
+---@type StatusBarValueTextType 
 Enum.StatusBarValueTextType.Percentage = 1
----@field Value StatusBarValueTextType 
+---@type StatusBarValueTextType 
 Enum.StatusBarValueTextType.Value = 2
----@field Time StatusBarValueTextType 
+---@type StatusBarValueTextType 
 Enum.StatusBarValueTextType.Time = 3
----@field TimeShowOneLevelOnly StatusBarValueTextType 
+---@type StatusBarValueTextType 
 Enum.StatusBarValueTextType.TimeShowOneLevelOnly = 4
----@field ValueOverMax StatusBarValueTextType 
+---@type StatusBarValueTextType 
 Enum.StatusBarValueTextType.ValueOverMax = 5
----@field ValueOverMaxNormalized StatusBarValueTextType 
+---@type StatusBarValueTextType 
 Enum.StatusBarValueTextType.ValueOverMaxNormalized = 6
 
 ---@class UIWidgetBlendModeType : Enum
 Enum.UIWidgetBlendModeType = {}
----@field Opaque UIWidgetBlendModeType 
+---@type UIWidgetBlendModeType 
 Enum.UIWidgetBlendModeType.Opaque = 0
----@field Additive UIWidgetBlendModeType 
+---@type UIWidgetBlendModeType 
 Enum.UIWidgetBlendModeType.Additive = 1
 
 ---@class UIWidgetFlag : Enum
 Enum.UIWidgetFlag = {}
----@field UniversalWidget UIWidgetFlag 
+---@type UIWidgetFlag 
 Enum.UIWidgetFlag.UniversalWidget = 1
 
 ---@class UIWidgetFontType : Enum
 Enum.UIWidgetFontType = {}
----@field Normal UIWidgetFontType 
+---@type UIWidgetFontType 
 Enum.UIWidgetFontType.Normal = 0
----@field Shadow UIWidgetFontType 
+---@type UIWidgetFontType 
 Enum.UIWidgetFontType.Shadow = 1
----@field Outline UIWidgetFontType 
+---@type UIWidgetFontType 
 Enum.UIWidgetFontType.Outline = 2
 
 ---@class UIWidgetModelSceneLayer : Enum
 Enum.UIWidgetModelSceneLayer = {}
----@field None UIWidgetModelSceneLayer 
+---@type UIWidgetModelSceneLayer 
 Enum.UIWidgetModelSceneLayer.None = 0
----@field Front UIWidgetModelSceneLayer 
+---@type UIWidgetModelSceneLayer 
 Enum.UIWidgetModelSceneLayer.Front = 1
----@field Back UIWidgetModelSceneLayer 
+---@type UIWidgetModelSceneLayer 
 Enum.UIWidgetModelSceneLayer.Back = 2
 
 ---@class UIWidgetMotionType : Enum
 Enum.UIWidgetMotionType = {}
----@field Instant UIWidgetMotionType 
+---@type UIWidgetMotionType 
 Enum.UIWidgetMotionType.Instant = 0
----@field Smooth UIWidgetMotionType 
+---@type UIWidgetMotionType 
 Enum.UIWidgetMotionType.Smooth = 1
 
 ---@class UIWidgetTextSizeType : Enum
 Enum.UIWidgetTextSizeType = {}
----@field Small12Pt UIWidgetTextSizeType 
+---@type UIWidgetTextSizeType 
 Enum.UIWidgetTextSizeType.Small12Pt = 0
----@field Medium16Pt UIWidgetTextSizeType 
+---@type UIWidgetTextSizeType 
 Enum.UIWidgetTextSizeType.Medium16Pt = 1
----@field Large24Pt UIWidgetTextSizeType 
+---@type UIWidgetTextSizeType 
 Enum.UIWidgetTextSizeType.Large24Pt = 2
----@field Huge27Pt UIWidgetTextSizeType 
+---@type UIWidgetTextSizeType 
 Enum.UIWidgetTextSizeType.Huge27Pt = 3
----@field Standard14Pt UIWidgetTextSizeType 
+---@type UIWidgetTextSizeType 
 Enum.UIWidgetTextSizeType.Standard14Pt = 4
----@field Small10Pt UIWidgetTextSizeType 
+---@type UIWidgetTextSizeType 
 Enum.UIWidgetTextSizeType.Small10Pt = 5
----@field Small11Pt UIWidgetTextSizeType 
+---@type UIWidgetTextSizeType 
 Enum.UIWidgetTextSizeType.Small11Pt = 6
----@field Medium18Pt UIWidgetTextSizeType 
+---@type UIWidgetTextSizeType 
 Enum.UIWidgetTextSizeType.Medium18Pt = 7
----@field Large20Pt UIWidgetTextSizeType 
+---@type UIWidgetTextSizeType 
 Enum.UIWidgetTextSizeType.Large20Pt = 8
 
 ---@class UIWidgetTextureAndTextSizeType : Enum
 Enum.UIWidgetTextureAndTextSizeType = {}
----@field Small UIWidgetTextureAndTextSizeType 
+---@type UIWidgetTextureAndTextSizeType 
 Enum.UIWidgetTextureAndTextSizeType.Small = 0
----@field Medium UIWidgetTextureAndTextSizeType 
+---@type UIWidgetTextureAndTextSizeType 
 Enum.UIWidgetTextureAndTextSizeType.Medium = 1
----@field Large UIWidgetTextureAndTextSizeType 
+---@type UIWidgetTextureAndTextSizeType 
 Enum.UIWidgetTextureAndTextSizeType.Large = 2
----@field Huge UIWidgetTextureAndTextSizeType 
+---@type UIWidgetTextureAndTextSizeType 
 Enum.UIWidgetTextureAndTextSizeType.Huge = 3
----@field Standard UIWidgetTextureAndTextSizeType 
+---@type UIWidgetTextureAndTextSizeType 
 Enum.UIWidgetTextureAndTextSizeType.Standard = 4
 
 ---@class UIWidgetTooltipLocation : Enum
 Enum.UIWidgetTooltipLocation = {}
----@field Default UIWidgetTooltipLocation 
+---@type UIWidgetTooltipLocation 
 Enum.UIWidgetTooltipLocation.Default = 0
----@field BottomLeft UIWidgetTooltipLocation 
+---@type UIWidgetTooltipLocation 
 Enum.UIWidgetTooltipLocation.BottomLeft = 1
----@field Left UIWidgetTooltipLocation 
+---@type UIWidgetTooltipLocation 
 Enum.UIWidgetTooltipLocation.Left = 2
----@field TopLeft UIWidgetTooltipLocation 
+---@type UIWidgetTooltipLocation 
 Enum.UIWidgetTooltipLocation.TopLeft = 3
----@field Top UIWidgetTooltipLocation 
+---@type UIWidgetTooltipLocation 
 Enum.UIWidgetTooltipLocation.Top = 4
----@field TopRight UIWidgetTooltipLocation 
+---@type UIWidgetTooltipLocation 
 Enum.UIWidgetTooltipLocation.TopRight = 5
----@field Right UIWidgetTooltipLocation 
+---@type UIWidgetTooltipLocation 
 Enum.UIWidgetTooltipLocation.Right = 6
----@field BottomRight UIWidgetTooltipLocation 
+---@type UIWidgetTooltipLocation 
 Enum.UIWidgetTooltipLocation.BottomRight = 7
----@field Bottom UIWidgetTooltipLocation 
+---@type UIWidgetTooltipLocation 
 Enum.UIWidgetTooltipLocation.Bottom = 8
 
 ---@class WidgetAnimationType : Enum
 Enum.WidgetAnimationType = {}
----@field None WidgetAnimationType 
+---@type WidgetAnimationType 
 Enum.WidgetAnimationType.None = 0
----@field Fade WidgetAnimationType 
+---@type WidgetAnimationType 
 Enum.WidgetAnimationType.Fade = 1
 
 ---@class WidgetCurrencyClass : Enum
 Enum.WidgetCurrencyClass = {}
----@field Currency WidgetCurrencyClass 
+---@type WidgetCurrencyClass 
 Enum.WidgetCurrencyClass.Currency = 0
----@field Item WidgetCurrencyClass 
+---@type WidgetCurrencyClass 
 Enum.WidgetCurrencyClass.Item = 1
 
 ---@class WidgetEnabledState : Enum
 Enum.WidgetEnabledState = {}
----@field Disabled WidgetEnabledState 
+---@type WidgetEnabledState 
 Enum.WidgetEnabledState.Disabled = 0
----@field Enabled WidgetEnabledState 
+---@type WidgetEnabledState 
 Enum.WidgetEnabledState.Enabled = 1
----@field Red WidgetEnabledState 
+---@type WidgetEnabledState 
 Enum.WidgetEnabledState.Red = 2
----@field White WidgetEnabledState 
+---@type WidgetEnabledState 
 Enum.WidgetEnabledState.White = 3
----@field Green WidgetEnabledState 
+---@type WidgetEnabledState 
 Enum.WidgetEnabledState.Green = 4
----@field Gold WidgetEnabledState 
+---@type WidgetEnabledState 
 Enum.WidgetEnabledState.Gold = 5
----@field Black WidgetEnabledState 
+---@type WidgetEnabledState 
 Enum.WidgetEnabledState.Black = 6
 
 ---@class WidgetShownState : Enum
 Enum.WidgetShownState = {}
----@field Hidden WidgetShownState 
+---@type WidgetShownState 
 Enum.WidgetShownState.Hidden = 0
----@field Shown WidgetShownState 
+---@type WidgetShownState 
 Enum.WidgetShownState.Shown = 1
 
 ---@class WidgetTextHorizontalAlignmentType : Enum
 Enum.WidgetTextHorizontalAlignmentType = {}
----@field Left WidgetTextHorizontalAlignmentType 
+---@type WidgetTextHorizontalAlignmentType 
 Enum.WidgetTextHorizontalAlignmentType.Left = 0
----@field Center WidgetTextHorizontalAlignmentType 
+---@type WidgetTextHorizontalAlignmentType 
 Enum.WidgetTextHorizontalAlignmentType.Center = 1
----@field Right WidgetTextHorizontalAlignmentType 
+---@type WidgetTextHorizontalAlignmentType 
 Enum.WidgetTextHorizontalAlignmentType.Right = 2
 
 ---@class WidgetUnitPowerBarFlashMomentType : Enum
 Enum.WidgetUnitPowerBarFlashMomentType = {}
----@field FlashWhenMax WidgetUnitPowerBarFlashMomentType 
+---@type WidgetUnitPowerBarFlashMomentType 
 Enum.WidgetUnitPowerBarFlashMomentType.FlashWhenMax = 0
----@field FlashWhenMin WidgetUnitPowerBarFlashMomentType 
+---@type WidgetUnitPowerBarFlashMomentType 
 Enum.WidgetUnitPowerBarFlashMomentType.FlashWhenMin = 1
----@field NeverFlash WidgetUnitPowerBarFlashMomentType 
+---@type WidgetUnitPowerBarFlashMomentType 
 Enum.WidgetUnitPowerBarFlashMomentType.NeverFlash = 2
 
 ---@class ZoneControlActiveState : Enum
 Enum.ZoneControlActiveState = {}
----@field Inactive ZoneControlActiveState 
+---@type ZoneControlActiveState 
 Enum.ZoneControlActiveState.Inactive = 0
----@field Active ZoneControlActiveState 
+---@type ZoneControlActiveState 
 Enum.ZoneControlActiveState.Active = 1
 
 ---@class ZoneControlDangerFlashType : Enum
 Enum.ZoneControlDangerFlashType = {}
----@field ShowOnGoodStates ZoneControlDangerFlashType 
+---@type ZoneControlDangerFlashType 
 Enum.ZoneControlDangerFlashType.ShowOnGoodStates = 0
----@field ShowOnBadStates ZoneControlDangerFlashType 
+---@type ZoneControlDangerFlashType 
 Enum.ZoneControlDangerFlashType.ShowOnBadStates = 1
----@field ShowOnBoth ZoneControlDangerFlashType 
+---@type ZoneControlDangerFlashType 
 Enum.ZoneControlDangerFlashType.ShowOnBoth = 2
----@field ShowOnNeither ZoneControlDangerFlashType 
+---@type ZoneControlDangerFlashType 
 Enum.ZoneControlDangerFlashType.ShowOnNeither = 3
 
 ---@class ZoneControlFillType : Enum
 Enum.ZoneControlFillType = {}
----@field SingleFillClockwise ZoneControlFillType 
+---@type ZoneControlFillType 
 Enum.ZoneControlFillType.SingleFillClockwise = 0
----@field SingleFillCounterClockwise ZoneControlFillType 
+---@type ZoneControlFillType 
 Enum.ZoneControlFillType.SingleFillCounterClockwise = 1
----@field DoubleFillClockwise ZoneControlFillType 
+---@type ZoneControlFillType 
 Enum.ZoneControlFillType.DoubleFillClockwise = 2
----@field DoubleFillCounterClockwise ZoneControlFillType 
+---@type ZoneControlFillType 
 Enum.ZoneControlFillType.DoubleFillCounterClockwise = 3
 
 ---@class ZoneControlLeadingEdgeType : Enum
 Enum.ZoneControlLeadingEdgeType = {}
----@field NoLeadingEdge ZoneControlLeadingEdgeType 
+---@type ZoneControlLeadingEdgeType 
 Enum.ZoneControlLeadingEdgeType.NoLeadingEdge = 0
----@field UseLeadingEdge ZoneControlLeadingEdgeType 
+---@type ZoneControlLeadingEdgeType 
 Enum.ZoneControlLeadingEdgeType.UseLeadingEdge = 1
 
 ---@class ZoneControlMode : Enum
 Enum.ZoneControlMode = {}
----@field BothStatesAreGood ZoneControlMode 
+---@type ZoneControlMode 
 Enum.ZoneControlMode.BothStatesAreGood = 0
----@field State1IsGood ZoneControlMode 
+---@type ZoneControlMode 
 Enum.ZoneControlMode.State1IsGood = 1
----@field State2IsGood ZoneControlMode 
+---@type ZoneControlMode 
 Enum.ZoneControlMode.State2IsGood = 2
----@field NeitherStateIsGood ZoneControlMode 
+---@type ZoneControlMode 
 Enum.ZoneControlMode.NeitherStateIsGood = 3
 
 ---@class ZoneControlState : Enum
 Enum.ZoneControlState = {}
----@field State1 ZoneControlState 
+---@type ZoneControlState 
 Enum.ZoneControlState.State1 = 0
----@field State2 ZoneControlState 
+---@type ZoneControlState 
 Enum.ZoneControlState.State2 = 1
 
 ---@class BulletTextListWidgetVisualizationInfo
----@type WidgetShownState 
----@type WidgetEnabledState 
----@type table 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field enabledState WidgetEnabledState 
+---@field lines table 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 BulletTextListWidgetVisualizationInfo = {}
 
 ---@class CaptureBarWidgetVisualizationInfo
----@type WidgetShownState 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type string 
----@type CaptureBarWidgetGlowAnimType 
----@type CaptureBarWidgetFillDirectionType 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field barValue number 
+---@field barMinValue number 
+---@field barMaxValue number 
+---@field neutralZoneSize number 
+---@field neutralZoneCenter number 
+---@field tooltip string 
+---@field glowAnimType CaptureBarWidgetGlowAnimType 
+---@field fillDirectionType CaptureBarWidgetFillDirectionType 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 CaptureBarWidgetVisualizationInfo = {}
 
 ---@class CaptureZoneVisualizationInfo
----@type WidgetShownState 
----@type ZoneControlMode 
----@type ZoneControlLeadingEdgeType 
----@type ZoneControlDangerFlashType 
----@type ZoneEntry 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field mode ZoneControlMode 
+---@field leadingEdgeType ZoneControlLeadingEdgeType 
+---@field dangerFlashType ZoneControlDangerFlashType 
+---@field zoneInfo ZoneEntry 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 CaptureZoneVisualizationInfo = {}
 
 ---@class DiscreteProgressStepsVisualizationInfo
----@type WidgetShownState 
----@type string 
----@type number 
----@type number 
----@type number 
----@type number 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field tooltip string 
+---@field progressMin number 
+---@field progressMax number 
+---@field progressVal number 
+---@field numSteps number 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 DiscreteProgressStepsVisualizationInfo = {}
 
 ---@class DoubleIconAndTextWidgetVisualizationInfo
----@type WidgetShownState 
----@type string 
----@type string 
----@type string 
----@type string 
----@type string 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field label string 
+---@field leftText string 
+---@field leftTooltip string 
+---@field rightText string 
+---@field rightTooltip string 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 DoubleIconAndTextWidgetVisualizationInfo = {}
 
 ---@class DoubleStateIconRowVisualizationInfo
----@type WidgetShownState 
----@type table 
----@type table 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field leftIcons table 
+---@field rightIcons table 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 DoubleStateIconRowVisualizationInfo = {}
 
 ---@class DoubleStatusBarWidgetVisualizationInfo
----@type WidgetShownState 
----@type number 
----@type number 
----@type number 
----@type string 
----@type number 
----@type number 
----@type number 
----@type string 
----@type StatusBarValueTextType 
----@type string 
----@type UIWidgetTooltipLocation 
----@type UIWidgetTooltipLocation 
----@type UIWidgetMotionType 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field leftBarMin number 
+---@field leftBarMax number 
+---@field leftBarValue number 
+---@field leftBarTooltip string 
+---@field rightBarMin number 
+---@field rightBarMax number 
+---@field rightBarValue number 
+---@field rightBarTooltip string 
+---@field barValueTextType StatusBarValueTextType 
+---@field text string 
+---@field leftBarTooltipLoc UIWidgetTooltipLocation 
+---@field rightBarTooltipLoc UIWidgetTooltipLocation 
+---@field fillMotionType UIWidgetMotionType 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 DoubleStatusBarWidgetVisualizationInfo = {}
 
 ---@class FillUpFramesWidgetVisualizationInfo
----@type WidgetShownState 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type bool 
----@type string 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field fillMin number 
+---@field fillMax number 
+---@field fillValue number 
+---@field numTotalFrames number 
+---@field numFullFrames number 
+---@field pulseFillingFrame bool 
+---@field tooltip string 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 FillUpFramesWidgetVisualizationInfo = {}
 
 ---@class HorizontalCurrenciesWidgetVisualizationInfo
----@type WidgetShownState 
----@type table 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field currencies table 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 HorizontalCurrenciesWidgetVisualizationInfo = {}
 
 ---@class IconAndTextWidgetVisualizationInfo
----@type IconAndTextWidgetState 
----@type string 
----@type string 
----@type string 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field state IconAndTextWidgetState 
+---@field text string 
+---@field tooltip string 
+---@field dynamicTooltip string 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 IconAndTextWidgetVisualizationInfo = {}
 
 ---@class IconTextAndBackgroundWidgetVisualizationInfo
----@type WidgetShownState 
----@type string 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field text string 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 IconTextAndBackgroundWidgetVisualizationInfo = {}
 
 ---@class IconTextAndCurrenciesWidgetVisualizationInfo
----@type WidgetShownState 
----@type WidgetEnabledState 
----@type WidgetShownState 
----@type WidgetEnabledState 
----@type string 
----@type string 
----@type table 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field enabledState WidgetEnabledState 
+---@field descriptionShownState WidgetShownState 
+---@field descriptionEnabledState WidgetEnabledState 
+---@field text string 
+---@field description string 
+---@field currencies table 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 IconTextAndCurrenciesWidgetVisualizationInfo = {}
 
 ---@class ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo
----@type WidgetShownState 
----@type table 
----@type string 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field currencies table 
+---@field headerText string 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo = {}
 
 ---@class ScenarioHeaderTimerWidgetVisualizationInfo
----@type WidgetShownState 
----@type number 
----@type number 
----@type number 
----@type string 
----@type string 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field timerMin number 
+---@field timerMax number 
+---@field timerValue number 
+---@field headerText string 
+---@field timerTooltip string 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 ScenarioHeaderTimerWidgetVisualizationInfo = {}
 
 ---@class SpacerVisualizationInfo
----@type WidgetShownState 
----@type number 
----@type number 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field widgetWidth number 
+---@field widgetHeight number 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 SpacerVisualizationInfo = {}
 
 ---@class SpellDisplayVisualizationInfo
----@type WidgetShownState 
----@type WidgetEnabledState 
----@type UIWidgetSpellInfo 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field enabledState WidgetEnabledState 
+---@field spellInfo UIWidgetSpellInfo 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 SpellDisplayVisualizationInfo = {}
 
 ---@class StackedResourceTrackerWidgetVisualizationInfo
----@type WidgetShownState 
----@type table 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field resources table 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 StackedResourceTrackerWidgetVisualizationInfo = {}
 
 ---@class StatusBarWidgetVisualizationInfo
----@type WidgetShownState 
----@type number 
----@type number 
----@type number 
----@type string 
----@type string 
----@type StatusBarValueTextType 
----@type string 
----@type StatusBarOverrideBarTextShownType 
----@type StatusBarColorTintValue 
----@type table 
----@type UIWidgetTooltipLocation 
----@type UIWidgetMotionType 
----@type WidgetEnabledState 
----@type UIWidgetFontType 
----@type UIWidgetTextSizeType 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field barMin number 
+---@field barMax number 
+---@field barValue number 
+---@field text string 
+---@field tooltip string 
+---@field barValueTextType StatusBarValueTextType 
+---@field overrideBarText string 
+---@field overrideBarTextShownType StatusBarOverrideBarTextShownType 
+---@field colorTint StatusBarColorTintValue 
+---@field partitionValues table 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field fillMotionType UIWidgetMotionType 
+---@field barTextEnabledState WidgetEnabledState 
+---@field barTextFontType UIWidgetFontType 
+---@field barTextSizeType UIWidgetTextSizeType 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 StatusBarWidgetVisualizationInfo = {}
 
 ---@class TextColumnRowEntryInfo
----@type string 
----@type WidgetEnabledState 
----@type WidgetTextHorizontalAlignmentType 
----@type number 
+---@field text string 
+---@field enabledState WidgetEnabledState 
+---@field hAlign WidgetTextHorizontalAlignmentType 
+---@field columnWidth number 
 TextColumnRowEntryInfo = {}
 
 ---@class TextColumnRowVisualizationInfo
----@type WidgetShownState 
----@type table 
----@type UIWidgetTextSizeType 
----@type UIWidgetFontType 
----@type string 
----@type UIWidgetTooltipLocation 
----@type number 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field entries table 
+---@field textSizeType UIWidgetTextSizeType 
+---@field fontType UIWidgetFontType 
+---@field tooltip string 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field bottomPadding number 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 TextColumnRowVisualizationInfo = {}
 
 ---@class TextWithStateWidgetVisualizationInfo
----@type WidgetShownState 
----@type WidgetEnabledState 
----@type string 
----@type string 
----@type UIWidgetTextSizeType 
----@type UIWidgetFontType 
----@type number 
----@type UIWidgetTooltipLocation 
----@type WidgetTextHorizontalAlignmentType 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field enabledState WidgetEnabledState 
+---@field text string 
+---@field tooltip string 
+---@field textSizeType UIWidgetTextSizeType 
+---@field fontType UIWidgetFontType 
+---@field bottomPadding number 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field hAlign WidgetTextHorizontalAlignmentType 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 TextWithStateWidgetVisualizationInfo = {}
 
 ---@class TextWithSubtextWidgetVisualizationInfo
----@type WidgetShownState 
----@type WidgetEnabledState 
----@type string 
----@type number 
----@type string 
----@type UIWidgetTextSizeType 
----@type UIWidgetFontType 
----@type UIWidgetTooltipLocation 
----@type WidgetTextHorizontalAlignmentType 
----@type string 
----@type UIWidgetTextSizeType 
----@type UIWidgetFontType 
----@type WidgetTextHorizontalAlignmentType 
----@type WidgetEnabledState 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
----@type number 
+---@field shownState WidgetShownState 
+---@field enabledState WidgetEnabledState 
+---@field text string 
+---@field widgetWidth number 
+---@field tooltip string 
+---@field textSizeType UIWidgetTextSizeType 
+---@field fontType UIWidgetFontType 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field hAlign WidgetTextHorizontalAlignmentType 
+---@field subText string 
+---@field subTextSizeType UIWidgetTextSizeType 
+---@field subTextFontType UIWidgetFontType 
+---@field subTextHAlign WidgetTextHorizontalAlignmentType 
+---@field subTextEnabledState WidgetEnabledState 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
+---@field spacing number 
 TextWithSubtextWidgetVisualizationInfo = {}
 
 ---@class TextureAndTextEntryInfo
----@type string 
----@type string 
+---@field text string 
+---@field tooltip string 
 TextureAndTextEntryInfo = {}
 
 ---@class TextureAndTextRowVisualizationInfo
----@type WidgetShownState 
----@type table 
----@type UIWidgetTextureAndTextSizeType 
----@type number 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field entries table 
+---@field textSizeType UIWidgetTextureAndTextSizeType 
+---@field fixedWidth number|nil 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 TextureAndTextRowVisualizationInfo = {}
 
 ---@class TextureAndTextVisualizationInfo
----@type WidgetShownState 
----@type string 
----@type string 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field text string 
+---@field tooltip string 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 TextureAndTextVisualizationInfo = {}
 
 ---@class TextureWithAnimationVisualizationInfo
----@type WidgetShownState 
----@type string 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field tooltip string 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 TextureWithAnimationVisualizationInfo = {}
 
 ---@class UIWidgetCurrencyInfo
----@type fileID 
----@type string 
----@type string 
----@type string 
----@type bool 
+---@field iconFileID fileID 
+---@field leadingText string 
+---@field text string 
+---@field tooltip string 
+---@field isCurrencyMaxed bool 
 UIWidgetCurrencyInfo = {}
 
 ---@class UIWidgetInfo
----@type number 
----@type number 
----@type UIWidgetVisualizationType 
----@type string 
+---@field widgetID number 
+---@field widgetSetID number 
+---@field widgetType UIWidgetVisualizationType 
+---@field unitToken string|nil 
 UIWidgetInfo = {}
 
 ---@class UIWidgetSetInfo
----@type UIWidgetSetLayoutDirection 
----@type number 
+---@field layoutDirection UIWidgetSetLayoutDirection 
+---@field verticalPadding number 
 UIWidgetSetInfo = {}
 
 ---@class UIWidgetSpellInfo
----@type number 
----@type string 
----@type string 
----@type number 
----@type SpellDisplayIconSizeType 
----@type SpellDisplayIconDisplayType 
----@type SpellDisplayTextShownStateType 
----@type SpellDisplayBorderColor 
----@type UIWidgetFontType 
----@type UIWidgetTextSizeType 
----@type WidgetTextHorizontalAlignmentType 
----@type bool 
+---@field spellID number 
+---@field tooltip string 
+---@field text string 
+---@field stackDisplay number 
+---@field iconSizeType SpellDisplayIconSizeType 
+---@field iconDisplayType SpellDisplayIconDisplayType 
+---@field textShownState SpellDisplayTextShownStateType 
+---@field borderColor SpellDisplayBorderColor 
+---@field textFontType UIWidgetFontType 
+---@field textSizeType UIWidgetTextSizeType 
+---@field hAlignType WidgetTextHorizontalAlignmentType 
+---@field isLootObject bool 
 UIWidgetSpellInfo = {}
 
 ---@class UIWidgetStateIconInfo
----@type IconState 
----@type string 
----@type string 
+---@field iconState IconState 
+---@field state1Tooltip string 
+---@field state2Tooltip string 
 UIWidgetStateIconInfo = {}
 
 ---@class UIWidgetTextTooltipPair
----@type string 
----@type string 
+---@field text string 
+---@field tooltip string 
 UIWidgetTextTooltipPair = {}
 
 ---@class UnitPowerBarWidgetVisualizationInfo
----@type WidgetShownState 
----@type number 
----@type number 
----@type number 
----@type string 
----@type StatusBarValueTextType 
----@type string 
----@type StatusBarOverrideBarTextShownType 
----@type UIWidgetTooltipLocation 
----@type UIWidgetMotionType 
----@type UIWidgetBlendModeType 
----@type UIWidgetBlendModeType 
----@type WidgetUnitPowerBarFlashMomentType 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field barMin number 
+---@field barMax number 
+---@field barValue number 
+---@field tooltip string 
+---@field barValueTextType StatusBarValueTextType 
+---@field overrideBarText string 
+---@field overrideBarTextShownType StatusBarOverrideBarTextShownType 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field fillMotionType UIWidgetMotionType 
+---@field flashBlendModeType UIWidgetBlendModeType 
+---@field sparkBlendModeType UIWidgetBlendModeType 
+---@field flashMomentType WidgetUnitPowerBarFlashMomentType 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 UnitPowerBarWidgetVisualizationInfo = {}
 
 ---@class ZoneControlVisualizationInfo
----@type WidgetShownState 
----@type ZoneControlMode 
----@type ZoneControlLeadingEdgeType 
----@type ZoneControlDangerFlashType 
----@type table 
----@type UIWidgetTooltipLocation 
----@type number 
----@type textureKit 
----@type textureKit 
----@type bool 
----@type number 
----@type string 
----@type WidgetAnimationType 
----@type WidgetAnimationType 
----@type UIWidgetScale 
----@type UIWidgetLayoutDirection 
----@type UIWidgetModelSceneLayer 
----@type number 
+---@field shownState WidgetShownState 
+---@field mode ZoneControlMode 
+---@field leadingEdgeType ZoneControlLeadingEdgeType 
+---@field dangerFlashType ZoneControlDangerFlashType 
+---@field zoneEntries table 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
 ZoneControlVisualizationInfo = {}
 
 ---@class ZoneEntry
----@type ZoneControlState 
----@type ZoneControlActiveState 
----@type ZoneControlFillType 
----@type number 
----@type number 
----@type number 
----@type number 
----@type string 
+---@field state ZoneControlState 
+---@field activeState ZoneControlActiveState 
+---@field fillType ZoneControlFillType 
+---@field min number 
+---@field max number 
+---@field current number 
+---@field capturePoint number 
+---@field tooltip string 
 ZoneEntry = {}
 

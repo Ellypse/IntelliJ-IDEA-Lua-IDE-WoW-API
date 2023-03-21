@@ -29,31 +29,31 @@ function C_ItemInteraction.Reset() end
 function C_ItemInteraction.SetPendingItem(item) end
 
 ---@class ConversionCurrencyCost
----@type number 
----@type number 
+---@field currencyID number 
+---@field amount number 
 ConversionCurrencyCost = {}
 
 ---@class ItemInteractionChargeInfo
----@type number 
----@type number 
----@type number 
+---@field newChargeAmount number 
+---@field rechargeRate number 
+---@field timeToNextCharge number 
 ItemInteractionChargeInfo = {}
 
 ---@class ItemInteractionFrameInfo
----@type textureKit 
----@type number 
----@type number 
----@type string 
----@type string 
----@type string 
----@type UIItemInteractionType 
----@type number 
----@type string 
----@type string 
----@type string 
----@type string 
----@type number 
----@type number 
----@type number 
+---@field textureKit textureKit 
+---@field openSoundKitID number 
+---@field closeSoundKitID number 
+---@field titleText string 
+---@field tutorialText string 
+---@field buttonText string 
+---@field interactionType UIItemInteractionType 
+---@field flags number 
+---@field description string|nil 
+---@field buttonTooltip string|nil 
+---@field confirmationDescription string|nil 
+---@field slotTooltip string|nil 
+---@field cost number|nil 
+---@field currencyTypeId number|nil 
+---@field dropInSlotSoundKitId number|nil 
 ItemInteractionFrameInfo = {}
 

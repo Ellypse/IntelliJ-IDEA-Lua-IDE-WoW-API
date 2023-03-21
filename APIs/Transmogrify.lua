@@ -88,40 +88,40 @@ function C_Transmog.SetPending(transmogLocation, pendingInfo) end
 
 ---@class TransmogPendingType : Enum
 Enum.TransmogPendingType = {}
----@field Apply TransmogPendingType 
+---@type TransmogPendingType 
 Enum.TransmogPendingType.Apply = 0
----@field Revert TransmogPendingType 
+---@type TransmogPendingType 
 Enum.TransmogPendingType.Revert = 1
----@field ToggleOn TransmogPendingType 
+---@type TransmogPendingType 
 Enum.TransmogPendingType.ToggleOn = 2
----@field ToggleOff TransmogPendingType 
+---@type TransmogPendingType 
 Enum.TransmogPendingType.ToggleOff = 3
 
 ---@class TransmogApplyWarningInfo
----@type string 
----@type string 
+---@field itemLink string 
+---@field text string 
 TransmogApplyWarningInfo = {}
 
 ---@class TransmogSlotInfo
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type number 
----@type bool 
----@type bool 
----@type fileID 
+---@field isTransmogrified bool 
+---@field hasPending bool 
+---@field isPendingCollected bool 
+---@field canTransmogrify bool 
+---@field cannotTransmogrifyReason number 
+---@field hasUndo bool 
+---@field isHideVisual bool 
+---@field texture fileID|nil 
 TransmogSlotInfo = {}
 
 ---@class TransmogSlotVisualInfo
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type bool 
----@type bool 
----@type number 
+---@field baseSourceID number 
+---@field baseVisualID number 
+---@field appliedSourceID number 
+---@field appliedVisualID number 
+---@field pendingSourceID number 
+---@field pendingVisualID number 
+---@field hasUndo bool 
+---@field isHideVisual bool 
+---@field itemSubclass number 
 TransmogSlotVisualInfo = {}
 

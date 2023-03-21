@@ -107,27 +107,27 @@ function C_FriendList.ShowFriends() end
 function C_FriendList.SortWho(sorting) end
 
 ---@class FriendInfo
----@type bool 
----@type string 
----@type string 
----@type string 
----@type string 
----@type WOWGUID 
----@type number 
----@type bool 
----@type bool 
----@type RafLinkType 
----@type bool 
+---@field connected bool 
+---@field name string 
+---@field className string|nil 
+---@field area string|nil 
+---@field notes string|nil 
+---@field guid WOWGUID 
+---@field level number 
+---@field dnd bool 
+---@field afk bool 
+---@field rafLinkType RafLinkType 
+---@field mobile bool 
 FriendInfo = {}
 
 ---@class WhoInfo
----@type string 
----@type string 
----@type number 
----@type string 
----@type string 
----@type string 
----@type string 
----@type number 
+---@field fullName string 
+---@field fullGuildName string 
+---@field level number 
+---@field raceStr string 
+---@field classStr string 
+---@field area string 
+---@field filename string|nil 
+---@field gender number 
 WhoInfo = {}
 

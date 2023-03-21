@@ -10,9 +10,9 @@ function C_FogOfWar.GetFogOfWarForMap(uiMapID) end
 function C_FogOfWar.GetFogOfWarInfo(fogOfWarID) end
 
 ---@class FogOfWarInfo
----@type number 
----@type textureAtlas 
----@type textureAtlas 
----@type number 
+---@field fogOfWarID number 
+---@field backgroundAtlas textureAtlas 
+---@field maskAtlas textureAtlas 
+---@field maskScalar number 
 FogOfWarInfo = {}
 

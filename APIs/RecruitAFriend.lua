@@ -42,148 +42,148 @@ function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 
 ---@class RafRecruitActivityState : Enum
 Enum.RafRecruitActivityState = {}
----@field Incomplete RafRecruitActivityState 
+---@type RafRecruitActivityState 
 Enum.RafRecruitActivityState.Incomplete = 0
----@field Complete RafRecruitActivityState 
+---@type RafRecruitActivityState 
 Enum.RafRecruitActivityState.Complete = 1
----@field RewardClaimed RafRecruitActivityState 
+---@type RafRecruitActivityState 
 Enum.RafRecruitActivityState.RewardClaimed = 2
 
 ---@class RafRecruitSubStatus : Enum
 Enum.RafRecruitSubStatus = {}
----@field Trial RafRecruitSubStatus 
+---@type RafRecruitSubStatus 
 Enum.RafRecruitSubStatus.Trial = 0
----@field Active RafRecruitSubStatus 
+---@type RafRecruitSubStatus 
 Enum.RafRecruitSubStatus.Active = 1
----@field Inactive RafRecruitSubStatus 
+---@type RafRecruitSubStatus 
 Enum.RafRecruitSubStatus.Inactive = 2
 
 ---@class RafRewardType : Enum
 Enum.RafRewardType = {}
----@field Pet RafRewardType 
+---@type RafRewardType 
 Enum.RafRewardType.Pet = 0
----@field Mount RafRewardType 
+---@type RafRewardType 
 Enum.RafRewardType.Mount = 1
----@field Appearance RafRewardType 
+---@type RafRewardType 
 Enum.RafRewardType.Appearance = 2
----@field Title RafRewardType 
+---@type RafRewardType 
 Enum.RafRewardType.Title = 3
----@field GameTime RafRewardType 
+---@type RafRewardType 
 Enum.RafRewardType.GameTime = 4
----@field AppearanceSet RafRewardType 
+---@type RafRewardType 
 Enum.RafRewardType.AppearanceSet = 5
----@field Illusion RafRewardType 
+---@type RafRewardType 
 Enum.RafRewardType.Illusion = 6
----@field Invalid RafRewardType 
+---@type RafRewardType 
 Enum.RafRewardType.Invalid = 7
 
 ---@class RafAppearanceInfo
----@type number 
+---@field appearanceID number 
 RafAppearanceInfo = {}
 
 ---@class RafAppearanceSetInfo
----@type number 
----@type string 
----@type table 
+---@field setID number 
+---@field setName string 
+---@field appearanceIDs table 
 RafAppearanceSetInfo = {}
 
 ---@class RafIllusionInfo
----@type number 
+---@field spellItemEnchantmentID number 
 RafIllusionInfo = {}
 
 ---@class RafInfo
----@type table 
----@type RafRecruitmentinfo 
----@type table 
----@type bool 
+---@field versions table 
+---@field recruitmentInfo RafRecruitmentinfo|nil 
+---@field recruits table 
+---@field claimInProgress bool 
 RafInfo = {}
 
 ---@class RafMonthCount
----@type number 
----@type number 
----@type number 
+---@field lifetimeMonths number 
+---@field spentMonths number 
+---@field availableMonths number 
 RafMonthCount = {}
 
 ---@class RafMountInfo
----@type number 
----@type number 
+---@field spellID number 
+---@field mountID number 
 RafMountInfo = {}
 
 ---@class RafPetInfo
----@type number 
----@type number 
----@type number 
----@type string 
----@type string 
+---@field creatureID number 
+---@field speciesID number 
+---@field displayID number 
+---@field speciesName string 
+---@field description string 
 RafPetInfo = {}
 
 ---@class RafRecruit
----@type number 
----@type WOWGUID 
----@type string 
----@type number 
----@type RafRecruitSubStatus 
----@type RecruitAcceptanceID 
----@type RecruitAFriendRewardsVersion 
----@type table 
+---@field bnetAccountID number 
+---@field wowAccountGUID WOWGUID 
+---@field battleTag string 
+---@field monthsRemaining number 
+---@field subStatus RafRecruitSubStatus 
+---@field acceptanceID RecruitAcceptanceID 
+---@field versionRecruited RecruitAFriendRewardsVersion 
+---@field activities table 
 RafRecruit = {}
 
 ---@class RafRecruitActivity
----@type number 
----@type number 
----@type RafRecruitActivityState 
+---@field activityID number 
+---@field rewardQuestID number 
+---@field state RafRecruitActivityState 
 RafRecruitActivity = {}
 
 ---@class RafRecruitmentinfo
----@type string 
----@type string 
----@type number 
----@type number 
----@type number 
----@type number 
----@type string 
----@type string 
+---@field recruitmentCode string 
+---@field recruitmentURL string 
+---@field expireTime number 
+---@field remainingTimeSeconds number 
+---@field totalUses number 
+---@field remainingUses number 
+---@field sourceRealm string 
+---@field sourceFaction string 
 RafRecruitmentinfo = {}
 
 ---@class RafReward
----@type number 
----@type RecruitAFriendRewardsVersion 
----@type number 
----@type RafRewardType 
----@type RafPetInfo 
----@type RafMountInfo 
----@type RafAppearanceInfo 
----@type RafTitleInfo 
----@type RafAppearanceSetInfo 
----@type RafIllusionInfo 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type number 
----@type number 
----@type number 
----@type number 
----@type fileID 
+---@field rewardID number 
+---@field rafVersion RecruitAFriendRewardsVersion 
+---@field itemID number 
+---@field rewardType RafRewardType 
+---@field petInfo RafPetInfo|nil 
+---@field mountInfo RafMountInfo|nil 
+---@field appearanceInfo RafAppearanceInfo|nil 
+---@field titleInfo RafTitleInfo|nil 
+---@field appearanceSetInfo RafAppearanceSetInfo|nil 
+---@field illusionInfo RafIllusionInfo|nil 
+---@field canClaim bool 
+---@field claimed bool 
+---@field canAfford bool 
+---@field repeatable bool 
+---@field repeatableClaimCount number 
+---@field monthsRequired number 
+---@field monthCost number 
+---@field availableInMonths number 
+---@field iconID fileID 
 RafReward = {}
 
 ---@class RafSystemInfo
----@type number 
----@type number 
----@type number 
----@type number 
+---@field maxRecruits number 
+---@field maxRecruitMonths number 
+---@field maxRecruitmentUses number 
+---@field daysInCycle number 
 RafSystemInfo = {}
 
 ---@class RafTitleInfo
----@type number 
+---@field titleMaskID number 
 RafTitleInfo = {}
 
 ---@class RafVersionInfo
----@type RecruitAFriendRewardsVersion 
----@type RafMonthCount 
----@type table 
----@type RafReward 
----@type number 
----@type number 
+---@field rafVersion RecruitAFriendRewardsVersion 
+---@field monthCount RafMonthCount 
+---@field rewards table 
+---@field nextReward RafReward|nil 
+---@field numAffordableRewards number 
+---@field numRecruits number 
 RafVersionInfo = {}
 

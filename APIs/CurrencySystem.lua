@@ -83,39 +83,39 @@ function C_CurrencyInfo.SetCurrencyBackpack(index, backpack) end
 function C_CurrencyInfo.SetCurrencyUnused(index, unused) end
 
 ---@class BackpackCurrencyInfo
----@type string 
----@type number 
----@type fileID 
----@type number 
+---@field name string 
+---@field quantity number 
+---@field iconFileID fileID 
+---@field currencyTypesID number 
 BackpackCurrencyInfo = {}
 
 ---@class CurrencyDisplayInfo
----@type string 
----@type string 
----@type number 
----@type number 
----@type number 
----@type number 
+---@field name string 
+---@field description string 
+---@field icon number 
+---@field quality number 
+---@field displayAmount number 
+---@field actualAmount number 
 CurrencyDisplayInfo = {}
 
 ---@class CurrencyInfo
----@type cstring 
----@type cstring 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type number 
----@type number 
----@type fileID 
----@type number 
----@type bool 
----@type number 
----@type bool 
----@type ItemQuality 
----@type number 
----@type number 
----@type bool 
----@type bool 
+---@field name cstring 
+---@field description cstring 
+---@field isHeader bool 
+---@field isHeaderExpanded bool 
+---@field isTypeUnused bool 
+---@field isShowInBackpack bool 
+---@field quantity number 
+---@field trackedQuantity number 
+---@field iconFileID fileID 
+---@field maxQuantity number 
+---@field canEarnPerWeek bool 
+---@field quantityEarnedThisWeek number 
+---@field isTradeable bool 
+---@field quality ItemQuality 
+---@field maxWeeklyQuantity number 
+---@field totalEarned number 
+---@field discovered bool 
+---@field useTotalEarnedForMaxQty bool 
 CurrencyInfo = {}
 

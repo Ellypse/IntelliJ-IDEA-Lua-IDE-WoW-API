@@ -8,8 +8,8 @@ function C_ArdenwealdGardening.GetGardenData() end
 function C_ArdenwealdGardening.IsGardenAccessible() end
 
 ---@class ArdenwealdGardenData
----@type number 
----@type number 
----@type time_t 
+---@field active number 
+---@field ready number 
+---@field remainingSeconds time_t 
 ArdenwealdGardenData = {}
 

@@ -270,80 +270,80 @@ function C_TransmogCollection.UpdateUsableAppearances() end
 
 ---@class TransmogCameraVariation : Enum
 Enum.TransmogCameraVariation = {}
----@field None TransmogCameraVariation 
+---@type TransmogCameraVariation 
 Enum.TransmogCameraVariation.None = 0
----@field RightShoulder TransmogCameraVariation 
+---@type TransmogCameraVariation 
 Enum.TransmogCameraVariation.RightShoulder = 1
----@field CloakBackpack TransmogCameraVariation 
+---@type TransmogCameraVariation 
 Enum.TransmogCameraVariation.CloakBackpack = 1
 
 ---@class TransmogAppearanceInfoBySourceData
----@type number 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type number 
----@type bool 
+---@field appearanceID number 
+---@field appearanceIsCollected bool 
+---@field sourceIsCollected bool 
+---@field sourceIsCollectedPermanent bool 
+---@field sourceIsCollectedConditional bool 
+---@field meetsTransmogPlayerCondition bool 
+---@field appearanceHasAnyNonLevelRequirements bool 
+---@field appearanceMeetsNonLevelRequirements bool 
+---@field appearanceIsUsable bool 
+---@field appearanceNumSources number 
+---@field sourceIsKnown bool 
 TransmogAppearanceInfoBySourceData = {}
 
 ---@class TransmogAppearanceJournalEncounterInfo
----@type string 
----@type number 
----@type table 
----@type string 
----@type table 
+---@field instance string 
+---@field instanceType number 
+---@field tiers table 
+---@field encounter string 
+---@field difficulties table 
 TransmogAppearanceJournalEncounterInfo = {}
 
 ---@class TransmogAppearanceSourceInfoData
----@type TransmogCollectionType 
----@type number 
----@type bool 
----@type fileID 
----@type bool 
----@type string 
----@type string 
----@type luaIndex 
----@type number 
+---@field category TransmogCollectionType 
+---@field itemAppearanceID number 
+---@field canHaveIllusion bool 
+---@field icon fileID 
+---@field isCollected bool 
+---@field itemLink string 
+---@field transmoglink string 
+---@field sourceType luaIndex|nil 
+---@field itemSubClass number 
 TransmogAppearanceSourceInfoData = {}
 
 ---@class TransmogCategoryAppearanceInfo
----@type number 
----@type bool 
----@type bool 
----@type bool 
----@type number 
----@type number 
----@type luaIndex 
----@type bool 
----@type bool 
----@type bool 
----@type bool @ For internal testing only
+---@field visualID number 
+---@field isCollected bool 
+---@field isFavorite bool 
+---@field isHideVisual bool 
+---@field uiOrder number 
+---@field exclusions number 
+---@field restrictedSlotID luaIndex|nil 
+---@field isUsable bool 
+---@field hasRequiredHoliday bool 
+---@field hasActiveRequiredHoliday bool 
+---@field alwaysShowItem bool|nil @ For internal testing only
 TransmogCategoryAppearanceInfo = {}
 
 ---@class TransmogCategoryInfo
----@type cstring 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
+---@field name cstring 
+---@field isWeapon bool 
+---@field canHaveIllusions bool 
+---@field canMainHand bool 
+---@field canOffHand bool 
 TransmogCategoryInfo = {}
 
 ---@class TransmogIllusionInfo
----@type number 
----@type number 
----@type fileID 
----@type bool 
----@type bool 
----@type bool 
+---@field visualID number 
+---@field sourceID number 
+---@field icon fileID 
+---@field isCollected bool 
+---@field isUsable bool 
+---@field isHideVisual bool 
 TransmogIllusionInfo = {}
 
 ---@class TransmogOutfitInfo
----@type cstring 
----@type fileID 
+---@field name cstring 
+---@field icon fileID 
 TransmogOutfitInfo = {}
 

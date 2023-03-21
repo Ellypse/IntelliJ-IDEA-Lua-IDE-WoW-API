@@ -11,14 +11,14 @@ function C_LootJournal.GetItemSetItems(setID) end
 function C_LootJournal.GetItemSets(classID, specID) end
 
 ---@class LootJournalItemInfo
----@type number 
----@type fileID 
----@type luaIndex 
+---@field itemID number 
+---@field icon fileID 
+---@field invType luaIndex 
 LootJournalItemInfo = {}
 
 ---@class LootJournalItemSetInfo
----@type number 
----@type number 
----@type cstring 
+---@field setID number 
+---@field itemLevel number 
+---@field name cstring 
 LootJournalItemSetInfo = {}
 

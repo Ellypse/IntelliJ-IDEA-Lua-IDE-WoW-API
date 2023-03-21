@@ -61,45 +61,45 @@ function C_WeeklyRewards.ShouldShowRetirementMessage() end
 
 ---@class ConquestProgressBarDisplayType : Enum
 Enum.ConquestProgressBarDisplayType = {}
----@field FirstChest ConquestProgressBarDisplayType 
+---@type ConquestProgressBarDisplayType 
 Enum.ConquestProgressBarDisplayType.FirstChest = 0
----@field AdditionalChest ConquestProgressBarDisplayType 
+---@type ConquestProgressBarDisplayType 
 Enum.ConquestProgressBarDisplayType.AdditionalChest = 1
----@field Seasonal ConquestProgressBarDisplayType 
+---@type ConquestProgressBarDisplayType 
 Enum.ConquestProgressBarDisplayType.Seasonal = 2
 
 ---@class ConquestWeeklyProgress
----@type number 
----@type number 
----@type ConquestProgressBarDisplayType 
----@type number 
----@type number 
----@type string 
+---@field progress number 
+---@field maxProgress number 
+---@field displayType ConquestProgressBarDisplayType 
+---@field unlocksCompleted number 
+---@field maxUnlocks number 
+---@field sampleItemHyperlink string 
 ConquestWeeklyProgress = {}
 
 ---@class WeeklyRewardActivityEncounterInfo
----@type number 
----@type number 
----@type number 
----@type number 
+---@field encounterID number 
+---@field bestDifficulty number 
+---@field uiOrder number 
+---@field instanceID number 
 WeeklyRewardActivityEncounterInfo = {}
 
 ---@class WeeklyRewardActivityInfo
----@type WeeklyRewardChestThresholdType 
----@type luaIndex 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type cstring 
----@type table 
+---@field type WeeklyRewardChestThresholdType 
+---@field index luaIndex 
+---@field threshold number 
+---@field progress number 
+---@field id number 
+---@field level number 
+---@field claimID number|nil 
+---@field raidString cstring|nil 
+---@field rewards table 
 WeeklyRewardActivityInfo = {}
 
 ---@class WeeklyRewardActivityRewardInfo
----@type CachedRewardType 
----@type number 
----@type number 
----@type WeeklyRewardItemDBID 
+---@field type CachedRewardType 
+---@field id number 
+---@field quantity number 
+---@field itemDBID WeeklyRewardItemDBID|nil 
 WeeklyRewardActivityRewardInfo = {}
 

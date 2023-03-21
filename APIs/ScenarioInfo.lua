@@ -14,67 +14,67 @@ function C_ScenarioInfo.GetScenarioStepInfo(scenarioStepID) end
 
 ---@class JailersTowerType : Enum
 Enum.JailersTowerType = {}
----@field TwistingCorridors JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.TwistingCorridors = 0
----@field SkoldusHalls JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.SkoldusHalls = 1
----@field FractureChambers JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.FractureChambers = 2
----@field Soulforges JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.Soulforges = 3
----@field Coldheart JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.Coldheart = 4
----@field Mortregar JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.Mortregar = 5
----@field UpperReaches JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.UpperReaches = 6
----@field ArkobanHall JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.ArkobanHall = 7
----@field TormentChamberJaina JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.TormentChamberJaina = 8
----@field TormentChamberThrall JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.TormentChamberThrall = 9
----@field TormentChamberAnduin JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.TormentChamberAnduin = 10
----@field AdamantVaults JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.AdamantVaults = 11
----@field ForgottenCatacombs JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.ForgottenCatacombs = 12
----@field Ossuary JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.Ossuary = 13
----@field BossRush JailersTowerType 
+---@type JailersTowerType 
 Enum.JailersTowerType.BossRush = 14
 
 ---@class ScenarioInformation
----@type string 
----@type number 
----@type number 
----@type number 
----@type bool 
----@type number 
----@type number 
----@type number 
----@type string 
----@type textureKit 
+---@field name string 
+---@field currentStage number 
+---@field numStages number 
+---@field flags number 
+---@field isComplete bool 
+---@field xp number 
+---@field money number 
+---@field type number 
+---@field area string 
+---@field uiTextureKit textureKit 
 ScenarioInformation = {}
 
 ---@class ScenarioStepInfo
----@type string 
----@type string 
----@type number 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type table 
----@type number 
----@type number 
----@type number 
+---@field title string 
+---@field description string 
+---@field numCriteria number 
+---@field stepFailed bool 
+---@field isBonusStep bool 
+---@field isForCurrentStepOnly bool 
+---@field shouldShowBonusObjective bool 
+---@field spells table 
+---@field weightedProgress number|nil 
+---@field rewardQuestID number 
+---@field widgetSetID number|nil 
 ScenarioStepInfo = {}
 
 ---@class ScenarioStepSpellInfo
----@type number 
----@type string 
----@type number 
+---@field spellID number 
+---@field name string 
+---@field icon number 
 ScenarioStepSpellInfo = {}
 

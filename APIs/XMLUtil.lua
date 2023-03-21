@@ -9,22 +9,22 @@ function C_XMLUtil.GetTemplateInfo(name) end
 function C_XMLUtil.GetTemplates() end
 
 ---@class XMLTemplateInfo
----@type cstring 
----@type number 
----@type number 
----@type table 
----@type cstring 
+---@field type cstring 
+---@field width number 
+---@field height number 
+---@field keyValues table 
+---@field inherits cstring|nil 
 XMLTemplateInfo = {}
 
 ---@class XMLTemplateKeyValue
----@type cstring 
----@type cstring 
----@type cstring 
----@type cstring 
+---@field key cstring 
+---@field keyType cstring 
+---@field type cstring 
+---@field value cstring 
 XMLTemplateKeyValue = {}
 
 ---@class XMLTemplateListInfo
----@type cstring 
----@type cstring 
+---@field name cstring 
+---@field type cstring 
 XMLTemplateListInfo = {}
 

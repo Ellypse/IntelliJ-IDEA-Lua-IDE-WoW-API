@@ -72,43 +72,43 @@ function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 
 ---@class ContributionAppearanceFlags : Enum
 Enum.ContributionAppearanceFlags = {}
----@field TooltipUseTimeRemaining ContributionAppearanceFlags 
+---@type ContributionAppearanceFlags 
 Enum.ContributionAppearanceFlags.TooltipUseTimeRemaining = 0
 
 ---@class ContributionResult : Enum
 Enum.ContributionResult = {}
----@field Success ContributionResult 
+---@type ContributionResult 
 Enum.ContributionResult.Success = 0
----@field MustBeNearNpc ContributionResult 
+---@type ContributionResult 
 Enum.ContributionResult.MustBeNearNpc = 1
----@field IncorrectState ContributionResult 
+---@type ContributionResult 
 Enum.ContributionResult.IncorrectState = 2
----@field InvalidID ContributionResult 
+---@type ContributionResult 
 Enum.ContributionResult.InvalidID = 3
----@field QuestDataMissing ContributionResult 
+---@type ContributionResult 
 Enum.ContributionResult.QuestDataMissing = 4
----@field FailedConditionCheck ContributionResult 
+---@type ContributionResult 
 Enum.ContributionResult.FailedConditionCheck = 5
----@field UnableToCompleteTurnIn ContributionResult 
+---@type ContributionResult 
 Enum.ContributionResult.UnableToCompleteTurnIn = 6
----@field InternalError ContributionResult 
+---@type ContributionResult 
 Enum.ContributionResult.InternalError = 7
 
 ---@class ContributionAppearance
----@type cstring 
----@type colorRGB 
----@type cstring 
----@type bool 
----@type textureAtlas 
----@type textureAtlas 
----@type textureAtlas 
+---@field stateName cstring 
+---@field stateColor colorRGB 
+---@field tooltipLine cstring 
+---@field tooltipUseTimeRemaining bool 
+---@field statusBarAtlas textureAtlas 
+---@field borderAtlas textureAtlas 
+---@field bannerAtlas textureAtlas 
 ContributionAppearance = {}
 
 ---@class ContributionMapInfo
----@type number 
----@type vector2 
----@type cstring 
----@type string 
----@type number 
+---@field areaPoiID number 
+---@field position vector2 
+---@field name cstring 
+---@field atlasName string 
+---@field collectorCreatureID number 
 ContributionMapInfo = {}
 

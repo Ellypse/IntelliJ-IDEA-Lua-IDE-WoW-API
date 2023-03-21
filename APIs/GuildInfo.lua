@@ -59,17 +59,17 @@ function C_GuildInfo.SetGuildRankOrder(guid, rankOrder) end
 function C_GuildInfo.SetNote(guid, note, isPublic) end
 
 ---@class GuildNewsInfo
----@type bool 
----@type bool 
----@type number 
----@type string 
----@type string 
----@type number 
----@type table 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
+---@field isSticky bool 
+---@field isHeader bool 
+---@field newsType number 
+---@field whoText string|nil 
+---@field whatText string|nil 
+---@field newsDataID number 
+---@field data table 
+---@field weekday number 
+---@field day number 
+---@field month number 
+---@field year number 
+---@field guildMembersPresent number 
 GuildNewsInfo = {}
 

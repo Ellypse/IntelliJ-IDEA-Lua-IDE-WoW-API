@@ -18,20 +18,20 @@ function C_VignetteInfo.GetVignettePosition(vignetteGUID, uiMapID) end
 function C_VignetteInfo.GetVignettes() end
 
 ---@class VignetteInfo
----@type WOWGUID 
----@type WOWGUID 
----@type cstring 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type textureAtlas 
----@type bool 
----@type number 
----@type VignetteType 
----@type number 
----@type number 
+---@field vignetteGUID WOWGUID 
+---@field objectGUID WOWGUID 
+---@field name cstring 
+---@field isDead bool 
+---@field onWorldMap bool 
+---@field zoneInfiniteAOI bool 
+---@field onMinimap bool 
+---@field isUnique bool 
+---@field inFogOfWar bool 
+---@field atlasName textureAtlas 
+---@field hasTooltip bool 
+---@field vignetteID number 
+---@field type VignetteType 
+---@field rewardQuestID number 
+---@field widgetSetID number|nil 
 VignetteInfo = {}
 

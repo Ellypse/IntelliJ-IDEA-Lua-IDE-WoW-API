@@ -60,44 +60,44 @@ function C_PetJournal.SpellTargetBattlePet(battlePetGUID) end
 
 ---@class PetJournalError : Enum
 Enum.PetJournalError = {}
----@field None PetJournalError 
+---@type PetJournalError 
 Enum.PetJournalError.None = 0
----@field PetIsDead PetJournalError 
+---@type PetJournalError 
 Enum.PetJournalError.PetIsDead = 1
----@field JournalIsLocked PetJournalError 
+---@type PetJournalError 
 Enum.PetJournalError.JournalIsLocked = 2
----@field InvalidFaction PetJournalError 
+---@type PetJournalError 
 Enum.PetJournalError.InvalidFaction = 3
----@field NoFavoritesToSummon PetJournalError 
+---@type PetJournalError 
 Enum.PetJournalError.NoFavoritesToSummon = 4
----@field NoValidRandomSummon PetJournalError 
+---@type PetJournalError 
 Enum.PetJournalError.NoValidRandomSummon = 5
----@field InvalidCovenant PetJournalError 
+---@type PetJournalError 
 Enum.PetJournalError.InvalidCovenant = 6
 
 ---@class PetAbilityLevelInfo
----@type number 
----@type number 
+---@field abilityID number 
+---@field level number 
 PetAbilityLevelInfo = {}
 
 ---@class PetJournalPetInfo
----@type number 
----@type string 
----@type number 
----@type number 
----@type number 
----@type number 
----@type bool 
----@type fileID 
----@type number 
----@type number 
----@type string 
----@type string 
----@type string 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
+---@field speciesID number 
+---@field customName string|nil 
+---@field petLevel number 
+---@field xp number 
+---@field maxXP number 
+---@field displayID number 
+---@field isFavorite bool 
+---@field icon fileID 
+---@field petType number 
+---@field creatureID number 
+---@field name string|nil 
+---@field sourceText string 
+---@field description string 
+---@field isWild bool 
+---@field canBattle bool 
+---@field tradable bool 
+---@field unique bool 
+---@field obtainable bool 
 PetJournalPetInfo = {}
 

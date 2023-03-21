@@ -51,83 +51,83 @@ function C_EncounterJournal.SetSlotFilter(filterSlot) end
 
 ---@class ItemSlotFilterType : Enum
 Enum.ItemSlotFilterType = {}
----@field Head ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Head = 0
----@field Neck ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Neck = 1
----@field Shoulder ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Shoulder = 2
----@field Cloak ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Cloak = 3
----@field Chest ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Chest = 4
----@field Wrist ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Wrist = 5
----@field Hand ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Hand = 6
----@field Waist ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Waist = 7
----@field Legs ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Legs = 8
----@field Feet ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Feet = 9
----@field MainHand ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.MainHand = 10
----@field OffHand ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.OffHand = 11
----@field Finger ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Finger = 12
----@field Trinket ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Trinket = 13
----@field Other ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.Other = 14
----@field NoFilter ItemSlotFilterType 
+---@type ItemSlotFilterType 
 Enum.ItemSlotFilterType.NoFilter = 15
 
 ---@class DungeonEntranceMapInfo
----@type number 
----@type vector2 
----@type cstring 
----@type cstring 
----@type string 
----@type number 
+---@field areaPoiID number 
+---@field position vector2 
+---@field name cstring 
+---@field description cstring 
+---@field atlasName string 
+---@field journalInstanceID number 
 DungeonEntranceMapInfo = {}
 
 ---@class EncounterJournalItemInfo
----@type number 
----@type number 
----@type string 
----@type string 
----@type ItemSlotFilterType 
----@type fileID 
----@type string 
----@type string 
----@type string 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
----@type bool 
+---@field itemID number 
+---@field encounterID number|nil 
+---@field name string|nil 
+---@field itemQuality string|nil 
+---@field filterType ItemSlotFilterType|nil 
+---@field icon fileID|nil 
+---@field slot string|nil 
+---@field armorType string|nil 
+---@field link string|nil 
+---@field handError bool|nil 
+---@field weaponTypeError bool|nil 
+---@field displayAsPerPlayerLoot bool|nil 
+---@field displayAsVeryRare bool|nil 
+---@field displayAsExtremelyRare bool|nil 
 EncounterJournalItemInfo = {}
 
 ---@class EncounterJournalMapEncounterInfo
----@type number 
----@type number 
----@type number 
+---@field encounterID number 
+---@field mapX number 
+---@field mapY number 
 EncounterJournalMapEncounterInfo = {}
 
 ---@class EncounterJournalSectionInfo
----@type number 
----@type cstring 
----@type string 
----@type number 
----@type fileID 
----@type number 
----@type number 
----@type number 
----@type number 
----@type bool 
----@type string 
----@type bool 
+---@field spellID number 
+---@field title cstring 
+---@field description string|nil 
+---@field headerType number 
+---@field abilityIcon fileID 
+---@field creatureDisplayID number 
+---@field uiModelSceneID number 
+---@field siblingSectionID number|nil 
+---@field firstChildSectionID number|nil 
+---@field filteredByDifficulty bool 
+---@field link string 
+---@field startsOpen bool 
 EncounterJournalSectionInfo = {}
 

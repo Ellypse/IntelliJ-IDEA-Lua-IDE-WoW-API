@@ -37,102 +37,102 @@ function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
 ---@class ItemTryOnReason : Enum
 Enum.ItemTryOnReason = {}
----@field Success ItemTryOnReason 
+---@type ItemTryOnReason 
 Enum.ItemTryOnReason.Success = 0
----@field WrongRace ItemTryOnReason 
+---@type ItemTryOnReason 
 Enum.ItemTryOnReason.WrongRace = 1
----@field NotEquippable ItemTryOnReason 
+---@type ItemTryOnReason 
 Enum.ItemTryOnReason.NotEquippable = 2
----@field DataPending ItemTryOnReason 
+---@type ItemTryOnReason 
 Enum.ItemTryOnReason.DataPending = 3
 
 ---@class ModelSceneSetting : Enum
 Enum.ModelSceneSetting = {}
----@field AlignLightToOrbitDelta ModelSceneSetting 
+---@type ModelSceneSetting 
 Enum.ModelSceneSetting.AlignLightToOrbitDelta = 1
 
 ---@class ModelSceneType : Enum
 Enum.ModelSceneType = {}
----@field MountJournal ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.MountJournal = 0
----@field PetJournalCard ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.PetJournalCard = 1
----@field ShopCard ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.ShopCard = 2
----@field EncounterJournal ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.EncounterJournal = 3
----@field PetJournalLoadout ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.PetJournalLoadout = 4
----@field ArtifactTier2 ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.ArtifactTier2 = 5
----@field ArtifactTier2ForgingScene ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.ArtifactTier2ForgingScene = 6
----@field ArtifactTier2SlamEffect ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.ArtifactTier2SlamEffect = 7
----@field CommentatorVictoryFanfare ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.CommentatorVictoryFanfare = 8
----@field ArtifactRelicTalentEffect ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.ArtifactRelicTalentEffect = 9
----@field PvPWarModeOrb ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.PvPWarModeOrb = 10
----@field PvPWarModeFire ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.PvPWarModeFire = 11
----@field PartyPose ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.PartyPose = 12
----@field AzeriteItemLevelUpToast ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.AzeriteItemLevelUpToast = 13
----@field AzeritePowers ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.AzeritePowers = 14
----@field AzeriteRewardGlow ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.AzeriteRewardGlow = 15
----@field HeartOfAzeroth ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.HeartOfAzeroth = 16
----@field WorldMapThreat ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.WorldMapThreat = 17
----@field Soulbinds ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.Soulbinds = 18
----@field JailersTowerAnimaGlow ModelSceneType 
+---@type ModelSceneType 
 Enum.ModelSceneType.JailersTowerAnimaGlow = 19
 
 ---@class UIModelSceneActorDisplayInfo
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
+---@field animation number 
+---@field animationVariation number 
+---@field animSpeed number 
+---@field animationKitID number|nil 
+---@field spellVisualKitID number|nil 
+---@field alpha number 
+---@field scale number 
 UIModelSceneActorDisplayInfo = {}
 
 ---@class UIModelSceneActorInfo
----@type number 
----@type cstring 
----@type vector3 
----@type number 
----@type number 
----@type number 
----@type number 
----@type bool 
----@type bool 
----@type bool 
----@type number 
+---@field modelActorID number 
+---@field scriptTag cstring 
+---@field position vector3 
+---@field yaw number 
+---@field pitch number 
+---@field roll number 
+---@field normalizeScaleAggressiveness number|nil 
+---@field useCenterForOriginX bool 
+---@field useCenterForOriginY bool 
+---@field useCenterForOriginZ bool 
+---@field modelActorDisplayID number|nil 
 UIModelSceneActorInfo = {}
 
 ---@class UIModelSceneCameraInfo
----@type number 
----@type cstring 
----@type cstring 
----@type vector3 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type number 
----@type vector3 
----@type number 
----@type number 
----@type number 
----@type ModelSceneSetting 
+---@field modelSceneCameraID number 
+---@field scriptTag cstring 
+---@field cameraType cstring 
+---@field target vector3 
+---@field yaw number 
+---@field pitch number 
+---@field roll number 
+---@field zoomDistance number 
+---@field minZoomDistance number 
+---@field maxZoomDistance number 
+---@field zoomedTargetOffset vector3 
+---@field zoomedYawOffset number 
+---@field zoomedPitchOffset number 
+---@field zoomedRollOffset number 
+---@field flags ModelSceneSetting 
 UIModelSceneCameraInfo = {}
 

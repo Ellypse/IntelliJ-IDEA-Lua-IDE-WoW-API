@@ -155,59 +155,59 @@ function C_Soulbinds.SelectNode(nodeID) end
 function C_Soulbinds.UnmodifyNode(nodeID) end
 
 ---@class ConduitCollectionData
----@type number 
----@type number 
----@type number 
----@type SoulbindConduitType 
----@type number 
----@type table 
----@type cstring 
----@type number 
----@type number 
+---@field conduitID number 
+---@field conduitRank number 
+---@field conduitItemLevel number 
+---@field conduitType SoulbindConduitType 
+---@field conduitSpecSetID number 
+---@field conduitSpecIDs table 
+---@field conduitSpecName cstring|nil 
+---@field covenantID number|nil 
+---@field conduitItemID number 
 ConduitCollectionData = {}
 
 ---@class SoulbindConduitData
----@type number 
----@type number 
+---@field conduitID number 
+---@field conduitRank number 
 SoulbindConduitData = {}
 
 ---@class SoulbindData
----@type number 
----@type number 
----@type cstring 
----@type cstring 
----@type textureKit 
----@type bool 
----@type luaIndex 
----@type SoulbindTree 
----@type SoulbindModelSceneData 
----@type number 
----@type cstring 
+---@field ID number 
+---@field covenantID number 
+---@field name cstring 
+---@field description cstring 
+---@field textureKit textureKit 
+---@field unlocked bool 
+---@field cvarIndex luaIndex 
+---@field tree SoulbindTree 
+---@field modelSceneData SoulbindModelSceneData 
+---@field activationSoundKitID number 
+---@field playerConditionReason cstring|nil 
 SoulbindData = {}
 
 ---@class SoulbindModelSceneData
----@type number 
----@type number 
+---@field creatureDisplayInfoID number 
+---@field modelSceneActorID number 
 SoulbindModelSceneData = {}
 
 ---@class SoulbindNode
----@type number 
----@type number 
----@type number 
----@type fileID 
----@type number 
----@type cstring 
----@type number 
----@type number 
----@type SoulbindNodeState 
----@type SoulbindConduitType 
----@type table 
----@type number 
----@type bool 
+---@field ID number 
+---@field row number 
+---@field column number 
+---@field icon fileID 
+---@field spellID number 
+---@field playerConditionReason cstring|nil 
+---@field conduitID number 
+---@field conduitRank number 
+---@field state SoulbindNodeState 
+---@field conduitType SoulbindConduitType|nil 
+---@field parentNodeIDs table 
+---@field failureRenownRequirement number|nil 
+---@field socketEnhanced bool|nil 
 SoulbindNode = {}
 
 ---@class SoulbindTree
----@type bool 
----@type table 
+---@field editable bool 
+---@field nodes table 
 SoulbindTree = {}
 

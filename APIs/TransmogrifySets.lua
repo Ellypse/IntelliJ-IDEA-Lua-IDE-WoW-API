@@ -112,24 +112,24 @@ function C_TransmogSets.SetHasNewSourcesForSlot(transmogSetID, slot) end
 function C_TransmogSets.SetIsFavorite(transmogSetID, isFavorite) end
 
 ---@class TransmogSetInfo
----@type number 
----@type string 
----@type number 
----@type cstring 
----@type cstring 
----@type number 
----@type number 
----@type number 
----@type number 
----@type bool 
----@type cstring 
----@type bool 
----@type bool 
----@type bool 
+---@field setID number 
+---@field name string 
+---@field baseSetID number|nil 
+---@field description cstring|nil 
+---@field label cstring|nil 
+---@field expansionID number 
+---@field patchID number 
+---@field uiOrder number 
+---@field classMask number 
+---@field hiddenUntilCollected bool 
+---@field requiredFaction cstring|nil 
+---@field collected bool 
+---@field favorite bool 
+---@field limitedTimeSet bool 
 TransmogSetInfo = {}
 
 ---@class TransmogSetPrimaryAppearanceInfo
----@type number 
----@type bool 
+---@field appearanceID number 
+---@field collected bool 
 TransmogSetPrimaryAppearanceInfo = {}
 
