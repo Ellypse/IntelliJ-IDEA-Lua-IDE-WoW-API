@@ -200,13 +200,13 @@ function APIDocumentation:AddDocumentationTable(documentation)
 				--write(GLOBAL_DECLARATION:format(tab.Name))
 				--write("")
 
-				--[[write(TYPE_DECLARATION:format(
+				write(TYPE_DECLARATION:format(
 						parentType,
 						""
-				))]]
-				--[[write(GLOBAL_DECLARATION:format("Enum."..tab.Name))
+				))
+				write(GLOBAL_DECLARATION:format("Enum."..tab.Name))
 				
-				for k, value in pairs(tab.Fields) do
+				--[[for k, value in pairs(tab.Fields) do
 					write("Enum."..tab.Name .. "." .. value.Name .. " = " .. (value.EnumValue or ""))
 				end]]
 

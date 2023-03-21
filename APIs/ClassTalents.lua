@@ -89,6 +89,8 @@ function C_ClassTalents.UpdateLastSelectedSavedConfigID(specID, configID) end
 ---@field NoChangesNecessary LoadConfigResult @ 1
 ---@field LoadInProgress LoadConfigResult @ 2
 ---@field Ready LoadConfigResult @ 3
+---@type LoadConfigResult 
+Enum.LoadConfigResult = {}
 
 ---@class ImportLoadoutEntryInfo
 ---@field nodeID number 

@@ -66,6 +66,8 @@ function C_EncounterJournal.SetSlotFilter(filterSlot) end
 ---@field Trinket ItemSlotFilterType @ 13
 ---@field Other ItemSlotFilterType @ 14
 ---@field NoFilter ItemSlotFilterType @ 15
+---@type ItemSlotFilterType 
+Enum.ItemSlotFilterType = {}
 
 ---@class DungeonEntranceMapInfo
 ---@field areaPoiID number 

@@ -156,6 +156,8 @@ function C_Map.SetUserWaypoint(point) end
 ---@field BottomRight MapCanvasPosition @ 2
 ---@field TopLeft MapCanvasPosition @ 3
 ---@field TopRight MapCanvasPosition @ 4
+---@type MapCanvasPosition 
+Enum.MapCanvasPosition = {}
 
 ---@class UIMapFlag : Enum
 ---@field NoHighlight UIMapFlag @ 1
@@ -175,12 +177,16 @@ function C_Map.SetUserWaypoint(point) end
 ---@field FlightMapAutoZoom UIMapFlag @ 16384
 ---@field ForceOnNavbar UIMapFlag @ 32768
 ---@field AlwaysAllowUserWaypoints UIMapFlag @ 65536
+---@type UIMapFlag 
+Enum.UIMapFlag = {}
 
 ---@class UIMapSystem : Enum
 ---@field World UIMapSystem @ 0
 ---@field Taxi UIMapSystem @ 1
 ---@field Adventure UIMapSystem @ 2
 ---@field Minimap UIMapSystem @ 3
+---@type UIMapSystem 
+Enum.UIMapSystem = {}
 
 ---@class UIMapType : Enum
 ---@field Cosmic UIMapType @ 0
@@ -190,6 +196,8 @@ function C_Map.SetUserWaypoint(point) end
 ---@field Dungeon UIMapType @ 4
 ---@field Micro UIMapType @ 5
 ---@field Orphan UIMapType @ 6
+---@type UIMapType 
+Enum.UIMapType = {}
 
 ---@class MapBannerInfo
 ---@field areaPoiID number 

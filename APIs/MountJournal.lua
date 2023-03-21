@@ -162,11 +162,15 @@ function C_MountJournal.SummonByID(mountID) end
 ---@field Flying MountType @ 1
 ---@field Aquatic MountType @ 2
 ---@field Dragonriding MountType @ 3
+---@type MountType 
+Enum.MountType = {}
 
 ---@class MountTypeFlag : Enum
 ---@field IsFlyingMount MountTypeFlag @ 1
 ---@field IsAquaticMount MountTypeFlag @ 2
 ---@field IsDragonRidingMount MountTypeFlag @ 4
+---@type MountTypeFlag 
+Enum.MountTypeFlag = {}
 
 ---@class MountCreatureDisplayInfo
 ---@field creatureDisplayID number 

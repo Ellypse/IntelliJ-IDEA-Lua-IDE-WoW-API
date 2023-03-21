@@ -176,6 +176,8 @@ function UnitWidgetSet(unit) end
 ---@field Sharding PhaseReason @ 1
 ---@field WarMode PhaseReason @ 2
 ---@field ChromieTime PhaseReason @ 3
+---@type PhaseReason 
+Enum.PhaseReason = {}
 
 ---@class PowerType : Enum
 ---@field HealthCost PowerType @ -2
@@ -204,6 +206,8 @@ function UnitWidgetSet(unit) end
 ---@field RuneFrost PowerType @ 21
 ---@field RuneUnholy PowerType @ 22
 ---@field NumPowerTypes PowerType @ 23
+---@type PowerType 
+Enum.PowerType = {}
 
 ---@class PvPUnitClassification : Enum
 ---@field FlagCarrierHorde PvPUnitClassification @ 0
@@ -217,6 +221,8 @@ function UnitWidgetSet(unit) end
 ---@field OrbCarrierGreen PvPUnitClassification @ 8
 ---@field OrbCarrierOrange PvPUnitClassification @ 9
 ---@field OrbCarrierPurple PvPUnitClassification @ 10
+---@type PvPUnitClassification 
+Enum.PvPUnitClassification = {}
 
 ---@class CorruptionEffectInfo
 ---@field name string 

@@ -11,9 +11,13 @@ function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 ---@field SourceRecoil ScriptedAnimationBehavior @ 3
 ---@field SourceCollideWithTarget ScriptedAnimationBehavior @ 4
 ---@field UIParentShake ScriptedAnimationBehavior @ 5
+---@type ScriptedAnimationBehavior 
+Enum.ScriptedAnimationBehavior = {}
 
 ---@class ScriptedAnimationFlags : Enum
 ---@field UseTargetAsSource ScriptedAnimationFlags @ 1
+---@type ScriptedAnimationFlags 
+Enum.ScriptedAnimationFlags = {}
 
 ---@class ScriptedAnimationTrajectory : Enum
 ---@field AtSource ScriptedAnimationTrajectory @ 0
@@ -23,6 +27,8 @@ function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 ---@field CurveRight ScriptedAnimationTrajectory @ 4
 ---@field CurveRandom ScriptedAnimationTrajectory @ 5
 ---@field HalfwayBetween ScriptedAnimationTrajectory @ 6
+---@type ScriptedAnimationTrajectory 
+Enum.ScriptedAnimationTrajectory = {}
 
 ---@class ScriptedAnimationEffect
 ---@field id number 

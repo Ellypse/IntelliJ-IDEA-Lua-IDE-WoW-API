@@ -142,21 +142,29 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@class CaptureBarWidgetFillDirectionType : Enum
 ---@field RightToLeft CaptureBarWidgetFillDirectionType @ 0
 ---@field LeftToRight CaptureBarWidgetFillDirectionType @ 1
+---@type CaptureBarWidgetFillDirectionType 
+Enum.CaptureBarWidgetFillDirectionType = {}
 
 ---@class CaptureBarWidgetGlowAnimType : Enum
 ---@field None CaptureBarWidgetGlowAnimType @ 0
 ---@field Pulse CaptureBarWidgetGlowAnimType @ 1
+---@type CaptureBarWidgetGlowAnimType 
+Enum.CaptureBarWidgetGlowAnimType = {}
 
 ---@class IconAndTextWidgetState : Enum
 ---@field Hidden IconAndTextWidgetState @ 0
 ---@field Shown IconAndTextWidgetState @ 1
 ---@field ShownWithDynamicIconFlashing IconAndTextWidgetState @ 2
 ---@field ShownWithDynamicIconNotFlashing IconAndTextWidgetState @ 3
+---@type IconAndTextWidgetState 
+Enum.IconAndTextWidgetState = {}
 
 ---@class IconState : Enum
 ---@field Hidden IconState @ 0
 ---@field ShowState1 IconState @ 1
 ---@field ShowState2 IconState @ 2
+---@type IconState 
+Enum.IconState = {}
 
 ---@class SpellDisplayBorderColor : Enum
 ---@field None SpellDisplayBorderColor @ 0
@@ -168,21 +176,29 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field Purple SpellDisplayBorderColor @ 6
 ---@field Green SpellDisplayBorderColor @ 7
 ---@field Blue SpellDisplayBorderColor @ 8
+---@type SpellDisplayBorderColor 
+Enum.SpellDisplayBorderColor = {}
 
 ---@class SpellDisplayIconDisplayType : Enum
 ---@field Buff SpellDisplayIconDisplayType @ 0
 ---@field Debuff SpellDisplayIconDisplayType @ 1
 ---@field Circular SpellDisplayIconDisplayType @ 2
 ---@field NoBorder SpellDisplayIconDisplayType @ 3
+---@type SpellDisplayIconDisplayType 
+Enum.SpellDisplayIconDisplayType = {}
 
 ---@class SpellDisplayIconSizeType : Enum
 ---@field Small SpellDisplayIconSizeType @ 0
 ---@field Medium SpellDisplayIconSizeType @ 1
 ---@field Large SpellDisplayIconSizeType @ 2
+---@type SpellDisplayIconSizeType 
+Enum.SpellDisplayIconSizeType = {}
 
 ---@class SpellDisplayTextShownStateType : Enum
 ---@field Shown SpellDisplayTextShownStateType @ 0
 ---@field Hidden SpellDisplayTextShownStateType @ 1
+---@type SpellDisplayTextShownStateType 
+Enum.SpellDisplayTextShownStateType = {}
 
 ---@class StatusBarColorTintValue : Enum
 ---@field None StatusBarColorTintValue @ 0
@@ -194,12 +210,16 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field Purple StatusBarColorTintValue @ 6
 ---@field Green StatusBarColorTintValue @ 7
 ---@field Blue StatusBarColorTintValue @ 8
+---@type StatusBarColorTintValue 
+Enum.StatusBarColorTintValue = {}
 
 ---@class StatusBarOverrideBarTextShownType : Enum
 ---@field Never StatusBarOverrideBarTextShownType @ 0
 ---@field Always StatusBarOverrideBarTextShownType @ 1
 ---@field OnlyOnMouseover StatusBarOverrideBarTextShownType @ 2
 ---@field OnlyNotOnMouseover StatusBarOverrideBarTextShownType @ 3
+---@type StatusBarOverrideBarTextShownType 
+Enum.StatusBarOverrideBarTextShownType = {}
 
 ---@class StatusBarValueTextType : Enum
 ---@field Hidden StatusBarValueTextType @ 0
@@ -209,27 +229,39 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field TimeShowOneLevelOnly StatusBarValueTextType @ 4
 ---@field ValueOverMax StatusBarValueTextType @ 5
 ---@field ValueOverMaxNormalized StatusBarValueTextType @ 6
+---@type StatusBarValueTextType 
+Enum.StatusBarValueTextType = {}
 
 ---@class UIWidgetBlendModeType : Enum
 ---@field Opaque UIWidgetBlendModeType @ 0
 ---@field Additive UIWidgetBlendModeType @ 1
+---@type UIWidgetBlendModeType 
+Enum.UIWidgetBlendModeType = {}
 
 ---@class UIWidgetFlag : Enum
 ---@field UniversalWidget UIWidgetFlag @ 1
+---@type UIWidgetFlag 
+Enum.UIWidgetFlag = {}
 
 ---@class UIWidgetFontType : Enum
 ---@field Normal UIWidgetFontType @ 0
 ---@field Shadow UIWidgetFontType @ 1
 ---@field Outline UIWidgetFontType @ 2
+---@type UIWidgetFontType 
+Enum.UIWidgetFontType = {}
 
 ---@class UIWidgetModelSceneLayer : Enum
 ---@field None UIWidgetModelSceneLayer @ 0
 ---@field Front UIWidgetModelSceneLayer @ 1
 ---@field Back UIWidgetModelSceneLayer @ 2
+---@type UIWidgetModelSceneLayer 
+Enum.UIWidgetModelSceneLayer = {}
 
 ---@class UIWidgetMotionType : Enum
 ---@field Instant UIWidgetMotionType @ 0
 ---@field Smooth UIWidgetMotionType @ 1
+---@type UIWidgetMotionType 
+Enum.UIWidgetMotionType = {}
 
 ---@class UIWidgetTextSizeType : Enum
 ---@field Small12Pt UIWidgetTextSizeType @ 0
@@ -241,6 +273,8 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field Small11Pt UIWidgetTextSizeType @ 6
 ---@field Medium18Pt UIWidgetTextSizeType @ 7
 ---@field Large20Pt UIWidgetTextSizeType @ 8
+---@type UIWidgetTextSizeType 
+Enum.UIWidgetTextSizeType = {}
 
 ---@class UIWidgetTextureAndTextSizeType : Enum
 ---@field Small UIWidgetTextureAndTextSizeType @ 0
@@ -248,6 +282,8 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field Large UIWidgetTextureAndTextSizeType @ 2
 ---@field Huge UIWidgetTextureAndTextSizeType @ 3
 ---@field Standard UIWidgetTextureAndTextSizeType @ 4
+---@type UIWidgetTextureAndTextSizeType 
+Enum.UIWidgetTextureAndTextSizeType = {}
 
 ---@class UIWidgetTooltipLocation : Enum
 ---@field Default UIWidgetTooltipLocation @ 0
@@ -259,14 +295,20 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field Right UIWidgetTooltipLocation @ 6
 ---@field BottomRight UIWidgetTooltipLocation @ 7
 ---@field Bottom UIWidgetTooltipLocation @ 8
+---@type UIWidgetTooltipLocation 
+Enum.UIWidgetTooltipLocation = {}
 
 ---@class WidgetAnimationType : Enum
 ---@field None WidgetAnimationType @ 0
 ---@field Fade WidgetAnimationType @ 1
+---@type WidgetAnimationType 
+Enum.WidgetAnimationType = {}
 
 ---@class WidgetCurrencyClass : Enum
 ---@field Currency WidgetCurrencyClass @ 0
 ---@field Item WidgetCurrencyClass @ 1
+---@type WidgetCurrencyClass 
+Enum.WidgetCurrencyClass = {}
 
 ---@class WidgetEnabledState : Enum
 ---@field Disabled WidgetEnabledState @ 0
@@ -276,50 +318,70 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 ---@field Green WidgetEnabledState @ 4
 ---@field Gold WidgetEnabledState @ 5
 ---@field Black WidgetEnabledState @ 6
+---@type WidgetEnabledState 
+Enum.WidgetEnabledState = {}
 
 ---@class WidgetShownState : Enum
 ---@field Hidden WidgetShownState @ 0
 ---@field Shown WidgetShownState @ 1
+---@type WidgetShownState 
+Enum.WidgetShownState = {}
 
 ---@class WidgetTextHorizontalAlignmentType : Enum
 ---@field Left WidgetTextHorizontalAlignmentType @ 0
 ---@field Center WidgetTextHorizontalAlignmentType @ 1
 ---@field Right WidgetTextHorizontalAlignmentType @ 2
+---@type WidgetTextHorizontalAlignmentType 
+Enum.WidgetTextHorizontalAlignmentType = {}
 
 ---@class WidgetUnitPowerBarFlashMomentType : Enum
 ---@field FlashWhenMax WidgetUnitPowerBarFlashMomentType @ 0
 ---@field FlashWhenMin WidgetUnitPowerBarFlashMomentType @ 1
 ---@field NeverFlash WidgetUnitPowerBarFlashMomentType @ 2
+---@type WidgetUnitPowerBarFlashMomentType 
+Enum.WidgetUnitPowerBarFlashMomentType = {}
 
 ---@class ZoneControlActiveState : Enum
 ---@field Inactive ZoneControlActiveState @ 0
 ---@field Active ZoneControlActiveState @ 1
+---@type ZoneControlActiveState 
+Enum.ZoneControlActiveState = {}
 
 ---@class ZoneControlDangerFlashType : Enum
 ---@field ShowOnGoodStates ZoneControlDangerFlashType @ 0
 ---@field ShowOnBadStates ZoneControlDangerFlashType @ 1
 ---@field ShowOnBoth ZoneControlDangerFlashType @ 2
 ---@field ShowOnNeither ZoneControlDangerFlashType @ 3
+---@type ZoneControlDangerFlashType 
+Enum.ZoneControlDangerFlashType = {}
 
 ---@class ZoneControlFillType : Enum
 ---@field SingleFillClockwise ZoneControlFillType @ 0
 ---@field SingleFillCounterClockwise ZoneControlFillType @ 1
 ---@field DoubleFillClockwise ZoneControlFillType @ 2
 ---@field DoubleFillCounterClockwise ZoneControlFillType @ 3
+---@type ZoneControlFillType 
+Enum.ZoneControlFillType = {}
 
 ---@class ZoneControlLeadingEdgeType : Enum
 ---@field NoLeadingEdge ZoneControlLeadingEdgeType @ 0
 ---@field UseLeadingEdge ZoneControlLeadingEdgeType @ 1
+---@type ZoneControlLeadingEdgeType 
+Enum.ZoneControlLeadingEdgeType = {}
 
 ---@class ZoneControlMode : Enum
 ---@field BothStatesAreGood ZoneControlMode @ 0
 ---@field State1IsGood ZoneControlMode @ 1
 ---@field State2IsGood ZoneControlMode @ 2
 ---@field NeitherStateIsGood ZoneControlMode @ 3
+---@type ZoneControlMode 
+Enum.ZoneControlMode = {}
 
 ---@class ZoneControlState : Enum
 ---@field State1 ZoneControlState @ 0
 ---@field State2 ZoneControlState @ 1
+---@type ZoneControlState 
+Enum.ZoneControlState = {}
 
 ---@class BulletTextListWidgetVisualizationInfo
 ---@field shownState WidgetShownState 

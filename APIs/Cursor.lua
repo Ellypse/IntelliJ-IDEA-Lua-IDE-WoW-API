@@ -26,10 +26,14 @@ function C_Cursor.GetCursorItem() end
 ---@field Toy UICursorType @ 19
 ---@field ConduitCollectionItem UICursorType @ 20
 ---@field PerksProgramVendorItem UICursorType @ 21
+---@type UICursorType 
+Enum.UICursorType = {}
 
 ---@class WorldCursorAnchorType : Enum
 ---@field None WorldCursorAnchorType @ 0
 ---@field Default WorldCursorAnchorType @ 1
 ---@field Cursor WorldCursorAnchorType @ 2
 ---@field Nameplate WorldCursorAnchorType @ 3
+---@type WorldCursorAnchorType 
+Enum.WorldCursorAnchorType = {}
 

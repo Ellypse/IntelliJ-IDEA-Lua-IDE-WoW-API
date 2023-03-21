@@ -270,10 +270,14 @@ function C_VoiceChat.ToggleMuted() end
 ---@class CommunicationMode : Enum
 ---@field PushToTalk CommunicationMode @ 0
 ---@field OpenMic CommunicationMode @ 1
+---@type CommunicationMode 
+Enum.CommunicationMode = {}
 
 ---@class VoiceChannelErrorReason : Enum
 ---@field Unknown VoiceChannelErrorReason @ 0
 ---@field IsBattleNetChannel VoiceChannelErrorReason @ 1
+---@type VoiceChannelErrorReason 
+Enum.VoiceChannelErrorReason = {}
 
 ---@class VoiceChatStatusCode : Enum
 ---@field Success VoiceChatStatusCode @ 0
@@ -301,6 +305,8 @@ function C_VoiceChat.ToggleMuted() end
 ---@field PlayerVoiceChatParentalDisabled VoiceChatStatusCode @ 22
 ---@field InvalidInputDevice VoiceChatStatusCode @ 23
 ---@field InvalidOutputDevice VoiceChatStatusCode @ 24
+---@type VoiceChatStatusCode 
+Enum.VoiceChatStatusCode = {}
 
 ---@class VoiceTtsDestination : Enum
 ---@field RemoteTransmission VoiceTtsDestination @ 0
@@ -310,6 +316,8 @@ function C_VoiceChat.ToggleMuted() end
 ---@field QueuedLocalPlayback VoiceTtsDestination @ 4
 ---@field QueuedRemoteTransmissionWithLocalPlayback VoiceTtsDestination @ 5
 ---@field ScreenReader VoiceTtsDestination @ 6
+---@type VoiceTtsDestination 
+Enum.VoiceTtsDestination = {}
 
 ---@class VoiceTtsStatusCode : Enum
 ---@field Success VoiceTtsStatusCode @ 0
@@ -326,6 +334,8 @@ function C_VoiceChat.ToggleMuted() end
 ---@field ManagerNotFound VoiceTtsStatusCode @ 11
 ---@field InvalidArgument VoiceTtsStatusCode @ 12
 ---@field InternalError VoiceTtsStatusCode @ 13
+---@type VoiceTtsStatusCode 
+Enum.VoiceTtsStatusCode = {}
 
 ---@class VoiceAudioDevice
 ---@field deviceID string 

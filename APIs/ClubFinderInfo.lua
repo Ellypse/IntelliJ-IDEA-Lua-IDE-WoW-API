@@ -200,6 +200,8 @@ function C_ClubFinder.ShouldShowClubFinder() end
 ---@field AcceptInvite ClubFinderApplicationUpdateType @ 1
 ---@field DeclineInvite ClubFinderApplicationUpdateType @ 2
 ---@field Cancel ClubFinderApplicationUpdateType @ 3
+---@type ClubFinderApplicationUpdateType 
+Enum.ClubFinderApplicationUpdateType = {}
 
 ---@class ClubFinderClubPostingStatusFlags : Enum
 ---@field None ClubFinderClubPostingStatusFlags @ 0
@@ -211,11 +213,15 @@ function C_ClubFinder.ShouldShowClubFinder() end
 ---@field FakePost ClubFinderClubPostingStatusFlags @ 6
 ---@field PendingDelete ClubFinderClubPostingStatusFlags @ 7
 ---@field PostDelisted ClubFinderClubPostingStatusFlags @ 8
+---@type ClubFinderClubPostingStatusFlags 
+Enum.ClubFinderClubPostingStatusFlags = {}
 
 ---@class ClubFinderDisableReason : Enum
 ---@field Muted ClubFinderDisableReason @ 0
 ---@field Silenced ClubFinderDisableReason @ 1
 ---@field VeteranTrial ClubFinderDisableReason @ 2
+---@type ClubFinderDisableReason 
+Enum.ClubFinderDisableReason = {}
 
 ---@class ClubFinderPostingReportType : Enum
 ---@field PostersName ClubFinderPostingReportType @ 0
@@ -223,12 +229,16 @@ function C_ClubFinder.ShouldShowClubFinder() end
 ---@field PostingDescription ClubFinderPostingReportType @ 2
 ---@field ApplicantsName ClubFinderPostingReportType @ 3
 ---@field JoinNote ClubFinderPostingReportType @ 4
+---@type ClubFinderPostingReportType 
+Enum.ClubFinderPostingReportType = {}
 
 ---@class ClubFinderRequestType : Enum
 ---@field None ClubFinderRequestType @ 0
 ---@field Guild ClubFinderRequestType @ 1
 ---@field Community ClubFinderRequestType @ 2
 ---@field All ClubFinderRequestType @ 3
+---@type ClubFinderRequestType 
+Enum.ClubFinderRequestType = {}
 
 ---@class ClubFinderSettingFlags : Enum
 ---@field None ClubFinderSettingFlags @ 0
@@ -257,6 +267,8 @@ function C_ClubFinder.ShouldShowClubFinder() end
 ---@field LanguageReserved3 ClubFinderSettingFlags @ 23
 ---@field LanguageReserved4 ClubFinderSettingFlags @ 24
 ---@field LanguageReserved5 ClubFinderSettingFlags @ 25
+---@type ClubFinderSettingFlags 
+Enum.ClubFinderSettingFlags = {}
 
 ---@class PlayerClubRequestStatus : Enum
 ---@field None PlayerClubRequestStatus @ 0
@@ -267,6 +279,8 @@ function C_ClubFinder.ShouldShowClubFinder() end
 ---@field Joined PlayerClubRequestStatus @ 5
 ---@field JoinedAnother PlayerClubRequestStatus @ 6
 ---@field Canceled PlayerClubRequestStatus @ 7
+---@type PlayerClubRequestStatus 
+Enum.PlayerClubRequestStatus = {}
 
 ---@class ClubFinderApplicantInfo
 ---@field clubFinderGUID WOWGUID 

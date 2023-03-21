@@ -484,6 +484,8 @@ function C_Commentator.ZoomOut() end
 ---@field Debuff TrackedSpellCategory @ 2
 ---@field RacialAbility TrackedSpellCategory @ 3
 ---@field Count TrackedSpellCategory @ 4
+---@type TrackedSpellCategory 
+Enum.TrackedSpellCategory = {}
 
 ---@class CommentatorHistory
 ---@field series table 

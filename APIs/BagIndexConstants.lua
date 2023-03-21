@@ -16,4 +16,6 @@
 ---@field BankBag_5 BagIndex @ 10
 ---@field BankBag_6 BagIndex @ 11
 ---@field BankBag_7 BagIndex @ 12
+---@type BagIndex 
+Enum.BagIndex = {}
 

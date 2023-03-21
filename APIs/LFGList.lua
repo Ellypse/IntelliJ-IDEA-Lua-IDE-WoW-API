@@ -127,6 +127,8 @@ function C_LFGList.ValidateRequiredPvpRatingForActivity(activityID, rating) end
 ---@field Standard LFGEntryPlaystyle @ 1
 ---@field Casual LFGEntryPlaystyle @ 2
 ---@field Hardcore LFGEntryPlaystyle @ 3
+---@type LFGEntryPlaystyle 
+Enum.LFGEntryPlaystyle = {}
 
 ---@class LFGListDisplayType : Enum
 ---@field RoleCount LFGListDisplayType @ 0
@@ -135,6 +137,8 @@ function C_LFGList.ValidateRequiredPvpRatingForActivity(activityID, rating) end
 ---@field HideAll LFGListDisplayType @ 3
 ---@field PlayerCount LFGListDisplayType @ 4
 ---@field Comment LFGListDisplayType @ 5
+---@type LFGListDisplayType 
+Enum.LFGListDisplayType = {}
 
 ---@class BestDungeonScoreMapInfo
 ---@field mapScore number 

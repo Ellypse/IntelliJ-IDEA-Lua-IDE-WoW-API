@@ -91,6 +91,8 @@ function C_Transmog.SetPending(transmogLocation, pendingInfo) end
 ---@field Revert TransmogPendingType @ 1
 ---@field ToggleOn TransmogPendingType @ 2
 ---@field ToggleOff TransmogPendingType @ 3
+---@type TransmogPendingType 
+Enum.TransmogPendingType = {}
 
 ---@class TransmogApplyWarningInfo
 ---@field itemLink string 

@@ -25,6 +25,8 @@ function C_QuestLine.RequestQuestLinesForMap(uiMapID) end
 ---@field Above QuestLineFloorLocation @ 0
 ---@field Below QuestLineFloorLocation @ 1
 ---@field Same QuestLineFloorLocation @ 2
+---@type QuestLineFloorLocation 
+Enum.QuestLineFloorLocation = {}
 
 ---@class QuestLineInfo
 ---@field questLineName cstring 

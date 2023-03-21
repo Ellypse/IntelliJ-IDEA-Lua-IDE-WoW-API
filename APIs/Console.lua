@@ -29,6 +29,8 @@ function C_Console.SetFontHeight(fontHeightInPixels) end
 ---@field Gm ConsoleCategory @ 8
 ---@field Reveal ConsoleCategory @ 9
 ---@field None ConsoleCategory @ 10
+---@type ConsoleCategory 
+Enum.ConsoleCategory = {}
 
 ---@class ConsoleColorType : Enum
 ---@field DefaultColor ConsoleColorType @ 0
@@ -43,12 +45,16 @@ function C_Console.SetFontHeight(fontHeightInPixels) end
 ---@field ClickbufferColor ConsoleColorType @ 9
 ---@field PrivateColor ConsoleColorType @ 10
 ---@field DefaultGreen ConsoleColorType @ 11
+---@type ConsoleColorType 
+Enum.ConsoleColorType = {}
 
 ---@class ConsoleCommandType : Enum
 ---@field Cvar ConsoleCommandType @ 0
 ---@field Command ConsoleCommandType @ 1
 ---@field Macro ConsoleCommandType @ 2
 ---@field Script ConsoleCommandType @ 3
+---@type ConsoleCommandType 
+Enum.ConsoleCommandType = {}
 
 ---@class ConsoleCommandInfo
 ---@field command cstring 

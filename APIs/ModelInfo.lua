@@ -40,9 +40,13 @@ function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 ---@field WrongRace ItemTryOnReason @ 1
 ---@field NotEquippable ItemTryOnReason @ 2
 ---@field DataPending ItemTryOnReason @ 3
+---@type ItemTryOnReason 
+Enum.ItemTryOnReason = {}
 
 ---@class ModelSceneSetting : Enum
 ---@field AlignLightToOrbitDelta ModelSceneSetting @ 1
+---@type ModelSceneSetting 
+Enum.ModelSceneSetting = {}
 
 ---@class ModelSceneType : Enum
 ---@field MountJournal ModelSceneType @ 0
@@ -65,6 +69,8 @@ function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 ---@field WorldMapThreat ModelSceneType @ 17
 ---@field Soulbinds ModelSceneType @ 18
 ---@field JailersTowerAnimaGlow ModelSceneType @ 19
+---@type ModelSceneType 
+Enum.ModelSceneType = {}
 
 ---@class UIModelSceneActorDisplayInfo
 ---@field animation number 

@@ -12,4 +12,6 @@ C_WowEntitlementInfo = {}
 ---@field Title WoWEntitlementType @ 7
 ---@field Illusion WoWEntitlementType @ 8
 ---@field Invalid WoWEntitlementType @ 9
+---@type WoWEntitlementType 
+Enum.WoWEntitlementType = {}
 
