@@ -269,9 +269,10 @@ function C_TransmogCollection.SetUncollectedShown(shown) end
 function C_TransmogCollection.UpdateUsableAppearances() end
 
 ---@class TransmogCameraVariation : Enum
----@field None number @ Default value is 0
----@field RightShoulder number @ Default value is 1
----@field CloakBackpack number @ Default value is 1
+---@field None number @ Value is set to: 0
+---@field RightShoulder number @ Value is set to: 1
+---@field CloakBackpack number @ Value is set to: 1
+
 ---@type TransmogCameraVariation 
 Enum.TransmogCameraVariation = {}
 Enum.TransmogCameraVariation["None"] = 0

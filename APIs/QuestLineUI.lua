@@ -22,9 +22,10 @@ function C_QuestLine.IsComplete(questLineID) end
 function C_QuestLine.RequestQuestLinesForMap(uiMapID) end
 
 ---@class QuestLineFloorLocation : Enum
----@field Above number @ Default value is 0
----@field Below number @ Default value is 1
----@field Same number @ Default value is 2
+---@field Above number @ Value is set to: 0
+---@field Below number @ Value is set to: 1
+---@field Same number @ Value is set to: 2
+
 ---@type QuestLineFloorLocation 
 Enum.QuestLineFloorLocation = {}
 Enum.QuestLineFloorLocation["Above"] = 0

@@ -196,10 +196,11 @@ function C_ClubFinder.SetRecruitmentSettings(index, checked) end
 function C_ClubFinder.ShouldShowClubFinder() end
 
 ---@class ClubFinderApplicationUpdateType : Enum
----@field None number @ Default value is 0
----@field AcceptInvite number @ Default value is 1
----@field DeclineInvite number @ Default value is 2
----@field Cancel number @ Default value is 3
+---@field None number @ Value is set to: 0
+---@field AcceptInvite number @ Value is set to: 1
+---@field DeclineInvite number @ Value is set to: 2
+---@field Cancel number @ Value is set to: 3
+
 ---@type ClubFinderApplicationUpdateType 
 Enum.ClubFinderApplicationUpdateType = {}
 Enum.ClubFinderApplicationUpdateType["None"] = 0
@@ -208,15 +209,16 @@ Enum.ClubFinderApplicationUpdateType["DeclineInvite"] = 2
 Enum.ClubFinderApplicationUpdateType["Cancel"] = 3
 
 ---@class ClubFinderClubPostingStatusFlags : Enum
----@field None number @ Default value is 0
----@field NeedsCacheUpdate number @ Default value is 1
----@field ForceDescriptionChange number @ Default value is 2
----@field ForceNameChange number @ Default value is 3
----@field UnderReview number @ Default value is 4
----@field Banned number @ Default value is 5
----@field FakePost number @ Default value is 6
----@field PendingDelete number @ Default value is 7
----@field PostDelisted number @ Default value is 8
+---@field None number @ Value is set to: 0
+---@field NeedsCacheUpdate number @ Value is set to: 1
+---@field ForceDescriptionChange number @ Value is set to: 2
+---@field ForceNameChange number @ Value is set to: 3
+---@field UnderReview number @ Value is set to: 4
+---@field Banned number @ Value is set to: 5
+---@field FakePost number @ Value is set to: 6
+---@field PendingDelete number @ Value is set to: 7
+---@field PostDelisted number @ Value is set to: 8
+
 ---@type ClubFinderClubPostingStatusFlags 
 Enum.ClubFinderClubPostingStatusFlags = {}
 Enum.ClubFinderClubPostingStatusFlags["None"] = 0
@@ -230,9 +232,10 @@ Enum.ClubFinderClubPostingStatusFlags["PendingDelete"] = 7
 Enum.ClubFinderClubPostingStatusFlags["PostDelisted"] = 8
 
 ---@class ClubFinderDisableReason : Enum
----@field Muted number @ Default value is 0
----@field Silenced number @ Default value is 1
----@field VeteranTrial number @ Default value is 2
+---@field Muted number @ Value is set to: 0
+---@field Silenced number @ Value is set to: 1
+---@field VeteranTrial number @ Value is set to: 2
+
 ---@type ClubFinderDisableReason 
 Enum.ClubFinderDisableReason = {}
 Enum.ClubFinderDisableReason["Muted"] = 0
@@ -240,11 +243,12 @@ Enum.ClubFinderDisableReason["Silenced"] = 1
 Enum.ClubFinderDisableReason["VeteranTrial"] = 2
 
 ---@class ClubFinderPostingReportType : Enum
----@field PostersName number @ Default value is 0
----@field ClubName number @ Default value is 1
----@field PostingDescription number @ Default value is 2
----@field ApplicantsName number @ Default value is 3
----@field JoinNote number @ Default value is 4
+---@field PostersName number @ Value is set to: 0
+---@field ClubName number @ Value is set to: 1
+---@field PostingDescription number @ Value is set to: 2
+---@field ApplicantsName number @ Value is set to: 3
+---@field JoinNote number @ Value is set to: 4
+
 ---@type ClubFinderPostingReportType 
 Enum.ClubFinderPostingReportType = {}
 Enum.ClubFinderPostingReportType["PostersName"] = 0
@@ -254,10 +258,11 @@ Enum.ClubFinderPostingReportType["ApplicantsName"] = 3
 Enum.ClubFinderPostingReportType["JoinNote"] = 4
 
 ---@class ClubFinderRequestType : Enum
----@field None number @ Default value is 0
----@field Guild number @ Default value is 1
----@field Community number @ Default value is 2
----@field All number @ Default value is 3
+---@field None number @ Value is set to: 0
+---@field Guild number @ Value is set to: 1
+---@field Community number @ Value is set to: 2
+---@field All number @ Value is set to: 3
+
 ---@type ClubFinderRequestType 
 Enum.ClubFinderRequestType = {}
 Enum.ClubFinderRequestType["None"] = 0
@@ -266,32 +271,33 @@ Enum.ClubFinderRequestType["Community"] = 2
 Enum.ClubFinderRequestType["All"] = 3
 
 ---@class ClubFinderSettingFlags : Enum
----@field None number @ Default value is 0
----@field Dungeons number @ Default value is 1
----@field Raids number @ Default value is 2
----@field PvP number @ Default value is 3
----@field RP number @ Default value is 4
----@field Social number @ Default value is 5
----@field Small number @ Default value is 6
----@field Medium number @ Default value is 7
----@field Large number @ Default value is 8
----@field Tank number @ Default value is 9
----@field Healer number @ Default value is 10
----@field Damage number @ Default value is 11
----@field EnableListing number @ Default value is 12
----@field MaxLevelOnly number @ Default value is 13
----@field AutoAccept number @ Default value is 14
----@field FactionHorde number @ Default value is 15
----@field FactionAlliance number @ Default value is 16
----@field FactionNeutral number @ Default value is 17
----@field SortRelevance number @ Default value is 18
----@field SortMemberCount number @ Default value is 19
----@field SortNewest number @ Default value is 20
----@field LanguageReserved1 number @ Default value is 21
----@field LanguageReserved2 number @ Default value is 22
----@field LanguageReserved3 number @ Default value is 23
----@field LanguageReserved4 number @ Default value is 24
----@field LanguageReserved5 number @ Default value is 25
+---@field None number @ Value is set to: 0
+---@field Dungeons number @ Value is set to: 1
+---@field Raids number @ Value is set to: 2
+---@field PvP number @ Value is set to: 3
+---@field RP number @ Value is set to: 4
+---@field Social number @ Value is set to: 5
+---@field Small number @ Value is set to: 6
+---@field Medium number @ Value is set to: 7
+---@field Large number @ Value is set to: 8
+---@field Tank number @ Value is set to: 9
+---@field Healer number @ Value is set to: 10
+---@field Damage number @ Value is set to: 11
+---@field EnableListing number @ Value is set to: 12
+---@field MaxLevelOnly number @ Value is set to: 13
+---@field AutoAccept number @ Value is set to: 14
+---@field FactionHorde number @ Value is set to: 15
+---@field FactionAlliance number @ Value is set to: 16
+---@field FactionNeutral number @ Value is set to: 17
+---@field SortRelevance number @ Value is set to: 18
+---@field SortMemberCount number @ Value is set to: 19
+---@field SortNewest number @ Value is set to: 20
+---@field LanguageReserved1 number @ Value is set to: 21
+---@field LanguageReserved2 number @ Value is set to: 22
+---@field LanguageReserved3 number @ Value is set to: 23
+---@field LanguageReserved4 number @ Value is set to: 24
+---@field LanguageReserved5 number @ Value is set to: 25
+
 ---@type ClubFinderSettingFlags 
 Enum.ClubFinderSettingFlags = {}
 Enum.ClubFinderSettingFlags["None"] = 0
@@ -322,14 +328,15 @@ Enum.ClubFinderSettingFlags["LanguageReserved4"] = 24
 Enum.ClubFinderSettingFlags["LanguageReserved5"] = 25
 
 ---@class PlayerClubRequestStatus : Enum
----@field None number @ Default value is 0
----@field Pending number @ Default value is 1
----@field AutoApproved number @ Default value is 2
----@field Declined number @ Default value is 3
----@field Approved number @ Default value is 4
----@field Joined number @ Default value is 5
----@field JoinedAnother number @ Default value is 6
----@field Canceled number @ Default value is 7
+---@field None number @ Value is set to: 0
+---@field Pending number @ Value is set to: 1
+---@field AutoApproved number @ Value is set to: 2
+---@field Declined number @ Value is set to: 3
+---@field Approved number @ Value is set to: 4
+---@field Joined number @ Value is set to: 5
+---@field JoinedAnother number @ Value is set to: 6
+---@field Canceled number @ Value is set to: 7
+
 ---@type PlayerClubRequestStatus 
 Enum.PlayerClubRequestStatus = {}
 Enum.PlayerClubRequestStatus["None"] = 0

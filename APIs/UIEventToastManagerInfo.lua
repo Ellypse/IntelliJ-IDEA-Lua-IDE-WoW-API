@@ -11,15 +11,16 @@ function C_EventToastManager.GetNextToastToDisplay() end
 function C_EventToastManager.RemoveCurrentToast() end
 
 ---@class EventToastDisplayType : Enum
----@field NormalSingleLine number @ Default value is 0
----@field NormalBlockText number @ Default value is 1
----@field NormalTitleAndSubTitle number @ Default value is 2
----@field NormalTextWithIcon number @ Default value is 3
----@field LargeTextWithIcon number @ Default value is 4
----@field NormalTextWithIconAndRarity number @ Default value is 5
----@field Scenario number @ Default value is 6
----@field ChallengeMode number @ Default value is 7
----@field ScenarioClickExpand number @ Default value is 8
+---@field NormalSingleLine number @ Value is set to: 0
+---@field NormalBlockText number @ Value is set to: 1
+---@field NormalTitleAndSubTitle number @ Value is set to: 2
+---@field NormalTextWithIcon number @ Value is set to: 3
+---@field LargeTextWithIcon number @ Value is set to: 4
+---@field NormalTextWithIconAndRarity number @ Value is set to: 5
+---@field Scenario number @ Value is set to: 6
+---@field ChallengeMode number @ Value is set to: 7
+---@field ScenarioClickExpand number @ Value is set to: 8
+
 ---@type EventToastDisplayType 
 Enum.EventToastDisplayType = {}
 Enum.EventToastDisplayType["NormalSingleLine"] = 0
@@ -33,29 +34,30 @@ Enum.EventToastDisplayType["ChallengeMode"] = 7
 Enum.EventToastDisplayType["ScenarioClickExpand"] = 8
 
 ---@class EventToastEventType : Enum
----@field LevelUp number @ Default value is 0
----@field LevelUpSpell number @ Default value is 1
----@field LevelUpDungeon number @ Default value is 2
----@field LevelUpRaid number @ Default value is 3
----@field LevelUpPvP number @ Default value is 4
----@field PetBattleNewAbility number @ Default value is 5
----@field PetBattleFinalRound number @ Default value is 6
----@field PetBattleCapture number @ Default value is 7
----@field BattlePetLevelChanged number @ Default value is 8
----@field BattlePetLevelUpAbility number @ Default value is 9
----@field QuestBossEmote number @ Default value is 10
----@field MythicPlusWeeklyRecord number @ Default value is 11
----@field QuestTurnedIn number @ Default value is 12
----@field WorldStateChange number @ Default value is 13
----@field Scenario number @ Default value is 14
----@field LevelUpOther number @ Default value is 15
----@field PlayerAuraAdded number @ Default value is 16
----@field PlayerAuraRemoved number @ Default value is 17
----@field SpellScript number @ Default value is 18
----@field CriteriaUpdated number @ Default value is 19
----@field PvPTierUpdate number @ Default value is 20
----@field SpellLearned number @ Default value is 21
----@field TreasureItem number @ Default value is 22
+---@field LevelUp number @ Value is set to: 0
+---@field LevelUpSpell number @ Value is set to: 1
+---@field LevelUpDungeon number @ Value is set to: 2
+---@field LevelUpRaid number @ Value is set to: 3
+---@field LevelUpPvP number @ Value is set to: 4
+---@field PetBattleNewAbility number @ Value is set to: 5
+---@field PetBattleFinalRound number @ Value is set to: 6
+---@field PetBattleCapture number @ Value is set to: 7
+---@field BattlePetLevelChanged number @ Value is set to: 8
+---@field BattlePetLevelUpAbility number @ Value is set to: 9
+---@field QuestBossEmote number @ Value is set to: 10
+---@field MythicPlusWeeklyRecord number @ Value is set to: 11
+---@field QuestTurnedIn number @ Value is set to: 12
+---@field WorldStateChange number @ Value is set to: 13
+---@field Scenario number @ Value is set to: 14
+---@field LevelUpOther number @ Value is set to: 15
+---@field PlayerAuraAdded number @ Value is set to: 16
+---@field PlayerAuraRemoved number @ Value is set to: 17
+---@field SpellScript number @ Value is set to: 18
+---@field CriteriaUpdated number @ Value is set to: 19
+---@field PvPTierUpdate number @ Value is set to: 20
+---@field SpellLearned number @ Value is set to: 21
+---@field TreasureItem number @ Value is set to: 22
+
 ---@type EventToastEventType 
 Enum.EventToastEventType = {}
 Enum.EventToastEventType["LevelUp"] = 0

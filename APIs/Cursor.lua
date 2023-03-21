@@ -5,27 +5,28 @@ C_Cursor = {}
 function C_Cursor.GetCursorItem() end
 
 ---@class UICursorType : Enum
----@field Default number @ Default value is 0
----@field Item number @ Default value is 1
----@field Money number @ Default value is 2
----@field Spell number @ Default value is 3
----@field PetAction number @ Default value is 4
----@field Merchant number @ Default value is 5
----@field ActionBar number @ Default value is 6
----@field Macro number @ Default value is 7
----@field AmmoObsolete number @ Default value is 9
----@field Pet number @ Default value is 10
----@field GuildBank number @ Default value is 11
----@field GuildBankMoney number @ Default value is 12
----@field EquipmentSet number @ Default value is 13
----@field Currency number @ Default value is 14
----@field Flyout number @ Default value is 15
----@field VoidItem number @ Default value is 16
----@field BattlePet number @ Default value is 17
----@field Mount number @ Default value is 18
----@field Toy number @ Default value is 19
----@field ConduitCollectionItem number @ Default value is 20
----@field PerksProgramVendorItem number @ Default value is 21
+---@field Default number @ Value is set to: 0
+---@field Item number @ Value is set to: 1
+---@field Money number @ Value is set to: 2
+---@field Spell number @ Value is set to: 3
+---@field PetAction number @ Value is set to: 4
+---@field Merchant number @ Value is set to: 5
+---@field ActionBar number @ Value is set to: 6
+---@field Macro number @ Value is set to: 7
+---@field AmmoObsolete number @ Value is set to: 9
+---@field Pet number @ Value is set to: 10
+---@field GuildBank number @ Value is set to: 11
+---@field GuildBankMoney number @ Value is set to: 12
+---@field EquipmentSet number @ Value is set to: 13
+---@field Currency number @ Value is set to: 14
+---@field Flyout number @ Value is set to: 15
+---@field VoidItem number @ Value is set to: 16
+---@field BattlePet number @ Value is set to: 17
+---@field Mount number @ Value is set to: 18
+---@field Toy number @ Value is set to: 19
+---@field ConduitCollectionItem number @ Value is set to: 20
+---@field PerksProgramVendorItem number @ Value is set to: 21
+
 ---@type UICursorType 
 Enum.UICursorType = {}
 Enum.UICursorType["Default"] = 0
@@ -51,10 +52,11 @@ Enum.UICursorType["ConduitCollectionItem"] = 20
 Enum.UICursorType["PerksProgramVendorItem"] = 21
 
 ---@class WorldCursorAnchorType : Enum
----@field None number @ Default value is 0
----@field Default number @ Default value is 1
----@field Cursor number @ Default value is 2
----@field Nameplate number @ Default value is 3
+---@field None number @ Value is set to: 0
+---@field Default number @ Value is set to: 1
+---@field Cursor number @ Value is set to: 2
+---@field Nameplate number @ Value is set to: 3
+
 ---@type WorldCursorAnchorType 
 Enum.WorldCursorAnchorType = {}
 Enum.WorldCursorAnchorType["None"] = 0

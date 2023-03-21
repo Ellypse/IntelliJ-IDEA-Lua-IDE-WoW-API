@@ -10,8 +10,9 @@ function C_SplashScreen.CanViewSplashScreen() end
 function C_SplashScreen.RequestLatestSplashScreen(fromGameMenu) end
 
 ---@class SplashScreenType : Enum
----@field WhatsNew number @ Default value is 0
----@field SeasonRollOver number @ Default value is 1
+---@field WhatsNew number @ Value is set to: 0
+---@field SeasonRollOver number @ Value is set to: 1
+
 ---@type SplashScreenType 
 Enum.SplashScreenType = {}
 Enum.SplashScreenType["WhatsNew"] = 0

@@ -5,12 +5,13 @@ C_ScriptedAnimations = {}
 function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 
 ---@class ScriptedAnimationBehavior : Enum
----@field None number @ Default value is 0
----@field TargetShake number @ Default value is 1
----@field TargetKnockBack number @ Default value is 2
----@field SourceRecoil number @ Default value is 3
----@field SourceCollideWithTarget number @ Default value is 4
----@field UIParentShake number @ Default value is 5
+---@field None number @ Value is set to: 0
+---@field TargetShake number @ Value is set to: 1
+---@field TargetKnockBack number @ Value is set to: 2
+---@field SourceRecoil number @ Value is set to: 3
+---@field SourceCollideWithTarget number @ Value is set to: 4
+---@field UIParentShake number @ Value is set to: 5
+
 ---@type ScriptedAnimationBehavior 
 Enum.ScriptedAnimationBehavior = {}
 Enum.ScriptedAnimationBehavior["None"] = 0
@@ -21,19 +22,21 @@ Enum.ScriptedAnimationBehavior["SourceCollideWithTarget"] = 4
 Enum.ScriptedAnimationBehavior["UIParentShake"] = 5
 
 ---@class ScriptedAnimationFlags : Enum
----@field UseTargetAsSource number @ Default value is 1
+---@field UseTargetAsSource number @ Value is set to: 1
+
 ---@type ScriptedAnimationFlags 
 Enum.ScriptedAnimationFlags = {}
 Enum.ScriptedAnimationFlags["UseTargetAsSource"] = 1
 
 ---@class ScriptedAnimationTrajectory : Enum
----@field AtSource number @ Default value is 0
----@field AtTarget number @ Default value is 1
----@field Straight number @ Default value is 2
----@field CurveLeft number @ Default value is 3
----@field CurveRight number @ Default value is 4
----@field CurveRandom number @ Default value is 5
----@field HalfwayBetween number @ Default value is 6
+---@field AtSource number @ Value is set to: 0
+---@field AtTarget number @ Value is set to: 1
+---@field Straight number @ Value is set to: 2
+---@field CurveLeft number @ Value is set to: 3
+---@field CurveRight number @ Value is set to: 4
+---@field CurveRandom number @ Value is set to: 5
+---@field HalfwayBetween number @ Value is set to: 6
+
 ---@type ScriptedAnimationTrajectory 
 Enum.ScriptedAnimationTrajectory = {}
 Enum.ScriptedAnimationTrajectory["AtSource"] = 0

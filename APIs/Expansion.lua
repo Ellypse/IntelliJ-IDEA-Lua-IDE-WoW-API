@@ -63,9 +63,10 @@ function IsVeteranTrialAccount() end
 function SendSubscriptionInterstitialResponse(response) end
 
 ---@class SubscriptionInterstitialResponseType : Enum
----@field Clicked number @ Default value is 0
----@field Closed number @ Default value is 1
----@field WebRedirect number @ Default value is 2
+---@field Clicked number @ Value is set to: 0
+---@field Closed number @ Value is set to: 1
+---@field WebRedirect number @ Value is set to: 2
+
 ---@type SubscriptionInterstitialResponseType 
 Enum.SubscriptionInterstitialResponseType = {}
 Enum.SubscriptionInterstitialResponseType["Clicked"] = 0
@@ -73,9 +74,10 @@ Enum.SubscriptionInterstitialResponseType["Closed"] = 1
 Enum.SubscriptionInterstitialResponseType["WebRedirect"] = 2
 
 ---@class SubscriptionInterstitialType : Enum
----@field Standard number @ Default value is 0
----@field LeftNpeArea number @ Default value is 1
----@field MaxLevel number @ Default value is 2
+---@field Standard number @ Value is set to: 0
+---@field LeftNpeArea number @ Value is set to: 1
+---@field MaxLevel number @ Value is set to: 2
+
 ---@type SubscriptionInterstitialType 
 Enum.SubscriptionInterstitialType = {}
 Enum.SubscriptionInterstitialType["Standard"] = 0

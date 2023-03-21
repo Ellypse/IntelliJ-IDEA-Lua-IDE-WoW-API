@@ -10,10 +10,11 @@ function C_IncomingSummon.HasIncomingSummon(unit) end
 function C_IncomingSummon.IncomingSummonStatus(unit) end
 
 ---@class SummonStatus : Enum
----@field None number @ Default value is 0
----@field Pending number @ Default value is 1
----@field Accepted number @ Default value is 2
----@field Declined number @ Default value is 3
+---@field None number @ Value is set to: 0
+---@field Pending number @ Value is set to: 1
+---@field Accepted number @ Value is set to: 2
+---@field Declined number @ Value is set to: 3
+
 ---@type SummonStatus 
 Enum.SummonStatus = {}
 Enum.SummonStatus["None"] = 0

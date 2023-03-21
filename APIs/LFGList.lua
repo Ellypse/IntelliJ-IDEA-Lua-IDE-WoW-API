@@ -123,10 +123,11 @@ function C_LFGList.ValidateRequiredDungeonScore(dungeonScore) end
 function C_LFGList.ValidateRequiredPvpRatingForActivity(activityID, rating) end
 
 ---@class LFGEntryPlaystyle : Enum
----@field None number @ Default value is 0
----@field Standard number @ Default value is 1
----@field Casual number @ Default value is 2
----@field Hardcore number @ Default value is 3
+---@field None number @ Value is set to: 0
+---@field Standard number @ Value is set to: 1
+---@field Casual number @ Value is set to: 2
+---@field Hardcore number @ Value is set to: 3
+
 ---@type LFGEntryPlaystyle 
 Enum.LFGEntryPlaystyle = {}
 Enum.LFGEntryPlaystyle["None"] = 0
@@ -135,12 +136,13 @@ Enum.LFGEntryPlaystyle["Casual"] = 2
 Enum.LFGEntryPlaystyle["Hardcore"] = 3
 
 ---@class LFGListDisplayType : Enum
----@field RoleCount number @ Default value is 0
----@field RoleEnumerate number @ Default value is 1
----@field ClassEnumerate number @ Default value is 2
----@field HideAll number @ Default value is 3
----@field PlayerCount number @ Default value is 4
----@field Comment number @ Default value is 5
+---@field RoleCount number @ Value is set to: 0
+---@field RoleEnumerate number @ Value is set to: 1
+---@field ClassEnumerate number @ Value is set to: 2
+---@field HideAll number @ Value is set to: 3
+---@field PlayerCount number @ Value is set to: 4
+---@field Comment number @ Value is set to: 5
+
 ---@type LFGListDisplayType 
 Enum.LFGListDisplayType = {}
 Enum.LFGListDisplayType["RoleCount"] = 0

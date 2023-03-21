@@ -275,11 +275,12 @@ function C_PvP.SetWarModeDesired(warModeDesired) end
 function C_PvP.ToggleWarMode() end
 
 ---@class BrawlType : Enum
----@field None number @ Default value is 0
----@field Battleground number @ Default value is 1
----@field Arena number @ Default value is 2
----@field LFG number @ Default value is 3
----@field SoloShuffle number @ Default value is 4
+---@field None number @ Value is set to: 0
+---@field Battleground number @ Value is set to: 1
+---@field Arena number @ Value is set to: 2
+---@field LFG number @ Value is set to: 3
+---@field SoloShuffle number @ Value is set to: 4
+
 ---@type BrawlType 
 Enum.BrawlType = {}
 Enum.BrawlType["None"] = 0
@@ -289,9 +290,10 @@ Enum.BrawlType["LFG"] = 3
 Enum.BrawlType["SoloShuffle"] = 4
 
 ---@class PvPMatchState : Enum
----@field Inactive number @ Default value is 0
----@field Active number @ Default value is 1
----@field Complete number @ Default value is 2
+---@field Inactive number @ Value is set to: 0
+---@field Active number @ Value is set to: 1
+---@field Complete number @ Value is set to: 2
+
 ---@type PvPMatchState 
 Enum.PvPMatchState = {}
 Enum.PvPMatchState["Inactive"] = 0
