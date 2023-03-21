@@ -334,8 +334,10 @@ function C_AuctionHouse.StartCommoditiesPurchase(itemID, quantity) end
 ---@field protected Uncategorized AuctionHouseFilterCategory 
 ---@field protected Equipment AuctionHouseFilterCategory 
 ---@field protected Rarity AuctionHouseFilterCategory 
-Enum.AuctionHouseFilterCategory = {}
+AuctionHouseFilterCategory = {}
 
+---@type AuctionHouseFilterCategory 
+Enum.AuctionHouseFilterCategory = {}
 Enum.AuctionHouseFilterCategory.Uncategorized = 0
 Enum.AuctionHouseFilterCategory.Equipment = 1
 Enum.AuctionHouseFilterCategory.Rarity = 2
@@ -343,8 +345,10 @@ Enum.AuctionHouseFilterCategory.Rarity = 2
 ---@class AuctionStatus : Enum
 ---@field protected Active AuctionStatus 
 ---@field protected Sold AuctionStatus 
-Enum.AuctionStatus = {}
+AuctionStatus = {}
 
+---@type AuctionStatus 
+Enum.AuctionStatus = {}
 Enum.AuctionStatus.Active = 0
 Enum.AuctionStatus.Sold = 1
 
@@ -352,8 +356,10 @@ Enum.AuctionStatus.Sold = 1
 ---@field protected Unknown ItemCommodityStatus 
 ---@field protected Item ItemCommodityStatus 
 ---@field protected Commodity ItemCommodityStatus 
-Enum.ItemCommodityStatus = {}
+ItemCommodityStatus = {}
 
+---@type ItemCommodityStatus 
+Enum.ItemCommodityStatus = {}
 Enum.ItemCommodityStatus.Unknown = 0
 Enum.ItemCommodityStatus.Item = 1
 Enum.ItemCommodityStatus.Commodity = 2

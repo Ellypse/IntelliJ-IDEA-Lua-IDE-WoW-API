@@ -16,8 +16,10 @@
 ---@field protected BankBag_5 BagIndex 
 ---@field protected BankBag_6 BagIndex 
 ---@field protected BankBag_7 BagIndex 
-Enum.BagIndex = {}
+BagIndex = {}
 
+---@type BagIndex 
+Enum.BagIndex = {}
 Enum.BagIndex.Bankbag = -4
 Enum.BagIndex.Reagentbank = -3
 Enum.BagIndex.Keyring = -2

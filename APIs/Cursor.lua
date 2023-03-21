@@ -26,8 +26,10 @@ function C_Cursor.GetCursorItem() end
 ---@field protected Toy UICursorType 
 ---@field protected ConduitCollectionItem UICursorType 
 ---@field protected PerksProgramVendorItem UICursorType 
-Enum.UICursorType = {}
+UICursorType = {}
 
+---@type UICursorType 
+Enum.UICursorType = {}
 Enum.UICursorType.Default = 0
 Enum.UICursorType.Item = 1
 Enum.UICursorType.Money = 2
@@ -55,8 +57,10 @@ Enum.UICursorType.PerksProgramVendorItem = 21
 ---@field protected Default WorldCursorAnchorType 
 ---@field protected Cursor WorldCursorAnchorType 
 ---@field protected Nameplate WorldCursorAnchorType 
-Enum.WorldCursorAnchorType = {}
+WorldCursorAnchorType = {}
 
+---@type WorldCursorAnchorType 
+Enum.WorldCursorAnchorType = {}
 Enum.WorldCursorAnchorType.None = 0
 Enum.WorldCursorAnchorType.Default = 1
 Enum.WorldCursorAnchorType.Cursor = 2

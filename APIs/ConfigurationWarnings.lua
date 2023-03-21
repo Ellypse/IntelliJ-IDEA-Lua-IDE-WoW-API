@@ -25,8 +25,10 @@ function C_ConfigurationWarnings.SetConfigurationWarningSeen(configurationWarnin
 ---@field protected DeviceBlocklisted ConfigurationWarning 
 ---@field protected GraphicsApiWillBeOutdated ConfigurationWarning 
 ---@field protected OsBitsWillBeOutdated ConfigurationWarning 
-Enum.ConfigurationWarning = {}
+ConfigurationWarning = {}
 
+---@type ConfigurationWarning 
+Enum.ConfigurationWarning = {}
 Enum.ConfigurationWarning.ShaderModelWillBeOutdated = 0
 Enum.ConfigurationWarning.ShaderModelIsOutdated = 1
 Enum.ConfigurationWarning.ConsoleDeviceSseOutdated = 2

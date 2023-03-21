@@ -176,8 +176,10 @@ function UnitWidgetSet(unit) end
 ---@field protected Sharding PhaseReason 
 ---@field protected WarMode PhaseReason 
 ---@field protected ChromieTime PhaseReason 
-Enum.PhaseReason = {}
+PhaseReason = {}
 
+---@type PhaseReason 
+Enum.PhaseReason = {}
 Enum.PhaseReason.Phasing = 0
 Enum.PhaseReason.Sharding = 1
 Enum.PhaseReason.WarMode = 2
@@ -210,8 +212,10 @@ Enum.PhaseReason.ChromieTime = 3
 ---@field protected RuneFrost PowerType 
 ---@field protected RuneUnholy PowerType 
 ---@field protected NumPowerTypes PowerType 
-Enum.PowerType = {}
+PowerType = {}
 
+---@type PowerType 
+Enum.PowerType = {}
 Enum.PowerType.HealthCost = -2
 Enum.PowerType.None = -1
 Enum.PowerType.Mana = 0
@@ -251,8 +255,10 @@ Enum.PowerType.NumPowerTypes = 23
 ---@field protected OrbCarrierGreen PvPUnitClassification 
 ---@field protected OrbCarrierOrange PvPUnitClassification 
 ---@field protected OrbCarrierPurple PvPUnitClassification 
-Enum.PvPUnitClassification = {}
+PvPUnitClassification = {}
 
+---@type PvPUnitClassification 
+Enum.PvPUnitClassification = {}
 Enum.PvPUnitClassification.FlagCarrierHorde = 0
 Enum.PvPUnitClassification.FlagCarrierAlliance = 1
 Enum.PvPUnitClassification.FlagCarrierNeutral = 2

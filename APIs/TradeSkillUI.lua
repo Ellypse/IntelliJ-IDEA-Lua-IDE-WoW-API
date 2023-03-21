@@ -319,7 +319,9 @@ function C_TradeSkillUI.SetSourceTypeFilter(sourceTypeFilter) end
 
 ---@class CraftingReagentItemFlag : Enum
 ---@field protected TooltipShowsAsStatModifications CraftingReagentItemFlag 
-Enum.CraftingReagentItemFlag = {}
+CraftingReagentItemFlag = {}
 
+---@type CraftingReagentItemFlag 
+Enum.CraftingReagentItemFlag = {}
 Enum.CraftingReagentItemFlag.TooltipShowsAsStatModifications = 0
 
