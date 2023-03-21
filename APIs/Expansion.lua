@@ -80,7 +80,7 @@ Enum.SubscriptionInterstitialType.LeftNpeArea = 1
 ---@field MaxLevel SubscriptionInterstitialType 
 Enum.SubscriptionInterstitialType.MaxLevel = 2
 
----@type ExpansionDisplayInfo
+---@class ExpansionDisplayInfo
 ---@field logo fileID 
 ---@field banner textureAtlas 
 ---@field features table 
@@ -88,7 +88,7 @@ Enum.SubscriptionInterstitialType.MaxLevel = 2
 ---@field lowResBackgroundID fileID 
 ExpansionDisplayInfo = {}
 
----@type ExpansionDisplayInfoFeature
+---@class ExpansionDisplayInfoFeature
 ---@field icon fileID 
 ---@field text cstring 
 ExpansionDisplayInfoFeature = {}

@@ -80,7 +80,7 @@ Enum.EventToastEventType.SpellLearned = 21
 ---@field TreasureItem EventToastEventType 
 Enum.EventToastEventType.TreasureItem = 22
 
----@type EventToastInfo
+---@class EventToastInfo
 ---@field eventToastID number 
 ---@field title string 
 ---@field subtitle string 

@@ -82,14 +82,14 @@ function C_CurrencyInfo.SetCurrencyBackpack(index, backpack) end
 ---@param unused boolean 
 function C_CurrencyInfo.SetCurrencyUnused(index, unused) end
 
----@type BackpackCurrencyInfo
+---@class BackpackCurrencyInfo
 ---@field name string 
 ---@field quantity number 
 ---@field iconFileID fileID 
 ---@field currencyTypesID number 
 BackpackCurrencyInfo = {}
 
----@type CurrencyDisplayInfo
+---@class CurrencyDisplayInfo
 ---@field name string 
 ---@field description string 
 ---@field icon number 
@@ -98,7 +98,7 @@ BackpackCurrencyInfo = {}
 ---@field actualAmount number 
 CurrencyDisplayInfo = {}
 
----@type CurrencyInfo
+---@class CurrencyInfo
 ---@field name cstring 
 ---@field description cstring 
 ---@field isHeader bool 

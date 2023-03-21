@@ -77,39 +77,39 @@ Enum.RafRewardType.Illusion = 6
 ---@field Invalid RafRewardType 
 Enum.RafRewardType.Invalid = 7
 
----@type RafAppearanceInfo
+---@class RafAppearanceInfo
 ---@field appearanceID number 
 RafAppearanceInfo = {}
 
----@type RafAppearanceSetInfo
+---@class RafAppearanceSetInfo
 ---@field setID number 
 ---@field setName string 
 ---@field appearanceIDs table 
 RafAppearanceSetInfo = {}
 
----@type RafIllusionInfo
+---@class RafIllusionInfo
 ---@field spellItemEnchantmentID number 
 RafIllusionInfo = {}
 
----@type RafInfo
+---@class RafInfo
 ---@field versions table 
 ---@field recruitmentInfo RafRecruitmentinfo|nil 
 ---@field recruits table 
 ---@field claimInProgress bool 
 RafInfo = {}
 
----@type RafMonthCount
+---@class RafMonthCount
 ---@field lifetimeMonths number 
 ---@field spentMonths number 
 ---@field availableMonths number 
 RafMonthCount = {}
 
----@type RafMountInfo
+---@class RafMountInfo
 ---@field spellID number 
 ---@field mountID number 
 RafMountInfo = {}
 
----@type RafPetInfo
+---@class RafPetInfo
 ---@field creatureID number 
 ---@field speciesID number 
 ---@field displayID number 
@@ -117,7 +117,7 @@ RafMountInfo = {}
 ---@field description string 
 RafPetInfo = {}
 
----@type RafRecruit
+---@class RafRecruit
 ---@field bnetAccountID number 
 ---@field wowAccountGUID WOWGUID 
 ---@field battleTag string 
@@ -128,13 +128,13 @@ RafPetInfo = {}
 ---@field activities table 
 RafRecruit = {}
 
----@type RafRecruitActivity
+---@class RafRecruitActivity
 ---@field activityID number 
 ---@field rewardQuestID number 
 ---@field state RafRecruitActivityState 
 RafRecruitActivity = {}
 
----@type RafRecruitmentinfo
+---@class RafRecruitmentinfo
 ---@field recruitmentCode string 
 ---@field recruitmentURL string 
 ---@field expireTime number 
@@ -145,7 +145,7 @@ RafRecruitActivity = {}
 ---@field sourceFaction string 
 RafRecruitmentinfo = {}
 
----@type RafReward
+---@class RafReward
 ---@field rewardID number 
 ---@field rafVersion RecruitAFriendRewardsVersion 
 ---@field itemID number 
@@ -167,18 +167,18 @@ RafRecruitmentinfo = {}
 ---@field iconID fileID 
 RafReward = {}
 
----@type RafSystemInfo
+---@class RafSystemInfo
 ---@field maxRecruits number 
 ---@field maxRecruitMonths number 
 ---@field maxRecruitmentUses number 
 ---@field daysInCycle number 
 RafSystemInfo = {}
 
----@type RafTitleInfo
+---@class RafTitleInfo
 ---@field titleMaskID number 
 RafTitleInfo = {}
 
----@type RafVersionInfo
+---@class RafVersionInfo
 ---@field rafVersion RecruitAFriendRewardsVersion 
 ---@field monthCount RafMonthCount 
 ---@field rewards table 

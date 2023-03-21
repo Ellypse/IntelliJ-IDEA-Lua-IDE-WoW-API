@@ -70,7 +70,7 @@ function C_PlayerInfo.IsTradingPostAvailable() end
 ---@return boolean isAvailable
 function C_PlayerInfo.IsTravelersLogAvailable() end
 
----@type MythicPlusRatingMapSummary
+---@class MythicPlusRatingMapSummary
 ---@field challengeModeID number 
 ---@field mapScore number 
 ---@field bestRunLevel number 
@@ -78,7 +78,7 @@ function C_PlayerInfo.IsTravelersLogAvailable() end
 ---@field finishedSuccess bool 
 MythicPlusRatingMapSummary = {}
 
----@type MythicPlusRatingSummary
+---@class MythicPlusRatingSummary
 ---@field currentSeasonScore number 
 ---@field runs table 
 MythicPlusRatingSummary = {}

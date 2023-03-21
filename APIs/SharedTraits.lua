@@ -170,7 +170,7 @@ function C_Traits.StageConfig(configID) end
 
 function C_Traits.TalentTestUnlearnSpells() end
 
----@type TraitCondInfo
+---@class TraitCondInfo
 ---@field condID number 
 ---@field ranksGranted number|nil 
 ---@field isAlwaysMet bool 
@@ -185,7 +185,7 @@ function C_Traits.TalentTestUnlearnSpells() end
 ---@field tooltipFormat string|nil 
 TraitCondInfo = {}
 
----@type TraitConfigInfo
+---@class TraitConfigInfo
 ---@field ID number 
 ---@field type TraitConfigType 
 ---@field name string 
@@ -193,12 +193,12 @@ TraitCondInfo = {}
 ---@field usesSharedActionBars bool 
 TraitConfigInfo = {}
 
----@type TraitCurrencyCost
+---@class TraitCurrencyCost
 ---@field ID number 
 ---@field amount number 
 TraitCurrencyCost = {}
 
----@type TraitDefinitionInfo
+---@class TraitDefinitionInfo
 ---@field spellID number|nil 
 ---@field overrideName string|nil 
 ---@field overrideSubtext string|nil 
@@ -208,7 +208,7 @@ TraitCurrencyCost = {}
 ---@field subType TraitDefinitionSubType|nil 
 TraitDefinitionInfo = {}
 
----@type TraitEntryInfo
+---@class TraitEntryInfo
 ---@field definitionID number 
 ---@field type TraitNodeEntryType 
 ---@field maxRanks number 
@@ -216,17 +216,17 @@ TraitDefinitionInfo = {}
 ---@field conditionIDs table 
 TraitEntryInfo = {}
 
----@type TraitEntryRankInfo
+---@class TraitEntryRankInfo
 ---@field entryID number 
 ---@field rank number 
 TraitEntryRankInfo = {}
 
----@type TraitGateInfo
+---@class TraitGateInfo
 ---@field topLeftNodeID number 
 ---@field conditionID number 
 TraitGateInfo = {}
 
----@type TraitNodeInfo
+---@class TraitNodeInfo
 ---@field ID number 
 ---@field posX number 
 ---@field posY number 
@@ -252,7 +252,7 @@ TraitGateInfo = {}
 ---@field cascadeRepurchaseEntryID number|nil 
 TraitNodeInfo = {}
 
----@type TraitNodeInfoPartial
+---@class TraitNodeInfoPartial
 ---@field canPurchaseRank bool|nil 
 ---@field canRefundRank bool|nil 
 ---@field isAvailable bool|nil 
@@ -264,20 +264,20 @@ TraitNodeInfo = {}
 ---@field isCascadeRepurchasable bool|nil 
 TraitNodeInfoPartial = {}
 
----@type TraitOutEdgeInfo
+---@class TraitOutEdgeInfo
 ---@field targetNode number 
 ---@field type number 
 ---@field visualStyle number 
 ---@field isActive bool 
 TraitOutEdgeInfo = {}
 
----@type TraitTreeInfo
+---@class TraitTreeInfo
 ---@field ID number 
 ---@field gates table 
 ---@field hideSingleRankNumbers bool 
 TraitTreeInfo = {}
 
----@type TreeCurrencyInfo
+---@class TreeCurrencyInfo
 ---@field traitCurrencyID number 
 ---@field quantity number 
 ---@field maxQuantity number|nil 

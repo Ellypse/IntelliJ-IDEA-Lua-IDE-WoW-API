@@ -84,7 +84,7 @@ Enum.ItemSlotFilterType.Other = 14
 ---@field NoFilter ItemSlotFilterType 
 Enum.ItemSlotFilterType.NoFilter = 15
 
----@type DungeonEntranceMapInfo
+---@class DungeonEntranceMapInfo
 ---@field areaPoiID number 
 ---@field position vector2 
 ---@field name cstring 
@@ -93,7 +93,7 @@ Enum.ItemSlotFilterType.NoFilter = 15
 ---@field journalInstanceID number 
 DungeonEntranceMapInfo = {}
 
----@type EncounterJournalItemInfo
+---@class EncounterJournalItemInfo
 ---@field itemID number 
 ---@field encounterID number|nil 
 ---@field name string|nil 
@@ -110,13 +110,13 @@ DungeonEntranceMapInfo = {}
 ---@field displayAsExtremelyRare bool|nil 
 EncounterJournalItemInfo = {}
 
----@type EncounterJournalMapEncounterInfo
+---@class EncounterJournalMapEncounterInfo
 ---@field encounterID number 
 ---@field mapX number 
 ---@field mapY number 
 EncounterJournalMapEncounterInfo = {}
 
----@type EncounterJournalSectionInfo
+---@class EncounterJournalSectionInfo
 ---@field spellID number 
 ---@field title cstring 
 ---@field description string|nil 

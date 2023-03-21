@@ -27,7 +27,7 @@ Enum.SelfResurrectOptionType.Spell = 0
 ---@field Item SelfResurrectOptionType 
 Enum.SelfResurrectOptionType.Item = 1
 
----@type GraveyardMapInfo
+---@class GraveyardMapInfo
 ---@field areaPoiID number 
 ---@field position vector2 
 ---@field name cstring 
@@ -36,7 +36,7 @@ Enum.SelfResurrectOptionType.Item = 1
 ---@field isGraveyardSelectable bool 
 GraveyardMapInfo = {}
 
----@type SelfResurrectOption
+---@class SelfResurrectOption
 ---@field name string 
 ---@field optionType SelfResurrectOptionType 
 ---@field id number 

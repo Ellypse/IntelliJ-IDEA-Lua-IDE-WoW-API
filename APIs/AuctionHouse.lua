@@ -355,7 +355,7 @@ Enum.ItemCommodityStatus.Item = 1
 ---@field Commodity ItemCommodityStatus 
 Enum.ItemCommodityStatus.Commodity = 2
 
----@type AuctionHouseBrowseQuery
+---@class AuctionHouseBrowseQuery
 ---@field searchString string 
 ---@field sorts table 
 ---@field minLevel number|nil 
@@ -364,23 +364,23 @@ Enum.ItemCommodityStatus.Commodity = 2
 ---@field itemClassFilters table|nil 
 AuctionHouseBrowseQuery = {}
 
----@type AuctionHouseFilterGroup
+---@class AuctionHouseFilterGroup
 ---@field category AuctionHouseFilterCategory 
 ---@field filters table 
 AuctionHouseFilterGroup = {}
 
----@type AuctionHouseItemClassFilter
+---@class AuctionHouseItemClassFilter
 ---@field classID number 
 ---@field subClassID number|nil 
 ---@field inventoryType InventoryType|nil 
 AuctionHouseItemClassFilter = {}
 
----@type AuctionHouseSortType
+---@class AuctionHouseSortType
 ---@field sortOrder AuctionHouseSortOrder 
 ---@field reverseSort bool 
 AuctionHouseSortType = {}
 
----@type AuctionInfo
+---@class AuctionInfo
 ---@field itemKey ItemKey 
 ---@field itemLink string|nil 
 ---@field minBid WOWMONEY|nil 
@@ -389,7 +389,7 @@ AuctionHouseSortType = {}
 ---@field bidder WOWGUID|nil 
 AuctionInfo = {}
 
----@type BidInfo
+---@class BidInfo
 ---@field auctionID number 
 ---@field itemKey ItemKey 
 ---@field itemLink string|nil 
@@ -400,7 +400,7 @@ AuctionInfo = {}
 ---@field bidder WOWGUID|nil 
 BidInfo = {}
 
----@type BrowseResultInfo
+---@class BrowseResultInfo
 ---@field itemKey ItemKey 
 ---@field appearanceLink string|nil 
 ---@field totalQuantity number 
@@ -408,7 +408,7 @@ BidInfo = {}
 ---@field containsOwnerItem bool 
 BrowseResultInfo = {}
 
----@type CommoditySearchResultInfo
+---@class CommoditySearchResultInfo
 ---@field itemID number 
 ---@field quantity number 
 ---@field unitPrice BigUInteger 
@@ -421,14 +421,14 @@ BrowseResultInfo = {}
 ---@field containsAccountItem bool 
 CommoditySearchResultInfo = {}
 
----@type ItemKey
+---@class ItemKey
 ---@field itemID number 
 ---@field itemLevel number 
 ---@field itemSuffix number 
 ---@field battlePetSpeciesID number 
 ItemKey = {}
 
----@type ItemKeyInfo
+---@class ItemKeyInfo
 ---@field itemID number 
 ---@field battlePetSpeciesID number 
 ---@field itemName string 
@@ -441,7 +441,7 @@ ItemKey = {}
 ---@field isEquipment bool 
 ItemKeyInfo = {}
 
----@type ItemSearchResultInfo
+---@class ItemSearchResultInfo
 ---@field itemKey ItemKey 
 ---@field owners table 
 ---@field totalNumberOfOwners number 
@@ -459,7 +459,7 @@ ItemKeyInfo = {}
 ---@field timeLeftSeconds number|nil 
 ItemSearchResultInfo = {}
 
----@type OwnedAuctionInfo
+---@class OwnedAuctionInfo
 ---@field auctionID number 
 ---@field itemKey ItemKey 
 ---@field itemLink string|nil 
@@ -472,7 +472,7 @@ ItemSearchResultInfo = {}
 ---@field bidder string|nil 
 OwnedAuctionInfo = {}
 
----@type ReplicateItemInfo
+---@class ReplicateItemInfo
 ---@field name string|nil 
 ---@field texture fileID|nil 
 ---@field count number 

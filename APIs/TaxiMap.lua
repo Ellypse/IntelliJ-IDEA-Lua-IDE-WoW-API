@@ -33,7 +33,7 @@ Enum.FlightPathState.Reachable = 1
 ---@field Unreachable FlightPathState 
 Enum.FlightPathState.Unreachable = 2
 
----@type MapTaxiNodeInfo
+---@class MapTaxiNodeInfo
 ---@field nodeID number 
 ---@field position vector2 
 ---@field name cstring 
@@ -42,7 +42,7 @@ Enum.FlightPathState.Unreachable = 2
 ---@field textureKit textureKit 
 MapTaxiNodeInfo = {}
 
----@type TaxiNodeInfo
+---@class TaxiNodeInfo
 ---@field nodeID number 
 ---@field position vector2 
 ---@field name cstring 

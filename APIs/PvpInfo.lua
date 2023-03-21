@@ -296,26 +296,26 @@ Enum.PvPMatchState.Active = 1
 ---@field Complete PvPMatchState 
 Enum.PvPMatchState.Complete = 2
 
----@type BattlefieldCurrencyReward
+---@class BattlefieldCurrencyReward
 ---@field id number 
 ---@field quantity number 
 BattlefieldCurrencyReward = {}
 
----@type BattlefieldItemReward
+---@class BattlefieldItemReward
 ---@field id number 
 ---@field name cstring 
 ---@field texture fileID 
 ---@field quantity number 
 BattlefieldItemReward = {}
 
----@type BattlefieldRewards
+---@class BattlefieldRewards
 ---@field honor number 
 ---@field experience number 
 ---@field itemRewards table|nil 
 ---@field currencyRewards table|nil 
 BattlefieldRewards = {}
 
----@type BattlefieldVehicleInfo
+---@class BattlefieldVehicleInfo
 ---@field x number 
 ---@field y number 
 ---@field name cstring 
@@ -329,7 +329,7 @@ BattlefieldRewards = {}
 ---@field shouldDrawBelowPlayerBlips bool 
 BattlefieldVehicleInfo = {}
 
----@type BattlemasterListInfo
+---@class BattlemasterListInfo
 ---@field name string 
 ---@field instanceType number 
 ---@field minPlayers number 
@@ -339,20 +339,20 @@ BattlefieldVehicleInfo = {}
 ---@field shortDescription string 
 BattlemasterListInfo = {}
 
----@type HonorRewardInfo
+---@class HonorRewardInfo
 ---@field honorLevelName string 
 ---@field badgeFileDataID fileID 
 ---@field achievementRewardedID number 
 HonorRewardInfo = {}
 
----@type LevelUpBattlegroundInfo
+---@class LevelUpBattlegroundInfo
 ---@field id number 
 ---@field icon fileID 
 ---@field name string 
 ---@field isEpic bool 
 LevelUpBattlegroundInfo = {}
 
----@type MatchPVPStatColumn
+---@class MatchPVPStatColumn
 ---@field pvpStatID number 
 ---@field columnHeaderID number 
 ---@field orderIndex number 
@@ -360,7 +360,7 @@ LevelUpBattlegroundInfo = {}
 ---@field tooltip string 
 MatchPVPStatColumn = {}
 
----@type PvpBrawlInfo
+---@class PvpBrawlInfo
 ---@field brawlID number 
 ---@field name string 
 ---@field shortDescription string 
@@ -375,7 +375,7 @@ MatchPVPStatColumn = {}
 ---@field includesAllArenas bool 
 PvpBrawlInfo = {}
 
----@type PVPPersonalRatedInfo
+---@class PVPPersonalRatedInfo
 ---@field personalRating number 
 ---@field bestSeasonRating number 
 ---@field bestWeeklyRating number 
@@ -393,12 +393,12 @@ PvpBrawlInfo = {}
 ---@field roundsWeeklyWon number 
 PVPPersonalRatedInfo = {}
 
----@type PVPPostMatchCurrencyReward
+---@class PVPPostMatchCurrencyReward
 ---@field currencyType number 
 ---@field quantityChanged number 
 PVPPostMatchCurrencyReward = {}
 
----@type PVPPostMatchItemReward
+---@class PVPPostMatchItemReward
 ---@field type string 
 ---@field link string 
 ---@field quantity number 
@@ -407,28 +407,28 @@ PVPPostMatchCurrencyReward = {}
 ---@field isUpgraded bool 
 PVPPostMatchItemReward = {}
 
----@type PvpReadyCheckInfo
+---@class PvpReadyCheckInfo
 ---@field roles table 
 ---@field numPlayersAccepted number 
 ---@field numPlayersDeclined number 
 ---@field totalNumPlayers number 
 PvpReadyCheckInfo = {}
 
----@type PvpRoleQueueInfo
+---@class PvpRoleQueueInfo
 ---@field role cstring 
 ---@field totalRole number 
 ---@field totalAccepted number 
 ---@field totalDeclined number 
 PvpRoleQueueInfo = {}
 
----@type PvpScalingData
+---@class PvpScalingData
 ---@field scalingDataID number 
 ---@field specializationID number 
 ---@field name cstring 
 ---@field value number 
 PvpScalingData = {}
 
----@type PVPScoreInfo
+---@class PVPScoreInfo
 ---@field name string 
 ---@field guid WOWGUID 
 ---@field killingBlows number 
@@ -451,7 +451,7 @@ PvpScalingData = {}
 ---@field stats table 
 PVPScoreInfo = {}
 
----@type PVPStatInfo
+---@class PVPStatInfo
 ---@field pvpStatID number 
 ---@field pvpStatValue number 
 ---@field orderIndex number 
@@ -460,7 +460,7 @@ PVPScoreInfo = {}
 ---@field iconName string 
 PVPStatInfo = {}
 
----@type PVPTeamInfo
+---@class PVPTeamInfo
 ---@field name string 
 ---@field size number 
 ---@field rating number 
@@ -468,7 +468,7 @@ PVPStatInfo = {}
 ---@field ratingMMR number 
 PVPTeamInfo = {}
 
----@type PvpTierInfo
+---@class PvpTierInfo
 ---@field name string 
 ---@field descendRating number 
 ---@field ascendRating number 
@@ -478,7 +478,7 @@ PVPTeamInfo = {}
 ---@field tierIconID fileID 
 PvpTierInfo = {}
 
----@type RandomBGInfo
+---@class RandomBGInfo
 ---@field canQueue bool 
 ---@field bgID number 
 ---@field hasRandomWinToday bool 
@@ -486,13 +486,13 @@ PvpTierInfo = {}
 ---@field maxLevel number 
 RandomBGInfo = {}
 
----@type RatedMatchDeserterPenalty
+---@class RatedMatchDeserterPenalty
 ---@field personalRatingChange number 
 ---@field queuePenaltySpellID number 
 ---@field queuePenaltyDuration number 
 RatedMatchDeserterPenalty = {}
 
----@type RatedSoloShuffleSpecStats
+---@class RatedSoloShuffleSpecStats
 ---@field weeklyMostPlayedSpecID number 
 ---@field weeklyMostPlayedSpecRounds number 
 ---@field seasonMostPlayedSpecID number 

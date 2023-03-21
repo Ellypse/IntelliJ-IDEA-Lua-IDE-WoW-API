@@ -11,7 +11,7 @@ function C_Covenants.GetCovenantData(covenantID) end
 ---@return number covenantID
 function C_Covenants.GetCovenantIDs() end
 
----@type CovenantData
+---@class CovenantData
 ---@field ID number 
 ---@field textureKit textureKit 
 ---@field celebrationSoundKit number 

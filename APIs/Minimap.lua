@@ -63,12 +63,12 @@ function C_Minimap.SetTracking(index, on) end
 ---@return boolean shouldUse
 function C_Minimap.ShouldUseHybridMinimap() end
 
----@type MinimapScriptTrackingFilter
+---@class MinimapScriptTrackingFilter
 ---@field spellID number|nil 
 ---@field filterID MinimapTrackingFilter|nil 
 MinimapScriptTrackingFilter = {}
 
----@type MinimapScriptTrackingInfo
+---@class MinimapScriptTrackingInfo
 ---@field name cstring 
 ---@field textureFileID fileID 
 ---@field active bool 

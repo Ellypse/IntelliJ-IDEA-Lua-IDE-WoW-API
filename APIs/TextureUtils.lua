@@ -40,7 +40,7 @@ Enum.TitleIconVersion.Medium = 1
 ---@field Large TitleIconVersion 
 Enum.TitleIconVersion.Large = 2
 
----@type AtlasInfo
+---@class AtlasInfo
 ---@field width number 
 ---@field height number 
 ---@field leftTexCoord number 

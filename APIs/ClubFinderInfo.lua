@@ -334,7 +334,7 @@ Enum.PlayerClubRequestStatus.JoinedAnother = 6
 ---@field Canceled PlayerClubRequestStatus 
 Enum.PlayerClubRequestStatus.Canceled = 7
 
----@type ClubFinderApplicantInfo
+---@class ClubFinderApplicantInfo
 ---@field clubFinderGUID WOWGUID 
 ---@field playerGUID WOWGUID 
 ---@field closed number 
@@ -350,7 +350,7 @@ Enum.PlayerClubRequestStatus.Canceled = 7
 ---@field faction number 
 ClubFinderApplicantInfo = {}
 
----@type ClubSettingsInfo
+---@class ClubSettingsInfo
 ---@field playStyleDungeon bool 
 ---@field playStyleRaids bool 
 ---@field playStylePvp bool 
@@ -371,7 +371,7 @@ ClubFinderApplicantInfo = {}
 ---@field crossFaction bool 
 ClubSettingsInfo = {}
 
----@type RecruitingClubInfo
+---@class RecruitingClubInfo
 ---@field clubFinderGUID WOWGUID 
 ---@field numActiveMembers number 
 ---@field name string 

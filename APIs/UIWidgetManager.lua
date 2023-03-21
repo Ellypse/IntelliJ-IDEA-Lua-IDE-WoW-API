@@ -472,7 +472,7 @@ Enum.ZoneControlState.State1 = 0
 ---@field State2 ZoneControlState 
 Enum.ZoneControlState.State2 = 1
 
----@type BulletTextListWidgetVisualizationInfo
+---@class BulletTextListWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field enabledState WidgetEnabledState 
 ---@field lines table 
@@ -490,7 +490,7 @@ Enum.ZoneControlState.State2 = 1
 ---@field scriptedAnimationEffectID number 
 BulletTextListWidgetVisualizationInfo = {}
 
----@type CaptureBarWidgetVisualizationInfo
+---@class CaptureBarWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field barValue number 
 ---@field barMinValue number 
@@ -515,7 +515,7 @@ BulletTextListWidgetVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 CaptureBarWidgetVisualizationInfo = {}
 
----@type CaptureZoneVisualizationInfo
+---@class CaptureZoneVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field mode ZoneControlMode 
 ---@field leadingEdgeType ZoneControlLeadingEdgeType 
@@ -536,7 +536,7 @@ CaptureBarWidgetVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 CaptureZoneVisualizationInfo = {}
 
----@type DiscreteProgressStepsVisualizationInfo
+---@class DiscreteProgressStepsVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field tooltip string 
 ---@field progressMin number 
@@ -558,7 +558,7 @@ CaptureZoneVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 DiscreteProgressStepsVisualizationInfo = {}
 
----@type DoubleIconAndTextWidgetVisualizationInfo
+---@class DoubleIconAndTextWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field label string 
 ---@field leftText string 
@@ -580,7 +580,7 @@ DiscreteProgressStepsVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 DoubleIconAndTextWidgetVisualizationInfo = {}
 
----@type DoubleStateIconRowVisualizationInfo
+---@class DoubleStateIconRowVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field leftIcons table 
 ---@field rightIcons table 
@@ -599,7 +599,7 @@ DoubleIconAndTextWidgetVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 DoubleStateIconRowVisualizationInfo = {}
 
----@type DoubleStatusBarWidgetVisualizationInfo
+---@class DoubleStatusBarWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field leftBarMin number 
 ---@field leftBarMax number 
@@ -628,7 +628,7 @@ DoubleStateIconRowVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 DoubleStatusBarWidgetVisualizationInfo = {}
 
----@type FillUpFramesWidgetVisualizationInfo
+---@class FillUpFramesWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field fillMin number 
 ---@field fillMax number 
@@ -652,7 +652,7 @@ DoubleStatusBarWidgetVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 FillUpFramesWidgetVisualizationInfo = {}
 
----@type HorizontalCurrenciesWidgetVisualizationInfo
+---@class HorizontalCurrenciesWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field currencies table 
 ---@field tooltipLoc UIWidgetTooltipLocation 
@@ -670,7 +670,7 @@ FillUpFramesWidgetVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 HorizontalCurrenciesWidgetVisualizationInfo = {}
 
----@type IconAndTextWidgetVisualizationInfo
+---@class IconAndTextWidgetVisualizationInfo
 ---@field state IconAndTextWidgetState 
 ---@field text string 
 ---@field tooltip string 
@@ -690,7 +690,7 @@ HorizontalCurrenciesWidgetVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 IconAndTextWidgetVisualizationInfo = {}
 
----@type IconTextAndBackgroundWidgetVisualizationInfo
+---@class IconTextAndBackgroundWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field text string 
 ---@field widgetSizeSetting number 
@@ -707,7 +707,7 @@ IconAndTextWidgetVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 IconTextAndBackgroundWidgetVisualizationInfo = {}
 
----@type IconTextAndCurrenciesWidgetVisualizationInfo
+---@class IconTextAndCurrenciesWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field enabledState WidgetEnabledState 
 ---@field descriptionShownState WidgetShownState 
@@ -730,7 +730,7 @@ IconTextAndBackgroundWidgetVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 IconTextAndCurrenciesWidgetVisualizationInfo = {}
 
----@type ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo
+---@class ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field currencies table 
 ---@field headerText string 
@@ -748,7 +748,7 @@ IconTextAndCurrenciesWidgetVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo = {}
 
----@type ScenarioHeaderTimerWidgetVisualizationInfo
+---@class ScenarioHeaderTimerWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field timerMin number 
 ---@field timerMax number 
@@ -769,7 +769,7 @@ ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 ScenarioHeaderTimerWidgetVisualizationInfo = {}
 
----@type SpacerVisualizationInfo
+---@class SpacerVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field widgetWidth number 
 ---@field widgetHeight number 
@@ -787,7 +787,7 @@ ScenarioHeaderTimerWidgetVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 SpacerVisualizationInfo = {}
 
----@type SpellDisplayVisualizationInfo
+---@class SpellDisplayVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field enabledState WidgetEnabledState 
 ---@field spellInfo UIWidgetSpellInfo 
@@ -806,7 +806,7 @@ SpacerVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 SpellDisplayVisualizationInfo = {}
 
----@type StackedResourceTrackerWidgetVisualizationInfo
+---@class StackedResourceTrackerWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field resources table 
 ---@field tooltipLoc UIWidgetTooltipLocation 
@@ -824,7 +824,7 @@ SpellDisplayVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 StackedResourceTrackerWidgetVisualizationInfo = {}
 
----@type StatusBarWidgetVisualizationInfo
+---@class StatusBarWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field barMin number 
 ---@field barMax number 
@@ -855,14 +855,14 @@ StackedResourceTrackerWidgetVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 StatusBarWidgetVisualizationInfo = {}
 
----@type TextColumnRowEntryInfo
+---@class TextColumnRowEntryInfo
 ---@field text string 
 ---@field enabledState WidgetEnabledState 
 ---@field hAlign WidgetTextHorizontalAlignmentType 
 ---@field columnWidth number 
 TextColumnRowEntryInfo = {}
 
----@type TextColumnRowVisualizationInfo
+---@class TextColumnRowVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field entries table 
 ---@field textSizeType UIWidgetTextSizeType 
@@ -884,7 +884,7 @@ TextColumnRowEntryInfo = {}
 ---@field scriptedAnimationEffectID number 
 TextColumnRowVisualizationInfo = {}
 
----@type TextWithStateWidgetVisualizationInfo
+---@class TextWithStateWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field enabledState WidgetEnabledState 
 ---@field text string 
@@ -908,7 +908,7 @@ TextColumnRowVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 TextWithStateWidgetVisualizationInfo = {}
 
----@type TextWithSubtextWidgetVisualizationInfo
+---@class TextWithSubtextWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field enabledState WidgetEnabledState 
 ---@field text string 
@@ -938,12 +938,12 @@ TextWithStateWidgetVisualizationInfo = {}
 ---@field spacing number 
 TextWithSubtextWidgetVisualizationInfo = {}
 
----@type TextureAndTextEntryInfo
+---@class TextureAndTextEntryInfo
 ---@field text string 
 ---@field tooltip string 
 TextureAndTextEntryInfo = {}
 
----@type TextureAndTextRowVisualizationInfo
+---@class TextureAndTextRowVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field entries table 
 ---@field textSizeType UIWidgetTextureAndTextSizeType 
@@ -963,7 +963,7 @@ TextureAndTextEntryInfo = {}
 ---@field scriptedAnimationEffectID number 
 TextureAndTextRowVisualizationInfo = {}
 
----@type TextureAndTextVisualizationInfo
+---@class TextureAndTextVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field text string 
 ---@field tooltip string 
@@ -982,7 +982,7 @@ TextureAndTextRowVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 TextureAndTextVisualizationInfo = {}
 
----@type TextureWithAnimationVisualizationInfo
+---@class TextureWithAnimationVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field tooltip string 
 ---@field tooltipLoc UIWidgetTooltipLocation 
@@ -1000,7 +1000,7 @@ TextureAndTextVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 TextureWithAnimationVisualizationInfo = {}
 
----@type UIWidgetCurrencyInfo
+---@class UIWidgetCurrencyInfo
 ---@field iconFileID fileID 
 ---@field leadingText string 
 ---@field text string 
@@ -1008,19 +1008,19 @@ TextureWithAnimationVisualizationInfo = {}
 ---@field isCurrencyMaxed bool 
 UIWidgetCurrencyInfo = {}
 
----@type UIWidgetInfo
+---@class UIWidgetInfo
 ---@field widgetID number 
 ---@field widgetSetID number 
 ---@field widgetType UIWidgetVisualizationType 
 ---@field unitToken string|nil 
 UIWidgetInfo = {}
 
----@type UIWidgetSetInfo
+---@class UIWidgetSetInfo
 ---@field layoutDirection UIWidgetSetLayoutDirection 
 ---@field verticalPadding number 
 UIWidgetSetInfo = {}
 
----@type UIWidgetSpellInfo
+---@class UIWidgetSpellInfo
 ---@field spellID number 
 ---@field tooltip string 
 ---@field text string 
@@ -1035,18 +1035,18 @@ UIWidgetSetInfo = {}
 ---@field isLootObject bool 
 UIWidgetSpellInfo = {}
 
----@type UIWidgetStateIconInfo
+---@class UIWidgetStateIconInfo
 ---@field iconState IconState 
 ---@field state1Tooltip string 
 ---@field state2Tooltip string 
 UIWidgetStateIconInfo = {}
 
----@type UIWidgetTextTooltipPair
+---@class UIWidgetTextTooltipPair
 ---@field text string 
 ---@field tooltip string 
 UIWidgetTextTooltipPair = {}
 
----@type UnitPowerBarWidgetVisualizationInfo
+---@class UnitPowerBarWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field barMin number 
 ---@field barMax number 
@@ -1074,7 +1074,7 @@ UIWidgetTextTooltipPair = {}
 ---@field scriptedAnimationEffectID number 
 UnitPowerBarWidgetVisualizationInfo = {}
 
----@type ZoneControlVisualizationInfo
+---@class ZoneControlVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field mode ZoneControlMode 
 ---@field leadingEdgeType ZoneControlLeadingEdgeType 
@@ -1095,7 +1095,7 @@ UnitPowerBarWidgetVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 ZoneControlVisualizationInfo = {}
 
----@type ZoneEntry
+---@class ZoneEntry
 ---@field state ZoneControlState 
 ---@field activeState ZoneControlActiveState 
 ---@field fillType ZoneControlFillType 

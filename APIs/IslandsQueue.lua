@@ -18,7 +18,7 @@ function C_IslandsQueue.QueueForIsland(difficultyID) end
 ---@param questId number 
 function C_IslandsQueue.RequestPreloadRewardData(questId) end
 
----@type IslandsQueueDifficultyInfo
+---@class IslandsQueueDifficultyInfo
 ---@field difficultyId number 
 ---@field previewRewardQuestId number 
 IslandsQueueDifficultyInfo = {}

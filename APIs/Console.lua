@@ -80,7 +80,7 @@ Enum.ConsoleCommandType.Macro = 2
 ---@field Script ConsoleCommandType 
 Enum.ConsoleCommandType.Script = 3
 
----@type ConsoleCommandInfo
+---@class ConsoleCommandInfo
 ---@field command cstring 
 ---@field help cstring 
 ---@field category ConsoleCategory 

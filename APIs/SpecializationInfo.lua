@@ -60,7 +60,7 @@ function C_SpecializationInfo.MatchesCurrentSpecSet(specSetID) end
 ---@param locked boolean 
 function C_SpecializationInfo.SetPvpTalentLocked(talentID, locked) end
 
----@type PvpTalentInfo
+---@class PvpTalentInfo
 ---@field talentID number 
 ---@field name string 
 ---@field icon number 
@@ -74,7 +74,7 @@ function C_SpecializationInfo.SetPvpTalentLocked(talentID, locked) end
 ---@field dependenciesUnmetReason string|nil 
 PvpTalentInfo = {}
 
----@type PvpTalentSlotInfo
+---@class PvpTalentSlotInfo
 ---@field enabled bool 
 ---@field level number 
 ---@field selectedTalentID number|nil 

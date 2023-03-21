@@ -20,7 +20,7 @@ function C_AreaPoiInfo.GetAreaPOISecondsLeft(areaPoiID) end
 ---@return boolean isTimed
 function C_AreaPoiInfo.IsAreaPOITimed(areaPoiID) end
 
----@type AreaPOIInfo
+---@class AreaPOIInfo
 ---@field areaPoiID number 
 ---@field position vector2 
 ---@field name cstring 

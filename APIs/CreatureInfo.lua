@@ -13,18 +13,18 @@ function C_CreatureInfo.GetFactionInfo(raceID) end
 ---@return RaceInfo|nil raceInfo
 function C_CreatureInfo.GetRaceInfo(raceID) end
 
----@type ClassInfo
+---@class ClassInfo
 ---@field className string 
 ---@field classFile string 
 ---@field classID number 
 ClassInfo = {}
 
----@type FactionInfo
+---@class FactionInfo
 ---@field name cstring 
 ---@field groupTag cstring 
 FactionInfo = {}
 
----@type RaceInfo
+---@class RaceInfo
 ---@field raceName string 
 ---@field clientFileString string 
 ---@field raceID number 

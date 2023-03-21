@@ -94,7 +94,7 @@ Enum.ModelSceneType.Soulbinds = 18
 ---@field JailersTowerAnimaGlow ModelSceneType 
 Enum.ModelSceneType.JailersTowerAnimaGlow = 19
 
----@type UIModelSceneActorDisplayInfo
+---@class UIModelSceneActorDisplayInfo
 ---@field animation number 
 ---@field animationVariation number 
 ---@field animSpeed number 
@@ -104,7 +104,7 @@ Enum.ModelSceneType.JailersTowerAnimaGlow = 19
 ---@field scale number 
 UIModelSceneActorDisplayInfo = {}
 
----@type UIModelSceneActorInfo
+---@class UIModelSceneActorInfo
 ---@field modelActorID number 
 ---@field scriptTag cstring 
 ---@field position vector3 
@@ -118,7 +118,7 @@ UIModelSceneActorDisplayInfo = {}
 ---@field modelActorDisplayID number|nil 
 UIModelSceneActorInfo = {}
 
----@type UIModelSceneCameraInfo
+---@class UIModelSceneCameraInfo
 ---@field modelSceneCameraID number 
 ---@field scriptTag cstring 
 ---@field cameraType cstring 

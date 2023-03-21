@@ -45,7 +45,7 @@ function C_MajorFactions.IsWeeklyRenownCapped(majorFactionID) end
 
 function C_MajorFactions.RequestCatchUpState() end
 
----@type MajorFactionData
+---@class MajorFactionData
 ---@field name cstring 
 ---@field factionID number 
 ---@field expansionID number 
@@ -61,12 +61,12 @@ function C_MajorFactions.RequestCatchUpState() end
 ---@field renownFanfareSoundKitID number 
 MajorFactionData = {}
 
----@type MajorFactionFeatureAbilityInfo
+---@class MajorFactionFeatureAbilityInfo
 ---@field featureAbilityType number 
 ---@field uiOrder number 
 MajorFactionFeatureAbilityInfo = {}
 
----@type MajorFactionRenownLevelInfo
+---@class MajorFactionRenownLevelInfo
 ---@field factionID number 
 ---@field level number 
 ---@field locked bool 
@@ -74,7 +74,7 @@ MajorFactionFeatureAbilityInfo = {}
 ---@field isCapstone bool 
 MajorFactionRenownLevelInfo = {}
 
----@type MajorFactionRenownRewardInfo
+---@class MajorFactionRenownRewardInfo
 ---@field renownRewardID number 
 ---@field uiOrder number 
 ---@field itemID number|nil 

@@ -38,17 +38,17 @@ function C_ItemUpgrade.SetItemUpgradeFromLocation(itemToSet) end
 ---@param numUpgrades number 
 function C_ItemUpgrade.UpgradeItem(numUpgrades) end
 
----@type ItemUpgradeCurrencyCost
+---@class ItemUpgradeCurrencyCost
 ---@field cost number 
 ---@field currencyID number 
 ItemUpgradeCurrencyCost = {}
 
----@type ItemUpgradeItemCost
+---@class ItemUpgradeItemCost
 ---@field cost number 
 ---@field itemID number 
 ItemUpgradeItemCost = {}
 
----@type ItemUpgradeItemInfo
+---@class ItemUpgradeItemInfo
 ---@field iconID number 
 ---@field name string 
 ---@field itemUpgradeable bool 
@@ -58,7 +58,7 @@ ItemUpgradeItemCost = {}
 ---@field upgradeLevelInfos table 
 ItemUpgradeItemInfo = {}
 
----@type ItemUpgradeLevelInfo
+---@class ItemUpgradeLevelInfo
 ---@field upgradeLevel number 
 ---@field displayQuality number 
 ---@field itemLevelIncrement number 
@@ -68,7 +68,7 @@ ItemUpgradeItemInfo = {}
 ---@field failureMessage string|nil 
 ItemUpgradeLevelInfo = {}
 
----@type ItemUpgradeStat
+---@class ItemUpgradeStat
 ---@field displayString string 
 ---@field statValue number 
 ---@field active bool 

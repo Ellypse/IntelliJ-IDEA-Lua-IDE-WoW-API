@@ -4,7 +4,7 @@ C_ZoneAbility = {}
 ---@return ZoneAbilityInfo zoneAbilities
 function C_ZoneAbility.GetActiveAbilities() end
 
----@type ZoneAbilityInfo
+---@class ZoneAbilityInfo
 ---@field zoneAbilityID number 
 ---@field uiPriority number 
 ---@field spellID number 

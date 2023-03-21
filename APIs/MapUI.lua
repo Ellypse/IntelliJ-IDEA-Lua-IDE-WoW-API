@@ -228,14 +228,14 @@ Enum.UIMapType.Micro = 5
 ---@field Orphan UIMapType 
 Enum.UIMapType.Orphan = 6
 
----@type MapBannerInfo
+---@class MapBannerInfo
 ---@field areaPoiID number 
 ---@field name cstring 
 ---@field atlasName string 
 ---@field uiTextureKit textureKit|nil 
 MapBannerInfo = {}
 
----@type MapLinkInfo
+---@class MapLinkInfo
 ---@field areaPoiID number 
 ---@field position vector2 
 ---@field name cstring 
@@ -243,7 +243,7 @@ MapBannerInfo = {}
 ---@field linkedUiMapID number 
 MapLinkInfo = {}
 
----@type UiMapDetails
+---@class UiMapDetails
 ---@field mapID number 
 ---@field name cstring 
 ---@field mapType UIMapType 
@@ -251,13 +251,13 @@ MapLinkInfo = {}
 ---@field flags number 
 UiMapDetails = {}
 
----@type UiMapGroupMemberInfo
+---@class UiMapGroupMemberInfo
 ---@field mapID number 
 ---@field relativeHeightIndex number 
 ---@field name cstring 
 UiMapGroupMemberInfo = {}
 
----@type UiMapHighlightInfo
+---@class UiMapHighlightInfo
 ---@field fileDataID fileID 
 ---@field atlasID textureAtlas 
 ---@field texturePercentageX number 
@@ -268,7 +268,7 @@ UiMapGroupMemberInfo = {}
 ---@field scrollChildY number 
 UiMapHighlightInfo = {}
 
----@type UiMapLayerInfo
+---@class UiMapLayerInfo
 ---@field layerWidth number 
 ---@field layerHeight number 
 ---@field tileWidth number 

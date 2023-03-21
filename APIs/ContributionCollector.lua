@@ -94,7 +94,7 @@ Enum.ContributionResult.UnableToCompleteTurnIn = 6
 ---@field InternalError ContributionResult 
 Enum.ContributionResult.InternalError = 7
 
----@type ContributionAppearance
+---@class ContributionAppearance
 ---@field stateName cstring 
 ---@field stateColor colorRGB 
 ---@field tooltipLine cstring 
@@ -104,7 +104,7 @@ Enum.ContributionResult.InternalError = 7
 ---@field bannerAtlas textureAtlas 
 ContributionAppearance = {}
 
----@type ContributionMapInfo
+---@class ContributionMapInfo
 ---@field areaPoiID number 
 ---@field position vector2 
 ---@field name cstring 

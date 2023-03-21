@@ -30,7 +30,7 @@ Enum.QuestLineFloorLocation.Below = 1
 ---@field Same QuestLineFloorLocation 
 Enum.QuestLineFloorLocation.Same = 2
 
----@type QuestLineInfo
+---@class QuestLineInfo
 ---@field questLineName cstring 
 ---@field questName cstring 
 ---@field questLineID number 

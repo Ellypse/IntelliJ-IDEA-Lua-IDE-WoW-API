@@ -55,19 +55,19 @@ Enum.CampaignState.InProgress = 2
 ---@field Stalled CampaignState 
 Enum.CampaignState.Stalled = 3
 
----@type CampaignChapterInfo
+---@class CampaignChapterInfo
 ---@field name cstring 
 ---@field description cstring 
 ---@field rewardQuestID number 
 CampaignChapterInfo = {}
 
----@type CampaignFailureReason
+---@class CampaignFailureReason
 ---@field text string 
 ---@field questID number|nil 
 ---@field mapID number|nil 
 CampaignFailureReason = {}
 
----@type CampaignInfo
+---@class CampaignInfo
 ---@field name cstring 
 ---@field description cstring 
 ---@field uiTextureKit textureKit 

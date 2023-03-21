@@ -618,7 +618,7 @@ Enum.ClubType.Guild = 2
 ---@field Other ClubType 
 Enum.ClubType.Other = 3
 
----@type ClubInfo
+---@class ClubInfo
 ---@field clubId ClubId 
 ---@field name string 
 ---@field shortName string|nil 
@@ -633,24 +633,24 @@ Enum.ClubType.Other = 3
 ---@field crossFaction bool|nil 
 ClubInfo = {}
 
----@type ClubInvitationCandidateInfo
+---@class ClubInvitationCandidateInfo
 ---@field memberId number 
 ---@field name string 
 ---@field priority luaIndex 
 ---@field status ClubInvitationCandidateStatus 
 ClubInvitationCandidateInfo = {}
 
----@type ClubInvitationInfo
+---@class ClubInvitationInfo
 ---@field invitationId ClubInvitationId 
 ---@field isMyInvitation bool 
 ---@field invitee ClubMemberInfo 
 ClubInvitationInfo = {}
 
----@type ClubLimits
+---@class ClubLimits
 ---@field maximumNumberOfStreams number 
 ClubLimits = {}
 
----@type ClubMemberInfo
+---@class ClubMemberInfo
 ---@field isSelf bool 
 ---@field memberId number 
 ---@field name string|nil @ name may be encoded as a Kstring
@@ -683,12 +683,12 @@ ClubLimits = {}
 ---@field faction PvPFaction|nil 
 ClubMemberInfo = {}
 
----@type ClubMessageIdentifier
+---@class ClubMessageIdentifier
 ---@field epoch BigUInteger @ number of microseconds since the UNIX epoch.
 ---@field position BigUInteger @ sort order for messages at the same time
 ClubMessageIdentifier = {}
 
----@type ClubMessageInfo
+---@class ClubMessageInfo
 ---@field messageId ClubMessageIdentifier 
 ---@field content kstringClubMessage 
 ---@field author ClubMemberInfo 
@@ -697,12 +697,12 @@ ClubMessageIdentifier = {}
 ---@field edited bool 
 ClubMessageInfo = {}
 
----@type ClubMessageRange
+---@class ClubMessageRange
 ---@field oldestMessageId ClubMessageIdentifier 
 ---@field newestMessageId ClubMessageIdentifier 
 ClubMessageRange = {}
 
----@type ClubPrivilegeInfo
+---@class ClubPrivilegeInfo
 ---@field canDestroy bool 
 ---@field canSetAttribute bool 
 ---@field canSetName bool 
@@ -747,21 +747,21 @@ ClubMessageRange = {}
 ---@field kickableRoleIds table @ Roles that can be kicked and banned
 ClubPrivilegeInfo = {}
 
----@type ClubRoleInfo
+---@class ClubRoleInfo
 ---@field roleId number 
 ---@field name string 
 ---@field required bool @ At least one user must be in this role
 ---@field unique bool @ At most one user can be in this role
 ClubRoleInfo = {}
 
----@type ClubSelfInvitationInfo
+---@class ClubSelfInvitationInfo
 ---@field invitationId ClubInvitationId 
 ---@field club ClubInfo 
 ---@field inviter ClubMemberInfo 
 ---@field leaders table 
 ClubSelfInvitationInfo = {}
 
----@type ClubStreamInfo
+---@class ClubStreamInfo
 ---@field streamId ClubStreamId 
 ---@field name string 
 ---@field subject string 
@@ -770,12 +770,12 @@ ClubSelfInvitationInfo = {}
 ---@field creationTime BigUInteger 
 ClubStreamInfo = {}
 
----@type ClubStreamNotificationSetting
+---@class ClubStreamNotificationSetting
 ---@field streamId ClubStreamId 
 ---@field filter ClubStreamNotificationFilter 
 ClubStreamNotificationSetting = {}
 
----@type ClubTicketInfo
+---@class ClubTicketInfo
 ---@field ticketId string 
 ---@field allowedRedeemCount number 
 ---@field currentRedeemCount number 

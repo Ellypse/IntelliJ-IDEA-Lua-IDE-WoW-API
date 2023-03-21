@@ -32,7 +32,7 @@ function C_BattleNet.GetGameAccountInfoByGUID(guid) end
 ---@return BNetGameAccountInfo|nil gameAccountInfo
 function C_BattleNet.GetGameAccountInfoByID(id) end
 
----@type BNetAccountInfo
+---@class BNetAccountInfo
 ---@field bnetAccountID number 
 ---@field accountName string 
 ---@field battleTag string 
@@ -50,7 +50,7 @@ function C_BattleNet.GetGameAccountInfoByID(id) end
 ---@field gameAccountInfo BNetGameAccountInfo 
 BNetAccountInfo = {}
 
----@type BNetGameAccountInfo
+---@class BNetGameAccountInfo
 ---@field gameAccountID number 
 ---@field clientProgram string 
 ---@field isOnline bool 

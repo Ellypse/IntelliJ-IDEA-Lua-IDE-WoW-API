@@ -148,14 +148,14 @@ Enum.LFGListDisplayType.PlayerCount = 4
 ---@field Comment LFGListDisplayType 
 Enum.LFGListDisplayType.Comment = 5
 
----@type BestDungeonScoreMapInfo
+---@class BestDungeonScoreMapInfo
 ---@field mapScore number 
 ---@field mapName string 
 ---@field bestRunLevel number 
 ---@field finishedSuccess bool 
 BestDungeonScoreMapInfo = {}
 
----@type GroupFinderActivityInfo
+---@class GroupFinderActivityInfo
 ---@field fullName string 
 ---@field shortName string 
 ---@field categoryID number 
@@ -177,7 +177,7 @@ BestDungeonScoreMapInfo = {}
 ---@field useDungeonRoleExpectations bool 
 GroupFinderActivityInfo = {}
 
----@type LfgApplicantData
+---@class LfgApplicantData
 ---@field applicantID number 
 ---@field applicationStatus cstring 
 ---@field pendingApplicationStatus cstring|nil 
@@ -187,7 +187,7 @@ GroupFinderActivityInfo = {}
 ---@field displayOrderID number 
 LfgApplicantData = {}
 
----@type LfgCategoryData
+---@class LfgCategoryData
 ---@field name cstring 
 ---@field searchPromptOverride cstring|nil 
 ---@field separateRecommended bool 
@@ -197,7 +197,7 @@ LfgApplicantData = {}
 ---@field allowCrossFaction bool 
 LfgCategoryData = {}
 
----@type LfgEntryData
+---@class LfgEntryData
 ---@field activityID number 
 ---@field requiredItemLevel number 
 ---@field requiredHonorLevel number 
@@ -214,7 +214,7 @@ LfgCategoryData = {}
 ---@field isCrossFactionListing bool 
 LfgEntryData = {}
 
----@type LfgSearchResultData
+---@class LfgSearchResultData
 ---@field searchResultID number 
 ---@field activityID number 
 ---@field leaderName string|nil 
@@ -243,14 +243,14 @@ LfgEntryData = {}
 ---@field leaderFactionGroup number 
 LfgSearchResultData = {}
 
----@type PvpRatingInfo
+---@class PvpRatingInfo
 ---@field bracket number 
 ---@field rating number 
 ---@field activityName string 
 ---@field tier number 
 PvpRatingInfo = {}
 
----@type WowLocale
+---@class WowLocale
 ---@field enUS bool 
 ---@field koKR bool 
 ---@field frFR bool 

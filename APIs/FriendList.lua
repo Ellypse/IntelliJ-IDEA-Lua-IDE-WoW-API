@@ -106,7 +106,7 @@ function C_FriendList.ShowFriends() end
 ---@param sorting cstring 
 function C_FriendList.SortWho(sorting) end
 
----@type FriendInfo
+---@class FriendInfo
 ---@field connected bool 
 ---@field name string 
 ---@field className string|nil 
@@ -120,7 +120,7 @@ function C_FriendList.SortWho(sorting) end
 ---@field mobile bool 
 FriendInfo = {}
 
----@type WhoInfo
+---@class WhoInfo
 ---@field fullName string 
 ---@field fullGuildName string 
 ---@field level number 

@@ -382,7 +382,7 @@ Enum.VoiceTtsStatusCode.InvalidArgument = 12
 ---@field InternalError VoiceTtsStatusCode 
 Enum.VoiceTtsStatusCode.InternalError = 13
 
----@type VoiceAudioDevice
+---@class VoiceAudioDevice
 ---@field deviceID string 
 ---@field displayName string 
 ---@field isActive bool 
@@ -390,7 +390,7 @@ Enum.VoiceTtsStatusCode.InternalError = 13
 ---@field isCommsDefault bool 
 VoiceAudioDevice = {}
 
----@type VoiceChatChannel
+---@class VoiceChatChannel
 ---@field name string 
 ---@field channelID number 
 ---@field channelType ChatChannelType 
@@ -404,7 +404,7 @@ VoiceAudioDevice = {}
 ---@field members table 
 VoiceChatChannel = {}
 
----@type VoiceChatMember
+---@class VoiceChatMember
 ---@field energy number 
 ---@field memberID number 
 ---@field isActive bool 
@@ -413,12 +413,12 @@ VoiceChatChannel = {}
 ---@field isSilenced bool 
 VoiceChatMember = {}
 
----@type VoiceChatProcess
+---@class VoiceChatProcess
 ---@field name string 
 ---@field channels table 
 VoiceChatProcess = {}
 
----@type VoiceTtsVoiceType
+---@class VoiceTtsVoiceType
 ---@field voiceID number 
 ---@field name string 
 VoiceTtsVoiceType = {}

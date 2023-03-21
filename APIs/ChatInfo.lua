@@ -134,7 +134,7 @@ function C_ChatInfo.SwapChatChannelsByChannelIndex(firstChannelIndex, secondChan
 ---@param chatLine number 
 function C_ChatInfo.UncensorChatLine(chatLine) end
 
----@type AddonMessageParams
+---@class AddonMessageParams
 ---@field prefix cstring 
 ---@field message cstring 
 ---@field chatType cstring|nil @ ChatType, defaults to SLASH_CMD_PARTY.

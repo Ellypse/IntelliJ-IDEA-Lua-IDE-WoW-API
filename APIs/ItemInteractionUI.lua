@@ -28,18 +28,18 @@ function C_ItemInteraction.Reset() end
 ---@return boolean success
 function C_ItemInteraction.SetPendingItem(item) end
 
----@type ConversionCurrencyCost
+---@class ConversionCurrencyCost
 ---@field currencyID number 
 ---@field amount number 
 ConversionCurrencyCost = {}
 
----@type ItemInteractionChargeInfo
+---@class ItemInteractionChargeInfo
 ---@field newChargeAmount number 
 ---@field rechargeRate number 
 ---@field timeToNextCharge number 
 ItemInteractionChargeInfo = {}
 
----@type ItemInteractionFrameInfo
+---@class ItemInteractionFrameInfo
 ---@field textureKit textureKit 
 ---@field openSoundKitID number 
 ---@field closeSoundKitID number 

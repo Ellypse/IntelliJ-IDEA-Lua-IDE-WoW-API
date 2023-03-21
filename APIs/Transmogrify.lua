@@ -97,12 +97,12 @@ Enum.TransmogPendingType.ToggleOn = 2
 ---@field ToggleOff TransmogPendingType 
 Enum.TransmogPendingType.ToggleOff = 3
 
----@type TransmogApplyWarningInfo
+---@class TransmogApplyWarningInfo
 ---@field itemLink string 
 ---@field text string 
 TransmogApplyWarningInfo = {}
 
----@type TransmogSlotInfo
+---@class TransmogSlotInfo
 ---@field isTransmogrified bool 
 ---@field hasPending bool 
 ---@field isPendingCollected bool 
@@ -113,7 +113,7 @@ TransmogApplyWarningInfo = {}
 ---@field texture fileID|nil 
 TransmogSlotInfo = {}
 
----@type TransmogSlotVisualInfo
+---@class TransmogSlotVisualInfo
 ---@field baseSourceID number 
 ---@field baseVisualID number 
 ---@field appliedSourceID number 

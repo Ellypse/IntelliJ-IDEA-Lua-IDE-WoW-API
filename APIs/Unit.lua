@@ -262,13 +262,13 @@ Enum.PvPUnitClassification.OrbCarrierOrange = 9
 ---@field OrbCarrierPurple PvPUnitClassification 
 Enum.PvPUnitClassification.OrbCarrierPurple = 10
 
----@type CorruptionEffectInfo
+---@class CorruptionEffectInfo
 ---@field name string 
 ---@field description string 
 ---@field minCorruption number 
 CorruptionEffectInfo = {}
 
----@type UnitPowerBarInfo
+---@class UnitPowerBarInfo
 ---@field ID number 
 ---@field barType number 
 ---@field minPower number 

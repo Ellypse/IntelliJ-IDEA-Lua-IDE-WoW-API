@@ -45,7 +45,7 @@ Enum.JailersTowerType.Ossuary = 13
 ---@field BossRush JailersTowerType 
 Enum.JailersTowerType.BossRush = 14
 
----@type ScenarioInformation
+---@class ScenarioInformation
 ---@field name string 
 ---@field currentStage number 
 ---@field numStages number 
@@ -58,7 +58,7 @@ Enum.JailersTowerType.BossRush = 14
 ---@field uiTextureKit textureKit 
 ScenarioInformation = {}
 
----@type ScenarioStepInfo
+---@class ScenarioStepInfo
 ---@field title string 
 ---@field description string 
 ---@field numCriteria number 
@@ -72,7 +72,7 @@ ScenarioInformation = {}
 ---@field widgetSetID number|nil 
 ScenarioStepInfo = {}
 
----@type ScenarioStepSpellInfo
+---@class ScenarioStepSpellInfo
 ---@field spellID number 
 ---@field name string 
 ---@field icon number 

@@ -299,7 +299,7 @@ function C_Calendar.SetNextClubId(clubId) end
 
 function C_Calendar.UpdateEvent() end
 
----@type CalendarDayEvent
+---@class CalendarDayEvent
 ---@field eventID CalendarEventID 
 ---@field title string 
 ---@field isCustomTitle bool 
@@ -323,13 +323,13 @@ function C_Calendar.UpdateEvent() end
 ---@field isLocked bool 
 CalendarDayEvent = {}
 
----@type CalendarEventIndexInfo
+---@class CalendarEventIndexInfo
 ---@field offsetMonths number 
 ---@field monthDay luaIndex 
 ---@field eventIndex luaIndex 
 CalendarEventIndexInfo = {}
 
----@type CalendarEventInfo
+---@class CalendarEventInfo
 ---@field title string 
 ---@field description string 
 ---@field creator string|nil 
@@ -348,7 +348,7 @@ CalendarEventIndexInfo = {}
 ---@field communityName string|nil 
 CalendarEventInfo = {}
 
----@type CalendarEventInviteInfo
+---@class CalendarEventInviteInfo
 ---@field name string|nil 
 ---@field level number 
 ---@field className string|nil 
@@ -362,12 +362,12 @@ CalendarEventInfo = {}
 ---@field guid WOWGUID 
 CalendarEventInviteInfo = {}
 
----@type CalendarEventStatusOption
+---@class CalendarEventStatusOption
 ---@field status CalendarStatus 
 ---@field statusString string 
 CalendarEventStatusOption = {}
 
----@type CalendarEventTextureInfo
+---@class CalendarEventTextureInfo
 ---@field title string 
 ---@field iconTexture fileID 
 ---@field expansionLevel number 
@@ -376,12 +376,12 @@ CalendarEventStatusOption = {}
 ---@field isLfr bool|nil 
 CalendarEventTextureInfo = {}
 
----@type CalendarEventTypeDisplayInfo
+---@class CalendarEventTypeDisplayInfo
 ---@field displayString string 
 ---@field eventType CalendarEventType 
 CalendarEventTypeDisplayInfo = {}
 
----@type CalendarGuildEventInfo
+---@class CalendarGuildEventInfo
 ---@field eventID CalendarEventID 
 ---@field year number 
 ---@field month luaIndex 
@@ -397,13 +397,13 @@ CalendarEventTypeDisplayInfo = {}
 ---@field clubID ClubId 
 CalendarGuildEventInfo = {}
 
----@type CalendarGuildFilterInfo
+---@class CalendarGuildFilterInfo
 ---@field minLevel number 
 ---@field maxLevel number 
 ---@field rank number 
 CalendarGuildFilterInfo = {}
 
----@type CalendarHolidayInfo
+---@class CalendarHolidayInfo
 ---@field name cstring 
 ---@field description cstring 
 ---@field texture fileID 
@@ -411,14 +411,14 @@ CalendarGuildFilterInfo = {}
 ---@field endTime CalendarTime|nil 
 CalendarHolidayInfo = {}
 
----@type CalendarMonthInfo
+---@class CalendarMonthInfo
 ---@field month luaIndex 
 ---@field year number 
 ---@field numDays number 
 ---@field firstWeekday luaIndex 
 CalendarMonthInfo = {}
 
----@type CalendarRaidInfo
+---@class CalendarRaidInfo
 ---@field name string 
 ---@field calendarType string 
 ---@field raidID number 

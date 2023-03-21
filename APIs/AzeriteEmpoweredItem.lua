@@ -86,22 +86,22 @@ Enum.AzeritePowerLevel.Upgraded = 1
 ---@field Downgraded AzeritePowerLevel 
 Enum.AzeritePowerLevel.Downgraded = 2
 
----@type AzeriteEmpoweredItemPowerInfo
+---@class AzeriteEmpoweredItemPowerInfo
 ---@field azeritePowerID number 
 ---@field spellID number 
 AzeriteEmpoweredItemPowerInfo = {}
 
----@type AzeriteEmpoweredItemPowerText
+---@class AzeriteEmpoweredItemPowerText
 ---@field name string 
 ---@field description string 
 AzeriteEmpoweredItemPowerText = {}
 
----@type AzeriteEmpoweredItemTierInfo
+---@class AzeriteEmpoweredItemTierInfo
 ---@field azeritePowerIDs table 
 ---@field unlockLevel number 
 AzeriteEmpoweredItemTierInfo = {}
 
----@type AzeriteSpecInfo
+---@class AzeriteSpecInfo
 ---@field classID number 
 ---@field specID number 
 AzeriteSpecInfo = {}

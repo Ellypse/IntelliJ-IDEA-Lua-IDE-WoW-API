@@ -83,7 +83,7 @@ Enum.GossipOptionStatus.Locked = 2
 ---@field AlreadyComplete GossipOptionStatus 
 Enum.GossipOptionStatus.AlreadyComplete = 3
 
----@type FriendshipReputationInfo
+---@class FriendshipReputationInfo
 ---@field friendshipFactionID number 
 ---@field standing number 
 ---@field maxRep number 
@@ -97,18 +97,18 @@ Enum.GossipOptionStatus.AlreadyComplete = 3
 ---@field overrideColor number|nil 
 FriendshipReputationInfo = {}
 
----@type FriendshipReputationRankInfo
+---@class FriendshipReputationRankInfo
 ---@field currentLevel number 
 ---@field maxLevel number 
 FriendshipReputationRankInfo = {}
 
----@type GossipOptionRewardInfo
+---@class GossipOptionRewardInfo
 ---@field id number 
 ---@field quantity number 
 ---@field rewardType GossipOptionRewardType 
 GossipOptionRewardInfo = {}
 
----@type GossipOptionUIInfo
+---@class GossipOptionUIInfo
 ---@field gossipOptionID number|nil 
 ---@field name string 
 ---@field icon fileID 
@@ -121,14 +121,14 @@ GossipOptionRewardInfo = {}
 ---@field orderIndex number 
 GossipOptionUIInfo = {}
 
----@type GossipPoiInfo
+---@class GossipPoiInfo
 ---@field name string 
 ---@field textureIndex number 
 ---@field position vector2 
 ---@field inBattleMap bool 
 GossipPoiInfo = {}
 
----@type GossipQuestUIInfo
+---@class GossipQuestUIInfo
 ---@field title string 
 ---@field questLevel number 
 ---@field isTrivial bool 

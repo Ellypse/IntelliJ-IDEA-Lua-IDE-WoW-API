@@ -13,7 +13,7 @@ function C_ChromieTime.GetChromieTimeExpansionOptions() end
 ---@param chromieTimeExpansionInfoId number 
 function C_ChromieTime.SelectChromieTimeOption(chromieTimeExpansionInfoId) end
 
----@type ChromieTimeExpansionInfo
+---@class ChromieTimeExpansionInfo
 ---@field id number 
 ---@field name cstring 
 ---@field description cstring 

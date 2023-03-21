@@ -177,12 +177,12 @@ Enum.MountTypeFlag.IsAquaticMount = 2
 ---@field IsDragonRidingMount MountTypeFlag 
 Enum.MountTypeFlag.IsDragonRidingMount = 4
 
----@type MountCreatureDisplayInfo
+---@class MountCreatureDisplayInfo
 ---@field creatureDisplayID number 
 ---@field isVisible bool 
 MountCreatureDisplayInfo = {}
 
----@type MountInfo
+---@class MountInfo
 ---@field name cstring 
 ---@field spellID number 
 ---@field icon fileID 
@@ -198,7 +198,7 @@ MountCreatureDisplayInfo = {}
 ---@field isForDragonriding bool 
 MountInfo = {}
 
----@type MountInfoExtra
+---@class MountInfoExtra
 ---@field creatureDisplayInfoID number|nil 
 ---@field description cstring 
 ---@field source cstring 

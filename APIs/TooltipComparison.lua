@@ -23,7 +23,7 @@ Enum.TooltipComparisonMethod.WithBagMainHandItem = 2
 ---@field WithBagOffHandItem TooltipComparisonMethod 
 Enum.TooltipComparisonMethod.WithBagOffHandItem = 3
 
----@type TooltipItemComparisonInfo
+---@class TooltipItemComparisonInfo
 ---@field method TooltipComparisonMethod 
 ---@field item TooltipComparisonItem 
 ---@field additionalItems table 

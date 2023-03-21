@@ -1,7 +1,7 @@
 ---@class GenericWidgetDisplay
 C_GenericWidgetDisplay = {}
 
----@type GenericWidgetDisplayFrameInfo
+---@class GenericWidgetDisplayFrameInfo
 ---@field uiWidgetSetID number|nil 
 ---@field uiTextureKit textureKit|nil 
 ---@field title string|nil 

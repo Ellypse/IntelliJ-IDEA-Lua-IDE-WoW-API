@@ -41,7 +41,7 @@ Enum.ScriptedAnimationTrajectory.CurveRandom = 5
 ---@field HalfwayBetween ScriptedAnimationTrajectory 
 Enum.ScriptedAnimationTrajectory.HalfwayBetween = 6
 
----@type ScriptedAnimationEffect
+---@class ScriptedAnimationEffect
 ---@field id number 
 ---@field visual fileID 
 ---@field visualScale number 

@@ -10,14 +10,14 @@ function C_MapExplorationInfo.GetExploredAreaIDsAtPosition(uiMapID, normalizedPo
 ---@return UiMapExplorationInfo overlayInfo
 function C_MapExplorationInfo.GetExploredMapTextures(uiMapID) end
 
----@type UiMapExplorationHitRect
+---@class UiMapExplorationHitRect
 ---@field top number 
 ---@field bottom number 
 ---@field left number 
 ---@field right number 
 UiMapExplorationHitRect = {}
 
----@type UiMapExplorationInfo
+---@class UiMapExplorationInfo
 ---@field textureWidth number 
 ---@field textureHeight number 
 ---@field offsetX number 

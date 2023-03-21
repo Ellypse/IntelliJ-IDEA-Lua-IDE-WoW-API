@@ -220,7 +220,7 @@ function C_ArtifactUI.SetPreviewAppearance(artifactAppearanceID) end
 ---@return boolean shouldSuppressForgeRotation
 function C_ArtifactUI.ShouldSuppressForgeRotation() end
 
----@type ArtifactAppearanceInfo
+---@class ArtifactAppearanceInfo
 ---@field artifactAppearanceID number 
 ---@field appearanceName string 
 ---@field displayIndex number 
@@ -234,14 +234,14 @@ function C_ArtifactUI.ShouldSuppressForgeRotation() end
 ---@field obtainable bool 
 ArtifactAppearanceInfo = {}
 
----@type ArtifactAppearanceSetInfo
+---@class ArtifactAppearanceSetInfo
 ---@field artifactAppearanceSetID number 
 ---@field appearanceSetName string 
 ---@field appearanceSetDescription string 
 ---@field numAppearances number 
 ArtifactAppearanceSetInfo = {}
 
----@type ArtifactArtInfo
+---@class ArtifactArtInfo
 ---@field textureKit textureKit 
 ---@field titleName string 
 ---@field titleColor colorRGB 
@@ -251,7 +251,7 @@ ArtifactAppearanceSetInfo = {}
 ---@field spellVisualKitID number 
 ArtifactArtInfo = {}
 
----@type ArtifactInfo
+---@class ArtifactInfo
 ---@field itemID number 
 ---@field altItemID number|nil 
 ---@field name string 
@@ -267,13 +267,13 @@ ArtifactArtInfo = {}
 ---@field tier luaIndex 
 ArtifactInfo = {}
 
----@type ArtifactMetaPowerInfo
+---@class ArtifactMetaPowerInfo
 ---@field spellID number 
 ---@field powerCost number 
 ---@field currentRank number 
 ArtifactMetaPowerInfo = {}
 
----@type ArtifactPowerInfo
+---@class ArtifactPowerInfo
 ---@field spellID number 
 ---@field cost number 
 ---@field currentRank number 
@@ -290,7 +290,7 @@ ArtifactMetaPowerInfo = {}
 ---@field linearIndex luaIndex|nil 
 ArtifactPowerInfo = {}
 
----@type ArtifactRelicInfo
+---@class ArtifactRelicInfo
 ---@field name string 
 ---@field icon fileID 
 ---@field slotTypeName cstring @ Matches the socket identifiers used in the socketing system.

@@ -5,7 +5,7 @@ C_PartyPose = {}
 ---@return PartyPoseInfo info
 function C_PartyPose.GetPartyPoseInfoByMapID(mapID) end
 
----@type PartyPoseInfo
+---@class PartyPoseInfo
 ---@field partyPoseID number 
 ---@field mapID number 
 ---@field widgetSetID number|nil 

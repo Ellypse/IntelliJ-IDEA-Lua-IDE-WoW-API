@@ -36,13 +36,13 @@ function C_LFGInfo.GetRoleCheckDifficultyDetails() end
 ---@return boolean shouldHide
 function C_LFGInfo.HideNameFromUI(dungeonID) end
 
----@type LFGDungeonInfo
+---@class LFGDungeonInfo
 ---@field name string 
 ---@field iconID fileID 
 ---@field link string|nil 
 LFGDungeonInfo = {}
 
----@type LFGLockInfo
+---@class LFGLockInfo
 ---@field lfgID number 
 ---@field reason number 
 ---@field hideEntry bool 

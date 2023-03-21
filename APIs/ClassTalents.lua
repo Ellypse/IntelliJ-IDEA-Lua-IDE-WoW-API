@@ -95,7 +95,7 @@ Enum.LoadConfigResult.LoadInProgress = 2
 ---@field Ready LoadConfigResult 
 Enum.LoadConfigResult.Ready = 3
 
----@type ImportLoadoutEntryInfo
+---@class ImportLoadoutEntryInfo
 ---@field nodeID number 
 ---@field ranksPurchased number 
 ---@field selectionEntryID number 

@@ -40,7 +40,6 @@ local ARGUMENT_DOCUMENTATION = [[---@param %s %s %s]]
 local RETURN_DOCUMENTATION = [[---@return %s %s]]
 local FIELD_DOCUMENTATION = [[---@field %s %s %s]]
 local CLASS_DECLARATION = [[---@class %s]]
-local TYPE_DECLARATION = [[---@type %s]]
 local INNER_TYPE_DECLARATION = [[local %s = {}]]
 local GLOBAL_TYPE_DECLARATION = [[%s = {}]]
 local FUNCTION_OVERLOAD = [[---@overload fun(%s)]]
@@ -153,7 +152,7 @@ function APIDocumentation:AddDocumentationTable(documentation)
 			end
 
 			if tab.Type == "Structure" then
-				write(TYPE_DECLARATION:format(tab.Name))
+				write(CLASS_DECLARATION:format(tab.Name))
 				for k, value in pairs(tab.Fields) do
 					write(FIELD_DOCUMENTATION:format(
 							value.Name,

@@ -17,7 +17,7 @@ function C_InvasionInfo.GetInvasionInfo(invasionID) end
 ---@return number|nil timeLeftMinutes
 function C_InvasionInfo.GetInvasionTimeLeft(invasionID) end
 
----@type InvasionMapInfo
+---@class InvasionMapInfo
 ---@field invasionID number 
 ---@field name string 
 ---@field position vector2 

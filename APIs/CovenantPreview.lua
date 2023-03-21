@@ -16,18 +16,18 @@ Enum.CovenantAbilityType.Signature = 1
 ---@field Soulbind CovenantAbilityType 
 Enum.CovenantAbilityType.Soulbind = 2
 
----@type CovenantAbilityInfo
+---@class CovenantAbilityInfo
 ---@field spellID number 
 ---@field type CovenantAbilityType 
 CovenantAbilityInfo = {}
 
----@type CovenantFeatureInfo
+---@class CovenantFeatureInfo
 ---@field name cstring 
 ---@field description cstring 
 ---@field texture number 
 CovenantFeatureInfo = {}
 
----@type CovenantPreviewInfo
+---@class CovenantPreviewInfo
 ---@field textureKit textureKit 
 ---@field transmogSetID number 
 ---@field mountID number 
@@ -41,7 +41,7 @@ CovenantFeatureInfo = {}
 ---@field featureInfo CovenantFeatureInfo 
 CovenantPreviewInfo = {}
 
----@type CovenantSoulbindInfo
+---@class CovenantSoulbindInfo
 ---@field spellID number 
 ---@field uiTextureKit textureKit 
 ---@field name cstring 

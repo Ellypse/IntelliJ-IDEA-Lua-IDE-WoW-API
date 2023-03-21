@@ -380,7 +380,7 @@ Enum.WorldQuestQuality.Rare = 1
 ---@field Epic WorldQuestQuality 
 Enum.WorldQuestQuality.Epic = 2
 
----@type QuestInfo
+---@class QuestInfo
 ---@field title string 
 ---@field questLogIndex luaIndex 
 ---@field questID number 
@@ -405,7 +405,7 @@ Enum.WorldQuestQuality.Epic = 2
 ---@field readyForTranslation bool 
 QuestInfo = {}
 
----@type QuestObjectiveInfo
+---@class QuestObjectiveInfo
 ---@field text string 
 ---@field type string 
 ---@field finished bool 
@@ -413,7 +413,7 @@ QuestInfo = {}
 ---@field numRequired number 
 QuestObjectiveInfo = {}
 
----@type QuestOnMapInfo
+---@class QuestOnMapInfo
 ---@field questID number 
 ---@field x number 
 ---@field y number 
@@ -421,7 +421,7 @@ QuestObjectiveInfo = {}
 ---@field isMapIndicatorQuest bool 
 QuestOnMapInfo = {}
 
----@type QuestTagInfo
+---@class QuestTagInfo
 ---@field tagName cstring 
 ---@field tagID number 
 ---@field worldQuestType number|nil 
@@ -431,7 +431,7 @@ QuestOnMapInfo = {}
 ---@field displayExpiration bool|nil 
 QuestTagInfo = {}
 
----@type QuestTheme
+---@class QuestTheme
 ---@field background textureAtlas 
 ---@field seal textureAtlas 
 ---@field signature cstring 

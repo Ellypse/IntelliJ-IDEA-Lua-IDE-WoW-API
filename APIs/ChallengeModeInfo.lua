@@ -88,17 +88,17 @@ function C_ChallengeMode.SlotKeystone() end
 ---@return boolean success
 function C_ChallengeMode.StartChallengeMode() end
 
----@type ChallengeModeCompletionMemberInfo
+---@class ChallengeModeCompletionMemberInfo
 ---@field memberGUID WOWGUID 
 ---@field name string 
 ChallengeModeCompletionMemberInfo = {}
 
----@type ChallengeModeGuildAttemptMember
+---@class ChallengeModeGuildAttemptMember
 ---@field name string 
 ---@field classFileName cstring 
 ChallengeModeGuildAttemptMember = {}
 
----@type ChallengeModeGuildTopAttempt
+---@class ChallengeModeGuildTopAttempt
 ---@field name string 
 ---@field classFileName cstring 
 ---@field keystoneLevel number 

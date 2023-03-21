@@ -7,7 +7,7 @@ function C_ArdenwealdGardening.GetGardenData() end
 ---@return boolean accessible
 function C_ArdenwealdGardening.IsGardenAccessible() end
 
----@type ArdenwealdGardenData
+---@class ArdenwealdGardenData
 ---@field active number 
 ---@field ready number 
 ---@field remainingSeconds time_t 

@@ -107,7 +107,7 @@ Enum.GraphicsValidationResult.GpuDriver = 40
 ---@field Unknown GraphicsValidationResult 
 Enum.GraphicsValidationResult.Unknown = 41
 
----@type GxAdapterInfoDetails
+---@class GxAdapterInfoDetails
 ---@field name string 
 ---@field isLowPower bool 
 ---@field isExternal bool 

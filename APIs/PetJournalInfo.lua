@@ -75,12 +75,12 @@ Enum.PetJournalError.NoValidRandomSummon = 5
 ---@field InvalidCovenant PetJournalError 
 Enum.PetJournalError.InvalidCovenant = 6
 
----@type PetAbilityLevelInfo
+---@class PetAbilityLevelInfo
 ---@field abilityID number 
 ---@field level number 
 PetAbilityLevelInfo = {}
 
----@type PetJournalPetInfo
+---@class PetJournalPetInfo
 ---@field speciesID number 
 ---@field customName string|nil 
 ---@field petLevel number 

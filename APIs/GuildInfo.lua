@@ -58,7 +58,7 @@ function C_GuildInfo.SetGuildRankOrder(guid, rankOrder) end
 ---@param isPublic boolean 
 function C_GuildInfo.SetNote(guid, note, isPublic) end
 
----@type GuildNewsInfo
+---@class GuildNewsInfo
 ---@field isSticky bool 
 ---@field isHeader bool 
 ---@field newsType number 

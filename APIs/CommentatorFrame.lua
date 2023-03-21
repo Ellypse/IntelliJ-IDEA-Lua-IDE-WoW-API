@@ -491,18 +491,18 @@ Enum.TrackedSpellCategory.RacialAbility = 3
 ---@field Count TrackedSpellCategory 
 Enum.TrackedSpellCategory.Count = 4
 
----@type CommentatorHistory
+---@class CommentatorHistory
 ---@field series table 
 ---@field teamDirectory table 
 ---@field overrideNameDirectory table 
 CommentatorHistory = {}
 
----@type CommentatorOverrideNameEntry
+---@class CommentatorOverrideNameEntry
 ---@field originalName string 
 ---@field newName string 
 CommentatorOverrideNameEntry = {}
 
----@type CommentatorPlayerData
+---@class CommentatorPlayerData
 ---@field unitToken string 
 ---@field name string 
 ---@field faction number 
@@ -517,21 +517,21 @@ CommentatorOverrideNameEntry = {}
 ---@field soloShuffleRoundLosses number 
 CommentatorPlayerData = {}
 
----@type CommentatorSeries
+---@class CommentatorSeries
 ---@field teams table 
 CommentatorSeries = {}
 
----@type CommentatorSeriesTeam
+---@class CommentatorSeriesTeam
 ---@field name string 
 ---@field score number 
 CommentatorSeriesTeam = {}
 
----@type CommentatorTeamDirectoryEntry
+---@class CommentatorTeamDirectoryEntry
 ---@field playerName string 
 ---@field teamName string 
 CommentatorTeamDirectoryEntry = {}
 
----@type CommentatorUnitData
+---@class CommentatorUnitData
 ---@field healthMax number 
 ---@field health number 
 ---@field absorbTotal number 
@@ -542,7 +542,7 @@ CommentatorTeamDirectoryEntry = {}
 ---@field powerMax number 
 CommentatorUnitData = {}
 
----@type NameOverrideEntry
+---@class NameOverrideEntry
 ---@field originalName string 
 ---@field overrideName string 
 NameOverrideEntry = {}

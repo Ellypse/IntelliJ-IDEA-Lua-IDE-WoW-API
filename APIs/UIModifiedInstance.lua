@@ -5,7 +5,7 @@ C_ModifiedInstance = {}
 ---@return ModifiedInstanceInfo info
 function C_ModifiedInstance.GetModifiedInstanceInfoFromMapID(mapID) end
 
----@type ModifiedInstanceInfo
+---@class ModifiedInstanceInfo
 ---@field lfrItemLevel number|nil 
 ---@field normalItemLevel number|nil 
 ---@field heroicItemLevel number|nil 

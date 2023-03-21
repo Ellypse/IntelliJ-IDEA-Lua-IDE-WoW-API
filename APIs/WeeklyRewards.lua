@@ -68,7 +68,7 @@ Enum.ConquestProgressBarDisplayType.AdditionalChest = 1
 ---@field Seasonal ConquestProgressBarDisplayType 
 Enum.ConquestProgressBarDisplayType.Seasonal = 2
 
----@type ConquestWeeklyProgress
+---@class ConquestWeeklyProgress
 ---@field progress number 
 ---@field maxProgress number 
 ---@field displayType ConquestProgressBarDisplayType 
@@ -77,14 +77,14 @@ Enum.ConquestProgressBarDisplayType.Seasonal = 2
 ---@field sampleItemHyperlink string 
 ConquestWeeklyProgress = {}
 
----@type WeeklyRewardActivityEncounterInfo
+---@class WeeklyRewardActivityEncounterInfo
 ---@field encounterID number 
 ---@field bestDifficulty number 
 ---@field uiOrder number 
 ---@field instanceID number 
 WeeklyRewardActivityEncounterInfo = {}
 
----@type WeeklyRewardActivityInfo
+---@class WeeklyRewardActivityInfo
 ---@field type WeeklyRewardChestThresholdType 
 ---@field index luaIndex 
 ---@field threshold number 
@@ -96,7 +96,7 @@ WeeklyRewardActivityEncounterInfo = {}
 ---@field rewards table 
 WeeklyRewardActivityInfo = {}
 
----@type WeeklyRewardActivityRewardInfo
+---@class WeeklyRewardActivityRewardInfo
 ---@field type CachedRewardType 
 ---@field id number 
 ---@field quantity number 

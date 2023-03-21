@@ -17,7 +17,7 @@ function C_VignetteInfo.GetVignettePosition(vignetteGUID, uiMapID) end
 ---@return WOWGUID vignetteGUIDs
 function C_VignetteInfo.GetVignettes() end
 
----@type VignetteInfo
+---@class VignetteInfo
 ---@field vignetteGUID WOWGUID 
 ---@field objectGUID WOWGUID 
 ---@field name cstring 

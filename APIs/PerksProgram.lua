@@ -61,7 +61,7 @@ function C_PerksProgram.ResetHeldItemDragAndDrop() end
 
 function C_PerksProgram.SetFrozenPerksVendorItem() end
 
----@type ModelSceneActorData
+---@class ModelSceneActorData
 ---@field actorID number|nil 
 ---@field scriptTag string|nil 
 ---@field posX number|nil 
@@ -73,7 +73,7 @@ function C_PerksProgram.SetFrozenPerksVendorItem() end
 ---@field normalizedScale number|nil 
 ModelSceneActorData = {}
 
----@type ModelSceneCameraData
+---@class ModelSceneCameraData
 ---@field cameraID number|nil 
 ---@field scriptTag string|nil 
 ---@field targetX number|nil 
@@ -87,11 +87,11 @@ ModelSceneActorData = {}
 ---@field zoomMax number|nil 
 ModelSceneCameraData = {}
 
----@type PerksProgramItemDisplayInfo
+---@class PerksProgramItemDisplayInfo
 ---@field overrideModelSceneID number|nil 
 PerksProgramItemDisplayInfo = {}
 
----@type PerksProgramPendingChestRewards
+---@class PerksProgramPendingChestRewards
 ---@field rewardTypeID number 
 ---@field perksVendorItemID number|nil 
 ---@field rewardAmount number 
@@ -100,13 +100,13 @@ PerksProgramItemDisplayInfo = {}
 ---@field activityThresholdID number 
 PerksProgramPendingChestRewards = {}
 
----@type PerksVendorCategoryInfo
+---@class PerksVendorCategoryInfo
 ---@field ID number 
 ---@field displayName cstring 
 ---@field defaultUIModelSceneID number 
 PerksVendorCategoryInfo = {}
 
----@type PerksVendorItemInfo
+---@class PerksVendorItemInfo
 ---@field name string 
 ---@field perksVendorCategoryID number 
 ---@field description string 

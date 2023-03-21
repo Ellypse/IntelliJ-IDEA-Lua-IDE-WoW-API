@@ -34,18 +34,18 @@ Enum.AnimaDiversionNodeState.SelectedPermanent = 3
 ---@field Cooldown AnimaDiversionNodeState 
 Enum.AnimaDiversionNodeState.Cooldown = 4
 
----@type AnimaDiversionCostInfo
+---@class AnimaDiversionCostInfo
 ---@field currencyID number 
 ---@field quantity number 
 AnimaDiversionCostInfo = {}
 
----@type AnimaDiversionFrameInfo
+---@class AnimaDiversionFrameInfo
 ---@field textureKit textureKit 
 ---@field title string 
 ---@field mapID number 
 AnimaDiversionFrameInfo = {}
 
----@type AnimaDiversionNodeInfo
+---@class AnimaDiversionNodeInfo
 ---@field talentID number 
 ---@field name string 
 ---@field description string 

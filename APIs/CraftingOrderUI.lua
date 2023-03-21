@@ -119,7 +119,7 @@ function C_CraftingOrders.SkillLineHasOrders(skillLineID) end
 
 function C_CraftingOrders.UpdateIgnoreList() end
 
----@type CraftingOrderRequestInfo
+---@class CraftingOrderRequestInfo
 ---@field orderType CraftingOrderType 
 ---@field selectedSkillLineAbility number|nil 
 ---@field searchFavorites bool 
@@ -132,7 +132,7 @@ function C_CraftingOrders.UpdateIgnoreList() end
 ---@field profession Profession|nil 
 CraftingOrderRequestInfo = {}
 
----@type CraftingOrderRequestMyOrdersInfo
+---@class CraftingOrderRequestMyOrdersInfo
 ---@field primarySort CraftingOrderSortInfo 
 ---@field secondarySort CraftingOrderSortInfo 
 ---@field offset number 

@@ -16,7 +16,7 @@ Enum.SplashScreenType.WhatsNew = 0
 ---@field SeasonRollOver SplashScreenType 
 Enum.SplashScreenType.SeasonRollOver = 1
 
----@type SplashScreenInfo
+---@class SplashScreenInfo
 ---@field textureKit textureKit 
 ---@field minDisplayCharLevel number 
 ---@field minQuestDisplayLevel number 

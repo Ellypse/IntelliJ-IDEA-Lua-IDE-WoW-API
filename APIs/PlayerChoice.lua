@@ -31,7 +31,7 @@ Enum.PlayerChoiceRarity.Rare = 2
 ---@field Epic PlayerChoiceRarity 
 Enum.PlayerChoiceRarity.Epic = 3
 
----@type PlayerChoiceInfo
+---@class PlayerChoiceInfo
 ---@field objectGUID WOWGUID 
 ---@field choiceID number 
 ---@field questionText string 
@@ -44,7 +44,7 @@ Enum.PlayerChoiceRarity.Epic = 3
 ---@field closeUISoundKitID number|nil 
 PlayerChoiceInfo = {}
 
----@type PlayerChoiceOptionButtonInfo
+---@class PlayerChoiceOptionButtonInfo
 ---@field id number 
 ---@field text string 
 ---@field disabled bool 
@@ -54,7 +54,7 @@ PlayerChoiceInfo = {}
 ---@field soundKitID number|nil 
 PlayerChoiceOptionButtonInfo = {}
 
----@type PlayerChoiceOptionInfo
+---@class PlayerChoiceOptionInfo
 ---@field id number 
 ---@field description string 
 ---@field header string 
@@ -75,13 +75,13 @@ PlayerChoiceOptionButtonInfo = {}
 ---@field subHeader string|nil 
 PlayerChoiceOptionInfo = {}
 
----@type PlayerChoiceOptionRewardInfo
+---@class PlayerChoiceOptionRewardInfo
 ---@field currencyRewards table 
 ---@field itemRewards table 
 ---@field repRewards table 
 PlayerChoiceOptionRewardInfo = {}
 
----@type PlayerChoiceRewardCurrencyInfo
+---@class PlayerChoiceRewardCurrencyInfo
 ---@field currencyId number 
 ---@field name string 
 ---@field currencyTexture number 
@@ -89,13 +89,13 @@ PlayerChoiceOptionRewardInfo = {}
 ---@field isCurrencyContainer bool 
 PlayerChoiceRewardCurrencyInfo = {}
 
----@type PlayerChoiceRewardItemInfo
+---@class PlayerChoiceRewardItemInfo
 ---@field itemId number 
 ---@field name string 
 ---@field quantity number 
 PlayerChoiceRewardItemInfo = {}
 
----@type PlayerChoiceRewardReputationInfo
+---@class PlayerChoiceRewardReputationInfo
 ---@field factionId number 
 ---@field quantity number 
 PlayerChoiceRewardReputationInfo = {}

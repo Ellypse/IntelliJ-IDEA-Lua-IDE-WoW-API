@@ -277,7 +277,7 @@ Enum.TransmogCameraVariation.RightShoulder = 1
 ---@field CloakBackpack TransmogCameraVariation 
 Enum.TransmogCameraVariation.CloakBackpack = 1
 
----@type TransmogAppearanceInfoBySourceData
+---@class TransmogAppearanceInfoBySourceData
 ---@field appearanceID number 
 ---@field appearanceIsCollected bool 
 ---@field sourceIsCollected bool 
@@ -291,7 +291,7 @@ Enum.TransmogCameraVariation.CloakBackpack = 1
 ---@field sourceIsKnown bool 
 TransmogAppearanceInfoBySourceData = {}
 
----@type TransmogAppearanceJournalEncounterInfo
+---@class TransmogAppearanceJournalEncounterInfo
 ---@field instance string 
 ---@field instanceType number 
 ---@field tiers table 
@@ -299,7 +299,7 @@ TransmogAppearanceInfoBySourceData = {}
 ---@field difficulties table 
 TransmogAppearanceJournalEncounterInfo = {}
 
----@type TransmogAppearanceSourceInfoData
+---@class TransmogAppearanceSourceInfoData
 ---@field category TransmogCollectionType 
 ---@field itemAppearanceID number 
 ---@field canHaveIllusion bool 
@@ -311,7 +311,7 @@ TransmogAppearanceJournalEncounterInfo = {}
 ---@field itemSubClass number 
 TransmogAppearanceSourceInfoData = {}
 
----@type TransmogCategoryAppearanceInfo
+---@class TransmogCategoryAppearanceInfo
 ---@field visualID number 
 ---@field isCollected bool 
 ---@field isFavorite bool 
@@ -325,7 +325,7 @@ TransmogAppearanceSourceInfoData = {}
 ---@field alwaysShowItem bool|nil @ For internal testing only
 TransmogCategoryAppearanceInfo = {}
 
----@type TransmogCategoryInfo
+---@class TransmogCategoryInfo
 ---@field name cstring 
 ---@field isWeapon bool 
 ---@field canHaveIllusions bool 
@@ -333,7 +333,7 @@ TransmogCategoryAppearanceInfo = {}
 ---@field canOffHand bool 
 TransmogCategoryInfo = {}
 
----@type TransmogIllusionInfo
+---@class TransmogIllusionInfo
 ---@field visualID number 
 ---@field sourceID number 
 ---@field icon fileID 
@@ -342,7 +342,7 @@ TransmogCategoryInfo = {}
 ---@field isHideVisual bool 
 TransmogIllusionInfo = {}
 
----@type TransmogOutfitInfo
+---@class TransmogOutfitInfo
 ---@field name cstring 
 ---@field icon fileID 
 TransmogOutfitInfo = {}

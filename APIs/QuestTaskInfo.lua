@@ -48,7 +48,7 @@ function C_TaskQuest.IsActive(questID) end
 ---@param questID number 
 function C_TaskQuest.RequestPreloadRewardData(questID) end
 
----@type TaskPOIData
+---@class TaskPOIData
 ---@field questId number 
 ---@field x number 
 ---@field y number 

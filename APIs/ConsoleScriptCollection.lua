@@ -17,17 +17,17 @@ function C_ConsoleScriptCollection.GetElements(collectionID) end
 ---@return ConsoleScriptData data
 function C_ConsoleScriptCollection.GetScriptData(consoleScriptID) end
 
----@type ConsoleScriptCollectionData
+---@class ConsoleScriptCollectionData
 ---@field ID number 
 ---@field name cstring 
 ConsoleScriptCollectionData = {}
 
----@type ConsoleScriptCollectionElementData
+---@class ConsoleScriptCollectionElementData
 ---@field collectionID number|nil 
 ---@field consoleScriptID number|nil 
 ConsoleScriptCollectionElementData = {}
 
----@type ConsoleScriptData
+---@class ConsoleScriptData
 ---@field ID number 
 ---@field name cstring 
 ---@field help cstring 
@@ -36,7 +36,7 @@ ConsoleScriptCollectionElementData = {}
 ---@field isLuaScript bool 
 ConsoleScriptData = {}
 
----@type ConsoleScriptParameter
+---@class ConsoleScriptParameter
 ---@field name string 
 ---@field description string 
 ConsoleScriptParameter = {}
