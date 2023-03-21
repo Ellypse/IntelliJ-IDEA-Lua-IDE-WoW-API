@@ -1,7 +1,7 @@
 ---@class Platform
 C_Platform = {}
 
----@class Enum.ClientPlatformType
+---@class ClientPlatformType
 Enum.ClientPlatformType = {}
 ---@field Windows ClientPlatformType 
 Enum.ClientPlatformType.Windows = 0

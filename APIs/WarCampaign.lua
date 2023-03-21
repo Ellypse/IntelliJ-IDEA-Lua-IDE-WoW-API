@@ -44,7 +44,7 @@ function C_CampaignInfo.SortAsNormalQuest(campaignID) end
 ---@return boolean useNormalQuestIcons
 function C_CampaignInfo.UsesNormalQuestIcons(campaignID) end
 
----@class Enum.CampaignState
+---@class CampaignState
 Enum.CampaignState = {}
 ---@field Invalid CampaignState 
 Enum.CampaignState.Invalid = 0

@@ -171,7 +171,7 @@ function UnitTrialBankedLevels(unit) end
 ---@return number uiWidgetSet
 function UnitWidgetSet(unit) end
 
----@class Enum.PhaseReason
+---@class PhaseReason
 Enum.PhaseReason = {}
 ---@field Phasing PhaseReason 
 Enum.PhaseReason.Phasing = 0
@@ -182,7 +182,7 @@ Enum.PhaseReason.WarMode = 2
 ---@field ChromieTime PhaseReason 
 Enum.PhaseReason.ChromieTime = 3
 
----@class Enum.PowerType
+---@class PowerType
 Enum.PowerType = {}
 ---@field HealthCost PowerType 
 Enum.PowerType.HealthCost = -2
@@ -237,7 +237,7 @@ Enum.PowerType.RuneUnholy = 22
 ---@field NumPowerTypes PowerType 
 Enum.PowerType.NumPowerTypes = 23
 
----@class Enum.PvPUnitClassification
+---@class PvPUnitClassification
 Enum.PvPUnitClassification = {}
 ---@field FlagCarrierHorde PvPUnitClassification 
 Enum.PvPUnitClassification.FlagCarrierHorde = 0

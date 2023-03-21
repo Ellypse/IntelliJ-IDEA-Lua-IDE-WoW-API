@@ -9,7 +9,7 @@ function C_KeyBindings.GetBindingIndex(action) end
 ---@return CustomBindingType|nil customBindingType
 function C_KeyBindings.GetCustomBindingType(bindingIndex) end
 
----@class Enum.BindingSet
+---@class BindingSet
 Enum.BindingSet = {}
 ---@field Default BindingSet 
 Enum.BindingSet.Default = 0
@@ -20,7 +20,7 @@ Enum.BindingSet.Character = 2
 ---@field Current BindingSet 
 Enum.BindingSet.Current = 3
 
----@class Enum.CustomBindingType
+---@class CustomBindingType
 Enum.CustomBindingType = {}
 ---@field VoicePushToTalk CustomBindingType 
 Enum.CustomBindingType.VoicePushToTalk = 0

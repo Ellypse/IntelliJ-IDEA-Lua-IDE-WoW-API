@@ -21,7 +21,7 @@ function C_QuestLine.IsComplete(questLineID) end
 ---@param uiMapID number 
 function C_QuestLine.RequestQuestLinesForMap(uiMapID) end
 
----@class Enum.QuestLineFloorLocation
+---@class QuestLineFloorLocation
 Enum.QuestLineFloorLocation = {}
 ---@field Above QuestLineFloorLocation 
 Enum.QuestLineFloorLocation.Above = 0

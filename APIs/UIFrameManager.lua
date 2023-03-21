@@ -5,7 +5,7 @@ C_FrameManager = {}
 ---@return boolean shouldShow
 function C_FrameManager.GetFrameVisibilityState(frameType) end
 
----@class Enum.UIFrameType
+---@class UIFrameType
 Enum.UIFrameType = {}
 ---@field JailersTowerBuffs UIFrameType 
 Enum.UIFrameType.JailersTowerBuffs = 0

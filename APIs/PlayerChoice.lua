@@ -20,7 +20,7 @@ function C_PlayerChoice.RequestRerollPlayerChoice() end
 ---@param responseID number 
 function C_PlayerChoice.SendPlayerChoiceResponse(responseID) end
 
----@class Enum.PlayerChoiceRarity
+---@class PlayerChoiceRarity
 Enum.PlayerChoiceRarity = {}
 ---@field Common PlayerChoiceRarity 
 Enum.PlayerChoiceRarity.Common = 0

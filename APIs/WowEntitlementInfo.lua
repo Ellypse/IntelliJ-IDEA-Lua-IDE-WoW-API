@@ -1,7 +1,7 @@
 ---@class WowEntitlementInfo
 C_WowEntitlementInfo = {}
 
----@class Enum.WoWEntitlementType
+---@class WoWEntitlementType
 Enum.WoWEntitlementType = {}
 ---@field Item WoWEntitlementType 
 Enum.WoWEntitlementType.Item = 0

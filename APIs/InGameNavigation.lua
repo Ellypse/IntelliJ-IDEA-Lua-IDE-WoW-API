@@ -16,7 +16,7 @@ function C_Navigation.HasValidScreenPosition() end
 ---@return boolean wasClamped
 function C_Navigation.WasClampedToScreen() end
 
----@class Enum.NavigationState
+---@class NavigationState
 Enum.NavigationState = {}
 ---@field Invalid NavigationState 
 Enum.NavigationState.Invalid = 0
