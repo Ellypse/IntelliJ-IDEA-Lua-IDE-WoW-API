@@ -35,7 +35,7 @@ function C_AzeriteItem.IsAzeriteItemByID(itemInfo) end
 function C_AzeriteItem.IsAzeriteItemEnabled(azeriteItemLocation) end
 
 ---@class UnlockedAzeriteEmpoweredItems
----@field unlockedItem AzeriteEmpoweredItemLocation 
----@field tierIndex luaIndex 
+---@type AzeriteEmpoweredItemLocation 
+---@type luaIndex 
 UnlockedAzeriteEmpoweredItems = {}
 

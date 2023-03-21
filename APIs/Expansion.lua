@@ -64,32 +64,32 @@ function SendSubscriptionInterstitialResponse(response) end
 
 ---@class SubscriptionInterstitialResponseType : Enum
 Enum.SubscriptionInterstitialResponseType = {}
----@field protected Clicked SubscriptionInterstitialResponseType 
+---@field Clicked SubscriptionInterstitialResponseType 
 Enum.SubscriptionInterstitialResponseType.Clicked = 0
----@field protected Closed SubscriptionInterstitialResponseType 
+---@field Closed SubscriptionInterstitialResponseType 
 Enum.SubscriptionInterstitialResponseType.Closed = 1
----@field protected WebRedirect SubscriptionInterstitialResponseType 
+---@field WebRedirect SubscriptionInterstitialResponseType 
 Enum.SubscriptionInterstitialResponseType.WebRedirect = 2
 
 ---@class SubscriptionInterstitialType : Enum
 Enum.SubscriptionInterstitialType = {}
----@field protected Standard SubscriptionInterstitialType 
+---@field Standard SubscriptionInterstitialType 
 Enum.SubscriptionInterstitialType.Standard = 0
----@field protected LeftNpeArea SubscriptionInterstitialType 
+---@field LeftNpeArea SubscriptionInterstitialType 
 Enum.SubscriptionInterstitialType.LeftNpeArea = 1
----@field protected MaxLevel SubscriptionInterstitialType 
+---@field MaxLevel SubscriptionInterstitialType 
 Enum.SubscriptionInterstitialType.MaxLevel = 2
 
 ---@class ExpansionDisplayInfo
----@field logo fileID 
----@field banner textureAtlas 
----@field features table 
----@field highResBackgroundID fileID 
----@field lowResBackgroundID fileID 
+---@type fileID 
+---@type textureAtlas 
+---@type table 
+---@type fileID 
+---@type fileID 
 ExpansionDisplayInfo = {}
 
 ---@class ExpansionDisplayInfoFeature
----@field icon fileID 
----@field text cstring 
+---@type fileID 
+---@type cstring 
 ExpansionDisplayInfoFeature = {}
 

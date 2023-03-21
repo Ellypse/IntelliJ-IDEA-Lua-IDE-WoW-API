@@ -60,44 +60,44 @@ function C_PetJournal.SpellTargetBattlePet(battlePetGUID) end
 
 ---@class PetJournalError : Enum
 Enum.PetJournalError = {}
----@field protected None PetJournalError 
+---@field None PetJournalError 
 Enum.PetJournalError.None = 0
----@field protected PetIsDead PetJournalError 
+---@field PetIsDead PetJournalError 
 Enum.PetJournalError.PetIsDead = 1
----@field protected JournalIsLocked PetJournalError 
+---@field JournalIsLocked PetJournalError 
 Enum.PetJournalError.JournalIsLocked = 2
----@field protected InvalidFaction PetJournalError 
+---@field InvalidFaction PetJournalError 
 Enum.PetJournalError.InvalidFaction = 3
----@field protected NoFavoritesToSummon PetJournalError 
+---@field NoFavoritesToSummon PetJournalError 
 Enum.PetJournalError.NoFavoritesToSummon = 4
----@field protected NoValidRandomSummon PetJournalError 
+---@field NoValidRandomSummon PetJournalError 
 Enum.PetJournalError.NoValidRandomSummon = 5
----@field protected InvalidCovenant PetJournalError 
+---@field InvalidCovenant PetJournalError 
 Enum.PetJournalError.InvalidCovenant = 6
 
 ---@class PetAbilityLevelInfo
----@field abilityID number 
----@field level number 
+---@type number 
+---@type number 
 PetAbilityLevelInfo = {}
 
 ---@class PetJournalPetInfo
----@field speciesID number 
----@field customName string|nil 
----@field petLevel number 
----@field xp number 
----@field maxXP number 
----@field displayID number 
----@field isFavorite bool 
----@field icon fileID 
----@field petType number 
----@field creatureID number 
----@field name string|nil 
----@field sourceText string 
----@field description string 
----@field isWild bool 
----@field canBattle bool 
----@field tradable bool 
----@field unique bool 
----@field obtainable bool 
+---@type number 
+---@type string 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
+---@type fileID 
+---@type number 
+---@type number 
+---@type string 
+---@type string 
+---@type string 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
 PetJournalPetInfo = {}
 

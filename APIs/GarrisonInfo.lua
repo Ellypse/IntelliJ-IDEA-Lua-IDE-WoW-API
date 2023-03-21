@@ -160,211 +160,211 @@ function C_Garrison.RushHealFollower(garrFollowerID) end
 function C_Garrison.SetAutoCombatSpellFastForward(state) end
 
 ---@class AutoCombatDamageClassString
----@field damageClassValue number 
----@field locString cstring 
+---@type number 
+---@type cstring 
 AutoCombatDamageClassString = {}
 
 ---@class AutoCombatResult
----@field winner bool 
----@field combatLog table 
+---@type bool 
+---@type table 
 AutoCombatResult = {}
 
 ---@class AutoCombatSpellInfo
----@field autoCombatSpellID number 
----@field name cstring 
----@field description string 
----@field cooldown number 
----@field duration number 
----@field schoolMask number 
----@field previewMask number 
----@field icon fileID 
----@field spellTutorialFlag number 
----@field hasThornsEffect bool 
+---@type number 
+---@type cstring 
+---@type string 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type fileID 
+---@type number 
+---@type bool 
 AutoCombatSpellInfo = {}
 
 ---@class AutoCombatTroopInfo
----@field name cstring 
----@field followerID GarrisonFollower 
----@field garrFollowerID GarrisonFollower 
----@field followerTypeID number 
----@field displayIDs table 
----@field level number 
----@field quality number 
----@field levelXP number 
----@field maxXP number 
----@field height number 
----@field scale number 
----@field displayScale number|nil 
----@field displayHeight number|nil 
----@field classSpec number|nil 
----@field className string|nil 
----@field flavorText string|nil 
----@field classAtlas textureAtlas 
----@field portraitIconID fileID 
----@field textureKit textureKit 
----@field isTroop bool 
----@field raceID number 
----@field health number 
----@field maxHealth number 
----@field role number 
----@field isAutoTroop bool 
----@field isSoulbind bool 
----@field isCollected bool 
----@field autoCombatStats FollowerAutoCombatStatsInfo 
+---@type cstring 
+---@type GarrisonFollower 
+---@type GarrisonFollower 
+---@type number 
+---@type table 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type string 
+---@type string 
+---@type textureAtlas 
+---@type fileID 
+---@type textureKit 
+---@type bool 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type FollowerAutoCombatStatsInfo 
 AutoCombatTroopInfo = {}
 
 ---@class AutoMissionCombatEventInfo
----@field boardIndex number 
----@field oldHealth number 
----@field newHealth number 
----@field maxHealth number 
----@field points number|nil 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
 AutoMissionCombatEventInfo = {}
 
 ---@class AutoMissionEnvironmentEffect
----@field name string 
----@field autoCombatSpellInfo AutoCombatSpellInfo 
+---@type string 
+---@type AutoCombatSpellInfo 
 AutoMissionEnvironmentEffect = {}
 
 ---@class AutoMissionEvent
----@field type number 
----@field spellID number 
----@field schoolMask number 
----@field effectIndex number 
----@field casterBoardIndex number 
----@field auraType number 
----@field targetInfo table 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type table 
 AutoMissionEvent = {}
 
 ---@class AutoMissionRound
----@field events table 
+---@type table 
 AutoMissionRound = {}
 
 ---@class AutoMissionTargetingInfo
----@field targetIndex number 
----@field previewType number 
----@field spellID number 
----@field effectIndex number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
 AutoMissionTargetingInfo = {}
 
 ---@class FollowerAutoCombatStatsInfo
----@field currentHealth number 
----@field maxHealth number 
----@field attack number 
----@field healingTimestamp time_t 
----@field healCost number 
----@field minutesHealingRemaining number 
+---@type number 
+---@type number 
+---@type number 
+---@type time_t 
+---@type number 
+---@type number 
 FollowerAutoCombatStatsInfo = {}
 
 ---@class FollowerDisplayID
----@field id number 
----@field followerPageScale number 
----@field showWeapon bool 
+---@type number 
+---@type number 
+---@type bool 
 FollowerDisplayID = {}
 
 ---@class FollowerMissionCompleteInfo
----@field name cstring 
----@field displayIDs table 
----@field level number 
----@field quality number 
----@field currentXP number 
----@field maxXP number 
----@field height number 
----@field scale number 
----@field movementType number|nil 
----@field impactDelay number|nil 
----@field castID number|nil 
----@field castSoundID number|nil 
----@field impactID number|nil 
----@field impactSoundID number|nil 
----@field targetImpactID number|nil 
----@field targetImpactSoundID number|nil 
----@field className string|nil 
----@field classAtlas textureAtlas 
----@field portraitIconID fileID 
----@field textureKit textureKit 
----@field isTroop bool 
----@field boardIndex number 
----@field health number 
----@field maxHealth number 
----@field role number 
+---@type cstring 
+---@type table 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type string 
+---@type textureAtlas 
+---@type fileID 
+---@type textureKit 
+---@type bool 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
 FollowerMissionCompleteInfo = {}
 
 ---@class GarrisonAbilityCounterInfo
----@field id number 
----@field icon fileID 
----@field name cstring 
----@field factor number 
----@field description cstring 
+---@type number 
+---@type fileID 
+---@type cstring 
+---@type number 
+---@type cstring 
 GarrisonAbilityCounterInfo = {}
 
 ---@class GarrisonAbilityInfo
----@field id number 
----@field name cstring 
----@field description string 
----@field icon fileID 
----@field isTrait bool 
----@field isSpecialization bool 
----@field temporary bool 
----@field category string|nil 
----@field counters table 
----@field isEmptySlot bool 
+---@type number 
+---@type cstring 
+---@type string 
+---@type fileID 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type string 
+---@type table 
+---@type bool 
 GarrisonAbilityInfo = {}
 
 ---@class GarrisonEnemyEncounterInfo
----@field name cstring 
----@field displayID fileID 
----@field portraitFileDataID fileID 
----@field textureKit textureKit 
----@field scale number 
----@field height number 
----@field mechanics table 
----@field autoCombatSpells table 
----@field autoCombatAutoAttack AutoCombatSpellInfo|nil 
----@field role number 
----@field health number 
----@field maxHealth number 
----@field attack number 
----@field boardIndex number 
----@field isElite bool 
+---@type cstring 
+---@type fileID 
+---@type fileID 
+---@type textureKit 
+---@type number 
+---@type number 
+---@type table 
+---@type table 
+---@type AutoCombatSpellInfo 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
 GarrisonEnemyEncounterInfo = {}
 
 ---@class GarrisonFollowerDeathInfo
----@field followerID GarrisonFollower 
----@field state luaIndex 
+---@type GarrisonFollower 
+---@type luaIndex 
 GarrisonFollowerDeathInfo = {}
 
 ---@class GarrisonMechanicInfo
----@field mechanicTypeID number 
----@field icon fileID 
----@field name cstring 
----@field factor number 
----@field description cstring 
----@field ability GarrisonAbilityInfo|nil 
+---@type number 
+---@type fileID 
+---@type cstring 
+---@type number 
+---@type cstring 
+---@type GarrisonAbilityInfo 
 GarrisonMechanicInfo = {}
 
 ---@class GarrisonPlotInstanceMapInfo
----@field buildingPlotInstanceID number 
----@field position vector2 
----@field name cstring 
----@field atlasName textureAtlas 
+---@type number 
+---@type vector2 
+---@type cstring 
+---@type textureAtlas 
 GarrisonPlotInstanceMapInfo = {}
 
 ---@class MissionDeploymentInfo
----@field location cstring 
----@field xp number 
----@field environment string|nil 
----@field environmentDesc string|nil 
----@field environmentTexture fileID 
----@field locTextureKit textureKit 
----@field isExhausting bool 
----@field enemies table 
+---@type cstring 
+---@type number 
+---@type string 
+---@type string 
+---@type fileID 
+---@type textureKit 
+---@type bool 
+---@type table 
 MissionDeploymentInfo = {}
 
 ---@class MissionEncounterIconInfo
----@field portraitFileDataID fileID 
----@field missionScalar number 
----@field isElite bool 
----@field isRare bool 
+---@type fileID 
+---@type number 
+---@type bool 
+---@type bool 
 MissionEncounterIconInfo = {}
 

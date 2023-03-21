@@ -14,19 +14,19 @@ function C_CreatureInfo.GetFactionInfo(raceID) end
 function C_CreatureInfo.GetRaceInfo(raceID) end
 
 ---@class ClassInfo
----@field className string 
----@field classFile string 
----@field classID number 
+---@type string 
+---@type string 
+---@type number 
 ClassInfo = {}
 
 ---@class FactionInfo
----@field name cstring 
----@field groupTag cstring 
+---@type cstring 
+---@type cstring 
 FactionInfo = {}
 
 ---@class RaceInfo
----@field raceName string 
----@field clientFileString string 
----@field raceID number 
+---@type string 
+---@type string 
+---@type number 
 RaceInfo = {}
 

@@ -62,64 +62,64 @@ function C_PerksProgram.ResetHeldItemDragAndDrop() end
 function C_PerksProgram.SetFrozenPerksVendorItem() end
 
 ---@class ModelSceneActorData
----@field actorID number|nil 
----@field scriptTag string|nil 
----@field posX number|nil 
----@field posY number|nil 
----@field posZ number|nil 
----@field yaw number|nil 
----@field pitch number|nil 
----@field roll number|nil 
----@field normalizedScale number|nil 
+---@type number 
+---@type string 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
 ModelSceneActorData = {}
 
 ---@class ModelSceneCameraData
----@field cameraID number|nil 
----@field scriptTag string|nil 
----@field targetX number|nil 
----@field targetY number|nil 
----@field targetZ number|nil 
----@field yaw number|nil 
----@field pitch number|nil 
----@field roll number|nil 
----@field defaultZoom number|nil 
----@field zoomMin number|nil 
----@field zoomMax number|nil 
+---@type number 
+---@type string 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
 ModelSceneCameraData = {}
 
 ---@class PerksProgramItemDisplayInfo
----@field overrideModelSceneID number|nil 
+---@type number 
 PerksProgramItemDisplayInfo = {}
 
 ---@class PerksProgramPendingChestRewards
----@field rewardTypeID number 
----@field perksVendorItemID number|nil 
----@field rewardAmount number 
----@field monthRewarded string|nil 
----@field activityMonthID number 
----@field activityThresholdID number 
+---@type number 
+---@type number 
+---@type number 
+---@type string 
+---@type number 
+---@type number 
 PerksProgramPendingChestRewards = {}
 
 ---@class PerksVendorCategoryInfo
----@field ID number 
----@field displayName cstring 
----@field defaultUIModelSceneID number 
+---@type number 
+---@type cstring 
+---@type number 
 PerksVendorCategoryInfo = {}
 
 ---@class PerksVendorItemInfo
----@field name string 
----@field perksVendorCategoryID number 
----@field description string 
----@field timeRemaining time_t 
----@field purchased bool 
----@field refundable bool 
----@field price number 
----@field perksVendorItemID number 
----@field itemID number 
----@field iconTexture string 
----@field mountID number 
----@field speciesID number 
----@field transmogSetID number 
----@field itemModifiedAppearanceID number 
+---@type string 
+---@type number 
+---@type string 
+---@type time_t 
+---@type bool 
+---@type bool 
+---@type number 
+---@type number 
+---@type number 
+---@type string 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
 PerksVendorItemInfo = {}
 

@@ -171,116 +171,116 @@ function C_Traits.StageConfig(configID) end
 function C_Traits.TalentTestUnlearnSpells() end
 
 ---@class TraitCondInfo
----@field condID number 
----@field ranksGranted number|nil 
----@field isAlwaysMet bool 
----@field isMet bool 
----@field isGate bool 
----@field questID number|nil 
----@field achievementID number|nil 
----@field specSetID number|nil 
----@field playerLevel number|nil 
----@field traitCurrencyID number|nil 
----@field spentAmountRequired number|nil 
----@field tooltipFormat string|nil 
+---@type number 
+---@type number 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type string 
 TraitCondInfo = {}
 
 ---@class TraitConfigInfo
----@field ID number 
----@field type TraitConfigType 
----@field name string 
----@field treeIDs table 
----@field usesSharedActionBars bool 
+---@type number 
+---@type TraitConfigType 
+---@type string 
+---@type table 
+---@type bool 
 TraitConfigInfo = {}
 
 ---@class TraitCurrencyCost
----@field ID number 
----@field amount number 
+---@type number 
+---@type number 
 TraitCurrencyCost = {}
 
 ---@class TraitDefinitionInfo
----@field spellID number|nil 
----@field overrideName string|nil 
----@field overrideSubtext string|nil 
----@field overrideDescription string|nil 
----@field overrideIcon number|nil 
----@field overriddenSpellID number|nil 
----@field subType TraitDefinitionSubType|nil 
+---@type number 
+---@type string 
+---@type string 
+---@type string 
+---@type number 
+---@type number 
+---@type TraitDefinitionSubType 
 TraitDefinitionInfo = {}
 
 ---@class TraitEntryInfo
----@field definitionID number 
----@field type TraitNodeEntryType 
----@field maxRanks number 
----@field isAvailable bool 
----@field conditionIDs table 
+---@type number 
+---@type TraitNodeEntryType 
+---@type number 
+---@type bool 
+---@type table 
 TraitEntryInfo = {}
 
 ---@class TraitEntryRankInfo
----@field entryID number 
----@field rank number 
+---@type number 
+---@type number 
 TraitEntryRankInfo = {}
 
 ---@class TraitGateInfo
----@field topLeftNodeID number 
----@field conditionID number 
+---@type number 
+---@type number 
 TraitGateInfo = {}
 
 ---@class TraitNodeInfo
----@field ID number 
----@field posX number 
----@field posY number 
----@field flags number 
----@field entryIDs table 
----@field entryIDsWithCommittedRanks table 
----@field canPurchaseRank bool 
----@field canRefundRank bool 
----@field isAvailable bool 
----@field isVisible bool 
----@field ranksPurchased number 
----@field activeRank number 
----@field currentRank number 
----@field activeEntry TraitEntryRankInfo|nil 
----@field nextEntry TraitEntryRankInfo|nil 
----@field maxRanks number 
----@field type TraitNodeType 
----@field visibleEdges table 
----@field meetsEdgeRequirements bool 
----@field groupIDs table 
----@field conditionIDs table 
----@field isCascadeRepurchasable bool 
----@field cascadeRepurchaseEntryID number|nil 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type table 
+---@type table 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type number 
+---@type number 
+---@type number 
+---@type TraitEntryRankInfo 
+---@type TraitEntryRankInfo 
+---@type number 
+---@type TraitNodeType 
+---@type table 
+---@type bool 
+---@type table 
+---@type table 
+---@type bool 
+---@type number 
 TraitNodeInfo = {}
 
 ---@class TraitNodeInfoPartial
----@field canPurchaseRank bool|nil 
----@field canRefundRank bool|nil 
----@field isAvailable bool|nil 
----@field isVisible bool|nil 
----@field ranksPurchased number|nil 
----@field activeRank number|nil 
----@field currentRank number|nil 
----@field meetsEdgeRequirements bool|nil 
----@field isCascadeRepurchasable bool|nil 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
+---@type bool 
 TraitNodeInfoPartial = {}
 
 ---@class TraitOutEdgeInfo
----@field targetNode number 
----@field type number 
----@field visualStyle number 
----@field isActive bool 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
 TraitOutEdgeInfo = {}
 
 ---@class TraitTreeInfo
----@field ID number 
----@field gates table 
----@field hideSingleRankNumbers bool 
+---@type number 
+---@type table 
+---@type bool 
 TraitTreeInfo = {}
 
 ---@class TreeCurrencyInfo
----@field traitCurrencyID number 
----@field quantity number 
----@field maxQuantity number|nil 
----@field spent number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
 TreeCurrencyInfo = {}
 

@@ -49,15 +49,15 @@ function C_TaskQuest.IsActive(questID) end
 function C_TaskQuest.RequestPreloadRewardData(questID) end
 
 ---@class TaskPOIData
----@field questId number 
----@field x number 
----@field y number 
----@field inProgress bool 
----@field numObjectives number 
----@field mapID number 
----@field isQuestStart bool 
----@field isDaily bool 
----@field isCombatAllyQuest bool 
----@field childDepth number|nil 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
+---@type number 
+---@type number 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type number 
 TaskPOIData = {}
 

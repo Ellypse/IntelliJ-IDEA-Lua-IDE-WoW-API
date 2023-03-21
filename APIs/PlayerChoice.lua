@@ -22,81 +22,81 @@ function C_PlayerChoice.SendPlayerChoiceResponse(responseID) end
 
 ---@class PlayerChoiceRarity : Enum
 Enum.PlayerChoiceRarity = {}
----@field protected Common PlayerChoiceRarity 
+---@field Common PlayerChoiceRarity 
 Enum.PlayerChoiceRarity.Common = 0
----@field protected Uncommon PlayerChoiceRarity 
+---@field Uncommon PlayerChoiceRarity 
 Enum.PlayerChoiceRarity.Uncommon = 1
----@field protected Rare PlayerChoiceRarity 
+---@field Rare PlayerChoiceRarity 
 Enum.PlayerChoiceRarity.Rare = 2
----@field protected Epic PlayerChoiceRarity 
+---@field Epic PlayerChoiceRarity 
 Enum.PlayerChoiceRarity.Epic = 3
 
 ---@class PlayerChoiceInfo
----@field objectGUID WOWGUID 
----@field choiceID number 
----@field questionText string 
----@field pendingChoiceText string 
----@field uiTextureKit textureKit 
----@field hideWarboardHeader bool 
----@field keepOpenAfterChoice bool 
----@field options table 
----@field soundKitID number|nil 
----@field closeUISoundKitID number|nil 
+---@type WOWGUID 
+---@type number 
+---@type string 
+---@type string 
+---@type textureKit 
+---@type bool 
+---@type bool 
+---@type table 
+---@type number 
+---@type number 
 PlayerChoiceInfo = {}
 
 ---@class PlayerChoiceOptionButtonInfo
----@field id number 
----@field text string 
----@field disabled bool 
----@field confirmation string|nil 
----@field tooltip string|nil 
----@field rewardQuestID number|nil 
----@field soundKitID number|nil 
+---@type number 
+---@type string 
+---@type bool 
+---@type string 
+---@type string 
+---@type number 
+---@type number 
 PlayerChoiceOptionButtonInfo = {}
 
 ---@class PlayerChoiceOptionInfo
----@field id number 
----@field description string 
----@field header string 
----@field choiceArtID number 
----@field desaturatedArt bool 
----@field disabledOption bool 
----@field hasRewards bool 
----@field rewardInfo PlayerChoiceOptionRewardInfo 
----@field uiTextureKit textureKit 
----@field maxStacks number 
----@field buttons table 
----@field widgetSetID number|nil 
----@field spellID number|nil 
----@field rarity PlayerChoiceRarity|nil 
----@field rarityColor colorRGBA|nil 
----@field typeArtID number|nil 
----@field headerIconAtlasElement string|nil 
----@field subHeader string|nil 
+---@type number 
+---@type string 
+---@type string 
+---@type number 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type PlayerChoiceOptionRewardInfo 
+---@type textureKit 
+---@type number 
+---@type table 
+---@type number 
+---@type number 
+---@type PlayerChoiceRarity 
+---@type colorRGBA 
+---@type number 
+---@type string 
+---@type string 
 PlayerChoiceOptionInfo = {}
 
 ---@class PlayerChoiceOptionRewardInfo
----@field currencyRewards table 
----@field itemRewards table 
----@field repRewards table 
+---@type table 
+---@type table 
+---@type table 
 PlayerChoiceOptionRewardInfo = {}
 
 ---@class PlayerChoiceRewardCurrencyInfo
----@field currencyId number 
----@field name string 
----@field currencyTexture number 
----@field quantity number 
----@field isCurrencyContainer bool 
+---@type number 
+---@type string 
+---@type number 
+---@type number 
+---@type bool 
 PlayerChoiceRewardCurrencyInfo = {}
 
 ---@class PlayerChoiceRewardItemInfo
----@field itemId number 
----@field name string 
----@field quantity number 
+---@type number 
+---@type string 
+---@type number 
 PlayerChoiceRewardItemInfo = {}
 
 ---@class PlayerChoiceRewardReputationInfo
----@field factionId number 
----@field quantity number 
+---@type number 
+---@type number 
 PlayerChoiceRewardReputationInfo = {}
 

@@ -6,57 +6,57 @@ function C_Cursor.GetCursorItem() end
 
 ---@class UICursorType : Enum
 Enum.UICursorType = {}
----@field protected Default UICursorType 
+---@field Default UICursorType 
 Enum.UICursorType.Default = 0
----@field protected Item UICursorType 
+---@field Item UICursorType 
 Enum.UICursorType.Item = 1
----@field protected Money UICursorType 
+---@field Money UICursorType 
 Enum.UICursorType.Money = 2
----@field protected Spell UICursorType 
+---@field Spell UICursorType 
 Enum.UICursorType.Spell = 3
----@field protected PetAction UICursorType 
+---@field PetAction UICursorType 
 Enum.UICursorType.PetAction = 4
----@field protected Merchant UICursorType 
+---@field Merchant UICursorType 
 Enum.UICursorType.Merchant = 5
----@field protected ActionBar UICursorType 
+---@field ActionBar UICursorType 
 Enum.UICursorType.ActionBar = 6
----@field protected Macro UICursorType 
+---@field Macro UICursorType 
 Enum.UICursorType.Macro = 7
----@field protected AmmoObsolete UICursorType 
+---@field AmmoObsolete UICursorType 
 Enum.UICursorType.AmmoObsolete = 9
----@field protected Pet UICursorType 
+---@field Pet UICursorType 
 Enum.UICursorType.Pet = 10
----@field protected GuildBank UICursorType 
+---@field GuildBank UICursorType 
 Enum.UICursorType.GuildBank = 11
----@field protected GuildBankMoney UICursorType 
+---@field GuildBankMoney UICursorType 
 Enum.UICursorType.GuildBankMoney = 12
----@field protected EquipmentSet UICursorType 
+---@field EquipmentSet UICursorType 
 Enum.UICursorType.EquipmentSet = 13
----@field protected Currency UICursorType 
+---@field Currency UICursorType 
 Enum.UICursorType.Currency = 14
----@field protected Flyout UICursorType 
+---@field Flyout UICursorType 
 Enum.UICursorType.Flyout = 15
----@field protected VoidItem UICursorType 
+---@field VoidItem UICursorType 
 Enum.UICursorType.VoidItem = 16
----@field protected BattlePet UICursorType 
+---@field BattlePet UICursorType 
 Enum.UICursorType.BattlePet = 17
----@field protected Mount UICursorType 
+---@field Mount UICursorType 
 Enum.UICursorType.Mount = 18
----@field protected Toy UICursorType 
+---@field Toy UICursorType 
 Enum.UICursorType.Toy = 19
----@field protected ConduitCollectionItem UICursorType 
+---@field ConduitCollectionItem UICursorType 
 Enum.UICursorType.ConduitCollectionItem = 20
----@field protected PerksProgramVendorItem UICursorType 
+---@field PerksProgramVendorItem UICursorType 
 Enum.UICursorType.PerksProgramVendorItem = 21
 
 ---@class WorldCursorAnchorType : Enum
 Enum.WorldCursorAnchorType = {}
----@field protected None WorldCursorAnchorType 
+---@field None WorldCursorAnchorType 
 Enum.WorldCursorAnchorType.None = 0
----@field protected Default WorldCursorAnchorType 
+---@field Default WorldCursorAnchorType 
 Enum.WorldCursorAnchorType.Default = 1
----@field protected Cursor WorldCursorAnchorType 
+---@field Cursor WorldCursorAnchorType 
 Enum.WorldCursorAnchorType.Cursor = 2
----@field protected Nameplate WorldCursorAnchorType 
+---@field Nameplate WorldCursorAnchorType 
 Enum.WorldCursorAnchorType.Nameplate = 3
 

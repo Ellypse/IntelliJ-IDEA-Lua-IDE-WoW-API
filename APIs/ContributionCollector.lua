@@ -72,43 +72,43 @@ function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 
 ---@class ContributionAppearanceFlags : Enum
 Enum.ContributionAppearanceFlags = {}
----@field protected TooltipUseTimeRemaining ContributionAppearanceFlags 
+---@field TooltipUseTimeRemaining ContributionAppearanceFlags 
 Enum.ContributionAppearanceFlags.TooltipUseTimeRemaining = 0
 
 ---@class ContributionResult : Enum
 Enum.ContributionResult = {}
----@field protected Success ContributionResult 
+---@field Success ContributionResult 
 Enum.ContributionResult.Success = 0
----@field protected MustBeNearNpc ContributionResult 
+---@field MustBeNearNpc ContributionResult 
 Enum.ContributionResult.MustBeNearNpc = 1
----@field protected IncorrectState ContributionResult 
+---@field IncorrectState ContributionResult 
 Enum.ContributionResult.IncorrectState = 2
----@field protected InvalidID ContributionResult 
+---@field InvalidID ContributionResult 
 Enum.ContributionResult.InvalidID = 3
----@field protected QuestDataMissing ContributionResult 
+---@field QuestDataMissing ContributionResult 
 Enum.ContributionResult.QuestDataMissing = 4
----@field protected FailedConditionCheck ContributionResult 
+---@field FailedConditionCheck ContributionResult 
 Enum.ContributionResult.FailedConditionCheck = 5
----@field protected UnableToCompleteTurnIn ContributionResult 
+---@field UnableToCompleteTurnIn ContributionResult 
 Enum.ContributionResult.UnableToCompleteTurnIn = 6
----@field protected InternalError ContributionResult 
+---@field InternalError ContributionResult 
 Enum.ContributionResult.InternalError = 7
 
 ---@class ContributionAppearance
----@field stateName cstring 
----@field stateColor colorRGB 
----@field tooltipLine cstring 
----@field tooltipUseTimeRemaining bool 
----@field statusBarAtlas textureAtlas 
----@field borderAtlas textureAtlas 
----@field bannerAtlas textureAtlas 
+---@type cstring 
+---@type colorRGB 
+---@type cstring 
+---@type bool 
+---@type textureAtlas 
+---@type textureAtlas 
+---@type textureAtlas 
 ContributionAppearance = {}
 
 ---@class ContributionMapInfo
----@field areaPoiID number 
----@field position vector2 
----@field name cstring 
----@field atlasName string 
----@field collectorCreatureID number 
+---@type number 
+---@type vector2 
+---@type cstring 
+---@type string 
+---@type number 
 ContributionMapInfo = {}
 

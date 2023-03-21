@@ -9,43 +9,43 @@ function C_CovenantPreview.GetCovenantInfoForPlayerChoiceResponseID(playerChoice
 
 ---@class CovenantAbilityType : Enum
 Enum.CovenantAbilityType = {}
----@field protected Class CovenantAbilityType 
+---@field Class CovenantAbilityType 
 Enum.CovenantAbilityType.Class = 0
----@field protected Signature CovenantAbilityType 
+---@field Signature CovenantAbilityType 
 Enum.CovenantAbilityType.Signature = 1
----@field protected Soulbind CovenantAbilityType 
+---@field Soulbind CovenantAbilityType 
 Enum.CovenantAbilityType.Soulbind = 2
 
 ---@class CovenantAbilityInfo
----@field spellID number 
----@field type CovenantAbilityType 
+---@type number 
+---@type CovenantAbilityType 
 CovenantAbilityInfo = {}
 
 ---@class CovenantFeatureInfo
----@field name cstring 
----@field description cstring 
----@field texture number 
+---@type cstring 
+---@type cstring 
+---@type number 
 CovenantFeatureInfo = {}
 
 ---@class CovenantPreviewInfo
----@field textureKit textureKit 
----@field transmogSetID number 
----@field mountID number 
----@field covenantName string 
----@field covenantZone string 
----@field description string 
----@field covenantCrest textureAtlas 
----@field covenantAbilities table 
----@field fromPlayerChoice bool 
----@field covenantSoulbinds table 
----@field featureInfo CovenantFeatureInfo 
+---@type textureKit 
+---@type number 
+---@type number 
+---@type string 
+---@type string 
+---@type string 
+---@type textureAtlas 
+---@type table 
+---@type bool 
+---@type table 
+---@type CovenantFeatureInfo 
 CovenantPreviewInfo = {}
 
 ---@class CovenantSoulbindInfo
----@field spellID number 
----@field uiTextureKit textureKit 
----@field name cstring 
----@field description cstring 
----@field sortOrder number 
+---@type number 
+---@type textureKit 
+---@type cstring 
+---@type cstring 
+---@type number 
 CovenantSoulbindInfo = {}
 

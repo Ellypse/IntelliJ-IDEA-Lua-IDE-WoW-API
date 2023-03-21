@@ -23,24 +23,24 @@ function C_QuestLine.RequestQuestLinesForMap(uiMapID) end
 
 ---@class QuestLineFloorLocation : Enum
 Enum.QuestLineFloorLocation = {}
----@field protected Above QuestLineFloorLocation 
+---@field Above QuestLineFloorLocation 
 Enum.QuestLineFloorLocation.Above = 0
----@field protected Below QuestLineFloorLocation 
+---@field Below QuestLineFloorLocation 
 Enum.QuestLineFloorLocation.Below = 1
----@field protected Same QuestLineFloorLocation 
+---@field Same QuestLineFloorLocation 
 Enum.QuestLineFloorLocation.Same = 2
 
 ---@class QuestLineInfo
----@field questLineName cstring 
----@field questName cstring 
----@field questLineID number 
----@field questID number 
----@field x number 
----@field y number 
----@field isHidden bool 
----@field isLegendary bool 
----@field isDaily bool 
----@field isCampaign bool 
----@field floorLocation QuestLineFloorLocation 
+---@type cstring 
+---@type cstring 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type QuestLineFloorLocation 
 QuestLineInfo = {}
 

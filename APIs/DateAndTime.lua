@@ -34,6 +34,6 @@ function C_DateAndTime.GetServerTimeLocal() end
 
 ---@class TimeEventFlag : Enum
 Enum.TimeEventFlag = {}
----@field protected GlueScreenShortcut TimeEventFlag 
+---@field GlueScreenShortcut TimeEventFlag 
 Enum.TimeEventFlag.GlueScreenShortcut = 1
 

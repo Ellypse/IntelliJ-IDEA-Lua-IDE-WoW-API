@@ -22,94 +22,94 @@ function C_VideoOptions.SetGameWindowSize(x, y) end
 
 ---@class GraphicsValidationResult : Enum
 Enum.GraphicsValidationResult = {}
----@field protected Supported GraphicsValidationResult 
+---@field Supported GraphicsValidationResult 
 Enum.GraphicsValidationResult.Supported = 0
----@field protected Illegal GraphicsValidationResult 
+---@field Illegal GraphicsValidationResult 
 Enum.GraphicsValidationResult.Illegal = 1
----@field protected Unsupported GraphicsValidationResult 
+---@field Unsupported GraphicsValidationResult 
 Enum.GraphicsValidationResult.Unsupported = 2
----@field protected Graphics GraphicsValidationResult 
+---@field Graphics GraphicsValidationResult 
 Enum.GraphicsValidationResult.Graphics = 3
----@field protected DualCore GraphicsValidationResult 
+---@field DualCore GraphicsValidationResult 
 Enum.GraphicsValidationResult.DualCore = 4
----@field protected QuadCore GraphicsValidationResult 
+---@field QuadCore GraphicsValidationResult 
 Enum.GraphicsValidationResult.QuadCore = 5
----@field protected CpuMem_2 GraphicsValidationResult 
+---@field CpuMem_2 GraphicsValidationResult 
 Enum.GraphicsValidationResult.CpuMem_2 = 6
----@field protected CpuMem_4 GraphicsValidationResult 
+---@field CpuMem_4 GraphicsValidationResult 
 Enum.GraphicsValidationResult.CpuMem_4 = 7
----@field protected CpuMem_8 GraphicsValidationResult 
+---@field CpuMem_8 GraphicsValidationResult 
 Enum.GraphicsValidationResult.CpuMem_8 = 8
----@field protected Needs_5_0 GraphicsValidationResult 
+---@field Needs_5_0 GraphicsValidationResult 
 Enum.GraphicsValidationResult.Needs_5_0 = 9
----@field protected Needs_6_0 GraphicsValidationResult 
+---@field Needs_6_0 GraphicsValidationResult 
 Enum.GraphicsValidationResult.Needs_6_0 = 10
----@field protected NeedsRt GraphicsValidationResult 
+---@field NeedsRt GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsRt = 11
----@field protected NeedsDx12 GraphicsValidationResult 
+---@field NeedsDx12 GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsDx12 = 12
----@field protected NeedsDx12Vrs2 GraphicsValidationResult 
+---@field NeedsDx12Vrs2 GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsDx12Vrs2 = 13
----@field protected NeedsAppleGpu GraphicsValidationResult 
+---@field NeedsAppleGpu GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsAppleGpu = 14
----@field protected NeedsAmdGpu GraphicsValidationResult 
+---@field NeedsAmdGpu GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsAmdGpu = 15
----@field protected NeedsIntelGpu GraphicsValidationResult 
+---@field NeedsIntelGpu GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsIntelGpu = 16
----@field protected NeedsNvidiaGpu GraphicsValidationResult 
+---@field NeedsNvidiaGpu GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsNvidiaGpu = 17
----@field protected NeedsQualcommGpu GraphicsValidationResult 
+---@field NeedsQualcommGpu GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsQualcommGpu = 18
----@field protected NeedsMacOs_10_13 GraphicsValidationResult 
+---@field NeedsMacOs_10_13 GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsMacOs_10_13 = 19
----@field protected NeedsMacOs_10_14 GraphicsValidationResult 
+---@field NeedsMacOs_10_14 GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsMacOs_10_14 = 20
----@field protected NeedsMacOs_10_15 GraphicsValidationResult 
+---@field NeedsMacOs_10_15 GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsMacOs_10_15 = 21
----@field protected NeedsMacOs_11_0 GraphicsValidationResult 
+---@field NeedsMacOs_11_0 GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsMacOs_11_0 = 22
----@field protected NeedsMacOs_12_0 GraphicsValidationResult 
+---@field NeedsMacOs_12_0 GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsMacOs_12_0 = 23
----@field protected NeedsMacOs_13_0 GraphicsValidationResult 
+---@field NeedsMacOs_13_0 GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsMacOs_13_0 = 24
----@field protected NeedsWindows_10 GraphicsValidationResult 
+---@field NeedsWindows_10 GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsWindows_10 = 25
----@field protected NeedsWindows_11 GraphicsValidationResult 
+---@field NeedsWindows_11 GraphicsValidationResult 
 Enum.GraphicsValidationResult.NeedsWindows_11 = 26
----@field protected MacOsUnsupported GraphicsValidationResult 
+---@field MacOsUnsupported GraphicsValidationResult 
 Enum.GraphicsValidationResult.MacOsUnsupported = 27
----@field protected WindowsUnsupported GraphicsValidationResult 
+---@field WindowsUnsupported GraphicsValidationResult 
 Enum.GraphicsValidationResult.WindowsUnsupported = 28
----@field protected LegacyUnsupported GraphicsValidationResult 
+---@field LegacyUnsupported GraphicsValidationResult 
 Enum.GraphicsValidationResult.LegacyUnsupported = 29
----@field protected Dx11Unsupported GraphicsValidationResult 
+---@field Dx11Unsupported GraphicsValidationResult 
 Enum.GraphicsValidationResult.Dx11Unsupported = 30
----@field protected Dx12Win7Unsupported GraphicsValidationResult 
+---@field Dx12Win7Unsupported GraphicsValidationResult 
 Enum.GraphicsValidationResult.Dx12Win7Unsupported = 31
----@field protected RemoteDesktopUnsupported GraphicsValidationResult 
+---@field RemoteDesktopUnsupported GraphicsValidationResult 
 Enum.GraphicsValidationResult.RemoteDesktopUnsupported = 32
----@field protected WineUnsupported GraphicsValidationResult 
+---@field WineUnsupported GraphicsValidationResult 
 Enum.GraphicsValidationResult.WineUnsupported = 33
----@field protected NvapiWineUnsupported GraphicsValidationResult 
+---@field NvapiWineUnsupported GraphicsValidationResult 
 Enum.GraphicsValidationResult.NvapiWineUnsupported = 34
----@field protected AppleGpuUnsupported GraphicsValidationResult 
+---@field AppleGpuUnsupported GraphicsValidationResult 
 Enum.GraphicsValidationResult.AppleGpuUnsupported = 35
----@field protected AmdGpuUnsupported GraphicsValidationResult 
+---@field AmdGpuUnsupported GraphicsValidationResult 
 Enum.GraphicsValidationResult.AmdGpuUnsupported = 36
----@field protected IntelGpuUnsupported GraphicsValidationResult 
+---@field IntelGpuUnsupported GraphicsValidationResult 
 Enum.GraphicsValidationResult.IntelGpuUnsupported = 37
----@field protected NvidiaGpuUnsupported GraphicsValidationResult 
+---@field NvidiaGpuUnsupported GraphicsValidationResult 
 Enum.GraphicsValidationResult.NvidiaGpuUnsupported = 38
----@field protected QualcommGpuUnsupported GraphicsValidationResult 
+---@field QualcommGpuUnsupported GraphicsValidationResult 
 Enum.GraphicsValidationResult.QualcommGpuUnsupported = 39
----@field protected GpuDriver GraphicsValidationResult 
+---@field GpuDriver GraphicsValidationResult 
 Enum.GraphicsValidationResult.GpuDriver = 40
----@field protected Unknown GraphicsValidationResult 
+---@field Unknown GraphicsValidationResult 
 Enum.GraphicsValidationResult.Unknown = 41
 
 ---@class GxAdapterInfoDetails
----@field name string 
----@field isLowPower bool 
----@field isExternal bool 
+---@type string 
+---@type bool 
+---@type bool 
 GxAdapterInfoDetails = {}
 

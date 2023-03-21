@@ -6,9 +6,9 @@ C_ResearchInfo = {}
 function C_ResearchInfo.GetDigSitesForMap(uiMapID) end
 
 ---@class DigSiteMapInfo
----@field researchSiteID number 
----@field position vector2 
----@field name cstring 
----@field textureIndex number 
+---@type number 
+---@type vector2 
+---@type cstring 
+---@type number 
 DigSiteMapInfo = {}
 

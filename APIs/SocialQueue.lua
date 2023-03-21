@@ -37,54 +37,54 @@ function C_SocialQueue.RequestToJoin(groupGUID, applyAsTank, applyAsHealer, appl
 function C_SocialQueue.SignalToastDisplayed(groupGUID, priority) end
 
 ---@class SocialQueueConfig
----@field TOASTS_DISABLED bool 
----@field TOAST_DURATION number 
----@field DELAY_DURATION number 
----@field QUEUE_MULTIPLIER number 
----@field PLAYER_MULTIPLIER number 
----@field PLAYER_FRIEND_VALUE number 
----@field PLAYER_GUILD_VALUE number 
----@field THROTTLE_INITIAL_THRESHOLD number 
----@field THROTTLE_DECAY_TIME number 
----@field THROTTLE_PRIORITY_SPIKE number 
----@field THROTTLE_MIN_THRESHOLD number 
----@field THROTTLE_PVP_PRIORITY_NORMAL number 
----@field THROTTLE_PVP_PRIORITY_LOW number 
----@field THROTTLE_PVP_HONOR_THRESHOLD number 
----@field THROTTLE_LFGLIST_PRIORITY_DEFAULT number 
----@field THROTTLE_LFGLIST_PRIORITY_ABOVE number 
----@field THROTTLE_LFGLIST_PRIORITY_BELOW number 
----@field THROTTLE_LFGLIST_ILVL_SCALING_ABOVE number 
----@field THROTTLE_LFGLIST_ILVL_SCALING_BELOW number 
----@field THROTTLE_RF_PRIORITY_ABOVE number 
----@field THROTTLE_RF_ILVL_SCALING_ABOVE number 
----@field THROTTLE_DF_MAX_ITEM_LEVEL number 
----@field THROTTLE_DF_BEST_PRIORITY number 
+---@type bool 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
 SocialQueueConfig = {}
 
 ---@class SocialQueueGroupInfo
----@field canJoin bool 
----@field numQueues number 
----@field needTank bool 
----@field needHealer bool 
----@field needDamage bool 
----@field isSoloQueueParty bool 
----@field questSessionActive bool 
----@field leaderGUID WOWGUID 
+---@type bool 
+---@type number 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type WOWGUID 
 SocialQueueGroupInfo = {}
 
 ---@class SocialQueueGroupQueueInfo
----@field clientID number 
----@field eligible bool 
----@field needTank bool 
----@field needHealer bool 
----@field needDamage bool 
----@field isAutoAccept bool 
----@field queueData QueueSpecificInfo 
+---@type number 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type QueueSpecificInfo 
 SocialQueueGroupQueueInfo = {}
 
 ---@class SocialQueuePlayerInfo
----@field guid WOWGUID 
----@field clubId ClubId|nil 
+---@type WOWGUID 
+---@type ClubId 
 SocialQueuePlayerInfo = {}
 

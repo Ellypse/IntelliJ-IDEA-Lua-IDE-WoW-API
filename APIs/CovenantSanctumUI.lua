@@ -50,31 +50,31 @@ function C_CovenantSanctumUI.IsWeeklyRenownCapped() end
 function C_CovenantSanctumUI.RequestCatchUpState() end
 
 ---@class CovenantSanctumFeatureInfo
----@field garrTalentTreeID number 
----@field featureType number 
----@field uiOrder number 
+---@type number 
+---@type number 
+---@type number 
 CovenantSanctumFeatureInfo = {}
 
 ---@class CovenantSanctumRenownLevelInfo
----@field level number 
----@field locked bool 
----@field isMilestone bool 
----@field isCapstone bool 
+---@type number 
+---@type bool 
+---@type bool 
+---@type bool 
 CovenantSanctumRenownLevelInfo = {}
 
 ---@class CovenantSanctumRenownRewardInfo
----@field uiOrder number 
----@field itemID number|nil 
----@field spellID number|nil 
----@field mountID number|nil 
----@field transmogID number|nil 
----@field transmogSetID number|nil 
----@field titleMaskID number|nil 
----@field garrFollowerID number|nil 
----@field transmogIllusionSourceID number|nil 
----@field icon fileID|nil 
----@field name cstring|nil 
----@field description cstring|nil 
----@field toastDescription cstring|nil 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type fileID 
+---@type cstring 
+---@type cstring 
+---@type cstring 
 CovenantSanctumRenownRewardInfo = {}
 

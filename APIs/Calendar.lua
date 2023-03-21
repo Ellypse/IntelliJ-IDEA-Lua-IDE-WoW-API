@@ -300,130 +300,130 @@ function C_Calendar.SetNextClubId(clubId) end
 function C_Calendar.UpdateEvent() end
 
 ---@class CalendarDayEvent
----@field eventID CalendarEventID 
----@field title string 
----@field isCustomTitle bool 
----@field startTime CalendarTime 
----@field endTime CalendarTime 
----@field calendarType cstring 
----@field sequenceType cstring 
----@field eventType CalendarEventType 
----@field iconTexture fileID|nil 
----@field modStatus cstring 
----@field inviteStatus CalendarStatus 
----@field invitedBy string 
----@field difficulty number 
----@field inviteType CalendarInviteType 
----@field sequenceIndex luaIndex 
----@field numSequenceDays number 
----@field difficultyName cstring 
----@field dontDisplayBanner bool 
----@field dontDisplayEnd bool 
----@field clubID ClubId 
----@field isLocked bool 
+---@type CalendarEventID 
+---@type string 
+---@type bool 
+---@type CalendarTime 
+---@type CalendarTime 
+---@type cstring 
+---@type cstring 
+---@type CalendarEventType 
+---@type fileID 
+---@type cstring 
+---@type CalendarStatus 
+---@type string 
+---@type number 
+---@type CalendarInviteType 
+---@type luaIndex 
+---@type number 
+---@type cstring 
+---@type bool 
+---@type bool 
+---@type ClubId 
+---@type bool 
 CalendarDayEvent = {}
 
 ---@class CalendarEventIndexInfo
----@field offsetMonths number 
----@field monthDay luaIndex 
----@field eventIndex luaIndex 
+---@type number 
+---@type luaIndex 
+---@type luaIndex 
 CalendarEventIndexInfo = {}
 
 ---@class CalendarEventInfo
----@field title string 
----@field description string 
----@field creator string|nil 
----@field eventType CalendarEventType 
----@field repeatOption CalendarEventRepeatOptions 
----@field maxSize number 
----@field textureIndex luaIndex|nil 
----@field time CalendarTime 
----@field lockoutTime CalendarTime 
----@field isLocked bool 
----@field isAutoApprove bool 
----@field hasPendingInvite bool 
----@field inviteStatus CalendarStatus|nil 
----@field inviteType CalendarInviteType|nil 
----@field calendarType string 
----@field communityName string|nil 
+---@type string 
+---@type string 
+---@type string 
+---@type CalendarEventType 
+---@type CalendarEventRepeatOptions 
+---@type number 
+---@type luaIndex 
+---@type CalendarTime 
+---@type CalendarTime 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type CalendarStatus 
+---@type CalendarInviteType 
+---@type string 
+---@type string 
 CalendarEventInfo = {}
 
 ---@class CalendarEventInviteInfo
----@field name string|nil 
----@field level number 
----@field className string|nil 
----@field classFilename string|nil 
----@field inviteStatus CalendarStatus|nil 
----@field modStatus string|nil 
----@field inviteIsMine bool 
----@field type CalendarInviteType 
----@field notes string 
----@field classID number|nil 
----@field guid WOWGUID 
+---@type string 
+---@type number 
+---@type string 
+---@type string 
+---@type CalendarStatus 
+---@type string 
+---@type bool 
+---@type CalendarInviteType 
+---@type string 
+---@type number 
+---@type WOWGUID 
 CalendarEventInviteInfo = {}
 
 ---@class CalendarEventStatusOption
----@field status CalendarStatus 
----@field statusString string 
+---@type CalendarStatus 
+---@type string 
 CalendarEventStatusOption = {}
 
 ---@class CalendarEventTextureInfo
----@field title string 
----@field iconTexture fileID 
----@field expansionLevel number 
----@field difficultyId number|nil 
----@field mapId number|nil 
----@field isLfr bool|nil 
+---@type string 
+---@type fileID 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
 CalendarEventTextureInfo = {}
 
 ---@class CalendarEventTypeDisplayInfo
----@field displayString string 
----@field eventType CalendarEventType 
+---@type string 
+---@type CalendarEventType 
 CalendarEventTypeDisplayInfo = {}
 
 ---@class CalendarGuildEventInfo
----@field eventID CalendarEventID 
----@field year number 
----@field month luaIndex 
----@field monthDay luaIndex 
----@field weekday luaIndex 
----@field hour number 
----@field minute number 
----@field eventType CalendarEventType 
----@field title string 
----@field calendarType string 
----@field texture fileID 
----@field inviteStatus CalendarStatus 
----@field clubID ClubId 
+---@type CalendarEventID 
+---@type number 
+---@type luaIndex 
+---@type luaIndex 
+---@type luaIndex 
+---@type number 
+---@type number 
+---@type CalendarEventType 
+---@type string 
+---@type string 
+---@type fileID 
+---@type CalendarStatus 
+---@type ClubId 
 CalendarGuildEventInfo = {}
 
 ---@class CalendarGuildFilterInfo
----@field minLevel number 
----@field maxLevel number 
----@field rank number 
+---@type number 
+---@type number 
+---@type number 
 CalendarGuildFilterInfo = {}
 
 ---@class CalendarHolidayInfo
----@field name cstring 
----@field description cstring 
----@field texture fileID 
----@field startTime CalendarTime|nil 
----@field endTime CalendarTime|nil 
+---@type cstring 
+---@type cstring 
+---@type fileID 
+---@type CalendarTime 
+---@type CalendarTime 
 CalendarHolidayInfo = {}
 
 ---@class CalendarMonthInfo
----@field month luaIndex 
----@field year number 
----@field numDays number 
----@field firstWeekday luaIndex 
+---@type luaIndex 
+---@type number 
+---@type number 
+---@type luaIndex 
 CalendarMonthInfo = {}
 
 ---@class CalendarRaidInfo
----@field name string 
----@field calendarType string 
----@field raidID number 
----@field time CalendarTime 
----@field difficulty number 
----@field difficultyName string|nil 
+---@type string 
+---@type string 
+---@type number 
+---@type CalendarTime 
+---@type number 
+---@type string 
 CalendarRaidInfo = {}
 

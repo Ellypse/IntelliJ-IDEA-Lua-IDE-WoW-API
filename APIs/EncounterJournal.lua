@@ -51,83 +51,83 @@ function C_EncounterJournal.SetSlotFilter(filterSlot) end
 
 ---@class ItemSlotFilterType : Enum
 Enum.ItemSlotFilterType = {}
----@field protected Head ItemSlotFilterType 
+---@field Head ItemSlotFilterType 
 Enum.ItemSlotFilterType.Head = 0
----@field protected Neck ItemSlotFilterType 
+---@field Neck ItemSlotFilterType 
 Enum.ItemSlotFilterType.Neck = 1
----@field protected Shoulder ItemSlotFilterType 
+---@field Shoulder ItemSlotFilterType 
 Enum.ItemSlotFilterType.Shoulder = 2
----@field protected Cloak ItemSlotFilterType 
+---@field Cloak ItemSlotFilterType 
 Enum.ItemSlotFilterType.Cloak = 3
----@field protected Chest ItemSlotFilterType 
+---@field Chest ItemSlotFilterType 
 Enum.ItemSlotFilterType.Chest = 4
----@field protected Wrist ItemSlotFilterType 
+---@field Wrist ItemSlotFilterType 
 Enum.ItemSlotFilterType.Wrist = 5
----@field protected Hand ItemSlotFilterType 
+---@field Hand ItemSlotFilterType 
 Enum.ItemSlotFilterType.Hand = 6
----@field protected Waist ItemSlotFilterType 
+---@field Waist ItemSlotFilterType 
 Enum.ItemSlotFilterType.Waist = 7
----@field protected Legs ItemSlotFilterType 
+---@field Legs ItemSlotFilterType 
 Enum.ItemSlotFilterType.Legs = 8
----@field protected Feet ItemSlotFilterType 
+---@field Feet ItemSlotFilterType 
 Enum.ItemSlotFilterType.Feet = 9
----@field protected MainHand ItemSlotFilterType 
+---@field MainHand ItemSlotFilterType 
 Enum.ItemSlotFilterType.MainHand = 10
----@field protected OffHand ItemSlotFilterType 
+---@field OffHand ItemSlotFilterType 
 Enum.ItemSlotFilterType.OffHand = 11
----@field protected Finger ItemSlotFilterType 
+---@field Finger ItemSlotFilterType 
 Enum.ItemSlotFilterType.Finger = 12
----@field protected Trinket ItemSlotFilterType 
+---@field Trinket ItemSlotFilterType 
 Enum.ItemSlotFilterType.Trinket = 13
----@field protected Other ItemSlotFilterType 
+---@field Other ItemSlotFilterType 
 Enum.ItemSlotFilterType.Other = 14
----@field protected NoFilter ItemSlotFilterType 
+---@field NoFilter ItemSlotFilterType 
 Enum.ItemSlotFilterType.NoFilter = 15
 
 ---@class DungeonEntranceMapInfo
----@field areaPoiID number 
----@field position vector2 
----@field name cstring 
----@field description cstring 
----@field atlasName string 
----@field journalInstanceID number 
+---@type number 
+---@type vector2 
+---@type cstring 
+---@type cstring 
+---@type string 
+---@type number 
 DungeonEntranceMapInfo = {}
 
 ---@class EncounterJournalItemInfo
----@field itemID number 
----@field encounterID number|nil 
----@field name string|nil 
----@field itemQuality string|nil 
----@field filterType ItemSlotFilterType|nil 
----@field icon fileID|nil 
----@field slot string|nil 
----@field armorType string|nil 
----@field link string|nil 
----@field handError bool|nil 
----@field weaponTypeError bool|nil 
----@field displayAsPerPlayerLoot bool|nil 
----@field displayAsVeryRare bool|nil 
----@field displayAsExtremelyRare bool|nil 
+---@type number 
+---@type number 
+---@type string 
+---@type string 
+---@type ItemSlotFilterType 
+---@type fileID 
+---@type string 
+---@type string 
+---@type string 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
 EncounterJournalItemInfo = {}
 
 ---@class EncounterJournalMapEncounterInfo
----@field encounterID number 
----@field mapX number 
----@field mapY number 
+---@type number 
+---@type number 
+---@type number 
 EncounterJournalMapEncounterInfo = {}
 
 ---@class EncounterJournalSectionInfo
----@field spellID number 
----@field title cstring 
----@field description string|nil 
----@field headerType number 
----@field abilityIcon fileID 
----@field creatureDisplayID number 
----@field uiModelSceneID number 
----@field siblingSectionID number|nil 
----@field firstChildSectionID number|nil 
----@field filteredByDifficulty bool 
----@field link string 
----@field startsOpen bool 
+---@type number 
+---@type cstring 
+---@type string 
+---@type number 
+---@type fileID 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
+---@type string 
+---@type bool 
 EncounterJournalSectionInfo = {}
 

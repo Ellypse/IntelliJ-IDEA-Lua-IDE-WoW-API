@@ -39,18 +39,18 @@ function C_SpellBook.GetTrackedNameplateCooldownSpells() end
 function C_SpellBook.IsSpellDisabled(spellID) end
 
 ---@class DeadlyDebuffInfo
----@field overrideCriticalTimeRemaining number 
----@field priority number 
----@field warningText string 
----@field soundKitID number|nil 
+---@type number 
+---@type number 
+---@type string 
+---@type number 
 DeadlyDebuffInfo = {}
 
 ---@class SpellInfo
----@field name string 
----@field iconID fileID 
----@field castTime number 
----@field minRange number 
----@field maxRange number 
----@field spellID number 
+---@type string 
+---@type fileID 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
 SpellInfo = {}
 

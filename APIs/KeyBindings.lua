@@ -11,17 +11,17 @@ function C_KeyBindings.GetCustomBindingType(bindingIndex) end
 
 ---@class BindingSet : Enum
 Enum.BindingSet = {}
----@field protected Default BindingSet 
+---@field Default BindingSet 
 Enum.BindingSet.Default = 0
----@field protected Account BindingSet 
+---@field Account BindingSet 
 Enum.BindingSet.Account = 1
----@field protected Character BindingSet 
+---@field Character BindingSet 
 Enum.BindingSet.Character = 2
----@field protected Current BindingSet 
+---@field Current BindingSet 
 Enum.BindingSet.Current = 3
 
 ---@class CustomBindingType : Enum
 Enum.CustomBindingType = {}
----@field protected VoicePushToTalk CustomBindingType 
+---@field VoicePushToTalk CustomBindingType 
 Enum.CustomBindingType.VoicePushToTalk = 0
 

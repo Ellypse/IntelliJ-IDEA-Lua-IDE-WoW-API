@@ -30,51 +30,51 @@ function C_PerksActivities.GetTrackedPerksActivities() end
 function C_PerksActivities.RemoveTrackedPerksActivity(perksActivityID) end
 
 ---@class PerksActivitiesInfo
----@field activePerksMonth number 
----@field displayMonthName cstring 
----@field activities table 
----@field thresholds table 
+---@type number 
+---@type cstring 
+---@type table 
+---@type table 
 PerksActivitiesInfo = {}
 
 ---@class PerksActivitiesPending
----@field pendingIDs table 
+---@type table 
 PerksActivitiesPending = {}
 
 ---@class PerksActivitiesTracked
----@field trackedIDs table 
+---@type table 
 PerksActivitiesTracked = {}
 
 ---@class PerksActivityCriteria
----@field criteriaID number 
----@field requiredValue number 
+---@type number 
+---@type number 
 PerksActivityCriteria = {}
 
 ---@class PerksActivityInfo
----@field ID number 
----@field activityName cstring 
----@field description cstring 
----@field thresholdContributionAmount number 
----@field completed bool 
----@field tracked bool 
----@field requirementsList table 
----@field criteriaList table 
----@field tagNames table 
+---@type number 
+---@type cstring 
+---@type cstring 
+---@type number 
+---@type bool 
+---@type bool 
+---@type table 
+---@type table 
+---@type table 
 PerksActivityInfo = {}
 
 ---@class PerksActivityRequirement
----@field completed bool 
----@field requirementText string 
+---@type bool 
+---@type string 
 PerksActivityRequirement = {}
 
 ---@class PerksActivityTags
----@field tagName table 
+---@type table 
 PerksActivityTags = {}
 
 ---@class PerksActivityThresholdInfo
----@field thresholdID number 
----@field currencyAwardAmount number 
----@field requiredContributionAmount number 
----@field pendingReward bool 
----@field itemReward number|nil 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
+---@type number 
 PerksActivityThresholdInfo = {}
 

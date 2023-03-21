@@ -46,47 +46,47 @@ function C_MajorFactions.IsWeeklyRenownCapped(majorFactionID) end
 function C_MajorFactions.RequestCatchUpState() end
 
 ---@class MajorFactionData
----@field name cstring 
----@field factionID number 
----@field expansionID number 
----@field bountySetID number 
----@field isUnlocked bool 
----@field unlockDescription cstring|nil 
----@field unlockOrder number 
----@field renownLevel number 
----@field renownReputationEarned number 
----@field renownLevelThreshold number 
----@field textureKit textureKit 
----@field celebrationSoundKit number 
----@field renownFanfareSoundKitID number 
+---@type cstring 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
+---@type cstring 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type textureKit 
+---@type number 
+---@type number 
 MajorFactionData = {}
 
 ---@class MajorFactionFeatureAbilityInfo
----@field featureAbilityType number 
----@field uiOrder number 
+---@type number 
+---@type number 
 MajorFactionFeatureAbilityInfo = {}
 
 ---@class MajorFactionRenownLevelInfo
----@field factionID number 
----@field level number 
----@field locked bool 
----@field isMilestone bool 
----@field isCapstone bool 
+---@type number 
+---@type number 
+---@type bool 
+---@type bool 
+---@type bool 
 MajorFactionRenownLevelInfo = {}
 
 ---@class MajorFactionRenownRewardInfo
----@field renownRewardID number 
----@field uiOrder number 
----@field itemID number|nil 
----@field spellID number|nil 
----@field mountID number|nil 
----@field transmogID number|nil 
----@field transmogSetID number|nil 
----@field titleMaskID number|nil 
----@field transmogIllusionSourceID number|nil 
----@field icon fileID|nil 
----@field name cstring|nil 
----@field description cstring|nil 
----@field toastDescription cstring|nil 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type fileID 
+---@type cstring 
+---@type cstring 
+---@type cstring 
 MajorFactionRenownRewardInfo = {}
 

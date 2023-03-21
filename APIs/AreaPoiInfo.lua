@@ -21,17 +21,17 @@ function C_AreaPoiInfo.GetAreaPOISecondsLeft(areaPoiID) end
 function C_AreaPoiInfo.IsAreaPOITimed(areaPoiID) end
 
 ---@class AreaPOIInfo
----@field areaPoiID number 
----@field position vector2 
----@field name cstring 
----@field description cstring|nil 
----@field textureIndex number|nil 
----@field widgetSetID number|nil 
----@field atlasName string|nil 
----@field uiTextureKit textureKit|nil 
----@field shouldGlow bool 
----@field factionID number|nil 
----@field isPrimaryMapForPOI bool 
----@field isAlwaysOnFlightmap bool 
+---@type number 
+---@type vector2 
+---@type cstring 
+---@type cstring 
+---@type number 
+---@type number 
+---@type string 
+---@type textureKit 
+---@type bool 
+---@type number 
+---@type bool 
+---@type bool 
 AreaPOIInfo = {}
 

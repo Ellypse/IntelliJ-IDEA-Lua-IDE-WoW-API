@@ -39,8 +39,8 @@ local NAMESPACE_DECLARATION = [[
 local ARGUMENT_DOCUMENTATION = [[---@param %s %s %s]]
 local RETURN_DOCUMENTATION = [[---@return %s %s]]
 local FIELD_DOCUMENTATION = [[---@field %s %s %s]]
-local ENUM_FIELD_DOCUMENTATION = [[---@field %s %s %s %s]]
 local CLASS_DECLARATION = [[---@class %s]]
+local TYPE_DECLARATION = [[---@type %s %s]]
 local INNER_TYPE_DECLARATION = [[local %s = {}]]
 local GLOBAL_TYPE_DECLARATION = [[%s = {}]]
 local FUNCTION_OVERLOAD = [[---@overload fun(%s)]]
@@ -155,9 +155,8 @@ function APIDocumentation:AddDocumentationTable(documentation)
 			if tab.Type == "Structure" then
 				write(CLASS_DECLARATION:format(tab.Name))
 				for k, value in pairs(tab.Fields) do
-					write(FIELD_DOCUMENTATION:format(
-							value.Name,
-							value.Type .. (value.Nilable and "|nil" or ""),
+					write(TYPE_DECLARATION:format(
+							value.Type,
 							value.Documentation and ("@ " .. table.concat(value.Documentation, "\n")) or ""
 					))
 				end
@@ -191,8 +190,7 @@ function APIDocumentation:AddDocumentationTable(documentation)
 				write(CLASS_DECLARATION:format(tab.Name .. " : Enum"))
 				write(GLOBAL_TYPE_DECLARATION:format("Enum."..tab.Name))
 				for k, value in pairs(tab.Fields) do
-					write(ENUM_FIELD_DOCUMENTATION:format(
-							"protected",
+					write(FIELD_DOCUMENTATION:format(
 							value.Name,
 							value.Type .. (value.Nilable and "|nil" or ""),
 							value.Documentation and ("@ " .. table.concat(value.Documentation, "\n")) or ""

@@ -175,42 +175,42 @@ function C_Container.UseContainerItem(containerIndex, slotIndex, unitToken, reag
 function C_Container.UseHearthstone() end
 
 ---@class ContainerItemInfo
----@field iconFileID fileID 
----@field stackCount number 
----@field isLocked bool 
----@field quality ItemQuality|nil 
----@field isReadable bool 
----@field hasLoot bool 
----@field hyperlink string 
----@field isFiltered bool 
----@field hasNoValue bool 
----@field itemID number 
----@field isBound bool 
+---@type fileID 
+---@type number 
+---@type bool 
+---@type ItemQuality 
+---@type bool 
+---@type bool 
+---@type string 
+---@type bool 
+---@type bool 
+---@type number 
+---@type bool 
 ContainerItemInfo = {}
 
 ---@class ItemPurchaseCurrency
----@field iconFileID number|nil 
----@field currencyCount number 
----@field name cstring 
+---@type number 
+---@type number 
+---@type cstring 
 ItemPurchaseCurrency = {}
 
 ---@class ItemPurchaseInfo
----@field money WOWMONEY 
----@field itemCount number 
----@field refundSeconds time_t 
----@field currencyCount number 
----@field hasEnchants bool 
+---@type WOWMONEY 
+---@type number 
+---@type time_t 
+---@type number 
+---@type bool 
 ItemPurchaseInfo = {}
 
 ---@class ItemPurchaseItem
----@field iconFileID number|nil 
----@field itemCount number 
----@field hyperlink string 
+---@type number 
+---@type number 
+---@type string 
 ItemPurchaseItem = {}
 
 ---@class ItemQuestInfo
----@field isQuestItem bool 
----@field questID number|nil 
----@field isActive bool 
+---@type bool 
+---@type number 
+---@type bool 
 ItemQuestInfo = {}
 

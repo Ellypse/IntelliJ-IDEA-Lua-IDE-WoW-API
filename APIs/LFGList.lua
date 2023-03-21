@@ -124,143 +124,143 @@ function C_LFGList.ValidateRequiredPvpRatingForActivity(activityID, rating) end
 
 ---@class LFGEntryPlaystyle : Enum
 Enum.LFGEntryPlaystyle = {}
----@field protected None LFGEntryPlaystyle 
+---@field None LFGEntryPlaystyle 
 Enum.LFGEntryPlaystyle.None = 0
----@field protected Standard LFGEntryPlaystyle 
+---@field Standard LFGEntryPlaystyle 
 Enum.LFGEntryPlaystyle.Standard = 1
----@field protected Casual LFGEntryPlaystyle 
+---@field Casual LFGEntryPlaystyle 
 Enum.LFGEntryPlaystyle.Casual = 2
----@field protected Hardcore LFGEntryPlaystyle 
+---@field Hardcore LFGEntryPlaystyle 
 Enum.LFGEntryPlaystyle.Hardcore = 3
 
 ---@class LFGListDisplayType : Enum
 Enum.LFGListDisplayType = {}
----@field protected RoleCount LFGListDisplayType 
+---@field RoleCount LFGListDisplayType 
 Enum.LFGListDisplayType.RoleCount = 0
----@field protected RoleEnumerate LFGListDisplayType 
+---@field RoleEnumerate LFGListDisplayType 
 Enum.LFGListDisplayType.RoleEnumerate = 1
----@field protected ClassEnumerate LFGListDisplayType 
+---@field ClassEnumerate LFGListDisplayType 
 Enum.LFGListDisplayType.ClassEnumerate = 2
----@field protected HideAll LFGListDisplayType 
+---@field HideAll LFGListDisplayType 
 Enum.LFGListDisplayType.HideAll = 3
----@field protected PlayerCount LFGListDisplayType 
+---@field PlayerCount LFGListDisplayType 
 Enum.LFGListDisplayType.PlayerCount = 4
----@field protected Comment LFGListDisplayType 
+---@field Comment LFGListDisplayType 
 Enum.LFGListDisplayType.Comment = 5
 
 ---@class BestDungeonScoreMapInfo
----@field mapScore number 
----@field mapName string 
----@field bestRunLevel number 
----@field finishedSuccess bool 
+---@type number 
+---@type string 
+---@type number 
+---@type bool 
 BestDungeonScoreMapInfo = {}
 
 ---@class GroupFinderActivityInfo
----@field fullName string 
----@field shortName string 
----@field categoryID number 
----@field groupFinderActivityGroupID number 
----@field ilvlSuggestion number 
----@field filters number 
----@field minLevel number 
----@field maxNumPlayers number 
----@field displayType LFGListDisplayType 
----@field orderIndex number 
----@field useHonorLevel bool 
----@field showQuickJoinToast bool 
----@field isMythicPlusActivity bool 
----@field isRatedPvpActivity bool 
----@field isCurrentRaidActivity bool 
----@field isPvpActivity bool 
----@field isMythicActivity bool 
----@field allowCrossFaction bool 
----@field useDungeonRoleExpectations bool 
+---@type string 
+---@type string 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type LFGListDisplayType 
+---@type number 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
 GroupFinderActivityInfo = {}
 
 ---@class LfgApplicantData
----@field applicantID number 
----@field applicationStatus cstring 
----@field pendingApplicationStatus cstring|nil 
----@field numMembers number 
----@field isNew bool 
----@field comment kstringLfgListApplicant 
----@field displayOrderID number 
+---@type number 
+---@type cstring 
+---@type cstring 
+---@type number 
+---@type bool 
+---@type kstringLfgListApplicant 
+---@type number 
 LfgApplicantData = {}
 
 ---@class LfgCategoryData
----@field name cstring 
----@field searchPromptOverride cstring|nil 
----@field separateRecommended bool 
----@field autoChooseActivity bool 
----@field preferCurrentArea bool 
----@field showPlaystyleDropdown bool 
----@field allowCrossFaction bool 
+---@type cstring 
+---@type cstring 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
 LfgCategoryData = {}
 
 ---@class LfgEntryData
----@field activityID number 
----@field requiredItemLevel number 
----@field requiredHonorLevel number 
----@field name kstringLfgListApplicant 
----@field comment kstringLfgListApplicant 
----@field voiceChat kstringLfgListApplicant 
----@field duration time_t 
----@field autoAccept bool 
----@field privateGroup bool 
----@field questID number|nil 
----@field requiredDungeonScore number|nil 
----@field requiredPvpRating number|nil 
----@field playstyle LFGEntryPlaystyle|nil 
----@field isCrossFactionListing bool 
+---@type number 
+---@type number 
+---@type number 
+---@type kstringLfgListApplicant 
+---@type kstringLfgListApplicant 
+---@type kstringLfgListApplicant 
+---@type time_t 
+---@type bool 
+---@type bool 
+---@type number 
+---@type number 
+---@type number 
+---@type LFGEntryPlaystyle 
+---@type bool 
 LfgEntryData = {}
 
 ---@class LfgSearchResultData
----@field searchResultID number 
----@field activityID number 
----@field leaderName string|nil 
----@field name kstringLfgListSearch 
----@field comment kstringLfgListSearch 
----@field voiceChat kstringLfgListSearch 
----@field requiredItemLevel number 
----@field requiredHonorLevel number 
----@field hasSelf bool 
----@field numMembers number 
----@field numBNetFriends number 
----@field numCharFriends number 
----@field numGuildMates number 
----@field isDelisted bool 
----@field autoAccept bool 
----@field isWarMode bool 
----@field age time_t 
----@field questID number|nil 
----@field leaderOverallDungeonScore number|nil 
----@field leaderDungeonScoreInfo BestDungeonScoreMapInfo|nil 
----@field leaderPvpRatingInfo PvpRatingInfo|nil 
----@field requiredDungeonScore number|nil 
----@field requiredPvpRating number|nil 
----@field playstyle LFGEntryPlaystyle|nil 
----@field crossFactionListing bool|nil 
----@field leaderFactionGroup number 
+---@type number 
+---@type number 
+---@type string 
+---@type kstringLfgListSearch 
+---@type kstringLfgListSearch 
+---@type kstringLfgListSearch 
+---@type number 
+---@type number 
+---@type bool 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type time_t 
+---@type number 
+---@type number 
+---@type BestDungeonScoreMapInfo 
+---@type PvpRatingInfo 
+---@type number 
+---@type number 
+---@type LFGEntryPlaystyle 
+---@type bool 
+---@type number 
 LfgSearchResultData = {}
 
 ---@class PvpRatingInfo
----@field bracket number 
----@field rating number 
----@field activityName string 
----@field tier number 
+---@type number 
+---@type number 
+---@type string 
+---@type number 
 PvpRatingInfo = {}
 
 ---@class WowLocale
----@field enUS bool 
----@field koKR bool 
----@field frFR bool 
----@field deDE bool 
----@field zhCN bool 
----@field zhTW bool 
----@field esES bool 
----@field esMX bool 
----@field ruRU bool 
----@field ptBR bool 
----@field itIT bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
 WowLocale = {}
 

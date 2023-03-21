@@ -12,98 +12,98 @@ function C_EventToastManager.RemoveCurrentToast() end
 
 ---@class EventToastDisplayType : Enum
 Enum.EventToastDisplayType = {}
----@field protected NormalSingleLine EventToastDisplayType 
+---@field NormalSingleLine EventToastDisplayType 
 Enum.EventToastDisplayType.NormalSingleLine = 0
----@field protected NormalBlockText EventToastDisplayType 
+---@field NormalBlockText EventToastDisplayType 
 Enum.EventToastDisplayType.NormalBlockText = 1
----@field protected NormalTitleAndSubTitle EventToastDisplayType 
+---@field NormalTitleAndSubTitle EventToastDisplayType 
 Enum.EventToastDisplayType.NormalTitleAndSubTitle = 2
----@field protected NormalTextWithIcon EventToastDisplayType 
+---@field NormalTextWithIcon EventToastDisplayType 
 Enum.EventToastDisplayType.NormalTextWithIcon = 3
----@field protected LargeTextWithIcon EventToastDisplayType 
+---@field LargeTextWithIcon EventToastDisplayType 
 Enum.EventToastDisplayType.LargeTextWithIcon = 4
----@field protected NormalTextWithIconAndRarity EventToastDisplayType 
+---@field NormalTextWithIconAndRarity EventToastDisplayType 
 Enum.EventToastDisplayType.NormalTextWithIconAndRarity = 5
----@field protected Scenario EventToastDisplayType 
+---@field Scenario EventToastDisplayType 
 Enum.EventToastDisplayType.Scenario = 6
----@field protected ChallengeMode EventToastDisplayType 
+---@field ChallengeMode EventToastDisplayType 
 Enum.EventToastDisplayType.ChallengeMode = 7
----@field protected ScenarioClickExpand EventToastDisplayType 
+---@field ScenarioClickExpand EventToastDisplayType 
 Enum.EventToastDisplayType.ScenarioClickExpand = 8
 
 ---@class EventToastEventType : Enum
 Enum.EventToastEventType = {}
----@field protected LevelUp EventToastEventType 
+---@field LevelUp EventToastEventType 
 Enum.EventToastEventType.LevelUp = 0
----@field protected LevelUpSpell EventToastEventType 
+---@field LevelUpSpell EventToastEventType 
 Enum.EventToastEventType.LevelUpSpell = 1
----@field protected LevelUpDungeon EventToastEventType 
+---@field LevelUpDungeon EventToastEventType 
 Enum.EventToastEventType.LevelUpDungeon = 2
----@field protected LevelUpRaid EventToastEventType 
+---@field LevelUpRaid EventToastEventType 
 Enum.EventToastEventType.LevelUpRaid = 3
----@field protected LevelUpPvP EventToastEventType 
+---@field LevelUpPvP EventToastEventType 
 Enum.EventToastEventType.LevelUpPvP = 4
----@field protected PetBattleNewAbility EventToastEventType 
+---@field PetBattleNewAbility EventToastEventType 
 Enum.EventToastEventType.PetBattleNewAbility = 5
----@field protected PetBattleFinalRound EventToastEventType 
+---@field PetBattleFinalRound EventToastEventType 
 Enum.EventToastEventType.PetBattleFinalRound = 6
----@field protected PetBattleCapture EventToastEventType 
+---@field PetBattleCapture EventToastEventType 
 Enum.EventToastEventType.PetBattleCapture = 7
----@field protected BattlePetLevelChanged EventToastEventType 
+---@field BattlePetLevelChanged EventToastEventType 
 Enum.EventToastEventType.BattlePetLevelChanged = 8
----@field protected BattlePetLevelUpAbility EventToastEventType 
+---@field BattlePetLevelUpAbility EventToastEventType 
 Enum.EventToastEventType.BattlePetLevelUpAbility = 9
----@field protected QuestBossEmote EventToastEventType 
+---@field QuestBossEmote EventToastEventType 
 Enum.EventToastEventType.QuestBossEmote = 10
----@field protected MythicPlusWeeklyRecord EventToastEventType 
+---@field MythicPlusWeeklyRecord EventToastEventType 
 Enum.EventToastEventType.MythicPlusWeeklyRecord = 11
----@field protected QuestTurnedIn EventToastEventType 
+---@field QuestTurnedIn EventToastEventType 
 Enum.EventToastEventType.QuestTurnedIn = 12
----@field protected WorldStateChange EventToastEventType 
+---@field WorldStateChange EventToastEventType 
 Enum.EventToastEventType.WorldStateChange = 13
----@field protected Scenario EventToastEventType 
+---@field Scenario EventToastEventType 
 Enum.EventToastEventType.Scenario = 14
----@field protected LevelUpOther EventToastEventType 
+---@field LevelUpOther EventToastEventType 
 Enum.EventToastEventType.LevelUpOther = 15
----@field protected PlayerAuraAdded EventToastEventType 
+---@field PlayerAuraAdded EventToastEventType 
 Enum.EventToastEventType.PlayerAuraAdded = 16
----@field protected PlayerAuraRemoved EventToastEventType 
+---@field PlayerAuraRemoved EventToastEventType 
 Enum.EventToastEventType.PlayerAuraRemoved = 17
----@field protected SpellScript EventToastEventType 
+---@field SpellScript EventToastEventType 
 Enum.EventToastEventType.SpellScript = 18
----@field protected CriteriaUpdated EventToastEventType 
+---@field CriteriaUpdated EventToastEventType 
 Enum.EventToastEventType.CriteriaUpdated = 19
----@field protected PvPTierUpdate EventToastEventType 
+---@field PvPTierUpdate EventToastEventType 
 Enum.EventToastEventType.PvPTierUpdate = 20
----@field protected SpellLearned EventToastEventType 
+---@field SpellLearned EventToastEventType 
 Enum.EventToastEventType.SpellLearned = 21
----@field protected TreasureItem EventToastEventType 
+---@field TreasureItem EventToastEventType 
 Enum.EventToastEventType.TreasureItem = 22
 
 ---@class EventToastInfo
----@field eventToastID number 
----@field title string 
----@field subtitle string 
----@field instructionText string 
----@field iconFileID fileID 
----@field subIcon textureAtlas|nil 
----@field link string 
----@field qualityString string|nil 
----@field quality number|nil 
----@field eventType EventToastEventType 
----@field displayType EventToastDisplayType 
----@field uiTextureKit textureKit 
----@field sortOrder number 
----@field time number|nil 
----@field uiWidgetSetID number|nil 
----@field extraUiWidgetSetID number|nil 
----@field titleTooltip string|nil 
----@field subtitleTooltip string|nil 
----@field titleTooltipUiWidgetSetID number|nil 
----@field subtitleTooltipUiWidgetSetID number|nil 
----@field hideDefaultAtlas bool|nil 
----@field showSoundKitID number|nil 
----@field hideSoundKitID number|nil 
----@field colorTint colorRGB|nil 
+---@type number 
+---@type string 
+---@type string 
+---@type string 
+---@type fileID 
+---@type textureAtlas 
+---@type string 
+---@type string 
+---@type number 
+---@type EventToastEventType 
+---@type EventToastDisplayType 
+---@type textureKit 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type string 
+---@type string 
+---@type number 
+---@type number 
+---@type bool 
+---@type number 
+---@type number 
+---@type colorRGB 
 EventToastInfo = {}
 

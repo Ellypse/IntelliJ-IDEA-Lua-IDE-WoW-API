@@ -46,31 +46,31 @@ function C_CampaignInfo.UsesNormalQuestIcons(campaignID) end
 
 ---@class CampaignState : Enum
 Enum.CampaignState = {}
----@field protected Invalid CampaignState 
+---@field Invalid CampaignState 
 Enum.CampaignState.Invalid = 0
----@field protected Complete CampaignState 
+---@field Complete CampaignState 
 Enum.CampaignState.Complete = 1
----@field protected InProgress CampaignState 
+---@field InProgress CampaignState 
 Enum.CampaignState.InProgress = 2
----@field protected Stalled CampaignState 
+---@field Stalled CampaignState 
 Enum.CampaignState.Stalled = 3
 
 ---@class CampaignChapterInfo
----@field name cstring 
----@field description cstring 
----@field rewardQuestID number 
+---@type cstring 
+---@type cstring 
+---@type number 
 CampaignChapterInfo = {}
 
 ---@class CampaignFailureReason
----@field text string 
----@field questID number|nil 
----@field mapID number|nil 
+---@type string 
+---@type number 
+---@type number 
 CampaignFailureReason = {}
 
 ---@class CampaignInfo
----@field name cstring 
----@field description cstring 
----@field uiTextureKit textureKit 
----@field isWarCampaign bool 
+---@type cstring 
+---@type cstring 
+---@type textureKit 
+---@type bool 
 CampaignInfo = {}
 

@@ -152,129 +152,129 @@ function C_Map.SetUserWaypoint(point) end
 
 ---@class MapCanvasPosition : Enum
 Enum.MapCanvasPosition = {}
----@field protected None MapCanvasPosition 
+---@field None MapCanvasPosition 
 Enum.MapCanvasPosition.None = 0
----@field protected BottomLeft MapCanvasPosition 
+---@field BottomLeft MapCanvasPosition 
 Enum.MapCanvasPosition.BottomLeft = 1
----@field protected BottomRight MapCanvasPosition 
+---@field BottomRight MapCanvasPosition 
 Enum.MapCanvasPosition.BottomRight = 2
----@field protected TopLeft MapCanvasPosition 
+---@field TopLeft MapCanvasPosition 
 Enum.MapCanvasPosition.TopLeft = 3
----@field protected TopRight MapCanvasPosition 
+---@field TopRight MapCanvasPosition 
 Enum.MapCanvasPosition.TopRight = 4
 
 ---@class UIMapFlag : Enum
 Enum.UIMapFlag = {}
----@field protected NoHighlight UIMapFlag 
+---@field NoHighlight UIMapFlag 
 Enum.UIMapFlag.NoHighlight = 1
----@field protected ShowOverlays UIMapFlag 
+---@field ShowOverlays UIMapFlag 
 Enum.UIMapFlag.ShowOverlays = 2
----@field protected ShowTaxiNodes UIMapFlag 
+---@field ShowTaxiNodes UIMapFlag 
 Enum.UIMapFlag.ShowTaxiNodes = 4
----@field protected GarrisonMap UIMapFlag 
+---@field GarrisonMap UIMapFlag 
 Enum.UIMapFlag.GarrisonMap = 8
----@field protected FallbackToParentMap UIMapFlag 
+---@field FallbackToParentMap UIMapFlag 
 Enum.UIMapFlag.FallbackToParentMap = 16
----@field protected NoHighlightTexture UIMapFlag 
+---@field NoHighlightTexture UIMapFlag 
 Enum.UIMapFlag.NoHighlightTexture = 32
----@field protected ShowTaskObjectives UIMapFlag 
+---@field ShowTaskObjectives UIMapFlag 
 Enum.UIMapFlag.ShowTaskObjectives = 64
----@field protected NoWorldPositions UIMapFlag 
+---@field NoWorldPositions UIMapFlag 
 Enum.UIMapFlag.NoWorldPositions = 128
----@field protected HideArchaeologyDigs UIMapFlag 
+---@field HideArchaeologyDigs UIMapFlag 
 Enum.UIMapFlag.HideArchaeologyDigs = 256
----@field protected Deprecated UIMapFlag 
+---@field Deprecated UIMapFlag 
 Enum.UIMapFlag.Deprecated = 512
----@field protected HideIcons UIMapFlag 
+---@field HideIcons UIMapFlag 
 Enum.UIMapFlag.HideIcons = 1024
----@field protected HideVignettes UIMapFlag 
+---@field HideVignettes UIMapFlag 
 Enum.UIMapFlag.HideVignettes = 2048
----@field protected ForceAllOverlayExplored UIMapFlag 
+---@field ForceAllOverlayExplored UIMapFlag 
 Enum.UIMapFlag.ForceAllOverlayExplored = 4096
----@field protected FlightMapShowZoomOut UIMapFlag 
+---@field FlightMapShowZoomOut UIMapFlag 
 Enum.UIMapFlag.FlightMapShowZoomOut = 8192
----@field protected FlightMapAutoZoom UIMapFlag 
+---@field FlightMapAutoZoom UIMapFlag 
 Enum.UIMapFlag.FlightMapAutoZoom = 16384
----@field protected ForceOnNavbar UIMapFlag 
+---@field ForceOnNavbar UIMapFlag 
 Enum.UIMapFlag.ForceOnNavbar = 32768
----@field protected AlwaysAllowUserWaypoints UIMapFlag 
+---@field AlwaysAllowUserWaypoints UIMapFlag 
 Enum.UIMapFlag.AlwaysAllowUserWaypoints = 65536
 
 ---@class UIMapSystem : Enum
 Enum.UIMapSystem = {}
----@field protected World UIMapSystem 
+---@field World UIMapSystem 
 Enum.UIMapSystem.World = 0
----@field protected Taxi UIMapSystem 
+---@field Taxi UIMapSystem 
 Enum.UIMapSystem.Taxi = 1
----@field protected Adventure UIMapSystem 
+---@field Adventure UIMapSystem 
 Enum.UIMapSystem.Adventure = 2
----@field protected Minimap UIMapSystem 
+---@field Minimap UIMapSystem 
 Enum.UIMapSystem.Minimap = 3
 
 ---@class UIMapType : Enum
 Enum.UIMapType = {}
----@field protected Cosmic UIMapType 
+---@field Cosmic UIMapType 
 Enum.UIMapType.Cosmic = 0
----@field protected World UIMapType 
+---@field World UIMapType 
 Enum.UIMapType.World = 1
----@field protected Continent UIMapType 
+---@field Continent UIMapType 
 Enum.UIMapType.Continent = 2
----@field protected Zone UIMapType 
+---@field Zone UIMapType 
 Enum.UIMapType.Zone = 3
----@field protected Dungeon UIMapType 
+---@field Dungeon UIMapType 
 Enum.UIMapType.Dungeon = 4
----@field protected Micro UIMapType 
+---@field Micro UIMapType 
 Enum.UIMapType.Micro = 5
----@field protected Orphan UIMapType 
+---@field Orphan UIMapType 
 Enum.UIMapType.Orphan = 6
 
 ---@class MapBannerInfo
----@field areaPoiID number 
----@field name cstring 
----@field atlasName string 
----@field uiTextureKit textureKit|nil 
+---@type number 
+---@type cstring 
+---@type string 
+---@type textureKit 
 MapBannerInfo = {}
 
 ---@class MapLinkInfo
----@field areaPoiID number 
----@field position vector2 
----@field name cstring 
----@field atlasName string 
----@field linkedUiMapID number 
+---@type number 
+---@type vector2 
+---@type cstring 
+---@type string 
+---@type number 
 MapLinkInfo = {}
 
 ---@class UiMapDetails
----@field mapID number 
----@field name cstring 
----@field mapType UIMapType 
----@field parentMapID number 
----@field flags number 
+---@type number 
+---@type cstring 
+---@type UIMapType 
+---@type number 
+---@type number 
 UiMapDetails = {}
 
 ---@class UiMapGroupMemberInfo
----@field mapID number 
----@field relativeHeightIndex number 
----@field name cstring 
+---@type number 
+---@type number 
+---@type cstring 
 UiMapGroupMemberInfo = {}
 
 ---@class UiMapHighlightInfo
----@field fileDataID fileID 
----@field atlasID textureAtlas 
----@field texturePercentageX number 
----@field texturePercentageY number 
----@field textureX number 
----@field textureY number 
----@field scrollChildX number 
----@field scrollChildY number 
+---@type fileID 
+---@type textureAtlas 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
 UiMapHighlightInfo = {}
 
 ---@class UiMapLayerInfo
----@field layerWidth number 
----@field layerHeight number 
----@field tileWidth number 
----@field tileHeight number 
----@field minScale number 
----@field maxScale number 
----@field additionalZoomSteps number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
 UiMapLayerInfo = {}
 

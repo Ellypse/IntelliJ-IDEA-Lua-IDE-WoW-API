@@ -120,22 +120,22 @@ function C_CraftingOrders.SkillLineHasOrders(skillLineID) end
 function C_CraftingOrders.UpdateIgnoreList() end
 
 ---@class CraftingOrderRequestInfo
----@field orderType CraftingOrderType 
----@field selectedSkillLineAbility number|nil 
----@field searchFavorites bool 
----@field initialNonPublicSearch bool 
----@field primarySort CraftingOrderSortInfo 
----@field secondarySort CraftingOrderSortInfo 
----@field forCrafter bool 
----@field offset number 
----@field callback CraftingOrderRequestCallback 
----@field profession Profession|nil 
+---@type CraftingOrderType 
+---@type number 
+---@type bool 
+---@type bool 
+---@type CraftingOrderSortInfo 
+---@type CraftingOrderSortInfo 
+---@type bool 
+---@type number 
+---@type CraftingOrderRequestCallback 
+---@type Profession 
 CraftingOrderRequestInfo = {}
 
 ---@class CraftingOrderRequestMyOrdersInfo
----@field primarySort CraftingOrderSortInfo 
----@field secondarySort CraftingOrderSortInfo 
----@field offset number 
----@field callback CraftingOrderRequestMyOrdersCallback 
+---@type CraftingOrderSortInfo 
+---@type CraftingOrderSortInfo 
+---@type number 
+---@type CraftingOrderRequestMyOrdersCallback 
 CraftingOrderRequestMyOrdersInfo = {}
 

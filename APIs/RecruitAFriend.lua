@@ -42,148 +42,148 @@ function C_RecruitAFriend.RequestUpdatedRecruitmentInfo() end
 
 ---@class RafRecruitActivityState : Enum
 Enum.RafRecruitActivityState = {}
----@field protected Incomplete RafRecruitActivityState 
+---@field Incomplete RafRecruitActivityState 
 Enum.RafRecruitActivityState.Incomplete = 0
----@field protected Complete RafRecruitActivityState 
+---@field Complete RafRecruitActivityState 
 Enum.RafRecruitActivityState.Complete = 1
----@field protected RewardClaimed RafRecruitActivityState 
+---@field RewardClaimed RafRecruitActivityState 
 Enum.RafRecruitActivityState.RewardClaimed = 2
 
 ---@class RafRecruitSubStatus : Enum
 Enum.RafRecruitSubStatus = {}
----@field protected Trial RafRecruitSubStatus 
+---@field Trial RafRecruitSubStatus 
 Enum.RafRecruitSubStatus.Trial = 0
----@field protected Active RafRecruitSubStatus 
+---@field Active RafRecruitSubStatus 
 Enum.RafRecruitSubStatus.Active = 1
----@field protected Inactive RafRecruitSubStatus 
+---@field Inactive RafRecruitSubStatus 
 Enum.RafRecruitSubStatus.Inactive = 2
 
 ---@class RafRewardType : Enum
 Enum.RafRewardType = {}
----@field protected Pet RafRewardType 
+---@field Pet RafRewardType 
 Enum.RafRewardType.Pet = 0
----@field protected Mount RafRewardType 
+---@field Mount RafRewardType 
 Enum.RafRewardType.Mount = 1
----@field protected Appearance RafRewardType 
+---@field Appearance RafRewardType 
 Enum.RafRewardType.Appearance = 2
----@field protected Title RafRewardType 
+---@field Title RafRewardType 
 Enum.RafRewardType.Title = 3
----@field protected GameTime RafRewardType 
+---@field GameTime RafRewardType 
 Enum.RafRewardType.GameTime = 4
----@field protected AppearanceSet RafRewardType 
+---@field AppearanceSet RafRewardType 
 Enum.RafRewardType.AppearanceSet = 5
----@field protected Illusion RafRewardType 
+---@field Illusion RafRewardType 
 Enum.RafRewardType.Illusion = 6
----@field protected Invalid RafRewardType 
+---@field Invalid RafRewardType 
 Enum.RafRewardType.Invalid = 7
 
 ---@class RafAppearanceInfo
----@field appearanceID number 
+---@type number 
 RafAppearanceInfo = {}
 
 ---@class RafAppearanceSetInfo
----@field setID number 
----@field setName string 
----@field appearanceIDs table 
+---@type number 
+---@type string 
+---@type table 
 RafAppearanceSetInfo = {}
 
 ---@class RafIllusionInfo
----@field spellItemEnchantmentID number 
+---@type number 
 RafIllusionInfo = {}
 
 ---@class RafInfo
----@field versions table 
----@field recruitmentInfo RafRecruitmentinfo|nil 
----@field recruits table 
----@field claimInProgress bool 
+---@type table 
+---@type RafRecruitmentinfo 
+---@type table 
+---@type bool 
 RafInfo = {}
 
 ---@class RafMonthCount
----@field lifetimeMonths number 
----@field spentMonths number 
----@field availableMonths number 
+---@type number 
+---@type number 
+---@type number 
 RafMonthCount = {}
 
 ---@class RafMountInfo
----@field spellID number 
----@field mountID number 
+---@type number 
+---@type number 
 RafMountInfo = {}
 
 ---@class RafPetInfo
----@field creatureID number 
----@field speciesID number 
----@field displayID number 
----@field speciesName string 
----@field description string 
+---@type number 
+---@type number 
+---@type number 
+---@type string 
+---@type string 
 RafPetInfo = {}
 
 ---@class RafRecruit
----@field bnetAccountID number 
----@field wowAccountGUID WOWGUID 
----@field battleTag string 
----@field monthsRemaining number 
----@field subStatus RafRecruitSubStatus 
----@field acceptanceID RecruitAcceptanceID 
----@field versionRecruited RecruitAFriendRewardsVersion 
----@field activities table 
+---@type number 
+---@type WOWGUID 
+---@type string 
+---@type number 
+---@type RafRecruitSubStatus 
+---@type RecruitAcceptanceID 
+---@type RecruitAFriendRewardsVersion 
+---@type table 
 RafRecruit = {}
 
 ---@class RafRecruitActivity
----@field activityID number 
----@field rewardQuestID number 
----@field state RafRecruitActivityState 
+---@type number 
+---@type number 
+---@type RafRecruitActivityState 
 RafRecruitActivity = {}
 
 ---@class RafRecruitmentinfo
----@field recruitmentCode string 
----@field recruitmentURL string 
----@field expireTime number 
----@field remainingTimeSeconds number 
----@field totalUses number 
----@field remainingUses number 
----@field sourceRealm string 
----@field sourceFaction string 
+---@type string 
+---@type string 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type string 
+---@type string 
 RafRecruitmentinfo = {}
 
 ---@class RafReward
----@field rewardID number 
----@field rafVersion RecruitAFriendRewardsVersion 
----@field itemID number 
----@field rewardType RafRewardType 
----@field petInfo RafPetInfo|nil 
----@field mountInfo RafMountInfo|nil 
----@field appearanceInfo RafAppearanceInfo|nil 
----@field titleInfo RafTitleInfo|nil 
----@field appearanceSetInfo RafAppearanceSetInfo|nil 
----@field illusionInfo RafIllusionInfo|nil 
----@field canClaim bool 
----@field claimed bool 
----@field canAfford bool 
----@field repeatable bool 
----@field repeatableClaimCount number 
----@field monthsRequired number 
----@field monthCost number 
----@field availableInMonths number 
----@field iconID fileID 
+---@type number 
+---@type RecruitAFriendRewardsVersion 
+---@type number 
+---@type RafRewardType 
+---@type RafPetInfo 
+---@type RafMountInfo 
+---@type RafAppearanceInfo 
+---@type RafTitleInfo 
+---@type RafAppearanceSetInfo 
+---@type RafIllusionInfo 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type fileID 
 RafReward = {}
 
 ---@class RafSystemInfo
----@field maxRecruits number 
----@field maxRecruitMonths number 
----@field maxRecruitmentUses number 
----@field daysInCycle number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
 RafSystemInfo = {}
 
 ---@class RafTitleInfo
----@field titleMaskID number 
+---@type number 
 RafTitleInfo = {}
 
 ---@class RafVersionInfo
----@field rafVersion RecruitAFriendRewardsVersion 
----@field monthCount RafMonthCount 
----@field rewards table 
----@field nextReward RafReward|nil 
----@field numAffordableRewards number 
----@field numRecruits number 
+---@type RecruitAFriendRewardsVersion 
+---@type RafMonthCount 
+---@type table 
+---@type RafReward 
+---@type number 
+---@type number 
 RafVersionInfo = {}
 

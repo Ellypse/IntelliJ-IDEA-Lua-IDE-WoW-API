@@ -159,54 +159,54 @@ function C_MountJournal.SummonByID(mountID) end
 
 ---@class MountType : Enum
 Enum.MountType = {}
----@field protected Ground MountType 
+---@field Ground MountType 
 Enum.MountType.Ground = 0
----@field protected Flying MountType 
+---@field Flying MountType 
 Enum.MountType.Flying = 1
----@field protected Aquatic MountType 
+---@field Aquatic MountType 
 Enum.MountType.Aquatic = 2
----@field protected Dragonriding MountType 
+---@field Dragonriding MountType 
 Enum.MountType.Dragonriding = 3
 
 ---@class MountTypeFlag : Enum
 Enum.MountTypeFlag = {}
----@field protected IsFlyingMount MountTypeFlag 
+---@field IsFlyingMount MountTypeFlag 
 Enum.MountTypeFlag.IsFlyingMount = 1
----@field protected IsAquaticMount MountTypeFlag 
+---@field IsAquaticMount MountTypeFlag 
 Enum.MountTypeFlag.IsAquaticMount = 2
----@field protected IsDragonRidingMount MountTypeFlag 
+---@field IsDragonRidingMount MountTypeFlag 
 Enum.MountTypeFlag.IsDragonRidingMount = 4
 
 ---@class MountCreatureDisplayInfo
----@field creatureDisplayID number 
----@field isVisible bool 
+---@type number 
+---@type bool 
 MountCreatureDisplayInfo = {}
 
 ---@class MountInfo
----@field name cstring 
----@field spellID number 
----@field icon fileID 
----@field isActive bool 
----@field isUsable bool 
----@field sourceType number 
----@field isFavorite bool 
----@field isFactionSpecific bool 
----@field faction number|nil 
----@field shouldHideOnChar bool 
----@field isCollected bool 
----@field mountID number 
----@field isForDragonriding bool 
+---@type cstring 
+---@type number 
+---@type fileID 
+---@type bool 
+---@type bool 
+---@type number 
+---@type bool 
+---@type bool 
+---@type number 
+---@type bool 
+---@type bool 
+---@type number 
+---@type bool 
 MountInfo = {}
 
 ---@class MountInfoExtra
----@field creatureDisplayInfoID number|nil 
----@field description cstring 
----@field source cstring 
----@field isSelfMount bool 
----@field mountTypeID number 
----@field uiModelSceneID number 
----@field animID number 
----@field spellVisualKitID number 
----@field disablePlayerMountPreview bool 
+---@type number 
+---@type cstring 
+---@type cstring 
+---@type bool 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
 MountInfoExtra = {}
 

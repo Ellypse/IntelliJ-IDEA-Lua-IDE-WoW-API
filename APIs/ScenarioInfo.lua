@@ -14,67 +14,67 @@ function C_ScenarioInfo.GetScenarioStepInfo(scenarioStepID) end
 
 ---@class JailersTowerType : Enum
 Enum.JailersTowerType = {}
----@field protected TwistingCorridors JailersTowerType 
+---@field TwistingCorridors JailersTowerType 
 Enum.JailersTowerType.TwistingCorridors = 0
----@field protected SkoldusHalls JailersTowerType 
+---@field SkoldusHalls JailersTowerType 
 Enum.JailersTowerType.SkoldusHalls = 1
----@field protected FractureChambers JailersTowerType 
+---@field FractureChambers JailersTowerType 
 Enum.JailersTowerType.FractureChambers = 2
----@field protected Soulforges JailersTowerType 
+---@field Soulforges JailersTowerType 
 Enum.JailersTowerType.Soulforges = 3
----@field protected Coldheart JailersTowerType 
+---@field Coldheart JailersTowerType 
 Enum.JailersTowerType.Coldheart = 4
----@field protected Mortregar JailersTowerType 
+---@field Mortregar JailersTowerType 
 Enum.JailersTowerType.Mortregar = 5
----@field protected UpperReaches JailersTowerType 
+---@field UpperReaches JailersTowerType 
 Enum.JailersTowerType.UpperReaches = 6
----@field protected ArkobanHall JailersTowerType 
+---@field ArkobanHall JailersTowerType 
 Enum.JailersTowerType.ArkobanHall = 7
----@field protected TormentChamberJaina JailersTowerType 
+---@field TormentChamberJaina JailersTowerType 
 Enum.JailersTowerType.TormentChamberJaina = 8
----@field protected TormentChamberThrall JailersTowerType 
+---@field TormentChamberThrall JailersTowerType 
 Enum.JailersTowerType.TormentChamberThrall = 9
----@field protected TormentChamberAnduin JailersTowerType 
+---@field TormentChamberAnduin JailersTowerType 
 Enum.JailersTowerType.TormentChamberAnduin = 10
----@field protected AdamantVaults JailersTowerType 
+---@field AdamantVaults JailersTowerType 
 Enum.JailersTowerType.AdamantVaults = 11
----@field protected ForgottenCatacombs JailersTowerType 
+---@field ForgottenCatacombs JailersTowerType 
 Enum.JailersTowerType.ForgottenCatacombs = 12
----@field protected Ossuary JailersTowerType 
+---@field Ossuary JailersTowerType 
 Enum.JailersTowerType.Ossuary = 13
----@field protected BossRush JailersTowerType 
+---@field BossRush JailersTowerType 
 Enum.JailersTowerType.BossRush = 14
 
 ---@class ScenarioInformation
----@field name string 
----@field currentStage number 
----@field numStages number 
----@field flags number 
----@field isComplete bool 
----@field xp number 
----@field money number 
----@field type number 
----@field area string 
----@field uiTextureKit textureKit 
+---@type string 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
+---@type number 
+---@type number 
+---@type number 
+---@type string 
+---@type textureKit 
 ScenarioInformation = {}
 
 ---@class ScenarioStepInfo
----@field title string 
----@field description string 
----@field numCriteria number 
----@field stepFailed bool 
----@field isBonusStep bool 
----@field isForCurrentStepOnly bool 
----@field shouldShowBonusObjective bool 
----@field spells table 
----@field weightedProgress number|nil 
----@field rewardQuestID number 
----@field widgetSetID number|nil 
+---@type string 
+---@type string 
+---@type number 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type table 
+---@type number 
+---@type number 
+---@type number 
 ScenarioStepInfo = {}
 
 ---@class ScenarioStepSpellInfo
----@field spellID number 
----@field name string 
----@field icon number 
+---@type number 
+---@type string 
+---@type number 
 ScenarioStepSpellInfo = {}
 

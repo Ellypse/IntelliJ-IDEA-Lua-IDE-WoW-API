@@ -11,12 +11,12 @@ function C_IncomingSummon.IncomingSummonStatus(unit) end
 
 ---@class SummonStatus : Enum
 Enum.SummonStatus = {}
----@field protected None SummonStatus 
+---@field None SummonStatus 
 Enum.SummonStatus.None = 0
----@field protected Pending SummonStatus 
+---@field Pending SummonStatus 
 Enum.SummonStatus.Pending = 1
----@field protected Accepted SummonStatus 
+---@field Accepted SummonStatus 
 Enum.SummonStatus.Accepted = 2
----@field protected Declined SummonStatus 
+---@field Declined SummonStatus 
 Enum.SummonStatus.Declined = 3
 

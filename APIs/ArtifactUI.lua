@@ -221,79 +221,79 @@ function C_ArtifactUI.SetPreviewAppearance(artifactAppearanceID) end
 function C_ArtifactUI.ShouldSuppressForgeRotation() end
 
 ---@class ArtifactAppearanceInfo
----@field artifactAppearanceID number 
----@field appearanceName string 
----@field displayIndex number 
----@field unlocked bool 
----@field failureDescription string|nil 
----@field uiCameraID number 
----@field altHandCameraID number|nil 
----@field swatchColor colorRGB 
----@field modelOpacity number 
----@field modelSaturation number 
----@field obtainable bool 
+---@type number 
+---@type string 
+---@type number 
+---@type bool 
+---@type string 
+---@type number 
+---@type number 
+---@type colorRGB 
+---@type number 
+---@type number 
+---@type bool 
 ArtifactAppearanceInfo = {}
 
 ---@class ArtifactAppearanceSetInfo
----@field artifactAppearanceSetID number 
----@field appearanceSetName string 
----@field appearanceSetDescription string 
----@field numAppearances number 
+---@type number 
+---@type string 
+---@type string 
+---@type number 
 ArtifactAppearanceSetInfo = {}
 
 ---@class ArtifactArtInfo
----@field textureKit textureKit 
----@field titleName string 
----@field titleColor colorRGB 
----@field barConnectedColor colorRGB 
----@field barDisconnectedColor colorRGB 
----@field uiModelSceneID number 
----@field spellVisualKitID number 
+---@type textureKit 
+---@type string 
+---@type colorRGB 
+---@type colorRGB 
+---@type colorRGB 
+---@type number 
+---@type number 
 ArtifactArtInfo = {}
 
 ---@class ArtifactInfo
----@field itemID number 
----@field altItemID number|nil 
----@field name string 
----@field icon fileID 
----@field xp number 
----@field pointsSpent number 
----@field quality number 
----@field artifactAppearanceID number 
----@field appearanceModID number 
----@field itemAppearanceID number|nil 
----@field altItemAppearanceID number|nil 
----@field altOnTop bool 
----@field tier luaIndex 
+---@type number 
+---@type number 
+---@type string 
+---@type fileID 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
+---@type luaIndex 
 ArtifactInfo = {}
 
 ---@class ArtifactMetaPowerInfo
----@field spellID number 
----@field powerCost number 
----@field currentRank number 
+---@type number 
+---@type number 
+---@type number 
 ArtifactMetaPowerInfo = {}
 
 ---@class ArtifactPowerInfo
----@field spellID number 
----@field cost number 
----@field currentRank number 
----@field maxRank number 
----@field bonusRanks number 
----@field numMaxRankBonusFromTier number 
----@field prereqsMet bool 
----@field isStart bool 
----@field isGoldMedal bool 
----@field isFinal bool 
----@field tier luaIndex 
----@field position vector2 
----@field offset vector2|nil 
----@field linearIndex luaIndex|nil 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type number 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type bool 
+---@type luaIndex 
+---@type vector2 
+---@type vector2 
+---@type luaIndex 
 ArtifactPowerInfo = {}
 
 ---@class ArtifactRelicInfo
----@field name string 
----@field icon fileID 
----@field slotTypeName cstring @ Matches the socket identifiers used in the socketing system.
----@field link string 
+---@type string 
+---@type fileID 
+---@type cstring @ Matches the socket identifiers used in the socketing system.
+---@type string 
 ArtifactRelicInfo = {}
 
