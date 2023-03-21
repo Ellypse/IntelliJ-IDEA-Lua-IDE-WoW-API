@@ -20,14 +20,12 @@ function C_CVar.GetCVarDefault(name) end
 
 ---@param name cstring 
 ---@param value cstring @ [OPTIONAL]
----@overload fun(name:cstring)
 function C_CVar.RegisterCVar(name, value) end
 
 function C_CVar.ResetTestCVars() end
 
 ---@param name cstring 
 ---@param value cstring @ [OPTIONAL]
----@overload fun(name:cstring)
 ---@return boolean success
 function C_CVar.SetCVar(name, value) end
 

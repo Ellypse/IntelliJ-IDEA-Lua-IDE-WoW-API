@@ -130,12 +130,12 @@ function C_CraftingOrders.UpdateIgnoreList() end
 ---@field offset number 
 ---@field callback CraftingOrderRequestCallback 
 ---@field profession Profession|nil 
-local CraftingOrderRequestInfo = {}
+CraftingOrderRequestInfo = {}
 
 ---@class CraftingOrderRequestMyOrdersInfo
 ---@field primarySort CraftingOrderSortInfo 
 ---@field secondarySort CraftingOrderSortInfo 
 ---@field offset number 
 ---@field callback CraftingOrderRequestMyOrdersCallback 
-local CraftingOrderRequestMyOrdersInfo = {}
+CraftingOrderRequestMyOrdersInfo = {}
 

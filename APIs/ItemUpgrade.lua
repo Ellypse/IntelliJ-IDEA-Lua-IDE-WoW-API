@@ -17,7 +17,6 @@ function C_ItemUpgrade.GetItemUpgradeCurrentLevel() end
 
 ---@param effectIndex number 
 ---@param numUpgradeLevels number @ [OPTIONAL]
----@overload fun(effectIndex:number)
 ---@return string, string outBaseEffect, outUpgradedEffect
 function C_ItemUpgrade.GetItemUpgradeEffect(effectIndex, numUpgradeLevels) end
 
@@ -42,12 +41,12 @@ function C_ItemUpgrade.UpgradeItem(numUpgrades) end
 ---@class ItemUpgradeCurrencyCost
 ---@field cost number 
 ---@field currencyID number 
-local ItemUpgradeCurrencyCost = {}
+ItemUpgradeCurrencyCost = {}
 
 ---@class ItemUpgradeItemCost
 ---@field cost number 
 ---@field itemID number 
-local ItemUpgradeItemCost = {}
+ItemUpgradeItemCost = {}
 
 ---@class ItemUpgradeItemInfo
 ---@field iconID number 
@@ -57,7 +56,7 @@ local ItemUpgradeItemCost = {}
 ---@field currUpgrade number 
 ---@field maxUpgrade number 
 ---@field upgradeLevelInfos table 
-local ItemUpgradeItemInfo = {}
+ItemUpgradeItemInfo = {}
 
 ---@class ItemUpgradeLevelInfo
 ---@field upgradeLevel number 
@@ -67,11 +66,11 @@ local ItemUpgradeItemInfo = {}
 ---@field currencyCostsToUpgrade table 
 ---@field itemCostsToUpgrade table 
 ---@field failureMessage string|nil 
-local ItemUpgradeLevelInfo = {}
+ItemUpgradeLevelInfo = {}
 
 ---@class ItemUpgradeStat
 ---@field displayString string 
 ---@field statValue number 
 ---@field active bool 
-local ItemUpgradeStat = {}
+ItemUpgradeStat = {}
 

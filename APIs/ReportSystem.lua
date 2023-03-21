@@ -33,6 +33,5 @@ function C_ReportSystem.ReportStuckInCombat() end
 --- Not allowed to be called by addons
 ---@param reportInfo ReportInfo 
 ---@param playerLocation PlayerLocation @ [OPTIONAL]
----@overload fun(reportInfo:ReportInfo)
 function C_ReportSystem.SendReport(reportInfo, playerLocation) end
 

@@ -161,7 +161,6 @@ function C_Traits.RollbackConfig(configID) end
 ---@param configID number 
 ---@param nodeID number 
 ---@param nodeEntryID number @ [OPTIONAL]
----@overload fun(configID:number, nodeID:number)
 ---@return boolean success
 function C_Traits.SetSelection(configID, nodeID, nodeEntryID) end
 
@@ -184,7 +183,7 @@ function C_Traits.TalentTestUnlearnSpells() end
 ---@field traitCurrencyID number|nil 
 ---@field spentAmountRequired number|nil 
 ---@field tooltipFormat string|nil 
-local TraitCondInfo = {}
+TraitCondInfo = {}
 
 ---@class TraitConfigInfo
 ---@field ID number 
@@ -192,12 +191,12 @@ local TraitCondInfo = {}
 ---@field name string 
 ---@field treeIDs table 
 ---@field usesSharedActionBars bool 
-local TraitConfigInfo = {}
+TraitConfigInfo = {}
 
 ---@class TraitCurrencyCost
 ---@field ID number 
 ---@field amount number 
-local TraitCurrencyCost = {}
+TraitCurrencyCost = {}
 
 ---@class TraitDefinitionInfo
 ---@field spellID number|nil 
@@ -207,7 +206,7 @@ local TraitCurrencyCost = {}
 ---@field overrideIcon number|nil 
 ---@field overriddenSpellID number|nil 
 ---@field subType TraitDefinitionSubType|nil 
-local TraitDefinitionInfo = {}
+TraitDefinitionInfo = {}
 
 ---@class TraitEntryInfo
 ---@field definitionID number 
@@ -215,17 +214,17 @@ local TraitDefinitionInfo = {}
 ---@field maxRanks number 
 ---@field isAvailable bool 
 ---@field conditionIDs table 
-local TraitEntryInfo = {}
+TraitEntryInfo = {}
 
 ---@class TraitEntryRankInfo
 ---@field entryID number 
 ---@field rank number 
-local TraitEntryRankInfo = {}
+TraitEntryRankInfo = {}
 
 ---@class TraitGateInfo
 ---@field topLeftNodeID number 
 ---@field conditionID number 
-local TraitGateInfo = {}
+TraitGateInfo = {}
 
 ---@class TraitNodeInfo
 ---@field ID number 
@@ -251,7 +250,7 @@ local TraitGateInfo = {}
 ---@field conditionIDs table 
 ---@field isCascadeRepurchasable bool 
 ---@field cascadeRepurchaseEntryID number|nil 
-local TraitNodeInfo = {}
+TraitNodeInfo = {}
 
 ---@class TraitNodeInfoPartial
 ---@field canPurchaseRank bool|nil 
@@ -263,25 +262,25 @@ local TraitNodeInfo = {}
 ---@field currentRank number|nil 
 ---@field meetsEdgeRequirements bool|nil 
 ---@field isCascadeRepurchasable bool|nil 
-local TraitNodeInfoPartial = {}
+TraitNodeInfoPartial = {}
 
 ---@class TraitOutEdgeInfo
 ---@field targetNode number 
 ---@field type number 
 ---@field visualStyle number 
 ---@field isActive bool 
-local TraitOutEdgeInfo = {}
+TraitOutEdgeInfo = {}
 
 ---@class TraitTreeInfo
 ---@field ID number 
 ---@field gates table 
 ---@field hideSingleRankNumbers bool 
-local TraitTreeInfo = {}
+TraitTreeInfo = {}
 
 ---@class TreeCurrencyInfo
 ---@field traitCurrencyID number 
 ---@field quantity number 
 ---@field maxQuantity number|nil 
 ---@field spent number 
-local TreeCurrencyInfo = {}
+TreeCurrencyInfo = {}
 

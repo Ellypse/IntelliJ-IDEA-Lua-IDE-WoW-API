@@ -15,6 +15,5 @@ function SetOrder(order) end
 
 ---@param parent SimplePathAnim 
 ---@param order number @ [OPTIONAL]
----@overload fun(parent:SimplePathAnim)
 function SetParent(parent, order) end
 

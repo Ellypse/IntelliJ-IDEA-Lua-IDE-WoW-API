@@ -9,8 +9,6 @@ function C_LegendaryCrafting.CraftRuneforgeLegendary(description) end
 ---@param baseItem ItemLocation 
 ---@param runeforgePowerID number @ [OPTIONAL]
 ---@param modifiers number @ [OPTIONAL]
----@overload fun(baseItem:ItemLocation, modifiers:number)
----@overload fun(baseItem:ItemLocation)
 ---@return RuneforgeItemPreviewInfo|nil info
 function C_LegendaryCrafting.GetRuneforgeItemPreviewInfo(baseItem, runeforgePowerID, modifiers) end
 
@@ -37,7 +35,6 @@ function C_LegendaryCrafting.GetRuneforgeLegendaryUpgradeCost(runeforgeLegendary
 ---@param powerID number @ [OPTIONAL]
 ---@param addedModifierIndex luaIndex 
 ---@param modifiers number 
----@overload fun(baseItem:ItemLocation, addedModifierIndex:luaIndex, modifiers:number)
 ---@return string, string name, description
 function C_LegendaryCrafting.GetRuneforgeModifierInfo(baseItem, powerID, addedModifierIndex, modifiers) end
 
@@ -54,8 +51,6 @@ function C_LegendaryCrafting.GetRuneforgePowerSlots(runeforgePowerID) end
 
 ---@param baseItem ItemLocation @ [OPTIONAL]
 ---@param filter RuneforgePowerFilter @ [OPTIONAL]
----@overload fun(filter:RuneforgePowerFilter)
----@overload fun()
 ---@return number, number primaryRuneforgePowerIDs, otherRuneforgePowerIDs
 function C_LegendaryCrafting.GetRuneforgePowers(baseItem, filter) end
 
@@ -63,10 +58,6 @@ function C_LegendaryCrafting.GetRuneforgePowers(baseItem, filter) end
 ---@param specID number @ [OPTIONAL]
 ---@param covenantID number @ [OPTIONAL]
 ---@param filter RuneforgePowerFilter @ [OPTIONAL]
----@overload fun(specID:number, covenantID:number, filter:RuneforgePowerFilter)
----@overload fun(covenantID:number, filter:RuneforgePowerFilter)
----@overload fun(filter:RuneforgePowerFilter)
----@overload fun()
 ---@return number runeforgePowerIDs
 function C_LegendaryCrafting.GetRuneforgePowersByClassSpecAndCovenant(classID, specID, covenantID, filter) end
 

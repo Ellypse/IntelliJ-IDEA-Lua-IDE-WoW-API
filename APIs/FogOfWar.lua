@@ -14,5 +14,5 @@ function C_FogOfWar.GetFogOfWarInfo(fogOfWarID) end
 ---@field backgroundAtlas textureAtlas 
 ---@field maskAtlas textureAtlas 
 ---@field maskScalar number 
-local FogOfWarInfo = {}
+FogOfWarInfo = {}
 

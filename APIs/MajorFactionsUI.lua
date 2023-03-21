@@ -17,7 +17,6 @@ function C_MajorFactions.GetFeatureAbilities() end
 function C_MajorFactions.GetMajorFactionData(majorFactionID) end
 
 ---@param expansionID number @ [OPTIONAL]
----@overload fun()
 ---@return number majorFactionIDs
 function C_MajorFactions.GetMajorFactionIDs(expansionID) end
 
@@ -60,12 +59,12 @@ function C_MajorFactions.RequestCatchUpState() end
 ---@field textureKit textureKit 
 ---@field celebrationSoundKit number 
 ---@field renownFanfareSoundKitID number 
-local MajorFactionData = {}
+MajorFactionData = {}
 
 ---@class MajorFactionFeatureAbilityInfo
 ---@field featureAbilityType number 
 ---@field uiOrder number 
-local MajorFactionFeatureAbilityInfo = {}
+MajorFactionFeatureAbilityInfo = {}
 
 ---@class MajorFactionRenownLevelInfo
 ---@field factionID number 
@@ -73,7 +72,7 @@ local MajorFactionFeatureAbilityInfo = {}
 ---@field locked bool 
 ---@field isMilestone bool 
 ---@field isCapstone bool 
-local MajorFactionRenownLevelInfo = {}
+MajorFactionRenownLevelInfo = {}
 
 ---@class MajorFactionRenownRewardInfo
 ---@field renownRewardID number 
@@ -89,5 +88,5 @@ local MajorFactionRenownLevelInfo = {}
 ---@field name cstring|nil 
 ---@field description cstring|nil 
 ---@field toastDescription cstring|nil 
-local MajorFactionRenownRewardInfo = {}
+MajorFactionRenownRewardInfo = {}
 

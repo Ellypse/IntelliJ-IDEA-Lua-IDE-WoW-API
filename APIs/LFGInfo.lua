@@ -40,11 +40,11 @@ function C_LFGInfo.HideNameFromUI(dungeonID) end
 ---@field name string 
 ---@field iconID fileID 
 ---@field link string|nil 
-local LFGDungeonInfo = {}
+LFGDungeonInfo = {}
 
 ---@class LFGLockInfo
 ---@field lfgID number 
 ---@field reason number 
 ---@field hideEntry bool 
-local LFGLockInfo = {}
+LFGLockInfo = {}
 

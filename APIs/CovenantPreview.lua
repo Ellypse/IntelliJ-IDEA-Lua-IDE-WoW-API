@@ -8,21 +8,23 @@ function C_CovenantPreview.CloseFromUI() end
 function C_CovenantPreview.GetCovenantInfoForPlayerChoiceResponseID(playerChoiceResponseID) end
 
 ---@class CovenantAbilityType
-local CovenantAbilityType = {}
-CovenantAbilityType.Class = 0
-CovenantAbilityType.Signature = 1
-CovenantAbilityType.Soulbind = 2
+---@field Class number @ Default value is [ 0 ]
+---@field Signature number @ Default value is [ 1 ]
+---@field Soulbind number @ Default value is [ 2 ]
+
+---@type CovenantAbilityType 
+CovenantAbilityType = {}
 
 ---@class CovenantAbilityInfo
 ---@field spellID number 
 ---@field type CovenantAbilityType 
-local CovenantAbilityInfo = {}
+CovenantAbilityInfo = {}
 
 ---@class CovenantFeatureInfo
 ---@field name cstring 
 ---@field description cstring 
 ---@field texture number 
-local CovenantFeatureInfo = {}
+CovenantFeatureInfo = {}
 
 ---@class CovenantPreviewInfo
 ---@field textureKit textureKit 
@@ -36,7 +38,7 @@ local CovenantFeatureInfo = {}
 ---@field fromPlayerChoice bool 
 ---@field covenantSoulbinds table 
 ---@field featureInfo CovenantFeatureInfo 
-local CovenantPreviewInfo = {}
+CovenantPreviewInfo = {}
 
 ---@class CovenantSoulbindInfo
 ---@field spellID number 
@@ -44,5 +46,5 @@ local CovenantPreviewInfo = {}
 ---@field name cstring 
 ---@field description cstring 
 ---@field sortOrder number 
-local CovenantSoulbindInfo = {}
+CovenantSoulbindInfo = {}
 

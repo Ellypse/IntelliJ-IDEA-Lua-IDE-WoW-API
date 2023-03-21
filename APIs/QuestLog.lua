@@ -5,13 +5,11 @@ function C_QuestLog.AbandonQuest() end
 
 ---@param questID number 
 ---@param watchType QuestWatchType @ [OPTIONAL]
----@overload fun(questID:number)
 ---@return boolean wasWatched
 function C_QuestLog.AddQuestWatch(questID, watchType) end
 
 ---@param questID number 
 ---@param watchType QuestWatchType @ [OPTIONAL]
----@overload fun(questID:number)
 ---@return boolean wasWatched
 function C_QuestLog.AddWorldQuestWatch(questID, watchType) end
 
@@ -124,7 +122,6 @@ function C_QuestLog.GetQuestIDForWorldQuestWatchIndex(questWatchIndex) end
 function C_QuestLog.GetQuestLogMajorFactionReputationRewards(questID) end
 
 ---@param questLogIndex luaIndex @ [OPTIONAL]
----@overload fun()
 ---@return number, cstring, cstring, number, number|nil portraitGiver, portraitGiverText, portraitGiverName, portraitGiverMount, portraitGiverModelSceneID
 function C_QuestLog.GetQuestLogPortraitGiver(questLogIndex) end
 
@@ -150,7 +147,6 @@ function C_QuestLog.GetQuestsOnMap(uiMapID) end
 
 --- Uses the selected quest if no questID is provided
 ---@param questID number @ [OPTIONAL]
----@overload fun()
 ---@return number requiredMoney
 function C_QuestLog.GetRequiredMoney(questID) end
 
@@ -320,44 +316,54 @@ function C_QuestLog.SortQuestWatches() end
 function C_QuestLog.UnitIsRelatedToActiveQuest(unit) end
 
 ---@class MapOverlayDisplayLocation
-local MapOverlayDisplayLocation = {}
-MapOverlayDisplayLocation.Default = 0
-MapOverlayDisplayLocation.BottomLeft = 1
-MapOverlayDisplayLocation.TopLeft = 2
-MapOverlayDisplayLocation.BottomRight = 3
-MapOverlayDisplayLocation.TopRight = 4
-MapOverlayDisplayLocation.Hidden = 5
+---@field Default number @ Default value is [ 0 ]
+---@field BottomLeft number @ Default value is [ 1 ]
+---@field TopLeft number @ Default value is [ 2 ]
+---@field BottomRight number @ Default value is [ 3 ]
+---@field TopRight number @ Default value is [ 4 ]
+---@field Hidden number @ Default value is [ 5 ]
+
+---@type MapOverlayDisplayLocation 
+MapOverlayDisplayLocation = {}
 
 ---@class QuestFrequency
-local QuestFrequency = {}
-QuestFrequency.Default = 0
-QuestFrequency.Daily = 1
-QuestFrequency.Weekly = 2
+---@field Default number @ Default value is [ 0 ]
+---@field Daily number @ Default value is [ 1 ]
+---@field Weekly number @ Default value is [ 2 ]
+
+---@type QuestFrequency 
+QuestFrequency = {}
 
 ---@class QuestTag
-local QuestTag = {}
-QuestTag.Group = 1
-QuestTag.PvP = 41
-QuestTag.Raid = 62
-QuestTag.Dungeon = 81
-QuestTag.Legendary = 83
-QuestTag.Heroic = 85
-QuestTag.Raid10 = 88
-QuestTag.Raid25 = 89
-QuestTag.Scenario = 98
-QuestTag.Account = 102
-QuestTag.CombatAlly = 266
+---@field Group number @ Default value is [ 1 ]
+---@field PvP number @ Default value is [ 41 ]
+---@field Raid number @ Default value is [ 62 ]
+---@field Dungeon number @ Default value is [ 81 ]
+---@field Legendary number @ Default value is [ 83 ]
+---@field Heroic number @ Default value is [ 85 ]
+---@field Raid10 number @ Default value is [ 88 ]
+---@field Raid25 number @ Default value is [ 89 ]
+---@field Scenario number @ Default value is [ 98 ]
+---@field Account number @ Default value is [ 102 ]
+---@field CombatAlly number @ Default value is [ 266 ]
+
+---@type QuestTag 
+QuestTag = {}
 
 ---@class QuestWatchType
-local QuestWatchType = {}
-QuestWatchType.Automatic = 0
-QuestWatchType.Manual = 1
+---@field Automatic number @ Default value is [ 0 ]
+---@field Manual number @ Default value is [ 1 ]
+
+---@type QuestWatchType 
+QuestWatchType = {}
 
 ---@class WorldQuestQuality
-local WorldQuestQuality = {}
-WorldQuestQuality.Common = 0
-WorldQuestQuality.Rare = 1
-WorldQuestQuality.Epic = 2
+---@field Common number @ Default value is [ 0 ]
+---@field Rare number @ Default value is [ 1 ]
+---@field Epic number @ Default value is [ 2 ]
+
+---@type WorldQuestQuality 
+WorldQuestQuality = {}
 
 ---@class QuestInfo
 ---@field title string 
@@ -382,7 +388,7 @@ WorldQuestQuality.Epic = 2
 ---@field isAutoComplete bool 
 ---@field overridesSortOrder bool 
 ---@field readyForTranslation bool 
-local QuestInfo = {}
+QuestInfo = {}
 
 ---@class QuestObjectiveInfo
 ---@field text string 
@@ -390,7 +396,7 @@ local QuestInfo = {}
 ---@field finished bool 
 ---@field numFulfilled number 
 ---@field numRequired number 
-local QuestObjectiveInfo = {}
+QuestObjectiveInfo = {}
 
 ---@class QuestOnMapInfo
 ---@field questID number 
@@ -398,7 +404,7 @@ local QuestObjectiveInfo = {}
 ---@field y number 
 ---@field type number 
 ---@field isMapIndicatorQuest bool 
-local QuestOnMapInfo = {}
+QuestOnMapInfo = {}
 
 ---@class QuestTagInfo
 ---@field tagName cstring 
@@ -408,12 +414,12 @@ local QuestOnMapInfo = {}
 ---@field tradeskillLineID number|nil 
 ---@field isElite bool|nil 
 ---@field displayExpiration bool|nil 
-local QuestTagInfo = {}
+QuestTagInfo = {}
 
 ---@class QuestTheme
 ---@field background textureAtlas 
 ---@field seal textureAtlas 
 ---@field signature cstring 
 ---@field poiIcon textureAtlas 
-local QuestTheme = {}
+QuestTheme = {}
 

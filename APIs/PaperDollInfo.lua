@@ -48,5 +48,5 @@ function C_PaperDollInfo.OffhandHasWeapon() end
 ---@field gamesPlayed number 
 ---@field roundsWon number 
 ---@field roundsPlayed number 
-local InspectPVPData = {}
+InspectPVPData = {}
 

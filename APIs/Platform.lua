@@ -2,7 +2,9 @@
 C_Platform = {}
 
 ---@class ClientPlatformType
-local ClientPlatformType = {}
-ClientPlatformType.Windows = 0
-ClientPlatformType.Macintosh = 1
+---@field Windows number @ Default value is [ 0 ]
+---@field Macintosh number @ Default value is [ 1 ]
+
+---@type ClientPlatformType 
+ClientPlatformType = {}
 

@@ -45,28 +45,30 @@ function C_CampaignInfo.SortAsNormalQuest(campaignID) end
 function C_CampaignInfo.UsesNormalQuestIcons(campaignID) end
 
 ---@class CampaignState
-local CampaignState = {}
-CampaignState.Invalid = 0
-CampaignState.Complete = 1
-CampaignState.InProgress = 2
-CampaignState.Stalled = 3
+---@field Invalid number @ Default value is [ 0 ]
+---@field Complete number @ Default value is [ 1 ]
+---@field InProgress number @ Default value is [ 2 ]
+---@field Stalled number @ Default value is [ 3 ]
+
+---@type CampaignState 
+CampaignState = {}
 
 ---@class CampaignChapterInfo
 ---@field name cstring 
 ---@field description cstring 
 ---@field rewardQuestID number 
-local CampaignChapterInfo = {}
+CampaignChapterInfo = {}
 
 ---@class CampaignFailureReason
 ---@field text string 
 ---@field questID number|nil 
 ---@field mapID number|nil 
-local CampaignFailureReason = {}
+CampaignFailureReason = {}
 
 ---@class CampaignInfo
 ---@field name cstring 
 ---@field description cstring 
 ---@field uiTextureKit textureKit 
 ---@field isWarCampaign bool 
-local CampaignInfo = {}
+CampaignInfo = {}
 

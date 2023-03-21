@@ -20,12 +20,12 @@ function C_ConsoleScriptCollection.GetScriptData(consoleScriptID) end
 ---@class ConsoleScriptCollectionData
 ---@field ID number 
 ---@field name cstring 
-local ConsoleScriptCollectionData = {}
+ConsoleScriptCollectionData = {}
 
 ---@class ConsoleScriptCollectionElementData
 ---@field collectionID number|nil 
 ---@field consoleScriptID number|nil 
-local ConsoleScriptCollectionElementData = {}
+ConsoleScriptCollectionElementData = {}
 
 ---@class ConsoleScriptData
 ---@field ID number 
@@ -34,10 +34,10 @@ local ConsoleScriptCollectionElementData = {}
 ---@field script cstring 
 ---@field params cstring 
 ---@field isLuaScript bool 
-local ConsoleScriptData = {}
+ConsoleScriptData = {}
 
 ---@class ConsoleScriptParameter
 ---@field name string 
 ---@field description string 
-local ConsoleScriptParameter = {}
+ConsoleScriptParameter = {}
 

@@ -16,12 +16,10 @@ function C_Minimap.GetNumQuestPOIWorldEffects() end
 function C_Minimap.GetNumTrackingTypes() end
 
 ---@param index number @ [OPTIONAL]
----@overload fun()
 ---@return number, number, number, number textureCoordsX, textureCoordsY, textureCoordsZ, textureCoordsW
 function C_Minimap.GetObjectIconTextureCoords(index) end
 
 ---@param index number @ [OPTIONAL]
----@overload fun()
 ---@return number, number, number, number textureCoordsX, textureCoordsY, textureCoordsZ, textureCoordsW
 function C_Minimap.GetPOITextureCoords(index) end
 
@@ -68,7 +66,7 @@ function C_Minimap.ShouldUseHybridMinimap() end
 ---@class MinimapScriptTrackingFilter
 ---@field spellID number|nil 
 ---@field filterID MinimapTrackingFilter|nil 
-local MinimapScriptTrackingFilter = {}
+MinimapScriptTrackingFilter = {}
 
 ---@class MinimapScriptTrackingInfo
 ---@field name cstring 
@@ -77,5 +75,5 @@ local MinimapScriptTrackingFilter = {}
 ---@field type cstring 
 ---@field subType number 
 ---@field spellID number|nil 
-local MinimapScriptTrackingInfo = {}
+MinimapScriptTrackingInfo = {}
 

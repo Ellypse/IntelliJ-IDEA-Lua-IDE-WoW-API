@@ -65,7 +65,6 @@ function SetJustifyV(justifyV) end
 ---@param colorG number 
 ---@param colorB number 
 ---@param a SingleColorValue @ [OPTIONAL]
----@overload fun(colorR:number, colorG:number, colorB:number)
 function SetShadowColor(colorR, colorG, colorB, a) end
 
 ---@param offsetX number 
@@ -79,6 +78,5 @@ function SetSpacing(spacing) end
 ---@param colorG number 
 ---@param colorB number 
 ---@param a SingleColorValue @ [OPTIONAL]
----@overload fun(colorR:number, colorG:number, colorB:number)
 function SetTextColor(colorR, colorG, colorB, a) end
 

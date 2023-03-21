@@ -63,16 +63,20 @@ function IsVeteranTrialAccount() end
 function SendSubscriptionInterstitialResponse(response) end
 
 ---@class SubscriptionInterstitialResponseType
-local SubscriptionInterstitialResponseType = {}
-SubscriptionInterstitialResponseType.Clicked = 0
-SubscriptionInterstitialResponseType.Closed = 1
-SubscriptionInterstitialResponseType.WebRedirect = 2
+---@field Clicked number @ Default value is [ 0 ]
+---@field Closed number @ Default value is [ 1 ]
+---@field WebRedirect number @ Default value is [ 2 ]
+
+---@type SubscriptionInterstitialResponseType 
+SubscriptionInterstitialResponseType = {}
 
 ---@class SubscriptionInterstitialType
-local SubscriptionInterstitialType = {}
-SubscriptionInterstitialType.Standard = 0
-SubscriptionInterstitialType.LeftNpeArea = 1
-SubscriptionInterstitialType.MaxLevel = 2
+---@field Standard number @ Default value is [ 0 ]
+---@field LeftNpeArea number @ Default value is [ 1 ]
+---@field MaxLevel number @ Default value is [ 2 ]
+
+---@type SubscriptionInterstitialType 
+SubscriptionInterstitialType = {}
 
 ---@class ExpansionDisplayInfo
 ---@field logo fileID 
@@ -80,10 +84,10 @@ SubscriptionInterstitialType.MaxLevel = 2
 ---@field features table 
 ---@field highResBackgroundID fileID 
 ---@field lowResBackgroundID fileID 
-local ExpansionDisplayInfo = {}
+ExpansionDisplayInfo = {}
 
 ---@class ExpansionDisplayInfoFeature
 ---@field icon fileID 
 ---@field text cstring 
-local ExpansionDisplayInfoFeature = {}
+ExpansionDisplayInfoFeature = {}
 

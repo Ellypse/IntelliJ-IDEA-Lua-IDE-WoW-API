@@ -1,9 +1,6 @@
 ---@param animationType cstring @ [OPTIONAL]
 ---@param name cstring @ [OPTIONAL]
 ---@param templateName cstring @ [OPTIONAL]
----@overload fun(name:cstring, templateName:cstring)
----@overload fun(templateName:cstring)
----@overload fun()
 ---@return SimpleAnim anim
 function CreateAnimation(animationType, name, templateName) end
 
@@ -36,7 +33,6 @@ function GetProgress() end
 
 ---@param scriptTypeName cstring 
 ---@param bindingType number @ [OPTIONAL]
----@overload fun(scriptTypeName:cstring)
 ---@return luaFunction script
 function GetScript(scriptTypeName, bindingType) end
 
@@ -47,7 +43,6 @@ function HasScript(scriptName) end
 ---@param scriptTypeName cstring 
 ---@param script luaFunction 
 ---@param bindingType number @ [OPTIONAL]
----@overload fun(scriptTypeName:cstring, script:luaFunction)
 function HookScript(scriptTypeName, script, bindingType) end
 
 
@@ -99,7 +94,6 @@ function SetPlaying(play) end
 
 ---@param scriptTypeName cstring 
 ---@param script luaFunction @ [OPTIONAL]
----@overload fun(scriptTypeName:cstring)
 function SetScript(scriptTypeName, script) end
 
 ---@param setToFinalAlpha boolean 

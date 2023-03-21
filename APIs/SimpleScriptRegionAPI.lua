@@ -38,7 +38,6 @@ function GetScaledRect() end
 
 ---@param scriptTypeName cstring 
 ---@param bindingType number @ [OPTIONAL]
----@overload fun(scriptTypeName:cstring)
 ---@return luaFunction script
 function GetScript(scriptTypeName, bindingType) end
 
@@ -68,7 +67,6 @@ function Hide() end
 ---@param scriptTypeName cstring 
 ---@param script luaFunction 
 ---@param bindingType number @ [OPTIONAL]
----@overload fun(scriptTypeName:cstring, script:luaFunction)
 function HookScript(scriptTypeName, script, bindingType) end
 
 
@@ -125,7 +123,6 @@ function SetMouseClickEnabled(enabled) end
 function SetMouseMotionEnabled(enabled) end
 
 ---@param parent SimpleFrame @ [OPTIONAL]
----@overload fun()
 function SetParent(parent) end
 
 ---@param unpackedPrimitiveType number 
@@ -133,7 +130,6 @@ function SetPassThroughButtons(unpackedPrimitiveType) end
 
 ---@param scriptTypeName cstring 
 ---@param script luaFunction @ [OPTIONAL]
----@overload fun(scriptTypeName:cstring)
 function SetScript(scriptTypeName, script) end
 
 ---@param show boolean 

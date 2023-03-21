@@ -275,37 +275,41 @@ function C_PvP.SetWarModeDesired(warModeDesired) end
 function C_PvP.ToggleWarMode() end
 
 ---@class BrawlType
-local BrawlType = {}
-BrawlType.None = 0
-BrawlType.Battleground = 1
-BrawlType.Arena = 2
-BrawlType.LFG = 3
-BrawlType.SoloShuffle = 4
+---@field None number @ Default value is [ 0 ]
+---@field Battleground number @ Default value is [ 1 ]
+---@field Arena number @ Default value is [ 2 ]
+---@field LFG number @ Default value is [ 3 ]
+---@field SoloShuffle number @ Default value is [ 4 ]
+
+---@type BrawlType 
+BrawlType = {}
 
 ---@class PvPMatchState
-local PvPMatchState = {}
-PvPMatchState.Inactive = 0
-PvPMatchState.Active = 1
-PvPMatchState.Complete = 2
+---@field Inactive number @ Default value is [ 0 ]
+---@field Active number @ Default value is [ 1 ]
+---@field Complete number @ Default value is [ 2 ]
+
+---@type PvPMatchState 
+PvPMatchState = {}
 
 ---@class BattlefieldCurrencyReward
 ---@field id number 
 ---@field quantity number 
-local BattlefieldCurrencyReward = {}
+BattlefieldCurrencyReward = {}
 
 ---@class BattlefieldItemReward
 ---@field id number 
 ---@field name cstring 
 ---@field texture fileID 
 ---@field quantity number 
-local BattlefieldItemReward = {}
+BattlefieldItemReward = {}
 
 ---@class BattlefieldRewards
 ---@field honor number 
 ---@field experience number 
 ---@field itemRewards table|nil 
 ---@field currencyRewards table|nil 
-local BattlefieldRewards = {}
+BattlefieldRewards = {}
 
 ---@class BattlefieldVehicleInfo
 ---@field x number 
@@ -319,7 +323,7 @@ local BattlefieldRewards = {}
 ---@field isPlayer bool 
 ---@field isAlive bool 
 ---@field shouldDrawBelowPlayerBlips bool 
-local BattlefieldVehicleInfo = {}
+BattlefieldVehicleInfo = {}
 
 ---@class BattlemasterListInfo
 ---@field name string 
@@ -329,20 +333,20 @@ local BattlefieldVehicleInfo = {}
 ---@field icon fileID 
 ---@field longDescription string 
 ---@field shortDescription string 
-local BattlemasterListInfo = {}
+BattlemasterListInfo = {}
 
 ---@class HonorRewardInfo
 ---@field honorLevelName string 
 ---@field badgeFileDataID fileID 
 ---@field achievementRewardedID number 
-local HonorRewardInfo = {}
+HonorRewardInfo = {}
 
 ---@class LevelUpBattlegroundInfo
 ---@field id number 
 ---@field icon fileID 
 ---@field name string 
 ---@field isEpic bool 
-local LevelUpBattlegroundInfo = {}
+LevelUpBattlegroundInfo = {}
 
 ---@class MatchPVPStatColumn
 ---@field pvpStatID number 
@@ -350,7 +354,7 @@ local LevelUpBattlegroundInfo = {}
 ---@field orderIndex number 
 ---@field name string 
 ---@field tooltip string 
-local MatchPVPStatColumn = {}
+MatchPVPStatColumn = {}
 
 ---@class PvpBrawlInfo
 ---@field brawlID number 
@@ -365,7 +369,7 @@ local MatchPVPStatColumn = {}
 ---@field brawlType BrawlType 
 ---@field mapNames table 
 ---@field includesAllArenas bool 
-local PvpBrawlInfo = {}
+PvpBrawlInfo = {}
 
 ---@class PVPPersonalRatedInfo
 ---@field personalRating number 
@@ -383,12 +387,12 @@ local PvpBrawlInfo = {}
 ---@field roundsSeasonWon number 
 ---@field roundsWeeklyPlayed number 
 ---@field roundsWeeklyWon number 
-local PVPPersonalRatedInfo = {}
+PVPPersonalRatedInfo = {}
 
 ---@class PVPPostMatchCurrencyReward
 ---@field currencyType number 
 ---@field quantityChanged number 
-local PVPPostMatchCurrencyReward = {}
+PVPPostMatchCurrencyReward = {}
 
 ---@class PVPPostMatchItemReward
 ---@field type string 
@@ -397,28 +401,28 @@ local PVPPostMatchCurrencyReward = {}
 ---@field specID number 
 ---@field sex number 
 ---@field isUpgraded bool 
-local PVPPostMatchItemReward = {}
+PVPPostMatchItemReward = {}
 
 ---@class PvpReadyCheckInfo
 ---@field roles table 
 ---@field numPlayersAccepted number 
 ---@field numPlayersDeclined number 
 ---@field totalNumPlayers number 
-local PvpReadyCheckInfo = {}
+PvpReadyCheckInfo = {}
 
 ---@class PvpRoleQueueInfo
 ---@field role cstring 
 ---@field totalRole number 
 ---@field totalAccepted number 
 ---@field totalDeclined number 
-local PvpRoleQueueInfo = {}
+PvpRoleQueueInfo = {}
 
 ---@class PvpScalingData
 ---@field scalingDataID number 
 ---@field specializationID number 
 ---@field name cstring 
 ---@field value number 
-local PvpScalingData = {}
+PvpScalingData = {}
 
 ---@class PVPScoreInfo
 ---@field name string 
@@ -441,7 +445,7 @@ local PvpScalingData = {}
 ---@field honorLevel number 
 ---@field roleAssigned number 
 ---@field stats table 
-local PVPScoreInfo = {}
+PVPScoreInfo = {}
 
 ---@class PVPStatInfo
 ---@field pvpStatID number 
@@ -450,7 +454,7 @@ local PVPScoreInfo = {}
 ---@field name string 
 ---@field tooltip string 
 ---@field iconName string 
-local PVPStatInfo = {}
+PVPStatInfo = {}
 
 ---@class PVPTeamInfo
 ---@field name string 
@@ -458,7 +462,7 @@ local PVPStatInfo = {}
 ---@field rating number 
 ---@field ratingNew number 
 ---@field ratingMMR number 
-local PVPTeamInfo = {}
+PVPTeamInfo = {}
 
 ---@class PvpTierInfo
 ---@field name string 
@@ -468,7 +472,7 @@ local PVPTeamInfo = {}
 ---@field ascendTier number 
 ---@field pvpTierEnum number 
 ---@field tierIconID fileID 
-local PvpTierInfo = {}
+PvpTierInfo = {}
 
 ---@class RandomBGInfo
 ---@field canQueue bool 
@@ -476,18 +480,18 @@ local PvpTierInfo = {}
 ---@field hasRandomWinToday bool 
 ---@field minLevel number 
 ---@field maxLevel number 
-local RandomBGInfo = {}
+RandomBGInfo = {}
 
 ---@class RatedMatchDeserterPenalty
 ---@field personalRatingChange number 
 ---@field queuePenaltySpellID number 
 ---@field queuePenaltyDuration number 
-local RatedMatchDeserterPenalty = {}
+RatedMatchDeserterPenalty = {}
 
 ---@class RatedSoloShuffleSpecStats
 ---@field weeklyMostPlayedSpecID number 
 ---@field weeklyMostPlayedSpecRounds number 
 ---@field seasonMostPlayedSpecID number 
 ---@field seasonMostPlayedSpecRounds number 
-local RatedSoloShuffleSpecStats = {}
+RatedSoloShuffleSpecStats = {}
 

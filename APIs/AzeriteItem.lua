@@ -37,5 +37,5 @@ function C_AzeriteItem.IsAzeriteItemEnabled(azeriteItemLocation) end
 ---@class UnlockedAzeriteEmpoweredItems
 ---@field unlockedItem AzeriteEmpoweredItemLocation 
 ---@field tierIndex luaIndex 
-local UnlockedAzeriteEmpoweredItems = {}
+UnlockedAzeriteEmpoweredItems = {}
 

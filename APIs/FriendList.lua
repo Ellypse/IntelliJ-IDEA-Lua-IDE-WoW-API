@@ -3,7 +3,6 @@ C_FriendList = {}
 
 ---@param name cstring 
 ---@param notes cstring @ [OPTIONAL]
----@overload fun(name:cstring)
 function C_FriendList.AddFriend(name, notes) end
 
 ---@param name cstring 
@@ -119,7 +118,7 @@ function C_FriendList.SortWho(sorting) end
 ---@field afk bool 
 ---@field rafLinkType RafLinkType 
 ---@field mobile bool 
-local FriendInfo = {}
+FriendInfo = {}
 
 ---@class WhoInfo
 ---@field fullName string 
@@ -130,5 +129,5 @@ local FriendInfo = {}
 ---@field area string 
 ---@field filename string|nil 
 ---@field gender number 
-local WhoInfo = {}
+WhoInfo = {}
 

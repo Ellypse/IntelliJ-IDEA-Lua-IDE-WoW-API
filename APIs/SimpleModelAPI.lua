@@ -155,7 +155,6 @@ function SetFacing(facing) end
 ---@param colorG number 
 ---@param colorB number 
 ---@param a SingleColorValue @ [OPTIONAL]
----@overload fun(colorR:number, colorG:number, colorB:number)
 function SetFogColor(colorR, colorG, colorB, a) end
 
 ---@param fogFar number 
@@ -214,9 +213,6 @@ function SetShadowEffect(strength) end
 ---@param translation vector3 @ [OPTIONAL]
 ---@param rotation vector3 @ [OPTIONAL]
 ---@param scale number @ [OPTIONAL]
----@overload fun(rotation:vector3, scale:number)
----@overload fun(scale:number)
----@overload fun()
 function SetTransform(translation, rotation, scale) end
 
 ---@param left uiUnit 
