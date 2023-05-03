@@ -1,3 +1,7 @@
+---@param specID number 
+---@return number|nil classID
+function GetClassIDFromSpecID(specID) end
+
 ---@return CorruptionEffectInfo corruptionEffects
 function GetNegativeCorruptionEffectInfo() end
 
@@ -206,7 +210,10 @@ local PhaseReason = {}
 ---@field RuneBlood number @ Default value is [ 20 ]
 ---@field RuneFrost number @ Default value is [ 21 ]
 ---@field RuneUnholy number @ Default value is [ 22 ]
----@field NumPowerTypes number @ Default value is [ 23 ]
+---@field AlternateQuest number @ Default value is [ 23 ]
+---@field AlternateEncounter number @ Default value is [ 24 ]
+---@field AlternateMount number @ Default value is [ 25 ]
+---@field NumPowerTypes number @ Default value is [ 26 ]
 
 ---@type PowerType 
 local PowerType = {}

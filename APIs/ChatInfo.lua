@@ -50,6 +50,10 @@ function C_ChatInfo.GetChatTypeName(typeID) end
 ---@return ClubStreamId ids
 function C_ChatInfo.GetClubStreamIDs(clubID) end
 
+---@param chatType cstring 
+---@return colorRGB|nil color
+function C_ChatInfo.GetColorForChatType(chatType) end
+
 ---@return number channelID
 function C_ChatInfo.GetGeneralChannelID() end
 

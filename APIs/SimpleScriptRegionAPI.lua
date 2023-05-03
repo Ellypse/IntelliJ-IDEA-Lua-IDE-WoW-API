@@ -6,6 +6,9 @@ function CanChangeProtectedState() end
 function EnableMouse(enable) end
 
 ---@param enable boolean 
+function EnableMouseMotion(enable) end
+
+---@param enable boolean 
 function EnableMouseWheel(enable) end
 
 
@@ -88,6 +91,10 @@ function IsMouseEnabled() end
 
 ---@return boolean enabled
 function IsMouseMotionEnabled() end
+
+
+---@return boolean isMouseMotionFocus
+function IsMouseMotionFocus() end
 
 ---@param offsetTop uiUnit 
 ---@param offsetBottom uiUnit 

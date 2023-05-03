@@ -11,6 +11,11 @@ function C_DateAndTime.AdjustTimeByDays(date, days) end
 ---@return CalendarTime newDate
 function C_DateAndTime.AdjustTimeByMinutes(date, minutes) end
 
+---@param date CalendarTime 
+---@param months number 
+---@return CalendarTime newDate
+function C_DateAndTime.AdjustTimeByMonths(date, months) end
+
 ---@param lhsCalendarTime CalendarTime 
 ---@param rhsCalendarTime CalendarTime 
 ---@return number comparison

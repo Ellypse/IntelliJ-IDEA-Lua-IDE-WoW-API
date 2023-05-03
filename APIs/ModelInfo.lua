@@ -75,6 +75,15 @@ local ModelSceneSetting = {}
 ---@type ModelSceneType 
 local ModelSceneType = {}
 
+---@class UIModelSceneActorFlag
+---@field Deprecated1 number @ Default value is [ 1 ]
+---@field UseCenterForOriginX number @ Default value is [ 2 ]
+---@field UseCenterForOriginY number @ Default value is [ 4 ]
+---@field UseCenterForOriginZ number @ Default value is [ 8 ]
+
+---@type UIModelSceneActorFlag 
+local UIModelSceneActorFlag = {}
+
 ---@class UIModelSceneActorDisplayInfo
 ---@field animation number 
 ---@field animationVariation number 

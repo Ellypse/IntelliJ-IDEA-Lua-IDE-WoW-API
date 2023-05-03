@@ -353,6 +353,7 @@ local LevelUpBattlegroundInfo = {}
 ---@field columnHeaderID number 
 ---@field orderIndex number 
 ---@field name string 
+---@field tooltipTitle string 
 ---@field tooltip string 
 local MatchPVPStatColumn = {}
 
@@ -441,6 +442,7 @@ local PvpScalingData = {}
 ---@field ratingChange number 
 ---@field prematchMMR number 
 ---@field mmrChange number 
+---@field postmatchMMR number 
 ---@field talentSpec string 
 ---@field honorLevel number 
 ---@field roleAssigned number 

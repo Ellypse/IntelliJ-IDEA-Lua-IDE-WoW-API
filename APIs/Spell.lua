@@ -16,3 +16,6 @@ function C_Spell.IsSpellDataCached(spellID) end
 ---@param spellID number 
 function C_Spell.RequestLoadSpellData(spellID) end
 
+---@return boolean jumpsUpgradeTrack
+function C_Spell.TargetSpellJumpsUpgradeTrack() end
+

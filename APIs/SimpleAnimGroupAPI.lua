@@ -20,6 +20,10 @@ function GetAnimations() end
 function GetDuration() end
 
 
+---@return number elapsedSec
+function GetElapsed() end
+
+
 ---@return cstring loopState
 function GetLoopState() end
 

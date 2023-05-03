@@ -17,7 +17,7 @@ function C_AreaPoiInfo.GetAreaPOISecondsLeft(areaPoiID) end
 
 --- This statically determines if the POI is timed, GetAreaPOITimeLeft retrieves the value from the server and may return nothing for long intervals
 ---@param areaPoiID number 
----@return boolean isTimed
+---@return boolean, boolean|nil isTimed, hideTimerInTooltip
 function C_AreaPoiInfo.IsAreaPOITimed(areaPoiID) end
 
 ---@class AreaPOIInfo
@@ -33,5 +33,6 @@ function C_AreaPoiInfo.IsAreaPOITimed(areaPoiID) end
 ---@field factionID number|nil 
 ---@field isPrimaryMapForPOI bool 
 ---@field isAlwaysOnFlightmap bool 
+---@field addPaddingAboveWidgets bool|nil 
 local AreaPOIInfo = {}
 

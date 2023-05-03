@@ -75,14 +75,19 @@ function C_Map.GetMapGroupMembersInfo(uiMapGroupID) end
 function C_Map.GetMapHighlightInfoAtPosition(uiMapID, x, y) end
 
 ---@param uiMapID number 
+---@return fileID, textureAtlas, number, number, number, number, number, number fileDataID, atlasID, texturePercentageX, texturePercentageY, textureX, textureY, scrollChildX, scrollChildY
+function C_Map.GetMapHighlightPulseInfo(uiMapID) end
+
+---@param uiMapID number 
 ---@return UiMapDetails info
 function C_Map.GetMapInfo(uiMapID) end
 
 ---@param uiMapID number 
 ---@param x number 
 ---@param y number 
+---@param ignoreZoneMapPositionData boolean @ [OPTIONAL]
 ---@return UiMapDetails info
-function C_Map.GetMapInfoAtPosition(uiMapID, x, y) end
+function C_Map.GetMapInfoAtPosition(uiMapID, x, y, ignoreZoneMapPositionData) end
 
 ---@param uiMapID number 
 ---@return number, number, number, number playerMinLevel, playerMaxLevel, petMinLevel, petMaxLevel
@@ -150,59 +155,6 @@ function C_Map.RequestPreloadMap(uiMapID) end
 ---@param point UiMapPoint 
 function C_Map.SetUserWaypoint(point) end
 
----@class MapCanvasPosition
----@field None number @ Default value is [ 0 ]
----@field BottomLeft number @ Default value is [ 1 ]
----@field BottomRight number @ Default value is [ 2 ]
----@field TopLeft number @ Default value is [ 3 ]
----@field TopRight number @ Default value is [ 4 ]
-
----@type MapCanvasPosition 
-local MapCanvasPosition = {}
-
----@class UIMapFlag
----@field NoHighlight number @ Default value is [ 1 ]
----@field ShowOverlays number @ Default value is [ 2 ]
----@field ShowTaxiNodes number @ Default value is [ 4 ]
----@field GarrisonMap number @ Default value is [ 8 ]
----@field FallbackToParentMap number @ Default value is [ 16 ]
----@field NoHighlightTexture number @ Default value is [ 32 ]
----@field ShowTaskObjectives number @ Default value is [ 64 ]
----@field NoWorldPositions number @ Default value is [ 128 ]
----@field HideArchaeologyDigs number @ Default value is [ 256 ]
----@field Deprecated number @ Default value is [ 512 ]
----@field HideIcons number @ Default value is [ 1024 ]
----@field HideVignettes number @ Default value is [ 2048 ]
----@field ForceAllOverlayExplored number @ Default value is [ 4096 ]
----@field FlightMapShowZoomOut number @ Default value is [ 8192 ]
----@field FlightMapAutoZoom number @ Default value is [ 16384 ]
----@field ForceOnNavbar number @ Default value is [ 32768 ]
----@field AlwaysAllowUserWaypoints number @ Default value is [ 65536 ]
-
----@type UIMapFlag 
-local UIMapFlag = {}
-
----@class UIMapSystem
----@field World number @ Default value is [ 0 ]
----@field Taxi number @ Default value is [ 1 ]
----@field Adventure number @ Default value is [ 2 ]
----@field Minimap number @ Default value is [ 3 ]
-
----@type UIMapSystem 
-local UIMapSystem = {}
-
----@class UIMapType
----@field Cosmic number @ Default value is [ 0 ]
----@field World number @ Default value is [ 1 ]
----@field Continent number @ Default value is [ 2 ]
----@field Zone number @ Default value is [ 3 ]
----@field Dungeon number @ Default value is [ 4 ]
----@field Micro number @ Default value is [ 5 ]
----@field Orphan number @ Default value is [ 6 ]
-
----@type UIMapType 
-local UIMapType = {}
-
 ---@class MapBannerInfo
 ---@field areaPoiID number 
 ---@field name cstring 
@@ -223,7 +175,7 @@ local MapLinkInfo = {}
 ---@field name cstring 
 ---@field mapType UIMapType 
 ---@field parentMapID number 
----@field flags number 
+---@field flags UIMapFlag 
 local UiMapDetails = {}
 
 ---@class UiMapGroupMemberInfo

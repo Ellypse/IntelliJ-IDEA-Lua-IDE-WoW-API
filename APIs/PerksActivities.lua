@@ -32,6 +32,7 @@ function C_PerksActivities.RemoveTrackedPerksActivity(perksActivityID) end
 ---@class PerksActivitiesInfo
 ---@field activePerksMonth number 
 ---@field displayMonthName cstring 
+---@field secondsRemaining time_t 
 ---@field activities table 
 ---@field thresholds table 
 local PerksActivitiesInfo = {}
@@ -56,6 +57,8 @@ local PerksActivityCriteria = {}
 ---@field thresholdContributionAmount number 
 ---@field completed bool 
 ---@field tracked bool 
+---@field supersedes number 
+---@field uiPriority number 
 ---@field requirementsList table 
 ---@field criteriaList table 
 ---@field tagNames table 
@@ -71,7 +74,7 @@ local PerksActivityRequirement = {}
 local PerksActivityTags = {}
 
 ---@class PerksActivityThresholdInfo
----@field thresholdID number 
+---@field thresholdOrderIndex number 
 ---@field currencyAwardAmount number 
 ---@field requiredContributionAmount number 
 ---@field pendingReward bool 

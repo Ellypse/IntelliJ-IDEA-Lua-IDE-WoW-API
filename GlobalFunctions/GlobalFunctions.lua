@@ -63,7 +63,7 @@ end
 function AcceptSockets()
 end
 
---- Confirms a spell confirmation prompt (e.g. bonus loot roll).
+--- protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_AcceptSpellConfirmationPrompt]
 --- @param spellID number @ spell ID of the prompt to confirm.
 --- @return void
@@ -1700,7 +1700,7 @@ end
 function DeclineResurrect()
 end
 
---- Declines a spell confirmation prompt (e.g. bonus loot roll).
+--- protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_DeclineSpellConfirmationPrompt]
 --- @param spellID number @ spell ID of the prompt to decline.
 --- @return void
@@ -3692,7 +3692,7 @@ end
 
 --- Returns a structured table of information about the given font object.
 --- [https://wowpedia.fandom.com/wiki/API_GetFontInfo]
---- @param font unknown @ Font|string - Either a font object or the name of a global font object.
+--- @param font unknown @ Font🔗|string - Either a font object or the name of a global font object.
 --- @return unknown @ fontInfo
 function GetFontInfo(font)
 end
@@ -4265,9 +4265,9 @@ end
 
 --- Returns cooldown info for an item ID.
 --- [https://wowpedia.fandom.com/wiki/API_GetItemCooldown]
---- @param itemID number @ The numeric ID of the item. ie. 12345
+--- @param itemInfo number @ |string : Item ID, Link or Name.
 --- @return number, number, number @ startTime, duration, enable
-function GetItemCooldown(itemID)
+function GetItemCooldown(itemInfo)
 end
 
 --- Returns the number (or available charges) of an item in the inventory.
@@ -5310,8 +5310,9 @@ end
 function GetNumFlyouts()
 end
 
---- [https://wowpedia.fandom.com/wiki/API_GetNumFrames?action=edit&amp;redlink=1]
---- @return void
+--- Get the current number of Frame (and derivative) objects.
+--- [https://wowpedia.fandom.com/wiki/API_GetNumFrames]
+--- @return number @ numFrames
 function GetNumFrames()
 end
 
@@ -12045,8 +12046,8 @@ end
 
 --- Summons a player using the RaF system.
 --- [https://wowpedia.fandom.com/wiki/API_SummonFriend]
---- @param guid unknown
---- @param name unknown
+--- @param guid string @ GUID - The guid of the player.
+--- @param name string @ The name of the player.
 --- @return void
 function SummonFriend(guid, name)
 end
@@ -14207,9 +14208,12 @@ end
 function seterrorhandler(errFunc)
 end
 
---- [https://wowpedia.fandom.com/wiki/API_setfenv?action=edit&amp;redlink=1]
---- @return void
-function setfenv()
+--- Modifies the environment associated with a function.
+--- [https://wowpedia.fandom.com/wiki/API_setfenv]
+--- @param f unknown @ function or number - A function to modify the environment of, or a numeric level of a function on the call stack starting from 1.
+--- @param env table @ The environment to be assigned to the function.
+--- @return unknown @ f
+function setfenv(f, env)
 end
 
 --- Sets the metatable for the given table.

@@ -97,7 +97,7 @@ local PerksProgramItemDisplayInfo = {}
 ---@field rewardAmount number 
 ---@field monthRewarded string|nil 
 ---@field activityMonthID number 
----@field activityThresholdID number 
+---@field thresholdOrderIndex number 
 local PerksProgramPendingChestRewards = {}
 
 ---@class PerksVendorCategoryInfo

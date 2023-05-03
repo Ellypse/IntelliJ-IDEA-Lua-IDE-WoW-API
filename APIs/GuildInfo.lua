@@ -36,6 +36,10 @@ function C_GuildInfo.IsGuildOfficer() end
 ---@return boolean isGuildRankAssignmentAllowed
 function C_GuildInfo.IsGuildRankAssignmentAllowed(guid, rankOrder) end
 
+---@param name cstring 
+---@return boolean exists
+function C_GuildInfo.MemberExistsByName(name) end
+
 ---@param guildMemberGUID WOWGUID 
 ---@param skillLineID number 
 function C_GuildInfo.QueryGuildMemberRecipes(guildMemberGUID, skillLineID) end

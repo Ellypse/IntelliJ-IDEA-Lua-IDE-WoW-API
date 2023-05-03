@@ -40,6 +40,10 @@ function C_ClassTalents.GetNextStarterBuildPurchase() end
 ---@return boolean isActive
 function C_ClassTalents.GetStarterBuildActive() end
 
+---@param specID number 
+---@return number|nil treeID
+function C_ClassTalents.GetTraitTreeForSpec(specID) end
+
 ---@return boolean, number, number hasUnspentPoints, numClassPoints, numSpecPoints
 function C_ClassTalents.HasUnspentTalentPoints() end
 
@@ -48,6 +52,10 @@ function C_ClassTalents.HasUnspentTalentPoints() end
 ---@param name string 
 ---@return boolean, cstring success, importError
 function C_ClassTalents.ImportLoadout(configID, entries, name) end
+
+---@param specID number 
+---@param level number 
+function C_ClassTalents.InitializeViewLoadout(specID, level) end
 
 --- New configs may or may not be populated and ready to load immediately after creation. Avoid calling for configs intentionally created empty.
 ---@param configID number 
@@ -83,6 +91,10 @@ function C_ClassTalents.SetUsesSharedActionBars(configID, usesShared) end
 ---@param specID number 
 ---@param configID number @ [OPTIONAL]
 function C_ClassTalents.UpdateLastSelectedSavedConfigID(specID, configID) end
+
+---@param entries ImportLoadoutEntryInfo 
+---@return boolean success
+function C_ClassTalents.ViewLoadout(entries) end
 
 ---@class LoadConfigResult
 ---@field Error number @ Default value is [ 0 ]

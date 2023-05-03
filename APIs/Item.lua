@@ -26,6 +26,10 @@ function C_Item.DoesItemExistByID(itemInfo) end
 function C_Item.DoesItemMatchBonusTreeReplacement(itemLoc) end
 
 ---@param itemLoc ItemLocation 
+---@return boolean matchesTrackJump
+function C_Item.DoesItemMatchTrackJump(itemLoc) end
+
+---@param itemLoc ItemLocation 
 ---@return ItemTransmogInfo|nil info
 function C_Item.GetAppliedItemTransmogInfo(itemLoc) end
 

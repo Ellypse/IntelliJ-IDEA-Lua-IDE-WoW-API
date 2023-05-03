@@ -34,6 +34,9 @@ function C_AzeriteItem.IsAzeriteItemByID(itemInfo) end
 ---@return boolean isEnabled
 function C_AzeriteItem.IsAzeriteItemEnabled(azeriteItemLocation) end
 
+---@return boolean isUnlimitedLevelingUnlocked
+function C_AzeriteItem.IsUnlimitedLevelingUnlocked() end
+
 ---@class UnlockedAzeriteEmpoweredItems
 ---@field unlockedItem AzeriteEmpoweredItemLocation 
 ---@field tierIndex luaIndex 

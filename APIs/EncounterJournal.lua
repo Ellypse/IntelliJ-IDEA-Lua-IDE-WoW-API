@@ -38,6 +38,10 @@ function C_EncounterJournal.InstanceHasLoot(instanceID) end
 ---@return boolean isEncounterComplete
 function C_EncounterJournal.IsEncounterComplete(journalEncounterID) end
 
+function C_EncounterJournal.OnClose() end
+
+function C_EncounterJournal.OnOpen() end
+
 function C_EncounterJournal.ResetSlotFilter() end
 
 ---@param level number 
@@ -48,6 +52,9 @@ function C_EncounterJournal.SetPreviewPvpTier(tier) end
 
 ---@param filterSlot ItemSlotFilterType 
 function C_EncounterJournal.SetSlotFilter(filterSlot) end
+
+---@param tabIdx number 
+function C_EncounterJournal.SetTab(tabIdx) end
 
 ---@class ItemSlotFilterType
 ---@field Head number @ Default value is [ 0 ]

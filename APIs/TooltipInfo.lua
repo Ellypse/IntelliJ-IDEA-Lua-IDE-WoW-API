@@ -224,11 +224,6 @@ function C_TooltipInfo.GetQuestLogCurrency(type, currencyIndex, questID) end
 ---@return TooltipData data
 function C_TooltipInfo.GetQuestLogItem(type, itemIndex, questID, allowCollectionText) end
 
----@param spellIndex luaIndex 
----@param questID number @ [OPTIONAL]
----@return TooltipData data
-function C_TooltipInfo.GetQuestLogRewardSpell(spellIndex, questID) end
-
 ---@param questIndex luaIndex 
 ---@return TooltipData data
 function C_TooltipInfo.GetQuestLogSpecialItem(questIndex) end
@@ -238,10 +233,6 @@ function C_TooltipInfo.GetQuestLogSpecialItem(questIndex) end
 ---@param ignoreActivePlayer boolean @ [OPTIONAL]
 ---@return TooltipData data
 function C_TooltipInfo.GetQuestPartyProgress(questID, omitTitle, ignoreActivePlayer) end
-
----@param spellIndex luaIndex 
----@return TooltipData data
-function C_TooltipInfo.GetQuestRewardSpell(spellIndex) end
 
 ---@param recipeID number 
 ---@param rank number 
@@ -404,4 +395,8 @@ function C_TooltipInfo.GetWeeklyReward(itemDBID) end
 
 ---@return TooltipData data
 function C_TooltipInfo.GetWorldCursor() end
+
+---@param unitTokenString cstring 
+---@return TooltipData data
+function C_TooltipInfo.GetWorldLootObject(unitTokenString) end
 

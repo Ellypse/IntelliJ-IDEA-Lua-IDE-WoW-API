@@ -56,6 +56,10 @@ function C_UIWidgetManager.GetIconTextAndBackgroundWidgetVisualizationInfo(widge
 ---@return IconTextAndCurrenciesWidgetVisualizationInfo|nil widgetInfo
 function C_UIWidgetManager.GetIconTextAndCurrenciesWidgetVisualizationInfo(widgetID) end
 
+---@param widgetID number 
+---@return ItemDisplayVisualizationInfo|nil widgetInfo
+function C_UIWidgetManager.GetItemDisplayVisualizationInfo(widgetID) end
+
 ---@return number setID
 function C_UIWidgetManager.GetObjectiveTrackerWidgetSetID() end
 
@@ -170,6 +174,21 @@ local IconAndTextWidgetState = {}
 ---@type IconState 
 local IconState = {}
 
+---@class ItemDisplayTextDisplayStyle
+---@field WorldQuestReward number @ Default value is [ 0 ]
+---@field ItemNameAndInfoText number @ Default value is [ 1 ]
+---@field ItemNameOnlyCentered number @ Default value is [ 2 ]
+
+---@type ItemDisplayTextDisplayStyle 
+local ItemDisplayTextDisplayStyle = {}
+
+---@class ItemDisplayTooltipEnabledType
+---@field Enabled number @ Default value is [ 0 ]
+---@field Disabled number @ Default value is [ 1 ]
+
+---@type ItemDisplayTooltipEnabledType 
+local ItemDisplayTooltipEnabledType = {}
+
 ---@class SpellDisplayBorderColor
 ---@field None number @ Default value is [ 0 ]
 ---@field Black number @ Default value is [ 1 ]
@@ -192,14 +211,6 @@ local SpellDisplayBorderColor = {}
 
 ---@type SpellDisplayIconDisplayType 
 local SpellDisplayIconDisplayType = {}
-
----@class SpellDisplayIconSizeType
----@field Small number @ Default value is [ 0 ]
----@field Medium number @ Default value is [ 1 ]
----@field Large number @ Default value is [ 2 ]
-
----@type SpellDisplayIconSizeType 
-local SpellDisplayIconSizeType = {}
 
 ---@class SpellDisplayTextShownStateType
 ---@field Shown number @ Default value is [ 0 ]
@@ -333,15 +344,24 @@ local WidgetCurrencyClass = {}
 
 ---@class WidgetEnabledState
 ---@field Disabled number @ Default value is [ 0 ]
----@field Enabled number @ Default value is [ 1 ]
+---@field Yellow number @ Default value is [ 1 ]
 ---@field Red number @ Default value is [ 2 ]
 ---@field White number @ Default value is [ 3 ]
 ---@field Green number @ Default value is [ 4 ]
----@field Gold number @ Default value is [ 5 ]
+---@field Artifact number @ Default value is [ 5 ]
 ---@field Black number @ Default value is [ 6 ]
 
 ---@type WidgetEnabledState 
 local WidgetEnabledState = {}
+
+---@class WidgetIconSizeType
+---@field Small number @ Default value is [ 0 ]
+---@field Medium number @ Default value is [ 1 ]
+---@field Large number @ Default value is [ 2 ]
+---@field Standard number @ Default value is [ 3 ]
+
+---@type WidgetIconSizeType 
+local WidgetIconSizeType = {}
 
 ---@class WidgetShownState
 ---@field Hidden number @ Default value is [ 0 ]
@@ -672,6 +692,24 @@ local IconTextAndBackgroundWidgetVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 local IconTextAndCurrenciesWidgetVisualizationInfo = {}
 
+---@class ItemDisplayVisualizationInfo
+---@field shownState WidgetShownState 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field itemInfo UIWidgetItemInfo 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer bool 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
+local ItemDisplayVisualizationInfo = {}
+
 ---@class ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo
 ---@field shownState WidgetShownState 
 ---@field currencies table 
@@ -783,6 +821,9 @@ local StackedResourceTrackerWidgetVisualizationInfo = {}
 ---@field barTextEnabledState WidgetEnabledState 
 ---@field barTextFontType UIWidgetFontType 
 ---@field barTextSizeType UIWidgetTextSizeType 
+---@field textEnabledState WidgetEnabledState 
+---@field textFontType UIWidgetFontType 
+---@field textSizeType UIWidgetTextSizeType 
 ---@field widgetSizeSetting number 
 ---@field textureKit textureKit 
 ---@field frameTextureKit textureKit 
@@ -957,6 +998,18 @@ local UIWidgetCurrencyInfo = {}
 ---@field unitToken string|nil 
 local UIWidgetInfo = {}
 
+---@class UIWidgetItemInfo
+---@field itemID number 
+---@field stackCount number|nil 
+---@field overrideItemName string|nil 
+---@field infoText string|nil 
+---@field overrideTooltip string|nil 
+---@field textDisplayStyle ItemDisplayTextDisplayStyle 
+---@field tooltipEnabled bool 
+---@field iconSizeType WidgetIconSizeType 
+---@field infoTextEnabledState WidgetEnabledState 
+local UIWidgetItemInfo = {}
+
 ---@class UIWidgetSetInfo
 ---@field layoutDirection UIWidgetSetLayoutDirection 
 ---@field verticalPadding number 
@@ -967,7 +1020,7 @@ local UIWidgetSetInfo = {}
 ---@field tooltip string 
 ---@field text string 
 ---@field stackDisplay number 
----@field iconSizeType SpellDisplayIconSizeType 
+---@field iconSizeType WidgetIconSizeType 
 ---@field iconDisplayType SpellDisplayIconDisplayType 
 ---@field textShownState SpellDisplayTextShownStateType 
 ---@field borderColor SpellDisplayBorderColor 

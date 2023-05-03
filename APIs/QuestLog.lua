@@ -388,6 +388,7 @@ local WorldQuestQuality = {}
 ---@field isAutoComplete bool 
 ---@field overridesSortOrder bool 
 ---@field readyForTranslation bool 
+---@field isLegendarySort bool 
 local QuestInfo = {}
 
 ---@class QuestObjectiveInfo

@@ -112,6 +112,10 @@ function C_TradeSkillUI.GetProfessionChildSkillLineID() end
 ---@return Profession|nil profession
 function C_TradeSkillUI.GetProfessionForCursorItem() end
 
+---@param recipeID number 
+---@return ProfessionInfo info
+function C_TradeSkillUI.GetProfessionInfoByRecipeID(recipeID) end
+
 ---@param skillLineID number 
 ---@return ProfessionInfo info
 function C_TradeSkillUI.GetProfessionInfoBySkillLineID(skillLineID) end
@@ -144,6 +148,10 @@ function C_TradeSkillUI.GetQualitiesForRecipe(recipeID) end
 ---@param craftingReagents CraftingReagentInfo 
 ---@return string bonusText
 function C_TradeSkillUI.GetReagentDifficultyText(craftingReagentIndex, craftingReagents) end
+
+---@param itemID number 
+---@return number itemIDs
+function C_TradeSkillUI.GetReagentRequirementItemIDs(itemID) end
 
 ---@param mcrSlotID number 
 ---@param recipeSpellID number 
@@ -208,6 +216,11 @@ function C_TradeSkillUI.GetRecipesTracked(isRecraft) end
 ---@return WOWGUID items
 function C_TradeSkillUI.GetRecraftItems(recipeID) end
 
+---@param itemGUID WOWGUID 
+---@param replacedItemIDs number 
+---@return cstring warnings
+function C_TradeSkillUI.GetRecraftRemovalWarnings(itemGUID, replacedItemIDs) end
+
 ---@return number remaining
 function C_TradeSkillUI.GetRemainingRecasts() end
 
@@ -234,6 +247,11 @@ function C_TradeSkillUI.GetTradeSkillDisplayName(skillLineID) end
 
 ---@return boolean hasFavorites
 function C_TradeSkillUI.HasFavoriteOrderRecipes() end
+
+---@param recipeID number 
+---@param itemGUID WOWGUID 
+---@return boolean valid
+function C_TradeSkillUI.IsEnchantTargetValid(recipeID, itemGUID) end
 
 ---@return boolean result
 function C_TradeSkillUI.IsNPCCrafting() end
@@ -272,6 +290,11 @@ function C_TradeSkillUI.IsRecipeTracked(recipeID, isRecraft) end
 ---@return boolean isEquipped
 function C_TradeSkillUI.IsRecraftItemEquipped(recraftItemGUID) end
 
+---@param itemGUID WOWGUID 
+---@param itemID number 
+---@return boolean valid
+function C_TradeSkillUI.IsRecraftReagentValid(itemGUID, itemID) end
+
 ---@return boolean result
 function C_TradeSkillUI.IsRuneforging() end
 
@@ -288,14 +311,16 @@ function C_TradeSkillUI.RecraftLimitCategoryValid(reagentItemID) end
 
 ---@param itemGUID WOWGUID 
 ---@param craftingReagents CraftingReagentInfo @ [OPTIONAL]
+---@param removedModifications CraftingItemSlotModification @ [OPTIONAL]
 ---@return boolean result
-function C_TradeSkillUI.RecraftRecipe(itemGUID, craftingReagents) end
+function C_TradeSkillUI.RecraftRecipe(itemGUID, craftingReagents, removedModifications) end
 
 ---@param orderID BigUInteger 
 ---@param itemGUID WOWGUID 
 ---@param craftingReagents CraftingReagentInfo @ [OPTIONAL]
+---@param removedModifications CraftingItemSlotModification @ [OPTIONAL]
 ---@return boolean result
-function C_TradeSkillUI.RecraftRecipeForOrder(orderID, itemGUID, craftingReagents) end
+function C_TradeSkillUI.RecraftRecipeForOrder(orderID, itemGUID, craftingReagents, removedModifications) end
 
 ---@param flag boolean 
 function C_TradeSkillUI.SetOnlyShowAvailableForOrders(flag) end

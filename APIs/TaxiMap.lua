@@ -49,5 +49,6 @@ local MapTaxiNodeInfo = {}
 ---@field textureKit textureKit 
 ---@field useSpecialIcon bool 
 ---@field specialIconCostString string|nil 
+---@field isMapLayerTransition bool 
 local TaxiNodeInfo = {}
 

@@ -28,8 +28,9 @@ function C_SpellBook.GetSkillLineIndexByID(skillLineID) end
 function C_SpellBook.GetSpellInfo(spellID) end
 
 ---@param spellID number 
+---@param glyphID number @ [OPTIONAL]
 ---@return string spellLink
-function C_SpellBook.GetSpellLinkFromSpellID(spellID) end
+function C_SpellBook.GetSpellLinkFromSpellID(spellID, glyphID) end
 
 ---@return number spellIDs
 function C_SpellBook.GetTrackedNameplateCooldownSpells() end
