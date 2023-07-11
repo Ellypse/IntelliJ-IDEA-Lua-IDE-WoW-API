@@ -1,4 +1,4 @@
----@class StorePublic
+---@class C_StorePublic @StorePublic
 C_StorePublic = {}
 
 ---@param groupID number 

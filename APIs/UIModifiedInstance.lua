@@ -1,4 +1,4 @@
----@class UIModifiedInstance
+---@class C_ModifiedInstance @UIModifiedInstance
 C_ModifiedInstance = {}
 
 ---@param mapID number 
@@ -12,5 +12,5 @@ function C_ModifiedInstance.GetModifiedInstanceInfoFromMapID(mapID) end
 ---@field mythicItemLevel number|nil 
 ---@field uiTextureKit textureKit 
 ---@field description string 
-local ModifiedInstanceInfo = {}
+ModifiedInstanceInfo = {}
 

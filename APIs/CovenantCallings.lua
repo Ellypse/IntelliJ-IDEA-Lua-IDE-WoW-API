@@ -1,4 +1,4 @@
----@class CovenantCallings
+---@class C_CovenantCallings @CovenantCallings
 C_CovenantCallings = {}
 
 ---@return boolean unlocked

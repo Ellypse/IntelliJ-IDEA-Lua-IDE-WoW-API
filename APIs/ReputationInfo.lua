@@ -1,4 +1,4 @@
----@class ReputationInfo
+---@class C_Reputation @ReputationInfo
 C_Reputation = {}
 
 ---@param factionID number 

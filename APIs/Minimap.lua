@@ -1,4 +1,4 @@
----@class Minimap
+---@class C_Minimap @Minimap
 C_Minimap = {}
 
 ---@return boolean CanTrackBattlePets
@@ -66,14 +66,14 @@ function C_Minimap.ShouldUseHybridMinimap() end
 ---@class MinimapScriptTrackingFilter
 ---@field spellID number|nil 
 ---@field filterID MinimapTrackingFilter|nil 
-local MinimapScriptTrackingFilter = {}
+MinimapScriptTrackingFilter = {}
 
 ---@class MinimapScriptTrackingInfo
 ---@field name cstring 
 ---@field textureFileID fileID 
----@field active bool 
+---@field active boolean 
 ---@field type cstring 
 ---@field subType number 
 ---@field spellID number|nil 
-local MinimapScriptTrackingInfo = {}
+MinimapScriptTrackingInfo = {}
 

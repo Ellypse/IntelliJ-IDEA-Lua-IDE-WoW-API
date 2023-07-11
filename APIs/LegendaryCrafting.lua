@@ -1,4 +1,4 @@
----@class LegendaryCrafting
+---@class C_LegendaryCrafting @LegendaryCrafting
 C_LegendaryCrafting = {}
 
 function C_LegendaryCrafting.CloseRuneforgeInteraction() end

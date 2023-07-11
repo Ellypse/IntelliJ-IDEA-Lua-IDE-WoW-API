@@ -1,4 +1,4 @@
----@class CommentatorFrame
+---@class C_Commentator @CommentatorFrame
 C_Commentator = {}
 
 ---@param playerName string 
@@ -496,15 +496,15 @@ function C_Commentator.ZoomIn() end
 function C_Commentator.ZoomOut() end
 
 ---@class CommentatorHistory
----@field series table 
----@field teamDirectory table 
----@field overrideNameDirectory table 
-local CommentatorHistory = {}
+---@field series CommentatorSeries 
+---@field teamDirectory CommentatorTeamDirectoryEntry 
+---@field overrideNameDirectory CommentatorOverrideNameEntry 
+CommentatorHistory = {}
 
 ---@class CommentatorOverrideNameEntry
 ---@field originalName string 
 ---@field newName string 
-local CommentatorOverrideNameEntry = {}
+CommentatorOverrideNameEntry = {}
 
 ---@class CommentatorPlayerData
 ---@field unitToken string 
@@ -519,40 +519,40 @@ local CommentatorOverrideNameEntry = {}
 ---@field deaths number 
 ---@field soloShuffleRoundWins number 
 ---@field soloShuffleRoundLosses number 
-local CommentatorPlayerData = {}
+CommentatorPlayerData = {}
 
 ---@class CommentatorSeries
----@field teams table 
-local CommentatorSeries = {}
+---@field teams CommentatorSeriesTeam 
+CommentatorSeries = {}
 
 ---@class CommentatorSeriesTeam
 ---@field name string 
 ---@field score number 
-local CommentatorSeriesTeam = {}
+CommentatorSeriesTeam = {}
 
 ---@class CommentatorTeamDirectoryEntry
 ---@field playerName string 
 ---@field teamName string 
-local CommentatorTeamDirectoryEntry = {}
+CommentatorTeamDirectoryEntry = {}
 
 ---@class CommentatorTrackedItemCooldown
 ---@field spellID number 
 ---@field category TrackedSpellCategory 
-local CommentatorTrackedItemCooldown = {}
+CommentatorTrackedItemCooldown = {}
 
 ---@class CommentatorUnitData
 ---@field healthMax number 
 ---@field health number 
 ---@field absorbTotal number 
----@field isDeadOrGhost bool 
----@field isFeignDeath bool 
+---@field isDeadOrGhost boolean 
+---@field isFeignDeath boolean 
 ---@field powerTypeToken string 
 ---@field power number 
 ---@field powerMax number 
-local CommentatorUnitData = {}
+CommentatorUnitData = {}
 
 ---@class NameOverrideEntry
 ---@field originalName string 
 ---@field overrideName string 
-local NameOverrideEntry = {}
+NameOverrideEntry = {}
 

@@ -1,4 +1,4 @@
----@class LossOfControl
+---@class C_LossOfControl @LossOfControl
 C_LossOfControl = {}
 
 ---@param index luaIndex 
@@ -29,5 +29,5 @@ function C_LossOfControl.GetActiveLossOfControlDataCountByUnit(unitToken) end
 ---@field priority number 
 ---@field displayType number 
 ---@field auraInstanceID number|nil 
-local LossOfControlData = {}
+LossOfControlData = {}
 

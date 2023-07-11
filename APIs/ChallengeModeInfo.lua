@@ -1,4 +1,4 @@
----@class ChallengeModeInfo
+---@class C_ChallengeMode @ChallengeModeInfo
 C_ChallengeMode = {}
 
 ---@param itemLocation ItemLocation 
@@ -91,19 +91,19 @@ function C_ChallengeMode.StartChallengeMode() end
 ---@class ChallengeModeCompletionMemberInfo
 ---@field memberGUID WOWGUID 
 ---@field name string 
-local ChallengeModeCompletionMemberInfo = {}
+ChallengeModeCompletionMemberInfo = {}
 
 ---@class ChallengeModeGuildAttemptMember
 ---@field name string 
 ---@field classFileName cstring 
-local ChallengeModeGuildAttemptMember = {}
+ChallengeModeGuildAttemptMember = {}
 
 ---@class ChallengeModeGuildTopAttempt
 ---@field name string 
 ---@field classFileName cstring 
 ---@field keystoneLevel number 
 ---@field mapChallengeModeID number 
----@field isYou bool 
----@field members table 
-local ChallengeModeGuildTopAttempt = {}
+---@field isYou boolean 
+---@field members ChallengeModeGuildAttemptMember 
+ChallengeModeGuildTopAttempt = {}
 

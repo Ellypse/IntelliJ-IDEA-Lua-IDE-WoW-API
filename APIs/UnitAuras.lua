@@ -1,4 +1,4 @@
----@class UnitAuras
+---@class C_UnitAuras @UnitAuras
 C_UnitAuras = {}
 
 ---@param args AddPrivateAuraAnchorArgs 

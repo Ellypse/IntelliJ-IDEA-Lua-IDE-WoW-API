@@ -1,4 +1,4 @@
----@class PartyInfo
+---@class C_PartyInfo @PartyInfo
 C_PartyInfo = {}
 
 ---@param toRaid boolean 
@@ -83,12 +83,10 @@ function C_PartyInfo.LeaveParty(category) end
 function C_PartyInfo.RequestInviteFromUnit(targetName, tank, healer, dps) end
 
 ---@class PartyRequestJoinRelation
----@field None number @ Default value is [ 0 ]
----@field Friend number @ Default value is [ 1 ]
----@field Guild number @ Default value is [ 2 ]
----@field Club number @ Default value is [ 3 ]
----@field NumPartyRequestJoinRelations number @ Default value is [ 4 ]
-
----@type PartyRequestJoinRelation 
-local PartyRequestJoinRelation = {}
+PartyRequestJoinRelation = {}
+PartyRequestJoinRelation.None = 0
+PartyRequestJoinRelation.Friend = 1
+PartyRequestJoinRelation.Guild = 2
+PartyRequestJoinRelation.Club = 3
+PartyRequestJoinRelation.NumPartyRequestJoinRelations = 4
 

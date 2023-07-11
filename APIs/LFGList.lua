@@ -1,4 +1,4 @@
----@class LFGList
+---@class C_LFGList @LFGList
 C_LFGList = {}
 
 ---@return boolean canUseAutoAccept
@@ -123,22 +123,20 @@ function C_LFGList.ValidateRequiredDungeonScore(dungeonScore) end
 function C_LFGList.ValidateRequiredPvpRatingForActivity(activityID, rating) end
 
 ---@class LFGListDisplayType
----@field RoleCount number @ Default value is [ 0 ]
----@field RoleEnumerate number @ Default value is [ 1 ]
----@field ClassEnumerate number @ Default value is [ 2 ]
----@field HideAll number @ Default value is [ 3 ]
----@field PlayerCount number @ Default value is [ 4 ]
----@field Comment number @ Default value is [ 5 ]
-
----@type LFGListDisplayType 
-local LFGListDisplayType = {}
+LFGListDisplayType = {}
+LFGListDisplayType.RoleCount = 0
+LFGListDisplayType.RoleEnumerate = 1
+LFGListDisplayType.ClassEnumerate = 2
+LFGListDisplayType.HideAll = 3
+LFGListDisplayType.PlayerCount = 4
+LFGListDisplayType.Comment = 5
 
 ---@class BestDungeonScoreMapInfo
 ---@field mapScore number 
 ---@field mapName string 
 ---@field bestRunLevel number 
----@field finishedSuccess bool 
-local BestDungeonScoreMapInfo = {}
+---@field finishedSuccess boolean 
+BestDungeonScoreMapInfo = {}
 
 ---@class GroupFinderActivityInfo
 ---@field fullName string 
@@ -151,36 +149,36 @@ local BestDungeonScoreMapInfo = {}
 ---@field maxNumPlayers number 
 ---@field displayType LFGListDisplayType 
 ---@field orderIndex number 
----@field useHonorLevel bool 
----@field showQuickJoinToast bool 
----@field isMythicPlusActivity bool 
----@field isRatedPvpActivity bool 
----@field isCurrentRaidActivity bool 
----@field isPvpActivity bool 
----@field isMythicActivity bool 
----@field allowCrossFaction bool 
----@field useDungeonRoleExpectations bool 
-local GroupFinderActivityInfo = {}
+---@field useHonorLevel boolean 
+---@field showQuickJoinToast boolean 
+---@field isMythicPlusActivity boolean 
+---@field isRatedPvpActivity boolean 
+---@field isCurrentRaidActivity boolean 
+---@field isPvpActivity boolean 
+---@field isMythicActivity boolean 
+---@field allowCrossFaction boolean 
+---@field useDungeonRoleExpectations boolean 
+GroupFinderActivityInfo = {}
 
 ---@class LfgApplicantData
 ---@field applicantID number 
 ---@field applicationStatus cstring 
 ---@field pendingApplicationStatus cstring|nil 
 ---@field numMembers number 
----@field isNew bool 
+---@field isNew boolean 
 ---@field comment kstringLfgListApplicant 
 ---@field displayOrderID number 
-local LfgApplicantData = {}
+LfgApplicantData = {}
 
 ---@class LfgCategoryData
 ---@field name cstring 
 ---@field searchPromptOverride cstring|nil 
----@field separateRecommended bool 
----@field autoChooseActivity bool 
----@field preferCurrentArea bool 
----@field showPlaystyleDropdown bool 
----@field allowCrossFaction bool 
-local LfgCategoryData = {}
+---@field separateRecommended boolean 
+---@field autoChooseActivity boolean 
+---@field preferCurrentArea boolean 
+---@field showPlaystyleDropdown boolean 
+---@field allowCrossFaction boolean 
+LfgCategoryData = {}
 
 ---@class LfgEntryData
 ---@field activityID number 
@@ -190,14 +188,14 @@ local LfgCategoryData = {}
 ---@field comment kstringLfgListApplicant 
 ---@field voiceChat kstringLfgListApplicant 
 ---@field duration time_t 
----@field autoAccept bool 
----@field privateGroup bool 
+---@field autoAccept boolean 
+---@field privateGroup boolean 
 ---@field questID number|nil 
 ---@field requiredDungeonScore number|nil 
 ---@field requiredPvpRating number|nil 
 ---@field playstyle LFGEntryPlaystyle|nil 
----@field isCrossFactionListing bool 
-local LfgEntryData = {}
+---@field isCrossFactionListing boolean 
+LfgEntryData = {}
 
 ---@class LfgSearchResultData
 ---@field searchResultID number 
@@ -208,14 +206,14 @@ local LfgEntryData = {}
 ---@field voiceChat kstringLfgListSearch 
 ---@field requiredItemLevel number 
 ---@field requiredHonorLevel number 
----@field hasSelf bool 
+---@field hasSelf boolean 
 ---@field numMembers number 
 ---@field numBNetFriends number 
 ---@field numCharFriends number 
 ---@field numGuildMates number 
----@field isDelisted bool 
----@field autoAccept bool 
----@field isWarMode bool 
+---@field isDelisted boolean 
+---@field autoAccept boolean 
+---@field isWarMode boolean 
 ---@field age time_t 
 ---@field questID number|nil 
 ---@field leaderOverallDungeonScore number|nil 
@@ -224,28 +222,28 @@ local LfgEntryData = {}
 ---@field requiredDungeonScore number|nil 
 ---@field requiredPvpRating number|nil 
 ---@field playstyle LFGEntryPlaystyle|nil 
----@field crossFactionListing bool|nil 
+---@field crossFactionListing boolean|nil 
 ---@field leaderFactionGroup number 
-local LfgSearchResultData = {}
+LfgSearchResultData = {}
 
 ---@class PvpRatingInfo
 ---@field bracket number 
 ---@field rating number 
 ---@field activityName string 
 ---@field tier number 
-local PvpRatingInfo = {}
+PvpRatingInfo = {}
 
 ---@class WowLocale
----@field enUS bool 
----@field koKR bool 
----@field frFR bool 
----@field deDE bool 
----@field zhCN bool 
----@field zhTW bool 
----@field esES bool 
----@field esMX bool 
----@field ruRU bool 
----@field ptBR bool 
----@field itIT bool 
-local WowLocale = {}
+---@field enUS boolean 
+---@field koKR boolean 
+---@field frFR boolean 
+---@field deDE boolean 
+---@field zhCN boolean 
+---@field zhTW boolean 
+---@field esES boolean 
+---@field esMX boolean 
+---@field ruRU boolean 
+---@field ptBR boolean 
+---@field itIT boolean 
+WowLocale = {}
 

@@ -1,4 +1,4 @@
----@class PerksActivities
+---@class C_PerksActivities @PerksActivities
 C_PerksActivities = {}
 
 ---@param perksActivityID number 
@@ -33,51 +33,51 @@ function C_PerksActivities.RemoveTrackedPerksActivity(perksActivityID) end
 ---@field activePerksMonth number 
 ---@field displayMonthName cstring 
 ---@field secondsRemaining time_t 
----@field activities table 
----@field thresholds table 
-local PerksActivitiesInfo = {}
+---@field activities PerksActivityInfo 
+---@field thresholds PerksActivityThresholdInfo 
+PerksActivitiesInfo = {}
 
 ---@class PerksActivitiesPending
----@field pendingIDs table 
-local PerksActivitiesPending = {}
+---@field pendingIDs number 
+PerksActivitiesPending = {}
 
 ---@class PerksActivitiesTracked
----@field trackedIDs table 
-local PerksActivitiesTracked = {}
+---@field trackedIDs number 
+PerksActivitiesTracked = {}
 
 ---@class PerksActivityCriteria
 ---@field criteriaID number 
 ---@field requiredValue number 
-local PerksActivityCriteria = {}
+PerksActivityCriteria = {}
 
 ---@class PerksActivityInfo
 ---@field ID number 
 ---@field activityName cstring 
 ---@field description cstring 
 ---@field thresholdContributionAmount number 
----@field completed bool 
----@field tracked bool 
+---@field completed boolean 
+---@field tracked boolean 
 ---@field supersedes number 
 ---@field uiPriority number 
----@field requirementsList table 
----@field criteriaList table 
----@field tagNames table 
-local PerksActivityInfo = {}
+---@field requirementsList PerksActivityRequirement 
+---@field criteriaList PerksActivityCriteria 
+---@field tagNames string 
+PerksActivityInfo = {}
 
 ---@class PerksActivityRequirement
----@field completed bool 
+---@field completed boolean 
 ---@field requirementText string 
-local PerksActivityRequirement = {}
+PerksActivityRequirement = {}
 
 ---@class PerksActivityTags
----@field tagName table 
-local PerksActivityTags = {}
+---@field tagName string 
+PerksActivityTags = {}
 
 ---@class PerksActivityThresholdInfo
 ---@field thresholdOrderIndex number 
 ---@field currencyAwardAmount number 
 ---@field requiredContributionAmount number 
----@field pendingReward bool 
+---@field pendingReward boolean 
 ---@field itemReward number|nil 
-local PerksActivityThresholdInfo = {}
+PerksActivityThresholdInfo = {}
 

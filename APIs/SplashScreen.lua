@@ -1,4 +1,4 @@
----@class SplashScreen
+---@class C_SplashScreen @SplashScreen
 C_SplashScreen = {}
 
 function C_SplashScreen.AcknowledgeSplash() end
@@ -10,11 +10,9 @@ function C_SplashScreen.CanViewSplashScreen() end
 function C_SplashScreen.RequestLatestSplashScreen(fromGameMenu) end
 
 ---@class SplashScreenType
----@field WhatsNew number @ Default value is [ 0 ]
----@field SeasonRollOver number @ Default value is [ 1 ]
-
----@type SplashScreenType 
-local SplashScreenType = {}
+SplashScreenType = {}
+SplashScreenType.WhatsNew = 0
+SplashScreenType.SeasonRollOver = 1
 
 ---@class SplashScreenInfo
 ---@field textureKit textureKit 
@@ -30,7 +28,7 @@ local SplashScreenType = {}
 ---@field bottomLeftFeatureDesc string 
 ---@field rightFeatureTitle string 
 ---@field rightFeatureDesc string 
----@field shouldShowQuest bool 
+---@field shouldShowQuest boolean 
 ---@field screenType SplashScreenType 
-local SplashScreenInfo = {}
+SplashScreenInfo = {}
 

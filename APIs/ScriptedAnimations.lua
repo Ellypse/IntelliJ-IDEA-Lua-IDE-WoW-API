@@ -1,37 +1,31 @@
----@class ScriptedAnimations
+---@class C_ScriptedAnimations @ScriptedAnimations
 C_ScriptedAnimations = {}
 
 ---@return ScriptedAnimationEffect scriptedAnimationEffects
 function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 
 ---@class ScriptedAnimationBehavior
----@field None number @ Default value is [ 0 ]
----@field TargetShake number @ Default value is [ 1 ]
----@field TargetKnockBack number @ Default value is [ 2 ]
----@field SourceRecoil number @ Default value is [ 3 ]
----@field SourceCollideWithTarget number @ Default value is [ 4 ]
----@field UIParentShake number @ Default value is [ 5 ]
-
----@type ScriptedAnimationBehavior 
-local ScriptedAnimationBehavior = {}
+ScriptedAnimationBehavior = {}
+ScriptedAnimationBehavior.None = 0
+ScriptedAnimationBehavior.TargetShake = 1
+ScriptedAnimationBehavior.TargetKnockBack = 2
+ScriptedAnimationBehavior.SourceRecoil = 3
+ScriptedAnimationBehavior.SourceCollideWithTarget = 4
+ScriptedAnimationBehavior.UIParentShake = 5
 
 ---@class ScriptedAnimationFlags
----@field UseTargetAsSource number @ Default value is [ 1 ]
-
----@type ScriptedAnimationFlags 
-local ScriptedAnimationFlags = {}
+ScriptedAnimationFlags = {}
+ScriptedAnimationFlags.UseTargetAsSource = 1
 
 ---@class ScriptedAnimationTrajectory
----@field AtSource number @ Default value is [ 0 ]
----@field AtTarget number @ Default value is [ 1 ]
----@field Straight number @ Default value is [ 2 ]
----@field CurveLeft number @ Default value is [ 3 ]
----@field CurveRight number @ Default value is [ 4 ]
----@field CurveRandom number @ Default value is [ 5 ]
----@field HalfwayBetween number @ Default value is [ 6 ]
-
----@type ScriptedAnimationTrajectory 
-local ScriptedAnimationTrajectory = {}
+ScriptedAnimationTrajectory = {}
+ScriptedAnimationTrajectory.AtSource = 0
+ScriptedAnimationTrajectory.AtTarget = 1
+ScriptedAnimationTrajectory.Straight = 2
+ScriptedAnimationTrajectory.CurveLeft = 3
+ScriptedAnimationTrajectory.CurveRight = 4
+ScriptedAnimationTrajectory.CurveRandom = 5
+ScriptedAnimationTrajectory.HalfwayBetween = 6
 
 ---@class ScriptedAnimationEffect
 ---@field id number 
@@ -48,7 +42,7 @@ local ScriptedAnimationTrajectory = {}
 ---@field animation number 
 ---@field animationSpeed number 
 ---@field alpha number 
----@field useTargetAsSource bool 
+---@field useTargetAsSource boolean 
 ---@field startBehavior ScriptedAnimationBehavior|nil 
 ---@field startSoundKitID number|nil 
 ---@field finishEffectID number|nil 
@@ -61,5 +55,5 @@ local ScriptedAnimationTrajectory = {}
 ---@field animationStartOffset number|nil 
 ---@field loopingSoundKitID number|nil 
 ---@field particleOverrideScale number|nil 
-local ScriptedAnimationEffect = {}
+ScriptedAnimationEffect = {}
 

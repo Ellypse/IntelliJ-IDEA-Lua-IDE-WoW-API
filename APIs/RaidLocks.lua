@@ -1,4 +1,4 @@
----@class RaidLocks
+---@class C_RaidLocks @RaidLocks
 C_RaidLocks = {}
 
 ---@param mapID number 

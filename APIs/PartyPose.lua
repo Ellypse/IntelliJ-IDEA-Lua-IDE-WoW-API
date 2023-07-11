@@ -1,4 +1,4 @@
----@class PartyPose
+---@class C_PartyPose @PartyPose
 C_PartyPose = {}
 
 ---@param partyPoseID number 
@@ -26,5 +26,5 @@ function C_PartyPose.HasExtraAction(partyPoseID) end
 ---@field defeatSoundKitID number 
 ---@field uiTextureKit textureKit|nil 
 ---@field titleText string|nil 
-local PartyPoseInfo = {}
+PartyPoseInfo = {}
 

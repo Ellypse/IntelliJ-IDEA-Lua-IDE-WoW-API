@@ -1,4 +1,4 @@
----@class GossipInfo
+---@class C_GossipInfo @GossipInfo
 C_GossipInfo = {}
 
 function C_GossipInfo.CloseGossip() end
@@ -66,20 +66,16 @@ function C_GossipInfo.SelectOption(optionID, text, confirmed) end
 function C_GossipInfo.SelectOptionByIndex(optionID, text, confirmed) end
 
 ---@class GossipOptionRewardType
----@field Item number @ Default value is [ 0 ]
----@field Currency number @ Default value is [ 1 ]
-
----@type GossipOptionRewardType 
-local GossipOptionRewardType = {}
+GossipOptionRewardType = {}
+GossipOptionRewardType.Item = 0
+GossipOptionRewardType.Currency = 1
 
 ---@class GossipOptionStatus
----@field Available number @ Default value is [ 0 ]
----@field Unavailable number @ Default value is [ 1 ]
----@field Locked number @ Default value is [ 2 ]
----@field AlreadyComplete number @ Default value is [ 3 ]
-
----@type GossipOptionStatus 
-local GossipOptionStatus = {}
+GossipOptionStatus = {}
+GossipOptionStatus.Available = 0
+GossipOptionStatus.Unavailable = 1
+GossipOptionStatus.Locked = 2
+GossipOptionStatus.AlreadyComplete = 3
 
 ---@class FriendshipReputationInfo
 ---@field friendshipFactionID number 
@@ -91,51 +87,51 @@ local GossipOptionStatus = {}
 ---@field reaction string 
 ---@field reactionThreshold number 
 ---@field nextThreshold number|nil 
----@field reversedColor bool 
+---@field reversedColor boolean 
 ---@field overrideColor number|nil 
-local FriendshipReputationInfo = {}
+FriendshipReputationInfo = {}
 
 ---@class FriendshipReputationRankInfo
 ---@field currentLevel number 
 ---@field maxLevel number 
-local FriendshipReputationRankInfo = {}
+FriendshipReputationRankInfo = {}
 
 ---@class GossipOptionRewardInfo
 ---@field id number 
 ---@field quantity number 
 ---@field rewardType GossipOptionRewardType 
-local GossipOptionRewardInfo = {}
+GossipOptionRewardInfo = {}
 
 ---@class GossipOptionUIInfo
 ---@field gossipOptionID number|nil 
 ---@field name string 
 ---@field icon fileID 
----@field rewards table 
+---@field rewards GossipOptionRewardInfo 
 ---@field status GossipOptionStatus 
 ---@field spellID number|nil 
 ---@field flags number 
 ---@field overrideIconID fileID|nil 
----@field selectOptionWhenOnlyOption bool 
+---@field selectOptionWhenOnlyOption boolean 
 ---@field orderIndex number 
-local GossipOptionUIInfo = {}
+GossipOptionUIInfo = {}
 
 ---@class GossipPoiInfo
 ---@field name string 
 ---@field textureIndex number 
 ---@field position vector2 
----@field inBattleMap bool 
-local GossipPoiInfo = {}
+---@field inBattleMap boolean 
+GossipPoiInfo = {}
 
 ---@class GossipQuestUIInfo
 ---@field title string 
 ---@field questLevel number 
----@field isTrivial bool 
+---@field isTrivial boolean 
 ---@field frequency number|nil 
----@field repeatable bool|nil 
----@field isComplete bool|nil 
----@field isLegendary bool 
----@field isIgnored bool 
+---@field repeatable boolean|nil 
+---@field isComplete boolean|nil 
+---@field isLegendary boolean 
+---@field isIgnored boolean 
 ---@field questID number 
----@field isImportant bool 
-local GossipQuestUIInfo = {}
+---@field isImportant boolean 
+GossipQuestUIInfo = {}
 

@@ -1,4 +1,4 @@
----@class DateAndTime
+---@class C_DateAndTime @DateAndTime
 C_DateAndTime = {}
 
 ---@param date CalendarTime 
@@ -38,8 +38,6 @@ function C_DateAndTime.GetSecondsUntilWeeklyReset() end
 function C_DateAndTime.GetServerTimeLocal() end
 
 ---@class TimeEventFlag
----@field GlueScreenShortcut number @ Default value is [ 1 ]
-
----@type TimeEventFlag 
-local TimeEventFlag = {}
+TimeEventFlag = {}
+TimeEventFlag.GlueScreenShortcut = 1
 

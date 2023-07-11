@@ -1,4 +1,4 @@
----@class PetJournalInfo
+---@class C_PetJournal @PetJournalInfo
 C_PetJournal = {}
 
 ---@param speciesID number 
@@ -59,21 +59,19 @@ function C_PetJournal.SetDefaultFilters() end
 function C_PetJournal.SpellTargetBattlePet(battlePetGUID) end
 
 ---@class PetJournalError
----@field None number @ Default value is [ 0 ]
----@field PetIsDead number @ Default value is [ 1 ]
----@field JournalIsLocked number @ Default value is [ 2 ]
----@field InvalidFaction number @ Default value is [ 3 ]
----@field NoFavoritesToSummon number @ Default value is [ 4 ]
----@field NoValidRandomSummon number @ Default value is [ 5 ]
----@field InvalidCovenant number @ Default value is [ 6 ]
-
----@type PetJournalError 
-local PetJournalError = {}
+PetJournalError = {}
+PetJournalError.None = 0
+PetJournalError.PetIsDead = 1
+PetJournalError.JournalIsLocked = 2
+PetJournalError.InvalidFaction = 3
+PetJournalError.NoFavoritesToSummon = 4
+PetJournalError.NoValidRandomSummon = 5
+PetJournalError.InvalidCovenant = 6
 
 ---@class PetAbilityLevelInfo
 ---@field abilityID number 
 ---@field level number 
-local PetAbilityLevelInfo = {}
+PetAbilityLevelInfo = {}
 
 ---@class PetJournalPetInfo
 ---@field speciesID number 
@@ -82,17 +80,17 @@ local PetAbilityLevelInfo = {}
 ---@field xp number 
 ---@field maxXP number 
 ---@field displayID number 
----@field isFavorite bool 
+---@field isFavorite boolean 
 ---@field icon fileID 
 ---@field petType number 
 ---@field creatureID number 
 ---@field name string|nil 
 ---@field sourceText string 
 ---@field description string 
----@field isWild bool 
----@field canBattle bool 
----@field tradable bool 
----@field unique bool 
----@field obtainable bool 
-local PetJournalPetInfo = {}
+---@field isWild boolean 
+---@field canBattle boolean 
+---@field tradable boolean 
+---@field unique boolean 
+---@field obtainable boolean 
+PetJournalPetInfo = {}
 

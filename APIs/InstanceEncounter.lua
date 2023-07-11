@@ -1,3 +1,3 @@
----@class InstanceEncounter
+---@class C_InstanceEncounter @InstanceEncounter
 C_InstanceEncounter = {}
 

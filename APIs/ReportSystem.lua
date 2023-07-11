@@ -1,4 +1,4 @@
----@class ReportSystem
+---@class C_ReportSystem @ReportSystem
 C_ReportSystem = {}
 
 ---@param playerLocation PlayerLocation 

@@ -1,4 +1,4 @@
----@class PlayerMentorship
+---@class C_PlayerMentorship @PlayerMentorship
 C_PlayerMentorship = {}
 
 ---@return number|nil level

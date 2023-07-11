@@ -8429,9 +8429,9 @@ end
 
 --- Returns whether or not the unit with the given GUID is in your group.
 --- [https://wowpedia.fandom.com/wiki/API_IsGUIDInGroup]
---- @param UnitGUID(target unknown
+--- @param UnitGUID unknown
 --- @return unknown @ inGroup
-function IsGUIDInGroup(UnitGUID(target)
+function IsGUIDInGroup(UnitGUID)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_IsGamePadCursorControlEnabled?action=edit&amp;redlink=1]

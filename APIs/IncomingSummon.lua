@@ -1,4 +1,4 @@
----@class IncomingSummon
+---@class C_IncomingSummon @IncomingSummon
 C_IncomingSummon = {}
 
 ---@param unit UnitToken 
@@ -10,11 +10,9 @@ function C_IncomingSummon.HasIncomingSummon(unit) end
 function C_IncomingSummon.IncomingSummonStatus(unit) end
 
 ---@class SummonStatus
----@field None number @ Default value is [ 0 ]
----@field Pending number @ Default value is [ 1 ]
----@field Accepted number @ Default value is [ 2 ]
----@field Declined number @ Default value is [ 3 ]
-
----@type SummonStatus 
-local SummonStatus = {}
+SummonStatus = {}
+SummonStatus.None = 0
+SummonStatus.Pending = 1
+SummonStatus.Accepted = 2
+SummonStatus.Declined = 3
 

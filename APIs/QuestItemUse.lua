@@ -1,4 +1,4 @@
----@class QuestItemUse
+---@class C_QuestItemUse @QuestItemUse
 C_QuestItemUse = {}
 
 ---@param item ItemLocation 

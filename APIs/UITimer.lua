@@ -1,4 +1,4 @@
----@class UITimer
+---@class C_Timer @UITimer
 C_Timer = {}
 
 ---@param seconds number 

@@ -1,4 +1,4 @@
----@class Spell
+---@class C_Spell @Spell
 C_Spell = {}
 
 ---@param spellID number 

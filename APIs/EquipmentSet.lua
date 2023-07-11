@@ -1,4 +1,4 @@
----@class EquipmentSet
+---@class C_EquipmentSet @EquipmentSet
 C_EquipmentSet = {}
 
 ---@param equipmentSetID number 

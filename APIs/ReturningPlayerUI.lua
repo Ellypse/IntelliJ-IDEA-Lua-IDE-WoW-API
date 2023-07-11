@@ -1,4 +1,4 @@
----@class ReturningPlayerUI
+---@class C_ReturningPlayerUI @ReturningPlayerUI
 C_ReturningPlayerUI = {}
 
 function C_ReturningPlayerUI.AcceptPrompt() end

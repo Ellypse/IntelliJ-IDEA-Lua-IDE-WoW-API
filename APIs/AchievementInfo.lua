@@ -1,4 +1,4 @@
----@class AchievementInfo
+---@class C_AchievementInfo @AchievementInfo
 C_AchievementInfo = {}
 
 ---@param achievementID number 

@@ -1,4 +1,4 @@
----@class TransmogrifySets
+---@class C_TransmogSets @TransmogrifySets
 C_TransmogSets = {}
 
 function C_TransmogSets.ClearLatestSource() end
@@ -121,15 +121,15 @@ function C_TransmogSets.SetIsFavorite(transmogSetID, isFavorite) end
 ---@field patchID number 
 ---@field uiOrder number 
 ---@field classMask number 
----@field hiddenUntilCollected bool 
+---@field hiddenUntilCollected boolean 
 ---@field requiredFaction cstring|nil 
----@field collected bool 
----@field favorite bool 
----@field limitedTimeSet bool 
-local TransmogSetInfo = {}
+---@field collected boolean 
+---@field favorite boolean 
+---@field limitedTimeSet boolean 
+TransmogSetInfo = {}
 
 ---@class TransmogSetPrimaryAppearanceInfo
 ---@field appearanceID number 
----@field collected bool 
-local TransmogSetPrimaryAppearanceInfo = {}
+---@field collected boolean 
+TransmogSetPrimaryAppearanceInfo = {}
 

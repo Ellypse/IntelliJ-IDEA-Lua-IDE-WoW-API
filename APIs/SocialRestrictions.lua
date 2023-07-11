@@ -1,4 +1,4 @@
----@class SocialRestrictions
+---@class C_SocialRestrictions @SocialRestrictions
 C_SocialRestrictions = {}
 
 function C_SocialRestrictions.AcknowledgeRegionalChatDisabled() end

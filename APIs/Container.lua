@@ -1,4 +1,4 @@
----@class Container
+---@class C_Container @Container
 C_Container = {}
 
 ---@param containerID BagIndex 
@@ -177,41 +177,41 @@ function C_Container.UseHearthstone() end
 ---@class ContainerItemInfo
 ---@field iconFileID fileID 
 ---@field stackCount number 
----@field isLocked bool 
+---@field isLocked boolean 
 ---@field quality ItemQuality|nil 
----@field isReadable bool 
----@field hasLoot bool 
+---@field isReadable boolean 
+---@field hasLoot boolean 
 ---@field hyperlink string 
----@field isFiltered bool 
----@field hasNoValue bool 
+---@field isFiltered boolean 
+---@field hasNoValue boolean 
 ---@field itemID number 
----@field isBound bool 
+---@field isBound boolean 
 ---@field itemName string 
-local ContainerItemInfo = {}
+ContainerItemInfo = {}
 
 ---@class ItemPurchaseCurrency
 ---@field iconFileID number|nil 
 ---@field currencyCount number 
 ---@field name cstring 
-local ItemPurchaseCurrency = {}
+ItemPurchaseCurrency = {}
 
 ---@class ItemPurchaseInfo
 ---@field money WOWMONEY 
 ---@field itemCount number 
 ---@field refundSeconds time_t 
 ---@field currencyCount number 
----@field hasEnchants bool 
-local ItemPurchaseInfo = {}
+---@field hasEnchants boolean 
+ItemPurchaseInfo = {}
 
 ---@class ItemPurchaseItem
 ---@field iconFileID number|nil 
 ---@field itemCount number 
 ---@field hyperlink string 
-local ItemPurchaseItem = {}
+ItemPurchaseItem = {}
 
 ---@class ItemQuestInfo
----@field isQuestItem bool 
+---@field isQuestItem boolean 
 ---@field questID number|nil 
----@field isActive bool 
-local ItemQuestInfo = {}
+---@field isActive boolean 
+ItemQuestInfo = {}
 

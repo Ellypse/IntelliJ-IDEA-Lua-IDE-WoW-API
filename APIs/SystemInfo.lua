@@ -1,4 +1,4 @@
----@class SystemInfo
+---@class C_System @SystemInfo
 C_System = {}
 
 ---@return ScriptRegion objects

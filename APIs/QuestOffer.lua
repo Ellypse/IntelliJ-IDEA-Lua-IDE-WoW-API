@@ -1,4 +1,4 @@
----@class QuestOffer
+---@class C_QuestOffer @QuestOffer
 C_QuestOffer = {}
 
 ---@return boolean hideRequiredItems

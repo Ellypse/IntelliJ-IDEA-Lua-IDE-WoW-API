@@ -1,6 +1,3 @@
----@class PlayerLocationInfo
-C_PlayerInfo = {}
-
 ---@param guid WOWGUID 
 ---@return boolean isPlayer
 function C_PlayerInfo.GUIDIsPlayer(guid) end

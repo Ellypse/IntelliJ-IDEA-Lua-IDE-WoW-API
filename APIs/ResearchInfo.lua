@@ -1,4 +1,4 @@
----@class ResearchInfo
+---@class C_ResearchInfo @ResearchInfo
 C_ResearchInfo = {}
 
 ---@param uiMapID number 
@@ -10,5 +10,5 @@ function C_ResearchInfo.GetDigSitesForMap(uiMapID) end
 ---@field position vector2 
 ---@field name cstring 
 ---@field textureIndex number 
-local DigSiteMapInfo = {}
+DigSiteMapInfo = {}
 

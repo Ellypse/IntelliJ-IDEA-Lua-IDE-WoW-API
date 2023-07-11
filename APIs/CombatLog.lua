@@ -1,3 +1,3 @@
----@class CombatLog
+---@class C_CombatLog @CombatLog
 C_CombatLog = {}
 

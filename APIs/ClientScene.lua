@@ -1,10 +1,8 @@
----@class ClientScene
+---@class C_ClientScene @ClientScene
 C_ClientScene = {}
 
 ---@class ClientSceneType
----@field DefaultSceneType number @ Default value is [ 0 ]
----@field MinigameSceneType number @ Default value is [ 1 ]
-
----@type ClientSceneType 
-local ClientSceneType = {}
+ClientSceneType = {}
+ClientSceneType.DefaultSceneType = 0
+ClientSceneType.MinigameSceneType = 1
 

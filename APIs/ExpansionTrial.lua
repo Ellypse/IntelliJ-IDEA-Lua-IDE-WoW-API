@@ -1,4 +1,4 @@
----@class ExpansionTrial
+---@class C_ExpansionTrial @ExpansionTrial
 C_ExpansionTrial = {}
 
 function C_ExpansionTrial.OnTrialLevelUpDialogClicked() end

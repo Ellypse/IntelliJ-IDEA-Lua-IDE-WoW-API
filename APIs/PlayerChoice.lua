@@ -1,4 +1,4 @@
----@class PlayerChoice
+---@class C_PlayerChoice @PlayerChoice
 C_PlayerChoice = {}
 
 ---@return PlayerChoiceInfo choiceInfo
@@ -21,13 +21,11 @@ function C_PlayerChoice.RequestRerollPlayerChoice() end
 function C_PlayerChoice.SendPlayerChoiceResponse(responseID) end
 
 ---@class PlayerChoiceRarity
----@field Common number @ Default value is [ 0 ]
----@field Uncommon number @ Default value is [ 1 ]
----@field Rare number @ Default value is [ 2 ]
----@field Epic number @ Default value is [ 3 ]
-
----@type PlayerChoiceRarity 
-local PlayerChoiceRarity = {}
+PlayerChoiceRarity = {}
+PlayerChoiceRarity.Common = 0
+PlayerChoiceRarity.Uncommon = 1
+PlayerChoiceRarity.Rare = 2
+PlayerChoiceRarity.Epic = 3
 
 ---@class PlayerChoiceInfo
 ---@field objectGUID WOWGUID 
@@ -35,35 +33,35 @@ local PlayerChoiceRarity = {}
 ---@field questionText string 
 ---@field pendingChoiceText string 
 ---@field uiTextureKit textureKit 
----@field hideWarboardHeader bool 
----@field keepOpenAfterChoice bool 
----@field options table 
+---@field hideWarboardHeader boolean 
+---@field keepOpenAfterChoice boolean 
+---@field options PlayerChoiceOptionInfo 
 ---@field soundKitID number|nil 
 ---@field closeUISoundKitID number|nil 
-local PlayerChoiceInfo = {}
+PlayerChoiceInfo = {}
 
 ---@class PlayerChoiceOptionButtonInfo
 ---@field id number 
 ---@field text string 
----@field disabled bool 
+---@field disabled boolean 
 ---@field confirmation string|nil 
 ---@field tooltip string|nil 
 ---@field rewardQuestID number|nil 
 ---@field soundKitID number|nil 
-local PlayerChoiceOptionButtonInfo = {}
+PlayerChoiceOptionButtonInfo = {}
 
 ---@class PlayerChoiceOptionInfo
 ---@field id number 
 ---@field description string 
 ---@field header string 
 ---@field choiceArtID number 
----@field desaturatedArt bool 
----@field disabledOption bool 
----@field hasRewards bool 
+---@field desaturatedArt boolean 
+---@field disabledOption boolean 
+---@field hasRewards boolean 
 ---@field rewardInfo PlayerChoiceOptionRewardInfo 
 ---@field uiTextureKit textureKit 
 ---@field maxStacks number 
----@field buttons table 
+---@field buttons PlayerChoiceOptionButtonInfo 
 ---@field widgetSetID number|nil 
 ---@field spellID number|nil 
 ---@field rarity PlayerChoiceRarity|nil 
@@ -71,30 +69,30 @@ local PlayerChoiceOptionButtonInfo = {}
 ---@field typeArtID number|nil 
 ---@field headerIconAtlasElement string|nil 
 ---@field subHeader string|nil 
-local PlayerChoiceOptionInfo = {}
+PlayerChoiceOptionInfo = {}
 
 ---@class PlayerChoiceOptionRewardInfo
----@field currencyRewards table 
----@field itemRewards table 
----@field repRewards table 
-local PlayerChoiceOptionRewardInfo = {}
+---@field currencyRewards PlayerChoiceRewardCurrencyInfo 
+---@field itemRewards PlayerChoiceRewardItemInfo 
+---@field repRewards PlayerChoiceRewardReputationInfo 
+PlayerChoiceOptionRewardInfo = {}
 
 ---@class PlayerChoiceRewardCurrencyInfo
 ---@field currencyId number 
 ---@field name string 
 ---@field currencyTexture number 
 ---@field quantity number 
----@field isCurrencyContainer bool 
-local PlayerChoiceRewardCurrencyInfo = {}
+---@field isCurrencyContainer boolean 
+PlayerChoiceRewardCurrencyInfo = {}
 
 ---@class PlayerChoiceRewardItemInfo
 ---@field itemId number 
 ---@field name string 
 ---@field quantity number 
-local PlayerChoiceRewardItemInfo = {}
+PlayerChoiceRewardItemInfo = {}
 
 ---@class PlayerChoiceRewardReputationInfo
 ---@field factionId number 
 ---@field quantity number 
-local PlayerChoiceRewardReputationInfo = {}
+PlayerChoiceRewardReputationInfo = {}
 

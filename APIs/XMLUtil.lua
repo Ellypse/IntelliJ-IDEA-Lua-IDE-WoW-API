@@ -1,4 +1,4 @@
----@class XMLUtil
+---@class C_XMLUtil @XMLUtil
 C_XMLUtil = {}
 
 ---@param name cstring 
@@ -12,19 +12,19 @@ function C_XMLUtil.GetTemplates() end
 ---@field type cstring 
 ---@field width number 
 ---@field height number 
----@field keyValues table 
+---@field keyValues XMLTemplateKeyValue 
 ---@field inherits cstring|nil 
-local XMLTemplateInfo = {}
+XMLTemplateInfo = {}
 
 ---@class XMLTemplateKeyValue
 ---@field key cstring 
 ---@field keyType cstring 
 ---@field type cstring 
 ---@field value cstring 
-local XMLTemplateKeyValue = {}
+XMLTemplateKeyValue = {}
 
 ---@class XMLTemplateListInfo
 ---@field name cstring 
 ---@field type cstring 
-local XMLTemplateListInfo = {}
+XMLTemplateListInfo = {}
 

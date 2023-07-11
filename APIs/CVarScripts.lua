@@ -1,4 +1,4 @@
----@class CVarScripts
+---@class C_CVar @CVarScripts
 C_CVar = {}
 
 ---@param name cstring 

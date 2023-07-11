@@ -1,4 +1,4 @@
----@class TradeSkillUI
+---@class C_TradeSkillUI @TradeSkillUI
 C_TradeSkillUI = {}
 
 function C_TradeSkillUI.CloseTradeSkill() end
@@ -344,8 +344,6 @@ function C_TradeSkillUI.SetShowUnlearned(flag) end
 function C_TradeSkillUI.SetSourceTypeFilter(sourceTypeFilter) end
 
 ---@class CraftingReagentItemFlag
----@field TooltipShowsAsStatModifications number @ Default value is [ 0 ]
-
----@type CraftingReagentItemFlag 
-local CraftingReagentItemFlag = {}
+CraftingReagentItemFlag = {}
+CraftingReagentItemFlag.TooltipShowsAsStatModifications = 0
 

@@ -1,4 +1,4 @@
----@class ContentTracking
+---@class C_ContentTracking @ContentTracking
 C_ContentTracking = {}
 
 ---@param trackableType ContentTrackingType 

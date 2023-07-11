@@ -1,4 +1,4 @@
----@class GenericWidgetDisplay
+---@class C_GenericWidgetDisplay @GenericWidgetDisplay
 C_GenericWidgetDisplay = {}
 
 function C_GenericWidgetDisplay.Acknowledge() end
@@ -13,5 +13,5 @@ function C_GenericWidgetDisplay.Close() end
 ---@field frameHeight number 
 ---@field extraButtonText string|nil 
 ---@field closeButtonText string|nil 
-local GenericWidgetDisplayFrameInfo = {}
+GenericWidgetDisplayFrameInfo = {}
 

@@ -1,4 +1,4 @@
----@class KeyBindings
+---@class C_KeyBindings @KeyBindings
 C_KeyBindings = {}
 
 ---@param action cstring 
@@ -10,17 +10,13 @@ function C_KeyBindings.GetBindingIndex(action) end
 function C_KeyBindings.GetCustomBindingType(bindingIndex) end
 
 ---@class BindingSet
----@field Default number @ Default value is [ 0 ]
----@field Account number @ Default value is [ 1 ]
----@field Character number @ Default value is [ 2 ]
----@field Current number @ Default value is [ 3 ]
-
----@type BindingSet 
-local BindingSet = {}
+BindingSet = {}
+BindingSet.Default = 0
+BindingSet.Account = 1
+BindingSet.Character = 2
+BindingSet.Current = 3
 
 ---@class CustomBindingType
----@field VoicePushToTalk number @ Default value is [ 0 ]
-
----@type CustomBindingType 
-local CustomBindingType = {}
+CustomBindingType = {}
+CustomBindingType.VoicePushToTalk = 0
 

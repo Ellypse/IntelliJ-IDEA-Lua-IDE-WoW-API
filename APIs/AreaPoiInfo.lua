@@ -1,4 +1,4 @@
----@class AreaPoiInfo
+---@class C_AreaPoiInfo @AreaPoiInfo
 C_AreaPoiInfo = {}
 
 ---@param uiMapID number 
@@ -29,10 +29,10 @@ function C_AreaPoiInfo.IsAreaPOITimed(areaPoiID) end
 ---@field widgetSetID number|nil 
 ---@field atlasName string|nil 
 ---@field uiTextureKit textureKit|nil 
----@field shouldGlow bool 
+---@field shouldGlow boolean 
 ---@field factionID number|nil 
----@field isPrimaryMapForPOI bool 
----@field isAlwaysOnFlightmap bool 
----@field addPaddingAboveWidgets bool|nil 
-local AreaPOIInfo = {}
+---@field isPrimaryMapForPOI boolean 
+---@field isAlwaysOnFlightmap boolean 
+---@field addPaddingAboveWidgets boolean|nil 
+AreaPOIInfo = {}
 

@@ -1,4 +1,4 @@
----@class MountJournal
+---@class C_MountJournal @MountJournal
 C_MountJournal = {}
 
 ---@param itemLocation ItemLocation 
@@ -158,52 +158,48 @@ function C_MountJournal.SetTypeFilter(filterIndex, isChecked) end
 function C_MountJournal.SummonByID(mountID) end
 
 ---@class MountType
----@field Ground number @ Default value is [ 0 ]
----@field Flying number @ Default value is [ 1 ]
----@field Aquatic number @ Default value is [ 2 ]
----@field Dragonriding number @ Default value is [ 3 ]
-
----@type MountType 
-local MountType = {}
+MountType = {}
+MountType.Ground = 0
+MountType.Flying = 1
+MountType.Aquatic = 2
+MountType.Dragonriding = 3
 
 ---@class MountTypeFlag
----@field IsFlyingMount number @ Default value is [ 1 ]
----@field IsAquaticMount number @ Default value is [ 2 ]
----@field IsDragonRidingMount number @ Default value is [ 4 ]
-
----@type MountTypeFlag 
-local MountTypeFlag = {}
+MountTypeFlag = {}
+MountTypeFlag.IsFlyingMount = 1
+MountTypeFlag.IsAquaticMount = 2
+MountTypeFlag.IsDragonRidingMount = 4
 
 ---@class MountCreatureDisplayInfo
 ---@field creatureDisplayID number 
----@field isVisible bool 
-local MountCreatureDisplayInfo = {}
+---@field isVisible boolean 
+MountCreatureDisplayInfo = {}
 
 ---@class MountInfo
 ---@field name cstring 
 ---@field spellID number 
 ---@field icon fileID 
----@field isActive bool 
----@field isUsable bool 
+---@field isActive boolean 
+---@field isUsable boolean 
 ---@field sourceType number 
----@field isFavorite bool 
----@field isFactionSpecific bool 
+---@field isFavorite boolean 
+---@field isFactionSpecific boolean 
 ---@field faction number|nil 
----@field shouldHideOnChar bool 
----@field isCollected bool 
+---@field shouldHideOnChar boolean 
+---@field isCollected boolean 
 ---@field mountID number 
----@field isForDragonriding bool 
-local MountInfo = {}
+---@field isForDragonriding boolean 
+MountInfo = {}
 
 ---@class MountInfoExtra
 ---@field creatureDisplayInfoID number|nil 
 ---@field description cstring 
 ---@field source cstring 
----@field isSelfMount bool 
+---@field isSelfMount boolean 
 ---@field mountTypeID number 
 ---@field uiModelSceneID number 
 ---@field animID number 
 ---@field spellVisualKitID number 
----@field disablePlayerMountPreview bool 
-local MountInfoExtra = {}
+---@field disablePlayerMountPreview boolean 
+MountInfoExtra = {}
 

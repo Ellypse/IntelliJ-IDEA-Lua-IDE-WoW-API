@@ -1,4 +1,4 @@
----@class AddOns
+---@class C_AddOns @AddOns
 C_AddOns = {}
 
 ---@param name uiAddon 

@@ -1,4 +1,4 @@
----@class LevelSquish
+---@class C_LevelSquish @LevelSquish
 C_LevelSquish = {}
 
 ---@param level number 

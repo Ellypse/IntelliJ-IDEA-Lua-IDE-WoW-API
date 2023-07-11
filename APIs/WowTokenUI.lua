@@ -1,4 +1,4 @@
----@class WowTokenUI
+---@class C_WowTokenUI @WowTokenUI
 C_WowTokenUI = {}
 
 ---@param tokenGUID WOWGUID 

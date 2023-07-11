@@ -1,4 +1,4 @@
----@class TooltipInfo
+---@class C_TooltipInfo @TooltipInfo
 C_TooltipInfo = {}
 
 ---@param achievementID number 

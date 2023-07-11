@@ -1,4 +1,4 @@
----@class UserFeedback
+---@class C_UserFeedback @UserFeedback
 C_UserFeedback = {}
 
 ---@param bugInfo cstring 

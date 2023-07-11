@@ -1,4 +1,4 @@
----@class BarberShop
+---@class C_BarberShop @BarberShop
 C_BarberShop = {}
 
 ---@return boolean success

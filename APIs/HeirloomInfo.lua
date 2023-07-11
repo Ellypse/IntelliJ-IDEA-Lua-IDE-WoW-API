@@ -1,4 +1,4 @@
----@class HeirloomInfo
+---@class C_HeirloomInfo @HeirloomInfo
 C_HeirloomInfo = {}
 
 ---@return boolean areAllCollectionFiltersChecked

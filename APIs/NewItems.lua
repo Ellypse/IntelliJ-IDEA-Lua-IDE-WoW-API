@@ -1,4 +1,4 @@
----@class NewItems
+---@class C_NewItems @NewItems
 C_NewItems = {}
 
 function C_NewItems.ClearAll() end

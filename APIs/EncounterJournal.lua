@@ -1,4 +1,4 @@
----@class EncounterJournal
+---@class C_EncounterJournal @EncounterJournal
 C_EncounterJournal = {}
 
 ---@param uiMapID number 
@@ -69,25 +69,23 @@ function C_EncounterJournal.SetSlotFilter(filterSlot) end
 function C_EncounterJournal.SetTab(tabIdx) end
 
 ---@class ItemSlotFilterType
----@field Head number @ Default value is [ 0 ]
----@field Neck number @ Default value is [ 1 ]
----@field Shoulder number @ Default value is [ 2 ]
----@field Cloak number @ Default value is [ 3 ]
----@field Chest number @ Default value is [ 4 ]
----@field Wrist number @ Default value is [ 5 ]
----@field Hand number @ Default value is [ 6 ]
----@field Waist number @ Default value is [ 7 ]
----@field Legs number @ Default value is [ 8 ]
----@field Feet number @ Default value is [ 9 ]
----@field MainHand number @ Default value is [ 10 ]
----@field OffHand number @ Default value is [ 11 ]
----@field Finger number @ Default value is [ 12 ]
----@field Trinket number @ Default value is [ 13 ]
----@field Other number @ Default value is [ 14 ]
----@field NoFilter number @ Default value is [ 15 ]
-
----@type ItemSlotFilterType 
-local ItemSlotFilterType = {}
+ItemSlotFilterType = {}
+ItemSlotFilterType.Head = 0
+ItemSlotFilterType.Neck = 1
+ItemSlotFilterType.Shoulder = 2
+ItemSlotFilterType.Cloak = 3
+ItemSlotFilterType.Chest = 4
+ItemSlotFilterType.Wrist = 5
+ItemSlotFilterType.Hand = 6
+ItemSlotFilterType.Waist = 7
+ItemSlotFilterType.Legs = 8
+ItemSlotFilterType.Feet = 9
+ItemSlotFilterType.MainHand = 10
+ItemSlotFilterType.OffHand = 11
+ItemSlotFilterType.Finger = 12
+ItemSlotFilterType.Trinket = 13
+ItemSlotFilterType.Other = 14
+ItemSlotFilterType.NoFilter = 15
 
 ---@class DungeonEntranceMapInfo
 ---@field areaPoiID number 
@@ -96,7 +94,7 @@ local ItemSlotFilterType = {}
 ---@field description cstring 
 ---@field atlasName string 
 ---@field journalInstanceID number 
-local DungeonEntranceMapInfo = {}
+DungeonEntranceMapInfo = {}
 
 ---@class EncounterJournalItemInfo
 ---@field itemID number 
@@ -108,18 +106,18 @@ local DungeonEntranceMapInfo = {}
 ---@field slot string|nil 
 ---@field armorType string|nil 
 ---@field link string|nil 
----@field handError bool|nil 
----@field weaponTypeError bool|nil 
----@field displayAsPerPlayerLoot bool|nil 
----@field displayAsVeryRare bool|nil 
----@field displayAsExtremelyRare bool|nil 
-local EncounterJournalItemInfo = {}
+---@field handError boolean|nil 
+---@field weaponTypeError boolean|nil 
+---@field displayAsPerPlayerLoot boolean|nil 
+---@field displayAsVeryRare boolean|nil 
+---@field displayAsExtremelyRare boolean|nil 
+EncounterJournalItemInfo = {}
 
 ---@class EncounterJournalMapEncounterInfo
 ---@field encounterID number 
 ---@field mapX number 
 ---@field mapY number 
-local EncounterJournalMapEncounterInfo = {}
+EncounterJournalMapEncounterInfo = {}
 
 ---@class EncounterJournalSectionInfo
 ---@field spellID number 
@@ -131,8 +129,8 @@ local EncounterJournalMapEncounterInfo = {}
 ---@field uiModelSceneID number 
 ---@field siblingSectionID number|nil 
 ---@field firstChildSectionID number|nil 
----@field filteredByDifficulty bool 
+---@field filteredByDifficulty boolean 
 ---@field link string 
----@field startsOpen bool 
-local EncounterJournalSectionInfo = {}
+---@field startsOpen boolean 
+EncounterJournalSectionInfo = {}
 

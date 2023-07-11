@@ -1,4 +1,4 @@
----@class PerksProgram
+---@class C_PerksProgram @PerksProgram
 C_PerksProgram = {}
 
 function C_PerksProgram.ClearFrozenPerksVendorItem() end
@@ -71,7 +71,7 @@ function C_PerksProgram.SetFrozenPerksVendorItem() end
 ---@field pitch number|nil 
 ---@field roll number|nil 
 ---@field normalizedScale number|nil 
-local ModelSceneActorData = {}
+ModelSceneActorData = {}
 
 ---@class ModelSceneCameraData
 ---@field cameraID number|nil 
@@ -85,12 +85,12 @@ local ModelSceneActorData = {}
 ---@field defaultZoom number|nil 
 ---@field zoomMin number|nil 
 ---@field zoomMax number|nil 
-local ModelSceneCameraData = {}
+ModelSceneCameraData = {}
 
 ---@class PerksProgramItemDisplayInfo
 ---@field overrideModelSceneID number|nil 
 ---@field creatureDisplayInfoID number|nil 
-local PerksProgramItemDisplayInfo = {}
+PerksProgramItemDisplayInfo = {}
 
 ---@class PerksProgramPendingChestRewards
 ---@field rewardTypeID number 
@@ -99,22 +99,22 @@ local PerksProgramItemDisplayInfo = {}
 ---@field monthRewarded string|nil 
 ---@field activityMonthID number 
 ---@field thresholdOrderIndex number 
-local PerksProgramPendingChestRewards = {}
+PerksProgramPendingChestRewards = {}
 
 ---@class PerksVendorCategoryInfo
 ---@field ID number 
 ---@field displayName cstring 
 ---@field defaultUIModelSceneID number 
-local PerksVendorCategoryInfo = {}
+PerksVendorCategoryInfo = {}
 
 ---@class PerksVendorItemInfo
 ---@field name string 
 ---@field perksVendorCategoryID number 
 ---@field description string 
 ---@field timeRemaining time_t 
----@field purchased bool 
----@field refundable bool 
----@field pending bool 
+---@field purchased boolean 
+---@field refundable boolean 
+---@field pending boolean 
 ---@field price number 
 ---@field perksVendorItemID number 
 ---@field itemID number 
@@ -123,5 +123,5 @@ local PerksVendorCategoryInfo = {}
 ---@field speciesID number 
 ---@field transmogSetID number 
 ---@field itemModifiedAppearanceID number 
-local PerksVendorItemInfo = {}
+PerksVendorItemInfo = {}
 

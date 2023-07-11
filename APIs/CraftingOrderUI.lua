@@ -1,4 +1,4 @@
----@class CraftingOrderUI
+---@class C_CraftingOrders @CraftingOrderUI
 C_CraftingOrders = {}
 
 ---@return boolean areNotesDisabled
@@ -122,20 +122,20 @@ function C_CraftingOrders.UpdateIgnoreList() end
 ---@class CraftingOrderRequestInfo
 ---@field orderType CraftingOrderType 
 ---@field selectedSkillLineAbility number|nil 
----@field searchFavorites bool 
----@field initialNonPublicSearch bool 
+---@field searchFavorites boolean 
+---@field initialNonPublicSearch boolean 
 ---@field primarySort CraftingOrderSortInfo 
 ---@field secondarySort CraftingOrderSortInfo 
----@field forCrafter bool 
+---@field forCrafter boolean 
 ---@field offset number 
 ---@field callback CraftingOrderRequestCallback 
 ---@field profession Profession|nil 
-local CraftingOrderRequestInfo = {}
+CraftingOrderRequestInfo = {}
 
 ---@class CraftingOrderRequestMyOrdersInfo
 ---@field primarySort CraftingOrderSortInfo 
 ---@field secondarySort CraftingOrderSortInfo 
 ---@field offset number 
 ---@field callback CraftingOrderRequestMyOrdersCallback 
-local CraftingOrderRequestMyOrdersInfo = {}
+CraftingOrderRequestMyOrdersInfo = {}
 

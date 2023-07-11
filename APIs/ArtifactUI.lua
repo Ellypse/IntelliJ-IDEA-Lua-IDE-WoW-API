@@ -1,4 +1,4 @@
----@class ArtifactUI
+---@class C_ArtifactUI @ArtifactUI
 C_ArtifactUI = {}
 
 ---@param powerID number 
@@ -224,22 +224,22 @@ function C_ArtifactUI.ShouldSuppressForgeRotation() end
 ---@field artifactAppearanceID number 
 ---@field appearanceName string 
 ---@field displayIndex number 
----@field unlocked bool 
+---@field unlocked boolean 
 ---@field failureDescription string|nil 
 ---@field uiCameraID number 
 ---@field altHandCameraID number|nil 
 ---@field swatchColor colorRGB 
 ---@field modelOpacity number 
 ---@field modelSaturation number 
----@field obtainable bool 
-local ArtifactAppearanceInfo = {}
+---@field obtainable boolean 
+ArtifactAppearanceInfo = {}
 
 ---@class ArtifactAppearanceSetInfo
 ---@field artifactAppearanceSetID number 
 ---@field appearanceSetName string 
 ---@field appearanceSetDescription string 
 ---@field numAppearances number 
-local ArtifactAppearanceSetInfo = {}
+ArtifactAppearanceSetInfo = {}
 
 ---@class ArtifactArtInfo
 ---@field textureKit textureKit 
@@ -249,7 +249,7 @@ local ArtifactAppearanceSetInfo = {}
 ---@field barDisconnectedColor colorRGB 
 ---@field uiModelSceneID number 
 ---@field spellVisualKitID number 
-local ArtifactArtInfo = {}
+ArtifactArtInfo = {}
 
 ---@class ArtifactInfo
 ---@field itemID number 
@@ -263,15 +263,15 @@ local ArtifactArtInfo = {}
 ---@field appearanceModID number 
 ---@field itemAppearanceID number|nil 
 ---@field altItemAppearanceID number|nil 
----@field altOnTop bool 
+---@field altOnTop boolean 
 ---@field tier luaIndex 
-local ArtifactInfo = {}
+ArtifactInfo = {}
 
 ---@class ArtifactMetaPowerInfo
 ---@field spellID number 
 ---@field powerCost number 
 ---@field currentRank number 
-local ArtifactMetaPowerInfo = {}
+ArtifactMetaPowerInfo = {}
 
 ---@class ArtifactPowerInfo
 ---@field spellID number 
@@ -280,20 +280,20 @@ local ArtifactMetaPowerInfo = {}
 ---@field maxRank number 
 ---@field bonusRanks number 
 ---@field numMaxRankBonusFromTier number 
----@field prereqsMet bool 
----@field isStart bool 
----@field isGoldMedal bool 
----@field isFinal bool 
+---@field prereqsMet boolean 
+---@field isStart boolean 
+---@field isGoldMedal boolean 
+---@field isFinal boolean 
 ---@field tier luaIndex 
 ---@field position vector2 
 ---@field offset vector2|nil 
 ---@field linearIndex luaIndex|nil 
-local ArtifactPowerInfo = {}
+ArtifactPowerInfo = {}
 
 ---@class ArtifactRelicInfo
 ---@field name string 
 ---@field icon fileID 
 ---@field slotTypeName cstring @ Matches the socket identifiers used in the socketing system.
 ---@field link string 
-local ArtifactRelicInfo = {}
+ArtifactRelicInfo = {}
 

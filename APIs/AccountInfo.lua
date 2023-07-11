@@ -1,4 +1,4 @@
----@class AccountInfo
+---@class C_AccountInfo @AccountInfo
 C_AccountInfo = {}
 
 ---@param battleNetAccountGUID WOWGUID 

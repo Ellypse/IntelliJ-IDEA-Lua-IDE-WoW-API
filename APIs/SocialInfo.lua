@@ -1,4 +1,4 @@
----@class SocialInfo
+---@class C_Social @SocialInfo
 C_Social = {}
 
 ---@return number, string, string, fileID achievementID, achievementName, achievementDesc, iconFileID

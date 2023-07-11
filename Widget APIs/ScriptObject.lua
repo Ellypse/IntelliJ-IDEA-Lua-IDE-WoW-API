@@ -5,10 +5,6 @@
 --- 
 --- @See http://wowprogramming.com/docs/widgets/ScriptObject
 
----@class ScriptObject
-ScriptObject = {};
-
-
 --- Sets the widget's handler function for a script
 --- @param scriptType string
 --- A script type; see scripts for details
@@ -19,14 +15,14 @@ function ScriptObject:SetScript(scriptType, handler) end
 --- Returns whether the widget supports a script handler
 --- @param scriptType string
 --- A script type; see scripts reference for details
---- @return hasScript
-function  ScriptObject:HasScript(scriptType) end
+--- @return hasScript |boolean
+function ScriptObject:HasScript(scriptType) end
 
 --- Returns the widget script handler
 --- @param scriptType string
 --- A script type; see scripts reference for details
 --- @return function
-function  ScriptObject:GetScript(scriptType) end
+function ScriptObject:GetScript(scriptType) end
 
 --- Securely hooks a script handler. Equivalent to hooksecurefunc() for script handlers; allows one to "post-hook" a secure handler without tainting the original.The original handler will still be called, but the handler supplied will also be called after the original, with the same arguments. Return values from the supplied handler are discarded. Note that there is no API to remove a hook from a handler: any hooks applied will remain in place until the UI is reloaded.If there was no prior script handler set, then this simply sets the new function as the handler for the script type.
 --- @param scriptType string

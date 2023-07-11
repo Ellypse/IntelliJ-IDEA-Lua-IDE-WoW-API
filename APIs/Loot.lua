@@ -1,4 +1,4 @@
----@class Loot
+---@class C_Loot @Loot
 C_Loot = {}
 
 ---@param rollID number 

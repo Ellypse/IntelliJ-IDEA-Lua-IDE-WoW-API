@@ -1,4 +1,4 @@
----@class BattleNet
+---@class C_BattleNet @BattleNet
 C_BattleNet = {}
 
 ---@param guid WOWGUID 
@@ -36,26 +36,26 @@ function C_BattleNet.GetGameAccountInfoByID(id) end
 ---@field bnetAccountID number 
 ---@field accountName string 
 ---@field battleTag string 
----@field isFriend bool 
----@field isBattleTagFriend bool 
+---@field isFriend boolean 
+---@field isBattleTagFriend boolean 
 ---@field lastOnlineTime number 
----@field isAFK bool 
----@field isDND bool 
----@field isFavorite bool 
----@field appearOffline bool 
+---@field isAFK boolean 
+---@field isDND boolean 
+---@field isFavorite boolean 
+---@field appearOffline boolean 
 ---@field customMessage string 
 ---@field customMessageTime number 
 ---@field note string 
 ---@field rafLinkType RafLinkType 
 ---@field gameAccountInfo BNetGameAccountInfo 
-local BNetAccountInfo = {}
+BNetAccountInfo = {}
 
 ---@class BNetGameAccountInfo
 ---@field gameAccountID number 
 ---@field clientProgram string 
----@field isOnline bool 
----@field isGameBusy bool 
----@field isGameAFK bool 
+---@field isOnline boolean 
+---@field isGameBusy boolean 
+---@field isGameAFK boolean 
 ---@field wowProjectID number|nil 
 ---@field characterName string|nil 
 ---@field realmName string|nil 
@@ -68,10 +68,10 @@ local BNetAccountInfo = {}
 ---@field characterLevel number|nil 
 ---@field richPresence string|nil 
 ---@field playerGuid WOWGUID|nil 
----@field isWowMobile bool 
----@field canSummon bool 
----@field hasFocus bool 
+---@field isWowMobile boolean 
+---@field canSummon boolean 
+---@field hasFocus boolean 
 ---@field regionID number 
----@field isInCurrentRegion bool 
-local BNetGameAccountInfo = {}
+---@field isInCurrentRegion boolean 
+BNetGameAccountInfo = {}
 

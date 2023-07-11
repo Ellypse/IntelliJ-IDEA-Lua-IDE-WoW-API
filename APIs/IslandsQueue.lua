@@ -1,4 +1,4 @@
----@class IslandsQueue
+---@class C_IslandsQueue @IslandsQueue
 C_IslandsQueue = {}
 
 function C_IslandsQueue.CloseIslandsQueueScreen() end
@@ -21,5 +21,5 @@ function C_IslandsQueue.RequestPreloadRewardData(questId) end
 ---@class IslandsQueueDifficultyInfo
 ---@field difficultyId number 
 ---@field previewRewardQuestId number 
-local IslandsQueueDifficultyInfo = {}
+IslandsQueueDifficultyInfo = {}
 

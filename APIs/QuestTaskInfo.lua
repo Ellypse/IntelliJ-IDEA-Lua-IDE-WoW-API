@@ -1,4 +1,4 @@
----@class QuestTaskInfo
+---@class C_TaskQuest @QuestTaskInfo
 C_TaskQuest = {}
 
 ---@param uiMapID number 
@@ -52,12 +52,12 @@ function C_TaskQuest.RequestPreloadRewardData(questID) end
 ---@field questId number 
 ---@field x number 
 ---@field y number 
----@field inProgress bool 
+---@field inProgress boolean 
 ---@field numObjectives number 
 ---@field mapID number 
----@field isQuestStart bool 
----@field isDaily bool 
----@field isCombatAllyQuest bool 
+---@field isQuestStart boolean 
+---@field isDaily boolean 
+---@field isCombatAllyQuest boolean 
 ---@field childDepth number|nil 
-local TaskPOIData = {}
+TaskPOIData = {}
 

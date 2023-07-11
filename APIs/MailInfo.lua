@@ -1,4 +1,4 @@
----@class MailInfo
+---@class C_Mail @MailInfo
 C_Mail = {}
 
 ---@return boolean, number canCheckInbox, secondsUntilAllowed

@@ -1,4 +1,4 @@
----@class InGameNavigation
+---@class C_Navigation @InGameNavigation
 C_Navigation = {}
 
 ---@return number distance
@@ -17,11 +17,9 @@ function C_Navigation.HasValidScreenPosition() end
 function C_Navigation.WasClampedToScreen() end
 
 ---@class NavigationState
----@field Invalid number @ Default value is [ 0 ]
----@field Occluded number @ Default value is [ 1 ]
----@field InRange number @ Default value is [ 2 ]
----@field Disabled number @ Default value is [ 3 ]
-
----@type NavigationState 
-local NavigationState = {}
+NavigationState = {}
+NavigationState.Invalid = 0
+NavigationState.Occluded = 1
+NavigationState.InRange = 2
+NavigationState.Disabled = 3
 

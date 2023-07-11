@@ -1,4 +1,4 @@
----@class AzeriteItem
+---@class C_AzeriteItem @AzeriteItem
 C_AzeriteItem = {}
 
 ---@return AzeriteItemLocation activeAzeriteItemLocation
@@ -40,5 +40,5 @@ function C_AzeriteItem.IsUnlimitedLevelingUnlocked() end
 ---@class UnlockedAzeriteEmpoweredItems
 ---@field unlockedItem AzeriteEmpoweredItemLocation 
 ---@field tierIndex luaIndex 
-local UnlockedAzeriteEmpoweredItems = {}
+UnlockedAzeriteEmpoweredItems = {}
 

@@ -1,4 +1,4 @@
----@class ScrappingMachineUI
+---@class C_ScrappingMachineUI @ScrappingMachineUI
 C_ScrappingMachineUI = {}
 
 function C_ScrappingMachineUI.CloseScrappingMachine() end

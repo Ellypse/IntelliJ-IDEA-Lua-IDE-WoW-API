@@ -1,4 +1,4 @@
----@class Club
+---@class C_Club @Club
 C_Club = {}
 
 ---@param clubId ClubId 
@@ -374,156 +374,136 @@ function C_Club.UnfocusStream(clubId, streamId) end
 function C_Club.ValidateText(clubType, text, clubFieldType) end
 
 ---@class ClubActionType
----@field ErrorClubActionSubscribe number @ Default value is [ 0 ]
----@field ErrorClubActionCreate number @ Default value is [ 1 ]
----@field ErrorClubActionEdit number @ Default value is [ 2 ]
----@field ErrorClubActionDestroy number @ Default value is [ 3 ]
----@field ErrorClubActionLeave number @ Default value is [ 4 ]
----@field ErrorClubActionCreateTicket number @ Default value is [ 5 ]
----@field ErrorClubActionDestroyTicket number @ Default value is [ 6 ]
----@field ErrorClubActionRedeemTicket number @ Default value is [ 7 ]
----@field ErrorClubActionGetTicket number @ Default value is [ 8 ]
----@field ErrorClubActionGetTickets number @ Default value is [ 9 ]
----@field ErrorClubActionGetBans number @ Default value is [ 10 ]
----@field ErrorClubActionGetInvitations number @ Default value is [ 11 ]
----@field ErrorClubActionRevokeInvitation number @ Default value is [ 12 ]
----@field ErrorClubActionAcceptInvitation number @ Default value is [ 13 ]
----@field ErrorClubActionDeclineInvitation number @ Default value is [ 14 ]
----@field ErrorClubActionCreateStream number @ Default value is [ 15 ]
----@field ErrorClubActionEditStream number @ Default value is [ 16 ]
----@field ErrorClubActionDestroyStream number @ Default value is [ 17 ]
----@field ErrorClubActionInviteMember number @ Default value is [ 18 ]
----@field ErrorClubActionEditMember number @ Default value is [ 19 ]
----@field ErrorClubActionEditMemberNote number @ Default value is [ 20 ]
----@field ErrorClubActionKickMember number @ Default value is [ 21 ]
----@field ErrorClubActionAddBan number @ Default value is [ 22 ]
----@field ErrorClubActionRemoveBan number @ Default value is [ 23 ]
----@field ErrorClubActionCreateMessage number @ Default value is [ 24 ]
----@field ErrorClubActionEditMessage number @ Default value is [ 25 ]
----@field ErrorClubActionDestroyMessage number @ Default value is [ 26 ]
-
----@type ClubActionType 
-local ClubActionType = {}
+ClubActionType = {}
+ClubActionType.ErrorClubActionSubscribe = 0
+ClubActionType.ErrorClubActionCreate = 1
+ClubActionType.ErrorClubActionEdit = 2
+ClubActionType.ErrorClubActionDestroy = 3
+ClubActionType.ErrorClubActionLeave = 4
+ClubActionType.ErrorClubActionCreateTicket = 5
+ClubActionType.ErrorClubActionDestroyTicket = 6
+ClubActionType.ErrorClubActionRedeemTicket = 7
+ClubActionType.ErrorClubActionGetTicket = 8
+ClubActionType.ErrorClubActionGetTickets = 9
+ClubActionType.ErrorClubActionGetBans = 10
+ClubActionType.ErrorClubActionGetInvitations = 11
+ClubActionType.ErrorClubActionRevokeInvitation = 12
+ClubActionType.ErrorClubActionAcceptInvitation = 13
+ClubActionType.ErrorClubActionDeclineInvitation = 14
+ClubActionType.ErrorClubActionCreateStream = 15
+ClubActionType.ErrorClubActionEditStream = 16
+ClubActionType.ErrorClubActionDestroyStream = 17
+ClubActionType.ErrorClubActionInviteMember = 18
+ClubActionType.ErrorClubActionEditMember = 19
+ClubActionType.ErrorClubActionEditMemberNote = 20
+ClubActionType.ErrorClubActionKickMember = 21
+ClubActionType.ErrorClubActionAddBan = 22
+ClubActionType.ErrorClubActionRemoveBan = 23
+ClubActionType.ErrorClubActionCreateMessage = 24
+ClubActionType.ErrorClubActionEditMessage = 25
+ClubActionType.ErrorClubActionDestroyMessage = 26
 
 ---@class ClubErrorType
----@field ErrorCommunitiesNone number @ Default value is [ 0 ]
----@field ErrorCommunitiesUnknown number @ Default value is [ 1 ]
----@field ErrorCommunitiesNeutralFaction number @ Default value is [ 2 ]
----@field ErrorCommunitiesUnknownRealm number @ Default value is [ 3 ]
----@field ErrorCommunitiesBadTarget number @ Default value is [ 4 ]
----@field ErrorCommunitiesWrongFaction number @ Default value is [ 5 ]
----@field ErrorCommunitiesRestricted number @ Default value is [ 6 ]
----@field ErrorCommunitiesIgnored number @ Default value is [ 7 ]
----@field ErrorCommunitiesGuild number @ Default value is [ 8 ]
----@field ErrorCommunitiesWrongRegion number @ Default value is [ 9 ]
----@field ErrorCommunitiesUnknownTicket number @ Default value is [ 10 ]
----@field ErrorCommunitiesMissingShortName number @ Default value is [ 11 ]
----@field ErrorCommunitiesProfanity number @ Default value is [ 12 ]
----@field ErrorCommunitiesTrial number @ Default value is [ 13 ]
----@field ErrorCommunitiesVeteranTrial number @ Default value is [ 14 ]
----@field ErrorCommunitiesChatMute number @ Default value is [ 15 ]
----@field ErrorClubFull number @ Default value is [ 16 ]
----@field ErrorClubNoClub number @ Default value is [ 17 ]
----@field ErrorClubNotMember number @ Default value is [ 18 ]
----@field ErrorClubAlreadyMember number @ Default value is [ 19 ]
----@field ErrorClubNoSuchMember number @ Default value is [ 20 ]
----@field ErrorClubNoSuchInvitation number @ Default value is [ 21 ]
----@field ErrorClubInvitationAlreadyExists number @ Default value is [ 22 ]
----@field ErrorClubInvalidRoleID number @ Default value is [ 23 ]
----@field ErrorClubInsufficientPrivileges number @ Default value is [ 24 ]
----@field ErrorClubTooManyClubsJoined number @ Default value is [ 25 ]
----@field ErrorClubVoiceFull number @ Default value is [ 26 ]
----@field ErrorClubStreamNoStream number @ Default value is [ 27 ]
----@field ErrorClubStreamInvalidName number @ Default value is [ 28 ]
----@field ErrorClubStreamCountAtMin number @ Default value is [ 29 ]
----@field ErrorClubStreamCountAtMax number @ Default value is [ 30 ]
----@field ErrorClubMemberHasRequiredRole number @ Default value is [ 31 ]
----@field ErrorClubSentInvitationCountAtMax number @ Default value is [ 32 ]
----@field ErrorClubReceivedInvitationCountAtMax number @ Default value is [ 33 ]
----@field ErrorClubTargetIsBanned number @ Default value is [ 34 ]
----@field ErrorClubBanAlreadyExists number @ Default value is [ 35 ]
----@field ErrorClubBanCountAtMax number @ Default value is [ 36 ]
----@field ErrorClubTicketCountAtMax number @ Default value is [ 37 ]
----@field ErrorClubTicketNoSuchTicket number @ Default value is [ 38 ]
----@field ErrorClubTicketHasConsumedAllowedRedeemCount number @ Default value is [ 39 ]
----@field ErrorClubDoesntAllowCrossFaction number @ Default value is [ 40 ]
----@field ErrorClubEditHasCrossFactionMembers number @ Default value is [ 41 ]
-
----@type ClubErrorType 
-local ClubErrorType = {}
+ClubErrorType = {}
+ClubErrorType.ErrorCommunitiesNone = 0
+ClubErrorType.ErrorCommunitiesUnknown = 1
+ClubErrorType.ErrorCommunitiesNeutralFaction = 2
+ClubErrorType.ErrorCommunitiesUnknownRealm = 3
+ClubErrorType.ErrorCommunitiesBadTarget = 4
+ClubErrorType.ErrorCommunitiesWrongFaction = 5
+ClubErrorType.ErrorCommunitiesRestricted = 6
+ClubErrorType.ErrorCommunitiesIgnored = 7
+ClubErrorType.ErrorCommunitiesGuild = 8
+ClubErrorType.ErrorCommunitiesWrongRegion = 9
+ClubErrorType.ErrorCommunitiesUnknownTicket = 10
+ClubErrorType.ErrorCommunitiesMissingShortName = 11
+ClubErrorType.ErrorCommunitiesProfanity = 12
+ClubErrorType.ErrorCommunitiesTrial = 13
+ClubErrorType.ErrorCommunitiesVeteranTrial = 14
+ClubErrorType.ErrorCommunitiesChatMute = 15
+ClubErrorType.ErrorClubFull = 16
+ClubErrorType.ErrorClubNoClub = 17
+ClubErrorType.ErrorClubNotMember = 18
+ClubErrorType.ErrorClubAlreadyMember = 19
+ClubErrorType.ErrorClubNoSuchMember = 20
+ClubErrorType.ErrorClubNoSuchInvitation = 21
+ClubErrorType.ErrorClubInvitationAlreadyExists = 22
+ClubErrorType.ErrorClubInvalidRoleID = 23
+ClubErrorType.ErrorClubInsufficientPrivileges = 24
+ClubErrorType.ErrorClubTooManyClubsJoined = 25
+ClubErrorType.ErrorClubVoiceFull = 26
+ClubErrorType.ErrorClubStreamNoStream = 27
+ClubErrorType.ErrorClubStreamInvalidName = 28
+ClubErrorType.ErrorClubStreamCountAtMin = 29
+ClubErrorType.ErrorClubStreamCountAtMax = 30
+ClubErrorType.ErrorClubMemberHasRequiredRole = 31
+ClubErrorType.ErrorClubSentInvitationCountAtMax = 32
+ClubErrorType.ErrorClubReceivedInvitationCountAtMax = 33
+ClubErrorType.ErrorClubTargetIsBanned = 34
+ClubErrorType.ErrorClubBanAlreadyExists = 35
+ClubErrorType.ErrorClubBanCountAtMax = 36
+ClubErrorType.ErrorClubTicketCountAtMax = 37
+ClubErrorType.ErrorClubTicketNoSuchTicket = 38
+ClubErrorType.ErrorClubTicketHasConsumedAllowedRedeemCount = 39
+ClubErrorType.ErrorClubDoesntAllowCrossFaction = 40
+ClubErrorType.ErrorClubEditHasCrossFactionMembers = 41
 
 ---@class ClubFieldType
----@field ClubName number @ Default value is [ 0 ]
----@field ClubShortName number @ Default value is [ 1 ]
----@field ClubDescription number @ Default value is [ 2 ]
----@field ClubBroadcast number @ Default value is [ 3 ]
----@field ClubStreamName number @ Default value is [ 4 ]
----@field ClubStreamSubject number @ Default value is [ 5 ]
----@field NumTypes number @ Default value is [ 6 ]
-
----@type ClubFieldType 
-local ClubFieldType = {}
+ClubFieldType = {}
+ClubFieldType.ClubName = 0
+ClubFieldType.ClubShortName = 1
+ClubFieldType.ClubDescription = 2
+ClubFieldType.ClubBroadcast = 3
+ClubFieldType.ClubStreamName = 4
+ClubFieldType.ClubStreamSubject = 5
+ClubFieldType.NumTypes = 6
 
 ---@class ClubInvitationCandidateStatus
----@field Available number @ Default value is [ 0 ]
----@field InvitePending number @ Default value is [ 1 ]
----@field AlreadyMember number @ Default value is [ 2 ]
-
----@type ClubInvitationCandidateStatus 
-local ClubInvitationCandidateStatus = {}
+ClubInvitationCandidateStatus = {}
+ClubInvitationCandidateStatus.Available = 0
+ClubInvitationCandidateStatus.InvitePending = 1
+ClubInvitationCandidateStatus.AlreadyMember = 2
 
 ---@class ClubMemberPresence
----@field Unknown number @ Default value is [ 0 ]
----@field Online number @ Default value is [ 1 ]
----@field OnlineMobile number @ Default value is [ 2 ]
----@field Offline number @ Default value is [ 3 ]
----@field Away number @ Default value is [ 4 ]
----@field Busy number @ Default value is [ 5 ]
-
----@type ClubMemberPresence 
-local ClubMemberPresence = {}
+ClubMemberPresence = {}
+ClubMemberPresence.Unknown = 0
+ClubMemberPresence.Online = 1
+ClubMemberPresence.OnlineMobile = 2
+ClubMemberPresence.Offline = 3
+ClubMemberPresence.Away = 4
+ClubMemberPresence.Busy = 5
 
 ---@class ClubRemovedReason
----@field None number @ Default value is [ 0 ]
----@field Banned number @ Default value is [ 1 ]
----@field Removed number @ Default value is [ 2 ]
----@field ClubDestroyed number @ Default value is [ 3 ]
-
----@type ClubRemovedReason 
-local ClubRemovedReason = {}
+ClubRemovedReason = {}
+ClubRemovedReason.None = 0
+ClubRemovedReason.Banned = 1
+ClubRemovedReason.Removed = 2
+ClubRemovedReason.ClubDestroyed = 3
 
 ---@class ClubRestrictionReason
----@field None number @ Default value is [ 0 ]
----@field Unavailable number @ Default value is [ 1 ]
-
----@type ClubRestrictionReason 
-local ClubRestrictionReason = {}
+ClubRestrictionReason = {}
+ClubRestrictionReason.None = 0
+ClubRestrictionReason.Unavailable = 1
 
 ---@class ClubStreamNotificationFilter
----@field None number @ Default value is [ 0 ]
----@field Mention number @ Default value is [ 1 ]
----@field All number @ Default value is [ 2 ]
-
----@type ClubStreamNotificationFilter 
-local ClubStreamNotificationFilter = {}
+ClubStreamNotificationFilter = {}
+ClubStreamNotificationFilter.None = 0
+ClubStreamNotificationFilter.Mention = 1
+ClubStreamNotificationFilter.All = 2
 
 ---@class ClubStreamType
----@field General number @ Default value is [ 0 ]
----@field Guild number @ Default value is [ 1 ]
----@field Officer number @ Default value is [ 2 ]
----@field Other number @ Default value is [ 3 ]
-
----@type ClubStreamType 
-local ClubStreamType = {}
+ClubStreamType = {}
+ClubStreamType.General = 0
+ClubStreamType.Guild = 1
+ClubStreamType.Officer = 2
+ClubStreamType.Other = 3
 
 ---@class ClubType
----@field BattleNet number @ Default value is [ 0 ]
----@field Character number @ Default value is [ 1 ]
----@field Guild number @ Default value is [ 2 ]
----@field Other number @ Default value is [ 3 ]
-
----@type ClubType 
-local ClubType = {}
+ClubType = {}
+ClubType.BattleNet = 0
+ClubType.Character = 1
+ClubType.Guild = 2
+ClubType.Other = 3
 
 ---@class ClubInfo
 ---@field clubId ClubId 
@@ -536,29 +516,29 @@ local ClubType = {}
 ---@field memberCount number|nil 
 ---@field favoriteTimeStamp BigUInteger|nil 
 ---@field joinTime BigUInteger|nil 
----@field socialQueueingEnabled bool|nil 
----@field crossFaction bool|nil 
-local ClubInfo = {}
+---@field socialQueueingEnabled boolean|nil 
+---@field crossFaction boolean|nil 
+ClubInfo = {}
 
 ---@class ClubInvitationCandidateInfo
 ---@field memberId number 
 ---@field name string 
 ---@field priority luaIndex 
 ---@field status ClubInvitationCandidateStatus 
-local ClubInvitationCandidateInfo = {}
+ClubInvitationCandidateInfo = {}
 
 ---@class ClubInvitationInfo
 ---@field invitationId ClubInvitationId 
----@field isMyInvitation bool 
+---@field isMyInvitation boolean 
 ---@field invitee ClubMemberInfo 
-local ClubInvitationInfo = {}
+ClubInvitationInfo = {}
 
 ---@class ClubLimits
 ---@field maximumNumberOfStreams number 
-local ClubLimits = {}
+ClubLimits = {}
 
 ---@class ClubMemberInfo
----@field isSelf bool 
+---@field isSelf boolean 
 ---@field memberId number 
 ---@field name string|nil @ name may be encoded as a Kstring
 ---@field role ClubRoleIdentifier|nil 
@@ -585,102 +565,102 @@ local ClubLimits = {}
 ---@field lastOnlineHour number|nil 
 ---@field guildRank string|nil 
 ---@field guildRankOrder luaIndex|nil 
----@field isRemoteChat bool|nil 
+---@field isRemoteChat boolean|nil 
 ---@field overallDungeonScore number|nil 
 ---@field faction PvPFaction|nil 
-local ClubMemberInfo = {}
+ClubMemberInfo = {}
 
 ---@class ClubMessageIdentifier
 ---@field epoch BigUInteger @ number of microseconds since the UNIX epoch.
 ---@field position BigUInteger @ sort order for messages at the same time
-local ClubMessageIdentifier = {}
+ClubMessageIdentifier = {}
 
 ---@class ClubMessageInfo
 ---@field messageId ClubMessageIdentifier 
 ---@field content kstringClubMessage 
 ---@field author ClubMemberInfo 
 ---@field destroyer ClubMemberInfo|nil @ May be nil even if the message has been destroyed
----@field destroyed bool 
----@field edited bool 
-local ClubMessageInfo = {}
+---@field destroyed boolean 
+---@field edited boolean 
+ClubMessageInfo = {}
 
 ---@class ClubMessageRange
 ---@field oldestMessageId ClubMessageIdentifier 
 ---@field newestMessageId ClubMessageIdentifier 
-local ClubMessageRange = {}
+ClubMessageRange = {}
 
 ---@class ClubPrivilegeInfo
----@field canDestroy bool 
----@field canSetAttribute bool 
----@field canSetName bool 
----@field canSetDescription bool 
----@field canSetAvatar bool 
----@field canSetBroadcast bool 
----@field canSetPrivacyLevel bool 
----@field canSetOwnMemberAttribute bool 
----@field canSetOtherMemberAttribute bool 
----@field canSetOwnMemberNote bool 
----@field canSetOtherMemberNote bool 
----@field canSetOwnVoiceState bool 
----@field canSetOwnPresenceLevel bool 
----@field canUseVoice bool 
----@field canVoiceMuteMemberForAll bool 
----@field canGetInvitation bool 
----@field canSendInvitation bool 
----@field canSendGuestInvitation bool 
----@field canRevokeOwnInvitation bool 
----@field canRevokeOtherInvitation bool 
----@field canGetBan bool 
----@field canGetSuggestion bool 
----@field canSuggestMember bool 
----@field canGetTicket bool 
----@field canCreateTicket bool 
----@field canDestroyTicket bool 
----@field canAddBan bool 
----@field canRemoveBan bool 
----@field canCreateStream bool 
----@field canDestroyStream bool 
----@field canSetStreamPosition bool 
----@field canSetStreamAttribute bool 
----@field canSetStreamName bool 
----@field canSetStreamSubject bool 
----@field canSetStreamAccess bool 
----@field canSetStreamVoiceLevel bool 
----@field canCreateMessage bool 
----@field canDestroyOwnMessage bool 
----@field canDestroyOtherMessage bool 
----@field canEditOwnMessage bool 
----@field canPinMessage bool 
----@field kickableRoleIds table @ Roles that can be kicked and banned
-local ClubPrivilegeInfo = {}
+---@field canDestroy boolean 
+---@field canSetAttribute boolean 
+---@field canSetName boolean 
+---@field canSetDescription boolean 
+---@field canSetAvatar boolean 
+---@field canSetBroadcast boolean 
+---@field canSetPrivacyLevel boolean 
+---@field canSetOwnMemberAttribute boolean 
+---@field canSetOtherMemberAttribute boolean 
+---@field canSetOwnMemberNote boolean 
+---@field canSetOtherMemberNote boolean 
+---@field canSetOwnVoiceState boolean 
+---@field canSetOwnPresenceLevel boolean 
+---@field canUseVoice boolean 
+---@field canVoiceMuteMemberForAll boolean 
+---@field canGetInvitation boolean 
+---@field canSendInvitation boolean 
+---@field canSendGuestInvitation boolean 
+---@field canRevokeOwnInvitation boolean 
+---@field canRevokeOtherInvitation boolean 
+---@field canGetBan boolean 
+---@field canGetSuggestion boolean 
+---@field canSuggestMember boolean 
+---@field canGetTicket boolean 
+---@field canCreateTicket boolean 
+---@field canDestroyTicket boolean 
+---@field canAddBan boolean 
+---@field canRemoveBan boolean 
+---@field canCreateStream boolean 
+---@field canDestroyStream boolean 
+---@field canSetStreamPosition boolean 
+---@field canSetStreamAttribute boolean 
+---@field canSetStreamName boolean 
+---@field canSetStreamSubject boolean 
+---@field canSetStreamAccess boolean 
+---@field canSetStreamVoiceLevel boolean 
+---@field canCreateMessage boolean 
+---@field canDestroyOwnMessage boolean 
+---@field canDestroyOtherMessage boolean 
+---@field canEditOwnMessage boolean 
+---@field canPinMessage boolean 
+---@field kickableRoleIds number @ Roles that can be kicked and banned
+ClubPrivilegeInfo = {}
 
 ---@class ClubRoleInfo
 ---@field roleId number 
 ---@field name string 
----@field required bool @ At least one user must be in this role
----@field unique bool @ At most one user can be in this role
-local ClubRoleInfo = {}
+---@field required boolean @ At least one user must be in this role
+---@field unique boolean @ At most one user can be in this role
+ClubRoleInfo = {}
 
 ---@class ClubSelfInvitationInfo
 ---@field invitationId ClubInvitationId 
 ---@field club ClubInfo 
 ---@field inviter ClubMemberInfo 
----@field leaders table 
-local ClubSelfInvitationInfo = {}
+---@field leaders ClubMemberInfo 
+ClubSelfInvitationInfo = {}
 
 ---@class ClubStreamInfo
 ---@field streamId ClubStreamId 
 ---@field name string 
 ---@field subject string 
----@field leadersAndModeratorsOnly bool 
+---@field leadersAndModeratorsOnly boolean 
 ---@field streamType ClubStreamType 
 ---@field creationTime BigUInteger 
-local ClubStreamInfo = {}
+ClubStreamInfo = {}
 
 ---@class ClubStreamNotificationSetting
 ---@field streamId ClubStreamId 
 ---@field filter ClubStreamNotificationFilter 
-local ClubStreamNotificationSetting = {}
+ClubStreamNotificationSetting = {}
 
 ---@class ClubTicketInfo
 ---@field ticketId string 
@@ -690,5 +670,5 @@ local ClubStreamNotificationSetting = {}
 ---@field expirationTime BigUInteger @ Expiration time in microseconds since the UNIX epoch.
 ---@field defaultStreamId ClubStreamId|nil 
 ---@field creator ClubMemberInfo 
-local ClubTicketInfo = {}
+ClubTicketInfo = {}
 

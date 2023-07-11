@@ -1,4 +1,4 @@
----@class Soulbinds
+---@class C_Soulbinds @Soulbinds
 C_Soulbinds = {}
 
 ---@param soulbindID number 
@@ -160,16 +160,16 @@ function C_Soulbinds.UnmodifyNode(nodeID) end
 ---@field conduitItemLevel number 
 ---@field conduitType SoulbindConduitType 
 ---@field conduitSpecSetID number 
----@field conduitSpecIDs table 
+---@field conduitSpecIDs number 
 ---@field conduitSpecName cstring|nil 
 ---@field covenantID number|nil 
 ---@field conduitItemID number 
-local ConduitCollectionData = {}
+ConduitCollectionData = {}
 
 ---@class SoulbindConduitData
 ---@field conduitID number 
 ---@field conduitRank number 
-local SoulbindConduitData = {}
+SoulbindConduitData = {}
 
 ---@class SoulbindData
 ---@field ID number 
@@ -177,18 +177,18 @@ local SoulbindConduitData = {}
 ---@field name cstring 
 ---@field description cstring 
 ---@field textureKit textureKit 
----@field unlocked bool 
+---@field unlocked boolean 
 ---@field cvarIndex luaIndex 
 ---@field tree SoulbindTree 
 ---@field modelSceneData SoulbindModelSceneData 
 ---@field activationSoundKitID number 
 ---@field playerConditionReason cstring|nil 
-local SoulbindData = {}
+SoulbindData = {}
 
 ---@class SoulbindModelSceneData
 ---@field creatureDisplayInfoID number 
 ---@field modelSceneActorID number 
-local SoulbindModelSceneData = {}
+SoulbindModelSceneData = {}
 
 ---@class SoulbindNode
 ---@field ID number 
@@ -201,13 +201,13 @@ local SoulbindModelSceneData = {}
 ---@field conduitRank number 
 ---@field state SoulbindNodeState 
 ---@field conduitType SoulbindConduitType|nil 
----@field parentNodeIDs table 
+---@field parentNodeIDs number 
 ---@field failureRenownRequirement number|nil 
----@field socketEnhanced bool|nil 
-local SoulbindNode = {}
+---@field socketEnhanced boolean|nil 
+SoulbindNode = {}
 
 ---@class SoulbindTree
----@field editable bool 
----@field nodes table 
-local SoulbindTree = {}
+---@field editable boolean 
+---@field nodes SoulbindNode 
+SoulbindTree = {}
 

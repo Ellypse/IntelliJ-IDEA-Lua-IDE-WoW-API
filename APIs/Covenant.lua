@@ -1,4 +1,4 @@
----@class Covenant
+---@class C_Covenants @Covenant
 C_Covenants = {}
 
 ---@return number covenantID
@@ -25,6 +25,6 @@ function C_Covenants.GetCovenantIDs() end
 ---@field beginResearchSoundKitID number 
 ---@field renownFanfareSoundKitID number 
 ---@field name cstring 
----@field soulbindIDs table 
-local CovenantData = {}
+---@field soulbindIDs number 
+CovenantData = {}
 

@@ -1,3 +1,3 @@
----@class SecureTransfer
+---@class C_SecureTransfer @SecureTransfer
 C_SecureTransfer = {}
 

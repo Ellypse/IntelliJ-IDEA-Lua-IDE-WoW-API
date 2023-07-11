@@ -1,4 +1,4 @@
----@class AzeriteEmpoweredItem
+---@class C_AzeriteEmpoweredItem @AzeriteEmpoweredItem
 C_AzeriteEmpoweredItem = {}
 
 ---@param azeriteEmpoweredItemLocation AzeriteEmpoweredItemLocation 
@@ -78,30 +78,28 @@ function C_AzeriteEmpoweredItem.SelectPower(azeriteEmpoweredItemLocation, powerI
 function C_AzeriteEmpoweredItem.SetHasBeenViewed(azeriteEmpoweredItemLocation) end
 
 ---@class AzeritePowerLevel
----@field Base number @ Default value is [ 0 ]
----@field Upgraded number @ Default value is [ 1 ]
----@field Downgraded number @ Default value is [ 2 ]
-
----@type AzeritePowerLevel 
-local AzeritePowerLevel = {}
+AzeritePowerLevel = {}
+AzeritePowerLevel.Base = 0
+AzeritePowerLevel.Upgraded = 1
+AzeritePowerLevel.Downgraded = 2
 
 ---@class AzeriteEmpoweredItemPowerInfo
 ---@field azeritePowerID number 
 ---@field spellID number 
-local AzeriteEmpoweredItemPowerInfo = {}
+AzeriteEmpoweredItemPowerInfo = {}
 
 ---@class AzeriteEmpoweredItemPowerText
 ---@field name string 
 ---@field description string 
-local AzeriteEmpoweredItemPowerText = {}
+AzeriteEmpoweredItemPowerText = {}
 
 ---@class AzeriteEmpoweredItemTierInfo
----@field azeritePowerIDs table 
+---@field azeritePowerIDs number 
 ---@field unlockLevel number 
-local AzeriteEmpoweredItemTierInfo = {}
+AzeriteEmpoweredItemTierInfo = {}
 
 ---@class AzeriteSpecInfo
 ---@field classID number 
 ---@field specID number 
-local AzeriteSpecInfo = {}
+AzeriteSpecInfo = {}
 

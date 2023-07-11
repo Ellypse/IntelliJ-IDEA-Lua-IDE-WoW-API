@@ -1,4 +1,4 @@
----@class PlayerInteractionManager
+---@class C_PlayerInteractionManager @PlayerInteractionManager
 C_PlayerInteractionManager = {}
 
 ---@param type PlayerInteractionType @ [OPTIONAL]

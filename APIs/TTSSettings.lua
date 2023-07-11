@@ -1,4 +1,4 @@
----@class TTSSettings
+---@class C_TTSSettings @TTSSettings
 C_TTSSettings = {}
 
 ---@param channelInfo ChatChannelInfo 

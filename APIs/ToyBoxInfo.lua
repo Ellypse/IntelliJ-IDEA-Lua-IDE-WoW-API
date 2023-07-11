@@ -1,4 +1,4 @@
----@class ToyBoxInfo
+---@class C_ToyBoxInfo @ToyBoxInfo
 C_ToyBoxInfo = {}
 
 ---@param itemID number 

@@ -1,4 +1,4 @@
----@class ChatBubbles
+---@class C_ChatBubbles @ChatBubbles
 C_ChatBubbles = {}
 
 ---@param includeForbidden boolean 

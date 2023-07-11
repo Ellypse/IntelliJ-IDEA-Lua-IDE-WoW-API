@@ -1,4 +1,4 @@
----@class PetBattles
+---@class C_PetBattles @PetBattles
 C_PetBattles = {}
 
 ---@param petOwner number 

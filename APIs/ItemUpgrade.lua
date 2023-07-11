@@ -1,4 +1,4 @@
----@class ItemUpgrade
+---@class C_ItemUpgrade @ItemUpgrade
 C_ItemUpgrade = {}
 
 ---@param baseItem ItemLocation 
@@ -54,59 +54,59 @@ function C_ItemUpgrade.SetItemUpgradeFromLocation(itemToSet) end
 function C_ItemUpgrade.UpgradeItem(numUpgrades) end
 
 ---@class ItemUpgradeCostDiscountInfo
----@field isDiscounted bool 
+---@field isDiscounted boolean 
 ---@field discountHighWatermark number 
----@field isPartialTwoHandDiscount bool 
----@field isAccountWideDiscount bool 
----@field doesCurrentCharacterMeetHighWatermark bool @ Reflects whether current character meets discount's high watermark, even if discount itself is account-wide
-local ItemUpgradeCostDiscountInfo = {}
+---@field isPartialTwoHandDiscount boolean 
+---@field isAccountWideDiscount boolean 
+---@field doesCurrentCharacterMeetHighWatermark boolean @ Reflects whether current character meets discount's high watermark, even if discount itself is account-wide
+ItemUpgradeCostDiscountInfo = {}
 
 ---@class ItemUpgradeCurrencyCost
 ---@field cost number 
 ---@field currencyID number 
 ---@field discountInfo ItemUpgradeCostDiscountInfo 
-local ItemUpgradeCurrencyCost = {}
+ItemUpgradeCurrencyCost = {}
 
 ---@class ItemUpgradeItemCost
 ---@field cost number 
 ---@field itemID number 
 ---@field discountInfo ItemUpgradeCostDiscountInfo 
-local ItemUpgradeItemCost = {}
+ItemUpgradeItemCost = {}
 
 ---@class ItemUpgradeItemInfo
 ---@field iconID number 
 ---@field name string 
----@field itemUpgradeable bool 
+---@field itemUpgradeable boolean 
 ---@field displayQuality number 
 ---@field highWatermarkSlot number 
 ---@field currUpgrade number 
 ---@field maxUpgrade number 
 ---@field minItemLevel number 
 ---@field maxItemLevel number 
----@field upgradeLevelInfos table 
+---@field upgradeLevelInfos ItemUpgradeLevelInfo 
 ---@field customUpgradeString string|nil 
----@field upgradeCostTypesForSeason table 
-local ItemUpgradeItemInfo = {}
+---@field upgradeCostTypesForSeason ItemUpgradeSeasonalCostType 
+ItemUpgradeItemInfo = {}
 
 ---@class ItemUpgradeLevelInfo
 ---@field upgradeLevel number 
 ---@field displayQuality number 
 ---@field itemLevelIncrement number 
----@field levelStats table 
----@field currencyCostsToUpgrade table 
----@field itemCostsToUpgrade table 
+---@field levelStats ItemUpgradeStat 
+---@field currencyCostsToUpgrade ItemUpgradeCurrencyCost 
+---@field itemCostsToUpgrade ItemUpgradeItemCost 
 ---@field failureMessage string|nil 
-local ItemUpgradeLevelInfo = {}
+ItemUpgradeLevelInfo = {}
 
 ---@class ItemUpgradeSeasonalCostType
 ---@field itemID number 
 ---@field orderIndex number 
 ---@field sourceString string|nil 
-local ItemUpgradeSeasonalCostType = {}
+ItemUpgradeSeasonalCostType = {}
 
 ---@class ItemUpgradeStat
 ---@field displayString string 
 ---@field statValue number 
----@field active bool 
-local ItemUpgradeStat = {}
+---@field active boolean 
+ItemUpgradeStat = {}
 

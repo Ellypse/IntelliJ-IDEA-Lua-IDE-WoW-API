@@ -1,0 +1,106 @@
+--[[
+	This file is meant to house many of the custom wow data types that are used in the API documentation.
+	This is not a complete list, and should be added to as necessary.
+
+	Created by Britt Yazel (aka Soyier)
+]]
+
+---@class WOWGUID : string @GUIDs uniquely identify almost everything the player character can interact with in World of Warcraft. GUIDs are represented in WoW as a long string of hex numbers separated by hyphens.
+---@class texture @A texture is a 2D image that is used to represent an object. Textures are used in the UI to create graphical elements such as buttons, icons, and portraits.
+---@class SimpleTexture : texture @A texture is a 2D image that is used to represent an object. Textures are used in the UI to create graphical elements such as buttons, icons, and portraits.
+---@class luaIndex : number @A luaIndex is a number that represents an index in a Lua table. Lua tables are 1-indexed, meaning that the first element in a table is at index 1, not 0.
+---@class uiAddon : string @An addon is a collection of files that adds functionality to the WoW client. Addons are loaded by the WoW client when the player logs in to the game.
+---@class cstring : string @A cstring is a string that is null-terminated. This means that the string ends with a null character (byte value 0).
+---@class textureAtlas : texture @An atlas is a texture containing sub-textures (atlas members) to reduce overhead. They make it easier to get part of a texture instead of using tex coords.
+---@class TextureAssetDisk : texture @On disk texture asset
+---@class TextureAsset : texture @Texture asset
+---@class colorRGB : table @A color is a table with three numbers between 0 and 1 representing the red, green, and blue components of a color.
+---@class SingleColorValue : number @A SingleColorValue is a number between 0 and 1 representing a color component.
+---@class colorRGBA : colorRGB @A color is a table with four numbers between 0 and 1 representing the red, green, blue, and alpha components of a color.
+---@class fileID : number @A fileID is a number that represents a file in the WoW client. It is used in the API to represent textures, sounds, and other files.
+---@class vector2 : table @A vector2 is a table with two numbers representing an x and y coordinate.
+---@class vector3 : vector2 @A vector3 is a table with three numbers representing an x, y, and z coordinate.
+---@class textureKit : string @A textureKit is a string that represents a texture kit. Texture kits are used to skin UI elements.
+---@class time_t : number @A time_t is a number that represents a time in seconds since the Unix epoch (January 1, 1970 at 00:00:00 UTC).
+---@class FileAsset @A FileAsset represents a file in the WoW client.
+---@class ItemInfo : table @An ItemInfo is a table that contains information about an item.
+---@class ItemLocation : table @An ItemLocation is an object that represents a location of an item.
+---@class BigUInteger : number @A BigUInteger is a number that represents an unsigned integer larger than 2^53.
+---@class BigInteger : number @A BigInteger is a number that represents an integer larger than 2^53.
+---@class WOWMONEY : number @A WOWMONEY is a number that represents an amount of money in copper.
+---@class AzeriteEmpoweredItemLocation : table @An AzeriteEmpoweredItemLocation is an object that represents the location of an Azerite Empowered Item.
+---@class AzeriteItemLocation : table @An AzeriteItemLocation is an object that represents the location of an Azerite Item.
+---@class ItemLocationMixin : table @An ItemLocationMixin is a mixin that represents the location of an item.
+---@class NotificationDbId : number @A NotificationDbId is a number that represents a notification in the WoW client.
+---@class ClubId : number @A ClubId is a number that represents a club.
+---@class ClubStreamId : number @A ClubStreamId is a number that represents a stream in a club.
+---@class ChatBubbleFrame : frame @A ChatBubbleFrame is a frame that represents a chat bubble.
+---@class UnitToken : string @A UnitToken is a string that represents a unit in the WoW client.
+---@class CraftingOrderRequestCallback : function @A CraftingOrderRequestCallback is a function that is called when a crafting order request is completed.
+---@class CraftingOrderRequestMyOrdersCallback : function @A CraftingOrderRequestMyOrdersCallback is a function that is called when a crafting order request for the player's orders is completed.
+---@class FramePoint : string @A FramePoint is a string that represents a point on a frame.
+---@class HTMLTextType : string @An HTMLTextType is a string that represents the type of HTML text.
+---@class TBFStyleFlags : number @A TBFStyleFlags is a number that represents the style flags for a text.
+---@class ScriptRegion : string @A ScriptRegion is a string that represents a region of a script.
+---@class uiUnit : string @A uiUnit is a string that represents a unit in the WoW client.
+---@class SimpleFrame : frame @A SimpleFrame is a frame that is used to create simple UI elements.
+---@class AuraData : table @An AuraData is a table that contains information about an aura.
+---@class AnimationDataEnum : number @An AnimationDataEnum is a number that represents an animation data type.
+---@class GarrisonFollower : table @A GarrisonFollower is a table that contains information about a follower.
+---@class ModelSceneFrameActor : table @A ModelSceneFrameActor is an object that represents an actor in a model scene frame.
+---@class ItemTransmogInfo : table @Information about an item's transmog appearance.
+---@class DrawLayer : string @A DrawLayer is a string that represents a layer to draw on.
+---@class uiRect : table @A uiRect is a table with four numbers representing the left, right, top, and bottom of a rectangle.
+---@class IDOrLink : string @An IDOrLink is a string that represents an ID or a link.
+---@class ClubInvitationId : number @A ClubInvitationId is a number that represents a club invitation.
+---@class kstringClubMessage : string @A kstringClubMessage is a string that represents a club message.
+---@class kstringLfgListApplicant : string @A kstringLfgListApplicant is a string that represents an LFG list applicant.
+---@class kstringLfgListSearch : string @A kstringLfgListSearch is a string that represents an LFG list search.
+---@class CalendarEventID : number @A CalendarEventID is a number that represents a calendar event.
+---@class EmptiableItemLocation : table @An EmptiableItemLocation is an object that represents the location of an emptiable item.
+---@class UiMapPoint : table @A UiMapPoint is a table that contains information about a point on a map.
+---@class ModelSceneFrame : frame @A ModelSceneFrame is a frame that is used to display a model scene.
+---@class PlayerLocation : table @A PlayerLocation is a table that represents the location of a player.
+---@class RecruitAcceptanceID : number @A RecruitAcceptanceID is a number that represents a recruit acceptance.
+---@class ReportInfo : table @A ReportInfo is a table that contains information about a report.
+---@class CScriptObject : table @A CScriptObject is a table that represents a C++ object.
+---@class luaFunction : function @A luaFunction is a function that is defined in Lua.
+---@class SmoothingType : string @A SmoothingType is a string that represents a smoothing type.
+---@class SimpleAnimGroup : table @A SimpleAnimGroup is a table that represents a simple animation group.
+---@class SimpleButtonStateToken : string @A SimpleButtonStateToken is a string that represents a button state.
+---@class font : table @A font is a table that represents a font.
+---@class SimpleFont : font @A SimpleFont is a font that is used to create simple UI elements.
+---@class SimpleFontString : SimpleRegion @A SimpleFontString is a font string that is used to create simple UI elements.
+---@class SimpleRegion : frame @A SimpleRegion is a region that is used to create simple UI elements.
+---@class BlendMode : string @A BlendMode is a string that represents a blend mode.
+---@class SimpleAnim : table @A SimpleAnim is a table that represents a simple animation.
+---@class SimplePathAnim : SimpleAnim @A SimplePathAnim is a simple animation that moves an object along a path.
+---@class LoopType : string @A LoopType is a string that represents a loop type.
+---@class SimpleControlPoint : table @A SimpleControlPoint is a table that represents a simple control point.
+---@class CurveType : string @A CurveType is a string that represents a curve type.
+---@class TBFFlags : number @A TBFFlags is a number that represents the flags for a text.
+---@class uiFontHeight : number @A uiFontHeight is a number that represents the height of a font.
+---@class SimpleLine : SimpleRegion @A SimpleLine is a line that is used to create simple UI elements.
+---@class SimpleMaskTexture : SimpleRegion @A SimpleMaskTexture is a mask texture that is used to create simple UI elements.
+---@class FrameStrata : string @A FrameStrata is a string that represents a frame strata.
+---@class InsertMode : string @An InsertMode is a string that represents an insert mode.
+---@class ModelAsset : table @A ModelAsset is a table that represents a model asset.
+---@class Orientation : string @An Orientation is a string that represents an orientation.
+---@class StatusBarFillStyle : string @A StatusBarFillStyle is a string that represents a fill style.
+---@class normalizedValue : number @A normalizedValue is a number that represents a normalized value.
+---@class size : number @A size is a number that represents a size.
+---@class FilterMode : string @A FilterMode is a string that represents a filter mode.
+---@class ItemSoundType : string @An ItemSoundType is a string that represents an item sound type.
+---@class GetTitleIconTextureCallback : function @A GetTitleIconTextureCallback is a function that is called when a title icon texture is requested.
+---@class TooltipComparisonItem : table @A TooltipComparisonItem is a table that contains information about an item for comparison.
+---@class TooltipData : table @A TooltipData is a table that contains information about a tooltip.
+---@class WeeklyRewardItemDBID : number @A WeeklyRewardItemDBID is a number that represents a weekly reward item.
+---@class InventorySlots : table @An InventorySlots is a table that contains information about inventory slots.
+---@class TransmogLocation : table @A TransmogLocation is a table that contains information about a transmog location.
+---@class TransmogPendingInfo : table @A TransmogPendingInfo is a table that contains information about a pending transmog.
+---@class TimerCallback : function @A TimerCallback is a function that is called when a timer is fired.
+---@class Timer : table @A Timer is a table that represents a timer.
+---@class TickerCallback : function @A TickerCallback is a function that is called when a ticker is fired.
+---@class Ticker : table @A Ticker is a table that represents a ticker.
+---@class WeeklyRewardChestThresholdType : string @A WeeklyRewardChestThresholdType is a string that represents a weekly reward chest threshold type.
+---@class CachedRewardType : string @A CachedRewardType is a string that represents a cached reward type.

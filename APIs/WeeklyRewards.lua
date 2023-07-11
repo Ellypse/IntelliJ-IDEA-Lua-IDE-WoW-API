@@ -1,4 +1,4 @@
----@class WeeklyRewards
+---@class C_WeeklyRewards @WeeklyRewards
 C_WeeklyRewards = {}
 
 ---@return boolean isCurrentPeriod
@@ -60,12 +60,10 @@ function C_WeeklyRewards.ShouldShowFinalRetirementMessage() end
 function C_WeeklyRewards.ShouldShowRetirementMessage() end
 
 ---@class ConquestProgressBarDisplayType
----@field FirstChest number @ Default value is [ 0 ]
----@field AdditionalChest number @ Default value is [ 1 ]
----@field Seasonal number @ Default value is [ 2 ]
-
----@type ConquestProgressBarDisplayType 
-local ConquestProgressBarDisplayType = {}
+ConquestProgressBarDisplayType = {}
+ConquestProgressBarDisplayType.FirstChest = 0
+ConquestProgressBarDisplayType.AdditionalChest = 1
+ConquestProgressBarDisplayType.Seasonal = 2
 
 ---@class ConquestWeeklyProgress
 ---@field progress number 
@@ -74,14 +72,14 @@ local ConquestProgressBarDisplayType = {}
 ---@field unlocksCompleted number 
 ---@field maxUnlocks number 
 ---@field sampleItemHyperlink string 
-local ConquestWeeklyProgress = {}
+ConquestWeeklyProgress = {}
 
 ---@class WeeklyRewardActivityEncounterInfo
 ---@field encounterID number 
 ---@field bestDifficulty number 
 ---@field uiOrder number 
 ---@field instanceID number 
-local WeeklyRewardActivityEncounterInfo = {}
+WeeklyRewardActivityEncounterInfo = {}
 
 ---@class WeeklyRewardActivityInfo
 ---@field type WeeklyRewardChestThresholdType 
@@ -92,13 +90,13 @@ local WeeklyRewardActivityEncounterInfo = {}
 ---@field level number 
 ---@field claimID number|nil 
 ---@field raidString cstring|nil 
----@field rewards table 
-local WeeklyRewardActivityInfo = {}
+---@field rewards WeeklyRewardActivityRewardInfo 
+WeeklyRewardActivityInfo = {}
 
 ---@class WeeklyRewardActivityRewardInfo
 ---@field type CachedRewardType 
 ---@field id number 
 ---@field quantity number 
 ---@field itemDBID WeeklyRewardItemDBID|nil 
-local WeeklyRewardActivityRewardInfo = {}
+WeeklyRewardActivityRewardInfo = {}
 

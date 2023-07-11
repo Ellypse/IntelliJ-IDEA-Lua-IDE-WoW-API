@@ -1,4 +1,4 @@
----@class ActionBar
+---@class C_ActionBar @ActionBar
 C_ActionBar = {}
 
 ---@param actionID luaIndex 

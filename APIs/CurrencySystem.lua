@@ -1,4 +1,4 @@
----@class CurrencySystem
+---@class C_CurrencyInfo @CurrencySystem
 C_CurrencyInfo = {}
 
 ---@param currencyID number 
@@ -87,7 +87,7 @@ function C_CurrencyInfo.SetCurrencyUnused(index, unused) end
 ---@field quantity number 
 ---@field iconFileID fileID 
 ---@field currencyTypesID number 
-local BackpackCurrencyInfo = {}
+BackpackCurrencyInfo = {}
 
 ---@class CurrencyDisplayInfo
 ---@field name string 
@@ -96,26 +96,26 @@ local BackpackCurrencyInfo = {}
 ---@field quality number 
 ---@field displayAmount number 
 ---@field actualAmount number 
-local CurrencyDisplayInfo = {}
+CurrencyDisplayInfo = {}
 
 ---@class CurrencyInfo
 ---@field name cstring 
 ---@field description cstring 
----@field isHeader bool 
----@field isHeaderExpanded bool 
----@field isTypeUnused bool 
----@field isShowInBackpack bool 
+---@field isHeader boolean 
+---@field isHeaderExpanded boolean 
+---@field isTypeUnused boolean 
+---@field isShowInBackpack boolean 
 ---@field quantity number 
 ---@field trackedQuantity number 
 ---@field iconFileID fileID 
 ---@field maxQuantity number 
----@field canEarnPerWeek bool 
+---@field canEarnPerWeek boolean 
 ---@field quantityEarnedThisWeek number 
----@field isTradeable bool 
+---@field isTradeable boolean 
 ---@field quality ItemQuality 
 ---@field maxWeeklyQuantity number 
 ---@field totalEarned number 
----@field discovered bool 
----@field useTotalEarnedForMaxQty bool 
-local CurrencyInfo = {}
+---@field discovered boolean 
+---@field useTotalEarnedForMaxQty boolean 
+CurrencyInfo = {}
 

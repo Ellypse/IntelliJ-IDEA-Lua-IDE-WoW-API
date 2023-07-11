@@ -1,4 +1,4 @@
----@class SummonInfo
+---@class C_SummonInfo @SummonInfo
 C_SummonInfo = {}
 
 function C_SummonInfo.CancelSummon() end

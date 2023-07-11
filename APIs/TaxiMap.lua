@@ -1,4 +1,4 @@
----@class TaxiMap
+---@class C_TaxiMap @TaxiMap
 C_TaxiMap = {}
 
 --- Returns information on taxi nodes at the current flight master.
@@ -16,20 +16,16 @@ function C_TaxiMap.GetTaxiNodesForMap(uiMapID) end
 function C_TaxiMap.ShouldMapShowTaxiNodes(uiMapID) end
 
 ---@class FlightPathFaction
----@field Neutral number @ Default value is [ 0 ]
----@field Horde number @ Default value is [ 1 ]
----@field Alliance number @ Default value is [ 2 ]
-
----@type FlightPathFaction 
-local FlightPathFaction = {}
+FlightPathFaction = {}
+FlightPathFaction.Neutral = 0
+FlightPathFaction.Horde = 1
+FlightPathFaction.Alliance = 2
 
 ---@class FlightPathState
----@field Current number @ Default value is [ 0 ]
----@field Reachable number @ Default value is [ 1 ]
----@field Unreachable number @ Default value is [ 2 ]
-
----@type FlightPathState 
-local FlightPathState = {}
+FlightPathState = {}
+FlightPathState.Current = 0
+FlightPathState.Reachable = 1
+FlightPathState.Unreachable = 2
 
 ---@class MapTaxiNodeInfo
 ---@field nodeID number 
@@ -38,7 +34,7 @@ local FlightPathState = {}
 ---@field atlasName cstring 
 ---@field faction FlightPathFaction 
 ---@field textureKit textureKit 
-local MapTaxiNodeInfo = {}
+MapTaxiNodeInfo = {}
 
 ---@class TaxiNodeInfo
 ---@field nodeID number 
@@ -47,8 +43,8 @@ local MapTaxiNodeInfo = {}
 ---@field state FlightPathState 
 ---@field slotIndex luaIndex 
 ---@field textureKit textureKit 
----@field useSpecialIcon bool 
+---@field useSpecialIcon boolean 
 ---@field specialIconCostString string|nil 
----@field isMapLayerTransition bool 
-local TaxiNodeInfo = {}
+---@field isMapLayerTransition boolean 
+TaxiNodeInfo = {}
 

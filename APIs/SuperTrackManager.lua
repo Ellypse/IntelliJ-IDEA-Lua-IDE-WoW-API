@@ -1,4 +1,4 @@
----@class SuperTrackManager
+---@class C_SuperTrack @SuperTrackManager
 C_SuperTrack = {}
 
 function C_SuperTrack.ClearSuperTrackedContent() end

@@ -1,4 +1,4 @@
----@class PlayerInfo
+---@class C_PlayerInfo @PlayerInfo
 C_PlayerInfo = {}
 
 ---@return boolean canEnter
@@ -75,11 +75,11 @@ function C_PlayerInfo.IsTravelersLogAvailable() end
 ---@field mapScore number 
 ---@field bestRunLevel number 
 ---@field bestRunDurationMS number 
----@field finishedSuccess bool 
-local MythicPlusRatingMapSummary = {}
+---@field finishedSuccess boolean 
+MythicPlusRatingMapSummary = {}
 
 ---@class MythicPlusRatingSummary
 ---@field currentSeasonScore number 
----@field runs table 
-local MythicPlusRatingSummary = {}
+---@field runs MythicPlusRatingMapSummary 
+MythicPlusRatingSummary = {}
 

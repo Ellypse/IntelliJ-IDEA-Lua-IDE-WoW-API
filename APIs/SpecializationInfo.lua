@@ -1,4 +1,4 @@
----@class SpecializationInfo
+---@class C_SpecializationInfo @SpecializationInfo
 C_SpecializationInfo = {}
 
 ---@return boolean, string canUse, failureReason
@@ -68,20 +68,20 @@ function C_SpecializationInfo.SetPvpTalentLocked(talentID, locked) end
 ---@field talentID number 
 ---@field name string 
 ---@field icon number 
----@field selected bool 
----@field available bool 
+---@field selected boolean 
+---@field available boolean 
 ---@field spellID number 
----@field unlocked bool 
----@field known bool 
----@field grantedByAura bool 
----@field dependenciesUnmet bool 
+---@field unlocked boolean 
+---@field known boolean 
+---@field grantedByAura boolean 
+---@field dependenciesUnmet boolean 
 ---@field dependenciesUnmetReason string|nil 
-local PvpTalentInfo = {}
+PvpTalentInfo = {}
 
 ---@class PvpTalentSlotInfo
----@field enabled bool 
+---@field enabled boolean 
 ---@field level number 
 ---@field selectedTalentID number|nil 
----@field availableTalentIDs table 
-local PvpTalentSlotInfo = {}
+---@field availableTalentIDs number 
+PvpTalentSlotInfo = {}
 

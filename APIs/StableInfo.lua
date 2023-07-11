@@ -1,4 +1,4 @@
----@class StableInfo
+---@class C_StableInfo @StableInfo
 C_StableInfo = {}
 
 ---@return number numActivePets

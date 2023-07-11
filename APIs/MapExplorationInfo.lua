@@ -1,4 +1,4 @@
----@class MapExplorationInfo
+---@class C_MapExplorationInfo @MapExplorationInfo
 C_MapExplorationInfo = {}
 
 ---@param uiMapID number 
@@ -15,16 +15,16 @@ function C_MapExplorationInfo.GetExploredMapTextures(uiMapID) end
 ---@field bottom number 
 ---@field left number 
 ---@field right number 
-local UiMapExplorationHitRect = {}
+UiMapExplorationHitRect = {}
 
 ---@class UiMapExplorationInfo
 ---@field textureWidth number 
 ---@field textureHeight number 
 ---@field offsetX number 
 ---@field offsetY number 
----@field isShownByMouseOver bool 
----@field isDrawOnTopLayer bool 
----@field fileDataIDs table 
+---@field isShownByMouseOver boolean 
+---@field isDrawOnTopLayer boolean 
+---@field fileDataIDs number 
 ---@field hitRect UiMapExplorationHitRect 
-local UiMapExplorationInfo = {}
+UiMapExplorationInfo = {}
 

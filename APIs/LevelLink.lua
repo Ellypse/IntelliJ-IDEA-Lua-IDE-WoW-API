@@ -1,4 +1,4 @@
----@class LevelLink
+---@class C_LevelLink @LevelLink
 C_LevelLink = {}
 
 ---@param actionID luaIndex 

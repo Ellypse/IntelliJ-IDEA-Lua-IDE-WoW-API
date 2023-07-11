@@ -1,4 +1,4 @@
----@class MapUI
+---@class C_Map @MapUI
 C_Map = {}
 
 ---@param uiMapID number 
@@ -160,7 +160,7 @@ function C_Map.SetUserWaypoint(point) end
 ---@field name cstring 
 ---@field atlasName string 
 ---@field uiTextureKit textureKit|nil 
-local MapBannerInfo = {}
+MapBannerInfo = {}
 
 ---@class MapLinkInfo
 ---@field areaPoiID number 
@@ -168,7 +168,7 @@ local MapBannerInfo = {}
 ---@field name cstring 
 ---@field atlasName string 
 ---@field linkedUiMapID number 
-local MapLinkInfo = {}
+MapLinkInfo = {}
 
 ---@class UiMapDetails
 ---@field mapID number 
@@ -176,13 +176,13 @@ local MapLinkInfo = {}
 ---@field mapType UIMapType 
 ---@field parentMapID number 
 ---@field flags UIMapFlag 
-local UiMapDetails = {}
+UiMapDetails = {}
 
 ---@class UiMapGroupMemberInfo
 ---@field mapID number 
 ---@field relativeHeightIndex number 
 ---@field name cstring 
-local UiMapGroupMemberInfo = {}
+UiMapGroupMemberInfo = {}
 
 ---@class UiMapHighlightInfo
 ---@field fileDataID fileID 
@@ -193,7 +193,7 @@ local UiMapGroupMemberInfo = {}
 ---@field textureY number 
 ---@field scrollChildX number 
 ---@field scrollChildY number 
-local UiMapHighlightInfo = {}
+UiMapHighlightInfo = {}
 
 ---@class UiMapLayerInfo
 ---@field layerWidth number 
@@ -203,5 +203,5 @@ local UiMapHighlightInfo = {}
 ---@field minScale number 
 ---@field maxScale number 
 ---@field additionalZoomSteps number 
-local UiMapLayerInfo = {}
+UiMapLayerInfo = {}
 

@@ -1,4 +1,4 @@
----@class ItemInteractionUI
+---@class C_ItemInteraction @ItemInteractionUI
 C_ItemInteraction = {}
 
 function C_ItemInteraction.ClearPendingItem() end
@@ -31,13 +31,13 @@ function C_ItemInteraction.SetPendingItem(item) end
 ---@class ConversionCurrencyCost
 ---@field currencyID number 
 ---@field amount number 
-local ConversionCurrencyCost = {}
+ConversionCurrencyCost = {}
 
 ---@class ItemInteractionChargeInfo
 ---@field newChargeAmount number 
 ---@field rechargeRate number 
 ---@field timeToNextCharge number 
-local ItemInteractionChargeInfo = {}
+ItemInteractionChargeInfo = {}
 
 ---@class ItemInteractionFrameInfo
 ---@field textureKit textureKit 
@@ -55,5 +55,5 @@ local ItemInteractionChargeInfo = {}
 ---@field cost number|nil 
 ---@field currencyTypeId number|nil 
 ---@field dropInSlotSoundKitId number|nil 
-local ItemInteractionFrameInfo = {}
+ItemInteractionFrameInfo = {}
 

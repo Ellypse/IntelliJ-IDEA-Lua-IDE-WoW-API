@@ -1,4 +1,4 @@
----@class MerchantFrame
+---@class C_MerchantFrame @MerchantFrame
 C_MerchantFrame = {}
 
 ---@param buybackSlotIndex luaIndex 

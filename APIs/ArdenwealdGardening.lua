@@ -1,4 +1,4 @@
----@class ArdenwealdGardening
+---@class C_ArdenwealdGardening @ArdenwealdGardening
 C_ArdenwealdGardening = {}
 
 ---@return ArdenwealdGardenData data
@@ -11,5 +11,5 @@ function C_ArdenwealdGardening.IsGardenAccessible() end
 ---@field active number 
 ---@field ready number 
 ---@field remainingSeconds time_t 
-local ArdenwealdGardenData = {}
+ArdenwealdGardenData = {}
 

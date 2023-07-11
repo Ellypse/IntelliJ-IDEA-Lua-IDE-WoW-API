@@ -1,4 +1,4 @@
----@class GamePad
+---@class C_GamePad @GamePad
 C_GamePad = {}
 
 ---@param platform ClientPlatformType 
@@ -88,23 +88,23 @@ function C_GamePad.StopVibration() end
 ---@field buttonPos string|nil 
 ---@field buttonNeg string|nil 
 ---@field comment string|nil 
-local GamePadAxisConfig = {}
+GamePadAxisConfig = {}
 
 ---@class GamePadConfig
 ---@field comment string|nil 
 ---@field name string|nil 
 ---@field configID GamePadConfigID 
 ---@field labelStyle string|nil 
----@field rawButtonMappings table 
----@field rawAxisMappings table 
----@field axisConfigs table 
----@field stickConfigs table 
-local GamePadConfig = {}
+---@field rawButtonMappings GamePadRawButtonMapping 
+---@field rawAxisMappings GamePadRawAxisMapping 
+---@field axisConfigs GamePadAxisConfig 
+---@field stickConfigs GamePadStickConfig 
+GamePadConfig = {}
 
 ---@class GamePadConfigID
 ---@field vendorID number|nil 
 ---@field productID number|nil 
-local GamePadConfigID = {}
+GamePadConfigID = {}
 
 ---@class GamePadMappedState
 ---@field name string 
@@ -112,16 +112,16 @@ local GamePadConfigID = {}
 ---@field buttonCount number 
 ---@field axisCount number 
 ---@field stickCount number 
----@field buttons table 
----@field axes table 
----@field sticks table 
-local GamePadMappedState = {}
+---@field buttons boolean 
+---@field axes number 
+---@field sticks GamePadStick 
+GamePadMappedState = {}
 
 ---@class GamePadRawAxisMapping
 ---@field rawIndex number 
 ---@field axis string|nil 
 ---@field comment string|nil 
-local GamePadRawAxisMapping = {}
+GamePadRawAxisMapping = {}
 
 ---@class GamePadRawButtonMapping
 ---@field rawIndex number 
@@ -129,7 +129,7 @@ local GamePadRawAxisMapping = {}
 ---@field axis string|nil 
 ---@field axisValue number|nil 
 ---@field comment string|nil 
-local GamePadRawButtonMapping = {}
+GamePadRawButtonMapping = {}
 
 ---@class GamePadRawState
 ---@field name string 
@@ -137,15 +137,15 @@ local GamePadRawButtonMapping = {}
 ---@field productID number 
 ---@field rawButtonCount number 
 ---@field rawAxisCount number 
----@field rawButtons table 
----@field rawAxes table 
-local GamePadRawState = {}
+---@field rawButtons boolean 
+---@field rawAxes number 
+GamePadRawState = {}
 
 ---@class GamePadStick
 ---@field x number 
 ---@field y number 
 ---@field len number 
-local GamePadStick = {}
+GamePadStick = {}
 
 ---@class GamePadStickConfig
 ---@field stick string 
@@ -155,5 +155,5 @@ local GamePadStick = {}
 ---@field deadzoneX number|nil 
 ---@field deadzoneY number|nil 
 ---@field comment string|nil 
-local GamePadStickConfig = {}
+GamePadStickConfig = {}
 

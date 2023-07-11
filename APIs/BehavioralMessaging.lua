@@ -1,4 +1,4 @@
----@class BehavioralMessaging
+---@class C_BehavioralMessaging @BehavioralMessaging
 C_BehavioralMessaging = {}
 
 ---@param dbId NotificationDbId 

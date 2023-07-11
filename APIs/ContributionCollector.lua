@@ -1,4 +1,4 @@
----@class ContributionCollector
+---@class C_ContributionCollector @ContributionCollector
 C_ContributionCollector = {}
 
 function C_ContributionCollector.Close() end
@@ -71,33 +71,29 @@ function C_ContributionCollector.HasPendingContribution(contributionID) end
 function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 
 ---@class ContributionAppearanceFlags
----@field TooltipUseTimeRemaining number @ Default value is [ 0 ]
-
----@type ContributionAppearanceFlags 
-local ContributionAppearanceFlags = {}
+ContributionAppearanceFlags = {}
+ContributionAppearanceFlags.TooltipUseTimeRemaining = 0
 
 ---@class ContributionResult
----@field Success number @ Default value is [ 0 ]
----@field MustBeNearNpc number @ Default value is [ 1 ]
----@field IncorrectState number @ Default value is [ 2 ]
----@field InvalidID number @ Default value is [ 3 ]
----@field QuestDataMissing number @ Default value is [ 4 ]
----@field FailedConditionCheck number @ Default value is [ 5 ]
----@field UnableToCompleteTurnIn number @ Default value is [ 6 ]
----@field InternalError number @ Default value is [ 7 ]
-
----@type ContributionResult 
-local ContributionResult = {}
+ContributionResult = {}
+ContributionResult.Success = 0
+ContributionResult.MustBeNearNpc = 1
+ContributionResult.IncorrectState = 2
+ContributionResult.InvalidID = 3
+ContributionResult.QuestDataMissing = 4
+ContributionResult.FailedConditionCheck = 5
+ContributionResult.UnableToCompleteTurnIn = 6
+ContributionResult.InternalError = 7
 
 ---@class ContributionAppearance
 ---@field stateName cstring 
 ---@field stateColor colorRGB 
 ---@field tooltipLine cstring 
----@field tooltipUseTimeRemaining bool 
+---@field tooltipUseTimeRemaining boolean 
 ---@field statusBarAtlas textureAtlas 
 ---@field borderAtlas textureAtlas 
 ---@field bannerAtlas textureAtlas 
-local ContributionAppearance = {}
+ContributionAppearance = {}
 
 ---@class ContributionMapInfo
 ---@field areaPoiID number 
@@ -105,5 +101,5 @@ local ContributionAppearance = {}
 ---@field name cstring 
 ---@field atlasName string 
 ---@field collectorCreatureID number 
-local ContributionMapInfo = {}
+ContributionMapInfo = {}
 

@@ -1,4 +1,4 @@
----@class FriendList
+---@class C_FriendList @FriendList
 C_FriendList = {}
 
 ---@param name cstring 
@@ -107,18 +107,18 @@ function C_FriendList.ShowFriends() end
 function C_FriendList.SortWho(sorting) end
 
 ---@class FriendInfo
----@field connected bool 
+---@field connected boolean 
 ---@field name string 
 ---@field className string|nil 
 ---@field area string|nil 
 ---@field notes string|nil 
 ---@field guid WOWGUID 
 ---@field level number 
----@field dnd bool 
----@field afk bool 
+---@field dnd boolean 
+---@field afk boolean 
 ---@field rafLinkType RafLinkType 
----@field mobile bool 
-local FriendInfo = {}
+---@field mobile boolean 
+FriendInfo = {}
 
 ---@class WhoInfo
 ---@field fullName string 
@@ -129,5 +129,5 @@ local FriendInfo = {}
 ---@field area string 
 ---@field filename string|nil 
 ---@field gender number 
-local WhoInfo = {}
+WhoInfo = {}
 

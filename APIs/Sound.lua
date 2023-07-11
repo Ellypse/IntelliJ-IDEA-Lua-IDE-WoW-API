@@ -1,4 +1,4 @@
----@class Sound
+---@class C_Sound @Sound
 C_Sound = {}
 
 ---@param soundHandle number 

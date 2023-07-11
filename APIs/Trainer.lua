@@ -1,3 +1,3 @@
----@class Trainer
+---@class C_Trainer @Trainer
 C_Trainer = {}
 

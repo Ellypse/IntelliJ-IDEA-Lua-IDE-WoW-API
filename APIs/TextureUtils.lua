@@ -1,4 +1,4 @@
----@class TextureUtils
+---@class C_Texture @TextureUtils
 C_Texture = {}
 
 ---@param texture SimpleTexture 
@@ -32,12 +32,10 @@ function C_Texture.IsTitleIconTextureReady(titleID, version) end
 function C_Texture.SetTitleIconTexture(texture, titleID, version) end
 
 ---@class TitleIconVersion
----@field Small number @ Default value is [ 0 ]
----@field Medium number @ Default value is [ 1 ]
----@field Large number @ Default value is [ 2 ]
-
----@type TitleIconVersion 
-local TitleIconVersion = {}
+TitleIconVersion = {}
+TitleIconVersion.Small = 0
+TitleIconVersion.Medium = 1
+TitleIconVersion.Large = 2
 
 ---@class AtlasInfo
 ---@field width number 
@@ -46,10 +44,10 @@ local TitleIconVersion = {}
 ---@field rightTexCoord number 
 ---@field topTexCoord number 
 ---@field bottomTexCoord number 
----@field tilesHorizontally bool 
----@field tilesVertically bool 
+---@field tilesHorizontally boolean 
+---@field tilesVertically boolean 
 ---@field file fileID|nil 
 ---@field filename string|nil 
-local AtlasInfo = {}
+AtlasInfo = {}
 
 

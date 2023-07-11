@@ -1,4 +1,4 @@
----@class ClassTalents
+---@class C_ClassTalents @ClassTalents
 C_ClassTalents = {}
 
 --- Returns true only if the player has staged changes and can commit their talents in their current state.
@@ -97,17 +97,15 @@ function C_ClassTalents.UpdateLastSelectedSavedConfigID(specID, configID) end
 function C_ClassTalents.ViewLoadout(entries) end
 
 ---@class LoadConfigResult
----@field Error number @ Default value is [ 0 ]
----@field NoChangesNecessary number @ Default value is [ 1 ]
----@field LoadInProgress number @ Default value is [ 2 ]
----@field Ready number @ Default value is [ 3 ]
-
----@type LoadConfigResult 
-local LoadConfigResult = {}
+LoadConfigResult = {}
+LoadConfigResult.Error = 0
+LoadConfigResult.NoChangesNecessary = 1
+LoadConfigResult.LoadInProgress = 2
+LoadConfigResult.Ready = 3
 
 ---@class ImportLoadoutEntryInfo
 ---@field nodeID number 
 ---@field ranksPurchased number 
 ---@field selectionEntryID number 
-local ImportLoadoutEntryInfo = {}
+ImportLoadoutEntryInfo = {}
 

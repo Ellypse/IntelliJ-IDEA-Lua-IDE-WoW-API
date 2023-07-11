@@ -1,4 +1,4 @@
----@class PetInfo
+---@class C_PetInfo @PetInfo
 C_PetInfo = {}
 
 ---@param uiMapID number 
@@ -15,5 +15,5 @@ function C_PetInfo.GetSpellForPetAction(actionID) end
 ---@field name cstring 
 ---@field atlasName string|nil 
 ---@field textureIndex number|nil 
-local PetTamerMapInfo = {}
+PetTamerMapInfo = {}
 

@@ -1,4 +1,4 @@
----@class Camera
+---@class C_CameraDefaults @Camera
 C_CameraDefaults = {}
 
 ---@return number, number, number fieldOfViewDegreesDefault, fieldOfViewDegreesPlayerMin, fieldOfViewDegreesPlayerMax

@@ -1,4 +1,4 @@
----@class AzeriteEssence
+---@class C_AzeriteEssence @AzeriteEssence
 C_AzeriteEssence = {}
 
 ---@param essenceID number 
@@ -76,17 +76,17 @@ function C_AzeriteEssence.UnlockMilestone(milestoneID) end
 ---@field ID number 
 ---@field name cstring 
 ---@field rank number 
----@field unlocked bool 
----@field valid bool 
+---@field unlocked boolean 
+---@field valid boolean 
 ---@field icon fileID 
-local AzeriteEssenceInfo = {}
+AzeriteEssenceInfo = {}
 
 ---@class AzeriteMilestoneInfo
 ---@field ID number 
 ---@field requiredLevel number 
----@field canUnlock bool 
----@field unlocked bool 
+---@field canUnlock boolean 
+---@field unlocked boolean 
 ---@field rank number|nil 
 ---@field slot AzeriteEssenceSlot|nil 
-local AzeriteMilestoneInfo = {}
+AzeriteMilestoneInfo = {}
 

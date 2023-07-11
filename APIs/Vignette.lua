@@ -1,4 +1,4 @@
----@class Vignette
+---@class C_VignetteInfo @Vignette
 C_VignetteInfo = {}
 
 ---@param vignetteGUIDs WOWGUID 
@@ -21,18 +21,18 @@ function C_VignetteInfo.GetVignettes() end
 ---@field vignetteGUID WOWGUID 
 ---@field objectGUID WOWGUID 
 ---@field name cstring 
----@field isDead bool 
----@field onWorldMap bool 
----@field zoneInfiniteAOI bool 
----@field onMinimap bool 
----@field isUnique bool 
----@field inFogOfWar bool 
+---@field isDead boolean 
+---@field onWorldMap boolean 
+---@field zoneInfiniteAOI boolean 
+---@field onMinimap boolean 
+---@field isUnique boolean 
+---@field inFogOfWar boolean 
 ---@field atlasName textureAtlas 
----@field hasTooltip bool 
+---@field hasTooltip boolean 
 ---@field vignetteID number 
 ---@field type VignetteType 
 ---@field rewardQuestID number 
 ---@field widgetSetID number|nil 
----@field addPaddingAboveWidgets bool|nil 
-local VignetteInfo = {}
+---@field addPaddingAboveWidgets boolean|nil 
+VignetteInfo = {}
 

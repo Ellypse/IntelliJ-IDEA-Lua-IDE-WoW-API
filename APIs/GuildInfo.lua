@@ -1,4 +1,4 @@
----@class GuildInfo
+---@class C_GuildInfo @GuildInfo
 C_GuildInfo = {}
 
 ---@return boolean canEditOfficerNote
@@ -63,17 +63,17 @@ function C_GuildInfo.SetGuildRankOrder(guid, rankOrder) end
 function C_GuildInfo.SetNote(guid, note, isPublic) end
 
 ---@class GuildNewsInfo
----@field isSticky bool 
----@field isHeader bool 
+---@field isSticky boolean 
+---@field isHeader boolean 
 ---@field newsType number 
 ---@field whoText string|nil 
 ---@field whatText string|nil 
 ---@field newsDataID number 
----@field data table 
+---@field data number 
 ---@field weekday number 
 ---@field day number 
 ---@field month number 
 ---@field year number 
 ---@field guildMembersPresent number 
-local GuildNewsInfo = {}
+GuildNewsInfo = {}
 

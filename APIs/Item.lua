@@ -1,4 +1,4 @@
----@class Item
+---@class C_Item @Item
 C_Item = {}
 
 ---@param itemLoc ItemLocation 

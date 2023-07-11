@@ -1,4 +1,4 @@
----@class LootJournal
+---@class C_LootJournal @LootJournal
 C_LootJournal = {}
 
 ---@param setID number 
@@ -14,11 +14,11 @@ function C_LootJournal.GetItemSets(classID, specID) end
 ---@field itemID number 
 ---@field icon fileID 
 ---@field invType luaIndex 
-local LootJournalItemInfo = {}
+LootJournalItemInfo = {}
 
 ---@class LootJournalItemSetInfo
 ---@field setID number 
 ---@field itemLevel number 
 ---@field name cstring 
-local LootJournalItemSetInfo = {}
+LootJournalItemSetInfo = {}
 

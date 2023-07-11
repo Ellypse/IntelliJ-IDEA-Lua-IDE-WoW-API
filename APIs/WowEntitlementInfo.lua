@@ -1,18 +1,16 @@
----@class WowEntitlementInfo
+---@class C_WowEntitlementInfo @WowEntitlementInfo
 C_WowEntitlementInfo = {}
 
 ---@class WoWEntitlementType
----@field Item number @ Default value is [ 0 ]
----@field Mount number @ Default value is [ 1 ]
----@field Battlepet number @ Default value is [ 2 ]
----@field Toy number @ Default value is [ 3 ]
----@field Appearance number @ Default value is [ 4 ]
----@field AppearanceSet number @ Default value is [ 5 ]
----@field GameTime number @ Default value is [ 6 ]
----@field Title number @ Default value is [ 7 ]
----@field Illusion number @ Default value is [ 8 ]
----@field Invalid number @ Default value is [ 9 ]
-
----@type WoWEntitlementType 
-local WoWEntitlementType = {}
+WoWEntitlementType = {}
+WoWEntitlementType.Item = 0
+WoWEntitlementType.Mount = 1
+WoWEntitlementType.Battlepet = 2
+WoWEntitlementType.Toy = 3
+WoWEntitlementType.Appearance = 4
+WoWEntitlementType.AppearanceSet = 5
+WoWEntitlementType.GameTime = 6
+WoWEntitlementType.Title = 7
+WoWEntitlementType.Illusion = 8
+WoWEntitlementType.Invalid = 9
 

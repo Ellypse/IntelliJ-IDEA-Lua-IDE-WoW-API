@@ -1,4 +1,4 @@
----@class ProfessionSpecUI
+---@class C_ProfSpecs @ProfessionSpecUI
 C_ProfSpecs = {}
 
 ---@param pathID number 

@@ -1,4 +1,4 @@
----@class TooltipComparison
+---@class C_TooltipComparison @TooltipComparison
 C_TooltipComparison = {}
 
 ---@param comparisonItem TooltipComparisonItem 
@@ -13,17 +13,15 @@ function C_TooltipComparison.GetItemComparisonDelta(comparisonItem, equippedItem
 function C_TooltipComparison.GetItemComparisonInfo(comparisonItem) end
 
 ---@class TooltipComparisonMethod
----@field Single number @ Default value is [ 0 ]
----@field WithBothHands number @ Default value is [ 1 ]
----@field WithBagMainHandItem number @ Default value is [ 2 ]
----@field WithBagOffHandItem number @ Default value is [ 3 ]
-
----@type TooltipComparisonMethod 
-local TooltipComparisonMethod = {}
+TooltipComparisonMethod = {}
+TooltipComparisonMethod.Single = 0
+TooltipComparisonMethod.WithBothHands = 1
+TooltipComparisonMethod.WithBagMainHandItem = 2
+TooltipComparisonMethod.WithBagOffHandItem = 3
 
 ---@class TooltipItemComparisonInfo
 ---@field method TooltipComparisonMethod 
 ---@field item TooltipComparisonItem 
----@field additionalItems table 
-local TooltipItemComparisonInfo = {}
+---@field additionalItems TooltipComparisonItem 
+TooltipItemComparisonInfo = {}
 

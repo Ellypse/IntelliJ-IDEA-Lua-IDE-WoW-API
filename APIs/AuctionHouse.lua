@@ -1,4 +1,4 @@
----@class AuctionHouse
+---@class C_AuctionHouse @AuctionHouse
 C_AuctionHouse = {}
 
 ---@param itemID number 
@@ -331,52 +331,46 @@ function C_AuctionHouse.SetFavoriteItem(itemKey, setFavorite) end
 function C_AuctionHouse.StartCommoditiesPurchase(itemID, quantity) end
 
 ---@class AuctionHouseFilterCategory
----@field Uncategorized number @ Default value is [ 0 ]
----@field Equipment number @ Default value is [ 1 ]
----@field Rarity number @ Default value is [ 2 ]
-
----@type AuctionHouseFilterCategory 
-local AuctionHouseFilterCategory = {}
+AuctionHouseFilterCategory = {}
+AuctionHouseFilterCategory.Uncategorized = 0
+AuctionHouseFilterCategory.Equipment = 1
+AuctionHouseFilterCategory.Rarity = 2
 
 ---@class AuctionStatus
----@field Active number @ Default value is [ 0 ]
----@field Sold number @ Default value is [ 1 ]
-
----@type AuctionStatus 
-local AuctionStatus = {}
+AuctionStatus = {}
+AuctionStatus.Active = 0
+AuctionStatus.Sold = 1
 
 ---@class ItemCommodityStatus
----@field Unknown number @ Default value is [ 0 ]
----@field Item number @ Default value is [ 1 ]
----@field Commodity number @ Default value is [ 2 ]
-
----@type ItemCommodityStatus 
-local ItemCommodityStatus = {}
+ItemCommodityStatus = {}
+ItemCommodityStatus.Unknown = 0
+ItemCommodityStatus.Item = 1
+ItemCommodityStatus.Commodity = 2
 
 ---@class AuctionHouseBrowseQuery
 ---@field searchString string 
----@field sorts table 
+---@field sorts AuctionHouseSortType 
 ---@field minLevel number|nil 
 ---@field maxLevel number|nil 
----@field filters table|nil 
----@field itemClassFilters table|nil 
-local AuctionHouseBrowseQuery = {}
+---@field filters AuctionHouseFilter|nil 
+---@field itemClassFilters AuctionHouseItemClassFilter|nil 
+AuctionHouseBrowseQuery = {}
 
 ---@class AuctionHouseFilterGroup
 ---@field category AuctionHouseFilterCategory 
----@field filters table 
-local AuctionHouseFilterGroup = {}
+---@field filters AuctionHouseFilter 
+AuctionHouseFilterGroup = {}
 
 ---@class AuctionHouseItemClassFilter
 ---@field classID number 
 ---@field subClassID number|nil 
 ---@field inventoryType InventoryType|nil 
-local AuctionHouseItemClassFilter = {}
+AuctionHouseItemClassFilter = {}
 
 ---@class AuctionHouseSortType
 ---@field sortOrder AuctionHouseSortOrder 
----@field reverseSort bool 
-local AuctionHouseSortType = {}
+---@field reverseSort boolean 
+AuctionHouseSortType = {}
 
 ---@class AuctionInfo
 ---@field itemKey ItemKey 
@@ -385,7 +379,7 @@ local AuctionHouseSortType = {}
 ---@field bidAmount WOWMONEY|nil 
 ---@field buyoutAmount WOWMONEY|nil 
 ---@field bidder WOWGUID|nil 
-local AuctionInfo = {}
+AuctionInfo = {}
 
 ---@class BidInfo
 ---@field auctionID number 
@@ -396,35 +390,35 @@ local AuctionInfo = {}
 ---@field bidAmount BigUInteger|nil 
 ---@field buyoutAmount BigUInteger|nil 
 ---@field bidder WOWGUID|nil 
-local BidInfo = {}
+BidInfo = {}
 
 ---@class BrowseResultInfo
 ---@field itemKey ItemKey 
 ---@field appearanceLink string|nil 
 ---@field totalQuantity number 
 ---@field minPrice BigUInteger 
----@field containsOwnerItem bool 
-local BrowseResultInfo = {}
+---@field containsOwnerItem boolean 
+BrowseResultInfo = {}
 
 ---@class CommoditySearchResultInfo
 ---@field itemID number 
 ---@field quantity number 
 ---@field unitPrice BigUInteger 
 ---@field auctionID number 
----@field owners table 
+---@field owners string 
 ---@field totalNumberOfOwners number 
 ---@field timeLeftSeconds number|nil 
 ---@field numOwnerItems number 
----@field containsOwnerItem bool 
----@field containsAccountItem bool 
-local CommoditySearchResultInfo = {}
+---@field containsOwnerItem boolean 
+---@field containsAccountItem boolean 
+CommoditySearchResultInfo = {}
 
 ---@class ItemKey
 ---@field itemID number 
 ---@field itemLevel number 
 ---@field itemSuffix number 
 ---@field battlePetSpeciesID number 
-local ItemKey = {}
+ItemKey = {}
 
 ---@class ItemKeyInfo
 ---@field itemID number 
@@ -434,28 +428,28 @@ local ItemKey = {}
 ---@field appearanceLink string|nil 
 ---@field quality ItemQuality 
 ---@field iconFileID number 
----@field isPet bool 
----@field isCommodity bool 
----@field isEquipment bool 
-local ItemKeyInfo = {}
+---@field isPet boolean 
+---@field isCommodity boolean 
+---@field isEquipment boolean 
+ItemKeyInfo = {}
 
 ---@class ItemSearchResultInfo
 ---@field itemKey ItemKey 
----@field owners table 
+---@field owners string 
 ---@field totalNumberOfOwners number 
 ---@field timeLeft AuctionHouseTimeLeftBand 
 ---@field auctionID number 
 ---@field quantity number 
 ---@field itemLink string|nil 
----@field containsOwnerItem bool 
----@field containsAccountItem bool 
----@field containsSocketedItem bool 
+---@field containsOwnerItem boolean 
+---@field containsAccountItem boolean 
+---@field containsSocketedItem boolean 
 ---@field bidder WOWGUID|nil 
 ---@field minBid BigUInteger|nil 
 ---@field bidAmount BigUInteger|nil 
 ---@field buyoutAmount BigUInteger|nil 
 ---@field timeLeftSeconds number|nil 
-local ItemSearchResultInfo = {}
+ItemSearchResultInfo = {}
 
 ---@class OwnedAuctionInfo
 ---@field auctionID number 
@@ -468,14 +462,14 @@ local ItemSearchResultInfo = {}
 ---@field bidAmount BigUInteger|nil 
 ---@field buyoutAmount BigUInteger|nil 
 ---@field bidder string|nil 
-local OwnedAuctionInfo = {}
+OwnedAuctionInfo = {}
 
 ---@class ReplicateItemInfo
 ---@field name string|nil 
 ---@field texture fileID|nil 
 ---@field count number 
 ---@field qualityID number 
----@field usable bool|nil 
+---@field usable boolean|nil 
 ---@field level number 
 ---@field levelType string|nil 
 ---@field minBid BigUInteger 
@@ -488,6 +482,6 @@ local OwnedAuctionInfo = {}
 ---@field ownerFullName string|nil 
 ---@field saleStatus number 
 ---@field itemID number 
----@field hasAllInfo bool|nil 
-local ReplicateItemInfo = {}
+---@field hasAllInfo boolean|nil 
+ReplicateItemInfo = {}
 

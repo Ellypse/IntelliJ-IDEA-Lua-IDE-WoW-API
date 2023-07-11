@@ -1,4 +1,4 @@
----@class ClickBindings
+---@class C_ClickBindings @ClickBindings
 C_ClickBindings = {}
 
 ---@param spellID number 

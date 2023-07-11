@@ -1,4 +1,4 @@
----@class TransmogrifyCollection
+---@class C_TransmogCollection @TransmogrifyCollection
 C_TransmogCollection = {}
 
 ---@param sourceID number 
@@ -269,80 +269,78 @@ function C_TransmogCollection.SetUncollectedShown(shown) end
 function C_TransmogCollection.UpdateUsableAppearances() end
 
 ---@class TransmogCameraVariation
----@field None number @ Default value is [ 0 ]
----@field RightShoulder number @ Default value is [ 1 ]
----@field CloakBackpack number @ Default value is [ 1 ]
-
----@type TransmogCameraVariation 
-local TransmogCameraVariation = {}
+TransmogCameraVariation = {}
+TransmogCameraVariation.None = 0
+TransmogCameraVariation.RightShoulder = 1
+TransmogCameraVariation.CloakBackpack = 1
 
 ---@class TransmogAppearanceInfoBySourceData
 ---@field appearanceID number 
----@field appearanceIsCollected bool 
----@field sourceIsCollected bool 
----@field sourceIsCollectedPermanent bool 
----@field sourceIsCollectedConditional bool 
----@field meetsTransmogPlayerCondition bool 
----@field appearanceHasAnyNonLevelRequirements bool 
----@field appearanceMeetsNonLevelRequirements bool 
----@field appearanceIsUsable bool 
+---@field appearanceIsCollected boolean 
+---@field sourceIsCollected boolean 
+---@field sourceIsCollectedPermanent boolean 
+---@field sourceIsCollectedConditional boolean 
+---@field meetsTransmogPlayerCondition boolean 
+---@field appearanceHasAnyNonLevelRequirements boolean 
+---@field appearanceMeetsNonLevelRequirements boolean 
+---@field appearanceIsUsable boolean 
 ---@field appearanceNumSources number 
----@field sourceIsKnown bool 
-local TransmogAppearanceInfoBySourceData = {}
+---@field sourceIsKnown boolean 
+TransmogAppearanceInfoBySourceData = {}
 
 ---@class TransmogAppearanceJournalEncounterInfo
 ---@field instance string 
 ---@field instanceType number 
----@field tiers table 
+---@field tiers string 
 ---@field encounter string 
----@field difficulties table 
-local TransmogAppearanceJournalEncounterInfo = {}
+---@field difficulties string 
+TransmogAppearanceJournalEncounterInfo = {}
 
 ---@class TransmogAppearanceSourceInfoData
 ---@field category TransmogCollectionType 
 ---@field itemAppearanceID number 
----@field canHaveIllusion bool 
+---@field canHaveIllusion boolean 
 ---@field icon fileID 
----@field isCollected bool 
+---@field isCollected boolean 
 ---@field itemLink string 
 ---@field transmoglink string 
 ---@field sourceType luaIndex|nil 
 ---@field itemSubClass number 
-local TransmogAppearanceSourceInfoData = {}
+TransmogAppearanceSourceInfoData = {}
 
 ---@class TransmogCategoryAppearanceInfo
 ---@field visualID number 
----@field isCollected bool 
----@field isFavorite bool 
----@field isHideVisual bool 
+---@field isCollected boolean 
+---@field isFavorite boolean 
+---@field isHideVisual boolean 
 ---@field uiOrder number 
 ---@field exclusions number 
 ---@field restrictedSlotID luaIndex|nil 
----@field isUsable bool 
----@field hasRequiredHoliday bool 
----@field hasActiveRequiredHoliday bool 
----@field alwaysShowItem bool|nil @ For internal testing only
-local TransmogCategoryAppearanceInfo = {}
+---@field isUsable boolean 
+---@field hasRequiredHoliday boolean 
+---@field hasActiveRequiredHoliday boolean 
+---@field alwaysShowItem boolean|nil @ For internal testing only
+TransmogCategoryAppearanceInfo = {}
 
 ---@class TransmogCategoryInfo
 ---@field name cstring 
----@field isWeapon bool 
----@field canHaveIllusions bool 
----@field canMainHand bool 
----@field canOffHand bool 
-local TransmogCategoryInfo = {}
+---@field isWeapon boolean 
+---@field canHaveIllusions boolean 
+---@field canMainHand boolean 
+---@field canOffHand boolean 
+TransmogCategoryInfo = {}
 
 ---@class TransmogIllusionInfo
 ---@field visualID number 
 ---@field sourceID number 
 ---@field icon fileID 
----@field isCollected bool 
----@field isUsable bool 
----@field isHideVisual bool 
-local TransmogIllusionInfo = {}
+---@field isCollected boolean 
+---@field isUsable boolean 
+---@field isHideVisual boolean 
+TransmogIllusionInfo = {}
 
 ---@class TransmogOutfitInfo
 ---@field name cstring 
 ---@field icon fileID 
-local TransmogOutfitInfo = {}
+TransmogOutfitInfo = {}
 

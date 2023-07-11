@@ -1,4 +1,4 @@
----@class QuestInfoSystem
+---@class C_QuestInfoSystem @QuestInfoSystem
 C_QuestInfoSystem = {}
 
 ---@param questID number @ [OPTIONAL]
@@ -22,11 +22,11 @@ function C_QuestInfoSystem.HasQuestRewardSpells(questID) end
 ---@field texture fileID 
 ---@field name cstring 
 ---@field garrFollowerID number|nil 
----@field isTradeskill bool 
----@field isSpellLearned bool 
----@field hideSpellLearnText bool 
----@field isBoostSpell bool 
----@field genericUnlock bool 
+---@field isTradeskill boolean 
+---@field isSpellLearned boolean 
+---@field hideSpellLearnText boolean 
+---@field isBoostSpell boolean 
+---@field genericUnlock boolean 
 ---@field type QuestCompleteSpellType 
-local QuestRewardSpellInfo = {}
+QuestRewardSpellInfo = {}
 

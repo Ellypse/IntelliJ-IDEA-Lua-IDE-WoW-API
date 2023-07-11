@@ -1,4 +1,4 @@
----@class EventUtils
+---@class C_EventUtils @EventUtils
 C_EventUtils = {}
 
 ---@param eventName cstring 

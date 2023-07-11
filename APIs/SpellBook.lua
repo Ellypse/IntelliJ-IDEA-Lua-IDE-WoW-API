@@ -1,4 +1,4 @@
----@class SpellBook
+---@class C_SpellBook @SpellBook
 C_SpellBook = {}
 
 ---@return boolean contains
@@ -45,7 +45,7 @@ function C_SpellBook.IsSpellDisabled(spellID) end
 ---@field priority number 
 ---@field warningText string 
 ---@field soundKitID number|nil 
-local DeadlyDebuffInfo = {}
+DeadlyDebuffInfo = {}
 
 ---@class SpellInfo
 ---@field name string 
@@ -54,5 +54,5 @@ local DeadlyDebuffInfo = {}
 ---@field minRange number 
 ---@field maxRange number 
 ---@field spellID number 
-local SpellInfo = {}
+SpellInfo = {}
 

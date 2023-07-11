@@ -1,4 +1,4 @@
----@class QuestLog
+---@class C_QuestLog @QuestLog
 C_QuestLog = {}
 
 function C_QuestLog.AbandonQuest() end
@@ -320,54 +320,44 @@ function C_QuestLog.SortQuestWatches() end
 function C_QuestLog.UnitIsRelatedToActiveQuest(unit) end
 
 ---@class MapOverlayDisplayLocation
----@field Default number @ Default value is [ 0 ]
----@field BottomLeft number @ Default value is [ 1 ]
----@field TopLeft number @ Default value is [ 2 ]
----@field BottomRight number @ Default value is [ 3 ]
----@field TopRight number @ Default value is [ 4 ]
----@field Hidden number @ Default value is [ 5 ]
-
----@type MapOverlayDisplayLocation 
-local MapOverlayDisplayLocation = {}
+MapOverlayDisplayLocation = {}
+MapOverlayDisplayLocation.Default = 0
+MapOverlayDisplayLocation.BottomLeft = 1
+MapOverlayDisplayLocation.TopLeft = 2
+MapOverlayDisplayLocation.BottomRight = 3
+MapOverlayDisplayLocation.TopRight = 4
+MapOverlayDisplayLocation.Hidden = 5
 
 ---@class QuestFrequency
----@field Default number @ Default value is [ 0 ]
----@field Daily number @ Default value is [ 1 ]
----@field Weekly number @ Default value is [ 2 ]
-
----@type QuestFrequency 
-local QuestFrequency = {}
+QuestFrequency = {}
+QuestFrequency.Default = 0
+QuestFrequency.Daily = 1
+QuestFrequency.Weekly = 2
 
 ---@class QuestTag
----@field Group number @ Default value is [ 1 ]
----@field PvP number @ Default value is [ 41 ]
----@field Raid number @ Default value is [ 62 ]
----@field Dungeon number @ Default value is [ 81 ]
----@field Legendary number @ Default value is [ 83 ]
----@field Heroic number @ Default value is [ 85 ]
----@field Raid10 number @ Default value is [ 88 ]
----@field Raid25 number @ Default value is [ 89 ]
----@field Scenario number @ Default value is [ 98 ]
----@field Account number @ Default value is [ 102 ]
----@field CombatAlly number @ Default value is [ 266 ]
-
----@type QuestTag 
-local QuestTag = {}
+QuestTag = {}
+QuestTag.Group = 1
+QuestTag.PvP = 41
+QuestTag.Raid = 62
+QuestTag.Dungeon = 81
+QuestTag.Legendary = 83
+QuestTag.Heroic = 85
+QuestTag.Raid10 = 88
+QuestTag.Raid25 = 89
+QuestTag.Scenario = 98
+QuestTag.Account = 102
+QuestTag.CombatAlly = 266
 
 ---@class QuestWatchType
----@field Automatic number @ Default value is [ 0 ]
----@field Manual number @ Default value is [ 1 ]
-
----@type QuestWatchType 
-local QuestWatchType = {}
+QuestWatchType = {}
+QuestWatchType.Automatic = 0
+QuestWatchType.Manual = 1
 
 ---@class WorldQuestQuality
----@field Common number @ Default value is [ 0 ]
----@field Rare number @ Default value is [ 1 ]
----@field Epic number @ Default value is [ 2 ]
-
----@type WorldQuestQuality 
-local WorldQuestQuality = {}
+WorldQuestQuality = {}
+WorldQuestQuality.Common = 0
+WorldQuestQuality.Rare = 1
+WorldQuestQuality.Epic = 2
 
 ---@class QuestInfo
 ---@field title string 
@@ -378,38 +368,38 @@ local WorldQuestQuality = {}
 ---@field difficultyLevel number 
 ---@field suggestedGroup number 
 ---@field frequency QuestFrequency|nil 
----@field isHeader bool 
----@field useMinimalHeader bool 
----@field isCollapsed bool 
----@field startEvent bool 
----@field isTask bool 
----@field isBounty bool 
----@field isStory bool 
----@field isScaling bool 
----@field isOnMap bool 
----@field hasLocalPOI bool 
----@field isHidden bool 
----@field isAutoComplete bool 
----@field overridesSortOrder bool 
----@field readyForTranslation bool 
----@field isLegendarySort bool 
-local QuestInfo = {}
+---@field isHeader boolean 
+---@field useMinimalHeader boolean 
+---@field isCollapsed boolean 
+---@field startEvent boolean 
+---@field isTask boolean 
+---@field isBounty boolean 
+---@field isStory boolean 
+---@field isScaling boolean 
+---@field isOnMap boolean 
+---@field hasLocalPOI boolean 
+---@field isHidden boolean 
+---@field isAutoComplete boolean 
+---@field overridesSortOrder boolean 
+---@field readyForTranslation boolean 
+---@field isLegendarySort boolean 
+QuestInfo = {}
 
 ---@class QuestObjectiveInfo
 ---@field text string 
 ---@field type string 
----@field finished bool 
+---@field finished boolean 
 ---@field numFulfilled number 
 ---@field numRequired number 
-local QuestObjectiveInfo = {}
+QuestObjectiveInfo = {}
 
 ---@class QuestOnMapInfo
 ---@field questID number 
 ---@field x number 
 ---@field y number 
 ---@field type number 
----@field isMapIndicatorQuest bool 
-local QuestOnMapInfo = {}
+---@field isMapIndicatorQuest boolean 
+QuestOnMapInfo = {}
 
 ---@class QuestTagInfo
 ---@field tagName cstring 
@@ -417,14 +407,14 @@ local QuestOnMapInfo = {}
 ---@field worldQuestType number|nil 
 ---@field quality WorldQuestQuality|nil 
 ---@field tradeskillLineID number|nil 
----@field isElite bool|nil 
----@field displayExpiration bool|nil 
-local QuestTagInfo = {}
+---@field isElite boolean|nil 
+---@field displayExpiration boolean|nil 
+QuestTagInfo = {}
 
 ---@class QuestTheme
 ---@field background textureAtlas 
 ---@field seal textureAtlas 
 ---@field signature cstring 
 ---@field poiIcon textureAtlas 
-local QuestTheme = {}
+QuestTheme = {}
 
