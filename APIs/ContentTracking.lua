@@ -4,8 +4,14 @@ C_ContentTracking = {}
 ---@param trackableType ContentTrackingType 
 ---@param trackableID number 
 ---@param ignoreWaypoint boolean 
----@return number|nil mapID
+---@return ContentTrackingResult, number|nil result, mapID
 function C_ContentTracking.GetBestMapForTrackable(trackableType, trackableID, ignoreWaypoint) end
+
+---@return boolean isEnabled
+function C_ContentTracking.GetCollectableSourceTrackingEnabled() end
+
+---@return ContentTrackingType collectableSourceTypes
+function C_ContentTracking.GetCollectableSourceTypes() end
 
 ---@param type ContentTrackingType 
 ---@param id number 
@@ -19,7 +25,7 @@ function C_ContentTracking.GetEncounterTrackingInfo(journalEncounterID) end
 ---@param trackableType ContentTrackingType 
 ---@param trackableID number 
 ---@param uiMapID number 
----@return ContentTrackingMapInfo mapInfo
+---@return ContentTrackingResult, ContentTrackingMapInfo|nil result, mapInfo
 function C_ContentTracking.GetNextWaypointForTrackable(trackableType, trackableID, uiMapID) end
 
 ---@param targetType ContentTrackingTargetType 
@@ -35,7 +41,7 @@ function C_ContentTracking.GetTitle(trackableType, trackableID) end
 
 ---@param trackableType ContentTrackingType 
 ---@param uiMapID number 
----@return ContentTrackingMapInfo trackableMapInfos
+---@return ContentTrackingResult, ContentTrackingMapInfo result, trackableMapInfos
 function C_ContentTracking.GetTrackablesOnMap(trackableType, uiMapID) end
 
 ---@param trackableType ContentTrackingType 
@@ -46,10 +52,15 @@ function C_ContentTracking.GetTrackedIDs(trackableType) end
 ---@return VendorTrackingInfo vendorTrackingInfo
 function C_ContentTracking.GetVendorTrackingInfo(collectableEntryID) end
 
---- Returns if the trackable is either on your current map, or if we're able to determine a route to that map from your location via waypoints.
 ---@param trackableType ContentTrackingType 
 ---@param trackableID number 
----@return boolean isNavigable
+---@return string waypointText
+function C_ContentTracking.GetWaypointText(trackableType, trackableID) end
+
+--- If successful, returns if the trackable is either on your current map, or if we're able to determine a route to that map from your location via waypoints.
+---@param trackableType ContentTrackingType 
+---@param trackableID number 
+---@return ContentTrackingResult, boolean result, isNavigable
 function C_ContentTracking.IsNavigable(trackableType, trackableID) end
 
 ---@param type ContentTrackingType 

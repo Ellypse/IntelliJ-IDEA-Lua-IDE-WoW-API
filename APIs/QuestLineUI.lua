@@ -5,6 +5,10 @@ C_QuestLine = {}
 ---@return QuestLineInfo questLines
 function C_QuestLine.GetAvailableQuestLines(uiMapID) end
 
+---@param uiMapID number 
+---@return number questIDs
+function C_QuestLine.GetForceVisibleQuests(uiMapID) end
+
 ---@param questID number 
 ---@param uiMapID number 
 ---@return QuestLineInfo|nil questLineInfo
@@ -40,6 +44,7 @@ local QuestLineFloorLocation = {}
 ---@field isLegendary bool 
 ---@field isDaily bool 
 ---@field isCampaign bool 
+---@field isImportant bool 
 ---@field floorLocation QuestLineFloorLocation 
 local QuestLineInfo = {}
 

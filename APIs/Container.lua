@@ -186,6 +186,7 @@ function C_Container.UseHearthstone() end
 ---@field hasNoValue bool 
 ---@field itemID number 
 ---@field isBound bool 
+---@field itemName string 
 local ContainerItemInfo = {}
 
 ---@class ItemPurchaseCurrency

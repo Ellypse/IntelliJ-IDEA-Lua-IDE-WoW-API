@@ -204,6 +204,17 @@ function C_Commentator.GetPlayerFlagInfo(teamIndex, playerIndex) end
 ---@return boolean hasFlag
 function C_Commentator.GetPlayerFlagInfoByUnit(unitToken) end
 
+---@param teamIndex luaIndex 
+---@param playerIndex luaIndex 
+---@param itemID number 
+---@return number, number, boolean startTime, duration, enable
+function C_Commentator.GetPlayerItemCooldownInfo(teamIndex, playerIndex, itemID) end
+
+---@param unitToken UnitToken 
+---@param itemID number 
+---@return number, number, boolean startTime, duration, enable
+function C_Commentator.GetPlayerItemCooldownInfoByUnit(unitToken, itemID) end
+
 ---@param originalName string 
 ---@return string overrideName
 function C_Commentator.GetPlayerOverrideName(originalName) end
@@ -343,6 +354,9 @@ function C_Commentator.SetBlocklistedAuras(spellIDs) end
 ---@param spellIDs number 
 function C_Commentator.SetBlocklistedCooldowns(specID, spellIDs) end
 
+---@param itemIDs number 
+function C_Commentator.SetBlocklistedItemCooldowns(itemIDs) end
+
 ---@param xPos number 
 ---@param yPos number 
 ---@param zPos number 
@@ -422,6 +436,9 @@ function C_Commentator.SetRequestedDebuffCooldowns(specID, spellIDs) end
 ---@param spellIDs number 
 function C_Commentator.SetRequestedDefensiveCooldowns(specID, spellIDs) end
 
+---@param itemIDs number 
+function C_Commentator.SetRequestedItemCooldowns(itemIDs) end
+
 ---@param specID number 
 ---@param spellIDs number 
 function C_Commentator.SetRequestedOffensiveCooldowns(specID, spellIDs) end
@@ -478,16 +495,6 @@ function C_Commentator.ZoomIn() end
 
 function C_Commentator.ZoomOut() end
 
----@class TrackedSpellCategory
----@field Offensive number @ Default value is [ 0 ]
----@field Defensive number @ Default value is [ 1 ]
----@field Debuff number @ Default value is [ 2 ]
----@field RacialAbility number @ Default value is [ 3 ]
----@field Count number @ Default value is [ 4 ]
-
----@type TrackedSpellCategory 
-local TrackedSpellCategory = {}
-
 ---@class CommentatorHistory
 ---@field series table 
 ---@field teamDirectory table 
@@ -527,6 +534,11 @@ local CommentatorSeriesTeam = {}
 ---@field playerName string 
 ---@field teamName string 
 local CommentatorTeamDirectoryEntry = {}
+
+---@class CommentatorTrackedItemCooldown
+---@field spellID number 
+---@field category TrackedSpellCategory 
+local CommentatorTrackedItemCooldown = {}
 
 ---@class CommentatorUnitData
 ---@field healthMax number 

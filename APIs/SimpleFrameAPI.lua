@@ -1,4 +1,7 @@
 
+function AbortDrag() end
+
+
 ---@return boolean canChangeAttributes
 function CanChangeAttribute() end
 
@@ -151,6 +154,9 @@ function HasFixedFrameStrata() end
 
 
 function Hide() end
+
+---@param delegate SimpleFrame 
+function InterceptStartDrag(delegate) end
 
 
 ---@return boolean clampedToScreen

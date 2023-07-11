@@ -52,10 +52,10 @@ function C_PvP.GetActiveMatchWinner() end
 function C_PvP.GetArenaCrowdControlInfo(playerToken) end
 
 ---@param teamSize number 
----@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil honor, experience, itemRewards, currencyRewards
+---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil, RoleShortageReward|nil honor, experience, itemRewards, currencyRewards, roleShortageBonus
 function C_PvP.GetArenaRewards(teamSize) end
 
----@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil honor, experience, itemRewards, currencyRewards
+---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil, RoleShortageReward|nil honor, experience, itemRewards, currencyRewards, roleShortageBonus
 function C_PvP.GetArenaSkirmishRewards() end
 
 ---@param queueID number 
@@ -81,7 +81,7 @@ function C_PvP.GetBattlefieldVehicleInfo(vehicleIndex, uiMapID) end
 function C_PvP.GetBattlefieldVehicles(uiMapID) end
 
 ---@param brawlType BrawlType 
----@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil, boolean honor, experience, itemRewards, currencyRewards, hasWon
+---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil, RoleShortageReward|nil, boolean honor, experience, itemRewards, currencyRewards, roleShortageBonus, hasWon
 function C_PvP.GetBrawlRewards(brawlType) end
 
 ---@return number statID
@@ -147,22 +147,22 @@ function C_PvP.GetPvpTierInfo(tierID) end
 ---@return RandomBGInfo info
 function C_PvP.GetRandomBGInfo() end
 
----@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil honor, experience, itemRewards, currencyRewards
+---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil, RoleShortageReward|nil honor, experience, itemRewards, currencyRewards, roleShortageBonus
 function C_PvP.GetRandomBGRewards() end
 
 ---@return RandomBGInfo info
 function C_PvP.GetRandomEpicBGInfo() end
 
----@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil honor, experience, itemRewards, currencyRewards
+---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil, RoleShortageReward|nil honor, experience, itemRewards, currencyRewards, roleShortageBonus
 function C_PvP.GetRandomEpicBGRewards() end
 
----@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil honor, experience, itemRewards, currencyRewards
+---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil, RoleShortageReward|nil honor, experience, itemRewards, currencyRewards, roleShortageBonus
 function C_PvP.GetRatedBGRewards() end
 
 ---@return number minItemLevel
 function C_PvP.GetRatedSoloShuffleMinItemLevel() end
 
----@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil honor, experience, itemRewards, currencyRewards
+---@return number, number, BattlefieldItemReward|nil, BattlefieldCurrencyReward|nil, RoleShortageReward|nil honor, experience, itemRewards, currencyRewards, roleShortageBonus
 function C_PvP.GetRatedSoloShuffleRewards() end
 
 ---@param pvpTierEnum number 
@@ -230,6 +230,12 @@ function C_PvP.IsInBrawl() end
 ---@return boolean isInRatedMatchWithDeserterPenalty
 function C_PvP.IsInRatedMatchWithDeserterPenalty() end
 
+---@return boolean isActive
+function C_PvP.IsMatchActive() end
+
+---@return boolean isComplete
+function C_PvP.IsMatchComplete() end
+
 ---@return boolean asArena
 function C_PvP.IsMatchConsideredArena() end
 
@@ -286,8 +292,11 @@ local BrawlType = {}
 
 ---@class PvPMatchState
 ---@field Inactive number @ Default value is [ 0 ]
----@field Active number @ Default value is [ 1 ]
----@field Complete number @ Default value is [ 2 ]
+---@field Waiting number @ Default value is [ 1 ]
+---@field StartUp number @ Default value is [ 2 ]
+---@field Engaged number @ Default value is [ 3 ]
+---@field PostRound number @ Default value is [ 4 ]
+---@field Complete number @ Default value is [ 5 ]
 
 ---@type PvPMatchState 
 local PvPMatchState = {}
@@ -309,6 +318,7 @@ local BattlefieldItemReward = {}
 ---@field experience number 
 ---@field itemRewards table|nil 
 ---@field currencyRewards table|nil 
+---@field roleShortageBonus RoleShortageReward|nil 
 local BattlefieldRewards = {}
 
 ---@class BattlefieldVehicleInfo
@@ -496,4 +506,10 @@ local RatedMatchDeserterPenalty = {}
 ---@field seasonMostPlayedSpecID number 
 ---@field seasonMostPlayedSpecRounds number 
 local RatedSoloShuffleSpecStats = {}
+
+---@class RoleShortageReward
+---@field validRoles table 
+---@field rewardSpellID number 
+---@field rewardItemID number 
+local RoleShortageReward = {}
 

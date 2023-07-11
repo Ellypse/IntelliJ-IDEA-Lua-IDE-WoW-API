@@ -43,6 +43,7 @@ local JailersTowerType = {}
 ---@field type number 
 ---@field area string 
 ---@field uiTextureKit textureKit 
+---@field scenarioID number 
 local ScenarioInformation = {}
 
 ---@class ScenarioStepInfo

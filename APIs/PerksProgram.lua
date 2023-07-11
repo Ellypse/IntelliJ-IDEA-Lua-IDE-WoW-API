@@ -89,6 +89,7 @@ local ModelSceneCameraData = {}
 
 ---@class PerksProgramItemDisplayInfo
 ---@field overrideModelSceneID number|nil 
+---@field creatureDisplayInfoID number|nil 
 local PerksProgramItemDisplayInfo = {}
 
 ---@class PerksProgramPendingChestRewards
@@ -113,6 +114,7 @@ local PerksVendorCategoryInfo = {}
 ---@field timeRemaining time_t 
 ---@field purchased bool 
 ---@field refundable bool 
+---@field pending bool 
 ---@field price number 
 ---@field perksVendorItemID number 
 ---@field itemID number 

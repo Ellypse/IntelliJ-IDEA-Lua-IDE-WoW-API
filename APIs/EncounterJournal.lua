@@ -5,9 +5,21 @@ C_EncounterJournal = {}
 ---@return DungeonEntranceMapInfo dungeonEntrances
 function C_EncounterJournal.GetDungeonEntrancesForMap(uiMapID) end
 
+---@param linkType JournalLinkTypes 
+---@param ID number 
+---@param displayText string 
+---@param difficultyID number 
+---@return string link
+function C_EncounterJournal.GetEncounterJournalLink(linkType, ID, displayText, difficultyID) end
+
 ---@param uiMapID number 
 ---@return EncounterJournalMapEncounterInfo encounters
 function C_EncounterJournal.GetEncountersOnMap(uiMapID) end
+
+--- GameMap as opposed to UIMap since we use a mapID not a uiMapID.
+---@param mapID number 
+---@return number|nil journalInstanceID
+function C_EncounterJournal.GetInstanceForGameMap(mapID) end
 
 ---@param id number 
 ---@return EncounterJournalItemInfo itemInfo

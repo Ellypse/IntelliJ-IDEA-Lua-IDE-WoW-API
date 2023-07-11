@@ -1,7 +1,3 @@
----@param specID number 
----@return number|nil classID
-function GetClassIDFromSpecID(specID) end
-
 ---@return CorruptionEffectInfo corruptionEffects
 function GetNegativeCorruptionEffectInfo() end
 
@@ -93,8 +89,16 @@ function UnitClass(unit) end
 function UnitClassBase(unit) end
 
 ---@param unit UnitToken 
+---@return number, boolean distance, checkedDistance
+function UnitDistanceSquared(unit) end
+
+---@param unit UnitToken 
 ---@return boolean inPartyShard
 function UnitInPartyShard(unit) end
+
+---@param unit UnitToken 
+---@return boolean, boolean inRange, checkedRange
+function UnitInRange(unit) end
 
 ---@param unit UnitToken 
 ---@return boolean isConnected

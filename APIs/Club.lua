@@ -499,15 +499,6 @@ local ClubRemovedReason = {}
 ---@type ClubRestrictionReason 
 local ClubRestrictionReason = {}
 
----@class ClubRoleIdentifier
----@field Owner number @ Default value is [ 1 ]
----@field Leader number @ Default value is [ 2 ]
----@field Moderator number @ Default value is [ 3 ]
----@field Member number @ Default value is [ 4 ]
-
----@type ClubRoleIdentifier 
-local ClubRoleIdentifier = {}
-
 ---@class ClubStreamNotificationFilter
 ---@field None number @ Default value is [ 0 ]
 ---@field Mention number @ Default value is [ 1 ]

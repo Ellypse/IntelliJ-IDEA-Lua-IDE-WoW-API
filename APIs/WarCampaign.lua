@@ -40,10 +40,6 @@ function C_CampaignInfo.IsCampaignQuest(questID) end
 ---@return boolean sortAsNormalQuest
 function C_CampaignInfo.SortAsNormalQuest(campaignID) end
 
----@param campaignID number 
----@return boolean useNormalQuestIcons
-function C_CampaignInfo.UsesNormalQuestIcons(campaignID) end
-
 ---@class CampaignState
 ---@field Invalid number @ Default value is [ 0 ]
 ---@field Complete number @ Default value is [ 1 ]
@@ -70,5 +66,7 @@ local CampaignFailureReason = {}
 ---@field description cstring 
 ---@field uiTextureKit textureKit 
 ---@field isWarCampaign bool 
+---@field usesNormalQuestIcons bool 
+---@field isContainerCampaign bool 
 local CampaignInfo = {}
 

@@ -1,6 +1,6 @@
 ---@param leftIndex luaIndex 
 ---@param rightIndex luaIndex 
----@return uiRect|nil areas
+---@return uiBoundsRect|nil areas
 function CalculateScreenAreaFromCharacterSpan(leftIndex, rightIndex) end
 
 

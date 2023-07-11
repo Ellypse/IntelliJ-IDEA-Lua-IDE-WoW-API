@@ -191,6 +191,10 @@ function C_QuestLog.IsComplete(questID) end
 function C_QuestLog.IsFailed(questID) end
 
 ---@param questID number 
+---@return boolean isImportant
+function C_QuestLog.IsImportantQuest(questID) end
+
+---@param questID number 
 ---@return boolean isLegendaryQuest
 function C_QuestLog.IsLegendaryQuest(questID) end
 

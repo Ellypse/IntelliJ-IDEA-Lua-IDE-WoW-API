@@ -136,5 +136,6 @@ local GossipPoiInfo = {}
 ---@field isLegendary bool 
 ---@field isIgnored bool 
 ---@field questID number 
+---@field isImportant bool 
 local GossipQuestUIInfo = {}
 

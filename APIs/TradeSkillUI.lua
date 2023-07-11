@@ -250,8 +250,9 @@ function C_TradeSkillUI.HasFavoriteOrderRecipes() end
 
 ---@param recipeID number 
 ---@param itemGUID WOWGUID 
+---@param craftingReagents CraftingReagentInfo @ [OPTIONAL]
 ---@return boolean valid
-function C_TradeSkillUI.IsEnchantTargetValid(recipeID, itemGUID) end
+function C_TradeSkillUI.IsEnchantTargetValid(recipeID, itemGUID, craftingReagents) end
 
 ---@return boolean result
 function C_TradeSkillUI.IsNPCCrafting() end

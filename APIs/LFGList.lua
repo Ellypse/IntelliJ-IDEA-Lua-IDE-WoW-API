@@ -122,15 +122,6 @@ function C_LFGList.ValidateRequiredDungeonScore(dungeonScore) end
 ---@return boolean passes
 function C_LFGList.ValidateRequiredPvpRatingForActivity(activityID, rating) end
 
----@class LFGEntryPlaystyle
----@field None number @ Default value is [ 0 ]
----@field Standard number @ Default value is [ 1 ]
----@field Casual number @ Default value is [ 2 ]
----@field Hardcore number @ Default value is [ 3 ]
-
----@type LFGEntryPlaystyle 
-local LFGEntryPlaystyle = {}
-
 ---@class LFGListDisplayType
 ---@field RoleCount number @ Default value is [ 0 ]
 ---@field RoleEnumerate number @ Default value is [ 1 ]

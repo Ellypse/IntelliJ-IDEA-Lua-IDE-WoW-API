@@ -5,6 +5,9 @@ C_MerchantFrame = {}
 ---@return number buybackItemID
 function C_MerchantFrame.GetBuybackItemID(buybackSlotIndex) end
 
+---@return number numJunkItems
+function C_MerchantFrame.GetNumJunkItems() end
+
 ---@param index luaIndex 
 ---@return boolean refundable
 function C_MerchantFrame.IsMerchantItemRefundable(index) end

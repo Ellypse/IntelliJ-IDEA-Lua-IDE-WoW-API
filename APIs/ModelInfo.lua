@@ -35,15 +35,6 @@ function C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID) end
 ---@return ModelSceneType, number, number, number modelSceneType, modelCameraIDs, modelActorsIDs, flags
 function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
----@class ItemTryOnReason
----@field Success number @ Default value is [ 0 ]
----@field WrongRace number @ Default value is [ 1 ]
----@field NotEquippable number @ Default value is [ 2 ]
----@field DataPending number @ Default value is [ 3 ]
-
----@type ItemTryOnReason 
-local ItemTryOnReason = {}
-
 ---@class ModelSceneSetting
 ---@field AlignLightToOrbitDelta number @ Default value is [ 1 ]
 

@@ -1,6 +1,10 @@
 ---@class ActionBar
 C_ActionBar = {}
 
+---@param actionID luaIndex 
+---@param enable boolean 
+function C_ActionBar.EnableActionRangeCheck(actionID, enable) end
+
 ---@param flyoutID number 
 ---@return luaIndex slots
 function C_ActionBar.FindFlyoutActionButtons(flyoutID) end

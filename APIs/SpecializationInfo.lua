@@ -13,6 +13,10 @@ function C_SpecializationInfo.CanPlayerUseTalentUI() end
 ---@return number selectedPvpTalentIDs
 function C_SpecializationInfo.GetAllSelectedPvpTalentIDs() end
 
+---@param specID number 
+---@return number|nil classID
+function C_SpecializationInfo.GetClassIDFromSpecID(specID) end
+
 ---@param inspectedUnit UnitToken 
 ---@param talentIndex number 
 ---@return number|nil selectedTalentID
