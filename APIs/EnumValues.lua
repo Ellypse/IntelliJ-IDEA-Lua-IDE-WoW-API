@@ -650,13 +650,6 @@ HolidayFlags.BeginEventOnlyOnStageChange = 64
 CalendarGetEventTypeConstants = {}
 CalendarGetEventTypeConstants.DEFAULT_CALENDAR_GET_EVENT_TYPE = 0
 
----@class CameraModeAspectRatio
-CameraModeAspectRatio = {}
-CameraModeAspectRatio.Default = 0
-CameraModeAspectRatio.LegacyLetterbox = 1
-CameraModeAspectRatio.HighDefinition_16_X_9 = 2
-CameraModeAspectRatio.Cinemascope_2_Dot_4_X_1 = 3
-
 ---@class CharCustomizationType
 CharCustomizationType = {}
 CharCustomizationType.Skin = 0

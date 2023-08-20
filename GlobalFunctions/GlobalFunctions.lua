@@ -98,7 +98,7 @@ end
 function ActionBindsItem()
 end
 
---- True if the action has has a range requirement.
+--- Returns true if the action has has a range requirement.
 --- [https://wowpedia.fandom.com/wiki/API_ActionHasRange]
 --- @param slotID number @ The slot ID to test.
 --- @return boolean @ hasRange
@@ -194,7 +194,7 @@ end
 function AscendStop()
 end
 
---- protected - This can only be called from secure code.    Use the assist action type of SecureActionButtonTemplate, or the /assist slash command.
+--- protected - This can only be called from secure code.Use the assist action type of SecureActionButtonTemplate, or the /assist slash command.
 --- [https://wowpedia.fandom.com/wiki/API_AssistUnit]
 --- @param unit string @  : UnitId
 --- @return void
@@ -206,7 +206,7 @@ end
 function AttachGlyphToSpell()
 end
 
---- protected - This can only be called from secure code.    Use the /startattack slash command.
+--- protected - This can only be called from secure code.Use the /startattack slash command.
 --- [https://wowpedia.fandom.com/wiki/API_AttackTarget]
 --- @return void
 function AttackTarget()
@@ -251,7 +251,7 @@ end
 function BNCheckBattleTagInviteToUnit()
 end
 
---- True if the WoW Client is connected to Battle.net.
+--- Returns true if the WoW Client is connected to Battle.net.
 --- [https://wowpedia.fandom.com/wiki/API_BNConnected]
 --- @return boolean @ connected
 function BNConnected()
@@ -617,7 +617,7 @@ end
 function CanAutoSetGamePadCursorControl()
 end
 
---- True if the unit can be marked with a raid target icon.
+--- Returns true if the unit can be marked with a raid target icon.
 --- [https://wowpedia.fandom.com/wiki/API_CanBeRaidTarget]
 --- @param unit string @  : UnitId
 --- @return boolean @ canBeRaidTarget
@@ -665,7 +665,7 @@ end
 function CanEditGuildTabInfo()
 end
 
---- True if the player can edit the guild message of the day.
+--- Returns true if the player can edit the guild message of the day.
 --- [https://wowpedia.fandom.com/wiki/API_CanEditMOTD]
 --- @return boolean @ canEdit
 function CanEditMOTD()
@@ -696,19 +696,19 @@ end
 function CanGuildBankRepair()
 end
 
---- True if the player can demote guild members.
+--- Returns true if the player can demote guild members.
 --- [https://wowpedia.fandom.com/wiki/API_CanGuildDemote]
 --- @return boolean @ canDemote
 function CanGuildDemote()
 end
 
---- True if the player can invite new members to the guild.
+--- Returns true if the player can invite new members to the guild.
 --- [https://wowpedia.fandom.com/wiki/API_CanGuildInvite]
 --- @return boolean @ canInvite
 function CanGuildInvite()
 end
 
---- True if the player can promote guild members.
+--- Returns true if the player can promote guild members.
 --- [https://wowpedia.fandom.com/wiki/API_CanGuildPromote]
 --- @return boolean @ canPromote
 function CanGuildPromote()
@@ -729,7 +729,7 @@ end
 function CanInitiateWarGame()
 end
 
---- True if the player can inspect the unit.
+--- Returns true if the player can inspect the unit.
 --- [https://wowpedia.fandom.com/wiki/API_CanInspect]
 --- @param unit string @  : UnitId
 --- @param showError boolean @ ? - If true, the function will display an error message (You can't inspect that unit) if you cannot inspect the specified unit.
@@ -742,7 +742,7 @@ end
 function CanItemBeSocketedToArtifact()
 end
 
---- True if the player can join a battlefield with a group.
+--- Returns true if the player can join a battlefield with a group.
 --- [https://wowpedia.fandom.com/wiki/API_CanJoinBattlefieldAsGroup]
 --- @return boolean @ isTrue
 function CanJoinBattlefieldAsGroup()
@@ -758,7 +758,7 @@ end
 function CanMapChangeDifficulty()
 end
 
---- True if the merchant can repair items.
+--- Returns true if the merchant can repair items.
 --- [https://wowpedia.fandom.com/wiki/API_CanMerchantRepair]
 --- @return number @ canRepair
 function CanMerchantRepair()
@@ -780,7 +780,7 @@ end
 function CanResetTutorials()
 end
 
---- True if the character is on a digsite.
+--- Returns true if the character is on a digsite.
 --- [https://wowpedia.fandom.com/wiki/API_CanScanResearchSite]
 --- @return boolean @ onSite
 function CanScanResearchSite()
@@ -792,7 +792,7 @@ end
 function CanShowAchievementUI()
 end
 
---- True if the character can currently reset their instances.
+--- Returns true if the character can currently reset their instances.
 --- [https://wowpedia.fandom.com/wiki/API_CanShowResetInstances]
 --- @return boolean @ canReset
 function CanShowResetInstances()
@@ -877,7 +877,7 @@ end
 function CancelEmote()
 end
 
---- protected - This can only be called from secure code.    Use the cancelaura action type of SecureActionButtonTemplate with the target-slot attribute set to weapon slot ID.
+--- protected - This can only be called from secure code.Use the cancelaura action type of SecureActionButtonTemplate with the target-slot attribute set to weapon slot ID.
 --- [https://wowpedia.fandom.com/wiki/API_CancelItemTempEnchantment]
 --- @param weaponHand number @ for Main Hand, 2 for Off Hand.
 --- @return void
@@ -917,7 +917,7 @@ end
 function CancelScene()
 end
 
---- protected - This can only be called from secure code.    Use the /cancelform or /cancelaura slash commands.
+--- protected - This can only be called from secure code.Use the /cancelform or /cancelaura slash commands.
 --- [https://wowpedia.fandom.com/wiki/API_CancelShapeshiftForm]
 --- @return void
 function CancelShapeshiftForm()
@@ -939,7 +939,7 @@ end
 function CancelTradeAccept()
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 4.0.1; Use /cancelaura Buff Name in macros, or SecureAuraHeaderTemplate if re-implementing buff frames.
+--- nocombat - This cannot be called while in combat.Restricted since patch 4.0.1; Use /cancelaura Buff Name in macros, or SecureAuraHeaderTemplate if re-implementing buff frames.
 --- [https://wowpedia.fandom.com/wiki/API_CancelUnitBuff]
 --- @param unit string @  : UnitId - The unit to cancel the buff from, must be under the player's control.
 --- @param buffIndex number @ index of the buff to cancel, ascending from 1.
@@ -960,7 +960,7 @@ end
 function CaseAccentInsensitiveParse(string)
 end
 
---- protected - This can only be called from secure code.    The pet action type of SecureActionButtonTemplate can be used to call this function.
+--- protected - This can only be called from secure code.The pet action type of SecureActionButtonTemplate can be used to call this function.
 --- [https://wowpedia.fandom.com/wiki/API_CastPetAction]
 --- @param index number @ pet action bar slot index, ascending from 1.
 --- @param target string @ ? : UnitId - The unit to cast the action on; defaults to target.
@@ -968,14 +968,14 @@ end
 function CastPetAction(index, target)
 end
 
---- protected - This can only be called from secure code.    Use the /cast slash command.
+--- protected - This can only be called from secure code.Use the /cast slash command.
 --- [https://wowpedia.fandom.com/wiki/API_CastShapeshiftForm]
 --- @param index number @ specifies which shapeshift form to activate or toggle; generally equivalent to the index of the form on the stance bar.
 --- @return void
 function CastShapeshiftForm(index)
 end
 
---- protected - This can only be called from secure code.    Use the spell action type of SecureActionButtonTemplate or the /cast slash command.
+--- protected - This can only be called from secure code.Use the spell action type of SecureActionButtonTemplate or the /cast slash command.
 --- [https://wowpedia.fandom.com/wiki/API_CastSpell]
 --- @param spellIndex number @ index of the spell to cast.
 --- @param spellbookType string @ spellbook to cast the spell from; one of
@@ -988,7 +988,7 @@ end
 function CastSpellByID()
 end
 
---- protected - This can only be called from secure code.    Use the spell action type of SecureActionButtonTemplate or the /cast slash command.
+--- protected - This can only be called from secure code.Use the spell action type of SecureActionButtonTemplate or the /cast slash command.
 --- [https://wowpedia.fandom.com/wiki/API_CastSpellByName]
 --- @param spellName unknown
 --- @param target string @ ? : UnitId - The unit to cast the spell on. If omitted, target is assumed for spells that require a target.
@@ -1001,7 +1001,7 @@ end
 function CenterCamera()
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_ChangeActionBarPage]
 --- @param actionBarPage unknown @ Numer - Which page of your action bar to switch to. Expects an integer 1-6.
 --- @return void
@@ -1095,7 +1095,7 @@ end
 function CheckInbox()
 end
 
---- True if the player is in range to perform a specific interaction with the unit.
+--- Returns true if the player is in range to perform a specific interaction with the unit.
 --- [https://wowpedia.fandom.com/wiki/API_CheckInteractDistance]
 --- @param unit string @  : UnitId - The unit to compare distance to.
 --- @param distIndex number @ A value from 1 to 5:
@@ -1170,7 +1170,7 @@ end
 function ClearInspectPlayer()
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_ClearOverrideBindings]
 --- @param owner Frame @ The frame to clear override bindings for.
 --- @return void
@@ -1193,7 +1193,7 @@ end
 function ClearSendMail()
 end
 
---- protected - This can only be called from secure code.    Use SecureActionButtonTemplate's target action type, or the /cleartarget slash command.
+--- protected - This can only be called from secure code.Use SecureActionButtonTemplate's target action type, or the /cleartarget slash command.
 --- [https://wowpedia.fandom.com/wiki/API_ClearTarget]
 --- @return void
 function ClearTarget()
@@ -1612,7 +1612,7 @@ end
 function CreateFrame(frameType, name, parent, template, id)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0.1
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0.1
 --- [https://wowpedia.fandom.com/wiki/API_CreateMacro]
 --- @param name string @ The name of the macro to be displayed in the UI. The current UI imposes a 16-character limit.
 --- @param iconFileID number @ |string - A FileID or string identifying the icon texture to use. The available icons can be retrieved by calling GetMacroIcons() and GetMacroItemIcons(); other textures inside Interface\ICONS may also be used.
@@ -1634,7 +1634,7 @@ end
 function CursorCanGoInSlot(invSlot)
 end
 
---- True if the cursor currently holds an item.
+--- Returns true if the cursor currently holds an item.
 --- [https://wowpedia.fandom.com/wiki/API_CursorHasItem]
 --- @return boolean @ hasItem
 function CursorHasItem()
@@ -1715,7 +1715,7 @@ end
 function DeclineSpellConfirmationPrompt(spellID)
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.noscript - This cannot be called directly from /script, loadstring() and WeakAuras.    * Limited to deleting a single item per hardware event.
+--- hwevent - This requires a hardware event i.e. keyboard/mouse input.noscript - This cannot be called directly from /script, loadstring and WeakAuras.* Limited to deleting a single item per hardware event.
 --- [https://wowpedia.fandom.com/wiki/API_DeleteCursorItem]
 --- @return void
 function DeleteCursorItem()
@@ -1733,7 +1733,7 @@ end
 function DeleteInboxItem(index)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0.1
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0.1
 --- [https://wowpedia.fandom.com/wiki/API_DeleteMacro]
 --- @param index_or_macroname unknown
 --- @return void
@@ -2194,7 +2194,7 @@ end
 
 --- Equips the currently pending Bind-on-Equip or Bind-on-Pickup item from the specified inventory slot.
 --- [https://wowpedia.fandom.com/wiki/API_EquipPendingItem]
---- @param invSlot unknown @ InventorySlotID - The slot ID of the item being equipped
+--- @param invSlot number @  : InventorySlotId - The slot ID of the item being equipped
 --- @return void
 function EquipPendingItem(invSlot)
 end
@@ -2300,7 +2300,7 @@ end
 function FlyoutHasSpell(flyoutID, spellID)
 end
 
---- protected - This can only be called from secure code.    Use the focus action type of SecureActionButtonTemplate or the /focus slash command.
+--- protected - This can only be called from secure code.Use the focus action type of SecureActionButtonTemplate or the /focus slash command.
 --- [https://wowpedia.fandom.com/wiki/API_FocusUnit]
 --- @param unit string @  : UnitId - The unit to focus.
 --- @return void
@@ -2645,7 +2645,7 @@ end
 function GetAddOnMemoryUsage(index_or_name)
 end
 
---- Returns the TOC metadata of an addon.
+--- Its Blizzard_Deprecated placeholder will be removed in the next expansion.
 --- [https://wowpedia.fandom.com/wiki/API_GetAddOnMetadata]
 --- @param name string @ The name of the addon, case insensitive.
 --- @param field string @ Field name, case insensitive. May be Title, Notes, Author, Version, or anything starting with X-
@@ -2753,7 +2753,7 @@ end
 function GetAutoCompleteResults(text, numResults, cursorPosition, allowFullMatch, includeBitField, excludeBitField)
 end
 
---- True if guild invites are being automatically declined.
+--- Returns true if guild invites are being automatically declined.
 --- [https://wowpedia.fandom.com/wiki/API_GetAutoDeclineGuildInvites]
 --- @return number @ enabled
 function GetAutoDeclineGuildInvites()
@@ -2991,7 +2991,7 @@ end
 function GetBindingByKey(key)
 end
 
---- [Returns the binding name for a key (combination). Discards key modifiers until it finds a binding.
+--- Returns the keys bound to the given command.
 --- [https://wowpedia.fandom.com/wiki/API_GetBindingKey]
 --- @param command unknown @ The name of the command to get key bindings for (e.g. MOVEFORWARD, TOGGLEFRIENDSTAB)
 --- @return string, string, unknown @ key1, key2, ...
@@ -3044,7 +3044,7 @@ end
 
 --- Returns information on a console variable.
 --- [https://wowpedia.fandom.com/wiki/API_GetCVarInfo]
---- @param name string @ name of the CVar to query the value of. Only accepts console variables (i.e. not console commands)
+--- @param name string @ Name of the CVar to query the value of. Only accepts console variables (i.e. not console commands).
 --- @return string, string, boolean, boolean, boolean, boolean, boolean @ value, defaultValue, account, character, unknown5, secure, readOnly
 function GetCVarInfo(name)
 end
@@ -3746,9 +3746,12 @@ end
 function GetFriendshipReputationRanks(factionID)
 end
 
---- [https://wowpedia.fandom.com/wiki/API_GetFunctionCPUUsage?action=edit&amp;redlink=1]
---- @return void
-function GetFunctionCPUUsage()
+--- Returns information about CPU usage by a function.
+--- [https://wowpedia.fandom.com/wiki/API_GetFunctionCPUUsage]
+--- @param func unknown @ function
+--- @param includeSubroutines boolean
+--- @return number, number @ usage, calls
+function GetFunctionCPUUsage(func, includeSubroutines)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_GetGMStatus?action=edit&amp;redlink=1]
@@ -4020,7 +4023,7 @@ end
 function GetGuildRosterSelection()
 end
 
---- True if the guild roster is showing offline members.
+--- Returns true if the guild roster is showing offline members.
 --- [https://wowpedia.fandom.com/wiki/API_GetGuildRosterShowOffline]
 --- @return number @ showoffline
 function GetGuildRosterShowOffline()
@@ -4172,7 +4175,7 @@ end
 function GetInventoryAlertStatus(index)
 end
 
---- True if an inventory item has zero durability.
+--- Returns true if an inventory item has zero durability.
 --- [https://wowpedia.fandom.com/wiki/API_GetInventoryItemBroken]
 --- @param unit string @  : UnitId - The unit whose inventory is to be queried.
 --- @param invSlotId number @  : InventorySlotId - to be queried, obtained via GetInventorySlotInfo.
@@ -4486,7 +4489,7 @@ end
 
 --- Returns the number of encounters and number of completed encounters for a specified dungeon ID.
 --- [https://wowpedia.fandom.com/wiki/API_GetLFGDungeonNumEncounters]
---- @param dungeonID number @ Ranging from 1 to around 2000 in patch 8.1.5
+--- @param dungeonID number @  : LfgDungeonID
 --- @return number, number @ numEncounters, numCompleted
 function GetLFGDungeonNumEncounters(dungeonID)
 end
@@ -4780,9 +4783,9 @@ end
 
 --- Returns the body (macro text) of a macro.
 --- [https://wowpedia.fandom.com/wiki/API_GetMacroBody]
---- @param macroIndex_or_name unknown
+--- @param macro number @ |string - Macro index or name.
 --- @return string @ body
-function GetMacroBody(macroIndex_or_name)
+function GetMacroBody(macro)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_GetMacroIcons?action=edit&amp;redlink=1]
@@ -4799,9 +4802,9 @@ end
 
 --- Returns info for a macro.
 --- [https://wowpedia.fandom.com/wiki/API_GetMacroInfo]
---- @param name_or_macroSlot unknown
+--- @param macro number @ |string - Macro slot index or the name of the macro. Slots 1 through 120 are general macros; 121 through 138 are per-character macros.
 --- @return string, number, string @ name, icon, body
-function GetMacroInfo(name_or_macroSlot)
+function GetMacroInfo(macro)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_GetMacroItem?action=edit&amp;redlink=1]
@@ -5270,7 +5273,7 @@ end
 function GetNumCompletedAchievements()
 end
 
---- Returns the number of suggested declension sets for a name.
+--- Returns the number of suggested declension sets for a Russian name.
 --- [https://wowpedia.fandom.com/wiki/API_GetNumDeclensionSets]
 --- @param name string
 --- @param gender number
@@ -5676,7 +5679,7 @@ end
 function GetObjectiveText()
 end
 
---- True if the player is automatically passing on all loot.
+--- Returns true if the player is automatically passing on all loot.
 --- [https://wowpedia.fandom.com/wiki/API_GetOptOutOfLoot]
 --- @return boolean @ optedOut
 function GetOptOutOfLoot()
@@ -5707,7 +5710,7 @@ end
 function GetPOITextureCoords()
 end
 
---- True if the player has enabled PvP (permaflagged).
+--- Returns true if the player has enabled their PvP flag.
 --- [https://wowpedia.fandom.com/wiki/API_GetPVPDesired]
 --- @return boolean @ ispvp
 function GetPVPDesired()
@@ -5759,7 +5762,7 @@ end
 function GetParryChanceFromAttribute()
 end
 
---- True if a group member is assigned the main tank/assist role.
+--- Returns true if a group member is assigned the main tank/assist role.
 --- [https://wowpedia.fandom.com/wiki/API_GetPartyAssignment]
 --- @param assignment string @ The role to search, either MAINTANK or MAINASSIST (not case-sensitive).
 --- @param raidmember string @  : UnitId
@@ -6730,7 +6733,7 @@ end
 function GetShieldBlock()
 end
 
---- True if the item currently being socketed can be traded to other eligible players (BoP boss loot).
+--- Returns true if the item currently being socketed can be traded to other eligible players (BoP boss loot).
 --- [https://wowpedia.fandom.com/wiki/API_GetSocketItemBoundTradeable]
 --- @return boolean @ isBoundTradeable
 function GetSocketItemBoundTradeable()
@@ -6856,7 +6859,7 @@ end
 function GetSpeed()
 end
 
---- True if a (pet) spell is autocastable.
+--- Returns true if a (pet) spell is autocastable.
 --- [https://wowpedia.fandom.com/wiki/API_GetSpellAutocast]
 --- @param spellName_or_spellId unknown
 --- @param bookType string @ Either BOOKTYPE_SPELL (spell) or BOOKTYPE_PET (pet).
@@ -7055,7 +7058,7 @@ end
 function GetStablePetFoodTypes(index)
 end
 
---- Returns information about a specific stabled pet.
+--- Returns info for a specific stabled pet.
 --- [https://wowpedia.fandom.com/wiki/API_GetStablePetInfo]
 --- @param index number @ The index of the pet slot, 1 through 5 are the hunter's active pets, 6 through 25 are the hunter's stabled pets.
 --- @return string, string, number, string, string @ petIcon, petName, petLevel, petType, petTalents
@@ -7369,8 +7372,8 @@ end
 
 --- Returns an item link for a trainer service.
 --- [https://wowpedia.fandom.com/wiki/API_GetTrainerServiceItemLink]
---- @param index number @ Index of the trainer service to a link for. Note that indices are affected by the trainer filter. (See GetTrainerServiceTypeFilter and SetTrainerServiceTypeFilter.)
---- @return unknown @ link
+--- @param index number @ Index of the trainer service to a link for.
+--- @return string @ link
 function GetTrainerServiceItemLink(index)
 end
 
@@ -7830,7 +7833,7 @@ end
 function HasAPEffectsSpellPower()
 end
 
---- True if an action slot is occupied.
+--- Returns true if an action slot is occupied.
 --- [https://wowpedia.fandom.com/wiki/API_HasAction]
 --- @param actionSlot number @ ActionSlot : The tested action slot.
 --- @return boolean @ hasAction
@@ -7926,7 +7929,7 @@ end
 function HasPetSpells()
 end
 
---- True if the player currently has an active (hunter) pet out.
+--- Returns true if the player currently has an active (hunter) pet out.
 --- [https://wowpedia.fandom.com/wiki/API_HasPetUI]
 --- @return boolean, boolean @ hasUI, isHunterPet
 function HasPetUI()
@@ -7952,7 +7955,7 @@ end
 function HasVehicleActionBar()
 end
 
---- True if a wand is equipped.
+--- Returns true if a wand is equipped.
 --- [https://wowpedia.fandom.com/wiki/API_HasWandEquipped]
 --- @return void
 function HasWandEquipped()
@@ -7985,7 +7988,7 @@ end
 function InCinematic()
 end
 
---- True if the combat lockdown restrictions are active.
+--- Returns true if the combat lockdown restrictions are active.
 --- [https://wowpedia.fandom.com/wiki/API_InCombatLockdown]
 --- @return boolean @ inLockdown
 function InCombatLockdown()
@@ -7997,13 +8000,13 @@ end
 function InGuildParty()
 end
 
---- True if the cursor is in repair mode.
+--- Returns true if the cursor is in repair mode.
 --- [https://wowpedia.fandom.com/wiki/API_InRepairMode]
 --- @return unknown @ inRepairMode
 function InRepairMode()
 end
 
---- True if a message can be deleted, false if it can be returned to sender.
+--- Returns true if a message can be deleted, false if it can be returned to sender.
 --- [https://wowpedia.fandom.com/wiki/API_InboxItemCanDelete]
 --- @param index number @ the index of the message (1 is the first message)
 --- @return number @ canDelete
@@ -8046,14 +8049,14 @@ end
 function IsAchievementEligible(achievementID)
 end
 
---- True if the specified action is in range.
+--- Returns true if the specified action is in range.
 --- [https://wowpedia.fandom.com/wiki/API_IsActionInRange]
 --- @param actionSlot number @ The action slot to test.
 --- @return boolean @ inRange
 function IsActionInRange(actionSlot)
 end
 
---- True if the player is inside a (rated) arena.
+--- Returns true if the player is inside a (rated) arena.
 --- [https://wowpedia.fandom.com/wiki/API_IsActiveBattlefieldArena]
 --- @return boolean, boolean @ isArena, isRegistered
 function IsActiveBattlefieldArena()
@@ -8069,14 +8072,14 @@ end
 function IsActiveQuestTrivial()
 end
 
---- True if the specified addon is load-on-demand.
+--- Returns true if the specified addon is load-on-demand.
 --- [https://wowpedia.fandom.com/wiki/API_IsAddOnLoadOnDemand]
 --- @param index_or_name unknown
 --- @return boolean @ loadDemand
 function IsAddOnLoadOnDemand(index_or_name)
 end
 
---- True if the specified addon is loaded.
+--- Returns true if the specified addon is loaded.
 --- [https://wowpedia.fandom.com/wiki/API_IsAddOnLoaded]
 --- @param index_or_name unknown
 --- @return boolean, boolean @ loaded, finished
@@ -8094,7 +8097,7 @@ end
 function IsAllowedToUserTeleport()
 end
 
---- True if a modifier key is currently pressed.
+--- Returns true if a modifier key is currently pressed down.
 --- [https://wowpedia.fandom.com/wiki/API_IsAltKeyDown]
 --- @return void
 function IsAltKeyDown()
@@ -8130,21 +8133,21 @@ end
 function IsAtStableMaster()
 end
 
---- True if an action is the Auto Attack action.
+--- Returns true if an action is the Auto Attack action.
 --- [https://wowpedia.fandom.com/wiki/API_IsAttackAction]
 --- @param actionSlot number @ The action slot to test.
 --- @return number @ isAttack
 function IsAttackAction(actionSlot)
 end
 
---- True if a spellbook item is the Auto Attack spell.
+--- Returns true if a spellbook item is the Auto Attack spell.
 --- [https://wowpedia.fandom.com/wiki/API_IsAttackSpell]
 --- @param spellName string @ The spell name to test.
 --- @return number @ isAttack
 function IsAttackSpell(spellName)
 end
 
---- True if an action is currently auto-repeating (e.g. Shoot for wand and Auto Shot for Hunters).
+--- Returns true if an action is currently auto-repeating (e.g. Shoot for wand and Auto Shot for Hunters).
 --- [https://wowpedia.fandom.com/wiki/API_IsAutoRepeatAction]
 --- @param actionSlot number @ The action slot to query.
 --- @return boolean @ isRepeating
@@ -8229,7 +8232,7 @@ end
 function IsCompetitiveModeEnabled()
 end
 
---- True if an action is a consumable, i.e. it has a count.
+--- Returns true if an action is a consumable, i.e. it has a count.
 --- [https://wowpedia.fandom.com/wiki/API_IsConsumableAction]
 --- @param slotID unknown
 --- @return unknown @ isTrue
@@ -8258,7 +8261,7 @@ end
 function IsContainerItemAnUpgrade()
 end
 
---- True if a modifier key is currently pressed.
+--- Returns true if a modifier key is currently pressed down.
 --- [https://wowpedia.fandom.com/wiki/API_IsControlKeyDown]
 --- @return void
 function IsControlKeyDown()
@@ -8276,7 +8279,7 @@ end
 function IsCosmeticItem()
 end
 
---- True if the specified action is currently being used.
+--- Returns true if the specified action is currently being used.
 --- [https://wowpedia.fandom.com/wiki/API_IsCurrentAction]
 --- @param actionSlot number @ action slot ID to query.
 --- @return boolean @ isCurrent
@@ -8293,7 +8296,7 @@ end
 function IsCurrentQuestFailed()
 end
 
---- True if the specified spell ID is currently being casted or queued. If spell is current then action bar indicates its slot with highlighted frame.
+--- Returns true if the specified spell ID is currently being casted or queued. If spell is current then action bar indicates its slot with highlighted frame.
 --- [https://wowpedia.fandom.com/wiki/API_IsCurrentSpell]
 --- @param spellID number @ spell ID to query.
 --- @return boolean @ isCurrent
@@ -8346,14 +8349,14 @@ end
 function IsEncounterSuppressingRelease()
 end
 
---- True if an item is equipable by the player.
+--- Returns true if an item is equipable by the player.
 --- [https://wowpedia.fandom.com/wiki/API_IsEquippableItem]
 --- @param itemId_or_itemName_or_itemLink unknown
 --- @return unknown @ result
 function IsEquippableItem(itemId_or_itemName_or_itemLink)
 end
 
---- True if the specified action slot is an equipped item.
+--- Returns true if the specified action slot is an equipped item.
 --- [https://wowpedia.fandom.com/wiki/API_IsEquippedAction]
 --- @param slotID number @ actionSlot) : Action slot to query.
 --- @return boolean @ isEquipped
@@ -8367,7 +8370,7 @@ end
 function IsEquippedItem(itemID_or_itemName)
 end
 
---- True if an item of a given type is equipped.
+--- Returns true if an item of a given type is equipped.
 --- [https://wowpedia.fandom.com/wiki/API_IsEquippedItemType]
 --- @param type string @ ItemType) - any valid inventory type, item class, or item subclass
 --- @return boolean @ isEquipped
@@ -8390,14 +8393,14 @@ end
 function IsExpansionTrial()
 end
 
---- True if the specified faction is marked inactive.
+--- Returns true if the specified faction is marked inactive.
 --- [https://wowpedia.fandom.com/wiki/API_IsFactionInactive]
 --- @param index number @ index of the faction within the faction list, ascending from 1.
 --- @return boolean @ inactive
 function IsFactionInactive(index)
 end
 
---- True if the character is currently falling.
+--- Returns true if the character is currently falling.
 --- [https://wowpedia.fandom.com/wiki/API_IsFalling]
 --- @return unknown @ falling
 function IsFalling()
@@ -8409,13 +8412,13 @@ end
 function IsFishingLoot()
 end
 
---- True if the current zone is a flyable area.
+--- Returns true if the current zone is a flyable area.
 --- [https://wowpedia.fandom.com/wiki/API_IsFlyableArea]
 --- @return boolean @ flyable
 function IsFlyableArea()
 end
 
---- True if the character is currently on a flying mount.
+--- Returns true if the character is currently on a flying mount.
 --- [https://wowpedia.fandom.com/wiki/API_IsFlying]
 --- @return unknown @ flying
 function IsFlying()
@@ -8430,8 +8433,9 @@ end
 --- Returns whether or not the unit with the given GUID is in your group.
 --- [https://wowpedia.fandom.com/wiki/API_IsGUIDInGroup]
 --- @param UnitGUID unknown
+--- @param groupType number @ ?
 --- @return unknown @ inGroup
-function IsGUIDInGroup(UnitGUID)
+function IsGUIDInGroup(UnitGUID, groupType)
 end
 
 --- [https://wowpedia.fandom.com/wiki/API_IsGamePadCursorControlEnabled?action=edit&amp;redlink=1]
@@ -8444,7 +8448,7 @@ end
 function IsGamePadFreelookEnabled()
 end
 
---- True if the player is the guild master.
+--- Returns true if the player is the guild master.
 --- [https://wowpedia.fandom.com/wiki/API_IsGuildLeader]
 --- @return boolean @ isGuildLeader
 function IsGuildLeader()
@@ -8501,7 +8505,7 @@ end
 function IsInCinematicScene()
 end
 
---- True if the player is in a group.
+--- Returns true if the player is in a group.
 --- [https://wowpedia.fandom.com/wiki/API_IsInGroup]
 --- @param groupType number @ ? - If omitted, checks if you're in any type of group.
 --- @return boolean @ inGroup
@@ -8537,7 +8541,7 @@ end
 function IsInLFGDungeon()
 end
 
---- True if the player is in a raid.
+--- Returns true if the player is in a raid.
 --- [https://wowpedia.fandom.com/wiki/API_IsInRaid]
 --- @param groupType number @ ? - To check for a specific type of group, provide one of:
 --- @return boolean @ isInRaid
@@ -8549,7 +8553,7 @@ end
 function IsInScenarioGroup()
 end
 
---- True if the character is currently indoors.
+--- Returns true if the character is currently indoors.
 --- [https://wowpedia.fandom.com/wiki/API_IsIndoors]
 --- @return boolean @ indoors
 function IsIndoors()
@@ -8611,13 +8615,13 @@ end
 function IsLFGDungeonJoinable()
 end
 
---- True if a modifier key is currently pressed.
+--- Returns true if a modifier key is currently pressed down.
 --- [https://wowpedia.fandom.com/wiki/API_IsLeftAltKeyDown]
 --- @return void
 function IsLeftAltKeyDown()
 end
 
---- True if a modifier key is currently pressed.
+--- Returns true if a modifier key is currently pressed down.
 --- [https://wowpedia.fandom.com/wiki/API_IsLeftControlKeyDown]
 --- @return void
 function IsLeftControlKeyDown()
@@ -8628,7 +8632,7 @@ end
 function IsLeftMetaKeyDown()
 end
 
---- True if a modifier key is currently pressed.
+--- Returns true if a modifier key is currently pressed down.
 --- [https://wowpedia.fandom.com/wiki/API_IsLeftShiftKeyDown]
 --- @return void
 function IsLeftShiftKeyDown()
@@ -8639,7 +8643,7 @@ end
 function IsLegacyDifficulty()
 end
 
---- True if on a Linux client.
+--- Returns true if on a Linux client.
 --- [https://wowpedia.fandom.com/wiki/API_IsLinuxClient]
 --- @return void
 function IsLinuxClient()
@@ -8650,7 +8654,7 @@ end
 function IsLoggedIn()
 end
 
---- True if on a Mac client.
+--- Returns true if on a Mac client.
 --- [https://wowpedia.fandom.com/wiki/API_IsMacClient]
 --- @return boolean @ isMac
 function IsMacClient()
@@ -8666,20 +8670,20 @@ end
 function IsMetaKeyDown()
 end
 
---- True if the modifier key needed for an an action is pressed.
+--- Returns true if the modifier key needed for an an action is pressed.
 --- [https://wowpedia.fandom.com/wiki/API_IsModifiedClick]
 --- @param action string @ ? - The action to check for. Actions defined by Blizzard:
 --- @return boolean @ isHeld
 function IsModifiedClick(action)
 end
 
---- True if a modifier key is currently pressed.
+--- Returns true if a modifier key is currently pressed down.
 --- [https://wowpedia.fandom.com/wiki/API_IsModifierKeyDown]
 --- @return boolean @ isDown
 function IsModifierKeyDown()
 end
 
---- True if the character is currently mounted.
+--- Returns true if the character is currently mounted.
 --- [https://wowpedia.fandom.com/wiki/API_IsMounted]
 --- @return boolean @ mounted
 function IsMounted()
@@ -8692,7 +8696,7 @@ end
 function IsMouseButtonDown(button)
 end
 
---- True if the player is currently in mouselook mode.
+--- Returns true if the player is currently in mouselook mode.
 --- [https://wowpedia.fandom.com/wiki/API_IsMouselooking]
 --- @return void
 function IsMouselooking()
@@ -8703,7 +8707,7 @@ end
 function IsMovieLocal()
 end
 
---- True if the specified movie exists and can be played.
+--- Returns true if the specified movie exists and can be played.
 --- [https://wowpedia.fandom.com/wiki/API_IsMoviePlayable]
 --- @param movieID number
 --- @return boolean @ playable
@@ -8726,13 +8730,13 @@ end
 function IsOnTournamentRealm()
 end
 
---- True if the player is currently outside of map boundaries.
+--- Returns true if the player is currently outside of map boundaries.
 --- [https://wowpedia.fandom.com/wiki/API_IsOutOfBounds]
 --- @return boolean @ oob
 function IsOutOfBounds()
 end
 
---- True if the character is currently outdoors.
+--- Returns true if the character is currently outdoors.
 --- [https://wowpedia.fandom.com/wiki/API_IsOutdoors]
 --- @return boolean @ outdoors
 function IsOutdoors()
@@ -8758,7 +8762,7 @@ end
 function IsPartyWorldPVP()
 end
 
---- True if the specified spell is a passive ability.
+--- Returns true if the specified spell is a passive ability.
 --- [https://wowpedia.fandom.com/wiki/API_IsPassiveSpell]
 --- @param spellId_or_index unknown
 --- @param bookType string @ Either BOOKTYPE_SPELL (spell) or BOOKTYPE_PET (pet). spell is linked to your General Spellbook tab.
@@ -8781,7 +8785,7 @@ end
 function IsPetAttackAction()
 end
 
---- True if the pet is currently auto attacking.
+--- Returns true if the pet is currently auto attacking.
 --- [https://wowpedia.fandom.com/wiki/API_IsPetAttackActive]
 --- @return boolean @ isActive
 function IsPetAttackActive()
@@ -8825,7 +8829,7 @@ end
 function IsPvpTalentSpell()
 end
 
---- True if the displayed quest at a quest giver can be completed.
+--- Returns true if the displayed quest at a quest giver can be completed.
 --- [https://wowpedia.fandom.com/wiki/API_IsQuestCompletable]
 --- @return boolean @ isQuestCompletable
 function IsQuestCompletable()
@@ -8886,7 +8890,7 @@ end
 function IsReplacingUnit()
 end
 
---- True if the character is currently resting.
+--- Returns true if the character is currently resting.
 --- [https://wowpedia.fandom.com/wiki/API_IsResting]
 --- @return boolean @ resting
 function IsResting()
@@ -8897,13 +8901,13 @@ end
 function IsRestrictedAccount()
 end
 
---- True if a modifier key is currently pressed.
+--- Returns true if a modifier key is currently pressed down.
 --- [https://wowpedia.fandom.com/wiki/API_IsRightAltKeyDown]
 --- @return void
 function IsRightAltKeyDown()
 end
 
---- True if a modifier key is currently pressed.
+--- Returns true if a modifier key is currently pressed down.
 --- [https://wowpedia.fandom.com/wiki/API_IsRightControlKeyDown]
 --- @return void
 function IsRightControlKeyDown()
@@ -8914,7 +8918,7 @@ end
 function IsRightMetaKeyDown()
 end
 
---- True if a modifier key is currently pressed.
+--- Returns true if a modifier key is currently pressed down.
 --- [https://wowpedia.fandom.com/wiki/API_IsRightShiftKeyDown]
 --- @return void
 function IsRightShiftKeyDown()
@@ -8930,7 +8934,7 @@ end
 function IsServerControlledBackfill()
 end
 
---- True if a modifier key is currently pressed.
+--- Returns true if a modifier key is currently pressed down.
 --- [https://wowpedia.fandom.com/wiki/API_IsShiftKeyDown]
 --- @return void
 function IsShiftKeyDown()
@@ -8944,13 +8948,13 @@ end
 function IsSpellClassOrSpec(spellName_or_spellIndex, bookType)
 end
 
---- True if the player is in range to use the specified spell on the target unit.
+--- Returns 1 if the player is in range to use the specified spell on the target unit, 0 otherwise.
 --- [https://wowpedia.fandom.com/wiki/API_IsSpellInRange]
---- @param index number @ spell book slot index, ascending from 1.
---- @param bookType string @ one of BOOKTYPE_SPELL (spell) or BOOKTYPE_PET (pet) specifying which spellbook to index.
---- @param target string @  : UnitId - The unit to use as a target for the spell.
---- @return boolean @ inRange
-function IsSpellInRange(index, bookType, target)
+--- @param index number @ Spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
+--- @param bookType string @ BOOKTYPE_SPELL or BOOKTYPE_PET depending on if you wish to query the player or pet spellbook.
+--- @param unit string @  : UnitId - The unit to use as a target for the spell.
+--- @return number @ inRange
+function IsSpellInRange(index, bookType, unit)
 end
 
 --- Returns whether the player (or pet) knows the given spell.
@@ -8966,7 +8970,7 @@ end
 function IsSpellKnownOrOverridesKnown()
 end
 
---- True if the specified spell currently has a proc / spell activation alert (glowing border).
+--- Returns true if the specified spell currently has a proc / spell activation alert (glowing border).
 --- [https://wowpedia.fandom.com/wiki/API_IsSpellOverlayed]
 --- @param spellID number @ the spell ID number
 --- @return boolean @ isTrue
@@ -8988,7 +8992,7 @@ end
 function IsStackableAction()
 end
 
---- True if the character is currently stealthed.
+--- Returns true if the character is currently stealthed.
 --- [https://wowpedia.fandom.com/wiki/API_IsStealthed]
 --- @return boolean @ stealthed
 function IsStealthed()
@@ -9010,13 +9014,13 @@ end
 function IsSubmerged()
 end
 
---- True if the character is currently swimming.
+--- Returns true if the character is currently swimming.
 --- [https://wowpedia.fandom.com/wiki/API_IsSwimming]
 --- @return boolean @ isSwimming
 function IsSwimming()
 end
 
---- True if the specified spell is learned from a talent.
+--- Returns true if the specified spell is learned from a talent.
 --- [https://wowpedia.fandom.com/wiki/API_IsTalentSpell]
 --- @param spellName_or_slotIndex unknown
 --- @param bookType string @ one of BOOKTYPE_SPELL (spell) or BOOKTYPE_PET (pet).
@@ -9029,13 +9033,13 @@ end
 function IsTestBuild()
 end
 
---- True if threat warnings are currently enabled.
+--- Returns true if threat warnings are currently enabled.
 --- [https://wowpedia.fandom.com/wiki/API_IsThreatWarningEnabled]
 --- @return boolean @ enabled
 function IsThreatWarningEnabled()
 end
 
---- True if the character can use a player title.
+--- Returns true if the character can use a player title.
 --- [https://wowpedia.fandom.com/wiki/API_IsTitleKnown]
 --- @param titleId number @ Ranging from 1 to GetNumTitles.
 --- @return boolean @ isKnown
@@ -9059,7 +9063,7 @@ end
 function IsTrackingHiddenQuests()
 end
 
---- True if the training window is used for a profession trainer.
+--- Returns true if the training window is used for a profession trainer.
 --- [https://wowpedia.fandom.com/wiki/API_IsTradeskillTrainer]
 --- @return unknown @ isTradeskillTrainer
 function IsTradeskillTrainer()
@@ -9083,7 +9087,7 @@ end
 function IsUnitModelReadyForUI(unitToken)
 end
 
---- True if the character can currently use the specified action (sufficient mana, reagents and not on cooldown).
+--- Returns true if the character can currently use the specified action (sufficient mana, reagents and not on cooldown).
 --- [https://wowpedia.fandom.com/wiki/API_IsUsableAction]
 --- @param slot number @ Action slot to query
 --- @return boolean, boolean @ isUsable, notEnoughMana
@@ -9140,7 +9144,7 @@ end
 function IsWargame()
 end
 
---- True if on a Windows client.
+--- Returns true if on a Windows client.
 --- [https://wowpedia.fandom.com/wiki/API_IsWindowsClient]
 --- @return void
 function IsWindowsClient()
@@ -9196,7 +9200,7 @@ end
 function ItemTextGetText()
 end
 
---- True if there is a page after the current page.
+--- Returns true if there is a page after the current page.
 --- [https://wowpedia.fandom.com/wiki/API_ItemTextHasNextPage]
 --- @return number @ hasNext
 function ItemTextHasNextPage()
@@ -9535,7 +9539,7 @@ end
 function LoggingCombat(newState)
 end
 
---- protected - This can only be called from secure code.    Use the /logout slash command.
+--- protected - This can only be called from secure code.Use the /logout slash command.
 --- [https://wowpedia.fandom.com/wiki/API_Logout]
 --- @return void
 function Logout()
@@ -9717,7 +9721,7 @@ end
 function NextView()
 end
 
---- True if the account is considered unhealthy for players on Chinese realms.
+--- Returns true if the account is considered unhealthy for players on Chinese realms.
 --- [https://wowpedia.fandom.com/wiki/API_NoPlayTime]
 --- @return boolean @ isUnhealthy
 function NoPlayTime()
@@ -9758,7 +9762,7 @@ end
 function OpeningCinematic()
 end
 
---- True if the account is considered tired for players on Chinese realms.
+--- Returns true if the account is considered tired for players on Chinese realms.
 --- [https://wowpedia.fandom.com/wiki/API_PartialPlayTime]
 --- @return void
 function PartialPlayTime()
@@ -9781,19 +9785,19 @@ end
 function PetAggressiveMode()
 end
 
---- protected - This can only be called from secure code.    Use the /petassist macro command.
+--- protected - This can only be called from secure code.Use the /petassist macro command.
 --- [https://wowpedia.fandom.com/wiki/API_PetAssistMode]
 --- @return void
 function PetAssistMode()
 end
 
---- protected - This can only be called from secure code.    Use the /petattack slash command.
+--- protected - This can only be called from secure code.Use the /petattack slash command.
 --- [https://wowpedia.fandom.com/wiki/API_PetAttack]
 --- @return void
 function PetAttack()
 end
 
---- True if the pet can be abandoned.
+--- Returns true if the pet can be abandoned.
 --- [https://wowpedia.fandom.com/wiki/API_PetCanBeAbandoned]
 --- @return boolean @ canAbandon
 function PetCanBeAbandoned()
@@ -9804,7 +9808,7 @@ end
 function PetCanBeDismissed()
 end
 
---- True if the pet can be renamed.
+--- Returns true if the pet can be renamed.
 --- [https://wowpedia.fandom.com/wiki/API_PetCanBeRenamed]
 --- @return boolean @ canRename
 function PetCanBeRenamed()
@@ -9863,7 +9867,7 @@ end
 function PetRename(name)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0.1; Fails silently if called from an insecure execution path in combat. Consider using /petpassive instead.
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0.1; Fails silently if called from an insecure execution path in combat. Consider using /petpassive instead.
 --- [https://wowpedia.fandom.com/wiki/API_PetStopAttack]
 --- @return void
 function PetStopAttack()
@@ -9880,7 +9884,7 @@ end
 function PetWait()
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.2
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.2
 --- [https://wowpedia.fandom.com/wiki/API_PickupAction]
 --- @param actionSlot number @ The action slot to pick the action up from.
 --- @return void
@@ -9894,7 +9898,7 @@ end
 function PickupBagFromSlot(slot)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 3.0.2
+--- nocombat - This cannot be called while in combat.Restricted since patch 3.0.2
 --- [https://wowpedia.fandom.com/wiki/API_PickupCompanion]
 --- @param type string @ companion type, either MOUNT or CRITTER.
 --- @param index number @ index of the companion of the specified type to place on the cursor, ascending from 1.
@@ -9934,7 +9938,7 @@ end
 function PickupItem(itemID_or_itemString_or_itemName_or_itemLink)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.2
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.2
 --- [https://wowpedia.fandom.com/wiki/API_PickupMacro]
 --- @param index_or_name unknown
 --- @return void
@@ -9948,7 +9952,7 @@ end
 function PickupMerchantItem(index)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.2
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.2
 --- [https://wowpedia.fandom.com/wiki/API_PickupPetAction]
 --- @param petActionSlot number @ The pet action slot to pick the action up from (1-10).
 --- @return void
@@ -9974,14 +9978,14 @@ end
 function PickupPvpTalent()
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_PickupSpell]
 --- @param spellID number @ spell ID of the spell to pick up.
 --- @return void
 function PickupSpell(spellID)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 4.0.1; Fails silently if called from insecure code in combat.
+--- nocombat - This cannot be called while in combat.Restricted since patch 4.0.1; Fails silently if called from insecure code in combat.
 --- [https://wowpedia.fandom.com/wiki/API_PickupSpellBookItem]
 --- @param spellName_or_index unknown
 --- @param bookType string @ Spell book type; one of the following global constants:
@@ -10124,7 +10128,7 @@ end
 function PrevView()
 end
 
---- protected - This can only be called from secure code.    This function will silently do nothing if called from an insecure execution path.
+--- protected - This can only be called from secure code.This function will silently do nothing if called from an insecure execution path.
 --- [https://wowpedia.fandom.com/wiki/API_ProcessExceptionClient]
 --- @param description string @ The description of the error being processed.
 --- @return void
@@ -10223,7 +10227,7 @@ end
 function QuestHasPOIInfo()
 end
 
---- True if the offered quest is a daily quest.
+--- Returns true if the offered quest is a daily quest.
 --- [https://wowpedia.fandom.com/wiki/API_QuestIsDaily]
 --- @return boolean @ isDaily
 function QuestIsDaily()
@@ -10239,7 +10243,7 @@ end
 function QuestIsFromAreaTrigger()
 end
 
---- True if the offered quest is a weekly quest.
+--- Returns true if the offered quest is a weekly quest.
 --- [https://wowpedia.fandom.com/wiki/API_QuestIsWeekly]
 --- @return boolean @ isWeekly
 function QuestIsWeekly()
@@ -10283,7 +10287,7 @@ end
 function QuestPOIUpdateIcons()
 end
 
---- protected - This can only be called from secure code.    Use the /quit slash command.
+--- protected - This can only be called from secure code.Use the /quit slash command.
 --- [https://wowpedia.fandom.com/wiki/API_Quit]
 --- @return void
 function Quit()
@@ -10649,14 +10653,14 @@ end
 function RunBinding(command, up)
 end
 
---- protected - This can only be called from secure code.    Use the macro action type of SecureActionButtonTemplate.
+--- protected - This can only be called from secure code.Use the macro action type of SecureActionButtonTemplate.
 --- [https://wowpedia.fandom.com/wiki/API_RunMacro]
 --- @param macroID_or_macroName unknown
 --- @return void
 function RunMacro(macroID_or_macroName)
 end
 
---- protected - This can only be called from secure code.    Use the macro action type of SecureActionButtonTemplate.
+--- protected - This can only be called from secure code.Use the macro action type of SecureActionButtonTemplate.
 --- [https://wowpedia.fandom.com/wiki/API_RunMacroText]
 --- @param macro string @ the string is interpreted as a macro and then executed
 --- @return void
@@ -10789,7 +10793,7 @@ end
 function SellCursorItem()
 end
 
----     SAY, YELL and CHANNEL require a hardware event while outdoors.
+--- SAY, YELL and CHANNEL require a hardware event while outdoors.
 --- [https://wowpedia.fandom.com/wiki/API_SendChatMessage]
 --- @param msg string @ The message to be sent. Large messages are truncated to max 255 characters, and only valid chat message characters are permitted.
 --- @param chatType string @ ? - The type of message to be sent, e.g. PARTY. If omitted, this defaults to SAY
@@ -10799,7 +10803,7 @@ end
 function SendChatMessage(msg, chatType, languageID, target)
 end
 
---- noscript - This cannot be called directly from /script, loadstring() and WeakAuras.
+--- noscript - This cannot be called directly from /script, loadstring and WeakAuras.
 --- [https://wowpedia.fandom.com/wiki/API_SendMail]
 --- @param recipient string @ Intended recipient of the mail.
 --- @param subject string @ Subject of the mail. Cannot be an empty string or nil, but may be whitespace, e.g.
@@ -10911,7 +10915,7 @@ end
 function SetBattlefieldScoreFaction(faction)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
 --- [https://wowpedia.fandom.com/wiki/API_SetBinding]
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param command string @ ? - Any name attribute value of a Bindings.xml-defined binding, or an action command string, or nil to unbind all bindings from key. For example:
@@ -10920,7 +10924,7 @@ end
 function SetBinding(key, command, mode)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings while in combat.
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings while in combat.
 --- [https://wowpedia.fandom.com/wiki/API_SetBindingClick]
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param buttonName string @ Name of the button you wish to click.
@@ -10929,7 +10933,7 @@ end
 function SetBindingClick(key, buttonName, button)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
 --- [https://wowpedia.fandom.com/wiki/API_SetBindingItem]
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param item string @ Item name (or item string) you want the binding to use. For example: Hearthstone, item:6948
@@ -10937,7 +10941,7 @@ end
 function SetBindingItem(key, item)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
 --- [https://wowpedia.fandom.com/wiki/API_SetBindingMacro]
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param macroName_or_macroId unknown
@@ -10945,7 +10949,7 @@ end
 function SetBindingMacro(key, macroName_or_macroId)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
 --- [https://wowpedia.fandom.com/wiki/API_SetBindingSpell]
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param spell string @ Name of the spell you wish to cast when the binding is pressed.
@@ -11332,7 +11336,7 @@ end
 function SetOptOutOfLoot(optOut)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_SetOverrideBinding]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
 --- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
@@ -11342,7 +11346,7 @@ end
 function SetOverrideBinding(owner, isPriority, key, command)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_SetOverrideBindingClick]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
 --- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
@@ -11353,7 +11357,7 @@ end
 function SetOverrideBindingClick(owner, isPriority, key, buttonName, mouseClick)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_SetOverrideBindingItem]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
 --- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
@@ -11363,7 +11367,7 @@ end
 function SetOverrideBindingItem(owner, isPriority, key, item)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_SetOverrideBindingMacro]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
 --- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
@@ -11373,7 +11377,7 @@ end
 function SetOverrideBindingMacro(owner, isPriority, key, macro)
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 2.0
+--- nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_SetOverrideBindingSpell]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
 --- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
@@ -11393,7 +11397,7 @@ end
 function SetPOIIconOverlapPushDistance()
 end
 
---- Toggles PVP on or off.
+--- Sets the player's PvP flag.
 --- [https://wowpedia.fandom.com/wiki/API_SetPVP]
 --- @param flag number
 --- @return void
@@ -11428,8 +11432,8 @@ end
 
 --- Sets a texture to a unit's 2D portrait.
 --- [https://wowpedia.fandom.com/wiki/API_SetPortraitTexture]
---- @param textureObject unknown @ Object : Texture
---- @param unitToken string @  : UnitId
+--- @param textureObject unknown @ Texture🔗
+--- @param unitToken string @ UnitToken
 --- @param disableMasking boolean @ ? = false
 --- @return void
 function SetPortraitTexture(textureObject, unitToken, disableMasking)
@@ -11468,7 +11472,7 @@ end
 function SetRaidProfileSavedPosition()
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 4.0.1
+--- nocombat - This cannot be called while in combat.Restricted since patch 4.0.1
 --- [https://wowpedia.fandom.com/wiki/API_SetRaidSubgroup]
 --- @param index unknown
 --- @param subgroup unknown
@@ -11697,7 +11701,7 @@ end
 function SignPetition()
 end
 
---- protected - This can only be called from secure code.    Use the SIT/STAND emotes, or /sit, /stand slash commands.
+--- protected - This can only be called from secure code.Use the SIT/STAND emotes, or /sit, /stand slash commands.
 --- [https://wowpedia.fandom.com/wiki/API_SitStandOrDescendStart]
 --- @return void
 function SitStandOrDescendStart()
@@ -11846,7 +11850,7 @@ end
 function SpellCanTargetQuest()
 end
 
---- True if the spell awaiting target selection can be cast on the unit.
+--- Returns true if the spell awaiting target selection can be cast on the unit.
 --- [https://wowpedia.fandom.com/wiki/API_SpellCanTargetUnit]
 --- @param unitId string @ UnitId) - The unit to check.
 --- @return boolean @ canTarget
@@ -11886,19 +11890,19 @@ end
 function SpellIsSelfBuff()
 end
 
---- True if a spell is about to be cast and is waiting for the player to select a target.
+--- Returns true if a spell is about to be cast and is waiting for the player to select a target.
 --- [https://wowpedia.fandom.com/wiki/API_SpellIsTargeting]
 --- @return boolean @ isTargeting
 function SpellIsTargeting()
 end
 
---- protected - This can only be called from secure code.    Use the /stopcasting slash command.
+--- protected - This can only be called from secure code.Use the /stopcasting slash command.
 --- [https://wowpedia.fandom.com/wiki/API_SpellStopCasting]
 --- @return boolean @ stopped
 function SpellStopCasting()
 end
 
---- protected - This can only be called from secure code.    Use the stop action type of SecureActionButtonTemplate or the /stopspelltarget slash command.
+--- protected - This can only be called from secure code.Use the stop action type of SecureActionButtonTemplate or the /stopspelltarget slash command.
 --- [https://wowpedia.fandom.com/wiki/API_SpellStopTargeting]
 --- @return void
 function SpellStopTargeting()
@@ -11909,7 +11913,7 @@ end
 function SpellTargetItem()
 end
 
---- protected - This can only be called from secure code.    Use the target action type of SecureActionButtonTemplate.
+--- protected - This can only be called from secure code.Use the target action type of SecureActionButtonTemplate.
 --- [https://wowpedia.fandom.com/wiki/API_SpellTargetUnit]
 --- @param unitId string @  : UnitId - The unit you wish to cast the spell on.
 --- @return void
@@ -12080,7 +12084,7 @@ end
 function SurrenderArena()
 end
 
---- nocombat - This cannot be called while in combat.    Restricted since patch 4.0.1
+--- nocombat - This cannot be called while in combat.Restricted since patch 4.0.1
 --- [https://wowpedia.fandom.com/wiki/API_SwapRaidSubgroup]
 --- @param index1 number @ ID of first raid member (1 to MAX_RAID_MEMBERS)
 --- @param index2 number @ ID of second raid member (1 to MAX_RAID_MEMBERS)
@@ -12135,7 +12139,7 @@ end
 function TargetDirectionFriend()
 end
 
---- protected - This can only be called from secure code.    Use the /targetlastenemy slash command.
+--- protected - This can only be called from secure code.Use the /targetlastenemy slash command.
 --- [https://wowpedia.fandom.com/wiki/API_TargetLastEnemy]
 --- @return void
 function TargetLastEnemy()
@@ -12146,7 +12150,7 @@ end
 function TargetLastFriend()
 end
 
---- protected - This can only be called from secure code.    Use the /targetlasttarget slash command.
+--- protected - This can only be called from secure code.Use the /targetlasttarget slash command.
 --- [https://wowpedia.fandom.com/wiki/API_TargetLastTarget]
 --- @return void
 function TargetLastTarget()
@@ -12157,7 +12161,7 @@ end
 function TargetNearest()
 end
 
---- protected - This can only be called from secure code.    Use the /targetenemy slash command.
+--- protected - This can only be called from secure code.Use the /targetenemy slash command.
 --- [https://wowpedia.fandom.com/wiki/API_TargetNearestEnemy]
 --- @param reverse boolean @ true to cycle backwards; false to cycle forwards.
 --- @return void
@@ -12169,7 +12173,7 @@ end
 function TargetNearestEnemyPlayer()
 end
 
---- protected - This can only be called from secure code.    Use the /targetfriend slash command.
+--- protected - This can only be called from secure code.Use the /targetfriend slash command.
 --- [https://wowpedia.fandom.com/wiki/API_TargetNearestFriend]
 --- @param reverse boolean @  : if true, reverses the order of targetting units.
 --- @return void
@@ -12211,7 +12215,7 @@ end
 function TargetTotem()
 end
 
---- protected - This can only be called from secure code.    Use SecureActionButtonTemplate's target action type, or the /target slash command.
+--- protected - This can only be called from secure code.Use SecureActionButtonTemplate's target action type, or the /target slash command.
 --- [https://wowpedia.fandom.com/wiki/API_TargetUnit]
 --- @param name string @ The name of the unit.
 --- @param exactMatch boolean @ ? - true to check only units whose name exactly matches the name given; false to allow partial matches.
@@ -12316,7 +12320,7 @@ end
 function ToggleDebugAIDisplay()
 end
 
---- Toggles the PvP setting.
+--- Toggles the player's PvP flag on or off.
 --- [https://wowpedia.fandom.com/wiki/API_TogglePVP]
 --- @return void
 function TogglePVP()
@@ -12413,7 +12417,7 @@ end
 function UninviteUnit(name, reason)
 end
 
---- True if the unit is in combat.
+--- Returns true if the unit is in combat.
 --- [https://wowpedia.fandom.com/wiki/API_UnitAffectingCombat]
 --- @param unit string @  : UnitId - The unit to check.
 --- @return boolean @ affectingCombat
@@ -12511,19 +12515,19 @@ end
 function UnitCanAssist(unitToAssist, unitToBeAssisted)
 end
 
---- Returns true if the first unit can attack the second, false otherwise.
+--- Returns true if the first unit can attack the second.
 --- [https://wowpedia.fandom.com/wiki/API_UnitCanAttack]
---- @param attacker unknown @ UnitId - the unit that would initiate the attack (e.g., player or target)
---- @param attacked unknown @ UnitId - the unit that would be attacked (e.g., player or target)
+--- @param unit1 string @  : UnitId
+--- @param unit2 string @  : UnitId - The unit to compare with the first unit.
 --- @return boolean @ canAttack
-function UnitCanAttack(attacker, attacked)
+function UnitCanAttack(unit1, unit2)
 end
 
---- Returns true if the first unit can cooperate with the second, false otherwise.
+--- Returns true if the first unit can cooperate with the second.
 --- [https://wowpedia.fandom.com/wiki/API_UnitCanCooperate]
---- @param unit1 string @ The UnitId of the unit to check (Tested with player, pet, party1, hostile target)
---- @param unit2 string @ The UnitId of the unit to check (Tested with player, pet, party1, hostile target)
---- @return void
+--- @param unit1 string @  : UnitId
+--- @param unit2 string @  : UnitId - The unit to compare with the first unit.
+--- @return boolean @ cancooperate
 function UnitCanCooperate(unit1, unit2)
 end
 
@@ -12631,7 +12635,7 @@ end
 function UnitEffectiveLevel(unit)
 end
 
---- True if the unit exists.
+--- Returns true if the unit exists.
 --- [https://wowpedia.fandom.com/wiki/API_UnitExists]
 --- @param unit string @  : UnitId
 --- @return boolean @ exists
@@ -12700,7 +12704,7 @@ end
 function UnitHPPerStamina()
 end
 
---- True if the unit is currently being resurrected.
+--- Returns true if the unit is currently being resurrected.
 --- [https://wowpedia.fandom.com/wiki/API_UnitHasIncomingResurrection]
 --- @param unitID_or_UnitName unknown
 --- @return boolean @ isBeingResurrected
@@ -12773,9 +12777,9 @@ end
 
 --- Returns whether or not the targeted unit is in a Group of any type. Instance, raid, party, etc.
 --- [https://wowpedia.fandom.com/wiki/API_UnitInAnyGroup]
---- @param target unknown
+--- @param unit string @ UnitToken - The unit token of the unit to check group status for. Always returns false if no unit is provided.
 --- @return boolean @ inGroup
-function UnitInAnyGroup(target)
+function UnitInAnyGroup(unit)
 end
 
 --- Returns the unit index if the unit is in your battleground.
@@ -12790,7 +12794,7 @@ end
 function UnitInOtherParty()
 end
 
---- True if the unit is a member of your party.
+--- Returns true if the unit is a member of your party.
 --- [https://wowpedia.fandom.com/wiki/API_UnitInParty]
 --- @param unit string @  : UnitId
 --- @return boolean @ inParty
@@ -12811,9 +12815,9 @@ end
 function UnitInRaid(unit)
 end
 
---- True if the unit is within 40 yards range (25 yards for Evokers). Always returns false outside of a party or raid group.
+--- grouponly - This can only be queried on units in your party or raid.
 --- [https://wowpedia.fandom.com/wiki/API_UnitInRange]
---- @param unit string @  : UnitId - Information is only available for members of the player's group.
+--- @param unit string @ UnitToken
 --- @return boolean, boolean @ inRange, checkedRange
 function UnitInRange(unit)
 end
@@ -12843,7 +12847,7 @@ end
 function UnitInVehicleHidesPetFrame()
 end
 
---- True if a friendly unit is AFK (Away from keyboard).
+--- Returns true if a friendly unit is AFK (Away from keyboard).
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsAFK]
 --- @param unit unknown @ The UnitId to return AFK status of. A nil value throws an error.
 --- @return boolean @ isAFK
@@ -12864,14 +12868,14 @@ end
 function UnitIsBattlePetCompanion(unit)
 end
 
---- True if the unit is charmed.
+--- Returns true if the unit is charmed.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsCharmed]
 --- @param unit string @  : UnitId
 --- @return boolean @ isTrue
 function UnitIsCharmed(unit)
 end
 
---- True if the unit is connected to the game (i.e. not offline).
+--- Returns true if the unit is connected to the game (i.e. not offline).
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsConnected]
 --- @param unit string @  : UnitId
 --- @return unknown @ isOnline
@@ -12888,51 +12892,51 @@ end
 function UnitIsCorpse()
 end
 
---- True if a unit is DND (Do not disturb).
+--- Returns true if a unit is DND (Do not disturb).
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsDND]
 --- @param unit unknown @ The UnitId to return DND status of.
 --- @return unknown @ isDND
 function UnitIsDND(unit)
 end
 
---- True if the unit is dead.
+--- Returns true if the unit is dead.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsDead]
 --- @param unit string @  : UnitId
 --- @return boolean @ isDead
 function UnitIsDead(unit)
 end
 
---- True if the unit is dead or in ghost form.
+--- Returns true if the unit is dead or in ghost form.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsDeadOrGhost]
 --- @param unit string @  : UnitId
 --- @return boolean @ isDeadOrGhost
 function UnitIsDeadOrGhost(unit)
 end
 
---- True if the specified units are hostile.
+--- Returns true if the specified units are hostile to each other.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsEnemy]
---- @param unit string @  : UnitId
---- @param otherunit string @  : UnitId - The unit to compare with the first unit.
---- @return unknown @ UnitIsEnemy
-function UnitIsEnemy(unit, otherunit)
+--- @param unit1 string @  : UnitId
+--- @param unit2 string @  : UnitId - The unit to compare with the first unit.
+--- @return boolean @ isEnemy
+function UnitIsEnemy(unit1, unit2)
 end
 
---- True if the unit (must be a group member) is feigning death.
+--- Returns true if the unit (must be a group member) is feigning death.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsFeignDeath]
 --- @param unit string @  : UnitId
 --- @return boolean @ isFeign
 function UnitIsFeignDeath(unit)
 end
 
---- True if the specified units are friendly.
+--- Returns true if the specified units are friendly to each other.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsFriend]
---- @param unit string @  : UnitId
---- @param otherunit string @  : UnitId
+--- @param unit1 string @  : UnitId
+--- @param unit2 string @  : UnitId - The unit to compare with the first unit.
 --- @return boolean @ isFriend
-function UnitIsFriend(unit, otherunit)
+function UnitIsFriend(unit1, unit2)
 end
 
---- True if the unit is in ghost form.
+--- Returns true if the unit is in ghost form.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsGhost]
 --- @param unit string @  : UnitId
 --- @return boolean @ isGhost
@@ -12986,14 +12990,14 @@ end
 function UnitIsOwnerOrControllerOfUnit(controllingUnit, controlledUnit)
 end
 
---- True if the unit is flagged for PVP.
+--- Returns true if the unit is flagged for PVP.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsPVP]
 --- @param unit unknown
 --- @return unknown @ ispvp
 function UnitIsPVP(unit)
 end
 
---- True if the unit is flagged for free-for-all PVP (e.g. in a world arena).
+--- Returns true if the unit is flagged for free-for-all PVP (e.g. in a world arena).
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsPVPFreeForAll]
 --- @param unit unknown
 --- @return boolean @ isFreeForAll
@@ -13005,14 +13009,14 @@ end
 function UnitIsPVPSanctuary()
 end
 
---- True if the unit is a player character.
+--- Returns true if the unit is a player character.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsPlayer]
 --- @param unit string @  : UnitId
---- @return boolean @ isTrue
+--- @return boolean @ isPlayer
 function UnitIsPlayer(unit)
 end
 
---- True if the unit is currently under control of another (e.g. Mind Control).
+--- Returns true if the unit is currently under control of another (e.g. Mind Control).
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsPossessed]
 --- @param unit string @  : UnitId
 --- @return boolean @ isTrue
@@ -13029,7 +13033,7 @@ end
 function UnitIsRaidOfficer()
 end
 
---- True if the unit is from the same (connected) realm.
+--- Returns true if the unit is from the same (connected) realm.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsSameServer]
 --- @param unit string @  : UnitId
 --- @return boolean @ sameServer
@@ -13055,7 +13059,7 @@ end
 function UnitIsUnconscious()
 end
 
---- True if the specified units are the same unit.
+--- Returns true if the specified units are the same unit.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsUnit]
 --- @param unit1 string @  : UnitId - The first unit to query (e.g. party1, pet, player)
 --- @param unit2 string @  : UnitId - The second unit to compare it to (e.g. target)
@@ -13063,7 +13067,7 @@ end
 function UnitIsUnit(unit1, unit2)
 end
 
---- True if the game client can see the unit.
+--- Returns true if the game client can see the unit.
 --- [https://wowpedia.fandom.com/wiki/API_UnitIsVisible]
 --- @param unit unknown @ UnitId of the unit
 --- @return number @ visible
@@ -13115,7 +13119,7 @@ end
 function UnitNumPowerBarTimers()
 end
 
---- True if the unit is on a flight path.
+--- Returns true if the unit is on a flight path.
 --- [https://wowpedia.fandom.com/wiki/API_UnitOnTaxi]
 --- @param unit string @  : UnitId
 --- @return boolean @ onTaxi
@@ -13136,21 +13140,21 @@ end
 function UnitPhaseReason(unit)
 end
 
---- True if the unit is controlled by a player.
+--- Returns true if the unit is controlled by a player.
 --- [https://wowpedia.fandom.com/wiki/API_UnitPlayerControlled]
 --- @param unit string @  : UnitId
 --- @return boolean @ UnitIsPlayerControlled
 function UnitPlayerControlled(unit)
 end
 
---- True if a different unit or pet is a member of the party.
+--- Returns true if a different unit or pet is a member of the party.
 --- [https://wowpedia.fandom.com/wiki/API_UnitPlayerOrPetInParty]
 --- @param unit string @  : The unit to check for party membership.
 --- @return boolean @ inMyParty
 function UnitPlayerOrPetInParty(unit)
 end
 
---- True if a different unit or pet is a member of the raid.
+--- Returns true if a different unit or pet is a member of the raid.
 --- [https://wowpedia.fandom.com/wiki/API_UnitPlayerOrPetInRaid]
 --- @param unit string @  : UnitId
 --- @return boolean @ inRaid
@@ -13369,7 +13373,7 @@ end
 function UnitTrialXP()
 end
 
---- True if the unit is currently in a vehicle.
+--- Returns true if the unit is currently in a vehicle.
 --- [https://wowpedia.fandom.com/wiki/API_UnitUsingVehicle]
 --- @param unit string @  : UnitId
 --- @return boolean @ inVehicle
@@ -13461,7 +13465,7 @@ end
 function UpdateWindow()
 end
 
---- protected - This can only be called from secure code.    Use the action type of the SecureActionButtonTemplate.
+--- protected - This can only be called from secure code.Use the action type of the SecureActionButtonTemplate.
 --- [https://wowpedia.fandom.com/wiki/API_UseAction]
 --- @param slot number @ The action action slot to use.
 --- @param checkCursor number @ optional) - Can be 0, 1, or nil. Appears to indicate whether the action button was clicked (1) or used via hotkey (0); probably involved in placing skills/items in the action bar after they've been picked up.  I can confirm this.  If you pass 0 for checkCursor, it will use the action regardless of whether another item/skill is on the cursor.  If you pass 1 for checkCursor, it will replace the spell/action on the slot with the new one.
@@ -13470,7 +13474,7 @@ end
 function UseAction(slot, checkCursor, onSelf)
 end
 
---- protected - This can only be called from secure code.    Use the item action type of SecureActionButtonTemplate or the /use slash command.
+--- protected - This can only be called from secure code.Use the item action type of SecureActionButtonTemplate or the /use slash command.
 --- [https://wowpedia.fandom.com/wiki/API_UseContainerItem]
 --- @param bagID number @ The bag id, where the item to use is located
 --- @param slot number @ The slot in the bag, where the item to use is located
@@ -13492,7 +13496,7 @@ end
 function UseInventoryItem(slotID)
 end
 
---- protected - This can only be called from secure code.    Use the item action type of SecureActionButtonTemplate or the /use slash command.
+--- protected - This can only be called from secure code.Use the item action type of SecureActionButtonTemplate or the /use slash command.
 --- [https://wowpedia.fandom.com/wiki/API_UseItemByName]
 --- @param name string @ name of the item to use.
 --- @param target string @ ? : UnitId - The unit to use the item on, defaults to target for items that can be used on others.
@@ -13872,9 +13876,9 @@ end
 function gcinfo()
 end
 
---- Returns a function to invoke the default error handler.
+--- Returns the currently set error handler.
 --- [https://wowpedia.fandom.com/wiki/API_geterrorhandler]
---- @return unknown @ func
+--- @return unknown @ handler
 function geterrorhandler()
 end
 
@@ -13928,13 +13932,13 @@ end
 function ipairs(table)
 end
 
---- True if the current execution path is secure.
+--- Returns true if the current execution path is secure.
 --- [https://wowpedia.fandom.com/wiki/API_issecure]
 --- @return boolean @ secure
 function issecure()
 end
 
---- True if the specified variable is secure.
+--- Returns true if the specified variable is secure.
 --- [https://wowpedia.fandom.com/wiki/API_issecurevariable]
 --- @param table table @ ? - table to check the the key in; if omitted, defaults to the globals table (_G).
 --- @param variable string @ string key to check the taint of. Numbers will be converted to a string; other types will throw an error.

@@ -12,7 +12,7 @@ lua ./GenerateFromAPIDocumentation.lua
 
 ### Global functions generated from Wowpedia
 
-The Global functions are parsed from the crowd sourced Wowpedia website, via the https://wow.gamepedia.com/Global_functions page, and all of the content is extracted to the `GlobalFunctions/GlobalFunctions.lua` file. To run the script execute:
+The Global functions are parsed from the crowdsourced Wowpedia website, via the https://wow.gamepedia.com/Global_functions page, and all the content is extracted to the `GlobalFunctions/GlobalFunctions.lua` file. To run the script execute:
 
 ```bash
 lua ./GetWowpediaInfo.lua

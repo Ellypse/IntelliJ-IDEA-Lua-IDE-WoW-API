@@ -61,6 +61,10 @@ function C_Item.GetItemID(itemLocation) end
 ---@return number|nil itemID
 function C_Item.GetItemIDByGUID(itemGUID) end
 
+---@param itemInfo ItemInfo 
+---@return number itemID
+function C_Item.GetItemIDForItemInfo(itemInfo) end
+
 ---@param itemLocation ItemLocation 
 ---@return fileID|nil icon
 function C_Item.GetItemIcon(itemLocation) end
