@@ -77,6 +77,15 @@ AccountStateFlags.AccountNotificationsLoaded = 1073741824
 AccountStateFlags.AccountWowlabsLoaded = 0
 AccountStateFlags.AccountUpgradeComplete = 0
 
+---@class DisableAccountProfilesFlags
+DisableAccountProfilesFlags = {}
+DisableAccountProfilesFlags.None = 0
+DisableAccountProfilesFlags.Document = 1
+DisableAccountProfilesFlags.SharedCollections = 2
+DisableAccountProfilesFlags.MountsCollections = 4
+DisableAccountProfilesFlags.PetsCollections = 8
+DisableAccountProfilesFlags.ItemsCollections = 16
+
 ---@class AppearanceSourceInfo
 ---@field visualID number 
 ---@field sourceID number 
@@ -202,7 +211,8 @@ BagSlotFlags.PriorityConsumables = 4
 BagSlotFlags.PriorityTradeGoods = 8
 BagSlotFlags.PriorityJunk = 16
 BagSlotFlags.PriorityQuestItems = 32
-BagSlotFlags.BagSlotValidFlagsAll = 63
+BagSlotFlags.ExcludeJunkSell = 64
+BagSlotFlags.BagSlotValidFlagsAll = 127
 BagSlotFlags.BagSlotPriorityFlagsAll = 62
 
 ---@class ScriptObject
@@ -650,6 +660,13 @@ HolidayFlags.BeginEventOnlyOnStageChange = 64
 CalendarGetEventTypeConstants = {}
 CalendarGetEventTypeConstants.DEFAULT_CALENDAR_GET_EVENT_TYPE = 0
 
+---@class CameraModeAspectRatio
+CameraModeAspectRatio = {}
+CameraModeAspectRatio.Default = 0
+CameraModeAspectRatio.LegacyLetterbox = 1
+CameraModeAspectRatio.HighDefinition_16_X_9 = 2
+CameraModeAspectRatio.Cinemascope_2_Dot_4_X_1 = 3
+
 ---@class CharCustomizationType
 CharCustomizationType = {}
 CharCustomizationType.Skin = 0
@@ -862,6 +879,12 @@ ContentTrackingResult = {}
 ContentTrackingResult.Success = 0
 ContentTrackingResult.DataPending = 1
 ContentTrackingResult.Failure = 2
+
+---@class ContentTrackingStopType
+ContentTrackingStopType = {}
+ContentTrackingStopType.Invalidated = 0
+ContentTrackingStopType.Collected = 1
+ContentTrackingStopType.Manual = 2
 
 ---@class ContentTrackingTargetType
 ContentTrackingTargetType = {}
@@ -1121,6 +1144,8 @@ CurrencyFlagsB.CurrencyBUseTotalEarnedForEarned = 1
 CurrencyFlagsB.CurrencyBShowQuestXPGainInTooltip = 2
 CurrencyFlagsB.CurrencyBNoNotificationMailOnOfflineProgress = 4
 CurrencyFlagsB.CurrencyBBattlenetVirtualCurrency = 8
+CurrencyFlagsB.FutureCurrencyFlag = 16
+CurrencyFlagsB.CurrencyBDontDisplayIfZero = 32
 
 ---@class CurrencyGainFlags
 CurrencyGainFlags = {}
@@ -1134,6 +1159,7 @@ CurrencyTokenCategoryFlags.FlagSortLast = 1
 CurrencyTokenCategoryFlags.FlagPlayerItemAssignment = 2
 CurrencyTokenCategoryFlags.Hidden = 4
 CurrencyTokenCategoryFlags.Virtual = 8
+CurrencyTokenCategoryFlags.StartsCollapsed = 16
 
 ---@class LinkedCurrencyFlags
 LinkedCurrencyFlags = {}
@@ -1301,42 +1327,44 @@ Cursormode.QuestImportantCursor = 30
 Cursormode.QuestImportantTurninCursor = 31
 Cursormode.VehicleCursor = 32
 Cursormode.MapPinCursor = 33
-Cursormode.UIMoveCursor = 34
-Cursormode.UIResizeCursor = 35
-Cursormode.PointErrorCursor = 36
-Cursormode.CastErrorCursor = 37
-Cursormode.BuyErrorCursor = 38
-Cursormode.AttackErrorCursor = 39
-Cursormode.InteractErrorCursor = 40
-Cursormode.SpeakErrorCursor = 41
-Cursormode.InspectErrorCursor = 42
-Cursormode.PickupErrorCursor = 43
-Cursormode.TaxiErrorCursor = 44
-Cursormode.TrainerErrorCursor = 45
-Cursormode.MineErrorCursor = 46
-Cursormode.SkinErrorCursor = 47
-Cursormode.GatherErrorCursor = 48
-Cursormode.LockErrorCursor = 49
-Cursormode.MailErrorCursor = 50
-Cursormode.LootAllErrorCursor = 51
-Cursormode.RepairErrorCursor = 52
-Cursormode.RepairnpcErrorCursor = 53
-Cursormode.ItemErrorCursor = 54
-Cursormode.SkinHordeErrorCursor = 55
-Cursormode.SkinAllianceErrorCursor = 56
-Cursormode.InnkeeperErrorCursor = 57
-Cursormode.CampaignQuestErrorCursor = 58
-Cursormode.CampaignQuestTurninErrorCursor = 59
-Cursormode.QuestErrorCursor = 60
-Cursormode.QuestRepeatableErrorCursor = 61
-Cursormode.QuestTurninErrorCursor = 62
-Cursormode.QuestLegendaryErrorCursor = 63
-Cursormode.QuestLegendaryTurninErrorCursor = 64
-Cursormode.QuestImportantErrorCursor = 65
-Cursormode.QuestImportantTurninErrorCursor = 66
-Cursormode.VehicleErrorCursor = 67
-Cursormode.MapPinErrorCursor = 68
-Cursormode.CustomCursor = 69
+Cursormode.PingCursor = 34
+Cursormode.UIMoveCursor = 35
+Cursormode.UIResizeCursor = 36
+Cursormode.PointErrorCursor = 37
+Cursormode.CastErrorCursor = 38
+Cursormode.BuyErrorCursor = 39
+Cursormode.AttackErrorCursor = 40
+Cursormode.InteractErrorCursor = 41
+Cursormode.SpeakErrorCursor = 42
+Cursormode.InspectErrorCursor = 43
+Cursormode.PickupErrorCursor = 44
+Cursormode.TaxiErrorCursor = 45
+Cursormode.TrainerErrorCursor = 46
+Cursormode.MineErrorCursor = 47
+Cursormode.SkinErrorCursor = 48
+Cursormode.GatherErrorCursor = 49
+Cursormode.LockErrorCursor = 50
+Cursormode.MailErrorCursor = 51
+Cursormode.LootAllErrorCursor = 52
+Cursormode.RepairErrorCursor = 53
+Cursormode.RepairnpcErrorCursor = 54
+Cursormode.ItemErrorCursor = 55
+Cursormode.SkinHordeErrorCursor = 56
+Cursormode.SkinAllianceErrorCursor = 57
+Cursormode.InnkeeperErrorCursor = 58
+Cursormode.CampaignQuestErrorCursor = 59
+Cursormode.CampaignQuestTurninErrorCursor = 60
+Cursormode.QuestErrorCursor = 61
+Cursormode.QuestRepeatableErrorCursor = 62
+Cursormode.QuestTurninErrorCursor = 63
+Cursormode.QuestLegendaryErrorCursor = 64
+Cursormode.QuestLegendaryTurninErrorCursor = 65
+Cursormode.QuestImportantErrorCursor = 66
+Cursormode.QuestImportantTurninErrorCursor = 67
+Cursormode.VehicleErrorCursor = 68
+Cursormode.MapPinErrorCursor = 69
+Cursormode.PingErrorCursor = 70
+Cursormode.CustomCursor = 71
 
 ---@class Damageclass
 Damageclass = {}
@@ -2997,12 +3025,50 @@ PetbattleType.PvP = 1
 PetbattleType.Lfpb = 2
 PetbattleType.Npc = 3
 
+---@class PingMode
+PingMode = {}
+PingMode.KeyDown = 0
+PingMode.ClickDrag = 1
+
+---@class PingResult
+PingResult = {}
+PingResult.Success = 0
+PingResult.FailedGeneric = 1
+PingResult.FailedSpamming = 2
+PingResult.FailedDisabledByLeader = 3
+PingResult.FailedDisabledBySettings = 4
+PingResult.FailedOutOfPingArea = 5
+PingResult.FailedSquelched = 6
+PingResult.FailedUnspecified = 7
+
 ---@class PingSubjectType
 PingSubjectType = {}
 PingSubjectType.Attack = 0
 PingSubjectType.Warning = 1
 PingSubjectType.Assist = 2
-PingSubjectType.GroupHere = 3
+PingSubjectType.OnMyWay = 3
+PingSubjectType.AlertThreat = 4
+PingSubjectType.AlertNotThreat = 5
+
+---@class PingTypeFlags
+PingTypeFlags = {}
+PingTypeFlags.DefaultPing = 1
+
+---@class ContextualWorldPingResult
+---@field contextualPingType PingSubjectType|nil 
+---@field result PingResult 
+ContextualWorldPingResult = {}
+
+---@class PingCooldownInfo
+---@field startTimeMs number 
+---@field endTimeMs number 
+PingCooldownInfo = {}
+
+---@class PingTypeInfo
+---@field orderIndex number 
+---@field type PingSubjectType 
+---@field uiTextureKitID textureKit 
+PingTypeInfo = {}
 
 ---@class CharacterAlternateFormData
 ---@field raceID number 
@@ -4349,6 +4415,7 @@ UIWidgetVisualizationType.FillUpFrames = 24
 UIWidgetVisualizationType.TextWithSubtext = 25
 UIWidgetVisualizationType.WorldLootObject = 26
 UIWidgetVisualizationType.ItemDisplay = 27
+UIWidgetVisualizationType.TugOfWar = 28
 
 ---@class AddPrivateAuraAnchorArgs
 ---@field unitToken cstring 

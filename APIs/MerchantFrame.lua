@@ -12,3 +12,8 @@ function C_MerchantFrame.GetNumJunkItems() end
 ---@return boolean refundable
 function C_MerchantFrame.IsMerchantItemRefundable(index) end
 
+---@return boolean enabled
+function C_MerchantFrame.IsSellAllJunkEnabled() end
+
+function C_MerchantFrame.SellAllJunkItems() end
+

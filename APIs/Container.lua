@@ -13,6 +13,9 @@ function C_Container.ContainerRefundItemPurchase(containerIndex, slotIndex, isEq
 ---@return boolean isDisabled
 function C_Container.GetBackpackAutosortDisabled() end
 
+---@return boolean isDisabled
+function C_Container.GetBackpackSellJunkDisabled() end
+
 ---@param bagIndex BagIndex 
 ---@return cstring name
 function C_Container.GetBagName(bagIndex) end
@@ -123,6 +126,9 @@ function C_Container.PlayerHasHearthstone() end
 
 ---@param disable boolean 
 function C_Container.SetBackpackAutosortDisabled(disable) end
+
+---@param disable boolean 
+function C_Container.SetBackpackSellJunkDisabled(disable) end
 
 ---@param texture SimpleTexture 
 ---@param bagIndex BagIndex 

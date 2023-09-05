@@ -13,6 +13,12 @@ function C_UI.GetTopLeftNotchSafeRegion() end
 ---@return number, number, number, number left, right, top, bottom
 function C_UI.GetTopRightNotchSafeRegion() end
 
+---@return SimpleFrame uiParent
+function C_UI.GetUIParent() end
+
+---@return SimpleFrame worldFrame
+function C_UI.GetWorldFrame() end
+
 function C_UI.Reload() end
 
 --- UIParent will shift down to avoid notch if true. This does not mean there is a notch.

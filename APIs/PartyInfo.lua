@@ -56,6 +56,9 @@ function C_PartyInfo.GetInviteReferralInfo(inviteGUID) end
 ---@return number minLevel
 function C_PartyInfo.GetMinLevel(category) end
 
+---@return boolean restrictToAssistants
+function C_PartyInfo.GetRestrictPings() end
+
 --- Attempt to invite the named unit to a party, requires confirmation in some cases (e.g. the party will convert to a raid, or if there is a party sync in progress).
 ---@param targetName cstring 
 function C_PartyInfo.InviteUnit(targetName) end
@@ -81,6 +84,9 @@ function C_PartyInfo.LeaveParty(category) end
 ---@param healer boolean @ [OPTIONAL]
 ---@param dps boolean @ [OPTIONAL]
 function C_PartyInfo.RequestInviteFromUnit(targetName, tank, healer, dps) end
+
+---@param restrictToAssistants boolean 
+function C_PartyInfo.SetRestrictPings(restrictToAssistants) end
 
 ---@class PartyRequestJoinRelation
 PartyRequestJoinRelation = {}

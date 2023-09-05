@@ -1,6 +1,10 @@
 ---@class C_TradeSkillUI @TradeSkillUI
 C_TradeSkillUI = {}
 
+---@param itemGUID WOWGUID 
+---@return boolean canStore
+function C_TradeSkillUI.CanStoreEnchantInItem(itemGUID) end
+
 function C_TradeSkillUI.CloseTradeSkill() end
 
 ---@param recipeSpellID number 

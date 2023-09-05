@@ -52,7 +52,7 @@ function C_MajorFactions.RequestCatchUpState() end
 ---@field bountySetID number 
 ---@field isUnlocked boolean 
 ---@field unlockDescription cstring|nil 
----@field unlockOrder number 
+---@field uiPriority number 
 ---@field renownLevel number 
 ---@field renownReputationEarned number 
 ---@field renownLevelThreshold number 

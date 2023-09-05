@@ -118,6 +118,10 @@ function C_UIWidgetManager.GetTextureWithAnimationVisualizationInfo(widgetID) en
 function C_UIWidgetManager.GetTopCenterWidgetSetID() end
 
 ---@param widgetID number 
+---@return TugOfWarWidgetVisualizationInfo|nil widgetInfo
+function C_UIWidgetManager.GetTugOfWarWidgetVisualizationInfo(widgetID) end
+
+---@param widgetID number 
 ---@return UnitPowerBarWidgetVisualizationInfo|nil widgetInfo
 function C_UIWidgetManager.GetUnitPowerBarWidgetVisualizationInfo(widgetID) end
 
@@ -147,11 +151,6 @@ function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken, isGuid) end
 CaptureBarWidgetFillDirectionType = {}
 CaptureBarWidgetFillDirectionType.RightToLeft = 0
 CaptureBarWidgetFillDirectionType.LeftToRight = 1
-
----@class CaptureBarWidgetGlowAnimType
-CaptureBarWidgetGlowAnimType = {}
-CaptureBarWidgetGlowAnimType.None = 0
-CaptureBarWidgetGlowAnimType.Pulse = 1
 
 ---@class IconAndTextWidgetState
 IconAndTextWidgetState = {}
@@ -308,12 +307,22 @@ WidgetEnabledState.Green = 4
 WidgetEnabledState.Artifact = 5
 WidgetEnabledState.Black = 6
 
+---@class WidgetGlowAnimType
+WidgetGlowAnimType = {}
+WidgetGlowAnimType.None = 0
+WidgetGlowAnimType.Pulse = 1
+
 ---@class WidgetIconSizeType
 WidgetIconSizeType = {}
 WidgetIconSizeType.Small = 0
 WidgetIconSizeType.Medium = 1
 WidgetIconSizeType.Large = 2
 WidgetIconSizeType.Standard = 3
+
+---@class WidgetIconSourceType
+WidgetIconSourceType = {}
+WidgetIconSourceType.Spell = 0
+WidgetIconSourceType.Item = 1
 
 ---@class WidgetShownState
 WidgetShownState = {}
@@ -394,7 +403,7 @@ BulletTextListWidgetVisualizationInfo = {}
 ---@field neutralZoneSize number 
 ---@field neutralZoneCenter number 
 ---@field tooltip string 
----@field glowAnimType CaptureBarWidgetGlowAnimType 
+---@field glowAnimType WidgetGlowAnimType 
 ---@field fillDirectionType CaptureBarWidgetFillDirectionType 
 ---@field tooltipLoc UIWidgetTooltipLocation 
 ---@field widgetSizeSetting number 
@@ -917,6 +926,32 @@ TextureAndTextVisualizationInfo = {}
 ---@field scriptedAnimationEffectID number 
 TextureWithAnimationVisualizationInfo = {}
 
+---@class TugOfWarWidgetVisualizationInfo
+---@field shownState WidgetShownState 
+---@field minValue number 
+---@field maxValue number 
+---@field currentValue number 
+---@field neutralZoneCenter number 
+---@field neutralZoneSize number 
+---@field leftIconInfo UIWidgetIconInfo 
+---@field rightIconInfo UIWidgetIconInfo 
+---@field glowAnimType WidgetGlowAnimType 
+---@field tooltip string 
+---@field tooltipLoc UIWidgetTooltipLocation 
+---@field widgetSizeSetting number 
+---@field textureKit textureKit 
+---@field frameTextureKit textureKit 
+---@field hasTimer boolean 
+---@field orderIndex number 
+---@field widgetTag string 
+---@field inAnimType WidgetAnimationType 
+---@field outAnimType WidgetAnimationType 
+---@field widgetScale UIWidgetScale 
+---@field layoutDirection UIWidgetLayoutDirection 
+---@field modelSceneLayer UIWidgetModelSceneLayer 
+---@field scriptedAnimationEffectID number 
+TugOfWarWidgetVisualizationInfo = {}
+
 ---@class UIWidgetCurrencyInfo
 ---@field iconFileID fileID 
 ---@field leadingText string 
@@ -924,6 +959,14 @@ TextureWithAnimationVisualizationInfo = {}
 ---@field tooltip string 
 ---@field isCurrencyMaxed boolean 
 UIWidgetCurrencyInfo = {}
+
+---@class UIWidgetIconInfo
+---@field sourceType WidgetIconSourceType 
+---@field sourceID number 
+---@field sizeType WidgetIconSizeType 
+---@field tooltip string 
+---@field tooltipLoc UIWidgetTooltipLocation 
+UIWidgetIconInfo = {}
 
 ---@class UIWidgetInfo
 ---@field widgetID number 

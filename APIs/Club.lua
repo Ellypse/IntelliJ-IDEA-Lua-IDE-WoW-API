@@ -79,6 +79,9 @@ function C_Club.DestroyStream(clubId, streamId) end
 ---@param ticketId string 
 function C_Club.DestroyTicket(clubId, ticketId) end
 
+---@return boolean hasUnreadMessages
+function C_Club.DoesAnyCommunityHaveUnreadMessages() end
+
 ---@param clubId ClubId 
 ---@return boolean hasMembersOfOppositeFaction
 function C_Club.DoesCommunityHaveMembersOfTheOppositeFaction(clubId) end

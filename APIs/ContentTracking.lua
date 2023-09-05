@@ -80,10 +80,12 @@ function C_ContentTracking.StartTracking(type, id) end
 
 ---@param type ContentTrackingType 
 ---@param id number 
-function C_ContentTracking.StopTracking(type, id) end
+---@param stopType ContentTrackingStopType 
+function C_ContentTracking.StopTracking(type, id, stopType) end
 
 ---@param type ContentTrackingType 
 ---@param id number 
+---@param stopType ContentTrackingStopType 
 ---@return ContentTrackingError|nil error
-function C_ContentTracking.ToggleTracking(type, id) end
+function C_ContentTracking.ToggleTracking(type, id, stopType) end
 

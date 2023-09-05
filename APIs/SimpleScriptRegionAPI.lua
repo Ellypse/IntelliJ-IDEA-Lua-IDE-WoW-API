@@ -135,6 +135,9 @@ function SetParent(parent) end
 ---@param unpackedPrimitiveType number 
 function SetPassThroughButtons(unpackedPrimitiveType) end
 
+
+function SetProtected() end
+
 ---@param scriptTypeName cstring 
 ---@param script luaFunction @ [OPTIONAL]
 function SetScript(scriptTypeName, script) end

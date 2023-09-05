@@ -128,6 +128,10 @@ function HighlightText(start, stop) end
 function Insert(text) end
 
 
+---@return boolean enabled
+function IsAlphabeticOnly() end
+
+
 ---@return boolean autoFocus
 function IsAutoFocus() end
 
@@ -152,12 +156,22 @@ function IsMultiLine() end
 function IsNumeric() end
 
 
+---@return boolean isNumeric
+function IsNumericFullRange() end
+
+
 ---@return boolean isPassword
 function IsPassword() end
 
 
 ---@return boolean isSecure
 function IsSecureText() end
+
+
+function ResetInputMode() end
+
+---@param enabled boolean 
+function SetAlphabeticOnly(enabled) end
 
 ---@param altMode boolean 
 function SetAltArrowKeyMode(altMode) end
@@ -221,6 +235,9 @@ function SetNumber(number) end
 
 ---@param isNumeric boolean 
 function SetNumeric(isNumeric) end
+
+---@param isNumeric boolean 
+function SetNumericFullRange(isNumeric) end
 
 ---@param isPassword boolean 
 function SetPassword(isPassword) end

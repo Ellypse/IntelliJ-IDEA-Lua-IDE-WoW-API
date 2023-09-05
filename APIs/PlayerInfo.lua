@@ -36,6 +36,10 @@ function C_PlayerInfo.GetGlidingInfo() end
 ---@return number dungeonID
 function C_PlayerInfo.GetInstancesUnlockedAtLevel(level, isRaid) end
 
+---@param index number 
+---@return number creatureDisplayInfoID
+function C_PlayerInfo.GetPetStableCreatureDisplayInfoID(index) end
+
 ---@return PlayerInfoCharacterData characterData
 function C_PlayerInfo.GetPlayerCharacterData() end
 

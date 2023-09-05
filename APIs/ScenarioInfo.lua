@@ -56,6 +56,7 @@ ScenarioInformation = {}
 ---@field weightedProgress number|nil 
 ---@field rewardQuestID number 
 ---@field widgetSetID number|nil 
+---@field stepID number 
 ScenarioStepInfo = {}
 
 ---@class ScenarioStepSpellInfo

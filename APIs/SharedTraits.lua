@@ -30,6 +30,10 @@ function C_Traits.CommitConfig(configID) end
 ---@return boolean hasChanges
 function C_Traits.ConfigHasStagedChanges(configID) end
 
+---@param configID number 
+---@return string importString
+function C_Traits.GenerateImportString(configID) end
+
 ---@param target cstring 
 ---@return string importString
 function C_Traits.GenerateInspectImportString(target) end

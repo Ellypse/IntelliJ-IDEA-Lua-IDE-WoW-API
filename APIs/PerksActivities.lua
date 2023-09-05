@@ -53,12 +53,14 @@ PerksActivityCriteria = {}
 ---@class PerksActivityInfo
 ---@field ID number 
 ---@field activityName cstring 
----@field description cstring 
+---@field description string 
 ---@field thresholdContributionAmount number 
 ---@field completed boolean 
 ---@field tracked boolean 
 ---@field supersedes number 
 ---@field uiPriority number 
+---@field eventStartTime time_t|nil 
+---@field eventEndTime time_t|nil 
 ---@field requirementsList PerksActivityRequirement 
 ---@field criteriaList PerksActivityCriteria 
 ---@field tagNames string 
