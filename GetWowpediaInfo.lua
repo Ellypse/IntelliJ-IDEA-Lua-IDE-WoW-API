@@ -333,6 +333,7 @@ end
 
 table.sort(apiKeys)
 
+--this is to accommodate the "unknown" class/data types warnings
 out.write(out, "--- @class unknown @ unknown type\n\n")
 
 for _,k in pairs(apiKeys) do

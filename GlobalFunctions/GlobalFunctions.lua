@@ -13,7 +13,7 @@ end
 function AcceptAreaSpiritHeal()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_AcceptBattlefieldPort]
 --- @param index number @ The battlefield in queue to enter.
 --- @param accept boolean @ Whether or not to accept entry to the battlefield.
@@ -39,7 +39,7 @@ end
 function AcceptGuild()
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_AcceptProposal]
 --- @return void
 function AcceptProposal()
@@ -63,14 +63,14 @@ end
 function AcceptSockets()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_AcceptSpellConfirmationPrompt]
 --- @param spellID number @ spell ID of the prompt to confirm.
 --- @return void
 function AcceptSpellConfirmationPrompt(spellID)
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_AcceptTrade]
 --- @return void
 function AcceptTrade()
@@ -194,7 +194,7 @@ end
 function AscendStop()
 end
 
---- protected - This can only be called from secure code.Use the assist action type of SecureActionButtonTemplate, or the /assist slash command.
+--- #protected - This can only be called from secure code.Use the assist action type of SecureActionButtonTemplate, or the /assist slash command.
 --- [https://wowpedia.fandom.com/wiki/API_AssistUnit]
 --- @param unit string @  : UnitId
 --- @return void
@@ -206,7 +206,7 @@ end
 function AttachGlyphToSpell()
 end
 
---- protected - This can only be called from secure code.Use the /startattack slash command.
+--- #protected - This can only be called from secure code.Use the /startattack slash command.
 --- [https://wowpedia.fandom.com/wiki/API_AttackTarget]
 --- @return void
 function AttackTarget()
@@ -580,13 +580,13 @@ end
 function CallCompanion(type, id)
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_CameraOrSelectOrMoveStart]
 --- @return void
 function CameraOrSelectOrMoveStart()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_CameraOrSelectOrMoveStop]
 --- @param stickyFlag number @ optional) - If present and set then any camera offset is 'sticky' and remains until explicitly cancelled.
 --- @return void
@@ -877,14 +877,14 @@ end
 function CancelEmote()
 end
 
---- protected - This can only be called from secure code.Use the cancelaura action type of SecureActionButtonTemplate with the target-slot attribute set to weapon slot ID.
+--- #protected - This can only be called from secure code.Use the cancelaura action type of SecureActionButtonTemplate with the target-slot attribute set to weapon slot ID.
 --- [https://wowpedia.fandom.com/wiki/API_CancelItemTempEnchantment]
 --- @param weaponHand number @ for Main Hand, 2 for Off Hand.
 --- @return void
 function CancelItemTempEnchantment(weaponHand)
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_CancelLogout]
 --- @return void
 function CancelLogout()
@@ -917,7 +917,7 @@ end
 function CancelScene()
 end
 
---- protected - This can only be called from secure code.Use the /cancelform or /cancelaura slash commands.
+--- #protected - This can only be called from secure code.Use the /cancelform or /cancelaura slash commands.
 --- [https://wowpedia.fandom.com/wiki/API_CancelShapeshiftForm]
 --- @return void
 function CancelShapeshiftForm()
@@ -939,7 +939,7 @@ end
 function CancelTradeAccept()
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 4.0.1; Use /cancelaura Buff Name in macros, or SecureAuraHeaderTemplate if re-implementing buff frames.
+--- #nocombat - This cannot be called while in combat.Restricted since patch 4.0.1; Use /cancelaura Buff Name in macros, or SecureAuraHeaderTemplate if re-implementing buff frames.
 --- [https://wowpedia.fandom.com/wiki/API_CancelUnitBuff]
 --- @param unit string @  : UnitId - The unit to cancel the buff from, must be under the player's control.
 --- @param buffIndex number @ index of the buff to cancel, ascending from 1.
@@ -960,7 +960,7 @@ end
 function CaseAccentInsensitiveParse(string)
 end
 
---- protected - This can only be called from secure code.The pet action type of SecureActionButtonTemplate can be used to call this function.
+--- #protected - This can only be called from secure code.The pet action type of SecureActionButtonTemplate can be used to call this function.
 --- [https://wowpedia.fandom.com/wiki/API_CastPetAction]
 --- @param index number @ pet action bar slot index, ascending from 1.
 --- @param target string @ ? : UnitId - The unit to cast the action on; defaults to target.
@@ -968,14 +968,14 @@ end
 function CastPetAction(index, target)
 end
 
---- protected - This can only be called from secure code.Use the /cast slash command.
+--- #protected - This can only be called from secure code.Use the /cast slash command.
 --- [https://wowpedia.fandom.com/wiki/API_CastShapeshiftForm]
 --- @param index number @ specifies which shapeshift form to activate or toggle; generally equivalent to the index of the form on the stance bar.
 --- @return void
 function CastShapeshiftForm(index)
 end
 
---- protected - This can only be called from secure code.Use the spell action type of SecureActionButtonTemplate or the /cast slash command.
+--- #protected - This can only be called from secure code.Use the spell action type of SecureActionButtonTemplate or the /cast slash command.
 --- [https://wowpedia.fandom.com/wiki/API_CastSpell]
 --- @param spellIndex number @ index of the spell to cast.
 --- @param spellbookType string @ spellbook to cast the spell from; one of
@@ -988,7 +988,7 @@ end
 function CastSpellByID()
 end
 
---- protected - This can only be called from secure code.Use the spell action type of SecureActionButtonTemplate or the /cast slash command.
+--- #protected - This can only be called from secure code.Use the spell action type of SecureActionButtonTemplate or the /cast slash command.
 --- [https://wowpedia.fandom.com/wiki/API_CastSpellByName]
 --- @param spellName unknown
 --- @param target string @ ? : UnitId - The unit to cast the spell on. If omitted, target is assumed for spells that require a target.
@@ -1001,7 +1001,7 @@ end
 function CenterCamera()
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_ChangeActionBarPage]
 --- @param actionBarPage unknown @ Numer - Which page of your action bar to switch to. Expects an integer 1-6.
 --- @return void
@@ -1170,7 +1170,7 @@ end
 function ClearInspectPlayer()
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_ClearOverrideBindings]
 --- @param owner Frame @ The frame to clear override bindings for.
 --- @return void
@@ -1193,7 +1193,7 @@ end
 function ClearSendMail()
 end
 
---- protected - This can only be called from secure code.Use SecureActionButtonTemplate's target action type, or the /cleartarget slash command.
+--- #protected - This can only be called from secure code.Use SecureActionButtonTemplate's target action type, or the /cleartarget slash command.
 --- [https://wowpedia.fandom.com/wiki/API_ClearTarget]
 --- @return void
 function ClearTarget()
@@ -1612,7 +1612,7 @@ end
 function CreateFrame(frameType, name, parent, template, id)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0.1
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0.1
 --- [https://wowpedia.fandom.com/wiki/API_CreateMacro]
 --- @param name string @ The name of the macro to be displayed in the UI. The current UI imposes a 16-character limit.
 --- @param iconFileID number @ |string - A FileID or string identifying the icon texture to use. The available icons can be retrieved by calling GetMacroIcons() and GetMacroItemIcons(); other textures inside Interface\ICONS may also be used.
@@ -1708,14 +1708,14 @@ end
 function DeclineResurrect()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_DeclineSpellConfirmationPrompt]
 --- @param spellID number @ spell ID of the prompt to decline.
 --- @return void
 function DeclineSpellConfirmationPrompt(spellID)
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.noscript - This cannot be called directly from /script, loadstring and WeakAuras.* Limited to deleting a single item per hardware event.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.#noscript - This cannot be called directly from /script, loadstring and WeakAuras.* Limited to deleting a single item per hardware event.
 --- [https://wowpedia.fandom.com/wiki/API_DeleteCursorItem]
 --- @return void
 function DeleteCursorItem()
@@ -1733,7 +1733,7 @@ end
 function DeleteInboxItem(index)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0.1
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0.1
 --- [https://wowpedia.fandom.com/wiki/API_DeleteMacro]
 --- @param index_or_macroname unknown
 --- @return void
@@ -1760,13 +1760,13 @@ end
 function DepositReagentBank()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_DescendStop]
 --- @return void
 function DescendStop()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_DestroyTotem]
 --- @param slot number @ The totem type to be destroyed, where Fire is 1, Earth is 2, Water is 3 and Air is 4.
 --- @return void
@@ -2120,7 +2120,7 @@ end
 function EJ_SetSearch(text)
 end
 
---- nocombat - This cannot be called while in combat.
+--- #nocombat - This cannot be called while in combat.
 --- [https://wowpedia.fandom.com/wiki/API_EditMacro]
 --- @param macroInfo number @ |string - The index or name of the macro to be edited. Index ranges from 1 to 120 for account-wide macros and 121 to 138 for character-specific.
 --- @param name string @ The name to assign to the macro. The current UI imposes a 16-character limit. The existing name remains unchanged if this argument is nil.
@@ -2300,7 +2300,7 @@ end
 function FlyoutHasSpell(flyoutID, spellID)
 end
 
---- protected - This can only be called from secure code.Use the focus action type of SecureActionButtonTemplate or the /focus slash command.
+--- #protected - This can only be called from secure code.Use the focus action type of SecureActionButtonTemplate or the /focus slash command.
 --- [https://wowpedia.fandom.com/wiki/API_FocusUnit]
 --- @param unit string @  : UnitId - The unit to focus.
 --- @return void
@@ -2314,13 +2314,13 @@ end
 function FollowUnit(unit)
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_ForceLogout]
 --- @return void
 function ForceLogout()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_ForceQuit]
 --- @return void
 function ForceQuit()
@@ -2895,7 +2895,7 @@ end
 function GetBattlefieldScore(index)
 end
 
---- Returns battlefield-specific info for a player (e.g. Warsong Gulch flag captures).
+--- See the UI Widget Manager API.
 --- [https://wowpedia.fandom.com/wiki/API_GetBattlefieldStatData]
 --- @param playerIndex number @ Player you want to grab the data for
 --- @param slotIndex number @ Column you want to grab the data from
@@ -5884,7 +5884,7 @@ end
 function GetPlayerAuraBySpellID(spellID)
 end
 
---- noinstance - This only works outdoors and not in instanced content (dungeons/raids/battlegrounds/arena).
+--- #noinstance - This only works outdoors and not in instanced content (dungeons/raids/battlegrounds/arena).
 --- [https://wowpedia.fandom.com/wiki/API_GetPlayerFacing]
 --- @return number @ facing
 function GetPlayerFacing()
@@ -7707,14 +7707,14 @@ end
 function GuildControlSaveRank(name)
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_GuildControlSetRank]
 --- @param rankOrder number @ index of the rank to select, between 1 and GuildControlGetNumRanks().
 --- @return void
 function GuildControlSetRank(rankOrder)
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_GuildControlSetRankFlag]
 --- @param index number @ the flag index, between 1 and GuildControlGetNumRanks().
 --- @param enabled boolean @ whether the flag is enabled or disabled.
@@ -7732,7 +7732,7 @@ end
 function GuildControlShiftRankUp()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_GuildDemote]
 --- @param playername string @ The name of the player to demote
 --- @return void
@@ -7751,7 +7751,7 @@ end
 function GuildInfo()
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_GuildInvite]
 --- @param playername string @ The name of the player to invite
 --- @return void
@@ -7779,7 +7779,7 @@ end
 function GuildNewsSort()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_GuildPromote]
 --- @param playername string @ The name of the player to promote.
 --- @return void
@@ -7816,7 +7816,7 @@ end
 function GuildSetMOTD(message)
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_GuildUninvite]
 --- @param name string @ The name of the guild member
 --- @return void
@@ -8400,10 +8400,11 @@ end
 function IsFactionInactive(index)
 end
 
---- Returns true if the character is currently falling.
+--- Returns true if the specified unit is currently falling.
 --- [https://wowpedia.fandom.com/wiki/API_IsFalling]
---- @return unknown @ falling
-function IsFalling()
+--- @param unit string @ ? : UnitId - A unitID to query. Defaults to player if omitted.
+--- @return boolean @ falling
+function IsFalling(unit)
 end
 
 --- This function is only for determining if the loot window is related to fishing.
@@ -9228,7 +9229,7 @@ end
 function JoinArena()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_JoinBattlefield]
 --- @param index number @ Which battlefield instance to queue for (0 for first available), or which arena bracket to queue for.
 --- @param asGroup boolean @ If true-equivalent, the player's group is queued for the battlefield, otherwise, only the player is queued.
@@ -9290,7 +9291,7 @@ end
 function JoinTemporaryChannel(channelName, password, frameID, hasVoice)
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_JumpOrAscendStart]
 --- @return void
 function JumpOrAscendStart()
@@ -9539,7 +9540,7 @@ end
 function LoggingCombat(newState)
 end
 
---- protected - This can only be called from secure code.Use the /logout slash command.
+--- #protected - This can only be called from secure code.Use the /logout slash command.
 --- [https://wowpedia.fandom.com/wiki/API_Logout]
 --- @return void
 function Logout()
@@ -9591,28 +9592,28 @@ end
 function MoveAndSteerStop()
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_MoveBackwardStart]
 --- @param startTime number @ Begin moving backward at this time, per GetTime * 1000.
 --- @return void
 function MoveBackwardStart(startTime)
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_MoveBackwardStop]
 --- @param startTime unknown
 --- @return void
 function MoveBackwardStop(startTime)
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_MoveForwardStart]
 --- @param startTime number @ Begin moving forward at this time, per GetTime * 1000.
 --- @return void
 function MoveForwardStart(startTime)
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_MoveForwardStop]
 --- @param startTime unknown
 --- @return void
@@ -9785,13 +9786,13 @@ end
 function PetAggressiveMode()
 end
 
---- protected - This can only be called from secure code.Use the /petassist macro command.
+--- #protected - This can only be called from secure code.Use the /petassist macro command.
 --- [https://wowpedia.fandom.com/wiki/API_PetAssistMode]
 --- @return void
 function PetAssistMode()
 end
 
---- protected - This can only be called from secure code.Use the /petattack slash command.
+--- #protected - This can only be called from secure code.Use the /petattack slash command.
 --- [https://wowpedia.fandom.com/wiki/API_PetAttack]
 --- @return void
 function PetAttack()
@@ -9814,13 +9815,13 @@ end
 function PetCanBeRenamed()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_PetDefensiveAssistMode]
 --- @return void
 function PetDefensiveAssistMode()
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_PetDefensiveMode]
 --- @return void
 function PetDefensiveMode()
@@ -9832,7 +9833,7 @@ end
 function PetDismiss()
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_PetFollow]
 --- @return void
 function PetFollow()
@@ -9854,7 +9855,7 @@ end
 function PetMoveTo()
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_PetPassiveMode]
 --- @return void
 function PetPassiveMode()
@@ -9867,7 +9868,7 @@ end
 function PetRename(name)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0.1; Fails silently if called from an insecure execution path in combat. Consider using /petpassive instead.
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0.1; Fails silently if called from an insecure execution path in combat. Consider using /petpassive instead.
 --- [https://wowpedia.fandom.com/wiki/API_PetStopAttack]
 --- @return void
 function PetStopAttack()
@@ -9878,13 +9879,13 @@ end
 function PetUsesPetFrame()
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_PetWait]
 --- @return void
 function PetWait()
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.2
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.2
 --- [https://wowpedia.fandom.com/wiki/API_PickupAction]
 --- @param actionSlot number @ The action slot to pick the action up from.
 --- @return void
@@ -9898,7 +9899,7 @@ end
 function PickupBagFromSlot(slot)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 3.0.2
+--- #nocombat - This cannot be called while in combat.Restricted since patch 3.0.2
 --- [https://wowpedia.fandom.com/wiki/API_PickupCompanion]
 --- @param type string @ companion type, either MOUNT or CRITTER.
 --- @param index number @ index of the companion of the specified type to place on the cursor, ascending from 1.
@@ -9938,7 +9939,7 @@ end
 function PickupItem(itemID_or_itemString_or_itemName_or_itemLink)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.2
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.2
 --- [https://wowpedia.fandom.com/wiki/API_PickupMacro]
 --- @param index_or_name unknown
 --- @return void
@@ -9952,7 +9953,7 @@ end
 function PickupMerchantItem(index)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.2
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.2
 --- [https://wowpedia.fandom.com/wiki/API_PickupPetAction]
 --- @param petActionSlot number @ The pet action slot to pick the action up from (1-10).
 --- @return void
@@ -9978,14 +9979,14 @@ end
 function PickupPvpTalent()
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_PickupSpell]
 --- @param spellID number @ spell ID of the spell to pick up.
 --- @return void
 function PickupSpell(spellID)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 4.0.1; Fails silently if called from insecure code in combat.
+--- #nocombat - This cannot be called while in combat.Restricted since patch 4.0.1; Fails silently if called from insecure code in combat.
 --- [https://wowpedia.fandom.com/wiki/API_PickupSpellBookItem]
 --- @param spellName_or_index unknown
 --- @param bookType string @ Spell book type; one of the following global constants:
@@ -10112,7 +10113,7 @@ end
 function PlayerVehicleHasComboPoints()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_PortGraveyard]
 --- @return void
 function PortGraveyard()
@@ -10128,7 +10129,7 @@ end
 function PrevView()
 end
 
---- protected - This can only be called from secure code.This function will silently do nothing if called from an insecure execution path.
+--- #protected - This can only be called from secure code.This function will silently do nothing if called from an insecure execution path.
 --- [https://wowpedia.fandom.com/wiki/API_ProcessExceptionClient]
 --- @param description string @ The description of the error being processed.
 --- @return void
@@ -10287,7 +10288,7 @@ end
 function QuestPOIUpdateIcons()
 end
 
---- protected - This can only be called from secure code.Use the /quit slash command.
+--- #protected - This can only be called from secure code.Use the /quit slash command.
 --- [https://wowpedia.fandom.com/wiki/API_Quit]
 --- @return void
 function Quit()
@@ -10400,7 +10401,7 @@ end
 function RepairAllItems(guildBankRepair)
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_ReplaceEnchant]
 --- @return void
 function ReplaceEnchant()
@@ -10412,7 +10413,7 @@ end
 function ReplaceGuildMaster()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_ReplaceTradeEnchant]
 --- @return void
 function ReplaceTradeEnchant()
@@ -10653,14 +10654,14 @@ end
 function RunBinding(command, up)
 end
 
---- protected - This can only be called from secure code.Use the macro action type of SecureActionButtonTemplate.
+--- #protected - This can only be called from secure code.Use the macro action type of SecureActionButtonTemplate.
 --- [https://wowpedia.fandom.com/wiki/API_RunMacro]
 --- @param macroID_or_macroName unknown
 --- @return void
 function RunMacro(macroID_or_macroName)
 end
 
---- protected - This can only be called from secure code.Use the macro action type of SecureActionButtonTemplate.
+--- #protected - This can only be called from secure code.Use the macro action type of SecureActionButtonTemplate.
 --- [https://wowpedia.fandom.com/wiki/API_RunMacroText]
 --- @param macro string @ the string is interpreted as a macro and then executed
 --- @return void
@@ -10740,7 +10741,7 @@ end
 function SearchLFGGetResults(index)
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_SearchLFGJoin]
 --- @param typeID number @ LFG typeid
 --- @param lfgID number @ ID of LFG dungeon
@@ -10797,13 +10798,13 @@ end
 --- [https://wowpedia.fandom.com/wiki/API_SendChatMessage]
 --- @param msg string @ The message to be sent. Large messages are truncated to max 255 characters, and only valid chat message characters are permitted.
 --- @param chatType string @ ? - The type of message to be sent, e.g. PARTY. If omitted, this defaults to SAY
---- @param languageID number @ ? - The languageID used for the message. If omitted the default language will be used: Orcish for the Horde and Common for the Alliance, as returned by GetDefaultLanguage()
+--- @param languageID number @ ? - The languageID used for the message. Only works with chatTypes SAY and YELL, and only if not in a group. If omitted the default language will be used: Orcish for the Horde and Common for the Alliance, as returned by GetDefaultLanguage()
 --- @param target string @ |number? - The player name or channel number receiving the message for WHISPER or CHANNEL chatTypes.
 --- @return void
 function SendChatMessage(msg, chatType, languageID, target)
 end
 
---- noscript - This cannot be called directly from /script, loadstring and WeakAuras.
+--- #noscript - This cannot be called directly from /script, loadstring and WeakAuras.
 --- [https://wowpedia.fandom.com/wiki/API_SendMail]
 --- @param recipient string @ Intended recipient of the mail.
 --- @param subject string @ Subject of the mail. Cannot be an empty string or nil, but may be whitespace, e.g.
@@ -10915,7 +10916,7 @@ end
 function SetBattlefieldScoreFaction(faction)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
 --- [https://wowpedia.fandom.com/wiki/API_SetBinding]
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param command string @ ? - Any name attribute value of a Bindings.xml-defined binding, or an action command string, or nil to unbind all bindings from key. For example:
@@ -10924,7 +10925,7 @@ end
 function SetBinding(key, command, mode)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings while in combat.
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings while in combat.
 --- [https://wowpedia.fandom.com/wiki/API_SetBindingClick]
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param buttonName string @ Name of the button you wish to click.
@@ -10933,7 +10934,7 @@ end
 function SetBindingClick(key, buttonName, button)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
 --- [https://wowpedia.fandom.com/wiki/API_SetBindingItem]
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param item string @ Item name (or item string) you want the binding to use. For example: Hearthstone, item:6948
@@ -10941,7 +10942,7 @@ end
 function SetBindingItem(key, item)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
 --- [https://wowpedia.fandom.com/wiki/API_SetBindingMacro]
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param macroName_or_macroId unknown
@@ -10949,7 +10950,7 @@ end
 function SetBindingMacro(key, macroName_or_macroId)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0; Snippets executed by SecureHandlers may alter [override] bindings in-combat.
 --- [https://wowpedia.fandom.com/wiki/API_SetBindingSpell]
 --- @param key string @ Any binding string accepted by World of Warcraft. For example: ALT-CTRL-F, SHIFT-T, W, BUTTON4.
 --- @param spell string @ Name of the spell you wish to cast when the binding is pressed.
@@ -11050,7 +11051,7 @@ end
 function SetCurrentGuildBankTab()
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_SetCurrentTitle]
 --- @param titleId number @  : TitleId - ID of the title you want to set. The identifiers are global and therefore do not depend on which titles you have learned. 0, invalid or unlearned IDs clear your title.
 --- @return void
@@ -11315,7 +11316,7 @@ end
 function SetMouselookOverrideBinding()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_SetMoveEnabled]
 --- @return void
 function SetMoveEnabled()
@@ -11336,7 +11337,7 @@ end
 function SetOptOutOfLoot(optOut)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_SetOverrideBinding]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
 --- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
@@ -11346,7 +11347,7 @@ end
 function SetOverrideBinding(owner, isPriority, key, command)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_SetOverrideBindingClick]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
 --- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
@@ -11357,7 +11358,7 @@ end
 function SetOverrideBindingClick(owner, isPriority, key, buttonName, mouseClick)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_SetOverrideBindingItem]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
 --- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
@@ -11367,7 +11368,7 @@ end
 function SetOverrideBindingItem(owner, isPriority, key, item)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_SetOverrideBindingMacro]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
 --- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
@@ -11377,7 +11378,7 @@ end
 function SetOverrideBindingMacro(owner, isPriority, key, macro)
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 2.0
+--- #nocombat - This cannot be called while in combat.Restricted since patch 2.0
 --- [https://wowpedia.fandom.com/wiki/API_SetOverrideBindingSpell]
 --- @param owner Frame @ The frame this binding belongs to; this can later be used to clear all override bindings belonging to a particular frame.
 --- @param isPriority boolean @ true if this is a priority binding, false otherwise. Both types of override bindings take precedence over normal bindings.
@@ -11472,7 +11473,7 @@ end
 function SetRaidProfileSavedPosition()
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 4.0.1
+--- #nocombat - This cannot be called while in combat.Restricted since patch 4.0.1
 --- [https://wowpedia.fandom.com/wiki/API_SetRaidSubgroup]
 --- @param index unknown
 --- @param subgroup unknown
@@ -11606,7 +11607,7 @@ end
 function SetTrainerServiceTypeFilter(type, status, exclusive)
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_SetTurnEnabled]
 --- @return void
 function SetTurnEnabled()
@@ -11701,7 +11702,7 @@ end
 function SignPetition()
 end
 
---- protected - This can only be called from secure code.Use the SIT/STAND emotes, or /sit, /stand slash commands.
+--- #protected - This can only be called from secure code.Use the SIT/STAND emotes, or /sit, /stand slash commands.
 --- [https://wowpedia.fandom.com/wiki/API_SitStandOrDescendStart]
 --- @return void
 function SitStandOrDescendStart()
@@ -11896,13 +11897,13 @@ end
 function SpellIsTargeting()
 end
 
---- protected - This can only be called from secure code.Use the /stopcasting slash command.
+--- #protected - This can only be called from secure code.Use the /stopcasting slash command.
 --- [https://wowpedia.fandom.com/wiki/API_SpellStopCasting]
 --- @return boolean @ stopped
 function SpellStopCasting()
 end
 
---- protected - This can only be called from secure code.Use the stop action type of SecureActionButtonTemplate or the /stopspelltarget slash command.
+--- #protected - This can only be called from secure code.Use the stop action type of SecureActionButtonTemplate or the /stopspelltarget slash command.
 --- [https://wowpedia.fandom.com/wiki/API_SpellStopTargeting]
 --- @return void
 function SpellStopTargeting()
@@ -11913,7 +11914,7 @@ end
 function SpellTargetItem()
 end
 
---- protected - This can only be called from secure code.Use the target action type of SecureActionButtonTemplate.
+--- #protected - This can only be called from secure code.Use the target action type of SecureActionButtonTemplate.
 --- [https://wowpedia.fandom.com/wiki/API_SpellTargetUnit]
 --- @param unitId string @  : UnitId - The unit you wish to cast the spell on.
 --- @return void
@@ -12021,35 +12022,35 @@ end
 function StoreSecureReference()
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_StrafeLeftStart]
 --- @param startTime unknown @ Begin strafing left at this time.
 --- @return void
 function StrafeLeftStart(startTime)
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_StrafeLeftStop]
 --- @param startTime unknown
 --- @return void
 function StrafeLeftStop(startTime)
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_StrafeRightStart]
 --- @param startTime number @ Begin strafing right at this time, per GetTime * 1000.
 --- @return void
 function StrafeRightStart(startTime)
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_StrafeRightStop]
 --- @param startTime unknown
 --- @return void
 function StrafeRightStop(startTime)
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_Stuck]
 --- @return void
 function Stuck()
@@ -12068,7 +12069,7 @@ end
 function SummonFriend(guid, name)
 end
 
---- No longer does anything.
+--- It no longer appears to do anything.
 --- [https://wowpedia.fandom.com/wiki/API_SummonRandomCritter]
 --- @return void
 function SummonRandomCritter()
@@ -12084,7 +12085,7 @@ end
 function SurrenderArena()
 end
 
---- nocombat - This cannot be called while in combat.Restricted since patch 4.0.1
+--- #nocombat - This cannot be called while in combat.Restricted since patch 4.0.1
 --- [https://wowpedia.fandom.com/wiki/API_SwapRaidSubgroup]
 --- @param index1 number @ ID of first raid member (1 to MAX_RAID_MEMBERS)
 --- @param index2 number @ ID of second raid member (1 to MAX_RAID_MEMBERS)
@@ -12139,7 +12140,7 @@ end
 function TargetDirectionFriend()
 end
 
---- protected - This can only be called from secure code.Use the /targetlastenemy slash command.
+--- #protected - This can only be called from secure code.Use the /targetlastenemy slash command.
 --- [https://wowpedia.fandom.com/wiki/API_TargetLastEnemy]
 --- @return void
 function TargetLastEnemy()
@@ -12150,7 +12151,7 @@ end
 function TargetLastFriend()
 end
 
---- protected - This can only be called from secure code.Use the /targetlasttarget slash command.
+--- #protected - This can only be called from secure code.Use the /targetlasttarget slash command.
 --- [https://wowpedia.fandom.com/wiki/API_TargetLastTarget]
 --- @return void
 function TargetLastTarget()
@@ -12161,7 +12162,7 @@ end
 function TargetNearest()
 end
 
---- protected - This can only be called from secure code.Use the /targetenemy slash command.
+--- #protected - This can only be called from secure code.Use the /targetenemy slash command.
 --- [https://wowpedia.fandom.com/wiki/API_TargetNearestEnemy]
 --- @param reverse boolean @ true to cycle backwards; false to cycle forwards.
 --- @return void
@@ -12173,7 +12174,7 @@ end
 function TargetNearestEnemyPlayer()
 end
 
---- protected - This can only be called from secure code.Use the /targetfriend slash command.
+--- #protected - This can only be called from secure code.Use the /targetfriend slash command.
 --- [https://wowpedia.fandom.com/wiki/API_TargetNearestFriend]
 --- @param reverse boolean @  : if true, reverses the order of targetting units.
 --- @return void
@@ -12215,7 +12216,7 @@ end
 function TargetTotem()
 end
 
---- protected - This can only be called from secure code.Use SecureActionButtonTemplate's target action type, or the /target slash command.
+--- #protected - This can only be called from secure code.Use SecureActionButtonTemplate's target action type, or the /target slash command.
 --- [https://wowpedia.fandom.com/wiki/API_TargetUnit]
 --- @param name string @ The name of the unit.
 --- @param exactMatch boolean @ ? - true to check only units whose name exactly matches the name given; false to allow partial matches.
@@ -12309,7 +12310,7 @@ end
 function ToggleAnimKitDisplay()
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_ToggleAutoRun]
 --- @return void
 function ToggleAutoRun()
@@ -12331,7 +12332,7 @@ end
 function TogglePetAutocast()
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_ToggleRun]
 --- @param theTime unknown @ Toggle between running and walking at the specified time, per GetTime * 1000.
 --- @return void
@@ -12369,47 +12370,47 @@ end
 function TurnInGuildCharter()
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_TurnLeftStart]
 --- @param startTime number @ Begin turning left at this time, per GetTime * 1000.
 --- @return void
 function TurnLeftStart(startTime)
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_TurnLeftStop]
 --- @param stopTime unknown @ Stop turning left at this time, per GetTime * 1000.
 --- @return void
 function TurnLeftStop(stopTime)
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_TurnOrActionStart]
 --- @return void
 function TurnOrActionStart()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_TurnOrActionStop]
 --- @return void
 function TurnOrActionStop()
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_TurnRightStart]
 --- @param startTime number @ Begin turning right at this time, per GetTime * 1000
 --- @return void
 function TurnRightStart(startTime)
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_TurnRightStop]
 --- @param startTime unknown
 --- @return void
 function TurnRightStop(startTime)
 end
 
---- hwevent - This requires a hardware event i.e. keyboard/mouse input.
+--- #hwevent - This requires a hardware event i.e. keyboard/mouse input.
 --- [https://wowpedia.fandom.com/wiki/API_UninviteUnit]
 --- @param name string @ Name of the player to remove from group. When removing cross-server players, it is important to include the server name: Ygramul-Emerald Dream.
 --- @param reason string @ ? - Used when initiating a kick vote against the player.
@@ -12621,7 +12622,7 @@ end
 function UnitDetailedThreatSituation(unit, mobUnit)
 end
 
---- noinstance - This only works outdoors and not in instanced content (dungeons/raids/battlegrounds/arena).
+--- #noinstance - This only works outdoors and not in instanced content (dungeons/raids/battlegrounds/arena).
 --- [https://wowpedia.fandom.com/wiki/API_UnitDistanceSquared]
 --- @param unit string @  : UnitId - The unit id of a player in your group.
 --- @return number, boolean @ distanceSquared, checkedDistance
@@ -12815,7 +12816,7 @@ end
 function UnitInRaid(unit)
 end
 
---- grouponly - This can only be queried on units in your party or raid.
+--- #grouponly - This can only be queried on units in your party or raid.
 --- [https://wowpedia.fandom.com/wiki/API_UnitInRange]
 --- @param unit string @ UnitToken
 --- @return boolean, boolean @ inRange, checkedRange
@@ -13161,7 +13162,7 @@ end
 function UnitPlayerOrPetInRaid(unit)
 end
 
---- noinstance - This only works outdoors and not in instanced content (dungeons/raids/battlegrounds/arena).
+--- #noinstance - This only works outdoors and not in instanced content (dungeons/raids/battlegrounds/arena).
 --- [https://wowpedia.fandom.com/wiki/API_UnitPosition]
 --- @param unit string @  : UnitId - The unit for which the position is returned. Does not work with all unit types. Works with player, partyN or raidN as unit type. In particular, it does not work on pets or any unit not in your group.
 --- @return number, number, number, number @ posY, posX, posZ, instanceID
@@ -13465,7 +13466,7 @@ end
 function UpdateWindow()
 end
 
---- protected - This can only be called from secure code.Use the action type of the SecureActionButtonTemplate.
+--- #protected - This can only be called from secure code.Use the action type of the SecureActionButtonTemplate.
 --- [https://wowpedia.fandom.com/wiki/API_UseAction]
 --- @param slot number @ The action action slot to use.
 --- @param checkCursor number @ optional) - Can be 0, 1, or nil. Appears to indicate whether the action button was clicked (1) or used via hotkey (0); probably involved in placing skills/items in the action bar after they've been picked up.  I can confirm this.  If you pass 0 for checkCursor, it will use the action regardless of whether another item/skill is on the cursor.  If you pass 1 for checkCursor, it will replace the spell/action on the slot with the new one.
@@ -13474,7 +13475,7 @@ end
 function UseAction(slot, checkCursor, onSelf)
 end
 
---- protected - This can only be called from secure code.Use the item action type of SecureActionButtonTemplate or the /use slash command.
+--- #protected - This can only be called from secure code.Use the item action type of SecureActionButtonTemplate or the /use slash command.
 --- [https://wowpedia.fandom.com/wiki/API_UseContainerItem]
 --- @param bagID number @ The bag id, where the item to use is located
 --- @param slot number @ The slot in the bag, where the item to use is located
@@ -13496,7 +13497,7 @@ end
 function UseInventoryItem(slotID)
 end
 
---- protected - This can only be called from secure code.Use the item action type of SecureActionButtonTemplate or the /use slash command.
+--- #protected - This can only be called from secure code.Use the item action type of SecureActionButtonTemplate or the /use slash command.
 --- [https://wowpedia.fandom.com/wiki/API_UseItemByName]
 --- @param name string @ name of the item to use.
 --- @param target string @ ? : UnitId - The unit to use the item on, defaults to target for items that can be used on others.
@@ -13509,14 +13510,14 @@ end
 function UseQuestLogSpecialItem()
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_UseToy]
 --- @param itemId number @ itemId of a toy.
 --- @return void
 function UseToy(itemId)
 end
 
---- protected - This can only be called from secure code.
+--- #protected - This can only be called from secure code.
 --- [https://wowpedia.fandom.com/wiki/API_UseToyByName]
 --- @param name string @ localized?) name of a toy.
 --- @return void
