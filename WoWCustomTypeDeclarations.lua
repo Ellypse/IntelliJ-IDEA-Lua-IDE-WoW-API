@@ -14,9 +14,9 @@
 ---@class textureAtlas : texture @An atlas is a texture containing sub-textures (atlas members) to reduce overhead. They make it easier to get part of a texture instead of using tex coords.
 ---@class TextureAssetDisk : texture @On disk texture asset
 ---@class TextureAsset : texture @Texture asset
----@class colorRGB : table @A color is a table with three numbers between 0 and 1 representing the red, green, and blue components of a color.
+---@class colorRGB : ColorMixin @An instance of a ColorMixin object represents a color with red, green, and blue components.
 ---@class SingleColorValue : number @A SingleColorValue is a number between 0 and 1 representing a color component.
----@class colorRGBA : colorRGB @A color is a table with four numbers between 0 and 1 representing the red, green, blue, and alpha components of a color.
+---@class colorRGBA : ColorMixin @An instance of a ColorMixin object represents a color with red, green, blue, and alpha components.
 ---@class fileID : number @A fileID is a number that represents a file in the WoW client. It is used in the API to represent textures, sounds, and other files.
 ---@class vector2 : table @A vector2 is a table with two numbers representing an x and y coordinate.
 ---@class vector3 : vector2 @A vector3 is a table with three numbers representing an x, y, and z coordinate.
@@ -104,3 +104,15 @@
 ---@class Ticker : table @A Ticker is a table that represents a ticker.
 ---@class WeeklyRewardChestThresholdType : string @A WeeklyRewardChestThresholdType is a string that represents a weekly reward chest threshold type.
 ---@class CachedRewardType : string @A CachedRewardType is a string that represents a cached reward type.
+---@class stringView : string @A stringView is a string that represents a view of another string.
+---@class SimpleWindow : frame @A SimpleWindow is a frame that is used to create simple UI elements.
+---@class MacroExecuteLineCallback : function @A MacroExecuteLineCallback is a function that is called when a macro execute line is executed.
+---@class PendingPingOffScreenCallback : function @A PendingPingOffScreenCallback is a function that is called when a pending ping is off screen.
+---@class PingCooldownStartedCallback : function @A PingCooldownStartedCallback is a function that is called when a ping cooldown starts.
+---@class PingPinFrameAddedCallback : function @A PingPinFrameAddedCallback is a function that is called when a ping pin frame is added.
+---@class PingPinFrameRemovedCallback : function @A PingPinFrameRemovedCallback is a function that is called when a ping pin frame is removed.
+---@class PingPinFrameScreenClampStateUpdatedCallback : function @A PingPinFrameScreenClampStateUpdatedCallback is a function that is called when a ping pin frame screen clamp state is updated.
+---@class PingRadialWheelCreatedCallback : function @A PingRadialWheelCreatedCallback is a function that is called when a ping radial wheel is created.
+---@class SendMacroPingCallback : function @A SendMacroPingCallback is a function that is called when a macro ping is sent.
+---@class TogglePingListenerCallback : function @A TogglePingListenerCallback is a function that is called when a ping listener is toggled.
+---@class mouseButton @A mouseButton is a string that represents a mouse button.
