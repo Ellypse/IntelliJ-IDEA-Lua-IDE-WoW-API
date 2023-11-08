@@ -184,6 +184,9 @@ function C_PvP.GetSeasonBestInfo() end
 ---@return BattlemasterListInfo battlemasterListInfo
 function C_PvP.GetSkirmishInfo(pvpBracket) end
 
+---@return number minItemLevel
+function C_PvP.GetSoloRBGMinItemLevel() end
+
 ---@return PvpBrawlInfo|nil brawlInfo
 function C_PvP.GetSpecialEventBrawlInfo() end
 
@@ -221,6 +224,9 @@ function C_PvP.IsBattleground() end
 ---@return boolean, boolean battlegroundActive, brawlActive
 function C_PvP.IsBattlegroundEnlistmentBonusActive() end
 
+---@return boolean isBrawlSoloRBG
+function C_PvP.IsBrawlSoloRBG() end
+
 ---@return boolean isBrawlSoloShuffle
 function C_PvP.IsBrawlSoloShuffle() end
 
@@ -257,6 +263,9 @@ function C_PvP.IsRatedMap() end
 ---@return boolean isRatedSoloShuffle
 function C_PvP.IsRatedSoloShuffle() end
 
+---@return boolean isSoloRBG
+function C_PvP.IsSoloRBG() end
+
 ---@return boolean isSoloShuffle
 function C_PvP.IsSoloShuffle() end
 
@@ -287,6 +296,7 @@ BrawlType.Battleground = 1
 BrawlType.Arena = 2
 BrawlType.LFG = 3
 BrawlType.SoloShuffle = 4
+BrawlType.SoloRbg = 5
 
 ---@class PvPMatchState
 PvPMatchState = {}
@@ -376,6 +386,7 @@ MatchPVPStatColumn = {}
 ---@field brawlType BrawlType 
 ---@field mapNames string 
 ---@field includesAllArenas boolean 
+---@field minItemLevel number 
 PvpBrawlInfo = {}
 
 ---@class PVPPersonalRatedInfo

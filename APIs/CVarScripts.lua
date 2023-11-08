@@ -19,6 +19,10 @@ function C_CVar.GetCVarBool(name) end
 function C_CVar.GetCVarDefault(name) end
 
 ---@param name cstring 
+---@return cstring, cstring, boolean, boolean, boolean, boolean, boolean value, defaultValue, isStoredServerAccount, isStoredServerCharacter, isLockedFromUser, isSecure, isReadOnly
+function C_CVar.GetCVarInfo(name) end
+
+---@param name cstring 
 ---@param value cstring @ [OPTIONAL]
 function C_CVar.RegisterCVar(name, value) end
 
@@ -34,4 +38,14 @@ function C_CVar.SetCVar(name, value) end
 ---@param value boolean 
 ---@return boolean success
 function C_CVar.SetCVarBitfield(name, index, value) end
+
+---@class CVarInfo
+---@field value cstring 
+---@field defaultValue cstring 
+---@field isStoredServerAccount boolean 
+---@field isStoredServerCharacter boolean 
+---@field isLockedFromUser boolean 
+---@field isSecure boolean 
+---@field isReadOnly boolean 
+CVarInfo = {}
 

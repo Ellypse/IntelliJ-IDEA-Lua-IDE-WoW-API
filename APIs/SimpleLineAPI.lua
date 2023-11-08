@@ -6,6 +6,10 @@ function ClearAllPoints() end
 function GetEndPoint() end
 
 
+---@return uiUnit thickness
+function GetHitRectThickness() end
+
+
 ---@return FramePoint, ScriptRegion, uiUnit, uiUnit relativePoint, relativeTo, offsetX, offsetY
 function GetStartPoint() end
 
@@ -18,6 +22,9 @@ function GetThickness() end
 ---@param offsetX uiUnit 
 ---@param offsetY uiUnit 
 function SetEndPoint(relativePoint, relativeTo, offsetX, offsetY) end
+
+---@param thickness uiUnit 
+function SetHitRectThickness(thickness) end
 
 ---@param relativePoint FramePoint 
 ---@param relativeTo ScriptRegion 

@@ -383,6 +383,7 @@ WorldQuestQuality.Epic = 2
 ---@field overridesSortOrder boolean 
 ---@field readyForTranslation boolean 
 ---@field isLegendarySort boolean 
+---@field isInternalOnly boolean 
 QuestInfo = {}
 
 ---@class QuestObjectiveInfo

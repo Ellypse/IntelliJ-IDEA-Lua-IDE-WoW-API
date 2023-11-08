@@ -21,6 +21,8 @@ EventToastDisplayType.NormalTextWithIconAndRarity = 5
 EventToastDisplayType.Scenario = 6
 EventToastDisplayType.ChallengeMode = 7
 EventToastDisplayType.ScenarioClickExpand = 8
+EventToastDisplayType.WeeklyRewardUnlock = 9
+EventToastDisplayType.WeeklyRewardUpgrade = 10
 
 ---@class EventToastEventType
 EventToastEventType = {}
@@ -47,6 +49,8 @@ EventToastEventType.CriteriaUpdated = 19
 EventToastEventType.PvPTierUpdate = 20
 EventToastEventType.SpellLearned = 21
 EventToastEventType.TreasureItem = 22
+EventToastEventType.WeeklyRewardUnlock = 23
+EventToastEventType.WeeklyRewardUpgrade = 24
 
 ---@class EventToastInfo
 ---@field eventToastID number 

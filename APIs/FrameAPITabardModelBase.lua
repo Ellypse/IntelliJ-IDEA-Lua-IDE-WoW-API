@@ -16,5 +16,9 @@ function GetUpperEmblemTexture(texture) end
 function InitializeTabardColors() end
 
 
+---@return boolean isGuildTabard
+function IsGuildTabard() end
+
+
 function Save() end
 

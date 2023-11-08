@@ -59,6 +59,9 @@ function IsSlotVisible(inventorySlots) end
 ---@return boolean success
 function ReleaseFrontEndCharacterDisplays() end
 
+
+function ResetNextHandSlot() end
+
 ---@param autoDress boolean 
 function SetAutoDress(autoDress) end
 

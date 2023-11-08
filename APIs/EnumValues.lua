@@ -74,8 +74,10 @@ AccountStateFlags.RafActivityLoaded = 134217728
 AccountStateFlags.RafFriendMonthsLoaded = 268435456
 AccountStateFlags.RevokedRafRewardsLoaded = 536870912
 AccountStateFlags.AccountNotificationsLoaded = 1073741824
+AccountStateFlags.PerksPendingPurchaseLoaded = 2147483648
 AccountStateFlags.AccountWowlabsLoaded = 0
 AccountStateFlags.AccountUpgradeComplete = 0
+AccountStateFlags.WoWTokenPurchaseLoaded = 0
 
 ---@class DisableAccountProfilesFlags
 DisableAccountProfilesFlags = {}
@@ -685,6 +687,7 @@ CharCustomizationType.FacepaintColor = 11
 ---@class ChrCustomizationCategoryFlag
 ChrCustomizationCategoryFlag = {}
 ChrCustomizationCategoryFlag.UndressModel = 1
+ChrCustomizationCategoryFlag.Subcategory = 2
 
 ---@class ChrCustomizationOptionType
 ChrCustomizationOptionType = {}
@@ -713,6 +716,7 @@ CustomizationScope.DragonCompanion = 1
 ---@field icon textureAtlas 
 ---@field selectedIcon textureAtlas 
 ---@field undressModel boolean 
+---@field subcategory boolean 
 ---@field cameraZoomLevel number 
 ---@field cameraDistanceOffset number 
 ---@field spellShapeshiftFormID number|nil 
@@ -1149,6 +1153,7 @@ CurrencyFlagsB.CurrencyBDontDisplayIfZero = 32
 
 ---@class CurrencyGainFlags
 CurrencyGainFlags = {}
+CurrencyGainFlags.None = 0
 CurrencyGainFlags.BonusAward = 1
 CurrencyGainFlags.DroppedFromDeath = 2
 CurrencyGainFlags.FromAccountServer = 4
@@ -1166,6 +1171,7 @@ LinkedCurrencyFlags = {}
 LinkedCurrencyFlags.IgnoreAdd = 1
 LinkedCurrencyFlags.IgnoreSubtract = 2
 LinkedCurrencyFlags.SuppressChatLog = 4
+LinkedCurrencyFlags.AddIgnoresMax = 8
 
 ---@class PlayerCurrencyFlags
 PlayerCurrencyFlags = {}
@@ -1194,6 +1200,7 @@ CurrencyConsts.HONOR_CURRENCY_ID = 1792
 CurrencyConsts.ARTIFACT_KNOWLEDGE_CURRENCY_ID = 1171
 CurrencyConsts.WAR_RESOURCES_CURRENCY_ID = 1560
 CurrencyConsts.ECHOES_OF_NYALOTHA_CURRENCY_ID = 1803
+CurrencyConsts.DRAGON_ISLES_SUPPLIES_CURRENCY_ID = 2003
 CurrencyConsts.QUESTIONMARK_INV_ICON = 134400
 CurrencyConsts.CURRENCY_ID_RENOWN = 1822
 CurrencyConsts.CURRENCY_ID_RENOWN_KYRIAN = 1829
@@ -1251,14 +1258,14 @@ CurrencySource.GarrisonFollowerActivation = 25
 CurrencySource.GarrisonBuildingRefund = 26
 CurrencySource.GarrisonMissionReward = 27
 CurrencySource.GarrisonResourceOverTime = 28
-CurrencySource.QuestRewardIgnoreCaps = 29
+CurrencySource.QuestRewardIgnoreCapsDeprecated = 29
 CurrencySource.GarrisonTalent = 30
 CurrencySource.GarrisonWorldQuestBonus = 31
 CurrencySource.PvPHonorReward = 32
 CurrencySource.BonusRoll = 33
 CurrencySource.AzeriteRespec = 34
 CurrencySource.WorldQuestReward = 35
-CurrencySource.WorldQuestRewardIgnoreCaps = 36
+CurrencySource.WorldQuestRewardIgnoreCapsDeprecated = 36
 CurrencySource.FactionConversion = 37
 CurrencySource.DailyQuestReward = 38
 CurrencySource.DailyQuestWarModeReward = 39
@@ -1284,7 +1291,10 @@ CurrencySource.CatalystCraft = 58
 CurrencySource.ProfessionInitialAward = 59
 CurrencySource.PlayerTraitRefund = 60
 CurrencySource.AccountHwmUpdate = 61
-CurrencySource.Last = 62
+CurrencySource.ConvertItemsToCurrencyAndReputation = 62
+CurrencySource.PhBuffer_63 = 63
+CurrencySource.PhBuffer_64 = 64
+CurrencySource.Last = 65
 
 ---@class CursorStyle
 CursorStyle = {}
@@ -2112,7 +2122,7 @@ GossipNpcOption.SpiritHealer = 4
 GossipNpcOption.Binder = 5
 GossipNpcOption.Banker = 6
 GossipNpcOption.PetitionVendor = 7
-GossipNpcOption.TabardVendor = 8
+GossipNpcOption.GuildTabardVendor = 8
 GossipNpcOption.Battlemaster = 9
 GossipNpcOption.Auctioneer = 10
 GossipNpcOption.TalentMaster = 11
@@ -2158,6 +2168,7 @@ GossipNpcOption.ProfessionsCustomerOrder = 50
 GossipNpcOption.TraitSystem = 51
 GossipNpcOption.BarbersChoice = 52
 GossipNpcOption.MajorFactionRenown = 53
+GossipNpcOption.PersonalTabardVendor = 54
 
 ---@class GossipNpcOptionDisplayFlags
 GossipNpcOptionDisplayFlags = {}
@@ -2497,6 +2508,7 @@ UIItemInteractionType.ItemConversion = 4
 ---@class ItemConsts
 ItemConsts = {}
 ItemConsts.NUM_ITEM_ENCHANTMENT_SOCKETS = 3
+ItemConsts.MAX_LOOT_OBJECT_ITEMS = 31
 
 ---@class ITEM_WEAPON_SUBCLASSConstants
 ITEM_WEAPON_SUBCLASSConstants = {}
@@ -2739,6 +2751,7 @@ UIMapFlag.ForceOnNavbar = 32768
 UIMapFlag.AlwaysAllowUserWaypoints = 65536
 UIMapFlag.AlwaysAllowTaxiPathing = 131072
 UIMapFlag.ForceAllowMapLinks = 262144
+UIMapFlag.DoNotShowOnNavbar = 524288
 
 ---@class UIMapSystem
 UIMapSystem = {}
@@ -2802,6 +2815,15 @@ MythicPlusAffixScoreInfo = {}
 ---@field dungeonScore number 
 ---@field name string 
 MythicPlusRatingLinkInfo = {}
+
+---@class AvgItemLevelCategories
+AvgItemLevelCategories = {}
+AvgItemLevelCategories.Base = 0
+AvgItemLevelCategories.EquippedBase = 1
+AvgItemLevelCategories.EquippedEffective = 2
+AvgItemLevelCategories.PvP = 3
+AvgItemLevelCategories.PvPWeighted = 4
+AvgItemLevelCategories.EquippedEffectiveWeighted = 5
 
 ---@class PerksVendorCategoryType
 PerksVendorCategoryType = {}
@@ -3101,7 +3123,7 @@ PlayerInteractionType.GuildBanker = 10
 PlayerInteractionType.Registrar = 11
 PlayerInteractionType.Vendor = 12
 PlayerInteractionType.PetitionVendor = 13
-PlayerInteractionType.TabardVendor = 14
+PlayerInteractionType.GuildTabardVendor = 14
 PlayerInteractionType.TalentMaster = 15
 PlayerInteractionType.SpecializationMaster = 16
 PlayerInteractionType.MailInfo = 17
@@ -3152,6 +3174,7 @@ PlayerInteractionType.TraitSystem = 61
 PlayerInteractionType.BarbersChoice = 62
 PlayerInteractionType.JailersTowerBuffs = 63
 PlayerInteractionType.MajorFactionRenown = 64
+PlayerInteractionType.PersonalTabardVendor = 65
 
 ---@class PlayerMentorshipApplicationResult
 PlayerMentorshipApplicationResult = {}
@@ -3637,6 +3660,13 @@ PingTextureType.Rotation = 2
 ---@field type HTMLTextType 
 ---@field align TBFStyleFlags 
 HTMLContentNode = {}
+
+---@class SocialWhoOrigin
+SocialWhoOrigin = {}
+SocialWhoOrigin.Unknown = 0
+SocialWhoOrigin.Social = 1
+SocialWhoOrigin.Chat = 2
+SocialWhoOrigin.Item = 3
 
 ---@class SoftTargetEnableFlags
 SoftTargetEnableFlags = {}
@@ -4362,6 +4392,19 @@ AnchorBinding = {}
 ---@field width uiUnit 
 ---@field height uiUnit 
 uiBoundsRect = {}
+
+---@class UITextureSliceMode
+UITextureSliceMode = {}
+UITextureSliceMode.Stretched = 0
+UITextureSliceMode.Tiled = 1
+
+---@class UITextureSliceData
+---@field marginLeft number 
+---@field marginTop number 
+---@field marginRight number 
+---@field marginBottom number 
+---@field sliceMode UITextureSliceMode 
+UITextureSliceData = {}
 
 ---@class UIWidgetLayoutDirection
 UIWidgetLayoutDirection = {}

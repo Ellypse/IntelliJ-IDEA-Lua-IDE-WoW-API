@@ -36,6 +36,9 @@ function C_PlayerInfo.GetGlidingInfo() end
 ---@return number dungeonID
 function C_PlayerInfo.GetInstancesUnlockedAtLevel(level, isRaid) end
 
+---@return number nativeDisplayID
+function C_PlayerInfo.GetNativeDisplayID() end
+
 ---@param index number 
 ---@return number creatureDisplayInfoID
 function C_PlayerInfo.GetPetStableCreatureDisplayInfoID(index) end
@@ -52,9 +55,15 @@ function C_PlayerInfo.GetPlayerMythicPlusRatingSummary(playerToken) end
 ---@return boolean isVisible
 function C_PlayerInfo.HasVisibleInvSlot(slot) end
 
+---@return boolean isDisplayRaceNative
+function C_PlayerInfo.IsDisplayRaceNative() end
+
 ---@param expansionID number 
 ---@return boolean isUnlocked
 function C_PlayerInfo.IsExpansionLandingPageUnlockedForPlayer(expansionID) end
+
+---@return boolean isMirrorImage
+function C_PlayerInfo.IsMirrorImage() end
 
 ---@return boolean, string isEligible, failureReason
 function C_PlayerInfo.IsPlayerEligibleForNPE() end

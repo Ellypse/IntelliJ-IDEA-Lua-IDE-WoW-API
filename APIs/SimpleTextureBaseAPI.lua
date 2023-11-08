@@ -1,3 +1,7 @@
+--- Disable shader based nineslice texture rendering. Since SetAtlas will automatically load slice data for the atlas from the DB, can be useful if you want to disable nineslice after setting an atlas.
+
+function ClearTextureSlice() end
+
 
 ---@return textureAtlas atlas
 function GetAtlas() end
@@ -37,6 +41,14 @@ function GetTextureFileID() end
 
 ---@return cstring|nil textureFile
 function GetTextureFilePath() end
+
+
+---@return number, number, number, number left, top, right, bottom
+function GetTextureSliceMargins() end
+
+
+---@return UITextureSliceMode sliceMode
+function GetTextureSliceMode() end
 
 
 ---@return boolean tiling
@@ -115,6 +127,17 @@ function SetTexelSnappingBias(bias) end
 ---@param filterMode cstring @ [OPTIONAL]
 ---@return boolean success
 function SetTexture(textureAsset, wrapModeHorizontal, wrapModeVertical, filterMode) end
+
+--- Enables nineslice texture rendering using the specified pixel margins. Preferred over legacy nineslice approach that uses 9 separate textures.
+---@param left number 
+---@param top number 
+---@param right number 
+---@param bottom number 
+function SetTextureSliceMargins(left, top, right, bottom) end
+
+--- Controls whether the center and sides are Stretched or Tiled when using nineslice texture rendering. Defaults to Stretched.
+---@param sliceMode UITextureSliceMode 
+function SetTextureSliceMode(sliceMode) end
 
 ---@param tiling boolean 
 function SetVertTile(tiling) end

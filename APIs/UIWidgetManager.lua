@@ -170,6 +170,7 @@ ItemDisplayTextDisplayStyle = {}
 ItemDisplayTextDisplayStyle.WorldQuestReward = 0
 ItemDisplayTextDisplayStyle.ItemNameAndInfoText = 1
 ItemDisplayTextDisplayStyle.ItemNameOnlyCentered = 2
+ItemDisplayTextDisplayStyle.PlayerChoiceReward = 3
 
 ---@class ItemDisplayTooltipEnabledType
 ItemDisplayTooltipEnabledType = {}
@@ -323,6 +324,25 @@ WidgetIconSizeType.Standard = 3
 WidgetIconSourceType = {}
 WidgetIconSourceType.Spell = 0
 WidgetIconSourceType.Item = 1
+
+---@class WidgetOpacityType
+WidgetOpacityType = {}
+WidgetOpacityType.OneHundred = 0
+WidgetOpacityType.Ninety = 1
+WidgetOpacityType.Eighty = 2
+WidgetOpacityType.Seventy = 3
+WidgetOpacityType.Sixty = 4
+WidgetOpacityType.Fifty = 5
+WidgetOpacityType.Forty = 6
+WidgetOpacityType.Thirty = 7
+WidgetOpacityType.Twenty = 8
+WidgetOpacityType.Ten = 9
+WidgetOpacityType.Zero = 10
+
+---@class WidgetShowGlowState
+WidgetShowGlowState = {}
+WidgetShowGlowState.HideGlow = 0
+WidgetShowGlowState.ShowGlow = 1
 
 ---@class WidgetShownState
 WidgetShownState = {}
@@ -767,6 +787,10 @@ StackedResourceTrackerWidgetVisualizationInfo = {}
 ---@field textEnabledState WidgetEnabledState 
 ---@field textFontType UIWidgetFontType 
 ---@field textSizeType UIWidgetTextSizeType 
+---@field glowAnimType WidgetGlowAnimType 
+---@field showGlowState WidgetShowGlowState 
+---@field fillMinOpacity WidgetOpacityType 
+---@field fillMaxOpacity WidgetOpacityType 
 ---@field widgetSizeSetting number 
 ---@field textureKit textureKit 
 ---@field frameTextureKit textureKit 
@@ -985,6 +1009,7 @@ UIWidgetInfo = {}
 ---@field tooltipEnabled boolean 
 ---@field iconSizeType WidgetIconSizeType 
 ---@field infoTextEnabledState WidgetEnabledState 
+---@field showAsEarned boolean 
 UIWidgetItemInfo = {}
 
 ---@class UIWidgetSetInfo

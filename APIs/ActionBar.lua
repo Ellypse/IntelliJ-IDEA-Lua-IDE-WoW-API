@@ -83,3 +83,9 @@ function C_ActionBar.ShouldOverrideBarShowManaBar() end
 ---@param slotID luaIndex 
 function C_ActionBar.ToggleAutoCastPetAction(slotID) end
 
+---@class ActionUsableState
+---@field slot luaIndex 
+---@field usable boolean 
+---@field noMana boolean 
+ActionUsableState = {}
+

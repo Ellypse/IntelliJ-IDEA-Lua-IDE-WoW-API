@@ -58,6 +58,9 @@ function C_CurrencyInfo.GetCurrencyListLink(index) end
 ---@return number currencyListSize
 function C_CurrencyInfo.GetCurrencyListSize() end
 
+---@return number dragonIslesSuppliesCurrencyID
+function C_CurrencyInfo.GetDragonIslesSuppliesCurrencyID() end
+
 --- Gets the faction ID for currency that is immediately converted into reputation with that faction instead.
 ---@param currencyID number 
 ---@return number|nil factionID

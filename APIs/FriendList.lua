@@ -81,7 +81,8 @@ function C_FriendList.RemoveFriend(name) end
 function C_FriendList.RemoveFriendByIndex(index) end
 
 ---@param filter cstring 
-function C_FriendList.SendWho(filter) end
+---@param origin number @ [OPTIONAL]
+function C_FriendList.SendWho(filter, origin) end
 
 ---@param name cstring 
 ---@param notes cstring 

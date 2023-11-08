@@ -145,6 +145,10 @@ function GetResizeBounds() end
 function GetScale() end
 
 
+---@return SimpleWindow window
+function GetWindow() end
+
+
 ---@return boolean isFixed
 function HasFixedFrameLevel() end
 
@@ -213,6 +217,9 @@ function IsUserPlaced() end
 
 ---@return boolean isVisible
 function IsVisible() end
+
+
+function LockHighlight() end
 
 
 function Lower() end
@@ -285,6 +292,9 @@ function SetFrameLevel(frameLevel) end
 ---@param strata FrameStrata 
 function SetFrameStrata(strata) end
 
+---@param locked boolean 
+function SetHighlightLocked(locked) end
+
 ---@param left uiUnit 
 ---@param right uiUnit 
 ---@param top uiUnit 
@@ -333,6 +343,9 @@ function SetToplevel(topLevel) end
 ---@param userPlaced boolean 
 function SetUserPlaced(userPlaced) end
 
+---@param window SimpleWindow @ [OPTIONAL]
+function SetWindow(window) end
+
 
 function Show() end
 
@@ -345,6 +358,9 @@ function StartSizing(resizePoint, alwaysStartFromMouse) end
 
 
 function StopMovingOrSizing() end
+
+
+function UnlockHighlight() end
 
 
 function UnregisterAllEvents() end

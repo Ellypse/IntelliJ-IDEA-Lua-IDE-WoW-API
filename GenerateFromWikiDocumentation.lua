@@ -1,7 +1,7 @@
 --[[
     Author: Britt Yazel (aka Soyier)
     Date: April 12th, 2020
-    This script will read the documentation from Wowpedia (WoW Gamepedia) to generate a single global api file
+    This script will read the documentation from the Wiki (warcraft.wiki.gg) to generate a single global api file
     readable by IntelliJ to use as source. It tries to avoid functions included in the in-game API that is parsed separately.
 
     **Note**, since we are parsing thousands of pages, it takes quite a while to generate the content. ~5min
@@ -12,15 +12,15 @@
 --  lua-sec
 
 -- loads the HTTP module and any libraries it requires
-local BASE_WOWPEDIA_ADDRESS = "https://wowpedia.fandom.com"
-local WOWPEDIA_SUB_ADDRESS = "/wiki/Global_functions"
+local BASE_WIKI_ADDRESS = "https://warcraft.wiki.gg"
+local WIKI_SUB_ADDRESS = "/wiki/Global_functions"
 
 local OUTPUT_DIRECTORY = "./GlobalFunctions/"
 
 --download parent page with links to all sub pages
 require("socket")
 local https = require("ssl.https")
-local mainPageBody = https.request(BASE_WOWPEDIA_ADDRESS..WOWPEDIA_SUB_ADDRESS)
+local mainPageBody = https.request(BASE_WIKI_ADDRESS..WIKI_SUB_ADDRESS)
 
 --split the html page into lines
 local lines = {}
@@ -74,7 +74,7 @@ local progress = 0
 for k,v in pairs(api_entries) do
     progress = progress + 1
     if api_entries[k].address then
-        local spellPageBody = https.request(BASE_WOWPEDIA_ADDRESS .. api_entries[k].address)
+        local spellPageBody = https.request(BASE_WIKI_ADDRESS .. api_entries[k].address)
         if spellPageBody then
             local _,allStart = string.find(spellPageBody,"<div id=\"bodyContent\".->")
             local allFinish,_ = string.find(spellPageBody,"<div class=\"printfooter\"")
@@ -346,7 +346,7 @@ for _,k in pairs(apiKeys) do
     end
 
     if api_entries[k].address then
-        preFunction = preFunction .. "--- [" .. BASE_WOWPEDIA_ADDRESS .. api_entries[k].address .. "]\n"
+        preFunction = preFunction .. "--- [" .. BASE_WIKI_ADDRESS .. api_entries[k].address .. "]\n"
     end
 
     if api_entries[k].arguments then

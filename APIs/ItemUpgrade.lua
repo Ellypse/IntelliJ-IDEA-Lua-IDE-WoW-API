@@ -99,7 +99,8 @@ ItemUpgradeItemInfo = {}
 ItemUpgradeLevelInfo = {}
 
 ---@class ItemUpgradeSeasonalCostType
----@field itemID number 
+---@field itemID number|nil 
+---@field currencyID number|nil 
 ---@field orderIndex number 
 ---@field sourceString string|nil 
 ItemUpgradeSeasonalCostType = {}

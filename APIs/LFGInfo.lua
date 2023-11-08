@@ -36,6 +36,18 @@ function C_LFGInfo.GetRoleCheckDifficultyDetails() end
 ---@return boolean shouldHide
 function C_LFGInfo.HideNameFromUI(dungeonID) end
 
+---@return boolean enabled
+function C_LFGInfo.IsGroupFinderEnabled() end
+
+---@return boolean enabled
+function C_LFGInfo.IsLFDEnabled() end
+
+---@return boolean enabled
+function C_LFGInfo.IsLFREnabled() end
+
+---@return boolean enabled
+function C_LFGInfo.IsPremadeGroupEnabled() end
+
 ---@class LFGDungeonInfo
 ---@field name string 
 ---@field iconID fileID 

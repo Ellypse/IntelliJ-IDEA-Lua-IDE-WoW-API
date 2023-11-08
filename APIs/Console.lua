@@ -1,21 +1,34 @@
----@class C_Console @Console
-C_Console = {}
+---@param firstString stringView 
+---@param secondString stringView 
+---@return number distance
+function CalculateStringEditDistance(firstString, secondString) end
+
+---@param message cstring 
+function ConsoleAddMessage(message) end
+
+---@param command cstring 
+---@param addToHistory boolean 
+---@return boolean result
+function ConsoleExec(command, addToHistory) end
 
 ---@return ConsoleCommandInfo commands
-function C_Console.GetAllCommands() end
+function ConsoleGetAllCommands() end
 
 ---@param colorType ConsoleColorType 
 ---@return colorRGB color
-function C_Console.GetColorFromType(colorType) end
+function ConsoleGetColorFromType(colorType) end
 
 ---@return number fontHeightInPixels
-function C_Console.GetFontHeight() end
+function ConsoleGetFontHeight() end
+
+---@return boolean consoleIsActive
+function ConsoleIsActive() end
 
 ---@param partialCommandText cstring 
-function C_Console.PrintAllMatchingCommands(partialCommandText) end
+function ConsolePrintAllMatchingCommands(partialCommandText) end
 
 ---@param fontHeightInPixels number 
-function C_Console.SetFontHeight(fontHeightInPixels) end
+function ConsoleSetFontHeight(fontHeightInPixels) end
 
 ---@class ConsoleCategory
 ConsoleCategory = {}

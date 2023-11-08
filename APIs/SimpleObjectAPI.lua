@@ -1,3 +1,6 @@
+
+function ClearParentKey() end
+
 ---@param preferParentKey boolean 
 ---@return string debugName
 function GetDebugName(preferParentKey) end

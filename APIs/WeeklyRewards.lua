@@ -24,6 +24,10 @@ function C_WeeklyRewards.GetActivityEncounterInfo(type, index) end
 ---@return ConquestWeeklyProgress weeklyProgress
 function C_WeeklyRewards.GetConquestWeeklyProgress() end
 
+---@param activityTierID number 
+---@return number difficultyID
+function C_WeeklyRewards.GetDifficultyIDForActivityTier(activityTierID) end
+
 ---@param id number 
 ---@return string, string hyperlink, upgradeHyperlink
 function C_WeeklyRewards.GetExampleRewardItemHyperlinks(id) end
@@ -32,9 +36,17 @@ function C_WeeklyRewards.GetExampleRewardItemHyperlinks(id) end
 ---@return cstring hyperlink
 function C_WeeklyRewards.GetItemHyperlink(itemDBID) end
 
+---@param activityTierID number 
+---@param level number 
+---@return boolean, number|nil, number|nil, number|nil hasSeasonData, nextActivityTierID, nextLevel, itemLevel
+function C_WeeklyRewards.GetNextActivitiesIncrease(activityTierID, level) end
+
 ---@param mythicPlusLevel number 
 ---@return boolean, number|nil, number|nil hasSeasonData, nextMythicPlusLevel, itemLevel
 function C_WeeklyRewards.GetNextMythicPlusIncrease(mythicPlusLevel) end
+
+---@return number, number, number numHeroic, numMythic, numMythicPlus
+function C_WeeklyRewards.GetNumCompletedDungeonRuns() end
 
 ---@return textureKit uiTextureKit
 function C_WeeklyRewards.GetWeeklyRewardTextureKit() end
@@ -87,6 +99,7 @@ WeeklyRewardActivityEncounterInfo = {}
 ---@field threshold number 
 ---@field progress number 
 ---@field id number 
+---@field activityTierID number 
 ---@field level number 
 ---@field claimID number|nil 
 ---@field raidString cstring|nil 

@@ -50,6 +50,9 @@ function GetNumExpansions() end
 ---@return number serverExpansionLevel
 function GetServerExpansionLevel() end
 
+---@return boolean available
+function IsDemonHunterAvailable() end
+
 ---@return boolean isExpansionTrialAccount
 function IsExpansionTrial() end
 

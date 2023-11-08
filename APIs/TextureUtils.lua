@@ -5,6 +5,14 @@ C_Texture = {}
 function C_Texture.ClearTitleIconTexture(texture) end
 
 ---@param atlas textureAtlas 
+---@return number elementID
+function C_Texture.GetAtlasElementID(atlas) end
+
+---@param atlas textureAtlas 
+---@return number atlasID
+function C_Texture.GetAtlasID(atlas) end
+
+---@param atlas textureAtlas 
 ---@return AtlasInfo info
 function C_Texture.GetAtlasInfo(atlas) end
 
@@ -40,6 +48,7 @@ TitleIconVersion.Large = 2
 ---@class AtlasInfo
 ---@field width number 
 ---@field height number 
+---@field rawSize vector2 
 ---@field leftTexCoord number 
 ---@field rightTexCoord number 
 ---@field topTexCoord number 
@@ -48,6 +57,7 @@ TitleIconVersion.Large = 2
 ---@field tilesVertically boolean 
 ---@field file fileID|nil 
 ---@field filename string|nil 
+---@field sliceData UITextureSliceData|nil 
 AtlasInfo = {}
 
 

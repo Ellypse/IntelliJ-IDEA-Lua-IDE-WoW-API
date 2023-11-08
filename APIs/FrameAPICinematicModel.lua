@@ -13,11 +13,15 @@ function RefreshCamera() end
 ---@param offset number 
 function SetAnimOffset(offset) end
 
----@param position vector3 
-function SetCameraPosition(position) end
+---@param positionX number 
+---@param positionY number 
+---@param positionZ number 
+function SetCameraPosition(positionX, positionY, positionZ) end
 
----@param position vector3 
-function SetCameraTarget(position) end
+---@param positionX number 
+---@param positionY number 
+---@param positionZ number 
+function SetCameraTarget(positionX, positionY, positionZ) end
 
 ---@param creatureID number 
 function SetCreatureData(creatureID) end

@@ -14,8 +14,9 @@ function C_Traits.CanRefundRank(configID, nodeID) end
 
 ---@param configID number 
 ---@param nodeID number 
+---@param entryID number @ [OPTIONAL]
 ---@return boolean success
-function C_Traits.CascadeRepurchaseRanks(configID, nodeID) end
+function C_Traits.CascadeRepurchaseRanks(configID, nodeID, entryID) end
 
 ---@param configID number 
 function C_Traits.ClearCascadeRepurchaseHistory(configID) end
@@ -144,8 +145,9 @@ function C_Traits.RefundAllRanks(configID, nodeID) end
 
 ---@param configID number 
 ---@param nodeID number 
+---@param clearEdges boolean @ [OPTIONAL]
 ---@return boolean success
-function C_Traits.RefundRank(configID, nodeID) end
+function C_Traits.RefundRank(configID, nodeID, clearEdges) end
 
 ---@param configID number 
 ---@param treeID number 
@@ -165,8 +167,9 @@ function C_Traits.RollbackConfig(configID) end
 ---@param configID number 
 ---@param nodeID number 
 ---@param nodeEntryID number @ [OPTIONAL]
+---@param clearEdges boolean @ [OPTIONAL]
 ---@return boolean success
-function C_Traits.SetSelection(configID, nodeID, nodeEntryID) end
+function C_Traits.SetSelection(configID, nodeID, nodeEntryID, clearEdges) end
 
 ---@param configID number 
 ---@return boolean success
@@ -266,6 +269,7 @@ TraitNodeInfo = {}
 ---@field currentRank number|nil 
 ---@field meetsEdgeRequirements boolean|nil 
 ---@field isCascadeRepurchasable boolean|nil 
+---@field activeEntryID number|nil 
 TraitNodeInfoPartial = {}
 
 ---@class TraitOutEdgeInfo

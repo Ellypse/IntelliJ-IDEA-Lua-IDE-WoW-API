@@ -23,6 +23,9 @@ function C_PerksActivities.GetPerksActivityChatLink(perksActivityID) end
 ---@return PerksActivityInfo|nil info
 function C_PerksActivities.GetPerksActivityInfo(perksActivityID) end
 
+---@return string kitPrefix
+function C_PerksActivities.GetPerksUIThemePrefix() end
+
 ---@return PerksActivitiesTracked trackedPerksActivities
 function C_PerksActivities.GetTrackedPerksActivities() end
 

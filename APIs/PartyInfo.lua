@@ -52,6 +52,10 @@ function C_PartyInfo.GetInviteConfirmationInvalidQueues(inviteGUID) end
 ---@return WOWGUID, cstring, PartyRequestJoinRelation, boolean, ClubId outReferredByGuid, outReferredByName, outRelationType, outIsQuickJoin, outClubId
 function C_PartyInfo.GetInviteReferralInfo(inviteGUID) end
 
+---@param avgItemLevelCategory AvgItemLevelCategories @ The active party is always used
+---@return number, cstring minItemLevel, playerNameWithLowestItemLevel
+function C_PartyInfo.GetMinItemLevel(avgItemLevelCategory) end
+
 ---@param category number @ If not provided, the active party is used [OPTIONAL]
 ---@return number minLevel
 function C_PartyInfo.GetMinLevel(category) end

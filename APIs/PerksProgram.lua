@@ -44,6 +44,10 @@ function C_PerksProgram.GetVendorItemInfo(vendorItemID) end
 function C_PerksProgram.GetVendorItemInfoRefundTimeLeft(vendorItemID) end
 
 ---@param perksVendorItemID number 
+---@return boolean isFrozen
+function C_PerksProgram.IsFrozenPerksVendorItem(perksVendorItemID) end
+
+---@param perksVendorItemID number 
 function C_PerksProgram.ItemSelectedTelemetry(perksVendorItemID) end
 
 ---@param perksVendorItemID number 
@@ -114,7 +118,7 @@ PerksVendorCategoryInfo = {}
 ---@field timeRemaining time_t 
 ---@field purchased boolean 
 ---@field refundable boolean 
----@field pending boolean 
+---@field isPurchasePending boolean 
 ---@field price number 
 ---@field perksVendorItemID number 
 ---@field itemID number 
@@ -123,5 +127,12 @@ PerksVendorCategoryInfo = {}
 ---@field speciesID number 
 ---@field transmogSetID number 
 ---@field itemModifiedAppearanceID number 
+---@field uiGroupInfo PerksVendorItemUIGroupInfo|nil 
 PerksVendorItemInfo = {}
+
+---@class PerksVendorItemUIGroupInfo
+---@field ID number 
+---@field name cstring 
+---@field priority number 
+PerksVendorItemUIGroupInfo = {}
 

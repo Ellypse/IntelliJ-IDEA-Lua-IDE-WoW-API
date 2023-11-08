@@ -77,6 +77,38 @@ function SetUnitCursorTexture(textureObject, unit, style, includeLowPriority) en
 function UnitAlliedRaceInfo(unit) end
 
 ---@param unit UnitToken 
+---@return number|nil result
+function UnitBattlePetLevel(unit) end
+
+---@param unit UnitToken 
+---@return number|nil result
+function UnitBattlePetSpeciesID(unit) end
+
+---@param unit UnitToken 
+---@return number|nil result
+function UnitBattlePetType(unit) end
+
+---@param unit UnitToken 
+---@param target UnitToken 
+---@return boolean result
+function UnitCanAssist(unit, target) end
+
+---@param unit UnitToken 
+---@param target UnitToken 
+---@return boolean result
+function UnitCanAttack(unit, target) end
+
+---@param unit UnitToken 
+---@param target UnitToken 
+---@return boolean result
+function UnitCanCooperate(unit, target) end
+
+---@param unit UnitToken 
+---@param target UnitToken 
+---@return boolean result
+function UnitCanPetBattle(unit, target) end
+
+---@param unit UnitToken 
 ---@return number ID
 function UnitChromieTimeID(unit) end
 
@@ -93,21 +125,151 @@ function UnitClassBase(unit) end
 function UnitDistanceSquared(unit) end
 
 ---@param unit UnitToken 
+---@return boolean result
+function UnitExists(unit) end
+
+---@param unitName cstring 
+---@param checkDisplayRace boolean 
+---@return cstring, cstring factionGroupTag, localized
+function UnitFactionGroup(unitName, checkDisplayRace) end
+
+---@param unit UnitToken 
+---@return cstring result
+function UnitGroupRolesAssigned(unit) end
+
+---@param unit UnitToken 
+---@param partyIndex luaIndex @ [OPTIONAL]
+---@return boolean result
+function UnitInAnyGroup(unit, partyIndex) end
+
+---@param unit UnitToken 
+---@param partyIndex luaIndex @ [OPTIONAL]
+---@return luaIndex|nil result
+function UnitInBattleground(unit, partyIndex) end
+
+---@param unit UnitToken 
+---@param partyIndex luaIndex @ [OPTIONAL]
+---@return boolean result
+function UnitInParty(unit, partyIndex) end
+
+---@param unit UnitToken 
 ---@return boolean inPartyShard
 function UnitInPartyShard(unit) end
+
+---@param unit UnitToken 
+---@param partyIndex luaIndex @ [OPTIONAL]
+---@return luaIndex|nil result
+function UnitInRaid(unit, partyIndex) end
 
 ---@param unit UnitToken 
 ---@return boolean, boolean inRange, checkedRange
 function UnitInRange(unit) end
 
 ---@param unit UnitToken 
+---@param partyIndex luaIndex @ [OPTIONAL]
+---@return boolean result
+function UnitInSubgroup(unit, partyIndex) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsAFK(unit) end
+
+---@param unit UnitToken 
+---@return boolean|nil result
+function UnitIsBattlePet(unit) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsBattlePetCompanion(unit) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsCharmed(unit) end
+
+---@param unit UnitToken 
 ---@return boolean isConnected
 function UnitIsConnected(unit) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsCorpse(unit) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsDND(unit) end
+
+---@param unit UnitToken 
+---@param target UnitToken 
+---@return boolean result
+function UnitIsEnemy(unit, target) end
+
+---@param unit UnitToken 
+---@param target UnitToken 
+---@return boolean result
+function UnitIsFriend(unit, target) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsGameObject(unit) end
+
+---@param unit cstring 
+---@return boolean result
+function UnitIsInMyGuild(unit) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsInteractable(unit) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsOtherPlayersBattlePet(unit) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsOtherPlayersPet(unit) end
 
 ---@param controllingUnit UnitToken 
 ---@param controlledUnit UnitToken 
 ---@return boolean unitIsOwnerOrControllerOfUnit
 function UnitIsOwnerOrControllerOfUnit(controllingUnit, controlledUnit) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsPVP(unit) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsPVPFreeForAll(unit) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsPVPSanctuary(unit) end
+
+---@param unit UnitToken 
+---@param partyIndex luaIndex @ [OPTIONAL]
+---@return boolean result
+function UnitIsPlayer(unit, partyIndex) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsPossessed(unit) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsRaidOfficer(unit) end
+
+---@param unitName1 cstring 
+---@param unitName2 cstring 
+---@return boolean result
+function UnitIsUnit(unitName1, unitName2) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsVisible(unit) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitIsWildBattlePet(unit) end
 
 ---@param unit UnitToken 
 ---@return boolean nameplateShowsWidgetsOnly
@@ -126,6 +288,20 @@ function UnitPercentHealthFromGUID(unitGUID) end
 ---@param unit UnitToken 
 ---@return PhaseReason|nil reason
 function UnitPhaseReason(unit) end
+
+---@param unit UnitToken 
+---@return boolean result
+function UnitPlayerControlled(unit) end
+
+---@param unit UnitToken 
+---@param partyIndex luaIndex @ [OPTIONAL]
+---@return boolean result
+function UnitPlayerOrPetInParty(unit, partyIndex) end
+
+---@param unit UnitToken 
+---@param partyIndex luaIndex @ [OPTIONAL]
+---@return boolean result
+function UnitPlayerOrPetInRaid(unit, partyIndex) end
 
 ---@param unitToken UnitToken 
 ---@param powerType PowerType 
@@ -158,6 +334,11 @@ function UnitQuestTrivialLevelRange(unit) end
 ---@param unit UnitToken 
 ---@return number levelRange
 function UnitQuestTrivialLevelRangeScaling(unit) end
+
+---@param unit UnitToken 
+---@param target UnitToken 
+---@return luaIndex|nil result
+function UnitReaction(unit, target) end
 
 ---@param unit UnitToken 
 ---@return number|nil sex

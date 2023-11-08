@@ -80,9 +80,6 @@ function GetTextWidth() end
 ---@return boolean isEnabled
 function IsEnabled() end
 
-
-function LockHighlight() end
-
 ---@param unpackedPrimitiveType number 
 function RegisterForClicks(unpackedPrimitiveType) end
 
@@ -118,9 +115,6 @@ function SetHighlightAtlas(atlas, blendMode) end
 ---@param font SimpleFont 
 function SetHighlightFontObject(font) end
 
----@param locked boolean 
-function SetHighlightLocked(locked) end
-
 ---@param asset TextureAsset 
 ---@param blendMode BlendMode @ [OPTIONAL]
 function SetHighlightTexture(asset, blendMode) end
@@ -149,7 +143,4 @@ function SetPushedTexture(asset) end
 
 ---@param text cstring 
 function SetText(text) end
-
-
-function UnlockHighlight() end
 

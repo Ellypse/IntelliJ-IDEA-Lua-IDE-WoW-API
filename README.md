@@ -12,10 +12,10 @@ lua ./GenerateFromAPIDocumentation.lua
 
 ### Global functions generated from Wowpedia
 
-The Global functions are parsed from the crowdsourced Wowpedia website, via the https://wow.gamepedia.com/Global_functions page, and all the content is extracted to the `GlobalFunctions/GlobalFunctions.lua` file. To run the script execute:
+The Global functions are parsed from the crowdsourced warcraft.wiki.gg website, via the https://warcraft.wiki.gg/wiki/Global_functions page, and all the content is extracted to the `GlobalFunctions/GlobalFunctions.lua` file. To run the script execute:
 
 ```bash
-lua ./GetWowpediaInfo.lua
+lua ./GenerateFromWikiDocumentation.lua
 ```
 
 > **Note:** We need two lua libraries to run the Wowpedia parser: **lua-socket** and **lua-sec**
@@ -30,4 +30,4 @@ Documentation of popular libraries (for now only LibStub) is provided to get cod
 
 [EmmyLua plugin]: https://github.com/EmmyLua/IntelliJ-EmmyLua
 [IntelliJ IDEA]: https://www.jetbrains.com/idea/
-[Wowpedia]: https://wow.gamepedia.com/Wowpedia
+[Warcraft Wiki]: https://warcraft.wiki.gg/
