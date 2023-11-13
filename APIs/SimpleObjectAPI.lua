@@ -14,5 +14,6 @@ function GetParent() end
 function GetParentKey() end
 
 ---@param parentKey cstring 
-function SetParentKey(parentKey) end
+---@param clearOtherKeys boolean 
+function SetParentKey(parentKey, clearOtherKeys) end
 

@@ -11,70 +11,65 @@
 --  lua-socket
 --  lua-sec
 
--- loads the HTTP module and any libraries it requires
 local BASE_WIKI_ADDRESS = "https://warcraft.wiki.gg"
-local WIKI_SUB_ADDRESS = "/wiki/Global_functions"
-
+local KETHO_GLOBAL_API_LIST = "https://raw.githubusercontent.com/Ketho/BlizzardInterfaceResources/mainline/Resources/GlobalAPI.lua"
 local OUTPUT_DIRECTORY = "./GlobalFunctions/"
 
---download parent page with links to all sub pages
+--set up socket and https
 require("socket")
 local https = require("ssl.https")
-local mainPageBody = https.request(BASE_WIKI_ADDRESS..WIKI_SUB_ADDRESS)
 
---split the html page into lines
-local lines = {}
-for line in mainPageBody:gmatch("([^\n]*)\n?") do
-    table.insert(lines, line)
+---------------------------------------------------------
+------------- Download List of API Functions ------------
+---------------------------------------------------------
+
+--using https, download the raw html of Ketho's globalAPI table
+local globalAPI_raw, globalAPI_code = https.request(KETHO_GLOBAL_API_LIST)
+
+--print error if the request failed
+if not globalAPI_raw then error(globalAPI_code) end
+
+--save the raw downloaded source to a .lua file to load later
+local globalAPI_File = assert(io.open("tmp/globalAPI.lua", "w+")) -- open in "binary" mode
+globalAPI_File:write(globalAPI_raw)
+globalAPI_File:close()
+
+--load in the file we just saved
+local globalAPI = dofile("tmp/globalAPI.lua")
+
+--globalAPI comes back as two tables, globalAPI and luaAPI. We need to join the luaAPI and the globalAPI for now.
+local globalAndLuaAPI = globalAPI[1]
+for _,v in ipairs(globalAPI[2]) do
+    table.insert(globalAndLuaAPI, v)
 end
 
---parse the individual lines and create the base of a an api_entries table with all the api functions
+---------------------------------------------------------
+------------------ Generate Wiki URLs -------------------
+---------------------------------------------------------
+
+--parse the individual table entries and create an api_entries table with all the api functions
 --(we need to parse line by line to see if this is the right content)
 local api_entries = {}
 local total_entries = 0
-for k,v in pairs(lines) do
-    --all API entry lines seem to have title="API in the string, which is nice for us to narrow down
+for _, api_entry in pairs(globalAndLuaAPI) do
     --we can ignore any api entries starting with C_ because those are all parsed form the in-game API separately
-    if string.find(v, "title=\"API") and not string.find(v, "API_C_") and not string.find(v, "API C ")
-            and not string.find(v, "title=\"World of Warcraft API\"") and not string.find(v, "/API_change_summaries") then
-
-        local _,start = string.find(v,"\">")
-        local span, _ = string.find(v,"</span>")
-        local finish, _ = string.find(v,"</a>") or span
-        local api_entry = string.sub(v, start+1, finish-1)
-
-        api_entries[api_entry] = {
-            ["stubbed"] = (span ~= nil)
-        }
+    if not string.find(api_entry, "C_") then
+        --build functional URLs from our globalAndLuaAPI table entries
+        api_entries[api_entry] = {}
+        api_entries[api_entry].address = BASE_WIKI_ADDRESS .. "/wiki/API_" .. api_entry
         total_entries = total_entries + 1
-
-        --parse through the list of lines and split out just the matching addresses for pages with actual information on them
-        --these pages all seem to have "/API_ in the start of their href line
-        local address
-        if string.find(v, "/API_") then
-            _,start = string.find(v,"<a href=\"")
-            finish, _ = string.find(v,"\" title=")
-            local finish2, _ = string.find(v,"\" class=")
-            if finish2 and finish2 < finish then
-                finish = finish2
-            end
-            address = string.sub(v, start+1, finish-1)
-
-            if address then
-                api_entries[api_entry].address = address
-            end
-        elseif span then
-            api_entries[api_entry].address = "/wiki/API_" .. api_entry .. "?action=edit&amp;redlink=1"
-        end
     end
 end
 
+---------------------------------------------------------
+------- Download Documentation Content from Wiki --------
+---------------------------------------------------------
 
 local progress = 0
 for k,v in pairs(api_entries) do
     progress = progress + 1
     if api_entries[k].address then
-        local spellPageBody = https.request(BASE_WIKI_ADDRESS .. api_entries[k].address)
+        local spellPageBody = https.request(api_entries[k].address)
         if spellPageBody then
             local _,allStart = string.find(spellPageBody,"<div id=\"bodyContent\".->")
             local allFinish,_ = string.find(spellPageBody,"<div class=\"printfooter\"")
@@ -164,6 +159,10 @@ for k,v in pairs(api_entries) do
         end
     end
 end
+
+---------------------------------------------------------
+--------------- Generate Documentation ------------------
+---------------------------------------------------------
 
 local types = {
     ["^[Ss]tring"] = "string",
@@ -316,7 +315,9 @@ for k,v in pairs(api_entries) do
 end
 
 
----do the output to file
+---------------------------------------------------------
+-------------- Write the Output to File -----------------
+---------------------------------------------------------
 
 local out = io.open(OUTPUT_DIRECTORY.."GlobalFunctions.lua", "w+")
 
@@ -346,7 +347,7 @@ for _,k in pairs(apiKeys) do
     end
 
     if api_entries[k].address then
-        preFunction = preFunction .. "--- [" .. BASE_WIKI_ADDRESS .. api_entries[k].address .. "]\n"
+        preFunction = preFunction .. "--- [" .. api_entries[k].address .. "]\n"
     end
 
     if api_entries[k].arguments then
