@@ -5,8 +5,12 @@
 	Created by Britt Yazel (aka Soyier)
 ]]
 
----@class WOWGUID : string @GUIDs uniquely identify almost everything the player character can interact with in World of Warcraft. GUIDs are represented in WoW as a long string of hex numbers separated by hyphens.
+---@class callback : function @A Callback is a function that is called when a specific event occurs.
+---@class ColorMixin : table @A ColorMixin is a mixin that represents a color.
 ---@class texture @A texture is a 2D image that is used to represent an object. Textures are used in the UI to create graphical elements such as buttons, icons, and portraits.
+---@class SimpleRegion : table @A SimpleRegion is a region that is used to create simple UI elements.
+
+---@class WOWGUID : string @GUIDs uniquely identify almost everything the player character can interact with in World of Warcraft. GUIDs are represented in WoW as a long string of hex numbers separated by hyphens.
 ---@class SimpleTexture : texture @A texture is a 2D image that is used to represent an object. Textures are used in the UI to create graphical elements such as buttons, icons, and portraits.
 ---@class luaIndex : number @A luaIndex is a number that represents an index in a Lua table. Lua tables are 1-indexed, meaning that the first element in a table is at index 1, not 0.
 ---@class uiAddon : string @An addon is a collection of files that adds functionality to the WoW client. Addons are loaded by the WoW client when the player logs in to the game.
@@ -19,10 +23,10 @@
 ---@class colorRGBA : ColorMixin @An instance of a ColorMixin object represents a color with red, green, blue, and alpha components.
 ---@class fileID : number @A fileID is a number that represents a file in the WoW client. It is used in the API to represent textures, sounds, and other files.
 ---@class vector2 : table @A vector2 is a table with two numbers representing an x and y coordinate.
----@class vector3 : vector2 @A vector3 is a table with three numbers representing an x, y, and z coordinate.
+---@class vector3 : table @A vector3 is a table with three numbers representing an x, y, and z coordinate.
 ---@class textureKit : string @A textureKit is a string that represents a texture kit. Texture kits are used to skin UI elements.
 ---@class time_t : number @A time_t is a number that represents a time in seconds since the Unix epoch (January 1, 1970 at 00:00:00 UTC).
----@class FileAsset @A FileAsset represents a file in the WoW client.
+---@class FileAsset : string @A FileAsset represents a file in the WoW client.
 ---@class ItemInfo : table @An ItemInfo is a table that contains information about an item.
 ---@class ItemLocation : table @An ItemLocation is an object that represents a location of an item.
 ---@class BigUInteger : number @A BigUInteger is a number that represents an unsigned integer larger than 2^53.
@@ -34,16 +38,16 @@
 ---@class NotificationDbId : number @A NotificationDbId is a number that represents a notification in the WoW client.
 ---@class ClubId : number @A ClubId is a number that represents a club.
 ---@class ClubStreamId : number @A ClubStreamId is a number that represents a stream in a club.
----@class ChatBubbleFrame : frame @A ChatBubbleFrame is a frame that represents a chat bubble.
+---@class ChatBubbleFrame : table @A ChatBubbleFrame is a frame that represents a chat bubble.
 ---@class UnitToken : string @A UnitToken is a string that represents a unit in the WoW client.
----@class CraftingOrderRequestCallback : function @A CraftingOrderRequestCallback is a function that is called when a crafting order request is completed.
----@class CraftingOrderRequestMyOrdersCallback : function @A CraftingOrderRequestMyOrdersCallback is a function that is called when a crafting order request for the player's orders is completed.
+---@class CraftingOrderRequestCallback : callback @A CraftingOrderRequestCallback is a function that is called when a crafting order request is completed.
+---@class CraftingOrderRequestMyOrdersCallback : callback @A CraftingOrderRequestMyOrdersCallback is a function that is called when a crafting order request for the player's orders is completed.
 ---@class FramePoint : string @A FramePoint is a string that represents a point on a frame.
 ---@class HTMLTextType : string @An HTMLTextType is a string that represents the type of HTML text.
 ---@class TBFStyleFlags : number @A TBFStyleFlags is a number that represents the style flags for a text.
 ---@class ScriptRegion : string @A ScriptRegion is a string that represents a region of a script.
 ---@class uiUnit : string @A uiUnit is a string that represents a unit in the WoW client.
----@class SimpleFrame : frame @A SimpleFrame is a frame that is used to create simple UI elements.
+---@class SimpleFrame : table @A SimpleFrame is a frame that is used to create simple UI elements.
 ---@class AuraData : table @An AuraData is a table that contains information about an aura.
 ---@class AnimationDataEnum : number @An AnimationDataEnum is a number that represents an animation data type.
 ---@class GarrisonFollower : table @A GarrisonFollower is a table that contains information about a follower.
@@ -59,7 +63,7 @@
 ---@class CalendarEventID : number @A CalendarEventID is a number that represents a calendar event.
 ---@class EmptiableItemLocation : table @An EmptiableItemLocation is an object that represents the location of an emptiable item.
 ---@class UiMapPoint : table @A UiMapPoint is a table that contains information about a point on a map.
----@class ModelSceneFrame : frame @A ModelSceneFrame is a frame that is used to display a model scene.
+---@class ModelSceneFrame : table @A ModelSceneFrame is a frame that is used to display a model scene.
 ---@class PlayerLocation : table @A PlayerLocation is a table that represents the location of a player.
 ---@class RecruitAcceptanceID : number @A RecruitAcceptanceID is a number that represents a recruit acceptance.
 ---@class ReportInfo : table @A ReportInfo is a table that contains information about a report.
@@ -71,7 +75,6 @@
 ---@class font : table @A font is a table that represents a font.
 ---@class SimpleFont : font @A SimpleFont is a font that is used to create simple UI elements.
 ---@class SimpleFontString : SimpleRegion @A SimpleFontString is a font string that is used to create simple UI elements.
----@class SimpleRegion : frame @A SimpleRegion is a region that is used to create simple UI elements.
 ---@class BlendMode : string @A BlendMode is a string that represents a blend mode.
 ---@class SimpleAnim : table @A SimpleAnim is a table that represents a simple animation.
 ---@class SimplePathAnim : SimpleAnim @A SimplePathAnim is a simple animation that moves an object along a path.
@@ -91,28 +94,28 @@
 ---@class size : number @A size is a number that represents a size.
 ---@class FilterMode : string @A FilterMode is a string that represents a filter mode.
 ---@class ItemSoundType : string @An ItemSoundType is a string that represents an item sound type.
----@class GetTitleIconTextureCallback : function @A GetTitleIconTextureCallback is a function that is called when a title icon texture is requested.
+---@class GetTitleIconTextureCallback : callback @A GetTitleIconTextureCallback is a function that is called when a title icon texture is requested.
 ---@class TooltipComparisonItem : table @A TooltipComparisonItem is a table that contains information about an item for comparison.
 ---@class TooltipData : table @A TooltipData is a table that contains information about a tooltip.
 ---@class WeeklyRewardItemDBID : number @A WeeklyRewardItemDBID is a number that represents a weekly reward item.
 ---@class InventorySlots : table @An InventorySlots is a table that contains information about inventory slots.
 ---@class TransmogLocation : table @A TransmogLocation is a table that contains information about a transmog location.
 ---@class TransmogPendingInfo : table @A TransmogPendingInfo is a table that contains information about a pending transmog.
----@class TimerCallback : function @A TimerCallback is a function that is called when a timer is fired.
+---@class TimerCallback : callback @A TimerCallback is a function that is called when a timer is fired.
 ---@class Timer : table @A Timer is a table that represents a timer.
----@class TickerCallback : function @A TickerCallback is a function that is called when a ticker is fired.
+---@class TickerCallback : callback @A TickerCallback is a function that is called when a ticker is fired.
 ---@class Ticker : table @A Ticker is a table that represents a ticker.
 ---@class WeeklyRewardChestThresholdType : string @A WeeklyRewardChestThresholdType is a string that represents a weekly reward chest threshold type.
 ---@class CachedRewardType : string @A CachedRewardType is a string that represents a cached reward type.
 ---@class stringView : string @A stringView is a string that represents a view of another string.
----@class SimpleWindow : frame @A SimpleWindow is a frame that is used to create simple UI elements.
----@class MacroExecuteLineCallback : function @A MacroExecuteLineCallback is a function that is called when a macro execute line is executed.
----@class PendingPingOffScreenCallback : function @A PendingPingOffScreenCallback is a function that is called when a pending ping is off screen.
----@class PingCooldownStartedCallback : function @A PingCooldownStartedCallback is a function that is called when a ping cooldown starts.
----@class PingPinFrameAddedCallback : function @A PingPinFrameAddedCallback is a function that is called when a ping pin frame is added.
----@class PingPinFrameRemovedCallback : function @A PingPinFrameRemovedCallback is a function that is called when a ping pin frame is removed.
----@class PingPinFrameScreenClampStateUpdatedCallback : function @A PingPinFrameScreenClampStateUpdatedCallback is a function that is called when a ping pin frame screen clamp state is updated.
----@class PingRadialWheelCreatedCallback : function @A PingRadialWheelCreatedCallback is a function that is called when a ping radial wheel is created.
----@class SendMacroPingCallback : function @A SendMacroPingCallback is a function that is called when a macro ping is sent.
----@class TogglePingListenerCallback : function @A TogglePingListenerCallback is a function that is called when a ping listener is toggled.
----@class mouseButton @A mouseButton is a string that represents a mouse button.
+---@class SimpleWindow : table @A SimpleWindow is a frame that is used to create simple UI elements.
+---@class MacroExecuteLineCallback : callback @A MacroExecuteLineCallback is a function that is called when a macro execute line is executed.
+---@class PendingPingOffScreenCallback : callback @A PendingPingOffScreenCallback is a function that is called when a pending ping is off screen.
+---@class PingCooldownStartedCallback : callback @A PingCooldownStartedCallback is a function that is called when a ping cooldown starts.
+---@class PingPinFrameAddedCallback : callback @A PingPinFrameAddedCallback is a function that is called when a ping pin frame is added.
+---@class PingPinFrameRemovedCallback : callback @A PingPinFrameRemovedCallback is a function that is called when a ping pin frame is removed.
+---@class PingPinFrameScreenClampStateUpdatedCallback : callback @A PingPinFrameScreenClampStateUpdatedCallback is a function that is called when a ping pin frame screen clamp state is updated.
+---@class PingRadialWheelCreatedCallback : callback @A PingRadialWheelCreatedCallback is a function that is called when a ping radial wheel is created.
+---@class SendMacroPingCallback : callback @A SendMacroPingCallback is a function that is called when a macro ping is sent.
+---@class TogglePingListenerCallback : callback @A TogglePingListenerCallback is a function that is called when a ping listener is toggled.
+---@class mouseButton : string @A mouseButton is a string that represents a mouse button.
