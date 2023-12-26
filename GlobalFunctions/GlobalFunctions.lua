@@ -1149,7 +1149,7 @@ end
 function CheckInbox()
 end
 
---- Returns true if the player is in range to perform a specific interaction with the unit.
+--- #nocombat - This cannot be called while in combat.Restricted since patch 10.2.0.
 --- [https://warcraft.wiki.gg/wiki/API_CheckInteractDistance]
 --- @param unit string @ UnitId - The unit to compare distance to.
 --- @param distIndex number @ A value from 1 to 5:
@@ -2733,16 +2733,16 @@ end
 
 --- Returns the total time used for an addon.
 --- [https://warcraft.wiki.gg/wiki/API_GetAddOnCPUUsage]
---- @param index_or_name unknown
+--- @param name string @ |number - The name of the addon to be queried, or an index from 1 to GetNumAddOns. The state of Blizzard addons can only be queried by name.
 --- @return number @ time
-function GetAddOnCPUUsage(index_or_name)
+function GetAddOnCPUUsage(name)
 end
 
 --- Returns the memory used for an addon.
 --- [https://warcraft.wiki.gg/wiki/API_GetAddOnMemoryUsage]
---- @param index_or_name unknown
+--- @param name string @ |number - The name of the addon to be queried, or an index from 1 to GetNumAddOns. The state of Blizzard addons can only be queried by name.
 --- @return number @ mem
-function GetAddOnMemoryUsage(index_or_name)
+function GetAddOnMemoryUsage(name)
 end
 
 --- Warcraft Wiki does not have a  page with this exact name.
@@ -3179,9 +3179,9 @@ end
 
 --- Returns info for a chat channel.
 --- [https://warcraft.wiki.gg/wiki/API_GetChannelName]
---- @param id_or_name unknown
+--- @param name string @ |number - name of the channel to query, e.g. Trade - City, or a channel ID to query, e.g. 1 for the chat channel currently addressable using /1.
 --- @return number, string, number, boolean @ id, name, instanceID, isCommunitiesChannel
-function GetChannelName(id_or_name)
+function GetChannelName(name)
 end
 
 --- Returns the index for a chat type.
@@ -8764,7 +8764,7 @@ end
 function IsItemAction()
 end
 
---- Returns whether the item is in usable range of the unit.
+--- #nocombat - This cannot be called while in combat.Restricted since patch 10.2.0.
 --- [https://warcraft.wiki.gg/wiki/API_IsItemInRange]
 --- @param item number @ |string : Item ID, Link or Name - If using an item name, requires the item to be in your inventory. Item IDs and links don't have this requirement.
 --- @param unit string @ ? : UnitId - Defaults to target
@@ -11243,7 +11243,7 @@ end
 
 --- Sets the current cursor texture.
 --- [https://warcraft.wiki.gg/wiki/API_SetCursor]
---- @param cursor string @ cursor to switch to; either a built-in cursor identifier (like ATTACK_CURSOR), path to a cursor texture (e.g. Interface/Cursor/Taxi), or nil to reset to a default cursor.
+--- @param cursor string @ |nil - cursor to switch to; either a built-in cursor identifier (like ATTACK_CURSOR), path to a cursor texture (e.g. Interface/Cursor/Taxi), or explicitly nil to reset to a default cursor.
 --- @return boolean @ changed
 function SetCursor(cursor)
 end
@@ -11641,7 +11641,7 @@ end
 --- Applies a circular mask to a texture, making it resemble a portrait.
 --- [https://warcraft.wiki.gg/wiki/API_SetPortraitToTexture]
 --- @param texture unknown @ Texture🔗
---- @param path string
+--- @param path string @ |number : fileID
 --- @return void
 function SetPortraitToTexture(texture, path)
 end
@@ -13763,9 +13763,9 @@ end
 
 --- Unmutes a sound file.
 --- [https://warcraft.wiki.gg/wiki/API_UnmuteSoundFile]
---- @param soundFile_or_fileDataID unknown
+--- @param sound number @ |string - FileID of a game sound or file path to an addon sound.
 --- @return void
-function UnmuteSoundFile(soundFile_or_fileDataID)
+function UnmuteSoundFile(sound)
 end
 
 --- Warcraft Wiki does not have a  page with this exact name.
