@@ -2,6 +2,18 @@
 function ClearColorWheelTexture() end
 
 
+---@return number alpha
+function GetColorAlpha() end
+
+
+---@return SimpleTexture texture
+function GetColorAlphaTexture() end
+
+
+---@return SimpleTexture texture
+function GetColorAlphaThumbTexture() end
+
+
 ---@return number, number, number hsvX, hsvY, hsvZ
 function GetColorHSV() end
 
@@ -24,6 +36,15 @@ function GetColorWheelTexture() end
 
 ---@return SimpleTexture texture
 function GetColorWheelThumbTexture() end
+
+---@param alpha number 
+function SetColorAlpha(alpha) end
+
+---@param texture SimpleTexture 
+function SetColorAlphaTexture(texture) end
+
+---@param texture TextureAsset 
+function SetColorAlphaThumbTexture(texture) end
 
 ---@param hsvX number 
 ---@param hsvY number 

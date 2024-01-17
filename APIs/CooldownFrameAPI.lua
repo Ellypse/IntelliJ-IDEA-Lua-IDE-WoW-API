@@ -49,7 +49,7 @@ function Pause() end
 
 function Resume() end
 
----@param texture FileAsset 
+---@param texture string 
 ---@param colorR number 
 ---@param colorG number 
 ---@param colorB number 
@@ -73,7 +73,7 @@ function SetCooldownUNIX(start, duration, modRate) end
 ---@param seconds number 
 function SetCountdownAbbrevThreshold(seconds) end
 
----@param fontName cstring 
+---@param fontName string 
 function SetCountdownFont(fontName) end
 
 ---@param drawBling boolean 
@@ -88,7 +88,7 @@ function SetDrawSwipe(drawSwipe) end
 ---@param scale number 
 function SetEdgeScale(scale) end
 
----@param texture FileAsset 
+---@param texture string 
 ---@param colorR number 
 ---@param colorG number 
 ---@param colorB number 
@@ -107,18 +107,18 @@ function SetRotation(rotationRadians) end
 ---@param colorR number 
 ---@param colorG number 
 ---@param colorB number 
----@param a SingleColorValue @ [OPTIONAL]
+---@param a number @ [OPTIONAL]
 function SetSwipeColor(colorR, colorG, colorB, a) end
 
----@param texture FileAsset 
+---@param texture string 
 ---@param colorR number 
 ---@param colorG number 
 ---@param colorB number 
 ---@param colorA number 
 function SetSwipeTexture(texture, colorR, colorG, colorB, colorA) end
 
----@param low vector2 
----@param high vector2 
+---@param low table 
+---@param high table 
 function SetTexCoordRange(low, high) end
 
 ---@param useCircularEdge boolean 

@@ -1,6 +1,8 @@
 ---@class C_PetJournal @PetJournalInfo
 C_PetJournal = {}
 
+function C_PetJournal.ClearHoveredBattlePet() end
+
 ---@param speciesID number 
 ---@param index luaIndex 
 ---@return number|nil displayID
@@ -54,6 +56,9 @@ function C_PetJournal.PetIsSummonable(battlePetGUID) end
 function C_PetJournal.PetUsesRandomDisplay(speciesID) end
 
 function C_PetJournal.SetDefaultFilters() end
+
+---@param battlePetGUID WOWGUID 
+function C_PetJournal.SetHoveredBattlePet(battlePetGUID) end
 
 ---@param battlePetGUID WOWGUID 
 function C_PetJournal.SpellTargetBattlePet(battlePetGUID) end

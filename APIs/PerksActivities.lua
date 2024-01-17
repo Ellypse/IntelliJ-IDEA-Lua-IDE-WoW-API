@@ -48,6 +48,12 @@ PerksActivitiesPending = {}
 ---@field trackedIDs number 
 PerksActivitiesTracked = {}
 
+---@class PerksActivityCondition
+---@field isMet boolean 
+---@field text cstring 
+---@field uiPriority number 
+PerksActivityCondition = {}
+
 ---@class PerksActivityCriteria
 ---@field criteriaID number 
 ---@field requiredValue number 
@@ -59,9 +65,13 @@ PerksActivityCriteria = {}
 ---@field description string 
 ---@field thresholdContributionAmount number 
 ---@field completed boolean 
+---@field inProgress boolean 
 ---@field tracked boolean 
 ---@field supersedes number 
 ---@field uiPriority number 
+---@field areAllConditionsMet boolean 
+---@field conditions PerksActivityCondition 
+---@field eventName cstring|nil 
 ---@field eventStartTime time_t|nil 
 ---@field eventEndTime time_t|nil 
 ---@field requirementsList PerksActivityRequirement 

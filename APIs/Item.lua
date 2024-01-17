@@ -117,6 +117,15 @@ function C_Item.GetItemQuality(itemLocation) end
 ---@return ItemQuality|nil itemQuality
 function C_Item.GetItemQualityByID(itemInfo) end
 
+---@param itemLink1 cstring 
+---@param itemLink2 cstring 
+---@return LuaValueVariant statTable
+function C_Item.GetItemStatDelta(itemLink1, itemLink2) end
+
+---@param itemLink cstring 
+---@return LuaValueVariant statTable
+function C_Item.GetItemStats(itemLink) end
+
 ---@param itemInfo ItemInfo 
 ---@return boolean, cstring|nil, number|nil, number|nil isUnique, limitCategoryName, limitCategoryCount, limitCategoryID
 function C_Item.GetItemUniquenessByID(itemInfo) end
@@ -124,6 +133,11 @@ function C_Item.GetItemUniquenessByID(itemInfo) end
 ---@param itemInfo ItemInfo 
 ---@return cstring, fileID, number, number, number name, icon, quantity, maxQuantity, totalEarned
 function C_Item.GetLimitedCurrencyItemInfo(itemInfo) end
+
+---@param specID number 
+---@param itemID number 
+---@return number itemSetSpellIDs
+function C_Item.GetSetBonusesForSpecializationByItemID(specID, itemID) end
 
 ---@param itemLocation ItemLocation 
 ---@return number stackCount

@@ -174,6 +174,9 @@ function C_VoiceChat.IsSpeakForMeActive() end
 ---@return boolean isAllowed
 function C_VoiceChat.IsSpeakForMeAllowed() end
 
+---@return boolean isTranscribing
+function C_VoiceChat.IsTranscribing() end
+
 ---@return boolean isAllowed
 function C_VoiceChat.IsTranscriptionAllowed() end
 

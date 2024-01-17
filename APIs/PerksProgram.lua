@@ -94,6 +94,8 @@ ModelSceneCameraData = {}
 ---@class PerksProgramItemDisplayInfo
 ---@field overrideModelSceneID number|nil 
 ---@field creatureDisplayInfoID number|nil 
+---@field mainHandItemModifiedAppearanceID number|nil 
+---@field offHandItemModifiedAppearanceID number|nil 
 PerksProgramItemDisplayInfo = {}
 
 ---@class PerksProgramPendingChestRewards
@@ -118,6 +120,7 @@ PerksVendorCategoryInfo = {}
 ---@field timeRemaining time_t 
 ---@field purchased boolean 
 ---@field refundable boolean 
+---@field subItemsLoaded boolean 
 ---@field isPurchasePending boolean 
 ---@field price number 
 ---@field perksVendorItemID number 
@@ -127,6 +130,7 @@ PerksVendorCategoryInfo = {}
 ---@field speciesID number 
 ---@field transmogSetID number 
 ---@field itemModifiedAppearanceID number 
+---@field subItems PerksVendorSubItemInfo 
 ---@field uiGroupInfo PerksVendorItemUIGroupInfo|nil 
 PerksVendorItemInfo = {}
 
@@ -135,4 +139,12 @@ PerksVendorItemInfo = {}
 ---@field name cstring 
 ---@field priority number 
 PerksVendorItemUIGroupInfo = {}
+
+---@class PerksVendorSubItemInfo
+---@field name string 
+---@field itemID number 
+---@field itemAppearanceID number 
+---@field invType string 
+---@field quality ItemQuality 
+PerksVendorSubItemInfo = {}
 

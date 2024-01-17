@@ -230,6 +230,17 @@ StatusBarValueTextType.TimeShowOneLevelOnly = 4
 StatusBarValueTextType.ValueOverMax = 5
 StatusBarValueTextType.ValueOverMaxNormalized = 6
 
+---@class TugOfWarMarkerArrowShownState
+TugOfWarMarkerArrowShownState = {}
+TugOfWarMarkerArrowShownState.Never = 0
+TugOfWarMarkerArrowShownState.Always = 1
+TugOfWarMarkerArrowShownState.FlashOnMove = 2
+
+---@class TugOfWarStyleValue
+TugOfWarStyleValue = {}
+TugOfWarStyleValue.DefaultYellow = 0
+TugOfWarStyleValue.ArchaeologyBrown = 1
+
 ---@class UIWidgetBlendModeType
 UIWidgetBlendModeType = {}
 UIWidgetBlendModeType.Opaque = 0
@@ -962,6 +973,8 @@ TextureWithAnimationVisualizationInfo = {}
 ---@field glowAnimType WidgetGlowAnimType 
 ---@field tooltip string 
 ---@field tooltipLoc UIWidgetTooltipLocation 
+---@field neutralFillStyle TugOfWarStyleValue 
+---@field markerArrowShownState TugOfWarMarkerArrowShownState 
 ---@field widgetSizeSetting number 
 ---@field textureKit textureKit 
 ---@field frameTextureKit textureKit 
@@ -1010,6 +1023,10 @@ UIWidgetInfo = {}
 ---@field iconSizeType WidgetIconSizeType 
 ---@field infoTextEnabledState WidgetEnabledState 
 ---@field showAsEarned boolean 
+---@field itemNameTextFontType UIWidgetFontType 
+---@field itemNameTextSizeType UIWidgetTextSizeType 
+---@field infoTextFontType UIWidgetFontType 
+---@field infoTextSizeType UIWidgetTextSizeType 
 UIWidgetItemInfo = {}
 
 ---@class UIWidgetSetInfo

@@ -52,6 +52,10 @@ EventToastEventType.TreasureItem = 22
 EventToastEventType.WeeklyRewardUnlock = 23
 EventToastEventType.WeeklyRewardUpgrade = 24
 
+---@class EventToastFlags
+EventToastFlags = {}
+EventToastFlags.DisableRightClickDismiss = 1
+
 ---@class EventToastInfo
 ---@field eventToastID number 
 ---@field title string 
@@ -77,5 +81,6 @@ EventToastEventType.WeeklyRewardUpgrade = 24
 ---@field showSoundKitID number|nil 
 ---@field hideSoundKitID number|nil 
 ---@field colorTint colorRGB|nil 
+---@field flags number 
 EventToastInfo = {}
 

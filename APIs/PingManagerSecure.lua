@@ -8,12 +8,6 @@ function C_PingSecure.CreateFrame() end
 ---@param error cstring 
 function C_PingSecure.DisplayError(error) end
 
----@return PingCooldownInfo cooldownInfo
-function C_PingSecure.GetCooldownInfo() end
-
----@return PingTypeInfo pingTypes
-function C_PingSecure.GetDefaultPingOptions() end
-
 ---@param mousePosX number 
 ---@param mousePosY number 
 ---@return ScriptRegion frame
@@ -26,10 +20,6 @@ function C_PingSecure.GetTargetWorldPing(mousePosX, mousePosY) end
 
 ---@return ContextualWorldPingResult result
 function C_PingSecure.GetTargetWorldPingAndSend() end
-
----@param type PingSubjectType 
----@return textureKit uiTextureKitID
-function C_PingSecure.GetTextureKitForType(type) end
 
 ---@param type PingSubjectType 
 ---@param target WOWGUID @ [OPTIONAL]

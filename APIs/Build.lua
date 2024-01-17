@@ -4,6 +4,9 @@ function GetBuildInfo() end
 ---@return boolean is64Bit
 function Is64BitClient() end
 
+---@return boolean isDebugBuild
+function IsDebugBuild() end
+
 ---@return boolean isLinux
 function IsLinuxClient() end
 

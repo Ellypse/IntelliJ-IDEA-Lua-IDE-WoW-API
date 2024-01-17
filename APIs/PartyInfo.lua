@@ -23,7 +23,7 @@ function C_PartyInfo.ConfirmInviteTravelPass(targetName, targetGUID) end
 function C_PartyInfo.ConfirmInviteUnit(targetName) end
 
 --- Immediately leave the party with no regard for potentially destructive actions
----@param category number @ [OPTIONAL]
+---@param category luaIndex @ [OPTIONAL]
 function C_PartyInfo.ConfirmLeaveParty(category) end
 
 --- Immediately request an invite into the target party, this is the confirmation function to call after RequestInviteFromUnit, or if you would like to skip the confirmation process.
@@ -56,7 +56,7 @@ function C_PartyInfo.GetInviteReferralInfo(inviteGUID) end
 ---@return number, cstring minItemLevel, playerNameWithLowestItemLevel
 function C_PartyInfo.GetMinItemLevel(avgItemLevelCategory) end
 
----@param category number @ If not provided, the active party is used [OPTIONAL]
+---@param category luaIndex @ If not provided, the active party is used [OPTIONAL]
 ---@return number minLevel
 function C_PartyInfo.GetMinLevel(category) end
 
@@ -67,11 +67,11 @@ function C_PartyInfo.GetRestrictPings() end
 ---@param targetName cstring 
 function C_PartyInfo.InviteUnit(targetName) end
 
----@param category number @ If not provided, the active party is used [OPTIONAL]
+---@param category luaIndex @ If not provided, the active party is used [OPTIONAL]
 ---@return boolean isCrossFactionParty
 function C_PartyInfo.IsCrossFactionParty(category) end
 
----@param category number @ If not provided, the active party is used [OPTIONAL]
+---@param category luaIndex @ If not provided, the active party is used [OPTIONAL]
 ---@return boolean isFull
 function C_PartyInfo.IsPartyFull(category) end
 
@@ -79,7 +79,7 @@ function C_PartyInfo.IsPartyFull(category) end
 function C_PartyInfo.IsPartyInJailersTower() end
 
 --- Usually this will leave the party immediately. In some cases (e.g. PartySync) the user will be prompted to confirm leaving the party, because it's potentially destructive
----@param category number @ [OPTIONAL]
+---@param category luaIndex @ [OPTIONAL]
 function C_PartyInfo.LeaveParty(category) end
 
 --- Attempt to request an invite into the target party, requires confirmation in some cases (e.g. there is a party sync in progress).

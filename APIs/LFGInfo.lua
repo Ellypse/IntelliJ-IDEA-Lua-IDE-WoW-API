@@ -39,8 +39,15 @@ function C_LFGInfo.HideNameFromUI(dungeonID) end
 ---@return boolean enabled
 function C_LFGInfo.IsGroupFinderEnabled() end
 
+---@return boolean result
+function C_LFGInfo.IsInLFGFollowerDungeon() end
+
 ---@return boolean enabled
 function C_LFGInfo.IsLFDEnabled() end
+
+---@param dungeonID number 
+---@return boolean result
+function C_LFGInfo.IsLFGFollowerDungeon(dungeonID) end
 
 ---@return boolean enabled
 function C_LFGInfo.IsLFREnabled() end

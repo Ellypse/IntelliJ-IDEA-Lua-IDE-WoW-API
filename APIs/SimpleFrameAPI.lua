@@ -133,6 +133,10 @@ function GetNumRegions() end
 function GetPropagateKeyboardInput() end
 
 
+---@return number frameLevel
+function GetRaisedFrameLevel() end
+
+
 ---@return ScriptObject scriptObject
 function GetRegions() end
 

@@ -28,3 +28,8 @@ Enum.PlayerCurrencyFlagsDbFlags = {
 	InBackpack = 4,
 	UnusedInUI = 8,
 }
+
+--- This is for LFGConstantsDocumentation.lua
+Enum.LFGRoleMeta = {
+	NumValues = 3
+}

@@ -60,7 +60,7 @@ AccountStateFlags.BpayAddLicenseObjectsLoaded = 8192
 AccountStateFlags.ItemCollectionsLoaded = 16384
 AccountStateFlags.AuctionableTokensLoaded = 32768
 AccountStateFlags.ConsumableTokensLoaded = 65536
-AccountStateFlags.PerkTablesLoaded = 131072
+AccountStateFlags.PerksPastRewardsLoaded = 131072
 AccountStateFlags.VasTransactionsLoaded = 262144
 AccountStateFlags.BpayProductitemObjectsLoaded = 524288
 AccountStateFlags.TrialBoostHistoryLoaded = 1048576
@@ -77,7 +77,11 @@ AccountStateFlags.AccountNotificationsLoaded = 1073741824
 AccountStateFlags.PerksPendingPurchaseLoaded = 2147483648
 AccountStateFlags.AccountWowlabsLoaded = 0
 AccountStateFlags.AccountUpgradeComplete = 0
+AccountStateFlags.PerksHeldItemLoaded = 0
+AccountStateFlags.PerksPendingRewardsLoaded = 0
 AccountStateFlags.WoWTokenPurchaseLoaded = 0
+AccountStateFlags.PerksRefundsLoaded = 0
+AccountStateFlags.BitVectorsLoaded = 0
 
 ---@class DisableAccountProfilesFlags
 DisableAccountProfilesFlags = {}
@@ -1293,7 +1297,7 @@ CurrencySource.PlayerTraitRefund = 60
 CurrencySource.AccountHwmUpdate = 61
 CurrencySource.ConvertItemsToCurrencyAndReputation = 62
 CurrencySource.PhBuffer_63 = 63
-CurrencySource.PhBuffer_64 = 64
+CurrencySource.SpellSkipLinkedCurrency = 64
 CurrencySource.Last = 65
 
 ---@class CursorStyle
@@ -2693,9 +2697,20 @@ LFGListFilter.NotRecommended = 2
 LFGListFilter.PvE = 4
 LFGListFilter.PvP = 8
 
+---@class LFGRole
+LFGRole = {}
+LFGRole.Tank = 0
+LFGRole.Healer = 1
+LFGRole.Damage = 2
+
 ---@class GroupFinderConstants
 GroupFinderConstants = {}
 GroupFinderConstants.MAX_GROUP_FINDER_ACTIVITIES = 41
+
+---@class LFG_ROLEConstants
+LFG_ROLEConstants = {}
+LFG_ROLEConstants.LFG_ROLE_NO_ROLE = -1
+LFG_ROLEConstants.LFG_ROLE_ANY = 3
 
 ---@class LootSlotType
 LootSlotType = {}
@@ -2741,7 +2756,7 @@ UIMapFlag.NoHighlightTexture = 32
 UIMapFlag.ShowTaskObjectives = 64
 UIMapFlag.NoWorldPositions = 128
 UIMapFlag.HideArchaeologyDigs = 256
-UIMapFlag.Deprecated = 512
+UIMapFlag.DoNotTranslateBranches = 512
 UIMapFlag.HideIcons = 1024
 UIMapFlag.HideVignettes = 2048
 UIMapFlag.ForceAllOverlayExplored = 4096
@@ -2824,6 +2839,10 @@ AvgItemLevelCategories.EquippedEffective = 2
 AvgItemLevelCategories.PvP = 3
 AvgItemLevelCategories.PvPWeighted = 4
 AvgItemLevelCategories.EquippedEffectiveWeighted = 5
+
+---@class PartyPoseFlags
+PartyPoseFlags = {}
+PartyPoseFlags.HideLeaveInstanceButton = 1
 
 ---@class PerksVendorCategoryType
 PerksVendorCategoryType = {}
@@ -3187,6 +3206,48 @@ PlayerMentorshipStatus = {}
 PlayerMentorshipStatus.None = 0
 PlayerMentorshipStatus.Newcomer = 1
 PlayerMentorshipStatus.Mentor = 2
+
+---@class PowerType
+PowerType = {}
+PowerType.Mana = 0
+PowerType.Rage = 1
+PowerType.Focus = 2
+PowerType.Energy = 3
+PowerType.ComboPoints = 4
+PowerType.Runes = 5
+PowerType.RunicPower = 6
+PowerType.SoulShards = 7
+PowerType.LunarPower = 8
+PowerType.HolyPower = 9
+PowerType.Alternate = 10
+PowerType.Maelstrom = 11
+PowerType.Chi = 12
+PowerType.Insanity = 13
+PowerType.Obsolete = 14
+PowerType.Obsolete2 = 15
+PowerType.ArcaneCharges = 16
+PowerType.Fury = 17
+PowerType.Pain = 18
+PowerType.Essence = 19
+PowerType.RuneBlood = 20
+PowerType.RuneFrost = 21
+PowerType.RuneUnholy = 22
+PowerType.AlternateQuest = 23
+PowerType.AlternateEncounter = 24
+PowerType.AlternateMount = 25
+
+---@class PowerTypeSlot
+PowerTypeSlot = {}
+PowerTypeSlot.Slot_0 = 0
+PowerTypeSlot.Slot_1 = 1
+PowerTypeSlot.Slot_2 = 2
+PowerTypeSlot.Slot_3 = 3
+PowerTypeSlot.Slot_4 = 4
+PowerTypeSlot.Slot_5 = 5
+PowerTypeSlot.Slot_6 = 6
+PowerTypeSlot.Slot_7 = 7
+PowerTypeSlot.Slot_8 = 8
+PowerTypeSlot.Slot_9 = 9
 
 ---@class CraftingOrderDuration
 CraftingOrderDuration = {}

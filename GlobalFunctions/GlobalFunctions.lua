@@ -668,7 +668,7 @@ end
 function CanComplainInboxItem()
 end
 
---- Returns whether the player can Dual wield weapons.
+--- Returns whether the player can [Dual Wield] weapons.
 --- [https://warcraft.wiki.gg/wiki/API_CanDualWield]
 --- @return boolean @ canDualWield
 function CanDualWield()
@@ -2333,14 +2333,6 @@ end
 --- @param rowIndex number @ The row index of the faction to toggle the At War status for. The row must have a true canToggleAtWar value (From GetFactionInfo)
 --- @return void
 function FactionToggleAtWar(rowIndex)
-end
-
---- Fills a table with localized male or female class names.
---- [https://warcraft.wiki.gg/wiki/API_FillLocalizedClassList]
---- @param tbl unknown
---- @param isFemale boolean @ ? - If the table should be filled with female class names.
---- @return unknown @ tbl
-function FillLocalizedClassList(tbl, isFemale)
 end
 
 --- Needs summary.
@@ -4380,20 +4372,6 @@ end
 --- @param itemID_or_itemString_or_itemName_or_itemLink unknown
 --- @return string, number @ spellName, spellID
 function GetItemSpell(itemID_or_itemString_or_itemName_or_itemLink)
-end
-
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetItemStatDelta]
---- @return void
-function GetItemStatDelta()
-end
-
---- Returns a table of stats for an item.
---- [https://warcraft.wiki.gg/wiki/API_GetItemStats]
---- @param itemLink unknown
---- @param statTable unknown
---- @return unknown @ stats
-function GetItemStats(itemLink, statTable)
 end
 
 --- Returns the name of the item subtype.
@@ -6689,13 +6667,13 @@ end
 function GetScreenDPIScale()
 end
 
---- Returns the height of the window in pixels, affected by UI scale.
+--- Returns the height of the window measured at UIParent scale (effectively the same as UIParent:GetHeight().
 --- [https://warcraft.wiki.gg/wiki/API_GetScreenHeight]
 --- @return number @ screenHeight
 function GetScreenHeight()
 end
 
---- Returns the width of the window in pixels, affected by UI scale.
+--- Returns the width of the window measured at UIParent scale (effectively the same as UIParent:GetWidth().
 --- [https://warcraft.wiki.gg/wiki/API_GetScreenWidth]
 --- @return number @ screenWidth
 function GetScreenWidth()
@@ -6779,12 +6757,6 @@ end
 --- [https://warcraft.wiki.gg/wiki/API_GetSessionTime]
 --- @return number @ sessionTime
 function GetSessionTime()
-end
-
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSetBonusesForSpecializationByItemID]
---- @return void
-function GetSetBonusesForSpecializationByItemID()
 end
 
 --- Returns the zero-based index of current form/stance.
@@ -6937,6 +6909,18 @@ end
 --- @param specID number @ Specialization ID, as returned by GetSpecializationInfo or GetInspectSpecialization.
 --- @return string @ roleToken
 function GetSpecializationRoleByID(specID)
+end
+
+--- Warcraft Wiki does not have a  page with this exact name.
+--- [https://warcraft.wiki.gg/wiki/API_GetSpecializationRoleEnum]
+--- @return void
+function GetSpecializationRoleEnum()
+end
+
+--- Warcraft Wiki does not have a  page with this exact name.
+--- [https://warcraft.wiki.gg/wiki/API_GetSpecializationRoleEnumByID]
+--- @return void
+function GetSpecializationRoleEnumByID()
 end
 
 --- Returns the spells learned as part of the specified specialization.
@@ -7350,12 +7334,6 @@ end
 --- [https://warcraft.wiki.gg/wiki/API_GetTimePreciseSec]
 --- @return number @ seconds
 function GetTimePreciseSec()
-end
-
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTimeToWellRested]
---- @return void
-function GetTimeToWellRested()
 end
 
 --- Returns the name of a player title.
@@ -8266,12 +8244,6 @@ function IsArenaSkirmish()
 end
 
 --- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsArenaTeamCaptain]
---- @return void
-function IsArenaTeamCaptain()
-end
-
---- Warcraft Wiki does not have a  page with this exact name.
 --- [https://warcraft.wiki.gg/wiki/API_IsArtifactCompletionHistoryAvailable]
 --- @return void
 function IsArtifactCompletionHistoryAvailable()
@@ -8663,12 +8635,6 @@ end
 --- [https://warcraft.wiki.gg/wiki/API_IsInActiveWorldPVP]
 --- @return void
 function IsInActiveWorldPVP()
-end
-
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsInArenaTeam]
---- @return void
-function IsInArenaTeam()
 end
 
 --- Warcraft Wiki does not have a  page with this exact name.
@@ -9662,6 +9628,13 @@ end
 function LoadURLIndex(index, param)
 end
 
+--- Returns a table with localized class names.
+--- [https://warcraft.wiki.gg/wiki/API_LocalizedClassList]
+--- @param isFemale boolean @ ? = false
+--- @return table @ result
+function LocalizedClassList(isFemale)
+end
+
 --- Gets or sets whether logging chat to Logs\WoWChatLog.txt is enabled.
 --- [https://warcraft.wiki.gg/wiki/API_LoggingChat]
 --- @param newState boolean @ toggles chat logging
@@ -10320,11 +10293,11 @@ end
 function PutItemInBackpack()
 end
 
---- Places the item on the cursor into the specified bag slot.
+--- Places the item on the cursor into the specified bag.
 --- [https://warcraft.wiki.gg/wiki/API_PutItemInBag]
---- @param slotId number @ Inventory slot id containing the bag in which you wish to put the item. Values 20 to 23 correspond to the player's bag slots, right-to-left from the first bag after the backpack.
+--- @param iventoryID unknown
 --- @return void
-function PutItemInBag(slotId)
+function PutItemInBag(iventoryID)
 end
 
 --- Warcraft Wiki does not have a  page with this exact name.
@@ -11389,10 +11362,11 @@ end
 function SetGuildTradeSkillItemNameFilter()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
+--- Allows nameplates to be shown even while the UI is hidden.
 --- [https://warcraft.wiki.gg/wiki/API_SetInWorldUIVisibility]
+--- @param visible boolean
 --- @return void
-function SetInWorldUIVisibility()
+function SetInWorldUIVisibility(visible)
 end
 
 --- Warcraft Wiki does not have a  page with this exact name.
@@ -12700,33 +12674,6 @@ end
 function UnitAttackSpeed(unit)
 end
 
---- Returns the buffs/debuffs for the unit.
---- [https://warcraft.wiki.gg/wiki/API_UnitAura]
---- @param unit string @ UnitId
---- @param index number @ Index of an aura to query.
---- @param filter string @ ? - A list of filters, separated by pipe chars or spaces. Otherwise defaults to HELPFUL.
---- @return void
-function UnitAura(unit, index, filter)
-end
-
---- Needs summary.
---- [https://warcraft.wiki.gg/wiki/API_UnitAuraBySlot]
---- @param unit string @ UnitId
---- @param slot number @ Aura slot from UnitAuraSlots()
---- @return unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown @ nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll, timeMod, ...
-function UnitAuraBySlot(unit, slot)
-end
-
---- Returns an ordered list of auras used with UnitAuraBySlot()
---- [https://warcraft.wiki.gg/wiki/API_UnitAuraSlots]
---- @param unit string @ UnitId
---- @param filter string @ Similar to UnitAura; however, either HELPFUL or HARMFUL is required.
---- @param maxSlots number @ ? - The maximum number of slots to return
---- @param continuationToken number @ ? - The number of slots to skip.
---- @return number, number @ continuationToken, ...
-function UnitAuraSlots(unit, filter, maxSlots, continuationToken)
-end
-
 --- Returns the level of a wild battle pet or tamer battle pet.
 --- [https://warcraft.wiki.gg/wiki/API_UnitBattlePetLevel]
 --- @param unit string @ UnitId
@@ -12746,15 +12693,6 @@ end
 --- @param unit string @ UnitToken
 --- @return number @ result
 function UnitBattlePetType(unit)
-end
-
---- Returns the buffs/debuffs for the unit.
---- [https://warcraft.wiki.gg/wiki/API_UnitBuff]
---- @param unit string @ UnitId
---- @param index number @ Index of an aura to query.
---- @param filter string @ ? - A list of filters, separated by pipe chars or spaces. Otherwise defaults to HELPFUL.
---- @return void
-function UnitBuff(unit, index, filter)
 end
 
 --- Indicates whether the first unit can assist the second unit.
@@ -12858,15 +12796,6 @@ end
 function UnitDamage(unit)
 end
 
---- Returns the buffs/debuffs for the unit.
---- [https://warcraft.wiki.gg/wiki/API_UnitDebuff]
---- @param unit string @ UnitId
---- @param index number @ Index of an aura to query.
---- @param filter string @ ? - A list of filters, separated by pipe chars or spaces. Otherwise defaults to HELPFUL.
---- @return void
-function UnitDebuff(unit, index, filter)
-end
-
 --- Returns detailed info for the threat status of one unit against another.
 --- [https://warcraft.wiki.gg/wiki/API_UnitDetailedThreatSituation]
 --- @param unit string @ UnitId - The player or pet whose threat to request.
@@ -12951,6 +12880,12 @@ end
 --- @param unit string @ UnitId
 --- @return string @ role
 function UnitGroupRolesAssigned(unit)
+end
+
+--- Warcraft Wiki does not have a  page with this exact name.
+--- [https://warcraft.wiki.gg/wiki/API_UnitGroupRolesAssignedEnum]
+--- @return void
+function UnitGroupRolesAssignedEnum()
 end
 
 --- Warcraft Wiki does not have a  page with this exact name.
@@ -13058,6 +12993,12 @@ end
 --- @param unit string @ UnitId
 --- @return boolean @ inParty
 function UnitInParty(unit)
+end
+
+--- Warcraft Wiki does not have a  page with this exact name.
+--- [https://warcraft.wiki.gg/wiki/API_UnitInPartyIsAI]
+--- @return void
+function UnitInPartyIsAI()
 end
 
 --- Returns true if the specified unit is in the primary phase of the party.
@@ -13605,6 +13546,12 @@ end
 --- @param role string @ [TANK, HEALER, DAMAGER, NONE]
 --- @return void
 function UnitSetRole(unit, role)
+end
+
+--- Warcraft Wiki does not have a  page with this exact name.
+--- [https://warcraft.wiki.gg/wiki/API_UnitSetRoleEnum]
+--- @return void
+function UnitSetRoleEnum()
 end
 
 --- Returns the gender of the unit.
