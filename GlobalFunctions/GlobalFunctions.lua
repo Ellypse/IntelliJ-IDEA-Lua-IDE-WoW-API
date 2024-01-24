@@ -82,15 +82,11 @@ end
 function AcknowledgeAutoAcceptQuest()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_AcknowledgeSurvey]
---- @return void
+--- No documentation available.
 function AcknowledgeSurvey()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ActionBindsItem]
---- @return void
+--- No documentation available.
 function ActionBindsItem()
 end
 
@@ -139,15 +135,11 @@ end
 function Ambiguate(fullName, context)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_AntiAliasingSupported]
---- @return void
+--- No documentation available.
 function AntiAliasingSupported()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ArchaeologyGetIconInfo]
---- @return void
+--- No documentation available.
 function ArchaeologyGetIconInfo()
 end
 
@@ -158,9 +150,7 @@ end
 function ArchaeologyMapUpdateAll(uiMapID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ArcheologyGetVisibleBlobID]
---- @return void
+--- No documentation available.
 function ArcheologyGetVisibleBlobID()
 end
 
@@ -170,15 +160,11 @@ end
 function AreAccountAchievementsHidden()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_AreDangerousScriptsAllowed]
---- @return void
+--- No documentation available.
 function AreDangerousScriptsAllowed()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_AreTalentsLocked]
---- @return void
+--- No documentation available.
 function AreTalentsLocked()
 end
 
@@ -195,9 +181,7 @@ end
 function AssistUnit(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_AttachGlyphToSpell]
---- @return void
+--- No documentation available.
 function AttachGlyphToSpell()
 end
 
@@ -207,9 +191,7 @@ end
 function AttackTarget()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_AutoChooseCurrentGraphicsSetting]
---- @return void
+--- No documentation available.
 function AutoChooseCurrentGraphicsSetting()
 end
 
@@ -219,9 +201,7 @@ end
 function AutoEquipCursorItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_AutoLootMailItem]
---- @return void
+--- No documentation available.
 function AutoLootMailItem()
 end
 
@@ -233,21 +213,15 @@ end
 function AutoStoreGuildBankItem(tab, slot)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNAcceptFriendInvite]
---- @return void
+--- No documentation available.
 function BNAcceptFriendInvite()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNCheckBattleTagInviteToGuildMember]
---- @return void
+--- No documentation available.
 function BNCheckBattleTagInviteToGuildMember()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNCheckBattleTagInviteToUnit]
---- @return void
+--- No documentation available.
 function BNCheckBattleTagInviteToUnit()
 end
 
@@ -257,33 +231,23 @@ end
 function BNConnected()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNDeclineFriendInvite]
---- @return void
+--- No documentation available.
 function BNDeclineFriendInvite()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNFeaturesEnabled]
---- @return void
+--- No documentation available.
 function BNFeaturesEnabled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNFeaturesEnabledAndConnected]
---- @return void
+--- No documentation available.
 function BNFeaturesEnabledAndConnected()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNGetBlockedInfo]
---- @return void
+--- No documentation available.
 function BNGetBlockedInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNGetDisplayName]
---- @return void
+--- No documentation available.
 function BNGetDisplayName()
 end
 
@@ -316,21 +280,15 @@ end
 function BNGetInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNGetNumBlocked]
---- @return void
+--- No documentation available.
 function BNGetNumBlocked()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNGetNumFOF]
---- @return void
+--- No documentation available.
 function BNGetNumFOF()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNGetNumFriendInvites]
---- @return void
+--- No documentation available.
 function BNGetNumFriendInvites()
 end
 
@@ -340,69 +298,47 @@ end
 function BNGetNumFriends()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNGetSelectedBlock]
---- @return void
+--- No documentation available.
 function BNGetSelectedBlock()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNGetSelectedFriend]
---- @return void
+--- No documentation available.
 function BNGetSelectedFriend()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNInviteFriend]
---- @return void
+--- No documentation available.
 function BNInviteFriend()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNIsBlocked]
---- @return void
+--- No documentation available.
 function BNIsBlocked()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNIsFriend]
---- @return void
+--- No documentation available.
 function BNIsFriend()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNIsSelf]
---- @return void
+--- No documentation available.
 function BNIsSelf()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNRemoveFriend]
---- @return void
+--- No documentation available.
 function BNRemoveFriend()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNRequestFOFInfo]
---- @return void
+--- No documentation available.
 function BNRequestFOFInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNRequestInviteFriend]
---- @return void
+--- No documentation available.
 function BNRequestInviteFriend()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNSendFriendInvite]
---- @return void
+--- No documentation available.
 function BNSendFriendInvite()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNSendFriendInviteByID]
---- @return void
+--- No documentation available.
 function BNSendFriendInviteByID()
 end
 
@@ -415,9 +351,7 @@ end
 function BNSendGameData(presenceID, addonPrefix, message)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNSendVerifiedBattleTagInvite]
---- @return void
+--- No documentation available.
 function BNSendVerifiedBattleTagInvite()
 end
 
@@ -436,9 +370,7 @@ end
 function BNSetAFK(bool)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNSetBlocked]
---- @return void
+--- No documentation available.
 function BNSetBlocked()
 end
 
@@ -472,27 +404,19 @@ end
 function BNSetFriendNote(bnetIDAccount, noteText)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNSetSelectedBlock]
---- @return void
+--- No documentation available.
 function BNSetSelectedBlock()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNSetSelectedFriend]
---- @return void
+--- No documentation available.
 function BNSetSelectedFriend()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNSummonFriendByIndex]
---- @return void
+--- No documentation available.
 function BNSummonFriendByIndex()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BNTokenFindName]
---- @return void
+--- No documentation available.
 function BNTokenFindName()
 end
 
@@ -504,27 +428,19 @@ end
 function BankButtonIDToInvSlotID(buttonID, isBag)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BattlefieldMgrEntryInviteResponse]
---- @return void
+--- No documentation available.
 function BattlefieldMgrEntryInviteResponse()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BattlefieldMgrExitRequest]
---- @return void
+--- No documentation available.
 function BattlefieldMgrExitRequest()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BattlefieldMgrQueueInviteResponse]
---- @return void
+--- No documentation available.
 function BattlefieldMgrQueueInviteResponse()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BattlefieldMgrQueueRequest]
---- @return void
+--- No documentation available.
 function BattlefieldMgrQueueRequest()
 end
 
@@ -547,9 +463,7 @@ end
 function BreakUpLargeNumbers(value)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BuyGuildBankTab]
---- @return void
+--- No documentation available.
 function BuyGuildBankTab()
 end
 
@@ -568,9 +482,7 @@ end
 function BuyMerchantItem(index, quantity)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_BuyReagentBank]
---- @return void
+--- No documentation available.
 function BuyReagentBank()
 end
 
@@ -631,15 +543,11 @@ end
 function CameraZoomOut(increment)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanAffordMerchantItem]
---- @return void
+--- No documentation available.
 function CanAffordMerchantItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanAutoSetGamePadCursorControl]
---- @return void
+--- No documentation available.
 function CanAutoSetGamePadCursorControl()
 end
 
@@ -650,21 +558,15 @@ end
 function CanBeRaidTarget(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanCancelScene]
---- @return void
+--- No documentation available.
 function CanCancelScene()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanChangePlayerDifficulty]
---- @return void
+--- No documentation available.
 function CanChangePlayerDifficulty()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanComplainInboxItem]
---- @return void
+--- No documentation available.
 function CanComplainInboxItem()
 end
 
@@ -674,27 +576,19 @@ end
 function CanDualWield()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanEditGuildBankTabInfo]
---- @return void
+--- No documentation available.
 function CanEditGuildBankTabInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanEditGuildEvent]
---- @return void
+--- No documentation available.
 function CanEditGuildEvent()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanEditGuildInfo]
---- @return void
+--- No documentation available.
 function CanEditGuildInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanEditGuildTabInfo]
---- @return void
+--- No documentation available.
 function CanEditGuildTabInfo()
 end
 
@@ -704,33 +598,23 @@ end
 function CanEditMOTD()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanEditPublicNote]
---- @return void
+--- No documentation available.
 function CanEditPublicNote()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanEjectPassengerFromSeat]
---- @return void
+--- No documentation available.
 function CanEjectPassengerFromSeat()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanExitVehicle]
---- @return void
+--- No documentation available.
 function CanExitVehicle()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanGamePadControlCursor]
---- @return void
+--- No documentation available.
 function CanGamePadControlCursor()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanGuildBankRepair]
---- @return void
+--- No documentation available.
 function CanGuildBankRepair()
 end
 
@@ -752,21 +636,15 @@ end
 function CanGuildPromote()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanGuildRemove]
---- @return void
+--- No documentation available.
 function CanGuildRemove()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanHearthAndResurrectFromArea]
---- @return void
+--- No documentation available.
 function CanHearthAndResurrectFromArea()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanInitiateWarGame]
---- @return void
+--- No documentation available.
 function CanInitiateWarGame()
 end
 
@@ -778,9 +656,7 @@ end
 function CanInspect(unit, showError)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanItemBeSocketedToArtifact]
---- @return void
+--- No documentation available.
 function CanItemBeSocketedToArtifact()
 end
 
@@ -790,15 +666,11 @@ end
 function CanJoinBattlefieldAsGroup()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanLootUnit]
---- @return void
+--- No documentation available.
 function CanLootUnit()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanMapChangeDifficulty]
---- @return void
+--- No documentation available.
 function CanMapChangeDifficulty()
 end
 
@@ -808,9 +680,7 @@ end
 function CanMerchantRepair()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanPartyLFGBackfill]
---- @return void
+--- No documentation available.
 function CanPartyLFGBackfill()
 end
 
@@ -820,9 +690,7 @@ end
 function CanReplaceGuildMaster()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanResetTutorials]
---- @return void
+--- No documentation available.
 function CanResetTutorials()
 end
 
@@ -844,15 +712,11 @@ end
 function CanShowResetInstances()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanSignPetition]
---- @return void
+--- No documentation available.
 function CanSignPetition()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanSolveArtifact]
---- @return void
+--- No documentation available.
 function CanSolveArtifact()
 end
 
@@ -863,21 +727,15 @@ end
 function CanSummonFriend(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanSurrenderArena]
---- @return void
+--- No documentation available.
 function CanSurrenderArena()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanSwitchVehicleSeat]
---- @return void
+--- No documentation available.
 function CanSwitchVehicleSeat()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanSwitchVehicleSeats]
---- @return void
+--- No documentation available.
 function CanSwitchVehicleSeats()
 end
 
@@ -900,9 +758,7 @@ end
 function CanViewGuildRecipes(skillID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CanWithdrawGuildBankMoney]
---- @return void
+--- No documentation available.
 function CanWithdrawGuildBankMoney()
 end
 
@@ -918,9 +774,7 @@ end
 function CancelDuel()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CancelEmote]
---- @return void
+--- No documentation available.
 function CancelEmote()
 end
 
@@ -937,9 +791,7 @@ end
 function CancelLogout()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CancelMasterLootRoll]
---- @return void
+--- No documentation available.
 function CancelMasterLootRoll()
 end
 
@@ -950,9 +802,7 @@ end
 function CancelPendingEquip(slot)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CancelPetPossess]
---- @return void
+--- No documentation available.
 function CancelPetPossess()
 end
 
@@ -963,9 +813,7 @@ end
 function CancelPreloadingMovie(movieId)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CancelScene]
---- @return void
+--- No documentation available.
 function CancelScene()
 end
 
@@ -975,9 +823,7 @@ end
 function CancelShapeshiftForm()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CancelSpellByName]
---- @return void
+--- No documentation available.
 function CancelSpellByName()
 end
 
@@ -987,9 +833,7 @@ end
 function CancelTrade()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CancelTradeAccept]
---- @return void
+--- No documentation available.
 function CancelTradeAccept()
 end
 
@@ -1002,9 +846,7 @@ end
 function CancelUnitBuff(unit, buffIndex, filter)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CannotBeResurrected]
---- @return void
+--- No documentation available.
 function CannotBeResurrected()
 end
 
@@ -1038,9 +880,7 @@ end
 function CastSpell(spellIndex, spellbookType)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CastSpellByID]
---- @return void
+--- No documentation available.
 function CastSpellByID()
 end
 
@@ -1052,9 +892,7 @@ end
 function CastSpellByName(spellName, target)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CenterCamera]
---- @return void
+--- No documentation available.
 function CenterCamera()
 end
 
@@ -1107,15 +945,11 @@ end
 function ChannelModerator(channelName, playerName)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ChannelSetAllSilent]
---- @return void
+--- No documentation available.
 function ChannelSetAllSilent()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ChannelSetPartyMemberSilent]
---- @return void
+--- No documentation available.
 function ChannelSetPartyMemberSilent()
 end
 
@@ -1157,33 +991,23 @@ end
 function CheckInteractDistance(unit, distIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClearAchievementComparisonUnit]
---- @return void
+--- No documentation available.
 function ClearAchievementComparisonUnit()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClearAchievementSearchString]
---- @return void
+--- No documentation available.
 function ClearAchievementSearchString()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClearAllLFGDungeons]
---- @return void
+--- No documentation available.
 function ClearAllLFGDungeons()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClearAutoAcceptQuestSound]
---- @return void
+--- No documentation available.
 function ClearAutoAcceptQuestSound()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClearBattlemaster]
---- @return void
+--- No documentation available.
 function ClearBattlemaster()
 end
 
@@ -1193,15 +1017,11 @@ end
 function ClearCursor()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClearFailedPVPTalentIDs]
---- @return void
+--- No documentation available.
 function ClearFailedPVPTalentIDs()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClearFailedTalentIDs]
---- @return void
+--- No documentation available.
 function ClearFailedTalentIDs()
 end
 
@@ -1211,9 +1031,7 @@ end
 function ClearFocus()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClearInspectPlayer]
---- @return void
+--- No documentation available.
 function ClearInspectPlayer()
 end
 
@@ -1224,15 +1042,11 @@ end
 function ClearOverrideBindings(owner)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClearPartyAssignment]
---- @return void
+--- No documentation available.
 function ClearPartyAssignment()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClearRaidMarker]
---- @return void
+--- No documentation available.
 function ClearRaidMarker()
 end
 
@@ -1248,9 +1062,7 @@ end
 function ClearTarget()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClearTutorials]
---- @return void
+--- No documentation available.
 function ClearTutorials()
 end
 
@@ -1269,21 +1081,15 @@ end
 function ClickSendMailItemButton(itemIndex, clearItem)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClickSocketButton]
---- @return void
+--- No documentation available.
 function ClickSocketButton()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClickTargetTradeButton]
---- @return void
+--- No documentation available.
 function ClickTargetTradeButton()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClickTradeButton]
---- @return void
+--- No documentation available.
 function ClickTradeButton()
 end
 
@@ -1311,9 +1117,7 @@ end
 function ClickVoidTransferWithdrawalSlot(slotIndex, isRightClick)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClickWorldMapActionButton]
---- @return void
+--- No documentation available.
 function ClickWorldMapActionButton()
 end
 
@@ -1323,21 +1127,15 @@ end
 function CloseBankFrame()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CloseGuildBankFrame]
---- @return void
+--- No documentation available.
 function CloseGuildBankFrame()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CloseGuildRegistrar]
---- @return void
+--- No documentation available.
 function CloseGuildRegistrar()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CloseGuildRoster]
---- @return void
+--- No documentation available.
 function CloseGuildRoster()
 end
 
@@ -1378,15 +1176,11 @@ end
 function ClosePetition()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CloseQuest]
---- @return void
+--- No documentation available.
 function CloseQuest()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CloseResearch]
---- @return void
+--- No documentation available.
 function CloseResearch()
 end
 
@@ -1396,9 +1190,7 @@ end
 function CloseSocketInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CloseTabardCreation]
---- @return void
+--- No documentation available.
 function CloseTabardCreation()
 end
 
@@ -1420,9 +1212,7 @@ end
 function CloseTrainer()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ClosestGameObjectPosition]
---- @return void
+--- No documentation available.
 function ClosestGameObjectPosition()
 end
 
@@ -1433,9 +1223,7 @@ end
 function ClosestUnitPosition(creatureID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CollapseAllFactionHeaders]
---- @return void
+--- No documentation available.
 function CollapseAllFactionHeaders()
 end
 
@@ -1446,9 +1234,7 @@ end
 function CollapseFactionHeader(rowIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CollapseGuildTradeSkillHeader]
---- @return void
+--- No documentation available.
 function CollapseGuildTradeSkillHeader()
 end
 
@@ -1460,15 +1246,11 @@ end
 function CollapseQuestHeader(index, isAuto)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CollapseWarGameHeader]
---- @return void
+--- No documentation available.
 function CollapseWarGameHeader()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CombatLogAddFilter]
---- @return void
+--- No documentation available.
 function CombatLogAddFilter()
 end
 
@@ -1480,9 +1262,7 @@ end
 function CombatLogAdvanceEntry(count, ignoreFilter)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CombatLogClearEntries]
---- @return void
+--- No documentation available.
 function CombatLogClearEntries()
 end
 
@@ -1498,21 +1278,15 @@ end
 function CombatLogGetCurrentEventInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CombatLogGetNumEntries]
---- @return void
+--- No documentation available.
 function CombatLogGetNumEntries()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CombatLogGetRetentionTime]
---- @return void
+--- No documentation available.
 function CombatLogGetRetentionTime()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CombatLogResetFilter]
---- @return void
+--- No documentation available.
 function CombatLogResetFilter()
 end
 
@@ -1524,15 +1298,11 @@ end
 function CombatLogSetCurrentEntry(index, ignoreFilter)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CombatLogSetRetentionTime]
---- @return void
+--- No documentation available.
 function CombatLogSetRetentionTime()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CombatLogShowCurrentEntry]
---- @return void
+--- No documentation available.
 function CombatLogShowCurrentEntry()
 end
 
@@ -1551,15 +1321,11 @@ end
 function CombatTextSetActiveUnit(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CompleteLFGReadyCheck]
---- @return void
+--- No documentation available.
 function CompleteLFGReadyCheck()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CompleteLFGRoleCheck]
---- @return void
+--- No documentation available.
 function CompleteLFGRoleCheck()
 end
 
@@ -1606,15 +1372,11 @@ end
 function ConfirmLootSlot(slot)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ConfirmNoRefundOnUse]
---- @return void
+--- No documentation available.
 function ConfirmNoRefundOnUse()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ConfirmOnUse]
---- @return void
+--- No documentation available.
 function ConfirmOnUse()
 end
 
@@ -1625,9 +1387,7 @@ end
 function ConfirmReadyCheck(isReady)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ConfirmTalentWipe]
---- @return void
+--- No documentation available.
 function ConfirmTalentWipe()
 end
 
@@ -1720,9 +1480,7 @@ end
 function CreateMacro(name, iconFileID, body, perCharacter)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CreateNewRaidProfile]
---- @return void
+--- No documentation available.
 function CreateNewRaidProfile()
 end
 
@@ -1739,21 +1497,15 @@ end
 function CursorHasItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CursorHasMacro]
---- @return void
+--- No documentation available.
 function CursorHasMacro()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CursorHasMoney]
---- @return void
+--- No documentation available.
 function CursorHasMoney()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_CursorHasSpell]
---- @return void
+--- No documentation available.
 function CursorHasSpell()
 end
 
@@ -1823,9 +1575,7 @@ end
 function DeleteCursorItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_DeleteGMTicket]
---- @return void
+--- No documentation available.
 function DeleteGMTicket()
 end
 
@@ -1843,27 +1593,19 @@ end
 function DeleteMacro(index_or_macroname)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_DeleteRaidProfile]
---- @return void
+--- No documentation available.
 function DeleteRaidProfile()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_DemoteAssistant]
---- @return void
+--- No documentation available.
 function DemoteAssistant()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_DepositGuildBankMoney]
---- @return void
+--- No documentation available.
 function DepositGuildBankMoney()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_DepositReagentBank]
---- @return void
+--- No documentation available.
 function DepositReagentBank()
 end
 
@@ -1880,15 +1622,11 @@ end
 function DestroyTotem(slot)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_DetectWowMouse]
---- @return void
+--- No documentation available.
 function DetectWowMouse()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_DisableSpellAutocast]
---- @return void
+--- No documentation available.
 function DisableSpellAutocast()
 end
 
@@ -1921,9 +1659,7 @@ end
 function DoEmote(token, unit, hold)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_DoMasterLootRoll]
---- @return void
+--- No documentation available.
 function DoMasterLootRoll()
 end
 
@@ -1939,9 +1675,7 @@ end
 function DoesCurrentLocaleSellExpansionLevels()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_DoesItemContainSpec]
---- @return void
+--- No documentation available.
 function DoesItemContainSpec()
 end
 
@@ -1952,9 +1686,7 @@ end
 function DoesSpellExist(spellName)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_DoesTemplateExist]
---- @return void
+--- No documentation available.
 function DoesTemplateExist()
 end
 
@@ -1971,15 +1703,11 @@ end
 function DropItemOnUnit(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_DumpMovementCapture]
---- @return void
+--- No documentation available.
 function DumpMovementCapture()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_DungeonAppearsInRandomLFD]
---- @return void
+--- No documentation available.
 function DungeonAppearsInRandomLFD()
 end
 
@@ -2230,27 +1958,19 @@ end
 function EditMacro(macroInfo, name, icon, body)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_EjectPassengerFromSeat]
---- @return void
+--- No documentation available.
 function EjectPassengerFromSeat()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_EnableSpellAutocast]
---- @return void
+--- No documentation available.
 function EnableSpellAutocast()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_EndBoundTradeable]
---- @return void
+--- No documentation available.
 function EndBoundTradeable()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_EndRefund]
---- @return void
+--- No documentation available.
 function EndRefund()
 end
 
@@ -2295,9 +2015,7 @@ end
 function ExecuteVoidTransfer()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ExpandAllFactionHeaders]
---- @return void
+--- No documentation available.
 function ExpandAllFactionHeaders()
 end
 
@@ -2308,9 +2026,7 @@ end
 function ExpandFactionHeader(rowIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ExpandGuildTradeSkillHeader]
---- @return void
+--- No documentation available.
 function ExpandGuildTradeSkillHeader()
 end
 
@@ -2322,9 +2038,7 @@ end
 function ExpandQuestHeader(index, isAuto)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ExpandWarGameHeader]
---- @return void
+--- No documentation available.
 function ExpandWarGameHeader()
 end
 
@@ -2342,15 +2056,11 @@ end
 function FindBaseSpellByID(spellID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_FindFlyoutSlotBySpellID]
---- @return void
+--- No documentation available.
 function FindFlyoutSlotBySpellID()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_FindSpellBookSlotBySpellID]
---- @return void
+--- No documentation available.
 function FindSpellBookSlotBySpellID()
 end
 
@@ -2361,9 +2071,7 @@ end
 function FindSpellOverrideByID(spellID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_FlagTutorial]
---- @return void
+--- No documentation available.
 function FlagTutorial()
 end
 
@@ -2414,9 +2122,7 @@ end
 function ForceQuit()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ForfeitDuel]
---- @return void
+--- No documentation available.
 function ForfeitDuel()
 end
 
@@ -2427,51 +2133,35 @@ end
 function FrameXML_Debug(enabled)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GMEuropaBugsEnabled]
---- @return void
+--- No documentation available.
 function GMEuropaBugsEnabled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GMEuropaComplaintsEnabled]
---- @return void
+--- No documentation available.
 function GMEuropaComplaintsEnabled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GMEuropaSuggestionsEnabled]
---- @return void
+--- No documentation available.
 function GMEuropaSuggestionsEnabled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GMEuropaTicketsEnabled]
---- @return void
+--- No documentation available.
 function GMEuropaTicketsEnabled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GMItemRestorationButtonEnabled]
---- @return void
+--- No documentation available.
 function GMItemRestorationButtonEnabled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GMQuickTicketSystemEnabled]
---- @return void
+--- No documentation available.
 function GMQuickTicketSystemEnabled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GMQuickTicketSystemThrottled]
---- @return void
+--- No documentation available.
 function GMQuickTicketSystemThrottled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GMReportLag]
---- @return void
+--- No documentation available.
 function GMReportLag()
 end
 
@@ -2480,33 +2170,23 @@ end
 function GMRequestPlayerInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GMResponseResolve]
---- @return void
+--- No documentation available.
 function GMResponseResolve()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GMSurveyAnswer]
---- @return void
+--- No documentation available.
 function GMSurveyAnswer()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GMSurveyAnswerSubmit]
---- @return void
+--- No documentation available.
 function GMSurveyAnswerSubmit()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GMSurveyCommentSubmit]
---- @return void
+--- No documentation available.
 function GMSurveyCommentSubmit()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GMSurveyNumAnswers]
---- @return void
+--- No documentation available.
 function GMSurveyNumAnswers()
 end
 
@@ -2516,15 +2196,11 @@ end
 function GMSurveyQuestion()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GMSurveySubmit]
---- @return void
+--- No documentation available.
 function GMSurveySubmit()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GameMovieFinished]
---- @return void
+--- No documentation available.
 function GameMovieFinished()
 end
 
@@ -2565,9 +2241,7 @@ end
 function GetAchievementCriteriaInfoByID(achievementID, criteriaID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetAchievementGuildRep]
---- @return void
+--- No documentation available.
 function GetAchievementGuildRep()
 end
 
@@ -2593,33 +2267,23 @@ end
 function GetAchievementNumCriteria(achievementID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetAchievementNumRewards]
---- @return void
+--- No documentation available.
 function GetAchievementNumRewards()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetAchievementReward]
---- @return void
+--- No documentation available.
 function GetAchievementReward()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetAchievementSearchProgress]
---- @return void
+--- No documentation available.
 function GetAchievementSearchProgress()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetAchievementSearchSize]
---- @return void
+--- No documentation available.
 function GetAchievementSearchSize()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetActionAutocast]
---- @return void
+--- No documentation available.
 function GetActionAutocast()
 end
 
@@ -2692,21 +2356,15 @@ end
 function GetActiveArtifactByRace(raceIndex, artifactIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetActiveLevel]
---- @return void
+--- No documentation available.
 function GetActiveLevel()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetActiveLootRollIDs]
---- @return void
+--- No documentation available.
 function GetActiveLootRollIDs()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetActiveQuestID]
---- @return void
+--- No documentation available.
 function GetActiveQuestID()
 end
 
@@ -2717,9 +2375,7 @@ end
 function GetActiveSpecGroup(isInspect)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetActiveTitle]
---- @return void
+--- No documentation available.
 function GetActiveTitle()
 end
 
@@ -2737,15 +2393,11 @@ end
 function GetAddOnMemoryUsage(name)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetAllowLowLevelRaid]
---- @return void
+--- No documentation available.
 function GetAllowLowLevelRaid()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetAlternativeDefaultLanguage]
---- @return void
+--- No documentation available.
 function GetAlternativeDefaultLanguage()
 end
 
@@ -2810,9 +2462,7 @@ end
 function GetAttackPowerForStat(statId, amount)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetAutoCompletePresenceID]
---- @return void
+--- No documentation available.
 function GetAutoCompletePresenceID()
 end
 
@@ -2848,15 +2498,11 @@ end
 function GetAutoQuestPopUp(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetAvailableBandwidth]
---- @return void
+--- No documentation available.
 function GetAvailableBandwidth()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetAvailableLevel]
---- @return void
+--- No documentation available.
 function GetAvailableLevel()
 end
 
@@ -2881,9 +2527,7 @@ end
 function GetAvailableQuestInfo(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetAvailableTitle]
---- @return void
+--- No documentation available.
 function GetAvailableTitle()
 end
 
@@ -2893,15 +2537,11 @@ end
 function GetAverageItemLevel()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetAvoidance]
---- @return void
+--- No documentation available.
 function GetAvoidance()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetBackgroundLoadingStatus]
---- @return void
+--- No documentation available.
 function GetBackgroundLoadingStatus()
 end
 
@@ -2936,9 +2576,7 @@ end
 function GetBattlefieldInstanceRunTime()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetBattlefieldMapIconScale]
---- @return void
+--- No documentation available.
 function GetBattlefieldMapIconScale()
 end
 
@@ -3074,9 +2712,7 @@ end
 function GetBlockChance()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetBonusBarIndex]
---- @return void
+--- No documentation available.
 function GetBonusBarIndex()
 end
 
@@ -3105,15 +2741,11 @@ end
 function GetBuybackItemInfo(slotIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetBuybackItemLink]
---- @return void
+--- No documentation available.
 function GetBuybackItemLink()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCallPetSpellInfo]
---- @return void
+--- No documentation available.
 function GetCallPetSpellInfo()
 end
 
@@ -3123,9 +2755,7 @@ end
 function GetCameraZoom()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCategoryAchievementPoints]
---- @return void
+--- No documentation available.
 function GetCategoryAchievementPoints()
 end
 
@@ -3150,9 +2780,7 @@ end
 function GetCategoryNumAchievements(categoryId, includeAll)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCemeteryPreference]
---- @return void
+--- No documentation available.
 function GetCemeteryPreference()
 end
 
@@ -3204,15 +2832,11 @@ end
 function GetChatWindowMessages(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetChatWindowSavedDimensions]
---- @return void
+--- No documentation available.
 function GetChatWindowSavedDimensions()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetChatWindowSavedPosition]
---- @return void
+--- No documentation available.
 function GetChatWindowSavedPosition()
 end
 
@@ -3273,9 +2897,7 @@ end
 function GetCombatRatingBonus(combatRatingIdentifier)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCombatRatingBonusForCombatRatingValue]
---- @return void
+--- No documentation available.
 function GetCombatRatingBonusForCombatRatingValue()
 end
 
@@ -3295,15 +2917,11 @@ end
 function GetCompanionInfo(type, id)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetComparisonAchievementPoints]
---- @return void
+--- No documentation available.
 function GetComparisonAchievementPoints()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetComparisonCategoryNumAchievements]
---- @return void
+--- No documentation available.
 function GetComparisonCategoryNumAchievements()
 end
 
@@ -3314,9 +2932,7 @@ end
 function GetComparisonStatistic(achievementID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCorpseRecoveryDelay]
---- @return void
+--- No documentation available.
 function GetCorpseRecoveryDelay()
 end
 
@@ -3338,15 +2954,11 @@ end
 function GetCritChance()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCritChanceProvidesParryEffect]
---- @return void
+--- No documentation available.
 function GetCritChanceProvidesParryEffect()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCriteriaSpell]
---- @return void
+--- No documentation available.
 function GetCriteriaSpell()
 end
 
@@ -3362,21 +2974,15 @@ end
 function GetCurrentBindingSet()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCurrentCombatTextEventInfo]
---- @return void
+--- No documentation available.
 function GetCurrentCombatTextEventInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCurrentEventID]
---- @return void
+--- No documentation available.
 function GetCurrentEventID()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCurrentGlyphNameForSpell]
---- @return void
+--- No documentation available.
 function GetCurrentGlyphNameForSpell()
 end
 
@@ -3386,27 +2992,19 @@ end
 function GetCurrentGraphicsAPI()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCurrentGraphicsSetting]
---- @return void
+--- No documentation available.
 function GetCurrentGraphicsSetting()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCurrentGuildBankTab]
---- @return void
+--- No documentation available.
 function GetCurrentGuildBankTab()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCurrentKeyBoardFocus]
---- @return void
+--- No documentation available.
 function GetCurrentKeyBoardFocus()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCurrentLevelFeatures]
---- @return void
+--- No documentation available.
 function GetCurrentLevelFeatures()
 end
 
@@ -3422,9 +3020,7 @@ end
 function GetCurrentRegionName()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetCurrentScaledResolution]
---- @return void
+--- No documentation available.
 function GetCurrentScaledResolution()
 end
 
@@ -3458,9 +3054,7 @@ end
 function GetCursorPosition()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetDailyQuestsCompleted]
---- @return void
+--- No documentation available.
 function GetDailyQuestsCompleted()
 end
 
@@ -3483,9 +3077,7 @@ end
 function GetDefaultScale()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetDemotionRank]
---- @return void
+--- No documentation available.
 function GetDemotionRank()
 end
 
@@ -3509,15 +3101,11 @@ end
 function GetDodgeChance()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetDodgeChanceFromAttribute]
---- @return void
+--- No documentation available.
 function GetDodgeChanceFromAttribute()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetDownloadedPercentage]
---- @return void
+--- No documentation available.
 function GetDownloadedPercentage()
 end
 
@@ -3527,9 +3115,7 @@ end
 function GetDungeonDifficultyID()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetDungeonForRandomSlot]
---- @return void
+--- No documentation available.
 function GetDungeonForRandomSlot()
 end
 
@@ -3539,27 +3125,19 @@ end
 function GetEditBoxMetatable()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetEquipmentNameFromSpell]
---- @return void
+--- No documentation available.
 function GetEquipmentNameFromSpell()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetEventTime]
---- @return void
+--- No documentation available.
 function GetEventTime()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetExistingSocketInfo]
---- @return void
+--- No documentation available.
 function GetExistingSocketInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetExistingSocketLink]
---- @return void
+--- No documentation available.
 function GetExistingSocketLink()
 end
 
@@ -3615,15 +3193,11 @@ end
 function GetFactionInfoByID(factionID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetFailedPVPTalentIDs]
---- @return void
+--- No documentation available.
 function GetFailedPVPTalentIDs()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetFailedTalentIDs]
---- @return void
+--- No documentation available.
 function GetFailedTalentIDs()
 end
 
@@ -3634,9 +3208,7 @@ end
 function GetFileIDFromPath(filePath)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetFileStreamingStatus]
---- @return void
+--- No documentation available.
 function GetFileStreamingStatus()
 end
 
@@ -3647,15 +3219,11 @@ end
 function GetFilteredAchievementID(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetFlexRaidDungeonInfo]
---- @return void
+--- No documentation available.
 function GetFlexRaidDungeonInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetFlyoutID]
---- @return void
+--- No documentation available.
 function GetFlyoutID()
 end
 
@@ -3674,9 +3242,7 @@ end
 function GetFlyoutSlotInfo(flyoutID, slot)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetFollowerTypeIDFromSpell]
---- @return void
+--- No documentation available.
 function GetFollowerTypeIDFromSpell()
 end
 
@@ -3726,15 +3292,11 @@ end
 function GetFramesRegisteredForEvent(event)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGMStatus]
---- @return void
+--- No documentation available.
 function GetGMStatus()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGMTicket]
---- @return void
+--- No documentation available.
 function GetGMTicket()
 end
 
@@ -3757,45 +3319,31 @@ end
 function GetGraphicsAPIs()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGraphicsCVarValueForQualityLevel]
---- @return void
+--- No documentation available.
 function GetGraphicsCVarValueForQualityLevel()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGreetingText]
---- @return void
+--- No documentation available.
 function GetGreetingText()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGroupMemberCounts]
---- @return void
+--- No documentation available.
 function GetGroupMemberCounts()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildAchievementMemberInfo]
---- @return void
+--- No documentation available.
 function GetGuildAchievementMemberInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildAchievementMembers]
---- @return void
+--- No documentation available.
 function GetGuildAchievementMembers()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildAchievementNumMembers]
---- @return void
+--- No documentation available.
 function GetGuildAchievementNumMembers()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildBankBonusDepositMoney]
---- @return void
+--- No documentation available.
 function GetGuildBankBonusDepositMoney()
 end
 
@@ -3828,9 +3376,7 @@ end
 function GetGuildBankMoneyTransaction(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildBankTabCost]
---- @return void
+--- No documentation available.
 function GetGuildBankTabCost()
 end
 
@@ -3848,9 +3394,7 @@ end
 function GetGuildBankTabPermissions(tab)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildBankText]
---- @return void
+--- No documentation available.
 function GetGuildBankText()
 end
 
@@ -3874,39 +3418,27 @@ end
 function GetGuildBankWithdrawMoney()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildCategoryList]
---- @return void
+--- No documentation available.
 function GetGuildCategoryList()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildChallengeInfo]
---- @return void
+--- No documentation available.
 function GetGuildChallengeInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildCharterCost]
---- @return void
+--- No documentation available.
 function GetGuildCharterCost()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildEventInfo]
---- @return void
+--- No documentation available.
 function GetGuildEventInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildExpirationTime]
---- @return void
+--- No documentation available.
 function GetGuildExpirationTime()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildFactionGroup]
---- @return void
+--- No documentation available.
 function GetGuildFactionGroup()
 end
 
@@ -3923,45 +3455,31 @@ end
 function GetGuildInfo(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildInfoText]
---- @return void
+--- No documentation available.
 function GetGuildInfoText()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildLogoInfo]
---- @return void
+--- No documentation available.
 function GetGuildLogoInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildMemberRecipes]
---- @return void
+--- No documentation available.
 function GetGuildMemberRecipes()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildNewsFilters]
---- @return void
+--- No documentation available.
 function GetGuildNewsFilters()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildNewsMemberName]
---- @return void
+--- No documentation available.
 function GetGuildNewsMemberName()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildNewsSort]
---- @return void
+--- No documentation available.
 function GetGuildNewsSort()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildPerkInfo]
---- @return void
+--- No documentation available.
 function GetGuildPerkInfo()
 end
 
@@ -3978,15 +3496,11 @@ end
 function GetGuildRecipeMember(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildRenameRequired]
---- @return void
+--- No documentation available.
 function GetGuildRenameRequired()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildRewardInfo]
---- @return void
+--- No documentation available.
 function GetGuildRewardInfo()
 end
 
@@ -3997,9 +3511,7 @@ end
 function GetGuildRosterInfo(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetGuildRosterLargestAchievementPoints]
---- @return void
+--- No documentation available.
 function GetGuildRosterLargestAchievementPoints()
 end
 
@@ -4110,9 +3622,7 @@ end
 function GetInspectArenaData(bracketId)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetInspectGuildInfo]
---- @return void
+--- No documentation available.
 function GetInspectGuildInfo()
 end
 
@@ -4122,9 +3632,7 @@ end
 function GetInspectHonorData()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetInspectRatedBGData]
---- @return void
+--- No documentation available.
 function GetInspectRatedBGData()
 end
 
@@ -4135,15 +3643,11 @@ end
 function GetInspectSpecialization(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetInspectTalent]
---- @return void
+--- No documentation available.
 function GetInspectTalent()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetInstanceBootTimeRemaining]
---- @return void
+--- No documentation available.
 function GetInstanceBootTimeRemaining()
 end
 
@@ -4204,9 +3708,7 @@ end
 function GetInventoryItemDurability(invSlotId)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetInventoryItemEquippedUnusable]
---- @return void
+--- No documentation available.
 function GetInventoryItemEquippedUnusable()
 end
 
@@ -4242,9 +3744,7 @@ end
 function GetInventoryItemTexture(unit, invSlotId)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetInventoryItemsForSlot]
---- @return void
+--- No documentation available.
 function GetInventoryItemsForSlot()
 end
 
@@ -4262,9 +3762,7 @@ end
 function GetInviteConfirmationInfo(invite)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetItemChildInfo]
---- @return void
+--- No documentation available.
 function GetItemChildInfo()
 end
 
@@ -4292,9 +3790,7 @@ end
 function GetItemCount(itemInfo, includeBank, includeUses, includeReagentBank)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetItemCreationContext]
---- @return void
+--- No documentation available.
 function GetItemCreationContext()
 end
 
@@ -4334,15 +3830,11 @@ end
 function GetItemInfoInstant(item)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetItemInventorySlotInfo]
---- @return void
+--- No documentation available.
 function GetItemInventorySlotInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetItemLevelColor]
---- @return void
+--- No documentation available.
 function GetItemLevelColor()
 end
 
@@ -4353,9 +3845,7 @@ end
 function GetItemQualityColor(quality)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetItemSetInfo]
---- @return void
+--- No documentation available.
 function GetItemSetInfo()
 end
 
@@ -4382,63 +3872,43 @@ end
 function GetItemSubClassInfo(classID, subClassID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetItemUniqueness]
---- @return void
+--- No documentation available.
 function GetItemUniqueness()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetJailersTowerLevel]
---- @return void
+--- No documentation available.
 function GetJailersTowerLevel()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetJournalInfoForSpellConfirmation]
---- @return void
+--- No documentation available.
 function GetJournalInfoForSpellConfirmation()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFDChoiceCollapseState]
---- @return void
+--- No documentation available.
 function GetLFDChoiceCollapseState()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFDChoiceEnabledState]
---- @return void
+--- No documentation available.
 function GetLFDChoiceEnabledState()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFDChoiceOrder]
---- @return void
+--- No documentation available.
 function GetLFDChoiceOrder()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFDLockInfo]
---- @return void
+--- No documentation available.
 function GetLFDLockInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFDLockPlayerCount]
---- @return void
+--- No documentation available.
 function GetLFDLockPlayerCount()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFDRoleLockInfo]
---- @return void
+--- No documentation available.
 function GetLFDRoleLockInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFDRoleRestrictions]
---- @return void
+--- No documentation available.
 function GetLFDRoleRestrictions()
 end
 
@@ -4448,27 +3918,19 @@ end
 function GetLFGBootProposal()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGCategoryForID]
---- @return void
+--- No documentation available.
 function GetLFGCategoryForID()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGCompletionReward]
---- @return void
+--- No documentation available.
 function GetLFGCompletionReward()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGCompletionRewardItem]
---- @return void
+--- No documentation available.
 function GetLFGCompletionRewardItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGCompletionRewardItemLink]
---- @return void
+--- No documentation available.
 function GetLFGCompletionRewardItemLink()
 end
 
@@ -4507,57 +3969,39 @@ end
 function GetLFGDungeonRewardCapBarInfo(VALOR_TIER1_LFG_ID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGDungeonRewardCapInfo]
---- @return void
+--- No documentation available.
 function GetLFGDungeonRewardCapInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGDungeonRewardInfo]
---- @return void
+--- No documentation available.
 function GetLFGDungeonRewardInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGDungeonRewardLink]
---- @return void
+--- No documentation available.
 function GetLFGDungeonRewardLink()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGDungeonRewards]
---- @return void
+--- No documentation available.
 function GetLFGDungeonRewards()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGDungeonShortageRewardInfo]
---- @return void
+--- No documentation available.
 function GetLFGDungeonShortageRewardInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGDungeonShortageRewardLink]
---- @return void
+--- No documentation available.
 function GetLFGDungeonShortageRewardLink()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGInfoServer]
---- @return void
+--- No documentation available.
 function GetLFGInfoServer()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGInviteRoleAvailability]
---- @return void
+--- No documentation available.
 function GetLFGInviteRoleAvailability()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGInviteRoleRestrictions]
---- @return void
+--- No documentation available.
 function GetLFGInviteRoleRestrictions()
 end
 
@@ -4567,15 +4011,11 @@ end
 function GetLFGProposal()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGProposalEncounter]
---- @return void
+--- No documentation available.
 function GetLFGProposalEncounter()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGProposalMember]
---- @return void
+--- No documentation available.
 function GetLFGProposalMember()
 end
 
@@ -4587,9 +4027,7 @@ end
 function GetLFGQueueStats(category, activeID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGQueuedList]
---- @return void
+--- No documentation available.
 function GetLFGQueuedList()
 end
 
@@ -4599,21 +4037,15 @@ end
 function GetLFGRandomCooldownExpiration()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGRandomDungeonInfo]
---- @return void
+--- No documentation available.
 function GetLFGRandomDungeonInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGReadyCheckUpdate]
---- @return void
+--- No documentation available.
 function GetLFGReadyCheckUpdate()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGReadyCheckUpdateBattlegroundInfo]
---- @return void
+--- No documentation available.
 function GetLFGReadyCheckUpdateBattlegroundInfo()
 end
 
@@ -4625,9 +4057,7 @@ end
 function GetLFGRoleShortageRewards(dungeonID, shortageSeverity)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGRoleUpdate]
---- @return void
+--- No documentation available.
 function GetLFGRoleUpdate()
 end
 
@@ -4637,9 +4067,7 @@ end
 function GetLFGRoleUpdateBattlegroundInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGRoleUpdateMember]
---- @return void
+--- No documentation available.
 function GetLFGRoleUpdateMember()
 end
 
@@ -4656,9 +4084,7 @@ end
 function GetLFGRoles()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLFGSuspendedPlayers]
---- @return void
+--- No documentation available.
 function GetLFGSuspendedPlayers()
 end
 
@@ -4676,15 +4102,11 @@ end
 function GetLanguageByIndex(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLatestCompletedAchievements]
---- @return void
+--- No documentation available.
 function GetLatestCompletedAchievements()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLatestCompletedComparisonAchievements]
---- @return void
+--- No documentation available.
 function GetLatestCompletedComparisonAchievements()
 end
 
@@ -4694,21 +4116,15 @@ end
 function GetLatestThreeSenders()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLatestUpdatedComparisonStats]
---- @return void
+--- No documentation available.
 function GetLatestUpdatedComparisonStats()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLatestUpdatedStats]
---- @return void
+--- No documentation available.
 function GetLatestUpdatedStats()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLegacyRaidDifficultyID]
---- @return void
+--- No documentation available.
 function GetLegacyRaidDifficultyID()
 end
 
@@ -4730,15 +4146,11 @@ end
 function GetLocale()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLooseMacroIcons]
---- @return void
+--- No documentation available.
 function GetLooseMacroIcons()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetLooseMacroItemIcons]
---- @return void
+--- No documentation available.
 function GetLooseMacroItemIcons()
 end
 
@@ -4768,10 +4180,11 @@ end
 function GetLootRollItemLink(id)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
+--- Summary description.
 --- [https://warcraft.wiki.gg/wiki/API_GetLootRollTimeLeft]
---- @return void
-function GetLootRollTimeLeft()
+--- @param rollID number
+--- @return number @ timeLeft
+function GetLootRollTimeLeft(rollID)
 end
 
 --- Returns info for a loot slot.
@@ -4821,9 +4234,7 @@ end
 function GetMacroBody(macro)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMacroIcons]
---- @return void
+--- No documentation available.
 function GetMacroIcons()
 end
 
@@ -4841,15 +4252,11 @@ end
 function GetMacroInfo(macro)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMacroItem]
---- @return void
+--- No documentation available.
 function GetMacroItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMacroItemIcons]
---- @return void
+--- No documentation available.
 function GetMacroItemIcons()
 end
 
@@ -4886,9 +4293,7 @@ end
 function GetMasteryEffect()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMawPowerLinkBySpellID]
---- @return void
+--- No documentation available.
 function GetMawPowerLinkBySpellID()
 end
 
@@ -4898,9 +4303,7 @@ end
 function GetMaxBattlefieldID()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMaxCombatRatingBonus]
---- @return void
+--- No documentation available.
 function GetMaxCombatRatingBonus()
 end
 
@@ -4923,33 +4326,23 @@ end
 function GetMaxLevelForPlayerExpansion()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMaxNumCUFProfiles]
---- @return void
+--- No documentation available.
 function GetMaxNumCUFProfiles()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMaxPlayerLevel]
---- @return void
+--- No documentation available.
 function GetMaxPlayerLevel()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMaxRenderScale]
---- @return void
+--- No documentation available.
 function GetMaxRenderScale()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMaxRewardCurrencies]
---- @return void
+--- No documentation available.
 function GetMaxRewardCurrencies()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMaxSpellStartRecoveryOffset]
---- @return void
+--- No documentation available.
 function GetMaxSpellStartRecoveryOffset()
 end
 
@@ -4971,15 +4364,11 @@ end
 function GetMeleeHaste()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMerchantCurrencies]
---- @return void
+--- No documentation available.
 function GetMerchantCurrencies()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMerchantFilter]
---- @return void
+--- No documentation available.
 function GetMerchantFilter()
 end
 
@@ -5032,9 +4421,7 @@ end
 function GetMerchantNumItems()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMinRenderScale]
---- @return void
+--- No documentation available.
 function GetMinRenderScale()
 end
 
@@ -5064,9 +4451,7 @@ end
 function GetMirrorTimerProgress(timer)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetModResilienceDamageReduction]
---- @return void
+--- No documentation available.
 function GetModResilienceDamageReduction()
 end
 
@@ -5077,9 +4462,7 @@ end
 function GetModifiedClick(action)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetModifiedClickAction]
---- @return void
+--- No documentation available.
 function GetModifiedClickAction()
 end
 
@@ -5089,21 +4472,15 @@ end
 function GetMoney()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMonitorAspectRatio]
---- @return void
+--- No documentation available.
 function GetMonitorAspectRatio()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMonitorCount]
---- @return void
+--- No documentation available.
 function GetMonitorCount()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMonitorName]
---- @return void
+--- No documentation available.
 function GetMonitorName()
 end
 
@@ -5133,9 +4510,7 @@ end
 function GetMovieDownloadProgress(movieId)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetMultiCastBarIndex]
---- @return void
+--- No documentation available.
 function GetMultiCastBarIndex()
 end
 
@@ -5152,9 +4527,7 @@ end
 function GetNegativeCorruptionEffectInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNetIpTypes]
---- @return void
+--- No documentation available.
 function GetNetIpTypes()
 end
 
@@ -5164,15 +4537,11 @@ end
 function GetNetStats()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNewSocketInfo]
---- @return void
+--- No documentation available.
 function GetNewSocketInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNewSocketLink]
---- @return void
+--- No documentation available.
 function GetNewSocketLink()
 end
 
@@ -5183,15 +4552,11 @@ end
 function GetNextAchievement(achievementID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNextCompleatedTutorial]
---- @return void
+--- No documentation available.
 function GetNextCompleatedTutorial()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNextPendingInviteConfirmation]
---- @return void
+--- No documentation available.
 function GetNextPendingInviteConfirmation()
 end
 
@@ -5213,15 +4578,11 @@ end
 function GetNumArchaeologyRaces()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumArenaOpponentSpecs]
---- @return void
+--- No documentation available.
 function GetNumArenaOpponentSpecs()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumArenaOpponents]
---- @return void
+--- No documentation available.
 function GetNumArenaOpponents()
 end
 
@@ -5250,9 +4611,7 @@ end
 function GetNumBankSlots()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumBattlefieldFlagPositions]
---- @return void
+--- No documentation available.
 function GetNumBattlefieldFlagPositions()
 end
 
@@ -5262,9 +4621,7 @@ end
 function GetNumBattlefieldScores()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumBattlefieldVehicles]
---- @return void
+--- No documentation available.
 function GetNumBattlefieldVehicles()
 end
 
@@ -5286,9 +4643,7 @@ end
 function GetNumBuybackItems()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumChannelMembers]
---- @return void
+--- No documentation available.
 function GetNumChannelMembers()
 end
 
@@ -5332,9 +4687,7 @@ end
 function GetNumDisplayChannels()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumDungeonForRandomSlot]
---- @return void
+--- No documentation available.
 function GetNumDungeonForRandomSlot()
 end
 
@@ -5362,15 +4715,11 @@ end
 function GetNumFlexRaidDungeons()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumFlyouts]
---- @return void
+--- No documentation available.
 function GetNumFlyouts()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumGroupChannels]
---- @return void
+--- No documentation available.
 function GetNumGroupChannels()
 end
 
@@ -5381,33 +4730,23 @@ end
 function GetNumGroupMembers(groupType)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumGuildBankMoneyTransactions]
---- @return void
+--- No documentation available.
 function GetNumGuildBankMoneyTransactions()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumGuildBankTabs]
---- @return void
+--- No documentation available.
 function GetNumGuildBankTabs()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumGuildBankTransactions]
---- @return void
+--- No documentation available.
 function GetNumGuildBankTransactions()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumGuildChallenges]
---- @return void
+--- No documentation available.
 function GetNumGuildChallenges()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumGuildEvents]
---- @return void
+--- No documentation available.
 function GetNumGuildEvents()
 end
 
@@ -5417,27 +4756,19 @@ end
 function GetNumGuildMembers()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumGuildNews]
---- @return void
+--- No documentation available.
 function GetNumGuildNews()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumGuildPerks]
---- @return void
+--- No documentation available.
 function GetNumGuildPerks()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumGuildRewards]
---- @return void
+--- No documentation available.
 function GetNumGuildRewards()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumGuildTradeSkill]
---- @return void
+--- No documentation available.
 function GetNumGuildTradeSkill()
 end
 
@@ -5459,15 +4790,11 @@ end
 function GetNumMacros()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumMembersInRank]
---- @return void
+--- No documentation available.
 function GetNumMembersInRank()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumModifiedClickActions]
---- @return void
+--- No documentation available.
 function GetNumModifiedClickActions()
 end
 
@@ -5483,15 +4810,11 @@ end
 function GetNumQuestChoices()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumQuestCurrencies]
---- @return void
+--- No documentation available.
 function GetNumQuestCurrencies()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumQuestItemDrops]
---- @return void
+--- No documentation available.
 function GetNumQuestItemDrops()
 end
 
@@ -5516,15 +4839,11 @@ end
 function GetNumQuestLogChoices(questID, includeCurrencies)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumQuestLogRewardCurrencies]
---- @return void
+--- No documentation available.
 function GetNumQuestLogRewardCurrencies()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumQuestLogRewardFactions]
---- @return void
+--- No documentation available.
 function GetNumQuestLogRewardFactions()
 end
 
@@ -5534,9 +4853,7 @@ end
 function GetNumQuestLogRewards()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumQuestLogTasks]
---- @return void
+--- No documentation available.
 function GetNumQuestLogTasks()
 end
 
@@ -5552,21 +4869,15 @@ end
 function GetNumRFDungeons()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumRaidProfiles]
---- @return void
+--- No documentation available.
 function GetNumRaidProfiles()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumRandomDungeons]
---- @return void
+--- No documentation available.
 function GetNumRandomDungeons()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumRandomScenarios]
---- @return void
+--- No documentation available.
 function GetNumRandomScenarios()
 end
 
@@ -5576,9 +4887,7 @@ end
 function GetNumRewardCurrencies()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumRoutes]
---- @return void
+--- No documentation available.
 function GetNumRoutes()
 end
 
@@ -5594,9 +4903,7 @@ end
 function GetNumSavedWorldBosses()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumScenarios]
---- @return void
+--- No documentation available.
 function GetNumScenarios()
 end
 
@@ -5659,15 +4966,11 @@ end
 function GetNumTrainerServices()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumTreasurePickerItems]
---- @return void
+--- No documentation available.
 function GetNumTreasurePickerItems()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumUnspentPvpTalents]
---- @return void
+--- No documentation available.
 function GetNumUnspentPvpTalents()
 end
 
@@ -5689,15 +4992,11 @@ end
 function GetNumVoidTransferWithdrawal()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumWarGameTypes]
---- @return void
+--- No documentation available.
 function GetNumWarGameTypes()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetNumWorldPVPAreas]
---- @return void
+--- No documentation available.
 function GetNumWorldPVPAreas()
 end
 
@@ -5707,9 +5006,7 @@ end
 function GetOSLocale()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetObjectiveText]
---- @return void
+--- No documentation available.
 function GetObjectiveText()
 end
 
@@ -5719,27 +5016,19 @@ end
 function GetOptOutOfLoot()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetOverrideAPBySpellPower]
---- @return void
+--- No documentation available.
 function GetOverrideAPBySpellPower()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetOverrideBarIndex]
---- @return void
+--- No documentation available.
 function GetOverrideBarIndex()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetOverrideBarSkin]
---- @return void
+--- No documentation available.
 function GetOverrideBarSkin()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetOverrideSpellPowerByAP]
---- @return void
+--- No documentation available.
 function GetOverrideSpellPowerByAP()
 end
 
@@ -5749,9 +5038,7 @@ end
 function GetPVPDesired()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPVPGearStatRules]
---- @return void
+--- No documentation available.
 function GetPVPGearStatRules()
 end
 
@@ -5791,9 +5078,7 @@ end
 function GetParryChance()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetParryChanceFromAttribute]
---- @return void
+--- No documentation available.
 function GetParryChanceFromAttribute()
 end
 
@@ -5806,27 +5091,19 @@ end
 function GetPartyAssignment(assignment, raidmember, exactMatch)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPartyLFGBackfillInfo]
---- @return void
+--- No documentation available.
 function GetPartyLFGBackfillInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPartyLFGID]
---- @return void
+--- No documentation available.
 function GetPartyLFGID()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPendingGlyphName]
---- @return void
+--- No documentation available.
 function GetPendingGlyphName()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPendingInviteConfirmations]
---- @return void
+--- No documentation available.
 function GetPendingInviteConfirmations()
 end
 
@@ -5857,9 +5134,7 @@ end
 function GetPetActionSlotUsable()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPetActionsUsable]
---- @return void
+--- No documentation available.
 function GetPetActionsUsable()
 end
 
@@ -5875,33 +5150,23 @@ end
 function GetPetFoodTypes()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPetIcon]
---- @return void
+--- No documentation available.
 function GetPetIcon()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPetMeleeHaste]
---- @return void
+--- No documentation available.
 function GetPetMeleeHaste()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPetSpellBonusDamage]
---- @return void
+--- No documentation available.
 function GetPetSpellBonusDamage()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPetTalentTree]
---- @return void
+--- No documentation available.
 function GetPetTalentTree()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPetTimeRemaining]
---- @return void
+--- No documentation available.
 function GetPetTimeRemaining()
 end
 
@@ -5911,9 +5176,7 @@ end
 function GetPetitionInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPetitionNameInfo]
---- @return void
+--- No documentation available.
 function GetPetitionNameInfo()
 end
 
@@ -5936,9 +5199,7 @@ end
 function GetPlayerInfoByGUID(guid)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPlayerTradeCurrency]
---- @return void
+--- No documentation available.
 function GetPlayerTradeCurrency()
 end
 
@@ -5955,21 +5216,15 @@ end
 function GetPossessInfo(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPowerRegen]
---- @return void
+--- No documentation available.
 function GetPowerRegen()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPowerRegenForPowerType]
---- @return void
+--- No documentation available.
 function GetPowerRegenForPowerType()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPrevCompleatedTutorial]
---- @return void
+--- No documentation available.
 function GetPrevCompleatedTutorial()
 end
 
@@ -5980,15 +5235,11 @@ end
 function GetPreviousAchievement(achievementID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPreviousArenaSeason]
---- @return void
+--- No documentation available.
 function GetPreviousArenaSeason()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPrimarySpecialization]
---- @return void
+--- No documentation available.
 function GetPrimarySpecialization()
 end
 
@@ -6011,9 +5262,7 @@ end
 function GetProgressText()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPromotionRank]
---- @return void
+--- No documentation available.
 function GetPromotionRank()
 end
 
@@ -6039,15 +5288,11 @@ end
 function GetPvpTalentInfoByID(talentID, specGroupIndex, isInspect, inspectUnit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPvpTalentInfoBySpecialization]
---- @return void
+--- No documentation available.
 function GetPvpTalentInfoBySpecialization()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetPvpTalentLink]
---- @return void
+--- No documentation available.
 function GetPvpTalentLink()
 end
 
@@ -6057,9 +5302,7 @@ end
 function GetQuestBackgroundMaterial()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestCurrencyID]
---- @return void
+--- No documentation available.
 function GetQuestCurrencyID()
 end
 
@@ -6071,9 +5314,7 @@ end
 function GetQuestCurrencyInfo(itemType, index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestExpansion]
---- @return void
+--- No documentation available.
 function GetQuestExpansion()
 end
 
@@ -6098,9 +5339,7 @@ end
 function GetQuestItemInfo(type, index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestItemInfoLootType]
---- @return void
+--- No documentation available.
 function GetQuestItemInfoLootType()
 end
 
@@ -6126,27 +5365,19 @@ end
 function GetQuestLogChoiceInfo(itemNum)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestLogChoiceInfoLootType]
---- @return void
+--- No documentation available.
 function GetQuestLogChoiceInfoLootType()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestLogCompletionText]
---- @return void
+--- No documentation available.
 function GetQuestLogCompletionText()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestLogCriteriaSpell]
---- @return void
+--- No documentation available.
 function GetQuestLogCriteriaSpell()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestLogItemDrop]
---- @return void
+--- No documentation available.
 function GetQuestLogItemDrop()
 end
 
@@ -6166,9 +5397,7 @@ end
 function GetQuestLogLeaderBoard(i, questIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestLogPortraitTurnIn]
---- @return void
+--- No documentation available.
 function GetQuestLogPortraitTurnIn()
 end
 
@@ -6179,15 +5408,11 @@ end
 function GetQuestLogQuestText(questLogIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestLogQuestType]
---- @return void
+--- No documentation available.
 function GetQuestLogQuestType()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestLogRewardArtifactXP]
---- @return void
+--- No documentation available.
 function GetQuestLogRewardArtifactXP()
 end
 
@@ -6199,15 +5424,11 @@ end
 function GetQuestLogRewardCurrencyInfo(index, questId)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestLogRewardFactionInfo]
---- @return void
+--- No documentation available.
 function GetQuestLogRewardFactionInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestLogRewardHonor]
---- @return void
+--- No documentation available.
 function GetQuestLogRewardHonor()
 end
 
@@ -6226,21 +5447,15 @@ end
 function GetQuestLogRewardMoney(questID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestLogRewardSkillPoints]
---- @return void
+--- No documentation available.
 function GetQuestLogRewardSkillPoints()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestLogRewardTitle]
---- @return void
+--- No documentation available.
 function GetQuestLogRewardTitle()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestLogRewardXP]
---- @return void
+--- No documentation available.
 function GetQuestLogRewardXP()
 end
 
@@ -6264,9 +5479,7 @@ end
 function GetQuestLogTimeLeft()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestMoneyToGet]
---- @return void
+--- No documentation available.
 function GetQuestMoneyToGet()
 end
 
@@ -6279,33 +5492,23 @@ end
 function GetQuestObjectiveInfo(questID, objectiveIndex, displayComplete)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestPOIBlobCount]
---- @return void
+--- No documentation available.
 function GetQuestPOIBlobCount()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestPOILeaderBoard]
---- @return void
+--- No documentation available.
 function GetQuestPOILeaderBoard()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestPOIs]
---- @return void
+--- No documentation available.
 function GetQuestPOIs()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestPortraitGiver]
---- @return void
+--- No documentation available.
 function GetQuestPortraitGiver()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestPortraitTurnIn]
---- @return void
+--- No documentation available.
 function GetQuestPortraitTurnIn()
 end
 
@@ -6336,15 +5539,11 @@ end
 function GetQuestSortIndex(questLogIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestText]
---- @return void
+--- No documentation available.
 function GetQuestText()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetQuestUiMapID]
---- @return void
+--- No documentation available.
 function GetQuestUiMapID()
 end
 
@@ -6361,27 +5560,19 @@ end
 function GetRaidDifficultyID()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRaidProfileFlattenedOptions]
---- @return void
+--- No documentation available.
 function GetRaidProfileFlattenedOptions()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRaidProfileName]
---- @return void
+--- No documentation available.
 function GetRaidProfileName()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRaidProfileOption]
---- @return void
+--- No documentation available.
 function GetRaidProfileOption()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRaidProfileSavedPosition]
---- @return void
+--- No documentation available.
 function GetRaidProfileSavedPosition()
 end
 
@@ -6399,21 +5590,15 @@ end
 function GetRaidTargetIndex(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRandomDungeonBestChoice]
---- @return void
+--- No documentation available.
 function GetRandomDungeonBestChoice()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRandomScenarioBestChoice]
---- @return void
+--- No documentation available.
 function GetRandomScenarioBestChoice()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRandomScenarioInfo]
---- @return void
+--- No documentation available.
 function GetRandomScenarioInfo()
 end
 
@@ -6429,27 +5614,19 @@ end
 function GetRangedHaste()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRatedBattleGroundInfo]
---- @return void
+--- No documentation available.
 function GetRatedBattleGroundInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetReadyCheckStatus]
---- @return void
+--- No documentation available.
 function GetReadyCheckStatus()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetReadyCheckTimeLeft]
---- @return void
+--- No documentation available.
 function GetReadyCheckTimeLeft()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetReagentBankCost]
---- @return void
+--- No documentation available.
 function GetReagentBankCost()
 end
 
@@ -6472,9 +5649,7 @@ end
 function GetRealmName()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetReleaseTimeRemaining]
---- @return void
+--- No documentation available.
 function GetReleaseTimeRemaining()
 end
 
@@ -6484,9 +5659,7 @@ end
 function GetRepairAllCost()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetResSicknessDuration]
---- @return void
+--- No documentation available.
 function GetResSicknessDuration()
 end
 
@@ -6502,75 +5675,51 @@ end
 function GetRestrictedAccountData()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRewardArtifactXP]
---- @return void
+--- No documentation available.
 function GetRewardArtifactXP()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRewardHonor]
---- @return void
+--- No documentation available.
 function GetRewardHonor()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRewardMoney]
---- @return void
+--- No documentation available.
 function GetRewardMoney()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRewardNumSkillUps]
---- @return void
+--- No documentation available.
 function GetRewardNumSkillUps()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRewardPackArtifactPower]
---- @return void
+--- No documentation available.
 function GetRewardPackArtifactPower()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRewardPackCurrencies]
---- @return void
+--- No documentation available.
 function GetRewardPackCurrencies()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRewardPackItems]
---- @return void
+--- No documentation available.
 function GetRewardPackItems()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRewardPackMoney]
---- @return void
+--- No documentation available.
 function GetRewardPackMoney()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRewardPackTitle]
---- @return void
+--- No documentation available.
 function GetRewardPackTitle()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRewardPackTitleName]
---- @return void
+--- No documentation available.
 function GetRewardPackTitleName()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRewardSkillLineID]
---- @return void
+--- No documentation available.
 function GetRewardSkillLineID()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRewardSkillPoints]
---- @return void
+--- No documentation available.
 function GetRewardSkillPoints()
 end
 
@@ -6580,9 +5729,7 @@ end
 function GetRewardText()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRewardTitle]
---- @return void
+--- No documentation available.
 function GetRewardTitle()
 end
 
@@ -6606,15 +5753,11 @@ end
 function GetRuneCount(slot)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRunningMacro]
---- @return void
+--- No documentation available.
 function GetRunningMacro()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetRunningMacroButton]
---- @return void
+--- No documentation available.
 function GetRunningMacroButton()
 end
 
@@ -6691,21 +5834,15 @@ end
 function GetSelectedArtifactInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSelectedDisplayChannel]
---- @return void
+--- No documentation available.
 function GetSelectedDisplayChannel()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSelectedFaction]
---- @return void
+--- No documentation available.
 function GetSelectedFaction()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSelectedWarGameType]
---- @return void
+--- No documentation available.
 function GetSelectedWarGameType()
 end
 
@@ -6729,9 +5866,7 @@ end
 function GetSendMailItemLink(attachment)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSendMailMoney]
---- @return void
+--- No documentation available.
 function GetSendMailMoney()
 end
 
@@ -6829,9 +5964,7 @@ end
 function GetSoundEntryCount(soundKit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSpecChangeCost]
---- @return void
+--- No documentation available.
 function GetSpecChangeCost()
 end
 
@@ -6911,15 +6044,11 @@ end
 function GetSpecializationRoleByID(specID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSpecializationRoleEnum]
---- @return void
+--- No documentation available.
 function GetSpecializationRoleEnum()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSpecializationRoleEnumByID]
---- @return void
+--- No documentation available.
 function GetSpecializationRoleEnumByID()
 end
 
@@ -6932,15 +6061,11 @@ end
 function GetSpecializationSpells(specIndex, isInspect, isPet)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSpecsForSpell]
---- @return void
+--- No documentation available.
 function GetSpecsForSpell()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSpeed]
---- @return void
+--- No documentation available.
 function GetSpeed()
 end
 
@@ -6952,9 +6077,7 @@ end
 function GetSpellAutocast(spellName_or_spellId, bookType)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSpellAvailableLevel]
---- @return void
+--- No documentation available.
 function GetSpellAvailableLevel()
 end
 
@@ -7010,9 +6133,7 @@ end
 function GetSpellCharges(index, bookType)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSpellConfirmationPromptsInfo]
---- @return void
+--- No documentation available.
 function GetSpellConfirmationPromptsInfo()
 end
 
@@ -7098,21 +6219,15 @@ end
 function GetSpellPowerCost(index, bookType)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSpellQueueWindow]
---- @return void
+--- No documentation available.
 function GetSpellQueueWindow()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSpellRank]
---- @return void
+--- No documentation available.
 function GetSpellRank()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSpellSubtext]
---- @return void
+--- No documentation available.
 function GetSpellSubtext()
 end
 
@@ -7131,15 +6246,11 @@ end
 function GetSpellTexture(index, bookType)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSpellTradeSkillLink]
---- @return void
+--- No documentation available.
 function GetSpellTradeSkillLink()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSpellsForCharacterUpgradeTier]
---- @return void
+--- No documentation available.
 function GetSpellsForCharacterUpgradeTier()
 end
 
@@ -7171,9 +6282,7 @@ end
 function GetStatisticsCategoryList()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSturdiness]
---- @return void
+--- No documentation available.
 function GetSturdiness()
 end
 
@@ -7183,9 +6292,7 @@ end
 function GetSubZoneText()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetSuggestedGroupSize]
---- @return void
+--- No documentation available.
 function GetSuggestedGroupSize()
 end
 
@@ -7195,15 +6302,11 @@ end
 function GetSummonFriendCooldown()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTabardCreationCost]
---- @return void
+--- No documentation available.
 function GetTabardCreationCost()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTabardInfo]
---- @return void
+--- No documentation available.
 function GetTabardInfo()
 end
 
@@ -7237,9 +6340,7 @@ end
 function GetTalentInfoBySpecialization(specIndex, tier, column)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTalentLink]
---- @return void
+--- No documentation available.
 function GetTalentLink()
 end
 
@@ -7253,9 +6354,7 @@ end
 function GetTalentTierInfo(tier, specGroupIndex, isInspect, inspectedUnit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTargetTradeCurrency]
---- @return void
+--- No documentation available.
 function GetTargetTradeCurrency()
 end
 
@@ -7272,21 +6371,15 @@ end
 function GetTaskInfo(questID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTaskPOIs]
---- @return void
+--- No documentation available.
 function GetTaskPOIs()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTasksTable]
---- @return void
+--- No documentation available.
 function GetTasksTable()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTaxiBenchmarkMode]
---- @return void
+--- No documentation available.
 function GetTaxiBenchmarkMode()
 end
 
@@ -7296,9 +6389,7 @@ end
 function GetTaxiMapID()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTempShapeshiftBarIndex]
---- @return void
+--- No documentation available.
 function GetTempShapeshiftBarIndex()
 end
 
@@ -7355,9 +6446,7 @@ end
 function GetTotalAchievementPoints()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTotemCannotDismiss]
---- @return void
+--- No documentation available.
 function GetTotemCannotDismiss()
 end
 
@@ -7464,9 +6553,7 @@ end
 function GetTrainerServiceLevelReq(id)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTrainerServiceNumAbilityReq]
---- @return void
+--- No documentation available.
 function GetTrainerServiceNumAbilityReq()
 end
 
@@ -7484,9 +6571,7 @@ end
 function GetTrainerServiceSkillReq(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTrainerServiceStepIndex]
---- @return void
+--- No documentation available.
 function GetTrainerServiceStepIndex()
 end
 
@@ -7497,27 +6582,19 @@ end
 function GetTrainerServiceTypeFilter(type)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTrainerTradeskillRankValues]
---- @return void
+--- No documentation available.
 function GetTrainerTradeskillRankValues()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTreasurePickerItemInfo]
---- @return void
+--- No documentation available.
 function GetTreasurePickerItemInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetTutorialsEnabled]
---- @return void
+--- No documentation available.
 function GetTutorialsEnabled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetUICameraInfo]
---- @return void
+--- No documentation available.
 function GetUICameraInfo()
 end
 
@@ -7550,15 +6627,11 @@ end
 function GetUnitEmpowerStageDuration(unit, index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetUnitHealthModifier]
---- @return void
+--- No documentation available.
 function GetUnitHealthModifier()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetUnitMaxHealthModifier]
---- @return void
+--- No documentation available.
 function GetUnitMaxHealthModifier()
 end
 
@@ -7607,9 +6680,7 @@ end
 function GetUnitPowerBarTextureInfoByID(barID, textureIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetUnitPowerModifier]
---- @return void
+--- No documentation available.
 function GetUnitPowerModifier()
 end
 
@@ -7620,33 +6691,23 @@ end
 function GetUnitSpeed(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetVehicleBarIndex]
---- @return void
+--- No documentation available.
 function GetVehicleBarIndex()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetVehicleUIIndicator]
---- @return void
+--- No documentation available.
 function GetVehicleUIIndicator()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetVehicleUIIndicatorSeat]
---- @return void
+--- No documentation available.
 function GetVehicleUIIndicatorSeat()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetVersatilityBonus]
---- @return void
+--- No documentation available.
 function GetVersatilityBonus()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetVideoCaps]
---- @return void
+--- No documentation available.
 function GetVideoCaps()
 end
 
@@ -7665,9 +6726,7 @@ end
 function GetVoidItemInfo(tabIndex, slotIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetVoidStorageSlotPageIndex]
---- @return void
+--- No documentation available.
 function GetVoidStorageSlotPageIndex()
 end
 
@@ -7691,21 +6750,15 @@ end
 function GetVoidTransferWithdrawalInfo(slotIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetVoidUnlockCost]
---- @return void
+--- No documentation available.
 function GetVoidUnlockCost()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetWarGameQueueStatus]
---- @return void
+--- No documentation available.
 function GetWarGameQueueStatus()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetWarGameTypeInfo]
---- @return void
+--- No documentation available.
 function GetWarGameTypeInfo()
 end
 
@@ -7733,15 +6786,11 @@ end
 function GetWorldElapsedTime(timerID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetWorldElapsedTimers]
---- @return void
+--- No documentation available.
 function GetWorldElapsedTimers()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetWorldMapActionButtonSpellInfo]
---- @return void
+--- No documentation available.
 function GetWorldMapActionButtonSpellInfo()
 end
 
@@ -7752,9 +6801,7 @@ end
 function GetWorldPVPAreaInfo(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GetWorldPVPQueueStatus]
---- @return void
+--- No documentation available.
 function GetWorldPVPQueueStatus()
 end
 
@@ -7784,15 +6831,11 @@ end
 function GiveMasterLoot(li, ci)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GroupHasOfflineMember]
---- @return void
+--- No documentation available.
 function GroupHasOfflineMember()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GuildControlAddRank]
---- @return void
+--- No documentation available.
 function GuildControlAddRank()
 end
 
@@ -7803,15 +6846,11 @@ end
 function GuildControlDelRank(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GuildControlGetAllowedShifts]
---- @return void
+--- No documentation available.
 function GuildControlGetAllowedShifts()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GuildControlGetNumRanks]
---- @return void
+--- No documentation available.
 function GuildControlGetNumRanks()
 end
 
@@ -7844,15 +6883,11 @@ end
 function GuildControlSetRankFlag(index, enabled)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GuildControlShiftRankDown]
---- @return void
+--- No documentation available.
 function GuildControlShiftRankDown()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GuildControlShiftRankUp]
---- @return void
+--- No documentation available.
 function GuildControlShiftRankUp()
 end
 
@@ -7888,21 +6923,15 @@ end
 function GuildLeave()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GuildMasterAbsent]
---- @return void
+--- No documentation available.
 function GuildMasterAbsent()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GuildNewsSetSticky]
---- @return void
+--- No documentation available.
 function GuildNewsSetSticky()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_GuildNewsSort]
---- @return void
+--- No documentation available.
 function GuildNewsSort()
 end
 
@@ -7950,15 +6979,11 @@ end
 function GuildUninvite(name)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HandleAtlasMemberCommand]
---- @return void
+--- No documentation available.
 function HandleAtlasMemberCommand()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasAPEffectsSpellPower]
---- @return void
+--- No documentation available.
 function HasAPEffectsSpellPower()
 end
 
@@ -7969,39 +6994,27 @@ end
 function HasAction(actionSlot)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasArtifactEquipped]
---- @return void
+--- No documentation available.
 function HasArtifactEquipped()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasAttachedGlyph]
---- @return void
+--- No documentation available.
 function HasAttachedGlyph()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasBonusActionBar]
---- @return void
+--- No documentation available.
 function HasBonusActionBar()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasBoundGemProposed]
---- @return void
+--- No documentation available.
 function HasBoundGemProposed()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasCompletedAnyAchievement]
---- @return void
+--- No documentation available.
 function HasCompletedAnyAchievement()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasDualWieldPenalty]
---- @return void
+--- No documentation available.
 function HasDualWieldPenalty()
 end
 
@@ -8017,15 +7030,11 @@ end
 function HasFullControl()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasIgnoreDualWieldWeapon]
---- @return void
+--- No documentation available.
 function HasIgnoreDualWieldWeapon()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasInboxItem]
---- @return void
+--- No documentation available.
 function HasInboxItem()
 end
 
@@ -8035,33 +7044,23 @@ end
 function HasLFGRestrictions()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasLoadedCUFProfiles]
---- @return void
+--- No documentation available.
 function HasLoadedCUFProfiles()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasNewMail]
---- @return void
+--- No documentation available.
 function HasNewMail()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasNoReleaseAura]
---- @return void
+--- No documentation available.
 function HasNoReleaseAura()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasOverrideActionBar]
---- @return void
+--- No documentation available.
 function HasOverrideActionBar()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasPendingGlyphCast]
---- @return void
+--- No documentation available.
 function HasPendingGlyphCast()
 end
 
@@ -8077,27 +7076,19 @@ end
 function HasPetUI()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasSPEffectsAttackPower]
---- @return void
+--- No documentation available.
 function HasSPEffectsAttackPower()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasSendMailItem]
---- @return void
+--- No documentation available.
 function HasSendMailItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasTempShapeshiftActionBar]
---- @return void
+--- No documentation available.
 function HasTempShapeshiftActionBar()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HasVehicleActionBar]
---- @return void
+--- No documentation available.
 function HasVehicleActionBar()
 end
 
@@ -8107,21 +7098,15 @@ end
 function HasWandEquipped()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HaveQuestData]
---- @return void
+--- No documentation available.
 function HaveQuestData()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HaveQuestRewardData]
---- @return void
+--- No documentation available.
 function HaveQuestRewardData()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_HearthAndResurrectFromArea]
---- @return void
+--- No documentation available.
 function HearthAndResurrectFromArea()
 end
 
@@ -8207,15 +7192,11 @@ end
 function IsActiveBattlefieldArena()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsActiveQuestLegendary]
---- @return void
+--- No documentation available.
 function IsActiveQuestLegendary()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsActiveQuestTrivial]
---- @return void
+--- No documentation available.
 function IsActiveQuestTrivial()
 end
 
@@ -8237,33 +7218,23 @@ end
 function IsAltKeyDown()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsArenaSkirmish]
---- @return void
+--- No documentation available.
 function IsArenaSkirmish()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsArtifactCompletionHistoryAvailable]
---- @return void
+--- No documentation available.
 function IsArtifactCompletionHistoryAvailable()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsArtifactPowerItem]
---- @return void
+--- No documentation available.
 function IsArtifactPowerItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsArtifactRelicItem]
---- @return void
+--- No documentation available.
 function IsArtifactRelicItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsAtStableMaster]
---- @return void
+--- No documentation available.
 function IsAtStableMaster()
 end
 
@@ -8288,69 +7259,47 @@ end
 function IsAutoRepeatAction(actionSlot)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsAutoRepeatSpell]
---- @return void
+--- No documentation available.
 function IsAutoRepeatSpell()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsAvailableQuestTrivial]
---- @return void
+--- No documentation available.
 function IsAvailableQuestTrivial()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsBNLogin]
---- @return void
+--- No documentation available.
 function IsBNLogin()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsBindingForGamePad]
---- @return void
+--- No documentation available.
 function IsBindingForGamePad()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsBreadcrumbQuest]
---- @return void
+--- No documentation available.
 function IsBreadcrumbQuest()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsCastingGlyph]
---- @return void
+--- No documentation available.
 function IsCastingGlyph()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsCemeterySelectionAvailable]
---- @return void
+--- No documentation available.
 function IsCemeterySelectionAvailable()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsCharacterNewlyBoosted]
---- @return void
+--- No documentation available.
 function IsCharacterNewlyBoosted()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsChatAFK]
---- @return void
+--- No documentation available.
 function IsChatAFK()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsChatChannelRaid]
---- @return void
+--- No documentation available.
 function IsChatChannelRaid()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsChatDND]
---- @return void
+--- No documentation available.
 function IsChatDND()
 end
 
@@ -8368,9 +7317,7 @@ end
 function IsConsumableItem(itemID_or_itemLink_or_itemName)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsConsumableSpell]
---- @return void
+--- No documentation available.
 function IsConsumableSpell()
 end
 
@@ -8387,9 +7334,7 @@ end
 function IsCorruptedItem(itemID_or_name_or_itemlink)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsCosmeticItem]
---- @return void
+--- No documentation available.
 function IsCosmeticItem()
 end
 
@@ -8400,15 +7345,11 @@ end
 function IsCurrentAction(actionSlot)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsCurrentItem]
---- @return void
+--- No documentation available.
 function IsCurrentItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsCurrentQuestFailed]
---- @return void
+--- No documentation available.
 function IsCurrentQuestFailed()
 end
 
@@ -8419,9 +7360,7 @@ end
 function IsCurrentSpell(spellID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsDebugBuild]
---- @return void
+--- No documentation available.
 function IsDebugBuild()
 end
 
@@ -8431,21 +7370,15 @@ end
 function IsDemonHunterAvailable()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsDesaturateSupported]
---- @return void
+--- No documentation available.
 function IsDesaturateSupported()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsDisplayChannelModerator]
---- @return void
+--- No documentation available.
 function IsDisplayChannelModerator()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsDisplayChannelOwner]
---- @return void
+--- No documentation available.
 function IsDisplayChannelOwner()
 end
 
@@ -8455,21 +7388,15 @@ end
 function IsDualWielding()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsEncounterInProgress]
---- @return void
+--- No documentation available.
 function IsEncounterInProgress()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsEncounterLimitingResurrections]
---- @return void
+--- No documentation available.
 function IsEncounterLimitingResurrections()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsEncounterSuppressingRelease]
---- @return void
+--- No documentation available.
 function IsEncounterSuppressingRelease()
 end
 
@@ -8501,15 +7428,11 @@ end
 function IsEquippedItemType(type)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsEuropeanNumbers]
---- @return void
+--- No documentation available.
 function IsEuropeanNumbers()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsEveryoneAssistant]
---- @return void
+--- No documentation available.
 function IsEveryoneAssistant()
 end
 
@@ -8565,27 +7488,19 @@ end
 function IsGUIDInGroup(UnitGUID, groupType)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsGamePadCursorControlEnabled]
---- @return void
+--- No documentation available.
 function IsGamePadCursorControlEnabled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsGamePadFreelookEnabled]
---- @return void
+--- No documentation available.
 function IsGamePadFreelookEnabled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsGraphicsCVarValueSupported]
---- @return void
+--- No documentation available.
 function IsGraphicsCVarValueSupported()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsGraphicsSettingValueSupported]
---- @return void
+--- No documentation available.
 function IsGraphicsSettingValueSupported()
 end
 
@@ -8595,51 +7510,35 @@ end
 function IsGuildLeader()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsGuildMember]
---- @return void
+--- No documentation available.
 function IsGuildMember()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsGuildRankAssignmentAllowed]
---- @return void
+--- No documentation available.
 function IsGuildRankAssignmentAllowed()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsHarmfulItem]
---- @return void
+--- No documentation available.
 function IsHarmfulItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsHarmfulSpell]
---- @return void
+--- No documentation available.
 function IsHarmfulSpell()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsHelpfulItem]
---- @return void
+--- No documentation available.
 function IsHelpfulItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsHelpfulSpell]
---- @return void
+--- No documentation available.
 function IsHelpfulSpell()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsInActiveWorldPVP]
---- @return void
+--- No documentation available.
 function IsInActiveWorldPVP()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsInAuthenticatedRank]
---- @return void
+--- No documentation available.
 function IsInAuthenticatedRank()
 end
 
@@ -8674,9 +7573,7 @@ end
 function IsInInstance()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsInJailersTower]
---- @return void
+--- No documentation available.
 function IsInJailersTower()
 end
 
@@ -8693,9 +7590,7 @@ end
 function IsInRaid(groupType)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsInScenarioGroup]
---- @return void
+--- No documentation available.
 function IsInScenarioGroup()
 end
 
@@ -8705,9 +7600,7 @@ end
 function IsIndoors()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsInsane]
---- @return void
+--- No documentation available.
 function IsInsane()
 end
 
@@ -8718,15 +7611,11 @@ end
 function IsInventoryItemLocked(slotId)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsInventoryItemProfessionBag]
---- @return void
+--- No documentation available.
 function IsInventoryItemProfessionBag()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsItemAction]
---- @return void
+--- No documentation available.
 function IsItemAction()
 end
 
@@ -8738,9 +7627,7 @@ end
 function IsItemInRange(item, unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsJailersTowerLayerTimeLocked]
---- @return void
+--- No documentation available.
 function IsJailersTowerLayerTimeLocked()
 end
 
@@ -8758,9 +7645,7 @@ end
 function IsLFGComplete()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsLFGDungeonJoinable]
---- @return void
+--- No documentation available.
 function IsLFGDungeonJoinable()
 end
 
@@ -8788,9 +7673,7 @@ end
 function IsLeftShiftKeyDown()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsLegacyDifficulty]
---- @return void
+--- No documentation available.
 function IsLegacyDifficulty()
 end
 
@@ -8800,9 +7683,7 @@ end
 function IsLinuxClient()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsLoggedIn]
---- @return void
+--- No documentation available.
 function IsLoggedIn()
 end
 
@@ -8812,9 +7693,7 @@ end
 function IsMacClient()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsMasterLooter]
---- @return void
+--- No documentation available.
 function IsMasterLooter()
 end
 
@@ -8876,15 +7755,11 @@ end
 function IsOnGlueScreen()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsOnGroundFloorInJailersTower]
---- @return void
+--- No documentation available.
 function IsOnGroundFloorInJailersTower()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsOnTournamentRealm]
---- @return void
+--- No documentation available.
 function IsOnTournamentRealm()
 end
 
@@ -8900,27 +7775,19 @@ end
 function IsOutdoors()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsOutlineModeSupported]
---- @return void
+--- No documentation available.
 function IsOutlineModeSupported()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsPVPTimerRunning]
---- @return void
+--- No documentation available.
 function IsPVPTimerRunning()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsPartyLFG]
---- @return void
+--- No documentation available.
 function IsPartyLFG()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsPartyWorldPVP]
---- @return void
+--- No documentation available.
 function IsPartyWorldPVP()
 end
 
@@ -8932,21 +7799,15 @@ end
 function IsPassiveSpell(spellId_or_index, bookType)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsPendingGlyphRemoval]
---- @return void
+--- No documentation available.
 function IsPendingGlyphRemoval()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsPetActive]
---- @return void
+--- No documentation available.
 function IsPetActive()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsPetAttackAction]
---- @return void
+--- No documentation available.
 function IsPetAttackAction()
 end
 
@@ -8963,15 +7824,11 @@ end
 function IsPlayerInGuildFromGUID(playerGUID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsPlayerInWorld]
---- @return void
+--- No documentation available.
 function IsPlayerInWorld()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsPlayerMoving]
---- @return void
+--- No documentation available.
 function IsPlayerMoving()
 end
 
@@ -8988,15 +7845,11 @@ end
 function IsPlayerSpell(spellID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsPossessBarVisible]
---- @return void
+--- No documentation available.
 function IsPossessBarVisible()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsPressHoldReleaseSpell]
---- @return void
+--- No documentation available.
 function IsPressHoldReleaseSpell()
 end
 
@@ -9006,9 +7859,7 @@ end
 function IsPublicBuild()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsPvpTalentSpell]
---- @return void
+--- No documentation available.
 function IsPvpTalentSpell()
 end
 
@@ -9018,45 +7869,31 @@ end
 function IsQuestCompletable()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsQuestIDValidSpellTarget]
---- @return void
+--- No documentation available.
 function IsQuestIDValidSpellTarget()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsQuestItemHidden]
---- @return void
+--- No documentation available.
 function IsQuestItemHidden()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsQuestLogSpecialItemInRange]
---- @return void
+--- No documentation available.
 function IsQuestLogSpecialItemInRange()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsQuestSequenced]
---- @return void
+--- No documentation available.
 function IsQuestSequenced()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsRaidMarkerActive]
---- @return void
+--- No documentation available.
 function IsRaidMarkerActive()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsRangedWeapon]
---- @return void
+--- No documentation available.
 function IsRangedWeapon()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsReagentBankUnlocked]
---- @return void
+--- No documentation available.
 function IsReagentBankUnlocked()
 end
 
@@ -9081,9 +7918,7 @@ end
 function IsResting()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsRestrictedAccount]
---- @return void
+--- No documentation available.
 function IsRestrictedAccount()
 end
 
@@ -9111,15 +7946,11 @@ end
 function IsRightShiftKeyDown()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsSelectedSpellBookItem]
---- @return void
+--- No documentation available.
 function IsSelectedSpellBookItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsServerControlledBackfill]
---- @return void
+--- No documentation available.
 function IsServerControlledBackfill()
 end
 
@@ -9129,9 +7960,7 @@ end
 function IsShiftKeyDown()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsSpecializationActivateSpell]
---- @return void
+--- No documentation available.
 function IsSpecializationActivateSpell()
 end
 
@@ -9160,9 +7989,7 @@ end
 function IsSpellKnown(spellID, isPetSpell)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsSpellKnownOrOverridesKnown]
---- @return void
+--- No documentation available.
 function IsSpellKnownOrOverridesKnown()
 end
 
@@ -9173,21 +8000,15 @@ end
 function IsSpellOverlayed(spellID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsSpellValidForPendingGlyph]
---- @return void
+--- No documentation available.
 function IsSpellValidForPendingGlyph()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsSplashFramePrimaryFeatureUnlocked]
---- @return void
+--- No documentation available.
 function IsSplashFramePrimaryFeatureUnlocked()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsStackableAction]
---- @return void
+--- No documentation available.
 function IsStackableAction()
 end
 
@@ -9197,15 +8018,11 @@ end
 function IsStealthed()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsStoryQuest]
---- @return void
+--- No documentation available.
 function IsStoryQuest()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsSubZonePVPPOI]
---- @return void
+--- No documentation available.
 function IsSubZonePVPPOI()
 end
 
@@ -9267,9 +8084,7 @@ end
 function IsTrialAccount()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsTutorialFlagged]
---- @return void
+--- No documentation available.
 function IsTutorialFlagged()
 end
 
@@ -9287,9 +8102,7 @@ end
 function IsUsableAction(slot)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsUsableItem]
---- @return void
+--- No documentation available.
 function IsUsableItem()
 end
 
@@ -9319,21 +8132,15 @@ end
 function IsUsingMouse()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsUsingVehicleControls]
---- @return void
+--- No documentation available.
 function IsUsingVehicleControls()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsVehicleAimAngleAdjustable]
---- @return void
+--- No documentation available.
 function IsVehicleAimAngleAdjustable()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsVehicleAimPowerAdjustable]
---- @return void
+--- No documentation available.
 function IsVehicleAimPowerAdjustable()
 end
 
@@ -9343,9 +8150,7 @@ end
 function IsVeteranTrialAccount()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsVoidStorageReady]
---- @return void
+--- No documentation available.
 function IsVoidStorageReady()
 end
 
@@ -9361,33 +8166,23 @@ end
 function IsWindowsClient()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsWorldLootObject]
---- @return void
+--- No documentation available.
 function IsWorldLootObject()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_IsXPUserDisabled]
---- @return void
+--- No documentation available.
 function IsXPUserDisabled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ItemAddedToArtifact]
---- @return void
+--- No documentation available.
 function ItemAddedToArtifact()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ItemCanTargetGarrisonFollowerAbility]
---- @return void
+--- No documentation available.
 function ItemCanTargetGarrisonFollowerAbility()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ItemHasRange]
---- @return void
+--- No documentation available.
 function ItemHasRange()
 end
 
@@ -9427,9 +8222,7 @@ end
 function ItemTextHasNextPage()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ItemTextIsFullPage]
---- @return void
+--- No documentation available.
 function ItemTextIsFullPage()
 end
 
@@ -9445,9 +8238,7 @@ end
 function ItemTextPrevPage()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_JoinArena]
---- @return void
+--- No documentation available.
 function JoinArena()
 end
 
@@ -9470,9 +8261,7 @@ end
 function JoinChannelByName(channelName, password, frameID, hasVoice)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_JoinLFG]
---- @return void
+--- No documentation available.
 function JoinLFG()
 end
 
@@ -9486,21 +8275,15 @@ end
 function JoinPermanentChannel(channelName, password, frameID, hasVoice)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_JoinRatedBattlefield]
---- @return void
+--- No documentation available.
 function JoinRatedBattlefield()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_JoinRatedSoloShuffle]
---- @return void
+--- No documentation available.
 function JoinRatedSoloShuffle()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_JoinSingleLFG]
---- @return void
+--- No documentation available.
 function JoinSingleLFG()
 end
 
@@ -9550,9 +8333,7 @@ end
 function LearnPvpTalent(talentID, slotIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_LearnPvpTalents]
---- @return void
+--- No documentation available.
 function LearnPvpTalents()
 end
 
@@ -9563,9 +8344,7 @@ end
 function LearnTalent(talentID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_LearnTalents]
---- @return void
+--- No documentation available.
 function LearnTalents()
 end
 
@@ -9575,9 +8354,7 @@ end
 function LeaveBattlefield()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_LeaveChannelByLocalID]
---- @return void
+--- No documentation available.
 function LeaveChannelByLocalID()
 end
 
@@ -9588,15 +8365,11 @@ end
 function LeaveChannelByName(channelName)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_LeaveLFG]
---- @return void
+--- No documentation available.
 function LeaveLFG()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_LeaveSingleLFG]
---- @return void
+--- No documentation available.
 function LeaveSingleLFG()
 end
 
@@ -9655,9 +8428,7 @@ end
 function Logout()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_LootMoneyNotify]
---- @return void
+--- No documentation available.
 function LootMoneyNotify()
 end
 
@@ -9675,9 +8446,7 @@ end
 function LootSlotHasItem(lootSlot)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_MouseOverrideCinematicDisable]
---- @return void
+--- No documentation available.
 function MouseOverrideCinematicDisable()
 end
 
@@ -9693,15 +8462,11 @@ end
 function MouselookStop()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_MoveAndSteerStart]
---- @return void
+--- No documentation available.
 function MoveAndSteerStart()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_MoveAndSteerStop]
---- @return void
+--- No documentation available.
 function MoveAndSteerStop()
 end
 
@@ -9811,9 +8576,7 @@ end
 function MoveViewUpStop()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_MultiSampleAntiAliasingSupported]
---- @return void
+--- No documentation available.
 function MultiSampleAntiAliasingSupported()
 end
 
@@ -9831,9 +8594,7 @@ end
 function NeutralPlayerSelectFaction(factionIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_NextView]
---- @return void
+--- No documentation available.
 function NextView()
 end
 
@@ -9868,15 +8629,11 @@ end
 function OfferPetition()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_OpenTrainer]
---- @return void
+--- No documentation available.
 function OpenTrainer()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_OpeningCinematic]
---- @return void
+--- No documentation available.
 function OpeningCinematic()
 end
 
@@ -9886,9 +8643,7 @@ end
 function PartialPlayTime()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PartyLFGStartBackfill]
---- @return void
+--- No documentation available.
 function PartyLFGStartBackfill()
 end
 
@@ -9922,9 +8677,7 @@ end
 function PetCanBeAbandoned()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PetCanBeDismissed]
---- @return void
+--- No documentation available.
 function PetCanBeDismissed()
 end
 
@@ -9964,15 +8717,11 @@ end
 function PetHasActionBar()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PetHasSpellbook]
---- @return void
+--- No documentation available.
 function PetHasSpellbook()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PetMoveTo]
---- @return void
+--- No documentation available.
 function PetMoveTo()
 end
 
@@ -9995,9 +8744,7 @@ end
 function PetStopAttack()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PetUsesPetFrame]
---- @return void
+--- No documentation available.
 function PetUsesPetFrame()
 end
 
@@ -10029,15 +8776,11 @@ end
 function PickupCompanion(type, index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PickupGuildBankItem]
---- @return void
+--- No documentation available.
 function PickupGuildBankItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PickupGuildBankMoney]
---- @return void
+--- No documentation available.
 function PickupGuildBankMoney()
 end
 
@@ -10090,9 +8833,7 @@ end
 function PickupPlayerMoney(copper)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PickupPvpTalent]
---- @return void
+--- No documentation available.
 function PickupPvpTalent()
 end
 
@@ -10118,9 +8859,7 @@ end
 function PickupStablePet(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PickupTalent]
---- @return void
+--- No documentation available.
 function PickupTalent()
 end
 
@@ -10131,27 +8870,19 @@ end
 function PickupTradeMoney(copper)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PitchDownStart]
---- @return void
+--- No documentation available.
 function PitchDownStart()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PitchDownStop]
---- @return void
+--- No documentation available.
 function PitchDownStop()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PitchUpStart]
---- @return void
+--- No documentation available.
 function PitchUpStart()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PitchUpStop]
---- @return void
+--- No documentation available.
 function PitchUpStop()
 end
 
@@ -10162,15 +8893,11 @@ end
 function PlaceAction(actionSlot)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PlaceRaidMarker]
---- @return void
+--- No documentation available.
 function PlaceRaidMarker()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PlayAutoAcceptQuestSound]
---- @return void
+--- No documentation available.
 function PlayAutoAcceptQuestSound()
 end
 
@@ -10199,21 +8926,15 @@ end
 function PlaySoundFile(sound, channel)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PlayVocalErrorSoundID]
---- @return void
+--- No documentation available.
 function PlayVocalErrorSoundID()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PlayerCanTeleport]
---- @return void
+--- No documentation available.
 function PlayerCanTeleport()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PlayerEffectiveAttackPower]
---- @return void
+--- No documentation available.
 function PlayerEffectiveAttackPower()
 end
 
@@ -10224,9 +8945,7 @@ end
 function PlayerHasToy(itemId)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PlayerIsPVPInactive]
---- @return void
+--- No documentation available.
 function PlayerIsPVPInactive()
 end
 
@@ -10249,9 +8968,7 @@ end
 function PreloadMovie(movieId)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PrevView]
---- @return void
+--- No documentation available.
 function PrevView()
 end
 
@@ -10262,15 +8979,11 @@ end
 function ProcessExceptionClient(description)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ProcessQuestLogRewardFactions]
---- @return void
+--- No documentation available.
 function ProcessQuestLogRewardFactions()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PromoteToAssistant]
---- @return void
+--- No documentation available.
 function PromoteToAssistant()
 end
 
@@ -10281,9 +8994,7 @@ end
 function PromoteToLeader(unitId_or_playerName)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_PurchaseSlot]
---- @return void
+--- No documentation available.
 function PurchaseSlot()
 end
 
@@ -10295,44 +9006,32 @@ end
 
 --- Places the item on the cursor into the specified bag.
 --- [https://warcraft.wiki.gg/wiki/API_PutItemInBag]
---- @param iventoryID unknown
---- @return void
-function PutItemInBag(iventoryID)
+--- @param inventoryID number @ ? : InventorySlotId - Values from CONTAINER_BAG_OFFSET + 1 to CONTAINER_BAG_OFFSET  + NUM_TOTAL_EQUIPPED_BAG_SLOTS correspond to the player's bag slots, right-to-left from the first bag after the backpack.
+--- @return boolean @ hadItem
+function PutItemInBag(inventoryID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QueryGuildBankLog]
---- @return void
+--- No documentation available.
 function QueryGuildBankLog()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QueryGuildBankTab]
---- @return void
+--- No documentation available.
 function QueryGuildBankTab()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QueryGuildBankText]
---- @return void
+--- No documentation available.
 function QueryGuildBankText()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QueryGuildEventLog]
---- @return void
+--- No documentation available.
 function QueryGuildEventLog()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QueryGuildNews]
---- @return void
+--- No documentation available.
 function QueryGuildNews()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QueryGuildRecipes]
---- @return void
+--- No documentation available.
 function QueryGuildRecipes()
 end
 
@@ -10342,9 +9041,7 @@ end
 function QuestChooseRewardError()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QuestFlagsPVP]
---- @return void
+--- No documentation available.
 function QuestFlagsPVP()
 end
 
@@ -10354,15 +9051,11 @@ end
 function QuestGetAutoAccept()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QuestGetAutoLaunched]
---- @return void
+--- No documentation available.
 function QuestGetAutoLaunched()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QuestHasPOIInfo]
---- @return void
+--- No documentation available.
 function QuestHasPOIInfo()
 end
 
@@ -10372,15 +9065,11 @@ end
 function QuestIsDaily()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QuestIsFromAdventureMap]
---- @return void
+--- No documentation available.
 function QuestIsFromAdventureMap()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QuestIsFromAreaTrigger]
---- @return void
+--- No documentation available.
 function QuestIsFromAreaTrigger()
 end
 
@@ -10396,21 +9085,15 @@ end
 function QuestLogPushQuest()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QuestLogRewardHasTreasurePicker]
---- @return void
+--- No documentation available.
 function QuestLogRewardHasTreasurePicker()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QuestLogShouldShowPortrait]
---- @return void
+--- No documentation available.
 function QuestLogShouldShowPortrait()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QuestMapUpdateAllQuests]
---- @return void
+--- No documentation available.
 function QuestMapUpdateAllQuests()
 end
 
@@ -10421,15 +9104,11 @@ end
 function QuestPOIGetIconInfo(questId)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QuestPOIGetSecondaryLocations]
---- @return void
+--- No documentation available.
 function QuestPOIGetSecondaryLocations()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_QuestPOIUpdateIcons]
---- @return void
+--- No documentation available.
 function QuestPOIUpdateIcons()
 end
 
@@ -10439,15 +9118,11 @@ end
 function Quit()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RaidProfileExists]
---- @return void
+--- No documentation available.
 function RaidProfileExists()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RaidProfileHasUnsavedChanges]
---- @return void
+--- No documentation available.
 function RaidProfileHasUnsavedChanges()
 end
 
@@ -10459,27 +9134,19 @@ end
 function RandomRoll(low, high)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ReagentBankButtonIDToInvSlotID]
---- @return void
+--- No documentation available.
 function ReagentBankButtonIDToInvSlotID()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RedockChatWindows]
---- @return void
+--- No documentation available.
 function RedockChatWindows()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RefreshLFGList]
---- @return void
+--- No documentation available.
 function RefreshLFGList()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RegisterStaticConstants]
---- @return void
+--- No documentation available.
 function RegisterStaticConstants()
 end
 
@@ -10489,15 +9156,11 @@ end
 function RejectProposal()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ReleaseAction]
---- @return void
+--- No documentation available.
 function ReleaseAction()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RemoveAutoQuestPopUp]
---- @return void
+--- No documentation available.
 function RemoveAutoQuestPopUp()
 end
 
@@ -10523,15 +9186,11 @@ end
 function RemoveItemFromArtifact()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RemovePvpTalent]
---- @return void
+--- No documentation available.
 function RemovePvpTalent()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RemoveTalent]
---- @return void
+--- No documentation available.
 function RemoveTalent()
 end
 
@@ -10567,9 +9226,7 @@ end
 function ReplaceTradeEnchant()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ReplaceTradeskillEnchant]
---- @return void
+--- No documentation available.
 function ReplaceTradeskillEnchant()
 end
 
@@ -10579,21 +9236,15 @@ end
 function RepopMe()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ReportBug]
---- @return void
+--- No documentation available.
 function ReportBug()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ReportPlayerIsPVPAFK]
---- @return void
+--- No documentation available.
 function ReportPlayerIsPVPAFK()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ReportSuggestion]
---- @return void
+--- No documentation available.
 function ReportSuggestion()
 end
 
@@ -10610,51 +9261,35 @@ end
 function RequestBattlegroundInstanceInfo(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RequestBottomLeftActionBar]
---- @return void
+--- No documentation available.
 function RequestBottomLeftActionBar()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RequestGuildChallengeInfo]
---- @return void
+--- No documentation available.
 function RequestGuildChallengeInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RequestGuildPartyState]
---- @return void
+--- No documentation available.
 function RequestGuildPartyState()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RequestGuildRewards]
---- @return void
+--- No documentation available.
 function RequestGuildRewards()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RequestLFDPartyLockInfo]
---- @return void
+--- No documentation available.
 function RequestLFDPartyLockInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RequestLFDPlayerLockInfo]
---- @return void
+--- No documentation available.
 function RequestLFDPlayerLockInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RequestPVPOptionsEnabled]
---- @return void
+--- No documentation available.
 function RequestPVPOptionsEnabled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RequestPVPRewards]
---- @return void
+--- No documentation available.
 function RequestPVPRewards()
 end
 
@@ -10682,27 +9317,19 @@ end
 function RequestTimePlayed()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RequeueSkirmish]
---- @return void
+--- No documentation available.
 function RequeueSkirmish()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ResetCPUUsage]
---- @return void
+--- No documentation available.
 function ResetCPUUsage()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ResetChatColors]
---- @return void
+--- No documentation available.
 function ResetChatColors()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ResetChatWindows]
---- @return void
+--- No documentation available.
 function ResetChatWindows()
 end
 
@@ -10718,9 +9345,7 @@ end
 function ResetInstances()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ResetSetMerchantFilter]
---- @return void
+--- No documentation available.
 function ResetSetMerchantFilter()
 end
 
@@ -10730,33 +9355,23 @@ end
 function ResetTutorials()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ResetView]
---- @return void
+--- No documentation available.
 function ResetView()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ResistancePercent]
---- @return void
+--- No documentation available.
 function ResistancePercent()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RespondInstanceLock]
---- @return void
+--- No documentation available.
 function RespondInstanceLock()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RespondMailLockSendItem]
---- @return void
+--- No documentation available.
 function RespondMailLockSendItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RespondToInviteConfirmation]
---- @return void
+--- No documentation available.
 function RespondToInviteConfirmation()
 end
 
@@ -10766,27 +9381,19 @@ end
 function RestartGx()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_RestoreRaidProfileFromCopy]
---- @return void
+--- No documentation available.
 function RestoreRaidProfileFromCopy()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ResurrectGetOfferer]
---- @return void
+--- No documentation available.
 function ResurrectGetOfferer()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ResurrectHasSickness]
---- @return void
+--- No documentation available.
 function ResurrectHasSickness()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ResurrectHasTimer]
---- @return void
+--- No documentation available.
 function ResurrectHasTimer()
 end
 
@@ -10796,9 +9403,7 @@ end
 function RetrieveCorpse()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ReturnInboxItem]
---- @return void
+--- No documentation available.
 function ReturnInboxItem()
 end
 
@@ -10846,9 +9451,7 @@ end
 function SaveBindings(which)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SaveRaidProfileCopy]
---- @return void
+--- No documentation available.
 function SaveRaidProfileCopy()
 end
 
@@ -10865,21 +9468,15 @@ end
 function Screenshot()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ScriptsDisallowedForBeta]
---- @return void
+--- No documentation available.
 function ScriptsDisallowedForBeta()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SearchLFGGetEncounterResults]
---- @return void
+--- No documentation available.
 function SearchLFGGetEncounterResults()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SearchLFGGetJoinedID]
---- @return void
+--- No documentation available.
 function SearchLFGGetJoinedID()
 end
 
@@ -10912,15 +9509,11 @@ end
 function SearchLFGJoin(typeID, lfgID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SearchLFGLeave]
---- @return void
+--- No documentation available.
 function SearchLFGLeave()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SearchLFGSort]
---- @return void
+--- No documentation available.
 function SearchLFGSort()
 end
 
@@ -10931,15 +9524,11 @@ end
 function SecureCmdOptionParse(options)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SelectActiveQuest]
---- @return void
+--- No documentation available.
 function SelectActiveQuest()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SelectAvailableQuest]
---- @return void
+--- No documentation available.
 function SelectAvailableQuest()
 end
 
@@ -10956,9 +9545,7 @@ end
 function SelectedRealmName()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SellCursorItem]
---- @return void
+--- No documentation available.
 function SellCursorItem()
 end
 
@@ -11020,21 +9607,15 @@ end
 function SetActionBarToggles(bottomLeftState, bottomRightState, sideRightState, sideRight2State, alwaysShow)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetActionUIButton]
---- @return void
+--- No documentation available.
 function SetActionUIButton()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetAllowDangerousScripts]
---- @return void
+--- No documentation available.
 function SetAllowDangerousScripts()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetAllowLowLevelRaid]
---- @return void
+--- No documentation available.
 function SetAllowLowLevelRaid()
 end
 
@@ -11045,9 +9626,7 @@ end
 function SetAutoDeclineGuildInvites(decline)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetBarSlotFromIntro]
---- @return void
+--- No documentation available.
 function SetBarSlotFromIntro()
 end
 
@@ -11100,9 +9679,7 @@ end
 function SetBindingSpell(key, spell)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetCemeteryPreference]
---- @return void
+--- No documentation available.
 function SetCemeteryPreference()
 end
 
@@ -11122,69 +9699,47 @@ end
 function SetChannelPassword(channelName, password)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetChatColorNameByClass]
---- @return void
+--- No documentation available.
 function SetChatColorNameByClass()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetChatWindowAlpha]
---- @return void
+--- No documentation available.
 function SetChatWindowAlpha()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetChatWindowColor]
---- @return void
+--- No documentation available.
 function SetChatWindowColor()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetChatWindowDocked]
---- @return void
+--- No documentation available.
 function SetChatWindowDocked()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetChatWindowLocked]
---- @return void
+--- No documentation available.
 function SetChatWindowLocked()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetChatWindowName]
---- @return void
+--- No documentation available.
 function SetChatWindowName()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetChatWindowSavedDimensions]
---- @return void
+--- No documentation available.
 function SetChatWindowSavedDimensions()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetChatWindowSavedPosition]
---- @return void
+--- No documentation available.
 function SetChatWindowSavedPosition()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetChatWindowShown]
---- @return void
+--- No documentation available.
 function SetChatWindowShown()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetChatWindowSize]
---- @return void
+--- No documentation available.
 function SetChatWindowSize()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetChatWindowUninteractable]
---- @return void
+--- No documentation available.
 function SetChatWindowUninteractable()
 end
 
@@ -11195,15 +9750,11 @@ end
 function SetConsoleKey(key)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetCurrentGraphicsSetting]
---- @return void
+--- No documentation available.
 function SetCurrentGraphicsSetting()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetCurrentGuildBankTab]
---- @return void
+--- No documentation available.
 function SetCurrentGuildBankTab()
 end
 
@@ -11221,9 +9772,7 @@ end
 function SetCursor(cursor)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetCursorVirtualItem]
---- @return void
+--- No documentation available.
 function SetCursorVirtualItem()
 end
 
@@ -11234,15 +9783,11 @@ end
 function SetDungeonDifficultyID(difficultyIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetEuropeanNumbers]
---- @return void
+--- No documentation available.
 function SetEuropeanNumbers()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetEveryoneIsAssistant]
---- @return void
+--- No documentation available.
 function SetEveryoneIsAssistant()
 end
 
@@ -11260,21 +9805,15 @@ end
 function SetFactionInactive(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetFocusedAchievement]
---- @return void
+--- No documentation available.
 function SetFocusedAchievement()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetGamePadCursorControl]
---- @return void
+--- No documentation available.
 function SetGamePadCursorControl()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetGamePadFreeLook]
---- @return void
+--- No documentation available.
 function SetGamePadFreeLook()
 end
 
@@ -11287,9 +9826,7 @@ end
 function SetGuildBankTabInfo(tab, name, icon)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetGuildBankTabItemWithdraw]
---- @return void
+--- No documentation available.
 function SetGuildBankTabItemWithdraw()
 end
 
@@ -11324,15 +9861,11 @@ end
 function SetGuildInfoText(text)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetGuildMemberRank]
---- @return void
+--- No documentation available.
 function SetGuildMemberRank()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetGuildNewsFilter]
---- @return void
+--- No documentation available.
 function SetGuildNewsFilter()
 end
 
@@ -11350,15 +9883,11 @@ end
 function SetGuildRosterShowOffline(enabled)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetGuildTradeSkillCategoryFilter]
---- @return void
+--- No documentation available.
 function SetGuildTradeSkillCategoryFilter()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetGuildTradeSkillItemNameFilter]
---- @return void
+--- No documentation available.
 function SetGuildTradeSkillItemNameFilter()
 end
 
@@ -11369,9 +9898,7 @@ end
 function SetInWorldUIVisibility(visible)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetLFGBootVote]
---- @return void
+--- No documentation available.
 function SetLFGBootVote()
 end
 
@@ -11382,33 +9909,23 @@ end
 function SetLFGComment(comment)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetLFGDungeon]
---- @return void
+--- No documentation available.
 function SetLFGDungeon()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetLFGDungeonEnabled]
---- @return void
+--- No documentation available.
 function SetLFGDungeonEnabled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetLFGHeaderCollapsed]
---- @return void
+--- No documentation available.
 function SetLFGHeaderCollapsed()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetLFGRoles]
---- @return void
+--- No documentation available.
 function SetLFGRoles()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetLegacyRaidDifficultyID]
---- @return void
+--- No documentation available.
 function SetLegacyRaidDifficultyID()
 end
 
@@ -11421,9 +9938,7 @@ end
 function SetLootMethod(method, PlayerName, threshold)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetLootPortrait]
---- @return void
+--- No documentation available.
 function SetLootPortrait()
 end
 
@@ -11441,9 +9956,7 @@ end
 function SetLootThreshold(threshold)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetMacroItem]
---- @return void
+--- No documentation available.
 function SetMacroItem()
 end
 
@@ -11456,9 +9969,7 @@ end
 function SetMacroSpell(index, spell, target)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetMerchantFilter]
---- @return void
+--- No documentation available.
 function SetMerchantFilter()
 end
 
@@ -11470,9 +9981,7 @@ end
 function SetModifiedClick(action, key)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetMouselookOverrideBinding]
---- @return void
+--- No documentation available.
 function SetMouselookOverrideBinding()
 end
 
@@ -11548,15 +10057,11 @@ end
 function SetOverrideBindingSpell(owner, isPriority, key, spell)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetPOIIconOverlapDistance]
---- @return void
+--- No documentation available.
 function SetPOIIconOverlapDistance()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetPOIIconOverlapPushDistance]
---- @return void
+--- No documentation available.
 function SetPOIIconOverlapPushDistance()
 end
 
@@ -11576,15 +10081,11 @@ end
 function SetPVPRoles(tank, healer, dps)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetPartyAssignment]
---- @return void
+--- No documentation available.
 function SetPartyAssignment()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetPetSlot]
---- @return void
+--- No documentation available.
 function SetPetSlot()
 end
 
@@ -11627,15 +10128,11 @@ end
 function SetRaidDifficultyID(difficultyIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetRaidProfileOption]
---- @return void
+--- No documentation available.
 function SetRaidProfileOption()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetRaidProfileSavedPosition]
---- @return void
+--- No documentation available.
 function SetRaidProfileSavedPosition()
 end
 
@@ -11655,15 +10152,11 @@ end
 function SetRaidTarget(unit, index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetRaidTargetProtected]
---- @return void
+--- No documentation available.
 function SetRaidTargetProtected()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetSavedInstanceExtend]
---- @return void
+--- No documentation available.
 function SetSavedInstanceExtend()
 end
 
@@ -11674,45 +10167,31 @@ end
 function SetSelectedArtifact(raceIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetSelectedDisplayChannel]
---- @return void
+--- No documentation available.
 function SetSelectedDisplayChannel()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetSelectedFaction]
---- @return void
+--- No documentation available.
 function SetSelectedFaction()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetSelectedScreenResolutionIndex]
---- @return void
+--- No documentation available.
 function SetSelectedScreenResolutionIndex()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetSelectedWarGameType]
---- @return void
+--- No documentation available.
 function SetSelectedWarGameType()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetSendMailCOD]
---- @return void
+--- No documentation available.
 function SetSendMailCOD()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetSendMailMoney]
---- @return void
+--- No documentation available.
 function SetSendMailMoney()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetSendMailShowing]
---- @return void
+--- No documentation available.
 function SetSendMailShowing()
 end
 
@@ -11724,15 +10203,11 @@ end
 function SetSpecialization(specIndex, isPet)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetSpellbookPetAction]
---- @return void
+--- No documentation available.
 function SetSpellbookPetAction()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetTaxiBenchmarkMode]
---- @return void
+--- No documentation available.
 function SetTaxiBenchmarkMode()
 end
 
@@ -11743,9 +10218,7 @@ end
 function SetTaxiMap(texture)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetTradeCurrency]
---- @return void
+--- No documentation available.
 function SetTradeCurrency()
 end
 
@@ -11771,9 +10244,7 @@ end
 function SetTurnEnabled()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SetUIVisibility]
---- @return void
+--- No documentation available.
 function SetUIVisibility()
 end
 
@@ -11827,15 +10298,11 @@ end
 function ShowAccountAchievements(hide)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ShowBossFrameWhenUninteractable]
---- @return void
+--- No documentation available.
 function ShowBossFrameWhenUninteractable()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ShowBuybackSellCursor]
---- @return void
+--- No documentation available.
 function ShowBuybackSellCursor()
 end
 
@@ -11846,9 +10313,7 @@ end
 function ShowQuestComplete(questID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ShowQuestOffer]
---- @return void
+--- No documentation available.
 function ShowQuestOffer()
 end
 
@@ -11870,9 +10335,7 @@ end
 function SitStandOrDescendStart()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SocketInventoryItem]
---- @return void
+--- No documentation available.
 function SocketInventoryItem()
 end
 
@@ -11882,21 +10345,15 @@ end
 function SocketItemToArtifact()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SolveArtifact]
---- @return void
+--- No documentation available.
 function SolveArtifact()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SortBGList]
---- @return void
+--- No documentation available.
 function SortBGList()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SortBattlefieldScoreData]
---- @return void
+--- No documentation available.
 function SortBattlefieldScoreData()
 end
 
@@ -11907,111 +10364,75 @@ end
 function SortGuildRoster(level)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SortGuildTradeSkill]
---- @return void
+--- No documentation available.
 function SortGuildTradeSkill()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SortQuestSortTypes]
---- @return void
+--- No documentation available.
 function SortQuestSortTypes()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SortQuests]
---- @return void
+--- No documentation available.
 function SortQuests()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_Sound_ChatSystem_GetInputDriverNameByIndex]
---- @return void
+--- No documentation available.
 function Sound_ChatSystem_GetInputDriverNameByIndex()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_Sound_ChatSystem_GetNumInputDrivers]
---- @return void
+--- No documentation available.
 function Sound_ChatSystem_GetNumInputDrivers()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_Sound_ChatSystem_GetNumOutputDrivers]
---- @return void
+--- No documentation available.
 function Sound_ChatSystem_GetNumOutputDrivers()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_Sound_ChatSystem_GetOutputDriverNameByIndex]
---- @return void
+--- No documentation available.
 function Sound_ChatSystem_GetOutputDriverNameByIndex()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_Sound_GameSystem_GetInputDriverNameByIndex]
---- @return void
+--- No documentation available.
 function Sound_GameSystem_GetInputDriverNameByIndex()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_Sound_GameSystem_GetNumInputDrivers]
---- @return void
+--- No documentation available.
 function Sound_GameSystem_GetNumInputDrivers()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_Sound_GameSystem_GetNumOutputDrivers]
---- @return void
+--- No documentation available.
 function Sound_GameSystem_GetNumOutputDrivers()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_Sound_GameSystem_GetOutputDriverNameByIndex]
---- @return void
+--- No documentation available.
 function Sound_GameSystem_GetOutputDriverNameByIndex()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_Sound_GameSystem_RestartSoundSystem]
---- @return void
+--- No documentation available.
 function Sound_GameSystem_RestartSoundSystem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SpellCanTargetGarrisonFollower]
---- @return void
+--- No documentation available.
 function SpellCanTargetGarrisonFollower()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SpellCanTargetGarrisonFollowerAbility]
---- @return void
+--- No documentation available.
 function SpellCanTargetGarrisonFollowerAbility()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SpellCanTargetGarrisonMission]
---- @return void
+--- No documentation available.
 function SpellCanTargetGarrisonMission()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SpellCanTargetItem]
---- @return void
+--- No documentation available.
 function SpellCanTargetItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SpellCanTargetItemID]
---- @return void
+--- No documentation available.
 function SpellCanTargetItemID()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SpellCanTargetQuest]
---- @return void
+--- No documentation available.
 function SpellCanTargetQuest()
 end
 
@@ -12022,9 +10443,7 @@ end
 function SpellCanTargetUnit(unitId)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SpellCancelQueuedSpell]
---- @return void
+--- No documentation available.
 function SpellCancelQueuedSpell()
 end
 
@@ -12036,27 +10455,19 @@ end
 function SpellGetVisibilityInfo(spellId, visType)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SpellHasRange]
---- @return void
+--- No documentation available.
 function SpellHasRange()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SpellIsAlwaysShown]
---- @return void
+--- No documentation available.
 function SpellIsAlwaysShown()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SpellIsPriorityAura]
---- @return void
+--- No documentation available.
 function SpellIsPriorityAura()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SpellIsSelfBuff]
---- @return void
+--- No documentation available.
 function SpellIsSelfBuff()
 end
 
@@ -12078,9 +10489,7 @@ end
 function SpellStopTargeting()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SpellTargetItem]
---- @return void
+--- No documentation available.
 function SpellTargetItem()
 end
 
@@ -12091,27 +10500,19 @@ end
 function SpellTargetUnit(unitId)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SplashFrameCanBeShown]
---- @return void
+--- No documentation available.
 function SplashFrameCanBeShown()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SplitGuildBankItem]
---- @return void
+--- No documentation available.
 function SplitGuildBankItem()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_StartAttack]
---- @return void
+--- No documentation available.
 function StartAttack()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_StartAutoRun]
---- @return void
+--- No documentation available.
 function StartAutoRun()
 end
 
@@ -12123,57 +10524,39 @@ end
 function StartDuel(name, exactMatch)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_StartSoloShuffleWarGameByName]
---- @return void
+--- No documentation available.
 function StartSoloShuffleWarGameByName()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_StartSpectatorSoloShuffleWarGame]
---- @return void
+--- No documentation available.
 function StartSpectatorSoloShuffleWarGame()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_StartSpectatorWarGame]
---- @return void
+--- No documentation available.
 function StartSpectatorWarGame()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_StartWarGame]
---- @return void
+--- No documentation available.
 function StartWarGame()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_StartWarGameByName]
---- @return void
+--- No documentation available.
 function StartWarGameByName()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_StopAttack]
---- @return void
+--- No documentation available.
 function StopAttack()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_StopAutoRun]
---- @return void
+--- No documentation available.
 function StopAutoRun()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_StopCinematic]
---- @return void
+--- No documentation available.
 function StopCinematic()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_StopMacro]
---- @return void
+--- No documentation available.
 function StopMacro()
 end
 
@@ -12191,9 +10574,7 @@ end
 function StopSound(soundHandle, fadeoutTime)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_StoreSecureReference]
---- @return void
+--- No documentation available.
 function StoreSecureReference()
 end
 
@@ -12242,9 +10623,7 @@ end
 function Stuck()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SubmitRequiredGuildRename]
---- @return void
+--- No documentation available.
 function SubmitRequiredGuildRename()
 end
 
@@ -12268,9 +10647,7 @@ end
 function SupportsClipCursor()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SurrenderArena]
---- @return void
+--- No documentation available.
 function SurrenderArena()
 end
 
@@ -12282,9 +10659,7 @@ end
 function SwapRaidSubgroup(index1, index2)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_SwitchAchievementSearchTab]
---- @return void
+--- No documentation available.
 function SwitchAchievementSearchTab()
 end
 
@@ -12303,9 +10678,7 @@ end
 function TakeInboxMoney(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TakeInboxTextItem]
---- @return void
+--- No documentation available.
 function TakeInboxTextItem()
 end
 
@@ -12316,21 +10689,15 @@ end
 function TakeTaxiNode(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TargetDirectionEnemy]
---- @return void
+--- No documentation available.
 function TargetDirectionEnemy()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TargetDirectionFinished]
---- @return void
+--- No documentation available.
 function TargetDirectionFinished()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TargetDirectionFriend]
---- @return void
+--- No documentation available.
 function TargetDirectionFriend()
 end
 
@@ -12340,9 +10707,7 @@ end
 function TargetLastEnemy()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TargetLastFriend]
---- @return void
+--- No documentation available.
 function TargetLastFriend()
 end
 
@@ -12352,9 +10717,7 @@ end
 function TargetLastTarget()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TargetNearest]
---- @return void
+--- No documentation available.
 function TargetNearest()
 end
 
@@ -12365,9 +10728,7 @@ end
 function TargetNearestEnemy(reverse)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TargetNearestEnemyPlayer]
---- @return void
+--- No documentation available.
 function TargetNearestEnemyPlayer()
 end
 
@@ -12378,51 +10739,35 @@ end
 function TargetNearestFriend(reverse)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TargetNearestFriendPlayer]
---- @return void
+--- No documentation available.
 function TargetNearestFriendPlayer()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TargetNearestPartyMember]
---- @return void
+--- No documentation available.
 function TargetNearestPartyMember()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TargetNearestRaidMember]
---- @return void
+--- No documentation available.
 function TargetNearestRaidMember()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TargetPriorityHighlightEnd]
---- @return void
+--- No documentation available.
 function TargetPriorityHighlightEnd()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TargetPriorityHighlightStart]
---- @return void
+--- No documentation available.
 function TargetPriorityHighlightStart()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TargetSpellReplacesBonusTree]
---- @return void
+--- No documentation available.
 function TargetSpellReplacesBonusTree()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TargetToggle]
---- @return void
+--- No documentation available.
 function TargetToggle()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TargetTotem]
---- @return void
+--- No documentation available.
 function TargetTotem()
 end
 
@@ -12450,9 +10795,7 @@ end
 function TaxiGetDestY(destinationIndex, routeIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TaxiGetNodeSlot]
---- @return void
+--- No documentation available.
 function TaxiGetNodeSlot()
 end
 
@@ -12472,9 +10815,7 @@ end
 function TaxiGetSrcY(destinationIndex, routeIndex)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TaxiIsDirectFlight]
---- @return void
+--- No documentation available.
 function TaxiIsDirectFlight()
 end
 
@@ -12506,9 +10847,7 @@ end
 function TaxiNodePosition(index)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TaxiRequestEarlyLanding]
---- @return void
+--- No documentation available.
 function TaxiRequestEarlyLanding()
 end
 
@@ -12518,9 +10857,7 @@ end
 function TimeoutResurrect()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ToggleAnimKitDisplay]
---- @return void
+--- No documentation available.
 function ToggleAnimKitDisplay()
 end
 
@@ -12530,9 +10867,7 @@ end
 function ToggleAutoRun()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ToggleDebugAIDisplay]
---- @return void
+--- No documentation available.
 function ToggleDebugAIDisplay()
 end
 
@@ -12542,9 +10877,7 @@ end
 function TogglePVP()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TogglePetAutocast]
---- @return void
+--- No documentation available.
 function TogglePetAutocast()
 end
 
@@ -12555,9 +10888,7 @@ end
 function ToggleRun(theTime)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ToggleSelfHighlight]
---- @return void
+--- No documentation available.
 function ToggleSelfHighlight()
 end
 
@@ -12567,27 +10898,19 @@ end
 function ToggleSheath()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ToggleSpellAutocast]
---- @return void
+--- No documentation available.
 function ToggleSpellAutocast()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ToggleWindowed]
---- @return void
+--- No documentation available.
 function ToggleWindowed()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TriggerTutorial]
---- @return void
+--- No documentation available.
 function TriggerTutorial()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_TurnInGuildCharter]
---- @return void
+--- No documentation available.
 function TurnInGuildCharter()
 end
 
@@ -12769,9 +11092,7 @@ end
 function UnitClassification(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitControllingVehicle]
---- @return void
+--- No documentation available.
 function UnitControllingVehicle()
 end
 
@@ -12882,15 +11203,11 @@ end
 function UnitGroupRolesAssigned(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitGroupRolesAssignedEnum]
---- @return void
+--- No documentation available.
 function UnitGroupRolesAssignedEnum()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitHPPerStamina]
---- @return void
+--- No documentation available.
 function UnitHPPerStamina()
 end
 
@@ -12915,21 +11232,15 @@ end
 function UnitHasLFGRandomCooldown(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitHasRelicSlot]
---- @return void
+--- No documentation available.
 function UnitHasRelicSlot()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitHasVehiclePlayerFrameUI]
---- @return void
+--- No documentation available.
 function UnitHasVehiclePlayerFrameUI()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitHasVehicleUI]
---- @return void
+--- No documentation available.
 function UnitHasVehicleUI()
 end
 
@@ -12982,9 +11293,7 @@ end
 function UnitInBattleground(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitInOtherParty]
---- @return void
+--- No documentation available.
 function UnitInOtherParty()
 end
 
@@ -12995,9 +11304,7 @@ end
 function UnitInParty(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitInPartyIsAI]
---- @return void
+--- No documentation available.
 function UnitInPartyIsAI()
 end
 
@@ -13037,15 +11344,11 @@ end
 function UnitInVehicle(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitInVehicleControlSeat]
---- @return void
+--- No documentation available.
 function UnitInVehicleControlSeat()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitInVehicleHidesPetFrame]
---- @return void
+--- No documentation available.
 function UnitInVehicleHidesPetFrame()
 end
 
@@ -13070,9 +11373,7 @@ end
 function UnitIsBattlePetCompanion(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitIsBossMob]
---- @return void
+--- No documentation available.
 function UnitIsBossMob()
 end
 
@@ -13090,9 +11391,7 @@ end
 function UnitIsConnected(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitIsControlling]
---- @return void
+--- No documentation available.
 function UnitIsControlling()
 end
 
@@ -13254,9 +11553,7 @@ end
 function UnitIsPossessed(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitIsQuestBoss]
---- @return void
+--- No documentation available.
 function UnitIsQuestBoss()
 end
 
@@ -13288,9 +11585,7 @@ end
 function UnitIsTrivial(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitIsUnconscious]
---- @return void
+--- No documentation available.
 function UnitIsUnconscious()
 end
 
@@ -13316,9 +11611,7 @@ end
 function UnitIsWildBattlePet(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitLeadsAnyGroup]
---- @return void
+--- No documentation available.
 function UnitLeadsAnyGroup()
 end
 
@@ -13350,9 +11643,7 @@ end
 function UnitNameplateShowsWidgetsOnly(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitNumPowerBarTimers]
---- @return void
+--- No documentation available.
 function UnitNumPowerBarTimers()
 end
 
@@ -13437,9 +11728,7 @@ end
 function UnitPowerBarID(unitToken)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitPowerBarTimerInfo]
---- @return void
+--- No documentation available.
 function UnitPowerBarTimerInfo()
 end
 
@@ -13548,9 +11837,7 @@ end
 function UnitSetRole(unit, role)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitSetRoleEnum]
---- @return void
+--- No documentation available.
 function UnitSetRoleEnum()
 end
 
@@ -13561,9 +11848,7 @@ end
 function UnitSex(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitShouldDisplayName]
---- @return void
+--- No documentation available.
 function UnitShouldDisplayName()
 end
 
@@ -13589,15 +11874,11 @@ end
 function UnitStat(unit, statID)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitSwitchToVehicleSeat]
---- @return void
+--- No documentation available.
 function UnitSwitchToVehicleSeat()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitTargetsVehicleInRaidUI]
---- @return void
+--- No documentation available.
 function UnitTargetsVehicleInRaidUI()
 end
 
@@ -13638,9 +11919,7 @@ end
 function UnitTrialBankedLevels(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitTrialXP]
---- @return void
+--- No documentation available.
 function UnitTrialXP()
 end
 
@@ -13651,27 +11930,19 @@ end
 function UnitUsingVehicle(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitVehicleSeatCount]
---- @return void
+--- No documentation available.
 function UnitVehicleSeatCount()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitVehicleSeatInfo]
---- @return void
+--- No documentation available.
 function UnitVehicleSeatInfo()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitVehicleSkin]
---- @return void
+--- No documentation available.
 function UnitVehicleSkin()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnitWeaponAttackPower]
---- @return void
+--- No documentation available.
 function UnitWeaponAttackPower()
 end
 
@@ -13696,9 +11967,7 @@ end
 function UnitXPMax(unit)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UnlearnSpecialization]
---- @return void
+--- No documentation available.
 function UnlearnSpecialization()
 end
 
@@ -13715,33 +11984,23 @@ end
 function UnmuteSoundFile(sound)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UpdateAddOnCPUUsage]
---- @return void
+--- No documentation available.
 function UpdateAddOnCPUUsage()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UpdateAddOnMemoryUsage]
---- @return void
+--- No documentation available.
 function UpdateAddOnMemoryUsage()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UpdateInventoryAlertStatus]
---- @return void
+--- No documentation available.
 function UpdateInventoryAlertStatus()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UpdateUIParentPosition]
---- @return void
+--- No documentation available.
 function UpdateUIParentPosition()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UpdateWarGamesList]
---- @return void
+--- No documentation available.
 function UpdateWarGamesList()
 end
 
@@ -13775,9 +12034,7 @@ end
 function UseItemByName(name, target)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UseQuestLogSpecialItem]
---- @return void
+--- No documentation available.
 function UseQuestLogSpecialItem()
 end
 
@@ -13795,105 +12052,71 @@ end
 function UseToyByName(name)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_UseWorldMapActionButtonSpellOnQuest]
---- @return void
+--- No documentation available.
 function UseWorldMapActionButtonSpellOnQuest()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_VehicleAimDecrement]
---- @return void
+--- No documentation available.
 function VehicleAimDecrement()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_VehicleAimDownStart]
---- @return void
+--- No documentation available.
 function VehicleAimDownStart()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_VehicleAimDownStop]
---- @return void
+--- No documentation available.
 function VehicleAimDownStop()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_VehicleAimGetNormPower]
---- @return void
+--- No documentation available.
 function VehicleAimGetNormPower()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_VehicleAimIncrement]
---- @return void
+--- No documentation available.
 function VehicleAimIncrement()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_VehicleAimRequestAngle]
---- @return void
+--- No documentation available.
 function VehicleAimRequestAngle()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_VehicleAimSetNormPower]
---- @return void
+--- No documentation available.
 function VehicleAimSetNormPower()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_VehicleAimUpStart]
---- @return void
+--- No documentation available.
 function VehicleAimUpStart()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_VehicleAimUpStop]
---- @return void
+--- No documentation available.
 function VehicleAimUpStop()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_VehicleExit]
---- @return void
+--- No documentation available.
 function VehicleExit()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_VehicleNextSeat]
---- @return void
+--- No documentation available.
 function VehicleNextSeat()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_VehiclePrevSeat]
---- @return void
+--- No documentation available.
 function VehiclePrevSeat()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ViewGuildRecipes]
---- @return void
+--- No documentation available.
 function ViewGuildRecipes()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_WarGameRespond]
---- @return void
+--- No documentation available.
 function WarGameRespond()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_WithdrawGuildBankMoney]
---- @return void
+--- No documentation available.
 function WithdrawGuildBankMoney()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_WorldLootObjectExists]
---- @return void
+--- No documentation available.
 function WorldLootObjectExists()
 end
 
@@ -13925,9 +12148,7 @@ end
 function asin(sine)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_assert]
---- @return void
+--- No documentation available.
 function assert()
 end
 
@@ -13938,57 +12159,39 @@ end
 function atan(tangent)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_atan2]
---- @return void
+--- No documentation available.
 function atan2()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_bit.arshift]
---- @return void
+--- No documentation available.
 function bit.arshift()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_bit.band]
---- @return void
+--- No documentation available.
 function bit.band()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_bit.bnot]
---- @return void
+--- No documentation available.
 function bit.bnot()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_bit.bor]
---- @return void
+--- No documentation available.
 function bit.bor()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_bit.bxor]
---- @return void
+--- No documentation available.
 function bit.bxor()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_bit.lshift]
---- @return void
+--- No documentation available.
 function bit.lshift()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_bit.mod]
---- @return void
+--- No documentation available.
 function bit.mod()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_bit.rshift]
---- @return void
+--- No documentation available.
 function bit.rshift()
 end
 
@@ -14022,15 +12225,11 @@ end
 function coroutine.resume(co, ...)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_coroutine.running]
---- @return void
+--- No documentation available.
 function coroutine.running()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_coroutine.status]
---- @return void
+--- No documentation available.
 function coroutine.status()
 end
 
@@ -14091,27 +12290,19 @@ end
 function debugstack(coroutine, start, count1, count2)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_deg]
---- @return void
+--- No documentation available.
 function deg()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_difftime]
---- @return void
+--- No documentation available.
 function difftime()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_error]
---- @return void
+--- No documentation available.
 function error()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_exp]
---- @return void
+--- No documentation available.
 function exp()
 end
 
@@ -14160,9 +12351,7 @@ end
 function format(pattern, ...)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_frexp]
---- @return void
+--- No documentation available.
 function frexp()
 end
 
@@ -14185,9 +12374,7 @@ end
 function getfenv(f)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_getmetatable]
---- @return void
+--- No documentation available.
 function getmetatable()
 end
 
@@ -14198,9 +12385,7 @@ end
 function getn(table)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_gmatch]
---- @return void
+--- No documentation available.
 function gmatch()
 end
 
@@ -14244,9 +12429,7 @@ end
 function issecurevariable(table, variable)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_ldexp]
---- @return void
+--- No documentation available.
 function ldexp()
 end
 
@@ -14258,99 +12441,67 @@ end
 function loadstring(luaCodeBlock, chunkName)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_log]
---- @return void
+--- No documentation available.
 function log()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_log10]
---- @return void
+--- No documentation available.
 function log10()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.abs]
---- @return void
+--- No documentation available.
 function math.abs()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.acos]
---- @return void
+--- No documentation available.
 function math.acos()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.asin]
---- @return void
+--- No documentation available.
 function math.asin()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.atan]
---- @return void
+--- No documentation available.
 function math.atan()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.atan2]
---- @return void
+--- No documentation available.
 function math.atan2()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.ceil]
---- @return void
+--- No documentation available.
 function math.ceil()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.cos]
---- @return void
+--- No documentation available.
 function math.cos()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.cosh]
---- @return void
+--- No documentation available.
 function math.cosh()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.deg]
---- @return void
+--- No documentation available.
 function math.deg()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.exp]
---- @return void
+--- No documentation available.
 function math.exp()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.floor]
---- @return void
+--- No documentation available.
 function math.floor()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.fmod]
---- @return void
+--- No documentation available.
 function math.fmod()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.frexp]
---- @return void
+--- No documentation available.
 function math.frexp()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.ldexp]
---- @return void
+--- No documentation available.
 function math.ldexp()
 end
 
@@ -14364,87 +12515,59 @@ end
 function math.log10()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.max]
---- @return void
+--- No documentation available.
 function math.max()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.min]
---- @return void
+--- No documentation available.
 function math.min()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.modf]
---- @return void
+--- No documentation available.
 function math.modf()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.pow]
---- @return void
+--- No documentation available.
 function math.pow()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.rad]
---- @return void
+--- No documentation available.
 function math.rad()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.random]
---- @return void
+--- No documentation available.
 function math.random()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.sin]
---- @return void
+--- No documentation available.
 function math.sin()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.sinh]
---- @return void
+--- No documentation available.
 function math.sinh()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.sqrt]
---- @return void
+--- No documentation available.
 function math.sqrt()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.tan]
---- @return void
+--- No documentation available.
 function math.tan()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_math.tanh]
---- @return void
+--- No documentation available.
 function math.tanh()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_max]
---- @return void
+--- No documentation available.
 function max()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_min]
---- @return void
+--- No documentation available.
 function min()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_mod]
---- @return void
+--- No documentation available.
 function mod()
 end
 
@@ -14489,9 +12612,7 @@ end
 function pcallwithenv(func, env, ...)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_rad]
---- @return void
+--- No documentation available.
 function rad()
 end
 
@@ -14503,15 +12624,11 @@ end
 function random(low, high)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_rawequal]
---- @return void
+--- No documentation available.
 function rawequal()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_rawget]
---- @return void
+--- No documentation available.
 function rawget()
 end
 
@@ -14524,9 +12641,7 @@ end
 function rawset(table, index, value)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_scrub]
---- @return void
+--- No documentation available.
 function scrub()
 end
 
@@ -14601,9 +12716,7 @@ end
 function sort(table, compFunc)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_sqrt]
---- @return void
+--- No documentation available.
 function sqrt()
 end
 
@@ -14625,15 +12738,11 @@ end
 function strchar(i1, i2, ...)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_strcmputf8i]
---- @return void
+--- No documentation available.
 function strcmputf8i()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_strconcat]
---- @return void
+--- No documentation available.
 function strconcat()
 end
 
@@ -14647,105 +12756,71 @@ end
 function strfind(string, pattern, initpos, plain)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.byte]
---- @return void
+--- No documentation available.
 function string.byte()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.char]
---- @return void
+--- No documentation available.
 function string.char()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.find]
---- @return void
+--- No documentation available.
 function string.find()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.format]
---- @return void
+--- No documentation available.
 function string.format()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.gfind]
---- @return void
+--- No documentation available.
 function string.gfind()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.gmatch]
---- @return void
+--- No documentation available.
 function string.gmatch()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.gsub]
---- @return void
+--- No documentation available.
 function string.gsub()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.join]
---- @return void
+--- No documentation available.
 function string.join()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.len]
---- @return void
+--- No documentation available.
 function string.len()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.lower]
---- @return void
+--- No documentation available.
 function string.lower()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.match]
---- @return void
+--- No documentation available.
 function string.match()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.rep]
---- @return void
+--- No documentation available.
 function string.rep()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.reverse]
---- @return void
+--- No documentation available.
 function string.reverse()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.split]
---- @return void
+--- No documentation available.
 function string.split()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.sub]
---- @return void
+--- No documentation available.
 function string.sub()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.trim]
---- @return void
+--- No documentation available.
 function string.trim()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_string.upper]
---- @return void
+--- No documentation available.
 function string.upper()
 end
 
@@ -14841,27 +12916,19 @@ end
 function strupper(s)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_table.concat]
---- @return void
+--- No documentation available.
 function table.concat()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_table.foreach]
---- @return void
+--- No documentation available.
 function table.foreach()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_table.foreachi]
---- @return void
+--- No documentation available.
 function table.foreachi()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_table.getn]
---- @return void
+--- No documentation available.
 function table.getn()
 end
 
@@ -14874,21 +12941,15 @@ end
 function table.insert(table, pos, value)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_table.maxn]
---- @return void
+--- No documentation available.
 function table.maxn()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_table.remove]
---- @return void
+--- No documentation available.
 function table.remove()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_table.removemulti]
---- @return void
+--- No documentation available.
 function table.removemulti()
 end
 
@@ -14900,15 +12961,11 @@ end
 function table.setn(table, n)
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_table.sort]
---- @return void
+--- No documentation available.
 function table.sort()
 end
 
---- Warcraft Wiki does not have a  page with this exact name.
---- [https://warcraft.wiki.gg/wiki/API_table.wipe]
---- @return void
+--- No documentation available.
 function table.wipe()
 end
 

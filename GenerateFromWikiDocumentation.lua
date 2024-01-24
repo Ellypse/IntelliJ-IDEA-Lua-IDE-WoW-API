@@ -70,93 +70,106 @@ for k,v in pairs(api_entries) do
     progress = progress + 1
     if api_entries[k].address then
         local spellPageBody = https.request(api_entries[k].address)
-        if spellPageBody then
-            local _,allStart = string.find(spellPageBody,"<div id=\"bodyContent\".->")
-            local allFinish,_ = string.find(spellPageBody,"<div class=\"printfooter\"")
-            if allStart and allFinish then
-                spellPageBody = string.sub(spellPageBody, allStart+1, allFinish-1)
-            end
+        
+        -- Instead of the page failing to load, it will return a page that says "Warcraft Wiki does not have a  page with this exact name."
+        --the two spaces between "a" and "page" exists in the html, so we need to account for that
+        if string.find(spellPageBody, "Warcraft Wiki does not have a  page with this exact name.") then
+            api_entries[k].pageExists = false
+        else
+            api_entries[k].pageExists = true
         end
-        if spellPageBody then
-            --remove html symbols
-            spellPageBody = spellPageBody:gsub("&#160;", " ")
-            spellPageBody = spellPageBody:gsub("&#91;", "[")
-            spellPageBody = spellPageBody:gsub("&#93;", "]")
-            spellPageBody = spellPageBody:gsub("&#32;", "")
-            spellPageBody = spellPageBody:gsub("&lt;", "<")
-            spellPageBody = spellPageBody:gsub("&gt;", ">")
-            spellPageBody = spellPageBody:gsub("&#8594;", "→")
 
-            --the example function blocks all are wrapped in a <pre> tag, so we can use that to isolate our function headers
-            --note, on some entries there are multiple functions in one page, so we need to parse them apart
-            local _,start = string.find(spellPageBody,"<pre>")
-            local finish, _ = string.find(spellPageBody,"</pre>")
+        if api_entries[k].pageExists then
 
-            local functionHeader = ""
-            if start and finish then
-                functionHeader = string.sub(spellPageBody, start+1, finish-1)
-            end
-
-            api_entries[k].functionHeader = {}
-            api_entries[k].spellPageBody = spellPageBody
-            api_entries[k].spellPageBodyLower = string.lower(spellPageBody)
-
-            --some entries contain multiple functions per functionHeader block, account for that here and split into separate lines
-            for line in functionHeader:gmatch("([^\n]*)\n?") do
-
-                ----------------------------------------
-                -----------String Cleanup---------------
-                ----------------------------------------
-
-                --some entries contain html code, ie "href=<>" in the parameters field. Strip that out
-                line = line:gsub("%b<>", "") --this removes angle brackets and everything inside them
-
-                --some of the params and returns are wrapped in quotes to indicate that they are strings, but this isn't suitable for us
-                line = line:gsub("\"", "")
-
-                --some of the arguments fields are wrapped in square brackets (to indicate they are optional). For our purposes we should just list them all
-                line = line:gsub("%[", "") --remove the open square brackets
-                line = line:gsub("%]", "") --remove the close square brackets
-
-                --some of the arguments fields are wrapped in curly brackets (to indicate they are optional). For our purposes we should just list them all
-                line = line:gsub("%{", "") --remove the open curly brackets
-                line = line:gsub("%}", "") --remove the close curly brackets
-
-                --some of the arguments have "local" in them still, which shouldn't be there
-                line = line:gsub("local", "")
-
-                --some of the arguments have "or" in them to indicate a choice in parameters, but we need to sanitize this and join these into one variable
-                line = line:gsub(" or ", "_or_")
-
-                --some of the arguments have a # symbol in them, i.e. #slot to indicate the slot number
-                line = line:gsub("#", "")
-
-                --remove leading/trailing whitespace
-                line = line:gsub("^%s*(.-)%s*$", "%1")
-
-                table.insert(api_entries[k].functionHeader, line)
-            end
-
-            api_entries[k].description = nil
-            if #api_entries[k].functionHeader > 0 then
-                local _,dstart = string.find(spellPageBody, "<p>")
-                local dfinish, _ = string.find(spellPageBody, "</p>", dstart)
-                if dstart and dfinish then
-                    local description = string.sub(spellPageBody, dstart+1, dfinish-1)
-                    description = description:gsub("%b<>", "") --this removes angle brackets and everything inside them
-                    description = description:gsub("\"", "")
-                    description = description:gsub("\n", " ")
-                    description = description:gsub("^%s*(.-)%s*$", "%1")
-                    if description ~= "" then
-                        api_entries[k].description = description
-                    end
+            if spellPageBody then
+                local _,allStart = string.find(spellPageBody,"<div id=\"bodyContent\".->")
+                local allFinish,_ = string.find(spellPageBody,"<div class=\"printfooter\"")
+                if allStart and allFinish then
+                    spellPageBody = string.sub(spellPageBody, allStart+1, allFinish-1)
                 end
             end
 
-            --give some feedback as it's going so you know it's not stuck. Simply print the name of the current function
-            print("[" .. math.floor((progress / total_entries) * 1000) / 10 .. "%] " .. k)
+            if spellPageBody then
+                --remove html symbols
+                spellPageBody = spellPageBody:gsub("&#160;", " ")
+                spellPageBody = spellPageBody:gsub("&#91;", "[")
+                spellPageBody = spellPageBody:gsub("&#93;", "]")
+                spellPageBody = spellPageBody:gsub("&#32;", "")
+                spellPageBody = spellPageBody:gsub("&lt;", "<")
+                spellPageBody = spellPageBody:gsub("&gt;", ">")
+                spellPageBody = spellPageBody:gsub("&#8594;", "→")
 
+                --the example function blocks all are wrapped in a <pre> tag, so we can use that to isolate our function headers
+                --note, on some entries there are multiple functions in one page, so we need to parse them apart
+                local _,start = string.find(spellPageBody,"<pre>")
+                local finish, _ = string.find(spellPageBody,"</pre>")
+
+                local functionHeader = ""
+                if start and finish then
+                    functionHeader = string.sub(spellPageBody, start+1, finish-1)
+                end
+
+                api_entries[k].functionHeader = {}
+                api_entries[k].spellPageBody = spellPageBody
+                api_entries[k].spellPageBodyLower = string.lower(spellPageBody)
+
+                --some entries contain multiple functions per functionHeader block, account for that here and split into separate lines
+                for line in functionHeader:gmatch("([^\n]*)\n?") do
+
+                    ----------------------------------------
+                    -----------String Cleanup---------------
+                    ----------------------------------------
+
+                    --some entries contain html code, ie "href=<>" in the parameters field. Strip that out
+                    line = line:gsub("%b<>", "") --this removes angle brackets and everything inside them
+
+                    --some of the params and returns are wrapped in quotes to indicate that they are strings, but this isn't suitable for us
+                    line = line:gsub("\"", "")
+
+                    --some of the arguments fields are wrapped in square brackets (to indicate they are optional). For our purposes we should just list them all
+                    line = line:gsub("%[", "") --remove the open square brackets
+                    line = line:gsub("%]", "") --remove the close square brackets
+
+                    --some of the arguments fields are wrapped in curly brackets (to indicate they are optional). For our purposes we should just list them all
+                    line = line:gsub("%{", "") --remove the open curly brackets
+                    line = line:gsub("%}", "") --remove the close curly brackets
+
+                    --some of the arguments have "local" in them still, which shouldn't be there
+                    line = line:gsub("local", "")
+
+                    --some of the arguments have "or" in them to indicate a choice in parameters, but we need to sanitize this and join these into one variable
+                    line = line:gsub(" or ", "_or_")
+
+                    --some of the arguments have a # symbol in them, i.e. #slot to indicate the slot number
+                    line = line:gsub("#", "")
+
+                    --remove leading/trailing whitespace
+                    line = line:gsub("^%s*(.-)%s*$", "%1")
+
+                    table.insert(api_entries[k].functionHeader, line)
+                end
+
+                api_entries[k].description = nil
+                if #api_entries[k].functionHeader > 0 then
+                    local _,dstart = string.find(spellPageBody, "<p>")
+                    local dfinish, _ = string.find(spellPageBody, "</p>", dstart)
+                    if dstart and dfinish then
+                        local description = string.sub(spellPageBody, dstart+1, dfinish-1)
+                        description = description:gsub("%b<>", "") --this removes angle brackets and everything inside them
+                        description = description:gsub("\"", "")
+                        description = description:gsub("\n", " ")
+                        description = description:gsub("^%s*(.-)%s*$", "%1")
+                        if description ~= "" then
+                            api_entries[k].description = description
+                        end
+                    end
+                end
+
+            end
         end
+        
+        --give some feedback as it's going so you know it's not stuck. Simply print the name of the current function
+        print("[" .. math.floor((progress / total_entries) * 1000) / 10 .. "%] " .. k)
     end
 end
 
@@ -338,61 +351,67 @@ table.sort(apiKeys)
 out.write(out, "--- @class unknown @ unknown type\n\n")
 
 for _,k in pairs(apiKeys) do
+    
     local preFunction = ""
     local functionName = k
     local argValues = ""
 
-    if api_entries[k].description and not api_entries[k].stubbed then
-        preFunction = preFunction .. "--- " .. api_entries[k].description .. "\n"
-    end
+    if api_entries[k].pageExists then
+        if api_entries[k].description then
+            preFunction = preFunction .. "--- " .. api_entries[k].description .. "\n"
+        end
 
-    if api_entries[k].address then
-        preFunction = preFunction .. "--- [" .. api_entries[k].address .. "]\n"
-    end
+        if api_entries[k].address then
+            preFunction = preFunction .. "--- [" .. api_entries[k].address .. "]\n"
+        end
 
-    if api_entries[k].arguments then
-        for _, param in ipairs(api_entries[k].arguments) do
-            if argValues == "" then
-                argValues = param
-            else
-                argValues = argValues .. ", " .. param
-            end
-            local paramDocString = "--- @param " .. param
-            if api_entries[k].argumentTypes[param] then
-                paramDocString = paramDocString .. " " .. api_entries[k].argumentTypes[param]
-            end
-            if api_entries[k].argumentDetails[param] then
-                local argDetails = api_entries[k].argumentDetails[param]
-                local argDetailsNewLine, _ = string.find(argDetails,"\n")
-                if argDetailsNewLine then
-                    argDetails = string.sub(argDetails, 1, argDetailsNewLine - 1) -- only show first line of arg details
+        if api_entries[k].arguments then
+            for _, param in ipairs(api_entries[k].arguments) do
+                if argValues == "" then
+                    argValues = param
+                else
+                    argValues = argValues .. ", " .. param
                 end
-                paramDocString = paramDocString .. " @ " .. argDetails
+                local paramDocString = "--- @param " .. param
+                if api_entries[k].argumentTypes[param] then
+                    paramDocString = paramDocString .. " " .. api_entries[k].argumentTypes[param]
+                end
+                if api_entries[k].argumentDetails[param] then
+                    local argDetails = api_entries[k].argumentDetails[param]
+                    local argDetailsNewLine, _ = string.find(argDetails,"\n")
+                    if argDetailsNewLine then
+                        argDetails = string.sub(argDetails, 1, argDetailsNewLine - 1) -- only show first line of arg details
+                    end
+                    paramDocString = paramDocString .. " @ " .. argDetails
+                end
+                preFunction = preFunction .. paramDocString .. "\n"
             end
-            preFunction = preFunction .. paramDocString .. "\n"
-        end
-    end
-
-    if api_entries[k].returns then
-        local returnTypesString = ""
-        local returnNamesString = ""
-        for _, ret in ipairs(api_entries[k].returns) do
-            if returnTypesString ~= "" then
-                returnTypesString = returnTypesString .. ", "
-            end
-            if returnNamesString ~= "" then
-                returnNamesString = returnNamesString .. ", "
-            end
-            returnTypesString = returnTypesString .. api_entries[k].returnTypes[ret]
-            returnNamesString = returnNamesString .. ret
         end
 
-        preFunction = preFunction .. "--- @return " .. returnTypesString .. " @ " .. returnNamesString .. "\n"
-    elseif api_entries[k].address then
-        preFunction = preFunction .. "--- @return void\n"
-    end
+        if api_entries[k].returns then
+            local returnTypesString = ""
+            local returnNamesString = ""
+            for _, ret in ipairs(api_entries[k].returns) do
+                if returnTypesString ~= "" then
+                    returnTypesString = returnTypesString .. ", "
+                end
+                if returnNamesString ~= "" then
+                    returnNamesString = returnNamesString .. ", "
+                end
+                returnTypesString = returnTypesString .. api_entries[k].returnTypes[ret]
+                returnNamesString = returnNamesString .. ret
+            end
 
+            preFunction = preFunction .. "--- @return " .. returnTypesString .. " @ " .. returnNamesString .. "\n"
+        elseif api_entries[k].address then
+            preFunction = preFunction .. "--- @return void\n"
+        end
+    else
+        preFunction = preFunction .. "--- No documentation available.\n"
+    end
+    
     out:write(TEMPLATE:format(preFunction, functionName, argValues))
+    
 end
 
 out:close()
